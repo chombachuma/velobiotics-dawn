@@ -1451,5 +1451,46 @@
         "default": "scheme-1"
       }
     ]
+  },
+  {
+    "name": "Velobiotics brand",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Velobiotics brand tokens (Pass A)"
+      },
+      {
+        "type": "paragraph",
+        "content": "These settings drive the --vb-* CSS variables loaded from assets/tokens.css. Keep the brand primary aligned with the Velobiotics green (#4D8C44) unless rebranding."
+      },
+      {
+        "type": "color",
+        "id": "vb_brand_color",
+        "label": "Brand primary",
+        "default": "#4D8C44"
+      },
+      {
+        "type": "color",
+        "id": "vb_accent_color",
+        "label": "Brand accent",
+        "default": "#5B9F4F"
+      },
+      {
+        "type": "range",
+        "id": "vb_base_radius",
+        "min": 0,
+        "max": 24,
+        "step": 1,
+        "unit": "px",
+        "label": "Base corner radius",
+        "default": 8
+      },
+      {
+        "type": "checkbox",
+        "id": "vb_shadow_enabled",
+        "label": "Enable subtle shadows on cards/buttons",
+        "default": true
+      }
+    ]
   }
 ]

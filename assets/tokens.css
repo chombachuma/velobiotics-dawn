@@ -1,5 +1,5 @@
-/* ============================================================
-   Velobiotics brand tokens — Pass A
+﻿/* ============================================================
+   Velobiotics brand tokens â€” Pass A
    Pure CSS variables. Prefixed with --vb- to avoid colliding
    with any of Dawn's existing variables.
    Dawn's color-scheme variables (--color-foreground,
@@ -122,8 +122,10 @@
     --vb-dur-base: 0ms;
     --vb-dur-slow: 0ms;
   }
+}
+
   /* ============================================================
-   Velobiotics typography tokens (Pass B — added with Poppins)
+   Velobiotics typography tokens (Pass B â€” added with Poppins)
    ============================================================ */
 
 :root {
@@ -133,7 +135,7 @@
   /* Primary Velobiotics font stack */
   --vb-font-sans: 'Poppins', var(--vb-font-stack-fallback);
 
-  /* Weight scale (matches loaded weights — don't reference any value not in the @font-face list) */
+  /* Weight scale (matches loaded weights â€” don't reference any value not in the @font-face list) */
   --vb-fw-regular: 400;
   --vb-fw-medium: 500;
   --vb-fw-semibold: 600;
@@ -149,11 +151,10 @@ body {
 }
 
 /* Optional utility classes for Velobiotics-specific surfaces.
-   Use sparingly — prefer setting font-family at the component level
+   Use sparingly â€” prefer setting font-family at the component level
    when porting sections in Phase 3. */
 .vb-font-sans { font-family: var(--vb-font-sans); }
 .vb-fw-regular { font-weight: var(--vb-fw-regular); }
 .vb-fw-medium { font-weight: var(--vb-fw-medium); }
 .vb-fw-semibold { font-weight: var(--vb-fw-semibold); }
 .vb-fw-bold { font-weight: var(--vb-fw-bold); }
-}

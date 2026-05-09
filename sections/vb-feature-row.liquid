@@ -1,0 +1,215 @@
+{{ 'vb-feature-row.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign layout = section.settings.layout
+  assign columns = section.settings.columns | default: 3
+  assign bg = section.settings.background
+-%}
+
+<section
+  class="vb-feature-row vb-feature-row--bg-{{ bg }} vb-feature-row--cols-{{ columns }} vb-feature-row--layout-{{ layout }}"
+  {% if section.settings.anchor_id != blank %}id="{{ section.settings.anchor_id }}"{% endif %}
+>
+  <div class="vb-feature-row__inner">
+    {%- if section.settings.eyebrow != blank -%}
+      <p class="vb-feature-row__eyebrow">{{ section.settings.eyebrow | escape }}</p>
+    {%- endif -%}
+
+    {%- if section.settings.headline != blank -%}
+      <h2 class="vb-feature-row__headline">{{ section.settings.headline | escape }}</h2>
+    {%- endif -%}
+
+    {%- if section.settings.sub != blank -%}
+      <p class="vb-feature-row__sub">{{ section.settings.sub | escape }}</p>
+    {%- endif -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <ol class="vb-feature-row__list" role="list">
+        {%- for block in section.blocks -%}
+          <li class="vb-feature-row__item" {{ block.shopify_attributes }}>
+            <div class="vb-feature-row__step" aria-hidden="true">{{ forloop.index }}</div>
+
+            {%- if block.settings.icon != blank -%}
+              <div class="vb-feature-row__icon">
+                {{ block.settings.icon | image_url: width: 96 | image_tag:
+                    loading: 'lazy',
+                    width: 48,
+                    height: 48,
+                    alt: block.settings.icon_alt | default: block.settings.title
+                }}
+              </div>
+            {%- endif -%}
+
+            {%- if block.settings.title != blank -%}
+              <h3 class="vb-feature-row__title">{{ block.settings.title | escape }}</h3>
+            {%- endif -%}
+
+            {%- if block.settings.body != blank -%}
+              <p class="vb-feature-row__body">{{ block.settings.body }}</p>
+            {%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ol>
+    {%- endif -%}
+
+    {%- if section.settings.cta_label != blank and section.settings.cta_link != blank -%}
+      <div class="vb-feature-row__cta-wrap">
+        <a class="vb-btn vb-btn--primary" href="{{ section.settings.cta_link }}">
+          {{ section.settings.cta_label | escape }}
+        </a>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "VB Feature row",
+  "tag": "section",
+  "class": "vb-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Header"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "How it works"
+    },
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Headline",
+      "default": "Built to survive, designed to deliver."
+    },
+    {
+      "type": "textarea",
+      "id": "sub",
+      "label": "Sub-headline",
+      "default": "Most probiotics never make it past your stomach. Ours do."
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Layout",
+      "options": [
+        { "value": "cards", "label": "Cards (boxed)" },
+        { "value": "open", "label": "Open (no boxes)" }
+      ],
+      "default": "cards"
+    },
+    {
+      "type": "select",
+      "id": "columns",
+      "label": "Columns on desktop",
+      "options": [
+        { "value": "2", "label": "2" },
+        { "value": "3", "label": "3" },
+        { "value": "4", "label": "4" }
+      ],
+      "default": "3"
+    },
+    {
+      "type": "select",
+      "id": "background",
+      "label": "Background",
+      "options": [
+        { "value": "white", "label": "White" },
+        { "value": "tint", "label": "Green tint" },
+        { "value": "dark", "label": "Dark green" }
+      ],
+      "default": "tint"
+    },
+    {
+      "type": "header",
+      "content": "Optional CTA"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Anchor"
+    },
+    {
+      "type": "text",
+      "id": "anchor_id",
+      "label": "Anchor ID (for in-page links)",
+      "info": "Example: how-it-works"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "limit": 6,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon (optional, square)"
+        },
+        {
+          "type": "text",
+          "id": "icon_alt",
+          "label": "Icon alt text"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Step title"
+        },
+        {
+          "type": "richtext",
+          "id": "body",
+          "label": "Body",
+          "default": "<p>Plain-language explanation of this step. Keep to two sentences.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "VB Feature row",
+      "category": "Velobiotics",
+      "blocks": [
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Acid-resistant capsule",
+            "body": "<p>Our patented capsule shields live cultures from stomach acid so more of them stay alive.</p>"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Released where it counts",
+            "body": "<p>Cultures are released in the small intestine — the place where they actually do the work.</p>"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "One capsule, daily",
+            "body": "<p>A simple daily protocol. No fridge, no fuss, no cycling on and off.</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

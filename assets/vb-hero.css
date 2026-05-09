@@ -1,0 +1,313 @@
+/* ============================================================
+   VB Hero — Velobiotics homepage / landing-page hero primitive
+   File: assets/vb-hero.css
+   ------------------------------------------------------------
+   Brand-tokenised. Uses --vb-* only. Do not import.
+   ============================================================ */
+
+.vb-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: clamp(420px, 60vh, 720px);
+  padding-block: var(--vb-space-12);
+  background: var(--vb-brand-soft);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.vb-hero[data-no-image="true"] {
+  background: linear-gradient(
+    180deg,
+    var(--vb-brand-soft) 0%,
+    var(--vb-bg) 100%
+  );
+}
+
+/* Background image layer */
+.vb-hero__media {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+
+.vb-hero__media picture,
+.vb-hero__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.vb-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(var(--vb-text-rgb, 18, 18, 18), var(--vb-hero-overlay-opacity, 0.35));
+  z-index: -1;
+}
+
+/* Content rail */
+.vb-hero__inner {
+  position: relative;
+  width: 100%;
+  max-width: var(--vb-container);
+  margin-inline: auto;
+  padding-inline: var(--vb-space-6);
+}
+
+.vb-hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--vb-space-6);
+}
+
+.vb-hero--width-narrow .vb-hero__content {
+  max-width: 38rem;
+}
+
+.vb-hero--width-wide .vb-hero__content {
+  max-width: 56rem;
+}
+
+.vb-hero--align-center .vb-hero__content {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.vb-hero--align-center .vb-hero__ctas,
+.vb-hero--align-center .vb-hero__trust {
+  justify-content: center;
+}
+
+/* Eyebrow */
+.vb-hero__eyebrow {
+  font-family: var(--vb-font-sans);
+  font-size: var(--vb-fs-14);
+  font-weight: var(--vb-fw-semibold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--vb-brand);
+  margin: 0;
+}
+
+/* Headline */
+.vb-hero__heading {
+  font-family: var(--vb-font-sans);
+  font-size: clamp(var(--vb-fs-30), 5vw, var(--vb-fs-60));
+  font-weight: var(--vb-fw-bold);
+  line-height: var(--vb-lh-tight);
+  letter-spacing: -0.01em;
+  color: var(--vb-text);
+  margin: 0;
+  text-wrap: balance;
+}
+
+/* Hero with image: light text on overlay */
+.vb-hero:not([data-no-image="true"]) .vb-hero__heading,
+.vb-hero:not([data-no-image="true"]) .vb-hero__eyebrow,
+.vb-hero:not([data-no-image="true"]) .vb-hero__sub {
+  color: var(--vb-bg);
+}
+
+.vb-hero:not([data-no-image="true"]) .vb-hero__eyebrow {
+  color: var(--vb-bg);
+  opacity: 0.92;
+}
+
+/* Subheading */
+.vb-hero__sub {
+  font-family: var(--vb-font-sans);
+  font-size: clamp(var(--vb-fs-16), 1.5vw, var(--vb-fs-20));
+  font-weight: var(--vb-fw-regular);
+  line-height: var(--vb-lh-normal);
+  color: var(--vb-text-muted);
+  margin: 0;
+  max-width: 42rem;
+  text-wrap: pretty;
+}
+
+.vb-hero:not([data-no-image="true"]) .vb-hero__sub {
+  color: var(--vb-bg);
+  opacity: 0.92;
+}
+
+/* CTA cluster */
+.vb-hero__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--vb-space-3);
+  align-items: center;
+  margin-top: var(--vb-space-2);
+}
+
+/* Buttons (scoped — these are vb-* primitives, future sections may reuse) */
+.vb-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--vb-space-2);
+  padding: 0.875rem 1.5rem;
+  font-family: var(--vb-font-sans);
+  font-size: var(--vb-fs-16);
+  font-weight: var(--vb-fw-semibold);
+  line-height: 1;
+  text-decoration: none;
+  border-radius: var(--vb-radius-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition:
+    background-color var(--vb-dur-base) var(--vb-ease),
+    border-color var(--vb-dur-base) var(--vb-ease),
+    color var(--vb-dur-base) var(--vb-ease),
+    transform var(--vb-dur-fast) var(--vb-ease);
+}
+
+.vb-btn:focus-visible {
+  outline: none;
+  box-shadow: var(--vb-focus-ring);
+}
+
+.vb-btn--primary {
+  background: var(--vb-brand);
+  color: var(--vb-brand-on);
+}
+
+.vb-btn--primary:hover {
+  background: var(--vb-brand-hover);
+  transform: translateY(-1px);
+}
+
+.vb-btn--ghost {
+  background: transparent;
+  color: var(--vb-bg);
+  border-color: rgba(var(--vb-bg-rgb, 255, 255, 255), 0.4);
+}
+
+.vb-hero[data-no-image="true"] .vb-btn--ghost {
+  color: var(--vb-text);
+  border-color: var(--vb-border);
+}
+
+.vb-btn--ghost:hover {
+  background: rgba(var(--vb-bg-rgb, 255, 255, 255), 0.12);
+  border-color: rgba(var(--vb-bg-rgb, 255, 255, 255), 0.6);
+}
+
+.vb-hero[data-no-image="true"] .vb-btn--ghost:hover {
+  background: var(--vb-brand-soft);
+  border-color: var(--vb-brand);
+  color: var(--vb-brand);
+}
+
+.vb-btn__arrow {
+  transition: transform var(--vb-dur-fast) var(--vb-ease);
+}
+
+.vb-btn:hover .vb-btn__arrow {
+  transform: translateX(2px);
+}
+
+/* Trust row */
+.vb-hero__trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--vb-space-6);
+  margin-top: var(--vb-space-6);
+  padding-top: var(--vb-space-6);
+  border-top: 1px solid rgba(var(--vb-bg-rgb, 255, 255, 255), 0.2);
+}
+
+.vb-hero[data-no-image="true"] .vb-hero__trust {
+  border-top-color: var(--vb-border);
+}
+
+.vb-hero__trust-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  min-width: 0;
+}
+
+.vb-hero__trust-item--text {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--vb-space-2);
+}
+
+.vb-hero__trust-value {
+  font-size: var(--vb-fs-24);
+  font-weight: var(--vb-fw-bold);
+  line-height: 1;
+  color: var(--vb-bg);
+}
+
+.vb-hero[data-no-image="true"] .vb-hero__trust-value {
+  color: var(--vb-text);
+}
+
+.vb-hero__trust-label {
+  font-size: var(--vb-fs-12);
+  font-weight: var(--vb-fw-regular);
+  line-height: var(--vb-lh-snug);
+  color: var(--vb-bg);
+  opacity: 0.85;
+}
+
+.vb-hero[data-no-image="true"] .vb-hero__trust-label {
+  color: var(--vb-text-muted);
+  opacity: 1;
+}
+
+.vb-hero__trust-icon {
+  font-size: var(--vb-fs-18);
+  color: var(--vb-bg);
+  line-height: 1;
+}
+
+.vb-hero[data-no-image="true"] .vb-hero__trust-icon {
+  color: var(--vb-brand);
+}
+
+.vb-hero__trust-text {
+  font-size: var(--vb-fs-14);
+  font-weight: var(--vb-fw-medium);
+  line-height: var(--vb-lh-snug);
+  color: var(--vb-bg);
+}
+
+.vb-hero[data-no-image="true"] .vb-hero__trust-text {
+  color: var(--vb-text);
+}
+
+/* Tablet up */
+@media (min-width: 750px) {
+  .vb-hero {
+    min-height: clamp(520px, 70vh, 820px);
+    padding-block: var(--vb-space-16);
+  }
+
+  .vb-hero__inner {
+    padding-inline: var(--vb-space-8);
+  }
+}
+
+/* Desktop up */
+@media (min-width: 990px) {
+  .vb-hero__inner {
+    padding-inline: var(--vb-space-12);
+  }
+}
+
+/* Reduced motion: kill the hover lift */
+@media (prefers-reduced-motion: reduce) {
+  .vb-btn,
+  .vb-btn__arrow {
+    transition: none;
+  }
+  .vb-btn--primary:hover {
+    transform: none;
+  }
+  .vb-btn:hover .vb-btn__arrow {
+    transform: none;
+  }
+}

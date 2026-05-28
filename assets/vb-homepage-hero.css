@@ -1,0 +1,324 @@
+/* ============================================================
+   VB Hero Section — Mobile-first, performance-optimised
+   ============================================================ */
+
+/* ---------- Ticker ---------- */
+.vb-hero__ticker {
+  background: var(--vb-green-600);
+  color: var(--vb-neutral-0);
+  overflow: hidden;
+  padding: 0.55rem 0;
+  font-size: var(--vb-fs-12);
+  font-weight: var(--vb-fw-medium);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.vb-hero__ticker-track {
+  display: inline-flex;
+  gap: 1.5rem;
+  animation: vb-ticker 28s linear infinite;
+  will-change: transform;
+}
+
+.vb-hero__ticker-dot {
+  opacity: 0.5;
+}
+
+@keyframes vb-ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vb-hero__ticker-track { animation: none; }
+}
+
+/* ---------- Hero shell ---------- */
+.vb-hero {
+  background: #f9faf7;
+  overflow: hidden;
+}
+
+.vb-hero__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 0;
+}
+
+@media screen and (min-width: 990px) {
+  .vb-hero__inner {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 4rem 2rem 0;
+    gap: 3rem;
+  }
+}
+
+/* ---------- Copy side ---------- */
+.vb-hero__eyebrow {
+  font-size: var(--vb-fs-13, 0.8125rem);
+  font-weight: var(--vb-fw-semi);
+  color: var(--vb-green-600);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.75rem;
+}
+
+.vb-hero__stars {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.vb-hero__stars-icons {
+  color: #f59e0b;
+  font-size: var(--vb-fs-16);
+  line-height: 1;
+}
+
+.vb-hero__stars-label {
+  font-size: var(--vb-fs-13, 0.8125rem);
+  color: var(--vb-neutral-600);
+  font-weight: var(--vb-fw-medium);
+}
+
+.vb-hero__h1 {
+  font-family: var(--vb-font-sans);
+  font-size: clamp(2rem, 6vw, 3.25rem);
+  font-weight: var(--vb-fw-regular);
+  line-height: var(--vb-lh-tight);
+  color: var(--vb-green-600);
+  margin: 0 0 1.25rem;
+}
+
+.vb-hero__h1 strong {
+  font-weight: var(--vb-fw-bold);
+  color: var(--vb-neutral-900);
+}
+
+.vb-hero__body {
+  font-size: var(--vb-fs-16);
+  line-height: var(--vb-lh-relaxed);
+  color: var(--vb-neutral-700);
+  margin: 0 0 1.75rem;
+  max-width: 50ch;
+}
+
+/* ---------- CTAs ---------- */
+.vb-hero__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+/* Reusable button system */
+.vb-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  font-family: var(--vb-font-sans);
+  font-weight: var(--vb-fw-semi);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.12s ease, box-shadow 0.18s ease;
+  border: 2px solid transparent;
+  white-space: nowrap;
+}
+
+.vb-btn:active { transform: translateY(1px); }
+
+.vb-btn--lg {
+  padding: 0.85rem 1.75rem;
+  font-size: var(--vb-fs-16);
+}
+
+.vb-btn--md {
+  padding: 0.65rem 1.35rem;
+  font-size: var(--vb-fs-14);
+}
+
+.vb-btn--sm {
+  padding: 0.45rem 1rem;
+  font-size: var(--vb-fs-12);
+}
+
+.vb-btn--primary {
+  background: var(--vb-green-600);
+  color: #fff;
+  border-color: var(--vb-green-600);
+  box-shadow: 0 4px 16px rgba(77,140,68,0.25);
+}
+
+.vb-btn--primary:hover {
+  background: var(--vb-green-700);
+  border-color: var(--vb-green-700);
+  box-shadow: 0 6px 20px rgba(77,140,68,0.35);
+}
+
+.vb-btn--ghost {
+  background: transparent;
+  color: var(--vb-green-600);
+  border-color: var(--vb-green-600);
+}
+
+.vb-btn--ghost:hover {
+  background: var(--vb-green-50);
+}
+
+.vb-btn--white {
+  background: #fff;
+  color: var(--vb-green-700);
+  border-color: #fff;
+}
+
+.vb-btn--white:hover {
+  background: var(--vb-green-50);
+}
+
+/* ---------- Badge row ---------- */
+.vb-hero__badge-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+@media screen and (min-width: 600px) {
+  .vb-hero__badge-row {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.vb-hero__badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  text-align: center;
+  padding: 0.75rem 0.5rem;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid var(--vb-green-100);
+  box-shadow: 0 2px 8px rgba(77,140,68,0.08);
+  font-size: 0.7rem;
+  font-weight: var(--vb-fw-semi);
+  color: var(--vb-neutral-700);
+  line-height: 1.3;
+}
+
+.vb-hero__badge svg {
+  color: var(--vb-green-600);
+  flex-shrink: 0;
+}
+
+/* ---------- Media side ---------- */
+.vb-hero__media {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.vb-hero__img {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  object-fit: contain;
+  object-position: bottom;
+}
+
+.vb-hero__img-placeholder {
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 4/5;
+  background: var(--vb-green-100);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Floating review chip */
+.vb-hero__review-chip {
+  position: absolute;
+  bottom: 2.5rem;
+  left: -0.5rem;
+  background: #fff;
+  border-radius: 14px;
+  padding: 0.8rem 1rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  max-width: 200px;
+  animation: vb-float 4s ease-in-out infinite;
+}
+
+@keyframes vb-float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-6px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vb-hero__review-chip { animation: none; }
+}
+
+.vb-hero__review-chip-stars {
+  color: #f59e0b;
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+}
+
+.vb-hero__review-chip-quote {
+  font-size: 0.7rem;
+  color: var(--vb-neutral-800);
+  font-weight: var(--vb-fw-medium);
+  margin: 0 0 0.2rem;
+  line-height: 1.4;
+}
+
+.vb-hero__review-chip-author {
+  font-size: 0.65rem;
+  color: var(--vb-neutral-500);
+  margin: 0;
+}
+
+/* Floating stat pill */
+.vb-hero__stat-pill {
+  position: absolute;
+  top: 1.5rem;
+  right: -0.5rem;
+  background: var(--vb-green-600);
+  color: #fff;
+  border-radius: 100px;
+  padding: 0.6rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 6px 24px rgba(77,140,68,0.3);
+  animation: vb-float 5s ease-in-out infinite 1s;
+}
+
+.vb-hero__stat-num {
+  font-size: var(--vb-fs-18);
+  font-weight: var(--vb-fw-bold);
+  line-height: 1;
+}
+
+.vb-hero__stat-label {
+  font-size: 0.65rem;
+  font-weight: var(--vb-fw-medium);
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 749px) {
+  .vb-hero__review-chip,
+  .vb-hero__stat-pill {
+    display: none;
+  }
+}

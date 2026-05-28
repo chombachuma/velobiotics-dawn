@@ -1,0 +1,95 @@
+/* VB Why Choose */
+.vb-why {
+  padding: 4rem 1.25rem;
+}
+
+.vb-why__header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 3rem;
+}
+
+.vb-section-eyebrow {
+  font-size: var(--vb-fs-12);
+  font-weight: var(--vb-fw-semi);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--vb-green-600);
+  margin: 0 0 0.75rem;
+}
+
+.vb-section-h2 {
+  font-family: var(--vb-font-sans);
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  font-weight: var(--vb-fw-bold);
+  color: var(--vb-neutral-900);
+  line-height: var(--vb-lh-snug);
+  margin: 0 0 1rem;
+}
+
+.vb-section-lead {
+  font-size: var(--vb-fs-16);
+  color: var(--vb-neutral-600);
+  line-height: var(--vb-lh-relaxed);
+  margin: 0;
+}
+
+.vb-why__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media screen and (min-width: 600px) {
+  .vb-why__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .vb-why__grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+.vb-why__card {
+  background: #fff;
+  border: 1px solid var(--vb-green-100);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px rgba(77,140,68,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vb-why__card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(77,140,68,0.12);
+}
+
+.vb-why__card-icon {
+  width: 56px;
+  height: 56px;
+  background: var(--vb-green-50);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--vb-green-600);
+  margin-bottom: 1rem;
+}
+
+.vb-why__card-title {
+  font-size: var(--vb-fs-16);
+  font-weight: var(--vb-fw-semi);
+  color: var(--vb-neutral-900);
+  margin: 0 0 0.5rem;
+  line-height: 1.3;
+}
+
+.vb-why__card-body {
+  font-size: var(--vb-fs-14);
+  color: var(--vb-neutral-600);
+  line-height: var(--vb-lh-relaxed);
+  margin: 0;
+}

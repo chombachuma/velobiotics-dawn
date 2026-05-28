@@ -1,0 +1,228 @@
+/* VB Footer */
+.vb-footer {
+  background: #0a1a08;
+  color: rgba(255,255,255,0.8);
+  font-size: var(--vb-fs-14);
+}
+
+/* Email band */
+.vb-footer__email-band {
+  background: var(--vb-green-600);
+  padding: 2.5rem 1.25rem;
+}
+
+.vb-footer__email-inner {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.vb-footer__email-heading {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: var(--vb-fw-bold);
+  color: #fff;
+  margin: 0 0 0.3rem;
+}
+
+.vb-footer__email-sub {
+  font-size: var(--vb-fs-14);
+  color: rgba(255,255,255,0.8);
+  margin: 0;
+}
+
+.vb-footer__email-form { flex-shrink: 0; min-width: min(360px, 100%); }
+
+.vb-footer__email-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.vb-footer__email-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 100px;
+  border: none;
+  font-size: var(--vb-fs-14);
+  font-family: var(--vb-font-sans);
+  outline: none;
+  min-width: 0;
+}
+
+.vb-footer__email-input:focus {
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.3);
+}
+
+.vb-footer__email-note {
+  font-size: var(--vb-fs-12);
+  color: rgba(255,255,255,0.65);
+  margin: 0.5rem 0 0;
+  text-align: center;
+}
+
+/* Main columns */
+.vb-footer__main {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+@media screen and (min-width: 600px) {
+  .vb-footer__main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .vb-footer__main {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+/* Brand col */
+.vb-footer__logo {
+  height: 40px;
+  width: auto;
+  display: block;
+  margin-bottom: 1rem;
+  /* Invert for dark bg if logo is dark */
+  filter: brightness(0) invert(1);
+}
+
+.vb-footer__logo-text {
+  font-size: 1.4rem;
+  font-weight: var(--vb-fw-bold);
+  color: #fff;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.vb-footer__brand-desc {
+  color: rgba(255,255,255,0.65);
+  line-height: var(--vb-lh-relaxed);
+  margin: 0 0 1.5rem;
+  max-width: 30ch;
+}
+
+.vb-footer__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.vb-footer__badge {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 100px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.7rem;
+  font-weight: var(--vb-fw-medium);
+  color: rgba(255,255,255,0.85);
+  white-space: nowrap;
+}
+
+.vb-footer__badge svg { color: var(--vb-green-400); flex-shrink: 0; }
+
+.vb-footer__socials {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.vb-footer__social-link {
+  width: 38px;
+  height: 38px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.vb-footer__social-link:hover {
+  background: var(--vb-green-600);
+  color: #fff;
+  border-color: var(--vb-green-600);
+}
+
+/* Nav cols */
+.vb-footer__col-heading {
+  font-size: 0.7rem;
+  font-weight: var(--vb-fw-bold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--vb-green-400);
+  margin: 0 0 1rem;
+}
+
+.vb-footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.vb-footer__links a {
+  color: rgba(255,255,255,0.65);
+  text-decoration: none;
+  font-size: var(--vb-fs-14);
+  transition: color 0.15s ease;
+}
+
+.vb-footer__links a:hover { color: #fff; }
+
+/* Bottom bar */
+.vb-footer__bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 1.25rem;
+}
+
+.vb-footer__bottom-inner {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.vb-footer__copy {
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.4);
+  margin: 0;
+  max-width: 60ch;
+  line-height: 1.6;
+}
+
+.vb-footer__payment-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.vb-footer__payment-badge {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.65rem;
+  font-weight: var(--vb-fw-semi);
+  color: rgba(255,255,255,0.55);
+}

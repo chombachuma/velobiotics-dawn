@@ -9,113 +9,102 @@
  */
 {
   "sections": {
-    "vb-hero": {
+    "vb_hero": {
       "type": "vb-homepage-hero",
-      "settings": {
-        "eyebrow": "Patented Probiotics That Actually Reach Your Gut",
-        "headline_light": "Most Probiotics Die in Your Stomach.",
-        "headline_bold": "Ours Don't!",
-        "body": "Velobiotics protects every live culture through stomach acid delivering 1000× more probiotics to your gut, where they're needed for real results, you can feel.",
-        "cta_primary_label": "Shop Products",
-        "cta_primary_link": "/collections/all",
-        "cta_secondary_label": "Take The Quiz",
-        "cta_secondary_link": "/pages/quiz"
-      }
+      "settings": {}
     },
-    "vb-trust-bar": {
+    "vb_trust_bar": {
       "type": "vb-trust-bar",
-      "settings": {
-        "color_scheme": "scheme-1"
-      }
+      "settings": {}
     },
-    "vb-why-choose": {
+    "vb_scrolling_logos": {
+      "type": "vb-scrolling-logos",
+      "settings": {}
+    },
+    "vb_why_choose": {
       "type": "vb-why-choose",
-      "blocks": {
-        "reason-1": {
-          "type": "reason",
-          "settings": {
-            "icon": "shield",
-            "title": "Patented Delivery System",
-            "body": "Our micro-shield protects probiotics from heat and stomach acid — so billions more reach your gut alive."
-          }
-        },
-        "reason-2": {
-          "type": "reason",
-          "settings": {
-            "icon": "flask",
-            "title": "Clinically Chosen Strains",
-            "body": "Every probiotic strain we use is backed by research to support gut balance, women's health, and immunity."
-          }
-        },
-        "reason-3": {
-          "type": "reason",
-          "settings": {
-            "icon": "doctor",
-            "title": "Doctor Formulated & Recommended",
-            "body": "Created and endorsed by medical professionals for safe, daily use by the whole family."
-          }
-        },
-        "reason-4": {
-          "type": "reason",
-          "settings": {
-            "icon": "leaf",
-            "title": "Made for Real Life",
-            "body": "Shelf-stable and trusted worldwide — no fridge, no fuss, just real results."
-          }
-        }
-      },
-      "block_order": ["reason-1", "reason-2", "reason-3", "reason-4"],
       "settings": {}
     },
-    "vb-brand-grid": {
+    "vb_feature_icons": {
+      "type": "vb-feature-icons",
+      "settings": {}
+    },
+    "vb_brand_grid": {
       "type": "vb-brand-grid",
-      "blocks": {
-        "brand-1": { "type": "brand", "settings": { "brand_name": "Femina", "tagline": "Femina™ – For women's intimate and urinary health.", "description": "Freshness, confidence, and pH balance.", "accent_color": "purple", "url": "/collections/femina" } },
-        "brand-2": { "type": "brand", "settings": { "brand_name": "GutSlim", "tagline": "GutSlim™ – For gut balance and weight support.", "description": "Combines probiotics with active ingredients for a lighter, healthier you.", "accent_color": "teal", "url": "/collections/gutslim" } },
-        "brand-3": { "type": "brand", "settings": { "brand_name": "Velo16", "tagline": "Velo16™ – Daily digestive and immune support.", "description": "Our flagship 16-strain probiotic for everyday wellness.", "accent_color": "green", "url": "/collections/velo16" } },
-        "brand-4": { "type": "brand", "settings": { "brand_name": "PregBiotics", "tagline": "PregBiotics™ – Prenatal & maternal health.", "description": "Supports digestion, immunity, and microbiome balance during pregnancy.", "accent_color": "pink", "url": "/collections/pregbiotics" } },
-        "brand-5": { "type": "brand", "settings": { "brand_name": "Her-Biotics", "tagline": "Her-Biotics™ – Formulated for her.", "description": "Probiotic-based hormonal and skin support.", "accent_color": "rose", "url": "/collections/her-biotics" } },
-        "brand-6": { "type": "brand", "settings": { "brand_name": "His-Biotics", "tagline": "His-Biotics™ – Formulated for him.", "description": "Promotes vitality, gut health, and immune balance.", "accent_color": "navy", "url": "/collections/his-biotics" } },
-        "brand-7": { "type": "brand", "settings": { "brand_name": "BioKid", "tagline": "BioKid™ – Kids' gut & immune health.", "description": "Tasty chewables designed for happy, healthy tummies.", "accent_color": "orange", "url": "/collections/biokid" } },
-        "brand-8": { "type": "brand", "settings": { "brand_name": "BioGain", "tagline": "BioGain™ – Growth & recovery support.", "description": "Probiotic nutrition to help growing bodies thrive.", "accent_color": "blue", "url": "/collections/biogain" } }
-      },
-      "block_order": ["brand-1","brand-2","brand-3","brand-4","brand-5","brand-6","brand-7","brand-8"],
       "settings": {}
     },
-    "vb-science-strip": {
-      "type": "vb-science-strip",
-      "settings": {
-        "science_link": "/pages/our-science",
-        "shop_link": "/collections/all"
-      }
-    },
-    "vb-reviews": {
-      "type": "vb-reviews",
-      "blocks": {
-        "review-1": { "type": "review", "settings": { "rating": 5, "verified": true, "headline": "Helped me feel a lot more comfortable", "body": "A lot less bloating and feeling fresh every single day. I've tried other brands and nothing compares to Velobiotics.", "author": "Ashley Barnes", "product": "Femina Probiotic" } },
-        "review-2": { "type": "review", "settings": { "rating": 5, "verified": true, "headline": "Lost 42kgs — the last kg wouldn't budge", "body": "Velo16 helped me lose the last kg. My stomach feels so much lighter and I'm not bloated anymore.", "author": "Nicky vd Westhuizen", "product": "Velo16" } },
-        "review-3": { "type": "review", "settings": { "rating": 5, "verified": true, "headline": "Cookie Fresh is a game changer", "body": "Refreshing confidence that Cookie Fresh gives me helps me feel fresh and stay confident about my feminine hygiene all day long.", "author": "Thandi K.", "product": "Cookie Fresh" } },
-        "review-4": { "type": "review", "settings": { "rating": 5, "verified": true, "headline": "No more itching, no more odor", "body": "You'll never have itching anymore, you'll never have odor anymore. No more bloating — feeling fresh every day!", "author": "Nomsa P.", "product": "Femina Combo" } },
-        "review-5": { "type": "review", "settings": { "rating": 5, "verified": true, "headline": "BioKid is amazing for my kids", "body": "My two children take BioKid daily. Their immunity is so much better since they started — fewer sick days!", "author": "Linda T.", "product": "BioKid Chewables" } },
-        "review-6": { "type": "review", "settings": { "rating": 5, "verified": true, "headline": "GutSlim actually works", "body": "I've been taking GutSlim for 6 weeks. I've lost 4kg and my gut feels incredible. The bloating is completely gone.", "author": "Michelle R.", "product": "GutSlim" } }
-      },
-      "block_order": ["review-1","review-2","review-3","review-4","review-5","review-6"],
+    "vb_featured_collection": {
+      "type": "vb-featured-collection",
       "settings": {}
     },
-    "vb-quiz-cta": {
+    "vb_quiz_cta": {
       "type": "vb-quiz-cta",
-      "settings": {
-        "quiz_link": "/pages/quiz"
-      }
+      "settings": {}
+    },
+    "vb_armoured": {
+      "type": "vb-armoured",
+      "settings": {}
+    },
+    "vb_science_cards": {
+      "type": "vb-science-cards",
+      "settings": {}
+    },
+    "vb_science_strip": {
+      "type": "vb-science-strip",
+      "settings": {}
+    },
+    "vb_video_reviews": {
+      "type": "vb-video-reviews",
+      "settings": {}
+    },
+    "vb_google_reviews": {
+      "type": "vb-google-reviews",
+      "settings": {}
+    },
+    "vb_reviews": {
+      "type": "vb-reviews",
+      "settings": {}
+    },
+    "vb_comparison": {
+      "type": "vb-comparison",
+      "settings": {}
+    },
+    "vb_faq": {
+      "type": "vb-faq",
+      "settings": {}
+    },
+    "vb_blog": {
+      "type": "vb-blog",
+      "settings": {}
+    },
+    "vb_newsletter": {
+      "type": "vb-newsletter",
+      "settings": {}
+    },
+    "vb_cta_final": {
+      "type": "vb-cta-final",
+      "settings": {}
     }
   },
   "order": [
-    "vb-hero",
-    "vb-trust-bar",
-    "vb-why-choose",
-    "vb-brand-grid",
-    "vb-science-strip",
-    "vb-reviews",
-    "vb-quiz-cta"
+    "vb_hero",
+    "vb_trust_bar",
+    "vb_scrolling_logos",
+    "vb_why_choose",
+    "vb_feature_icons",
+    "vb_brand_grid",
+    "vb_featured_collection",
+    "vb_quiz_cta",
+    "vb_armoured",
+    "vb_science_cards",
+    "vb_science_strip",
+    "vb_video_reviews",
+    "vb_google_reviews",
+    "vb_reviews",
+    "vb_comparison",
+    "vb_faq",
+    "vb_blog",
+    "vb_newsletter",
+    "vb_cta_final"
   ]
 }

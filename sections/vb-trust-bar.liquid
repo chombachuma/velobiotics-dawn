@@ -1,0 +1,89 @@
+{{ 'vb-trust-bar.css' | asset_url | stylesheet_tag }}
+
+<section class="vb-trust-bar color-{{ section.settings.color_scheme }}">
+  <div class="vb-trust-bar__inner">
+    <div class="vb-trust-bar__item">
+      <div class="vb-trust-bar__icon-wrap">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z" fill="currentColor" opacity=".15"/>
+          <path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div>
+        <strong class="vb-trust-bar__label">Patented Technology</strong>
+        <span class="vb-trust-bar__sub">MEP micro-shield delivery system</span>
+      </div>
+    </div>
+
+    <div class="vb-trust-bar__divider" aria-hidden="true"></div>
+
+    <div class="vb-trust-bar__item">
+      <div class="vb-trust-bar__icon-wrap">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M4 20c0-4 3.58-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div>
+        <strong class="vb-trust-bar__label">Doctor Formulated</strong>
+        <span class="vb-trust-bar__sub">Developed & endorsed by medical professionals</span>
+      </div>
+    </div>
+
+    <div class="vb-trust-bar__divider" aria-hidden="true"></div>
+
+    <div class="vb-trust-bar__item">
+      <div class="vb-trust-bar__icon-wrap">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" stroke="currentColor" stroke-width="1.5"/>
+          <rect x="9" y="3" width="6" height="4" rx="1" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div>
+        <strong class="vb-trust-bar__label">Lab-Tested Strains</strong>
+        <span class="vb-trust-bar__sub">Clinically proven, SAHPRA-certified manufacturing</span>
+      </div>
+    </div>
+
+    <div class="vb-trust-bar__divider" aria-hidden="true"></div>
+
+    <div class="vb-trust-bar__item">
+      <div class="vb-trust-bar__icon-wrap">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 4h16v2a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M4 8v10a2 2 0 002 2h12a2 2 0 002-2V8" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M10 12h4M12 10v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div>
+        <strong class="vb-trust-bar__label">100% Money-Back</strong>
+        <span class="vb-trust-bar__sub">30-day guarantee, no questions asked</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "VB Trust Bar",
+  "tag": "div",
+  "class": "vb-section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "options": [
+        { "value": "scheme-1", "label": "Background 1" },
+        { "value": "scheme-2", "label": "Background 2" }
+      ],
+      "default": "scheme-1"
+    }
+  ],
+  "presets": [
+    { "name": "VB Trust Bar" }
+  ]
+}
+{% endschema %}

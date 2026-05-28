@@ -1,0 +1,292 @@
+{{ 'vb-header.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'vb-header.js' | asset_url }}" defer="defer"></script>
+
+{%- comment -%} ===== ANNOUNCEMENT BAR ===== {%- endcomment -%}
+{%- if section.settings.show_announcement -%}
+<div class="vb-announcement" role="banner">
+  <div class="vb-announcement__track">
+    <span>🚚 Free Shipping Over R400</span>
+    <span class="vb-announcement__dot">•</span>
+    <span>⚡ {{ section.settings.announcement_text }}</span>
+    <span class="vb-announcement__dot">•</span>
+    <span>🧪 Patented MEP Delivery Technology</span>
+    <span class="vb-announcement__dot">•</span>
+    <span>🔄 100% Money-Back Guarantee</span>
+    <span class="vb-announcement__dot">•</span>
+    <span>🚚 Free Shipping Over R400</span>
+    <span class="vb-announcement__dot">•</span>
+    <span>⚡ {{ section.settings.announcement_text }}</span>
+    <span class="vb-announcement__dot">•</span>
+    <span>🧪 Patented MEP Delivery Technology</span>
+    <span class="vb-announcement__dot">•</span>
+    <span>🔄 100% Money-Back Guarantee</span>
+    <span class="vb-announcement__dot">•</span>
+  </div>
+</div>
+{%- endif -%}
+
+{%- comment -%} ===== MAIN HEADER ===== {%- endcomment -%}
+<header class="vb-header" id="vb-header" role="banner">
+  <div class="vb-header__inner">
+
+    {%- comment -%} Logo {%- endcomment -%}
+    <a href="{{ routes.root_url }}" class="vb-header__logo" aria-label="{{ shop.name }} home">
+      {%- if section.settings.logo != blank -%}
+        {{
+          section.settings.logo
+          | image_url: width: 240
+          | image_tag:
+            loading: 'eager',
+            fetchpriority: 'high',
+            width: 160,
+            height: 50,
+            alt: shop.name,
+            class: 'vb-header__logo-img'
+        }}
+      {%- else -%}
+        <span class="vb-header__logo-text">{{ shop.name }}</span>
+      {%- endif -%}
+    </a>
+
+    {%- comment -%} Desktop Nav {%- endcomment -%}
+    <nav class="vb-nav" aria-label="Main navigation" id="vb-nav">
+      <ul class="vb-nav__list" role="list">
+
+        {%- comment -%} Shop by Need (mega) {%- endcomment -%}
+        <li class="vb-nav__item vb-nav__item--mega">
+          <button class="vb-nav__link vb-nav__link--trigger" aria-expanded="false" aria-controls="mega-need">
+            Shop By Need
+            <svg class="vb-nav__chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="vb-mega" id="mega-need" role="region" aria-label="Shop by need menu" hidden>
+            <div class="vb-mega__inner">
+              <div class="vb-mega__col">
+                <p class="vb-mega__col-heading">By Condition</p>
+                <ul class="vb-mega__links" role="list">
+                  <li><a href="/collections/womens-health" class="vb-mega__link">🌸 Women's Intimate Health</a></li>
+                  <li><a href="/collections/gut-health" class="vb-mega__link">🫧 Gut Balance & Bloating</a></li>
+                  <li><a href="/collections/weight-management" class="vb-mega__link">⚖️ Weight Management</a></li>
+                  <li><a href="/collections/immunity" class="vb-mega__link">🛡️ Immunity & Wellness</a></li>
+                  <li><a href="/collections/kids-health" class="vb-mega__link">🧒 Kids' Gut Health</a></li>
+                  <li><a href="/collections/prenatal" class="vb-mega__link">🤱 Pregnancy & Prenatal</a></li>
+                  <li><a href="/collections/skin-hair" class="vb-mega__link">✨ Skin & Hair Beauty</a></li>
+                  <li><a href="/collections/performance" class="vb-mega__link">💪 Performance & Muscle</a></li>
+                </ul>
+              </div>
+              <div class="vb-mega__col">
+                <p class="vb-mega__col-heading">By Person</p>
+                <ul class="vb-mega__links" role="list">
+                  <li><a href="/collections/for-women" class="vb-mega__link">👩 For Women</a></li>
+                  <li><a href="/collections/for-men" class="vb-mega__link">👨 For Men</a></li>
+                  <li><a href="/collections/for-kids" class="vb-mega__link">👶 For Kids</a></li>
+                  <li><a href="/collections/for-families" class="vb-mega__link">👨‍👩‍👧 For the Whole Family</a></li>
+                  <li><a href="/collections/prenatal" class="vb-mega__link">🤰 For Mums-to-Be</a></li>
+                </ul>
+              </div>
+              <div class="vb-mega__col vb-mega__col--feature">
+                <div class="vb-mega__feature-card">
+                  <div class="vb-mega__feature-badge">🔬 Patented Technology</div>
+                  <p class="vb-mega__feature-headline">1000× More Probiotics<br>Reach Your Gut</p>
+                  <p class="vb-mega__feature-sub">Not sure what you need?</p>
+                  <a href="/pages/quiz" class="vb-btn vb-btn--primary vb-btn--sm">Take the Free Quiz →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        {%- comment -%} Brands (mega) {%- endcomment -%}
+        <li class="vb-nav__item vb-nav__item--mega">
+          <button class="vb-nav__link vb-nav__link--trigger" aria-expanded="false" aria-controls="mega-brands">
+            Brands
+            <svg class="vb-nav__chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="vb-mega" id="mega-brands" role="region" aria-label="Brands menu" hidden>
+            <div class="vb-mega__inner vb-mega__inner--brands">
+              <a href="/collections/femina" class="vb-mega__brand-card vb-mega__brand-card--purple">
+                <span class="vb-mega__brand-icon">🌸</span>
+                <div>
+                  <strong>Femina™</strong>
+                  <span>Women's intimate &amp; urinary health</span>
+                </div>
+              </a>
+              <a href="/collections/gutslim" class="vb-mega__brand-card vb-mega__brand-card--teal">
+                <span class="vb-mega__brand-icon">⚖️</span>
+                <div>
+                  <strong>GutSlim™</strong>
+                  <span>Gut balance &amp; weight support</span>
+                </div>
+              </a>
+              <a href="/collections/velo16" class="vb-mega__brand-card vb-mega__brand-card--green">
+                <span class="vb-mega__brand-icon">🫧</span>
+                <div>
+                  <strong>Velo16™</strong>
+                  <span>Daily digestive &amp; immune support</span>
+                </div>
+              </a>
+              <a href="/collections/pregbiotics" class="vb-mega__brand-card vb-mega__brand-card--pink">
+                <span class="vb-mega__brand-icon">🤱</span>
+                <div>
+                  <strong>PregBiotics™</strong>
+                  <span>Prenatal &amp; maternal health</span>
+                </div>
+              </a>
+              <a href="/collections/her-biotics" class="vb-mega__brand-card vb-mega__brand-card--rose">
+                <span class="vb-mega__brand-icon">👩</span>
+                <div>
+                  <strong>Her-Biotics™</strong>
+                  <span>Female microbiome &amp; wellness</span>
+                </div>
+              </a>
+              <a href="/collections/his-biotics" class="vb-mega__brand-card vb-mega__brand-card--navy">
+                <span class="vb-mega__brand-icon">👨</span>
+                <div>
+                  <strong>His-Biotics™</strong>
+                  <span>Male gut health &amp; vitality</span>
+                </div>
+              </a>
+              <a href="/collections/biokid" class="vb-mega__brand-card vb-mega__brand-card--orange">
+                <span class="vb-mega__brand-icon">🧒</span>
+                <div>
+                  <strong>BioKid™</strong>
+                  <span>Kids' gut &amp; immune health</span>
+                </div>
+              </a>
+              <a href="/collections/biogain" class="vb-mega__brand-card vb-mega__brand-card--blue">
+                <span class="vb-mega__brand-icon">💪</span>
+                <div>
+                  <strong>BioGain™</strong>
+                  <span>Performance &amp; recovery</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li class="vb-nav__item"><a href="/collections/bundles" class="vb-nav__link">Bundles</a></li>
+        <li class="vb-nav__item"><a href="/collections/all" class="vb-nav__link">All Products</a></li>
+        <li class="vb-nav__item">
+          <button class="vb-nav__link vb-nav__link--trigger" aria-expanded="false" aria-controls="mega-about">
+            Velobiotics
+            <svg class="vb-nav__chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="vb-mega vb-mega--sm" id="mega-about" role="region" aria-label="About menu" hidden>
+            <div class="vb-mega__inner">
+              <div class="vb-mega__col">
+                <ul class="vb-mega__links" role="list">
+                  <li><a href="/pages/our-science" class="vb-mega__link">🔬 Our Science & Technology</a></li>
+                  <li><a href="/pages/about" class="vb-mega__link">🌿 About Velobiotics</a></li>
+                  <li><a href="/blogs/news" class="vb-mega__link">📰 Health Blog</a></li>
+                  <li><a href="/pages/contact" class="vb-mega__link">📬 Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="vb-nav__item"><a href="/pages/quiz" class="vb-nav__link">Take the Quiz</a></li>
+      </ul>
+    </nav>
+
+    {%- comment -%} Header actions {%- endcomment -%}
+    <div class="vb-header__actions">
+      <button class="vb-header__icon-btn" aria-label="Search" id="vb-search-btn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="1.75"/><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+      </button>
+      <a href="{{ routes.account_url }}" class="vb-header__icon-btn" aria-label="Account">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.75"/><path d="M4 20c0-4 3.58-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+      </a>
+      <a href="{{ routes.cart_url }}" class="vb-header__icon-btn vb-header__cart" aria-label="Cart ({{ cart.item_count }} items)">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" stroke="currentColor" stroke-width="1.75"/><line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="1.75"/><path d="M16 10a4 4 0 01-8 0" stroke="currentColor" stroke-width="1.75"/></svg>
+        {%- if cart.item_count > 0 -%}
+          <span class="vb-header__cart-count" aria-hidden="true">{{ cart.item_count }}</span>
+        {%- endif -%}
+      </a>
+      {%- comment -%} Mobile hamburger {%- endcomment -%}
+      <button class="vb-header__icon-btn vb-header__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="vb-mobile-drawer" id="vb-menu-btn">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+{%- comment -%} ===== MOBILE DRAWER ===== {%- endcomment -%}
+<div class="vb-mobile-drawer" id="vb-mobile-drawer" aria-label="Mobile navigation" role="dialog" aria-modal="true" hidden>
+  <div class="vb-mobile-drawer__overlay" id="vb-drawer-overlay"></div>
+  <div class="vb-mobile-drawer__panel">
+    <div class="vb-mobile-drawer__head">
+      <a href="{{ routes.root_url }}" aria-label="{{ shop.name }}">
+        {%- if section.settings.logo != blank -%}
+          {{ section.settings.logo | image_url: width: 160 | image_tag: loading: 'lazy', width: 120, height: 38, alt: shop.name, class: 'vb-header__logo-img' }}
+        {%- else -%}
+          <span class="vb-header__logo-text">{{ shop.name }}</span>
+        {%- endif -%}
+      </a>
+      <button class="vb-header__icon-btn" aria-label="Close menu" id="vb-menu-close">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+
+    <nav class="vb-mobile-nav" aria-label="Mobile navigation">
+      <ul class="vb-mobile-nav__list" role="list">
+        <li class="vb-mobile-nav__item">
+          <button class="vb-mobile-nav__link vb-mobile-nav__trigger" aria-expanded="false">
+            Shop By Need
+            <svg class="vb-nav__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <ul class="vb-mobile-nav__sub" role="list" hidden>
+            <li><a href="/collections/womens-health">Women's Intimate Health</a></li>
+            <li><a href="/collections/gut-health">Gut Balance & Bloating</a></li>
+            <li><a href="/collections/weight-management">Weight Management</a></li>
+            <li><a href="/collections/immunity">Immunity & Wellness</a></li>
+            <li><a href="/collections/kids-health">Kids' Gut Health</a></li>
+            <li><a href="/collections/prenatal">Pregnancy & Prenatal</a></li>
+            <li><a href="/collections/skin-hair">Skin & Hair Beauty</a></li>
+            <li><a href="/collections/performance">Performance & Muscle</a></li>
+          </ul>
+        </li>
+        <li class="vb-mobile-nav__item">
+          <button class="vb-mobile-nav__link vb-mobile-nav__trigger" aria-expanded="false">
+            Brands
+            <svg class="vb-nav__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <ul class="vb-mobile-nav__sub" role="list" hidden>
+            <li><a href="/collections/femina">🌸 Femina™</a></li>
+            <li><a href="/collections/gutslim">⚖️ GutSlim™</a></li>
+            <li><a href="/collections/velo16">🫧 Velo16™</a></li>
+            <li><a href="/collections/pregbiotics">🤱 PregBiotics™</a></li>
+            <li><a href="/collections/her-biotics">👩 Her-Biotics™</a></li>
+            <li><a href="/collections/his-biotics">👨 His-Biotics™</a></li>
+            <li><a href="/collections/biokid">🧒 BioKid™</a></li>
+            <li><a href="/collections/biogain">💪 BioGain™</a></li>
+          </ul>
+        </li>
+        <li class="vb-mobile-nav__item"><a href="/collections/bundles" class="vb-mobile-nav__link">Bundles</a></li>
+        <li class="vb-mobile-nav__item"><a href="/collections/all" class="vb-mobile-nav__link">All Products</a></li>
+        <li class="vb-mobile-nav__item"><a href="/pages/quiz" class="vb-mobile-nav__link">🎯 Take the Quiz</a></li>
+        <li class="vb-mobile-nav__item"><a href="/pages/our-science" class="vb-mobile-nav__link">🔬 Our Science</a></li>
+        <li class="vb-mobile-nav__item"><a href="/blogs/news" class="vb-mobile-nav__link">📰 Blog</a></li>
+        <li class="vb-mobile-nav__item"><a href="/pages/contact" class="vb-mobile-nav__link">📬 Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="vb-mobile-drawer__footer">
+      <a href="{{ routes.account_url }}" class="vb-btn vb-btn--ghost vb-btn--md" style="width:100%;justify-content:center;">My Account</a>
+      <a href="/collections/all" class="vb-btn vb-btn--primary vb-btn--md" style="width:100%;justify-content:center;">Shop All Products</a>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "VB Header",
+  "tag": "div",
+  "class": "vb-section vb-header-section",
+  "settings": [
+    { "type": "image_picker", "id": "logo",              "label": "Logo" },
+    { "type": "checkbox",     "id": "show_announcement", "label": "Show announcement bar", "default": true },
+    { "type": "text",         "id": "announcement_text", "label": "Announcement text",     "default": "FRIDAY FLASH SALE – UP TO 25% OFF EVERYTHING BETWEEN 10:00 AM – 4:00 PM (AT CHECKOUT)" }
+  ],
+  "presets": [{ "name": "VB Header" }]
+}
+{% endschema %}

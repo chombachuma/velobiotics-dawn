@@ -1,0 +1,112 @@
+{{ 'vb-brand-grid.css' | asset_url | stylesheet_tag }}
+
+<section class="vb-brands">
+  <div class="vb-brands__inner page-width">
+    <div class="vb-brands__header">
+      <p class="vb-section-eyebrow">The Velobiotics Family</p>
+      <h2 class="vb-section-h2">Explore the Velobiotics Family</h2>
+      <p class="vb-section-lead">From women's intimate care to kids' immunity and digestive wellness, Velobiotics has a targeted solution for everyone in the family.</p>
+    </div>
+
+    <div class="vb-brands__grid">
+      {%- for block in section.blocks -%}
+        <a
+          href="{{ block.settings.url }}"
+          class="vb-brands__card vb-brands__card--{{ block.settings.accent_color }}"
+          {{ block.shopify_attributes }}
+          aria-label="{{ block.settings.brand_name }}"
+        >
+          <div class="vb-brands__card-top">
+            {%- if block.settings.brand_image != blank -%}
+              {{
+                block.settings.brand_image
+                | image_url: width: 300
+                | image_tag:
+                  loading: 'lazy',
+                  widths: '150,200,300',
+                  sizes: '(max-width:749px) 150px, 200px',
+                  class: 'vb-brands__card-img',
+                  alt: block.settings.brand_name
+              }}
+            {%- else -%}
+              <div class="vb-brands__card-img-placeholder">
+                {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+              </div>
+            {%- endif -%}
+          </div>
+          <div class="vb-brands__card-body">
+            <h3 class="vb-brands__card-name">{{ block.settings.brand_name }}</h3>
+            <p class="vb-brands__card-tagline">{{ block.settings.tagline }}</p>
+            <p class="vb-brands__card-desc">{{ block.settings.description }}</p>
+            <span class="vb-brands__card-cta">Shop {{ block.settings.brand_name }} →</span>
+          </div>
+        </a>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "VB Brand Grid",
+  "tag": "div",
+  "class": "vb-section",
+  "max_blocks": 10,
+  "blocks": [
+    {
+      "type": "brand",
+      "name": "Brand card",
+      "settings": [
+        { "type": "text",         "id": "brand_name",    "label": "Brand name",   "default": "Femina" },
+        { "type": "text",         "id": "tagline",       "label": "Tagline",      "default": "For women's intimate and urinary health." },
+        { "type": "textarea",     "id": "description",   "label": "Description",  "default": "Freshness, confidence, and pH balance." },
+        { "type": "url",          "id": "url",           "label": "Link" },
+        { "type": "image_picker", "id": "brand_image",   "label": "Brand product image" },
+        {
+          "type": "select",
+          "id": "accent_color",
+          "label": "Accent colour",
+          "options": [
+            { "value": "purple", "label": "Purple (Femina)" },
+            { "value": "teal",   "label": "Teal (GutSlim)" },
+            { "value": "green",  "label": "Green (Velo16)" },
+            { "value": "pink",   "label": "Pink (PregBiotics)" },
+            { "value": "rose",   "label": "Rose (Her-Biotics)" },
+            { "value": "navy",   "label": "Navy (His-Biotics)" },
+            { "value": "orange", "label": "Orange (BioKid)" },
+            { "value": "blue",   "label": "Blue (BioGain)" }
+          ],
+          "default": "green"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "select",
+      "id": "bg",
+      "label": "Background",
+      "options": [
+        { "value": "light", "label": "Light" },
+        { "value": "green", "label": "Green soft" }
+      ],
+      "default": "light"
+    }
+  ],
+  "presets": [
+    {
+      "name": "VB Brand Grid",
+      "blocks": [
+        { "type": "brand", "settings": { "brand_name": "Femina",      "tagline": "Femina™ – For women's intimate and urinary health.", "description": "Freshness, confidence, and pH balance.", "accent_color": "purple" } },
+        { "type": "brand", "settings": { "brand_name": "GutSlim",     "tagline": "GutSlim™ – For gut balance and weight support.",     "description": "Combines probiotics with active ingredients for a lighter, healthier you.", "accent_color": "teal" } },
+        { "type": "brand", "settings": { "brand_name": "Velo16",      "tagline": "Velo16™ – Daily digestive and immune support.",      "description": "Our flagship 16-strain probiotic for everyday wellness.", "accent_color": "green" } },
+        { "type": "brand", "settings": { "brand_name": "PregBiotics",  "tagline": "PregBiotics™ – Prenatal & maternal health.",         "description": "Supports digestion, immunity, and microbiome balance during pregnancy.", "accent_color": "pink" } },
+        { "type": "brand", "settings": { "brand_name": "Her-Biotics",  "tagline": "Her-Biotics™ – Formulated for her.",                "description": "Probiotic-based hormonal and skin support.", "accent_color": "rose" } },
+        { "type": "brand", "settings": { "brand_name": "His-Biotics",  "tagline": "His-Biotics™ – Formulated for him.",                "description": "Promotes vitality, gut health, and immune balance.", "accent_color": "navy" } },
+        { "type": "brand", "settings": { "brand_name": "BioKid",      "tagline": "BioKid™ – Kids' gut & immune health.",              "description": "Tasty chewables designed for happy, healthy tummies.", "accent_color": "orange" } },
+        { "type": "brand", "settings": { "brand_name": "BioGain",     "tagline": "BioGain™ – Growth & recovery support.",             "description": "Probiotic nutrition to help growing bodies thrive.", "accent_color": "blue" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

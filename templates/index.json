@@ -9,271 +9,113 @@
  */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "vb-hero": {
+      "type": "vb-homepage-hero",
+      "settings": {
+        "eyebrow": "Patented Probiotics That Actually Reach Your Gut",
+        "headline_light": "Most Probiotics Die in Your Stomach.",
+        "headline_bold": "Ours Don't!",
+        "body": "Velobiotics protects every live culture through stomach acid delivering 1000× more probiotics to your gut, where they're needed for real results, you can feel.",
+        "cta_primary_label": "Shop Products",
+        "cta_primary_link": "/collections/all",
+        "cta_secondary_label": "Take The Quiz",
+        "cta_secondary_link": "/pages/quiz"
+      }
+    },
+    "vb-trust-bar": {
+      "type": "vb-trust-bar",
+      "settings": {
+        "color_scheme": "scheme-1"
+      }
+    },
+    "vb-why-choose": {
+      "type": "vb-why-choose",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "reason-1": {
+          "type": "reason",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
+            "icon": "shield",
+            "title": "Patented Delivery System",
+            "body": "Our micro-shield protects probiotics from heat and stomach acid — so billions more reach your gut alive."
           }
         },
-        "text": {
-          "type": "text",
+        "reason-2": {
+          "type": "reason",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "icon": "flask",
+            "title": "Clinically Chosen Strains",
+            "body": "Every probiotic strain we use is backed by research to support gut balance, women's health, and immunity."
           }
         },
-        "button": {
-          "type": "buttons",
+        "reason-3": {
+          "type": "reason",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "icon": "doctor",
+            "title": "Doctor Formulated & Recommended",
+            "body": "Created and endorsed by medical professionals for safe, daily use by the whole family."
+          }
+        },
+        "reason-4": {
+          "type": "reason",
+          "settings": {
+            "icon": "leaf",
+            "title": "Made for Real Life",
+            "body": "Shelf-stable and trusted worldwide — no fridge, no fuss, just real results."
           }
         }
       },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
-      "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "image_behavior": "none",
-        "desktop_content_position": "bottom-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": false,
-        "color_scheme": "scheme-3",
-        "stack_images_on_mobile": false,
-        "mobile_content_alignment": "center",
-        "show_text_below": false
-      }
+      "block_order": ["reason-1", "reason-2", "reason-3", "reason-4"],
+      "settings": {}
     },
-    "rich_text": {
-      "type": "rich-text",
+    "vb-brand-grid": {
+      "type": "vb-brand-grid",
       "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
-          }
-        }
+        "brand-1": { "type": "brand", "settings": { "brand_name": "Femina", "tagline": "Femina™ – For women's intimate and urinary health.", "description": "Freshness, confidence, and pH balance.", "accent_color": "purple", "url": "/collections/femina" } },
+        "brand-2": { "type": "brand", "settings": { "brand_name": "GutSlim", "tagline": "GutSlim™ – For gut balance and weight support.", "description": "Combines probiotics with active ingredients for a lighter, healthier you.", "accent_color": "teal", "url": "/collections/gutslim" } },
+        "brand-3": { "type": "brand", "settings": { "brand_name": "Velo16", "tagline": "Velo16™ – Daily digestive and immune support.", "description": "Our flagship 16-strain probiotic for everyday wellness.", "accent_color": "green", "url": "/collections/velo16" } },
+        "brand-4": { "type": "brand", "settings": { "brand_name": "PregBiotics", "tagline": "PregBiotics™ – Prenatal & maternal health.", "description": "Supports digestion, immunity, and microbiome balance during pregnancy.", "accent_color": "pink", "url": "/collections/pregbiotics" } },
+        "brand-5": { "type": "brand", "settings": { "brand_name": "Her-Biotics", "tagline": "Her-Biotics™ – Formulated for her.", "description": "Probiotic-based hormonal and skin support.", "accent_color": "rose", "url": "/collections/her-biotics" } },
+        "brand-6": { "type": "brand", "settings": { "brand_name": "His-Biotics", "tagline": "His-Biotics™ – Formulated for him.", "description": "Promotes vitality, gut health, and immune balance.", "accent_color": "navy", "url": "/collections/his-biotics" } },
+        "brand-7": { "type": "brand", "settings": { "brand_name": "BioKid", "tagline": "BioKid™ – Kids' gut & immune health.", "description": "Tasty chewables designed for happy, healthy tummies.", "accent_color": "orange", "url": "/collections/biokid" } },
+        "brand-8": { "type": "brand", "settings": { "brand_name": "BioGain", "tagline": "BioGain™ – Growth & recovery support.", "description": "Probiotic nutrition to help growing bodies thrive.", "accent_color": "blue", "url": "/collections/biogain" } }
       },
-      "block_order": [
-        "heading",
-        "text"
-      ],
+      "block_order": ["brand-1","brand-2","brand-3","brand-4","brand-5","brand-6","brand-7","brand-8"],
+      "settings": {}
+    },
+    "vb-science-strip": {
+      "type": "vb-science-strip",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
+        "science_link": "/pages/our-science",
+        "shop_link": "/collections/all"
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "all",
-        "products_to_show": 8,
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 4,
-        "enable_desktop_slider": false,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
+    "vb-reviews": {
+      "type": "vb-reviews",
       "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
+        "review-1": { "type": "review", "settings": { "rating": 5, "verified": true, "headline": "Helped me feel a lot more comfortable", "body": "A lot less bloating and feeling fresh every single day. I've tried other brands and nothing compares to Velobiotics.", "author": "Ashley Barnes", "product": "Femina Probiotic" } },
+        "review-2": { "type": "review", "settings": { "rating": 5, "verified": true, "headline": "Lost 42kgs — the last kg wouldn't budge", "body": "Velo16 helped me lose the last kg. My stomach feels so much lighter and I'm not bloated anymore.", "author": "Nicky vd Westhuizen", "product": "Velo16" } },
+        "review-3": { "type": "review", "settings": { "rating": 5, "verified": true, "headline": "Cookie Fresh is a game changer", "body": "Refreshing confidence that Cookie Fresh gives me helps me feel fresh and stay confident about my feminine hygiene all day long.", "author": "Thandi K.", "product": "Cookie Fresh" } },
+        "review-4": { "type": "review", "settings": { "rating": 5, "verified": true, "headline": "No more itching, no more odor", "body": "You'll never have itching anymore, you'll never have odor anymore. No more bloating — feeling fresh every day!", "author": "Nomsa P.", "product": "Femina Combo" } },
+        "review-5": { "type": "review", "settings": { "rating": 5, "verified": true, "headline": "BioKid is amazing for my kids", "body": "My two children take BioKid daily. Their immunity is so much better since they started — fewer sick days!", "author": "Linda T.", "product": "BioKid Chewables" } },
+        "review-6": { "type": "review", "settings": { "rating": 5, "verified": true, "headline": "GutSlim actually works", "body": "I've been taking GutSlim for 6 weeks. I've lost 4kg and my gut feels incredible. The bloating is completely gone.", "author": "Michelle R.", "product": "GutSlim" } }
       },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "card_styles": "product-card-wrapper",
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
+      "block_order": ["review-1","review-2","review-3","review-4","review-5","review-6"],
+      "settings": {}
     },
-    "video": {
-      "type": "video",
+    "vb-quiz-cta": {
+      "type": "vb-quiz-cta",
       "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "vb_feature_row_meMcR3": {
-      "type": "vb-feature-row",
-      "blocks": {
-        "feature_cVxCmg": {
-          "type": "feature",
-          "settings": {
-            "icon_alt": "",
-            "title": "Acid-resistant capsule",
-            "body": "<p>Our patented capsule shields live cultures from stomach acid so more of them stay alive.</p>"
-          }
-        },
-        "feature_QFrHNx": {
-          "type": "feature",
-          "settings": {
-            "icon_alt": "",
-            "title": "Released where it counts",
-            "body": "<p>Cultures are released in the small intestine — the place where they actually do the work.</p>"
-          }
-        },
-        "feature_XgPULc": {
-          "type": "feature",
-          "settings": {
-            "icon_alt": "",
-            "title": "One capsule, daily",
-            "body": "<p>A simple daily protocol. No fridge, no fuss, no cycling on and off.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "feature_cVxCmg",
-        "feature_QFrHNx",
-        "feature_XgPULc"
-      ],
-      "name": "VB Feature row",
-      "settings": {
-        "eyebrow": "How it works",
-        "headline": "Built to survive, designed to deliver.",
-        "sub": "Most probiotics never make it past your stomach. Ours do.",
-        "layout": "cards",
-        "columns": "3",
-        "background": "tint",
-        "cta_label": "",
-        "cta_link": "",
-        "anchor_id": ""
+        "quiz_link": "/pages/quiz"
       }
     }
   },
   "order": [
-    "image_banner",
-    "vb_feature_row_meMcR3",
-    "rich_text",
-    "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "vb-hero",
+    "vb-trust-bar",
+    "vb-why-choose",
+    "vb-brand-grid",
+    "vb-science-strip",
+    "vb-reviews",
+    "vb-quiz-cta"
   ]
 }

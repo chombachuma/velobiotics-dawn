@@ -1,0 +1,181 @@
+{{ 'vb-homepage-hero.css' | asset_url | stylesheet_tag }}
+
+<section class="vb-hero" id="vb-hero">
+  {%- comment -%} Trust ticker bar above hero {%- endcomment -%}
+  <div class="vb-hero__ticker" aria-label="Trust signals">
+    <div class="vb-hero__ticker-track">
+      <span>☑️ Science-Backed</span>
+      <span class="vb-hero__ticker-dot">•</span>
+      <span>🩺 Doctor-Recommended</span>
+      <span class="vb-hero__ticker-dot">•</span>
+      <span>🧪 Patented Delivery Technology</span>
+      <span class="vb-hero__ticker-dot">•</span>
+      <span>🔄 100% Money-Back Guarantee</span>
+      <span class="vb-hero__ticker-dot">•</span>
+      <span>🚚 Free Shipping Over R400</span>
+      <span class="vb-hero__ticker-dot">•</span>
+      <span>⭐ 3,500+ Verified Reviews</span>
+      <span class="vb-hero__ticker-dot">•</span>
+      <span>☑️ Science-Backed</span>
+      <span class="vb-hero__ticker-dot">•</span>
+      <span>🩺 Doctor-Recommended</span>
+      <span class="vb-hero__ticker-dot">•</span>
+      <span>🧪 Patented Delivery Technology</span>
+      <span class="vb-hero__ticker-dot">•</span>
+      <span>🔄 100% Money-Back Guarantee</span>
+      <span class="vb-hero__ticker-dot">•</span>
+      <span>🚚 Free Shipping Over R400</span>
+      <span class="vb-hero__ticker-dot">•</span>
+      <span>⭐ 3,500+ Verified Reviews</span>
+      <span class="vb-hero__ticker-dot">•</span>
+    </div>
+  </div>
+
+  <div class="vb-hero__inner">
+    {%- comment -%} Left: copy {%- endcomment -%}
+    <div class="vb-hero__copy">
+      <p class="vb-hero__eyebrow">{{ section.settings.eyebrow }}</p>
+
+      <div class="vb-hero__stars" aria-label="4.8 out of 5 stars">
+        <span class="vb-hero__stars-icons" aria-hidden="true">★★★★★</span>
+        <span class="vb-hero__stars-label">Over 3,500 Reviews &nbsp;|&nbsp; 300,000 Happy Customers</span>
+      </div>
+
+      <h1 class="vb-hero__h1">
+        {{ section.settings.headline_light }}<br>
+        <strong>{{ section.settings.headline_bold }}</strong>
+      </h1>
+
+      <p class="vb-hero__body">{{ section.settings.body }}</p>
+
+      <div class="vb-hero__ctas">
+        <a href="{{ section.settings.cta_primary_link }}" class="vb-btn vb-btn--primary vb-btn--lg">
+          {{ section.settings.cta_primary_label }}
+        </a>
+        <a href="{{ section.settings.cta_secondary_link }}" class="vb-btn vb-btn--ghost vb-btn--lg">
+          {{ section.settings.cta_secondary_label }}
+        </a>
+      </div>
+
+      {%- comment -%} Badge row {%- endcomment -%}
+      <div class="vb-hero__badge-row">
+        <div class="vb-hero__badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z" fill="currentColor" opacity=".15"/><path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Patented MEP<br>Technology</span>
+        </div>
+        <div class="vb-hero__badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M8 12h4l2-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" fill="currentColor" opacity=".15"/></svg>
+          <span>1000× More<br>Probiotics Delivered</span>
+        </div>
+        <div class="vb-hero__badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" stroke="currentColor" stroke-width="1.5"/><rect x="9" y="3" width="6" height="4" rx="1" stroke="currentColor" stroke-width="1.5"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Doctor<br>Formulated</span>
+        </div>
+        <div class="vb-hero__badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>100% Money-Back<br>Guarantee</span>
+        </div>
+      </div>
+    </div>
+
+    {%- comment -%} Right: hero image {%- endcomment -%}
+    <div class="vb-hero__media">
+      {%- if section.settings.hero_image != blank -%}
+        {{
+          section.settings.hero_image
+          | image_url: width: 900
+          | image_tag:
+            loading: 'eager',
+            fetchpriority: 'high',
+            widths: '400,600,800,900',
+            sizes: '(max-width:749px) 100vw, 50vw',
+            class: 'vb-hero__img',
+            alt: section.settings.hero_image.alt | default: 'Velobiotics hero'
+        }}
+      {%- else -%}
+        <div class="vb-hero__img-placeholder">
+          {{ 'lifestyle-1' | placeholder_svg_tag: 'vb-hero__img placeholder-svg' }}
+        </div>
+      {%- endif -%}
+
+      {%- comment -%} Floating review chip {%- endcomment -%}
+      <div class="vb-hero__review-chip" aria-hidden="true">
+        <div class="vb-hero__review-chip-stars">★★★★★</div>
+        <p class="vb-hero__review-chip-quote">"Lost 42kgs — Velo16 helped me lose the last kg!"</p>
+        <p class="vb-hero__review-chip-author">— Nicky vd Westhuizen</p>
+      </div>
+
+      {%- comment -%} Floating stat pill {%- endcomment -%}
+      <div class="vb-hero__stat-pill" aria-hidden="true">
+        <span class="vb-hero__stat-num">300k+</span>
+        <span class="vb-hero__stat-label">Happy Customers</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "VB Hero",
+  "tag": "div",
+  "class": "vb-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Patented Probiotics That Actually Reach Your Gut"
+    },
+    {
+      "type": "text",
+      "id": "headline_light",
+      "label": "Headline (light weight)",
+      "default": "Most Probiotics Die in Your Stomach."
+    },
+    {
+      "type": "text",
+      "id": "headline_bold",
+      "label": "Headline (bold)",
+      "default": "Ours Don't!"
+    },
+    {
+      "type": "textarea",
+      "id": "body",
+      "label": "Body copy",
+      "default": "Velobiotics protects every live culture through stomach acid delivering 1000× more probiotics to your gut, where they're needed for real results, you can feel."
+    },
+    {
+      "type": "text",
+      "id": "cta_primary_label",
+      "label": "Primary CTA label",
+      "default": "Shop Products"
+    },
+    {
+      "type": "url",
+      "id": "cta_primary_link",
+      "label": "Primary CTA link"
+    },
+    {
+      "type": "text",
+      "id": "cta_secondary_label",
+      "label": "Secondary CTA label",
+      "default": "Take The Quiz"
+    },
+    {
+      "type": "url",
+      "id": "cta_secondary_link",
+      "label": "Secondary CTA link"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "VB Hero"
+    }
+  ]
+}
+{% endschema %}

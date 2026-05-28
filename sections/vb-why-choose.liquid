@@ -1,32 +1,84 @@
 {{ 'vb-why-choose.css' | asset_url | stylesheet_tag }}
 
-<section class="vb-why page-width">
-  <div class="vb-why__header">
-    <p class="vb-section-eyebrow">Why Choose Velobiotics</p>
-    <h2 class="vb-section-h2">99% of Probiotics Never Make It to Your Gut.</h2>
-    <p class="vb-section-lead">Traditional probiotics break down in stomach acid before they can do any good. Velobiotics uses advanced micro-shield technology to keep probiotics alive — all the way to your gut.</p>
-  </div>
+{%- assign cdn = 'https://cdn.shopify.com/s/files/1/0668/5848/3883/files' -%}
 
-  <div class="vb-why__grid">
-    {%- for block in section.blocks -%}
-      <div class="vb-why__card" {{ block.shopify_attributes }}>
-        <div class="vb-why__card-icon" aria-hidden="true">
-          {%- if block.settings.icon == 'shield' -%}
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z" fill="currentColor" opacity=".15"/><path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          {%- elsif block.settings.icon == 'flask' -%}
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M9 3h6M9 3v7l-4 8h14l-4-8V3M9 3H8M15 3h1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="14" cy="16" r="1" fill="currentColor"/><circle cx="10" cy="17" r="0.5" fill="currentColor"/></svg>
-          {%- elsif block.settings.icon == 'doctor' -%}
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 20c0-4 3.58-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M18 14v4M16 16h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          {%- elsif block.settings.icon == 'leaf' -%}
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M17 8C8 10 5.9 16.17 3.82 19.34 3.82 19.34 3 21 4 21c1 0 3-1 5-3 2.18 1.09 4.4 1 6-.5 3-3 3.18-6.5 2-9.5z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.82 19.34C4.5 17 6 14 9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          {%- else -%}
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          {%- endif -%}
+<section class="vb-why">
+  <div class="vb-why__inner page-width">
+
+    <div class="vb-why__header">
+      <span class="vb-label-tag">Why Choose Velobiotics</span>
+      <h2 class="vb-h2">99% of Probiotics Never Make It to Your Gut.</h2>
+      <p class="vb-lead">Traditional probiotics break down in stomach acid before they can do any good. Velobiotics uses advanced micro-shield technology to keep probiotics alive — all the way to your gut.</p>
+    </div>
+
+    {%- comment -%} Image + reasons split {%- endcomment -%}
+    <div class="vb-why__split">
+      <div class="vb-why__image-col">
+        <img
+          src="{{ cdn }}/Patented-PRobiotics-Technology.jpg"
+          alt="Patented probiotics technology"
+          loading="lazy"
+          class="vb-why__img"
+          width="970" height="600"
+        >
+        <div class="vb-why__img-badge">
+          <span class="vb-why__img-badge-num">1000×</span>
+          <span class="vb-why__img-badge-text">More Probiotics Delivered Alive</span>
         </div>
-        <h3 class="vb-why__card-title">{{ block.settings.title }}</h3>
-        <p class="vb-why__card-body">{{ block.settings.body }}</p>
       </div>
-    {%- endfor -%}
+
+      <div class="vb-why__reasons">
+        <div class="vb-why__reason">
+          <div class="vb-why__reason-icon">🛡️</div>
+          <div>
+            <h3>Patented Delivery System</h3>
+            <p>Our micro-shield protects probiotics from heat and stomach acid — so billions more reach your gut alive where they can make a real difference.</p>
+          </div>
+        </div>
+        <div class="vb-why__reason">
+          <div class="vb-why__reason-icon">🔬</div>
+          <div>
+            <h3>Clinically Chosen Strains</h3>
+            <p>Every probiotic strain we use is backed by research to support gut balance, women's health, and immunity. Not guesswork — science.</p>
+          </div>
+        </div>
+        <div class="vb-why__reason">
+          <div class="vb-why__reason-icon">🩺</div>
+          <div>
+            <h3>Doctor Formulated & Recommended</h3>
+            <p>Created and endorsed by medical professionals for safe, daily use by the whole family — from toddlers to adults.</p>
+          </div>
+        </div>
+        <div class="vb-why__reason">
+          <div class="vb-why__reason-icon">🌿</div>
+          <div>
+            <h3>No Fridge. No Fuss. Real Results.</h3>
+            <p>Shelf-stable and trusted by 300,000+ South Africans worldwide. Just take it daily and feel the difference within 3–7 days.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {%- comment -%} 4 stat counters {%- endcomment -%}
+    <div class="vb-why__stats">
+      <div class="vb-why__stat">
+        <span class="vb-why__stat-num">300K+</span>
+        <span class="vb-why__stat-label">Happy Customers</span>
+      </div>
+      <div class="vb-why__stat">
+        <span class="vb-why__stat-num">3,500+</span>
+        <span class="vb-why__stat-label">Verified Reviews</span>
+      </div>
+      <div class="vb-why__stat">
+        <span class="vb-why__stat-num">1000×</span>
+        <span class="vb-why__stat-label">More Probiotics Delivered</span>
+      </div>
+      <div class="vb-why__stat">
+        <span class="vb-why__stat-num">8</span>
+        <span class="vb-why__stat-label">Targeted Probiotic Brands</span>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -34,69 +86,8 @@
 {
   "name": "VB Why Choose",
   "tag": "div",
-  "class": "vb-section",
-  "max_blocks": 6,
-  "blocks": [
-    {
-      "type": "reason",
-      "name": "Reason",
-      "settings": [
-        {
-          "type": "select",
-          "id": "icon",
-          "label": "Icon",
-          "options": [
-            { "value": "shield", "label": "Shield / Patented" },
-            { "value": "flask",  "label": "Flask / Science" },
-            { "value": "doctor","label": "Doctor / Person" },
-            { "value": "leaf",   "label": "Leaf / Natural" },
-            { "value": "clock",  "label": "Clock / Time" }
-          ],
-          "default": "shield"
-        },
-        { "type": "text",     "id": "title", "label": "Title",   "default": "Reason title" },
-        { "type": "textarea", "id": "body",  "label": "Body",    "default": "Explanation of why this matters." }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "VB Why Choose",
-      "blocks": [
-        {
-          "type": "reason",
-          "settings": {
-            "icon": "shield",
-            "title": "Patented Delivery System",
-            "body": "Our micro-shield protects probiotics from heat and stomach acid — so billions more reach your gut alive."
-          }
-        },
-        {
-          "type": "reason",
-          "settings": {
-            "icon": "flask",
-            "title": "Clinically Chosen Strains",
-            "body": "Every probiotic strain we use is backed by research to support gut balance, women's health, and immunity."
-          }
-        },
-        {
-          "type": "reason",
-          "settings": {
-            "icon": "doctor",
-            "title": "Doctor Formulated & Recommended",
-            "body": "Created and endorsed by medical professionals for safe, daily use by the whole family."
-          }
-        },
-        {
-          "type": "reason",
-          "settings": {
-            "icon": "leaf",
-            "title": "Made for Real Life",
-            "body": "Shelf-stable and trusted worldwide — no fridge, no fuss, just real results."
-          }
-        }
-      ]
-    }
-  ]
+  "class": "vb-section-wrap",
+  "settings": [],
+  "presets": [{ "name": "VB Why Choose" }]
 }
 {% endschema %}

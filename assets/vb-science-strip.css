@@ -1,183 +1,67 @@
-/* VB Science Strip */
-.vb-science {
-  padding: 4rem 1.25rem;
-  background: #0f1f0d;
-  color: #fff;
-  overflow: hidden;
-}
-
+/* VB Science Strip v2 */
+.vb-science { background: #0a1a08; overflow: hidden; }
 .vb-science__inner {
-  max-width: 1320px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 3rem;
-  align-items: center;
+  max-width: 1380px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr;
+  gap: 3rem; padding: 5rem 1.5rem 3.5rem; align-items: center;
 }
-
 @media screen and (min-width: 990px) {
-  .vb-science__inner {
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-  }
+  .vb-science__inner { grid-template-columns: 1fr 1fr; gap: 6rem; }
 }
 
-.vb-science .vb-section-eyebrow { color: var(--vb-green-400); }
-.vb-science .vb-section-h2 { color: #fff; }
-.vb-science .vb-section-lead { color: rgba(255,255,255,0.7); }
-
-.vb-science__steps {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  margin: 2rem 0;
-}
-
-.vb-science__step {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-}
-
+/* Steps */
+.vb-science__steps { display: flex; flex-direction: column; gap: 1.25rem; margin: 2rem 0; }
+.vb-science__step { display: flex; align-items: flex-start; gap: 1rem; }
 .vb-science__step-num {
-  flex-shrink: 0;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  border: 1.5px solid var(--vb-green-500);
-  color: var(--vb-green-400);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: var(--vb-fs-14);
-  font-weight: var(--vb-fw-bold);
+  flex-shrink: 0; width: 36px; height: 36px;
+  border-radius: 50%; border: 2px solid var(--vb-green-500);
+  color: var(--vb-green-400); display: flex; align-items: center; justify-content: center;
+  font-size: 0.9rem; font-weight: 800;
 }
-
 .vb-science__step strong {
-  display: block;
-  font-size: var(--vb-fs-15, 0.9375rem);
-  font-weight: var(--vb-fw-semi);
-  color: #fff;
-  margin-bottom: 0.35rem;
+  display: block; font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 0.3rem;
+}
+.vb-science__step p { font-size: 0.875rem; color: rgba(255,255,255,0.65); line-height: 1.65; margin: 0; }
+.vb-science__ctas { display: flex; flex-wrap: wrap; gap: 0.85rem; margin-top: 0.5rem; }
+
+/* Visual */
+.vb-science__img-stack { position: relative; }
+.vb-science__img-main {
+  width: 100%; height: auto; border-radius: 1.5rem;
+  object-fit: cover; box-shadow: 0 24px 80px rgba(0,0,0,0.4);
+}
+.vb-science__img-badge {
+  position: absolute; bottom: -1rem; right: -0.5rem;
+  background: var(--vb-green-600); color: #fff;
+  border-radius: 1rem; padding: 1.1rem 1.25rem;
+  text-align: center; box-shadow: 0 10px 36px rgba(77,140,68,0.4);
+}
+.vb-science__img-badge-icon { font-size: 1.5rem; margin-bottom: 0.25rem; }
+.vb-science__img-badge-num { display: block; font-size: 2rem; font-weight: 800; line-height: 1; }
+.vb-science__img-badge-text { display: block; font-size: 0.7rem; font-weight: 600; opacity: 0.9; line-height: 1.35; margin-top: 0.2rem; max-width: 12ch; }
+.vb-science__img-pill {
+  position: absolute; top: 1rem; left: 1rem;
+  background: rgba(255,255,255,0.12); backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.2); border-radius: 100px;
+  padding: 0.35rem 0.85rem; color: #fff; font-size: 0.75rem; font-weight: 600;
 }
 
-.vb-science__step p {
-  font-size: var(--vb-fs-14);
-  color: rgba(255,255,255,0.65);
-  line-height: var(--vb-lh-relaxed);
-  margin: 0;
+/* Compare bar */
+.vb-science__compare { border-top: 1px solid rgba(255,255,255,0.08); padding: 2rem 1.5rem; }
+.vb-science__compare-inner {
+  max-width: 1380px; margin: 0 auto;
+  display: flex; flex-wrap: wrap; align-items: center;
+  justify-content: center; gap: 1rem;
 }
-
-.vb-science__ctas {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
+.vb-science__compare-item {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 0.25rem; color: rgba(255,255,255,0.6);
+  font-size: 0.875rem; font-weight: 600; text-align: center;
 }
-
-.vb-science .vb-btn--ghost {
-  color: #fff;
-  border-color: rgba(255,255,255,0.3);
-}
-
-.vb-science .vb-btn--ghost:hover {
-  background: rgba(255,255,255,0.08);
-  border-color: rgba(255,255,255,0.6);
-}
-
-/* Visual side */
-.vb-science__visual {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.vb-science__img {
-  width: 100%;
-  max-width: 520px;
-  height: auto;
-  border-radius: 1.5rem;
-}
-
-/* Fallback diagram */
-.vb-science__mep-diagram {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 340px;
-  height: 340px;
-}
-
-.vb-science__circle {
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.vb-science__circle--outer {
-  width: 320px;
-  height: 320px;
-  background: rgba(77,140,68,0.08);
-  border: 1.5px solid rgba(77,140,68,0.3);
-  animation: vb-pulse 3s ease-in-out infinite;
-}
-
-.vb-science__circle--mid {
-  width: 220px;
-  height: 220px;
-  background: rgba(77,140,68,0.12);
-  border: 1.5px solid rgba(77,140,68,0.5);
-}
-
-.vb-science__circle--inner {
-  width: 130px;
-  height: 130px;
-  background: var(--vb-green-600);
-  border: none;
-}
-
-@keyframes vb-pulse {
-  0%, 100% { transform: scale(1); opacity: 0.8; }
-  50%       { transform: scale(1.04); opacity: 1; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .vb-science__circle--outer { animation: none; }
-}
-
-.vb-science__mep-label {
-  font-size: var(--vb-fs-14);
-  font-weight: var(--vb-fw-bold);
-  color: #fff;
-  text-align: center;
-  line-height: 1.3;
-}
-
-.vb-science__mep-stat {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background: #fff;
-  color: var(--vb-neutral-900);
-  border-radius: 1rem;
-  padding: 0.75rem 1rem;
-  text-align: center;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-}
-
-.vb-science__mep-stat-num {
-  display: block;
-  font-size: 1.75rem;
-  font-weight: var(--vb-fw-bold);
-  color: var(--vb-green-600);
-  line-height: 1;
-}
-
-.vb-science__mep-stat-text {
-  display: block;
-  font-size: 0.7rem;
-  color: var(--vb-neutral-600);
-  line-height: 1.4;
-  margin-top: 0.2rem;
+.vb-science__compare-item--win { color: #fff; }
+.vb-science__compare-icon { font-size: 1.5rem; }
+.vb-science__compare-tag { font-size: 0.7rem; font-weight: 400; opacity: 0.7; }
+.vb-science__compare-vs {
+  font-size: 0.8rem; font-weight: 800; color: rgba(255,255,255,0.3);
+  letter-spacing: 0.05em;
 }

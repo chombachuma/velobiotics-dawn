@@ -1,96 +1,188 @@
 {{ 'vb-reviews.css' | asset_url | stylesheet_tag }}
 
+{%- assign cdn = 'https://cdn.shopify.com/s/files/1/0668/5848/3883/files' -%}
+
 <section class="vb-reviews">
   <div class="vb-reviews__inner page-width">
 
-    {%- comment -%} Header + aggregate score {%- endcomment -%}
     <div class="vb-reviews__header">
-      <p class="vb-section-eyebrow">Real People. Real Results.</p>
-      <h2 class="vb-section-h2">Trusted by Thousands. Backed by Science.</h2>
+      <span class="vb-label-tag">Real People. Real Results.</span>
+      <h2 class="vb-h2">Trusted by Thousands.<br>Backed by Science.</h2>
+    </div>
+
+    {%- comment -%} Aggregate + Doctor quote row {%- endcomment -%}
+    <div class="vb-reviews__top-row">
 
       <div class="vb-reviews__aggregate">
         <div class="vb-reviews__agg-score">
           <span class="vb-reviews__agg-num">4.8</span>
           <div>
-            <div class="vb-reviews__agg-stars" aria-label="4.8 out of 5 stars">★★★★★</div>
-            <span class="vb-reviews__agg-label">Over 3,500 Verified Reviews</span>
+            <div class="vb-reviews__agg-stars">★★★★★</div>
+            <span class="vb-reviews__agg-count">3,500+ Verified Reviews</span>
           </div>
         </div>
         <div class="vb-reviews__agg-bars">
-          <div class="vb-reviews__bar-row"><span>5★</span><div class="vb-reviews__bar"><div class="vb-reviews__bar-fill" style="width:82%"></div></div><span>82%</span></div>
-          <div class="vb-reviews__bar-row"><span>4★</span><div class="vb-reviews__bar"><div class="vb-reviews__bar-fill" style="width:12%"></div></div><span>12%</span></div>
-          <div class="vb-reviews__bar-row"><span>3★</span><div class="vb-reviews__bar"><div class="vb-reviews__bar-fill" style="width:4%"></div></div><span>4%</span></div>
-          <div class="vb-reviews__bar-row"><span>2★</span><div class="vb-reviews__bar"><div class="vb-reviews__bar-fill" style="width:1%"></div></div><span>1%</span></div>
-          <div class="vb-reviews__bar-row"><span>1★</span><div class="vb-reviews__bar"><div class="vb-reviews__bar-fill" style="width:1%"></div></div><span>1%</span></div>
+          <div class="vb-reviews__bar-row"><span>5★</span><div class="vb-bar"><div class="vb-bar__fill" style="width:82%"></div></div><span>82%</span></div>
+          <div class="vb-reviews__bar-row"><span>4★</span><div class="vb-bar"><div class="vb-bar__fill" style="width:12%"></div></div><span>12%</span></div>
+          <div class="vb-reviews__bar-row"><span>3★</span><div class="vb-bar"><div class="vb-bar__fill" style="width:4%"></div></div><span>4%</span></div>
+          <div class="vb-reviews__bar-row"><span>2★</span><div class="vb-bar"><div class="vb-bar__fill" style="width:1%"></div></div><span>1%</span></div>
+          <div class="vb-reviews__bar-row"><span>1★</span><div class="vb-bar"><div class="vb-bar__fill" style="width:1%"></div></div><span>1%</span></div>
+        </div>
+        <div class="vb-reviews__agg-badges">
+          <span class="vb-reviews__agg-badge">⭐ 4.8/5 Rating</span>
+          <span class="vb-reviews__agg-badge">🧪 Clinically Studied</span>
+          <span class="vb-reviews__agg-badge">🏭 SAHPRA Certified</span>
         </div>
       </div>
+
+      <div class="vb-reviews__doctor-quote">
+        <img
+          src="{{ cdn }}/Dr._Carmen_James_-_Cookie_Fresh.png"
+          alt="Dr. Carmen James — Medical Doctor"
+          loading="lazy"
+          class="vb-reviews__dr-img"
+          width="300" height="300"
+        >
+        <div class="vb-reviews__dq-content">
+          <div class="vb-reviews__dq-stars">★★★★★</div>
+          <blockquote class="vb-reviews__dq-text">
+            "That's why I love this product! It combines the power of Probiotics and Boric Acid for ultimate female intimate health."
+          </blockquote>
+          <div class="vb-reviews__dq-author">
+            <strong>Dr. Carmen James</strong>
+            <span>Medical Doctor &nbsp;•&nbsp; 🩺 Verified Doctor</span>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    {%- comment -%} Doctor quote (featured) {%- endcomment -%}
-    <div class="vb-reviews__doctor-quote">
-      <div class="vb-reviews__dq-icon" aria-hidden="true">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M10 11V7a4 4 0 118 0v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><rect x="3" y="11" width="18" height="11" rx="2" stroke="currentColor" stroke-width="1.5"/></svg>
-      </div>
-      <blockquote class="vb-reviews__dq-text">
-        "That's why I love this product! It combines the power of Probiotics and Boric Acid for ultimate female intimate health."
-      </blockquote>
-      <div class="vb-reviews__dq-author">
-        <div class="vb-reviews__dq-avatar" aria-hidden="true">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 20c0-4 3.58-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-        </div>
-        <div>
-          <strong>Dr. Carmen James</strong>
-          <span>Medical Doctor</span>
-        </div>
-        <span class="vb-reviews__dq-verified">🩺 Verified Doctor</span>
-      </div>
-    </div>
-
-    {%- comment -%} Review card grid {%- endcomment -%}
+    {%- comment -%} Review cards {%- endcomment -%}
     <div class="vb-reviews__grid">
-      {%- for block in section.blocks -%}
-        <div class="vb-reviews__card" {{ block.shopify_attributes }}>
-          <div class="vb-reviews__card-top">
-            <div class="vb-reviews__card-stars" aria-label="{{ block.settings.rating }} out of 5 stars">
-              {%- assign r = block.settings.rating | round -%}
-              {%- for i in (1..5) -%}
-                {%- if i <= r -%}<span class="vb-star--filled">★</span>{%- else -%}<span class="vb-star--empty">★</span>{%- endif -%}
-              {%- endfor -%}
-            </div>
-            {%- if block.settings.verified -%}
-              <span class="vb-reviews__card-badge">✅ Verified</span>
-            {%- endif -%}
-          </div>
-          {%- if block.settings.headline != blank -%}
-            <p class="vb-reviews__card-headline">"{{ block.settings.headline }}"</p>
-          {%- endif -%}
-          <p class="vb-reviews__card-body">{{ block.settings.body }}</p>
-          <div class="vb-reviews__card-author">
-            <div class="vb-reviews__card-avatar" aria-hidden="true">{{ block.settings.author | slice: 0, 1 | upcase }}</div>
-            <div>
-              <strong>{{ block.settings.author }}</strong>
-              {%- if block.settings.product != blank -%}
-                <span>on {{ block.settings.product }}</span>
-              {%- endif -%}
-            </div>
+
+      <div class="vb-reviews__card vb-reviews__card--featured">
+        <div class="vb-reviews__card-top">
+          <div class="vb-reviews__card-stars">★★★★★</div>
+          <span class="vb-reviews__card-badge">✅ Verified</span>
+        </div>
+        <p class="vb-reviews__card-headline">"Helped me feel a lot more comfortable during the day"</p>
+        <p class="vb-reviews__card-body">A lot less bloating and feeling fresh every single day. I've tried so many other brands and nothing compares to Velobiotics. The difference was noticeable within a week.</p>
+        <div class="vb-reviews__card-footer">
+          <div class="vb-reviews__card-avatar">A</div>
+          <div>
+            <strong>Ashley Barnes</strong>
+            <span>on Femina Probiotic</span>
           </div>
         </div>
-      {%- endfor -%}
+      </div>
+
+      <div class="vb-reviews__card">
+        <div class="vb-reviews__card-top">
+          <div class="vb-reviews__card-stars">★★★★★</div>
+          <span class="vb-reviews__card-badge">✅ Verified</span>
+        </div>
+        <p class="vb-reviews__card-headline">"Lost 42kgs — the last kg wouldn't budge"</p>
+        <p class="vb-reviews__card-body">Velo16 helped me lose the last kg. My stomach feels so much lighter and I'm not bloated anymore. It's the only probiotic I'll ever use again.</p>
+        <div class="vb-reviews__card-footer">
+          <div class="vb-reviews__card-avatar">N</div>
+          <div>
+            <strong>Nicky vd Westhuizen</strong>
+            <span>on Velo16 Probiotic</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="vb-reviews__card">
+        <div class="vb-reviews__card-top">
+          <div class="vb-reviews__card-stars">★★★★★</div>
+          <span class="vb-reviews__card-badge">✅ Verified</span>
+        </div>
+        <p class="vb-reviews__card-headline">"Cookie Fresh is a total game changer"</p>
+        <p class="vb-reviews__card-body">Refreshing confidence that Cookie Fresh gives me — feeling fresh and confident about my feminine hygiene all day long. No more odor or discomfort.</p>
+        <div class="vb-reviews__card-footer">
+          <div class="vb-reviews__card-avatar">T</div>
+          <div>
+            <strong>Thandi K.</strong>
+            <span>on Cookie Fresh</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="vb-reviews__card">
+        <div class="vb-reviews__card-top">
+          <div class="vb-reviews__card-stars">★★★★★</div>
+          <span class="vb-reviews__card-badge">✅ Verified</span>
+        </div>
+        <p class="vb-reviews__card-headline">"No more itching, no more odor — feeling fresh!"</p>
+        <p class="vb-reviews__card-body">You'll never have itching anymore. No more bloating. Feeling fresh every single day. This product has changed my life completely.</p>
+        <div class="vb-reviews__card-footer">
+          <div class="vb-reviews__card-avatar">N</div>
+          <div>
+            <strong>Nomsa P.</strong>
+            <span>on Femina Combo</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="vb-reviews__card">
+        <div class="vb-reviews__card-top">
+          <div class="vb-reviews__card-stars">★★★★★</div>
+          <span class="vb-reviews__card-badge">✅ Verified</span>
+        </div>
+        <p class="vb-reviews__card-headline">"BioKid transformed my children's immunity"</p>
+        <p class="vb-reviews__card-body">My two children take BioKid daily. Their immunity is so much better since they started — far fewer sick days and better energy at school.</p>
+        <div class="vb-reviews__card-footer">
+          <div class="vb-reviews__card-avatar">L</div>
+          <div>
+            <strong>Linda T.</strong>
+            <span>on BioKid Chewables</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="vb-reviews__card">
+        <div class="vb-reviews__card-top">
+          <div class="vb-reviews__card-stars">★★★★★</div>
+          <span class="vb-reviews__card-badge">✅ Verified</span>
+        </div>
+        <p class="vb-reviews__card-headline">"GutSlim actually works — 4kg in 6 weeks"</p>
+        <p class="vb-reviews__card-body">I've been taking GutSlim for 6 weeks and lost 4kg. My gut feels incredible and the bloating is completely gone. I feel lighter and more energetic every day.</p>
+        <div class="vb-reviews__card-footer">
+          <div class="vb-reviews__card-avatar">M</div>
+          <div>
+            <strong>Michelle R.</strong>
+            <span>on GutSlim</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    {%- comment -%} Doctor images strip {%- endcomment -%}
+    <div class="vb-reviews__doctors">
+      <p class="vb-reviews__doctors-label">Trusted by Doctors. Proven by Science.</p>
+      <div class="vb-reviews__doctors-grid">
+        <div class="vb-reviews__doctor-card">
+          <img src="{{ cdn }}/Trusted-By-Doctor-Image-001.jpg" alt="Trusted doctor 1" loading="lazy" class="vb-reviews__doctor-img" width="300" height="300">
+          <div class="vb-reviews__doctor-overlay"><span>🩺 Doctor Endorsed</span></div>
+        </div>
+        <div class="vb-reviews__doctor-card">
+          <img src="{{ cdn }}/Trusted-By-Doctor-Image-002.jpg" alt="Trusted doctor 2" loading="lazy" class="vb-reviews__doctor-img" width="300" height="300">
+          <div class="vb-reviews__doctor-overlay"><span>🩺 Doctor Endorsed</span></div>
+        </div>
+        <div class="vb-reviews__doctor-card">
+          <img src="{{ cdn }}/Trusted-By-Doctor-Image-003.jpg" alt="Trusted doctor 3" loading="lazy" class="vb-reviews__doctor-img" width="300" height="300">
+          <div class="vb-reviews__doctor-overlay"><span>🩺 Doctor Endorsed</span></div>
+        </div>
+        <div class="vb-reviews__doctor-card">
+          <img src="{{ cdn }}/Trusted-By-Doctor-Image-004.jpg" alt="Trusted doctor 4" loading="lazy" class="vb-reviews__doctor-img" width="300" height="300">
+          <div class="vb-reviews__doctor-overlay"><span>🩺 Doctor Endorsed</span></div>
+        </div>
+      </div>
     </div>
 
     <div class="vb-reviews__footer">
-      <div class="vb-reviews__trust-line">
-        <span>⭐ 4.8 / 5 Store Rating</span>
-        <span>•</span>
-        <span>🧪 Clinically Studied Strains</span>
-        <span>•</span>
-        <span>🏭 SAHPRA Certified Manufacturing</span>
-        <span>•</span>
-        <span>350,000+ Happy Customers</span>
-      </div>
-      <a href="{{ section.settings.all_reviews_link }}" class="vb-btn vb-btn--ghost vb-btn--md">
-        Read More Reviews
-      </a>
+      <a href="/pages/reviews" class="vb-btn vb-btn--ghost vb-btn--lg">Read All 3,500+ Reviews →</a>
     </div>
 
   </div>
@@ -100,37 +192,8 @@
 {
   "name": "VB Reviews",
   "tag": "div",
-  "class": "vb-section",
-  "max_blocks": 6,
-  "blocks": [
-    {
-      "type": "review",
-      "name": "Review",
-      "settings": [
-        { "type": "range",    "id": "rating",    "label": "Rating",         "min": 1, "max": 5, "step": 1, "default": 5 },
-        { "type": "checkbox", "id": "verified",  "label": "Verified buyer", "default": true },
-        { "type": "text",     "id": "headline",  "label": "Headline quote", "default": "Life-changing product!" },
-        { "type": "textarea", "id": "body",      "label": "Review body",    "default": "I have been using this for 3 months and the difference is remarkable." },
-        { "type": "text",     "id": "author",    "label": "Reviewer name",  "default": "Sarah M." },
-        { "type": "text",     "id": "product",   "label": "Product name",   "default": "Femina Probiotic" }
-      ]
-    }
-  ],
-  "settings": [
-    { "type": "url", "id": "all_reviews_link", "label": "All reviews link" }
-  ],
-  "presets": [
-    {
-      "name": "VB Reviews",
-      "blocks": [
-        { "type": "review", "settings": { "rating": 5, "headline": "Helped me feel a lot more comfortable", "body": "A lot less bloating and feeling fresh every single day. I've tried other brands and nothing compares to Velobiotics.", "author": "Ashley Barnes", "product": "Femina Probiotic" } },
-        { "type": "review", "settings": { "rating": 5, "headline": "Lost 42kgs — the last kg wouldn't budge", "body": "Velo16 helped me lose the last kg. My stomach feels so much lighter and I'm not bloated anymore.", "author": "Nicky vd Westhuizen", "product": "Velo16 Probiotic" } },
-        { "type": "review", "settings": { "rating": 5, "headline": "Cookie Fresh is a game changer", "body": "Refreshing confidence that Cookie Fresh gives me helps me feel fresh and stay confident about my feminine hygiene all day long.", "author": "Thandi K.", "product": "Cookie Fresh" } },
-        { "type": "review", "settings": { "rating": 5, "headline": "No more itching, no more odor", "body": "You'll never have itching anymore, you'll never have odor anymore. No more bloating — feeling fresh every day!", "author": "Nomsa P.", "product": "Femina Combo" } },
-        { "type": "review", "settings": { "rating": 5, "headline": "BioKid is amazing for my kids", "body": "My two children take BioKid daily. Their immunity is so much better since they started — fewer sick days!", "author": "Linda T.", "product": "BioKid Chewables" } },
-        { "type": "review", "settings": { "rating": 5, "headline": "GutSlim actually works", "body": "I've been taking GutSlim for 6 weeks. I've lost 4kg and my gut feels incredible. The bloating is completely gone.", "author": "Michelle R.", "product": "GutSlim" } }
-      ]
-    }
-  ]
+  "class": "vb-section-wrap",
+  "settings": [],
+  "presets": [{ "name": "VB Reviews" }]
 }
 {% endschema %}

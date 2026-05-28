@@ -1,324 +1,293 @@
 /* ============================================================
-   VB Hero Section — Mobile-first, performance-optimised
+   VB Hero — v2 — Full images, big type, stunning design
    ============================================================ */
 
 /* ---------- Ticker ---------- */
 .vb-hero__ticker {
   background: var(--vb-green-600);
-  color: var(--vb-neutral-0);
+  color: #fff;
   overflow: hidden;
-  padding: 0.55rem 0;
-  font-size: var(--vb-fs-12);
-  font-weight: var(--vb-fw-medium);
-  letter-spacing: 0.02em;
+  padding: 0.6rem 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
   white-space: nowrap;
 }
-
 .vb-hero__ticker-track {
   display: inline-flex;
-  gap: 1.5rem;
-  animation: vb-ticker 28s linear infinite;
+  gap: 1.75rem;
+  animation: vb-ticker 36s linear infinite;
   will-change: transform;
 }
-
-.vb-hero__ticker-dot {
-  opacity: 0.5;
-}
-
-@keyframes vb-ticker {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .vb-hero__ticker-track { animation: none; }
-}
+@keyframes vb-ticker { from { transform: translateX(0); } to { transform: translateX(-33.333%); } }
+@media (prefers-reduced-motion: reduce) { .vb-hero__ticker-track { animation: none; } }
+.vb-dot { opacity: 0.4; }
 
 /* ---------- Hero shell ---------- */
 .vb-hero {
-  background: #f9faf7;
+  background: #f4f8f3;
   overflow: hidden;
 }
 
-.vb-hero__inner {
+/* ---------- Split ---------- */
+.vb-hero__split {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
-  max-width: 1320px;
+  max-width: 1380px;
   margin: 0 auto;
-  padding: 2.5rem 1.25rem 0;
+  padding: 3rem 1.5rem 0;
+  gap: 2rem;
+  align-items: center;
 }
-
 @media screen and (min-width: 990px) {
-  .vb-hero__inner {
+  .vb-hero__split {
     grid-template-columns: 1fr 1fr;
-    align-items: center;
-    padding: 4rem 2rem 0;
-    gap: 3rem;
+    padding: 5rem 3rem 0;
+    gap: 4rem;
+    min-height: 88vh;
   }
 }
 
-/* ---------- Copy side ---------- */
-.vb-hero__eyebrow {
-  font-size: var(--vb-fs-13, 0.8125rem);
-  font-weight: var(--vb-fw-semi);
-  color: var(--vb-green-600);
+/* ---------- Copy ---------- */
+.vb-hero__copy { display: flex; flex-direction: column; gap: 1.5rem; }
+
+/* Badge */
+.vb-badge {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin: 0 0 0.75rem;
+  width: fit-content;
+}
+.vb-badge--green {
+  background: var(--vb-green-50);
+  color: var(--vb-green-700);
+  border: 1.5px solid var(--vb-green-200);
 }
 
+/* Stars */
 .vb-hero__stars {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-bottom: 1rem;
-}
-
-.vb-hero__stars-icons {
-  color: #f59e0b;
-  font-size: var(--vb-fs-16);
-  line-height: 1;
-}
-
-.vb-hero__stars-label {
-  font-size: var(--vb-fs-13, 0.8125rem);
-  color: var(--vb-neutral-600);
-  font-weight: var(--vb-fw-medium);
-}
-
-.vb-hero__h1 {
-  font-family: var(--vb-font-sans);
-  font-size: clamp(2rem, 6vw, 3.25rem);
-  font-weight: var(--vb-fw-regular);
-  line-height: var(--vb-lh-tight);
-  color: var(--vb-green-600);
-  margin: 0 0 1.25rem;
-}
-
-.vb-hero__h1 strong {
-  font-weight: var(--vb-fw-bold);
-  color: var(--vb-neutral-900);
-}
-
-.vb-hero__body {
-  font-size: var(--vb-fs-16);
-  line-height: var(--vb-lh-relaxed);
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
   color: var(--vb-neutral-700);
-  margin: 0 0 1.75rem;
-  max-width: 50ch;
+}
+.vb-stars { color: #f59e0b; font-size: 1.15rem; }
+
+/* Heading */
+.vb-hero__h1 {
+  font-family: var(--vb-font-heading);
+  font-size: clamp(2.25rem, 5.5vw, 3.75rem);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--vb-green-600);
+  margin: 0;
+}
+.vb-hero__h1-em {
+  font-style: normal;
+  font-weight: 800;
+  color: var(--vb-neutral-900);
+  display: block;
 }
 
-/* ---------- CTAs ---------- */
+/* Body */
+.vb-hero__body {
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  line-height: 1.7;
+  color: var(--vb-neutral-700);
+  margin: 0;
+  max-width: 52ch;
+}
+
+/* CTAs */
 .vb-hero__ctas {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-bottom: 2rem;
+  gap: 1rem;
 }
 
-/* Reusable button system */
+/* Button system */
 .vb-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
   border-radius: 100px;
-  font-family: var(--vb-font-sans);
-  font-weight: var(--vb-fw-semi);
+  font-family: var(--vb-font-body);
+  font-weight: 700;
   text-decoration: none;
   cursor: pointer;
-  transition: background 0.18s ease, color 0.18s ease, transform 0.12s ease, box-shadow 0.18s ease;
   border: 2px solid transparent;
+  transition: all 0.2s ease;
   white-space: nowrap;
+  letter-spacing: 0.01em;
 }
-
 .vb-btn:active { transform: translateY(1px); }
 
-.vb-btn--lg {
-  padding: 0.85rem 1.75rem;
-  font-size: var(--vb-fs-16);
-}
-
-.vb-btn--md {
-  padding: 0.65rem 1.35rem;
-  font-size: var(--vb-fs-14);
-}
-
-.vb-btn--sm {
-  padding: 0.45rem 1rem;
-  font-size: var(--vb-fs-12);
-}
+.vb-btn--xl  { padding: 1rem 2.25rem; font-size: 1.05rem; }
+.vb-btn--lg  { padding: 0.85rem 1.85rem; font-size: 1rem; }
+.vb-btn--md  { padding: 0.7rem 1.5rem; font-size: 0.925rem; }
+.vb-btn--sm  { padding: 0.5rem 1.1rem; font-size: 0.8rem; }
 
 .vb-btn--primary {
   background: var(--vb-green-600);
   color: #fff;
   border-color: var(--vb-green-600);
-  box-shadow: 0 4px 16px rgba(77,140,68,0.25);
+  box-shadow: 0 6px 20px rgba(77,140,68,0.30);
 }
-
 .vb-btn--primary:hover {
   background: var(--vb-green-700);
   border-color: var(--vb-green-700);
-  box-shadow: 0 6px 20px rgba(77,140,68,0.35);
+  box-shadow: 0 8px 28px rgba(77,140,68,0.40);
+  transform: translateY(-1px);
 }
-
+.vb-btn--ghost-white {
+  background: #fff;
+  color: var(--vb-green-700);
+  border-color: var(--vb-green-300);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.vb-btn--ghost-white:hover {
+  background: var(--vb-green-50);
+  border-color: var(--vb-green-500);
+}
 .vb-btn--ghost {
   background: transparent;
   color: var(--vb-green-600);
   border-color: var(--vb-green-600);
 }
-
-.vb-btn--ghost:hover {
-  background: var(--vb-green-50);
-}
-
+.vb-btn--ghost:hover { background: var(--vb-green-50); }
 .vb-btn--white {
   background: #fff;
   color: var(--vb-green-700);
   border-color: #fff;
 }
-
-.vb-btn--white:hover {
-  background: var(--vb-green-50);
+.vb-btn--outline-white {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255,255,255,0.6);
 }
+.vb-btn--outline-white:hover { background: rgba(255,255,255,0.12); border-color: #fff; }
 
-/* ---------- Badge row ---------- */
-.vb-hero__badge-row {
+/* Trust pills */
+.vb-hero__badges {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0.75rem;
 }
-
 @media screen and (min-width: 600px) {
-  .vb-hero__badge-row {
-    grid-template-columns: repeat(4, 1fr);
-  }
+  .vb-hero__badges { grid-template-columns: repeat(4, 1fr); }
 }
-
-.vb-hero__badge {
+.vb-trust-pill {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 0.35rem;
-  text-align: center;
-  padding: 0.75rem 0.5rem;
+  gap: 0.6rem;
   background: #fff;
-  border-radius: 12px;
-  border: 1px solid var(--vb-green-100);
-  box-shadow: 0 2px 8px rgba(77,140,68,0.08);
-  font-size: 0.7rem;
-  font-weight: var(--vb-fw-semi);
-  color: var(--vb-neutral-700);
-  line-height: 1.3;
+  border: 1.5px solid var(--vb-green-100);
+  border-radius: 14px;
+  padding: 0.75rem 0.85rem;
+  box-shadow: 0 2px 10px rgba(77,140,68,0.07);
 }
+.vb-trust-pill__icon { font-size: 1.5rem; flex-shrink: 0; }
+.vb-trust-pill strong { display: block; font-size: 0.8rem; font-weight: 700; color: var(--vb-neutral-900); line-height: 1.2; }
+.vb-trust-pill span   { display: block; font-size: 0.7rem; color: var(--vb-neutral-500); margin-top: 0.1rem; }
 
-.vb-hero__badge svg {
-  color: var(--vb-green-600);
-  flex-shrink: 0;
-}
-
-/* ---------- Media side ---------- */
+/* ---------- Media ---------- */
 .vb-hero__media {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
-
 .vb-hero__img {
   display: block;
   width: 100%;
-  max-width: 560px;
+  max-width: 580px;
   height: auto;
   object-fit: contain;
-  object-position: bottom;
+  object-position: bottom center;
+  filter: drop-shadow(0 20px 60px rgba(0,0,0,0.12));
 }
 
-.vb-hero__img-placeholder {
-  width: 100%;
-  max-width: 480px;
-  aspect-ratio: 4/5;
-  background: var(--vb-green-100);
-  border-radius: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Floating review chip */
-.vb-hero__review-chip {
+/* Floating chips */
+.vb-hero__chip {
   position: absolute;
-  bottom: 2.5rem;
-  left: -0.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.14);
+  padding: 0.85rem 1.1rem;
+}
+.vb-hero__chip--review {
+  bottom: 3rem;
+  left: -1rem;
   background: #fff;
-  border-radius: 14px;
-  padding: 0.8rem 1rem;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
-  max-width: 200px;
+  max-width: 210px;
   animation: vb-float 4s ease-in-out infinite;
 }
-
-@keyframes vb-float {
-  0%, 100% { transform: translateY(0); }
-  50%       { transform: translateY(-6px); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .vb-hero__review-chip { animation: none; }
-}
-
-.vb-hero__review-chip-stars {
-  color: #f59e0b;
-  font-size: 0.85rem;
-  margin-bottom: 0.25rem;
-}
-
-.vb-hero__review-chip-quote {
-  font-size: 0.7rem;
-  color: var(--vb-neutral-800);
-  font-weight: var(--vb-fw-medium);
-  margin: 0 0 0.2rem;
-  line-height: 1.4;
-}
-
-.vb-hero__review-chip-author {
-  font-size: 0.65rem;
-  color: var(--vb-neutral-500);
-  margin: 0;
-}
-
-/* Floating stat pill */
-.vb-hero__stat-pill {
-  position: absolute;
-  top: 1.5rem;
+.vb-hero__chip--stat {
+  top: 2rem;
   right: -0.5rem;
   background: var(--vb-green-600);
   color: #fff;
-  border-radius: 100px;
-  padding: 0.6rem 1.1rem;
+  text-align: center;
+  animation: vb-float 5s ease-in-out infinite 1.5s;
+}
+.vb-hero__chip--mep {
+  top: 45%;
+  left: -0.75rem;
+  background: #0f1f0d;
+  color: #fff;
+  text-align: center;
+  animation: vb-float 6s ease-in-out infinite 0.8s;
+}
+@keyframes vb-float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+@media (prefers-reduced-motion: reduce) { .vb-hero__chip { animation: none; } }
+@media screen and (max-width: 749px) { .vb-hero__chip { display: none; } }
+
+.vb-hero__chip-stars  { color: #f59e0b; font-size: 0.9rem; margin-bottom: 0.3rem; }
+.vb-hero__chip-quote  { font-size: 0.75rem; font-weight: 600; color: var(--vb-neutral-800); margin: 0 0 0.2rem; line-height: 1.4; }
+.vb-hero__chip-name   { font-size: 0.65rem; color: var(--vb-neutral-500); margin: 0; }
+.vb-hero__chip-big    { display: block; font-size: 1.6rem; font-weight: 800; line-height: 1; }
+.vb-hero__chip-mep-num{ display: block; font-size: 1.4rem; font-weight: 800; color: var(--vb-green-400); line-height: 1; }
+.vb-hero__chip-label  { display: block; font-size: 0.65rem; font-weight: 600; opacity: 0.85; margin-top: 0.2rem; }
+
+/* ---------- As-seen-on ---------- */
+.vb-hero__seen-on {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  border-top: 1px solid var(--vb-green-100);
   display: flex;
-  flex-direction: column;
   align-items: center;
-  box-shadow: 0 6px 24px rgba(77,140,68,0.3);
-  animation: vb-float 5s ease-in-out infinite 1s;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
-
-.vb-hero__stat-num {
-  font-size: var(--vb-fs-18);
-  font-weight: var(--vb-fw-bold);
-  line-height: 1;
+.vb-hero__seen-on-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--vb-neutral-400);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
-
-.vb-hero__stat-label {
-  font-size: 0.65rem;
-  font-weight: var(--vb-fw-medium);
-  opacity: 0.9;
+.vb-hero__seen-on-logos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  flex: 1;
 }
-
-@media screen and (max-width: 749px) {
-  .vb-hero__review-chip,
-  .vb-hero__stat-pill {
-    display: none;
-  }
+.vb-hero__seen-logo {
+  height: 32px;
+  width: auto;
+  max-width: 110px;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.55);
+  transition: filter 0.2s ease;
 }
+.vb-hero__seen-logo:hover { filter: grayscale(0%) opacity(1); }

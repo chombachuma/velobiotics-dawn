@@ -1,181 +1,126 @@
 {{ 'vb-homepage-hero.css' | asset_url | stylesheet_tag }}
 
+{%- assign cdn = 'https://cdn.shopify.com/s/files/1/0668/5848/3883/files' -%}
+
 <section class="vb-hero" id="vb-hero">
-  {%- comment -%} Trust ticker bar above hero {%- endcomment -%}
-  <div class="vb-hero__ticker" aria-label="Trust signals">
+
+  {%- comment -%} Scrolling trust ticker {%- endcomment -%}
+  <div class="vb-hero__ticker" aria-hidden="true">
     <div class="vb-hero__ticker-track">
-      <span>☑️ Science-Backed</span>
-      <span class="vb-hero__ticker-dot">•</span>
-      <span>🩺 Doctor-Recommended</span>
-      <span class="vb-hero__ticker-dot">•</span>
-      <span>🧪 Patented Delivery Technology</span>
-      <span class="vb-hero__ticker-dot">•</span>
-      <span>🔄 100% Money-Back Guarantee</span>
-      <span class="vb-hero__ticker-dot">•</span>
-      <span>🚚 Free Shipping Over R400</span>
-      <span class="vb-hero__ticker-dot">•</span>
-      <span>⭐ 3,500+ Verified Reviews</span>
-      <span class="vb-hero__ticker-dot">•</span>
-      <span>☑️ Science-Backed</span>
-      <span class="vb-hero__ticker-dot">•</span>
-      <span>🩺 Doctor-Recommended</span>
-      <span class="vb-hero__ticker-dot">•</span>
-      <span>🧪 Patented Delivery Technology</span>
-      <span class="vb-hero__ticker-dot">•</span>
-      <span>🔄 100% Money-Back Guarantee</span>
-      <span class="vb-hero__ticker-dot">•</span>
-      <span>🚚 Free Shipping Over R400</span>
-      <span class="vb-hero__ticker-dot">•</span>
-      <span>⭐ 3,500+ Verified Reviews</span>
-      <span class="vb-hero__ticker-dot">•</span>
+      {%- for i in (1..3) -%}
+        <span>☑️ Science-Backed</span><span class="vb-dot">•</span>
+        <span>🩺 Doctor-Recommended</span><span class="vb-dot">•</span>
+        <span>🧪 Patented MEP Technology</span><span class="vb-dot">•</span>
+        <span>🔄 100% Money-Back Guarantee</span><span class="vb-dot">•</span>
+        <span>🚚 Free Shipping Over R400</span><span class="vb-dot">•</span>
+        <span>⭐ 3,500+ Verified Reviews</span><span class="vb-dot">•</span>
+        <span>💊 1000× More Probiotics Delivered</span><span class="vb-dot">•</span>
+        <span>🏭 SAHPRA-Certified Manufacturing</span><span class="vb-dot">•</span>
+      {%- endfor -%}
     </div>
   </div>
 
-  <div class="vb-hero__inner">
-    {%- comment -%} Left: copy {%- endcomment -%}
-    <div class="vb-hero__copy">
-      <p class="vb-hero__eyebrow">{{ section.settings.eyebrow }}</p>
+  {%- comment -%} Hero split layout {%- endcomment -%}
+  <div class="vb-hero__split">
 
-      <div class="vb-hero__stars" aria-label="4.8 out of 5 stars">
-        <span class="vb-hero__stars-icons" aria-hidden="true">★★★★★</span>
-        <span class="vb-hero__stars-label">Over 3,500 Reviews &nbsp;|&nbsp; 300,000 Happy Customers</span>
+    {%- comment -%} LEFT copy {%- endcomment -%}
+    <div class="vb-hero__copy">
+      <span class="vb-badge vb-badge--green">Patented Probiotics That Actually Reach Your Gut</span>
+
+      <div class="vb-hero__stars">
+        <span class="vb-stars" aria-hidden="true">★★★★★</span>
+        <span>Over <strong>3,500 Reviews</strong> &nbsp;|&nbsp; <strong>300,000</strong> Happy Customers</span>
       </div>
 
       <h1 class="vb-hero__h1">
-        {{ section.settings.headline_light }}<br>
-        <strong>{{ section.settings.headline_bold }}</strong>
+        Most Probiotics Die<br>in Your Stomach.<br>
+        <em class="vb-hero__h1-em">Ours Don't!</em>
       </h1>
 
-      <p class="vb-hero__body">{{ section.settings.body }}</p>
+      <p class="vb-hero__body">
+        Velobiotics protects every live culture through stomach acid delivering
+        <strong>1000× more probiotics to your gut</strong>, where they're needed for real results, you can feel.
+      </p>
 
       <div class="vb-hero__ctas">
-        <a href="{{ section.settings.cta_primary_link }}" class="vb-btn vb-btn--primary vb-btn--lg">
-          {{ section.settings.cta_primary_label }}
+        <a href="/collections/all" class="vb-btn vb-btn--primary vb-btn--xl">
+          Shop Products
         </a>
-        <a href="{{ section.settings.cta_secondary_link }}" class="vb-btn vb-btn--ghost vb-btn--lg">
-          {{ section.settings.cta_secondary_label }}
+        <a href="/pages/quiz" class="vb-btn vb-btn--ghost-white vb-btn--xl">
+          🎯 Take The Quiz
         </a>
       </div>
 
-      {%- comment -%} Badge row {%- endcomment -%}
-      <div class="vb-hero__badge-row">
-        <div class="vb-hero__badge">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z" fill="currentColor" opacity=".15"/><path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <span>Patented MEP<br>Technology</span>
+      {%- comment -%} 4 trust pills {%- endcomment -%}
+      <div class="vb-hero__badges">
+        <div class="vb-trust-pill">
+          <div class="vb-trust-pill__icon">🛡️</div>
+          <div><strong>Patented MEP</strong><span>Technology</span></div>
         </div>
-        <div class="vb-hero__badge">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M8 12h4l2-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" fill="currentColor" opacity=".15"/></svg>
-          <span>1000× More<br>Probiotics Delivered</span>
+        <div class="vb-trust-pill">
+          <div class="vb-trust-pill__icon">💊</div>
+          <div><strong>1000×</strong><span>More Delivered</span></div>
         </div>
-        <div class="vb-hero__badge">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" stroke="currentColor" stroke-width="1.5"/><rect x="9" y="3" width="6" height="4" rx="1" stroke="currentColor" stroke-width="1.5"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <span>Doctor<br>Formulated</span>
+        <div class="vb-trust-pill">
+          <div class="vb-trust-pill__icon">🩺</div>
+          <div><strong>Doctor</strong><span>Formulated</span></div>
         </div>
-        <div class="vb-hero__badge">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <span>100% Money-Back<br>Guarantee</span>
+        <div class="vb-trust-pill">
+          <div class="vb-trust-pill__icon">🔄</div>
+          <div><strong>Money-Back</strong><span>Guarantee</span></div>
         </div>
       </div>
     </div>
 
-    {%- comment -%} Right: hero image {%- endcomment -%}
+    {%- comment -%} RIGHT image {%- endcomment -%}
     <div class="vb-hero__media">
-      {%- if section.settings.hero_image != blank -%}
-        {{
-          section.settings.hero_image
-          | image_url: width: 900
-          | image_tag:
-            loading: 'eager',
-            fetchpriority: 'high',
-            widths: '400,600,800,900',
-            sizes: '(max-width:749px) 100vw, 50vw',
-            class: 'vb-hero__img',
-            alt: section.settings.hero_image.alt | default: 'Velobiotics hero'
-        }}
-      {%- else -%}
-        <div class="vb-hero__img-placeholder">
-          {{ 'lifestyle-1' | placeholder_svg_tag: 'vb-hero__img placeholder-svg' }}
-        </div>
-      {%- endif -%}
+      <img
+        src="{{ cdn }}/new-hero-section-image-003.jpg"
+        alt="Velobiotics — Probiotics that survive"
+        class="vb-hero__img"
+        width="700" height="700"
+        fetchpriority="high"
+        loading="eager"
+      >
 
-      {%- comment -%} Floating review chip {%- endcomment -%}
-      <div class="vb-hero__review-chip" aria-hidden="true">
-        <div class="vb-hero__review-chip-stars">★★★★★</div>
-        <p class="vb-hero__review-chip-quote">"Lost 42kgs — Velo16 helped me lose the last kg!"</p>
-        <p class="vb-hero__review-chip-author">— Nicky vd Westhuizen</p>
+      <div class="vb-hero__chip vb-hero__chip--review" aria-hidden="true">
+        <div class="vb-hero__chip-stars">★★★★★</div>
+        <p class="vb-hero__chip-quote">"Lost 42kgs — Velo16 helped me lose the last kg!"</p>
+        <p class="vb-hero__chip-name">— Nicky vd Westhuizen ✅</p>
       </div>
 
-      {%- comment -%} Floating stat pill {%- endcomment -%}
-      <div class="vb-hero__stat-pill" aria-hidden="true">
-        <span class="vb-hero__stat-num">300k+</span>
-        <span class="vb-hero__stat-label">Happy Customers</span>
+      <div class="vb-hero__chip vb-hero__chip--stat" aria-hidden="true">
+        <span class="vb-hero__chip-big">300K+</span>
+        <span class="vb-hero__chip-label">Happy Customers</span>
+      </div>
+
+      <div class="vb-hero__chip vb-hero__chip--mep" aria-hidden="true">
+        <span class="vb-hero__chip-mep-num">1000×</span>
+        <span class="vb-hero__chip-label">More Probiotics</span>
       </div>
     </div>
   </div>
+
+  {%- comment -%} As-seen-on logos {%- endcomment -%}
+  <div class="vb-hero__seen-on">
+    <p class="vb-hero__seen-on-label">As Seen On</p>
+    <div class="vb-hero__seen-on-logos">
+      <img src="{{ cdn }}/as-seen-on-logo-001.png" alt="Media coverage" loading="lazy" class="vb-hero__seen-logo" width="120" height="40">
+      <img src="{{ cdn }}/as-seen-on-logo-002.png" alt="Media coverage" loading="lazy" class="vb-hero__seen-logo" width="120" height="40">
+      <img src="{{ cdn }}/as-seen-on-logo-003.png" alt="Media coverage" loading="lazy" class="vb-hero__seen-logo" width="120" height="40">
+      <img src="{{ cdn }}/as-seen-on-logo-004.png" alt="Media coverage" loading="lazy" class="vb-hero__seen-logo" width="120" height="40">
+      <img src="{{ cdn }}/as-seen-on-logo-005.png" alt="Media coverage" loading="lazy" class="vb-hero__seen-logo" width="120" height="40">
+    </div>
+  </div>
+
 </section>
 
 {% schema %}
 {
   "name": "VB Hero",
   "tag": "div",
-  "class": "vb-section",
-  "settings": [
-    {
-      "type": "text",
-      "id": "eyebrow",
-      "label": "Eyebrow",
-      "default": "Patented Probiotics That Actually Reach Your Gut"
-    },
-    {
-      "type": "text",
-      "id": "headline_light",
-      "label": "Headline (light weight)",
-      "default": "Most Probiotics Die in Your Stomach."
-    },
-    {
-      "type": "text",
-      "id": "headline_bold",
-      "label": "Headline (bold)",
-      "default": "Ours Don't!"
-    },
-    {
-      "type": "textarea",
-      "id": "body",
-      "label": "Body copy",
-      "default": "Velobiotics protects every live culture through stomach acid delivering 1000× more probiotics to your gut, where they're needed for real results, you can feel."
-    },
-    {
-      "type": "text",
-      "id": "cta_primary_label",
-      "label": "Primary CTA label",
-      "default": "Shop Products"
-    },
-    {
-      "type": "url",
-      "id": "cta_primary_link",
-      "label": "Primary CTA link"
-    },
-    {
-      "type": "text",
-      "id": "cta_secondary_label",
-      "label": "Secondary CTA label",
-      "default": "Take The Quiz"
-    },
-    {
-      "type": "url",
-      "id": "cta_secondary_link",
-      "label": "Secondary CTA link"
-    },
-    {
-      "type": "image_picker",
-      "id": "hero_image",
-      "label": "Hero image"
-    }
-  ],
-  "presets": [
-    {
-      "name": "VB Hero"
-    }
-  ]
+  "class": "vb-section-wrap",
+  "settings": [],
+  "presets": [{ "name": "VB Hero" }]
 }
 {% endschema %}

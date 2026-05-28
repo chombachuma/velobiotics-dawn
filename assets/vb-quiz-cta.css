@@ -1,82 +1,51 @@
-/* VB Quiz CTA */
-.vb-quiz-cta {
+/* VB Quiz CTA v2 */
+.vb-quiz {
   background: var(--vb-green-600);
-  padding: 4rem 1.25rem;
   overflow: hidden;
   position: relative;
 }
-
-.vb-quiz-cta::before {
+.vb-quiz::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 80% 50%, rgba(255,255,255,0.05) 0%, transparent 60%);
+  background: radial-gradient(ellipse at 70% 50%, rgba(255,255,255,0.06) 0%, transparent 60%);
   pointer-events: none;
 }
-
-.vb-quiz-cta__inner {
-  max-width: 1320px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2.5rem;
-  align-items: center;
-  position: relative;
+.vb-quiz__inner {
+  max-width: 1380px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr;
+  gap: 3rem; padding: 5rem 1.5rem;
+  align-items: center; position: relative;
 }
-
 @media screen and (min-width: 990px) {
-  .vb-quiz-cta__inner {
-    grid-template-columns: 1.2fr 1fr;
-    gap: 4rem;
-  }
+  .vb-quiz__inner { grid-template-columns: 1.1fr 1fr; gap: 5rem; }
 }
 
-.vb-quiz-cta__facts {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.75rem;
-  color: rgba(255,255,255,0.75);
-  font-size: var(--vb-fs-14);
-  font-weight: var(--vb-fw-medium);
-  margin: 1rem 0 1.5rem;
+.vb-quiz__facts {
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: 0.75rem; color: rgba(255,255,255,0.8);
+  font-size: 0.95rem; font-weight: 600; margin: 1.25rem 0 1.75rem;
 }
+.vb-quiz__ctas { display: flex; flex-wrap: wrap; gap: 1rem; }
 
-.vb-quiz-cta__cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.75rem;
+/* Visual */
+.vb-quiz__visual { position: relative; }
+.vb-quiz__img {
+  width: 100%; max-width: 480px; height: auto;
+  border-radius: 1.5rem; box-shadow: 0 24px 72px rgba(0,0,0,0.25);
+  margin: 0 auto; display: block;
 }
-
-.vb-quiz-cta__card {
-  background: rgba(255,255,255,0.1);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 1rem;
-  padding: 1.1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 0.35rem;
-  color: #fff;
-  transition: background 0.2s ease;
+.vb-quiz__cards-overlay {
+  position: absolute; inset: 0;
+  display: flex; flex-wrap: wrap; align-content: space-between;
+  padding: 1.25rem; pointer-events: none;
+  gap: 0.5rem;
 }
-
-.vb-quiz-cta__card:hover {
-  background: rgba(255,255,255,0.18);
+.vb-quiz__mini-card {
+  background: rgba(255,255,255,0.92); backdrop-filter: blur(6px);
+  border-radius: 100px; padding: 0.35rem 0.85rem;
+  font-size: 0.78rem; color: var(--vb-neutral-800);
+  display: flex; align-items: center; gap: 0.35rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-
-.vb-quiz-cta__card-icon {
-  font-size: 1.75rem;
-  line-height: 1;
-}
-
-.vb-quiz-cta__card strong {
-  font-size: var(--vb-fs-13, 0.8125rem);
-  font-weight: var(--vb-fw-semi);
-}
-
-.vb-quiz-cta__card span {
-  font-size: var(--vb-fs-12);
-  opacity: 0.7;
-}
+.vb-quiz__mini-card strong { font-weight: 700; }

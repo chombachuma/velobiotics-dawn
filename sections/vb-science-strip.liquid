@@ -1,83 +1,98 @@
 {{ 'vb-science-strip.css' | asset_url | stylesheet_tag }}
 
+{%- assign cdn = 'https://cdn.shopify.com/s/files/1/0668/5848/3883/files' -%}
+
 <section class="vb-science">
   <div class="vb-science__inner page-width">
+
     <div class="vb-science__copy">
-      <p class="vb-section-eyebrow">The Science Behind the Difference</p>
-      <h2 class="vb-section-h2">We Built Armour Around Every Probiotic So It Survives Where Others Don't.</h2>
-      <p class="vb-section-lead">Microencapsulation with Supercritical Carbon Dioxide (scCO₂) is a breakthrough way of protecting probiotics so they actually work. Think of it as wrapping each probiotic in a microscopic coat of armour.</p>
+      <span class="vb-label-tag" style="color:var(--vb-green-400)">The Science Behind the Difference</span>
+      <h2 class="vb-h2" style="color:#fff">We Built Armour Around Every Probiotic So It Survives Where Others Don't.</h2>
+      <p class="vb-lead" style="color:rgba(255,255,255,0.75)">Microencapsulation with Supercritical Carbon Dioxide (scCO₂) is a breakthrough way of protecting probiotics so they actually work. Think of it as wrapping each probiotic in a microscopic coat of armour.</p>
 
       <div class="vb-science__steps">
         <div class="vb-science__step">
-          <div class="vb-science__step-num" aria-hidden="true">1</div>
+          <div class="vb-science__step-num">1</div>
           <div>
-            <strong>What Is Microencapsulation?</strong>
-            <p>A tiny protective armour around each probiotic — like a microscopic shield that keeps good bacteria safe from heat, oxygen, and stomach acid.</p>
+            <strong>Micro-Shield Protection</strong>
+            <p>Each probiotic is wrapped in a protective polymer layer that blocks heat, oxygen, moisture and stomach acid.</p>
           </div>
         </div>
         <div class="vb-science__step">
-          <div class="vb-science__step-num" aria-hidden="true">2</div>
+          <div class="vb-science__step-num">2</div>
           <div>
-            <strong>Protection Against Stomach Acid</strong>
-            <p>Our probiotics resist stomach acid — staying dormant until they pass safely into your intestines.</p>
+            <strong>Survives Stomach Acid</strong>
+            <p>Our probiotics stay dormant through your stomach, resisting destruction where 99% of others die.</p>
           </div>
         </div>
         <div class="vb-science__step">
-          <div class="vb-science__step-num" aria-hidden="true">3</div>
+          <div class="vb-science__step-num">3</div>
           <div>
             <strong>Smart Release in the Gut</strong>
-            <p>Once inside the alkaline environment of your intestines, the capsule gently dissolves — releasing billions of live probiotics where they make a real difference.</p>
+            <p>Once in the alkaline intestines, the capsule dissolves — releasing billions of live probiotics where they're actually needed.</p>
           </div>
         </div>
       </div>
 
       <div class="vb-science__ctas">
-        <a href="{{ section.settings.science_link }}" class="vb-btn vb-btn--primary vb-btn--md">See the Science</a>
-        <a href="{{ section.settings.shop_link }}" class="vb-btn vb-btn--ghost vb-btn--md">Shop Velobiotics</a>
+        <a href="/pages/our-science" class="vb-btn vb-btn--primary vb-btn--lg">See the Science</a>
+        <a href="/collections/all" class="vb-btn vb-btn--outline-white vb-btn--lg">Shop Velobiotics</a>
       </div>
     </div>
 
     <div class="vb-science__visual">
-      {%- if section.settings.science_image != blank -%}
-        {{
-          section.settings.science_image
-          | image_url: width: 700
-          | image_tag:
-            loading: 'lazy',
-            widths: '350,500,700',
-            sizes: '(max-width:989px) 100vw, 50vw',
-            class: 'vb-science__img',
-            alt: 'Microencapsulation science illustration'
-        }}
-      {%- else -%}
-        <div class="vb-science__mep-diagram" aria-label="MEP delivery system diagram">
-          <div class="vb-science__circle vb-science__circle--outer">
-            <div class="vb-science__circle vb-science__circle--mid">
-              <div class="vb-science__circle vb-science__circle--inner">
-                <span class="vb-science__mep-label">MEP<br>Core</span>
-              </div>
-            </div>
-          </div>
-          <div class="vb-science__mep-stat">
-            <span class="vb-science__mep-stat-num">1000×</span>
-            <span class="vb-science__mep-stat-text">More probiotics<br>delivered alive</span>
-          </div>
+      <div class="vb-science__img-stack">
+        <img
+          src="{{ cdn }}/1000x-More-Probiotics-to-Your-Gut.jpg"
+          alt="1000x more probiotics to your gut"
+          loading="lazy"
+          class="vb-science__img-main"
+          width="2000" height="2000"
+        >
+        <div class="vb-science__img-badge">
+          <div class="vb-science__img-badge-icon">🔬</div>
+          <span class="vb-science__img-badge-num">1000×</span>
+          <span class="vb-science__img-badge-text">More Live Probiotics<br>Reach Your Gut</span>
         </div>
-      {%- endif -%}
+        <div class="vb-science__img-pill">
+          <span>scCO₂ Patented Technology</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  {%- comment -%} Bottom comparison badges {%- endcomment -%}
+  <div class="vb-science__compare">
+    <div class="vb-science__compare-inner page-width">
+      <div class="vb-science__compare-item vb-science__compare-item--win">
+        <span class="vb-science__compare-icon">✅</span>
+        <span>Velobiotics</span>
+        <span class="vb-science__compare-tag">Patented MEP Delivery</span>
+      </div>
+      <div class="vb-science__compare-vs">VS</div>
+      <div class="vb-science__compare-item">
+        <span class="vb-science__compare-icon">❌</span>
+        <span>Other Probiotics</span>
+        <span class="vb-science__compare-tag">No protection — most die in stomach</span>
+      </div>
+      <div class="vb-science__compare-vs">VS</div>
+      <div class="vb-science__compare-item">
+        <span class="vb-science__compare-icon">❌</span>
+        <span>Multivitamins</span>
+        <span class="vb-science__compare-tag">No probiotics — no gut benefit</span>
+      </div>
     </div>
   </div>
+
 </section>
 
 {% schema %}
 {
   "name": "VB Science Strip",
   "tag": "div",
-  "class": "vb-section",
-  "settings": [
-    { "type": "image_picker", "id": "science_image", "label": "Science illustration" },
-    { "type": "url",          "id": "science_link",  "label": "See the Science link" },
-    { "type": "url",          "id": "shop_link",     "label": "Shop link" }
-  ],
+  "class": "vb-section-wrap",
+  "settings": [],
   "presets": [{ "name": "VB Science Strip" }]
 }
 {% endschema %}

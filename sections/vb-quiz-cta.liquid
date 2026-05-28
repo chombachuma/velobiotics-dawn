@@ -1,42 +1,45 @@
 {{ 'vb-quiz-cta.css' | asset_url | stylesheet_tag }}
 
-<section class="vb-quiz-cta">
-  <div class="vb-quiz-cta__inner page-width">
-    <div class="vb-quiz-cta__copy">
-      <p class="vb-section-eyebrow" style="color:var(--vb-green-400)">Personalised Recommendation</p>
-      <h2 class="vb-section-h2" style="color:#fff">Not Sure Which Probiotic Is Right for You? Let's Find Out.</h2>
-      <p class="vb-section-lead" style="color:rgba(255,255,255,0.75)">Answer a few quick questions and we'll match you with the perfect Velobiotics probiotic. Backed by science. Doctor-developed. Personalised for you.</p>
-      <div class="vb-quiz-cta__facts">
+{%- assign cdn = 'https://cdn.shopify.com/s/files/1/0668/5848/3883/files' -%}
+
+<section class="vb-quiz">
+  <div class="vb-quiz__inner page-width">
+
+    <div class="vb-quiz__copy">
+      <span class="vb-label-tag" style="color:rgba(255,255,255,0.7)">Personalised Recommendation</span>
+      <h2 class="vb-h2" style="color:#fff">Not Sure Which Probiotic Is Right for You?<br>Let's Find Out.</h2>
+      <p class="vb-lead" style="color:rgba(255,255,255,0.8)">Answer a few quick questions and we'll match you with the perfect Velobiotics probiotic — backed by science, doctor-developed, personalised for you.</p>
+      <div class="vb-quiz__facts">
         <span>⏱️ 60 seconds</span>
-        <span>•</span>
+        <span class="vb-dot">•</span>
         <span>🔬 Evidence-based</span>
-        <span>•</span>
-        <span>🎁 100% free</span>
+        <span class="vb-dot">•</span>
+        <span>🎁 Completely free</span>
       </div>
-      <a href="{{ section.settings.quiz_link }}" class="vb-btn vb-btn--white vb-btn--lg">Take the Free Quiz →</a>
-    </div>
-    <div class="vb-quiz-cta__cards">
-      <div class="vb-quiz-cta__card">
-        <div class="vb-quiz-cta__card-icon">🌸</div>
-        <strong>Women's Health</strong>
-        <span>Intimate &amp; urinary</span>
-      </div>
-      <div class="vb-quiz-cta__card">
-        <div class="vb-quiz-cta__card-icon">⚖️</div>
-        <strong>Weight &amp; Gut</strong>
-        <span>Slim &amp; balance</span>
-      </div>
-      <div class="vb-quiz-cta__card">
-        <div class="vb-quiz-cta__card-icon">🧒</div>
-        <strong>Kids' Health</strong>
-        <span>Immunity &amp; tummy</span>
-      </div>
-      <div class="vb-quiz-cta__card">
-        <div class="vb-quiz-cta__card-icon">💪</div>
-        <strong>Performance</strong>
-        <span>Gut &amp; muscle</span>
+      <div class="vb-quiz__ctas">
+        <a href="/pages/quiz" class="vb-btn vb-btn--white vb-btn--xl">Take the Free Quiz →</a>
+        <a href="/collections/all" class="vb-btn vb-btn--outline-white vb-btn--xl">Browse All Products</a>
       </div>
     </div>
+
+    <div class="vb-quiz__visual">
+      <img
+        src="{{ cdn }}/Femina-Probiotic-Caps-Testimonial.jpg"
+        alt="Find your perfect probiotic"
+        loading="lazy"
+        class="vb-quiz__img"
+        width="600" height="600"
+      >
+      <div class="vb-quiz__cards-overlay">
+        <div class="vb-quiz__mini-card">🌸 <strong>Women's Health</strong></div>
+        <div class="vb-quiz__mini-card">⚖️ <strong>Weight &amp; Gut</strong></div>
+        <div class="vb-quiz__mini-card">🧒 <strong>Kids' Health</strong></div>
+        <div class="vb-quiz__mini-card">💪 <strong>Performance</strong></div>
+        <div class="vb-quiz__mini-card">🤱 <strong>Prenatal</strong></div>
+        <div class="vb-quiz__mini-card">✨ <strong>Beauty &amp; Skin</strong></div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -44,10 +47,8 @@
 {
   "name": "VB Quiz CTA",
   "tag": "div",
-  "class": "vb-section",
-  "settings": [
-    { "type": "url", "id": "quiz_link", "label": "Quiz page link" }
-  ],
+  "class": "vb-section-wrap",
+  "settings": [],
   "presets": [{ "name": "VB Quiz CTA" }]
 }
 {% endschema %}

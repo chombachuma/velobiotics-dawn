@@ -1,0 +1,98 @@
+{% comment %} Newsletter — Join the Gut Wellness Community {% endcomment %}
+{%- assign cdn = 'https://cdn.shopify.com/s/files/1/0668/5848/3883/files' -%}
+
+<section class="vb-nl">
+  <div class="vb-nl__inner page-width">
+
+    <div class="vb-nl__media">
+      <img
+        src="{{ cdn }}/Newsletter-section-image_c4759e48-2d65-4f59-a3b0-8fda0019f461.jpg"
+        alt="Join the gut wellness community"
+        loading="lazy"
+        class="vb-nl__img"
+        width="800" height="800"
+      >
+    </div>
+
+    <div class="vb-nl__copy">
+      <span class="vb-label-tag">Stay in the Loop</span>
+      <h2 class="vb-h2">Join the Gut Wellness Community</h2>
+      <p class="vb-lead">Get <strong>10% off your first order</strong> plus exclusive health tips from doctors and nutrition experts — straight to your inbox.</p>
+
+      {% form 'customer', class: 'vb-nl__form' %}
+        <input type="hidden" name="contact[tags]" value="newsletter">
+        <div class="vb-nl__form-row">
+          <input
+            type="email"
+            name="contact[email]"
+            placeholder="Enter your email address"
+            required
+            autocomplete="email"
+            class="vb-nl__input"
+            aria-label="Email address"
+          >
+          <button type="submit" class="vb-btn vb-btn--primary vb-btn--lg">Subscribe Now</button>
+        </div>
+        <p class="vb-nl__disclaimer">No spam, ever. Unsubscribe anytime. We respect your privacy.</p>
+      {% endform %}
+
+      <div class="vb-nl__perks">
+        <div class="vb-nl__perk">✅ <span>10% off first order</span></div>
+        <div class="vb-nl__perk">🩺 <span>Doctor health tips</span></div>
+        <div class="vb-nl__perk">🚚 <span>Exclusive offers & free shipping events</span></div>
+        <div class="vb-nl__perk">🔬 <span>Science-backed gut health insights</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+.vb-nl { background: var(--vb-green-50); padding: 5rem 1.5rem; border-top: 4px solid var(--vb-green-100); }
+.vb-nl__inner {
+  max-width: 1380px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: center;
+}
+@media screen and (min-width: 990px) {
+  .vb-nl__inner { grid-template-columns: 1fr 1.2fr; gap: 5rem; }
+}
+
+.vb-nl__media { display: flex; justify-content: center; }
+.vb-nl__img {
+  width: 100%; max-width: 420px; height: auto;
+  border-radius: 1.5rem; object-fit: cover;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+}
+
+.vb-nl__copy { display: flex; flex-direction: column; gap: 1.5rem; }
+.vb-nl__form-row {
+  display: flex; flex-wrap: wrap; gap: 0.75rem;
+}
+.vb-nl__input {
+  flex: 1; min-width: 0;
+  padding: 0.9rem 1.25rem;
+  border: 1.5px solid var(--vb-green-200);
+  border-radius: 100px;
+  font-size: 1rem;
+  color: var(--vb-neutral-900);
+  background: #fff;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.vb-nl__input:focus { border-color: var(--vb-green-500); }
+.vb-nl__disclaimer { font-size: 0.78rem; color: var(--vb-neutral-400); margin: 0; }
+
+.vb-nl__perks { display: flex; flex-direction: column; gap: 0.6rem; }
+.vb-nl__perk { display: flex; align-items: center; gap: 0.6rem; font-size: 0.95rem; color: var(--vb-neutral-700); }
+.vb-nl__perk span { font-weight: 500; }
+</style>
+
+{% schema %}
+{
+  "name": "VB Newsletter",
+  "tag": "div",
+  "class": "vb-section-wrap",
+  "settings": [],
+  "presets": [{ "name": "VB Newsletter" }]
+}
+{% endschema %}

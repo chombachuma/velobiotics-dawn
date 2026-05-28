@@ -1,0 +1,83 @@
+{% comment %} Elfsight Google Reviews widget + Judge.me badge {% endcomment %}
+
+<section class="vb-greviews">
+  <div class="vb-greviews__inner page-width">
+    <div class="vb-greviews__header">
+      <span class="vb-label-tag">Verified Reviews</span>
+      <h2 class="vb-h2">What 350,000+ Customers Are Saying</h2>
+      <p class="vb-lead">Read unfiltered reviews from Google and our verified purchase platform — because transparency builds trust.</p>
+    </div>
+
+    <div class="vb-greviews__badges">
+      <div class="vb-greviews__badge-item">
+        <div class="vb-greviews__badge-icon">⭐</div>
+        <div>
+          <strong>4.8 / 5</strong>
+          <span>Google Reviews</span>
+        </div>
+      </div>
+      <div class="vb-greviews__badge-item">
+        <div class="vb-greviews__badge-icon">🏅</div>
+        <div>
+          <strong>4.8 / 5</strong>
+          <span>Judge.me Verified</span>
+        </div>
+      </div>
+      <div class="vb-greviews__badge-item">
+        <div class="vb-greviews__badge-icon">👥</div>
+        <div>
+          <strong>350,000+</strong>
+          <span>Happy Customers</span>
+        </div>
+      </div>
+      <div class="vb-greviews__badge-item">
+        <div class="vb-greviews__badge-icon">🔒</div>
+        <div>
+          <strong>100% Verified</strong>
+          <span>Genuine Purchases</span>
+        </div>
+      </div>
+    </div>
+
+    {%- comment -%} Elfsight Google Reviews widget — as used on live theme {%- endcomment -%}
+    <div class="vb-greviews__widget">
+      <script src="https://static.elfsight.com/platform/platform.js" async></script>
+      <div class="elfsight-app-0413e3aa-deaf-4570-9304-a8493fe2750f" data-elfsight-app-lazy></div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+.vb-greviews { background: var(--vb-green-50); padding: 5rem 1.5rem; }
+.vb-greviews__inner { max-width: 1380px; margin: 0 auto; }
+.vb-greviews__header { text-align: center; max-width: 680px; margin: 0 auto 2.5rem; }
+
+.vb-greviews__badges {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 600px) { .vb-greviews__badges { grid-template-columns: repeat(4, 1fr); } }
+
+.vb-greviews__badge-item {
+  background: #fff; border: 1.5px solid var(--vb-green-100);
+  border-radius: 1rem; padding: 1.25rem;
+  display: flex; align-items: center; gap: 0.85rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+}
+.vb-greviews__badge-icon { font-size: 2rem; flex-shrink: 0; }
+.vb-greviews__badge-item strong { display: block; font-size: 1.1rem; font-weight: 800; color: var(--vb-neutral-900); line-height: 1.2; }
+.vb-greviews__badge-item span  { display: block; font-size: 0.78rem; color: var(--vb-neutral-500); margin-top: 0.1rem; }
+
+.vb-greviews__widget { min-height: 200px; }
+</style>
+
+{% schema %}
+{
+  "name": "VB Google Reviews",
+  "tag": "div",
+  "class": "vb-section-wrap",
+  "settings": [],
+  "presets": [{ "name": "VB Google Reviews" }]
+}
+{% endschema %}

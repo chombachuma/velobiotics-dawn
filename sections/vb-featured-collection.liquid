@@ -1,0 +1,133 @@
+{% comment %} "Your Daily Wellness Starts Here" — live collection products {% endcomment %}
+
+<section class="vb-fc">
+  <div class="vb-fc__inner page-width">
+    <div class="vb-fc__header">
+      <span class="vb-label-tag" style="color:rgba(255,255,255,0.7)">Best Sellers</span>
+      <h2 class="vb-h2" style="color:#fff">Your Daily Wellness Starts Here</h2>
+      <p class="vb-lead" style="color:rgba(255,255,255,0.8)">Explore our top probiotic blends created to nourish your gut, boost immunity, and support long-term health.</p>
+    </div>
+
+    <div class="vb-fc__grid">
+      {%- assign fc = collections['featured-collection-ibvf7'] -%}
+      {%- if fc == blank -%}
+        {%- assign fc = collections.all -%}
+      {%- endif -%}
+      {%- for product in fc.products limit: 8 -%}
+        <a href="{{ product.url }}" class="vb-fc__card">
+          <div class="vb-fc__img-wrap">
+            {%- if product.featured_image -%}
+              <img
+                src="{{ product.featured_image | image_url: width: 400 }}"
+                alt="{{ product.featured_image.alt | escape }}"
+                loading="lazy"
+                width="400" height="400"
+                class="vb-fc__img"
+              >
+            {%- else -%}
+              <div class="vb-fc__img-placeholder">{{ product.title | slice: 0 }}</div>
+            {%- endif -%}
+            {%- if product.compare_at_price > product.price -%}
+              <span class="vb-fc__badge-sale">Sale</span>
+            {%- endif -%}
+          </div>
+          <div class="vb-fc__body">
+            <p class="vb-fc__vendor">{{ product.vendor }}</p>
+            <h3 class="vb-fc__name">{{ product.title }}</h3>
+            <div class="vb-fc__price-row">
+              <span class="vb-fc__price">{{ product.price | money }}</span>
+              {%- if product.compare_at_price > product.price -%}
+                <span class="vb-fc__compare">{{ product.compare_at_price | money }}</span>
+              {%- endif -%}
+            </div>
+            <span class="vb-fc__atc">Add to Cart</span>
+          </div>
+        </a>
+      {%- endfor -%}
+    </div>
+
+    <div class="vb-fc__footer">
+      <a href="/collections/all" class="vb-btn vb-btn--white vb-btn--lg">View All Products</a>
+    </div>
+  </div>
+</section>
+
+<style>
+.vb-fc {
+  background: var(--vb-green-600);
+  padding: 5rem 1.5rem;
+}
+.vb-fc__inner { max-width: 1380px; margin: 0 auto; }
+.vb-fc__header { text-align: center; max-width: 680px; margin: 0 auto 3rem; }
+
+.vb-fc__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+@media screen and (min-width: 600px)  { .vb-fc__grid { grid-template-columns: repeat(3, 1fr); } }
+@media screen and (min-width: 990px)  { .vb-fc__grid { grid-template-columns: repeat(4, 1fr); gap: 1.5rem; } }
+
+.vb-fc__card {
+  background: #fff;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+.vb-fc__card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(0,0,0,0.15); }
+
+.vb-fc__img-wrap {
+  position: relative;
+  aspect-ratio: 1/1;
+  background: #f4f8f3;
+  overflow: hidden;
+}
+.vb-fc__img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.35s ease;
+}
+.vb-fc__card:hover .vb-fc__img { transform: scale(1.05); }
+.vb-fc__img-placeholder {
+  width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 3rem; font-weight: 800; color: var(--vb-green-300);
+  background: var(--vb-green-50);
+}
+.vb-fc__badge-sale {
+  position: absolute; top: 0.75rem; left: 0.75rem;
+  background: #dc2626; color: #fff;
+  font-size: 0.7rem; font-weight: 700;
+  padding: 0.2rem 0.6rem; border-radius: 100px;
+}
+
+.vb-fc__body { padding: 1rem; flex: 1; display: flex; flex-direction: column; gap: 0.3rem; }
+.vb-fc__vendor { font-size: 0.7rem; font-weight: 600; color: var(--vb-green-600); text-transform: uppercase; letter-spacing: 0.06em; margin: 0; }
+.vb-fc__name { font-size: 0.95rem; font-weight: 700; color: var(--vb-neutral-900); margin: 0; line-height: 1.3; }
+.vb-fc__price-row { display: flex; align-items: center; gap: 0.5rem; margin-top: 0.2rem; }
+.vb-fc__price { font-size: 1.05rem; font-weight: 800; color: var(--vb-neutral-900); }
+.vb-fc__compare { font-size: 0.85rem; color: var(--vb-neutral-400); text-decoration: line-through; }
+.vb-fc__atc {
+  display: block; text-align: center; margin-top: 0.75rem;
+  background: var(--vb-green-600); color: #fff;
+  font-size: 0.83rem; font-weight: 700;
+  padding: 0.6rem 1rem; border-radius: 100px;
+  transition: background 0.2s;
+}
+.vb-fc__card:hover .vb-fc__atc { background: var(--vb-green-700); }
+
+.vb-fc__footer { text-align: center; margin-top: 2.5rem; }
+</style>
+
+{% schema %}
+{
+  "name": "VB Featured Collection",
+  "tag": "div",
+  "class": "vb-section-wrap",
+  "settings": [],
+  "presets": [{ "name": "VB Featured Collection" }]
+}
+{% endschema %}

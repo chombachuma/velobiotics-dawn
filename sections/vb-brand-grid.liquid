@@ -1,6 +1,6 @@
-{{ 'vb-brand-grid.css' | asset_url | stylesheet_tag }}
+{% comment %} Explore the Velobiotics Family — uses exact collection images from Shopify {% endcomment %}
 
-{%- assign cdn = 'https://cdn.shopify.com/s/files/1/0668/5848/3883/files' -%}
+{%- assign coll_cdn = 'https://cdn.shopify.com/s/files/1/0668/5848/3883/collections' -%}
 
 <section class="vb-brands">
   <div class="vb-brands__inner page-width">
@@ -15,7 +15,10 @@
 
       <a href="/collections/femina" class="vb-brand-card vb-brand-card--purple">
         <div class="vb-brand-card__img-wrap">
-          <img src="{{ cdn }}/Femina-Probiotic-Caps-Main-Image.jpg" alt="Femina Probiotic" loading="lazy" class="vb-brand-card__img" width="400" height="400">
+          <img
+            src="{{ coll_cdn }}/femina-collection-image_1000x_1acab391-ec29-4568-86bc-b22ab19061d0-7144211.jpg"
+            alt="Femina Collection"
+            loading="lazy" class="vb-brand-card__img" width="500" height="500">
         </div>
         <div class="vb-brand-card__body">
           <span class="vb-brand-card__tag">Women's Health</span>
@@ -27,19 +30,25 @@
 
       <a href="/collections/gutslim" class="vb-brand-card vb-brand-card--teal">
         <div class="vb-brand-card__img-wrap">
-          <img src="{{ cdn }}/GutBundle-HimHer-Pack-3D.png" alt="GutSlim Probiotic" loading="lazy" class="vb-brand-card__img" width="400" height="400">
+          <img
+            src="{{ coll_cdn }}/Gutslim-collection-image-001-1763540162-8914762.jpg"
+            alt="GutSlim Collection"
+            loading="lazy" class="vb-brand-card__img" width="500" height="500">
         </div>
         <div class="vb-brand-card__body">
           <span class="vb-brand-card__tag">Weight Support</span>
           <h3 class="vb-brand-card__name">GutSlim™</h3>
-          <p class="vb-brand-card__desc">Gut balance and weight support. A lighter, healthier you — powered by science.</p>
+          <p class="vb-brand-card__desc">For gut balance and weight support. A lighter, healthier you — powered by science.</p>
           <span class="vb-brand-card__cta">Shop GutSlim →</span>
         </div>
       </a>
 
       <a href="/collections/velo16" class="vb-brand-card vb-brand-card--green">
         <div class="vb-brand-card__img-wrap">
-          <img src="{{ cdn }}/VELO16-30s.jpg" alt="Velo16 Probiotic" loading="lazy" class="vb-brand-card__img" width="400" height="400">
+          <img
+            src="{{ coll_cdn }}/Velo16-collection-image_1000x_67faabcf-7636-4e1a-a844-023894e2b6b6-1763539402-8983068.jpg"
+            alt="Velo16 Collection"
+            loading="lazy" class="vb-brand-card__img" width="500" height="500">
         </div>
         <div class="vb-brand-card__body">
           <span class="vb-brand-card__tag">Daily Wellness</span>
@@ -51,7 +60,10 @@
 
       <a href="/collections/pregbiotics" class="vb-brand-card vb-brand-card--pink">
         <div class="vb-brand-card__img-wrap">
-          <img src="{{ cdn }}/Femina-Probiotics-4-Key-BEnefits.jpg" alt="PregBiotics" loading="lazy" class="vb-brand-card__img" width="400" height="400">
+          <img
+            src="{{ coll_cdn }}/PregBioticsBreastfeeding-3939041.jpg"
+            alt="PregBiotics Collection"
+            loading="lazy" class="vb-brand-card__img" width="500" height="500">
         </div>
         <div class="vb-brand-card__body">
           <span class="vb-brand-card__tag">Prenatal Health</span>
@@ -63,7 +75,10 @@
 
       <a href="/collections/her-biotics" class="vb-brand-card vb-brand-card--rose">
         <div class="vb-brand-card__img-wrap">
-          <img src="{{ cdn }}/Her-Biotics_Original_-_Two_Ladies.png" alt="Her-Biotics" loading="lazy" class="vb-brand-card__img" width="400" height="400">
+          <img
+            src="{{ coll_cdn }}/HerBiotics-collection-image-003-1763540670-6287289.jpg"
+            alt="Her-Biotics Collection"
+            loading="lazy" class="vb-brand-card__img" width="500" height="500">
         </div>
         <div class="vb-brand-card__body">
           <span class="vb-brand-card__tag">For Her</span>
@@ -75,7 +90,10 @@
 
       <a href="/collections/his-biotics" class="vb-brand-card vb-brand-card--navy">
         <div class="vb-brand-card__img-wrap">
-          <img src="{{ cdn }}/Femina-Probiotic-Caps-Key-Benefits.jpg" alt="His-Biotics" loading="lazy" class="vb-brand-card__img" width="400" height="400">
+          <img
+            src="{{ coll_cdn }}/HisBiotics-collection-image-004-1763540835-2612774.jpg"
+            alt="His-Biotics Collection"
+            loading="lazy" class="vb-brand-card__img" width="500" height="500">
         </div>
         <div class="vb-brand-card__body">
           <span class="vb-brand-card__tag">For Him</span>
@@ -87,7 +105,10 @@
 
       <a href="/collections/biokid" class="vb-brand-card vb-brand-card--orange">
         <div class="vb-brand-card__img-wrap">
-          <img src="{{ cdn }}/BIOKID-30s.jpg" alt="BioKid" loading="lazy" class="vb-brand-card__img" width="400" height="400">
+          <img
+            src="{{ coll_cdn }}/BioKid-collection-image_1000x_a31003e0-ee42-4280-9ee1-8dac9d4b1a7b-1763539330-6046640.jpg"
+            alt="BioKid Collection"
+            loading="lazy" class="vb-brand-card__img" width="500" height="500">
         </div>
         <div class="vb-brand-card__body">
           <span class="vb-brand-card__tag">For Kids</span>
@@ -99,7 +120,10 @@
 
       <a href="/collections/biogain" class="vb-brand-card vb-brand-card--blue">
         <div class="vb-brand-card__img-wrap">
-          <img src="{{ cdn }}/BioGain-Strawberry.png" alt="BioGain" loading="lazy" class="vb-brand-card__img" width="400" height="400">
+          <img
+            src="{{ coll_cdn }}/BioGain-collection-image_1000x_799a02d8-e2e9-4411-b5d7-e897629dc540-1763539427-4243932.jpg"
+            alt="BioGain Collection"
+            loading="lazy" class="vb-brand-card__img" width="500" height="500">
         </div>
         <div class="vb-brand-card__body">
           <span class="vb-brand-card__tag">Performance</span>

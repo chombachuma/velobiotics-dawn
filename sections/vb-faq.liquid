@@ -1,0 +1,142 @@
+{% comment %} FAQ — Questions People Ask Before They Buy {% endcomment %}
+
+<section class="vb-faq">
+  <div class="vb-faq__inner page-width">
+    <div class="vb-faq__header">
+      <span class="vb-label-tag" style="color:rgba(255,255,255,0.7)">FAQ</span>
+      <h2 class="vb-h2" style="color:#fff">Questions People Ask Before They Buy</h2>
+    </div>
+
+    <div class="vb-faq__grid">
+
+      <div class="vb-faq__item">
+        <button class="vb-faq__q" aria-expanded="false">
+          <span>What makes Velobiotics different from other probiotics?</span>
+          <span class="vb-faq__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="vb-faq__a" hidden>
+          <p>Most probiotics die in the stomach. Ours are engineered to survive the journey — delivering billions of live, active bacteria directly to your gut using our patented MEP micro-shield technology. That means 1000× more probiotics actually reach where they're needed.</p>
+        </div>
+      </div>
+
+      <div class="vb-faq__item">
+        <button class="vb-faq__q" aria-expanded="false">
+          <span>Do I need to refrigerate Velobiotics?</span>
+          <span class="vb-faq__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="vb-faq__a" hidden>
+          <p>No. Our patented protective coating keeps probiotics stable at room temperature for months, with no refrigeration required. It's designed for real life — whether you're at home or travelling.</p>
+        </div>
+      </div>
+
+      <div class="vb-faq__item">
+        <button class="vb-faq__q" aria-expanded="false">
+          <span>How soon will I notice results?</span>
+          <span class="vb-faq__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="vb-faq__a" hidden>
+          <p>Many users feel better digestion and comfort within <strong>3–7 days</strong>. Long-term benefits like improved immunity, skin health, and hormonal balance deepen with consistent daily use over 4–8 weeks.</p>
+        </div>
+      </div>
+
+      <div class="vb-faq__item">
+        <button class="vb-faq__q" aria-expanded="false">
+          <span>Can I take Velobiotics with antibiotics?</span>
+          <span class="vb-faq__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="vb-faq__a" hidden>
+          <p>Yes. Probiotics can help restore gut balance after antibiotic use. For best results, take them <strong>at least 2 hours apart</strong> from your antibiotic dose so they don't interfere with each other.</p>
+        </div>
+      </div>
+
+      <div class="vb-faq__item">
+        <button class="vb-faq__q" aria-expanded="false">
+          <span>Are Velobiotics products safe for kids or during pregnancy?</span>
+          <span class="vb-faq__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="vb-faq__a" hidden>
+          <p>Absolutely. <strong>BioKid</strong> is specially formulated for children with tasty chewables. <strong>PregBiotics</strong> supports expectant and breastfeeding mothers. Both are approved and endorsed by medical professionals.</p>
+        </div>
+      </div>
+
+      <div class="vb-faq__item">
+        <button class="vb-faq__q" aria-expanded="false">
+          <span>Which Velobiotics product is right for me?</span>
+          <span class="vb-faq__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="vb-faq__a" hidden>
+          <p>Take our free 60-second quiz and we'll match you with the perfect probiotic for your goals — whether that's gut health, weight management, women's intimate health, kids' immunity, or beauty support. <a href="/pages/quiz" style="color:var(--vb-green-400);">Take the quiz →</a></p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="vb-faq__contact">
+      <p>Have more questions?</p>
+      <a href="/pages/new-contact-us" class="vb-btn vb-btn--outline-white vb-btn--md">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<style>
+.vb-faq { background: var(--vb-green-600); padding: 5rem 1.5rem; }
+.vb-faq__inner { max-width: 900px; margin: 0 auto; }
+.vb-faq__header { text-align: center; margin-bottom: 3rem; }
+
+.vb-faq__grid { display: flex; flex-direction: column; gap: 0.75rem; }
+
+.vb-faq__item {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 1rem;
+  overflow: hidden;
+  backdrop-filter: blur(4px);
+}
+.vb-faq__q {
+  display: flex; align-items: center; justify-content: space-between;
+  width: 100%; padding: 1.35rem 1.5rem;
+  background: transparent; border: none; cursor: pointer;
+  text-align: left; gap: 1rem;
+  font-size: 1.05rem; font-weight: 600; color: #fff; line-height: 1.4;
+}
+.vb-faq__q:hover { background: rgba(255,255,255,0.05); }
+.vb-faq__icon {
+  font-size: 1.5rem; font-weight: 300; color: rgba(255,255,255,0.7);
+  transition: transform 0.2s ease; flex-shrink: 0; line-height: 1;
+}
+.vb-faq__q[aria-expanded="true"] .vb-faq__icon { transform: rotate(45deg); }
+.vb-faq__a {
+  padding: 0 1.5rem 1.35rem;
+  font-size: 1rem; color: rgba(255,255,255,0.85); line-height: 1.75;
+}
+.vb-faq__a p { margin: 0; }
+
+.vb-faq__contact {
+  display: flex; align-items: center; justify-content: center; gap: 1.25rem;
+  margin-top: 2.5rem; flex-wrap: wrap;
+  font-size: 1rem; color: rgba(255,255,255,0.7); font-weight: 600;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.vb-faq__q').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      var panel = btn.nextElementSibling;
+      btn.setAttribute('aria-expanded', String(!expanded));
+      if (expanded) { panel.hidden = true; } else { panel.hidden = false; }
+    });
+  });
+});
+</script>
+
+{% schema %}
+{
+  "name": "VB FAQ",
+  "tag": "div",
+  "class": "vb-section-wrap",
+  "settings": [],
+  "presets": [{ "name": "VB FAQ" }]
+}
+{% endschema %}

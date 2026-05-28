@@ -1,0 +1,124 @@
+{% comment %} Blog section — "Your Health. Our Knowledge." with header images, titles, excerpts {% endcomment %}
+
+<section class="vb-blog">
+  <div class="vb-blog__inner page-width">
+    <div class="vb-blog__header">
+      <span class="vb-label-tag" style="color:rgba(255,255,255,0.7)">Gut Wellness Hub</span>
+      <h2 class="vb-h2" style="color:#fff">Your Health. Our Knowledge.</h2>
+      <p class="vb-lead" style="color:rgba(255,255,255,0.8)">Discover simple, science-based insights to help you feel your best.</p>
+    </div>
+
+    {%- assign blog = blogs['news'] -%}
+    {%- if blog and blog.articles_count > 0 -%}
+      <div class="vb-blog__grid">
+        {%- for article in blog.articles limit: 3 -%}
+          <a href="{{ article.url }}" class="vb-blog__card">
+            <div class="vb-blog__img-wrap">
+              {%- if article.image -%}
+                <img
+                  src="{{ article.image | image_url: width: 600 }}"
+                  alt="{{ article.image.alt | default: article.title | escape }}"
+                  loading="lazy"
+                  class="vb-blog__img"
+                  width="600" height="400"
+                >
+              {%- else -%}
+                <div class="vb-blog__img-placeholder">
+                  <span>📰</span>
+                </div>
+              {%- endif -%}
+              <div class="vb-blog__tag">{{ blog.title }}</div>
+            </div>
+            <div class="vb-blog__body">
+              {%- if article.tags contains 'featured' -%}
+                <span class="vb-blog__label">Featured</span>
+              {%- endif -%}
+              <p class="vb-blog__date">{{ article.published_at | date: "%b %d, %Y" }}</p>
+              <h3 class="vb-blog__title">{{ article.title }}</h3>
+              <p class="vb-blog__excerpt">
+                {%- if article.excerpt_or_content != blank -%}
+                  {{ article.excerpt_or_content | strip_html | truncate: 130 }}
+                {%- endif -%}
+              </p>
+              <span class="vb-blog__cta">Read More <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+        {%- endfor -%}
+      </div>
+      <div class="vb-blog__footer">
+        <a href="{{ blog.url }}" class="vb-btn vb-btn--outline-white vb-btn--lg">View All Articles</a>
+      </div>
+    {%- else -%}
+      <div class="vb-blog__empty">
+        <p style="color:rgba(255,255,255,0.6); text-align:center;">Articles coming soon. Stay tuned!</p>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+<style>
+.vb-blog { background: #1a2e17; padding: 5rem 1.5rem; }
+.vb-blog__inner { max-width: 1380px; margin: 0 auto; }
+.vb-blog__header { text-align: center; max-width: 680px; margin: 0 auto 3rem; }
+.vb-blog__footer { text-align: center; margin-top: 2.5rem; }
+
+.vb-blog__grid {
+  display: grid; grid-template-columns: 1fr; gap: 1.5rem;
+}
+@media screen and (min-width: 600px) { .vb-blog__grid { grid-template-columns: repeat(2, 1fr); } }
+@media screen and (min-width: 990px) { .vb-blog__grid { grid-template-columns: repeat(3, 1fr); } }
+
+.vb-blog__card {
+  background: #fff; border-radius: 1.25rem; overflow: hidden;
+  text-decoration: none; color: inherit;
+  display: flex; flex-direction: column;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+.vb-blog__card:hover { transform: translateY(-5px); box-shadow: 0 16px 48px rgba(0,0,0,0.25); }
+
+.vb-blog__img-wrap {
+  position: relative; aspect-ratio: 3/2; overflow: hidden;
+  background: var(--vb-green-600);
+}
+.vb-blog__img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.35s ease; }
+.vb-blog__card:hover .vb-blog__img { transform: scale(1.06); }
+.vb-blog__img-placeholder {
+  width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 3.5rem;
+}
+.vb-blog__tag {
+  position: absolute; top: 0.85rem; left: 0.85rem;
+  background: var(--vb-green-600); color: #fff;
+  font-size: 0.68rem; font-weight: 700;
+  padding: 0.2rem 0.7rem; border-radius: 100px;
+  letter-spacing: 0.05em; text-transform: uppercase;
+}
+
+.vb-blog__body { padding: 1.35rem; flex: 1; display: flex; flex-direction: column; gap: 0.5rem; }
+.vb-blog__label {
+  display: inline-block; font-size: 0.68rem; font-weight: 700;
+  background: var(--vb-green-50); color: var(--vb-green-700);
+  border-radius: 100px; padding: 0.15rem 0.65rem;
+  letter-spacing: 0.05em; text-transform: uppercase;
+  width: fit-content;
+}
+.vb-blog__date { font-size: 0.75rem; color: var(--vb-neutral-400); font-weight: 500; margin: 0; }
+.vb-blog__title { font-size: 1.1rem; font-weight: 700; color: var(--vb-neutral-900); margin: 0; line-height: 1.35; }
+.vb-blog__excerpt { font-size: 0.875rem; color: var(--vb-neutral-600); line-height: 1.65; margin: 0; flex: 1; }
+.vb-blog__cta {
+  font-size: 0.875rem; font-weight: 700;
+  color: var(--vb-green-600); margin-top: auto;
+}
+.vb-blog__empty { padding: 3rem 0; }
+</style>
+
+{% schema %}
+{
+  "name": "VB Blog",
+  "tag": "div",
+  "class": "vb-section-wrap",
+  "settings": [],
+  "presets": [{ "name": "VB Blog" }]
+}
+{% endschema %}

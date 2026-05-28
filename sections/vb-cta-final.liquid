@@ -1,0 +1,51 @@
+{% comment %} Final CTA — "Feel the Difference" close {% endcomment %}
+
+<section class="vb-final">
+  <div class="vb-final__inner page-width">
+    <h2 class="vb-final__h2">Feel the Difference —<br>Billions Strong, Scientifically Proven.</h2>
+    <p class="vb-final__body">Every capsule, chewable, and suppository is built to survive — so you can thrive.</p>
+    <div class="vb-final__ctas">
+      <a href="/collections/all" class="vb-btn vb-btn--white vb-btn--xl">Shop Now</a>
+      <a href="/pages/new-contact-us" class="vb-btn vb-btn--outline-white vb-btn--xl">Get in Touch</a>
+    </div>
+    <p class="vb-final__sub">Have a question? Email us at <a href="mailto:support@velobiotics.com" style="color:var(--vb-green-300)">support@velobiotics.com</a></p>
+  </div>
+</section>
+
+<style>
+.vb-final {
+  background: linear-gradient(135deg, var(--vb-green-700) 0%, #0f2e0c 60%, #0a1a08 100%);
+  padding: 6rem 1.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.vb-final::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 50% 100%, rgba(77,140,68,0.25) 0%, transparent 65%);
+  pointer-events: none;
+}
+.vb-final__inner { max-width: 720px; margin: 0 auto; position: relative; }
+.vb-final__h2 {
+  font-family: var(--vb-font-heading);
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 800; line-height: 1.15;
+  color: #fff; margin: 0 0 1.25rem;
+}
+.vb-final__body {
+  font-size: 1.15rem; color: rgba(255,255,255,0.75); line-height: 1.7; margin: 0 0 2rem;
+}
+.vb-final__ctas { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-bottom: 1.5rem; }
+.vb-final__sub { font-size: 0.875rem; color: rgba(255,255,255,0.5); margin: 0; }
+</style>
+
+{% schema %}
+{
+  "name": "VB Final CTA",
+  "tag": "div",
+  "class": "vb-section-wrap",
+  "settings": [],
+  "presets": [{ "name": "VB Final CTA" }]
+}
+{% endschema %}

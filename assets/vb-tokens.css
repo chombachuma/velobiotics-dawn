@@ -1,0 +1,156 @@
+/* ============================================================
+   Velobiotics Design Tokens — Global CSS Variables
+   All vb-* sections pull from these. Update here = updates everywhere.
+   ============================================================ */
+
+:root {
+  /* ---- Brand Greens ---- */
+  --vb-green-50:  #f0f9ee;
+  --vb-green-100: #d4edcf;
+  --vb-green-200: #a9dba1;
+  --vb-green-300: #7ec474;
+  --vb-green-400: #55ac49;
+  --vb-green-500: #4d8c44;  /* PRIMARY */
+  --vb-green-600: #4d8c44;  /* same — used as default */
+  --vb-green-700: #3d7035;
+  --vb-green-800: #2e5528;
+  --vb-green-900: #1f3b1c;
+
+  /* ---- Neutrals ---- */
+  --vb-neutral-50:  #fafaf9;
+  --vb-neutral-100: #f5f5f4;
+  --vb-neutral-200: #e7e5e4;
+  --vb-neutral-300: #d6d3d1;
+  --vb-neutral-400: #a8a29e;
+  --vb-neutral-500: #78716c;
+  --vb-neutral-600: #57534e;
+  --vb-neutral-700: #44403c;
+  --vb-neutral-800: #292524;
+  --vb-neutral-900: #1c1917;
+
+  /* ---- Typography — 1.5× scale base ---- */
+  --vb-font-heading: var(--font-heading-family, 'Georgia', serif);
+  --vb-font-body:    var(--font-body-family, 'system-ui', sans-serif);
+
+  /* Body base: Dawn default ~15px → we scale up to ~18px */
+  --vb-fs-xs:   0.9rem;    /* ~16px */
+  --vb-fs-sm:   1rem;      /* ~18px */
+  --vb-fs-md:   1.125rem;  /* ~20px */
+  --vb-fs-lg:   1.25rem;   /* ~22px */
+  --vb-fs-xl:   1.5rem;    /* ~27px */
+  --vb-fs-2xl:  1.875rem;  /* ~34px */
+  --vb-fs-3xl:  2.25rem;   /* ~40px */
+  --vb-fs-4xl:  3rem;      /* ~54px */
+  --vb-fs-5xl:  3.75rem;   /* ~67px */
+
+  /* ---- Spacing ---- */
+  --vb-section-py:    5rem;
+  --vb-section-py-sm: 3rem;
+
+  /* ---- Radius ---- */
+  --vb-radius-sm: 0.75rem;
+  --vb-radius-md: 1.25rem;
+  --vb-radius-lg: 1.5rem;
+  --vb-radius-xl: 2rem;
+}
+
+/* ---- Global body font boost for all vb-* sections ---- */
+.vb-section-wrap,
+.vb-section-wrap * {
+  /* Inherit from parent; sections set their own font-size */
+}
+
+/* Ensure all vb text defaults to our larger scale */
+.vb-section-wrap p,
+.vb-section-wrap li,
+.vb-section-wrap span:not(.vb-btn):not(.vb-badge):not(.vb-label-tag) {
+  font-size: var(--vb-fs-sm); /* 18px */
+  line-height: 1.75;
+}
+
+/* Headings */
+.vb-h2 {
+  font-family: var(--vb-font-heading);
+  font-size: clamp(var(--vb-fs-2xl), 4.5vw, var(--vb-fs-4xl));
+  font-weight: 700;
+  color: var(--vb-neutral-900);
+  line-height: 1.15;
+  margin: 0 0 1rem;
+}
+.vb-h3 {
+  font-family: var(--vb-font-heading);
+  font-size: clamp(var(--vb-fs-xl), 2.5vw, var(--vb-fs-2xl));
+  font-weight: 700;
+  color: var(--vb-neutral-900);
+  line-height: 1.25;
+  margin: 0 0 0.75rem;
+}
+.vb-lead {
+  font-size: clamp(var(--vb-fs-md), 1.8vw, var(--vb-fs-lg));
+  color: var(--vb-neutral-600);
+  line-height: 1.75;
+  margin: 0;
+}
+.vb-label-tag {
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--vb-green-600);
+  margin-bottom: 0.75rem;
+}
+
+/* ---- Page-width utility ---- */
+.vb-section-wrap .page-width {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* ---- Button system (global) ---- */
+.vb-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+  border-radius: 100px;
+  font-family: var(--vb-font-body);
+  font-weight: 700; text-decoration: none; cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+  line-height: 1;
+}
+.vb-btn:active { transform: translateY(1px); }
+
+.vb-btn--xl  { padding: 1.1rem 2.5rem; font-size: 1.1rem; }
+.vb-btn--lg  { padding: 0.95rem 2rem;  font-size: 1rem; }
+.vb-btn--md  { padding: 0.75rem 1.5rem; font-size: 0.95rem; }
+.vb-btn--sm  { padding: 0.5rem 1.1rem;  font-size: 0.85rem; }
+
+.vb-btn--primary {
+  background: var(--vb-green-600); color: #fff; border-color: var(--vb-green-600);
+  box-shadow: 0 6px 20px rgba(77,140,68,0.30);
+}
+.vb-btn--primary:hover {
+  background: var(--vb-green-700); border-color: var(--vb-green-700);
+  box-shadow: 0 8px 28px rgba(77,140,68,0.40); transform: translateY(-1px);
+}
+.vb-btn--ghost {
+  background: transparent; color: var(--vb-green-600); border-color: var(--vb-green-600);
+}
+.vb-btn--ghost:hover { background: var(--vb-green-50); }
+.vb-btn--ghost-white {
+  background: #fff; color: var(--vb-green-700); border-color: var(--vb-green-300);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.vb-btn--ghost-white:hover { background: var(--vb-green-50); border-color: var(--vb-green-500); }
+.vb-btn--white {
+  background: #fff; color: var(--vb-green-700); border-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.vb-btn--white:hover { background: var(--vb-green-50); }
+.vb-btn--outline-white {
+  background: transparent; color: #fff; border-color: rgba(255,255,255,0.55);
+}
+.vb-btn--outline-white:hover { background: rgba(255,255,255,0.12); border-color: #fff; }

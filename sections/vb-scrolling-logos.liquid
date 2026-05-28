@@ -1,0 +1,68 @@
+{% comment %} Scrolling "We're Good For..." / As Seen On logos {% endcomment %}
+{%- assign cdn = 'https://cdn.shopify.com/s/files/1/0668/5848/3883/files' -%}
+
+<div class="vb-scroll-logos">
+  <div class="vb-scroll-logos__heading">
+    <span class="vb-scroll-logos__label">We're Good For</span>
+  </div>
+  <div class="vb-scroll-logos__track-wrap" aria-hidden="true">
+    <div class="vb-scroll-logos__track">
+      {%- for i in (1..4) -%}
+        <a href="/collections/femina" class="vb-scroll-logos__item"><img src="{{ cdn }}/as-seen-on-logo-001.png" alt="Women's Health" loading="lazy" height="44"></a>
+        <a href="/collections/velo16" class="vb-scroll-logos__item"><img src="{{ cdn }}/as-seen-on-logo-002.png" alt="Digestive Health" loading="lazy" height="44"></a>
+        <a href="/collections/biokid" class="vb-scroll-logos__item"><img src="{{ cdn }}/as-seen-on-logo-003.png" alt="Kids' Immunity" loading="lazy" height="44"></a>
+        <a href="/collections/gutslim" class="vb-scroll-logos__item"><img src="{{ cdn }}/as-seen-on-logo-004.png" alt="Weight Support" loading="lazy" height="44"></a>
+        <a href="/collections/her-biotics" class="vb-scroll-logos__item"><img src="{{ cdn }}/as-seen-on-logo-005.png" alt="Her Health" loading="lazy" height="44"></a>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+<style>
+.vb-scroll-logos {
+  background: var(--vb-green-600);
+  padding: 1.5rem 0;
+  overflow: hidden;
+}
+.vb-scroll-logos__heading {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.vb-scroll-logos__label {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+}
+.vb-scroll-logos__track-wrap { overflow: hidden; }
+.vb-scroll-logos__track {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  width: max-content;
+  animation: vb-scroll-logos 28s linear infinite;
+}
+@keyframes vb-scroll-logos {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) { .vb-scroll-logos__track { animation: none; } }
+.vb-scroll-logos__item { flex-shrink: 0; display: flex; align-items: center; }
+.vb-scroll-logos__item img {
+  height: 44px; width: auto;
+  filter: brightness(0) invert(1) opacity(0.7);
+  transition: opacity 0.2s;
+}
+.vb-scroll-logos__item:hover img { opacity: 1; filter: brightness(0) invert(1); }
+</style>
+
+{% schema %}
+{
+  "name": "VB Scrolling Logos",
+  "tag": "div",
+  "class": "vb-section-wrap",
+  "settings": [],
+  "presets": [{ "name": "VB Scrolling Logos" }]
+}
+{% endschema %}

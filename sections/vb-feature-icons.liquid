@@ -1,0 +1,111 @@
+{% comment %} "Trusted by Doctors. Proven by Science." — 5 icon columns {% endcomment %}
+{%- assign cdn = 'https://cdn.shopify.com/s/files/1/0668/5848/3883/files' -%}
+
+<section class="vb-feats">
+  <div class="vb-feats__inner page-width">
+    <h2 class="vb-feats__heading">Trusted by Doctors. Proven by Science. Loved by Thousands.</h2>
+    <div class="vb-feats__grid">
+
+      <div class="vb-feats__item">
+        <div class="vb-feats__icon-wrap">
+          <img src="{{ cdn }}/verified_24dp_4D8C44.svg" alt="Clinically Proven" width="44" height="44" loading="lazy">
+        </div>
+        <strong class="vb-feats__title">Clinically Proven Strains</strong>
+        <p class="vb-feats__body">Formulated using strains supported by global research for digestive, immune, and women's health benefits.</p>
+      </div>
+
+      <div class="vb-feats__item">
+        <div class="vb-feats__icon-wrap">
+          <img src="{{ cdn }}/medication_24dp_4D8C44.svg" alt="Doctor Recommended" width="44" height="44" loading="lazy">
+        </div>
+        <strong class="vb-feats__title">Doctor Recommended</strong>
+        <p class="vb-feats__body">Developed and endorsed by medical professionals for safe, daily use by the whole family.</p>
+      </div>
+
+      <div class="vb-feats__item">
+        <div class="vb-feats__icon-wrap">
+          <img src="{{ cdn }}/science_24dp_4D8C44.svg" alt="Science-Backed" width="44" height="44" loading="lazy">
+        </div>
+        <strong class="vb-feats__title">Science-Backed Solutions</strong>
+        <p class="vb-feats__body">Each formula combines evidence-based probiotics with targeted ingredients for real, measurable results.</p>
+      </div>
+
+      <div class="vb-feats__item">
+        <div class="vb-feats__icon-wrap">
+          <img src="{{ cdn }}/takeout_dining_24dp_4D8C44.svg" alt="Sustainable" width="44" height="44" loading="lazy">
+        </div>
+        <strong class="vb-feats__title">Sustainable Packaging</strong>
+        <p class="vb-feats__body">Paper packaging & produced with minimal waste and eco-friendly processes. Good for you, good for the planet.</p>
+      </div>
+
+      <div class="vb-feats__item">
+        <div class="vb-feats__icon-wrap">
+          <img src="{{ cdn }}/star_half_24dp_4D8C44.svg" alt="Reviews" width="44" height="44" loading="lazy">
+        </div>
+        <strong class="vb-feats__title">3,500+ Verified Reviews (4.8★)</strong>
+        <p class="vb-feats__body">Over 350,000 real people already feel the 1000× difference. Join them.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+.vb-feats {
+  background: #fff;
+  padding: 4rem 1.5rem;
+  border-top: 1px solid var(--vb-green-100);
+}
+.vb-feats__inner { max-width: 1380px; margin: 0 auto; }
+.vb-feats__heading {
+  font-family: var(--vb-font-heading);
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+  font-weight: 700;
+  color: var(--vb-green-600);
+  text-align: center;
+  margin: 0 0 3rem;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.25;
+}
+.vb-feats__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 1.5rem;
+}
+@media screen and (min-width: 750px)  { .vb-feats__grid { grid-template-columns: repeat(3, 1fr); } }
+@media screen and (min-width: 990px)  { .vb-feats__grid { grid-template-columns: repeat(5, 1fr); gap: 2rem; } }
+.vb-feats__item { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.85rem; }
+.vb-feats__icon-wrap {
+  width: 72px; height: 72px;
+  background: var(--vb-green-50);
+  border: 2px solid var(--vb-green-100);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.vb-feats__icon-wrap img { width: 36px; height: 36px; }
+.vb-feats__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--vb-neutral-900);
+  line-height: 1.35;
+}
+.vb-feats__body {
+  font-size: 0.9rem;
+  color: var(--vb-neutral-600);
+  line-height: 1.65;
+  margin: 0;
+}
+</style>
+
+{% schema %}
+{
+  "name": "VB Feature Icons",
+  "tag": "div",
+  "class": "vb-section-wrap",
+  "settings": [],
+  "presets": [{ "name": "VB Feature Icons" }]
+}
+{% endschema %}

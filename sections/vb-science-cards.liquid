@@ -1,0 +1,112 @@
+{% comment %} "The Science Behind the Difference" — 4 doctor image cards {% endcomment %}
+{%- assign cdn = 'https://cdn.shopify.com/s/files/1/0668/5848/3883/files' -%}
+
+<section class="vb-sci-cards">
+  <div class="vb-sci-cards__inner page-width">
+    <div class="vb-sci-cards__header">
+      <span class="vb-label-tag">The Science Behind the Difference</span>
+      <h2 class="vb-h2">We Built Armour Around Every Probiotic<br>So It Survives Where Others Don't.</h2>
+      <p class="vb-lead">Most probiotics die before they ever help. We engineered our delivery system to change that.</p>
+    </div>
+
+    <div class="vb-sci-cards__grid">
+
+      <div class="vb-sci-cards__card">
+        <div class="vb-sci-cards__img-wrap">
+          <img src="{{ cdn }}/Trusted-By-Doctor-Image-001.jpg" alt="What is microencapsulation" loading="lazy" class="vb-sci-cards__img" width="300" height="300">
+          <div class="vb-sci-cards__num">1</div>
+        </div>
+        <div class="vb-sci-cards__body">
+          <h3>What Is Microencapsulation?</h3>
+          <p>Think of it as a <em>tiny protective armour</em> around each probiotic — a microscopic shield that keeps good bacteria safe from heat, oxygen, and stomach acid.</p>
+        </div>
+      </div>
+
+      <div class="vb-sci-cards__card">
+        <div class="vb-sci-cards__img-wrap">
+          <img src="{{ cdn }}/Trusted-By-Doctor-Image-002.jpg" alt="Protection against stomach acid" loading="lazy" class="vb-sci-cards__img" width="300" height="300">
+          <div class="vb-sci-cards__num">2</div>
+        </div>
+        <div class="vb-sci-cards__body">
+          <h3>Protection Against Stomach Acid</h3>
+          <p>Stomach acid destroys most probiotics before they can help. Ours are built to resist it — staying dormant until they pass safely into your intestines.</p>
+        </div>
+      </div>
+
+      <div class="vb-sci-cards__card">
+        <div class="vb-sci-cards__img-wrap">
+          <img src="{{ cdn }}/Trusted-By-Doctor-Image-003.jpg" alt="Protection against oxygen and moisture" loading="lazy" class="vb-sci-cards__img" width="300" height="300">
+          <div class="vb-sci-cards__num">3</div>
+        </div>
+        <div class="vb-sci-cards__body">
+          <h3>Protection Against Oxygen &amp; Moisture</h3>
+          <p>Moisture and oxygen trigger premature activation, killing probiotics before they reach your gut. Our polymer shell blocks these elements — keeping bacteria alive for months without refrigeration.</p>
+        </div>
+      </div>
+
+      <div class="vb-sci-cards__card">
+        <div class="vb-sci-cards__img-wrap">
+          <img src="{{ cdn }}/Trusted-By-Doctor-Image-004.jpg" alt="Smart release in the gut" loading="lazy" class="vb-sci-cards__img" width="300" height="300">
+          <div class="vb-sci-cards__num">4</div>
+        </div>
+        <div class="vb-sci-cards__body">
+          <h3>Smart Release in the Gut</h3>
+          <p>Once inside the alkaline environment of your intestines, the capsule gently dissolves — releasing billions of live probiotics where they can actually make a difference.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="vb-sci-cards__footer">
+      <a href="/pages/what-are-probiotics" class="vb-btn vb-btn--primary vb-btn--lg">See the Full Science</a>
+    </div>
+  </div>
+</section>
+
+<style>
+.vb-sci-cards { background: var(--vb-green-50); padding: 5rem 1.5rem; }
+.vb-sci-cards__inner { max-width: 1380px; margin: 0 auto; }
+.vb-sci-cards__header { text-align: center; max-width: 720px; margin: 0 auto 3rem; }
+.vb-sci-cards__footer { text-align: center; margin-top: 2.5rem; }
+
+.vb-sci-cards__grid {
+  display: grid; grid-template-columns: 1fr; gap: 1.5rem;
+}
+@media screen and (min-width: 600px) { .vb-sci-cards__grid { grid-template-columns: repeat(2, 1fr); } }
+@media screen and (min-width: 990px) { .vb-sci-cards__grid { grid-template-columns: repeat(4, 1fr); } }
+
+.vb-sci-cards__card {
+  background: #fff; border-radius: 1.25rem; overflow: hidden;
+  border: 1.5px solid var(--vb-green-100);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+.vb-sci-cards__card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(77,140,68,0.13); }
+
+.vb-sci-cards__img-wrap {
+  position: relative; aspect-ratio: 4/3; overflow: hidden;
+}
+.vb-sci-cards__img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.35s ease; }
+.vb-sci-cards__card:hover .vb-sci-cards__img { transform: scale(1.06); }
+.vb-sci-cards__num {
+  position: absolute; top: 0.85rem; left: 0.85rem;
+  width: 36px; height: 36px; border-radius: 50%;
+  background: var(--vb-green-600); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem; font-weight: 800;
+}
+
+.vb-sci-cards__body { padding: 1.35rem; }
+.vb-sci-cards__body h3 { font-size: 1.05rem; font-weight: 700; color: var(--vb-green-700); margin: 0 0 0.6rem; line-height: 1.3; }
+.vb-sci-cards__body p  { font-size: 0.9rem; color: var(--vb-neutral-600); line-height: 1.65; margin: 0; }
+</style>
+
+{% schema %}
+{
+  "name": "VB Science Cards",
+  "tag": "div",
+  "class": "vb-section-wrap",
+  "settings": [],
+  "presets": [{ "name": "VB Science Cards" }]
+}
+{% endschema %}

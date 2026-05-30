@@ -1,0 +1,57 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "femina-hero",
+      "settings": {
+        "bg_image_url": "https://media.base44.com/images/public/69e75c2ca126e7f218f1b495/3a6563f65_generated_image.png",
+        "eyebrow": "Probiotic Meal Replacement",
+        "headline_pre": "Back on",
+        "headline_highlight": "your feet.",
+        "headline_post": "",
+        "sub": "Scientifically formulated with 10 probiotic strains, 12 vitamins, and 11 minerals. Your shortest path to quick & healthy recovery.",
+        "cta1_text": "Shop BioGain →",
+        "cta1_link": "/collections/biogain",
+        "cta2_text": "📘 Free Bulk-Up Plan",
+        "cta2_link": "https://biogain.care",
+        "proof": " 10 probiotic strains · 5B CFU · 12 vitamins · 11 minerals",
+        "show_badges": true,
+        "bg_color_start": "#b03515",
+        "bg_color_mid": "#ff6b35",
+        "bg_color_end": "#ff9a5a"
+      },
+      "blocks": {
+        "b1": { "type": "badge", "settings": { "text": "10 Strains" } },
+        "b2": { "type": "badge", "settings": { "text": "5B CFU" } },
+        "b3": { "type": "badge", "settings": { "text": "12 Vitamins" } },
+        "b4": { "type": "badge", "settings": { "text": "11 Minerals" } }
+      },
+      "block_order": ["b1","b2","b3","b4"]
+    },
+    "body": { "type": "femina-collection-body", "settings": {} },
+    "grid": {
+      "type": "femina-product-grid",
+      "settings": {
+        "show_heading": true,
+        "eyebrow": "The Range",
+        "title": "Recovery, Reimagined",
+        "sub": "Probiotic meal replacements engineered to get you back on your feet — fast.",
+        "brand_primary": "#ff6b35",
+        "brand_secondary": "#4d8c44",
+        "card_bg": "#fff5ec",
+        "card_bg2": "#ffd6b8",
+        "brand_label": "BioGain®",
+        "products_per_page": 12
+      }
+    }
+  },
+  "order": ["hero","body","grid"]
+}

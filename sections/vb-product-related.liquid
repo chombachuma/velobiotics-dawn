@@ -1,110 +1,164 @@
-{%- comment -%} VB · Related products / Frequently Bought Together — femina-style horizontal-scroll cards {%- endcomment -%}
+{%- comment -%}
+  VB · Related Products — 4-product carousel, Add-to-Cart JS (immediate add via /cart/add.js)
+{%- endcomment -%}
 
 {%- liquid
-  assign brand_primary = section.settings.brand_primary | default: '#4d8c44'
-  assign brand_tint = section.settings.brand_tint | default: '#f3f7f1'
+  assign bp = section.settings.brand_primary | default: '#4d8c44'
+  assign bt = section.settings.brand_tint | default: '#f3f7f1'
+  assign bd = section.settings.brand_dark | default: '#36632f'
+  assign use_tint_bg = section.settings.tint
 -%}
 
 <style>
-  .vb-prel { padding: 56px 0; --bp: {{ brand_primary }}; --bt: {{ brand_tint }}; background: #fff; }
-  .vb-prel--tint { background: var(--bt); }
-  .vb-prel__inner { max-width: 1280px; margin: 0 auto; }
-  .vb-prel__head { text-align: center; max-width: 760px; margin: 0 auto 28px; padding: 0 20px; }
-  .vb-prel__eyebrow { display: inline-block; color: var(--bp); font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 10px; }
-  .vb-prel__title { font-size: clamp(24px, 3.6vw, 36px); font-weight: 800; color: #1a1a1a; line-height: 1.15; margin: 0 0 10px; }
-  .vb-prel__title em { color: var(--bp); font-style: normal; }
-  .vb-prel__sub { font-size: 15.5px; line-height: 1.55; color: #5c6664; margin: 0; }
-  .vb-prel__track { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(240px, 1fr); gap: 16px; overflow-x: auto; padding: 6px 24px 18px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
-  .vb-prel__track::-webkit-scrollbar { height: 6px; }
-  .vb-prel__track::-webkit-scrollbar-thumb { background: color-mix(in srgb, var(--bp) 40%, transparent); border-radius: 999px; }
-  @media (min-width: 990px) { .vb-prel__track { grid-template-columns: repeat(4, 1fr); grid-auto-flow: row; grid-auto-columns: auto; overflow: visible; padding: 6px 24px 8px; } }
-  .vb-prel__card { scroll-snap-align: start; display: flex; flex-direction: column; background: #fff; border: 1px solid #e3ece1; border-radius: 16px; overflow: hidden; text-decoration: none; color: inherit; transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease; }
-  .vb-prel__card:hover { transform: translateY(-4px); box-shadow: 0 18px 36px rgba(77,140,68,0.14); border-color: color-mix(in srgb, var(--bp) 35%, transparent); }
-  .vb-prel__media { position: relative; aspect-ratio: 1/1; background: linear-gradient(135deg, #fff 0%, var(--bt) 100%); overflow: hidden; isolation: isolate; }
-  .vb-prel__media img { width: 100%; height: 100%; object-fit: contain; padding: 14px; mix-blend-mode: multiply; transition: transform 0.4s ease; }
-  .vb-prel__card:hover .vb-prel__media img { transform: scale(1.06); }
-  .vb-prel__save { position: absolute; top: 10px; right: 10px; background: radial-gradient(circle at 30% 30%, #ff5c8a 0%, #ff2e63 50%, #cd1f4c 100%); color: #fff; font-weight: 900; font-size: 13px; padding: 5px; min-width: 48px; height: 48px; border-radius: 50%; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 8px 20px rgba(214,39,90,0.42); transform: rotate(-8deg); line-height: 1; border: 2px solid rgba(255,255,255,0.55); }
-  .vb-prel__save small { font-size: 8px; font-weight: 800; letter-spacing: 0.06em; margin-top: 1px; }
-  .vb-prel__body { padding: 14px 16px 16px; display: flex; flex-direction: column; flex: 1; }
-  .vb-prel__brandtag { display: inline-flex; align-items: center; background: color-mix(in srgb, var(--bp) 12%, #fff); color: var(--bp); padding: 3px 9px; border-radius: 999px; font-size: 10.5px; font-weight: 800; letter-spacing: 0.04em; margin: 0 0 8px; align-self: flex-start; }
-  .vb-prel__name { font-size: 14px; font-weight: 800; color: #1a1a1a; line-height: 1.3; margin: 0 0 8px; }
-  .vb-prel__price-row { display: flex; align-items: baseline; gap: 8px; margin: auto 0 10px; flex-wrap: wrap; }
-  .vb-prel__price { font-size: 16px; font-weight: 800; color: #1a1a1a; }
-  .vb-prel__compare { font-size: 12px; color: #a0a0a0; text-decoration: line-through; }
-  .vb-prel__cta { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 9px 14px; border-radius: 999px; background: var(--bp); color: #fff !important; text-decoration: none; font-weight: 700; font-size: 12.5px; }
-  .vb-prel__card:hover .vb-prel__cta { background: color-mix(in srgb, var(--bp) 80%, #000); }
+  .vb-pr { padding: 40px 20px; max-width: 1280px; margin: 0 auto; --bp: {{ bp }}; --bt: {{ bt }}; --bd: {{ bd }}; {% if use_tint_bg %}background: var(--bt); border-radius: 24px; margin-top: 40px; margin-bottom: 40px;{% endif %} }
+  .vb-pr__head { text-align: center; margin: 0 0 28px; }
+  .vb-pr__eyebrow { display: inline-flex; align-items: center; gap: 6px; background: color-mix(in srgb, var(--bp) 12%, #fff); color: var(--bp); padding: 6px 13px; border-radius: 999px; font-size: 11.5px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 12px; }
+  .vb-pr__title { font-size: clamp(22px, 3vw, 30px); font-weight: 800; color: #1a1a1a; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .vb-pr__sub { font-size: 14px; color: #5c6664; margin: 0; }
+  .vb-pr__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .vb-pr__card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 6px 18px rgba(0,0,0,0.05); border: 1px solid #f0eaf0; display: flex; flex-direction: column; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .vb-pr__card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(0,0,0,0.1); }
+  .vb-pr__img-wrap { aspect-ratio: 1/1; background: var(--bt); padding: 14px; position: relative; display: block; }
+  .vb-pr__img-wrap img { width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply; }
+  .vb-pr__badge { position: absolute; top: 10px; left: 10px; background: var(--bp); color: #fff; font-size: 10px; font-weight: 800; padding: 4px 10px; border-radius: 999px; letter-spacing: 0.04em; }
+  .vb-pr__body { padding: 14px; flex: 1; display: flex; flex-direction: column; gap: 8px; }
+  .vb-pr__brand { font-size: 10.5px; font-weight: 800; color: var(--bp); letter-spacing: 0.06em; text-transform: uppercase; }
+  .vb-pr__name { font-size: 14.5px; font-weight: 800; color: #1a1a1a; line-height: 1.3; text-decoration: none; }
+  .vb-pr__name:hover { color: var(--bp); }
+  .vb-pr__rating { display: inline-flex; align-items: center; gap: 6px; font-size: 11.5px; color: #5c6664; }
+  .vb-pr__rating .stars { color: #ffb43a; font-size: 11px; letter-spacing: 0.5px; }
+  .vb-pr__price-row { display: flex; align-items: baseline; gap: 8px; margin-top: auto; }
+  .vb-pr__price { font-size: 17px; font-weight: 800; color: #1a1a1a; }
+  .vb-pr__compare { font-size: 12.5px; color: #a0a0a0; text-decoration: line-through; }
+  .vb-pr__atc { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 9px 12px; background: var(--bp); color: #fff !important; border: none; border-radius: 999px; font-size: 12px; font-weight: 800; cursor: pointer; transition: all 0.18s ease; box-shadow: 0 6px 14px color-mix(in srgb, var(--bp) 22%, transparent); width: 100%; margin-top: 4px; }
+  .vb-pr__atc:hover { background: var(--bd); transform: translateY(-1px); }
+  .vb-pr__atc:disabled { opacity: 0.55; cursor: not-allowed; }
+  .vb-pr__atc.is-added { background: #2d8f3a; }
+  .vb-pr__atc.is-loading { opacity: 0.7; cursor: wait; }
+
+  @media (max-width: 990px) { .vb-pr__grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 749px) {
-    .vb-prel { padding: 40px 0; }
-    .vb-prel__head { margin-bottom: 20px; }
-    .vb-prel__track { grid-auto-columns: 70%; padding: 6px 14px 14px; gap: 10px; }
-    .vb-prel__card { border-radius: 12px; }
-    .vb-prel__body { padding: 12px 14px 12px; }
-    .vb-prel__name { font-size: 13px; }
-    .vb-prel__price { font-size: 14.5px; }
-    .vb-prel__save { min-width: 40px; height: 40px; font-size: 11px; padding: 4px; }
-    .vb-prel__save small { font-size: 7px; }
+    .vb-pr { padding: 28px 14px; }
+    .vb-pr__grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .vb-pr__name { font-size: 13px; }
+    .vb-pr__price { font-size: 15.5px; }
+    .vb-pr__atc { font-size: 11.5px; padding: 8px 10px; }
   }
 </style>
 
-<section class="vb-prel{% if section.settings.tint %} vb-prel--tint{% endif %}">
-  <div class="vb-prel__inner">
-    <div class="vb-prel__head">
-      {%- if section.settings.eyebrow != blank -%}<p class="vb-prel__eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
-      <h2 class="vb-prel__title">{{ section.settings.title_pre }}{%- if section.settings.title_highlight != blank %} <em>{{ section.settings.title_highlight }}</em>{%- endif -%}</h2>
-      {%- if section.settings.sub != blank -%}<p class="vb-prel__sub">{{ section.settings.sub }}</p>{%- endif -%}
-    </div>
-    <div class="vb-prel__track">
-      {%- for block in section.blocks -%}
-        {%- if block.type == 'product' -%}
-          {%- assign p = all_products[block.settings.product_handle] -%}
-          {%- if p and p.id -%}
-            {%- liquid
-              assign vsav = 0
-              if p.compare_at_price > p.price and p.compare_at_price > 0
-                assign vdiff = p.compare_at_price | minus: p.price
-                assign vsav = vdiff | times: 100.0 | divided_by: p.compare_at_price | round
-              endif
-            -%}
-            <a href="{{ p.url }}" class="vb-prel__card">
-              <div class="vb-prel__media">
-                {%- if p.featured_image -%}<img src="{{ p.featured_image | image_url: width: 400 }}" alt="{{ p.title | escape }}" loading="lazy" />{%- endif -%}
-                {%- if vsav > 0 -%}<span class="vb-prel__save">−{{ vsav }}%<small>SAVE</small></span>{%- endif -%}
-              </div>
-              <div class="vb-prel__body">
-                {%- if block.settings.brand_label != blank -%}<span class="vb-prel__brandtag">{{ block.settings.brand_label }}</span>{%- endif -%}
-                <h3 class="vb-prel__name">{{ p.title }}</h3>
-                <div class="vb-prel__price-row">
-                  <span class="vb-prel__price">{{ p.price | money }}</span>
-                  {%- if p.compare_at_price > p.price -%}<span class="vb-prel__compare">{{ p.compare_at_price | money }}</span>{%- endif -%}
-                </div>
-                <span class="vb-prel__cta">Shop Now →</span>
-              </div>
-            </a>
-          {%- endif -%}
-        {%- endif -%}
-      {%- endfor -%}
-    </div>
+<section class="vb-pr">
+  <div class="vb-pr__head">
+    <span class="vb-pr__eyebrow">{{ section.settings.eyebrow | default: 'Complete your routine' }}</span>
+    <h2 class="vb-pr__title">{{ section.settings.title | default: 'You may also love' }}</h2>
+    {%- if section.settings.sub != blank -%}<p class="vb-pr__sub">{{ section.settings.sub }}</p>{%- endif -%}
+  </div>
+  <div class="vb-pr__grid">
+    {%- for block in section.blocks -%}
+      {%- assign p = all_products[block.settings.product_handle] -%}
+      {%- if p != blank and p.id -%}
+        {%- assign v = p.selected_or_first_available_variant -%}
+        {%- assign saved_pct = 0 -%}
+        {%- if v.compare_at_price > v.price -%}{%- assign diff_p = v.compare_at_price | minus: v.price -%}{%- assign saved_pct = diff_p | times: 100.0 | divided_by: v.compare_at_price | round -%}{%- endif -%}
+        <div class="vb-pr__card" {{ block.shopify_attributes }}>
+          <a href="{{ p.url }}" class="vb-pr__img-wrap">
+            {%- if saved_pct > 0 -%}<span class="vb-pr__badge">−{{ saved_pct }}%</span>{%- endif -%}
+            {%- if p.featured_image -%}<img src="{{ p.featured_image | image_url: width: 500 }}" alt="{{ p.title | escape }}" loading="lazy" />{%- endif -%}
+          </a>
+          <div class="vb-pr__body">
+            {%- if block.settings.brand != blank -%}<span class="vb-pr__brand">{{ block.settings.brand }}</span>{%- endif -%}
+            <a href="{{ p.url }}" class="vb-pr__name">{{ p.title }}</a>
+            <span class="vb-pr__rating"><span class="stars">★★★★★</span> {{ block.settings.rating | default: '4.8' }} ({{ block.settings.reviews | default: '120+' }})</span>
+            <div class="vb-pr__price-row">
+              <span class="vb-pr__price">{{ v.price | money }}</span>
+              {%- if v.compare_at_price > v.price -%}<span class="vb-pr__compare">{{ v.compare_at_price | money }}</span>{%- endif -%}
+            </div>
+            <button type="button" class="vb-pr__atc" data-vbpr-atc data-variant-id="{{ v.id }}" {% unless v.available %}disabled{% endunless %}>
+              {% if v.available %}🛒 Add to Cart{% else %}Sold out{% endif %}
+            </button>
+          </div>
+        </div>
+      {%- elsif block.settings.fallback_title != blank -%}
+        <div class="vb-pr__card" {{ block.shopify_attributes }}>
+          {%- if block.settings.fallback_url != blank -%}<a href="{{ block.settings.fallback_url }}" class="vb-pr__img-wrap">{%- else -%}<div class="vb-pr__img-wrap">{%- endif -%}
+            {%- if block.settings.fallback_image != blank -%}<img src="{{ block.settings.fallback_image | image_url: width: 500 }}" alt="" loading="lazy" />{%- endif -%}
+          {%- if block.settings.fallback_url != blank -%}</a>{%- else -%}</div>{%- endif -%}
+          <div class="vb-pr__body">
+            {%- if block.settings.brand != blank -%}<span class="vb-pr__brand">{{ block.settings.brand }}</span>{%- endif -%}
+            <a href="{{ block.settings.fallback_url | default: '#' }}" class="vb-pr__name">{{ block.settings.fallback_title }}</a>
+            <span class="vb-pr__rating"><span class="stars">★★★★★</span> {{ block.settings.rating | default: '4.8' }} ({{ block.settings.reviews | default: '120+' }})</span>
+            <div class="vb-pr__price-row">
+              <span class="vb-pr__price">{{ block.settings.fallback_price | default: 'R 0.00' }}</span>
+            </div>
+            <a href="{{ block.settings.fallback_url | default: '#' }}" class="vb-pr__atc">View →</a>
+          </div>
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
   </div>
 </section>
+
+<script>
+  (function(){
+    document.querySelectorAll('.vb-pr [data-vbpr-atc]').forEach(btn => {
+      btn.addEventListener('click', async (e) => {
+        e.preventDefault();
+        const id = btn.dataset.variantId;
+        if (!id || btn.classList.contains('is-loading') || btn.classList.contains('is-added')) return;
+        const originalText = btn.innerHTML;
+        btn.classList.add('is-loading');
+        btn.innerHTML = '⏳ Adding...';
+        try {
+          const res = await fetch('/cart/add.js', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify({ items: [{ id: parseInt(id), quantity: 1 }] })
+          });
+          if (!res.ok) throw new Error('Add failed');
+          btn.classList.remove('is-loading');
+          btn.classList.add('is-added');
+          btn.innerHTML = '✓ Added';
+          document.dispatchEvent(new CustomEvent('cart:refresh'));
+          if (window.location.pathname.indexOf('/cart') === -1) {
+            // optional: open cart drawer if Dawn theme exposes it
+            const cartDrawer = document.querySelector('cart-drawer');
+            if (cartDrawer && typeof cartDrawer.open === 'function') cartDrawer.open();
+            else if (cartDrawer && cartDrawer.classList) cartDrawer.classList.add('active', 'animate');
+          }
+          setTimeout(() => { btn.classList.remove('is-added'); btn.innerHTML = originalText; }, 2400);
+        } catch (err) {
+          btn.classList.remove('is-loading');
+          btn.innerHTML = '⚠ Error — try cart';
+          setTimeout(() => { btn.innerHTML = originalText; }, 2400);
+        }
+      });
+    });
+  })();
+</script>
 
 {% schema %}
 {
   "name": "VB · Related products",
   "tag": "section",
-  "enabled_on": { "templates": ["product"] },
   "settings": [
     { "type": "color", "id": "brand_primary", "label": "Brand primary", "default": "#4d8c44" },
+    { "type": "color", "id": "brand_dark", "label": "Brand dark", "default": "#36632f" },
     { "type": "color", "id": "brand_tint", "label": "Brand tint", "default": "#f3f7f1" },
-    { "type": "checkbox", "id": "tint", "label": "Use tint background", "default": false },
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "You May Also Like" },
-    { "type": "text", "id": "title_pre", "label": "Title (start)", "default": "Complete your" },
-    { "type": "text", "id": "title_highlight", "label": "Title (highlight)", "default": "Femina™ ritual" },
-    { "type": "textarea", "id": "sub", "label": "Sub-text" }
+    { "type": "checkbox", "id": "tint", "label": "Tinted background", "default": false },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Complete your routine" },
+    { "type": "text", "id": "title", "label": "Title", "default": "You may also love" },
+    { "type": "text", "id": "sub", "label": "Subtitle" }
   ],
   "blocks": [
-    { "type": "product", "name": "Product", "settings": [
+    { "type": "product", "name": "Product", "limit": 8, "settings": [
       { "type": "text", "id": "product_handle", "label": "Product handle" },
-      { "type": "text", "id": "brand_label", "label": "Brand label", "default": "Femina™" }
+      { "type": "text", "id": "brand", "label": "Brand label", "default": "Femina™" },
+      { "type": "text", "id": "rating", "label": "Rating", "default": "4.8" },
+      { "type": "text", "id": "reviews", "label": "Review count", "default": "120+" },
+      { "type": "header", "content": "Fallback (if product handle missing)" },
+      { "type": "text", "id": "fallback_title", "label": "Fallback title" },
+      { "type": "url", "id": "fallback_url", "label": "Fallback URL" },
+      { "type": "image_picker", "id": "fallback_image", "label": "Fallback image" },
+      { "type": "text", "id": "fallback_price", "label": "Fallback price" }
     ]}
   ],
   "presets": [{ "name": "VB · Related products" }]

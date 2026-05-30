@@ -1,0 +1,63 @@
+{%- comment -%}
+  Velobiotics trust marquee — continuously scrolling trust signals under the header
+{%- endcomment -%}
+
+<style>
+  .vb-marquee { background: #f3f7f1; border-top: 1px solid #e3ece1; border-bottom: 1px solid #e3ece1; overflow: hidden; padding: 12px 0; }
+  .vb-marquee__track { display: flex; align-items: center; gap: 56px; white-space: nowrap; animation: vb-marquee-scroll 38s linear infinite; width: max-content; }
+  @keyframes vb-marquee-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .vb-marquee__item { display: inline-flex; align-items: center; gap: 8px; font-size: 13.5px; font-weight: 600; color: #2b3a2a; letter-spacing: 0.01em; }
+  .vb-marquee__icon { color: #4d8c44; font-size: 14px; }
+  .vb-marquee:hover .vb-marquee__track { animation-play-state: paused; }
+  @media (max-width: 749px) {
+    .vb-marquee { padding: 10px 0; }
+    .vb-marquee__track { gap: 36px; animation-duration: 30s; }
+    .vb-marquee__item { font-size: 12px; }
+  }
+</style>
+
+<section class="vb-marquee" aria-label="Velobiotics trust badges">
+  <div class="vb-marquee__track">
+    {%- for i in (1..2) -%}
+      {%- for block in section.blocks -%}
+        <span class="vb-marquee__item" {% if i == 1 %}{{ block.shopify_attributes }}{% endif %}>
+          {%- if block.settings.icon != blank -%}<span class="vb-marquee__icon">{{ block.settings.icon }}</span>{%- endif -%}
+          {{ block.settings.text }}
+        </span>
+      {%- endfor -%}
+    {%- endfor -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "VB · Trust marquee",
+  "tag": "section",
+  "class": "vb-trust-marquee-section",
+  "blocks": [
+    {
+      "type": "trust",
+      "name": "Trust item",
+      "settings": [
+        { "type": "text", "id": "icon", "label": "Icon / emoji", "default": "✅" },
+        { "type": "text", "id": "text", "label": "Text", "default": "Science-Backed" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "VB · Trust marquee",
+      "blocks": [
+        { "type": "trust", "settings": { "icon": "☑️", "text": "Science-Backed" } },
+        { "type": "trust", "settings": { "icon": "🩺", "text": "Doctor-Recommended" } },
+        { "type": "trust", "settings": { "icon": "🧪", "text": "Patented MEP Technology" } },
+        { "type": "trust", "settings": { "icon": "🔄", "text": "100% Money-Back Guarantee" } },
+        { "type": "trust", "settings": { "icon": "🚚", "text": "Free Shipping Over R400" } },
+        { "type": "trust", "settings": { "icon": "⭐", "text": "3,500+ Verified Reviews" } },
+        { "type": "trust", "settings": { "icon": "💊", "text": "1000× More Probiotics Delivered" } },
+        { "type": "trust", "settings": { "icon": "🏭", "text": "SAHPRA-Certified Manufacturing" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

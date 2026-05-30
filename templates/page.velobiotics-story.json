@@ -1,0 +1,151 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "hero": {
+      "type": "vb-hero",
+      "settings": {
+        "eyebrow": "Founder's Story",
+        "sub": "How Dr. Chomba Chuma turned years of clinical frustration with under-performing probiotics into a microencapsulation breakthrough — now powering nine brands and over half a million daily users."
+      }
+    },
+    "opening": {
+      "type": "vb-feature-row",
+      "settings": {
+        "eyebrow": "The Spark"
+      }
+    },
+    "timeline": {
+      "type": "vb-timeline",
+      "blocks": {
+        "t1": {
+          "type": "milestone",
+          "settings": {
+            "year": "2014",
+            "heading": "The frustration",
+            "text": "As a medical doctor, Chomba sees first-hand that conventional probiotic supplements are failing his patients — most cultures die before they reach the gut."
+          }
+        },
+        "t2": {
+          "type": "milestone",
+          "settings": {
+            "year": "2016",
+            "heading": "First R&D breakthrough",
+            "text": "Chomba partners with food-tech researchers to test supercritical CO₂ microencapsulation — protecting live cultures through stomach acid for the first time."
+          }
+        },
+        "t3": {
+          "type": "milestone",
+          "settings": {
+            "year": "2018",
+            "heading": "Velobiotics™ MEP patented",
+            "text": "The Microencapsulated Probiotics (MEP) delivery technology is filed and patented. Lab tests show 1000× more probiotics surviving stomach acid versus conventional capsules."
+          }
+        },
+        "t4": {
+          "type": "milestone",
+          "settings": {
+            "year": "2019",
+            "heading": "First product launches",
+            "text": "Velo16™ launches as the foundation brand. Femina™ follows shortly after to address the female intimate health gap Chomba had identified in his clinical practice."
+          }
+        },
+        "t5": {
+          "type": "milestone",
+          "settings": {
+            "year": "2021",
+            "heading": "Brand family expands",
+            "text": "His-Biotics™, Her-Biotics™, BioKid™, and PregBiotics™ launch — each engineered for a specific demographic with the same Velobiotics™ MEP delivery."
+          }
+        },
+        "t6": {
+          "type": "milestone",
+          "settings": {
+            "year": "2023",
+            "heading": "GutSlim™ + Almasi™ launch",
+            "text": "GutSlim™ enters the weight-management category as a natural GLP-1 alternative. Almasi™ pioneers probiotic beauty-from-within ingestibles."
+          }
+        },
+        "t7": {
+          "type": "milestone",
+          "settings": {
+            "year": "2024",
+            "heading": "BioGain™ launches",
+            "text": "BioGain™ targets healing and recovery — the ninth brand in the Velobiotics portfolio. Velobiotics now serves over 500,000 daily users across Southern Africa."
+          }
+        },
+        "t8": {
+          "type": "milestone",
+          "settings": {
+            "year": "2026 →",
+            "heading": "Going global",
+            "text": "Velobiotics enters US, UK, and EU markets — bringing patented probiotic delivery to a global audience. The 2035 vision: 50 million people supported, daily."
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8"
+      ],
+      "settings": {
+        "eyebrow": "Our Journey",
+        "title_pre": "From a pharmacy floor",
+        "title_highlight": "to 1000× delivery.",
+        "sub": "Twelve years. Nine brands. One patented technology. Here's how Velobiotics happened."
+      }
+    },
+    "letter": {
+      "type": "vb-feature-row",
+      "settings": {
+        "eyebrow": "A note from the founder"
+      }
+    },
+    "brand_family": {
+      "type": "vb-brand-family",
+      "settings": {
+        "eyebrow": "Built from the journey",
+        "title_pre": "Nine brands.",
+        "title_highlight": "One Velobiotics promise.",
+        "sub": "Each engineered for a specific life stage. All powered by the patented MEP delivery."
+      }
+    },
+    "final_cta": {
+      "type": "vb-final-cta",
+      "settings": {
+        "eyebrow": "Be part of the next chapter",
+        "title_pre": "Start your story",
+        "title_highlight": "with Velobiotics.",
+        "sub": "30-day money-back guarantee · Ships worldwide · Lab-tested every batch."
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero",
+    "opening",
+    "timeline",
+    "letter",
+    "brand_family",
+    "final_cta"
+  ]
+}

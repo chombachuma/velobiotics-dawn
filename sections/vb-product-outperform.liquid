@@ -1,5 +1,5 @@
 {%- comment -%}
-  VB · Product Outperform — 3-col comparison (Brand vs Other Probiotics vs Antibiotics) — bottom CTA is Add to Cart (uses hero form variant)
+  VB · Product Outperform v2 — Feature/Description table (matches live theme style) + Add to Cart CTA
 {%- endcomment -%}
 
 {%- liquid
@@ -13,19 +13,18 @@
   .vb-pof { padding: 50px 20px; max-width: 1180px; margin: 0 auto; --bp: {{ bp }}; --bt: {{ bt }}; --bd: {{ bd }}; }
   .vb-pof__head { text-align: center; margin: 0 0 32px; }
   .vb-pof__eyebrow { display: inline-flex; align-items: center; gap: 6px; background: color-mix(in srgb, var(--bp) 12%, #fff); color: var(--bp); padding: 6px 13px; border-radius: 999px; font-size: 11.5px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 12px; }
-  .vb-pof__title { font-size: clamp(24px, 3.2vw, 34px); font-weight: 800; color: #1a1a1a; margin: 0; letter-spacing: -0.02em; }
-  .vb-pof__table-wrap { background: #fff; border: 1px solid #e3ece1; border-radius: 22px; overflow: hidden; box-shadow: 0 12px 32px rgba(0,0,0,0.05); }
-  .vb-pof__row { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; align-items: center; }
-  .vb-pof__row + .vb-pof__row { border-top: 1px solid #f0eaf0; }
-  .vb-pof__row--head { background: linear-gradient(180deg, var(--bt) 0%, #fff 100%); padding: 18px 0; }
-  .vb-pof__row--head > div { font-size: 13px; font-weight: 800; color: #1a1a1a; text-align: center; padding: 0 12px; }
-  .vb-pof__row--head .vb-pof__col-brand { color: var(--bp); font-size: 14px; }
-  .vb-pof__cell { padding: 16px 14px; font-size: 13.5px; color: #2b3a2a; text-align: center; }
-  .vb-pof__cell--label { text-align: left; font-weight: 700; color: #1a1a1a; }
-  .vb-pof__cell--brand { background: color-mix(in srgb, var(--bp) 5%, #fff); font-weight: 700; }
-  .vb-pof__tick { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: var(--bp); color: #fff; font-weight: 900; font-size: 14px; }
-  .vb-pof__cross { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: #f5e6e6; color: #c0392b; font-weight: 900; font-size: 14px; }
-  .vb-pof__partial { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: #fff4dc; color: #b88800; font-weight: 900; font-size: 14px; }
+  .vb-pof__title { font-size: clamp(24px, 3.2vw, 34px); font-weight: 800; color: #1a1a1a; margin: 0 0 8px; letter-spacing: -0.02em; }
+  .vb-pof__sub { font-size: 15px; color: #5c6664; margin: 0; max-width: 640px; margin-left: auto; margin-right: auto; }
+
+  .vb-pof__table { width: 100%; border-collapse: separate; border-spacing: 0; background: #fff; border-radius: 22px; overflow: hidden; box-shadow: 0 14px 36px rgba(0,0,0,0.06); border: 1px solid #e3ece1; }
+  .vb-pof__th { background: linear-gradient(180deg, var(--bt) 0%, #fff 100%); font-size: 13px; font-weight: 800; color: #1a1a1a; padding: 18px 22px; text-align: left; letter-spacing: 0.04em; text-transform: uppercase; }
+  .vb-pof__th--brand { color: var(--bp); }
+  .vb-pof__row { transition: background 0.15s ease; }
+  .vb-pof__row:nth-child(odd) td { background: color-mix(in srgb, var(--bp) 3%, #fff); }
+  .vb-pof__row:hover td { background: color-mix(in srgb, var(--bp) 7%, #fff); }
+  .vb-pof__feature { padding: 18px 22px; font-size: 14.5px; font-weight: 800; color: var(--bp); width: 38%; vertical-align: top; border-top: 1px solid #f0eaf0; }
+  .vb-pof__desc { padding: 18px 22px; font-size: 14.5px; color: #2b3a2a; line-height: 1.55; vertical-align: top; border-top: 1px solid #f0eaf0; }
+
   .vb-pof__cta-wrap { text-align: center; margin: 32px 0 0; display: flex; flex-direction: column; align-items: center; gap: 10px; }
   .vb-pof__cta { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 16px 36px; background: var(--bp); color: #fff !important; border: none; border-radius: 999px; font-weight: 800; font-size: 15px; cursor: pointer; transition: all 0.2s ease; box-shadow: 0 12px 26px color-mix(in srgb, var(--bp) 30%, transparent); text-decoration: none; }
   .vb-pof__cta:hover { background: var(--bd); transform: translateY(-2px); }
@@ -34,56 +33,38 @@
   .vb-pof__cta-note { font-size: 12px; color: #5c6664; font-weight: 600; }
 
   @media (max-width: 749px) {
-    .vb-pof { padding: 30px 12px; }
-    .vb-pof__row { grid-template-columns: 1.2fr 1fr 1fr 1fr; }
-    .vb-pof__row--head > div { font-size: 11px; padding: 0 6px; }
-    .vb-pof__row--head .vb-pof__col-brand { font-size: 11.5px; }
-    .vb-pof__cell { padding: 12px 6px; font-size: 11.5px; }
-    .vb-pof__cell--label { font-size: 12px; }
-    .vb-pof__tick, .vb-pof__cross, .vb-pof__partial { width: 22px; height: 22px; font-size: 11px; }
+    .vb-pof { padding: 36px 12px; }
+    .vb-pof__th { padding: 14px 14px; font-size: 11.5px; }
+    .vb-pof__feature { padding: 14px 14px; font-size: 13.5px; width: 38%; }
+    .vb-pof__desc { padding: 14px 14px; font-size: 13px; }
     .vb-pof__cta { padding: 13px 26px; font-size: 13.5px; }
   }
 </style>
 
 <section class="vb-pof">
   <div class="vb-pof__head">
-    <span class="vb-pof__eyebrow">{{ section.settings.eyebrow | default: 'Side by side' }}</span>
+    <span class="vb-pof__eyebrow">{{ section.settings.eyebrow | default: 'Key benefits' }}</span>
     <h2 class="vb-pof__title">{{ section.settings.title | default: 'Why we outperform' }}</h2>
+    {%- if section.settings.sub != blank -%}<p class="vb-pof__sub">{{ section.settings.sub }}</p>{%- endif -%}
   </div>
-  <div class="vb-pof__table-wrap">
-    <div class="vb-pof__row vb-pof__row--head">
-      <div></div>
-      <div class="vb-pof__col-brand">{{ section.settings.col_brand | default: 'Femina™' }}</div>
-      <div>{{ section.settings.col_b | default: 'Other Probiotics' }}</div>
-      <div>{{ section.settings.col_c | default: 'Antibiotics' }}</div>
-    </div>
-    {%- for block in section.blocks -%}
-      <div class="vb-pof__row" {{ block.shopify_attributes }}>
-        <div class="vb-pof__cell vb-pof__cell--label">{{ block.settings.feature }}</div>
-        <div class="vb-pof__cell vb-pof__cell--brand">
-          {%- case block.settings.brand_state -%}
-            {%- when 'yes' -%}<span class="vb-pof__tick">✓</span>
-            {%- when 'no' -%}<span class="vb-pof__cross">✕</span>
-            {%- when 'partial' -%}<span class="vb-pof__partial">~</span>
-          {%- endcase -%}
-        </div>
-        <div class="vb-pof__cell">
-          {%- case block.settings.b_state -%}
-            {%- when 'yes' -%}<span class="vb-pof__tick">✓</span>
-            {%- when 'no' -%}<span class="vb-pof__cross">✕</span>
-            {%- when 'partial' -%}<span class="vb-pof__partial">~</span>
-          {%- endcase -%}
-        </div>
-        <div class="vb-pof__cell">
-          {%- case block.settings.c_state -%}
-            {%- when 'yes' -%}<span class="vb-pof__tick">✓</span>
-            {%- when 'no' -%}<span class="vb-pof__cross">✕</span>
-            {%- when 'partial' -%}<span class="vb-pof__partial">~</span>
-          {%- endcase -%}
-        </div>
-      </div>
-    {%- endfor -%}
-  </div>
+  <table class="vb-pof__table">
+    <thead>
+      <tr>
+        <th class="vb-pof__th vb-pof__th--brand">{{ section.settings.col_feature | default: 'Feature' }}</th>
+        <th class="vb-pof__th">{{ section.settings.col_desc | default: 'Description' }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'row' -%}
+          <tr class="vb-pof__row" {{ block.shopify_attributes }}>
+            <td class="vb-pof__feature">{{ block.settings.feature }}</td>
+            <td class="vb-pof__desc">{{ block.settings.description }}</td>
+          </tr>
+        {%- endif -%}
+      {%- endfor -%}
+    </tbody>
+  </table>
   <div class="vb-pof__cta-wrap">
     <button type="button" class="vb-pof__cta" data-vbpof-atc data-variant-id="{{ current_variant.id }}" {% unless current_variant.available %}disabled{% endunless %}>
       🛒 {{ section.settings.cta_text | default: 'Add to Cart' }} →
@@ -99,7 +80,6 @@
     btn.addEventListener('click', async (e) => {
       e.preventDefault();
       const id = btn.dataset.variantId;
-      // Also respect the variant currently selected in the hero form, if present
       const heroSelected = document.querySelector('.vb-ph input[name="id"]:checked, .vb-ph input[name="id"][type="hidden"]');
       const finalId = heroSelected ? heroSelected.value : id;
       if (!finalId) return;
@@ -123,7 +103,7 @@
         setTimeout(() => { btn.classList.remove('is-added'); btn.innerHTML = originalText; }, 3000);
       } catch (err) {
         btn.classList.remove('is-loading');
-        btn.innerHTML = '⚠ Try the cart';
+        btn.innerHTML = '⚠ Try again';
         setTimeout(() => { btn.innerHTML = originalText; }, 2400);
       }
     });
@@ -138,20 +118,18 @@
     { "type": "color", "id": "brand_primary", "label": "Brand primary", "default": "#4d8c44" },
     { "type": "color", "id": "brand_dark", "label": "Brand dark", "default": "#36632f" },
     { "type": "color", "id": "brand_tint", "label": "Brand tint", "default": "#f3f7f1" },
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Side by side" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Key benefits" },
     { "type": "text", "id": "title", "label": "Title", "default": "Why we outperform" },
-    { "type": "text", "id": "col_brand", "label": "Column A label (brand)", "default": "Femina™" },
-    { "type": "text", "id": "col_b", "label": "Column B label", "default": "Other Probiotics" },
-    { "type": "text", "id": "col_c", "label": "Column C label", "default": "Antibiotics" },
+    { "type": "textarea", "id": "sub", "label": "Sub-text" },
+    { "type": "text", "id": "col_feature", "label": "Column A label", "default": "Feature" },
+    { "type": "text", "id": "col_desc", "label": "Column B label", "default": "Description" },
     { "type": "text", "id": "cta_text", "label": "CTA text", "default": "Add to Cart" },
-    { "type": "text", "id": "cta_note", "label": "CTA note", "default": "30-day money-back · Free shipping over threshold" }
+    { "type": "text", "id": "cta_note", "label": "CTA note", "default": "30-day money-back · Free shipping over the free-shipping threshold" }
   ],
   "blocks": [
-    { "type": "row", "name": "Comparison row", "limit": 12, "settings": [
-      { "type": "text", "id": "feature", "label": "Feature", "default": "Feature" },
-      { "type": "select", "id": "brand_state", "label": "Brand state", "options": [{"value":"yes","label":"✓ Yes"},{"value":"no","label":"✕ No"},{"value":"partial","label":"~ Partial"}], "default": "yes" },
-      { "type": "select", "id": "b_state", "label": "Other Probiotics state", "options": [{"value":"yes","label":"✓ Yes"},{"value":"no","label":"✕ No"},{"value":"partial","label":"~ Partial"}], "default": "partial" },
-      { "type": "select", "id": "c_state", "label": "Antibiotics state", "options": [{"value":"yes","label":"✓ Yes"},{"value":"no","label":"✕ No"},{"value":"partial","label":"~ Partial"}], "default": "no" }
+    { "type": "row", "name": "Feature row", "limit": 12, "settings": [
+      { "type": "text", "id": "feature", "label": "Feature", "default": "10 Probiotic Strains" },
+      { "type": "textarea", "id": "description", "label": "Description", "default": "Rebalances vaginal flora and reduces harmful bacteria that cause odor." }
     ]}
   ],
   "presets": [{ "name": "VB · Outperform" }]

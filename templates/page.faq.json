@@ -1,0 +1,179 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "hero": {
+      "type": "vb-hero",
+      "settings": {
+        "eyebrow": "Help Centre",
+        "sub": "30+ answers covering products, dosing, ordering, shipping, returns, and the science behind Velobiotics."
+      }
+    },
+    "product_faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "What makes Velobiotics different from other probiotics?",
+            "answer": "<p>Velobiotics is built on a patented Microencapsulated Probiotic (MEP) delivery system. Each individual culture is wrapped in a protective coating that survives stomach acid (pH 1-2) and only releases in the small intestine. 1000× more live cultures reach your gut compared to conventional capsules. We use a 16-strain blend plus targeted vitamins per product.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "Do I need to refrigerate Velobiotics?",
+            "answer": "<p>No. Thanks to MEP encapsulation, all Velobiotics products are shelf-stable at room temperature up to 25°C for 24+ months from date of manufacture. Travel-friendly, summer-proof, no fridge required.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "How quickly will I feel a difference?",
+            "answer": "<p>Most users report digestive improvements within 5-7 days. Immunity, mood, and energy benefits typically build over 3-4 weeks. Skin and hair benefits (Almasi) usually show at 6-8 weeks. Give your microbiome 30 days to rebalance — that's why we offer a 30-day money-back guarantee.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Can I take Velobiotics with my medication?",
+            "answer": "<p>Velobiotics is generally safe with most medications, but if you take antibiotics, immunosuppressants, or are immunocompromised, please consult your doctor first. For antibiotic users we recommend taking Velobiotics 2 hours after your antibiotic dose for best results.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Is Velobiotics safe during pregnancy and breastfeeding?",
+            "answer": "<p>Our dedicated PregBiotics range is specifically formulated for pregnancy and breastfeeding and has been used by thousands of expectant and new mothers across South Africa. Other brands (Velo16, GutSlim, etc.) should be discussed with your obstetrician before use during pregnancy.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "Can children take Velobiotics?",
+            "answer": "<p>Yes — our BioKid range is specifically formulated for children aged 1-12 with kid-friendly strains and pleasant flavours. For older children (12+), Velo16 daily probiotic is safe at standard adult dosing. Always consult your paediatrician for children with chronic conditions.</p>"
+          }
+        },
+        "q7": {
+          "type": "q",
+          "settings": {
+            "question": "Are Velobiotics products SAHPRA-approved?",
+            "answer": "<p>Velobiotics products are SAHPRA-aware Category D complementary medicines, manufactured in SAHPRA-compliant facilities with full traceability. We comply with all applicable South African pharmaceutical regulations.</p>"
+          }
+        },
+        "q8": {
+          "type": "q",
+          "settings": {
+            "question": "Are Velobiotics products vegan / halal / kosher?",
+            "answer": "<p>Most Velobiotics products are vegan-friendly (capsule shells are plant-based HPMC). Check individual product pages for halal and kosher certification. Almasi Collagen Peptides Powder and Capsules contain bovine-source collagen and are not vegan.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6",
+        "q7",
+        "q8"
+      ],
+      "settings": {
+        "eyebrow": "Products & Use",
+        "title_pre": "Velobiotics",
+        "title_highlight": "essentials."
+      }
+    },
+    "ordering_faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "How long does shipping take?",
+            "answer": "<p>South Africa: 2-4 business days via The Courier Guy. Same-day available in Johannesburg & Pretoria for orders before 11am. Africa: 3-7 business days via DHL Express. International (US, UK, EU, Australia): 5-10 business days via DHL Express. Tracking is sent to your email and SMS.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "Do I pay duties on international orders?",
+            "answer": "<p>No surprises. Duties and taxes are calculated at checkout and paid up-front — you'll never get a delivery-time invoice. The total at checkout is the total you pay.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "What payment methods do you accept?",
+            "answer": "<p>In South Africa: Mastercard, Visa, American Express, Apple Pay, Google Pay, EFT, Snapscan, Zapper. International: Mastercard, Visa, American Express, Apple Pay, Google Pay, PayPal. All payments processed securely under PCI-DSS.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "How does the 30-day money-back guarantee work?",
+            "answer": "<p>Take Velobiotics daily for 30 days. If you don't feel a real difference, email support@velobiotics.com within 30 days of delivery and we'll refund 100% of your purchase. No questions, no restocking fees. We arrange free collection.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Can I subscribe and save?",
+            "answer": "<p>Yes — most products have a subscribe-and-save option at checkout. Choose monthly delivery (or every 60 / 90 days) and save 15% on every order. Cancel, pause, or skip anytime from your account dashboard.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "I'm a healthcare practitioner — can I get wholesale pricing?",
+            "answer": "<p>Yes. Velobiotics has dedicated practitioner accounts with wholesale pricing, free samples, and access to our clinical literature. Email wholesale@velobiotics.com with your practice details to apply.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "Ordering & Shipping",
+        "title_pre": "Buying from",
+        "title_highlight": "Velobiotics."
+      }
+    },
+    "final_cta": {
+      "type": "vb-final-cta",
+      "settings": {
+        "eyebrow": "Didn't find your answer?",
+        "title_pre": "We answer every",
+        "title_highlight": "email within 24 hours.",
+        "sub": "Customer support · Brand partnerships · Practitioner queries — message us and we'll route to the right team."
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero",
+    "product_faq",
+    "ordering_faq",
+    "final_cta"
+  ]
+}

@@ -1,0 +1,154 @@
+{%- comment -%}
+  Femina Collection Hero - Adapted from femina.care, harmonised with Velobiotics
+{%- endcomment -%}
+
+{%- liquid
+  assign hero_image_src = ''
+  if section.settings.bg_image_url != blank
+    assign hero_image_src = section.settings.bg_image_url
+  elsif section.settings.bg_image != blank
+    assign hero_image_src = section.settings.bg_image | image_url: width: 1800
+  endif
+-%}
+
+<style>
+  .femina-hero { position: relative; padding: 88px 24px; min-height: 600px; display: flex; align-items: center; overflow: hidden; color: #fff !important; }
+  .femina-hero *, .femina-hero h1, .femina-hero p, .femina-hero span { color: #fff; }
+  .femina-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 75% 50%, rgba(255,208,240,0.18) 0%, transparent 55%); pointer-events: none; z-index: 2; }
+  .femina-hero__bg { position: absolute; inset: 0; z-index: 0; }
+  .femina-hero__bg img { width: 100%; height: 100%; object-fit: cover; object-position: center right; opacity: 0.62; }
+  .femina-hero__inner { position: relative; z-index: 3; max-width: 1280px; width: 100%; margin: 0 auto; }
+  .femina-hero__grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; align-items: center; }
+  .femina-hero__eyebrow { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.16); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); color: #fff !important; font-weight: 600; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; padding: 7px 16px; border-radius: 999px; margin: 0 0 22px; border: 1px solid rgba(255,255,255,0.28); }
+  .femina-hero__eyebrow::before { content: ''; width: 7px; height: 7px; background: #6ec56e; border-radius: 50%; box-shadow: 0 0 12px #6ec56e; }
+  .femina-hero .femina-hero__headline, .femina-hero h1.femina-hero__headline { font-size: clamp(34px, 5.4vw, 60px); line-height: 1.04; font-weight: 800; margin: 0 0 18px; letter-spacing: -0.01em; color: #fff !important; }
+  .femina-hero .femina-hero__headline em { font-style: italic; font-weight: 700; color: #ffd0f0 !important; display: block; margin: 2px 0; }
+  .femina-hero .femina-hero__sub { font-size: 17px; line-height: 1.6; opacity: 0.94; max-width: 600px; margin: 0 0 28px; color: #fff !important; }
+  .femina-hero .femina-hero__sub strong { font-weight: 700; color: #ffd0f0 !important; }
+  .femina-hero__ctas { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 20px; }
+  .femina-hero a.femina-hero__cta { display: inline-flex; align-items: center; padding: 14px 28px; border-radius: 999px; text-decoration: none; font-weight: 700; font-size: 15px; transition: transform 0.18s ease, box-shadow 0.18s ease; }
+  .femina-hero a.femina-hero__cta:hover { transform: translateY(-2px); }
+  .femina-hero a.femina-hero__cta--primary { background: #fff; color: #8d2a89 !important; box-shadow: 0 8px 20px rgba(0,0,0,0.18); }
+  .femina-hero a.femina-hero__cta--primary:hover { box-shadow: 0 12px 28px rgba(0,0,0,0.26); }
+  .femina-hero a.femina-hero__cta--secondary { background: rgba(255,255,255,0.08); color: #fff !important; border: 2px solid rgba(255,255,255,0.55); }
+  .femina-hero a.femina-hero__cta--secondary:hover { border-color: #fff; background: rgba(255,255,255,0.15); }
+  .femina-hero .femina-hero__proof { font-size: 13.5px; margin: 4px 0 0; opacity: 0.92; color: #fff !important; }
+  .femina-hero .femina-hero__proof .stars { color: #ffd166 !important; letter-spacing: 1px; margin-right: 4px; }
+  .femina-hero__badges { display: flex; flex-direction: column; gap: 18px; align-items: flex-end; }
+  .femina-hero .femina-hero__badge { background: rgba(255,255,255,0.96); color: #8d2a89 !important; font-weight: 700; padding: 11px 20px; border-radius: 999px; font-size: 14px; box-shadow: 0 10px 24px rgba(0,0,0,0.18); transform: rotate(-3deg); transition: transform 0.25s ease; white-space: nowrap; }
+  .femina-hero .femina-hero__badge:hover { transform: rotate(0deg) scale(1.05); }
+  .femina-hero .femina-hero__badge:nth-child(2n) { transform: rotate(3deg); background: #ffd0f0; color: #6b1f68 !important; }
+  .femina-hero .femina-hero__badge:nth-child(3n) { transform: rotate(-1deg); background: #6ec56e; color: #fff !important; }
+  .femina-hero .femina-hero__badge:nth-child(4n) { transform: rotate(2deg); background: #fff8d6; color: #8d2a89 !important; }
+  @media (max-width: 990px) { .femina-hero { padding: 60px 20px; min-height: 540px; } .femina-hero__grid { gap: 32px; } }
+  @media (max-width: 749px) {
+    .femina-hero { padding: 48px 18px; min-height: 480px; }
+    .femina-hero__grid { grid-template-columns: 1fr; gap: 24px; }
+    .femina-hero .femina-hero__headline { font-size: clamp(28px, 8vw, 40px); }
+    .femina-hero .femina-hero__sub { font-size: 15.5px; margin-bottom: 22px; }
+    .femina-hero a.femina-hero__cta { padding: 12px 22px; font-size: 14px; }
+    .femina-hero__badges { flex-direction: row; flex-wrap: wrap; justify-content: flex-start; align-items: flex-start; gap: 8px; margin-top: 8px; }
+    .femina-hero .femina-hero__badge { font-size: 12px; padding: 8px 14px; transform: none; }
+    .femina-hero .femina-hero__badge:nth-child(2n), .femina-hero .femina-hero__badge:nth-child(3n), .femina-hero .femina-hero__badge:nth-child(4n) { transform: none; }
+    .femina-hero__bg img { object-position: center top; opacity: 0.45; }
+  }
+</style>
+
+<section class="femina-hero" style="background: linear-gradient(150deg, {{ section.settings.bg_color_start }} 0%, {{ section.settings.bg_color_mid }} 45%, {{ section.settings.bg_color_end }} 100%);">
+  {%- if hero_image_src != blank -%}
+    <div class="femina-hero__bg">
+      <img src="{{ hero_image_src }}" alt="" loading="eager" width="1800" height="900" />
+    </div>
+  {%- endif -%}
+  <div class="femina-hero__inner">
+    <div class="femina-hero__grid">
+      <div>
+        {%- if section.settings.eyebrow != blank -%}
+          <span class="femina-hero__eyebrow">{{ section.settings.eyebrow }}</span>
+        {%- endif -%}
+        <h1 class="femina-hero__headline">
+          {{ section.settings.headline_pre }}
+          {%- if section.settings.headline_highlight != blank -%}
+            <em>{{ section.settings.headline_highlight }}</em>
+          {%- endif -%}
+          {{ section.settings.headline_post }}
+        </h1>
+        {%- if section.settings.sub != blank -%}
+          <p class="femina-hero__sub">{{ section.settings.sub }}</p>
+        {%- endif -%}
+        <div class="femina-hero__ctas">
+          {%- if section.settings.cta1_text != blank -%}
+            <a href="{{ section.settings.cta1_link | default: '#' }}" class="femina-hero__cta femina-hero__cta--primary">{{ section.settings.cta1_text }}</a>
+          {%- endif -%}
+          {%- if section.settings.cta2_text != blank -%}
+            <a href="{{ section.settings.cta2_link | default: '#' }}" class="femina-hero__cta femina-hero__cta--secondary">{{ section.settings.cta2_text }}</a>
+          {%- endif -%}
+        </div>
+        {%- if section.settings.proof != blank -%}
+          <p class="femina-hero__proof"><span class="stars">★★★★★</span>{{ section.settings.proof }}</p>
+        {%- endif -%}
+      </div>
+      {%- if section.settings.show_badges and section.blocks.size > 0 -%}
+        <div class="femina-hero__badges">
+          {%- for block in section.blocks -%}
+            {%- if block.type == 'badge' -%}
+              <span class="femina-hero__badge" {{ block.shopify_attributes }}>{{ block.settings.text }}</span>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Femina hero",
+  "tag": "section",
+  "class": "femina-hero-section",
+  "settings": [
+    { "type": "header", "content": "Background image" },
+    { "type": "text", "id": "bg_image_url", "label": "External image URL (overrides upload)", "info": "Paste a full https:// URL. Leave blank to use uploaded image below." },
+    { "type": "image_picker", "id": "bg_image", "label": "Background image (uploaded)" },
+    { "type": "header", "content": "Gradient" },
+    { "type": "color", "id": "bg_color_start", "label": "Gradient start", "default": "#3d0a45" },
+    { "type": "color", "id": "bg_color_mid", "label": "Gradient mid", "default": "#6e2675" },
+    { "type": "color", "id": "bg_color_end", "label": "Gradient end", "default": "#9d3590" },
+    { "type": "header", "content": "Content" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow pill text", "default": "South Africa's #1 Intimate Health System" },
+    { "type": "text", "id": "headline_pre", "label": "Headline — top line", "default": "BV won't go away?" },
+    { "type": "text", "id": "headline_highlight", "label": "Headline — highlighted italic", "default": "You're not the problem" },
+    { "type": "text", "id": "headline_post", "label": "Headline — bottom line", "default": "— your antibiotics are." },
+    { "type": "textarea", "id": "sub", "label": "Sub-headline", "default": "Femina is South Africa's most-reviewed intimate health system. 2,000+ verified five-star stories. Probiotics + boric acid that work in 24–72 hours — and keep working." },
+    { "type": "header", "content": "Buttons" },
+    { "type": "text", "id": "cta1_text", "label": "Primary CTA text", "default": "Shop the Reset Kit →" },
+    { "type": "url", "id": "cta1_link", "label": "Primary CTA link" },
+    { "type": "text", "id": "cta2_text", "label": "Secondary CTA text", "default": "🔬 Take the 2-minute V-Check" },
+    { "type": "url", "id": "cta2_link", "label": "Secondary CTA link" },
+    { "type": "text", "id": "proof", "label": "Proof line (rating)", "default": " 4.8 from 2,100+ verified reviews · Lab-tested every batch" },
+    { "type": "header", "content": "Floating badges" },
+    { "type": "checkbox", "id": "show_badges", "label": "Show floating badges", "default": true }
+  ],
+  "blocks": [
+    {
+      "type": "badge",
+      "name": "Floating badge",
+      "limit": 6,
+      "settings": [
+        { "type": "text", "id": "text", "label": "Badge text", "default": "10 Strains" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Femina hero",
+      "blocks": [
+        { "type": "badge", "settings": { "text": "10 Strains" } },
+        { "type": "badge", "settings": { "text": "5B CFU" } },
+        { "type": "badge", "settings": { "text": "Velobiotics™ 1000×" } },
+        { "type": "badge", "settings": { "text": "🌿 Vegan" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,65 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "femina-hero": {
+      "type": "femina-hero",
+      "settings": {
+        "bg_image_url": "https://media.base44.com/images/public/69e1abc073bbccc7f63edacc/653a0d852_generated_image.png",
+        "eyebrow": "South Africa's #1 Intimate Health System",
+        "headline_pre": "BV won't go away?",
+        "headline_highlight": "You're not the problem",
+        "headline_post": "— your antibiotics are.",
+        "sub": "Femina is South Africa's most-reviewed intimate health system. 2,000+ verified five-star stories. Probiotics + boric acid that work in 24–72 hours — and keep working.",
+        "cta1_text": "Shop the Reset Kit →",
+        "cta1_link": "/products/femina-intimate-starter-pack",
+        "cta2_text": "🔬 Take the 2-minute V-Check",
+        "cta2_link": "https://femina.care/vcheck",
+        "proof": " 4.8 from 2,100+ verified reviews · Lab-tested every batch",
+        "show_badges": true,
+        "bg_color_start": "#3d0a45",
+        "bg_color_mid": "#6e2675",
+        "bg_color_end": "#9d3590"
+      },
+      "blocks": {
+        "b1": { "type": "badge", "settings": { "text": "10 Strains" } },
+        "b2": { "type": "badge", "settings": { "text": "5B CFU" } },
+        "b3": { "type": "badge", "settings": { "text": "Velobiotics™ 1000×" } },
+        "b4": { "type": "badge", "settings": { "text": "🌿 Vegan" } }
+      },
+      "block_order": ["b1", "b2", "b3", "b4"]
+    },
+    "femina-body": {
+      "type": "femina-collection-body",
+      "settings": {}
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 24,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "femina-hero",
+    "femina-body",
+    "product-grid"
+  ]
+}

@@ -1,0 +1,109 @@
+{%- comment -%} VB · Product story — problem-solution narrative with hero image, brand-coloured {%- endcomment -%}
+
+{%- liquid
+  assign brand_primary = section.settings.brand_primary | default: '#4d8c44'
+  assign brand_tint = section.settings.brand_tint | default: '#f3f7f1'
+  assign img_src = ''
+  if section.settings.image_url != blank
+    assign img_src = section.settings.image_url
+  elsif section.settings.image != blank
+    assign img_src = section.settings.image | image_url: width: 1200
+  endif
+-%}
+
+<style>
+  .vb-ps { padding: 72px 24px; --bp: {{ brand_primary }}; --bt: {{ brand_tint }}; background: linear-gradient(180deg, #fff 0%, var(--bt) 100%); }
+  .vb-ps__inner { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.05fr; gap: 56px; align-items: center; }
+  .vb-ps--reverse .vb-ps__inner { grid-template-columns: 1.05fr 1fr; }
+  .vb-ps--reverse .vb-ps__visual { order: 2; }
+  .vb-ps__visual { position: relative; }
+  .vb-ps__visual-frame { aspect-ratio: 4/5; border-radius: 24px; overflow: hidden; background: linear-gradient(160deg, #fff 0%, var(--bt) 100%); box-shadow: 0 24px 56px rgba(0,0,0,0.08); }
+  .vb-ps__visual-frame img { width: 100%; height: 100%; object-fit: cover; }
+  .vb-ps__visual-tag { position: absolute; top: 18px; right: -14px; background: var(--bp); color: #fff; padding: 12px 18px; border-radius: 16px; box-shadow: 0 20px 40px color-mix(in srgb, var(--bp) 32%, transparent); transform: rotate(4deg); }
+  .vb-ps__visual-tag strong { display: block; font-size: 20px; font-weight: 900; line-height: 1; letter-spacing: -0.02em; }
+  .vb-ps__visual-tag small { display: block; font-size: 10px; font-weight: 700; opacity: 0.95; margin-top: 4px; letter-spacing: 0.06em; text-transform: uppercase; }
+  .vb-ps__eyebrow { display: inline-block; color: var(--bp); font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 12px; }
+  .vb-ps__title { font-size: clamp(28px, 4vw, 42px); font-weight: 800; color: #1a1a1a; line-height: 1.12; margin: 0 0 16px; letter-spacing: -0.01em; }
+  .vb-ps__title em { color: var(--bp); font-style: normal; }
+  .vb-ps__desc { font-size: 16.5px; line-height: 1.7; color: #3a4a3a; margin: 0 0 20px; }
+  .vb-ps__points { display: grid; gap: 10px; margin: 0 0 22px; }
+  .vb-ps__point { display: flex; align-items: flex-start; gap: 12px; }
+  .vb-ps__point-icon { width: 28px; height: 28px; border-radius: 50%; background: var(--bp); color: #fff; display: inline-flex; align-items: center; justify-content: center; font-weight: 900; font-size: 13px; flex-shrink: 0; margin-top: 2px; }
+  .vb-ps__point-text { font-size: 14.5px; line-height: 1.5; color: #1a1a1a; font-weight: 500; }
+  .vb-ps__point-text strong { color: var(--bp); font-weight: 800; }
+  @media (max-width: 749px) {
+    .vb-ps { padding: 48px 16px; }
+    .vb-ps__inner { grid-template-columns: 1fr; gap: 28px; }
+    .vb-ps--reverse .vb-ps__visual { order: 0; }
+    .vb-ps__visual { max-width: 420px; margin: 0 auto; }
+    .vb-ps__visual-tag { padding: 9px 14px; }
+    .vb-ps__visual-tag strong { font-size: 16px; }
+    .vb-ps__visual-tag small { font-size: 9px; }
+    .vb-ps__desc { font-size: 15px; }
+    .vb-ps__point-text { font-size: 13.5px; }
+  }
+</style>
+
+<section class="vb-ps{% if section.settings.reverse %} vb-ps--reverse{% endif %}">
+  <div class="vb-ps__inner">
+    <div class="vb-ps__visual">
+      <div class="vb-ps__visual-frame">
+        {%- if img_src != blank -%}<img src="{{ img_src }}" alt="{{ section.settings.title_pre | escape }}" loading="lazy" />{%- endif -%}
+      </div>
+      {%- if section.settings.tag_value != blank -%}
+        <span class="vb-ps__visual-tag">
+          <strong>{{ section.settings.tag_value }}</strong>
+          <small>{{ section.settings.tag_label }}</small>
+        </span>
+      {%- endif -%}
+    </div>
+    <div class="vb-ps__body">
+      {%- if section.settings.eyebrow != blank -%}<p class="vb-ps__eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+      <h2 class="vb-ps__title">{{ section.settings.title_pre }}{%- if section.settings.title_highlight != blank %} <em>{{ section.settings.title_highlight }}</em>{%- endif -%}</h2>
+      {%- if section.settings.desc != blank -%}<p class="vb-ps__desc">{{ section.settings.desc }}</p>{%- endif -%}
+      {%- if section.blocks.size > 0 -%}
+        <div class="vb-ps__points">
+          {%- for block in section.blocks -%}
+            {%- if block.type == 'point' -%}
+              <div class="vb-ps__point" {{ block.shopify_attributes }}>
+                <span class="vb-ps__point-icon">{{ block.settings.icon | default: '✓' }}</span>
+                <span class="vb-ps__point-text">{{ block.settings.text }}</span>
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "VB · Product story",
+  "tag": "section",
+  "enabled_on": { "templates": ["product"] },
+  "settings": [
+    { "type": "header", "content": "Layout" },
+    { "type": "checkbox", "id": "reverse", "label": "Reverse layout (image right)", "default": false },
+    { "type": "color", "id": "brand_primary", "label": "Brand primary", "default": "#4d8c44" },
+    { "type": "color", "id": "brand_tint", "label": "Brand tint", "default": "#f3f7f1" },
+    { "type": "header", "content": "Image" },
+    { "type": "image_picker", "id": "image", "label": "Image" },
+    { "type": "text", "id": "image_url", "label": "Image URL (overrides upload)" },
+    { "type": "text", "id": "tag_value", "label": "Floating tag value", "default": "1000×" },
+    { "type": "text", "id": "tag_label", "label": "Floating tag label", "default": "More Probiotics" },
+    { "type": "header", "content": "Copy" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "The Problem" },
+    { "type": "text", "id": "title_pre", "label": "Title (start)", "default": "Sound familiar?" },
+    { "type": "text", "id": "title_highlight", "label": "Title (highlight)" },
+    { "type": "textarea", "id": "desc", "label": "Description" }
+  ],
+  "blocks": [
+    { "type": "point", "name": "Bullet point", "settings": [
+      { "type": "text", "id": "icon", "label": "Icon", "default": "✓" },
+      { "type": "textarea", "id": "text", "label": "Text", "default": "Point text" }
+    ]}
+  ],
+  "presets": [{ "name": "VB · Product story" }]
+}
+{% endschema %}

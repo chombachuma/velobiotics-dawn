@@ -206,7 +206,7 @@
       "blocks": {
         "f1": { "type": "product", "settings": { "product_handle": "femina-probiotic-capsules-with-cranberry-for-women", "brand": "Femina™", "rating": "4.8", "reviews": "1300+" } },
         "f2": { "type": "product", "settings": { "product_handle": "her-biotics-original-capsules-60s", "brand": "Her-Biotics™", "rating": "4.7", "reviews": "260+" } },
-        "f3": { "type": "product", "settings": { "product_handle": "biokid-probiotic-drops", "brand": "BioKid™", "rating": "4.8", "reviews": "200+" } },
+        "f3": { "type": "product", "settings": { "product_handle": "biokid-chewable-probiotics-tablets-for-children", "brand": "BioKid™", "rating": "4.8", "reviews": "200+" } },
         "f4": { "type": "product", "settings": { "product_handle": "velo16-probiotics-magnesium-glycinate", "brand": "Velo16™", "rating": "4.6", "reviews": "190+" } }
       },
       "block_order": ["f1","f2","f3","f4"],

@@ -1,0 +1,130 @@
+{%- comment -%}
+  VB · Best Sellers — femina-style product carousel, transparent product bg, horizontal scroll on mobile
+{%- endcomment -%}
+
+<style>
+  .vb-bs { padding: 72px 16px; background: #fff; }
+  .vb-bs__inner { max-width: 1280px; margin: 0 auto; }
+  .vb-bs__head { text-align: center; max-width: 720px; margin: 0 auto 36px; padding: 0 8px; }
+  .vb-bs__eyebrow { display: inline-block; color: #4d8c44; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 12px; }
+  .vb-bs__title { font-size: clamp(28px, 4vw, 42px); font-weight: 800; color: #1a1a1a; line-height: 1.12; margin: 0 0 14px; letter-spacing: -0.01em; }
+  .vb-bs__title em { color: #4d8c44; font-style: normal; }
+  .vb-bs__sub { font-size: 16px; line-height: 1.6; color: #5c6664; margin: 0; }
+  .vb-bs__track-wrap { position: relative; }
+  .vb-bs__track { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(260px, 1fr); gap: 18px; overflow-x: auto; overflow-y: visible; padding: 8px 24px 24px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: thin; scrollbar-color: rgba(77,140,68,0.4) transparent; }
+  .vb-bs__track::-webkit-scrollbar { height: 6px; }
+  .vb-bs__track::-webkit-scrollbar-thumb { background: rgba(77,140,68,0.4); border-radius: 999px; }
+  @media (min-width: 990px) {
+    .vb-bs__track { grid-template-columns: repeat(4, 1fr); grid-auto-flow: row; grid-auto-columns: auto; overflow: visible; padding: 8px 0 8px; }
+  }
+  .vb-bs__card { scroll-snap-align: start; position: relative; display: flex; flex-direction: column; background: #fff; border: 1px solid #ece7f0; border-radius: 18px; overflow: hidden; text-decoration: none; color: inherit; transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease; }
+  .vb-bs__card:hover { transform: translateY(-5px); box-shadow: 0 22px 44px rgba(77,140,68,0.18); border-color: rgba(77,140,68,0.4); }
+  .vb-bs__media { position: relative; width: 100%; aspect-ratio: 1/1; background: linear-gradient(135deg, #fafdf9 0%, #e8f1e3 100%); overflow: hidden; isolation: isolate; }
+  .vb-bs__media img { width: 100%; height: 100%; object-fit: contain; padding: 16px; mix-blend-mode: multiply; transition: transform 0.4s ease; filter: contrast(1.02) saturate(1.05); }
+  .vb-bs__card:hover .vb-bs__media img { transform: scale(1.06); }
+  .vb-bs__save { position: absolute; top: 12px; right: 12px; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; min-width: 56px; height: 56px; background: radial-gradient(circle at 30% 30%, #ff5c8a 0%, #ff2e63 50%, #cd1f4c 100%); color: #fff; font-weight: 900; font-size: 15px; border-radius: 50%; box-shadow: 0 8px 22px rgba(214, 39, 90, 0.42); transform: rotate(-8deg); z-index: 3; padding: 6px; text-align: center; line-height: 1; border: 3px solid rgba(255,255,255,0.55); }
+  .vb-bs__save small { display: block; font-size: 8px; font-weight: 800; letter-spacing: 0.08em; margin-top: 1px; opacity: 0.95; }
+  .vb-bs__body { padding: 16px 16px 18px; display: flex; flex-direction: column; flex: 1; }
+  .vb-bs__brandtag { display: inline-flex; align-items: center; gap: 4px; background: rgba(77,140,68,0.12); color: #4d8c44; padding: 3px 9px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: 0.04em; margin: 0 0 8px; align-self: flex-start; }
+  .vb-bs__name { font-size: 15px; font-weight: 800; color: #1a1a1a; line-height: 1.3; margin: 0 0 10px; }
+  .vb-bs__price-row { display: flex; align-items: baseline; gap: 8px; margin: auto 0 12px; flex-wrap: wrap; }
+  .vb-bs__price { font-size: 17px; font-weight: 800; color: #1a1a1a; }
+  .vb-bs__compare { font-size: 13px; color: #a0a0a0; text-decoration: line-through; }
+  .vb-bs__cta { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 10px 16px; border-radius: 999px; background: #4d8c44; color: #fff !important; text-decoration: none; font-weight: 700; font-size: 13px; transition: background-color 0.18s ease; }
+  .vb-bs__card:hover .vb-bs__cta { background: #36632f; }
+  .vb-bs__bottom { text-align: center; margin-top: 28px; }
+  .vb-bs__view-all { display: inline-flex; align-items: center; gap: 6px; padding: 14px 28px; border-radius: 999px; background: #fff; color: #4d8c44 !important; border: 2px solid #4d8c44; text-decoration: none; font-weight: 700; font-size: 14.5px; transition: all 0.18s ease; }
+  .vb-bs__view-all:hover { background: #4d8c44; color: #fff !important; }
+  @media (max-width: 749px) {
+    .vb-bs { padding: 44px 0; }
+    .vb-bs__head { margin-bottom: 24px; padding: 0 14px; }
+    .vb-bs__track { grid-auto-columns: 78%; padding: 6px 14px 18px; gap: 12px; }
+    .vb-bs__card { border-radius: 14px; }
+    .vb-bs__body { padding: 12px 14px 14px; }
+    .vb-bs__name { font-size: 13.5px; }
+    .vb-bs__price { font-size: 15.5px; }
+    .vb-bs__compare { font-size: 12px; }
+    .vb-bs__cta { padding: 8px 14px; font-size: 12.5px; }
+    .vb-bs__save { min-width: 46px; height: 46px; font-size: 12.5px; top: 8px; right: 8px; }
+  }
+</style>
+
+<section class="vb-bs">
+  <div class="vb-bs__inner">
+    <div class="vb-bs__head">
+      {%- if section.settings.eyebrow != blank -%}<p class="vb-bs__eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+      <h2 class="vb-bs__title">{{ section.settings.title_pre }}{%- if section.settings.title_highlight != blank %} <em>{{ section.settings.title_highlight }}</em>{%- endif -%}</h2>
+      {%- if section.settings.sub != blank -%}<p class="vb-bs__sub">{{ section.settings.sub }}</p>{%- endif -%}
+    </div>
+    <div class="vb-bs__track-wrap">
+      <div class="vb-bs__track">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'product' -%}
+            {%- assign p = all_products[block.settings.product_handle] -%}
+            {%- if p and p.id -%}
+              {%- liquid
+                assign savings_pct = 0
+                if p.compare_at_price > p.price and p.compare_at_price > 0
+                  assign diff = p.compare_at_price | minus: p.price
+                  assign savings_pct = diff | times: 100.0 | divided_by: p.compare_at_price | round
+                endif
+              -%}
+              <a href="{{ p.url }}" class="vb-bs__card" {{ block.shopify_attributes }}>
+                <div class="vb-bs__media">
+                  {%- if p.featured_image -%}<img src="{{ p.featured_image | image_url: width: 500 }}" alt="{{ p.title | escape }}" loading="lazy" />{%- endif -%}
+                  {%- if savings_pct > 0 -%}<span class="vb-bs__save">−{{ savings_pct }}%<small>SAVE</small></span>{%- endif -%}
+                </div>
+                <div class="vb-bs__body">
+                  {%- if block.settings.brand_label != blank -%}<span class="vb-bs__brandtag">{{ block.settings.brand_label }}</span>{%- endif -%}
+                  <h3 class="vb-bs__name">{{ p.title }}</h3>
+                  <div class="vb-bs__price-row">
+                    <span class="vb-bs__price">{{ p.price | money }}</span>
+                    {%- if p.compare_at_price > p.price -%}<span class="vb-bs__compare">{{ p.compare_at_price | money }}</span>{%- endif -%}
+                  </div>
+                  <span class="vb-bs__cta">Shop Now →</span>
+                </div>
+              </a>
+            {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+    {%- if section.settings.view_all_text != blank -%}
+      <div class="vb-bs__bottom">
+        <a href="{{ section.settings.view_all_link | default: '/collections/all' }}" class="vb-bs__view-all">{{ section.settings.view_all_text }} →</a>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "VB · Best Sellers",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Best Sellers" },
+    { "type": "text", "id": "title_pre", "label": "Title (start)", "default": "Your Daily Wellness" },
+    { "type": "text", "id": "title_highlight", "label": "Title (highlight)", "default": "Starts Here" },
+    { "type": "textarea", "id": "sub", "label": "Sub-text", "default": "Our top probiotic blends — engineered to nourish your gut, boost immunity, and support long-term wellness." },
+    { "type": "text", "id": "view_all_text", "label": "View all text", "default": "View All Products" },
+    { "type": "url", "id": "view_all_link", "label": "View all link" }
+  ],
+  "blocks": [
+    { "type": "product", "name": "Product", "settings": [
+      { "type": "text", "id": "product_handle", "label": "Product handle", "default": "femina-probiotic-capsules-with-cranberry-for-women" },
+      { "type": "text", "id": "brand_label", "label": "Brand label", "default": "Femina™" }
+    ]}
+  ],
+  "presets": [
+    { "name": "VB · Best Sellers", "blocks": [
+      { "type": "product", "settings": { "product_handle": "femina-probiotic-capsules-with-cranberry-for-women", "brand_label": "Femina™" } },
+      { "type": "product", "settings": { "product_handle": "her-biotics-original-capsules-60s", "brand_label": "Her-Biotics™" } },
+      { "type": "product", "settings": { "product_handle": "femina-probiotics-cookie-fresh-with-boric-acid-suppositories", "brand_label": "Femina™" } },
+      { "type": "product", "settings": { "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s", "brand_label": "His-Biotics®" } },
+      { "type": "product", "settings": { "product_handle": "gutslim-probiotics-glp-1-booster", "brand_label": "GutSlim™" } },
+      { "type": "product", "settings": { "product_handle": "probiotics-protein-collagen-peptides-skin-hair-nails", "brand_label": "ALMASI™" } },
+      { "type": "product", "settings": { "product_handle": "velo16-probiotic-digestive-capsules", "brand_label": "Velo16™" } }
+    ]}
+  ]
+}
+{% endschema %}

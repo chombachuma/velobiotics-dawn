@@ -1,0 +1,36 @@
+{%- comment -%}
+  Velobiotics disclaimer — SAHPRA / regulatory notice for the footer-group.
+  Designed to sit immediately above or below the main footer section.
+{%- endcomment -%}
+
+<aside class="vb-disclaimer" role="contentinfo" aria-label="Regulatory notice">
+  <div class="vb-disclaimer__inner">
+    <p>
+      {%- if section.settings.label != blank -%}
+        <span class="vb-disclaimer__label">{{ section.settings.label }}</span>
+      {%- endif -%}
+      {{ section.settings.text }}
+    </p>
+  </div>
+</aside>
+
+{% schema %}
+{
+  "name": "Velobiotics disclaimer",
+  "tag": "section",
+  "class": "velobiotics-disclaimer-section",
+  "settings": [
+    { "type": "text", "id": "label", "label": "Label", "default": "Regulatory notice:" },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Disclaimer text",
+      "default": "<p>Velobiotics™ products are manufactured under GMP conditions and classified as food supplements / nutraceuticals. They are not intended to diagnose, treat, cure, or prevent any disease. Always consult your healthcare practitioner before starting any new supplement, especially if pregnant, breastfeeding, on chronic medication, or managing a medical condition. SAHPRA-aware · GMP-manufactured · Lab-tested every batch.</p>"
+    }
+  ],
+  "presets": [
+    { "name": "Velobiotics disclaimer" }
+  ],
+  "enabled_on": { "groups": ["footer"] }
+}
+{% endschema %}

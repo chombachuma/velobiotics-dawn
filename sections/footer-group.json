@@ -16,17 +16,11 @@
       "blocks": {
         "footer-0": {
           "type": "link_list",
-          "settings": {
-            "heading": "Shop Velobiotics",
-            "menu": "footer"
-          }
+          "settings": { "heading": "Shop Velobiotics", "menu": "footer" }
         },
         "footer-1": {
           "type": "link_list",
-          "settings": {
-            "heading": "Customer Care",
-            "menu": "footer"
-          }
+          "settings": { "heading": "Customer Care", "menu": "footer" }
         },
         "footer-2": {
           "type": "text",
@@ -36,35 +30,24 @@
           }
         }
       },
-      "block_order": [
-        "footer-0",
-        "footer-1",
-        "footer-2"
-      ],
+      "block_order": ["footer-0", "footer-1", "footer-2"],
       "settings": {
         "color_scheme": "scheme-1",
         "newsletter_enable": true,
-        "newsletter_heading": "Join the Velobiotics™ Sisterhood",
+        "newsletter_heading": "Join Velobiotics",
+        "disclaimer_label": "Regulatory notice",
+        "disclaimer_text": "<p>Velobiotics™ products are manufactured under GMP conditions and classified as food supplements / nutraceuticals. They are not intended to diagnose, treat, cure, or prevent any disease. Always consult your healthcare practitioner before starting any new supplement, especially if pregnant, breastfeeding, on chronic medication, or managing a medical condition. SAHPRA-aware · GMP-manufactured · Lab-tested every batch.</p>",
         "show_social": true,
-        "enable_country_selector": true,
+        "enable_follow_on_shop": false,
+        "enable_country_selector": false,
         "enable_language_selector": false,
         "payment_enable": true,
         "show_policy": true,
         "margin_top": 64,
         "padding_top": 56,
-        "padding_bottom": 28
-      }
-    },
-    "disclaimer": {
-      "type": "velobiotics-disclaimer",
-      "settings": {
-        "label": "Regulatory notice:",
-        "text": "<p>Velobiotics™ products are manufactured under GMP conditions and classified as food supplements / nutraceuticals. They are not intended to diagnose, treat, cure, or prevent any disease. Always consult your healthcare practitioner before starting any new supplement, especially if pregnant, breastfeeding, on chronic medication, or managing a medical condition. SAHPRA-aware · GMP-manufactured · Lab-tested every batch.</p>"
+        "padding_bottom": 24
       }
     }
   },
-  "order": [
-    "footer",
-    "disclaimer"
-  ]
+  "order": ["footer"]
 }

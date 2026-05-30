@@ -1,0 +1,76 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "hero": {
+      "type": "vb-hero",
+      "settings": {
+        "eyebrow": "Privacy Policy",
+        "sub": "POPIA-compliant. GDPR-aware. We tell you what we collect, why, and how to take it back."
+      }
+    },
+    "what": {
+      "type": "vb-feature-row",
+      "settings": {
+        "eyebrow": "What we collect"
+      }
+    },
+    "how": {
+      "type": "vb-feature-row",
+      "settings": {
+        "eyebrow": "How we use it"
+      }
+    },
+    "share": {
+      "type": "vb-feature-row",
+      "settings": {
+        "eyebrow": "Who we share with"
+      }
+    },
+    "rights": {
+      "type": "vb-feature-row",
+      "settings": {
+        "eyebrow": "Your rights"
+      }
+    },
+    "cookies": {
+      "type": "vb-feature-row",
+      "settings": {
+        "eyebrow": "Cookies"
+      }
+    },
+    "final_cta": {
+      "type": "vb-final-cta",
+      "settings": {
+        "eyebrow": "Privacy questions?",
+        "title_pre": "Email",
+        "title_highlight": "privacy@velobiotics.com",
+        "sub": "Our information officer responds to all privacy enquiries within 30 days."
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero",
+    "what",
+    "how",
+    "share",
+    "rights",
+    "cookies",
+    "final_cta"
+  ]
+}

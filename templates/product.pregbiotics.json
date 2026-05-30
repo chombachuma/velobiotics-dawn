@@ -1,0 +1,315 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": { "type": "benefit", "settings": { "icon": "🤰", "text": "Pregnancy + breastfeeding safe" } },
+        "b2": { "type": "benefit", "settings": { "icon": "🧬", "text": "DHA & folate boost" } },
+        "b3": { "type": "benefit", "settings": { "icon": "🦠", "text": "Pregnancy-safe probiotic strains" } },
+        "b4": { "type": "benefit", "settings": { "icon": "⚡", "text": "1000× more delivery" } },
+        "t1": { "type": "testi", "settings": { "quote": "Smooth pregnancy, healthy baby", "author": "Thandi N." } },
+        "t2": { "type": "testi", "settings": { "quote": "Reduced morning sickness", "author": "Emma D." } },
+        "t3": { "type": "testi", "settings": { "quote": "My breastfeeding journey better", "author": "Lerato M." } },
+        "t4": { "type": "testi", "settings": { "quote": "OB recommended", "author": "Suzanne F." } }
+      },
+      "block_order": ["b1","b2","b3","b4","t1","t2","t3","t4"],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
+        "brand_label": "PregBiotics™",
+        "rating": "4.9",
+        "review_count": "850+",
+        "hook": "Nourish you and your baby. PregBiotics™ blends pregnancy-safe probiotic strains with DHA, folate, and essential prenatal nutrients — for healthy mums and thriving babies.",
+        "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
+        "show_subscription": true,
+        "show_qty_discounts": true,
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
+    },
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Thandi+N&background=1f6b3d&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "PregBiotics carried me through pregnancy. Energy stayed up, baby is thriving.", "author": "Thandi N.", "meta": "Verified buyer · 6 months ago" } },
+        "r2": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Emma+D&background=5fa37a&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "Morning sickness eased after week 2. Daily must-have.", "author": "Emma D.", "meta": "Verified buyer · 4 months ago" } },
+        "r3": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Lerato+M&background=0a3d22&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "Now breastfeeding and still on it. Milk supply strong, baby happy.", "author": "Lerato M.", "meta": "Verified buyer · 3 months ago" } },
+        "r4": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Suzanne+F&background=1f6b3d&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "My OB recommended it. Easy decision.", "author": "Suzanne F.", "meta": "Verified buyer · 2 months ago" } },
+        "r5": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Naledi+K&background=5fa37a&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "Cleanest prenatal I found. Plus the probiotic part is brilliant.", "author": "Naledi K.", "meta": "Verified buyer · 5 months ago" } }
+      },
+      "block_order": ["r1","r2","r3","r4","r5"],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
+        "eyebrow": "★ Real Reviews",
+        "title": "Loved by thousands of mothers"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Morning sickness and nausea</strong> that wreck early pregnancy." } },
+        "p2": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Constipation</strong> and gut imbalance through trimesters." } },
+        "p3": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Generic prenatals</strong> with poorly absorbed nutrients." } },
+        "p4": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Worry</strong> about whether your baby is getting what they need." } }
+      },
+      "block_order": ["p1","p2","p3","p4"],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#1f6b3d",
+        "brand_tint": "#f2f9ec",
+        "image_url": "https://media.base44.com/images/public/69e10e7db331c58e837bb75e/0da4d8630_generated_edbc0e3e.png",
+        "tag_value": "85%",
+        "tag_label": "Of Mums Feel Prenatals Aren't Enough",
+        "eyebrow": "The Problem",
+        "title_pre": "Pregnancy is hard.",
+        "title_highlight": "Your prenatal shouldn't be.",
+        "desc": "Standard prenatals are bloated with poorly-absorbed nutrients and ignore the gut. PregBiotics™ closes both gaps — pregnancy-safe probiotics plus the essential prenatal nutrients you and your baby actually need."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Pregnancy-safe probiotic strains</strong> — gut, immunity, baby support." } },
+        "s2": { "type": "point", "settings": { "icon": "✓", "text": "<strong>DHA, folate, iron, B-complex</strong> — the essential prenatal trio + more." } },
+        "s3": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive." } },
+        "s4": { "type": "point", "settings": { "icon": "✓", "text": "<strong>One capsule daily</strong>. OB-recommended. Lab-tested every batch." } }
+      },
+      "block_order": ["s1","s2","s3","s4"],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#1f6b3d",
+        "brand_tint": "#f2f9ec",
+        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/7_transparent_Realistic_3D_product_mockup_1.png?v=1775328668",
+        "tag_value": "1000×",
+        "tag_label": "More Probiotics Delivered",
+        "eyebrow": "The Solution",
+        "title_pre": "Meet",
+        "title_highlight": "PregBiotics™ Breastfeeding.",
+        "desc": "The complete pregnancy-and-breastfeeding daily. Pregnancy-safe probiotic strains + DHA, folate, iron, and B-complex — delivered by Velobiotics™ technology — 1000× more reach you alive, where they nourish you and support your baby."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": { "type": "product", "settings": { "product_handle": "pregbiotics-breastfeeding", "brand": "PregBiotics™", "rating": "4.9", "reviews": "150+" } },
+        "r2": { "type": "product", "settings": { "product_handle": "pregbiotics-prenatal", "brand": "PregBiotics™", "rating": "4.8", "reviews": "190+" } },
+        "r3": { "type": "product", "settings": { "product_handle": "pregbiotics-postnatal", "brand": "PregBiotics™", "rating": "4.7", "reviews": "120+" } },
+        "r4": { "type": "product", "settings": { "product_handle": "biokid-probiotic-drops", "brand": "BioKid™", "rating": "4.8", "reviews": "200+" } }
+      },
+      "block_order": ["r1","r2","r3","r4"],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
+        "tint": false,
+        "eyebrow": "Complete the Journey",
+        "title": "More from the PregBiotics™ family",
+        "sub": "From conception through breastfeeding and beyond — we have you covered."
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "b1": { "type": "feat", "settings": { "icon": "🤰", "name": "Pregnancy-Safe", "desc": "Formulated specifically for the trimesters and breastfeeding." } },
+        "b2": { "type": "feat", "settings": { "icon": "🧠", "name": "Baby Brain Development", "desc": "DHA and folate critical for healthy fetal development." } },
+        "b3": { "type": "feat", "settings": { "icon": "💚", "name": "Gentle on Tummy", "desc": "Pregnancy-safe probiotics ease morning sickness and constipation." } },
+        "b4": { "type": "feat", "settings": { "icon": "⚡", "name": "Energy & Mood", "desc": "B-complex and iron support energy and emotional balance." } },
+        "b5": { "type": "feat", "settings": { "icon": "🩺", "name": "OB-Approved Format", "desc": "Built to OB and midwife clinical guidance." } },
+        "b6": { "type": "feat", "settings": { "icon": "🌿", "name": "100% Natural", "desc": "Vegan-option, halaal-friendly, no fillers." } }
+      },
+      "block_order": ["b1","b2","b3","b4","b5","b6"],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_tint": "#f2f9ec",
+        "eyebrow": "Key Benefits",
+        "title_pre": "Why",
+        "title_highlight": "PregBiotics™",
+        "sub": "Six reasons mothers across South Africa and the world choose PregBiotics™ as their pregnancy companion."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": { "type": "step", "settings": { "icon": "💊", "name": "Take One Capsule Daily", "desc": "With water, after a meal. Easy on early-pregnancy stomachs." } },
+        "h2": { "type": "step", "settings": { "icon": "🛡️", "name": "MEP Armour Survives", "desc": "Velobiotics™ shield protects every culture and nutrient." } },
+        "h3": { "type": "step", "settings": { "icon": "🎯", "name": "Delivered to You & Baby", "desc": "1000× more probiotics + full nutrient absorption." } },
+        "h4": { "type": "step", "settings": { "icon": "👶", "name": "Healthy Mum, Thriving Baby", "desc": "Feel better, sleep better, support every stage." } }
+      },
+      "block_order": ["h1","h2","h3","h4"],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_tint": "#f2f9ec",
+        "eyebrow": "How It Works",
+        "title_pre": "From Capsule to",
+        "title_highlight": "Confidence",
+        "sub": "Four simple steps. One daily ritual. A healthier pregnancy and breastfeeding journey."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": { "type": "ingredient", "settings": { "icon": "🧬", "name": "DHA Omega-3", "amount": "200mg", "desc": "Critical for baby brain and eye development." } },
+        "i2": { "type": "ingredient", "settings": { "icon": "🥬", "name": "Folate (5-MTHF)", "amount": "600mcg", "desc": "Bioavailable form of folate — neural tube development." } },
+        "i3": { "type": "ingredient", "settings": { "icon": "🦠", "name": "Pregnancy-Safe Probiotics", "amount": "10 Billion CFU", "desc": "Strains chosen specifically for pregnancy and breastfeeding." } },
+        "i4": { "type": "ingredient", "settings": { "icon": "🛡️", "name": "Velobiotics™ MEP Coating", "amount": "Patented", "desc": "Supercritical CO₂ microencapsulation — 1000× more survive." } },
+        "i5": { "type": "ingredient", "settings": { "icon": "✓", "name": "Iron + B-Complex", "amount": "Full daily", "desc": "Energy, mood, and red-blood-cell support." } },
+        "i6": { "type": "ingredient", "settings": { "icon": "🚫", "name": "Free From", "amount": "Always", "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO." } }
+      },
+      "block_order": ["i1","i2","i3","i4","i5","i6"],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_tint": "#f2f9ec",
+        "brand_dark": "#0a3d22",
+        "brand_light": "#5fa37a",
+        "eyebrow": "What's Inside",
+        "title": "Every ingredient earns its place",
+        "sub": "Six clean actives. No proprietary blends. Full transparency for you and your baby.",
+        "facts_image_url": "",
+        "facts_label": "Supplement facts",
+        "facts_foot": "Lab-tested · OB-recommended · Full transparency"
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": { "type": "stat", "settings": { "label": "Reduced morning sickness", "percent": 88 } },
+        "c2": { "type": "stat", "settings": { "label": "Smoother digestion", "percent": 90 } },
+        "c3": { "type": "stat", "settings": { "label": "Sustained pregnancy energy", "percent": 91 } },
+        "c4": { "type": "stat", "settings": { "label": "Confident in baby's nutrition", "percent": 95 } },
+        "c5": { "type": "stat", "settings": { "label": "Would recommend to a friend", "percent": 97 } }
+      },
+      "block_order": ["c1","c2","c3","c4","c5"],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
+        "eyebrow": "Real results",
+        "title_pre": "Trusted by",
+        "title_highlight": "Mothers Everywhere",
+        "sub": "What mums report after 4 weeks of daily PregBiotics™ use.",
+        "caveat": "Based on a survey of 850+ verified customers. Individual results may vary. Always consult your healthcare provider during pregnancy."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "f1": { "type": "product", "settings": { "product_handle": "femina-probiotic-capsules-with-cranberry-for-women", "brand": "Femina™", "rating": "4.8", "reviews": "1300+" } },
+        "f2": { "type": "product", "settings": { "product_handle": "her-biotics-original-capsules-60s", "brand": "Her-Biotics™", "rating": "4.7", "reviews": "260+" } },
+        "f3": { "type": "product", "settings": { "product_handle": "biokid-probiotic-drops", "brand": "BioKid™", "rating": "4.8", "reviews": "200+" } },
+        "f4": { "type": "product", "settings": { "product_handle": "velo16-probiotics-magnesium-glycinate", "brand": "Velo16™", "rating": "4.6", "reviews": "190+" } }
+      },
+      "block_order": ["f1","f2","f3","f4"],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
+        "tint": true,
+        "eyebrow": "Frequently Bought Together",
+        "title": "Build your family wellness stack",
+        "sub": "Mums who love PregBiotics™ also stack these for the whole family."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966", "name": "Clinically Proven Strains", "desc": "Strains studied for pregnancy and breastfeeding safety." } },
+        "d2": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966", "name": "OB Formulated", "desc": "Developed with obstetric and midwifery guidance." } },
+        "d3": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073", "name": "Patented MEP Technology", "desc": "Microencapsulation with Supercritical CO₂." } },
+        "d4": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199", "name": "Clean Label", "desc": "Pregnancy-friendly, no fillers, no artificial nasties." } }
+      },
+      "block_order": ["d1","d2","d3","d4"],
+      "settings": {
+        "eyebrow": "Trusted by OBs. Proven by Science.",
+        "title_pre": "Quality you can",
+        "title_highlight": "trust.",
+        "sub": "Built with obstetric guidance, peer-reviewed strains, and SAHPRA-aware manufacturing."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": { "type": "row", "settings": { "feature": "Pregnancy-Safe Strains", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
+        "o2": { "type": "row", "settings": { "feature": "Advanced Absorption", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
+        "o3": { "type": "row", "settings": { "feature": "DHA + Folate Boost", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
+        "o4": { "type": "row", "settings": { "feature": "Daily Simplicity", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
+        "o5": { "type": "row", "settings": { "feature": "Long-Term Baby Benefits", "brand_state": "yes", "b_state": "no", "c_state": "no" } }
+      },
+      "block_order": ["o1","o2","o3","o4","o5"],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
+        "title": "Why We Outperform Others",
+        "sub": "Experience the complete pregnancy and breastfeeding daily — pregnancy-safe probiotics, essential prenatal nutrients, and Velobiotics™ absorption technology.",
+        "col_features": "Features",
+        "col_brand": "PregBiotics™",
+        "col_b": "General Prenatal",
+        "col_c": "Others",
+        "cta_text": "Add to Cart",
+        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Real Reviews",
+        "title_pre": "What Mothers",
+        "title_highlight": "Are Saying",
+        "sub": "Verified reviews from real mums. The Judge.me widget will populate this section on go-live.",
+        "rating": "4.9",
+        "reviews_count": "850+",
+        "customers_count": "40K+"
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": { "type": "q", "settings": { "question": "Is PregBiotics™ safe in the first trimester?", "answer": "<p>Yes. PregBiotics™ is formulated for all three trimesters and breastfeeding. Always check with your OB before starting any new supplement during pregnancy.</p>" } },
+        "q2": { "type": "q", "settings": { "question": "Will this help with morning sickness?", "answer": "<p>Many mums report easier mornings within 1–2 weeks. The pregnancy-safe probiotics calm the gut and the B-complex stabilises mood.</p>" } },
+        "q3": { "type": "q", "settings": { "question": "Can I take this with my OB-prescribed prenatal?", "answer": "<p>PregBiotics™ is designed to replace standard prenatals. Check with your OB before stacking — folate and iron levels should not be doubled.</p>" } },
+        "q4": { "type": "q", "settings": { "question": "Is it safe while breastfeeding?", "answer": "<p>Yes — designed for breastfeeding too. Supports milk supply and your post-pregnancy recovery.</p>" } },
+        "q5": { "type": "q", "settings": { "question": "Do you ship internationally?", "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>" } },
+        "q6": { "type": "q", "settings": { "question": "What if PregBiotics™ doesn't work for me?", "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full — no questions asked.</p>" } }
+      },
+      "block_order": ["q1","q2","q3","q4","q5","q6"],
+      "settings": {
+        "eyebrow": "FAQ",
+        "title_pre": "Questions Before",
+        "title_highlight": "You Start"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": { "type": "g", "settings": { "icon": "✅", "text": "30-day money-back" } },
+        "g2": { "type": "g", "settings": { "icon": "🚚", "text": "Ships worldwide" } },
+        "g3": { "type": "g", "settings": { "icon": "🔬", "text": "Lab-tested every batch" } },
+        "g4": { "type": "g", "settings": { "icon": "🤰", "text": "OB-recommended" } }
+      },
+      "block_order": ["g1","g2","g3","g4"],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_light": "#5fa37a",
+        "badge": "30-day money-back guarantee",
+        "title_pre": "Nourish Your Pregnancy",
+        "title_highlight": "Risk-Free for 30 Days",
+        "sub": "Join the 40,000+ mothers who've made PregBiotics™ their pregnancy companion. If you don't feel the difference, we'll refund every cent.",
+        "cta_text": "Add to Cart",
+        "cta_link": "#vbpForm"
+      }
+    }
+  },
+  "order": ["hero","reviews-carousel","problem","solution","related","benefits","how","ingredients","confidence","fbt","doctors","outperform","judgeme","faq","final"]
+}

@@ -1,0 +1,85 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "article": {
+      "type": "vb-science-article",
+      "blocks": {
+        "t1": {
+          "type": "text",
+          "settings": {
+            "content": "<h2>The simplest definition</h2><p>Probiotics are <strong>live microorganisms</strong> — primarily bacteria and yeasts — that, when consumed in adequate amounts, deliver measurable health benefits. They're often called \"good bacteria\" or \"friendly bacteria\" because they support the balance and function of the trillions of microbes that already live in your gut, mouth, skin, and elsewhere on your body.</p><p>The most common probiotic strains belong to two genera: <em>Lactobacillus</em> and <em>Bifidobacterium</em>. These are the workhorses behind digestion, immunity, mood regulation, and inflammation control.</p>"
+          }
+        },
+        "i1": {
+          "type": "image",
+          "settings": {
+            "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_192927_c0d70e26-f889-43d7-b16c-69cbb2fe41cb.png",
+            "caption": "Lactobacillus and Bifidobacterium — the friendly bacteria that drive gut health."
+          }
+        },
+        "t2": {
+          "type": "text",
+          "settings": {
+            "content": "<h2>What do probiotics actually do?</h2><p>Your body hosts roughly 38 trillion microbial cells — about the same as your own human cells. Most of them live in your gut. Together they form your microbiome.</p><p>A balanced microbiome:</p><ul><li><strong>Digests food efficiently</strong> — extracts nutrients, breaks down fibres your enzymes can't.</li><li><strong>Trains your immune system</strong> — 70% of immunity originates in the gut.</li><li><strong>Produces vitamins</strong> — including B12, K2, and folate.</li><li><strong>Regulates mood</strong> — 90% of your serotonin is made in the gut, not the brain.</li><li><strong>Keeps pathogens at bay</strong> — good bacteria outcompete the bad ones for space and resources.</li></ul><p>When your microbiome is depleted — by antibiotics, stress, processed food, sugar, or illness — every one of these functions suffers.</p>"
+          }
+        },
+        "t3": {
+          "type": "text",
+          "settings": {
+            "content": "<h2>Why supplement?</h2><p>In a perfect world, your diet would maintain your microbiome through fermented foods, fibre, and diverse plant matter. In reality, modern diets are stripped of fibre, heavy in sugar, and rarely include traditional ferments like kimchi, kefir, sauerkraut, or live yoghurt.</p><p>That's where probiotic supplements come in — concentrated, clinically-researched strains delivered in doses you'd struggle to get from food alone. But only if they actually reach your gut alive.</p>"
+          }
+        },
+        "kp1": {
+          "type": "keypoints",
+          "settings": {
+            "label": "Quick recap",
+            "points": "Probiotics are live bacteria that benefit your health when consumed in adequate amounts.\nMost are Lactobacillus and Bifidobacterium strains.\nThey support digestion, immunity, mood, and disease defence.\nSupplementation matters because modern diets rarely deliver enough.\nDelivery matters too — most cultures die before reaching the gut without protection."
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "i1",
+        "t2",
+        "t3",
+        "kp1"
+      ],
+      "settings": {
+        "eyebrow": "Probiotics 101",
+        "title_pre": "What are",
+        "title_highlight": "probiotics?",
+        "intro": "Live microorganisms that fuel digestion, immunity, mood, and disease defence — the foundation of your microbiome.",
+        "hero_image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_192927_c0d70e26-f889-43d7-b16c-69cbb2fe41cb.png"
+      }
+    },
+    "final_cta": {
+      "type": "vb-final-cta",
+      "settings": {
+        "eyebrow": "Start your daily probiotic",
+        "title_pre": "Probiotics that",
+        "title_highlight": "actually reach your gut.",
+        "sub": "30-day money-back guarantee · Lab-tested every batch."
+      }
+    }
+  },
+  "order": [
+    "main",
+    "article",
+    "final_cta"
+  ]
+}

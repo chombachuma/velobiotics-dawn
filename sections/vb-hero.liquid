@@ -1,5 +1,5 @@
 {%- comment -%}
-  Velobiotics Home Hero — model + headline + floating badges + testimonial card + trust pills
+  VB · Home Hero v2 — centred banner with model, floating proof badges, Velobiotics green
 {%- endcomment -%}
 
 {%- liquid
@@ -12,145 +12,157 @@
 -%}
 
 <style>
-  .vb-hero { position: relative; padding: 56px 24px 64px; background: linear-gradient(180deg, #f3f7f1 0%, #e8f1e3 100%); overflow: hidden; }
-  .vb-hero__inner { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 1.05fr 1fr; gap: 56px; align-items: center; position: relative; z-index: 2; }
-  .vb-hero__eyebrow { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: #4d8c44; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #4d8c44; margin: 0 0 18px; }
-  .vb-hero__rating { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin: 0 0 20px; font-size: 13.5px; color: #2b3a2a; }
-  .vb-hero__rating .stars { color: #ffb43a; letter-spacing: 1px; }
-  .vb-hero__rating .divider { width: 1px; height: 14px; background: #c9d6c7; }
-  .vb-hero__rating strong { color: #1a1a1a; font-weight: 700; }
-  .vb-hero__headline { font-size: clamp(34px, 5.4vw, 56px); line-height: 1.05; font-weight: 800; color: #1a1a1a; margin: 0 0 20px; letter-spacing: -0.01em; }
-  .vb-hero__headline em { font-style: normal; color: #4d8c44; }
-  .vb-hero__sub { font-size: 17px; line-height: 1.6; color: #3a3a3a; max-width: 580px; margin: 0 0 28px; }
-  .vb-hero__sub strong { color: #4d8c44; font-weight: 700; }
-  .vb-hero__ctas { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 32px; }
-  .vb-hero a.vb-hero__cta { display: inline-flex; align-items: center; gap: 6px; padding: 14px 28px; border-radius: 999px; text-decoration: none; font-weight: 700; font-size: 15px; transition: transform 0.18s ease, box-shadow 0.18s ease; }
-  .vb-hero a.vb-hero__cta--primary { background: #4d8c44; color: #fff !important; box-shadow: 0 8px 20px rgba(77, 140, 68, 0.32); }
-  .vb-hero a.vb-hero__cta--primary:hover { background: #36632f; transform: translateY(-2px); box-shadow: 0 12px 26px rgba(77, 140, 68, 0.42); }
-  .vb-hero a.vb-hero__cta--secondary { background: #fff; color: #2b3a2a !important; border: 2px solid #c9d6c7; }
-  .vb-hero a.vb-hero__cta--secondary:hover { border-color: #4d8c44; color: #4d8c44 !important; transform: translateY(-2px); }
+  .vb-hero2 { position: relative; padding: 56px 24px 60px; background: linear-gradient(180deg, #f5f9f3 0%, #e3efdf 100%); overflow: hidden; }
+  .vb-hero2::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 100%, rgba(77,140,68,0.10) 0%, transparent 60%); pointer-events: none; }
+  .vb-hero2__inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 2; text-align: center; }
+  .vb-hero2__eyebrow { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: #4d8c44; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 8px 16px; border-radius: 999px; border: 1.5px solid #4d8c44; margin: 0 0 18px; }
+  .vb-hero2__eyebrow::before { content: ''; width: 8px; height: 8px; background: #4d8c44; border-radius: 50%; box-shadow: 0 0 10px #4d8c44; }
+  .vb-hero2__rating { display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: center; margin: 0 0 18px; font-size: 13.5px; color: #2b3a2a; }
+  .vb-hero2__rating .stars { color: #ffb43a; letter-spacing: 1px; font-size: 14px; }
+  .vb-hero2__rating .divider { width: 1px; height: 14px; background: #c9d6c7; }
+  .vb-hero2__rating strong { color: #1a1a1a; font-weight: 700; }
+  .vb-hero2__headline { font-size: clamp(34px, 5.8vw, 64px); line-height: 1.04; font-weight: 800; color: #1a1a1a; margin: 0 auto 20px; letter-spacing: -0.015em; max-width: 920px; }
+  .vb-hero2__headline em { font-style: normal; color: #4d8c44; }
+  .vb-hero2__sub { font-size: 17px; line-height: 1.6; color: #3a3a3a; max-width: 640px; margin: 0 auto 28px; }
+  .vb-hero2__ctas { display: inline-flex; flex-wrap: wrap; gap: 12px; margin: 0 0 28px; justify-content: center; }
+  .vb-hero2 a.vb-hero2__cta { display: inline-flex; align-items: center; gap: 6px; padding: 15px 32px; border-radius: 999px; text-decoration: none; font-weight: 700; font-size: 15px; transition: all 0.18s ease; }
+  .vb-hero2 a.vb-hero2__cta--primary { background: #4d8c44; color: #fff !important; box-shadow: 0 12px 28px rgba(77, 140, 68, 0.34); }
+  .vb-hero2 a.vb-hero2__cta--primary:hover { background: #36632f; transform: translateY(-2px); box-shadow: 0 16px 32px rgba(77, 140, 68, 0.42); }
+  .vb-hero2 a.vb-hero2__cta--secondary { background: #fff; color: #2b3a2a !important; border: 2px solid #c9d6c7; }
+  .vb-hero2 a.vb-hero2__cta--secondary:hover { border-color: #4d8c44; color: #4d8c44 !important; transform: translateY(-2px); }
 
-  .vb-hero__pills { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
-  .vb-hero__pill { background: #fff; padding: 14px 16px; border-radius: 14px; border: 1px solid #e3ece1; display: flex; align-items: center; gap: 12px; transition: transform 0.18s ease, box-shadow 0.18s ease; }
-  .vb-hero__pill:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(77, 140, 68, 0.12); }
-  .vb-hero__pill-icon { width: 36px; height: 36px; border-radius: 50%; background: rgba(77, 140, 68, 0.12); color: #4d8c44; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
-  .vb-hero__pill-text { display: flex; flex-direction: column; line-height: 1.2; min-width: 0; }
-  .vb-hero__pill-title { font-size: 13px; font-weight: 800; color: #1a1a1a; }
-  .vb-hero__pill-sub { font-size: 11px; color: #6c7a6b; margin-top: 2px; }
+  /* Banner image area */
+  .vb-hero2__visual { position: relative; max-width: 720px; margin: 0 auto 28px; aspect-ratio: 16/10; border-radius: 24px; overflow: visible; }
+  .vb-hero2__visual-frame { position: relative; width: 100%; height: 100%; border-radius: 24px; overflow: hidden; background: linear-gradient(160deg, #ffffff 0%, #e8f1e3 100%); box-shadow: 0 24px 60px rgba(0, 0, 0, 0.10); }
+  .vb-hero2__visual-img { width: 100%; height: 100%; object-fit: cover; }
+  .vb-hero2__visual-placeholder { display: flex; align-items: center; justify-content: center; height: 100%; color: #4d8c44; font-size: 14px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; opacity: 0.4; }
 
-  /* Visual side */
-  .vb-hero__visual { position: relative; min-height: 480px; display: flex; align-items: center; justify-content: center; }
-  .vb-hero__visual-frame { position: relative; width: 100%; max-width: 540px; aspect-ratio: 4/5; background: linear-gradient(160deg, #ffffff 0%, #f0f7ee 100%); border-radius: 24px; overflow: visible; box-shadow: 0 24px 60px rgba(0, 0, 0, 0.08); }
-  .vb-hero__visual-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 24px; }
+  /* Floating proof badges */
+  .vb-hero2__badge { position: absolute; background: #fff; padding: 12px 18px; border-radius: 999px; box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14); display: inline-flex; flex-direction: column; align-items: center; line-height: 1.1; border: 1px solid #e3ece1; }
+  .vb-hero2__badge--green { background: #4d8c44; color: #fff !important; border: none; }
+  .vb-hero2__badge--green strong, .vb-hero2__badge--green small { color: #fff; }
+  .vb-hero2__badge strong { font-size: 18px; font-weight: 900; color: #1a1a1a; letter-spacing: -0.02em; }
+  .vb-hero2__badge small { font-size: 10px; font-weight: 700; opacity: 0.85; margin-top: 2px; letter-spacing: 0.06em; text-transform: uppercase; color: #4d8c44; }
+  .vb-hero2__badge--tl { top: 10px; left: -16px; transform: rotate(-5deg); }
+  .vb-hero2__badge--tr { top: 18px; right: -22px; transform: rotate(4deg); }
+  .vb-hero2__badge--bl { bottom: 24px; left: -28px; transform: rotate(2deg); }
+  .vb-hero2__badge--br { bottom: 18px; right: -16px; transform: rotate(-3deg); }
 
-  /* Floating badges */
-  .vb-hero__badge { position: absolute; background: #4d8c44; color: #fff; padding: 10px 16px; border-radius: 999px; font-size: 12px; font-weight: 800; letter-spacing: 0.02em; box-shadow: 0 10px 24px rgba(77, 140, 68, 0.34); display: inline-flex; flex-direction: column; align-items: center; line-height: 1.15; }
-  .vb-hero__badge--top { top: 18px; right: -10px; padding: 12px 18px; transform: rotate(4deg); }
-  .vb-hero__badge--top strong { font-size: 18px; font-weight: 900; letter-spacing: -0.02em; }
-  .vb-hero__badge--top small { font-size: 10px; font-weight: 700; opacity: 0.95; margin-top: 2px; letter-spacing: 0.04em; text-transform: uppercase; }
-  .vb-hero__badge--side { top: 40%; left: -22px; background: #1f2c2a; transform: rotate(-3deg); padding: 12px 16px; min-width: 96px; }
-  .vb-hero__badge--side strong { font-size: 16px; font-weight: 900; }
-  .vb-hero__badge--side small { font-size: 9.5px; font-weight: 700; opacity: 0.85; margin-top: 2px; }
+  /* Quote card */
+  .vb-hero2__quote { position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%) rotate(-1.5deg); background: #fff; border-radius: 16px; padding: 14px 18px; max-width: 320px; box-shadow: 0 22px 44px rgba(0, 0, 0, 0.16); border: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: center; }
+  .vb-hero2__quote-avatar { width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #4d8c44, #6ec56e); color: #fff; font-weight: 800; font-size: 18px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .vb-hero2__quote-body { text-align: left; min-width: 0; }
+  .vb-hero2__quote-stars { color: #ffb43a; font-size: 12px; letter-spacing: 1px; margin: 0 0 2px; line-height: 1; }
+  .vb-hero2__quote-text { font-size: 12.5px; line-height: 1.35; font-weight: 700; color: #1a1a1a; margin: 0; }
+  .vb-hero2__quote-author { font-size: 10.5px; color: #6c7a6b; margin: 3px 0 0; }
 
-  /* Testimonial card */
-  .vb-hero__quote { position: absolute; bottom: 22px; left: -22px; background: #fff; border-radius: 14px; padding: 14px 16px; max-width: 240px; box-shadow: 0 18px 36px rgba(0, 0, 0, 0.14); border: 1px solid #f0f0f0; }
-  .vb-hero__quote-stars { color: #ffb43a; font-size: 13px; letter-spacing: 1px; line-height: 1; margin: 0 0 6px; }
-  .vb-hero__quote-text { font-size: 13px; line-height: 1.45; font-weight: 600; color: #1a1a1a; margin: 0 0 6px; }
-  .vb-hero__quote-author { font-size: 11.5px; color: #6c7a6b; margin: 0; display: flex; align-items: center; gap: 4px; }
-  .vb-hero__quote-author .verified { background: rgba(77, 140, 68, 0.14); color: #4d8c44; padding: 2px 6px; border-radius: 4px; font-weight: 700; font-size: 9px; letter-spacing: 0.04em; text-transform: uppercase; }
+  /* Trust pills below */
+  .vb-hero2__pills { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; max-width: 820px; margin: 36px auto 0; }
+  .vb-hero2__pill { background: #fff; padding: 14px 14px; border-radius: 14px; border: 1px solid #e3ece1; display: flex; align-items: center; gap: 10px; transition: transform 0.18s ease, box-shadow 0.18s ease; text-align: left; }
+  .vb-hero2__pill:hover { transform: translateY(-3px); box-shadow: 0 10px 22px rgba(77, 140, 68, 0.14); }
+  .vb-hero2__pill-icon { width: 36px; height: 36px; border-radius: 50%; background: rgba(77, 140, 68, 0.12); color: #4d8c44; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+  .vb-hero2__pill-text { display: flex; flex-direction: column; line-height: 1.2; min-width: 0; }
+  .vb-hero2__pill-title { font-size: 13px; font-weight: 800; color: #1a1a1a; }
+  .vb-hero2__pill-sub { font-size: 11px; color: #6c7a6b; margin-top: 2px; }
 
-  @media (max-width: 990px) {
-    .vb-hero { padding: 40px 18px 48px; }
-    .vb-hero__inner { grid-template-columns: 1fr; gap: 32px; }
-    .vb-hero__visual { order: -1; min-height: 320px; }
-    .vb-hero__visual-frame { max-width: 380px; aspect-ratio: 4/4.5; }
-    .vb-hero__pills { grid-template-columns: repeat(2, 1fr); }
-  }
-  @media (max-width: 600px) {
-    .vb-hero__headline { font-size: clamp(28px, 8vw, 36px); }
-    .vb-hero__sub { font-size: 15.5px; }
-    .vb-hero__pills { grid-template-columns: repeat(2, 1fr); gap: 8px; }
-    .vb-hero__pill { padding: 10px 12px; gap: 8px; border-radius: 12px; }
-    .vb-hero__pill-icon { width: 30px; height: 30px; font-size: 15px; }
-    .vb-hero__pill-title { font-size: 12px; }
-    .vb-hero__pill-sub { font-size: 10px; }
-    .vb-hero__badge--top { padding: 9px 14px; }
-    .vb-hero__badge--top strong { font-size: 14px; }
-    .vb-hero__badge--side { padding: 9px 12px; left: -14px; }
-    .vb-hero__quote { max-width: 200px; padding: 12px; left: -12px; bottom: 14px; }
-    .vb-hero__quote-text { font-size: 12px; }
-    .vb-hero a.vb-hero__cta { padding: 12px 22px; font-size: 14px; }
+  @media (max-width: 749px) {
+    .vb-hero2 { padding: 36px 16px 44px; }
+    .vb-hero2__visual { max-width: 100%; aspect-ratio: 4/3.4; margin-bottom: 36px; }
+    .vb-hero2__headline { font-size: clamp(28px, 8vw, 38px); }
+    .vb-hero2__sub { font-size: 15px; }
+    .vb-hero2__pills { grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 24px; }
+    .vb-hero2__pill { padding: 10px 12px; gap: 8px; border-radius: 12px; }
+    .vb-hero2__pill-icon { width: 30px; height: 30px; font-size: 14px; }
+    .vb-hero2__pill-title { font-size: 12px; }
+    .vb-hero2__pill-sub { font-size: 10px; }
+    .vb-hero2__badge { padding: 8px 12px; }
+    .vb-hero2__badge strong { font-size: 14px; }
+    .vb-hero2__badge small { font-size: 8px; }
+    .vb-hero2__badge--tl { left: -8px; top: 8px; }
+    .vb-hero2__badge--tr { right: -8px; top: 12px; }
+    .vb-hero2__badge--bl { left: -8px; bottom: 16px; }
+    .vb-hero2__badge--br { right: -8px; bottom: 14px; }
+    .vb-hero2__quote { max-width: 260px; padding: 10px 12px; bottom: -16px; }
+    .vb-hero2__quote-avatar { width: 36px; height: 36px; font-size: 15px; }
+    .vb-hero2__quote-text { font-size: 11.5px; }
+    .vb-hero2__quote-author { font-size: 9.5px; }
+    .vb-hero2 a.vb-hero2__cta { padding: 13px 24px; font-size: 14px; }
   }
 </style>
 
-<section class="vb-hero">
-  <div class="vb-hero__inner">
-    <div class="vb-hero__copy">
-      {%- if section.settings.eyebrow != blank -%}
-        <span class="vb-hero__eyebrow">{{ section.settings.eyebrow }}</span>
-      {%- endif -%}
-      {%- if section.settings.show_rating -%}
-        <div class="vb-hero__rating">
-          <span class="stars">★★★★★</span>
-          <span>Over <strong>{{ section.settings.review_count }}</strong> Reviews</span>
-          <span class="divider"></span>
-          <span><strong>{{ section.settings.customer_count }}</strong> Happy Customers</span>
-        </div>
-      {%- endif -%}
-      <h1 class="vb-hero__headline">
-        {{ section.settings.headline_pre }}{%- if section.settings.headline_highlight != blank %} <em>{{ section.settings.headline_highlight }}</em>{%- endif -%}
-      </h1>
-      {%- if section.settings.sub != blank -%}
-        <p class="vb-hero__sub">{{ section.settings.sub }}</p>
-      {%- endif -%}
-      <div class="vb-hero__ctas">
-        {%- if section.settings.cta1_text != blank -%}
-          <a href="{{ section.settings.cta1_link | default: '#' }}" class="vb-hero__cta vb-hero__cta--primary">{{ section.settings.cta1_text }}</a>
-        {%- endif -%}
-        {%- if section.settings.cta2_text != blank -%}
-          <a href="{{ section.settings.cta2_link | default: '#' }}" class="vb-hero__cta vb-hero__cta--secondary">{{ section.settings.cta2_text }}</a>
-        {%- endif -%}
+<section class="vb-hero2">
+  <div class="vb-hero2__inner">
+    {%- if section.settings.eyebrow != blank -%}
+      <span class="vb-hero2__eyebrow">{{ section.settings.eyebrow }}</span>
+    {%- endif -%}
+    {%- if section.settings.show_rating -%}
+      <div class="vb-hero2__rating">
+        <span class="stars">★★★★★</span>
+        <span>Over <strong>{{ section.settings.review_count }}</strong> Reviews</span>
+        <span class="divider"></span>
+        <span><strong>{{ section.settings.customer_count }}</strong> Happy Customers Worldwide</span>
       </div>
-      <div class="vb-hero__pills">
-        {%- for block in section.blocks -%}
-          {%- if block.type == 'pill' -%}
-            <div class="vb-hero__pill" {{ block.shopify_attributes }}>
-              <span class="vb-hero__pill-icon">{{ block.settings.icon }}</span>
-              <span class="vb-hero__pill-text">
-                <span class="vb-hero__pill-title">{{ block.settings.title }}</span>
-                <span class="vb-hero__pill-sub">{{ block.settings.sub }}</span>
-              </span>
-            </div>
-          {%- endif -%}
-        {%- endfor -%}
-      </div>
+    {%- endif -%}
+    <h1 class="vb-hero2__headline">
+      {{ section.settings.headline_pre }}
+      {%- if section.settings.headline_highlight != blank %} <em>{{ section.settings.headline_highlight }}</em>{%- endif -%}
+    </h1>
+    {%- if section.settings.sub != blank -%}
+      <p class="vb-hero2__sub">{{ section.settings.sub }}</p>
+    {%- endif -%}
+    <div class="vb-hero2__ctas">
+      {%- if section.settings.cta1_text != blank -%}
+        <a href="{{ section.settings.cta1_link | default: '#' }}" class="vb-hero2__cta vb-hero2__cta--primary">{{ section.settings.cta1_text }}</a>
+      {%- endif -%}
+      {%- if section.settings.cta2_text != blank -%}
+        <a href="{{ section.settings.cta2_link | default: '#' }}" class="vb-hero2__cta vb-hero2__cta--secondary">{{ section.settings.cta2_text }}</a>
+      {%- endif -%}
     </div>
 
-    <div class="vb-hero__visual">
-      <div class="vb-hero__visual-frame">
+    <div class="vb-hero2__visual">
+      <div class="vb-hero2__visual-frame">
         {%- if hero_image_src != blank -%}
-          <img class="vb-hero__visual-img" src="{{ hero_image_src }}" alt="{{ section.settings.bg_image.alt | default: 'Velobiotics' }}" loading="eager" />
-        {%- endif -%}
-        {%- if section.settings.badge_top_value != blank -%}
-          <span class="vb-hero__badge vb-hero__badge--top">
-            <strong>{{ section.settings.badge_top_value }}</strong>
-            <small>{{ section.settings.badge_top_label }}</small>
-          </span>
-        {%- endif -%}
-        {%- if section.settings.badge_side_value != blank -%}
-          <span class="vb-hero__badge vb-hero__badge--side">
-            <strong>{{ section.settings.badge_side_value }}</strong>
-            <small>{{ section.settings.badge_side_label }}</small>
-          </span>
-        {%- endif -%}
-        {%- if section.settings.quote_text != blank -%}
-          <div class="vb-hero__quote">
-            <div class="vb-hero__quote-stars">★★★★★</div>
-            <p class="vb-hero__quote-text">"{{ section.settings.quote_text }}"</p>
-            <p class="vb-hero__quote-author">— {{ section.settings.quote_author }} <span class="verified">Verified</span></p>
-          </div>
+          <img class="vb-hero2__visual-img" src="{{ hero_image_src }}" alt="{{ section.settings.bg_image.alt | default: 'Velobiotics' }}" loading="eager" />
+        {%- else -%}
+          <div class="vb-hero2__visual-placeholder">Hero banner image goes here</div>
         {%- endif -%}
       </div>
+      {%- if section.settings.badge_tl_value != blank -%}
+        <span class="vb-hero2__badge vb-hero2__badge--green vb-hero2__badge--tl"><strong>{{ section.settings.badge_tl_value }}</strong><small>{{ section.settings.badge_tl_label }}</small></span>
+      {%- endif -%}
+      {%- if section.settings.badge_tr_value != blank -%}
+        <span class="vb-hero2__badge vb-hero2__badge--tr"><strong>{{ section.settings.badge_tr_value }}</strong><small>{{ section.settings.badge_tr_label }}</small></span>
+      {%- endif -%}
+      {%- if section.settings.badge_bl_value != blank -%}
+        <span class="vb-hero2__badge vb-hero2__badge--bl"><strong>{{ section.settings.badge_bl_value }}</strong><small>{{ section.settings.badge_bl_label }}</small></span>
+      {%- endif -%}
+      {%- if section.settings.badge_br_value != blank -%}
+        <span class="vb-hero2__badge vb-hero2__badge--green vb-hero2__badge--br"><strong>{{ section.settings.badge_br_value }}</strong><small>{{ section.settings.badge_br_label }}</small></span>
+      {%- endif -%}
+      {%- if section.settings.quote_text != blank -%}
+        <div class="vb-hero2__quote">
+          <div class="vb-hero2__quote-avatar">{{ section.settings.quote_author | slice: 0, 1 | upcase }}</div>
+          <div class="vb-hero2__quote-body">
+            <div class="vb-hero2__quote-stars">★★★★★</div>
+            <p class="vb-hero2__quote-text">"{{ section.settings.quote_text }}"</p>
+            <p class="vb-hero2__quote-author">— {{ section.settings.quote_author }}, verified</p>
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+
+    <div class="vb-hero2__pills">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'pill' -%}
+          <div class="vb-hero2__pill" {{ block.shopify_attributes }}>
+            <span class="vb-hero2__pill-icon">{{ block.settings.icon }}</span>
+            <span class="vb-hero2__pill-text">
+              <span class="vb-hero2__pill-title">{{ block.settings.title }}</span>
+              <span class="vb-hero2__pill-sub">{{ block.settings.sub }}</span>
+            </span>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
     </div>
   </div>
 </section>
@@ -161,15 +173,14 @@
   "tag": "section",
   "class": "vb-home-hero-section",
   "settings": [
-    { "type": "header", "content": "Hero image" },
-    { "type": "text", "id": "bg_image_url", "label": "External image URL (overrides upload)" },
+    { "type": "header", "content": "Hero banner image" },
+    { "type": "text", "id": "bg_image_url", "label": "External image URL" },
     { "type": "image_picker", "id": "bg_image", "label": "Hero image (uploaded)" },
     { "type": "header", "content": "Content" },
     { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Patented Probiotics That Actually Reach Your Gut" },
     { "type": "text", "id": "headline_pre", "label": "Headline (start)", "default": "Most Probiotics Die in Your Stomach." },
     { "type": "text", "id": "headline_highlight", "label": "Headline (highlight)", "default": "Ours Don't!" },
     { "type": "textarea", "id": "sub", "label": "Sub-headline", "default": "Velobiotics protects every live culture through stomach acid delivering 1000× more probiotics to your gut, where they're needed for real results, you can feel." },
-    { "type": "header", "content": "Rating row" },
     { "type": "checkbox", "id": "show_rating", "label": "Show rating row", "default": true },
     { "type": "text", "id": "review_count", "label": "Review count", "default": "3,500" },
     { "type": "text", "id": "customer_count", "label": "Customer count", "default": "300,000" },
@@ -179,36 +190,32 @@
     { "type": "text", "id": "cta2_text", "label": "Secondary CTA", "default": "🧬 Take The Quiz" },
     { "type": "url", "id": "cta2_link", "label": "Secondary CTA link" },
     { "type": "header", "content": "Floating badges" },
-    { "type": "text", "id": "badge_top_value", "label": "Top badge value", "default": "300K+" },
-    { "type": "text", "id": "badge_top_label", "label": "Top badge label", "default": "Happy Customers" },
-    { "type": "text", "id": "badge_side_value", "label": "Side badge value", "default": "1000×" },
-    { "type": "text", "id": "badge_side_label", "label": "Side badge label", "default": "More Probiotics" },
+    { "type": "text", "id": "badge_tl_value", "label": "Top-left value", "default": "1000×" },
+    { "type": "text", "id": "badge_tl_label", "label": "Top-left label", "default": "More Probiotics" },
+    { "type": "text", "id": "badge_tr_value", "label": "Top-right value", "default": "300K+" },
+    { "type": "text", "id": "badge_tr_label", "label": "Top-right label", "default": "Happy Customers" },
+    { "type": "text", "id": "badge_bl_value", "label": "Bottom-left value", "default": "10" },
+    { "type": "text", "id": "badge_bl_label", "label": "Bottom-left label", "default": "Probiotic Strains" },
+    { "type": "text", "id": "badge_br_value", "label": "Bottom-right value", "default": "30-day" },
+    { "type": "text", "id": "badge_br_label", "label": "Bottom-right label", "default": "Money Back" },
     { "type": "header", "content": "Testimonial card" },
     { "type": "textarea", "id": "quote_text", "label": "Quote", "default": "Lost 42kgs — Velo16 helped me lose the last kg!" },
     { "type": "text", "id": "quote_author", "label": "Author", "default": "Nicky vd Westhuizen" }
   ],
   "blocks": [
-    {
-      "type": "pill",
-      "name": "Trust pill",
-      "limit": 4,
-      "settings": [
-        { "type": "text", "id": "icon", "label": "Icon / emoji", "default": "💊" },
-        { "type": "text", "id": "title", "label": "Title", "default": "Patented MEP" },
-        { "type": "text", "id": "sub", "label": "Sub-text", "default": "Technology" }
-      ]
-    }
+    { "type": "pill", "name": "Trust pill", "limit": 4, "settings": [
+      { "type": "text", "id": "icon", "label": "Icon / emoji", "default": "💊" },
+      { "type": "text", "id": "title", "label": "Title", "default": "Patented MEP" },
+      { "type": "text", "id": "sub", "label": "Sub-text", "default": "Technology" }
+    ]}
   ],
   "presets": [
-    {
-      "name": "VB · Home hero",
-      "blocks": [
-        { "type": "pill", "settings": { "icon": "💊", "title": "Patented MEP", "sub": "Technology" } },
-        { "type": "pill", "settings": { "icon": "1000×", "title": "1000×", "sub": "More Delivered" } },
-        { "type": "pill", "settings": { "icon": "🩺", "title": "Doctor", "sub": "Formulated" } },
-        { "type": "pill", "settings": { "icon": "🔄", "title": "Money-Back", "sub": "Guarantee" } }
-      ]
-    }
+    { "name": "VB · Home hero", "blocks": [
+      { "type": "pill", "settings": { "icon": "💊", "title": "Patented MEP", "sub": "Technology" } },
+      { "type": "pill", "settings": { "icon": "🩺", "title": "Doctor", "sub": "Formulated" } },
+      { "type": "pill", "settings": { "icon": "🔬", "title": "Lab-Tested", "sub": "Every Batch" } },
+      { "type": "pill", "settings": { "icon": "🔄", "title": "Money-Back", "sub": "Guarantee" } }
+    ]}
   ]
 }
 {% endschema %}

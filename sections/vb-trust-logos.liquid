@@ -1,0 +1,59 @@
+{%- comment -%}
+  VB · Trust logos — 4 partner/certification logo strip from /cdn/shop/files/new-custom-logo-001..004
+{%- endcomment -%}
+
+<style>
+  .vb-tl { padding: 32px 24px; background: #fafdf9; border-top: 1px solid #e3ece1; border-bottom: 1px solid #e3ece1; }
+  .vb-tl__inner { max-width: 1100px; margin: 0 auto; }
+  .vb-tl__label { text-align: center; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #6c7a6b; margin: 0 0 18px; }
+  .vb-tl__grid { display: flex; align-items: center; justify-content: space-around; flex-wrap: wrap; gap: 28px; }
+  .vb-tl__item { display: inline-flex; align-items: center; gap: 12px; opacity: 0.78; transition: opacity 0.18s ease; }
+  .vb-tl__item:hover { opacity: 1; }
+  .vb-tl__item img { height: 48px; width: auto; max-width: 160px; object-fit: contain; filter: grayscale(20%); }
+  @media (max-width: 749px) {
+    .vb-tl { padding: 24px 14px; }
+    .vb-tl__grid { gap: 18px; }
+    .vb-tl__item img { height: 34px; max-width: 110px; }
+  }
+</style>
+
+<section class="vb-tl">
+  <div class="vb-tl__inner">
+    {%- if section.settings.label != blank -%}<p class="vb-tl__label">{{ section.settings.label }}</p>{%- endif -%}
+    <div class="vb-tl__grid">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'logo' -%}
+          <div class="vb-tl__item" {{ block.shopify_attributes }}>
+            {%- if block.settings.logo_url != blank -%}
+              <img src="{{ block.settings.logo_url }}" alt="{{ block.settings.alt }}" loading="lazy" />
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "VB · Trust logos",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "label", "label": "Label", "default": "As featured in & certified by" }
+  ],
+  "blocks": [
+    { "type": "logo", "name": "Logo", "settings": [
+      { "type": "text", "id": "logo_url", "label": "Logo URL" },
+      { "type": "text", "id": "alt", "label": "Alt text" }
+    ]}
+  ],
+  "presets": [
+    { "name": "VB · Trust logos", "blocks": [
+      { "type": "logo", "settings": { "logo_url": "https://www.velobiotics.com/cdn/shop/files/new-custom-logo-001.png?v=1763318407", "alt": "Trust 1" } },
+      { "type": "logo", "settings": { "logo_url": "https://www.velobiotics.com/cdn/shop/files/new-custom-logo-002.png?v=1763318533", "alt": "Trust 2" } },
+      { "type": "logo", "settings": { "logo_url": "https://www.velobiotics.com/cdn/shop/files/new-custom-logo-003.png?v=1763318589", "alt": "Trust 3" } },
+      { "type": "logo", "settings": { "logo_url": "https://www.velobiotics.com/cdn/shop/files/new-custom-logo-004.png?v=1763318638", "alt": "Trust 4" } }
+    ]}
+  ]
+}
+{% endschema %}

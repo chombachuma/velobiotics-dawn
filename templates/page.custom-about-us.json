@@ -12,377 +12,146 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "padding_top": 28,
+        "padding_top": 0,
         "padding_bottom": 0
       }
     },
-    "hero_pitch": {
-      "type": "rich-text",
-      "blocks": {
-        "h1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Better Probiotics. Real Results.",
-            "heading_size": "h0"
-          }
-        },
-        "c1": {
-          "type": "caption",
-          "settings": {
-            "caption": "Engineered in South Africa · Lab-tested every batch · 1000× more delivery",
-            "text_style": "uppercase"
-          }
-        },
-        "t1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We build probiotics that survive the journey — so your body actually benefits. Velobiotics exists to raise the standard of probiotic wellness. For too long, probiotics have been measured by what's printed on a label, not by what actually reaches the gut. We believe real results come from real delivery.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "c1",
-        "h1",
-        "t1"
-      ],
+    "hero": {
+      "type": "vb-hero",
       "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 64,
-        "padding_bottom": 48
+        "eyebrow": "About Velobiotics",
+        "sub": "We build probiotics that survive the journey — so your body actually benefits. Engineered in South Africa. Lab-tested every batch. 1000× more delivery."
       }
     },
     "promise": {
-      "type": "image-with-text",
-      "blocks": {
-        "h1": {
-          "type": "heading",
-          "settings": {
-            "heading": "We Believe Wellness Should Work",
-            "heading_size": "h1"
-          }
-        },
-        "t1": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong><em>Too many supplements promise results without delivering them.</em></strong></p><p>At Velobiotics, we believe wellness products should earn trust through performance, not hype. Effectiveness matters more than buzzwords, and absorption matters more than inflated numbers.</p><p>If probiotics can't survive heat, moisture, and stomach acid, they can't support your health — no matter how impressive the label looks. That's why we focus on survivability first, ensuring what you take actually reaches your system alive and active.</p><p><em>It's not about taking more. It's about taking what works.</em></p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "h1",
-        "t1"
-      ],
+      "type": "vb-feature-row",
       "settings": {
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "eyebrow": "Our Promise"
       }
     },
     "difference": {
-      "type": "image-with-text",
-      "blocks": {
-        "h1": {
-          "type": "heading",
-          "settings": {
-            "heading": "What Makes Velobiotics Different",
-            "heading_size": "h1"
-          }
-        },
-        "t1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Velobiotics uses <strong>advanced micro-encapsulation technology</strong> to protect probiotics from heat, moisture, and stomach acid — allowing significantly more live bacteria to reach the gut.</p><p>This protective approach helps probiotics remain stable before consumption and intact during digestion, releasing only when they reach the environment where they're needed most. The result is improved absorption, better balance, and more consistent support for gut and overall wellness.</p><p><strong><em>By prioritising delivery over claims, Velobiotics creates probiotic solutions designed for real effectiveness — not just good intentions.</em></strong></p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "h1",
-        "t1"
-      ],
+      "type": "vb-feature-row",
       "settings": {
-        "color_scheme": "background-2",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "eyebrow": "Our Technology"
       }
     },
-    "team_intro": {
-      "type": "rich-text",
+    "team": {
+      "type": "vb-team-grid",
       "blocks": {
-        "c1": {
-          "type": "caption",
+        "m1": {
+          "type": "member",
           "settings": {
-            "caption": "Meet the Team",
-            "text_style": "uppercase"
+            "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-08.jpg",
+            "name": "Dr. Chomba Chuma",
+            "role": "Founder & Managing Director",
+            "bio": "Provides visionary leadership and strategic direction for Velobiotics, driving innovation at the intersection of science, technology, and consumer health. Shapes long-term strategy and global expansion."
           }
         },
-        "h1": {
-          "type": "heading",
+        "m2": {
+          "type": "member",
           "settings": {
-            "heading": "The People Behind Velobiotics",
-            "heading_size": "h1"
+            "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-15.jpg",
+            "name": "Cary Mabunda",
+            "role": "Operations Manager & Deputy GM",
+            "bio": "Leads the operational backbone of Velobiotics, ensuring seamless execution across manufacturing, finance, HR, and administration. Critical in scaling Velobiotics into a world-class biotech company."
           }
         },
-        "t1": {
-          "type": "text",
+        "m3": {
+          "type": "member",
           "settings": {
-            "text": "<p>Velobiotics is powered by a multidisciplinary team of medical professionals, scientists, and wellness experts who share one mission: to build probiotics that actually work — by ensuring they reach the gut alive.</p>"
+            "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-12.jpg",
+            "name": "Vuyo Qabaka",
+            "role": "Head of Marketing",
+            "bio": "Drives brand strategy, storytelling, and market positioning across all Velobiotics brands. Shapes how science-backed probiotics are communicated to consumers, professionals, and partners."
+          }
+        },
+        "m4": {
+          "type": "member",
+          "settings": {
+            "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-04.jpg",
+            "name": "Palesa Ledwaba",
+            "role": "Sales Rep — Johannesburg South & East",
+            "bio": "Frontline ambassador of Velobiotics, connecting innovative probiotic solutions with pharmacies, healthcare professionals, and retailers. Fuels revenue growth and market penetration."
+          }
+        },
+        "m5": {
+          "type": "member",
+          "settings": {
+            "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-11.jpg",
+            "name": "Ntobeko Motloung",
+            "role": "Sales Rep — Johannesburg North & West",
+            "bio": "Drives market adoption by building trusted relationships with pharmacies, healthcare professionals, and retail partners. Focuses on field execution and consistent sales performance."
+          }
+        },
+        "m6": {
+          "type": "member",
+          "settings": {
+            "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-14.jpg",
+            "name": "Tsakane Sebone",
+            "role": "Bookkeeping and Accounts",
+            "bio": "Ensures financial accuracy, compliance, and reporting integrity. Underpins sustainable expansion, investor readiness, and disciplined financial management toward 2035."
+          }
+        },
+        "m7": {
+          "type": "member",
+          "settings": {
+            "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-02.jpg",
+            "name": "Precious Chiloane",
+            "role": "B2B Customer Support & Sales",
+            "bio": "Manages and grows wholesale and institutional relationships, ensuring efficient fulfilment. Supports Velobiotics' scale into larger commercial and international markets."
+          }
+        },
+        "m8": {
+          "type": "member",
+          "settings": {
+            "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-05.jpg",
+            "name": "Shupa Ziba",
+            "role": "Driver & Logistics Support",
+            "bio": "Ensures reliable movement of goods, documents, and materials that keep daily operations running smoothly. A vital enabler of operational continuity and service excellence."
+          }
+        },
+        "m9": {
+          "type": "member",
+          "settings": {
+            "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-01.jpg",
+            "name": "Bridget Mokoena",
+            "role": "B2C Customer Support & Sales",
+            "bio": "Delivers exceptional customer experiences via direct-to-consumer engagement, education, and sales. Ensures Velobiotics' science-driven products translate into trust, loyalty, and repeat usage."
+          }
+        },
+        "m10": {
+          "type": "member",
+          "settings": {
+            "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-03.jpg",
+            "name": "Gad Mthombeni",
+            "role": "Warehouse & Dispatch Manager",
+            "bio": "Oversees inventory integrity, order fulfilment, and logistics efficiency. Ensures Velobiotics' growing product portfolio moves reliably from production to customers."
           }
         }
       },
       "block_order": [
-        "c1",
-        "h1",
-        "t1"
+        "m1",
+        "m2",
+        "m3",
+        "m4",
+        "m5",
+        "m6",
+        "m7",
+        "m8",
+        "m9",
+        "m10"
       ],
       "settings": {
-        "color_scheme": "background-1",
-        "padding_top": 48,
-        "padding_bottom": 24
-      }
-    },
-    "team_grid": {
-      "type": "multicolumn",
-      "blocks": {
-        "c1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/custom-Team-Image-08.jpg",
-            "title": "Dr. Chomba Chuma",
-            "text": "<p><strong>Founder & Managing Director</strong><br/><br/>Provides visionary leadership and strategic direction for Velobiotics, driving innovation at the intersection of science, technology, and consumer health. Shapes long-term strategy, oversees brand creation and global expansion, and ensures Velobiotics' patented probiotic technologies translate into sustainable impact and market leadership.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "c2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/custom-Team-Image-15.jpg",
-            "title": "Cary Mabunda",
-            "text": "<p><strong>Operations Manager & Deputy GM</strong><br/><br/>Leads the operational backbone of Velobiotics, ensuring seamless execution across manufacturing, finance, HR, and administration. Critical in scaling Velobiotics into a world-class, globally competitive biotechnology company.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "c3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/custom-Team-Image-12.jpg",
-            "title": "Vuyo Qabaka",
-            "text": "<p><strong>Head of Marketing</strong><br/><br/>Drives brand strategy, storytelling, and market positioning across all Velobiotics brands. Plays a pivotal role in shaping how science-backed probiotics are communicated to consumers, healthcare professionals, and global partners.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "c4": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/custom-Team-Image-04.jpg",
-            "title": "Palesa Ledwaba",
-            "text": "<p><strong>Sales Representative — Johannesburg South & East</strong><br/><br/>Acts as the frontline ambassador of Velobiotics, connecting innovative probiotic solutions with pharmacies, healthcare professionals, and retailers. Fuels revenue growth and market penetration essential to the 2035 expansion strategy.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "c5": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/custom-Team-Image-11.jpg",
-            "title": "Ntobeko Motloung",
-            "text": "<p><strong>Sales Representative — Johannesburg North & West</strong><br/><br/>Drives market adoption by building trusted relationships with pharmacies, healthcare professionals, and retail partners. Focuses on field execution, product education, and consistent sales performance.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "c6": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/custom-Team-Image-14.jpg",
-            "title": "Tsakane Sebone",
-            "text": "<p><strong>Bookkeeping and Accounts</strong><br/><br/>Ensures financial accuracy, compliance, and reporting integrity as Velobiotics grows. Underpins sustainable expansion, investor readiness, and disciplined financial management toward the 2035 vision.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "c7": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/custom-Team-Image-02.jpg",
-            "title": "Precious Chiloane",
-            "text": "<p><strong>B2B Customer Support and Sales</strong><br/><br/>Manages and grows relationships with wholesale and institutional partners, ensuring efficient order fulfilment and long-term partnerships. Supports Velobiotics' scale-up into larger commercial and international markets.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "c8": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/custom-Team-Image-05.jpg",
-            "title": "Shupa Ziba",
-            "text": "<p><strong>Driver & Logistics Support</strong><br/><br/>Ensures reliable movement of goods, documents, and materials that keep daily operations running smoothly. A vital enabler of operational continuity and service excellence.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "c9": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/custom-Team-Image-01.jpg",
-            "title": "Bridget Mokoena",
-            "text": "<p><strong>B2C Customer Support and Sales</strong><br/><br/>Delivers exceptional customer experiences by supporting direct-to-consumer engagement, education, and sales. Ensures that Velobiotics' science-driven products translate into trust, loyalty, and repeat usage.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "c10": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/custom-Team-Image-03.jpg",
-            "title": "Gad Mthombeni",
-            "text": "<p><strong>Warehouse and Dispatch Manager</strong><br/><br/>Oversees inventory integrity, order fulfilment, and logistics efficiency. Ensures that Velobiotics' growing product portfolio moves reliably from production to customers, supporting scalability and operational excellence.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "c1",
-        "c2",
-        "c3",
-        "c4",
-        "c5",
-        "c6",
-        "c7",
-        "c8",
-        "c9",
-        "c10"
-      ],
-      "settings": {
-        "title": "",
-        "image_width": "full",
-        "image_ratio": "square",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 0,
-        "padding_bottom": 48
-      }
-    },
-    "real_life_intro": {
-      "type": "rich-text",
-      "blocks": {
-        "h1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Designed for Real Life",
-            "heading_size": "h1"
-          }
-        },
-        "t1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We design products that fit into real schedules, real families, and real lives.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "h1",
-        "t1"
-      ],
-      "settings": {
-        "color_scheme": "background-2",
-        "padding_top": 48,
-        "padding_bottom": 16
-      }
-    },
-    "real_life_pillars": {
-      "type": "multicolumn",
-      "blocks": {
-        "p1": {
-          "type": "column",
-          "settings": {
-            "title": "Shelf-Stable Formulas",
-            "text": "<p>No refrigeration required — our probiotics stay effective wherever life takes you.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "p2": {
-          "type": "column",
-          "settings": {
-            "title": "Easy Daily Routine",
-            "text": "<p>Simple, once-daily solutions that fit effortlessly into busy schedules.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "p3": {
-          "type": "column",
-          "settings": {
-            "title": "Targeted Wellness",
-            "text": "<p>Formulated for specific needs — from daily gut health to women's, men's, kids' and family wellness.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "p4": {
-          "type": "column",
-          "settings": {
-            "title": "Consistency, Not Quick Fixes",
-            "text": "<p>Reliable, science-backed support designed for long-term use — not quick fixes.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "p1",
-        "p2",
-        "p3",
-        "p4"
-      ],
-      "settings": {
-        "title": "",
-        "image_width": "full",
-        "image_ratio": "square",
-        "columns_desktop": 4,
-        "column_alignment": "center",
-        "color_scheme": "background-2",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 0,
-        "padding_bottom": 48
+        "eyebrow": "Meet the Team",
+        "title_pre": "The People Behind",
+        "title_highlight": "Velobiotics.",
+        "sub": "A multidisciplinary team of medical professionals, scientists, and wellness experts who share one mission: to build probiotics that actually work — by ensuring they reach the gut alive."
       }
     },
     "science_band": {
-      "type": "rich-text",
-      "blocks": {
-        "h1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Backed by Science. Built with Care.",
-            "heading_size": "h1"
-          }
-        },
-        "t1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our formulations are guided by scientific research and developed in collaboration with medical and scientific experts who understand how probiotics behave in real-world conditions. Rather than following trends or marketing-driven formulas, we focus on the fundamentals that truly matter — probiotic survivability, effective absorption, and long-term balance.</p><p>Every Velobiotics product is created with intention and care, using well-studied ingredients and thoughtful formulation practices. We avoid unnecessary fillers and exaggerated claims, prioritising clarity, consistency, and science that translates into real benefits you can feel over time.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "h1",
-        "t1"
-      ],
+      "type": "vb-feature-row",
       "settings": {
-        "color_scheme": "background-1",
-        "padding_top": 56,
-        "padding_bottom": 56
+        "eyebrow": "Backed by Science"
       }
     },
     "brand_family": {
@@ -406,13 +175,10 @@
   },
   "order": [
     "main",
-    "hero_pitch",
+    "hero",
     "promise",
     "difference",
-    "team_intro",
-    "team_grid",
-    "real_life_intro",
-    "real_life_pillars",
+    "team",
     "science_band",
     "brand_family",
     "final_cta"

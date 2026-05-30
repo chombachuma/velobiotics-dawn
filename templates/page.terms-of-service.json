@@ -1,0 +1,76 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "hero": {
+      "type": "vb-hero",
+      "settings": {
+        "eyebrow": "Terms of Service",
+        "sub": "Plain-English terms for using velobiotics.com and our products."
+      }
+    },
+    "use": {
+      "type": "vb-feature-row",
+      "settings": {
+        "eyebrow": "1. Using our site"
+      }
+    },
+    "products": {
+      "type": "vb-feature-row",
+      "settings": {
+        "eyebrow": "2. Products & claims"
+      }
+    },
+    "orders": {
+      "type": "vb-feature-row",
+      "settings": {
+        "eyebrow": "3. Orders & pricing"
+      }
+    },
+    "limitation": {
+      "type": "vb-feature-row",
+      "settings": {
+        "eyebrow": "4. Limitation of liability"
+      }
+    },
+    "law": {
+      "type": "vb-feature-row",
+      "settings": {
+        "eyebrow": "5. Governing law"
+      }
+    },
+    "final_cta": {
+      "type": "vb-final-cta",
+      "settings": {
+        "eyebrow": "Questions about these terms?",
+        "title_pre": "Email",
+        "title_highlight": "legal@velobiotics.com",
+        "sub": "We respond to legal queries within 5 business days."
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero",
+    "use",
+    "products",
+    "orders",
+    "limitation",
+    "law",
+    "final_cta"
+  ]
+}

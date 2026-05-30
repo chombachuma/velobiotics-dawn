@@ -1,101 +1,159 @@
-{%- comment -%} VB · Why We Outperform — 3-column tick/cross comparison specific to product {%- endcomment -%}
+{%- comment -%}
+  VB · Product Outperform — 3-col comparison (Brand vs Other Probiotics vs Antibiotics) — bottom CTA is Add to Cart (uses hero form variant)
+{%- endcomment -%}
 
 {%- liquid
-  assign brand_primary = section.settings.brand_primary | default: '#4d8c44'
-  assign brand_tint = section.settings.brand_tint | default: '#f3f7f1'
+  assign bp = section.settings.brand_primary | default: '#4d8c44'
+  assign bt = section.settings.brand_tint | default: '#f3f7f1'
+  assign bd = section.settings.brand_dark | default: '#36632f'
+  assign current_variant = product.selected_or_first_available_variant
 -%}
 
 <style>
-  .vb-pout { padding: 72px 16px; --bp: {{ brand_primary }}; --bt: {{ brand_tint }}; }
-  .vb-pout__inner { max-width: 1080px; margin: 0 auto; }
-  .vb-pout__head { text-align: center; max-width: 760px; margin: 0 auto 36px; padding: 0 8px; }
-  .vb-pout__eyebrow { display: inline-block; color: var(--bp); font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 12px; }
-  .vb-pout__title { font-size: clamp(28px, 4vw, 42px); font-weight: 800; color: #1a1a1a; line-height: 1.12; margin: 0 0 12px; }
-  .vb-pout__title em { color: var(--bp); font-style: normal; }
-  .vb-pout__sub { font-size: 15.5px; line-height: 1.6; color: #5c6664; margin: 0; }
-  .vb-pout__wrap { background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 24px 56px rgba(0,0,0,0.06); border: 1px solid #e3ece1; }
-  .vb-pout__table { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; }
-  .vb-pout__cell { padding: 16px 18px; border-bottom: 1px solid #f0f3ee; display: flex; align-items: center; justify-content: center; text-align: center; }
-  .vb-pout__cell[data-feat] { justify-content: flex-start; text-align: left; }
-  .vb-pout__cell--header { background: var(--bt); padding: 20px 16px; }
-  .vb-pout__cell--us-header { background: color-mix(in srgb, var(--bp) 12%, #fff); }
-  .vb-pout__cell--us { background: color-mix(in srgb, var(--bp) 4%, #fff); }
-  .vb-pout__feat { font-size: 14.5px; color: #1a1a1a; font-weight: 600; }
-  .vb-pout__head-us { font-size: 17px; font-weight: 900; color: var(--bp); letter-spacing: -0.01em; }
-  .vb-pout__head-them { font-size: 13.5px; font-weight: 700; color: #6c7a6b; }
-  .vb-pout__check { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; font-weight: 900; font-size: 16px; }
-  .vb-pout__check--yes { background: var(--bp); color: #fff; box-shadow: 0 4px 12px color-mix(in srgb, var(--bp) 32%, transparent); }
-  .vb-pout__check--no { background: #fde7e7; color: #c93d3d; }
-  .vb-pout__bottom { text-align: center; margin-top: 28px; }
-  .vb-pout__cta { display: inline-flex; align-items: center; gap: 8px; padding: 14px 30px; border-radius: 999px; background: var(--bp); color: #fff !important; text-decoration: none; font-weight: 800; font-size: 14.5px; box-shadow: 0 12px 26px color-mix(in srgb, var(--bp) 32%, transparent); transition: all 0.18s ease; }
-  .vb-pout__cta:hover { background: color-mix(in srgb, var(--bp) 80%, #000); transform: translateY(-2px); }
+  .vb-pof { padding: 50px 20px; max-width: 1180px; margin: 0 auto; --bp: {{ bp }}; --bt: {{ bt }}; --bd: {{ bd }}; }
+  .vb-pof__head { text-align: center; margin: 0 0 32px; }
+  .vb-pof__eyebrow { display: inline-flex; align-items: center; gap: 6px; background: color-mix(in srgb, var(--bp) 12%, #fff); color: var(--bp); padding: 6px 13px; border-radius: 999px; font-size: 11.5px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 12px; }
+  .vb-pof__title { font-size: clamp(24px, 3.2vw, 34px); font-weight: 800; color: #1a1a1a; margin: 0; letter-spacing: -0.02em; }
+  .vb-pof__table-wrap { background: #fff; border: 1px solid #e3ece1; border-radius: 22px; overflow: hidden; box-shadow: 0 12px 32px rgba(0,0,0,0.05); }
+  .vb-pof__row { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; align-items: center; }
+  .vb-pof__row + .vb-pof__row { border-top: 1px solid #f0eaf0; }
+  .vb-pof__row--head { background: linear-gradient(180deg, var(--bt) 0%, #fff 100%); padding: 18px 0; }
+  .vb-pof__row--head > div { font-size: 13px; font-weight: 800; color: #1a1a1a; text-align: center; padding: 0 12px; }
+  .vb-pof__row--head .vb-pof__col-brand { color: var(--bp); font-size: 14px; }
+  .vb-pof__cell { padding: 16px 14px; font-size: 13.5px; color: #2b3a2a; text-align: center; }
+  .vb-pof__cell--label { text-align: left; font-weight: 700; color: #1a1a1a; }
+  .vb-pof__cell--brand { background: color-mix(in srgb, var(--bp) 5%, #fff); font-weight: 700; }
+  .vb-pof__tick { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: var(--bp); color: #fff; font-weight: 900; font-size: 14px; }
+  .vb-pof__cross { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: #f5e6e6; color: #c0392b; font-weight: 900; font-size: 14px; }
+  .vb-pof__partial { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: #fff4dc; color: #b88800; font-weight: 900; font-size: 14px; }
+  .vb-pof__cta-wrap { text-align: center; margin: 32px 0 0; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .vb-pof__cta { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 16px 36px; background: var(--bp); color: #fff !important; border: none; border-radius: 999px; font-weight: 800; font-size: 15px; cursor: pointer; transition: all 0.2s ease; box-shadow: 0 12px 26px color-mix(in srgb, var(--bp) 30%, transparent); text-decoration: none; }
+  .vb-pof__cta:hover { background: var(--bd); transform: translateY(-2px); }
+  .vb-pof__cta.is-loading { opacity: 0.7; cursor: wait; }
+  .vb-pof__cta.is-added { background: #2d8f3a; }
+  .vb-pof__cta-note { font-size: 12px; color: #5c6664; font-weight: 600; }
+
   @media (max-width: 749px) {
-    .vb-pout { padding: 44px 12px; }
-    .vb-pout__head { margin-bottom: 24px; }
-    .vb-pout__wrap { border-radius: 14px; }
-    .vb-pout__table { grid-template-columns: 1.4fr 0.85fr 0.85fr 0.85fr; }
-    .vb-pout__cell { padding: 11px 8px; }
-    .vb-pout__cell--header { padding: 14px 8px; }
-    .vb-pout__feat { font-size: 11.5px; line-height: 1.3; }
-    .vb-pout__head-us { font-size: 12.5px; }
-    .vb-pout__head-them { font-size: 10.5px; line-height: 1.2; }
-    .vb-pout__check { width: 26px; height: 26px; font-size: 13px; }
+    .vb-pof { padding: 30px 12px; }
+    .vb-pof__row { grid-template-columns: 1.2fr 1fr 1fr 1fr; }
+    .vb-pof__row--head > div { font-size: 11px; padding: 0 6px; }
+    .vb-pof__row--head .vb-pof__col-brand { font-size: 11.5px; }
+    .vb-pof__cell { padding: 12px 6px; font-size: 11.5px; }
+    .vb-pof__cell--label { font-size: 12px; }
+    .vb-pof__tick, .vb-pof__cross, .vb-pof__partial { width: 22px; height: 22px; font-size: 11px; }
+    .vb-pof__cta { padding: 13px 26px; font-size: 13.5px; }
   }
 </style>
 
-<section class="vb-pout">
-  <div class="vb-pout__inner">
-    <div class="vb-pout__head">
-      {%- if section.settings.eyebrow != blank -%}<p class="vb-pout__eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
-      <h2 class="vb-pout__title">{{ section.settings.title_pre }}{%- if section.settings.title_highlight != blank %} <em>{{ section.settings.title_highlight }}</em>{%- endif -%}</h2>
-      {%- if section.settings.sub != blank -%}<p class="vb-pout__sub">{{ section.settings.sub }}</p>{%- endif -%}
+<section class="vb-pof">
+  <div class="vb-pof__head">
+    <span class="vb-pof__eyebrow">{{ section.settings.eyebrow | default: 'Side by side' }}</span>
+    <h2 class="vb-pof__title">{{ section.settings.title | default: 'Why we outperform' }}</h2>
+  </div>
+  <div class="vb-pof__table-wrap">
+    <div class="vb-pof__row vb-pof__row--head">
+      <div></div>
+      <div class="vb-pof__col-brand">{{ section.settings.col_brand | default: 'Femina™' }}</div>
+      <div>{{ section.settings.col_b | default: 'Other Probiotics' }}</div>
+      <div>{{ section.settings.col_c | default: 'Antibiotics' }}</div>
     </div>
-    <div class="vb-pout__wrap">
-      <div class="vb-pout__table">
-        <div class="vb-pout__cell vb-pout__cell--header"></div>
-        <div class="vb-pout__cell vb-pout__cell--header vb-pout__cell--us-header"><span class="vb-pout__head-us">{{ section.settings.us_label | default: 'This product' }}</span></div>
-        <div class="vb-pout__cell vb-pout__cell--header"><span class="vb-pout__head-them">{{ section.settings.them1_label | default: 'Other Probiotics' }}</span></div>
-        <div class="vb-pout__cell vb-pout__cell--header"><span class="vb-pout__head-them">{{ section.settings.them2_label | default: 'Antibiotics' }}</span></div>
-        {%- for block in section.blocks -%}
-          {%- if block.type == 'row' -%}
-            <div class="vb-pout__cell" data-feat>{{ block.settings.feature }}</div>
-            <div class="vb-pout__cell vb-pout__cell--us">{%- if block.settings.us == 'yes' -%}<span class="vb-pout__check vb-pout__check--yes">✓</span>{%- else -%}<span class="vb-pout__check vb-pout__check--no">✗</span>{%- endif -%}</div>
-            <div class="vb-pout__cell">{%- if block.settings.them1 == 'yes' -%}<span class="vb-pout__check vb-pout__check--yes">✓</span>{%- else -%}<span class="vb-pout__check vb-pout__check--no">✗</span>{%- endif -%}</div>
-            <div class="vb-pout__cell">{%- if block.settings.them2 == 'yes' -%}<span class="vb-pout__check vb-pout__check--yes">✓</span>{%- else -%}<span class="vb-pout__check vb-pout__check--no">✗</span>{%- endif -%}</div>
-          {%- endif -%}
-        {%- endfor -%}
+    {%- for block in section.blocks -%}
+      <div class="vb-pof__row" {{ block.shopify_attributes }}>
+        <div class="vb-pof__cell vb-pof__cell--label">{{ block.settings.feature }}</div>
+        <div class="vb-pof__cell vb-pof__cell--brand">
+          {%- case block.settings.brand_state -%}
+            {%- when 'yes' -%}<span class="vb-pof__tick">✓</span>
+            {%- when 'no' -%}<span class="vb-pof__cross">✕</span>
+            {%- when 'partial' -%}<span class="vb-pof__partial">~</span>
+          {%- endcase -%}
+        </div>
+        <div class="vb-pof__cell">
+          {%- case block.settings.b_state -%}
+            {%- when 'yes' -%}<span class="vb-pof__tick">✓</span>
+            {%- when 'no' -%}<span class="vb-pof__cross">✕</span>
+            {%- when 'partial' -%}<span class="vb-pof__partial">~</span>
+          {%- endcase -%}
+        </div>
+        <div class="vb-pof__cell">
+          {%- case block.settings.c_state -%}
+            {%- when 'yes' -%}<span class="vb-pof__tick">✓</span>
+            {%- when 'no' -%}<span class="vb-pof__cross">✕</span>
+            {%- when 'partial' -%}<span class="vb-pof__partial">~</span>
+          {%- endcase -%}
+        </div>
       </div>
-    </div>
-    {%- if section.settings.cta_text != blank -%}<div class="vb-pout__bottom"><a href="{{ section.settings.cta_link | default: '#vbpForm' }}" class="vb-pout__cta">{{ section.settings.cta_text }} →</a></div>{%- endif -%}
+    {%- endfor -%}
+  </div>
+  <div class="vb-pof__cta-wrap">
+    <button type="button" class="vb-pof__cta" data-vbpof-atc data-variant-id="{{ current_variant.id }}" {% unless current_variant.available %}disabled{% endunless %}>
+      🛒 {{ section.settings.cta_text | default: 'Add to Cart' }} →
+    </button>
+    {%- if section.settings.cta_note != blank -%}<span class="vb-pof__cta-note">{{ section.settings.cta_note }}</span>{%- endif -%}
   </div>
 </section>
 
+<script>
+  (function(){
+    const btn = document.querySelector('.vb-pof [data-vbpof-atc]');
+    if (!btn) return;
+    btn.addEventListener('click', async (e) => {
+      e.preventDefault();
+      const id = btn.dataset.variantId;
+      // Also respect the variant currently selected in the hero form, if present
+      const heroSelected = document.querySelector('.vb-ph input[name="id"]:checked, .vb-ph input[name="id"][type="hidden"]');
+      const finalId = heroSelected ? heroSelected.value : id;
+      if (!finalId) return;
+      const originalText = btn.innerHTML;
+      btn.classList.add('is-loading');
+      btn.innerHTML = '⏳ Adding...';
+      try {
+        const res = await fetch('/cart/add.js', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify({ items: [{ id: parseInt(finalId), quantity: 1 }] })
+        });
+        if (!res.ok) throw new Error('Add failed');
+        btn.classList.remove('is-loading');
+        btn.classList.add('is-added');
+        btn.innerHTML = '✓ Added to Cart';
+        document.dispatchEvent(new CustomEvent('cart:refresh'));
+        const cartDrawer = document.querySelector('cart-drawer');
+        if (cartDrawer && typeof cartDrawer.open === 'function') cartDrawer.open();
+        else if (cartDrawer && cartDrawer.classList) cartDrawer.classList.add('active', 'animate');
+        setTimeout(() => { btn.classList.remove('is-added'); btn.innerHTML = originalText; }, 3000);
+      } catch (err) {
+        btn.classList.remove('is-loading');
+        btn.innerHTML = '⚠ Try the cart';
+        setTimeout(() => { btn.innerHTML = originalText; }, 2400);
+      }
+    });
+  })();
+</script>
+
 {% schema %}
 {
-  "name": "VB · Why we outperform",
+  "name": "VB · Outperform",
   "tag": "section",
-  "enabled_on": { "templates": ["product"] },
   "settings": [
     { "type": "color", "id": "brand_primary", "label": "Brand primary", "default": "#4d8c44" },
+    { "type": "color", "id": "brand_dark", "label": "Brand dark", "default": "#36632f" },
     { "type": "color", "id": "brand_tint", "label": "Brand tint", "default": "#f3f7f1" },
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Why we outperform" },
-    { "type": "text", "id": "title_pre", "label": "Title (start)", "default": "Built different." },
-    { "type": "text", "id": "title_highlight", "label": "Title (highlight)", "default": "Built to work." },
-    { "type": "textarea", "id": "sub", "label": "Sub-text", "default": "See how Femina™ compares to standard probiotics and antibiotics for intimate health." },
-    { "type": "text", "id": "us_label", "label": "Us column label", "default": "Femina™" },
-    { "type": "text", "id": "them1_label", "label": "Column 2 label", "default": "Other Probiotics" },
-    { "type": "text", "id": "them2_label", "label": "Column 3 label", "default": "Antibiotics" },
-    { "type": "text", "id": "cta_text", "label": "CTA text", "default": "Choose Femina™" },
-    { "type": "url", "id": "cta_link", "label": "CTA link" }
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Side by side" },
+    { "type": "text", "id": "title", "label": "Title", "default": "Why we outperform" },
+    { "type": "text", "id": "col_brand", "label": "Column A label (brand)", "default": "Femina™" },
+    { "type": "text", "id": "col_b", "label": "Column B label", "default": "Other Probiotics" },
+    { "type": "text", "id": "col_c", "label": "Column C label", "default": "Antibiotics" },
+    { "type": "text", "id": "cta_text", "label": "CTA text", "default": "Add to Cart" },
+    { "type": "text", "id": "cta_note", "label": "CTA note", "default": "30-day money-back · Free shipping over threshold" }
   ],
   "blocks": [
-    { "type": "row", "name": "Row", "settings": [
-      { "type": "text", "id": "feature", "label": "Feature", "default": "Survives stomach acid" },
-      { "type": "select", "id": "us", "label": "Us", "options": [{"value":"yes","label":"Yes"},{"value":"no","label":"No"}], "default": "yes" },
-      { "type": "select", "id": "them1", "label": "Column 2", "options": [{"value":"yes","label":"Yes"},{"value":"no","label":"No"}], "default": "no" },
-      { "type": "select", "id": "them2", "label": "Column 3", "options": [{"value":"yes","label":"Yes"},{"value":"no","label":"No"}], "default": "no" }
+    { "type": "row", "name": "Comparison row", "limit": 12, "settings": [
+      { "type": "text", "id": "feature", "label": "Feature", "default": "Feature" },
+      { "type": "select", "id": "brand_state", "label": "Brand state", "options": [{"value":"yes","label":"✓ Yes"},{"value":"no","label":"✕ No"},{"value":"partial","label":"~ Partial"}], "default": "yes" },
+      { "type": "select", "id": "b_state", "label": "Other Probiotics state", "options": [{"value":"yes","label":"✓ Yes"},{"value":"no","label":"✕ No"},{"value":"partial","label":"~ Partial"}], "default": "partial" },
+      { "type": "select", "id": "c_state", "label": "Antibiotics state", "options": [{"value":"yes","label":"✓ Yes"},{"value":"no","label":"✕ No"},{"value":"partial","label":"~ Partial"}], "default": "no" }
     ]}
   ],
-  "presets": [{ "name": "VB · Why we outperform" }]
+  "presets": [{ "name": "VB · Outperform" }]
 }
 {% endschema %}

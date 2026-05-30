@@ -38,32 +38,34 @@
         "badge_bl_value": "16",
         "badge_bl_label": "Probiotic Strains",
         "badge_br_value": "30-day",
-        "badge_br_label": "Money Back",
-        "quote_text": "Lost 42kgs — Velo16 helped me lose the last kg!",
-        "quote_author": "Nicky vd Westhuizen"
+        "badge_br_label": "Money Back"
       }
     },
     "trust-logos": {
       "type": "vb-trust-logos",
       "blocks": {
-        "l1": { "type": "logo", "settings": { "logo_url": "https://www.velobiotics.com/cdn/shop/files/new-custom-logo-001.png?v=1763318407", "alt": "Trust badge 1" } },
-        "l2": { "type": "logo", "settings": { "logo_url": "https://www.velobiotics.com/cdn/shop/files/new-custom-logo-002.png?v=1763318533", "alt": "Trust badge 2" } },
-        "l3": { "type": "logo", "settings": { "logo_url": "https://www.velobiotics.com/cdn/shop/files/new-custom-logo-003.png?v=1763318589", "alt": "Trust badge 3" } },
-        "l4": { "type": "logo", "settings": { "logo_url": "https://www.velobiotics.com/cdn/shop/files/new-custom-logo-004.png?v=1763318638", "alt": "Trust badge 4" } }
+        "l1": { "type": "logo", "settings": { "logo_url": "https://www.velobiotics.com/cdn/shop/files/new-custom-logo-001.png?v=1763318407", "title": "GMP Certified", "sub": "Good Manufacturing Practice" } },
+        "l2": { "type": "logo", "settings": { "logo_url": "https://www.velobiotics.com/cdn/shop/files/new-custom-logo-002.png?v=1763318533", "title": "SAHPRA-Aware", "sub": "Regulatory compliant" } },
+        "l3": { "type": "logo", "settings": { "logo_url": "https://www.velobiotics.com/cdn/shop/files/new-custom-logo-003.png?v=1763318589", "title": "Lab-Tested", "sub": "Independently verified" } },
+        "l4": { "type": "logo", "settings": { "logo_url": "https://www.velobiotics.com/cdn/shop/files/new-custom-logo-004.png?v=1763318638", "title": "Halaal-Friendly", "sub": "No haram ingredients" } }
       },
       "block_order": ["l1","l2","l3","l4"],
-      "settings": { "label": "As featured in & certified by" }
+      "settings": { "label": "Trusted, certified & verified worldwide" }
     },
     "why": {
       "type": "vb-why-velobiotics",
       "blocks": {
-        "r1": { "type": "reason", "settings": { "icon": "🛡️", "name": "Survives Stomach Acid", "desc": "Patented MEP coating shields every culture from gastric acid and bile so they reach your gut alive." } },
-        "r2": { "type": "reason", "settings": { "icon": "🎯", "name": "1000× More Delivered", "desc": "Where 99% of standard probiotics die, ours arrive — by the billions — exactly where you need them." } },
-        "r3": { "type": "reason", "settings": { "icon": "🩺", "name": "Doctor-Formulated", "desc": "Built by medical doctors and microbiologists using clinically studied strains — not marketing-grade." } },
-        "r4": { "type": "reason", "settings": { "icon": "🌿", "name": "Real Results, You Can Feel", "desc": "Backed by 3,500+ verified reviews and a 30-day money-back guarantee. No noise, just outcomes." } }
+        "r1": { "type": "reason", "settings": { "icon": "🛡️", "name": "Survives Stomach Acid", "desc": "Patented MEP coating shields every culture so they reach your gut alive." } },
+        "r2": { "type": "reason", "settings": { "icon": "🎯", "name": "1000× More Delivered", "desc": "Where 99% of standard probiotics die, ours arrive by the billions." } },
+        "r3": { "type": "reason", "settings": { "icon": "🩺", "name": "Doctor-Formulated", "desc": "Built by medical doctors using clinically-studied strains." } },
+        "r4": { "type": "reason", "settings": { "icon": "🌿", "name": "Real Results, You Feel", "desc": "3,500+ verified reviews and a 30-day money-back guarantee." } }
       },
       "block_order": ["r1","r2","r3","r4"],
       "settings": {
+        "image_url": "https://media.base44.com/images/public/69e734d64c8c66c266bc562d/45b5dc51a_generated_image.png",
+        "badge_value": "99%",
+        "badge_label": "Die in Stomach Acid",
+        "quote_text": "I finally feel the difference — every day",
         "eyebrow": "Why Choose Velobiotics",
         "title_pre": "99% of Probiotics Never Make It to Your Gut.",
         "title_highlight": "We Fixed That.",
@@ -89,15 +91,15 @@
     "brand-family": {
       "type": "vb-brand-family",
       "blocks": {
-        "femina":  { "type": "brand", "settings": { "brand_name": "Femina™",    "tagline": "Intimate Health", "target": "Probiotics for women's intimate wellness", "link": "/collections/femina", "image_url": "https://media.base44.com/images/public/69e1abc073bbccc7f63edacc/653a0d852_generated_image.png", "bg": "#fdf8fd", "accent": "#8d2a89" } },
-        "velo16":  { "type": "brand", "settings": { "brand_name": "Velo16™",    "tagline": "Total Vitality", "target": "Daily probiotics for clear skin & gut", "link": "/collections/velo16", "image_url": "https://media.base44.com/images/public/69e738ecdc7682bdadfe7c82/3806ee1d7_generated_image.png", "bg": "#fff5f7", "accent": "#c8163c" } },
-        "her":     { "type": "brand", "settings": { "brand_name": "Her-Biotics™","tagline": "Women's Wellness", "target": "Hormonal & cycle-aware formulas", "link": "/collections/her-biotics", "image_url": "https://media.base44.com/images/public/69e734d64c8c66c266bc562d/45b5dc51a_generated_image.png", "bg": "#fff5f3", "accent": "#d2585a" } },
-        "his":     { "type": "brand", "settings": { "brand_name": "His-Biotics®","tagline": "Male Microbiome", "target": "Clinical-grade for men", "link": "/collections/his-biotics", "image_url": "https://media.base44.com/images/public/69e736ff6d73a02b90e291d4/bc2878b14_generated_image.png", "bg": "#e8f3f1", "accent": "#0a3d3d" } },
-        "preg":    { "type": "brand", "settings": { "brand_name": "PregBiotics™","tagline": "Motherhood", "target": "Pregnancy & postnatal support", "link": "/collections/pregbiotics", "image_url": "https://media.base44.com/images/public/69e77ffe13bf3474223d0647/6791da2a0_generated_image.png", "bg": "#f2f9ec", "accent": "#1f6b3d" } },
-        "biokid":  { "type": "brand", "settings": { "brand_name": "BioKid™",    "tagline": "Kids' Daily", "target": "Daily defence for growing guts", "link": "/collections/biokid", "image_url": "https://media.base44.com/images/public/69e759b0da20f593135a4754/b63520eb0_generated_image.png", "bg": "#f0fbf2", "accent": "#16a34a" } },
-        "biogain": { "type": "brand", "settings": { "brand_name": "BioGain®",   "tagline": "Recovery Meal", "target": "Probiotic meal replacement", "link": "/collections/biogain", "image_url": "https://media.base44.com/images/public/69e75c2ca126e7f218f1b495/3a6563f65_generated_image.png", "bg": "#fff5ec", "accent": "#ff6b35" } },
-        "gutslim": { "type": "brand", "settings": { "brand_name": "GutSlim™",   "tagline": "Weight Mgmt", "target": "Gut-powered weight management", "link": "/collections/gutslim", "image_url": "https://media.base44.com/images/public/69e10e7db331c58e837bb75e/0da4d8630_generated_edbc0e3e.png", "bg": "#fff8eb", "accent": "#ff9500" } },
-        "almasi":  { "type": "brand", "settings": { "brand_name": "ALMASI™",    "tagline": "Skincare", "target": "Probiotic-powered skincare", "link": "/collections/almasi-probiotics-skin-care", "image_url": "https://media.base44.com/images/public/69e737526bad1370b33f0de7/6bf436fa2_generated_image.png", "bg": "#fdf5f3", "accent": "#1a1a1a" } }
+        "femina":  { "type": "brand", "settings": { "brand_name": "Femina™",    "tagline": "Intimate Health",  "target": "Probiotics for women's intimate wellness", "link": "/collections/femina", "image_url": "https://media.base44.com/images/public/69e1abc073bbccc7f63edacc/653a0d852_generated_image.png", "bg": "#fdf8fd", "accent": "#8d2a89" } },
+        "velo16":  { "type": "brand", "settings": { "brand_name": "Velo16™",    "tagline": "Total Vitality",   "target": "Daily probiotics for clear skin & gut",    "link": "/collections/velo16", "image_url": "https://media.base44.com/images/public/69e738ecdc7682bdadfe7c82/3806ee1d7_generated_image.png", "bg": "#fff5f7", "accent": "#c8163c" } },
+        "her":     { "type": "brand", "settings": { "brand_name": "Her-Biotics™","tagline": "Women's Wellness", "target": "Hormonal & cycle-aware formulas",          "link": "/collections/her-biotics", "image_url": "https://media.base44.com/images/public/69e734d64c8c66c266bc562d/45b5dc51a_generated_image.png", "bg": "#fff5f3", "accent": "#d2585a" } },
+        "his":     { "type": "brand", "settings": { "brand_name": "His-Biotics®","tagline": "Male Microbiome",  "target": "Clinical-grade for men",                  "link": "/collections/his-biotics", "image_url": "https://media.base44.com/images/public/69e736ff6d73a02b90e291d4/bc2878b14_generated_image.png", "bg": "#e8f3f1", "accent": "#0a3d3d" } },
+        "preg":    { "type": "brand", "settings": { "brand_name": "PregBiotics™","tagline": "Motherhood",       "target": "Pregnancy & postnatal support",           "link": "/collections/pregbiotics", "image_url": "https://media.base44.com/images/public/69e77ffe13bf3474223d0647/6791da2a0_generated_image.png", "bg": "#f2f9ec", "accent": "#1f6b3d" } },
+        "biokid":  { "type": "brand", "settings": { "brand_name": "BioKid™",    "tagline": "Kids' Daily",      "target": "Daily defence for growing guts",          "link": "/collections/biokid", "image_url": "https://media.base44.com/images/public/69e759b0da20f593135a4754/b63520eb0_generated_image.png", "bg": "#f0fbf2", "accent": "#16a34a" } },
+        "biogain": { "type": "brand", "settings": { "brand_name": "BioGain®",   "tagline": "Recovery Meal",    "target": "Probiotic meal replacement",              "link": "/collections/biogain", "image_url": "https://media.base44.com/images/public/69e75c2ca126e7f218f1b495/3a6563f65_generated_image.png", "bg": "#fff5ec", "accent": "#ff6b35" } },
+        "gutslim": { "type": "brand", "settings": { "brand_name": "GutSlim™",   "tagline": "Weight Mgmt",      "target": "Gut-powered weight management",           "link": "/collections/gutslim", "image_url": "https://media.base44.com/images/public/69e10e7db331c58e837bb75e/0da4d8630_generated_edbc0e3e.png", "bg": "#fff8eb", "accent": "#ff9500" } },
+        "almasi":  { "type": "brand", "settings": { "brand_name": "ALMASI™",    "tagline": "Skincare",         "target": "Probiotic-powered skincare",              "link": "/collections/almasi-probiotics-skin-care", "image_url": "https://media.base44.com/images/public/69e737526bad1370b33f0de7/6bf436fa2_generated_image.png", "bg": "#fdf5f3", "accent": "#1a1a1a" } }
       },
       "block_order": ["femina","velo16","her","his","preg","biokid","biogain","gutslim","almasi"],
       "settings": {
@@ -107,24 +109,25 @@
         "sub": "From women's intimate care to kids' immunity and digestive wellness — a targeted solution for every member of your family."
       }
     },
-    "best-sellers": {
-      "type": "featured-collection",
+    "bestsellers": {
+      "type": "vb-bestsellers",
+      "blocks": {
+        "b1": { "type": "product", "settings": { "product_handle": "femina-probiotic-capsules-with-cranberry-for-women", "brand_label": "Femina™" } },
+        "b2": { "type": "product", "settings": { "product_handle": "her-biotics-original-capsules-60s", "brand_label": "Her-Biotics™" } },
+        "b3": { "type": "product", "settings": { "product_handle": "femina-probiotics-cookie-fresh-with-boric-acid-suppositories", "brand_label": "Femina™" } },
+        "b4": { "type": "product", "settings": { "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s", "brand_label": "His-Biotics®" } },
+        "b5": { "type": "product", "settings": { "product_handle": "gutslim-probiotics-glp-1-booster", "brand_label": "GutSlim™" } },
+        "b6": { "type": "product", "settings": { "product_handle": "probiotics-protein-collagen-peptides-skin-hair-nails", "brand_label": "ALMASI™" } },
+        "b7": { "type": "product", "settings": { "product_handle": "velo16-probiotic-digestive-capsules", "brand_label": "Velo16™" } }
+      },
+      "block_order": ["b1","b2","b3","b4","b5","b6","b7"],
       "settings": {
-        "title": "Your Daily Wellness Starts Here",
-        "heading_size": "h1",
-        "description": "<p>Explore our top probiotic blends — engineered to nourish your gut, boost immunity, and support long-term wellness.</p>",
-        "show_description": true,
-        "description_style": "subtitle",
-        "collection": "all",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "columns_mobile": "2",
-        "padding_top": 56,
-        "padding_bottom": 36
+        "eyebrow": "Best Sellers",
+        "title_pre": "Your Daily Wellness",
+        "title_highlight": "Starts Here",
+        "sub": "Our top probiotic blends — engineered to nourish your gut, boost immunity, and support long-term wellness.",
+        "view_all_text": "View All Products",
+        "view_all_link": "/collections/all"
       }
     },
     "quiz": {
@@ -163,7 +166,7 @@
         "title_highlight": "Real Results.",
         "desc": "Every Velobiotics probiotic is encapsulated using Microencapsulation with Supercritical CO₂ — a patented shielding process that lets billions of live cultures survive stomach acid and bile, so they reach your gut alive and active.",
         "cta_text": "See the Science",
-        "cta_link": "/pages/science"
+        "cta_link": "https://www.velobiotics.com/pages/microencapsulation-research"
       }
     },
     "science": {
@@ -202,20 +205,26 @@
     "comparison": {
       "type": "vb-comparison",
       "blocks": {
-        "c1": { "type": "row", "settings": { "feature": "Patented MEP coating (survives stomach acid)", "us_type": "yes", "us_value": "—", "them_type": "no", "them_value": "—" } },
-        "c2": { "type": "row", "settings": { "feature": "Probiotics that reach your gut alive", "us_type": "value", "us_value": "1000×", "them_type": "value", "them_value": "1%" } },
-        "c3": { "type": "row", "settings": { "feature": "Doctor-formulated", "us_type": "yes", "us_value": "—", "them_type": "partial", "them_value": "—" } },
-        "c4": { "type": "row", "settings": { "feature": "Clinically-studied strains", "us_type": "yes", "us_value": "—", "them_type": "partial", "them_value": "—" } },
-        "c5": { "type": "row", "settings": { "feature": "Lab-tested every batch", "us_type": "yes", "us_value": "—", "them_type": "no", "them_value": "—" } },
-        "c6": { "type": "row", "settings": { "feature": "30-day money-back guarantee", "us_type": "yes", "us_value": "—", "them_type": "no", "them_value": "—" } },
-        "c7": { "type": "row", "settings": { "feature": "Verified customer reviews", "us_type": "value", "us_value": "3,500+", "them_type": "value", "them_value": "Mixed" } }
+        "c1": { "type": "row", "settings": { "feature": "Patented MEP shielding (survives stomach acid)", "us": "yes", "them1": "no", "them2": "no" } },
+        "c2": { "type": "row", "settings": { "feature": "1000× more probiotics reach the gut alive", "us": "yes", "them1": "no", "them2": "no" } },
+        "c3": { "type": "row", "settings": { "feature": "Doctor-formulated by medical professionals", "us": "yes", "them1": "no", "them2": "no" } },
+        "c4": { "type": "row", "settings": { "feature": "Clinically-studied probiotic strains", "us": "yes", "them1": "no", "them2": "no" } },
+        "c5": { "type": "row", "settings": { "feature": "Live bacteria delivered to gut", "us": "yes", "them1": "yes", "them2": "no" } },
+        "c6": { "type": "row", "settings": { "feature": "Essential vitamins & minerals", "us": "yes", "them1": "no", "them2": "yes" } },
+        "c7": { "type": "row", "settings": { "feature": "Targets gut microbiome health", "us": "yes", "them1": "yes", "them2": "no" } },
+        "c8": { "type": "row", "settings": { "feature": "Lab-tested every batch", "us": "yes", "them1": "no", "them2": "no" } },
+        "c9": { "type": "row", "settings": { "feature": "30-day money-back guarantee", "us": "yes", "them1": "no", "them2": "no" } },
+        "c10": { "type": "row", "settings": { "feature": "Clean label (no fillers, no allergens)", "us": "yes", "them1": "no", "them2": "no" } }
       },
-      "block_order": ["c1","c2","c3","c4","c5","c6","c7"],
+      "block_order": ["c1","c2","c3","c4","c5","c6","c7","c8","c9","c10"],
       "settings": {
         "eyebrow": "Velobiotics vs Others",
         "title_pre": "See Why Thousands",
         "title_highlight": "Choose Velobiotics",
         "sub": "Velobiotics stands apart with real science, superior delivery technology, and formulas designed for actual results — not marketing.",
+        "us_label": "Velobiotics™",
+        "them1_label": "Other Probiotics",
+        "them2_label": "Multivitamins",
         "cta_text": "Shop the Range",
         "cta_link": "/collections/all"
       }
@@ -255,7 +264,7 @@
         "title": "Have More Questions?",
         "sub": "Our gut wellness team is here to help — confidentially, with no pressure.",
         "cta_text": "Contact Us",
-        "cta_link": "/pages/contact"
+        "cta_link": "https://www.velobiotics.co.za/pages/new-contact-us"
       }
     },
     "blog": {
@@ -288,7 +297,7 @@
         "title_pre": "Feel the Difference —",
         "title_highlight": "Billions Strong, Scientifically Proven.",
         "sub": "Every capsule, chewable, and suppository is built to survive — so you can thrive.",
-        "cta1_text": "Shop the Range →",
+        "cta1_text": "Shop the Range",
         "cta1_link": "/collections/all",
         "cta2_text": "🧬 Take The Quiz",
         "cta2_link": "/pages/quiz"
@@ -301,7 +310,7 @@
     "why",
     "doctors",
     "brand-family",
-    "best-sellers",
+    "bestsellers",
     "quiz",
     "armoured",
     "science",

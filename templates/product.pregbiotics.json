@@ -102,10 +102,10 @@
     "related": {
       "type": "vb-product-related",
       "blocks": {
-        "r1": { "type": "product", "settings": { "product_handle": "pregbiotics-breastfeeding", "brand": "PregBiotics™", "rating": "4.9", "reviews": "150+" } },
-        "r2": { "type": "product", "settings": { "product_handle": "pregbiotics-prenatal", "brand": "PregBiotics™", "rating": "4.8", "reviews": "190+" } },
-        "r3": { "type": "product", "settings": { "product_handle": "pregbiotics-postnatal", "brand": "PregBiotics™", "rating": "4.7", "reviews": "120+" } },
-        "r4": { "type": "product", "settings": { "product_handle": "biokid-probiotic-drops", "brand": "BioKid™", "rating": "4.8", "reviews": "200+" } }
+        "r1": { "type": "product", "settings": { "product_handle": "pregbiotics-conception", "brand": "PregBiotics™", "rating": "4.8", "reviews": "180+" } },
+        "r2": { "type": "product", "settings": { "product_handle": "pregbiotics-essentials", "brand": "PregBiotics™", "rating": "4.9", "reviews": "210+" } },
+        "r3": { "type": "product", "settings": { "product_handle": "pregbiotics-essentials-with-omega", "brand": "PregBiotics™", "rating": "4.8", "reviews": "150+" } },
+        "r4": { "type": "product", "settings": { "product_handle": "c-essentials-kit", "brand": "PregBiotics™", "rating": "4.9", "reviews": "120+" } }
       },
       "block_order": ["r1","r2","r3","r4"],
       "settings": {

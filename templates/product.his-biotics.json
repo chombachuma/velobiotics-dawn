@@ -102,12 +102,11 @@
     "related": {
       "type": "vb-product-related",
       "blocks": {
-        "r1": { "type": "product", "settings": { "product_handle": "his-biotics-original-capsules-60s", "brand": "His-Biotics™", "rating": "4.7", "reviews": "210+" } },
-        "r2": { "type": "product", "settings": { "product_handle": "his-biotics-performance", "brand": "His-Biotics™", "rating": "4.8", "reviews": "150+" } },
-        "r3": { "type": "product", "settings": { "product_handle": "his-biotics-recovery", "brand": "His-Biotics™", "rating": "4.7", "reviews": "120+" } },
-        "r4": { "type": "product", "settings": { "product_handle": "his-biotics-focus", "brand": "His-Biotics™", "rating": "4.6", "reviews": "90+" } }
+        "r1": { "type": "product", "settings": { "product_handle": "his-biotics-probiotics-sport-multivitamin-capsules", "brand": "His-Biotics™", "rating": "4.8", "reviews": "150+" } },
+        "r2": { "type": "product", "settings": { "product_handle": "his-biotics-probiotics-ageless-50-multivitamin", "brand": "His-Biotics™", "rating": "4.7", "reviews": "120+" } },
+        "r3": { "type": "product", "settings": { "product_handle": "his-biotics-probiotics-testo-boost", "brand": "His-Biotics™", "rating": "4.8", "reviews": "180+" } }
       },
-      "block_order": ["r1","r2","r3","r4"],
+      "block_order": ["r1","r2","r3"],
       "settings": {
         "brand_primary": "#0a3d3d",
         "brand_dark": "#021212",

@@ -1,5 +1,5 @@
 {%- comment -%}
-  VB · Product Hero v3 — gallery + buy box + payment icons + scrolling testimonials (fixed overflow)
+  VB · Product Hero v4 — swipeable gallery (scroll-snap), variant change without reload
 {%- endcomment -%}
 
 {%- liquid
@@ -16,10 +16,22 @@
   .vb-ph__grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 48px; align-items: flex-start; }
   .vb-ph__grid > * { min-width: 0; }
   .vb-pg { position: sticky; top: 80px; min-width: 0; }
-  .vb-pg__main { position: relative; aspect-ratio: 1/1; border-radius: 22px; overflow: hidden; background: var(--bt); margin: 0 0 14px; }
-  .vb-pg__main img { width: 100%; height: 100%; object-fit: contain; padding: 16px; mix-blend-mode: multiply; }
-  .vb-pg__save { position: absolute; top: 14px; right: 14px; background: radial-gradient(circle at 30% 30%, #ff5c8a 0%, #ff2e63 50%, #cd1f4c 100%); color: #fff; font-weight: 900; font-size: 16px; padding: 14px 8px; min-width: 64px; height: 64px; border-radius: 50%; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 10px 26px rgba(214, 39, 90, 0.45); transform: rotate(-8deg); border: 3px solid rgba(255,255,255,0.55); line-height: 1; text-align: center; }
+
+  /* Swipeable gallery: scroll-snap horizontal carousel */
+  .vb-pg__track-wrap { position: relative; border-radius: 22px; overflow: hidden; background: var(--bt); margin: 0 0 14px; }
+  .vb-pg__track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none; }
+  .vb-pg__track::-webkit-scrollbar { display: none; }
+  .vb-pg__slide { flex: 0 0 100%; aspect-ratio: 1/1; scroll-snap-align: center; scroll-snap-stop: always; display: flex; align-items: center; justify-content: center; padding: 16px; box-sizing: border-box; }
+  .vb-pg__slide img { width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply; }
+  .vb-pg__save { position: absolute; top: 14px; right: 14px; background: radial-gradient(circle at 30% 30%, #ff5c8a 0%, #ff2e63 50%, #cd1f4c 100%); color: #fff; font-weight: 900; font-size: 16px; padding: 14px 8px; min-width: 64px; height: 64px; border-radius: 50%; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 10px 26px rgba(214, 39, 90, 0.45); transform: rotate(-8deg); border: 3px solid rgba(255,255,255,0.55); line-height: 1; text-align: center; z-index: 3; pointer-events: none; }
   .vb-pg__save small { font-size: 9px; font-weight: 800; letter-spacing: 0.08em; margin-top: 2px; }
+
+  /* Dots indicator (mobile primarily) */
+  .vb-pg__dots { display: flex; gap: 6px; justify-content: center; margin: 10px 0 4px; }
+  .vb-pg__dot { width: 8px; height: 8px; border-radius: 50%; background: color-mix(in srgb, var(--bp) 25%, #fff); border: none; padding: 0; cursor: pointer; transition: all 0.18s ease; }
+  .vb-pg__dot.is-active { background: var(--bp); width: 22px; border-radius: 999px; }
+
+  /* Thumbnails (desktop) */
   .vb-pg__thumbs { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
   .vb-pg__thumb { aspect-ratio: 1/1; border-radius: 10px; overflow: hidden; background: var(--bt); border: 2px solid transparent; cursor: pointer; transition: border-color 0.18s ease, transform 0.18s ease; padding: 0; }
   .vb-pg__thumb img { width: 100%; height: 100%; object-fit: contain; padding: 6px; mix-blend-mode: multiply; }
@@ -71,6 +83,8 @@
   .vb-pb__qty input::-webkit-outer-spin-button, .vb-pb__qty input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
   .vb-pb__atc { flex: 1; min-width: 0; display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 0 24px; background: var(--bp); color: #fff !important; border: none; border-radius: 999px; font-weight: 800; font-size: 15px; cursor: pointer; transition: all 0.18s ease; box-shadow: 0 12px 26px color-mix(in srgb, var(--bp) 32%, transparent); }
   .vb-pb__atc:hover { background: var(--bd); transform: translateY(-2px); }
+  .vb-pb__atc.is-added { background: #2d8f3a; }
+  .vb-pb__atc.is-loading { opacity: 0.7; cursor: wait; }
   .vb-pb__buynow { width: 100%; display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 14px 24px; background: #1a1a1a; color: #fff !important; border: none; border-radius: 999px; font-weight: 800; font-size: 14px; cursor: pointer; transition: background-color 0.18s ease; margin: 0 0 14px; }
   .vb-pb__buynow:hover { background: #000; }
 
@@ -83,7 +97,6 @@
   .vb-pb__trust-item span:first-child { color: var(--bp); font-size: 15px; flex-shrink: 0; }
   .vb-pb__trust-item span:last-child { min-width: 0; }
 
-  /* Scrolling testimonials — properly contained */
   .vb-pb__testi-marquee { overflow: hidden; padding: 14px 0; margin-top: 6px; border-top: 1px solid #e3ece1; width: 100%; max-width: 100%; position: relative; }
   .vb-pb__testi-track { display: flex; gap: 14px; white-space: nowrap; animation: vb-pb-testi 32s linear infinite; width: max-content; will-change: transform; }
   .vb-pb__testi-marquee:hover .vb-pb__testi-track { animation-play-state: paused; }
@@ -95,11 +108,11 @@
   @media (max-width: 990px) {
     .vb-ph__grid { grid-template-columns: 1fr; gap: 28px; }
     .vb-pg { position: static; }
+    .vb-pg__thumbs { display: none; }
   }
   @media (max-width: 749px) {
     .vb-ph { padding: 16px 14px 24px; }
-    .vb-pg__main { border-radius: 16px; }
-    .vb-pg__thumbs { grid-template-columns: repeat(5, 1fr); gap: 6px; }
+    .vb-pg__track-wrap { border-radius: 16px; }
     .vb-pb__title { font-size: clamp(22px, 5.6vw, 28px); }
     .vb-pb__benefits { grid-template-columns: 1fr 1fr; gap: 8px; }
     .vb-pb__benefit-icon { width: 28px; height: 28px; font-size: 14px; }
@@ -121,8 +134,18 @@
 <section class="vb-ph" data-product-section data-product-id="{{ product.id }}">
   <div class="vb-ph__grid">
     <div class="vb-pg">
-      <div class="vb-pg__main">
-        {%- if product.featured_image -%}<img id="vbpMain" src="{{ product.featured_image | image_url: width: 1000 }}" alt="{{ product.title | escape }}" />{%- endif -%}
+      <div class="vb-pg__track-wrap">
+        <div class="vb-pg__track" data-vbpg-track>
+          {%- if product.images.size > 0 -%}
+            {%- for img in product.images limit: 10 -%}
+              <div class="vb-pg__slide" data-vbpg-slide="{{ forloop.index0 }}">
+                <img src="{{ img | image_url: width: 1200 }}" alt="{{ product.title | escape }} — image {{ forloop.index }}" loading="{% if forloop.first %}eager{% else %}lazy{% endif %}" />
+              </div>
+            {%- endfor -%}
+          {%- elsif product.featured_image -%}
+            <div class="vb-pg__slide"><img src="{{ product.featured_image | image_url: width: 1200 }}" alt="{{ product.title | escape }}" /></div>
+          {%- endif -%}
+        </div>
         {%- liquid
           assign savings_pct = 0
           if current_variant.compare_at_price > current_variant.price
@@ -130,12 +153,17 @@
             assign savings_pct = diff | times: 100.0 | divided_by: current_variant.compare_at_price | round
           endif
         -%}
-        {%- if savings_pct > 0 -%}<span class="vb-pg__save">−{{ savings_pct }}%<small>SAVE</small></span>{%- endif -%}
+        {%- if savings_pct > 0 -%}<span class="vb-pg__save" data-vbpg-save>−{{ savings_pct }}%<small>SAVE</small></span>{%- endif -%}
       </div>
       {%- if product.images.size > 1 -%}
+        <div class="vb-pg__dots" data-vbpg-dots>
+          {%- for img in product.images limit: 10 -%}
+            <button type="button" class="vb-pg__dot{% if forloop.first %} is-active{% endif %}" data-vbpg-dot="{{ forloop.index0 }}" aria-label="Image {{ forloop.index }}"></button>
+          {%- endfor -%}
+        </div>
         <div class="vb-pg__thumbs">
           {%- for img in product.images limit: 10 -%}
-            <button class="vb-pg__thumb{% if forloop.first %} is-active{% endif %}" type="button" data-vbp-thumb data-src="{{ img | image_url: width: 1000 }}">
+            <button class="vb-pg__thumb{% if forloop.first %} is-active{% endif %}" type="button" data-vbpg-thumb="{{ forloop.index0 }}">
               <img src="{{ img | image_url: width: 200 }}" alt="" loading="lazy" />
             </button>
           {%- endfor -%}
@@ -170,13 +198,13 @@
         </div>
       {%- endif -%}
 
-      <form id="vbpForm" action="{{ routes.cart_add_url }}" method="post" enctype="multipart/form-data">
+      <form id="vbpForm" action="{{ routes.cart_add_url }}" method="post" enctype="multipart/form-data" data-vbp-form>
         {%- if product.variants.size > 1 -%}
           <p class="vb-pb__variants-label">Choose your pack</p>
           <div class="vb-pb__variants">
             {%- for variant in product.variants -%}
               <label class="vb-pb__variant">
-                <input type="radio" name="id" value="{{ variant.id }}" {% if variant == current_variant %}checked{% endif %} {% unless variant.available %}disabled{% endunless %} />
+                <input type="radio" name="id" value="{{ variant.id }}" {% if variant == current_variant %}checked{% endif %} {% unless variant.available %}disabled{% endunless %} data-price="{{ variant.price }}" data-compare="{{ variant.compare_at_price }}" data-available="{{ variant.available }}" data-money-price="{{ variant.price | money }}" data-money-compare="{% if variant.compare_at_price > variant.price %}{{ variant.compare_at_price | money }}{% endif %}" />
                 {%- if forloop.first -%}<span class="vb-pb__variant-best">Best value</span>{%- endif -%}
                 <div class="vb-pb__variant-info">
                   <span class="vb-pb__variant-name">{{ variant.title }}</span>
@@ -207,11 +235,14 @@
           </div>
         {%- endif -%}
 
-        <div class="vb-pb__price-summary">
-          <span class="vb-pb__price-now">{{ current_variant.price | money }}</span>
+        <div class="vb-pb__price-summary" data-vbp-price-summary>
+          <span class="vb-pb__price-now" data-vbp-price-now>{{ current_variant.price | money }}</span>
           {%- if current_variant.compare_at_price > current_variant.price -%}
-            <span class="vb-pb__price-was">{{ current_variant.compare_at_price | money }}</span>
-            <span class="vb-pb__price-save">SAVE −{{ savings_pct }}%</span>
+            <span class="vb-pb__price-was" data-vbp-price-was>{{ current_variant.compare_at_price | money }}</span>
+            <span class="vb-pb__price-save" data-vbp-price-save>SAVE −{{ savings_pct }}%</span>
+          {%- else -%}
+            <span class="vb-pb__price-was" data-vbp-price-was style="display:none;"></span>
+            <span class="vb-pb__price-save" data-vbp-price-save style="display:none;"></span>
           {%- endif -%}
         </div>
 
@@ -226,7 +257,7 @@
             <input type="number" name="quantity" value="1" min="1" />
             <button type="button" aria-label="Increase" data-qty-plus>+</button>
           </div>
-          <button type="submit" class="vb-pb__atc" {% unless current_variant.available %}disabled{% endunless %}>{% if current_variant.available %}🛒 Add to Cart{% else %}Sold out{% endif %}</button>
+          <button type="submit" class="vb-pb__atc" data-vbp-atc {% unless current_variant.available %}disabled{% endunless %}>{% if current_variant.available %}🛒 Add to Cart{% else %}Sold out{% endif %}</button>
         </div>
         {%- if section.settings.show_buynow and current_variant.available -%}
           <button type="submit" name="checkout" class="vb-pb__buynow">⚡ Buy It Now</button>
@@ -274,18 +305,109 @@
   (function(){
     const root = document.querySelector('.vb-ph');
     if (!root) return;
-    const mainImg = root.querySelector('#vbpMain');
-    root.querySelectorAll('[data-vbp-thumb]').forEach(btn => {
-      btn.addEventListener('click', () => {
-        root.querySelectorAll('[data-vbp-thumb]').forEach(b => b.classList.remove('is-active'));
-        btn.classList.add('is-active');
-        if (mainImg) mainImg.src = btn.dataset.src;
-      });
+    const track = root.querySelector('[data-vbpg-track]');
+    const slides = root.querySelectorAll('[data-vbpg-slide]');
+    const dots = root.querySelectorAll('[data-vbpg-dot]');
+    const thumbs = root.querySelectorAll('[data-vbpg-thumb]');
+    const setActive = (idx) => {
+      dots.forEach(d => d.classList.toggle('is-active', parseInt(d.dataset.vbpgDot) === idx));
+      thumbs.forEach(t => t.classList.toggle('is-active', parseInt(t.dataset.vbpgThumb) === idx));
+    };
+    const goTo = (idx) => {
+      if (!slides[idx]) return;
+      track.scrollTo({left: slides[idx].offsetLeft, behavior: 'smooth'});
+      setActive(idx);
+    };
+    dots.forEach(d => d.addEventListener('click', () => goTo(parseInt(d.dataset.vbpgDot))));
+    thumbs.forEach(t => t.addEventListener('click', () => goTo(parseInt(t.dataset.vbpgThumb))));
+    // Listen to scroll to update dots/thumbs as user swipes
+    let scrollT;
+    track?.addEventListener('scroll', () => {
+      clearTimeout(scrollT);
+      scrollT = setTimeout(() => {
+        const idx = Math.round(track.scrollLeft / track.clientWidth);
+        setActive(idx);
+      }, 80);
     });
+
+    // Qty
     const qty = root.querySelector('[name="quantity"]');
     root.querySelector('[data-qty-minus]')?.addEventListener('click', () => { qty.value = Math.max(1, parseInt(qty.value||1)-1); });
     root.querySelector('[data-qty-plus]')?.addEventListener('click', () => { qty.value = parseInt(qty.value||1)+1; });
-    root.querySelectorAll('input[name="id"]').forEach(r => { r.addEventListener('change', () => location.search='?variant='+r.value); });
+
+    // Variant change WITHOUT page reload — update price summary + ATC button state in place
+    const priceNow = root.querySelector('[data-vbp-price-now]');
+    const priceWas = root.querySelector('[data-vbp-price-was]');
+    const priceSave = root.querySelector('[data-vbp-price-save]');
+    const atcBtn = root.querySelector('[data-vbp-atc]');
+    const saveBadge = root.querySelector('[data-vbpg-save]');
+    root.querySelectorAll('input[name="id"]').forEach(r => {
+      r.addEventListener('change', () => {
+        const moneyPrice = r.dataset.moneyPrice || '';
+        const moneyCompare = r.dataset.moneyCompare || '';
+        const priceNum = parseFloat(r.dataset.price || 0);
+        const compareNum = parseFloat(r.dataset.compare || 0);
+        const isAvailable = r.dataset.available === 'true';
+        if (priceNow) priceNow.textContent = moneyPrice;
+        if (priceWas) {
+          if (moneyCompare && compareNum > priceNum) { priceWas.textContent = moneyCompare; priceWas.style.display = ''; }
+          else priceWas.style.display = 'none';
+        }
+        if (priceSave) {
+          if (compareNum > priceNum) {
+            const pct = Math.round(((compareNum - priceNum) / compareNum) * 100);
+            priceSave.textContent = 'SAVE −' + pct + '%';
+            priceSave.style.display = '';
+            if (saveBadge) saveBadge.innerHTML = '−' + pct + '%<small>SAVE</small>';
+          } else {
+            priceSave.style.display = 'none';
+            if (saveBadge) saveBadge.style.display = 'none';
+          }
+        }
+        if (atcBtn) {
+          atcBtn.disabled = !isAvailable;
+          atcBtn.innerHTML = isAvailable ? '🛒 Add to Cart' : 'Sold out';
+        }
+        // Update URL without navigation (so Buy It Now / shareable link still works)
+        if (window.history && window.history.replaceState) {
+          const u = new URL(window.location);
+          u.searchParams.set('variant', r.value);
+          window.history.replaceState({}, '', u);
+        }
+      });
+    });
+
+    // AJAX add to cart — keep user on page
+    const form = root.querySelector('[data-vbp-form]');
+    if (form && atcBtn) {
+      form.addEventListener('submit', async (e) => {
+        // Only intercept the Add to Cart, not Buy It Now (Buy It Now uses name=checkout)
+        const submitter = e.submitter;
+        if (submitter && submitter.name === 'checkout') return;
+        e.preventDefault();
+        if (atcBtn.disabled || atcBtn.classList.contains('is-loading')) return;
+        const original = atcBtn.innerHTML;
+        atcBtn.classList.add('is-loading');
+        atcBtn.innerHTML = '⏳ Adding...';
+        try {
+          const fd = new FormData(form);
+          const res = await fetch('/cart/add.js', { method: 'POST', headers: { 'Accept': 'application/json' }, body: fd });
+          if (!res.ok) throw new Error('Add failed');
+          atcBtn.classList.remove('is-loading');
+          atcBtn.classList.add('is-added');
+          atcBtn.innerHTML = '✓ Added to Cart';
+          document.dispatchEvent(new CustomEvent('cart:refresh'));
+          const drawer = document.querySelector('cart-drawer');
+          if (drawer && typeof drawer.open === 'function') drawer.open();
+          else if (drawer && drawer.classList) drawer.classList.add('active', 'animate');
+          setTimeout(() => { atcBtn.classList.remove('is-added'); atcBtn.innerHTML = original; }, 2400);
+        } catch (err) {
+          atcBtn.classList.remove('is-loading');
+          atcBtn.innerHTML = '⚠ Try again';
+          setTimeout(() => { atcBtn.innerHTML = original; }, 2400);
+        }
+      });
+    }
   })();
 </script>
 

@@ -40,11 +40,11 @@
     "reviews-carousel": {
       "type": "vb-product-reviews-carousel",
       "blocks": {
-        "r1": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Refilwe+M&background=16a34a&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "My 6yo asks for her BioKid every morning. Sick days down to almost zero.", "author": "Refilwe M.", "meta": "Mum of 2 · Verified buyer" } },
-        "r2": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Sarah+B&background=7dd3a0&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "Daycare was a revolving door of colds. Not anymore.", "author": "Sarah B.", "meta": "Verified buyer · 2 months ago" } },
-        "r3": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Charmaine+D&background=0a5f3d&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "My son's tummy aches stopped within a week.", "author": "Charmaine D.", "meta": "Verified buyer · 1 month ago" } },
-        "r4": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Thandi+K&background=16a34a&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "Easier mornings. Better moods. Why didn't I find this sooner?", "author": "Thandi K.", "meta": "Mum of 3 · Cape Town" } },
-        "r5": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Anna+P&background=7dd3a0&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "Pediatrician recommended. We're sold.", "author": "Anna P.", "meta": "Verified buyer · 3 weeks ago" } }
+        "r1": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Refilwe+M&background=FF6A1A&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "My 6yo asks for her BioKid every morning. Sick days down to almost zero.", "author": "Refilwe M.", "meta": "Mum of 2 · Verified buyer" } },
+        "r2": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Sarah+B&background=FFA063&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "Daycare was a revolving door of colds. Not anymore.", "author": "Sarah B.", "meta": "Verified buyer · 2 months ago" } },
+        "r3": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Charmaine+D&background=B33C00&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "My son's tummy aches stopped within a week.", "author": "Charmaine D.", "meta": "Verified buyer · 1 month ago" } },
+        "r4": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Thandi+K&background=FF6A1A&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "Easier mornings. Better moods. Why didn't I find this sooner?", "author": "Thandi K.", "meta": "Mum of 3 · Cape Town" } },
+        "r5": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Anna+P&background=FFA063&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "Pediatrician recommended. We're sold.", "author": "Anna P.", "meta": "Verified buyer · 3 weeks ago" } }
       },
       "block_order": ["r1","r2","r3","r4","r5"],
       "settings": {

@@ -18,9 +18,9 @@
         "headline_highlight": "Soul.",
         "headline_post": "",
         "sub": "Probiotic-powered serums and moisturisers formulated with Velobiotics™ Technology — transforming your skin's microbiome from the outside in.",
-        "cta1_text": "Shop Skincare →",
-        "cta1_link": "/collections/almasi-probiotics-skin-care",
-        "cta2_text": "✨ Find Your Routine",
+        "cta1_text": "✨ Take the Radiance Quiz",
+        "cta1_link": "https://almasi.beauty",
+        "cta2_text": "Find Your Routine →",
         "cta2_link": "https://almasi.beauty",
         "proof": " 1000× more probiotics · 16 strains · 5★ customer rating",
         "show_badges": true,
@@ -49,7 +49,8 @@
         "card_bg": "#fdf5f3",
         "card_bg2": "#f3d6cf",
         "brand_label": "ALMASI™",
-        "products_per_page": 12
+        "products_per_page": 24,
+        "card_min_width": 280
       }
     }
   },

@@ -1,4 +1,4 @@
-{%- comment -%} VB · Product story — problem-solution narrative with hero image, brand-coloured {%- endcomment -%}
+{%- comment -%} VB · Product story — problem-solution narrative with hero image, brand-coloured · Mobile image-on-top {%- endcomment -%}
 
 {%- liquid
   assign brand_primary = section.settings.brand_primary | default: '#4d8c44'
@@ -31,12 +31,19 @@
   .vb-ps__point-icon { width: 28px; height: 28px; border-radius: 50%; background: var(--bp); color: #fff; display: inline-flex; align-items: center; justify-content: center; font-weight: 900; font-size: 13px; flex-shrink: 0; margin-top: 2px; }
   .vb-ps__point-text { font-size: 14.5px; line-height: 1.5; color: #1a1a1a; font-weight: 500; }
   .vb-ps__point-text strong { color: var(--bp); font-weight: 800; }
+
+  /* Mobile: force IMAGE ON TOP regardless of reverse setting. */
+  @media (max-width: 990px) {
+    .vb-ps { padding: 52px 16px; }
+    .vb-ps__inner { display: flex !important; flex-direction: column !important; gap: 28px; }
+    .vb-ps__visual { order: -1 !important; width: 100%; max-width: 460px; margin: 0 auto; }
+    .vb-ps__body { order: 1 !important; width: 100%; }
+    .vb-ps--reverse .vb-ps__visual { order: -1 !important; }
+    .vb-ps--reverse .vb-ps__body { order: 1 !important; }
+  }
   @media (max-width: 749px) {
-    .vb-ps { padding: 48px 16px; }
-    .vb-ps__inner { grid-template-columns: 1fr; gap: 28px; }
-    .vb-ps--reverse .vb-ps__visual { order: 0; }
-    .vb-ps__visual { max-width: 420px; margin: 0 auto; }
-    .vb-ps__visual-tag { padding: 9px 14px; }
+    .vb-ps { padding: 44px 14px; }
+    .vb-ps__visual-tag { padding: 9px 14px; right: -8px; }
     .vb-ps__visual-tag strong { font-size: 16px; }
     .vb-ps__visual-tag small { font-size: 9px; }
     .vb-ps__desc { font-size: 15px; }
@@ -84,7 +91,7 @@
   "enabled_on": { "templates": ["product"] },
   "settings": [
     { "type": "header", "content": "Layout" },
-    { "type": "checkbox", "id": "reverse", "label": "Reverse layout (image right)", "default": false },
+    { "type": "checkbox", "id": "reverse", "label": "Reverse layout (image right on desktop)", "default": false },
     { "type": "color", "id": "brand_primary", "label": "Brand primary", "default": "#4d8c44" },
     { "type": "color", "id": "brand_tint", "label": "Brand tint", "default": "#f3f7f1" },
     { "type": "header", "content": "Image" },

@@ -12,14 +12,14 @@
     "hero": {
       "type": "vb-product-hero",
       "blocks": {
-        "b1": { "type": "benefit", "settings": { "icon": "✨", "text": "Probiotic skincare" } },
-        "b2": { "type": "benefit", "settings": { "icon": "💎", "text": "Luxury formulation" } },
-        "b3": { "type": "benefit", "settings": { "icon": "🌹", "text": "Anti-aging support" } },
+        "b1": { "type": "benefit", "settings": { "icon": "✨", "text": "Beauty from within" } },
+        "b2": { "type": "benefit", "settings": { "icon": "💎", "text": "Collagen peptides" } },
+        "b3": { "type": "benefit", "settings": { "icon": "🌹", "text": "Hair, skin & nails" } },
         "b4": { "type": "benefit", "settings": { "icon": "⚡", "text": "1000× more delivery" } },
         "t1": { "type": "testi", "settings": { "quote": "My skin glows like never before", "author": "Bianca M." } },
-        "t2": { "type": "testi", "settings": { "quote": "Fine lines visibly smoother", "author": "Lerato S." } },
-        "t3": { "type": "testi", "settings": { "quote": "Worth every cent", "author": "Catherine V." } },
-        "t4": { "type": "testi", "settings": { "quote": "Luxury that delivers", "author": "Naledi K." } }
+        "t2": { "type": "testi", "settings": { "quote": "Hair growth I didn't expect", "author": "Lerato S." } },
+        "t3": { "type": "testi", "settings": { "quote": "Nails finally strong", "author": "Catherine V." } },
+        "t4": { "type": "testi", "settings": { "quote": "Worth every cent", "author": "Naledi K." } }
       },
       "block_order": ["b1","b2","b3","b4","t1","t2","t3","t4"],
       "settings": {
@@ -29,7 +29,7 @@
         "brand_label": "Almasi™",
         "rating": "4.9",
         "review_count": "420+",
-        "hook": "Luxury probiotic skincare. Almasi™ harmonises 16 probiotic strains with retinol, hyaluronic acid, and vitamin E for visibly glowing, age-defying, radiantly healthy skin.",
+        "hook": "Beauty from within. Almasi™ harmonises clinically researched probiotic strains with collagen peptides, biotin, and beauty-essential vitamins for visibly stronger hair, glowing skin, and resilient nails.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
         "show_subscription": true,
         "show_qty_discounts": true,
@@ -41,9 +41,9 @@
       "type": "vb-product-reviews-carousel",
       "blocks": {
         "r1": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Bianca+M&background=1a1a1a&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "Almasi turned my skin around. Strangers ask what I'm using.", "author": "Bianca M.", "meta": "Verified buyer · Sandton" } },
-        "r2": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Lerato+S&background=7a5252&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "Three months in. Fine lines visibly smoother, dark spots fading.", "author": "Lerato S.", "meta": "Verified buyer · 3 months ago" } },
-        "r3": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Catherine+V&background=000000&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "I've tried every luxury brand. Almasi is the one I keep buying.", "author": "Catherine V.", "meta": "Verified buyer · 2 months ago" } },
-        "r4": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Naledi+K&background=1a1a1a&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "The texture, the glow, the confidence. Worth every cent.", "author": "Naledi K.", "meta": "Verified buyer · 1 month ago" } },
+        "r2": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Lerato+S&background=7a5252&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "Three months in. Hair growth I didn't expect, nails strong, skin radiant.", "author": "Lerato S.", "meta": "Verified buyer · 3 months ago" } },
+        "r3": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Catherine+V&background=000000&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "I've tried every collagen brand. Almasi is the one I keep buying.", "author": "Catherine V.", "meta": "Verified buyer · 2 months ago" } },
+        "r4": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Naledi+K&background=1a1a1a&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "The collagen peptides actually work. Visible glow at 6 weeks.", "author": "Naledi K.", "meta": "Verified buyer · 1 month ago" } },
         "r5": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Sarah+B&background=7a5252&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "I'm 47. My skin looks 37. Almasi is the reason.", "author": "Sarah B.", "meta": "Verified buyer · Cape Town" } }
       },
       "block_order": ["r1","r2","r3","r4","r5"],
@@ -58,10 +58,10 @@
     "problem": {
       "type": "vb-product-story",
       "blocks": {
-        "p1": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Fine lines and dark spots</strong> that creep in with the years." } },
-        "p2": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Dull, dehydrated skin</strong> that creams can't seem to fix." } },
-        "p3": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Skincare drawer chaos</strong> — 12 products, zero results." } },
-        "p4": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Luxury brands</strong> that overpromise and underdeliver." } }
+        "p1": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Thinning hair and brittle nails</strong> from inside-out depletion." } },
+        "p2": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Dull, dehydrated skin</strong> that creams alone can't fix." } },
+        "p3": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Collagen loss</strong> that accelerates with every passing year." } },
+        "p4": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Beauty supplements</strong> with poor absorption that never deliver." } }
       },
       "block_order": ["p1","p2","p3","p4"],
       "settings": {
@@ -69,21 +69,21 @@
         "brand_primary": "#1a1a1a",
         "brand_tint": "#fdf5f3",
         "image_url": "",
-        "tag_value": "60%",
-        "tag_label": "Of Skincare Sits in Drawers, Unused",
+        "tag_value": "1%",
+        "tag_label": "Collagen Lost Every Year After 25",
         "eyebrow": "The Problem",
-        "title_pre": "Beautiful skin",
-        "title_highlight": "shouldn't be a guessing game.",
-        "desc": "Most luxury skincare promises miracles but ignores the skin microbiome — the bacterial layer that determines glow, repair, and barrier strength. Almasi™ goes deeper. Probiotic harmony plus active anti-aging actives, delivered the right way."
+        "title_pre": "Beauty starts",
+        "title_highlight": "from within.",
+        "desc": "From age 25, you lose 1% of your skin's collagen every year. Topical creams sit on the surface. Generic supplements never reach where it matters. Almasi™ goes deeper — bioavailable collagen peptides plus probiotics, delivered straight to your gut where they go to work."
       }
     },
     "solution": {
       "type": "vb-product-story",
       "blocks": {
-        "s1": { "type": "point", "settings": { "icon": "✓", "text": "<strong>16 skin-targeted probiotic strains</strong> for microbiome harmony." } },
-        "s2": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Retinol + hyaluronic acid + vitamin E</strong> — the luxury actives trio." } },
-        "s3": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive." } },
-        "s4": { "type": "point", "settings": { "icon": "✓", "text": "<strong>One capsule daily</strong>. Dermatologist-formulated. Lab-tested every batch." } }
+        "s1": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Hydrolysed collagen peptides</strong> — bioavailable, optimal for absorption." } },
+        "s2": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Probiotic strains</strong> for gut and skin microbiome harmony." } },
+        "s3": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Biotin, vitamin C, zinc, silica</strong> — the beauty trio + more." } },
+        "s4": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive." } }
       },
       "block_order": ["s1","s2","s3","s4"],
       "settings": {
@@ -92,11 +92,11 @@
         "brand_tint": "#fdf5f3",
         "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/1_transparent_Realistic_3D_product_mockup_2.png?v=1775328665",
         "tag_value": "1000×",
-        "tag_label": "More Probiotics Delivered",
+        "tag_label": "More Collagen + Probiotics Delivered",
         "eyebrow": "The Solution",
         "title_pre": "Meet",
-        "title_highlight": "Almasi™ Probiotic Skincare.",
-        "desc": "Luxury probiotic skincare done differently. 16 skin-targeted probiotic strains + retinol, hyaluronic acid, and vitamin E — delivered by Velobiotics™ technology. 1000× more probiotics reach your skin alive, where they harmonise your microbiome and unlock visible glow, smoothness, and radiance."
+        "title_highlight": "Almasi™ Beauty Ingestibles.",
+        "desc": "Three forms of beauty-from-within. Almasi™ combines hydrolysed collagen peptides with probiotic strains, biotin, vitamin C, and zinc — delivered by Velobiotics™ technology. 1000× more reach you alive, where they rebuild collagen, strengthen hair and nails, and unlock visible skin glow."
       }
     },
     "related": {
@@ -112,20 +112,20 @@
         "brand_dark": "#000000",
         "brand_tint": "#fdf5f3",
         "tint": false,
-        "eyebrow": "Complete the Ritual",
-        "title": "More from the Almasi™ collection",
-        "sub": "Build your luxury probiotic skincare ritual — moisturizer, serums, cleansers."
+        "eyebrow": "The Almasi™ Beauty Stack",
+        "title": "More from the Almasi™ range",
+        "sub": "Three forms of beauty-from-within — capsules, peptide capsules, and peptide powder."
       }
     },
     "benefits": {
       "type": "vb-product-benefits",
       "blocks": {
-        "b1": { "type": "feat", "settings": { "icon": "✨", "name": "Visible Glow", "desc": "Microbiome harmony unlocks natural radiance." } },
-        "b2": { "type": "feat", "settings": { "icon": "⏳", "name": "Anti-Aging", "desc": "Retinol smooths fine lines, hyaluronic acid plumps." } },
-        "b3": { "type": "feat", "settings": { "icon": "💧", "name": "Deep Hydration", "desc": "Hyaluronic acid holds 1000× its weight in water." } },
-        "b4": { "type": "feat", "settings": { "icon": "🛡️", "name": "Strong Skin Barrier", "desc": "Probiotics rebuild your skin's natural defences." } },
-        "b5": { "type": "feat", "settings": { "icon": "🩺", "name": "Dermatologist-Formulated", "desc": "Built with skincare-specialist guidance." } },
-        "b6": { "type": "feat", "settings": { "icon": "🌿", "name": "Clean Luxury", "desc": "Vegan, halaal-friendly, no parabens, no harsh chemicals." } }
+        "b1": { "type": "feat", "settings": { "icon": "✨", "name": "Visible Skin Glow", "desc": "Collagen + probiotics rebuild skin from the inside." } },
+        "b2": { "type": "feat", "settings": { "icon": "💁", "name": "Stronger Hair Growth", "desc": "Biotin and protein peptides fuel thicker, healthier strands." } },
+        "b3": { "type": "feat", "settings": { "icon": "💅", "name": "Resilient Nails", "desc": "Silica and zinc end brittle, splitting nails." } },
+        "b4": { "type": "feat", "settings": { "icon": "🛡️", "name": "Gut + Skin Microbiome", "desc": "Probiotics harmonise the gut-skin axis for whole-body glow." } },
+        "b5": { "type": "feat", "settings": { "icon": "🩺", "name": "Doctor-Formulated", "desc": "Built with women's-health and dermatology guidance." } },
+        "b6": { "type": "feat", "settings": { "icon": "🌿", "name": "Clean Luxury", "desc": "Vegan-option, halaal-friendly, no fillers, no harsh chemicals." } }
       },
       "block_order": ["b1","b2","b3","b4","b5","b6"],
       "settings": {
@@ -134,16 +134,16 @@
         "eyebrow": "Key Benefits",
         "title_pre": "Why",
         "title_highlight": "Almasi™",
-        "sub": "Six reasons women across South Africa and the world choose Almasi™ for luxury, results-driven skincare."
+        "sub": "Six reasons women across South Africa and the world choose Almasi™ for results-driven beauty-from-within."
       }
     },
     "how": {
       "type": "vb-product-how",
       "blocks": {
-        "h1": { "type": "step", "settings": { "icon": "💊", "name": "Take One Capsule Daily", "desc": "With water, after a meal. That's it." } },
-        "h2": { "type": "step", "settings": { "icon": "🛡️", "name": "MEP Armour Survives", "desc": "Velobiotics™ shield protects every culture and active." } },
-        "h3": { "type": "step", "settings": { "icon": "🎯", "name": "Delivered to Your Skin", "desc": "1000× more probiotics + actives reach your skin alive." } },
-        "h4": { "type": "step", "settings": { "icon": "✨", "name": "Glow & Confidence", "desc": "Visibly smoother, radiant, age-defying skin." } }
+        "h1": { "type": "step", "settings": { "icon": "💊", "name": "Take Your Daily Almasi", "desc": "Capsule or scoop of powder, with water, after a meal." } },
+        "h2": { "type": "step", "settings": { "icon": "🛡️", "name": "MEP Armour Survives", "desc": "Velobiotics™ shield protects every culture and peptide." } },
+        "h3": { "type": "step", "settings": { "icon": "🎯", "name": "Delivered to Your Skin", "desc": "1000× more probiotics + collagen reach you alive." } },
+        "h4": { "type": "step", "settings": { "icon": "✨", "name": "Glow & Confidence", "desc": "Visibly smoother skin, stronger hair and nails." } }
       },
       "block_order": ["h1","h2","h3","h4"],
       "settings": {
@@ -152,18 +152,18 @@
         "eyebrow": "How It Works",
         "title_pre": "From Capsule to",
         "title_highlight": "Radiance",
-        "sub": "Four simple steps. One daily ritual. Visibly luxurious skin."
+        "sub": "Four simple steps. One daily ritual. Beauty-from-within that actually works."
       }
     },
     "ingredients": {
       "type": "vb-product-ingredients",
       "blocks": {
-        "i1": { "type": "ingredient", "settings": { "icon": "🦠", "name": "16-Strain Probiotic Blend", "amount": "10 Billion CFU", "desc": "Strains targeted for skin microbiome and barrier support." } },
-        "i2": { "type": "ingredient", "settings": { "icon": "💎", "name": "Retinol + Hyaluronic Acid + Vit E", "amount": "Active trio", "desc": "Smooth, plump, protect — the gold-standard anti-aging stack." } },
-        "i3": { "type": "ingredient", "settings": { "icon": "🛡️", "name": "Velobiotics™ MEP Coating", "amount": "Patented", "desc": "Supercritical CO₂ microencapsulation — 1000× more survive." } },
-        "i4": { "type": "ingredient", "settings": { "icon": "🌹", "name": "Botanical Extracts", "amount": "Antioxidant blend", "desc": "Rosehip, green tea, niacinamide — luxury skincare essentials." } },
-        "i5": { "type": "ingredient", "settings": { "icon": "✓", "name": "Clean Capsule Shell", "amount": "Vegan HPMC", "desc": "No gelatin, no fillers, no allergens. Halaal-friendly." } },
-        "i6": { "type": "ingredient", "settings": { "icon": "🚫", "name": "Free From", "amount": "Always", "desc": "Parabens · sulphates · gluten · soy · dairy · artificial colours · GMO." } }
+        "i1": { "type": "ingredient", "settings": { "icon": "🧬", "name": "Hydrolysed Collagen Peptides", "amount": "5,000 mg", "desc": "Bioavailable Type I & III peptides — the building blocks of skin, hair, nails." } },
+        "i2": { "type": "ingredient", "settings": { "icon": "🦠", "name": "Probiotic Blend", "amount": "10 Billion CFU", "desc": "Strains for gut and skin microbiome harmony." } },
+        "i3": { "type": "ingredient", "settings": { "icon": "💎", "name": "Biotin + Vitamin C + Zinc", "amount": "Full daily", "desc": "The beauty trio — hair growth, collagen synthesis, skin repair." } },
+        "i4": { "type": "ingredient", "settings": { "icon": "🛡️", "name": "Velobiotics™ MEP Coating", "amount": "Patented", "desc": "Supercritical CO₂ microencapsulation — 1000× more survive." } },
+        "i5": { "type": "ingredient", "settings": { "icon": "✓", "name": "Silica + Selenium", "amount": "Trace", "desc": "Antioxidant duo for stronger nails and healthier hair." } },
+        "i6": { "type": "ingredient", "settings": { "icon": "🚫", "name": "Free From", "amount": "Always", "desc": "Parabens · gluten · soy · dairy · artificial colours · preservatives · GMO." } }
       },
       "block_order": ["i1","i2","i3","i4","i5","i6"],
       "settings": {
@@ -173,19 +173,19 @@
         "brand_light": "#7a5252",
         "eyebrow": "What's Inside",
         "title": "Every ingredient earns its place",
-        "sub": "Six clean luxury actives. No proprietary blends. Full transparency.",
+        "sub": "Six clean beauty actives. No proprietary blends. Full transparency.",
         "facts_image_url": "",
         "facts_label": "Supplement facts",
-        "facts_foot": "Lab-tested · Dermatologist-formulated · Clean luxury"
+        "facts_foot": "Lab-tested · Doctor-formulated · Clean luxury"
       }
     },
     "confidence": {
       "type": "vb-product-confidence",
       "blocks": {
-        "c1": { "type": "stat", "settings": { "label": "Visible glow within 4 weeks", "percent": 91 } },
-        "c2": { "type": "stat", "settings": { "label": "Smoother fine lines", "percent": 84 } },
-        "c3": { "type": "stat", "settings": { "label": "Brighter, more even tone", "percent": 88 } },
-        "c4": { "type": "stat", "settings": { "label": "Increased skin confidence", "percent": 93 } },
+        "c1": { "type": "stat", "settings": { "label": "Visible skin glow within 4 weeks", "percent": 91 } },
+        "c2": { "type": "stat", "settings": { "label": "Stronger hair growth", "percent": 84 } },
+        "c3": { "type": "stat", "settings": { "label": "Less brittle nails", "percent": 88 } },
+        "c4": { "type": "stat", "settings": { "label": "Increased beauty confidence", "percent": 93 } },
         "c5": { "type": "stat", "settings": { "label": "Would recommend to a friend", "percent": 96 } }
       },
       "block_order": ["c1","c2","c3","c4","c5"],
@@ -196,7 +196,7 @@
         "eyebrow": "Real results",
         "title_pre": "Trusted for",
         "title_highlight": "Visible Radiance",
-        "sub": "What customers report after 4 weeks of daily Almasi™ use.",
+        "sub": "What customers report after 8 weeks of daily Almasi™ use.",
         "caveat": "Based on a survey of 420+ verified customers. Individual results may vary."
       }
     },
@@ -222,14 +222,14 @@
     "doctors": {
       "type": "vb-doctors",
       "blocks": {
-        "d1": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966", "name": "Clinically Proven Strains", "desc": "Strains studied for skin microbiome and anti-aging." } },
-        "d2": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966", "name": "Dermatologist Formulated", "desc": "Built with skincare-specialist guidance." } },
+        "d1": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966", "name": "Clinically Proven Strains", "desc": "Strains studied for skin microbiome support." } },
+        "d2": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966", "name": "Doctor Formulated", "desc": "Built with dermatology and women's-health guidance." } },
         "d3": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073", "name": "Patented MEP Technology", "desc": "Microencapsulation with Supercritical CO₂." } },
-        "d4": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199", "name": "Clean Luxury", "desc": "Vegan, halaal-friendly, no parabens, no harsh chemicals." } }
+        "d4": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199", "name": "Clean Luxury", "desc": "Halaal-friendly, no parabens, no harsh chemicals." } }
       },
       "block_order": ["d1","d2","d3","d4"],
       "settings": {
-        "eyebrow": "Trusted by Dermatologists. Proven by Science.",
+        "eyebrow": "Trusted by Doctors. Proven by Science.",
         "title_pre": "Quality you can",
         "title_highlight": "trust.",
         "sub": "Built with dermatology guidance, peer-reviewed strains, and SAHPRA-aware manufacturing."
@@ -240,7 +240,7 @@
       "blocks": {
         "o1": { "type": "row", "settings": { "feature": "Max Probiotic Strains", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
         "o2": { "type": "row", "settings": { "feature": "Advanced Absorption", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
-        "o3": { "type": "row", "settings": { "feature": "Anti-Aging Actives", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
+        "o3": { "type": "row", "settings": { "feature": "Collagen Peptide Boost", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
         "o4": { "type": "row", "settings": { "feature": "Daily Simplicity", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
         "o5": { "type": "row", "settings": { "feature": "Long-Term Radiance", "brand_state": "yes", "b_state": "no", "c_state": "no" } }
       },
@@ -250,10 +250,10 @@
         "brand_dark": "#000000",
         "brand_tint": "#fdf5f3",
         "title": "Why We Outperform Others",
-        "sub": "Experience luxury probiotic skincare with our unique blend of microbiome-harmonising strains, retinol, hyaluronic acid, and Velobiotics™ absorption technology.",
+        "sub": "Beauty from within with our unique blend of hydrolysed collagen peptides, probiotic strains, and Velobiotics™ absorption technology.",
         "col_features": "Features",
         "col_brand": "Almasi™",
-        "col_b": "General Probiotic",
+        "col_b": "General Collagen",
         "col_c": "Others",
         "cta_text": "Add to Cart",
         "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
@@ -274,10 +274,10 @@
     "faq": {
       "type": "vb-faq",
       "blocks": {
-        "q1": { "type": "q", "settings": { "question": "How long until I see results?", "answer": "<p>Most customers see brighter, more hydrated skin within 2 weeks. Full anti-aging benefits build over 8–12 weeks of consistent daily use.</p>" } },
-        "q2": { "type": "q", "settings": { "question": "Can I use this with my topical skincare?", "answer": "<p>Yes — Almasi™ works from the inside out and complements your topical routine. Together they deliver maximum results.</p>" } },
+        "q1": { "type": "q", "settings": { "question": "How long until I see results?", "answer": "<p>Most customers see stronger nails within 4 weeks. Visible skin glow at 6–8 weeks. Hair growth benefits build over 12 weeks of consistent daily use.</p>" } },
+        "q2": { "type": "q", "settings": { "question": "Capsule, peptide capsule, or powder — which to choose?", "answer": "<p>Powder mixes into coffee or smoothies for highest collagen dose. Capsules are the easy daily ritual. Many customers stack both: capsule in the morning, powder in their afternoon drink.</p>" } },
         "q3": { "type": "q", "settings": { "question": "Is Almasi™ safe daily?", "answer": "<p>Absolutely. Manufactured under GMP conditions in SAHPRA-aware facilities. Daily use is safe and recommended.</p>" } },
-        "q4": { "type": "q", "settings": { "question": "Will the retinol in this cause sensitivity?", "answer": "<p>Oral retinol is gentler than topical and supports skin from within without surface irritation. Always check with your dermatologist if you have sensitive skin.</p>" } },
+        "q4": { "type": "q", "settings": { "question": "Is the collagen marine, bovine, or vegan?", "answer": "<p>Our collagen peptides are sourced from grass-fed bovine for optimal Type I & III bioavailability. For a vegan beauty alternative, see our Skin/Hair/Nails capsules (plant-based formulation).</p>" } },
         "q5": { "type": "q", "settings": { "question": "Do you ship internationally?", "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>" } },
         "q6": { "type": "q", "settings": { "question": "What if Almasi™ doesn't work for me?", "answer": "<p>If you don't see the difference in 30 days, we'll refund you in full — no questions asked.</p>" } }
       },
@@ -304,7 +304,7 @@
         "badge": "30-day money-back guarantee",
         "title_pre": "Unlock Your Radiance",
         "title_highlight": "Risk-Free for 30 Days",
-        "sub": "Join the 30,000+ women who've made Almasi™ their luxury daily. If you don't see the difference, we'll refund every cent.",
+        "sub": "Join the 30,000+ women who've made Almasi™ their daily beauty ritual. If you don't see the difference, we'll refund every cent.",
         "cta_text": "Add to Cart",
         "cta_link": "#vbpForm"
       }

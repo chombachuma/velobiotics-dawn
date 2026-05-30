@@ -102,12 +102,13 @@
     "related": {
       "type": "vb-product-related",
       "blocks": {
-        "r1": { "type": "product", "settings": { "product_handle": "velo16-probiotics-magnesium-glycinate", "brand": "Velo16™", "rating": "4.7", "reviews": "190+" } },
-        "r2": { "type": "product", "settings": { "product_handle": "velo16-probiotics-omega-3", "brand": "Velo16™", "rating": "4.8", "reviews": "120+" } },
-        "r3": { "type": "product", "settings": { "product_handle": "velo16-probiotics-coq10", "brand": "Velo16™", "rating": "4.6", "reviews": "90+" } },
-        "r4": { "type": "product", "settings": { "product_handle": "velo16-probiotics-multivitamin", "brand": "Velo16™", "rating": "4.7", "reviews": "150+" } }
+        "r1": { "type": "product", "settings": { "product_handle": "velo16-probiotics-omega-3-vit-d3", "brand": "Velo16™", "rating": "4.8", "reviews": "120+" } },
+        "r2": { "type": "product", "settings": { "product_handle": "velo16-probiotics-vitamin-c", "brand": "Velo16™", "rating": "4.7", "reviews": "180+" } },
+        "r3": { "type": "product", "settings": { "product_handle": "velo16-probiotics-digestive-enzymes-complex", "brand": "Velo16™", "rating": "4.7", "reviews": "150+" } },
+        "r4": { "type": "product", "settings": { "product_handle": "velo16-probiotics-calcium-magnesium", "brand": "Velo16™", "rating": "4.6", "reviews": "110+" } },
+        "r5": { "type": "product", "settings": { "product_handle": "velo16-probiotics-ashwagadha", "brand": "Velo16™", "rating": "4.7", "reviews": "95+" } }
       },
-      "block_order": ["r1","r2","r3","r4"],
+      "block_order": ["r1","r2","r3","r4","r5"],
       "settings": {
         "brand_primary": "#c8163c",
         "brand_dark": "#6b0a1f",

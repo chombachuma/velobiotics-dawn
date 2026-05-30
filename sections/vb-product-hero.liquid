@@ -1,6 +1,5 @@
 {%- comment -%}
-  VB · Product Hero — gallery + brand-coloured buy box, subscription + qty discounts + trust pills
-  Brand colour is driven by section.settings.brand_primary (defaults to Velobiotics green).
+  VB · Product Hero v2 — gallery + buy box + payment icons + scrolling testimonials marquee
 {%- endcomment -%}
 
 {%- liquid
@@ -13,9 +12,8 @@
 -%}
 
 <style>
-  .vb-ph { padding: 24px 20px 48px; max-width: 1280px; margin: 0 auto; --bp: {{ brand_primary }}; --bd: {{ brand_dark }}; --bt: {{ brand_tint }}; }
+  .vb-ph { padding: 24px 20px 24px; max-width: 1280px; margin: 0 auto; --bp: {{ brand_primary }}; --bd: {{ brand_dark }}; --bt: {{ brand_tint }}; }
   .vb-ph__grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: flex-start; }
-  /* Gallery */
   .vb-pg { position: sticky; top: 80px; }
   .vb-pg__main { position: relative; aspect-ratio: 1/1; border-radius: 22px; overflow: hidden; background: var(--bt); margin: 0 0 14px; }
   .vb-pg__main img { width: 100%; height: 100%; object-fit: contain; padding: 16px; mix-blend-mode: multiply; }
@@ -25,9 +23,7 @@
   .vb-pg__thumb { aspect-ratio: 1/1; border-radius: 10px; overflow: hidden; background: var(--bt); border: 2px solid transparent; cursor: pointer; transition: border-color 0.18s ease, transform 0.18s ease; padding: 0; }
   .vb-pg__thumb img { width: 100%; height: 100%; object-fit: contain; padding: 6px; mix-blend-mode: multiply; }
   .vb-pg__thumb.is-active { border-color: var(--bp); }
-  .vb-pg__thumb:hover { transform: translateY(-2px); }
 
-  /* Buy box */
   .vb-pb__brand { display: inline-flex; align-items: center; gap: 8px; background: color-mix(in srgb, var(--bp) 12%, #fff); color: var(--bp); padding: 6px 13px; border-radius: 999px; font-size: 11.5px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; margin: 0 0 12px; }
   .vb-pb__pill { display: inline-flex; align-items: center; gap: 6px; background: #fff; color: var(--bp); padding: 4px 11px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; border: 1px solid color-mix(in srgb, var(--bp) 25%, #fff); }
   .vb-pb__title { font-size: clamp(26px, 3.4vw, 36px); font-weight: 800; line-height: 1.15; margin: 0 0 12px; color: #1a1a1a; letter-spacing: -0.01em; }
@@ -39,7 +35,7 @@
   .vb-pb__benefit { display: flex; align-items: center; gap: 10px; padding: 11px 13px; background: var(--bt); border-radius: 12px; }
   .vb-pb__benefit-icon { width: 32px; height: 32px; border-radius: 50%; background: #fff; color: var(--bp); display: inline-flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; }
   .vb-pb__benefit-text { font-size: 12.5px; font-weight: 700; color: #1a1a1a; line-height: 1.3; }
-  /* Variant cards */
+
   .vb-pb__variants-label { font-size: 12.5px; font-weight: 700; color: #1a1a1a; letter-spacing: 0.04em; text-transform: uppercase; margin: 0 0 10px; }
   .vb-pb__variants { display: grid; gap: 10px; margin: 0 0 20px; }
   .vb-pb__variant { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 16px; border: 2px solid #e3ece1; border-radius: 14px; cursor: pointer; transition: all 0.18s ease; background: #fff; }
@@ -54,74 +50,77 @@
   .vb-pb__variant-compare { font-size: 12px; color: #a0a0a0; text-decoration: line-through; }
   .vb-pb__variant-best { position: absolute; top: -10px; right: 14px; background: var(--bp); color: #fff; font-size: 9.5px; font-weight: 800; padding: 4px 9px; border-radius: 999px; letter-spacing: 0.06em; text-transform: uppercase; }
 
-  /* Subscription & qty discounts placeholders */
   .vb-pb__plugin { background: var(--bt); border-radius: 14px; padding: 14px; margin: 0 0 16px; border: 1px solid color-mix(in srgb, var(--bp) 12%, transparent); }
   .vb-pb__plugin-label { display: flex; align-items: center; gap: 8px; font-size: 11.5px; font-weight: 800; color: var(--bp); letter-spacing: 0.06em; text-transform: uppercase; margin: 0 0 10px; }
   .vb-pb__plugin-label::before { content: ''; width: 8px; height: 8px; background: var(--bp); border-radius: 50%; }
 
-  /* Qty + ATC */
+  .vb-pb__price-summary { display: flex; align-items: baseline; gap: 12px; padding: 14px 16px; background: linear-gradient(135deg, var(--bt) 0%, #fff 100%); border-radius: 14px; margin: 0 0 14px; border: 1px solid color-mix(in srgb, var(--bp) 14%, transparent); flex-wrap: wrap; }
+  .vb-pb__price-now { font-size: 28px; font-weight: 900; color: #1a1a1a; letter-spacing: -0.02em; }
+  .vb-pb__price-was { font-size: 14px; color: #a0a0a0; text-decoration: line-through; }
+  .vb-pb__price-save { background: var(--bp); color: #fff; padding: 4px 10px; border-radius: 999px; font-size: 11px; font-weight: 800; letter-spacing: 0.04em; }
+  .vb-pb__shipnote { display: flex; align-items: center; gap: 8px; padding: 10px 14px; background: color-mix(in srgb, var(--bp) 8%, #fff); border-radius: 12px; margin: 0 0 14px; font-size: 13px; color: #2b3a2a; font-weight: 600; }
+  .vb-pb__shipnote-icon { color: var(--bp); font-size: 16px; }
+
   .vb-pb__qty-row { display: flex; align-items: stretch; gap: 12px; margin: 0 0 14px; }
   .vb-pb__qty { display: inline-flex; align-items: center; border: 2px solid #e3ece1; border-radius: 999px; overflow: hidden; flex-shrink: 0; }
-  .vb-pb__qty button { width: 40px; height: 48px; background: #fff; border: none; font-size: 18px; font-weight: 700; cursor: pointer; color: #1a1a1a; transition: background-color 0.16s ease; }
+  .vb-pb__qty button { width: 40px; height: 48px; background: #fff; border: none; font-size: 18px; font-weight: 700; cursor: pointer; color: #1a1a1a; }
   .vb-pb__qty button:hover { background: var(--bt); color: var(--bp); }
   .vb-pb__qty input { width: 44px; height: 48px; border: none; text-align: center; font-size: 15px; font-weight: 800; outline: none; -moz-appearance: textfield; background: #fff; }
   .vb-pb__qty input::-webkit-outer-spin-button, .vb-pb__qty input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
   .vb-pb__atc { flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 0 24px; background: var(--bp); color: #fff !important; border: none; border-radius: 999px; font-weight: 800; font-size: 15px; cursor: pointer; transition: all 0.18s ease; box-shadow: 0 12px 26px color-mix(in srgb, var(--bp) 32%, transparent); }
-  .vb-pb__atc:hover { background: var(--bd); transform: translateY(-2px); box-shadow: 0 16px 32px color-mix(in srgb, var(--bp) 42%, transparent); }
-  .vb-pb__atc[disabled] { opacity: 0.5; cursor: not-allowed; transform: none; }
-  .vb-pb__buynow { width: 100%; display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 14px 24px; background: #1a1a1a; color: #fff !important; border: none; border-radius: 999px; font-weight: 800; font-size: 14px; cursor: pointer; transition: background-color 0.18s ease; margin: 0 0 18px; }
+  .vb-pb__atc:hover { background: var(--bd); transform: translateY(-2px); }
+  .vb-pb__buynow { width: 100%; display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 14px 24px; background: #1a1a1a; color: #fff !important; border: none; border-radius: 999px; font-weight: 800; font-size: 14px; cursor: pointer; transition: background-color 0.18s ease; margin: 0 0 14px; }
   .vb-pb__buynow:hover { background: #000; }
 
-  /* Trust pills */
-  .vb-pb__trust { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  /* Payment icons */
+  .vb-pb__pay { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: center; padding: 12px 8px; margin: 0 0 16px; border-top: 1px dashed #e3ece1; border-bottom: 1px dashed #e3ece1; }
+  .vb-pb__pay-label { font-size: 10.5px; font-weight: 700; color: #6c7a6b; letter-spacing: 0.08em; text-transform: uppercase; margin-right: 4px; }
+  .vb-pb__pay-icon { height: 22px; padding: 2px 6px; background: #fff; border: 1px solid #e3ece1; border-radius: 6px; font-size: 11px; font-weight: 800; color: #1a1a1a; display: inline-flex; align-items: center; min-width: 44px; justify-content: center; letter-spacing: 0.02em; }
+
+  .vb-pb__trust { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin: 0 0 18px; }
   .vb-pb__trust-item { display: flex; align-items: center; gap: 8px; padding: 9px 11px; background: #fff; border: 1px solid #e3ece1; border-radius: 11px; font-size: 12px; color: #1a1a1a; font-weight: 600; }
   .vb-pb__trust-item span:first-child { color: var(--bp); font-size: 15px; flex-shrink: 0; }
 
-  /* Total price summary */
-  .vb-pb__price-summary { display: flex; align-items: baseline; gap: 12px; padding: 14px 16px; background: linear-gradient(135deg, var(--bt) 0%, #fff 100%); border-radius: 14px; margin: 0 0 18px; border: 1px solid color-mix(in srgb, var(--bp) 14%, transparent); flex-wrap: wrap; }
-  .vb-pb__price-now { font-size: 28px; font-weight: 900; color: #1a1a1a; letter-spacing: -0.02em; }
-  .vb-pb__price-was { font-size: 14px; color: #a0a0a0; text-decoration: line-through; }
-  .vb-pb__price-save { background: var(--bp); color: #fff; padding: 4px 10px; border-radius: 999px; font-size: 11px; font-weight: 800; letter-spacing: 0.04em; }
-  .vb-pb__price-each { margin-left: auto; font-size: 12px; color: #6c7a6b; }
+  /* Scrolling testimonials */
+  .vb-pb__testi-marquee { overflow: hidden; padding: 14px 0; margin-top: 6px; border-top: 1px solid #e3ece1; }
+  .vb-pb__testi-track { display: flex; gap: 18px; white-space: nowrap; animation: vb-pb-testi 28s linear infinite; width: max-content; }
+  .vb-pb__testi-marquee:hover .vb-pb__testi-track { animation-play-state: paused; }
+  @keyframes vb-pb-testi { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .vb-pb__testi { display: inline-flex; align-items: center; gap: 10px; padding: 8px 14px; background: var(--bt); border-radius: 999px; font-size: 12.5px; color: #2b3a2a; white-space: nowrap; }
+  .vb-pb__testi .stars { color: #ffb43a; letter-spacing: 0.5px; font-size: 11px; }
+  .vb-pb__testi strong { color: var(--bp); font-weight: 800; }
 
   @media (max-width: 990px) {
     .vb-ph__grid { grid-template-columns: 1fr; gap: 28px; }
     .vb-pg { position: static; }
   }
   @media (max-width: 749px) {
-    .vb-ph { padding: 16px 14px 36px; }
+    .vb-ph { padding: 16px 14px 24px; }
     .vb-pg__main { border-radius: 16px; }
     .vb-pg__thumbs { grid-template-columns: repeat(5, 1fr); gap: 6px; }
     .vb-pb__title { font-size: clamp(22px, 5.6vw, 28px); }
     .vb-pb__benefits { grid-template-columns: 1fr 1fr; gap: 8px; }
-    .vb-pb__benefit { padding: 9px 11px; gap: 8px; }
     .vb-pb__benefit-icon { width: 28px; height: 28px; font-size: 14px; }
     .vb-pb__benefit-text { font-size: 11.5px; }
     .vb-pb__hook { font-size: 14.5px; padding: 12px 14px; }
-    .vb-pb__variant { padding: 12px 14px; }
-    .vb-pb__variant-name { font-size: 13.5px; }
-    .vb-pb__variant-price { font-size: 15px; }
     .vb-pb__price-now { font-size: 24px; }
-    .vb-pb__price-each { width: 100%; margin-left: 0; }
     .vb-pb__atc { font-size: 14px; padding: 0 18px; }
     .vb-pb__qty button, .vb-pb__qty input { height: 44px; }
     .vb-pb__qty button { width: 36px; }
     .vb-pb__qty input { width: 38px; font-size: 14px; }
-    .vb-pb__trust { grid-template-columns: 1fr 1fr; gap: 6px; }
+    .vb-pb__trust { gap: 6px; }
     .vb-pb__trust-item { font-size: 11px; padding: 7px 9px; }
     .vb-pg__save { min-width: 54px; height: 54px; font-size: 13.5px; top: 10px; right: 10px; }
-    .vb-pg__save small { font-size: 8px; }
+    .vb-pb__pay-icon { font-size: 10px; height: 20px; min-width: 38px; }
+    .vb-pb__testi { font-size: 11.5px; padding: 7px 12px; }
   }
 </style>
 
 <section class="vb-ph" data-product-section data-product-id="{{ product.id }}">
   <div class="vb-ph__grid">
-    {%- comment -%} GALLERY {%- endcomment -%}
     <div class="vb-pg">
       <div class="vb-pg__main">
-        {%- if product.featured_image -%}
-          <img id="vbpMain" src="{{ product.featured_image | image_url: width: 1000 }}" alt="{{ product.title | escape }}" />
-        {%- endif -%}
+        {%- if product.featured_image -%}<img id="vbpMain" src="{{ product.featured_image | image_url: width: 1000 }}" alt="{{ product.title | escape }}" />{%- endif -%}
         {%- liquid
           assign savings_pct = 0
           if current_variant.compare_at_price > current_variant.price
@@ -129,9 +128,7 @@
             assign savings_pct = diff | times: 100.0 | divided_by: current_variant.compare_at_price | round
           endif
         -%}
-        {%- if savings_pct > 0 -%}
-          <span class="vb-pg__save">−{{ savings_pct }}%<small>SAVE</small></span>
-        {%- endif -%}
+        {%- if savings_pct > 0 -%}<span class="vb-pg__save">−{{ savings_pct }}%<small>SAVE</small></span>{%- endif -%}
       </div>
       {%- if product.images.size > 1 -%}
         <div class="vb-pg__thumbs">
@@ -144,15 +141,10 @@
       {%- endif -%}
     </div>
 
-    {%- comment -%} BUY BOX {%- endcomment -%}
     <div class="vb-pb">
       <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
         <span class="vb-pb__brand">{{ brand_label }}</span>
-        {%- for tag in product.tags -%}
-          {%- if tag contains 'pill:' -%}
-            <span class="vb-pb__pill">{{ tag | remove_first: 'pill:' | strip }}</span>
-          {%- endif -%}
-        {%- endfor -%}
+        {%- for tag in product.tags -%}{%- if tag contains 'pill:' -%}<span class="vb-pb__pill">{{ tag | remove_first: 'pill:' | strip }}</span>{%- endif -%}{%- endfor -%}
       </div>
       <h1 class="vb-pb__title">{{ product.title }}</h1>
       <div class="vb-pb__rating">
@@ -160,9 +152,7 @@
         <strong>{{ section.settings.rating | default: '4.8' }}</strong>
         <a href="#vb-reviews">({{ section.settings.review_count | default: '3,500+' }} reviews)</a>
       </div>
-      {%- if section.settings.hook != blank -%}
-        <p class="vb-pb__hook">{{ section.settings.hook }}</p>
-      {%- endif -%}
+      {%- if section.settings.hook != blank -%}<p class="vb-pb__hook">{{ section.settings.hook }}</p>{%- endif -%}
       {%- if section.blocks.size > 0 -%}
         <div class="vb-pb__benefits">
           {%- for block in section.blocks -%}
@@ -181,25 +171,16 @@
           <p class="vb-pb__variants-label">Choose your pack</p>
           <div class="vb-pb__variants">
             {%- for variant in product.variants -%}
-              {%- liquid
-                assign vsav = 0
-                if variant.compare_at_price > variant.price
-                  assign vdiff = variant.compare_at_price | minus: variant.price
-                  assign vsav = vdiff | times: 100.0 | divided_by: variant.compare_at_price | round
-                endif
-              -%}
               <label class="vb-pb__variant">
                 <input type="radio" name="id" value="{{ variant.id }}" {% if variant == current_variant %}checked{% endif %} {% unless variant.available %}disabled{% endunless %} />
-                {%- if forloop.first and product.variants.size > 1 -%}<span class="vb-pb__variant-best">Best value</span>{%- endif -%}
+                {%- if forloop.first -%}<span class="vb-pb__variant-best">Best value</span>{%- endif -%}
                 <div class="vb-pb__variant-info">
                   <span class="vb-pb__variant-name">{{ variant.title }}</span>
                   <span class="vb-pb__variant-meta">{% if variant.available %}In stock{% else %}Sold out{% endif %}</span>
                 </div>
                 <div class="vb-pb__variant-price-row">
                   <span class="vb-pb__variant-price">{{ variant.price | money }}</span>
-                  {%- if variant.compare_at_price > variant.price -%}
-                    <span class="vb-pb__variant-compare">{{ variant.compare_at_price | money }}</span>
-                  {%- endif -%}
+                  {%- if variant.compare_at_price > variant.price -%}<span class="vb-pb__variant-compare">{{ variant.compare_at_price | money }}</span>{%- endif -%}
                 </div>
               </label>
             {%- endfor -%}
@@ -209,20 +190,16 @@
         {%- endif -%}
 
         {%- if section.settings.show_subscription -%}
-          <div class="vb-pb__plugin" id="vb-paywhirl-slot">
+          <div class="vb-pb__plugin">
             <p class="vb-pb__plugin-label">Subscribe & Save</p>
-            <div data-paywhirl-widget data-product-id="{{ product.id }}">
-              <em style="color:#5c6664;font-size:13px;">PayWhirl subscription widget renders here once active.</em>
-            </div>
+            <div data-paywhirl-widget data-product-id="{{ product.id }}"><em style="color:#5c6664;font-size:13px;">PayWhirl subscription widget renders here once active.</em></div>
           </div>
         {%- endif -%}
 
         {%- if section.settings.show_qty_discounts -%}
-          <div class="vb-pb__plugin" id="vb-qtydiscount-slot">
+          <div class="vb-pb__plugin">
             <p class="vb-pb__plugin-label">Bundle & Save</p>
-            <div data-qty-discount-widget data-product-id="{{ product.id }}">
-              <em style="color:#5c6664;font-size:13px;">Quantity-discount widget renders here.</em>
-            </div>
+            <div data-qty-discount-widget data-product-id="{{ product.id }}"><em style="color:#5c6664;font-size:13px;">Quantity-discount widget renders here.</em></div>
           </div>
         {%- endif -%}
 
@@ -232,7 +209,11 @@
             <span class="vb-pb__price-was">{{ current_variant.compare_at_price | money }}</span>
             <span class="vb-pb__price-save">SAVE −{{ savings_pct }}%</span>
           {%- endif -%}
-          <span class="vb-pb__price-each">Free shipping over R400 · 30-day money-back</span>
+        </div>
+
+        <div class="vb-pb__shipnote">
+          <span class="vb-pb__shipnote-icon">🚚</span>
+          <span>{{ section.settings.ship_note | default: 'Free shipping over the free-shipping threshold · 30-day money-back guarantee' }}</span>
         </div>
 
         <div class="vb-pb__qty-row">
@@ -241,21 +222,44 @@
             <input type="number" name="quantity" value="1" min="1" />
             <button type="button" aria-label="Increase" data-qty-plus>+</button>
           </div>
-          <button type="submit" class="vb-pb__atc" {% unless current_variant.available %}disabled{% endunless %}>
-            {% if current_variant.available %}🛒 Add to Cart{% else %}Sold out{% endif %}
-          </button>
+          <button type="submit" class="vb-pb__atc" {% unless current_variant.available %}disabled{% endunless %}>{% if current_variant.available %}🛒 Add to Cart{% else %}Sold out{% endif %}</button>
         </div>
         {%- if section.settings.show_buynow and current_variant.available -%}
           <button type="submit" name="checkout" class="vb-pb__buynow">⚡ Buy It Now</button>
         {%- endif -%}
       </form>
 
+      <div class="vb-pb__pay">
+        <span class="vb-pb__pay-label">We accept</span>
+        <span class="vb-pb__pay-icon" style="color:#1a1f71;">VISA</span>
+        <span class="vb-pb__pay-icon" style="color:#eb001b;">MC</span>
+        <span class="vb-pb__pay-icon" style="color:#003087;">AMEX</span>
+        <span class="vb-pb__pay-icon" style="color:#5f259f;">PayPal</span>
+        <span class="vb-pb__pay-icon" style="color:#000;">Apple&nbsp;Pay</span>
+        <span class="vb-pb__pay-icon" style="color:#4285f4;">G&nbsp;Pay</span>
+        <span class="vb-pb__pay-icon" style="color:#5a31f4;">Shop</span>
+      </div>
+
       <div class="vb-pb__trust">
-        <div class="vb-pb__trust-item"><span>🚚</span><span>Free shipping R400+</span></div>
+        <div class="vb-pb__trust-item"><span>🚚</span><span>Free shipping over threshold</span></div>
         <div class="vb-pb__trust-item"><span>🔄</span><span>30-day money-back</span></div>
         <div class="vb-pb__trust-item"><span>🔬</span><span>Lab-tested every batch</span></div>
         <div class="vb-pb__trust-item"><span>🩺</span><span>Doctor-formulated</span></div>
       </div>
+
+      {%- if section.settings.show_testi_marquee -%}
+        <div class="vb-pb__testi-marquee" aria-label="Recent reviews">
+          <div class="vb-pb__testi-track">
+            {%- for i in (1..2) -%}
+              {%- for block in section.blocks -%}
+                {%- if block.type == 'testi' -%}
+                  <span class="vb-pb__testi"><span class="stars">★★★★★</span> "{{ block.settings.quote }}" — <strong>{{ block.settings.author }}</strong></span>
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endfor -%}
+          </div>
+        </div>
+      {%- endif -%}
     </div>
   </div>
 </section>
@@ -273,16 +277,9 @@
       });
     });
     const qty = root.querySelector('[name="quantity"]');
-    root.querySelector('[data-qty-minus]')?.addEventListener('click', () => {
-      qty.value = Math.max(1, parseInt(qty.value || 1) - 1);
-    });
-    root.querySelector('[data-qty-plus]')?.addEventListener('click', () => {
-      qty.value = parseInt(qty.value || 1) + 1;
-    });
-    /* Variant radio changes update price summary */
-    root.querySelectorAll('input[name="id"]').forEach(r => {
-      r.addEventListener('change', () => location.search = '?variant=' + r.value);
-    });
+    root.querySelector('[data-qty-minus]')?.addEventListener('click', () => { qty.value = Math.max(1, parseInt(qty.value||1)-1); });
+    root.querySelector('[data-qty-plus]')?.addEventListener('click', () => { qty.value = parseInt(qty.value||1)+1; });
+    root.querySelectorAll('input[name="id"]').forEach(r => { r.addEventListener('change', () => location.search='?variant='+r.value); });
   })();
 </script>
 
@@ -294,31 +291,30 @@
   "settings": [
     { "type": "header", "content": "Brand styling" },
     { "type": "color", "id": "brand_primary", "label": "Brand primary", "default": "#4d8c44" },
-    { "type": "color", "id": "brand_dark", "label": "Brand dark (hover)", "default": "#36632f" },
-    { "type": "color", "id": "brand_tint", "label": "Brand tint (bg)", "default": "#f3f7f1" },
+    { "type": "color", "id": "brand_dark", "label": "Brand dark", "default": "#36632f" },
+    { "type": "color", "id": "brand_tint", "label": "Brand tint", "default": "#f3f7f1" },
     { "type": "text", "id": "brand_label", "label": "Brand label", "default": "Velobiotics™" },
     { "type": "header", "content": "Copy" },
     { "type": "text", "id": "rating", "label": "Rating", "default": "4.8" },
     { "type": "text", "id": "review_count", "label": "Review count", "default": "3,500+" },
-    { "type": "textarea", "id": "hook", "label": "Hook (pain-point line)", "default": "Feel fresh, confident, and balanced — every single day. Femina restores your intimate microbiome from the inside out." },
+    { "type": "textarea", "id": "hook", "label": "Hook line" },
+    { "type": "text", "id": "ship_note", "label": "Shipping note", "default": "Free shipping over the free-shipping threshold · 30-day money-back guarantee" },
     { "type": "header", "content": "Widgets" },
-    { "type": "checkbox", "id": "show_subscription", "label": "Show subscription slot", "default": true },
-    { "type": "checkbox", "id": "show_qty_discounts", "label": "Show quantity-discount slot", "default": true },
-    { "type": "checkbox", "id": "show_buynow", "label": "Show Buy It Now button", "default": true }
+    { "type": "checkbox", "id": "show_subscription", "label": "Subscription slot", "default": true },
+    { "type": "checkbox", "id": "show_qty_discounts", "label": "Quantity-discount slot", "default": true },
+    { "type": "checkbox", "id": "show_buynow", "label": "Show Buy It Now", "default": true },
+    { "type": "checkbox", "id": "show_testi_marquee", "label": "Scrolling testimonials", "default": true }
   ],
   "blocks": [
     { "type": "benefit", "name": "Quick benefit", "limit": 6, "settings": [
-      { "type": "text", "id": "icon", "label": "Icon / emoji", "default": "✓" },
-      { "type": "text", "id": "text", "label": "Text", "default": "Daily intimate balance" }
+      { "type": "text", "id": "icon", "label": "Icon", "default": "✓" },
+      { "type": "text", "id": "text", "label": "Text", "default": "Benefit" }
+    ]},
+    { "type": "testi", "name": "Testimonial pill", "limit": 12, "settings": [
+      { "type": "text", "id": "quote", "label": "Quote", "default": "Game-changer for my gut" },
+      { "type": "text", "id": "author", "label": "Author", "default": "Kim S." }
     ]}
   ],
-  "presets": [
-    { "name": "VB · Product hero", "blocks": [
-      { "type": "benefit", "settings": { "icon": "🌸", "text": "Daily intimate balance" } },
-      { "type": "benefit", "settings": { "icon": "🛡️", "text": "Recurrent BV & UTI defence" } },
-      { "type": "benefit", "settings": { "icon": "💧", "text": "Cranberry urinary support" } },
-      { "type": "benefit", "settings": { "icon": "⚡", "text": "1000× more delivery" } }
-    ]}
-  ]
+  "presets": [{ "name": "VB · Product hero" }]
 }
 {% endschema %}

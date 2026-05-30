@@ -1,0 +1,81 @@
+{%- comment -%}
+  Velobiotics final closing CTA — full-bleed Velobiotics green hero band
+{%- endcomment -%}
+
+<style>
+  .vb-final { background: linear-gradient(135deg, #36632f 0%, #4d8c44 50%, #6ec56e 100%); color: #fff; padding: 80px 24px; position: relative; overflow: hidden; }
+  .vb-final::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 25% 50%, rgba(255,255,255,0.10) 0%, transparent 50%), radial-gradient(circle at 75% 50%, rgba(255,255,255,0.08) 0%, transparent 50%); pointer-events: none; }
+  .vb-final__inner { position: relative; max-width: 920px; margin: 0 auto; text-align: center; z-index: 2; }
+  .vb-final__eyebrow { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.16); color: #fff; padding: 7px 16px; border-radius: 999px; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; margin: 0 0 18px; border: 1px solid rgba(255,255,255,0.28); backdrop-filter: blur(8px); }
+  .vb-final__eyebrow::before { content: ''; width: 7px; height: 7px; background: #ffd166; border-radius: 50%; box-shadow: 0 0 10px #ffd166; }
+  .vb-final__title { font-size: clamp(30px, 4.6vw, 48px); font-weight: 800; line-height: 1.1; margin: 0 0 16px; color: #fff !important; letter-spacing: -0.01em; }
+  .vb-final__title em { font-style: italic; color: #fffaca; font-weight: 700; display: block; }
+  .vb-final__sub { font-size: 17px; line-height: 1.6; color: rgba(255,255,255,0.92); margin: 0 auto 28px; max-width: 640px; }
+  .vb-final__ctas { display: inline-flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .vb-final a.vb-final__cta { display: inline-flex; align-items: center; padding: 14px 30px; border-radius: 999px; text-decoration: none; font-weight: 700; font-size: 15.5px; transition: transform 0.18s ease, box-shadow 0.18s ease; }
+  .vb-final a.vb-final__cta--primary { background: #fff; color: #36632f !important; box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22); }
+  .vb-final a.vb-final__cta--primary:hover { transform: translateY(-3px); box-shadow: 0 16px 36px rgba(0, 0, 0, 0.30); }
+  .vb-final a.vb-final__cta--secondary { background: transparent; color: #fff !important; border: 2px solid rgba(255,255,255,0.6); }
+  .vb-final a.vb-final__cta--secondary:hover { border-color: #fff; background: rgba(255,255,255,0.08); }
+  .vb-final__proof { margin-top: 28px; font-size: 13.5px; color: rgba(255,255,255,0.86); display: inline-flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+  .vb-final__proof span { display: inline-flex; align-items: center; gap: 4px; }
+  @media (max-width: 749px) {
+    .vb-final { padding: 56px 18px; }
+    .vb-final__title { font-size: clamp(26px, 8vw, 34px); }
+    .vb-final__sub { font-size: 15.5px; }
+    .vb-final a.vb-final__cta { padding: 12px 24px; font-size: 14px; }
+    .vb-final__proof { font-size: 12px; gap: 10px; margin-top: 22px; }
+  }
+</style>
+
+<section class="vb-final">
+  <div class="vb-final__inner">
+    {%- if section.settings.eyebrow != blank -%}<span class="vb-final__eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+    <h2 class="vb-final__title">
+      {{ section.settings.title_pre }}
+      {%- if section.settings.title_highlight != blank -%}<em>{{ section.settings.title_highlight }}</em>{%- endif -%}
+    </h2>
+    {%- if section.settings.sub != blank -%}<p class="vb-final__sub">{{ section.settings.sub }}</p>{%- endif -%}
+    <div class="vb-final__ctas">
+      {%- if section.settings.cta1_text != blank -%}<a href="{{ section.settings.cta1_link | default: '#' }}" class="vb-final__cta vb-final__cta--primary">{{ section.settings.cta1_text }}</a>{%- endif -%}
+      {%- if section.settings.cta2_text != blank -%}<a href="{{ section.settings.cta2_link | default: '#' }}" class="vb-final__cta vb-final__cta--secondary">{{ section.settings.cta2_text }}</a>{%- endif -%}
+    </div>
+    {%- if section.blocks.size > 0 -%}
+      <div class="vb-final__proof">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'proof' -%}<span {{ block.shopify_attributes }}>{{ block.settings.icon }} {{ block.settings.text }}</span>{%- endif -%}
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "VB · Final CTA",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Start your gut wellness journey" },
+    { "type": "text", "id": "title_pre", "label": "Title (start)", "default": "Feel the Difference —" },
+    { "type": "text", "id": "title_highlight", "label": "Title (highlight)", "default": "Billions Strong, Scientifically Proven." },
+    { "type": "textarea", "id": "sub", "label": "Sub-text", "default": "Every capsule, chewable, and suppository is built to survive — so you can thrive." },
+    { "type": "text", "id": "cta1_text", "label": "Primary CTA", "default": "Shop the Range →" },
+    { "type": "url", "id": "cta1_link", "label": "Primary CTA link" },
+    { "type": "text", "id": "cta2_text", "label": "Secondary CTA", "default": "🧬 Take The Quiz" },
+    { "type": "url", "id": "cta2_link", "label": "Secondary CTA link" }
+  ],
+  "blocks": [
+    { "type": "proof", "name": "Proof item", "settings": [
+      { "type": "text", "id": "icon", "label": "Icon / emoji", "default": "✅" },
+      { "type": "text", "id": "text", "label": "Text", "default": "30-day money-back" }
+    ]}
+  ],
+  "presets": [
+    { "name": "VB · Final CTA", "blocks": [
+      { "type": "proof", "settings": { "icon": "✅", "text": "30-day money-back guarantee" } },
+      { "type": "proof", "settings": { "icon": "🚚", "text": "Free shipping over R400" } },
+      { "type": "proof", "settings": { "icon": "🔬", "text": "Lab-tested every batch" } }
+    ]}
+  ]
+}
+{% endschema %}

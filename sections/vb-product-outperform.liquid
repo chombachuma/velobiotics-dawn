@@ -1,29 +1,55 @@
 {%- comment -%}
-  VB · Product Outperform v2 — Feature/Description table (matches live theme style) + Add to Cart CTA
+  VB · Product Outperform v3 — 4-column comparison table (Brand vs General Probiotic vs Others)
+  Standard cross-brand template. Brand column gets the brand color + logo; competitors get red ✕.
 {%- endcomment -%}
 
 {%- liquid
   assign bp = section.settings.brand_primary | default: '#4d8c44'
   assign bt = section.settings.brand_tint | default: '#f3f7f1'
   assign bd = section.settings.brand_dark | default: '#36632f'
+  assign brand_logo_url = section.settings.brand_logo_url | default: ''
+  assign brand_logo = section.settings.brand_logo
   assign current_variant = product.selected_or_first_available_variant
 -%}
 
 <style>
-  .vb-pof { padding: 50px 20px; max-width: 1180px; margin: 0 auto; --bp: {{ bp }}; --bt: {{ bt }}; --bd: {{ bd }}; }
-  .vb-pof__head { text-align: center; margin: 0 0 32px; }
+  .vb-pof { padding: 60px 20px; max-width: 1180px; margin: 0 auto; --bp: {{ bp }}; --bt: {{ bt }}; --bd: {{ bd }}; }
+  .vb-pof__head { text-align: center; margin: 0 0 32px; max-width: 760px; margin-left: auto; margin-right: auto; }
   .vb-pof__eyebrow { display: inline-flex; align-items: center; gap: 6px; background: color-mix(in srgb, var(--bp) 12%, #fff); color: var(--bp); padding: 6px 13px; border-radius: 999px; font-size: 11.5px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 12px; }
-  .vb-pof__title { font-size: clamp(24px, 3.2vw, 34px); font-weight: 800; color: #1a1a1a; margin: 0 0 8px; letter-spacing: -0.02em; }
-  .vb-pof__sub { font-size: 15px; color: #5c6664; margin: 0; max-width: 640px; margin-left: auto; margin-right: auto; }
+  .vb-pof__title { font-size: clamp(26px, 3.6vw, 38px); font-weight: 800; color: #1a1a1a; margin: 0 0 12px; letter-spacing: -0.02em; line-height: 1.15; }
+  .vb-pof__sub { font-size: 15px; color: #5c6664; margin: 0; line-height: 1.6; }
 
-  .vb-pof__table { width: 100%; border-collapse: separate; border-spacing: 0; background: #fff; border-radius: 22px; overflow: hidden; box-shadow: 0 14px 36px rgba(0,0,0,0.06); border: 1px solid #e3ece1; }
-  .vb-pof__th { background: linear-gradient(180deg, var(--bt) 0%, #fff 100%); font-size: 13px; font-weight: 800; color: #1a1a1a; padding: 18px 22px; text-align: left; letter-spacing: 0.04em; text-transform: uppercase; }
-  .vb-pof__th--brand { color: var(--bp); }
-  .vb-pof__row { transition: background 0.15s ease; }
-  .vb-pof__row:nth-child(odd) td { background: color-mix(in srgb, var(--bp) 3%, #fff); }
-  .vb-pof__row:hover td { background: color-mix(in srgb, var(--bp) 7%, #fff); }
-  .vb-pof__feature { padding: 18px 22px; font-size: 14.5px; font-weight: 800; color: var(--bp); width: 38%; vertical-align: top; border-top: 1px solid #f0eaf0; }
-  .vb-pof__desc { padding: 18px 22px; font-size: 14.5px; color: #2b3a2a; line-height: 1.55; vertical-align: top; border-top: 1px solid #f0eaf0; }
+  .vb-pof__table-wrap { border: 1px solid #e3ece1; border-radius: 18px; overflow: hidden; box-shadow: 0 14px 36px rgba(0,0,0,0.06); background: #fff; }
+  .vb-pof__grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr); }
+  .vb-pof__hcell { padding: 22px 14px; text-align: center; font-size: 14px; font-weight: 800; color: #1a1a1a; background: #fff; border-bottom: 1px solid #e3ece1; display: flex; align-items: center; justify-content: center; min-height: 86px; }
+  .vb-pof__hcell--features { text-align: left; justify-content: flex-start; padding-left: 24px; }
+  .vb-pof__hcell--brand { background: var(--bp); color: #fff; }
+  .vb-pof__hcell--brand img { max-height: 38px; max-width: 90%; width: auto; height: auto; display: block; filter: brightness(0) invert(1); }
+  .vb-pof__hcell--brand .vb-pof__hcell-text { color: #fff; }
+  .vb-pof__hcell-icon { display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; border-radius: 50%; background: #fff; padding: 4px; }
+  .vb-pof__hcell-icon img { max-width: 100%; max-height: 100%; filter: none !important; }
+
+  .vb-pof__cell { padding: 22px 14px; text-align: center; font-size: 15px; font-weight: 700; color: #1a1a1a; border-bottom: 1px solid #f0eaf0; display: flex; align-items: center; justify-content: center; min-height: 64px; }
+  .vb-pof__cell--feature { justify-content: flex-start; text-align: left; padding-left: 24px; background: #fff; }
+  .vb-pof__cell--brand { background: var(--bp); color: #fff; }
+  .vb-pof__cell--alt { background: #f4f5f6; }
+  .vb-pof__grid > .vb-pof__cell:nth-child(8n+1),
+  .vb-pof__grid > .vb-pof__cell:nth-child(8n+2),
+  .vb-pof__grid > .vb-pof__cell:nth-child(8n+3),
+  .vb-pof__grid > .vb-pof__cell:nth-child(8n+4) { background: #fff; }
+  .vb-pof__grid > .vb-pof__cell:nth-child(8n+5),
+  .vb-pof__grid > .vb-pof__cell:nth-child(8n+6),
+  .vb-pof__grid > .vb-pof__cell:nth-child(8n+7),
+  .vb-pof__grid > .vb-pof__cell:nth-child(8n+8) { background: #f4f5f6; }
+  /* Brand column ALWAYS keeps brand color regardless of odd/even */
+  .vb-pof__grid > .vb-pof__cell--brand { background: var(--bp) !important; }
+  /* Last row removes bottom border */
+  .vb-pof__grid > .vb-pof__cell:nth-last-child(-n+4) { border-bottom: none; }
+
+  .vb-pof__tick, .vb-pof__cross { display: inline-flex; align-items: center; justify-content: center; font-weight: 900; line-height: 1; }
+  .vb-pof__tick { color: #fff; font-size: 26px; text-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+  .vb-pof__cross { color: #d83838; font-size: 24px; }
+  .vb-pof__partial { color: #c98a00; font-size: 24px; font-weight: 900; }
 
   .vb-pof__cta-wrap { text-align: center; margin: 32px 0 0; display: flex; flex-direction: column; align-items: center; gap: 10px; }
   .vb-pof__cta { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 16px 36px; background: var(--bp); color: #fff !important; border: none; border-radius: 999px; font-weight: 800; font-size: 15px; cursor: pointer; transition: all 0.2s ease; box-shadow: 0 12px 26px color-mix(in srgb, var(--bp) 30%, transparent); text-decoration: none; }
@@ -33,38 +59,78 @@
   .vb-pof__cta-note { font-size: 12px; color: #5c6664; font-weight: 600; }
 
   @media (max-width: 749px) {
-    .vb-pof { padding: 36px 12px; }
-    .vb-pof__th { padding: 14px 14px; font-size: 11.5px; }
-    .vb-pof__feature { padding: 14px 14px; font-size: 13.5px; width: 38%; }
-    .vb-pof__desc { padding: 14px 14px; font-size: 13px; }
+    .vb-pof { padding: 40px 12px; }
+    .vb-pof__head { margin-bottom: 22px; }
+    .vb-pof__grid { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr); }
+    .vb-pof__hcell { padding: 14px 6px; min-height: 70px; font-size: 11px; }
+    .vb-pof__hcell--features { padding-left: 12px; font-size: 12px; }
+    .vb-pof__hcell--brand img { max-height: 30px; }
+    .vb-pof__hcell-icon { width: 32px; height: 32px; }
+    .vb-pof__cell { padding: 14px 6px; font-size: 12.5px; min-height: 56px; }
+    .vb-pof__cell--feature { padding-left: 12px; font-size: 12.5px; line-height: 1.3; }
+    .vb-pof__tick { font-size: 20px; }
+    .vb-pof__cross, .vb-pof__partial { font-size: 18px; }
     .vb-pof__cta { padding: 13px 26px; font-size: 13.5px; }
+  }
+  @media (max-width: 380px) {
+    .vb-pof__hcell { font-size: 10px; padding: 12px 4px; }
+    .vb-pof__hcell--features { font-size: 11px; }
+    .vb-pof__cell--feature { font-size: 11.5px; padding-left: 10px; }
+    .vb-pof__cell { padding: 12px 4px; font-size: 11px; }
   }
 </style>
 
 <section class="vb-pof">
   <div class="vb-pof__head">
-    <span class="vb-pof__eyebrow">{{ section.settings.eyebrow | default: 'Key benefits' }}</span>
-    <h2 class="vb-pof__title">{{ section.settings.title | default: 'Why we outperform' }}</h2>
+    {%- if section.settings.eyebrow != blank -%}<span class="vb-pof__eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+    <h2 class="vb-pof__title">{{ section.settings.title | default: 'Why We Outperform Others' }}</h2>
     {%- if section.settings.sub != blank -%}<p class="vb-pof__sub">{{ section.settings.sub }}</p>{%- endif -%}
   </div>
-  <table class="vb-pof__table">
-    <thead>
-      <tr>
-        <th class="vb-pof__th vb-pof__th--brand">{{ section.settings.col_feature | default: 'Feature' }}</th>
-        <th class="vb-pof__th">{{ section.settings.col_desc | default: 'Description' }}</th>
-      </tr>
-    </thead>
-    <tbody>
+  <div class="vb-pof__table-wrap">
+    <div class="vb-pof__grid" role="table" aria-label="Feature comparison">
+      <!-- Header row -->
+      <div class="vb-pof__hcell vb-pof__hcell--features" role="columnheader">{{ section.settings.col_features | default: 'Features' }}</div>
+      <div class="vb-pof__hcell vb-pof__hcell--brand" role="columnheader">
+        {%- if brand_logo != blank -%}
+          <span class="vb-pof__hcell-icon"><img src="{{ brand_logo | image_url: width: 120 }}" alt="{{ section.settings.col_brand | default: 'Our brand' | escape }}" /></span>
+        {%- elsif brand_logo_url != blank -%}
+          <span class="vb-pof__hcell-icon"><img src="{{ brand_logo_url }}" alt="{{ section.settings.col_brand | default: 'Our brand' | escape }}" /></span>
+        {%- else -%}
+          <span class="vb-pof__hcell-text">{{ section.settings.col_brand | default: 'Our brand' }}</span>
+        {%- endif -%}
+      </div>
+      <div class="vb-pof__hcell" role="columnheader">{{ section.settings.col_b | default: 'General Probiotic' }}</div>
+      <div class="vb-pof__hcell" role="columnheader">{{ section.settings.col_c | default: 'Others' }}</div>
+
+      <!-- Body rows -->
       {%- for block in section.blocks -%}
         {%- if block.type == 'row' -%}
-          <tr class="vb-pof__row" {{ block.shopify_attributes }}>
-            <td class="vb-pof__feature">{{ block.settings.feature }}</td>
-            <td class="vb-pof__desc">{{ block.settings.description }}</td>
-          </tr>
+          <div class="vb-pof__cell vb-pof__cell--feature" role="cell" {{ block.shopify_attributes }}>{{ block.settings.feature }}</div>
+          <div class="vb-pof__cell vb-pof__cell--brand" role="cell">
+            {%- case block.settings.brand_state -%}
+              {%- when 'yes' -%}<span class="vb-pof__tick">✓</span>
+              {%- when 'partial' -%}<span class="vb-pof__partial" style="color:#fff;">~</span>
+              {%- when 'no' -%}<span class="vb-pof__cross" style="color:#fff;">✕</span>
+            {%- endcase -%}
+          </div>
+          <div class="vb-pof__cell" role="cell">
+            {%- case block.settings.b_state -%}
+              {%- when 'yes' -%}<span class="vb-pof__tick" style="color:var(--bp);">✓</span>
+              {%- when 'partial' -%}<span class="vb-pof__partial">~</span>
+              {%- when 'no' -%}<span class="vb-pof__cross">✕</span>
+            {%- endcase -%}
+          </div>
+          <div class="vb-pof__cell" role="cell">
+            {%- case block.settings.c_state -%}
+              {%- when 'yes' -%}<span class="vb-pof__tick" style="color:var(--bp);">✓</span>
+              {%- when 'partial' -%}<span class="vb-pof__partial">~</span>
+              {%- when 'no' -%}<span class="vb-pof__cross">✕</span>
+            {%- endcase -%}
+          </div>
         {%- endif -%}
       {%- endfor -%}
-    </tbody>
-  </table>
+    </div>
+  </div>
   <div class="vb-pof__cta-wrap">
     <button type="button" class="vb-pof__cta" data-vbpof-atc data-variant-id="{{ current_variant.id }}" {% unless current_variant.available %}disabled{% endunless %}>
       🛒 {{ section.settings.cta_text | default: 'Add to Cart' }} →
@@ -118,18 +184,26 @@
     { "type": "color", "id": "brand_primary", "label": "Brand primary", "default": "#4d8c44" },
     { "type": "color", "id": "brand_dark", "label": "Brand dark", "default": "#36632f" },
     { "type": "color", "id": "brand_tint", "label": "Brand tint", "default": "#f3f7f1" },
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Key benefits" },
-    { "type": "text", "id": "title", "label": "Title", "default": "Why we outperform" },
-    { "type": "textarea", "id": "sub", "label": "Sub-text" },
-    { "type": "text", "id": "col_feature", "label": "Column A label", "default": "Feature" },
-    { "type": "text", "id": "col_desc", "label": "Column B label", "default": "Description" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "title", "label": "Title", "default": "Why We Outperform Others" },
+    { "type": "textarea", "id": "sub", "label": "Sub-text", "default": "Experience unmatched freshness and confidence with our unique blend of powerful probiotics and advanced absorption technology." },
+    { "type": "header", "content": "Column headers" },
+    { "type": "text", "id": "col_features", "label": "Column 1 label", "default": "Features" },
+    { "type": "text", "id": "col_brand", "label": "Column 2 fallback label (if no logo)", "default": "Velobiotics" },
+    { "type": "image_picker", "id": "brand_logo", "label": "Brand logo (white version, will be tinted by background)" },
+    { "type": "url", "id": "brand_logo_url", "label": "Brand logo URL (fallback)" },
+    { "type": "text", "id": "col_b", "label": "Column 3 label", "default": "General Probiotic" },
+    { "type": "text", "id": "col_c", "label": "Column 4 label", "default": "Others" },
+    { "type": "header", "content": "CTA" },
     { "type": "text", "id": "cta_text", "label": "CTA text", "default": "Add to Cart" },
     { "type": "text", "id": "cta_note", "label": "CTA note", "default": "30-day money-back · Free shipping over the free-shipping threshold" }
   ],
   "blocks": [
-    { "type": "row", "name": "Feature row", "limit": 12, "settings": [
-      { "type": "text", "id": "feature", "label": "Feature", "default": "10 Probiotic Strains" },
-      { "type": "textarea", "id": "description", "label": "Description", "default": "Rebalances vaginal flora and reduces harmful bacteria that cause odor." }
+    { "type": "row", "name": "Comparison row", "limit": 14, "settings": [
+      { "type": "text", "id": "feature", "label": "Feature", "default": "Feature" },
+      { "type": "select", "id": "brand_state", "label": "Brand state", "options": [{"value":"yes","label":"✓ Yes"},{"value":"no","label":"✕ No"},{"value":"partial","label":"~ Partial"}], "default": "yes" },
+      { "type": "select", "id": "b_state", "label": "General Probiotic state", "options": [{"value":"yes","label":"✓ Yes"},{"value":"no","label":"✕ No"},{"value":"partial","label":"~ Partial"}], "default": "no" },
+      { "type": "select", "id": "c_state", "label": "Others state", "options": [{"value":"yes","label":"✓ Yes"},{"value":"no","label":"✕ No"},{"value":"partial","label":"~ Partial"}], "default": "no" }
     ]}
   ],
   "presets": [{ "name": "VB · Outperform" }]

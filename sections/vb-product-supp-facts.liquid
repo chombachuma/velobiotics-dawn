@@ -1,0 +1,199 @@
+{%- comment -%}
+  VB · Product Supplement Facts (deep dive) — full clinical-grade label
+{%- endcomment -%}
+
+{%- liquid
+  assign bp = section.settings.brand_primary | default: '#4d8c44'
+  assign bt = section.settings.brand_tint | default: '#f3f7f1'
+  assign bd = section.settings.brand_dark | default: '#36632f'
+-%}
+
+<style>
+  .vb-psf { padding: 50px 20px; max-width: 1100px; margin: 0 auto; --bp: {{ bp }}; --bt: {{ bt }}; --bd: {{ bd }}; }
+  .vb-psf__head { text-align: center; margin: 0 0 28px; max-width: 720px; margin-left: auto; margin-right: auto; }
+  .vb-psf__eyebrow { display: inline-flex; align-items: center; gap: 6px; background: color-mix(in srgb, var(--bp) 12%, #fff); color: var(--bp); padding: 6px 13px; border-radius: 999px; font-size: 11.5px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 12px; }
+  .vb-psf__title { font-size: clamp(24px, 3.2vw, 32px); font-weight: 800; color: #1a1a1a; margin: 0 0 8px; letter-spacing: -0.02em; line-height: 1.2; }
+  .vb-psf__sub { font-size: 15px; color: #5c6664; margin: 0; line-height: 1.55; }
+
+  .vb-psf__panel { background: #fff; border: 2px solid var(--bp); border-radius: 18px; overflow: hidden; box-shadow: 0 14px 36px rgba(0,0,0,0.06); }
+  .vb-psf__banner { background: var(--bp); color: #fff; padding: 16px 22px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .vb-psf__banner-title { font-size: 18px; font-weight: 900; letter-spacing: 0.02em; text-transform: uppercase; }
+  .vb-psf__banner-meta { font-size: 12px; font-weight: 700; opacity: 0.92; letter-spacing: 0.04em; text-transform: uppercase; }
+  .vb-psf__sub-banner { background: color-mix(in srgb, var(--bp) 10%, #fff); padding: 12px 22px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 13px; color: #2b3a2a; font-weight: 700; border-bottom: 1px solid color-mix(in srgb, var(--bp) 16%, transparent); }
+
+  .vb-psf__table { width: 100%; border-collapse: collapse; }
+  .vb-psf__th { background: color-mix(in srgb, var(--bp) 6%, #fff); color: #1a1a1a; font-size: 11px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; padding: 12px 22px; text-align: left; border-bottom: 2px solid color-mix(in srgb, var(--bp) 20%, transparent); }
+  .vb-psf__th--amt, .vb-psf__th--dv { text-align: right; }
+  .vb-psf__row td { padding: 11px 22px; font-size: 13.5px; color: #1a1a1a; border-bottom: 1px solid #f0eaf0; vertical-align: top; }
+  .vb-psf__row td:first-child { font-weight: 700; }
+  .vb-psf__row td:nth-child(2), .vb-psf__row td:nth-child(3) { text-align: right; color: var(--bp); font-weight: 800; white-space: nowrap; }
+  .vb-psf__row:hover td { background: color-mix(in srgb, var(--bp) 3%, #fff); }
+
+  .vb-psf__strains { padding: 14px 22px; background: color-mix(in srgb, var(--bp) 3%, #fff); border-bottom: 1px solid #f0eaf0; }
+  .vb-psf__strains-label { font-size: 12px; font-weight: 800; color: var(--bp); letter-spacing: 0.04em; text-transform: uppercase; margin: 0 0 6px; }
+  .vb-psf__strains-list { font-size: 12.5px; line-height: 1.5; color: #2b3a2a; font-style: italic; margin: 0; }
+
+  .vb-psf__notes { padding: 12px 22px; background: #fff; font-size: 11px; color: #5c6664; line-height: 1.5; border-bottom: 1px dashed #e3ece1; }
+  .vb-psf__notes p { margin: 0 0 4px; }
+  .vb-psf__notes p:last-child { margin: 0; }
+
+  .vb-psf__other { padding: 14px 22px; font-size: 12.5px; color: #2b3a2a; background: color-mix(in srgb, var(--bp) 3%, #fff); }
+  .vb-psf__other strong { color: var(--bp); font-weight: 800; }
+  .vb-psf__other + .vb-psf__other { border-top: 1px solid #f0eaf0; }
+
+  .vb-psf__usage { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); border-top: 1px solid color-mix(in srgb, var(--bp) 16%, transparent); background: #fff; }
+  .vb-psf__usage > div { padding: 14px 18px; border-right: 1px solid #f0eaf0; }
+  .vb-psf__usage > div:last-child { border-right: none; }
+  .vb-psf__usage-label { font-size: 10.5px; font-weight: 800; color: var(--bp); letter-spacing: 0.06em; text-transform: uppercase; margin: 0 0 5px; }
+  .vb-psf__usage-text { font-size: 12.5px; line-height: 1.45; color: #2b3a2a; margin: 0; }
+
+  .vb-psf__disclaimer { background: color-mix(in srgb, var(--bp) 5%, #fff); border-top: 1px dashed #e3ece1; padding: 12px 22px; font-size: 10.5px; color: #5c6664; line-height: 1.45; text-align: center; font-style: italic; }
+
+  @media (max-width: 749px) {
+    .vb-psf { padding: 36px 12px; }
+    .vb-psf__banner { padding: 13px 16px; }
+    .vb-psf__banner-title { font-size: 15px; }
+    .vb-psf__banner-meta { font-size: 11px; }
+    .vb-psf__sub-banner { padding: 10px 16px; font-size: 12px; }
+    .vb-psf__th { padding: 10px 14px; font-size: 10px; }
+    .vb-psf__row td { padding: 10px 14px; font-size: 12px; }
+    .vb-psf__th--dv, .vb-psf__row td:nth-child(3) { display: none; }
+    .vb-psf__strains, .vb-psf__notes, .vb-psf__other { padding: 12px 14px; }
+    .vb-psf__usage > div { padding: 12px 14px; border-right: none; border-bottom: 1px solid #f0eaf0; }
+    .vb-psf__usage > div:last-child { border-bottom: none; }
+  }
+</style>
+
+<section class="vb-psf">
+  <div class="vb-psf__head">
+    {%- if section.settings.eyebrow != blank -%}<span class="vb-psf__eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+    <h2 class="vb-psf__title">{{ section.settings.title | default: 'Full Supplement Facts' }}</h2>
+    {%- if section.settings.sub != blank -%}<p class="vb-psf__sub">{{ section.settings.sub }}</p>{%- endif -%}
+  </div>
+
+  <div class="vb-psf__panel">
+    <div class="vb-psf__banner">
+      <span class="vb-psf__banner-title">{{ section.settings.banner_title | default: 'Supplement Facts' }}</span>
+      <span class="vb-psf__banner-meta">{{ section.settings.banner_meta | default: 'Lab-tested · Doctor-formulated' }}</span>
+    </div>
+    {%- if section.settings.servings_per_container != blank or section.settings.serving_size != blank -%}
+      <div class="vb-psf__sub-banner">
+        {%- if section.settings.servings_per_container != blank -%}<span>Servings per container: <strong>{{ section.settings.servings_per_container }}</strong></span>{%- endif -%}
+        {%- if section.settings.serving_size != blank -%}<span>Serving size: <strong>{{ section.settings.serving_size }}</strong></span>{%- endif -%}
+      </div>
+    {%- endif -%}
+
+    <table class="vb-psf__table">
+      <thead>
+        <tr>
+          <th class="vb-psf__th">{{ section.settings.col_ing | default: 'Amount per serving' }}</th>
+          <th class="vb-psf__th vb-psf__th--amt">{{ section.settings.col_amt | default: 'Amount' }}</th>
+          <th class="vb-psf__th vb-psf__th--dv">{{ section.settings.col_dv | default: 'Daily Value %' }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'row' -%}
+            <tr class="vb-psf__row" {{ block.shopify_attributes }}>
+              <td>{{ block.settings.ingredient }}</td>
+              <td>{{ block.settings.amount }}</td>
+              <td>{{ block.settings.dv | default: '*' }}</td>
+            </tr>
+          {%- endif -%}
+        {%- endfor -%}
+      </tbody>
+    </table>
+
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'strains' -%}
+        <div class="vb-psf__strains" {{ block.shopify_attributes }}>
+          <p class="vb-psf__strains-label">{{ block.settings.label | default: 'Probiotic Strain Blend' }}{% if block.settings.cfu != blank %} — {{ block.settings.cfu }}{% endif %}</p>
+          <p class="vb-psf__strains-list">{{ block.settings.strains }}</p>
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+
+    {%- if section.settings.footnote_dv != blank or section.settings.footnote_cfu != blank or section.settings.footnote_mep != blank -%}
+      <div class="vb-psf__notes">
+        {%- if section.settings.footnote_dv != blank -%}<p>* {{ section.settings.footnote_dv }}</p>{%- endif -%}
+        {%- if section.settings.footnote_cfu != blank -%}<p>§ {{ section.settings.footnote_cfu }}</p>{%- endif -%}
+        {%- if section.settings.footnote_mep != blank -%}<p>β {{ section.settings.footnote_mep }}</p>{%- endif -%}
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.other_ingredients != blank -%}
+      <div class="vb-psf__other"><strong>Other Ingredients:</strong> {{ section.settings.other_ingredients }}</div>
+    {%- endif -%}
+
+    {%- if section.settings.allergens != blank -%}
+      <div class="vb-psf__other"><strong>Free From:</strong> {{ section.settings.allergens }}</div>
+    {%- endif -%}
+
+    {%- if section.settings.suggested_use != blank or section.settings.storage != blank or section.settings.caution != blank -%}
+      <div class="vb-psf__usage">
+        {%- if section.settings.suggested_use != blank -%}
+          <div><p class="vb-psf__usage-label">Suggested Use</p><p class="vb-psf__usage-text">{{ section.settings.suggested_use }}</p></div>
+        {%- endif -%}
+        {%- if section.settings.storage != blank -%}
+          <div><p class="vb-psf__usage-label">Storage</p><p class="vb-psf__usage-text">{{ section.settings.storage }}</p></div>
+        {%- endif -%}
+        {%- if section.settings.caution != blank -%}
+          <div><p class="vb-psf__usage-label">Caution</p><p class="vb-psf__usage-text">{{ section.settings.caution }}</p></div>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.disclaimer != blank -%}
+      <div class="vb-psf__disclaimer">{{ section.settings.disclaimer }}</div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "VB · Supp facts",
+  "tag": "section",
+  "settings": [
+    { "type": "color", "id": "brand_primary", "label": "Brand primary", "default": "#4d8c44" },
+    { "type": "color", "id": "brand_dark", "label": "Brand dark", "default": "#36632f" },
+    { "type": "color", "id": "brand_tint", "label": "Brand tint", "default": "#f3f7f1" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Full transparency" },
+    { "type": "text", "id": "title", "label": "Title", "default": "What is in every capsule" },
+    { "type": "textarea", "id": "sub", "label": "Subtitle", "default": "The full clinical-grade supplement facts panel." },
+    { "type": "header", "content": "Panel banner" },
+    { "type": "text", "id": "banner_title", "label": "Banner title", "default": "Supplement Facts" },
+    { "type": "text", "id": "banner_meta", "label": "Banner meta line", "default": "Lab-tested" },
+    { "type": "text", "id": "servings_per_container", "label": "Servings per container", "default": "60 Capsules" },
+    { "type": "text", "id": "serving_size", "label": "Serving size", "default": "2 Capsules" },
+    { "type": "header", "content": "Table columns" },
+    { "type": "text", "id": "col_ing", "label": "Col 1 label", "default": "Amount per serving" },
+    { "type": "text", "id": "col_amt", "label": "Col 2 label", "default": "Per serving" },
+    { "type": "text", "id": "col_dv", "label": "Col 3 label", "default": "Daily Value %" },
+    { "type": "header", "content": "Footnotes" },
+    { "type": "text", "id": "footnote_dv", "label": "DV footnote", "default": "Daily Value (DV) not established." },
+    { "type": "text", "id": "footnote_cfu", "label": "CFU footnote", "default": "CFU – Colony Forming Units." },
+    { "type": "text", "id": "footnote_mep", "label": "MEP footnote", "default": "MEP – Microencapsulated Probiotics using Velobiotics patented delivery system." },
+    { "type": "header", "content": "Other ingredients / allergens" },
+    { "type": "textarea", "id": "other_ingredients", "label": "Other ingredients", "default": "Microcrystalline cellulose, magnesium stearate, silicon dioxide & coating." },
+    { "type": "textarea", "id": "allergens", "label": "Free From", "default": "Gluten · soy · dairy · artificial colours · preservatives · GMO." },
+    { "type": "header", "content": "Usage panel" },
+    { "type": "textarea", "id": "suggested_use", "label": "Suggested use", "default": "Take 2 capsules daily with a full glass of water." },
+    { "type": "textarea", "id": "storage", "label": "Storage", "default": "Store below 25°C, away from direct sunlight." },
+    { "type": "textarea", "id": "caution", "label": "Caution", "default": "Do not exceed the recommended daily intake. Consult your healthcare practitioner before use during pregnancy, breastfeeding, or chronic medication." },
+    { "type": "textarea", "id": "disclaimer", "label": "Disclaimer", "default": "Not evaluated by SAHPRA. This product is a food supplement; not intended to diagnose, treat, cure, or prevent any disease." }
+  ],
+  "blocks": [
+    { "type": "row", "name": "Row", "settings": [
+      { "type": "text", "id": "ingredient", "label": "Ingredient", "default": "Vitamin C" },
+      { "type": "text", "id": "amount", "label": "Amount", "default": "60 mg" },
+      { "type": "text", "id": "dv", "label": "Daily Value %", "default": "75" }
+    ]},
+    { "type": "strains", "name": "Strain block", "limit": 2, "settings": [
+      { "type": "text", "id": "label", "label": "Block label", "default": "MEPβ Strain Blend" },
+      { "type": "text", "id": "cfu", "label": "CFU total", "default": "1 billion CFUs§" },
+      { "type": "textarea", "id": "strains", "label": "Strains (comma-separated)", "default": "Lactobacillus acidophilus, Lactobacillus plantarum, Lactobacillus casei." }
+    ]}
+  ],
+  "presets": [{ "name": "VB · Supp facts" }]
+}
+{% endschema %}

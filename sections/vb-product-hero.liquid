@@ -335,45 +335,25 @@
     root.querySelector('[data-qty-minus]')?.addEventListener('click', () => { qty.value = Math.max(1, parseInt(qty.value||1)-1); });
     root.querySelector('[data-qty-plus]')?.addEventListener('click', () => { qty.value = parseInt(qty.value||1)+1; });
 
-    // Variant change WITHOUT page reload — update price summary + ATC button state in place
-    const priceNow = root.querySelector('[data-vbp-price-now]');
-    const priceWas = root.querySelector('[data-vbp-price-was]');
-    const priceSave = root.querySelector('[data-vbp-price-save]');
+    // Variant change WITHOUT page reload — ONLY update variant ID + ATC availability.
+    // PRICES are intentionally NOT touched here — the regional pricing plugin (US/SA)
+    // owns the price field and must not be overridden by this section.
     const atcBtn = root.querySelector('[data-vbp-atc]');
-    const saveBadge = root.querySelector('[data-vbpg-save]');
     root.querySelectorAll('input[name="id"]').forEach(r => {
       r.addEventListener('change', () => {
-        const moneyPrice = r.dataset.moneyPrice || '';
-        const moneyCompare = r.dataset.moneyCompare || '';
-        const priceNum = parseFloat(r.dataset.price || 0);
-        const compareNum = parseFloat(r.dataset.compare || 0);
         const isAvailable = r.dataset.available === 'true';
-        if (priceNow) priceNow.textContent = moneyPrice;
-        if (priceWas) {
-          if (moneyCompare && compareNum > priceNum) { priceWas.textContent = moneyCompare; priceWas.style.display = ''; }
-          else priceWas.style.display = 'none';
-        }
-        if (priceSave) {
-          if (compareNum > priceNum) {
-            const pct = Math.round(((compareNum - priceNum) / compareNum) * 100);
-            priceSave.textContent = 'SAVE −' + pct + '%';
-            priceSave.style.display = '';
-            if (saveBadge) saveBadge.innerHTML = '−' + pct + '%<small>SAVE</small>';
-          } else {
-            priceSave.style.display = 'none';
-            if (saveBadge) saveBadge.style.display = 'none';
-          }
-        }
         if (atcBtn) {
           atcBtn.disabled = !isAvailable;
           atcBtn.innerHTML = isAvailable ? '🛒 Add to Cart' : 'Sold out';
         }
-        // Update URL without navigation (so Buy It Now / shareable link still works)
+        // Update URL silently so Buy It Now / shareable links still target the right variant
         if (window.history && window.history.replaceState) {
           const u = new URL(window.location);
           u.searchParams.set('variant', r.value);
           window.history.replaceState({}, '', u);
         }
+        // Let the regional pricing plugin re-resolve prices — dispatch a Shopify-standard event
+        document.dispatchEvent(new CustomEvent('variant:change', { detail: { variantId: r.value } }));
       });
     });
 

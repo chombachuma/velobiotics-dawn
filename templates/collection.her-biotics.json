@@ -1,0 +1,57 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "femina-hero",
+      "settings": {
+        "bg_image_url": "https://media.base44.com/images/public/69e734d64c8c66c266bc562d/547b3222c_Her-Biotics-JPEG-Logo.jpg",
+        "eyebrow": "🌿 Science-Backed Women's Wellness",
+        "headline_pre": "Cultivate Your",
+        "headline_highlight": "Inner Radiance.",
+        "headline_post": "",
+        "sub": "Patented SCO2 Microencapsulated Probiotics deliver 1000× more viable probiotics to your gut. Optimised absorption. Optimised you.",
+        "cta1_text": "Shop Her-Biotics →",
+        "cta1_link": "/collections/her-biotics",
+        "cta2_text": "💖 Cycle Coach",
+        "cta2_link": "https://her-biotics.com",
+        "proof": " Designed by women, for women — every stage, every cycle, every season.",
+        "show_badges": true,
+        "bg_color_start": "#7a3a3a",
+        "bg_color_mid": "#d28f8a",
+        "bg_color_end": "#f5b8b3"
+      },
+      "blocks": {
+        "b1": { "type": "badge", "settings": { "text": "1000× Delivery" } },
+        "b2": { "type": "badge", "settings": { "text": "SCO2 Tech" } },
+        "b3": { "type": "badge", "settings": { "text": "Women-Formulated" } },
+        "b4": { "type": "badge", "settings": { "text": "🌸 Cycle-Aware" } }
+      },
+      "block_order": ["b1","b2","b3","b4"]
+    },
+    "body": { "type": "femina-collection-body", "settings": {} },
+    "grid": {
+      "type": "femina-product-grid",
+      "settings": {
+        "show_heading": true,
+        "eyebrow": "The Collection",
+        "title": "Wellness That Cycles With You",
+        "sub": "Probiotic formulas tailored to every phase of a woman's life — from daily defence to hormonal harmony.",
+        "brand_primary": "#d2585a",
+        "brand_secondary": "#4d8c44",
+        "card_bg": "#fff5f3",
+        "card_bg2": "#ffd6cf",
+        "brand_label": "Her-Biotics™",
+        "products_per_page": 12
+      }
+    }
+  },
+  "order": ["hero","body","grid"]
+}

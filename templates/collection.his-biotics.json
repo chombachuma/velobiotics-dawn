@@ -1,0 +1,57 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "femina-hero",
+      "settings": {
+        "bg_image_url": "https://media.base44.com/images/public/69e736ff6d73a02b90e291d4/bc2878b14_generated_image.png",
+        "eyebrow": "● Velobiotics™ Technology",
+        "headline_pre": "MAN UP.",
+        "headline_highlight": "GUT UP.",
+        "headline_post": "",
+        "sub": "His-Biotics® delivers clinical-grade probiotics engineered for the male microbiome — targeting gut integrity, hormonal balance, and peak cognitive performance.",
+        "cta1_text": "Explore the Range →",
+        "cta1_link": "/collections/his-biotics",
+        "cta2_text": "🔬 The Science",
+        "cta2_link": "https://hisbiotics.com",
+        "proof": " 1000× more probiotic power · 16 strains · 30-day vitality guarantee",
+        "show_badges": true,
+        "bg_color_start": "#051f1f",
+        "bg_color_mid": "#0a3d3d",
+        "bg_color_end": "#0e6b66"
+      },
+      "blocks": {
+        "b1": { "type": "badge", "settings": { "text": "1000× Power" } },
+        "b2": { "type": "badge", "settings": { "text": "16 Strains" } },
+        "b3": { "type": "badge", "settings": { "text": "30-Day Guarantee" } },
+        "b4": { "type": "badge", "settings": { "text": "💪 Clinical Grade" } }
+      },
+      "block_order": ["b1","b2","b3","b4"]
+    },
+    "body": { "type": "femina-collection-body", "settings": {} },
+    "grid": {
+      "type": "femina-product-grid",
+      "settings": {
+        "show_heading": true,
+        "eyebrow": "The Range",
+        "title": "Engineered for the Male Microbiome",
+        "sub": "Clinical-grade probiotics formulated for men — gut integrity, hormonal balance, peak performance.",
+        "brand_primary": "#0a3d3d",
+        "brand_secondary": "#4d8c44",
+        "card_bg": "#e8f3f1",
+        "card_bg2": "#c4ddd8",
+        "brand_label": "His-Biotics®",
+        "products_per_page": 12
+      }
+    }
+  },
+  "order": ["hero","body","grid"]
+}

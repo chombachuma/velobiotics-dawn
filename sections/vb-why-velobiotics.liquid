@@ -1,31 +1,59 @@
-{%- comment -%}
-  VB · Why Choose Velobiotics — 4 reason cards
-{%- endcomment -%}
+{%- comment -%} VB · Why Choose Velobiotics — image + reason cards {%- endcomment -%}
+
+{%- liquid
+  assign img_src = ''
+  if section.settings.image_url != blank
+    assign img_src = section.settings.image_url
+  elsif section.settings.image != blank
+    assign img_src = section.settings.image | image_url: width: 900
+  endif
+-%}
 
 <style>
   .vb-why { padding: 72px 24px; background: #fff; }
   .vb-why__inner { max-width: 1280px; margin: 0 auto; }
-  .vb-why__head { text-align: center; max-width: 760px; margin: 0 auto 48px; }
+  .vb-why__head { text-align: center; max-width: 760px; margin: 0 auto 40px; }
   .vb-why__eyebrow { display: inline-block; color: #4d8c44; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 12px; }
   .vb-why__title { font-size: clamp(28px, 4.2vw, 44px); font-weight: 800; color: #1a1a1a; line-height: 1.12; margin: 0 0 14px; letter-spacing: -0.01em; }
   .vb-why__title em { font-style: normal; color: #4d8c44; }
   .vb-why__sub { font-size: 16.5px; line-height: 1.6; color: #5c6664; margin: 0; }
-  .vb-why__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px; }
-  .vb-why__card { position: relative; padding: 32px 24px 28px; background: linear-gradient(180deg, #fafdf9 0%, #f0f7ee 100%); border-radius: 22px; border: 1px solid #e3ece1; transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease; overflow: hidden; }
-  .vb-why__card::after { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #4d8c44, #6ec56e); border-radius: 22px 22px 0 0; transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease; }
-  .vb-why__card:hover { transform: translateY(-6px); box-shadow: 0 22px 44px rgba(77, 140, 68, 0.18); border-color: rgba(77, 140, 68, 0.35); }
+  .vb-why__layout { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 48px; align-items: center; }
+  .vb-why__visual { position: relative; }
+  .vb-why__visual-frame { position: relative; aspect-ratio: 4/5; border-radius: 24px; overflow: hidden; background: linear-gradient(160deg, #fafdf9 0%, #e3efdf 100%); box-shadow: 0 24px 56px rgba(0,0,0,0.08); }
+  .vb-why__visual-frame img { width: 100%; height: 100%; object-fit: cover; }
+  .vb-why__visual-badge { position: absolute; top: 16px; right: -14px; background: #4d8c44; color: #fff; padding: 14px 18px; border-radius: 16px; box-shadow: 0 20px 40px rgba(77,140,68,0.36); transform: rotate(4deg); z-index: 3; }
+  .vb-why__visual-badge strong { display: block; font-size: 22px; font-weight: 900; line-height: 1; letter-spacing: -0.02em; }
+  .vb-why__visual-badge small { display: block; font-size: 10px; font-weight: 700; letter-spacing: 0.06em; margin-top: 4px; opacity: 0.95; text-transform: uppercase; }
+  .vb-why__visual-quote { position: absolute; bottom: 18px; left: -16px; background: #fff; border-radius: 14px; padding: 12px 14px; max-width: 240px; box-shadow: 0 18px 36px rgba(0,0,0,0.16); border: 1px solid #f0f0f0; }
+  .vb-why__visual-quote-stars { color: #ffb43a; font-size: 12px; letter-spacing: 1px; margin: 0 0 4px; line-height: 1; }
+  .vb-why__visual-quote-text { font-size: 12px; line-height: 1.4; font-weight: 700; color: #1a1a1a; margin: 0; }
+
+  .vb-why__cards { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .vb-why__card { position: relative; padding: 22px 20px 20px; background: linear-gradient(180deg, #fafdf9 0%, #f0f7ee 100%); border-radius: 18px; border: 1px solid #e3ece1; transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease; overflow: hidden; }
+  .vb-why__card::after { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #4d8c44, #6ec56e); border-radius: 18px 18px 0 0; transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease; }
+  .vb-why__card:hover { transform: translateY(-5px); box-shadow: 0 18px 36px rgba(77, 140, 68, 0.18); border-color: rgba(77, 140, 68, 0.35); }
   .vb-why__card:hover::after { transform: scaleX(1); }
-  .vb-why__num { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: #4d8c44; color: #fff; font-weight: 800; font-size: 14px; margin: 0 0 18px; box-shadow: 0 8px 18px rgba(77, 140, 68, 0.34); }
-  .vb-why__icon { width: 64px; height: 64px; border-radius: 18px; background: rgba(77, 140, 68, 0.12); color: #4d8c44; display: inline-flex; align-items: center; justify-content: center; font-size: 30px; margin: 0 0 16px; }
-  .vb-why__name { font-size: 18px; font-weight: 800; color: #1a1a1a; margin: 0 0 8px; line-height: 1.3; }
-  .vb-why__desc { font-size: 14.5px; line-height: 1.55; color: #5c6664; margin: 0; }
+  .vb-why__icon { width: 52px; height: 52px; border-radius: 14px; background: rgba(77, 140, 68, 0.12); color: #4d8c44; display: inline-flex; align-items: center; justify-content: center; font-size: 26px; margin: 0 0 12px; }
+  .vb-why__name { font-size: 15.5px; font-weight: 800; color: #1a1a1a; margin: 0 0 6px; line-height: 1.3; }
+  .vb-why__desc { font-size: 13px; line-height: 1.5; color: #5c6664; margin: 0; }
+
+  @media (max-width: 990px) {
+    .vb-why__layout { grid-template-columns: 1fr; gap: 32px; }
+    .vb-why__visual { max-width: 420px; margin: 0 auto; }
+  }
   @media (max-width: 749px) {
     .vb-why { padding: 48px 16px; }
-    .vb-why__head { margin-bottom: 32px; }
-    .vb-why__grid { grid-template-columns: 1fr; gap: 14px; }
-    .vb-why__card { padding: 24px 20px; border-radius: 18px; }
-    .vb-why__name { font-size: 16px; }
-    .vb-why__desc { font-size: 13.5px; }
+    .vb-why__head { margin-bottom: 28px; }
+    .vb-why__cards { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .vb-why__card { padding: 16px 14px; border-radius: 14px; }
+    .vb-why__icon { width: 42px; height: 42px; font-size: 20px; margin-bottom: 10px; border-radius: 11px; }
+    .vb-why__name { font-size: 13.5px; }
+    .vb-why__desc { font-size: 12px; }
+    .vb-why__visual-badge { padding: 10px 14px; right: -8px; }
+    .vb-why__visual-badge strong { font-size: 17px; }
+    .vb-why__visual-badge small { font-size: 8.5px; }
+    .vb-why__visual-quote { left: -8px; padding: 10px 12px; max-width: 200px; }
+    .vb-why__visual-quote-text { font-size: 11.5px; }
   }
 </style>
 
@@ -36,17 +64,32 @@
       <h2 class="vb-why__title">{{ section.settings.title_pre }}{%- if section.settings.title_highlight != blank %} <em>{{ section.settings.title_highlight }}</em>{%- endif -%}</h2>
       {%- if section.settings.sub != blank -%}<p class="vb-why__sub">{{ section.settings.sub }}</p>{%- endif -%}
     </div>
-    <div class="vb-why__grid">
-      {%- for block in section.blocks -%}
-        {%- if block.type == 'reason' -%}
-          <article class="vb-why__card" {{ block.shopify_attributes }}>
-            {%- if section.settings.show_numbers -%}<span class="vb-why__num">{{ forloop.index }}</span>{%- endif -%}
-            <span class="vb-why__icon">{{ block.settings.icon }}</span>
-            <h3 class="vb-why__name">{{ block.settings.name }}</h3>
-            <p class="vb-why__desc">{{ block.settings.desc }}</p>
-          </article>
+    <div class="vb-why__layout">
+      <div class="vb-why__visual">
+        <div class="vb-why__visual-frame">
+          {%- if img_src != blank -%}<img src="{{ img_src }}" alt="Why choose Velobiotics" loading="lazy" />{%- endif -%}
+        </div>
+        {%- if section.settings.badge_value != blank -%}
+          <span class="vb-why__visual-badge"><strong>{{ section.settings.badge_value }}</strong><small>{{ section.settings.badge_label }}</small></span>
         {%- endif -%}
-      {%- endfor -%}
+        {%- if section.settings.quote_text != blank -%}
+          <div class="vb-why__visual-quote">
+            <div class="vb-why__visual-quote-stars">★★★★★</div>
+            <p class="vb-why__visual-quote-text">"{{ section.settings.quote_text }}"</p>
+          </div>
+        {%- endif -%}
+      </div>
+      <div class="vb-why__cards">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'reason' -%}
+            <article class="vb-why__card" {{ block.shopify_attributes }}>
+              <span class="vb-why__icon">{{ block.settings.icon }}</span>
+              <h3 class="vb-why__name">{{ block.settings.name }}</h3>
+              <p class="vb-why__desc">{{ block.settings.desc }}</p>
+            </article>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
     </div>
   </div>
 </section>
@@ -56,11 +99,17 @@
   "name": "VB · Why Velobiotics",
   "tag": "section",
   "settings": [
+    { "type": "header", "content": "Image" },
+    { "type": "image_picker", "id": "image", "label": "Image" },
+    { "type": "text", "id": "image_url", "label": "Image URL (overrides upload)" },
+    { "type": "text", "id": "badge_value", "label": "Floating badge value", "default": "99%" },
+    { "type": "text", "id": "badge_label", "label": "Floating badge label", "default": "Die in Stomach Acid" },
+    { "type": "text", "id": "quote_text", "label": "Quote text", "default": "I finally feel the difference — every day" },
+    { "type": "header", "content": "Content" },
     { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Why Choose Velobiotics" },
     { "type": "text", "id": "title_pre", "label": "Title (start)", "default": "99% of Probiotics Never Make It to Your Gut." },
     { "type": "text", "id": "title_highlight", "label": "Title (highlight)", "default": "We Fixed That." },
-    { "type": "textarea", "id": "sub", "label": "Sub-text", "default": "Traditional probiotics break down in stomach acid before they can do any good. Velobiotics uses patented Microencapsulation with Supercritical CO₂ to shield every culture — so 1000× more reach your gut, where they actually work." },
-    { "type": "checkbox", "id": "show_numbers", "label": "Show step numbers", "default": false }
+    { "type": "textarea", "id": "sub", "label": "Sub-text", "default": "Traditional probiotics break down in stomach acid before they can do any good. Velobiotics uses patented Microencapsulation with Supercritical CO₂ to shield every culture — so 1000× more reach your gut, where they actually work." }
   ],
   "blocks": [
     { "type": "reason", "name": "Reason", "settings": [
@@ -71,10 +120,10 @@
   ],
   "presets": [
     { "name": "VB · Why Velobiotics", "blocks": [
-      { "type": "reason", "settings": { "icon": "🛡️", "name": "Survives Stomach Acid", "desc": "Patented MEP coating shields every culture from gastric acid and bile so they reach your gut alive." } },
-      { "type": "reason", "settings": { "icon": "🎯", "name": "1000× More Delivered", "desc": "Where 99% of standard probiotics die, ours arrive — by the billions — exactly where you need them." } },
-      { "type": "reason", "settings": { "icon": "🩺", "name": "Doctor-Formulated", "desc": "Built by medical doctors and microbiologists using clinically studied strains — not marketing-grade." } },
-      { "type": "reason", "settings": { "icon": "🌿", "name": "Real Results, You Can Feel", "desc": "Backed by 3,500+ verified reviews and a 30-day money-back guarantee. No noise, just outcomes." } }
+      { "type": "reason", "settings": { "icon": "🛡️", "name": "Survives Stomach Acid", "desc": "Patented MEP coating shields every culture so they reach your gut alive." } },
+      { "type": "reason", "settings": { "icon": "🎯", "name": "1000× More Delivered", "desc": "Where 99% of standard probiotics die, ours arrive by the billions." } },
+      { "type": "reason", "settings": { "icon": "🩺", "name": "Doctor-Formulated", "desc": "Built by medical doctors using clinically-studied strains." } },
+      { "type": "reason", "settings": { "icon": "🌿", "name": "Real Results, You Feel", "desc": "3,500+ verified reviews and a 30-day money-back guarantee." } }
     ]}
   ]
 }

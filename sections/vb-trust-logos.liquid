@@ -1,19 +1,24 @@
-{%- comment -%}
-  VB · Trust logos — 4 partner/certification logo strip from /cdn/shop/files/new-custom-logo-001..004
-{%- endcomment -%}
+{%- comment -%} VB · Trust logos with copy under each (as-seen-on style) {%- endcomment -%}
 
 <style>
-  .vb-tl { padding: 32px 24px; background: #fafdf9; border-top: 1px solid #e3ece1; border-bottom: 1px solid #e3ece1; }
-  .vb-tl__inner { max-width: 1100px; margin: 0 auto; }
-  .vb-tl__label { text-align: center; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #6c7a6b; margin: 0 0 18px; }
-  .vb-tl__grid { display: flex; align-items: center; justify-content: space-around; flex-wrap: wrap; gap: 28px; }
-  .vb-tl__item { display: inline-flex; align-items: center; gap: 12px; opacity: 0.78; transition: opacity 0.18s ease; }
-  .vb-tl__item:hover { opacity: 1; }
-  .vb-tl__item img { height: 48px; width: auto; max-width: 160px; object-fit: contain; filter: grayscale(20%); }
+  .vb-tl { padding: 40px 20px; background: #fafdf9; border-top: 1px solid #e3ece1; border-bottom: 1px solid #e3ece1; }
+  .vb-tl__inner { max-width: 1200px; margin: 0 auto; }
+  .vb-tl__label { text-align: center; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #6c7a6b; margin: 0 0 24px; }
+  .vb-tl__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 22px; align-items: stretch; }
+  .vb-tl__item { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; padding: 12px; transition: transform 0.18s ease; }
+  .vb-tl__item:hover { transform: translateY(-3px); }
+  .vb-tl__logo { display: flex; align-items: center; justify-content: center; height: 56px; }
+  .vb-tl__logo img { height: 100%; width: auto; max-width: 140px; object-fit: contain; }
+  .vb-tl__title { font-size: 14px; font-weight: 800; color: #1a1a1a; line-height: 1.2; margin: 0; }
+  .vb-tl__sub { font-size: 12px; color: #5c6664; line-height: 1.4; margin: 0; }
   @media (max-width: 749px) {
-    .vb-tl { padding: 24px 14px; }
-    .vb-tl__grid { gap: 18px; }
-    .vb-tl__item img { height: 34px; max-width: 110px; }
+    .vb-tl { padding: 28px 14px; }
+    .vb-tl__grid { grid-template-columns: 1fr 1fr; gap: 14px; }
+    .vb-tl__item { padding: 8px; gap: 8px; }
+    .vb-tl__logo { height: 42px; }
+    .vb-tl__logo img { max-width: 110px; }
+    .vb-tl__title { font-size: 12.5px; }
+    .vb-tl__sub { font-size: 10.5px; }
   }
 </style>
 
@@ -25,8 +30,10 @@
         {%- if block.type == 'logo' -%}
           <div class="vb-tl__item" {{ block.shopify_attributes }}>
             {%- if block.settings.logo_url != blank -%}
-              <img src="{{ block.settings.logo_url }}" alt="{{ block.settings.alt }}" loading="lazy" />
+              <div class="vb-tl__logo"><img src="{{ block.settings.logo_url }}" alt="{{ block.settings.title | escape }}" loading="lazy" /></div>
             {%- endif -%}
+            {%- if block.settings.title != blank -%}<p class="vb-tl__title">{{ block.settings.title }}</p>{%- endif -%}
+            {%- if block.settings.sub != blank -%}<p class="vb-tl__sub">{{ block.settings.sub }}</p>{%- endif -%}
           </div>
         {%- endif -%}
       {%- endfor -%}
@@ -44,15 +51,16 @@
   "blocks": [
     { "type": "logo", "name": "Logo", "settings": [
       { "type": "text", "id": "logo_url", "label": "Logo URL" },
-      { "type": "text", "id": "alt", "label": "Alt text" }
+      { "type": "text", "id": "title", "label": "Title", "default": "Certification" },
+      { "type": "text", "id": "sub", "label": "Sub-text", "default": "Quality assured" }
     ]}
   ],
   "presets": [
     { "name": "VB · Trust logos", "blocks": [
-      { "type": "logo", "settings": { "logo_url": "https://www.velobiotics.com/cdn/shop/files/new-custom-logo-001.png?v=1763318407", "alt": "Trust 1" } },
-      { "type": "logo", "settings": { "logo_url": "https://www.velobiotics.com/cdn/shop/files/new-custom-logo-002.png?v=1763318533", "alt": "Trust 2" } },
-      { "type": "logo", "settings": { "logo_url": "https://www.velobiotics.com/cdn/shop/files/new-custom-logo-003.png?v=1763318589", "alt": "Trust 3" } },
-      { "type": "logo", "settings": { "logo_url": "https://www.velobiotics.com/cdn/shop/files/new-custom-logo-004.png?v=1763318638", "alt": "Trust 4" } }
+      { "type": "logo", "settings": { "logo_url": "https://www.velobiotics.com/cdn/shop/files/new-custom-logo-001.png?v=1763318407", "title": "GMP Certified", "sub": "Good Manufacturing Practice" } },
+      { "type": "logo", "settings": { "logo_url": "https://www.velobiotics.com/cdn/shop/files/new-custom-logo-002.png?v=1763318533", "title": "SAHPRA-Aware", "sub": "Regulatory compliant" } },
+      { "type": "logo", "settings": { "logo_url": "https://www.velobiotics.com/cdn/shop/files/new-custom-logo-003.png?v=1763318589", "title": "Lab-Tested", "sub": "Independently verified" } },
+      { "type": "logo", "settings": { "logo_url": "https://www.velobiotics.com/cdn/shop/files/new-custom-logo-004.png?v=1763318638", "title": "Halaal-Friendly", "sub": "No haram ingredients" } }
     ]}
   ]
 }

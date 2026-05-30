@@ -1,0 +1,110 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "article": {
+      "type": "vb-science-article",
+      "blocks": {
+        "t1": {
+          "type": "text",
+          "settings": {
+            "content": "<h2>The problem with conventional probiotics</h2><p>Conventional probiotic capsules look impressive on the label. Marketing promises tens of billions of live bacterial cultures. But the reality between the shelf and your gut is brutal — and most cultures don't survive the journey.</p><p>Stomach acid is the first killer. Within minutes of swallowing a typical probiotic, the acidic environment of the stomach (pH 1–2) destroys the vast majority of live cultures. By the time the surviving handful reach the small intestine, where they're actually needed, you're left with a fraction of what was on the label.</p><p>Heat is the second killer. Probiotics are living organisms. They die slowly in warm rooms, in transit trucks, in pharmacy shelves. Without proper protection, a capsule that started with 10 billion CFU may have only 1–2 billion by the time you swallow it.</p>"
+          }
+        },
+        "i1": {
+          "type": "image",
+          "settings": {
+            "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_192929_dcb318af-4300-460b-a6c1-1927f0d319e9.png",
+            "caption": "Conventional probiotics face stomach acid, heat, and moisture — most die before reaching the gut."
+          }
+        },
+        "t2": {
+          "type": "text",
+          "settings": {
+            "content": "<h2>What is microencapsulation?</h2><p>Microencapsulation is a food-science technology that wraps each individual bacterial culture in a microscopic protective coating. Think of it as armour for your probiotics.</p><p>The protective shell does three things:</p><ul><li><strong>Shields against stomach acid</strong> — the coating stays intact through the acidic stomach environment.</li><li><strong>Protects against heat and moisture</strong> — extending shelf life from months to years.</li><li><strong>Targeted release in the small intestine</strong> — where the pH shifts, the coating dissolves and releases live cultures exactly where they're needed.</li></ul><p>The result: significantly more probiotics arrive alive at their target environment, where they can colonise, multiply, and deliver the benefits the label promised.</p>"
+          }
+        },
+        "i2": {
+          "type": "image",
+          "settings": {
+            "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_192925_1cf46f5d-4735-4703-bbe7-5b8c8fefe54d.png",
+            "caption": "Velobiotics™ MEP — each probiotic culture is wrapped in a protective microcapsule."
+          }
+        },
+        "t3": {
+          "type": "text",
+          "settings": {
+            "content": "<h2>What makes Velobiotics™ MEP different?</h2><p>Velobiotics™ MEP (Microencapsulated Probiotics) uses a patented supercritical CO₂ process to encapsulate each culture under precisely-controlled conditions. This is not the cheap spray-coating you'll find on supermarket probiotics. It's pharmaceutical-grade microencapsulation engineered specifically for live probiotic delivery.</p><p>The patented process produces a coating that:</p><ul><li>Withstands stomach acid pH as low as 1.0</li><li>Remains shelf-stable at room temperature for 24+ months</li><li>Releases cultures specifically when pH rises in the small intestine</li><li>Allows 1000× more cultures to survive vs. uncoated capsules</li></ul>"
+          }
+        },
+        "kp1": {
+          "type": "keypoints",
+          "settings": {
+            "label": "Why this matters for you",
+            "points": "1000× more probiotics reach your gut alive vs. conventional capsules.\nShelf-stable at room temperature — no refrigeration required.\nTargeted release exactly where probiotics work — the small intestine.\nLab-tested every batch for survivability and CFU count."
+          }
+        },
+        "t4": {
+          "type": "text",
+          "settings": {
+            "content": "<h2>The bottom line</h2><p>If a probiotic doesn't reach your gut alive, it doesn't matter how many billion CFU were on the bottle. Microencapsulation is the difference between marketing claims and real biological impact.</p><p>Velobiotics™ MEP is the patented technology that makes the entire Velobiotics range work — every single product, every single brand. It's not optional. It's the foundation.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "i1",
+        "t2",
+        "i2",
+        "t3",
+        "kp1",
+        "t4"
+      ],
+      "settings": {
+        "eyebrow": "The Science",
+        "title_pre": "What is",
+        "title_highlight": "microencapsulation?",
+        "intro": "The patented technology that allows 1000× more live probiotics to reach your gut alive.",
+        "hero_image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_192925_1cf46f5d-4735-4703-bbe7-5b8c8fefe54d.png"
+      }
+    },
+    "brand_family": {
+      "type": "vb-brand-family",
+      "settings": {
+        "eyebrow": "Powered by MEP",
+        "title_pre": "Every brand",
+        "title_highlight": "uses the same delivery.",
+        "sub": "Nine brands. One patented MEP delivery. All engineered to reach you alive."
+      }
+    },
+    "final_cta": {
+      "type": "vb-final-cta",
+      "settings": {
+        "eyebrow": "Experience the difference",
+        "title_pre": "Probiotics that",
+        "title_highlight": "actually work.",
+        "sub": "30-day money-back guarantee · Ships worldwide · Lab-tested every batch."
+      }
+    }
+  },
+  "order": [
+    "main",
+    "article",
+    "brand_family",
+    "final_cta"
+  ]
+}

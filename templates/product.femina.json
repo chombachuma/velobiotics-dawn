@@ -74,7 +74,7 @@
         "brand_tint": "#fdf5fc",
         "image_url": "https://media.base44.com/images/public/69e1abc073bbccc7f63edacc/653a0d852_generated_image.png",
         "tag_value": "99%",
-        "tag_label": "Don't reach your gut",
+        "tag_label": "Probiotics Don't Reach Your Gut",
         "eyebrow": "The Problem",
         "title_pre": "Sound familiar?",
         "title_highlight": "You're not the problem — your probiotics are.",
@@ -196,6 +196,7 @@
       "block_order": ["c1","c2","c3","c4","c5"],
       "settings": {
         "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
         "brand_tint": "#fdf5fc",
         "eyebrow": "Real results",
         "title_pre": "Trusted for",
@@ -242,26 +243,25 @@
     "outperform": {
       "type": "vb-product-outperform",
       "blocks": {
-        "o1": { "type": "row", "settings": { "feature": "Survives stomach acid (MEP coating)", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
-        "o2": { "type": "row", "settings": { "feature": "1000× more probiotics reach gut alive", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
-        "o3": { "type": "row", "settings": { "feature": "Restores vaginal microbiome long-term", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
-        "o4": { "type": "row", "settings": { "feature": "Cranberry-based UTI support", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
-        "o5": { "type": "row", "settings": { "feature": "Kills bad bacteria short-term", "brand_state": "yes", "b_state": "partial", "c_state": "yes" } },
-        "o6": { "type": "row", "settings": { "feature": "Wipes out good bacteria too", "brand_state": "no", "b_state": "no", "c_state": "yes" } },
-        "o7": { "type": "row", "settings": { "feature": "Safe for daily, long-term use", "brand_state": "yes", "b_state": "yes", "c_state": "no" } },
-        "o8": { "type": "row", "settings": { "feature": "Doctor-formulated for women", "brand_state": "yes", "b_state": "partial", "c_state": "no" } },
-        "o9": { "type": "row", "settings": { "feature": "30-day money-back guarantee", "brand_state": "yes", "b_state": "no", "c_state": "no" } }
+        "o1": { "type": "row", "settings": { "feature": "10 Probiotic Strains", "description": "Rebalances vaginal flora and reduces harmful bacteria that cause odour." } },
+        "o2": { "type": "row", "settings": { "feature": "Velobiotics™ Technology", "description": "Patented microencapsulation ensures 1000× more probiotics survive stomach acid for powerful, effective results." } },
+        "o3": { "type": "row", "settings": { "feature": "With Cranberry Extract", "description": "Supports urinary tract health and helps reduce infection risks — the natural UTI defence." } },
+        "o4": { "type": "row", "settings": { "feature": "Once-Daily Convenience", "description": "A simple, effortless addition to your routine with transformative benefits — no complicated protocols." } },
+        "o5": { "type": "row", "settings": { "feature": "Promotes Overall Wellness", "description": "Enhances gut health, immunity, and intimate confidence — head-to-toe balance from one capsule." } },
+        "o6": { "type": "row", "settings": { "feature": "Doctor-Formulated", "description": "Developed by medical doctors and microbiologists using clinically researched probiotic strains." } },
+        "o7": { "type": "row", "settings": { "feature": "Clean Label", "description": "100% vegan, halaal-friendly, no gluten, soy, dairy, artificial colours, preservatives, or GMOs." } },
+        "o8": { "type": "row", "settings": { "feature": "30-Day Money-Back", "description": "If you don't feel the difference in 30 days, we'll refund every cent — no questions asked." } }
       },
-      "block_order": ["o1","o2","o3","o4","o5","o6","o7","o8","o9"],
+      "block_order": ["o1","o2","o3","o4","o5","o6","o7","o8"],
       "settings": {
         "brand_primary": "#8d2a89",
         "brand_dark": "#6b1f68",
         "brand_tint": "#fdf5fc",
-        "eyebrow": "Side by side",
+        "eyebrow": "Key benefits",
         "title": "Why we outperform",
-        "col_brand": "Femina™",
-        "col_b": "Other Probiotics",
-        "col_c": "Antibiotics",
+        "sub": "Every Femina™ Probiotic Capsule earns its place — clinically-researched strains, patented delivery technology, and doctor-formulated for women.",
+        "col_feature": "Feature",
+        "col_desc": "Description",
         "cta_text": "Add to Cart",
         "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
       }

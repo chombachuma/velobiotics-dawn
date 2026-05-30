@@ -1,104 +1,115 @@
-{% comment %} "Armoured Probiotics. Smarter Delivery. Real Results." {% endcomment %}
-{%- assign cdn = 'https://cdn.shopify.com/s/files/1/0668/5848/3883/files' -%}
+{%- comment -%}
+  VB · Armoured Probiotics — feature image + copy + stats badges
+{%- endcomment -%}
 
-<section class="vb-armoured">
-  <div class="vb-armoured__inner page-width">
+{%- liquid
+  assign img_src = ''
+  if section.settings.image_url != blank
+    assign img_src = section.settings.image_url
+  elsif section.settings.image != blank
+    assign img_src = section.settings.image | image_url: width: 900
+  endif
+-%}
 
-    <div class="vb-armoured__media">
-      <img
-        src="{{ cdn }}/image-90549.png"
-        alt="Armoured Probiotics — Smarter Delivery"
-        loading="lazy"
-        class="vb-armoured__img"
-        width="970" height="600"
-      >
-      <div class="vb-armoured__img-stat">
-        <span class="vb-armoured__img-stat-num">1000×</span>
-        <span class="vb-armoured__img-stat-label">More Probiotics Reach Your Gut</span>
+<style>
+  .vb-arm { padding: 72px 24px; background: linear-gradient(180deg, #f5f9f3 0%, #fff 100%); }
+  .vb-arm__inner { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.1fr; gap: 56px; align-items: center; }
+  .vb-arm__visual { position: relative; }
+  .vb-arm__visual-stat { position: absolute; top: 20px; left: -16px; background: #4d8c44; color: #fff; padding: 14px 22px; border-radius: 16px; box-shadow: 0 20px 40px rgba(77,140,68,0.32); transform: rotate(-4deg); z-index: 3; }
+  .vb-arm__visual-stat strong { display: block; font-size: 28px; font-weight: 900; line-height: 1; letter-spacing: -0.02em; }
+  .vb-arm__visual-stat small { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; margin-top: 4px; text-transform: uppercase; opacity: 0.95; }
+  .vb-arm__visual-frame { position: relative; aspect-ratio: 4/5; border-radius: 24px; overflow: hidden; background: linear-gradient(160deg, #ffffff 0%, #e8f1e3 100%); box-shadow: 0 24px 56px rgba(0,0,0,0.10); }
+  .vb-arm__visual-frame img { width: 100%; height: 100%; object-fit: cover; }
+  .vb-arm__body {}
+  .vb-arm__eyebrow { display: inline-block; color: #4d8c44; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 14px; }
+  .vb-arm__title { font-size: clamp(28px, 4.2vw, 44px); font-weight: 800; color: #1a1a1a; line-height: 1.1; margin: 0 0 16px; letter-spacing: -0.01em; }
+  .vb-arm__title em { color: #4d8c44; font-style: normal; display: block; }
+  .vb-arm__desc { font-size: 16px; line-height: 1.65; color: #3a4a3a; margin: 0 0 24px; }
+  .vb-arm__features { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 0 0 28px; }
+  .vb-arm__feature { display: flex; align-items: flex-start; gap: 10px; padding: 14px; background: #fff; border-radius: 14px; border: 1px solid #e3ece1; }
+  .vb-arm__feature-icon { width: 28px; height: 28px; border-radius: 50%; background: rgba(77,140,68,0.14); color: #4d8c44; display: inline-flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; }
+  .vb-arm__feature-text { font-size: 13.5px; font-weight: 700; color: #1a1a1a; line-height: 1.35; }
+  .vb-arm__cta { display: inline-flex; align-items: center; gap: 6px; padding: 14px 28px; border-radius: 999px; background: #4d8c44; color: #fff !important; text-decoration: none; font-weight: 700; font-size: 14.5px; box-shadow: 0 12px 26px rgba(77,140,68,0.28); transition: all 0.18s ease; }
+  .vb-arm__cta:hover { background: #36632f; transform: translateY(-2px); box-shadow: 0 16px 32px rgba(77,140,68,0.40); }
+  @media (max-width: 990px) {
+    .vb-arm__inner { grid-template-columns: 1fr; gap: 32px; }
+    .vb-arm__visual { max-width: 480px; margin: 0 auto; }
+  }
+  @media (max-width: 749px) {
+    .vb-arm { padding: 48px 14px; }
+    .vb-arm__features { grid-template-columns: 1fr; gap: 8px; }
+    .vb-arm__visual-stat { padding: 12px 18px; }
+    .vb-arm__visual-stat strong { font-size: 22px; }
+    .vb-arm__visual-stat small { font-size: 10px; }
+  }
+</style>
+
+<section class="vb-arm">
+  <div class="vb-arm__inner">
+    <div class="vb-arm__visual">
+      <div class="vb-arm__visual-stat">
+        <strong>{{ section.settings.stat_value | default: '1000×' }}</strong>
+        <small>{{ section.settings.stat_label | default: 'More Probiotics Reach Your Gut' }}</small>
+      </div>
+      <div class="vb-arm__visual-frame">
+        {%- if img_src != blank -%}<img src="{{ img_src }}" alt="{{ section.settings.title_pre | escape }}" loading="lazy" />{%- endif -%}
       </div>
     </div>
-
-    <div class="vb-armoured__copy">
-      <span class="vb-label-tag">Patented MEP Technology</span>
-      <h2 class="vb-h2">Armoured Probiotics.<br>Smarter Delivery.<br>Real Results.</h2>
-      <div class="vb-armoured__body">
-        <p>Microencapsulation with <strong>Supercritical Carbon Dioxide (scCO₂)</strong> is a breakthrough way of protecting probiotics so they actually work.</p>
-        <p>Think of it as wrapping <strong>each probiotic in a microscopic coat of armour</strong> — protecting it from heat, moisture, oxygen, and stomach acid — so it arrives alive exactly where it needs to be: <em>your gut</em>.</p>
-        <p>Most probiotics never make it. Ours do — delivering <strong>1000× more live bacteria</strong> to your intestines than unprotected capsules.</p>
-      </div>
-      <div class="vb-armoured__pillars">
-        <div class="vb-armoured__pillar">
-          <span class="vb-armoured__pillar-icon">🛡️</span>
-          <span>Acid-Proof Shell</span>
+    <div class="vb-arm__body">
+      {%- if section.settings.eyebrow != blank -%}<p class="vb-arm__eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+      <h2 class="vb-arm__title">
+        {{ section.settings.title_pre }}
+        {%- if section.settings.title_highlight != blank %} <em>{{ section.settings.title_highlight }}</em>{%- endif -%}
+      </h2>
+      {%- if section.settings.desc != blank -%}<p class="vb-arm__desc">{{ section.settings.desc }}</p>{%- endif -%}
+      {%- if section.blocks.size > 0 -%}
+        <div class="vb-arm__features">
+          {%- for block in section.blocks -%}
+            {%- if block.type == 'feature' -%}
+              <div class="vb-arm__feature" {{ block.shopify_attributes }}>
+                <span class="vb-arm__feature-icon">{{ block.settings.icon }}</span>
+                <span class="vb-arm__feature-text">{{ block.settings.text }}</span>
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
         </div>
-        <div class="vb-armoured__pillar">
-          <span class="vb-armoured__pillar-icon">🌡️</span>
-          <span>Heat Stable</span>
-        </div>
-        <div class="vb-armoured__pillar">
-          <span class="vb-armoured__pillar-icon">💧</span>
-          <span>Moisture Resistant</span>
-        </div>
-        <div class="vb-armoured__pillar">
-          <span class="vb-armoured__pillar-icon">🎯</span>
-          <span>Gut-Targeted Release</span>
-        </div>
-      </div>
-      <a href="/collections/all" class="vb-btn vb-btn--primary vb-btn--lg">Shop Velobiotics</a>
+      {%- endif -%}
+      {%- if section.settings.cta_text != blank -%}<a href="{{ section.settings.cta_link | default: '#' }}" class="vb-arm__cta">{{ section.settings.cta_text }} →</a>{%- endif -%}
     </div>
-
   </div>
 </section>
 
-<style>
-.vb-armoured {
-  background: #fff;
-  padding: 5rem 1.5rem;
-  border-top: 4px solid var(--vb-green-600);
-}
-.vb-armoured__inner {
-  max-width: 1380px; margin: 0 auto;
-  display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: center;
-}
-@media screen and (min-width: 990px) {
-  .vb-armoured__inner { grid-template-columns: 1.1fr 1fr; gap: 5rem; }
-}
-.vb-armoured__media { position: relative; }
-.vb-armoured__img {
-  width: 100%; height: auto; border-radius: 1.5rem; object-fit: cover;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.1);
-}
-.vb-armoured__img-stat {
-  position: absolute; bottom: -1rem; right: -0.75rem;
-  background: var(--vb-green-600); color: #fff;
-  border-radius: 1rem; padding: 1.1rem 1.5rem; text-align: center;
-  box-shadow: 0 8px 28px rgba(77,140,68,0.35);
-}
-.vb-armoured__img-stat-num { display: block; font-size: 2.25rem; font-weight: 800; line-height: 1; }
-.vb-armoured__img-stat-label { display: block; font-size: 0.7rem; font-weight: 600; opacity: 0.9; max-width: 12ch; line-height: 1.35; margin-top: 0.2rem; }
-
-.vb-armoured__copy { display: flex; flex-direction: column; gap: 1.5rem; }
-.vb-armoured__body p { font-size: 1.05rem; color: var(--vb-neutral-700); line-height: 1.75; margin: 0 0 0.75rem; }
-.vb-armoured__body p:last-child { margin: 0; }
-
-.vb-armoured__pillars {
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem;
-}
-.vb-armoured__pillar {
-  display: flex; align-items: center; gap: 0.6rem;
-  background: var(--vb-green-50); border: 1.5px solid var(--vb-green-100);
-  border-radius: 12px; padding: 0.85rem 1rem;
-  font-size: 0.9rem; font-weight: 600; color: var(--vb-neutral-800);
-}
-.vb-armoured__pillar-icon { font-size: 1.4rem; }
-</style>
-
 {% schema %}
 {
-  "name": "VB Armoured Probiotics",
-  "tag": "div",
-  "class": "vb-section-wrap",
-  "settings": [],
-  "presets": [{ "name": "VB Armoured Probiotics" }]
+  "name": "VB · Armoured Probiotics",
+  "tag": "section",
+  "settings": [
+    { "type": "header", "content": "Image" },
+    { "type": "image_picker", "id": "image", "label": "Image" },
+    { "type": "text", "id": "image_url", "label": "Image URL (overrides upload)" },
+    { "type": "text", "id": "stat_value", "label": "Floating stat value", "default": "1000×" },
+    { "type": "text", "id": "stat_label", "label": "Floating stat label", "default": "More Probiotics Reach Your Gut" },
+    { "type": "header", "content": "Content" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Patented MEP Technology" },
+    { "type": "text", "id": "title_pre", "label": "Title (start)", "default": "Armoured Probiotics. Smarter Delivery." },
+    { "type": "text", "id": "title_highlight", "label": "Title (highlight)", "default": "Real Results." },
+    { "type": "textarea", "id": "desc", "label": "Description", "default": "Every Velobiotics probiotic is encapsulated using Microencapsulation with Supercritical CO₂ — a patented shielding process that lets billions of live cultures survive stomach acid and bile, so they reach your gut alive and active." },
+    { "type": "text", "id": "cta_text", "label": "CTA text", "default": "See the Science" },
+    { "type": "url", "id": "cta_link", "label": "CTA link" }
+  ],
+  "blocks": [
+    { "type": "feature", "name": "Feature", "settings": [
+      { "type": "text", "id": "icon", "label": "Icon / emoji", "default": "✓" },
+      { "type": "text", "id": "text", "label": "Text", "default": "Survives stomach acid" }
+    ]}
+  ],
+  "presets": [
+    { "name": "VB · Armoured Probiotics", "blocks": [
+      { "type": "feature", "settings": { "icon": "🛡️", "text": "Survives stomach acid" } },
+      { "type": "feature", "settings": { "icon": "🎯", "text": "Delivered to the gut alive" } },
+      { "type": "feature", "settings": { "icon": "⏱️", "text": "Time-released release" } },
+      { "type": "feature", "settings": { "icon": "🔬", "text": "Lab-tested every batch" } }
+    ]}
+  ]
 }
 {% endschema %}

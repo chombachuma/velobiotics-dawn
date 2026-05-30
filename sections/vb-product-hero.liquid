@@ -1,5 +1,5 @@
 {%- comment -%}
-  VB · Product Hero v2 — gallery + buy box + payment icons + scrolling testimonials marquee
+  VB · Product Hero v3 — gallery + buy box + payment icons + scrolling testimonials (fixed overflow)
 {%- endcomment -%}
 
 {%- liquid
@@ -12,9 +12,10 @@
 -%}
 
 <style>
-  .vb-ph { padding: 24px 20px 24px; max-width: 1280px; margin: 0 auto; --bp: {{ brand_primary }}; --bd: {{ brand_dark }}; --bt: {{ brand_tint }}; }
-  .vb-ph__grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: flex-start; }
-  .vb-pg { position: sticky; top: 80px; }
+  .vb-ph { padding: 24px 20px 24px; max-width: 1280px; margin: 0 auto; --bp: {{ brand_primary }}; --bd: {{ brand_dark }}; --bt: {{ brand_tint }}; overflow: hidden; }
+  .vb-ph__grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 48px; align-items: flex-start; }
+  .vb-ph__grid > * { min-width: 0; }
+  .vb-pg { position: sticky; top: 80px; min-width: 0; }
   .vb-pg__main { position: relative; aspect-ratio: 1/1; border-radius: 22px; overflow: hidden; background: var(--bt); margin: 0 0 14px; }
   .vb-pg__main img { width: 100%; height: 100%; object-fit: contain; padding: 16px; mix-blend-mode: multiply; }
   .vb-pg__save { position: absolute; top: 14px; right: 14px; background: radial-gradient(circle at 30% 30%, #ff5c8a 0%, #ff2e63 50%, #cd1f4c 100%); color: #fff; font-weight: 900; font-size: 16px; padding: 14px 8px; min-width: 64px; height: 64px; border-radius: 50%; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 10px 26px rgba(214, 39, 90, 0.45); transform: rotate(-8deg); border: 3px solid rgba(255,255,255,0.55); line-height: 1; text-align: center; }
@@ -24,17 +25,18 @@
   .vb-pg__thumb img { width: 100%; height: 100%; object-fit: contain; padding: 6px; mix-blend-mode: multiply; }
   .vb-pg__thumb.is-active { border-color: var(--bp); }
 
+  .vb-pb { min-width: 0; }
   .vb-pb__brand { display: inline-flex; align-items: center; gap: 8px; background: color-mix(in srgb, var(--bp) 12%, #fff); color: var(--bp); padding: 6px 13px; border-radius: 999px; font-size: 11.5px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; margin: 0 0 12px; }
   .vb-pb__pill { display: inline-flex; align-items: center; gap: 6px; background: #fff; color: var(--bp); padding: 4px 11px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; border: 1px solid color-mix(in srgb, var(--bp) 25%, #fff); }
   .vb-pb__title { font-size: clamp(26px, 3.4vw, 36px); font-weight: 800; line-height: 1.15; margin: 0 0 12px; color: #1a1a1a; letter-spacing: -0.01em; }
-  .vb-pb__rating { display: inline-flex; align-items: center; gap: 8px; margin: 0 0 16px; font-size: 13.5px; color: #2b3a2a; }
+  .vb-pb__rating { display: inline-flex; align-items: center; gap: 8px; margin: 0 0 16px; font-size: 13.5px; color: #2b3a2a; flex-wrap: wrap; }
   .vb-pb__rating .stars { color: #ffb43a; letter-spacing: 1px; font-size: 15px; }
   .vb-pb__rating a { color: var(--bp); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
   .vb-pb__hook { font-size: 16px; line-height: 1.55; color: #4a5a48; margin: 0 0 20px; padding: 14px 16px; background: var(--bt); border-left: 3px solid var(--bp); border-radius: 4px 14px 14px 4px; }
   .vb-pb__benefits { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 0 0 22px; }
-  .vb-pb__benefit { display: flex; align-items: center; gap: 10px; padding: 11px 13px; background: var(--bt); border-radius: 12px; }
+  .vb-pb__benefit { display: flex; align-items: center; gap: 10px; padding: 11px 13px; background: var(--bt); border-radius: 12px; min-width: 0; }
   .vb-pb__benefit-icon { width: 32px; height: 32px; border-radius: 50%; background: #fff; color: var(--bp); display: inline-flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; }
-  .vb-pb__benefit-text { font-size: 12.5px; font-weight: 700; color: #1a1a1a; line-height: 1.3; }
+  .vb-pb__benefit-text { font-size: 12.5px; font-weight: 700; color: #1a1a1a; line-height: 1.3; min-width: 0; }
 
   .vb-pb__variants-label { font-size: 12.5px; font-weight: 700; color: #1a1a1a; letter-spacing: 0.04em; text-transform: uppercase; margin: 0 0 10px; }
   .vb-pb__variants { display: grid; gap: 10px; margin: 0 0 20px; }
@@ -42,10 +44,10 @@
   .vb-pb__variant:hover { border-color: var(--bp); }
   .vb-pb__variant input { position: absolute; opacity: 0; pointer-events: none; }
   .vb-pb__variant:has(input:checked) { border-color: var(--bp); background: color-mix(in srgb, var(--bp) 6%, #fff); box-shadow: 0 8px 20px color-mix(in srgb, var(--bp) 18%, transparent); }
-  .vb-pb__variant-info { display: flex; flex-direction: column; gap: 2px; }
+  .vb-pb__variant-info { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
   .vb-pb__variant-name { font-size: 14.5px; font-weight: 800; color: #1a1a1a; }
   .vb-pb__variant-meta { font-size: 11.5px; color: #6c7a6b; font-weight: 600; }
-  .vb-pb__variant-price-row { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; }
+  .vb-pb__variant-price-row { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; flex-shrink: 0; }
   .vb-pb__variant-price { font-size: 16px; font-weight: 800; color: #1a1a1a; }
   .vb-pb__variant-compare { font-size: 12px; color: #a0a0a0; text-decoration: line-through; }
   .vb-pb__variant-best { position: absolute; top: -10px; right: 14px; background: var(--bp); color: #fff; font-size: 9.5px; font-weight: 800; padding: 4px 9px; border-radius: 999px; letter-spacing: 0.06em; text-transform: uppercase; }
@@ -67,27 +69,27 @@
   .vb-pb__qty button:hover { background: var(--bt); color: var(--bp); }
   .vb-pb__qty input { width: 44px; height: 48px; border: none; text-align: center; font-size: 15px; font-weight: 800; outline: none; -moz-appearance: textfield; background: #fff; }
   .vb-pb__qty input::-webkit-outer-spin-button, .vb-pb__qty input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
-  .vb-pb__atc { flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 0 24px; background: var(--bp); color: #fff !important; border: none; border-radius: 999px; font-weight: 800; font-size: 15px; cursor: pointer; transition: all 0.18s ease; box-shadow: 0 12px 26px color-mix(in srgb, var(--bp) 32%, transparent); }
+  .vb-pb__atc { flex: 1; min-width: 0; display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 0 24px; background: var(--bp); color: #fff !important; border: none; border-radius: 999px; font-weight: 800; font-size: 15px; cursor: pointer; transition: all 0.18s ease; box-shadow: 0 12px 26px color-mix(in srgb, var(--bp) 32%, transparent); }
   .vb-pb__atc:hover { background: var(--bd); transform: translateY(-2px); }
   .vb-pb__buynow { width: 100%; display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 14px 24px; background: #1a1a1a; color: #fff !important; border: none; border-radius: 999px; font-weight: 800; font-size: 14px; cursor: pointer; transition: background-color 0.18s ease; margin: 0 0 14px; }
   .vb-pb__buynow:hover { background: #000; }
 
-  /* Payment icons */
-  .vb-pb__pay { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: center; padding: 12px 8px; margin: 0 0 16px; border-top: 1px dashed #e3ece1; border-bottom: 1px dashed #e3ece1; }
+  .vb-pb__pay { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; justify-content: center; padding: 12px 8px; margin: 0 0 16px; border-top: 1px dashed #e3ece1; border-bottom: 1px dashed #e3ece1; }
   .vb-pb__pay-label { font-size: 10.5px; font-weight: 700; color: #6c7a6b; letter-spacing: 0.08em; text-transform: uppercase; margin-right: 4px; }
-  .vb-pb__pay-icon { height: 22px; padding: 2px 6px; background: #fff; border: 1px solid #e3ece1; border-radius: 6px; font-size: 11px; font-weight: 800; color: #1a1a1a; display: inline-flex; align-items: center; min-width: 44px; justify-content: center; letter-spacing: 0.02em; }
+  .vb-pb__pay-icon { height: 22px; padding: 2px 6px; background: #fff; border: 1px solid #e3ece1; border-radius: 6px; font-size: 11px; font-weight: 800; color: #1a1a1a; display: inline-flex; align-items: center; min-width: 40px; justify-content: center; letter-spacing: 0.02em; white-space: nowrap; }
 
-  .vb-pb__trust { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin: 0 0 18px; }
-  .vb-pb__trust-item { display: flex; align-items: center; gap: 8px; padding: 9px 11px; background: #fff; border: 1px solid #e3ece1; border-radius: 11px; font-size: 12px; color: #1a1a1a; font-weight: 600; }
+  .vb-pb__trust { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin: 0 0 18px; }
+  .vb-pb__trust-item { display: flex; align-items: center; gap: 8px; padding: 9px 11px; background: #fff; border: 1px solid #e3ece1; border-radius: 11px; font-size: 12px; color: #1a1a1a; font-weight: 600; min-width: 0; }
   .vb-pb__trust-item span:first-child { color: var(--bp); font-size: 15px; flex-shrink: 0; }
+  .vb-pb__trust-item span:last-child { min-width: 0; }
 
-  /* Scrolling testimonials */
-  .vb-pb__testi-marquee { overflow: hidden; padding: 14px 0; margin-top: 6px; border-top: 1px solid #e3ece1; }
-  .vb-pb__testi-track { display: flex; gap: 18px; white-space: nowrap; animation: vb-pb-testi 28s linear infinite; width: max-content; }
+  /* Scrolling testimonials — properly contained */
+  .vb-pb__testi-marquee { overflow: hidden; padding: 14px 0; margin-top: 6px; border-top: 1px solid #e3ece1; width: 100%; max-width: 100%; position: relative; }
+  .vb-pb__testi-track { display: flex; gap: 14px; white-space: nowrap; animation: vb-pb-testi 32s linear infinite; width: max-content; will-change: transform; }
   .vb-pb__testi-marquee:hover .vb-pb__testi-track { animation-play-state: paused; }
   @keyframes vb-pb-testi { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-  .vb-pb__testi { display: inline-flex; align-items: center; gap: 10px; padding: 8px 14px; background: var(--bt); border-radius: 999px; font-size: 12.5px; color: #2b3a2a; white-space: nowrap; }
-  .vb-pb__testi .stars { color: #ffb43a; letter-spacing: 0.5px; font-size: 11px; }
+  .vb-pb__testi { display: inline-flex; align-items: center; gap: 8px; padding: 7px 12px; background: var(--bt); border-radius: 999px; font-size: 12px; color: #2b3a2a; white-space: nowrap; flex-shrink: 0; }
+  .vb-pb__testi .stars { color: #ffb43a; letter-spacing: 0.5px; font-size: 10px; }
   .vb-pb__testi strong { color: var(--bp); font-weight: 800; }
 
   @media (max-width: 990px) {
@@ -111,8 +113,8 @@
     .vb-pb__trust { gap: 6px; }
     .vb-pb__trust-item { font-size: 11px; padding: 7px 9px; }
     .vb-pg__save { min-width: 54px; height: 54px; font-size: 13.5px; top: 10px; right: 10px; }
-    .vb-pb__pay-icon { font-size: 10px; height: 20px; min-width: 38px; }
-    .vb-pb__testi { font-size: 11.5px; padding: 7px 12px; }
+    .vb-pb__pay-icon { font-size: 10px; height: 20px; min-width: 36px; padding: 2px 5px; }
+    .vb-pb__testi { font-size: 11px; padding: 6px 11px; }
   }
 </style>
 
@@ -153,7 +155,9 @@
         <a href="#vb-reviews">({{ section.settings.review_count | default: '3,500+' }} reviews)</a>
       </div>
       {%- if section.settings.hook != blank -%}<p class="vb-pb__hook">{{ section.settings.hook }}</p>{%- endif -%}
-      {%- if section.blocks.size > 0 -%}
+      {%- assign benefit_count = 0 -%}
+      {%- for block in section.blocks -%}{%- if block.type == 'benefit' -%}{%- assign benefit_count = benefit_count | plus: 1 -%}{%- endif -%}{%- endfor -%}
+      {%- if benefit_count > 0 -%}
         <div class="vb-pb__benefits">
           {%- for block in section.blocks -%}
             {%- if block.type == 'benefit' -%}
@@ -235,8 +239,8 @@
         <span class="vb-pb__pay-icon" style="color:#eb001b;">MC</span>
         <span class="vb-pb__pay-icon" style="color:#003087;">AMEX</span>
         <span class="vb-pb__pay-icon" style="color:#5f259f;">PayPal</span>
-        <span class="vb-pb__pay-icon" style="color:#000;">Apple&nbsp;Pay</span>
-        <span class="vb-pb__pay-icon" style="color:#4285f4;">G&nbsp;Pay</span>
+        <span class="vb-pb__pay-icon" style="color:#000;">Apple Pay</span>
+        <span class="vb-pb__pay-icon" style="color:#4285f4;">G Pay</span>
         <span class="vb-pb__pay-icon" style="color:#5a31f4;">Shop</span>
       </div>
 
@@ -247,7 +251,9 @@
         <div class="vb-pb__trust-item"><span>🩺</span><span>Doctor-formulated</span></div>
       </div>
 
-      {%- if section.settings.show_testi_marquee -%}
+      {%- assign testi_count = 0 -%}
+      {%- for block in section.blocks -%}{%- if block.type == 'testi' -%}{%- assign testi_count = testi_count | plus: 1 -%}{%- endif -%}{%- endfor -%}
+      {%- if section.settings.show_testi_marquee and testi_count > 0 -%}
         <div class="vb-pb__testi-marquee" aria-label="Recent reviews">
           <div class="vb-pb__testi-track">
             {%- for i in (1..2) -%}
@@ -289,17 +295,14 @@
   "tag": "section",
   "enabled_on": { "templates": ["product"] },
   "settings": [
-    { "type": "header", "content": "Brand styling" },
     { "type": "color", "id": "brand_primary", "label": "Brand primary", "default": "#4d8c44" },
     { "type": "color", "id": "brand_dark", "label": "Brand dark", "default": "#36632f" },
     { "type": "color", "id": "brand_tint", "label": "Brand tint", "default": "#f3f7f1" },
     { "type": "text", "id": "brand_label", "label": "Brand label", "default": "Velobiotics™" },
-    { "type": "header", "content": "Copy" },
     { "type": "text", "id": "rating", "label": "Rating", "default": "4.8" },
     { "type": "text", "id": "review_count", "label": "Review count", "default": "3,500+" },
     { "type": "textarea", "id": "hook", "label": "Hook line" },
     { "type": "text", "id": "ship_note", "label": "Shipping note", "default": "Free shipping over the free-shipping threshold · 30-day money-back guarantee" },
-    { "type": "header", "content": "Widgets" },
     { "type": "checkbox", "id": "show_subscription", "label": "Subscription slot", "default": true },
     { "type": "checkbox", "id": "show_qty_discounts", "label": "Quantity-discount slot", "default": true },
     { "type": "checkbox", "id": "show_buynow", "label": "Show Buy It Now", "default": true },

@@ -1,0 +1,40 @@
+{%- comment -%} VB · Have More Questions? Contact CTA {%- endcomment -%}
+
+<style>
+  .vb-ctk { padding: 48px 24px; }
+  .vb-ctk__inner { max-width: 980px; margin: 0 auto; background: #fff; border: 1px solid #e3ece1; border-radius: 20px; padding: 36px 40px; display: flex; align-items: center; justify-content: space-between; gap: 28px; flex-wrap: wrap; box-shadow: 0 12px 28px rgba(0,0,0,0.04); }
+  .vb-ctk__body { flex: 1; min-width: 240px; }
+  .vb-ctk__title { font-size: clamp(20px, 2.6vw, 26px); font-weight: 800; color: #1a1a1a; margin: 0 0 6px; line-height: 1.2; }
+  .vb-ctk__sub { font-size: 14.5px; color: #5c6664; margin: 0; line-height: 1.5; }
+  .vb-ctk__cta { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 999px; background: #4d8c44; color: #fff !important; text-decoration: none; font-weight: 700; font-size: 14.5px; box-shadow: 0 12px 26px rgba(77,140,68,0.28); transition: all 0.18s ease; flex-shrink: 0; }
+  .vb-ctk__cta:hover { background: #36632f; transform: translateY(-2px); }
+  @media (max-width: 749px) {
+    .vb-ctk { padding: 32px 14px; }
+    .vb-ctk__inner { padding: 24px 22px; border-radius: 16px; flex-direction: column; align-items: flex-start; gap: 18px; }
+    .vb-ctk__cta { padding: 12px 22px; font-size: 14px; }
+  }
+</style>
+
+<section class="vb-ctk">
+  <div class="vb-ctk__inner">
+    <div class="vb-ctk__body">
+      <h2 class="vb-ctk__title">{{ section.settings.title | default: 'Have More Questions?' }}</h2>
+      {%- if section.settings.sub != blank -%}<p class="vb-ctk__sub">{{ section.settings.sub }}</p>{%- endif -%}
+    </div>
+    {%- if section.settings.cta_text != blank -%}<a href="{{ section.settings.cta_link | default: '/pages/contact' }}" class="vb-ctk__cta">{{ section.settings.cta_text }} →</a>{%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "VB · Contact CTA",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "title", "label": "Title", "default": "Have More Questions?" },
+    { "type": "textarea", "id": "sub", "label": "Sub-text", "default": "Our gut wellness team is here to help — confidentially, with no pressure." },
+    { "type": "text", "id": "cta_text", "label": "CTA text", "default": "Contact Us" },
+    { "type": "url", "id": "cta_link", "label": "CTA link" }
+  ],
+  "presets": [{ "name": "VB · Contact CTA" }]
+}
+{% endschema %}

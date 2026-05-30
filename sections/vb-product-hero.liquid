@@ -235,17 +235,6 @@
           </div>
         {%- endif -%}
 
-        <div class="vb-pb__price-summary" data-vbp-price-summary>
-          <span class="vb-pb__price-now" data-vbp-price-now>{{ current_variant.price | money }}</span>
-          {%- if current_variant.compare_at_price > current_variant.price -%}
-            <span class="vb-pb__price-was" data-vbp-price-was>{{ current_variant.compare_at_price | money }}</span>
-            <span class="vb-pb__price-save" data-vbp-price-save>SAVE −{{ savings_pct }}%</span>
-          {%- else -%}
-            <span class="vb-pb__price-was" data-vbp-price-was style="display:none;"></span>
-            <span class="vb-pb__price-save" data-vbp-price-save style="display:none;"></span>
-          {%- endif -%}
-        </div>
-
         <div class="vb-pb__shipnote">
           <span class="vb-pb__shipnote-icon">🚚</span>
           <span>{{ section.settings.ship_note | default: 'Free shipping over the free-shipping threshold · 30-day money-back guarantee' }}</span>

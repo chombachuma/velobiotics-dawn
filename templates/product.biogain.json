@@ -102,10 +102,10 @@
     "related": {
       "type": "vb-product-related",
       "blocks": {
-        "r1": { "type": "product", "settings": { "product_handle": "biogain-foot-care-cream", "brand": "BioGain™", "rating": "4.7", "reviews": "180+" } },
-        "r2": { "type": "product", "settings": { "product_handle": "biogain-foot-care-capsules", "brand": "BioGain™", "rating": "4.8", "reviews": "150+" } },
-        "r3": { "type": "product", "settings": { "product_handle": "biogain-skin-repair-cream", "brand": "BioGain™", "rating": "4.6", "reviews": "120+" } },
-        "r4": { "type": "product", "settings": { "product_handle": "biogain-wound-care", "brand": "BioGain™", "rating": "4.7", "reviews": "90+" } }
+        "r1": { "type": "product", "settings": { "product_handle": "biogain-probiotic-meal", "brand": "BioGain™", "rating": "4.7", "reviews": "180+" } },
+        "r2": { "type": "product", "settings": { "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s", "brand": "His-Biotics™", "rating": "4.7", "reviews": "210+" } },
+        "r3": { "type": "product", "settings": { "product_handle": "her-biotics-original-capsules-60s", "brand": "Her-Biotics™", "rating": "4.7", "reviews": "260+" } },
+        "r4": { "type": "product", "settings": { "product_handle": "velo16-probiotics-magnesium-glycinate", "brand": "Velo16™", "rating": "4.6", "reviews": "190+" } }
       },
       "block_order": ["r1","r2","r3","r4"],
       "settings": {

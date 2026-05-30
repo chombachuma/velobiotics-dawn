@@ -102,10 +102,10 @@
     "related": {
       "type": "vb-product-related",
       "blocks": {
-        "r1": { "type": "product", "settings": { "product_handle": "biokid-probiotic-drops", "brand": "BioKid™", "rating": "4.8", "reviews": "200+" } },
-        "r2": { "type": "product", "settings": { "product_handle": "biokid-chewables", "brand": "BioKid™", "rating": "4.9", "reviews": "180+" } },
-        "r3": { "type": "product", "settings": { "product_handle": "biokid-immune-boost", "brand": "BioKid™", "rating": "4.7", "reviews": "150+" } },
-        "r4": { "type": "product", "settings": { "product_handle": "biokid-vitamin-d", "brand": "BioKid™", "rating": "4.8", "reviews": "120+" } }
+        "r1": { "type": "product", "settings": { "product_handle": "biokid-chewable-probiotics-tablets-for-children", "brand": "BioKid™", "rating": "4.8", "reviews": "200+" } },
+        "r2": { "type": "product", "settings": { "product_handle": "pregbiotics-essentials", "brand": "PregBiotics™", "rating": "4.9", "reviews": "210+" } },
+        "r3": { "type": "product", "settings": { "product_handle": "her-biotics-original-capsules-60s", "brand": "Her-Biotics™", "rating": "4.7", "reviews": "260+" } },
+        "r4": { "type": "product", "settings": { "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s", "brand": "His-Biotics™", "rating": "4.7", "reviews": "210+" } }
       },
       "block_order": ["r1","r2","r3","r4"],
       "settings": {

@@ -9,102 +9,152 @@
  */
 {
   "sections": {
-    "vb_hero": {
-      "type": "vb-homepage-hero",
+    "trust-marquee": {
+      "type": "vb-trust-marquee",
+      "blocks": {
+        "t1": { "type": "trust", "settings": { "icon": "☑️", "text": "Science-Backed" } },
+        "t2": { "type": "trust", "settings": { "icon": "🩺", "text": "Doctor-Recommended" } },
+        "t3": { "type": "trust", "settings": { "icon": "🧪", "text": "Patented MEP Technology" } },
+        "t4": { "type": "trust", "settings": { "icon": "🔄", "text": "100% Money-Back Guarantee" } },
+        "t5": { "type": "trust", "settings": { "icon": "🚚", "text": "Free Shipping Over R400" } },
+        "t6": { "type": "trust", "settings": { "icon": "⭐", "text": "3,500+ Verified Reviews" } },
+        "t7": { "type": "trust", "settings": { "icon": "💊", "text": "1000× More Probiotics Delivered" } },
+        "t8": { "type": "trust", "settings": { "icon": "🏭", "text": "SAHPRA-Certified Manufacturing" } }
+      },
+      "block_order": ["t1","t2","t3","t4","t5","t6","t7","t8"],
       "settings": {}
     },
-    "vb_trust_bar": {
-      "type": "vb-trust-bar",
-      "settings": {}
+    "hero": {
+      "type": "vb-hero",
+      "blocks": {
+        "p1": { "type": "pill", "settings": { "icon": "🛡️", "title": "Patented MEP", "sub": "Technology" } },
+        "p2": { "type": "pill", "settings": { "icon": "1000×", "title": "1000×", "sub": "More Delivered" } },
+        "p3": { "type": "pill", "settings": { "icon": "🩺", "title": "Doctor", "sub": "Formulated" } },
+        "p4": { "type": "pill", "settings": { "icon": "🔄", "title": "Money-Back", "sub": "Guarantee" } }
+      },
+      "block_order": ["p1","p2","p3","p4"],
+      "settings": {
+        "eyebrow": "Patented Probiotics That Actually Reach Your Gut",
+        "headline_pre": "Most Probiotics Die in Your Stomach.",
+        "headline_highlight": "Ours Don't!",
+        "sub": "Velobiotics protects every live culture through stomach acid delivering 1000× more probiotics to your gut, where they're needed for real results, you can feel.",
+        "show_rating": true,
+        "review_count": "3,500",
+        "customer_count": "300,000",
+        "cta1_text": "Shop Products",
+        "cta1_link": "/collections/all",
+        "cta2_text": "🧬 Take The Quiz",
+        "cta2_link": "/pages/quiz",
+        "badge_top_value": "300K+",
+        "badge_top_label": "Happy Customers",
+        "badge_side_value": "1000×",
+        "badge_side_label": "More Probiotics",
+        "quote_text": "Lost 42kgs — Velo16 helped me lose the last kg!",
+        "quote_author": "Nicky vd Westhuizen"
+      }
     },
-    "vb_scrolling_logos": {
-      "type": "vb-scrolling-logos",
-      "settings": {}
+    "value-props": {
+      "type": "vb-value-props",
+      "blocks": {
+        "v1": { "type": "prop", "settings": { "icon": "🛡️", "name": "Patented MEP Technology", "desc": "Micro-shield delivery — 1000× more probiotics survive stomach acid" } },
+        "v2": { "type": "prop", "settings": { "icon": "🩺", "name": "Doctor Formulated", "desc": "Developed by medical doctors and microbiologists" } },
+        "v3": { "type": "prop", "settings": { "icon": "🧪", "name": "Clinically Backed", "desc": "Strains studied in peer-reviewed clinical trials" } },
+        "v4": { "type": "prop", "settings": { "icon": "🔄", "name": "Money-Back Guarantee", "desc": "30-day no-questions-asked return policy" } }
+      },
+      "block_order": ["v1","v2","v3","v4"],
+      "settings": { "show_head": false }
     },
-    "vb_why_choose": {
-      "type": "vb-why-choose",
-      "settings": {}
+    "brand-family": {
+      "type": "vb-brand-family",
+      "blocks": {
+        "femina":    { "type": "brand", "settings": { "brand_name": "Femina™",    "tagline": "Intimate Health",  "target": "For women",         "link": "/collections/femina",                       "bg": "#fdf8fd", "accent": "#8d2a89" } },
+        "velo16":    { "type": "brand", "settings": { "brand_name": "Velo16™",    "tagline": "Total Vitality",   "target": "Daily wellness",    "link": "/collections/velo16",                       "bg": "#fff5f7", "accent": "#c8163c" } },
+        "herbio":    { "type": "brand", "settings": { "brand_name": "Her-Biotics™","tagline": "Women's Wellness","target": "Hormonal balance",  "link": "/collections/her-biotics",                  "bg": "#fff5f3", "accent": "#d2585a" } },
+        "hisbio":    { "type": "brand", "settings": { "brand_name": "His-Biotics®","tagline": "Male Microbiome", "target": "For men",          "link": "/collections/his-biotics",                  "bg": "#e8f3f1", "accent": "#0a3d3d" } },
+        "preg":      { "type": "brand", "settings": { "brand_name": "PregBiotics™","tagline": "Motherhood",      "target": "Pregnancy support","link": "/collections/pregbiotics",                  "bg": "#f2f9ec", "accent": "#1f6b3d" } },
+        "biokid":    { "type": "brand", "settings": { "brand_name": "BioKid™",    "tagline": "Kids' Daily",     "target": "For children",     "link": "/collections/biokid",                       "bg": "#f0fbf2", "accent": "#16a34a" } },
+        "biogain":   { "type": "brand", "settings": { "brand_name": "BioGain®",   "tagline": "Recovery Meal",   "target": "Active recovery",  "link": "/collections/biogain",                      "bg": "#fff5ec", "accent": "#ff6b35" } },
+        "gutslim":   { "type": "brand", "settings": { "brand_name": "GutSlim™",   "tagline": "Weight Mgmt",     "target": "Sustainable loss", "link": "/collections/gutslim",                      "bg": "#fff8eb", "accent": "#ff9500" } },
+        "almasi":    { "type": "brand", "settings": { "brand_name": "ALMASI™",    "tagline": "Skincare",        "target": "Probiotic skin",   "link": "/collections/almasi-probiotics-skin-care",  "bg": "#fdf5f3", "accent": "#1a1a1a" } }
+      },
+      "block_order": ["femina","velo16","herbio","hisbio","preg","biokid","biogain","gutslim","almasi"],
+      "settings": {
+        "eyebrow": "The Velobiotics Family",
+        "title_pre": "Explore the",
+        "title_highlight": "Velobiotics Family",
+        "sub": "From women's intimate care to kids' immunity and digestive wellness — a targeted solution for every member of your family."
+      }
     },
-    "vb_feature_icons": {
-      "type": "vb-feature-icons",
-      "settings": {}
+    "best-sellers": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Your Daily Wellness Starts Here",
+        "heading_size": "h1",
+        "description": "<p>Explore our top probiotic blends — engineered to nourish your gut, boost immunity, and support long-term wellness.</p>",
+        "show_description": true,
+        "description_style": "subtitle",
+        "collection": "all",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 56,
+        "padding_bottom": 36
+      }
     },
-    "vb_brand_grid": {
-      "type": "vb-brand-grid",
-      "settings": {}
+    "blog": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Your Health. Our Knowledge.",
+        "heading_size": "h1",
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 56
+      }
     },
-    "vb_featured_collection": {
-      "type": "vb-featured-collection",
-      "settings": {}
-    },
-    "vb_quiz_cta": {
-      "type": "vb-quiz-cta",
-      "settings": {}
-    },
-    "vb_armoured": {
-      "type": "vb-armoured",
-      "settings": {}
-    },
-    "vb_science_cards": {
-      "type": "vb-science-cards",
-      "settings": {}
-    },
-    "vb_science_strip": {
-      "type": "vb-science-strip",
-      "settings": {}
-    },
-    "vb_video_reviews": {
-      "type": "vb-video-reviews",
-      "settings": {}
-    },
-    "vb_google_reviews": {
-      "type": "vb-google-reviews",
-      "settings": {}
-    },
-    "vb_reviews": {
-      "type": "vb-reviews",
-      "settings": {}
-    },
-    "vb_comparison": {
-      "type": "vb-comparison",
-      "settings": {}
-    },
-    "vb_faq": {
-      "type": "vb-faq",
-      "settings": {}
-    },
-    "vb_blog": {
-      "type": "vb-blog",
-      "settings": {}
-    },
-    "vb_newsletter": {
-      "type": "vb-newsletter",
-      "settings": {}
-    },
-    "vb_cta_final": {
-      "type": "vb-cta-final",
-      "settings": {}
+    "final-cta": {
+      "type": "vb-final-cta",
+      "blocks": {
+        "pr1": { "type": "proof", "settings": { "icon": "✅", "text": "30-day money-back guarantee" } },
+        "pr2": { "type": "proof", "settings": { "icon": "🚚", "text": "Free shipping over R400" } },
+        "pr3": { "type": "proof", "settings": { "icon": "🔬", "text": "Lab-tested every batch" } }
+      },
+      "block_order": ["pr1","pr2","pr3"],
+      "settings": {
+        "eyebrow": "Start your gut wellness journey",
+        "title_pre": "Feel the Difference —",
+        "title_highlight": "Billions Strong, Scientifically Proven.",
+        "sub": "Every capsule, chewable, and suppository is built to survive — so you can thrive.",
+        "cta1_text": "Shop the Range →",
+        "cta1_link": "/collections/all",
+        "cta2_text": "🧬 Take The Quiz",
+        "cta2_link": "/pages/quiz"
+      }
     }
   },
   "order": [
-    "vb_hero",
-    "vb_trust_bar",
-    "vb_scrolling_logos",
-    "vb_why_choose",
-    "vb_feature_icons",
-    "vb_brand_grid",
-    "vb_featured_collection",
-    "vb_quiz_cta",
-    "vb_armoured",
-    "vb_science_cards",
-    "vb_science_strip",
-    "vb_video_reviews",
-    "vb_google_reviews",
-    "vb_reviews",
-    "vb_comparison",
-    "vb_faq",
-    "vb_blog",
-    "vb_newsletter",
-    "vb_cta_final"
+    "trust-marquee",
+    "hero",
+    "value-props",
+    "brand-family",
+    "best-sellers",
+    "blog",
+    "final-cta"
   ]
 }

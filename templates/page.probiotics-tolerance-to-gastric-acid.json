@@ -1,0 +1,78 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "article": {
+      "type": "vb-science-article",
+      "blocks": {
+        "t1": {
+          "type": "text",
+          "settings": {
+            "content": "<h2>The acid problem</h2><p>Your stomach is designed to kill things. Stomach acid sits at a pH of 1–2 — about the same as battery acid — for the simple reason that most bacteria, viruses, and parasites that arrive with your food shouldn't make it any further. Unfortunately for conventional probiotic supplements, your stomach doesn't distinguish between the bad bacteria and the friendly cultures you swallowed on purpose.</p><p>Without protection, 99% of probiotic cultures in a typical capsule are destroyed within 30 minutes of swallowing. The handful that survive are too few to colonise effectively. The label says \"10 billion CFU\" but your gut sees less than 100 million.</p>"
+          }
+        },
+        "i1": {
+          "type": "image",
+          "settings": {
+            "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_192929_dcb318af-4300-460b-a6c1-1927f0d319e9.png",
+            "caption": "A conventional probiotic's journey: stomach acid destroys 99% before they reach the small intestine."
+          }
+        },
+        "t2": {
+          "type": "text",
+          "settings": {
+            "content": "<h2>How acid-tolerant probiotics work</h2><p>True acid tolerance isn't a feature of the bacteria — it's engineered through delivery. The Velobiotics™ MEP coating maintains structural integrity through low-pH stomach environments, only dissolving when pH rises into the alkaline range of the small intestine (pH 6.5–7.5).</p><p>This means:</p><ul><li>Cultures stay sealed throughout the 1–4 hours they spend in your stomach.</li><li>The coating dissolves at the right pH, in the right place.</li><li>1000× more cultures arrive alive vs. uncoated probiotic capsules.</li><li>Colonisation is meaningful — your gut actually receives the dose the label promised.</li></ul>"
+          }
+        },
+        "kp1": {
+          "type": "keypoints",
+          "settings": {
+            "label": "Why it matters",
+            "points": "Without acid protection, most probiotics are wasted.\nVelobiotics™ MEP survives stomach acid at pH 1.0.\nReleases cultures targeted to the small intestine.\n1000× more probiotics arrive alive to colonise your gut."
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "i1",
+        "t2",
+        "kp1"
+      ],
+      "settings": {
+        "eyebrow": "The Science",
+        "title_pre": "Surviving",
+        "title_highlight": "stomach acid.",
+        "intro": "Why most probiotics fail at pH 1 — and how Velobiotics™ MEP changes that.",
+        "hero_image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_192929_dcb318af-4300-460b-a6c1-1927f0d319e9.png"
+      }
+    },
+    "final_cta": {
+      "type": "vb-final-cta",
+      "settings": {
+        "eyebrow": "Acid-proof probiotics",
+        "title_pre": "1000× more reach",
+        "title_highlight": "your gut alive.",
+        "sub": "30-day money-back guarantee · Ships worldwide · Lab-tested every batch."
+      }
+    }
+  },
+  "order": [
+    "main",
+    "article",
+    "final_cta"
+  ]
+}

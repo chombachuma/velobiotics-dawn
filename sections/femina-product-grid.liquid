@@ -1,55 +1,63 @@
 {%- comment -%}
   Femina product grid — femina.care "Products That Perform" style.
-  Each card: big image, coloured category pill (from product tag pill:<text>),
-  meta line with Best Seller / Save X%, product name, short description, CTA.
-
-  Category pill comes from product tag prefixed with "pill:" e.g. tag "pill:🏆 Most Popular".
-  "Best Seller" flag comes from tag "best-seller".
-  Save % auto-calculated from compare_at_price.
+  Cards: transparent product imagery via mix-blend-mode, big save-% pill,
+  no CTA on sold-out (card itself is clickable), Velobiotics green accent.
 {%- endcomment -%}
 
+{%- liquid
+  assign brand_primary = section.settings.brand_primary | default: '#8d2a89'
+  assign brand_secondary = section.settings.brand_secondary | default: '#4d8c44'
+  assign card_bg = section.settings.card_bg | default: '#faf3f9'
+  assign card_bg2 = section.settings.card_bg2 | default: '#f3e7f2'
+-%}
+
 <style>
-  .fpg-section { padding: 24px 20px 60px; max-width: 1280px; margin: 0 auto; }
+  .fpg-section { padding: 24px 20px 60px; max-width: 1280px; margin: 0 auto; --bp: {{ brand_primary }}; --bs: {{ brand_secondary }}; }
   .fpg-section__head { margin: 0 0 32px; text-align: center; }
-  .fpg-section__eyebrow { display: inline-block; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: #8d2a89; font-weight: 700; margin: 0 0 8px; }
+  .fpg-section__eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--bp); font-weight: 700; margin: 0 0 8px; }
+  .fpg-section__eyebrow::before, .fpg-section__eyebrow::after { content: ''; width: 18px; height: 2px; background: var(--bs); border-radius: 2px; }
   .fpg-section__title { font-size: clamp(24px, 3.4vw, 36px); font-weight: 800; margin: 0 0 8px; line-height: 1.15; color: #1a1a1a; }
-  .fpg-section__title em { color: #8d2a89; font-style: italic; font-weight: 700; }
+  .fpg-section__title em { color: var(--bp); font-style: italic; font-weight: 700; }
   .fpg-section__sub { font-size: 16px; line-height: 1.5; color: #555; max-width: 640px; margin: 0 auto; }
 
   .fpg-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
 
   .fpg-card { position: relative; display: flex; flex-direction: column; background: #fff; border: 1px solid #ece7f0; border-radius: 18px; overflow: hidden; text-decoration: none; color: inherit; transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease; }
-  .fpg-card:hover { transform: translateY(-4px); box-shadow: 0 18px 38px rgba(141, 42, 137, 0.14); border-color: #d8c4d6; }
+  .fpg-card:hover { transform: translateY(-4px); box-shadow: 0 18px 38px rgba(141, 42, 137, 0.18); border-color: color-mix(in srgb, var(--bp) 30%, transparent); }
+  .fpg-card--soldout { opacity: 0.78; }
+  .fpg-card--soldout:hover { transform: none; box-shadow: 0 8px 18px rgba(0,0,0,0.08); }
 
-  .fpg-card__media { position: relative; width: 100%; aspect-ratio: 1 / 1; background: linear-gradient(135deg, #faf3f9 0%, #f3e7f2 100%); overflow: hidden; }
-  .fpg-card__media img { width: 100%; height: 100%; object-fit: contain; padding: 16px; transition: transform 0.4s ease; }
-  .fpg-card:hover .fpg-card__media img { transform: scale(1.04); }
-  .fpg-card__pill { position: absolute; top: 14px; left: 14px; background: rgba(255,255,255,0.96); color: #8d2a89; font-weight: 700; font-size: 12px; padding: 6px 12px; border-radius: 999px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); white-space: nowrap; }
-  .fpg-card__sold { position: absolute; top: 14px; right: 14px; background: #1a1a1a; color: #fff; font-weight: 700; font-size: 11px; padding: 5px 11px; border-radius: 999px; letter-spacing: .04em; text-transform: uppercase; }
+  .fpg-card__media { position: relative; width: 100%; aspect-ratio: 1 / 1; background: linear-gradient(135deg, var(--cardbg, #faf3f9) 0%, var(--cardbg2, #f3e7f2) 100%); overflow: hidden; }
+  .fpg-card__media img { width: 100%; height: 100%; object-fit: contain; padding: 14px; transition: transform 0.4s ease; mix-blend-mode: multiply; }
+  .fpg-card:hover .fpg-card__media img { transform: scale(1.05); }
+  .fpg-card__pill { position: absolute; top: 14px; left: 14px; background: rgba(255,255,255,0.96); color: var(--bp); font-weight: 700; font-size: 12px; padding: 6px 12px; border-radius: 999px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); white-space: nowrap; z-index: 2; }
+  .fpg-card__sold { position: absolute; top: 14px; right: 14px; background: #1a1a1a; color: #fff; font-weight: 700; font-size: 11px; padding: 6px 13px; border-radius: 999px; letter-spacing: .06em; text-transform: uppercase; z-index: 2; }
+
+  .fpg-card__save { position: absolute; top: 14px; right: 14px; display: inline-flex; align-items: center; justify-content: center; min-width: 60px; height: 60px; background: linear-gradient(135deg, #ff3d6e 0%, #d6275a 100%); color: #fff !important; font-weight: 800; font-size: 16px; border-radius: 50%; box-shadow: 0 8px 22px rgba(214, 39, 90, 0.42); letter-spacing: -0.01em; transform: rotate(-8deg); z-index: 3; line-height: 1; padding: 8px; text-align: center; }
+  .fpg-card__save small { display: block; font-size: 9px; font-weight: 700; letter-spacing: .08em; opacity: 0.95; margin-top: 1px; }
+  .fpg-card--soldout .fpg-card__save { display: none; }
 
   .fpg-card__body { padding: 20px 22px 22px; display: flex; flex-direction: column; flex: 1; }
-  .fpg-card__meta { font-size: 12px; font-weight: 700; color: #8d2a89; letter-spacing: .04em; margin: 0 0 8px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-  .fpg-card__meta .dot { width: 4px; height: 4px; background: #c4a4c2; border-radius: 50%; }
-  .fpg-card__meta .rating { color: #f5a623; }
+  .fpg-card__meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 12px; font-weight: 700; letter-spacing: .04em; margin: 0 0 10px; min-height: 18px; }
+  .fpg-card__brandtag { display: inline-flex; align-items: center; gap: 4px; background: color-mix(in srgb, var(--bs) 14%, transparent); color: var(--bs); padding: 3px 9px; border-radius: 999px; font-size: 11px; }
+  .fpg-card__bestseller { color: var(--bp); }
   .fpg-card__title { font-size: 19px; font-weight: 800; line-height: 1.25; margin: 0 0 8px; color: #1a1a1a; }
-  .fpg-card__desc { font-size: 14px; line-height: 1.55; color: #555; margin: 0 0 16px; flex: 1; }
-  .fpg-card__priceline { display: flex; align-items: baseline; gap: 10px; margin: 0 0 14px; flex-wrap: wrap; }
-  .fpg-card__price { font-size: 18px; font-weight: 800; color: #1a1a1a; }
+  .fpg-card__desc { font-size: 14px; line-height: 1.55; color: #555; margin: 0 0 16px; flex: 1; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .fpg-card__priceline { display: flex; align-items: baseline; gap: 10px; margin: 0; flex-wrap: wrap; }
+  .fpg-card__price { font-size: 20px; font-weight: 800; color: #1a1a1a; }
   .fpg-card__compare { font-size: 14px; color: #a0a0a0; text-decoration: line-through; }
-  .fpg-card__savings { font-size: 12px; font-weight: 700; color: #fff; background: #8d2a89; padding: 3px 10px; border-radius: 999px; letter-spacing: .03em; }
-  .fpg-card__cta { display: inline-flex; align-items: center; gap: 6px; color: #8d2a89; font-weight: 700; font-size: 14px; text-decoration: none; margin-top: auto; }
-  .fpg-card__cta .arrow { transition: transform 0.2s ease; }
-  .fpg-card:hover .fpg-card__cta .arrow { transform: translateX(4px); }
+  .fpg-card__soldlabel { color: #999; font-weight: 700; font-size: 14px; letter-spacing: .03em; }
 
   @media (max-width: 749px) {
     .fpg-section { padding: 8px 14px 40px; }
     .fpg-grid { grid-template-columns: 1fr; gap: 18px; }
     .fpg-card__body { padding: 18px 18px 20px; }
     .fpg-card__title { font-size: 17px; }
+    .fpg-card__save { min-width: 54px; height: 54px; font-size: 14px; top: 10px; right: 10px; }
   }
 </style>
 
-<div class="fpg-section">
+<div class="fpg-section" style="--cardbg: {{ card_bg }}; --cardbg2: {{ card_bg2 }};">
   {%- if section.settings.show_heading -%}
     <div class="fpg-section__head">
       {%- if section.settings.eyebrow != blank -%}
@@ -83,8 +91,12 @@
             assign diff = product.compare_at_price | minus: product.price
             assign savings_pct = diff | times: 100.0 | divided_by: product.compare_at_price | round
           endif
+          assign card_classes = 'fpg-card'
+          unless product.available
+            assign card_classes = 'fpg-card fpg-card--soldout'
+          endunless
         -%}
-        <a href="{{ product.url }}" class="fpg-card" aria-label="{{ product.title | escape }}">
+        <a href="{{ product.url }}" class="{{ card_classes }}" aria-label="{{ product.title | escape }}">
           <div class="fpg-card__media">
             {%- if product.featured_image -%}
               <img src="{{ product.featured_image | image_url: width: 700 }}" alt="{{ product.featured_image.alt | default: product.title | escape }}" loading="lazy" width="700" height="700" />
@@ -92,29 +104,29 @@
             {%- if pill_text != blank -%}
               <span class="fpg-card__pill">{{ pill_text }}</span>
             {%- endif -%}
-            {%- unless product.available -%}
+            {%- if product.available == false -%}
               <span class="fpg-card__sold">Sold out</span>
-            {%- endunless -%}
+            {%- elsif savings_pct > 0 -%}
+              <span class="fpg-card__save">−{{ savings_pct }}%<small>SAVE</small></span>
+            {%- endif -%}
           </div>
           <div class="fpg-card__body">
-            <p class="fpg-card__meta">
-              {%- if is_bestseller -%}🏆 Best Seller{%- endif -%}
-              {%- if is_bestseller and savings_pct > 0 -%}<span class="dot"></span>{%- endif -%}
-              {%- if savings_pct > 0 -%}Save {{ savings_pct }}%{%- endif -%}
-              {%- if is_bestseller == false and savings_pct == 0 -%}{{ product.type | default: 'Femina&trade;' }}{%- endif -%}
-            </p>
-            <h3 class="fpg-card__title">{{ product.title | replace: 'Femina', 'Femina' }}</h3>
+            <div class="fpg-card__meta">
+              {%- if is_bestseller -%}<span class="fpg-card__bestseller">🏆 Best Seller</span>{%- endif -%}
+              <span class="fpg-card__brandtag">{{ section.settings.brand_label | default: 'Femina™' }}</span>
+            </div>
+            <h3 class="fpg-card__title">{{ product.title }}</h3>
             <p class="fpg-card__desc">{{ product.description | strip_html | truncatewords: 22 }}</p>
             <div class="fpg-card__priceline">
-              <span class="fpg-card__price">{{ product.price | money }}</span>
-              {%- if product.compare_at_price > product.price -%}
-                <span class="fpg-card__compare">{{ product.compare_at_price | money }}</span>
-              {%- endif -%}
-              {%- if savings_pct > 0 -%}
-                <span class="fpg-card__savings">−{{ savings_pct }}%</span>
+              {%- if product.available -%}
+                <span class="fpg-card__price">{{ product.price | money }}</span>
+                {%- if product.compare_at_price > product.price -%}
+                  <span class="fpg-card__compare">{{ product.compare_at_price | money }}</span>
+                {%- endif -%}
+              {%- else -%}
+                <span class="fpg-card__soldlabel">Currently unavailable</span>
               {%- endif -%}
             </div>
-            <span class="fpg-card__cta">{{ section.settings.cta_text | default: 'Learn More' }} <span class="arrow">→</span></span>
           </div>
         </a>
       {%- endfor -%}
@@ -133,10 +145,15 @@
     { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "The Collection" },
     { "type": "text", "id": "title", "label": "Title", "default": "Products That Perform" },
     { "type": "textarea", "id": "sub", "label": "Sub-text", "default": "Every Femina product is formulated to work in harmony with your body's natural ecosystem — and backed by 2,000+ verified five-star stories." },
+    { "type": "header", "content": "Brand colours" },
+    { "type": "color", "id": "brand_primary", "label": "Brand primary (accent)", "default": "#8d2a89" },
+    { "type": "color", "id": "brand_secondary", "label": "Brand secondary (Velobiotics green)", "default": "#4d8c44" },
+    { "type": "color", "id": "card_bg", "label": "Card background gradient start", "default": "#faf3f9" },
+    { "type": "color", "id": "card_bg2", "label": "Card background gradient end", "default": "#f3e7f2" },
+    { "type": "text", "id": "brand_label", "label": "Brand label on each card", "default": "Femina™" },
     { "type": "header", "content": "Cards" },
     { "type": "range", "id": "products_per_page", "label": "Products per page", "min": 4, "max": 24, "step": 2, "default": 12 },
-    { "type": "text", "id": "cta_text", "label": "Card CTA text", "default": "Learn More" },
-    { "type": "paragraph", "content": "Set a category pill per product by adding a tag like 'pill:🏆 Most Popular' to that product. Mark best-sellers with the tag 'best-seller'. Savings % auto-calculates from compare-at price." }
+    { "type": "paragraph", "content": "Tag a product with 'pill:🏆 Most Popular' to show a pill on the image. Tag 'best-seller' for the trophy meta badge. Savings % is auto-calculated from compare-at price and rendered as a starburst on the card." }
   ],
   "presets": [
     { "name": "Femina product grid" }

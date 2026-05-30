@@ -1,0 +1,86 @@
+{%- comment -%} VB · Scrolling review cards with avatars {%- endcomment -%}
+
+{%- liquid
+  assign brand_primary = section.settings.brand_primary | default: '#4d8c44'
+  assign brand_tint = section.settings.brand_tint | default: '#f3f7f1'
+-%}
+
+<style>
+  .vb-prc { padding: 56px 0 56px; --bp: {{ brand_primary }}; --bt: {{ brand_tint }}; background: #fff; overflow: hidden; }
+  .vb-prc__head { text-align: center; max-width: 720px; margin: 0 auto 28px; padding: 0 20px; }
+  .vb-prc__eyebrow { display: inline-block; color: var(--bp); font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 10px; }
+  .vb-prc__title { font-size: clamp(24px, 3.6vw, 36px); font-weight: 800; color: #1a1a1a; line-height: 1.15; margin: 0 0 10px; }
+  .vb-prc__title em { color: var(--bp); font-style: normal; }
+  .vb-prc__sub { font-size: 15.5px; line-height: 1.55; color: #5c6664; margin: 0; }
+  .vb-prc__track { display: flex; gap: 16px; animation: vb-prc-scroll 38s linear infinite; width: max-content; padding: 8px 0 16px; }
+  .vb-prc:hover .vb-prc__track { animation-play-state: paused; }
+  @keyframes vb-prc-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .vb-prc__card { width: 320px; flex-shrink: 0; padding: 22px 20px 20px; background: #fff; border: 1px solid #e3ece1; border-radius: 18px; box-shadow: 0 12px 28px rgba(0,0,0,0.04); display: flex; flex-direction: column; gap: 12px; }
+  .vb-prc__top { display: flex; align-items: center; gap: 12px; }
+  .vb-prc__avatar { width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, var(--bp), color-mix(in srgb, var(--bp) 60%, white)); color: #fff; font-weight: 900; font-size: 17px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .vb-prc__author { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .vb-prc__name { font-size: 14.5px; font-weight: 800; color: #1a1a1a; }
+  .vb-prc__verified { font-size: 11px; color: var(--bp); font-weight: 700; display: inline-flex; align-items: center; gap: 4px; }
+  .vb-prc__stars { color: #ffb43a; letter-spacing: 1px; font-size: 13px; }
+  .vb-prc__quote { font-size: 14.5px; line-height: 1.55; color: #2b3a2a; margin: 0; font-weight: 500; }
+  .vb-prc__quote strong { color: var(--bp); }
+  .vb-prc__date { font-size: 11.5px; color: #6c7a6b; margin: auto 0 0; }
+  @media (max-width: 749px) {
+    .vb-prc { padding: 40px 0; }
+    .vb-prc__head { margin-bottom: 20px; }
+    .vb-prc__card { width: 280px; padding: 18px 16px 16px; }
+    .vb-prc__quote { font-size: 13.5px; }
+  }
+</style>
+
+<section class="vb-prc">
+  <div class="vb-prc__head">
+    {%- if section.settings.eyebrow != blank -%}<p class="vb-prc__eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+    <h2 class="vb-prc__title">{{ section.settings.title_pre }}{%- if section.settings.title_highlight != blank %} <em>{{ section.settings.title_highlight }}</em>{%- endif -%}</h2>
+    {%- if section.settings.sub != blank -%}<p class="vb-prc__sub">{{ section.settings.sub }}</p>{%- endif -%}
+  </div>
+  <div class="vb-prc__track">
+    {%- for i in (1..2) -%}
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'review' -%}
+          <article class="vb-prc__card">
+            <div class="vb-prc__top">
+              <div class="vb-prc__avatar">{{ block.settings.author | slice: 0,1 | upcase }}</div>
+              <div class="vb-prc__author">
+                <span class="vb-prc__name">{{ block.settings.author }}</span>
+                <span class="vb-prc__verified">✓ Verified buyer</span>
+              </div>
+              <span class="vb-prc__stars" style="margin-left:auto;">★★★★★</span>
+            </div>
+            <p class="vb-prc__quote">"{{ block.settings.quote }}"</p>
+            <p class="vb-prc__date">{{ block.settings.date | default: '· Verified review' }}</p>
+          </article>
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endfor -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "VB · Reviews carousel",
+  "tag": "section",
+  "enabled_on": { "templates": ["product"] },
+  "settings": [
+    { "type": "color", "id": "brand_primary", "label": "Brand primary", "default": "#4d8c44" },
+    { "type": "color", "id": "brand_tint", "label": "Brand tint", "default": "#f3f7f1" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Real Reviews" },
+    { "type": "text", "id": "title_pre", "label": "Title (start)", "default": "Loved by" },
+    { "type": "text", "id": "title_highlight", "label": "Title (highlight)", "default": "thousands of women" },
+    { "type": "textarea", "id": "sub", "label": "Sub-text", "default": "Verified reviews from real customers — hover to pause the scroll." }
+  ],
+  "blocks": [
+    { "type": "review", "name": "Review", "settings": [
+      { "type": "textarea", "id": "quote", "label": "Quote", "default": "Game-changer. I feel fresh and confident every day." },
+      { "type": "text", "id": "author", "label": "Author", "default": "Kim S." },
+      { "type": "text", "id": "date", "label": "Date / context", "default": "Verified review · 2 weeks ago" }
+    ]}
+  ],
+  "presets": [{ "name": "VB · Reviews carousel" }]
+}
+{% endschema %}

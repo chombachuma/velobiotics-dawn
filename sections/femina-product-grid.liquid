@@ -2,7 +2,7 @@
   Femina product grid — femina.care "Products That Perform" style.
   Cards: transparent product imagery, big save-% starburst,
   no CTA on sold-out (card itself is clickable), Velobiotics green accent.
-  Settings expose card_min_width for per-brand card sizing and proper pagination.
+  Single-product collections: card auto-centers at sensible max width.
 {%- endcomment -%}
 
 {%- liquid
@@ -23,6 +23,10 @@
   .fpg-section__sub { font-size: 16px; line-height: 1.5; color: #555; max-width: 640px; margin: 0 auto; }
 
   .fpg-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax({{ card_min }}px, 1fr)); gap: 24px; }
+  /* Single-product collections — cap card width and centre */
+  .fpg-grid:has(> .fpg-card:only-child) { grid-template-columns: minmax({{ card_min }}px, 380px); justify-content: center; }
+  /* Two-product collections — keep cards reasonably sized */
+  .fpg-grid:has(> .fpg-card:nth-child(2):last-child) { grid-template-columns: repeat(2, minmax({{ card_min }}px, 380px)); justify-content: center; }
 
   .fpg-card { position: relative; display: flex; flex-direction: column; background: #fff; border: 1px solid #ece7f0; border-radius: 16px; overflow: hidden; text-decoration: none; color: inherit; transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease; }
   .fpg-card:hover { transform: translateY(-5px); box-shadow: 0 22px 44px rgba(141, 42, 137, 0.20); border-color: color-mix(in srgb, var(--bp) 35%, transparent); }
@@ -60,6 +64,7 @@
   @media (max-width: 749px) {
     .fpg-section { padding: 8px 14px 40px; }
     .fpg-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .fpg-grid:has(> .fpg-card:only-child) { grid-template-columns: 1fr; }
     .fpg-card__body { padding: 14px 14px 16px; }
     .fpg-card__title { font-size: 14px; }
     .fpg-card__desc { font-size: 12px; -webkit-line-clamp: 2; }

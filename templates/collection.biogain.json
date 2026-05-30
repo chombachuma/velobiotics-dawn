@@ -18,8 +18,8 @@
         "headline_highlight": "your feet.",
         "headline_post": "",
         "sub": "Scientifically formulated with 10 probiotic strains, 12 vitamins, and 11 minerals. Your shortest path to quick & healthy recovery.",
-        "cta1_text": "Shop BioGain →",
-        "cta1_link": "/collections/biogain",
+        "cta1_text": "🛒 Shop BioGain Meal",
+        "cta1_link": "/products/biogain-probiotic-meal",
         "cta2_text": "📘 Free Bulk-Up Plan",
         "cta2_link": "https://biogain.care",
         "proof": " 10 probiotic strains · 5B CFU · 12 vitamins · 11 minerals",
@@ -49,7 +49,8 @@
         "card_bg": "#fff5ec",
         "card_bg2": "#ffd6b8",
         "brand_label": "BioGain®",
-        "products_per_page": 12
+        "products_per_page": 12,
+        "card_min_width": 240
       }
     }
   },

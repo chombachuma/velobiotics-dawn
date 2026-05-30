@@ -1,0 +1,79 @@
+{%- comment -%} VB · Team Grid — team member cards with photo, name, role, bio {%- endcomment -%}
+
+<style>
+  .vb-tg { padding: 56px 20px; max-width: 1280px; margin: 0 auto; background: linear-gradient(180deg, #fff 0%, #f3f7f1 100%); }
+  .vb-tg__head { text-align: center; max-width: 760px; margin: 0 auto 40px; }
+  .vb-tg__eyebrow { display: inline-block; color: #4d8c44; font-size: 12px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 12px; padding: 6px 13px; background: rgba(77, 140, 68, 0.1); border-radius: 999px; }
+  .vb-tg__title { font-size: clamp(28px, 4vw, 42px); font-weight: 800; color: #1a1a1a; line-height: 1.12; margin: 0 0 14px; letter-spacing: -0.02em; }
+  .vb-tg__title em { color: #4d8c44; font-style: normal; }
+  .vb-tg__sub { font-size: 16px; line-height: 1.6; color: #5c6664; margin: 0; }
+  .vb-tg__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .vb-tg__card { background: #fff; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.06); border: 1px solid #e3ece1; transition: transform 0.22s ease, box-shadow 0.22s ease; display: flex; flex-direction: column; }
+  .vb-tg__card:hover { transform: translateY(-5px); box-shadow: 0 18px 36px rgba(0,0,0,0.1); }
+  .vb-tg__photo-wrap { aspect-ratio: 1/1; background: #f3f7f1; overflow: hidden; }
+  .vb-tg__photo-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .vb-tg__body { padding: 20px 22px 22px; flex: 1; display: flex; flex-direction: column; gap: 8px; }
+  .vb-tg__name { font-size: 19px; font-weight: 800; color: #1a1a1a; margin: 0; line-height: 1.2; }
+  .vb-tg__role { font-size: 13px; font-weight: 800; color: #4d8c44; letter-spacing: 0.02em; margin: 0; line-height: 1.3; }
+  .vb-tg__bio { font-size: 13.5px; line-height: 1.55; color: #5c6664; margin: 6px 0 0; }
+  @media (max-width: 990px) { .vb-tg__grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 749px) {
+    .vb-tg { padding: 36px 14px; }
+    .vb-tg__grid { grid-template-columns: 1fr; gap: 14px; max-width: 420px; margin: 0 auto; }
+    .vb-tg__body { padding: 16px 18px 18px; }
+    .vb-tg__name { font-size: 17px; }
+    .vb-tg__role { font-size: 12px; }
+    .vb-tg__bio { font-size: 13px; }
+  }
+</style>
+
+<section class="vb-tg">
+  <div class="vb-tg__head">
+    {%- if section.settings.eyebrow != blank -%}<span class="vb-tg__eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+    <h2 class="vb-tg__title">{{ section.settings.title_pre }}{%- if section.settings.title_highlight != blank %} <em>{{ section.settings.title_highlight }}</em>{%- endif -%}</h2>
+    {%- if section.settings.sub != blank -%}<p class="vb-tg__sub">{{ section.settings.sub }}</p>{%- endif -%}
+  </div>
+  <div class="vb-tg__grid">
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'member' -%}
+        <article class="vb-tg__card" {{ block.shopify_attributes }}>
+          <div class="vb-tg__photo-wrap">
+            {%- if block.settings.photo != blank -%}
+              <img src="{{ block.settings.photo | image_url: width: 600 }}" alt="{{ block.settings.name | escape }}" loading="lazy" />
+            {%- elsif block.settings.photo_url != blank -%}
+              <img src="{{ block.settings.photo_url }}" alt="{{ block.settings.name | escape }}" loading="lazy" />
+            {%- endif -%}
+          </div>
+          <div class="vb-tg__body">
+            <h3 class="vb-tg__name">{{ block.settings.name }}</h3>
+            <p class="vb-tg__role">{{ block.settings.role }}</p>
+            <p class="vb-tg__bio">{{ block.settings.bio }}</p>
+          </div>
+        </article>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "VB · Team grid",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Meet the Team" },
+    { "type": "text", "id": "title_pre", "label": "Title (start)", "default": "The people behind" },
+    { "type": "text", "id": "title_highlight", "label": "Title (highlight)", "default": "Velobiotics." },
+    { "type": "textarea", "id": "sub", "label": "Subtitle", "default": "Multidisciplinary team of medical professionals, scientists, and wellness experts on one mission." }
+  ],
+  "blocks": [
+    { "type": "member", "name": "Team member", "settings": [
+      { "type": "image_picker", "id": "photo", "label": "Photo (upload)" },
+      { "type": "url", "id": "photo_url", "label": "Photo URL (fallback)" },
+      { "type": "text", "id": "name", "label": "Name", "default": "Team member" },
+      { "type": "text", "id": "role", "label": "Role", "default": "Title" },
+      { "type": "textarea", "id": "bio", "label": "Bio", "default": "Bio." }
+    ]}
+  ],
+  "presets": [{ "name": "VB · Team grid" }]
+}
+{% endschema %}

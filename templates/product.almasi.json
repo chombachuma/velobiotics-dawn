@@ -1,0 +1,315 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": { "type": "benefit", "settings": { "icon": "✨", "text": "Probiotic skincare" } },
+        "b2": { "type": "benefit", "settings": { "icon": "💎", "text": "Luxury formulation" } },
+        "b3": { "type": "benefit", "settings": { "icon": "🌹", "text": "Anti-aging support" } },
+        "b4": { "type": "benefit", "settings": { "icon": "⚡", "text": "1000× more delivery" } },
+        "t1": { "type": "testi", "settings": { "quote": "My skin glows like never before", "author": "Bianca M." } },
+        "t2": { "type": "testi", "settings": { "quote": "Fine lines visibly smoother", "author": "Lerato S." } },
+        "t3": { "type": "testi", "settings": { "quote": "Worth every cent", "author": "Catherine V." } },
+        "t4": { "type": "testi", "settings": { "quote": "Luxury that delivers", "author": "Naledi K." } }
+      },
+      "block_order": ["b1","b2","b3","b4","t1","t2","t3","t4"],
+      "settings": {
+        "brand_primary": "#1a1a1a",
+        "brand_dark": "#000000",
+        "brand_tint": "#fdf5f3",
+        "brand_label": "Almasi™",
+        "rating": "4.9",
+        "review_count": "420+",
+        "hook": "Luxury probiotic skincare. Almasi™ harmonises 16 probiotic strains with retinol, hyaluronic acid, and vitamin E for visibly glowing, age-defying, radiantly healthy skin.",
+        "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
+        "show_subscription": true,
+        "show_qty_discounts": true,
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
+    },
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Bianca+M&background=1a1a1a&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "Almasi turned my skin around. Strangers ask what I'm using.", "author": "Bianca M.", "meta": "Verified buyer · Sandton" } },
+        "r2": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Lerato+S&background=7a5252&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "Three months in. Fine lines visibly smoother, dark spots fading.", "author": "Lerato S.", "meta": "Verified buyer · 3 months ago" } },
+        "r3": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Catherine+V&background=000000&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "I've tried every luxury brand. Almasi is the one I keep buying.", "author": "Catherine V.", "meta": "Verified buyer · 2 months ago" } },
+        "r4": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Naledi+K&background=1a1a1a&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "The texture, the glow, the confidence. Worth every cent.", "author": "Naledi K.", "meta": "Verified buyer · 1 month ago" } },
+        "r5": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Sarah+B&background=7a5252&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "I'm 47. My skin looks 37. Almasi is the reason.", "author": "Sarah B.", "meta": "Verified buyer · Cape Town" } }
+      },
+      "block_order": ["r1","r2","r3","r4","r5"],
+      "settings": {
+        "brand_primary": "#1a1a1a",
+        "brand_dark": "#000000",
+        "brand_tint": "#fdf5f3",
+        "eyebrow": "★ Real Reviews",
+        "title": "Loved by thousands of glowing women"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Fine lines and dark spots</strong> that creep in with the years." } },
+        "p2": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Dull, dehydrated skin</strong> that creams can't seem to fix." } },
+        "p3": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Skincare drawer chaos</strong> — 12 products, zero results." } },
+        "p4": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Luxury brands</strong> that overpromise and underdeliver." } }
+      },
+      "block_order": ["p1","p2","p3","p4"],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#1a1a1a",
+        "brand_tint": "#fdf5f3",
+        "image_url": "https://media.base44.com/images/public/69e1abc073bbccc7f63edacc/653a0d852_generated_image.png",
+        "tag_value": "60%",
+        "tag_label": "Of Skincare Sits in Drawers, Unused",
+        "eyebrow": "The Problem",
+        "title_pre": "Beautiful skin",
+        "title_highlight": "shouldn't be a guessing game.",
+        "desc": "Most luxury skincare promises miracles but ignores the skin microbiome — the bacterial layer that determines glow, repair, and barrier strength. Almasi™ goes deeper. Probiotic harmony plus active anti-aging actives, delivered the right way."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": { "type": "point", "settings": { "icon": "✓", "text": "<strong>16 skin-targeted probiotic strains</strong> for microbiome harmony." } },
+        "s2": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Retinol + hyaluronic acid + vitamin E</strong> — the luxury actives trio." } },
+        "s3": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive." } },
+        "s4": { "type": "point", "settings": { "icon": "✓", "text": "<strong>One capsule daily</strong>. Dermatologist-formulated. Lab-tested every batch." } }
+      },
+      "block_order": ["s1","s2","s3","s4"],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#1a1a1a",
+        "brand_tint": "#fdf5f3",
+        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Almasi-Probiotics-Moisturizer.png?v=1729091971",
+        "tag_value": "1000×",
+        "tag_label": "More Probiotics Delivered",
+        "eyebrow": "The Solution",
+        "title_pre": "Meet",
+        "title_highlight": "Almasi™ Probiotic Skincare.",
+        "desc": "Luxury probiotic skincare done differently. 16 skin-targeted probiotic strains + retinol, hyaluronic acid, and vitamin E — delivered by Velobiotics™ technology. 1000× more probiotics reach your skin alive, where they harmonise your microbiome and unlock visible glow, smoothness, and radiance."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": { "type": "product", "settings": { "product_handle": "almasi-harmonie-probiotic-skin-moisturizer", "brand": "Almasi™", "rating": "4.9", "reviews": "180+" } },
+        "r2": { "type": "product", "settings": { "product_handle": "almasi-renaissance-probiotic-serum-with-retinol", "brand": "Almasi™", "rating": "4.8", "reviews": "150+" } },
+        "r3": { "type": "product", "settings": { "product_handle": "almasi-essence-probiotic-serum-with-vitamin-e-hyaluronic-acid", "brand": "Almasi™", "rating": "4.8", "reviews": "120+" } },
+        "r4": { "type": "product", "settings": { "product_handle": "almasi-cleanser", "brand": "Almasi™", "rating": "4.7", "reviews": "90+" } }
+      },
+      "block_order": ["r1","r2","r3","r4"],
+      "settings": {
+        "brand_primary": "#1a1a1a",
+        "brand_dark": "#000000",
+        "brand_tint": "#fdf5f3",
+        "tint": false,
+        "eyebrow": "Complete the Ritual",
+        "title": "More from the Almasi™ collection",
+        "sub": "Build your luxury probiotic skincare ritual — moisturizer, serums, cleansers."
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "b1": { "type": "feat", "settings": { "icon": "✨", "name": "Visible Glow", "desc": "Microbiome harmony unlocks natural radiance." } },
+        "b2": { "type": "feat", "settings": { "icon": "⏳", "name": "Anti-Aging", "desc": "Retinol smooths fine lines, hyaluronic acid plumps." } },
+        "b3": { "type": "feat", "settings": { "icon": "💧", "name": "Deep Hydration", "desc": "Hyaluronic acid holds 1000× its weight in water." } },
+        "b4": { "type": "feat", "settings": { "icon": "🛡️", "name": "Strong Skin Barrier", "desc": "Probiotics rebuild your skin's natural defences." } },
+        "b5": { "type": "feat", "settings": { "icon": "🩺", "name": "Dermatologist-Formulated", "desc": "Built with skincare-specialist guidance." } },
+        "b6": { "type": "feat", "settings": { "icon": "🌿", "name": "Clean Luxury", "desc": "Vegan, halaal-friendly, no parabens, no harsh chemicals." } }
+      },
+      "block_order": ["b1","b2","b3","b4","b5","b6"],
+      "settings": {
+        "brand_primary": "#1a1a1a",
+        "brand_tint": "#fdf5f3",
+        "eyebrow": "Key Benefits",
+        "title_pre": "Why",
+        "title_highlight": "Almasi™",
+        "sub": "Six reasons women across South Africa and the world choose Almasi™ for luxury, results-driven skincare."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": { "type": "step", "settings": { "icon": "💊", "name": "Take One Capsule Daily", "desc": "With water, after a meal. That's it." } },
+        "h2": { "type": "step", "settings": { "icon": "🛡️", "name": "MEP Armour Survives", "desc": "Velobiotics™ shield protects every culture and active." } },
+        "h3": { "type": "step", "settings": { "icon": "🎯", "name": "Delivered to Your Skin", "desc": "1000× more probiotics + actives reach your skin alive." } },
+        "h4": { "type": "step", "settings": { "icon": "✨", "name": "Glow & Confidence", "desc": "Visibly smoother, radiant, age-defying skin." } }
+      },
+      "block_order": ["h1","h2","h3","h4"],
+      "settings": {
+        "brand_primary": "#1a1a1a",
+        "brand_tint": "#fdf5f3",
+        "eyebrow": "How It Works",
+        "title_pre": "From Capsule to",
+        "title_highlight": "Radiance",
+        "sub": "Four simple steps. One daily ritual. Visibly luxurious skin."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": { "type": "ingredient", "settings": { "icon": "🦠", "name": "16-Strain Probiotic Blend", "amount": "10 Billion CFU", "desc": "Strains targeted for skin microbiome and barrier support." } },
+        "i2": { "type": "ingredient", "settings": { "icon": "💎", "name": "Retinol + Hyaluronic Acid + Vit E", "amount": "Active trio", "desc": "Smooth, plump, protect — the gold-standard anti-aging stack." } },
+        "i3": { "type": "ingredient", "settings": { "icon": "🛡️", "name": "Velobiotics™ MEP Coating", "amount": "Patented", "desc": "Supercritical CO₂ microencapsulation — 1000× more survive." } },
+        "i4": { "type": "ingredient", "settings": { "icon": "🌹", "name": "Botanical Extracts", "amount": "Antioxidant blend", "desc": "Rosehip, green tea, niacinamide — luxury skincare essentials." } },
+        "i5": { "type": "ingredient", "settings": { "icon": "✓", "name": "Clean Capsule Shell", "amount": "Vegan HPMC", "desc": "No gelatin, no fillers, no allergens. Halaal-friendly." } },
+        "i6": { "type": "ingredient", "settings": { "icon": "🚫", "name": "Free From", "amount": "Always", "desc": "Parabens · sulphates · gluten · soy · dairy · artificial colours · GMO." } }
+      },
+      "block_order": ["i1","i2","i3","i4","i5","i6"],
+      "settings": {
+        "brand_primary": "#1a1a1a",
+        "brand_tint": "#fdf5f3",
+        "brand_dark": "#000000",
+        "brand_light": "#7a5252",
+        "eyebrow": "What's Inside",
+        "title": "Every ingredient earns its place",
+        "sub": "Six clean luxury actives. No proprietary blends. Full transparency.",
+        "facts_image_url": "",
+        "facts_label": "Supplement facts",
+        "facts_foot": "Lab-tested · Dermatologist-formulated · Clean luxury"
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": { "type": "stat", "settings": { "label": "Visible glow within 4 weeks", "percent": 91 } },
+        "c2": { "type": "stat", "settings": { "label": "Smoother fine lines", "percent": 84 } },
+        "c3": { "type": "stat", "settings": { "label": "Brighter, more even tone", "percent": 88 } },
+        "c4": { "type": "stat", "settings": { "label": "Increased skin confidence", "percent": 93 } },
+        "c5": { "type": "stat", "settings": { "label": "Would recommend to a friend", "percent": 96 } }
+      },
+      "block_order": ["c1","c2","c3","c4","c5"],
+      "settings": {
+        "brand_primary": "#1a1a1a",
+        "brand_dark": "#000000",
+        "brand_tint": "#fdf5f3",
+        "eyebrow": "Real results",
+        "title_pre": "Trusted for",
+        "title_highlight": "Visible Radiance",
+        "sub": "What customers report after 4 weeks of daily Almasi™ use.",
+        "caveat": "Based on a survey of 420+ verified customers. Individual results may vary."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "f1": { "type": "product", "settings": { "product_handle": "her-biotics-original-capsules-60s", "brand": "Her-Biotics™", "rating": "4.7", "reviews": "260+" } },
+        "f2": { "type": "product", "settings": { "product_handle": "femina-probiotic-capsules-with-cranberry-for-women", "brand": "Femina™", "rating": "4.8", "reviews": "1300+" } },
+        "f3": { "type": "product", "settings": { "product_handle": "gutslim-probiotics-glp-1-booster", "brand": "GutSlim™", "rating": "4.8", "reviews": "410+" } },
+        "f4": { "type": "product", "settings": { "product_handle": "velo16-probiotics-magnesium-glycinate", "brand": "Velo16™", "rating": "4.6", "reviews": "190+" } }
+      },
+      "block_order": ["f1","f2","f3","f4"],
+      "settings": {
+        "brand_primary": "#1a1a1a",
+        "brand_dark": "#000000",
+        "brand_tint": "#fdf5f3",
+        "tint": true,
+        "eyebrow": "Frequently Bought Together",
+        "title": "Pair with the rest of your wellness stack",
+        "sub": "Beauty starts from within. Almasi™ stacks beautifully with these Velobiotics favourites."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966", "name": "Clinically Proven Strains", "desc": "Strains studied for skin microbiome and anti-aging." } },
+        "d2": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966", "name": "Dermatologist Formulated", "desc": "Built with skincare-specialist guidance." } },
+        "d3": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073", "name": "Patented MEP Technology", "desc": "Microencapsulation with Supercritical CO₂." } },
+        "d4": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199", "name": "Clean Luxury", "desc": "Vegan, halaal-friendly, no parabens, no harsh chemicals." } }
+      },
+      "block_order": ["d1","d2","d3","d4"],
+      "settings": {
+        "eyebrow": "Trusted by Dermatologists. Proven by Science.",
+        "title_pre": "Quality you can",
+        "title_highlight": "trust.",
+        "sub": "Built with dermatology guidance, peer-reviewed strains, and SAHPRA-aware manufacturing."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": { "type": "row", "settings": { "feature": "Max Probiotic Strains", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
+        "o2": { "type": "row", "settings": { "feature": "Advanced Absorption", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
+        "o3": { "type": "row", "settings": { "feature": "Anti-Aging Actives", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
+        "o4": { "type": "row", "settings": { "feature": "Daily Simplicity", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
+        "o5": { "type": "row", "settings": { "feature": "Long-Term Radiance", "brand_state": "yes", "b_state": "no", "c_state": "no" } }
+      },
+      "block_order": ["o1","o2","o3","o4","o5"],
+      "settings": {
+        "brand_primary": "#1a1a1a",
+        "brand_dark": "#000000",
+        "brand_tint": "#fdf5f3",
+        "title": "Why We Outperform Others",
+        "sub": "Experience luxury probiotic skincare with our unique blend of microbiome-harmonising strains, retinol, hyaluronic acid, and Velobiotics™ absorption technology.",
+        "col_features": "Features",
+        "col_brand": "Almasi™",
+        "col_b": "General Probiotic",
+        "col_c": "Others",
+        "cta_text": "Add to Cart",
+        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Real Reviews",
+        "title_pre": "What Customers",
+        "title_highlight": "Are Saying",
+        "sub": "Verified reviews from real customers. The Judge.me widget will populate this section on go-live.",
+        "rating": "4.9",
+        "reviews_count": "420+",
+        "customers_count": "30K+"
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": { "type": "q", "settings": { "question": "How long until I see results?", "answer": "<p>Most customers see brighter, more hydrated skin within 2 weeks. Full anti-aging benefits build over 8–12 weeks of consistent daily use.</p>" } },
+        "q2": { "type": "q", "settings": { "question": "Can I use this with my topical skincare?", "answer": "<p>Yes — Almasi™ works from the inside out and complements your topical routine. Together they deliver maximum results.</p>" } },
+        "q3": { "type": "q", "settings": { "question": "Is Almasi™ safe daily?", "answer": "<p>Absolutely. Manufactured under GMP conditions in SAHPRA-aware facilities. Daily use is safe and recommended.</p>" } },
+        "q4": { "type": "q", "settings": { "question": "Will the retinol in this cause sensitivity?", "answer": "<p>Oral retinol is gentler than topical and supports skin from within without surface irritation. Always check with your dermatologist if you have sensitive skin.</p>" } },
+        "q5": { "type": "q", "settings": { "question": "Do you ship internationally?", "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>" } },
+        "q6": { "type": "q", "settings": { "question": "What if Almasi™ doesn't work for me?", "answer": "<p>If you don't see the difference in 30 days, we'll refund you in full — no questions asked.</p>" } }
+      },
+      "block_order": ["q1","q2","q3","q4","q5","q6"],
+      "settings": {
+        "eyebrow": "FAQ",
+        "title_pre": "Questions Before",
+        "title_highlight": "You Start"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": { "type": "g", "settings": { "icon": "✅", "text": "30-day money-back" } },
+        "g2": { "type": "g", "settings": { "icon": "🚚", "text": "Ships worldwide" } },
+        "g3": { "type": "g", "settings": { "icon": "🔬", "text": "Lab-tested every batch" } },
+        "g4": { "type": "g", "settings": { "icon": "✨", "text": "Clean luxury" } }
+      },
+      "block_order": ["g1","g2","g3","g4"],
+      "settings": {
+        "brand_primary": "#1a1a1a",
+        "brand_dark": "#000000",
+        "brand_light": "#7a5252",
+        "badge": "30-day money-back guarantee",
+        "title_pre": "Unlock Your Radiance",
+        "title_highlight": "Risk-Free for 30 Days",
+        "sub": "Join the 30,000+ women who've made Almasi™ their luxury daily. If you don't see the difference, we'll refund every cent.",
+        "cta_text": "Add to Cart",
+        "cta_link": "#vbpForm"
+      }
+    }
+  },
+  "order": ["hero","reviews-carousel","problem","solution","related","benefits","how","ingredients","confidence","fbt","doctors","outperform","judgeme","faq","final"]
+}

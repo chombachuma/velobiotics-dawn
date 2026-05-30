@@ -1,0 +1,93 @@
+{%- comment -%}
+  Velobiotics brand family — grid of brand cards linking to their collection pages
+{%- endcomment -%}
+
+<style>
+  .vb-bf { padding: 64px 24px; max-width: 1280px; margin: 0 auto; }
+  .vb-bf__head { text-align: center; max-width: 720px; margin: 0 auto 40px; }
+  .vb-bf__eyebrow { display: inline-block; color: #4d8c44; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 10px; }
+  .vb-bf__title { font-size: clamp(28px, 3.6vw, 42px); font-weight: 800; color: #1a1a1a; line-height: 1.15; margin: 0 0 12px; }
+  .vb-bf__title em { color: #4d8c44; font-style: italic; font-weight: 700; }
+  .vb-bf__sub { font-size: 16px; line-height: 1.55; color: #555; margin: 0; }
+  .vb-bf__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+  .vb-bf__card { position: relative; padding: 28px 22px 24px; border-radius: 18px; text-decoration: none; color: inherit; overflow: hidden; transition: transform 0.22s ease, box-shadow 0.22s ease; display: flex; flex-direction: column; align-items: center; text-align: center; min-height: 240px; background: var(--card-bg, #f3f7f1); border: 1px solid rgba(0,0,0,0.04); }
+  .vb-bf__card:hover { transform: translateY(-5px); box-shadow: 0 24px 48px rgba(0, 0, 0, 0.14); }
+  .vb-bf__card-pill { background: rgba(255,255,255,0.95); color: var(--card-accent, #4d8c44); padding: 5px 11px; border-radius: 999px; font-size: 10.5px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; margin: 0 0 14px; }
+  .vb-bf__card-logo { font-size: 30px; font-weight: 800; color: var(--card-accent, #4d8c44); letter-spacing: -0.02em; margin: auto 0 8px; }
+  .vb-bf__card-tag { font-size: 13px; color: #2b3a2a; font-weight: 500; margin: 0 0 14px; opacity: 0.78; }
+  .vb-bf__card-cta { font-size: 12.5px; font-weight: 700; color: var(--card-accent, #4d8c44); letter-spacing: 0.02em; display: inline-flex; align-items: center; gap: 4px; margin-top: auto; }
+  .vb-bf__card:hover .vb-bf__card-cta { gap: 8px; }
+  @media (max-width: 749px) {
+    .vb-bf { padding: 36px 16px; }
+    .vb-bf__head { margin-bottom: 24px; }
+    .vb-bf__grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .vb-bf__card { padding: 18px 14px 16px; min-height: 180px; border-radius: 14px; }
+    .vb-bf__card-pill { font-size: 9.5px; padding: 4px 9px; margin-bottom: 10px; }
+    .vb-bf__card-logo { font-size: 22px; }
+    .vb-bf__card-tag { font-size: 11.5px; }
+    .vb-bf__card-cta { font-size: 11.5px; }
+  }
+</style>
+
+<section class="vb-bf">
+  <div class="vb-bf__head">
+    {%- if section.settings.eyebrow != blank -%}<p class="vb-bf__eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+    <h2 class="vb-bf__title">{{ section.settings.title_pre }}{%- if section.settings.title_highlight != blank %} <em>{{ section.settings.title_highlight }}</em>{%- endif -%}</h2>
+    {%- if section.settings.sub != blank -%}<p class="vb-bf__sub">{{ section.settings.sub }}</p>{%- endif -%}
+  </div>
+  <div class="vb-bf__grid">
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'brand' -%}
+        <a href="{{ block.settings.link }}" class="vb-bf__card" style="--card-bg: {{ block.settings.bg }}; --card-accent: {{ block.settings.accent }};" {{ block.shopify_attributes }}>
+          {%- if block.settings.tagline != blank -%}<span class="vb-bf__card-pill">{{ block.settings.tagline }}</span>{%- endif -%}
+          <span class="vb-bf__card-logo">{{ block.settings.brand_name }}</span>
+          {%- if block.settings.target != blank -%}<p class="vb-bf__card-tag">{{ block.settings.target }}</p>{%- endif -%}
+          <span class="vb-bf__card-cta">Explore <span>→</span></span>
+        </a>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "VB · Brand family",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "The Velobiotics Family" },
+    { "type": "text", "id": "title_pre", "label": "Title (start)", "default": "Explore the" },
+    { "type": "text", "id": "title_highlight", "label": "Title (highlight)", "default": "Velobiotics Family" },
+    { "type": "textarea", "id": "sub", "label": "Sub-text", "default": "From women's intimate care to kids' immunity and digestive wellness — a targeted solution for every member of your family." }
+  ],
+  "blocks": [
+    {
+      "type": "brand",
+      "name": "Brand card",
+      "settings": [
+        { "type": "text", "id": "brand_name", "label": "Brand name", "default": "Femina™" },
+        { "type": "text", "id": "tagline", "label": "Pill text", "default": "Intimate Health" },
+        { "type": "text", "id": "target", "label": "Target line", "default": "For women" },
+        { "type": "url", "id": "link", "label": "Link" },
+        { "type": "color", "id": "bg", "label": "Card background", "default": "#fdf8fd" },
+        { "type": "color", "id": "accent", "label": "Accent colour", "default": "#8d2a89" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "VB · Brand family",
+      "blocks": [
+        { "type": "brand", "settings": { "brand_name": "Femina™", "tagline": "Intimate Health", "target": "For women", "link": "/collections/femina", "bg": "#fdf8fd", "accent": "#8d2a89" } },
+        { "type": "brand", "settings": { "brand_name": "Velo16™", "tagline": "Total Vitality", "target": "Daily wellness", "link": "/collections/velo16", "bg": "#fff5f7", "accent": "#c8163c" } },
+        { "type": "brand", "settings": { "brand_name": "Her-Biotics™", "tagline": "Women's Wellness", "target": "Hormonal balance", "link": "/collections/her-biotics", "bg": "#fff5f3", "accent": "#d2585a" } },
+        { "type": "brand", "settings": { "brand_name": "His-Biotics®", "tagline": "Male Microbiome", "target": "For men", "link": "/collections/his-biotics", "bg": "#e8f3f1", "accent": "#0a3d3d" } },
+        { "type": "brand", "settings": { "brand_name": "PregBiotics™", "tagline": "Motherhood", "target": "Pregnancy support", "link": "/collections/pregbiotics", "bg": "#f2f9ec", "accent": "#1f6b3d" } },
+        { "type": "brand", "settings": { "brand_name": "BioKid™", "tagline": "Kids' Daily", "target": "For children", "link": "/collections/biokid", "bg": "#f0fbf2", "accent": "#16a34a" } },
+        { "type": "brand", "settings": { "brand_name": "BioGain®", "tagline": "Recovery Meal", "target": "Active recovery", "link": "/collections/biogain", "bg": "#fff5ec", "accent": "#ff6b35" } },
+        { "type": "brand", "settings": { "brand_name": "GutSlim™", "tagline": "Weight Mgmt", "target": "Sustainable loss", "link": "/collections/gutslim", "bg": "#fff8eb", "accent": "#ff9500" } },
+        { "type": "brand", "settings": { "brand_name": "ALMASI™", "tagline": "Skincare", "target": "Probiotic skin", "link": "/collections/almasi-probiotics-skin-care", "bg": "#fdf5f3", "accent": "#1a1a1a" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

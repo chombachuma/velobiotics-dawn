@@ -1,0 +1,370 @@
+/* ============================================================
+   Velobiotics chrome — sleek header & footer polish for Dawn
+   Brand primary: #4d8c44 (Velobiotics green)
+   ============================================================ */
+
+:root {
+  --vb-green: #4d8c44;
+  --vb-green-dark: #36632f;
+  --vb-green-deep: #2d5a28;
+  --vb-green-light: #8fc086;
+  --vb-charcoal: #1f2c2a;
+  --vb-grey: #5c6664;
+  --vb-grey-light: #ece9e4;
+  --vb-cream: #fafaf7;
+}
+
+/* ============================================================
+   HEADER — Sleek minimalist, sticky
+   ============================================================ */
+.header-wrapper {
+  background: #fff !important;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.025);
+  border: none !important;
+  position: sticky !important;
+  top: 0;
+  z-index: 100;
+}
+
+.header {
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
+  align-items: center;
+}
+
+@media (min-width: 990px) {
+  .header { padding-top: 16px !important; padding-bottom: 16px !important; }
+}
+
+.header__heading-link { padding: 0 !important; }
+.header__heading-logo-wrapper { display: inline-flex; align-items: center; }
+.header__heading-logo { max-height: 44px; }
+
+/* Nav — clean, tight */
+.header__inline-menu .list-menu__item {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  padding: 10px 16px !important;
+  transition: color 0.18s ease;
+  color: var(--vb-charcoal);
+}
+.header__inline-menu .list-menu__item:hover { color: var(--vb-green) !important; }
+.header__inline-menu .list-menu__item--active {
+  color: var(--vb-green) !important;
+  text-underline-offset: 6px;
+  text-decoration-color: var(--vb-green);
+  text-decoration-thickness: 2px;
+}
+.header__inline-menu .list-menu__item .icon-caret { margin-left: 4px; width: 9px; height: 9px; opacity: 0.6; }
+
+/* Mega menu */
+.mega-menu__content, .header__submenu {
+  border-radius: 0 0 16px 16px;
+  border: none !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  padding: 28px 32px !important;
+}
+.mega-menu__list .mega-menu__link,
+.header__submenu .header__menu-item {
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  padding: 6px 0 !important;
+  color: var(--vb-charcoal) !important;
+  transition: color 0.16s ease;
+}
+.mega-menu__list .mega-menu__link:hover,
+.header__submenu .header__menu-item:hover { color: var(--vb-green) !important; }
+
+/* Utility icons — circular, Velobiotics green */
+.header__icons { gap: 4px; }
+.header__icon,
+.header__icon--account,
+.header__icon--cart,
+.header__icon--search {
+  width: 42px !important;
+  height: 42px !important;
+  border-radius: 999px;
+  padding: 0 !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  color: var(--vb-green) !important;
+  background: rgba(77, 140, 68, 0.08);
+  transition: background-color 0.18s ease, transform 0.18s ease;
+}
+.header__icon:hover {
+  background: var(--vb-green) !important;
+  color: #fff !important;
+  transform: translateY(-1px);
+}
+.header__icon .icon, .header__icon svg { width: 19px; height: 19px; }
+.cart-count-bubble {
+  background: var(--vb-green) !important;
+  color: #fff !important;
+  font-size: 10px !important;
+  min-width: 18px !important;
+  height: 18px !important;
+  font-weight: 700;
+  border: 2px solid #fff;
+}
+
+/* Hide country/currency selector in header (handled by other plugin) */
+.header localization-form,
+.header__localization,
+.header .disclosure[data-disclosure-localization] {
+  display: none !important;
+}
+
+/* Announcement bar — slim & branded */
+.utility-bar,
+.announcement-bar {
+  background: var(--vb-green) !important;
+  color: #fff !important;
+  font-size: 12.5px !important;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 7px 0 !important;
+  min-height: 0 !important;
+}
+.utility-bar a, .announcement-bar a {
+  color: #fff !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+}
+
+/* Mobile menu drawer */
+.menu-drawer { border: none; }
+.menu-drawer__inner-container { padding-top: 24px; }
+.menu-drawer__menu .menu-drawer__menu-item {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 20px;
+}
+.menu-drawer__menu .menu-drawer__menu-item:hover { color: var(--vb-green); }
+
+/* ============================================================
+   FOOTER — Velobiotics green background
+   ============================================================ */
+.footer {
+  background: var(--vb-green) !important;
+  color: #fff;
+  padding-top: 56px !important;
+  padding-bottom: 24px !important;
+  position: relative;
+}
+.footer::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,0.7) 50%, #fff 100%);
+  opacity: 0.4;
+}
+
+.footer__content-top.page-width {
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Logo / brand block — invert if logo image used */
+.footer-block__brand-info img,
+.footer__logo img,
+.footer-block-image img {
+  filter: brightness(0) invert(1);
+  max-width: 180px !important;
+  margin-bottom: 12px;
+}
+
+/* Column headings */
+.footer-block__heading,
+.footer-block .footer-block__heading {
+  color: #fff !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 18px !important;
+  padding-bottom: 0;
+  border: none;
+}
+
+/* Links */
+.footer-block__details-content .list-menu__item,
+.footer-block__details-content a {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: rgba(255, 255, 255, 0.86) !important;
+  padding: 4px 0 !important;
+  letter-spacing: 0;
+  transition: color 0.16s ease, transform 0.16s ease;
+  display: inline-block;
+}
+.footer-block__details-content .list-menu__item:hover,
+.footer-block__details-content a:hover {
+  color: #fff !important;
+  transform: translateX(2px);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer-block__brand-info {
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+/* Newsletter — pill input on white */
+.footer-block--newsletter { margin-top: 28px; }
+.footer-block__newsletter .footer-block__heading { margin-bottom: 14px !important; }
+.footer__newsletter .field {
+  background: #fff !important;
+  border: 1px solid #fff !important;
+  border-radius: 999px !important;
+  height: 50px;
+  overflow: hidden;
+  transition: box-shadow 0.18s ease;
+}
+.footer__newsletter .field:focus-within {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+}
+.footer__newsletter .field__input {
+  color: var(--vb-charcoal) !important;
+  background: transparent !important;
+  padding: 0 56px 0 22px !important;
+  font-size: 14px !important;
+}
+.footer__newsletter .field__input::placeholder { color: rgba(31, 44, 42, 0.4); }
+.footer__newsletter .field__label { display: none; }
+.footer__newsletter .newsletter-form__button {
+  background: var(--vb-green-deep) !important;
+  width: 42px !important;
+  height: 42px !important;
+  border-radius: 50% !important;
+  top: 50% !important;
+  right: 4px !important;
+  transform: translateY(-50%);
+  transition: background-color 0.18s ease;
+}
+.footer__newsletter .newsletter-form__button:hover { background: var(--vb-charcoal) !important; }
+.footer__newsletter .newsletter-form__button svg { fill: #fff; }
+
+/* Social icons */
+.footer__list-social {
+  margin-top: 20px !important;
+  gap: 8px;
+}
+.footer__list-social .list-social__link {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.15) !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.18s ease, transform 0.18s ease;
+}
+.footer__list-social .list-social__link:hover {
+  background: #fff !important;
+  transform: translateY(-2px);
+}
+.footer__list-social .list-social__link:hover svg {
+  fill: var(--vb-green) !important;
+}
+.footer__list-social .list-social__link svg { fill: #fff; width: 16px; height: 16px; }
+
+/* ============================================================
+   Disclaimer area — INLINE in footer, between newsletter and bottom row
+   ============================================================ */
+.footer__disclaimer {
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 14px;
+  padding: 18px 22px;
+  margin: 32px auto 0;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 12.5px;
+  line-height: 1.6;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  max-width: var(--page-width, 1200px);
+}
+.footer__disclaimer-label {
+  display: inline-block;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 11px;
+  margin-right: 8px;
+  background: rgba(255, 255, 255, 0.18);
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+.footer__disclaimer-text { display: inline; }
+.footer__disclaimer-text p { display: inline; margin: 0; font-size: 12.5px; color: rgba(255, 255, 255, 0.95); }
+
+/* Bottom row */
+.footer__content-bottom { color: #fff; }
+.footer__content-bottom-wrapper.page-width {
+  padding-top: 24px;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  margin-top: 28px;
+}
+
+.footer__copyright {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 12px;
+  text-align: center;
+  margin: 14px 0 0;
+}
+.footer__copyright .copyright__content,
+.footer__copyright a,
+.footer__copyright small {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-size: 12px !important;
+}
+.footer__copyright a:hover { color: #fff !important; text-decoration: underline; }
+.footer__copyright .policies {
+  display: inline-flex;
+  gap: 16px;
+  margin: 6px 0 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Payment icons */
+.footer__payment .list-payment__item {
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+.list-payment .icon {
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+  width: 32px;
+  height: 22px;
+}
+
+/* Country/Language selectors in footer — HIDE (handled elsewhere) */
+.footer__localization { display: none !important; }
+
+/* ============================================================
+   Mobile polish
+   ============================================================ */
+@media (max-width: 749px) {
+  .header__inline-menu { display: none; }
+  .header { padding: 10px 0 !important; }
+  .header__icon, .header__icon--account, .header__icon--cart, .header__icon--search { width: 38px !important; height: 38px !important; }
+  .footer { padding-top: 40px !important; }
+  .footer__content-top.page-width { padding-bottom: 28px; }
+  .footer-block__heading { font-size: 12px !important; margin-bottom: 14px !important; }
+  .footer__newsletter .field { height: 46px; }
+  .footer__newsletter .newsletter-form__button { width: 38px !important; height: 38px !important; }
+  .footer__disclaimer { padding: 14px 16px; font-size: 11.5px; margin: 24px 14px 0; border-radius: 12px; }
+  .footer__disclaimer-text p { display: block; margin-top: 6px; font-size: 11.5px; }
+  .footer__disclaimer-label { display: inline-block; margin-bottom: 4px; }
+}

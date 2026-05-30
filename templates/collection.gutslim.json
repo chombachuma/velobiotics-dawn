@@ -12,15 +12,15 @@
     "hero": {
       "type": "femina-hero",
       "settings": {
-        "bg_image_url": "https://media.base44.com/images/public/69e1abc073bbccc7f63edacc/653a0d852_generated_image.png",
+        "bg_image_url": "https://media.base44.com/images/public/69e10e7db331c58e837bb75e/0da4d8630_generated_edbc0e3e.png",
         "eyebrow": "#1 Gut-Health Weight Management Brand",
         "headline_pre": "The Gut Feeling",
         "headline_highlight": "Transformation",
         "headline_post": "",
         "sub": "The gut-health secret to effortless weight loss & lasting vitality. 1000× more probiotics delivered with Velobiotics™ Microencapsulation Technology.",
-        "cta1_text": "Start Your Transformation →",
-        "cta1_link": "/collections/gutslim",
-        "cta2_text": "🚀 Find My Gut Archetype",
+        "cta1_text": "🚀 Find My Gut Archetype",
+        "cta1_link": "https://gutslim.com",
+        "cta2_text": "Visit GutSlim.com →",
         "cta2_link": "https://gutslim.com",
         "proof": " 4.9 from 10,000+ GutSlimmers · Velobiotics™ Technology",
         "show_badges": true,
@@ -49,7 +49,8 @@
         "card_bg": "#fff8eb",
         "card_bg2": "#ffe4b8",
         "brand_label": "GutSlim™",
-        "products_per_page": 12
+        "products_per_page": 24,
+        "card_min_width": 280
       }
     }
   },

@@ -18,9 +18,9 @@
         "headline_highlight": "Healthy You.",
         "headline_post": "",
         "sub": "Transform your health in 21 days with science-backed probiotics and personalised wellness plans. 16 strains, 1000× delivery, 5 billion CFU.",
-        "cta1_text": "Start the 21-Day Plan →",
-        "cta1_link": "/collections/velo16",
-        "cta2_text": "🧪 Clear Skin Quiz",
+        "cta1_text": "🧪 Take the Clear Skin Quiz",
+        "cta1_link": "https://velo16.com",
+        "cta2_text": "Study Your Gut →",
         "cta2_link": "https://velo16.com",
         "proof": " The flagship Velobiotics™ probiotic — engineered for total gut health.",
         "show_badges": true,
@@ -49,7 +49,8 @@
         "card_bg": "#fff5f7",
         "card_bg2": "#ffd6df",
         "brand_label": "Velo16™",
-        "products_per_page": 12
+        "products_per_page": 24,
+        "card_min_width": 280
       }
     }
   },

@@ -2,6 +2,7 @@
   Femina product grid — femina.care "Products That Perform" style.
   Cards: transparent product imagery, big save-% starburst,
   no CTA on sold-out (card itself is clickable), Velobiotics green accent.
+  Settings expose card_min_width for per-brand card sizing and proper pagination.
 {%- endcomment -%}
 
 {%- liquid
@@ -9,6 +10,7 @@
   assign brand_secondary = section.settings.brand_secondary | default: '#4d8c44'
   assign card_bg = section.settings.card_bg | default: '#fdf8fd'
   assign card_bg2 = section.settings.card_bg2 | default: '#f5e9f4'
+  assign card_min = section.settings.card_min_width | default: 300
 -%}
 
 <style>
@@ -20,42 +22,52 @@
   .fpg-section__title em { color: var(--bp); font-style: italic; font-weight: 700; }
   .fpg-section__sub { font-size: 16px; line-height: 1.5; color: #555; max-width: 640px; margin: 0 auto; }
 
-  .fpg-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+  .fpg-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax({{ card_min }}px, 1fr)); gap: 24px; }
 
-  .fpg-card { position: relative; display: flex; flex-direction: column; background: #fff; border: 1px solid #ece7f0; border-radius: 18px; overflow: hidden; text-decoration: none; color: inherit; transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease; }
+  .fpg-card { position: relative; display: flex; flex-direction: column; background: #fff; border: 1px solid #ece7f0; border-radius: 16px; overflow: hidden; text-decoration: none; color: inherit; transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease; }
   .fpg-card:hover { transform: translateY(-5px); box-shadow: 0 22px 44px rgba(141, 42, 137, 0.20); border-color: color-mix(in srgb, var(--bp) 35%, transparent); }
   .fpg-card--soldout { opacity: 0.74; }
   .fpg-card--soldout:hover { transform: none; box-shadow: 0 8px 18px rgba(0,0,0,0.08); }
 
   .fpg-card__media { position: relative; width: 100%; aspect-ratio: 1 / 1; background: linear-gradient(135deg, var(--cardbg, #fdf8fd) 0%, var(--cardbg2, #f5e9f4) 100%); overflow: hidden; isolation: isolate; }
-  .fpg-card__media img { width: 100%; height: 100%; object-fit: contain; padding: 18px; transition: transform 0.4s ease; mix-blend-mode: multiply; filter: contrast(1.02) saturate(1.05); }
+  .fpg-card__media img { width: 100%; height: 100%; object-fit: contain; padding: 14px; transition: transform 0.4s ease; mix-blend-mode: multiply; filter: contrast(1.02) saturate(1.05); }
   .fpg-card:hover .fpg-card__media img { transform: scale(1.06); }
-  .fpg-card__pill { position: absolute; top: 14px; left: 14px; background: rgba(255,255,255,0.97); color: var(--bp); font-weight: 700; font-size: 12px; padding: 7px 13px; border-radius: 999px; box-shadow: 0 6px 14px rgba(0,0,0,0.10); white-space: nowrap; z-index: 2; backdrop-filter: blur(6px); }
-  .fpg-card__sold { position: absolute; top: 14px; right: 14px; background: #1a1a1a; color: #fff; font-weight: 700; font-size: 11px; padding: 7px 14px; border-radius: 999px; letter-spacing: .08em; text-transform: uppercase; z-index: 2; }
+  .fpg-card__pill { position: absolute; top: 12px; left: 12px; background: rgba(255,255,255,0.97); color: var(--bp); font-weight: 700; font-size: 11px; padding: 6px 11px; border-radius: 999px; box-shadow: 0 6px 14px rgba(0,0,0,0.10); white-space: nowrap; z-index: 2; backdrop-filter: blur(6px); }
+  .fpg-card__sold { position: absolute; top: 12px; right: 12px; background: #1a1a1a; color: #fff; font-weight: 700; font-size: 10px; padding: 6px 12px; border-radius: 999px; letter-spacing: .08em; text-transform: uppercase; z-index: 2; }
 
   @keyframes fpg-savepulse { 0%,100% { transform: rotate(-8deg) scale(1); } 50% { transform: rotate(-8deg) scale(1.06); } }
-  .fpg-card__save { position: absolute; top: 12px; right: 12px; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; min-width: 76px; height: 76px; background: radial-gradient(circle at 30% 30%, #ff5c8a 0%, #ff2e63 50%, #cd1f4c 100%); color: #fff !important; font-weight: 900; font-size: 22px; border-radius: 50%; box-shadow: 0 10px 26px rgba(214, 39, 90, 0.48), inset 0 -3px 8px rgba(0,0,0,0.18), inset 0 2px 4px rgba(255,255,255,0.35); letter-spacing: -0.02em; transform: rotate(-8deg); z-index: 3; line-height: 1; padding: 10px; text-align: center; animation: fpg-savepulse 2.4s ease-in-out infinite; border: 3px solid rgba(255,255,255,0.55); }
-  .fpg-card__save small { display: block; font-size: 10px; font-weight: 800; letter-spacing: .1em; opacity: 0.96; margin-top: 2px; }
+  .fpg-card__save { position: absolute; top: 10px; right: 10px; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; min-width: 64px; height: 64px; background: radial-gradient(circle at 30% 30%, #ff5c8a 0%, #ff2e63 50%, #cd1f4c 100%); color: #fff !important; font-weight: 900; font-size: 18px; border-radius: 50%; box-shadow: 0 10px 26px rgba(214, 39, 90, 0.48), inset 0 -3px 8px rgba(0,0,0,0.18), inset 0 2px 4px rgba(255,255,255,0.35); letter-spacing: -0.02em; transform: rotate(-8deg); z-index: 3; line-height: 1; padding: 8px; text-align: center; animation: fpg-savepulse 2.4s ease-in-out infinite; border: 3px solid rgba(255,255,255,0.55); }
+  .fpg-card__save small { display: block; font-size: 9px; font-weight: 800; letter-spacing: .1em; opacity: 0.96; margin-top: 1px; }
   .fpg-card--soldout .fpg-card__save { display: none; }
 
-  .fpg-card__body { padding: 22px 22px 24px; display: flex; flex-direction: column; flex: 1; }
+  .fpg-card__body { padding: 18px 18px 20px; display: flex; flex-direction: column; flex: 1; }
   .fpg-card__meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 12px; font-weight: 700; letter-spacing: .04em; margin: 0 0 10px; min-height: 22px; }
   .fpg-card__brandtag { display: inline-flex; align-items: center; gap: 4px; background: color-mix(in srgb, var(--bs) 15%, transparent); color: var(--bs); padding: 4px 10px; border-radius: 999px; font-size: 11px; }
   .fpg-card__bestseller { color: var(--bp); }
-  .fpg-card__title { font-size: 19px; font-weight: 800; line-height: 1.25; margin: 0 0 8px; color: #1a1a1a; }
-  .fpg-card__desc { font-size: 14px; line-height: 1.55; color: #555; margin: 0 0 18px; flex: 1; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .fpg-card__title { font-size: 17px; font-weight: 800; line-height: 1.25; margin: 0 0 8px; color: #1a1a1a; }
+  .fpg-card__desc { font-size: 13px; line-height: 1.55; color: #555; margin: 0 0 14px; flex: 1; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
   .fpg-card__priceline { display: flex; align-items: baseline; gap: 10px; margin: 0; flex-wrap: wrap; }
-  .fpg-card__price { font-size: 21px; font-weight: 800; color: #1a1a1a; }
-  .fpg-card__compare { font-size: 14px; color: #a0a0a0; text-decoration: line-through; }
-  .fpg-card__soldlabel { color: #999; font-weight: 700; font-size: 14px; letter-spacing: .03em; }
+  .fpg-card__price { font-size: 19px; font-weight: 800; color: #1a1a1a; }
+  .fpg-card__compare { font-size: 13px; color: #a0a0a0; text-decoration: line-through; }
+  .fpg-card__soldlabel { color: #999; font-weight: 700; font-size: 13px; letter-spacing: .03em; }
+
+  .fpg-pagination { display: flex; justify-content: center; align-items: center; gap: 8px; margin: 40px 0 0; flex-wrap: wrap; }
+  .fpg-pagination a, .fpg-pagination span { display: inline-flex; align-items: center; justify-content: center; min-width: 40px; height: 40px; padding: 0 14px; border-radius: 999px; font-size: 14px; font-weight: 700; text-decoration: none; color: #555; border: 1px solid #ece7f0; background: #fff; transition: all 0.18s ease; }
+  .fpg-pagination a:hover { border-color: var(--bp); color: var(--bp); transform: translateY(-1px); }
+  .fpg-pagination .fpg-current { background: var(--bp); color: #fff !important; border-color: var(--bp); }
+  .fpg-pagination .fpg-disabled { opacity: 0.4; cursor: not-allowed; }
 
   @media (max-width: 749px) {
     .fpg-section { padding: 8px 14px 40px; }
-    .fpg-grid { grid-template-columns: 1fr; gap: 18px; }
-    .fpg-card__body { padding: 18px 18px 20px; }
-    .fpg-card__title { font-size: 17px; }
-    .fpg-card__save { min-width: 64px; height: 64px; font-size: 18px; top: 10px; right: 10px; }
-    .fpg-card__save small { font-size: 9px; }
+    .fpg-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .fpg-card__body { padding: 14px 14px 16px; }
+    .fpg-card__title { font-size: 14px; }
+    .fpg-card__desc { font-size: 12px; -webkit-line-clamp: 2; }
+    .fpg-card__price { font-size: 16px; }
+    .fpg-card__brandtag { font-size: 10px; padding: 3px 8px; }
+    .fpg-card__save { min-width: 50px; height: 50px; font-size: 14px; top: 8px; right: 8px; }
+    .fpg-card__save small { font-size: 8px; }
+    .fpg-card__pill { font-size: 10px; padding: 5px 9px; }
   }
 </style>
 
@@ -74,8 +86,8 @@
     </div>
   {%- endif -%}
 
-  <div class="fpg-grid">
-    {%- paginate collection.products by section.settings.products_per_page -%}
+  {%- paginate collection.products by section.settings.products_per_page -%}
+    <div class="fpg-grid">
       {%- for product in collection.products -%}
         {%- liquid
           assign pill_text = ''
@@ -101,7 +113,7 @@
         <a href="{{ product.url }}" class="{{ card_classes }}" aria-label="{{ product.title | escape }}">
           <div class="fpg-card__media">
             {%- if product.featured_image -%}
-              <img src="{{ product.featured_image | image_url: width: 700 }}" alt="{{ product.featured_image.alt | default: product.title | escape }}" loading="lazy" width="700" height="700" />
+              <img src="{{ product.featured_image | image_url: width: 600 }}" alt="{{ product.featured_image.alt | default: product.title | escape }}" loading="lazy" width="600" height="600" />
             {%- endif -%}
             {%- if pill_text != blank -%}
               <span class="fpg-card__pill">{{ pill_text }}</span>
@@ -118,7 +130,7 @@
               <span class="fpg-card__brandtag">{{ section.settings.brand_label | default: 'Femina™' }}</span>
             </div>
             <h3 class="fpg-card__title">{{ product.title }}</h3>
-            <p class="fpg-card__desc">{{ product.description | strip_html | truncatewords: 22 }}</p>
+            <p class="fpg-card__desc">{{ product.description | strip_html | truncatewords: 20 }}</p>
             <div class="fpg-card__priceline">
               {%- if product.available -%}
                 <span class="fpg-card__price">{{ product.price | money }}</span>
@@ -132,8 +144,34 @@
           </div>
         </a>
       {%- endfor -%}
-    {%- endpaginate -%}
-  </div>
+    </div>
+
+    {%- if paginate.pages > 1 -%}
+      <nav class="fpg-pagination" aria-label="Pagination">
+        {%- if paginate.previous -%}
+          <a href="{{ paginate.previous.url }}" aria-label="Previous page">←</a>
+        {%- else -%}
+          <span class="fpg-disabled" aria-hidden="true">←</span>
+        {%- endif -%}
+        {%- for part in paginate.parts -%}
+          {%- if part.is_link -%}
+            <a href="{{ part.url }}">{{ part.title }}</a>
+          {%- else -%}
+            {%- if part.title == paginate.current_page -%}
+              <span class="fpg-current">{{ part.title }}</span>
+            {%- else -%}
+              <span>{{ part.title }}</span>
+            {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+        {%- if paginate.next -%}
+          <a href="{{ paginate.next.url }}" aria-label="Next page">→</a>
+        {%- else -%}
+          <span class="fpg-disabled" aria-hidden="true">→</span>
+        {%- endif -%}
+      </nav>
+    {%- endif -%}
+  {%- endpaginate -%}
 </div>
 
 {% schema %}
@@ -154,7 +192,8 @@
     { "type": "color", "id": "card_bg2", "label": "Card background gradient end", "default": "#f5e9f4" },
     { "type": "text", "id": "brand_label", "label": "Brand label on each card", "default": "Femina™" },
     { "type": "header", "content": "Cards" },
-    { "type": "range", "id": "products_per_page", "label": "Products per page", "min": 4, "max": 24, "step": 2, "default": 12 }
+    { "type": "range", "id": "products_per_page", "label": "Products per page", "min": 4, "max": 48, "step": 2, "default": 12 },
+    { "type": "range", "id": "card_min_width", "label": "Card minimum width (px)", "min": 200, "max": 360, "step": 20, "default": 300, "info": "Smaller = more columns on desktop. Use 240 for compact, 300 for default, 340 for spacious." }
   ],
   "presets": [
     { "name": "Femina product grid" }

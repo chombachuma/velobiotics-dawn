@@ -1,0 +1,94 @@
+{% liquid
+  assign primary = section.settings.primary | default: '#4d8c44'
+  assign dark = section.settings.dark | default: '#2e5d28'
+  assign tint = section.settings.tint | default: '#eef7ec'
+%}
+<style>
+  #vb-cf-{{ section.id }} { background: #fff; padding: 60px 24px; }
+  #vb-cf-{{ section.id }} .vb-cf-wrap { max-width: 720px; margin: 0 auto; }
+  #vb-cf-{{ section.id }} .vb-cf-eyebrow { color: {{ primary }}; font-size: 14px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; text-align: center; margin: 0 0 12px; }
+  #vb-cf-{{ section.id }} .vb-cf-title { font-size: clamp(28px, 4vw, 44px); font-weight: 800; color: #111; text-align: center; margin: 0 0 14px; line-height: 1.15; }
+  #vb-cf-{{ section.id }} .vb-cf-title span { color: {{ primary }}; }
+  #vb-cf-{{ section.id }} .vb-cf-sub { text-align: center; color: #555; font-size: 17px; line-height: 1.6; margin: 0 0 40px; }
+  #vb-cf-{{ section.id }} form { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  #vb-cf-{{ section.id }} form .vb-cf-full { grid-column: 1 / -1; }
+  #vb-cf-{{ section.id }} label { display: block; font-weight: 600; color: #333; font-size: 14px; margin: 0 0 6px; }
+  #vb-cf-{{ section.id }} input, #vb-cf-{{ section.id }} textarea, #vb-cf-{{ section.id }} select {
+    width: 100%; box-sizing: border-box; padding: 12px 14px; border: 2px solid #e5e5e5; border-radius: 10px;
+    font-size: 16px; background: #fff; transition: border-color .2s ease; font-family: inherit;
+  }
+  #vb-cf-{{ section.id }} input:focus, #vb-cf-{{ section.id }} textarea:focus, #vb-cf-{{ section.id }} select:focus { outline: none; border-color: {{ primary }}; }
+  #vb-cf-{{ section.id }} textarea { min-height: 140px; resize: vertical; }
+  #vb-cf-{{ section.id }} .vb-cf-btn {
+    background: linear-gradient(135deg, {{ primary }}, {{ dark }});
+    color: #fff; border: 0; border-radius: 12px; padding: 14px 28px; font-size: 17px; font-weight: 700; cursor: pointer;
+    transition: transform .15s ease; width: 100%;
+  }
+  #vb-cf-{{ section.id }} .vb-cf-btn:hover { transform: translateY(-2px); }
+  #vb-cf-{{ section.id }} .vb-cf-success { background: {{ tint }}; border: 2px solid {{ primary }}; color: {{ dark }}; padding: 16px; border-radius: 12px; text-align: center; margin: 0 0 20px; font-weight: 600; }
+  @media (max-width: 749px) { #vb-cf-{{ section.id }} form { grid-template-columns: 1fr; } }
+</style>
+
+<section id="vb-cf-{{ section.id }}">
+  <div class="vb-cf-wrap">
+    {%- if section.settings.eyebrow != blank -%}<p class="vb-cf-eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+    {%- if section.settings.title_pre != blank or section.settings.title_highlight != blank -%}
+      <h2 class="vb-cf-title">{{ section.settings.title_pre }} <span>{{ section.settings.title_highlight }}</span></h2>
+    {%- endif -%}
+    {%- if section.settings.sub != blank -%}<p class="vb-cf-sub">{{ section.settings.sub }}</p>{%- endif -%}
+
+    {%- form 'contact', id: 'vb-contact-form' -%}
+      {%- if form.posted_successfully? -%}
+        <div class="vb-cf-success vb-cf-full">{{ section.settings.success_message | default: 'Thanks — we received your message and will respond within 24 hours.' }}</div>
+      {%- endif -%}
+      {%- if form.errors -%}
+        <div class="vb-cf-full" style="background:#fff0f0;border:2px solid #c62828;color:#7a1313;padding:14px;border-radius:10px;margin-bottom:8px;">{{ form.errors | default_errors }}</div>
+      {%- endif -%}
+
+      <div>
+        <label for="vb-cf-name-{{ section.id }}">Your name</label>
+        <input id="vb-cf-name-{{ section.id }}" type="text" name="contact[name]" autocomplete="name" required>
+      </div>
+      <div>
+        <label for="vb-cf-email-{{ section.id }}">Email</label>
+        <input id="vb-cf-email-{{ section.id }}" type="email" name="contact[email]" autocomplete="email" required>
+      </div>
+      <div class="vb-cf-full">
+        <label for="vb-cf-topic-{{ section.id }}">What's this about?</label>
+        <select id="vb-cf-topic-{{ section.id }}" name="contact[topic]">
+          <option value="Customer support">Customer support — order, return, refund</option>
+          <option value="Product question">Product question</option>
+          <option value="Wholesale / B2B">Wholesale / B2B partnership</option>
+          <option value="Healthcare practitioner">Healthcare practitioner enquiry</option>
+          <option value="Media / Press">Media / Press</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="vb-cf-full">
+        <label for="vb-cf-message-{{ section.id }}">Message</label>
+        <textarea id="vb-cf-message-{{ section.id }}" name="contact[body]" required></textarea>
+      </div>
+      <div class="vb-cf-full">
+        <button type="submit" class="vb-cf-btn">{{ section.settings.button_text | default: 'Send message' }}</button>
+      </div>
+    {%- endform -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "VB · Contact form",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Quick contact" },
+    { "type": "text", "id": "title_pre", "label": "Title (pre)", "default": "Send us a" },
+    { "type": "text", "id": "title_highlight", "label": "Title (highlight)", "default": "message." },
+    { "type": "textarea", "id": "sub", "label": "Sub", "default": "We respond within 24 hours during business hours." },
+    { "type": "text", "id": "button_text", "label": "Button text", "default": "Send message" },
+    { "type": "textarea", "id": "success_message", "label": "Success message", "default": "Thanks — we received your message and will respond within 24 hours." },
+    { "type": "color", "id": "primary", "label": "Primary", "default": "#4d8c44" },
+    { "type": "color", "id": "dark", "label": "Dark", "default": "#2e5d28" },
+    { "type": "color", "id": "tint", "label": "Tint", "default": "#eef7ec" }
+  ],
+  "presets": [ { "name": "VB · Contact form" } ]
+}
+{% endschema %}

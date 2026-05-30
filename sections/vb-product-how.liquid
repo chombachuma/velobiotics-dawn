@@ -1,0 +1,79 @@
+{%- comment -%} VB · How it works — 3-4 step horizontal flow {%- endcomment -%}
+
+{%- liquid
+  assign brand_primary = section.settings.brand_primary | default: '#4d8c44'
+  assign brand_tint = section.settings.brand_tint | default: '#f3f7f1'
+-%}
+
+<style>
+  .vb-pho { padding: 72px 24px; --bp: {{ brand_primary }}; --bt: {{ brand_tint }}; background: var(--bt); }
+  .vb-pho__inner { max-width: 1280px; margin: 0 auto; }
+  .vb-pho__head { text-align: center; max-width: 720px; margin: 0 auto 44px; }
+  .vb-pho__eyebrow { display: inline-block; color: var(--bp); font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 12px; }
+  .vb-pho__title { font-size: clamp(28px, 4vw, 42px); font-weight: 800; color: #1a1a1a; line-height: 1.12; margin: 0 0 14px; }
+  .vb-pho__title em { color: var(--bp); font-style: normal; }
+  .vb-pho__sub { font-size: 16px; line-height: 1.6; color: #5c6664; margin: 0; }
+  .vb-pho__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; position: relative; }
+  .vb-pho__step { position: relative; padding: 28px 22px 24px; background: #fff; border-radius: 18px; border: 1px solid #e3ece1; text-align: center; transition: transform 0.22s ease, box-shadow 0.22s ease; }
+  .vb-pho__step:hover { transform: translateY(-5px); box-shadow: 0 22px 44px color-mix(in srgb, var(--bp) 14%, transparent); }
+  .vb-pho__num { position: absolute; top: -16px; left: 50%; transform: translateX(-50%); width: 40px; height: 40px; border-radius: 50%; background: var(--bp); color: #fff; font-weight: 900; font-size: 16px; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 10px 22px color-mix(in srgb, var(--bp) 35%, transparent); border: 3px solid var(--bt); }
+  .vb-pho__icon { width: 60px; height: 60px; border-radius: 16px; background: color-mix(in srgb, var(--bp) 14%, #fff); color: var(--bp); display: inline-flex; align-items: center; justify-content: center; font-size: 28px; margin: 14px auto 14px; }
+  .vb-pho__name { font-size: 16.5px; font-weight: 800; color: #1a1a1a; margin: 0 0 8px; line-height: 1.3; }
+  .vb-pho__desc { font-size: 13.5px; line-height: 1.55; color: #5c6664; margin: 0; }
+  @media (max-width: 749px) {
+    .vb-pho { padding: 56px 16px; }
+    .vb-pho__head { margin-bottom: 32px; }
+    .vb-pho__grid { grid-template-columns: 1fr; gap: 22px; }
+    .vb-pho__step { padding: 22px 18px 18px; border-radius: 14px; }
+    .vb-pho__num { width: 36px; height: 36px; font-size: 14px; }
+    .vb-pho__icon { width: 50px; height: 50px; font-size: 24px; }
+    .vb-pho__name { font-size: 15px; }
+    .vb-pho__desc { font-size: 13px; }
+  }
+</style>
+
+<section class="vb-pho">
+  <div class="vb-pho__inner">
+    <div class="vb-pho__head">
+      {%- if section.settings.eyebrow != blank -%}<p class="vb-pho__eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+      <h2 class="vb-pho__title">{{ section.settings.title_pre }}{%- if section.settings.title_highlight != blank %} <em>{{ section.settings.title_highlight }}</em>{%- endif -%}</h2>
+      {%- if section.settings.sub != blank -%}<p class="vb-pho__sub">{{ section.settings.sub }}</p>{%- endif -%}
+    </div>
+    <div class="vb-pho__grid">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'step' -%}
+          <article class="vb-pho__step" {{ block.shopify_attributes }}>
+            <span class="vb-pho__num">{{ forloop.index }}</span>
+            <div class="vb-pho__icon">{{ block.settings.icon }}</div>
+            <h3 class="vb-pho__name">{{ block.settings.name }}</h3>
+            <p class="vb-pho__desc">{{ block.settings.desc }}</p>
+          </article>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "VB · Product how-it-works",
+  "tag": "section",
+  "enabled_on": { "templates": ["product"] },
+  "settings": [
+    { "type": "color", "id": "brand_primary", "label": "Brand primary", "default": "#4d8c44" },
+    { "type": "color", "id": "brand_tint", "label": "Brand tint", "default": "#f3f7f1" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "How It Works" },
+    { "type": "text", "id": "title_pre", "label": "Title (start)", "default": "From Capsule to" },
+    { "type": "text", "id": "title_highlight", "label": "Title (highlight)", "default": "Confidence" },
+    { "type": "textarea", "id": "sub", "label": "Sub-text" }
+  ],
+  "blocks": [
+    { "type": "step", "name": "Step", "settings": [
+      { "type": "text", "id": "icon", "label": "Icon", "default": "💊" },
+      { "type": "text", "id": "name", "label": "Name", "default": "Take one daily" },
+      { "type": "textarea", "id": "desc", "label": "Description", "default": "After a meal, with water." }
+    ]}
+  ],
+  "presets": [{ "name": "VB · Product how-it-works" }]
+}
+{% endschema %}

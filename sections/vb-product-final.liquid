@@ -1,0 +1,72 @@
+{%- comment -%} VB · Product final CTA — brand-coloured closer with guarantee badge {%- endcomment -%}
+
+{%- liquid
+  assign brand_primary = section.settings.brand_primary | default: '#4d8c44'
+  assign brand_dark   = section.settings.brand_dark    | default: '#36632f'
+  assign brand_light  = section.settings.brand_light   | default: '#6ec56e'
+-%}
+
+<style>
+  .vb-pfc { background: linear-gradient(135deg, {{ brand_dark }} 0%, {{ brand_primary }} 50%, {{ brand_light }} 100%); color: #fff; padding: 72px 24px; position: relative; overflow: hidden; }
+  .vb-pfc::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.10) 0%, transparent 55%), radial-gradient(circle at 70% 50%, rgba(255,255,255,0.08) 0%, transparent 55%); pointer-events: none; }
+  .vb-pfc__inner { position: relative; max-width: 880px; margin: 0 auto; text-align: center; z-index: 2; }
+  .vb-pfc__badge { display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.16); color: #fff; padding: 10px 20px; border-radius: 999px; font-size: 13px; font-weight: 700; letter-spacing: 0.04em; margin: 0 0 22px; border: 1px solid rgba(255,255,255,0.28); backdrop-filter: blur(8px); }
+  .vb-pfc__badge::before { content: '✓'; width: 22px; height: 22px; border-radius: 50%; background: #fff; color: {{ brand_dark }}; font-weight: 900; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; }
+  .vb-pfc__title { font-size: clamp(28px, 4.6vw, 46px); font-weight: 800; line-height: 1.08; margin: 0 0 16px; color: #fff !important; letter-spacing: -0.01em; }
+  .vb-pfc__title em { font-style: italic; color: #fffaca; font-weight: 700; }
+  .vb-pfc__sub { font-size: 17px; line-height: 1.6; color: rgba(255,255,255,0.94); margin: 0 auto 30px; max-width: 620px; }
+  .vb-pfc__cta { display: inline-flex; align-items: center; gap: 8px; padding: 16px 34px; border-radius: 999px; background: #fff; color: {{ brand_dark }} !important; text-decoration: none; font-weight: 800; font-size: 15.5px; box-shadow: 0 16px 36px rgba(0, 0, 0, 0.24); transition: all 0.18s ease; }
+  .vb-pfc__cta:hover { transform: translateY(-3px); box-shadow: 0 20px 42px rgba(0, 0, 0, 0.32); }
+  .vb-pfc__guarantees { display: flex; flex-wrap: wrap; justify-content: center; gap: 22px; margin-top: 36px; }
+  .vb-pfc__g { display: inline-flex; align-items: center; gap: 6px; font-size: 13.5px; font-weight: 600; color: rgba(255,255,255,0.94); }
+  @media (max-width: 749px) {
+    .vb-pfc { padding: 48px 16px; }
+    .vb-pfc__title { font-size: clamp(24px, 8vw, 32px); }
+    .vb-pfc__sub { font-size: 15px; }
+    .vb-pfc__cta { padding: 13px 26px; font-size: 14px; }
+    .vb-pfc__guarantees { gap: 14px; }
+    .vb-pfc__g { font-size: 12px; }
+  }
+</style>
+
+<section class="vb-pfc">
+  <div class="vb-pfc__inner">
+    {%- if section.settings.badge != blank -%}<span class="vb-pfc__badge">{{ section.settings.badge }}</span>{%- endif -%}
+    <h2 class="vb-pfc__title">{{ section.settings.title_pre }}{%- if section.settings.title_highlight != blank %} <em>{{ section.settings.title_highlight }}</em>{%- endif -%}</h2>
+    {%- if section.settings.sub != blank -%}<p class="vb-pfc__sub">{{ section.settings.sub }}</p>{%- endif -%}
+    {%- if section.settings.cta_text != blank -%}<a href="{{ section.settings.cta_link | default: '#vb-buy' }}" class="vb-pfc__cta">{{ section.settings.cta_text }} →</a>{%- endif -%}
+    {%- if section.blocks.size > 0 -%}
+      <div class="vb-pfc__guarantees">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'g' -%}<span class="vb-pfc__g" {{ block.shopify_attributes }}>{{ block.settings.icon }} {{ block.settings.text }}</span>{%- endif -%}
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "VB · Product final CTA",
+  "tag": "section",
+  "enabled_on": { "templates": ["product"] },
+  "settings": [
+    { "type": "color", "id": "brand_primary", "label": "Brand primary", "default": "#4d8c44" },
+    { "type": "color", "id": "brand_dark", "label": "Brand dark", "default": "#36632f" },
+    { "type": "color", "id": "brand_light", "label": "Brand light", "default": "#6ec56e" },
+    { "type": "text", "id": "badge", "label": "Top badge", "default": "30-day money-back guarantee" },
+    { "type": "text", "id": "title_pre", "label": "Title (start)", "default": "Try Femina™ Risk-Free" },
+    { "type": "text", "id": "title_highlight", "label": "Title (highlight)", "default": "for 30 Days" },
+    { "type": "textarea", "id": "sub", "label": "Sub-text", "default": "Feel the difference — or get every cent back. No questions asked." },
+    { "type": "text", "id": "cta_text", "label": "CTA text", "default": "Add to Cart" },
+    { "type": "url", "id": "cta_link", "label": "CTA link" }
+  ],
+  "blocks": [
+    { "type": "g", "name": "Guarantee", "settings": [
+      { "type": "text", "id": "icon", "label": "Icon", "default": "✓" },
+      { "type": "text", "id": "text", "label": "Text", "default": "30-day money-back" }
+    ]}
+  ],
+  "presets": [{ "name": "VB · Product final CTA" }]
+}
+{% endschema %}

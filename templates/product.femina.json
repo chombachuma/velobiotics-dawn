@@ -243,25 +243,24 @@
     "outperform": {
       "type": "vb-product-outperform",
       "blocks": {
-        "o1": { "type": "row", "settings": { "feature": "10 Probiotic Strains", "description": "Rebalances vaginal flora and reduces harmful bacteria that cause odour." } },
-        "o2": { "type": "row", "settings": { "feature": "Velobiotics™ Technology", "description": "Patented microencapsulation ensures 1000× more probiotics survive stomach acid for powerful, effective results." } },
-        "o3": { "type": "row", "settings": { "feature": "With Cranberry Extract", "description": "Supports urinary tract health and helps reduce infection risks — the natural UTI defence." } },
-        "o4": { "type": "row", "settings": { "feature": "Once-Daily Convenience", "description": "A simple, effortless addition to your routine with transformative benefits — no complicated protocols." } },
-        "o5": { "type": "row", "settings": { "feature": "Promotes Overall Wellness", "description": "Enhances gut health, immunity, and intimate confidence — head-to-toe balance from one capsule." } },
-        "o6": { "type": "row", "settings": { "feature": "Doctor-Formulated", "description": "Developed by medical doctors and microbiologists using clinically researched probiotic strains." } },
-        "o7": { "type": "row", "settings": { "feature": "Clean Label", "description": "100% vegan, halaal-friendly, no gluten, soy, dairy, artificial colours, preservatives, or GMOs." } },
-        "o8": { "type": "row", "settings": { "feature": "30-Day Money-Back", "description": "If you don't feel the difference in 30 days, we'll refund every cent — no questions asked." } }
+        "o1": { "type": "row", "settings": { "feature": "Max Probiotic Strains", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
+        "o2": { "type": "row", "settings": { "feature": "Advanced Absorption", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
+        "o3": { "type": "row", "settings": { "feature": "Cranberry Boost", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
+        "o4": { "type": "row", "settings": { "feature": "Daily Simplicity", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
+        "o5": { "type": "row", "settings": { "feature": "Long-Term Benefits", "brand_state": "yes", "b_state": "no", "c_state": "no" } }
       },
-      "block_order": ["o1","o2","o3","o4","o5","o6","o7","o8"],
+      "block_order": ["o1","o2","o3","o4","o5"],
       "settings": {
         "brand_primary": "#8d2a89",
         "brand_dark": "#6b1f68",
         "brand_tint": "#fdf5fc",
-        "eyebrow": "Key benefits",
-        "title": "Why we outperform",
-        "sub": "Every Femina™ Probiotic Capsule earns its place — clinically-researched strains, patented delivery technology, and doctor-formulated for women.",
-        "col_feature": "Feature",
-        "col_desc": "Description",
+        "title": "Why We Outperform Others",
+        "sub": "Experience unmatched freshness and confidence with our unique blend of powerful probiotics and advanced absorption technology tailored for women's health.",
+        "col_features": "Features",
+        "col_brand": "Femina™",
+        "brand_logo_url": "https://www.velobiotics.com/cdn/shop/files/Femina_logo.png?v=1730000000",
+        "col_b": "General Probiotic",
+        "col_c": "Others",
         "cta_text": "Add to Cart",
         "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
       }

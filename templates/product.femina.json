@@ -107,11 +107,12 @@
       "type": "vb-product-related",
       "blocks": {
         "r1": { "type": "product", "settings": { "product_handle": "femina-probiotics-cookie-fresh-with-boric-acid-suppositories", "brand": "Femina™", "rating": "4.9", "reviews": "320+" } },
-        "r2": { "type": "product", "settings": { "product_handle": "femina-menstrual-cups-large-small-value-pack", "brand": "Femina™", "rating": "4.7", "reviews": "180+" } },
+        "r2": { "type": "product", "settings": { "product_handle": "femina-mini-combo", "brand": "Femina™", "rating": "4.8", "reviews": "260+" } },
         "r3": { "type": "product", "settings": { "product_handle": "femina-cookie-fresh-boric-acid-only-suppositories", "brand": "Femina™", "rating": "4.8", "reviews": "210+" } },
-        "r4": { "type": "product", "settings": { "product_handle": "femina-probiotic-meal-replacement-cranberry-extract-for-women", "brand": "Femina™", "rating": "4.8", "reviews": "150+" } }
+        "r4": { "type": "product", "settings": { "product_handle": "femina-menstrual-cups-large-small-value-pack", "brand": "Femina™", "rating": "4.7", "reviews": "180+" } },
+        "r5": { "type": "product", "settings": { "product_handle": "femina-probiotic-meal-replacement-cranberry-extract-for-women", "brand": "Femina™", "rating": "4.8", "reviews": "150+" } }
       },
-      "block_order": ["r1","r2","r3","r4"],
+      "block_order": ["r1","r2","r3","r4","r5"],
       "settings": {
         "brand_primary": "#8d2a89",
         "brand_dark": "#6b1f68",

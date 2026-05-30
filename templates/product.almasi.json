@@ -102,12 +102,11 @@
     "related": {
       "type": "vb-product-related",
       "blocks": {
-        "r1": { "type": "product", "settings": { "product_handle": "almasi-harmonie-probiotic-skin-moisturizer", "brand": "Almasi™", "rating": "4.9", "reviews": "180+" } },
-        "r2": { "type": "product", "settings": { "product_handle": "almasi-renaissance-probiotic-serum-with-retinol", "brand": "Almasi™", "rating": "4.8", "reviews": "150+" } },
-        "r3": { "type": "product", "settings": { "product_handle": "almasi-essence-probiotic-serum-with-vitamin-e-hyaluronic-acid", "brand": "Almasi™", "rating": "4.8", "reviews": "120+" } },
-        "r4": { "type": "product", "settings": { "product_handle": "almasi-cleanser", "brand": "Almasi™", "rating": "4.7", "reviews": "90+" } }
+        "r1": { "type": "product", "settings": { "product_handle": "almasi-probiotics-skin-hair-nails-60s", "brand": "Almasi™", "rating": "4.9", "reviews": "180+" } },
+        "r2": { "type": "product", "settings": { "product_handle": "probiotics-protein-collagen-peptides-skin-hair-nails", "brand": "Almasi™", "rating": "4.8", "reviews": "150+" } },
+        "r3": { "type": "product", "settings": { "product_handle": "probiotics-collagen-peptides-powder", "brand": "Almasi™", "rating": "4.8", "reviews": "120+" } }
       },
-      "block_order": ["r1","r2","r3","r4"],
+      "block_order": ["r1","r2","r3"],
       "settings": {
         "brand_primary": "#1a1a1a",
         "brand_dark": "#000000",

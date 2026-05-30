@@ -1,0 +1,65 @@
+{%- comment -%} VB · Full-width image band — for supplement facts, infographics, lifestyle shots {%- endcomment -%}
+
+{%- liquid
+  assign brand_primary = section.settings.brand_primary | default: '#4d8c44'
+  assign brand_tint = section.settings.brand_tint | default: '#f3f7f1'
+  assign img_src = ''
+  if section.settings.image_url != blank
+    assign img_src = section.settings.image_url
+  elsif section.settings.image != blank
+    assign img_src = section.settings.image | image_url: width: 1600
+  endif
+-%}
+
+<style>
+  .vb-pib { padding: 56px 24px; --bp: {{ brand_primary }}; --bt: {{ brand_tint }}; background: {% if section.settings.bg == 'tint' %}var(--bt){% elsif section.settings.bg == 'white' %}#fff{% else %}var(--bp){% endif %}; }
+  .vb-pib--green { color: #fff; }
+  .vb-pib__inner { max-width: 1100px; margin: 0 auto; }
+  .vb-pib__head { text-align: center; max-width: 720px; margin: 0 auto 28px; }
+  .vb-pib__eyebrow { display: inline-block; color: {% if section.settings.bg == 'green' %}rgba(255,255,255,0.85){% else %}var(--bp){% endif %}; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 10px; }
+  .vb-pib__title { font-size: clamp(24px, 3.4vw, 36px); font-weight: 800; color: {% if section.settings.bg == 'green' %}#fff{% else %}#1a1a1a{% endif %}; line-height: 1.15; margin: 0 0 10px; }
+  .vb-pib__sub { font-size: 15.5px; line-height: 1.55; color: {% if section.settings.bg == 'green' %}rgba(255,255,255,0.92){% else %}#5c6664{% endif %}; margin: 0; }
+  .vb-pib__img-wrap { display: flex; justify-content: center; align-items: center; padding: 24px; background: #fff; border-radius: 22px; box-shadow: 0 24px 56px rgba(0,0,0,0.08); }
+  .vb-pib__img-wrap img { width: 100%; max-width: 720px; height: auto; display: block; border-radius: 12px; }
+  @media (max-width: 749px) {
+    .vb-pib { padding: 40px 14px; }
+    .vb-pib__head { margin-bottom: 20px; }
+    .vb-pib__img-wrap { padding: 14px; border-radius: 16px; }
+  }
+</style>
+
+<section class="vb-pib{% if section.settings.bg == 'green' %} vb-pib--green{% endif %}">
+  <div class="vb-pib__inner">
+    {%- if section.settings.title != blank or section.settings.eyebrow != blank -%}
+      <div class="vb-pib__head">
+        {%- if section.settings.eyebrow != blank -%}<p class="vb-pib__eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+        {%- if section.settings.title != blank -%}<h2 class="vb-pib__title">{{ section.settings.title }}</h2>{%- endif -%}
+        {%- if section.settings.sub != blank -%}<p class="vb-pib__sub">{{ section.settings.sub }}</p>{%- endif -%}
+      </div>
+    {%- endif -%}
+    {%- if img_src != blank -%}
+      <div class="vb-pib__img-wrap">
+        <img src="{{ img_src }}" alt="{{ section.settings.title | escape }}" loading="lazy" />
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "VB · Product image band",
+  "tag": "section",
+  "enabled_on": { "templates": ["product"] },
+  "settings": [
+    { "type": "color", "id": "brand_primary", "label": "Brand primary", "default": "#4d8c44" },
+    { "type": "color", "id": "brand_tint", "label": "Brand tint", "default": "#f3f7f1" },
+    { "type": "select", "id": "bg", "label": "Background", "options": [{"value":"tint","label":"Tint"},{"value":"white","label":"White"},{"value":"green","label":"Brand green"}], "default": "tint" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "title", "label": "Title" },
+    { "type": "textarea", "id": "sub", "label": "Sub-text" },
+    { "type": "image_picker", "id": "image", "label": "Image" },
+    { "type": "text", "id": "image_url", "label": "Image URL (overrides upload)" }
+  ],
+  "presets": [{ "name": "VB · Product image band" }]
+}
+{% endschema %}

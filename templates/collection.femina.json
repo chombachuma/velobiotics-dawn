@@ -40,26 +40,21 @@
       "type": "femina-collection-body",
       "settings": {}
     },
-    "product-grid": {
-      "type": "main-collection-product-grid",
+    "femina-product-grid": {
+      "type": "femina-product-grid",
       "settings": {
-        "products_per_page": 16,
-        "columns_desktop": 4,
-        "image_ratio": "square",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_filtering": true,
-        "enable_sorting": true,
-        "columns_mobile": "2",
-        "padding_top": 24,
-        "padding_bottom": 36
+        "show_heading": true,
+        "eyebrow": "The Collection",
+        "title": "Products That Perform",
+        "sub": "Every Femina product is formulated to work in harmony with your body's natural ecosystem — and backed by 2,000+ verified five-star stories.",
+        "products_per_page": 12,
+        "cta_text": "Learn More"
       }
     }
   },
   "order": [
     "femina-hero",
     "femina-body",
-    "product-grid"
+    "femina-product-grid"
   ]
 }

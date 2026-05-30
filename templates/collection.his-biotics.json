@@ -18,9 +18,9 @@
         "headline_highlight": "GUT UP.",
         "headline_post": "",
         "sub": "His-Biotics® delivers clinical-grade probiotics engineered for the male microbiome — targeting gut integrity, hormonal balance, and peak cognitive performance.",
-        "cta1_text": "Explore the Range →",
-        "cta1_link": "/collections/his-biotics",
-        "cta2_text": "🔬 The Science",
+        "cta1_text": "🔬 Take the TGS Quiz",
+        "cta1_link": "https://hisbiotics.com",
+        "cta2_text": "Morning Protocol →",
         "cta2_link": "https://hisbiotics.com",
         "proof": " 1000× more probiotic power · 16 strains · 30-day vitality guarantee",
         "show_badges": true,
@@ -49,7 +49,8 @@
         "card_bg": "#e8f3f1",
         "card_bg2": "#c4ddd8",
         "brand_label": "His-Biotics®",
-        "products_per_page": 12
+        "products_per_page": 24,
+        "card_min_width": 280
       }
     }
   },

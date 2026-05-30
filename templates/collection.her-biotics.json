@@ -12,15 +12,15 @@
     "hero": {
       "type": "femina-hero",
       "settings": {
-        "bg_image_url": "https://media.base44.com/images/public/69e734d64c8c66c266bc562d/547b3222c_Her-Biotics-JPEG-Logo.jpg",
+        "bg_image_url": "https://media.base44.com/images/public/69e734d64c8c66c266bc562d/45b5dc51a_generated_image.png",
         "eyebrow": "🌿 Science-Backed Women's Wellness",
         "headline_pre": "Cultivate Your",
         "headline_highlight": "Inner Radiance.",
         "headline_post": "",
         "sub": "Patented SCO2 Microencapsulated Probiotics deliver 1000× more viable probiotics to your gut. Optimised absorption. Optimised you.",
-        "cta1_text": "Shop Her-Biotics →",
-        "cta1_link": "/collections/her-biotics",
-        "cta2_text": "💖 Cycle Coach",
+        "cta1_text": "💖 Meet Your Cycle Coach",
+        "cta1_link": "https://her-biotics.com",
+        "cta2_text": "Join HER-Circle →",
         "cta2_link": "https://her-biotics.com",
         "proof": " Designed by women, for women — every stage, every cycle, every season.",
         "show_badges": true,
@@ -49,7 +49,8 @@
         "card_bg": "#fff5f3",
         "card_bg2": "#ffd6cf",
         "brand_label": "Her-Biotics™",
-        "products_per_page": 12
+        "products_per_page": 24,
+        "card_min_width": 280
       }
     }
   },

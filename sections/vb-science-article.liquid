@@ -1,0 +1,110 @@
+{%- comment -%} VB · Science Article — hero + body sections with AI visuals + key-points panel {%- endcomment -%}
+
+<style>
+  .vb-sa { padding: 56px 20px; max-width: 1080px; margin: 0 auto; background: #fff; }
+  .vb-sa__head { text-align: center; max-width: 820px; margin: 0 auto 40px; }
+  .vb-sa__eyebrow { display: inline-block; color: #4d8c44; font-size: 12px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 12px; padding: 6px 13px; background: rgba(77, 140, 68, 0.1); border-radius: 999px; }
+  .vb-sa__title { font-size: clamp(32px, 4.5vw, 48px); font-weight: 800; color: #1a1a1a; line-height: 1.12; margin: 0 0 16px; letter-spacing: -0.02em; }
+  .vb-sa__title em { color: #4d8c44; font-style: normal; }
+  .vb-sa__intro { font-size: 18px; line-height: 1.6; color: #5c6664; margin: 0; }
+  .vb-sa__hero-img { margin: 0 0 48px; border-radius: 20px; overflow: hidden; background: #f3f7f1; aspect-ratio: 16/9; }
+  .vb-sa__hero-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .vb-sa__body h2 { font-size: 28px; font-weight: 800; color: #1a1a1a; margin: 40px 0 14px; letter-spacing: -0.01em; }
+  .vb-sa__body h3 { font-size: 21px; font-weight: 800; color: #4d8c44; margin: 28px 0 10px; }
+  .vb-sa__body p { font-size: 16.5px; line-height: 1.7; color: #2b3a2a; margin: 0 0 14px; }
+  .vb-sa__body strong { color: #1a1a1a; }
+  .vb-sa__body ul, .vb-sa__body ol { padding-left: 22px; margin: 0 0 16px; }
+  .vb-sa__body li { font-size: 16px; line-height: 1.7; color: #2b3a2a; margin: 0 0 8px; }
+  .vb-sa__inline-img { margin: 32px 0; border-radius: 16px; overflow: hidden; background: #f3f7f1; aspect-ratio: 16/9; box-shadow: 0 12px 32px rgba(0,0,0,0.06); }
+  .vb-sa__inline-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .vb-sa__caption { font-size: 13px; color: #6c7a6b; text-align: center; padding: 12px 16px; font-style: italic; }
+  .vb-sa__keypoints { background: linear-gradient(180deg, #f3f7f1 0%, #fff 100%); border-left: 4px solid #4d8c44; padding: 22px 26px; border-radius: 10px; margin: 32px 0; }
+  .vb-sa__keypoints-label { font-size: 12px; font-weight: 800; color: #4d8c44; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 10px; }
+  .vb-sa__keypoints ul { list-style: none; padding: 0; margin: 0; }
+  .vb-sa__keypoints li { padding-left: 26px; position: relative; font-size: 15px; line-height: 1.55; color: #1a1a1a; margin: 0 0 10px; }
+  .vb-sa__keypoints li:last-child { margin-bottom: 0; }
+  .vb-sa__keypoints li::before { content: '✓'; position: absolute; left: 0; top: 0; width: 18px; height: 18px; border-radius: 50%; background: #4d8c44; color: #fff; display: inline-flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 900; line-height: 1; }
+  @media (max-width: 749px) {
+    .vb-sa { padding: 36px 14px; }
+    .vb-sa__head { margin-bottom: 28px; }
+    .vb-sa__hero-img { margin-bottom: 32px; border-radius: 14px; }
+    .vb-sa__body h2 { font-size: 24px; margin: 28px 0 10px; }
+    .vb-sa__body h3 { font-size: 18.5px; }
+    .vb-sa__body p, .vb-sa__body li { font-size: 15.5px; }
+    .vb-sa__keypoints { padding: 18px 20px; }
+  }
+</style>
+
+<section class="vb-sa">
+  <div class="vb-sa__head">
+    {%- if section.settings.eyebrow != blank -%}<span class="vb-sa__eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+    <h1 class="vb-sa__title">{{ section.settings.title_pre }}{%- if section.settings.title_highlight != blank %} <em>{{ section.settings.title_highlight }}</em>{%- endif -%}</h1>
+    {%- if section.settings.intro != blank -%}<p class="vb-sa__intro">{{ section.settings.intro }}</p>{%- endif -%}
+  </div>
+  {%- if section.settings.hero_image != blank or section.settings.hero_image_url != blank -%}
+    <div class="vb-sa__hero-img">
+      {%- if section.settings.hero_image != blank -%}
+        <img src="{{ section.settings.hero_image | image_url: width: 1600 }}" alt="{{ section.settings.title_highlight | escape }}" />
+      {%- else -%}
+        <img src="{{ section.settings.hero_image_url }}" alt="{{ section.settings.title_highlight | escape }}" />
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+  <div class="vb-sa__body">
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'text' -%}
+        {{ block.settings.content }}
+      {%- elsif block.type == 'image' -%}
+        <figure class="vb-sa__inline-img" {{ block.shopify_attributes }}>
+          {%- if block.settings.image != blank -%}
+            <img src="{{ block.settings.image | image_url: width: 1600 }}" alt="{{ block.settings.caption | escape }}" loading="lazy" />
+          {%- elsif block.settings.image_url != blank -%}
+            <img src="{{ block.settings.image_url }}" alt="{{ block.settings.caption | escape }}" loading="lazy" />
+          {%- endif -%}
+        </figure>
+        {%- if block.settings.caption != blank -%}<p class="vb-sa__caption">{{ block.settings.caption }}</p>{%- endif -%}
+      {%- elsif block.type == 'keypoints' -%}
+        <aside class="vb-sa__keypoints" {{ block.shopify_attributes }}>
+          {%- if block.settings.label != blank -%}<p class="vb-sa__keypoints-label">{{ block.settings.label }}</p>{%- endif -%}
+          <ul>
+            {%- assign points = block.settings.points | newline_to_br | split: '<br />' -%}
+            {%- for p in points -%}
+              {%- assign trimmed = p | strip -%}
+              {%- if trimmed != blank -%}<li>{{ trimmed }}</li>{%- endif -%}
+            {%- endfor -%}
+          </ul>
+        </aside>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "VB · Science article",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "The Science" },
+    { "type": "text", "id": "title_pre", "label": "Title (start)" },
+    { "type": "text", "id": "title_highlight", "label": "Title (highlight)" },
+    { "type": "textarea", "id": "intro", "label": "Intro paragraph" },
+    { "type": "image_picker", "id": "hero_image", "label": "Hero image (upload)" },
+    { "type": "url", "id": "hero_image_url", "label": "Hero image URL (fallback)" }
+  ],
+  "blocks": [
+    { "type": "text", "name": "Text block", "settings": [
+      { "type": "richtext", "id": "content", "label": "Content", "default": "<h2>Section heading</h2><p>Paragraph of content.</p>" }
+    ]},
+    { "type": "image", "name": "Inline image", "settings": [
+      { "type": "image_picker", "id": "image", "label": "Image (upload)" },
+      { "type": "url", "id": "image_url", "label": "Image URL (fallback)" },
+      { "type": "text", "id": "caption", "label": "Caption" }
+    ]},
+    { "type": "keypoints", "name": "Key points panel", "settings": [
+      { "type": "text", "id": "label", "label": "Label", "default": "Key takeaways" },
+      { "type": "textarea", "id": "points", "label": "Points (one per line)", "default": "First key takeaway.\nSecond key takeaway.\nThird key takeaway." }
+    ]}
+  ],
+  "presets": [{ "name": "VB · Science article" }]
+}
+{% endschema %}

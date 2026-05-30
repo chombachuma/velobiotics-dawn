@@ -206,7 +206,7 @@
       "type": "vb-product-related",
       "blocks": {
         "f1": { "type": "product", "settings": { "product_handle": "gutslim-probiotics-glp-1-booster", "brand": "GutSlim™", "rating": "4.8", "reviews": "410+" } },
-        "f2": { "type": "product", "settings": { "product_handle": "his-biotics-original-capsules-60s", "brand": "His-Biotics™", "rating": "4.7", "reviews": "210+" } },
+        "f2": { "type": "product", "settings": { "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s", "brand": "His-Biotics™", "rating": "4.7", "reviews": "210+" } },
         "f3": { "type": "product", "settings": { "product_handle": "her-biotics-original-capsules-60s", "brand": "Her-Biotics™", "rating": "4.7", "reviews": "260+" } },
         "f4": { "type": "product", "settings": { "product_handle": "femina-probiotic-capsules-with-cranberry-for-women", "brand": "Femina™", "rating": "4.8", "reviews": "1300+" } }
       },

@@ -206,7 +206,7 @@
       "blocks": {
         "f1": { "type": "product", "settings": { "product_handle": "pregbiotics-breastfeeding", "brand": "PregBiotics™", "rating": "4.9", "reviews": "150+" } },
         "f2": { "type": "product", "settings": { "product_handle": "her-biotics-original-capsules-60s", "brand": "Her-Biotics™", "rating": "4.7", "reviews": "260+" } },
-        "f3": { "type": "product", "settings": { "product_handle": "his-biotics-original-capsules-60s", "brand": "His-Biotics™", "rating": "4.7", "reviews": "210+" } },
+        "f3": { "type": "product", "settings": { "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s", "brand": "His-Biotics™", "rating": "4.7", "reviews": "210+" } },
         "f4": { "type": "product", "settings": { "product_handle": "gutslim-probiotics-glp-1-booster", "brand": "GutSlim™", "rating": "4.8", "reviews": "410+" } }
       },
       "block_order": ["f1","f2","f3","f4"],

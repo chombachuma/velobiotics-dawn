@@ -1,5 +1,5 @@
 {%- comment -%}
-  VB · Home Hero v2 — centred banner with model, floating proof badges, Velobiotics green
+  VB · Home Hero v3 — full-bleed background image with horizontal edge fade
 {%- endcomment -%}
 
 {%- liquid
@@ -7,158 +7,118 @@
   if section.settings.bg_image_url != blank
     assign hero_image_src = section.settings.bg_image_url
   elsif section.settings.bg_image != blank
-    assign hero_image_src = section.settings.bg_image | image_url: width: 1400
+    assign hero_image_src = section.settings.bg_image | image_url: width: 1800
   endif
 -%}
 
 <style>
-  .vb-hero2 { position: relative; padding: 56px 24px 60px; background: linear-gradient(180deg, #f5f9f3 0%, #e3efdf 100%); overflow: hidden; }
-  .vb-hero2::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 100%, rgba(77,140,68,0.10) 0%, transparent 60%); pointer-events: none; }
-  .vb-hero2__inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 2; text-align: center; }
-  .vb-hero2__eyebrow { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: #4d8c44; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 8px 16px; border-radius: 999px; border: 1.5px solid #4d8c44; margin: 0 0 18px; }
-  .vb-hero2__eyebrow::before { content: ''; width: 8px; height: 8px; background: #4d8c44; border-radius: 50%; box-shadow: 0 0 10px #4d8c44; }
-  .vb-hero2__rating { display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: center; margin: 0 0 18px; font-size: 13.5px; color: #2b3a2a; }
-  .vb-hero2__rating .stars { color: #ffb43a; letter-spacing: 1px; font-size: 14px; }
-  .vb-hero2__rating .divider { width: 1px; height: 14px; background: #c9d6c7; }
-  .vb-hero2__rating strong { color: #1a1a1a; font-weight: 700; }
-  .vb-hero2__headline { font-size: clamp(34px, 5.8vw, 64px); line-height: 1.04; font-weight: 800; color: #1a1a1a; margin: 0 auto 20px; letter-spacing: -0.015em; max-width: 920px; }
-  .vb-hero2__headline em { font-style: normal; color: #4d8c44; }
-  .vb-hero2__sub { font-size: 17px; line-height: 1.6; color: #3a3a3a; max-width: 640px; margin: 0 auto 28px; }
-  .vb-hero2__ctas { display: inline-flex; flex-wrap: wrap; gap: 12px; margin: 0 0 28px; justify-content: center; }
-  .vb-hero2 a.vb-hero2__cta { display: inline-flex; align-items: center; gap: 6px; padding: 15px 32px; border-radius: 999px; text-decoration: none; font-weight: 700; font-size: 15px; transition: all 0.18s ease; }
-  .vb-hero2 a.vb-hero2__cta--primary { background: #4d8c44; color: #fff !important; box-shadow: 0 12px 28px rgba(77, 140, 68, 0.34); }
-  .vb-hero2 a.vb-hero2__cta--primary:hover { background: #36632f; transform: translateY(-2px); box-shadow: 0 16px 32px rgba(77, 140, 68, 0.42); }
-  .vb-hero2 a.vb-hero2__cta--secondary { background: #fff; color: #2b3a2a !important; border: 2px solid #c9d6c7; }
-  .vb-hero2 a.vb-hero2__cta--secondary:hover { border-color: #4d8c44; color: #4d8c44 !important; transform: translateY(-2px); }
+  .vb-hero3 { position: relative; padding: 72px 24px 60px; background: linear-gradient(180deg, #f5f9f3 0%, #e3efdf 100%); overflow: hidden; }
+  .vb-hero3__bg { position: absolute; inset: 0; z-index: 0; }
+  .vb-hero3__bg-img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; -webkit-mask-image: linear-gradient(to right, transparent 0%, black 18%, black 82%, transparent 100%); mask-image: linear-gradient(to right, transparent 0%, black 18%, black 82%, transparent 100%); opacity: 0.55; }
+  .vb-hero3__bg-overlay { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 100%, rgba(77,140,68,0.18) 0%, transparent 60%), linear-gradient(180deg, rgba(245,249,243,0.55) 0%, rgba(227,239,223,0.85) 100%); }
+  .vb-hero3__inner { max-width: 1080px; margin: 0 auto; position: relative; z-index: 2; text-align: center; }
+  .vb-hero3__eyebrow { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: #4d8c44; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 8px 16px; border-radius: 999px; border: 1.5px solid #4d8c44; margin: 0 0 16px; box-shadow: 0 6px 14px rgba(77,140,68,0.10); }
+  .vb-hero3__eyebrow::before { content: ''; width: 8px; height: 8px; background: #4d8c44; border-radius: 50%; box-shadow: 0 0 10px #4d8c44; }
+  .vb-hero3__rating { display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: center; margin: 0 0 16px; font-size: 13.5px; color: #2b3a2a; }
+  .vb-hero3__rating .stars { color: #ffb43a; letter-spacing: 1px; font-size: 14px; }
+  .vb-hero3__rating .divider { width: 1px; height: 14px; background: #8db786; }
+  .vb-hero3__rating strong { color: #1a1a1a; font-weight: 700; }
+  .vb-hero3__headline { font-size: clamp(34px, 6vw, 64px); line-height: 1.04; font-weight: 800; color: #1a1a1a; margin: 0 auto 18px; letter-spacing: -0.015em; max-width: 920px; text-shadow: 0 1px 2px rgba(255,255,255,0.4); }
+  .vb-hero3__headline em { font-style: normal; color: #4d8c44; }
+  .vb-hero3__sub { font-size: 17px; line-height: 1.6; color: #2b3a2a; max-width: 620px; margin: 0 auto 24px; font-weight: 500; }
+  .vb-hero3__ctas { display: inline-flex; flex-wrap: wrap; gap: 12px; margin: 0 0 32px; justify-content: center; }
+  .vb-hero3 a.vb-hero3__cta { display: inline-flex; align-items: center; gap: 6px; padding: 15px 32px; border-radius: 999px; text-decoration: none; font-weight: 700; font-size: 15px; transition: all 0.18s ease; }
+  .vb-hero3 a.vb-hero3__cta--primary { background: #4d8c44; color: #fff !important; box-shadow: 0 12px 28px rgba(77, 140, 68, 0.40); }
+  .vb-hero3 a.vb-hero3__cta--primary:hover { background: #36632f; transform: translateY(-2px); box-shadow: 0 16px 32px rgba(77, 140, 68, 0.50); }
+  .vb-hero3 a.vb-hero3__cta--secondary { background: rgba(255,255,255,0.94); color: #2b3a2a !important; border: 2px solid #c9d6c7; backdrop-filter: blur(8px); }
+  .vb-hero3 a.vb-hero3__cta--secondary:hover { border-color: #4d8c44; color: #4d8c44 !important; transform: translateY(-2px); }
 
-  /* Banner image area */
-  .vb-hero2__visual { position: relative; max-width: 720px; margin: 0 auto 28px; aspect-ratio: 16/10; border-radius: 24px; overflow: visible; }
-  .vb-hero2__visual-frame { position: relative; width: 100%; height: 100%; border-radius: 24px; overflow: hidden; background: linear-gradient(160deg, #ffffff 0%, #e8f1e3 100%); box-shadow: 0 24px 60px rgba(0, 0, 0, 0.10); }
-  .vb-hero2__visual-img { width: 100%; height: 100%; object-fit: cover; }
-  .vb-hero2__visual-placeholder { display: flex; align-items: center; justify-content: center; height: 100%; color: #4d8c44; font-size: 14px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; opacity: 0.4; }
+  /* Floating badges around hero centred area */
+  .vb-hero3__floats { position: relative; max-width: 760px; margin: 0 auto 36px; height: 80px; }
+  .vb-hero3__badge { position: absolute; background: #fff; padding: 10px 16px; border-radius: 999px; box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12); display: inline-flex; flex-direction: column; align-items: center; line-height: 1.1; border: 1px solid #e3ece1; }
+  .vb-hero3__badge--green { background: #4d8c44; color: #fff !important; border: none; }
+  .vb-hero3__badge--green strong, .vb-hero3__badge--green small { color: #fff; }
+  .vb-hero3__badge strong { font-size: 16px; font-weight: 900; color: #1a1a1a; letter-spacing: -0.02em; }
+  .vb-hero3__badge small { font-size: 9.5px; font-weight: 700; opacity: 0.85; margin-top: 2px; letter-spacing: 0.06em; text-transform: uppercase; color: #4d8c44; }
+  .vb-hero3__badge--tl { top: 0; left: 5%; transform: rotate(-5deg); }
+  .vb-hero3__badge--tr { top: 12px; right: 5%; transform: rotate(4deg); }
+  .vb-hero3__badge--bl { bottom: 0; left: 18%; transform: rotate(2deg); }
+  .vb-hero3__badge--br { bottom: 6px; right: 18%; transform: rotate(-3deg); }
 
-  /* Floating proof badges */
-  .vb-hero2__badge { position: absolute; background: #fff; padding: 12px 18px; border-radius: 999px; box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14); display: inline-flex; flex-direction: column; align-items: center; line-height: 1.1; border: 1px solid #e3ece1; }
-  .vb-hero2__badge--green { background: #4d8c44; color: #fff !important; border: none; }
-  .vb-hero2__badge--green strong, .vb-hero2__badge--green small { color: #fff; }
-  .vb-hero2__badge strong { font-size: 18px; font-weight: 900; color: #1a1a1a; letter-spacing: -0.02em; }
-  .vb-hero2__badge small { font-size: 10px; font-weight: 700; opacity: 0.85; margin-top: 2px; letter-spacing: 0.06em; text-transform: uppercase; color: #4d8c44; }
-  .vb-hero2__badge--tl { top: 10px; left: -16px; transform: rotate(-5deg); }
-  .vb-hero2__badge--tr { top: 18px; right: -22px; transform: rotate(4deg); }
-  .vb-hero2__badge--bl { bottom: 24px; left: -28px; transform: rotate(2deg); }
-  .vb-hero2__badge--br { bottom: 18px; right: -16px; transform: rotate(-3deg); }
-
-  /* Quote card */
-  .vb-hero2__quote { position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%) rotate(-1.5deg); background: #fff; border-radius: 16px; padding: 14px 18px; max-width: 320px; box-shadow: 0 22px 44px rgba(0, 0, 0, 0.16); border: 1px solid #f0f0f0; display: flex; gap: 12px; align-items: center; }
-  .vb-hero2__quote-avatar { width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #4d8c44, #6ec56e); color: #fff; font-weight: 800; font-size: 18px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
-  .vb-hero2__quote-body { text-align: left; min-width: 0; }
-  .vb-hero2__quote-stars { color: #ffb43a; font-size: 12px; letter-spacing: 1px; margin: 0 0 2px; line-height: 1; }
-  .vb-hero2__quote-text { font-size: 12.5px; line-height: 1.35; font-weight: 700; color: #1a1a1a; margin: 0; }
-  .vb-hero2__quote-author { font-size: 10.5px; color: #6c7a6b; margin: 3px 0 0; }
-
-  /* Trust pills below */
-  .vb-hero2__pills { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; max-width: 820px; margin: 36px auto 0; }
-  .vb-hero2__pill { background: #fff; padding: 14px 14px; border-radius: 14px; border: 1px solid #e3ece1; display: flex; align-items: center; gap: 10px; transition: transform 0.18s ease, box-shadow 0.18s ease; text-align: left; }
-  .vb-hero2__pill:hover { transform: translateY(-3px); box-shadow: 0 10px 22px rgba(77, 140, 68, 0.14); }
-  .vb-hero2__pill-icon { width: 36px; height: 36px; border-radius: 50%; background: rgba(77, 140, 68, 0.12); color: #4d8c44; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
-  .vb-hero2__pill-text { display: flex; flex-direction: column; line-height: 1.2; min-width: 0; }
-  .vb-hero2__pill-title { font-size: 13px; font-weight: 800; color: #1a1a1a; }
-  .vb-hero2__pill-sub { font-size: 11px; color: #6c7a6b; margin-top: 2px; }
+  /* Trust pills */
+  .vb-hero3__pills { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; max-width: 820px; margin: 0 auto; }
+  .vb-hero3__pill { background: rgba(255,255,255,0.94); backdrop-filter: blur(10px); padding: 14px 14px; border-radius: 14px; border: 1px solid rgba(195,212,193,0.6); display: flex; align-items: center; gap: 10px; transition: all 0.18s ease; text-align: left; }
+  .vb-hero3__pill:hover { transform: translateY(-3px); box-shadow: 0 10px 22px rgba(77, 140, 68, 0.16); background: #fff; border-color: rgba(77,140,68,0.4); }
+  .vb-hero3__pill-icon { width: 36px; height: 36px; border-radius: 50%; background: rgba(77,140,68,0.14); color: #4d8c44; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+  .vb-hero3__pill-text { display: flex; flex-direction: column; line-height: 1.2; min-width: 0; }
+  .vb-hero3__pill-title { font-size: 13px; font-weight: 800; color: #1a1a1a; }
+  .vb-hero3__pill-sub { font-size: 11px; color: #6c7a6b; margin-top: 2px; }
 
   @media (max-width: 749px) {
-    .vb-hero2 { padding: 36px 16px 44px; }
-    .vb-hero2__visual { max-width: 100%; aspect-ratio: 4/3.4; margin-bottom: 36px; }
-    .vb-hero2__headline { font-size: clamp(28px, 8vw, 38px); }
-    .vb-hero2__sub { font-size: 15px; }
-    .vb-hero2__pills { grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 24px; }
-    .vb-hero2__pill { padding: 10px 12px; gap: 8px; border-radius: 12px; }
-    .vb-hero2__pill-icon { width: 30px; height: 30px; font-size: 14px; }
-    .vb-hero2__pill-title { font-size: 12px; }
-    .vb-hero2__pill-sub { font-size: 10px; }
-    .vb-hero2__badge { padding: 8px 12px; }
-    .vb-hero2__badge strong { font-size: 14px; }
-    .vb-hero2__badge small { font-size: 8px; }
-    .vb-hero2__badge--tl { left: -8px; top: 8px; }
-    .vb-hero2__badge--tr { right: -8px; top: 12px; }
-    .vb-hero2__badge--bl { left: -8px; bottom: 16px; }
-    .vb-hero2__badge--br { right: -8px; bottom: 14px; }
-    .vb-hero2__quote { max-width: 260px; padding: 10px 12px; bottom: -16px; }
-    .vb-hero2__quote-avatar { width: 36px; height: 36px; font-size: 15px; }
-    .vb-hero2__quote-text { font-size: 11.5px; }
-    .vb-hero2__quote-author { font-size: 9.5px; }
-    .vb-hero2 a.vb-hero2__cta { padding: 13px 24px; font-size: 14px; }
+    .vb-hero3 { padding: 36px 16px 40px; }
+    .vb-hero3__bg-img { object-position: center 25%; opacity: 0.35; -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%); mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%); }
+    .vb-hero3__headline { font-size: clamp(28px, 9vw, 38px); }
+    .vb-hero3__sub { font-size: 14.5px; }
+    .vb-hero3__floats { height: 64px; margin-bottom: 24px; max-width: 100%; }
+    .vb-hero3__badge { padding: 7px 11px; }
+    .vb-hero3__badge strong { font-size: 12.5px; }
+    .vb-hero3__badge small { font-size: 8px; }
+    .vb-hero3__badge--tl { left: 0; }
+    .vb-hero3__badge--tr { right: 0; }
+    .vb-hero3__badge--bl { left: 10%; bottom: 0; }
+    .vb-hero3__badge--br { right: 10%; bottom: 4px; }
+    .vb-hero3__pills { grid-template-columns: 1fr 1fr; gap: 8px; }
+    .vb-hero3__pill { padding: 10px 12px; gap: 8px; border-radius: 12px; }
+    .vb-hero3__pill-icon { width: 30px; height: 30px; font-size: 14px; }
+    .vb-hero3__pill-title { font-size: 12px; }
+    .vb-hero3__pill-sub { font-size: 10px; }
+    .vb-hero3 a.vb-hero3__cta { padding: 12px 22px; font-size: 13.5px; }
   }
 </style>
 
-<section class="vb-hero2">
-  <div class="vb-hero2__inner">
-    {%- if section.settings.eyebrow != blank -%}
-      <span class="vb-hero2__eyebrow">{{ section.settings.eyebrow }}</span>
-    {%- endif -%}
+<section class="vb-hero3">
+  {%- if hero_image_src != blank -%}
+    <div class="vb-hero3__bg">
+      <img class="vb-hero3__bg-img" src="{{ hero_image_src }}" alt="" loading="eager" />
+    </div>
+    <div class="vb-hero3__bg-overlay"></div>
+  {%- endif -%}
+
+  <div class="vb-hero3__inner">
+    {%- if section.settings.eyebrow != blank -%}<span class="vb-hero3__eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
     {%- if section.settings.show_rating -%}
-      <div class="vb-hero2__rating">
+      <div class="vb-hero3__rating">
         <span class="stars">★★★★★</span>
         <span>Over <strong>{{ section.settings.review_count }}</strong> Reviews</span>
         <span class="divider"></span>
         <span><strong>{{ section.settings.customer_count }}</strong> Happy Customers Worldwide</span>
       </div>
     {%- endif -%}
-    <h1 class="vb-hero2__headline">
+    <h1 class="vb-hero3__headline">
       {{ section.settings.headline_pre }}
       {%- if section.settings.headline_highlight != blank %} <em>{{ section.settings.headline_highlight }}</em>{%- endif -%}
     </h1>
-    {%- if section.settings.sub != blank -%}
-      <p class="vb-hero2__sub">{{ section.settings.sub }}</p>
-    {%- endif -%}
-    <div class="vb-hero2__ctas">
-      {%- if section.settings.cta1_text != blank -%}
-        <a href="{{ section.settings.cta1_link | default: '#' }}" class="vb-hero2__cta vb-hero2__cta--primary">{{ section.settings.cta1_text }}</a>
-      {%- endif -%}
-      {%- if section.settings.cta2_text != blank -%}
-        <a href="{{ section.settings.cta2_link | default: '#' }}" class="vb-hero2__cta vb-hero2__cta--secondary">{{ section.settings.cta2_text }}</a>
-      {%- endif -%}
+    {%- if section.settings.sub != blank -%}<p class="vb-hero3__sub">{{ section.settings.sub }}</p>{%- endif -%}
+    <div class="vb-hero3__ctas">
+      {%- if section.settings.cta1_text != blank -%}<a href="{{ section.settings.cta1_link | default: '#' }}" class="vb-hero3__cta vb-hero3__cta--primary">{{ section.settings.cta1_text }}</a>{%- endif -%}
+      {%- if section.settings.cta2_text != blank -%}<a href="{{ section.settings.cta2_link | default: '#' }}" class="vb-hero3__cta vb-hero3__cta--secondary">{{ section.settings.cta2_text }}</a>{%- endif -%}
     </div>
 
-    <div class="vb-hero2__visual">
-      <div class="vb-hero2__visual-frame">
-        {%- if hero_image_src != blank -%}
-          <img class="vb-hero2__visual-img" src="{{ hero_image_src }}" alt="{{ section.settings.bg_image.alt | default: 'Velobiotics' }}" loading="eager" />
-        {%- else -%}
-          <div class="vb-hero2__visual-placeholder">Hero banner image goes here</div>
-        {%- endif -%}
-      </div>
-      {%- if section.settings.badge_tl_value != blank -%}
-        <span class="vb-hero2__badge vb-hero2__badge--green vb-hero2__badge--tl"><strong>{{ section.settings.badge_tl_value }}</strong><small>{{ section.settings.badge_tl_label }}</small></span>
-      {%- endif -%}
-      {%- if section.settings.badge_tr_value != blank -%}
-        <span class="vb-hero2__badge vb-hero2__badge--tr"><strong>{{ section.settings.badge_tr_value }}</strong><small>{{ section.settings.badge_tr_label }}</small></span>
-      {%- endif -%}
-      {%- if section.settings.badge_bl_value != blank -%}
-        <span class="vb-hero2__badge vb-hero2__badge--bl"><strong>{{ section.settings.badge_bl_value }}</strong><small>{{ section.settings.badge_bl_label }}</small></span>
-      {%- endif -%}
-      {%- if section.settings.badge_br_value != blank -%}
-        <span class="vb-hero2__badge vb-hero2__badge--green vb-hero2__badge--br"><strong>{{ section.settings.badge_br_value }}</strong><small>{{ section.settings.badge_br_label }}</small></span>
-      {%- endif -%}
-      {%- if section.settings.quote_text != blank -%}
-        <div class="vb-hero2__quote">
-          <div class="vb-hero2__quote-avatar">{{ section.settings.quote_author | slice: 0, 1 | upcase }}</div>
-          <div class="vb-hero2__quote-body">
-            <div class="vb-hero2__quote-stars">★★★★★</div>
-            <p class="vb-hero2__quote-text">"{{ section.settings.quote_text }}"</p>
-            <p class="vb-hero2__quote-author">— {{ section.settings.quote_author }}, verified</p>
-          </div>
-        </div>
-      {%- endif -%}
+    <div class="vb-hero3__floats">
+      {%- if section.settings.badge_tl_value != blank -%}<span class="vb-hero3__badge vb-hero3__badge--green vb-hero3__badge--tl"><strong>{{ section.settings.badge_tl_value }}</strong><small>{{ section.settings.badge_tl_label }}</small></span>{%- endif -%}
+      {%- if section.settings.badge_tr_value != blank -%}<span class="vb-hero3__badge vb-hero3__badge--tr"><strong>{{ section.settings.badge_tr_value }}</strong><small>{{ section.settings.badge_tr_label }}</small></span>{%- endif -%}
+      {%- if section.settings.badge_bl_value != blank -%}<span class="vb-hero3__badge vb-hero3__badge--bl"><strong>{{ section.settings.badge_bl_value }}</strong><small>{{ section.settings.badge_bl_label }}</small></span>{%- endif -%}
+      {%- if section.settings.badge_br_value != blank -%}<span class="vb-hero3__badge vb-hero3__badge--green vb-hero3__badge--br"><strong>{{ section.settings.badge_br_value }}</strong><small>{{ section.settings.badge_br_label }}</small></span>{%- endif -%}
     </div>
 
-    <div class="vb-hero2__pills">
+    <div class="vb-hero3__pills">
       {%- for block in section.blocks -%}
         {%- if block.type == 'pill' -%}
-          <div class="vb-hero2__pill" {{ block.shopify_attributes }}>
-            <span class="vb-hero2__pill-icon">{{ block.settings.icon }}</span>
-            <span class="vb-hero2__pill-text">
-              <span class="vb-hero2__pill-title">{{ block.settings.title }}</span>
-              <span class="vb-hero2__pill-sub">{{ block.settings.sub }}</span>
+          <div class="vb-hero3__pill" {{ block.shopify_attributes }}>
+            <span class="vb-hero3__pill-icon">{{ block.settings.icon }}</span>
+            <span class="vb-hero3__pill-text">
+              <span class="vb-hero3__pill-title">{{ block.settings.title }}</span>
+              <span class="vb-hero3__pill-sub">{{ block.settings.sub }}</span>
             </span>
           </div>
         {%- endif -%}
@@ -173,7 +133,7 @@
   "tag": "section",
   "class": "vb-home-hero-section",
   "settings": [
-    { "type": "header", "content": "Hero banner image" },
+    { "type": "header", "content": "Background image (fades at edges)" },
     { "type": "text", "id": "bg_image_url", "label": "External image URL" },
     { "type": "image_picker", "id": "bg_image", "label": "Hero image (uploaded)" },
     { "type": "header", "content": "Content" },
@@ -194,13 +154,10 @@
     { "type": "text", "id": "badge_tl_label", "label": "Top-left label", "default": "More Probiotics" },
     { "type": "text", "id": "badge_tr_value", "label": "Top-right value", "default": "300K+" },
     { "type": "text", "id": "badge_tr_label", "label": "Top-right label", "default": "Happy Customers" },
-    { "type": "text", "id": "badge_bl_value", "label": "Bottom-left value", "default": "10" },
+    { "type": "text", "id": "badge_bl_value", "label": "Bottom-left value", "default": "16" },
     { "type": "text", "id": "badge_bl_label", "label": "Bottom-left label", "default": "Probiotic Strains" },
     { "type": "text", "id": "badge_br_value", "label": "Bottom-right value", "default": "30-day" },
-    { "type": "text", "id": "badge_br_label", "label": "Bottom-right label", "default": "Money Back" },
-    { "type": "header", "content": "Testimonial card" },
-    { "type": "textarea", "id": "quote_text", "label": "Quote", "default": "Lost 42kgs — Velo16 helped me lose the last kg!" },
-    { "type": "text", "id": "quote_author", "label": "Author", "default": "Nicky vd Westhuizen" }
+    { "type": "text", "id": "badge_br_label", "label": "Bottom-right label", "default": "Money Back" }
   ],
   "blocks": [
     { "type": "pill", "name": "Trust pill", "limit": 4, "settings": [

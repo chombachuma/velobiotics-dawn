@@ -1,0 +1,57 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "femina-hero",
+      "settings": {
+        "bg_image_url": "https://media.base44.com/images/public/69e738ecdc7682bdadfe7c82/3806ee1d7_generated_image.png",
+        "eyebrow": "★ Patented Velobiotics™ Technology",
+        "headline_pre": "Healthy Gut.",
+        "headline_highlight": "Healthy You.",
+        "headline_post": "",
+        "sub": "Transform your health in 21 days with science-backed probiotics and personalised wellness plans. 16 strains, 1000× delivery, 5 billion CFU.",
+        "cta1_text": "Start the 21-Day Plan →",
+        "cta1_link": "/collections/velo16",
+        "cta2_text": "🧪 Clear Skin Quiz",
+        "cta2_link": "https://velo16.com",
+        "proof": " The flagship Velobiotics™ probiotic — engineered for total gut health.",
+        "show_badges": true,
+        "bg_color_start": "#6b0a1f",
+        "bg_color_mid": "#c8163c",
+        "bg_color_end": "#ff5c7c"
+      },
+      "blocks": {
+        "b1": { "type": "badge", "settings": { "text": "16 Strains" } },
+        "b2": { "type": "badge", "settings": { "text": "1000× Delivery" } },
+        "b3": { "type": "badge", "settings": { "text": "5B CFU" } },
+        "b4": { "type": "badge", "settings": { "text": "21-Day Plan" } }
+      },
+      "block_order": ["b1","b2","b3","b4"]
+    },
+    "body": { "type": "femina-collection-body", "settings": {} },
+    "grid": {
+      "type": "femina-product-grid",
+      "settings": {
+        "show_heading": true,
+        "eyebrow": "The Collection",
+        "title": "Built for Total Vitality",
+        "sub": "Velo16 — the patented Velobiotics™ probiotic engineered for clear skin, balanced gut, and resilient immunity.",
+        "brand_primary": "#c8163c",
+        "brand_secondary": "#4d8c44",
+        "card_bg": "#fff5f7",
+        "card_bg2": "#ffd6df",
+        "brand_label": "Velo16™",
+        "products_per_page": 12
+      }
+    }
+  },
+  "order": ["hero","body","grid"]
+}

@@ -1,0 +1,57 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "femina-hero",
+      "settings": {
+        "bg_image_url": "https://media.base44.com/images/public/69e1abc073bbccc7f63edacc/653a0d852_generated_image.png",
+        "eyebrow": "#1 Gut-Health Weight Management Brand",
+        "headline_pre": "The Gut Feeling",
+        "headline_highlight": "Transformation",
+        "headline_post": "",
+        "sub": "The gut-health secret to effortless weight loss & lasting vitality. 1000× more probiotics delivered with Velobiotics™ Microencapsulation Technology.",
+        "cta1_text": "Start Your Transformation →",
+        "cta1_link": "/collections/gutslim",
+        "cta2_text": "🚀 Find My Gut Archetype",
+        "cta2_link": "https://gutslim.com",
+        "proof": " 4.9 from 10,000+ GutSlimmers · Velobiotics™ Technology",
+        "show_badges": true,
+        "bg_color_start": "#b25800",
+        "bg_color_mid": "#ff9500",
+        "bg_color_end": "#ffc266"
+      },
+      "blocks": {
+        "b1": { "type": "badge", "settings": { "text": "16 Strains" } },
+        "b2": { "type": "badge", "settings": { "text": "1000× More" } },
+        "b3": { "type": "badge", "settings": { "text": "Velobiotics™" } },
+        "b4": { "type": "badge", "settings": { "text": "🍃 Weight Loss" } }
+      },
+      "block_order": ["b1","b2","b3","b4"]
+    },
+    "body": { "type": "femina-collection-body", "settings": {} },
+    "grid": {
+      "type": "femina-product-grid",
+      "settings": {
+        "show_heading": true,
+        "eyebrow": "The Collection",
+        "title": "Transformation Starts Here",
+        "sub": "Probiotic-powered meal replacements and supplements engineered for sustainable weight management and gut vitality.",
+        "brand_primary": "#ff9500",
+        "brand_secondary": "#4d8c44",
+        "card_bg": "#fff8eb",
+        "card_bg2": "#ffe4b8",
+        "brand_label": "GutSlim™",
+        "products_per_page": 12
+      }
+    }
+  },
+  "order": ["hero","body","grid"]
+}

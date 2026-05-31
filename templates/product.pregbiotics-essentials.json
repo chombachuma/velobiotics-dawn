@@ -88,8 +88,6 @@
         "review_count": "210+",
         "hook": "The complete daily prenatal. PregBiotics™ Essentials blends pregnancy-safe probiotic strains with high-dose folate, iron, B12, and prenatal vitamins — for healthy mums and thriving babies.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
-        "show_subscription": true,
-        "show_qty_discounts": true,
         "show_buynow": true,
         "show_testi_marquee": true
       }
@@ -101,45 +99,45 @@
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Thandi+M&background=1f6b3d&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Smooth pregnancy, healthy baby. PregBiotics carried me through.",
             "author": "Thandi M.",
-            "meta": "Verified buyer · 7 months ago"
+            "meta": "Verified buyer · 7 months ago",
+            "quote": "Smooth pregnancy, healthy baby. PregBiotics carried me through."
           }
         },
         "r2": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Carla+V&background=5fa37a&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Energy throughout my trimesters. No second-trimester slump.",
             "author": "Carla V.",
-            "meta": "Verified buyer · 5 months ago"
+            "meta": "Verified buyer · 5 months ago",
+            "quote": "Energy throughout my trimesters. No second-trimester slump."
           }
         },
         "r3": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Renee+K&background=0a3d22&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "My OB recommended it. Easy decision.",
             "author": "Renee K.",
-            "meta": "Verified buyer · 4 months ago"
+            "meta": "Verified buyer · 4 months ago",
+            "quote": "My OB recommended it. Easy decision."
           }
         },
         "r4": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Lerato+P&background=1f6b3d&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Best prenatal I've tried. The probiotics really helped my digestion.",
             "author": "Lerato P.",
-            "meta": "Verified buyer · 6 months ago"
+            "meta": "Verified buyer · 6 months ago",
+            "quote": "Best prenatal I've tried. The probiotics really helped my digestion."
           }
         },
         "r5": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Sarah+B&background=5fa37a&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Daily must-have. Worth every cent.",
             "author": "Sarah B.",
-            "meta": "Verified buyer · 3 months ago"
+            "meta": "Verified buyer · 3 months ago",
+            "quote": "Daily must-have. Worth every cent."
           }
         }
       },
@@ -200,7 +198,7 @@
         "reverse": false,
         "brand_primary": "#1f6b3d",
         "brand_tint": "#f2f9ec",
-        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_184202_d5eaad31-44eb-417f-8358-518ac825e668.png",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_162431_3666fa64-0beb-4af4-97f3-0f1163850109.png",
         "tag_value": "85%",
         "tag_label": "Of Mums Feel Prenatals Aren't Enough",
         "eyebrow": "The Problem",
@@ -504,8 +502,8 @@
       ],
       "settings": {
         "brand_primary": "#1f6b3d",
-        "brand_tint": "#f2f9ec",
         "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
         "brand_light": "#5fa37a",
         "eyebrow": "What's Inside",
         "title": "Every ingredient earns its place",

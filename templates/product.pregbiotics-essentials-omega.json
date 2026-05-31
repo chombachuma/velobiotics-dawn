@@ -88,8 +88,6 @@
         "review_count": "150+",
         "hook": "The complete pregnancy daily with omega-3. PregBiotics™ Essentials + Omega blends pregnancy-safe probiotic strains, active folate, iron, B12, AND DHA omega-3 — for baby brain, eye, and total prenatal nutrition.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
-        "show_subscription": true,
-        "show_qty_discounts": true,
         "show_buynow": true,
         "show_testi_marquee": true
       }
@@ -101,45 +99,45 @@
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Cheryl+D&background=1f6b3d&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Better than two products. Folate AND DHA in one daily.",
             "author": "Cheryl D.",
-            "meta": "Verified buyer · 5 months ago"
+            "meta": "Verified buyer · 5 months ago",
+            "quote": "Better than two products. Folate AND DHA in one daily."
           }
         },
         "r2": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Lerato+N&background=5fa37a&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "My baby's eyes are bright and alert. DHA matters.",
             "author": "Lerato N.",
-            "meta": "Verified buyer · 4 months ago"
+            "meta": "Verified buyer · 4 months ago",
+            "quote": "My baby's eyes are bright and alert. DHA matters."
           }
         },
         "r3": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Mahlatse+K&background=0a3d22&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "No fishy taste. Capsule form means easy stomach.",
             "author": "Mahlatse K.",
-            "meta": "Verified buyer · 2 months ago"
+            "meta": "Verified buyer · 2 months ago",
+            "quote": "No fishy taste. Capsule form means easy stomach."
           }
         },
         "r4": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Sarah+V&background=1f6b3d&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "One capsule, complete coverage. Smart product.",
             "author": "Sarah V.",
-            "meta": "Verified buyer · 3 months ago"
+            "meta": "Verified buyer · 3 months ago",
+            "quote": "One capsule, complete coverage. Smart product."
           }
         },
         "r5": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Naseema+R&background=5fa37a&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Worth the upgrade. Less pills to juggle.",
             "author": "Naseema R.",
-            "meta": "Verified buyer · Johannesburg"
+            "meta": "Verified buyer · Johannesburg",
+            "quote": "Worth the upgrade. Less pills to juggle."
           }
         }
       },
@@ -200,7 +198,7 @@
         "reverse": false,
         "brand_primary": "#1f6b3d",
         "brand_tint": "#f2f9ec",
-        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_184202_d5eaad31-44eb-417f-8358-518ac825e668.png",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_162434_8be0f096-c928-4735-90f7-49ab3298ed4b.png",
         "tag_value": "DHA",
         "tag_label": "Critical For Baby Brain Development",
         "eyebrow": "The Problem",
@@ -504,8 +502,8 @@
       ],
       "settings": {
         "brand_primary": "#1f6b3d",
-        "brand_tint": "#f2f9ec",
         "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
         "brand_light": "#5fa37a",
         "eyebrow": "What's Inside",
         "title": "Every ingredient earns its place",

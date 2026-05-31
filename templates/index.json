@@ -65,14 +65,14 @@
         "cta1_link": "/collections/all",
         "cta2_text": "🧬 Take The Quiz",
         "cta2_link": "/pages/quiz",
-        "badge_tl_value": "1000×",
-        "badge_tl_label": "More Probiotics",
-        "badge_tr_value": "300K+",
-        "badge_tr_label": "Happy Customers",
-        "badge_bl_value": "16",
-        "badge_bl_label": "Probiotic Strains",
-        "badge_br_value": "30-day",
-        "badge_br_label": "Money Back"
+        "badge_tl_value": "",
+        "badge_tl_label": "",
+        "badge_tr_value": "",
+        "badge_tr_label": "",
+        "badge_bl_value": "",
+        "badge_bl_label": "",
+        "badge_br_value": "",
+        "badge_br_label": ""
       }
     },
     "trust-logos": {

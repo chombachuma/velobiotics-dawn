@@ -9,21 +9,870 @@
  */
 {
   "sections": {
-    "hero": { "type": "vb-product-hero", "blocks": { "b1": { "type": "benefit", "settings": { "icon": "🩸", "text": "18 mg gentle iron" } }, "b2": { "type": "benefit", "settings": { "icon": "⚡", "text": "Energy & stamina restore" } }, "b3": { "type": "benefit", "settings": { "icon": "🧠", "text": "Banish brain fog" } }, "b4": { "type": "benefit", "settings": { "icon": "⚡", "text": "1000× more delivery" } }, "t1": { "type": "testi", "settings": { "quote": "Finally — energy that lasts", "author": "Lerato S." } }, "t2": { "type": "testi", "settings": { "quote": "No constipation this time", "author": "Bridget D." } }, "t3": { "type": "testi", "settings": { "quote": "Anaemia gone after 8 weeks", "author": "Naledi K." } }, "t4": { "type": "testi", "settings": { "quote": "Hair stopped falling out", "author": "Amanda B." } } }, "block_order": ["b1","b2","b3","b4","t1","t2","t3","t4"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "brand_label": "Velo16™ · Iron", "rating": "4.7", "review_count": "240+", "hook": "Gentle iron that actually absorbs. Velo16™ Probiotics Iron (Fe) delivers 18 mg of bioavailable bisglycinate + 16 probiotic strains + Vit C — for sustained energy, sharper focus, and zero constipation.", "ship_note": "Ships worldwide · Free shipping over the threshold · 30-day money-back guarantee", "show_subscription": true, "show_qty_discounts": true, "show_buynow": true, "show_testi_marquee": true } },
-    "reviews-carousel": { "type": "vb-product-reviews-carousel", "blocks": { "r1": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Lerato+S&background=c8163c&color=ffffff&size=120&bold=true", "quote": "My iron levels finally on target. Energy is back.", "author": "Lerato S.", "meta": "Verified buyer · 3 months ago" } }, "r2": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Bridget+D&background=ff5c7c&color=ffffff&size=120&bold=true", "quote": "First iron supplement that doesn't constipate me.", "author": "Bridget D.", "meta": "Verified buyer · 2 months ago" } }, "r3": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Naledi+K&background=6b0a1f&color=ffffff&size=120&bold=true", "quote": "Doctor said my ferritin normalised — first time in 5 years.", "author": "Naledi K.", "meta": "Verified buyer · 6 months ago" } }, "r4": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Amanda+B&background=c8163c&color=ffffff&size=120&bold=true", "quote": "Hair stopped falling. Skin glowing. Worth every cent.", "author": "Amanda B.", "meta": "Verified buyer · 4 months ago" } } }, "block_order": ["r1","r2","r3","r4"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "eyebrow": "★ Real Reviews", "title": "Energy restored, naturally" } },
-    "problem": { "type": "vb-product-story", "blocks": { "p1": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Constant fatigue</strong> no amount of sleep can fix." } }, "p2": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Brain fog</strong> and weakness from low iron." } }, "p3": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Hair shedding</strong> and pale skin from anaemia." } }, "p4": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Generic iron tablets</strong> that constipate and barely absorb." } } }, "block_order": ["p1","p2","p3","p4"], "settings": { "reverse": false, "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "image_url": "", "tag_value": "30%", "tag_label": "Of Women Have Low Iron", "eyebrow": "The Problem", "title_pre": "Iron deficiency", "title_highlight": "is silent but brutal.", "desc": "Most women — and many men — are silently iron deficient. The result: chronic fatigue, brain fog, hair loss, pale skin. Standard iron supplements constipate, upset stomachs, and barely absorb. There's a smarter form." } },
-    "solution": { "type": "vb-product-story", "blocks": { "s1": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Iron bisglycinate</strong> — the most-absorbed, gut-gentle form." } }, "s2": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Vit C bonus</strong> — boosts iron absorption 3× over." } }, "s3": { "type": "point", "settings": { "icon": "✓", "text": "<strong>16-strain probiotic blend</strong> for gut + immunity." } }, "s4": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive." } } }, "block_order": ["s1","s2","s3","s4"], "settings": { "reverse": true, "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "image_url": "", "tag_value": "18mg", "tag_label": "Gentle Iron Bisglycinate", "eyebrow": "The Solution", "title_pre": "Meet", "title_highlight": "Velo16™ Probiotics Iron.", "desc": "A once-daily capsule combining iron bisglycinate (the gut-gentle form) with Vit C for 3× better absorption and 16 probiotic strains. Velobiotics™ MEP technology means no nausea, no constipation — just restored energy and clarity." } },
-    "related": { "type": "vb-product-related", "blocks": { "r1": { "type": "product", "settings": { "product_handle": "velo16-probiotics-vitamin-c", "brand": "Velo16™", "rating": "4.7", "reviews": "320+" } }, "r2": { "type": "product", "settings": { "product_handle": "velo16-probiotics-vitamin-d3", "brand": "Velo16™", "rating": "4.8", "reviews": "280+" } }, "r3": { "type": "product", "settings": { "product_handle": "velo16-probiotics-zinc-picolinate", "brand": "Velo16™", "rating": "4.6", "reviews": "200+" } }, "r4": { "type": "product", "settings": { "product_handle": "velo16-probiotics-calcium-magnesium", "brand": "Velo16™", "rating": "4.6", "reviews": "180+" } } }, "block_order": ["r1","r2","r3","r4"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "tint": false, "eyebrow": "Complete the Energy Stack", "title": "More from the Velo16™ range", "sub": "Stack Iron with the rest of your daily essential minerals." } },
-    "benefits": { "type": "vb-product-benefits", "blocks": { "b1": { "type": "feat", "settings": { "icon": "⚡", "name": "Restored Energy", "desc": "Iron fuels haemoglobin — without enough, every cell is short of oxygen." } }, "b2": { "type": "feat", "settings": { "icon": "🧠", "name": "Sharper Focus", "desc": "Brain fog and weakness lift when iron levels are restored." } }, "b3": { "type": "feat", "settings": { "icon": "✨", "name": "Healthier Hair & Skin", "desc": "Iron supports oxygen delivery to skin and hair follicles." } }, "b4": { "type": "feat", "settings": { "icon": "🌿", "name": "Gentle on Tummy", "desc": "Bisglycinate is famously easy — no constipation, no nausea." } }, "b5": { "type": "feat", "settings": { "icon": "🩺", "name": "Doctor Formulated", "desc": "Built on the most-absorbed form of iron + Vit C synergy." } }, "b6": { "type": "feat", "settings": { "icon": "🌿", "name": "100% Natural", "desc": "Vegan-friendly bisglycinate, halaal-friendly, no fillers." } } }, "block_order": ["b1","b2","b3","b4","b5","b6"], "settings": { "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "eyebrow": "Key Benefits", "title_pre": "Why", "title_highlight": "Velo16™ Iron", "sub": "Six reasons it has become the gentle iron of choice for fatigue-fighters." } },
-    "how": { "type": "vb-product-how", "blocks": { "h1": { "type": "step", "settings": { "icon": "💊", "name": "Take One Capsule Daily", "desc": "With water, on an empty stomach for maximum absorption." } }, "h2": { "type": "step", "settings": { "icon": "🛡️", "name": "MEP Armour Survives", "desc": "Velobiotics™ shield prevents irritation, ensures gentle absorption." } }, "h3": { "type": "step", "settings": { "icon": "🎯", "name": "Delivered to Your Blood", "desc": "Iron + Vit C + 1000× more probiotics reach you alive." } }, "h4": { "type": "step", "settings": { "icon": "⚡", "name": "Energy, Focus, Glow", "desc": "Sustained energy, clearer thinking, healthier hair and skin." } } }, "block_order": ["h1","h2","h3","h4"], "settings": { "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "eyebrow": "How It Works", "title_pre": "From Capsule to", "title_highlight": "Energy", "sub": "Four simple steps. One daily ritual. End the iron-deficiency fatigue." } },
-    "ingredients": { "type": "vb-product-ingredients", "blocks": { "i1": { "type": "ingredient", "settings": { "icon": "🩸", "name": "Iron Bisglycinate", "amount": "18 mg", "desc": "The most-absorbed, gut-gentle chelated form of iron." } }, "i2": { "type": "ingredient", "settings": { "icon": "🍊", "name": "Vitamin C (Ascorbic Acid)", "amount": "60 mg", "desc": "Triples iron absorption — clinical synergy." } }, "i3": { "type": "ingredient", "settings": { "icon": "🦠", "name": "16-Strain Probiotic Blend", "amount": "10 Billion CFU", "desc": "Strains for gut, immunity, and absorption support." } }, "i4": { "type": "ingredient", "settings": { "icon": "🛡️", "name": "Velobiotics™ MEP Coating", "amount": "Patented", "desc": "Supercritical CO₂ — gentle absorption, no irritation." } }, "i5": { "type": "ingredient", "settings": { "icon": "✓", "name": "Clean Capsule Shell", "amount": "Vegan HPMC", "desc": "No gelatin, halaal-friendly." } }, "i6": { "type": "ingredient", "settings": { "icon": "🚫", "name": "Free From", "amount": "Always", "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO." } } }, "block_order": ["i1","i2","i3","i4","i5","i6"], "settings": { "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "brand_dark": "#6b0a1f", "brand_light": "#ff5c7c", "eyebrow": "What's Inside", "title": "Every ingredient earns its place", "sub": "Six clean actives. Full transparency.", "facts_image_url": "", "facts_label": "Supplement facts", "facts_foot": "Lab-tested · Doctor-formulated" } },
-    "confidence": { "type": "vb-product-confidence", "blocks": { "c1": { "type": "stat", "settings": { "label": "Restored daily energy", "percent": 92 } }, "c2": { "type": "stat", "settings": { "label": "Improved blood iron levels", "percent": 87 } }, "c3": { "type": "stat", "settings": { "label": "Less brain fog", "percent": 88 } }, "c4": { "type": "stat", "settings": { "label": "No gut side effects", "percent": 94 } }, "c5": { "type": "stat", "settings": { "label": "Would recommend to a friend", "percent": 95 } } }, "block_order": ["c1","c2","c3","c4","c5"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "eyebrow": "Real results", "title_pre": "Trusted for", "title_highlight": "Iron Without Discomfort", "sub": "What customers report after 8–12 weeks of daily Velo16™ Iron.", "caveat": "Based on 240+ verified customers. Individual results may vary." } },
-    "fbt": { "type": "vb-product-related", "blocks": { "f1": { "type": "product", "settings": { "product_handle": "her-biotics-original-capsules-60s", "brand": "Her-Biotics™", "rating": "4.7", "reviews": "260+" } }, "f2": { "type": "product", "settings": { "product_handle": "femina-probiotic-capsules-with-cranberry-for-women", "brand": "Femina™", "rating": "4.8", "reviews": "1300+" } }, "f3": { "type": "product", "settings": { "product_handle": "pregbiotics-essentials", "brand": "PregBiotics™", "rating": "4.9", "reviews": "210+" } }, "f4": { "type": "product", "settings": { "product_handle": "almasi-probiotics-skin-hair-nails-60s", "brand": "Almasi™", "rating": "4.9", "reviews": "180+" } } }, "block_order": ["f1","f2","f3","f4"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "tint": true, "eyebrow": "Frequently Bought Together", "title": "Pair with the rest of your wellness stack", "sub": "Velo16™ Iron stacks beautifully with these Velobiotics favourites." } },
-    "doctors": { "type": "vb-doctors", "blocks": { "d1": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966", "name": "Gut-Gentle Bisglycinate", "desc": "The most-absorbed iron form." } }, "d2": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966", "name": "Doctor Formulated", "desc": "Built with Vit C synergy for 3× absorption." } }, "d3": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073", "name": "Patented MEP Technology", "desc": "Microencapsulation with Supercritical CO₂." } }, "d4": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199", "name": "Clean Label", "desc": "Vegan, halaal-friendly, no fillers." } } }, "block_order": ["d1","d2","d3","d4"], "settings": { "eyebrow": "Trusted by Doctors. Proven by Science.", "title_pre": "Quality you can", "title_highlight": "trust.", "sub": "Built on the most-absorbed iron form and SAHPRA-aware manufacturing." } },
-    "outperform": { "type": "vb-product-outperform", "blocks": { "o1": { "type": "row", "settings": { "feature": "Gut-Gentle Bisglycinate", "brand_state": "yes", "b_state": "no", "c_state": "no" } }, "o2": { "type": "row", "settings": { "feature": "Vit C Absorption Boost", "brand_state": "yes", "b_state": "no", "c_state": "no" } }, "o3": { "type": "row", "settings": { "feature": "16-Strain Probiotic Boost", "brand_state": "yes", "b_state": "no", "c_state": "no" } }, "o4": { "type": "row", "settings": { "feature": "Daily Simplicity", "brand_state": "yes", "b_state": "no", "c_state": "no" } }, "o5": { "type": "row", "settings": { "feature": "Long-Term Energy", "brand_state": "yes", "b_state": "no", "c_state": "no" } } }, "block_order": ["o1","o2","o3","o4","o5"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "title": "Why We Outperform Others", "sub": "Experience iron that absorbs without irritation — bisglycinate + Vit C synergy + 16-strain probiotic.", "col_features": "Features", "col_brand": "Velo16™ Iron", "col_b": "Generic Iron", "col_c": "Others", "cta_text": "Add to Cart", "cta_note": "30-day money-back · Free shipping over the threshold" } },
-    "judgeme": { "type": "vb-judgeme", "settings": { "eyebrow": "Real Reviews", "title_pre": "What Customers", "title_highlight": "Are Saying", "sub": "Verified reviews. Judge.me widget populates on go-live.", "rating": "4.7", "reviews_count": "240+", "customers_count": "30K+" } },
-    "faq": { "type": "vb-faq", "blocks": { "q1": { "type": "q", "settings": { "question": "Why bisglycinate over ferrous sulphate?", "answer": "<p>Iron bisglycinate is chelated — bound to two glycine molecules. It absorbs 3–4× better than ferrous sulphate and is famously gentle on the stomach.</p>" } }, "q2": { "type": "q", "settings": { "question": "Will it constipate me?", "answer": "<p>No. Bisglycinate is well-known for being constipation-free. Hundreds of customers come to us specifically to escape the side effects of ferrous sulphate.</p>" } }, "q3": { "type": "q", "settings": { "question": "Is Velo16™ Iron safe daily?", "answer": "<p>Yes. 18 mg is the daily recommended intake for adults. Always check ferritin levels with your doctor first.</p>" } }, "q4": { "type": "q", "settings": { "question": "Should men take iron daily?", "answer": "<p>Most men don't need extra iron unless diagnosed with deficiency. Check with your doctor — bloodwork first.</p>" } }, "q5": { "type": "q", "settings": { "question": "Do you ship internationally?", "answer": "<p>Yes. 5–14 working days. Free shipping over the threshold.</p>" } }, "q6": { "type": "q", "settings": { "question": "What if it doesn't work?", "answer": "<p>30-day money-back, no questions asked.</p>" } } }, "block_order": ["q1","q2","q3","q4","q5","q6"], "settings": { "eyebrow": "FAQ", "title_pre": "Questions Before", "title_highlight": "You Start" } },
-    "final": { "type": "vb-product-final", "blocks": { "g1": { "type": "g", "settings": { "icon": "✅", "text": "30-day money-back" } }, "g2": { "type": "g", "settings": { "icon": "🚚", "text": "Ships worldwide" } }, "g3": { "type": "g", "settings": { "icon": "🔬", "text": "Bisglycinate form" } }, "g4": { "type": "g", "settings": { "icon": "🩸", "text": "Gut-gentle" } } }, "block_order": ["g1","g2","g3","g4"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_light": "#ff5c7c", "badge": "30-day money-back guarantee", "title_pre": "Restore Your Energy", "title_highlight": "Risk-Free for 30 Days", "sub": "Join the 30,000+ people who beat fatigue with Velo16™ Iron. If you don't feel the difference, we'll refund every cent.", "cta_text": "Add to Cart", "cta_link": "#vbpForm" } }
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🩸",
+            "text": "18 mg gentle iron"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "⚡",
+            "text": "Energy & stamina restore"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🧠",
+            "text": "Banish brain fog"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "⚡",
+            "text": "1000× more delivery"
+          }
+        },
+        "t1": {
+          "type": "testi",
+          "settings": {
+            "quote": "Finally — energy that lasts",
+            "author": "Lerato S."
+          }
+        },
+        "t2": {
+          "type": "testi",
+          "settings": {
+            "quote": "No constipation this time",
+            "author": "Bridget D."
+          }
+        },
+        "t3": {
+          "type": "testi",
+          "settings": {
+            "quote": "Anaemia gone after 8 weeks",
+            "author": "Naledi K."
+          }
+        },
+        "t4": {
+          "type": "testi",
+          "settings": {
+            "quote": "Hair stopped falling out",
+            "author": "Amanda B."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "brand_label": "Velo16™ · Iron",
+        "rating": "4.7",
+        "review_count": "240+",
+        "hook": "Gentle iron that actually absorbs. Velo16™ Probiotics Iron (Fe) delivers 18 mg of bioavailable bisglycinate + 16 probiotic strains + Vit C — for sustained energy, sharper focus, and zero constipation.",
+        "ship_note": "Ships worldwide · Free shipping over the threshold · 30-day money-back guarantee",
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
+    },
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Lerato+S&background=c8163c&color=ffffff&size=120&bold=true",
+            "author": "Lerato S.",
+            "meta": "Verified buyer · 3 months ago",
+            "quote": "My iron levels finally on target. Energy is back."
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Bridget+D&background=ff5c7c&color=ffffff&size=120&bold=true",
+            "author": "Bridget D.",
+            "meta": "Verified buyer · 2 months ago",
+            "quote": "First iron supplement that doesn't constipate me."
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Naledi+K&background=6b0a1f&color=ffffff&size=120&bold=true",
+            "author": "Naledi K.",
+            "meta": "Verified buyer · 6 months ago",
+            "quote": "Doctor said my ferritin normalised — first time in 5 years."
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Amanda+B&background=c8163c&color=ffffff&size=120&bold=true",
+            "author": "Amanda B.",
+            "meta": "Verified buyer · 4 months ago",
+            "quote": "Hair stopped falling. Skin glowing. Worth every cent."
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "eyebrow": "★ Real Reviews",
+        "title": "Energy restored, naturally"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Constant fatigue</strong> no amount of sleep can fix."
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Brain fog</strong> and weakness from low iron."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Hair shedding</strong> and pale skin from anaemia."
+          }
+        },
+        "p4": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Generic iron tablets</strong> that constipate and barely absorb."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#c8163c",
+        "brand_tint": "#ffe8ec",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_162438_db561a60-8c84-45e7-8e56-c27304848074.png",
+        "tag_value": "30%",
+        "tag_label": "Of Women Have Low Iron",
+        "eyebrow": "The Problem",
+        "title_pre": "Iron deficiency",
+        "title_highlight": "is silent but brutal.",
+        "desc": "Most women — and many men — are silently iron deficient. The result: chronic fatigue, brain fog, hair loss, pale skin. Standard iron supplements constipate, upset stomachs, and barely absorb. There's a smarter form."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Iron bisglycinate</strong> — the most-absorbed, gut-gentle form."
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Vit C bonus</strong> — boosts iron absorption 3× over."
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>16-strain probiotic blend</strong> for gut + immunity."
+          }
+        },
+        "s4": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#c8163c",
+        "brand_tint": "#ffe8ec",
+        "image_url": "",
+        "tag_value": "18mg",
+        "tag_label": "Gentle Iron Bisglycinate",
+        "eyebrow": "The Solution",
+        "title_pre": "Meet",
+        "title_highlight": "Velo16™ Probiotics Iron.",
+        "desc": "A once-daily capsule combining iron bisglycinate (the gut-gentle form) with Vit C for 3× better absorption and 16 probiotic strains. Velobiotics™ MEP technology means no nausea, no constipation — just restored energy and clarity."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-vitamin-c",
+            "brand": "Velo16™",
+            "rating": "4.7",
+            "reviews": "320+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-vitamin-d3",
+            "brand": "Velo16™",
+            "rating": "4.8",
+            "reviews": "280+"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-zinc-picolinate",
+            "brand": "Velo16™",
+            "rating": "4.6",
+            "reviews": "200+"
+          }
+        },
+        "r4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-calcium-magnesium",
+            "brand": "Velo16™",
+            "rating": "4.6",
+            "reviews": "180+"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "tint": false,
+        "eyebrow": "Complete the Energy Stack",
+        "title": "More from the Velo16™ range",
+        "sub": "Stack Iron with the rest of your daily essential minerals."
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "b1": {
+          "type": "feat",
+          "settings": {
+            "icon": "⚡",
+            "name": "Restored Energy",
+            "desc": "Iron fuels haemoglobin — without enough, every cell is short of oxygen."
+          }
+        },
+        "b2": {
+          "type": "feat",
+          "settings": {
+            "icon": "🧠",
+            "name": "Sharper Focus",
+            "desc": "Brain fog and weakness lift when iron levels are restored."
+          }
+        },
+        "b3": {
+          "type": "feat",
+          "settings": {
+            "icon": "✨",
+            "name": "Healthier Hair & Skin",
+            "desc": "Iron supports oxygen delivery to skin and hair follicles."
+          }
+        },
+        "b4": {
+          "type": "feat",
+          "settings": {
+            "icon": "🌿",
+            "name": "Gentle on Tummy",
+            "desc": "Bisglycinate is famously easy — no constipation, no nausea."
+          }
+        },
+        "b5": {
+          "type": "feat",
+          "settings": {
+            "icon": "🩺",
+            "name": "Doctor Formulated",
+            "desc": "Built on the most-absorbed form of iron + Vit C synergy."
+          }
+        },
+        "b6": {
+          "type": "feat",
+          "settings": {
+            "icon": "🌿",
+            "name": "100% Natural",
+            "desc": "Vegan-friendly bisglycinate, halaal-friendly, no fillers."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_tint": "#ffe8ec",
+        "eyebrow": "Key Benefits",
+        "title_pre": "Why",
+        "title_highlight": "Velo16™ Iron",
+        "sub": "Six reasons it has become the gentle iron of choice for fatigue-fighters."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "💊",
+            "name": "Take One Capsule Daily",
+            "desc": "With water, on an empty stomach for maximum absorption."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "🛡️",
+            "name": "MEP Armour Survives",
+            "desc": "Velobiotics™ shield prevents irritation, ensures gentle absorption."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "🎯",
+            "name": "Delivered to Your Blood",
+            "desc": "Iron + Vit C + 1000× more probiotics reach you alive."
+          }
+        },
+        "h4": {
+          "type": "step",
+          "settings": {
+            "icon": "⚡",
+            "name": "Energy, Focus, Glow",
+            "desc": "Sustained energy, clearer thinking, healthier hair and skin."
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_tint": "#ffe8ec",
+        "eyebrow": "How It Works",
+        "title_pre": "From Capsule to",
+        "title_highlight": "Energy",
+        "sub": "Four simple steps. One daily ritual. End the iron-deficiency fatigue."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🩸",
+            "name": "Iron Bisglycinate",
+            "amount": "18 mg",
+            "desc": "The most-absorbed, gut-gentle chelated form of iron."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🍊",
+            "name": "Vitamin C (Ascorbic Acid)",
+            "amount": "60 mg",
+            "desc": "Triples iron absorption — clinical synergy."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🦠",
+            "name": "16-Strain Probiotic Blend",
+            "amount": "10 Billion CFU",
+            "desc": "Strains for gut, immunity, and absorption support."
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🛡️",
+            "name": "Velobiotics™ MEP Coating",
+            "amount": "Patented",
+            "desc": "Supercritical CO₂ — gentle absorption, no irritation."
+          }
+        },
+        "i5": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "✓",
+            "name": "Clean Capsule Shell",
+            "amount": "Vegan HPMC",
+            "desc": "No gelatin, halaal-friendly."
+          }
+        },
+        "i6": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🚫",
+            "name": "Free From",
+            "amount": "Always",
+            "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "brand_light": "#ff5c7c",
+        "eyebrow": "What's Inside",
+        "title": "Every ingredient earns its place",
+        "sub": "Six clean actives. Full transparency.",
+        "facts_image_url": "",
+        "facts_label": "Supplement facts",
+        "facts_foot": "Lab-tested · Doctor-formulated"
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Restored daily energy",
+            "percent": 92
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "Improved blood iron levels",
+            "percent": 87
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Less brain fog",
+            "percent": 88
+          }
+        },
+        "c4": {
+          "type": "stat",
+          "settings": {
+            "label": "No gut side effects",
+            "percent": 94
+          }
+        },
+        "c5": {
+          "type": "stat",
+          "settings": {
+            "label": "Would recommend to a friend",
+            "percent": 95
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "eyebrow": "Real results",
+        "title_pre": "Trusted for",
+        "title_highlight": "Iron Without Discomfort",
+        "sub": "What customers report after 8–12 weeks of daily Velo16™ Iron.",
+        "caveat": "Based on 240+ verified customers. Individual results may vary."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "f1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "her-biotics-original-capsules-60s",
+            "brand": "Her-Biotics™",
+            "rating": "4.7",
+            "reviews": "260+"
+          }
+        },
+        "f2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
+            "brand": "Femina™",
+            "rating": "4.8",
+            "reviews": "1300+"
+          }
+        },
+        "f3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "pregbiotics-essentials",
+            "brand": "PregBiotics™",
+            "rating": "4.9",
+            "reviews": "210+"
+          }
+        },
+        "f4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "almasi-probiotics-skin-hair-nails-60s",
+            "brand": "Almasi™",
+            "rating": "4.9",
+            "reviews": "180+"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "tint": true,
+        "eyebrow": "Frequently Bought Together",
+        "title": "Pair with the rest of your wellness stack",
+        "sub": "Velo16™ Iron stacks beautifully with these Velobiotics favourites."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
+            "name": "Gut-Gentle Bisglycinate",
+            "desc": "The most-absorbed iron form."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
+            "name": "Doctor Formulated",
+            "desc": "Built with Vit C synergy for 3× absorption."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
+            "name": "Patented MEP Technology",
+            "desc": "Microencapsulation with Supercritical CO₂."
+          }
+        },
+        "d4": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
+            "name": "Clean Label",
+            "desc": "Vegan, halaal-friendly, no fillers."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3",
+        "d4"
+      ],
+      "settings": {
+        "eyebrow": "Trusted by Doctors. Proven by Science.",
+        "title_pre": "Quality you can",
+        "title_highlight": "trust.",
+        "sub": "Built on the most-absorbed iron form and SAHPRA-aware manufacturing."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "Gut-Gentle Bisglycinate",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "Vit C Absorption Boost",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "16-Strain Probiotic Boost",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "Daily Simplicity",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o5": {
+          "type": "row",
+          "settings": {
+            "feature": "Long-Term Energy",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "title": "Why We Outperform Others",
+        "sub": "Experience iron that absorbs without irritation — bisglycinate + Vit C synergy + 16-strain probiotic.",
+        "col_features": "Features",
+        "col_brand": "Velo16™ Iron",
+        "col_b": "Generic Iron",
+        "col_c": "Others",
+        "cta_text": "Add to Cart",
+        "cta_note": "30-day money-back · Free shipping over the threshold"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Real Reviews",
+        "title_pre": "What Customers",
+        "title_highlight": "Are Saying",
+        "sub": "Verified reviews. Judge.me widget populates on go-live.",
+        "rating": "4.7",
+        "reviews_count": "240+",
+        "customers_count": "30K+"
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "Why bisglycinate over ferrous sulphate?",
+            "answer": "<p>Iron bisglycinate is chelated — bound to two glycine molecules. It absorbs 3–4× better than ferrous sulphate and is famously gentle on the stomach.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "Will it constipate me?",
+            "answer": "<p>No. Bisglycinate is well-known for being constipation-free. Hundreds of customers come to us specifically to escape the side effects of ferrous sulphate.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "Is Velo16™ Iron safe daily?",
+            "answer": "<p>Yes. 18 mg is the daily recommended intake for adults. Always check ferritin levels with your doctor first.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Should men take iron daily?",
+            "answer": "<p>Most men don't need extra iron unless diagnosed with deficiency. Check with your doctor — bloodwork first.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Do you ship internationally?",
+            "answer": "<p>Yes. 5–14 working days. Free shipping over the threshold.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "What if it doesn't work?",
+            "answer": "<p>30-day money-back, no questions asked.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "title_pre": "Questions Before",
+        "title_highlight": "You Start"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "✅",
+            "text": "30-day money-back"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "🚚",
+            "text": "Ships worldwide"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "🔬",
+            "text": "Bisglycinate form"
+          }
+        },
+        "g4": {
+          "type": "g",
+          "settings": {
+            "icon": "🩸",
+            "text": "Gut-gentle"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_light": "#ff5c7c",
+        "badge": "30-day money-back guarantee",
+        "title_pre": "Restore Your Energy",
+        "title_highlight": "Risk-Free for 30 Days",
+        "sub": "Join the 30,000+ people who beat fatigue with Velo16™ Iron. If you don't feel the difference, we'll refund every cent.",
+        "cta_text": "Add to Cart",
+        "cta_link": "#vbpForm"
+      }
+    }
   },
-  "order": ["hero","reviews-carousel","problem","solution","related","benefits","how","ingredients","confidence","fbt","doctors","outperform","judgeme","faq","final"]
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "judgeme",
+    "faq",
+    "final"
+  ]
 }

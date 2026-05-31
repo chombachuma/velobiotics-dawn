@@ -88,8 +88,6 @@
         "review_count": "120+",
         "hook": "Vibrant after 50. Her-Biotics™ Ageless 50+ combines 16 probiotic strains with calcium, vitamin D3, collagen, and CoQ10 — engineered for women's vitality in their fifties and beyond.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
-        "show_subscription": true,
-        "show_qty_discounts": true,
         "show_buynow": true,
         "show_testi_marquee": true
       }
@@ -101,45 +99,45 @@
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Lillian+P&background=f5908d&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Energy at 58 I haven't had in 20 years. This is real.",
             "author": "Lillian P.",
-            "meta": "Verified buyer · Pretoria"
+            "meta": "Verified buyer · Pretoria",
+            "quote": "Energy at 58 I haven't had in 20 years. This is real."
           }
         },
         "r2": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Marion+S&background=ffc0bd&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Joints quieter, skin brighter. Aging gracefully now.",
             "author": "Marion S.",
-            "meta": "Verified buyer · Cape Town"
+            "meta": "Verified buyer · Cape Town",
+            "quote": "Joints quieter, skin brighter. Aging gracefully now."
           }
         },
         "r3": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Catherine+M&background=b85a58&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "My doctor approved. Bone density steady, energy back.",
             "author": "Catherine M.",
-            "meta": "Verified buyer · 3 months ago"
+            "meta": "Verified buyer · 3 months ago",
+            "quote": "My doctor approved. Bone density steady, energy back."
           }
         },
         "r4": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Beverly+D&background=f5908d&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Aging? Not anymore. Ageless 50+ keeps me thriving.",
             "author": "Beverly D.",
-            "meta": "Verified buyer · Johannesburg"
+            "meta": "Verified buyer · Johannesburg",
+            "quote": "Aging? Not anymore. Ageless 50+ keeps me thriving."
           }
         },
         "r5": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Susan+B&background=ffc0bd&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "At 63 I run a marathon next month. This is my fuel.",
             "author": "Susan B.",
-            "meta": "Verified buyer · 2 months ago"
+            "meta": "Verified buyer · 2 months ago",
+            "quote": "At 63 I run a marathon next month. This is my fuel."
           }
         }
       },
@@ -200,7 +198,7 @@
         "reverse": false,
         "brand_primary": "#f5908d",
         "brand_tint": "#fff5f3",
-        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_180903_da282482-2786-4615-882c-560e2ec0ef35.jpeg",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_162404_0b3a347b-dc23-48a4-8943-52673c72933c.png",
         "tag_value": "3×",
         "tag_label": "Women's Bone Loss Rate After 50",
         "eyebrow": "The Problem",
@@ -504,8 +502,8 @@
       ],
       "settings": {
         "brand_primary": "#f5908d",
-        "brand_tint": "#fff5f3",
         "brand_dark": "#b85a58",
+        "brand_tint": "#fff5f3",
         "brand_light": "#ffc0bd",
         "eyebrow": "What's Inside",
         "title": "Every ingredient earns its place",

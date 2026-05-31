@@ -88,8 +88,6 @@
         "review_count": "180+",
         "hook": "Menopause support, naturally. Her-Biotics™ Menopausal Support combines 16 probiotic strains with phytoestrogens, black cohosh, and adaptogens — clinical relief for hot flashes, mood, and sleep.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
-        "show_subscription": true,
-        "show_qty_discounts": true,
         "show_buynow": true,
         "show_testi_marquee": true
       }
@@ -101,45 +99,45 @@
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Lerato+P&background=f5908d&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Hot flashes finally manageable. Bearable, even.",
             "author": "Lerato P.",
-            "meta": "Verified buyer · Pretoria"
+            "meta": "Verified buyer · Pretoria",
+            "quote": "Hot flashes finally manageable. Bearable, even."
           }
         },
         "r2": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Christine+V&background=ffc0bd&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Better sleep at last. Energy back. Mood steadier.",
             "author": "Christine V.",
-            "meta": "Verified buyer · Johannesburg"
+            "meta": "Verified buyer · Johannesburg",
+            "quote": "Better sleep at last. Energy back. Mood steadier."
           }
         },
         "r3": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Bridget+M&background=b85a58&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Mood swings eased within 3 weeks. My family thanks me.",
             "author": "Bridget M.",
-            "meta": "Verified buyer · Cape Town"
+            "meta": "Verified buyer · Cape Town",
+            "quote": "Mood swings eased within 3 weeks. My family thanks me."
           }
         },
         "r4": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Karin+S&background=f5908d&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Energy I forgot I had. This is the menopause answer I needed.",
             "author": "Karin S.",
-            "meta": "Verified buyer · 2 months ago"
+            "meta": "Verified buyer · 2 months ago",
+            "quote": "Energy I forgot I had. This is the menopause answer I needed."
           }
         },
         "r5": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Marlene+B&background=ffc0bd&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "No HRT, no pharmaceuticals — this clean blend works.",
             "author": "Marlene B.",
-            "meta": "Verified buyer · 3 months ago"
+            "meta": "Verified buyer · 3 months ago",
+            "quote": "No HRT, no pharmaceuticals — this clean blend works."
           }
         }
       },
@@ -200,7 +198,7 @@
         "reverse": false,
         "brand_primary": "#f5908d",
         "brand_tint": "#fff5f3",
-        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_180903_da282482-2786-4615-882c-560e2ec0ef35.jpeg",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_162340_517c515f-8800-4906-8bed-94d5cba09604.png",
         "tag_value": "75%",
         "tag_label": "Of Women Suffer Menopause Symptoms",
         "eyebrow": "The Problem",
@@ -504,8 +502,8 @@
       ],
       "settings": {
         "brand_primary": "#f5908d",
-        "brand_tint": "#fff5f3",
         "brand_dark": "#b85a58",
+        "brand_tint": "#fff5f3",
         "brand_light": "#ffc0bd",
         "eyebrow": "What's Inside",
         "title": "Every ingredient earns its place",

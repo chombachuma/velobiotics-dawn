@@ -88,8 +88,6 @@
         "review_count": "120+",
         "hook": "Vibrant after 50. His-Biotics™ Ageless 50+ combines 16 probiotic strains with CoQ10, saw palmetto, omega-3, and B-complex — for men's heart, prostate, and cognitive vitality.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
-        "show_subscription": true,
-        "show_qty_discounts": true,
         "show_buynow": true,
         "show_testi_marquee": true
       }
@@ -101,45 +99,45 @@
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Frank+N&background=0a3d3d&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Energy at 62 that's new. Mind sharper than in years.",
             "author": "Frank N.",
-            "meta": "Verified buyer · Pretoria"
+            "meta": "Verified buyer · Pretoria",
+            "quote": "Energy at 62 that's new. Mind sharper than in years."
           }
         },
         "r2": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Hannes+V&background=1c5856&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Sharp mind, vibrant body. Saw palmetto fixed my prostate symptoms.",
             "author": "Hannes V.",
-            "meta": "Verified buyer · 3 months ago"
+            "meta": "Verified buyer · 3 months ago",
+            "quote": "Sharp mind, vibrant body. Saw palmetto fixed my prostate symptoms."
           }
         },
         "r3": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Themba+M&background=021212&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "My doctor approved. Cholesterol down, energy up.",
             "author": "Themba M.",
-            "meta": "Verified buyer · Johannesburg"
+            "meta": "Verified buyer · Johannesburg",
+            "quote": "My doctor approved. Cholesterol down, energy up."
           }
         },
         "r4": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Kevin+P&background=0a3d3d&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Aging gracefully now. This is my anchor daily.",
             "author": "Kevin P.",
-            "meta": "Verified buyer · 2 months ago"
+            "meta": "Verified buyer · 2 months ago",
+            "quote": "Aging gracefully now. This is my anchor daily."
           }
         },
         "r5": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Mike+B&background=1c5856&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "At 67 my golf swing returned. Joint pain is half what it was.",
             "author": "Mike B.",
-            "meta": "Verified buyer · Cape Town"
+            "meta": "Verified buyer · Cape Town",
+            "quote": "At 67 my golf swing returned. Joint pain is half what it was."
           }
         }
       },
@@ -200,7 +198,7 @@
         "reverse": false,
         "brand_primary": "#0a3d3d",
         "brand_tint": "#e8f3f1",
-        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_180837_88dc8edb-07a1-4528-827e-a8cd6e41a282.png",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_162409_614ec2a5-be54-4bde-b966-4abad8f6b10f.png",
         "tag_value": "50+",
         "tag_label": "Men's Specific Biology Targeted",
         "eyebrow": "The Problem",
@@ -494,8 +492,8 @@
       ],
       "settings": {
         "brand_primary": "#0a3d3d",
-        "brand_tint": "#e8f3f1",
         "brand_dark": "#021212",
+        "brand_tint": "#e8f3f1",
         "brand_light": "#1c5856",
         "eyebrow": "What's Inside",
         "title": "Every ingredient earns its place",

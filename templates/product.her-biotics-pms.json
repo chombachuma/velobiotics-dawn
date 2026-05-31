@@ -88,8 +88,6 @@
         "review_count": "150+",
         "hook": "Take back your cycle. Her-Biotics™ PMS Support combines 16 probiotic strains with magnesium, B6, chasteberry, and saffron — natural relief for cramps, mood swings, and bloating.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
-        "show_subscription": true,
-        "show_qty_discounts": true,
         "show_buynow": true,
         "show_testi_marquee": true
       }
@@ -101,45 +99,45 @@
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Mpho+V&background=f5908d&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Cramps so much milder. My productive week back.",
             "author": "Mpho V.",
-            "meta": "Verified buyer · Johannesburg"
+            "meta": "Verified buyer · Johannesburg",
+            "quote": "Cramps so much milder. My productive week back."
           }
         },
         "r2": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Sarah+B&background=ffc0bd&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "PMS used to ruin a week. Now I barely notice.",
             "author": "Sarah B.",
-            "meta": "Verified buyer · Cape Town"
+            "meta": "Verified buyer · Cape Town",
+            "quote": "PMS used to ruin a week. Now I barely notice."
           }
         },
         "r3": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Refilwe+D&background=b85a58&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Mood swings finally calm. My partner thanks me.",
             "author": "Refilwe D.",
-            "meta": "Verified buyer · 2 months ago"
+            "meta": "Verified buyer · 2 months ago",
+            "quote": "Mood swings finally calm. My partner thanks me."
           }
         },
         "r4": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Kim+T&background=f5908d&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Bloat reduced dramatically. Energy steady through cycle.",
             "author": "Kim T.",
-            "meta": "Verified buyer · 3 weeks ago"
+            "meta": "Verified buyer · 3 weeks ago",
+            "quote": "Bloat reduced dramatically. Energy steady through cycle."
           }
         },
         "r5": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Aisha+K&background=ffc0bd&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Three cycles in. My PMS is barely there now.",
             "author": "Aisha K.",
-            "meta": "Verified buyer · 3 months ago"
+            "meta": "Verified buyer · 3 months ago",
+            "quote": "Three cycles in. My PMS is barely there now."
           }
         }
       },
@@ -200,7 +198,7 @@
         "reverse": false,
         "brand_primary": "#f5908d",
         "brand_tint": "#fff5f3",
-        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_180903_da282482-2786-4615-882c-560e2ec0ef35.jpeg",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_162402_cc22659b-7a9a-4f9c-ba89-9e0f736a40b8.png",
         "tag_value": "75%",
         "tag_label": "Of Women Experience PMS Monthly",
         "eyebrow": "The Problem",
@@ -504,8 +502,8 @@
       ],
       "settings": {
         "brand_primary": "#f5908d",
-        "brand_tint": "#fff5f3",
         "brand_dark": "#b85a58",
+        "brand_tint": "#fff5f3",
         "brand_light": "#ffc0bd",
         "eyebrow": "What's Inside",
         "title": "Every ingredient earns its place",

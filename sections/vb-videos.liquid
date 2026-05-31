@@ -1,5 +1,5 @@
 {%- comment -%}
-  VB · Customer videos — Trusted by Thousands. Uses Shopify CDN video thumbnails.
+  VB · Customer videos — In-page lightbox player with next/prev navigation
 {%- endcomment -%}
 
 <style>
@@ -11,7 +11,7 @@
   .vb-vids__title em { color: #4d8c44; font-style: normal; }
   .vb-vids__sub { font-size: 16.5px; line-height: 1.6; color: #5c6664; margin: 0; }
   .vb-vids__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
-  .vb-vids__card { position: relative; aspect-ratio: 9 / 14; border-radius: 18px; overflow: hidden; cursor: pointer; background: #1a1a1a; transition: transform 0.22s ease, box-shadow 0.22s ease; border: none; padding: 0; }
+  .vb-vids__card { position: relative; aspect-ratio: 9 / 14; border-radius: 18px; overflow: hidden; cursor: pointer; background: #1a1a1a; transition: transform 0.22s ease, box-shadow 0.22s ease; border: none; padding: 0; display: block; }
   .vb-vids__card:hover { transform: translateY(-5px); box-shadow: 0 22px 44px rgba(0, 0, 0, 0.24); }
   .vb-vids__card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.45s ease; }
   .vb-vids__card:hover img { transform: scale(1.06); }
@@ -21,6 +21,24 @@
   .vb-vids__play-btn::before { content: ''; width: 0; height: 0; border-left: 18px solid #4d8c44; border-top: 11px solid transparent; border-bottom: 11px solid transparent; margin-left: 4px; transition: border-color 0.22s ease; }
   .vb-vids__card:hover .vb-vids__play-btn::before { border-left-color: #fff; }
   .vb-vids__caption { position: absolute; bottom: 14px; left: 14px; right: 14px; color: #fff; font-size: 13px; font-weight: 700; text-shadow: 0 2px 8px rgba(0,0,0,0.5); line-height: 1.3; }
+
+  /* ── LIGHTBOX ─────────────────────────── */
+  .vb-vids-lb { position: fixed; inset: 0; z-index: 100000; display: none; align-items: center; justify-content: center; background: rgba(0,0,0,0.92); padding: 24px; }
+  .vb-vids-lb.is-open { display: flex; }
+  .vb-vids-lb__player { position: relative; max-width: min(420px, 92vw); max-height: 90vh; width: 100%; aspect-ratio: 9 / 16; background: #000; border-radius: 18px; overflow: hidden; box-shadow: 0 30px 80px rgba(0,0,0,0.6); }
+  .vb-vids-lb__player video { width: 100%; height: 100%; display: block; object-fit: contain; background: #000; }
+  .vb-vids-lb__caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 16px 18px 18px; color: #fff; font-size: 14px; font-weight: 700; background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.85) 100%); text-shadow: 0 1px 4px rgba(0,0,0,0.6); }
+  .vb-vids-lb__close { position: fixed; top: 18px; right: 18px; width: 44px; height: 44px; border-radius: 50%; background: rgba(255,255,255,0.15); border: 1.5px solid rgba(255,255,255,0.4); color: #fff; font-size: 22px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; backdrop-filter: blur(8px); transition: all 0.18s ease; line-height: 1; }
+  .vb-vids-lb__close:hover { background: rgba(255,255,255,0.3); transform: scale(1.08); }
+  .vb-vids-lb__nav { position: fixed; top: 50%; transform: translateY(-50%); width: 52px; height: 52px; border-radius: 50%; background: rgba(255,255,255,0.15); border: 1.5px solid rgba(255,255,255,0.4); color: #fff; font-size: 22px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; backdrop-filter: blur(8px); transition: all 0.18s ease; }
+  .vb-vids-lb__nav:hover:not([disabled]) { background: rgba(255,255,255,0.3); transform: translateY(-50%) scale(1.08); }
+  .vb-vids-lb__nav[disabled] { opacity: 0.3; cursor: default; }
+  .vb-vids-lb__nav--prev { left: 18px; }
+  .vb-vids-lb__nav--next { right: 18px; }
+  .vb-vids-lb__counter { position: fixed; top: 22px; left: 50%; transform: translateX(-50%); color: rgba(255,255,255,0.85); font-size: 13px; font-weight: 600; letter-spacing: 0.06em; padding: 6px 14px; background: rgba(255,255,255,0.12); border-radius: 999px; backdrop-filter: blur(8px); }
+
+  body.vb-vids-locked { overflow: hidden; }
+
   @media (max-width: 749px) {
     .vb-vids { padding: 48px 14px; }
     .vb-vids__grid { grid-template-columns: 1fr 1fr; gap: 10px; }
@@ -28,10 +46,17 @@
     .vb-vids__play-btn { width: 48px; height: 48px; }
     .vb-vids__play-btn::before { border-left-width: 14px; border-top-width: 9px; border-bottom-width: 9px; }
     .vb-vids__caption { font-size: 11.5px; bottom: 10px; left: 10px; right: 10px; }
+    .vb-vids-lb { padding: 0; }
+    .vb-vids-lb__player { max-width: 100vw; max-height: 100vh; border-radius: 0; aspect-ratio: auto; height: 100vh; }
+    .vb-vids-lb__nav { width: 42px; height: 42px; }
+    .vb-vids-lb__nav--prev { left: 10px; }
+    .vb-vids-lb__nav--next { right: 10px; }
+    .vb-vids-lb__close { top: 12px; right: 12px; width: 40px; height: 40px; }
+    .vb-vids-lb__counter { top: 14px; font-size: 12px; }
   }
 </style>
 
-<section class="vb-vids">
+<section class="vb-vids" data-vb-vids>
   <div class="vb-vids__inner">
     <div class="vb-vids__head">
       {%- if section.settings.eyebrow != blank -%}<p class="vb-vids__eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
@@ -41,18 +66,93 @@
     <div class="vb-vids__grid">
       {%- for block in section.blocks -%}
         {%- if block.type == 'video' -%}
-          <a class="vb-vids__card" href="{{ block.settings.video_url | default: '#' }}" {%- if block.settings.video_url contains 'http' %} target="_blank" rel="noopener"{% endif %} {{ block.shopify_attributes }}>
+          <button type="button" class="vb-vids__card" data-vb-video="{{ block.settings.video_url | escape }}" data-vb-caption="{{ block.settings.caption | escape }}" data-vb-index="{{ forloop.index0 }}" {{ block.shopify_attributes }} aria-label="Play video: {{ block.settings.caption | escape }}">
             {%- if block.settings.thumb_url != blank -%}
               <img src="{{ block.settings.thumb_url }}" alt="{{ block.settings.caption | escape }}" loading="lazy" />
             {%- endif -%}
             <div class="vb-vids__play"><span class="vb-vids__play-btn"></span></div>
             {%- if block.settings.caption != blank -%}<div class="vb-vids__caption">{{ block.settings.caption }}</div>{%- endif -%}
-          </a>
+          </button>
         {%- endif -%}
       {%- endfor -%}
     </div>
   </div>
+
+  {%- comment -%} In-page lightbox modal {%- endcomment -%}
+  <div class="vb-vids-lb" data-vb-vids-lb role="dialog" aria-modal="true" aria-label="Video player">
+    <button class="vb-vids-lb__close" data-vb-vids-close aria-label="Close video">✕</button>
+    <span class="vb-vids-lb__counter" data-vb-vids-counter></span>
+    <button class="vb-vids-lb__nav vb-vids-lb__nav--prev" data-vb-vids-prev aria-label="Previous video">‹</button>
+    <div class="vb-vids-lb__player">
+      <video data-vb-vids-video controls playsinline preload="metadata" autoplay></video>
+      <div class="vb-vids-lb__caption" data-vb-vids-caption></div>
+    </div>
+    <button class="vb-vids-lb__nav vb-vids-lb__nav--next" data-vb-vids-next aria-label="Next video">›</button>
+  </div>
 </section>
+
+<script>
+(function () {
+  const root = document.currentScript.closest('[data-vb-vids]') || document.querySelector('[data-vb-vids]');
+  if (!root) return;
+  const cards = Array.from(root.querySelectorAll('[data-vb-video]'));
+  const lb = root.querySelector('[data-vb-vids-lb]');
+  const video = lb.querySelector('[data-vb-vids-video]');
+  const caption = lb.querySelector('[data-vb-vids-caption]');
+  const counter = lb.querySelector('[data-vb-vids-counter]');
+  const closeBtn = lb.querySelector('[data-vb-vids-close]');
+  const prevBtn = lb.querySelector('[data-vb-vids-prev]');
+  const nextBtn = lb.querySelector('[data-vb-vids-next]');
+  let current = 0;
+
+  function load(idx) {
+    current = idx;
+    const card = cards[idx];
+    if (!card) return;
+    const src = card.getAttribute('data-vb-video');
+    const cap = card.getAttribute('data-vb-caption') || '';
+    video.pause();
+    video.src = src;
+    video.load();
+    video.play().catch(() => {});
+    caption.textContent = cap;
+    counter.textContent = (idx + 1) + ' / ' + cards.length;
+    prevBtn.disabled = idx === 0;
+    nextBtn.disabled = idx === cards.length - 1;
+  }
+  function open(idx) {
+    load(idx);
+    lb.classList.add('is-open');
+    document.body.classList.add('vb-vids-locked');
+  }
+  function close() {
+    lb.classList.remove('is-open');
+    document.body.classList.remove('vb-vids-locked');
+    video.pause();
+    video.removeAttribute('src');
+    video.load();
+  }
+  cards.forEach((card) => {
+    card.addEventListener('click', (e) => {
+      e.preventDefault();
+      open(parseInt(card.getAttribute('data-vb-index'), 10));
+    });
+  });
+  closeBtn.addEventListener('click', close);
+  prevBtn.addEventListener('click', () => { if (current > 0) load(current - 1); });
+  nextBtn.addEventListener('click', () => { if (current < cards.length - 1) load(current + 1); });
+  lb.addEventListener('click', (e) => { if (e.target === lb) close(); });
+  document.addEventListener('keydown', (e) => {
+    if (!lb.classList.contains('is-open')) return;
+    if (e.key === 'Escape') close();
+    if (e.key === 'ArrowRight' && current < cards.length - 1) load(current + 1);
+    if (e.key === 'ArrowLeft' && current > 0) load(current - 1);
+  });
+  video.addEventListener('ended', () => {
+    if (current < cards.length - 1) load(current + 1);
+  });
+})();
+</script>
 
 {% schema %}
 {
@@ -67,18 +167,10 @@
   "blocks": [
     { "type": "video", "name": "Video", "settings": [
       { "type": "text", "id": "thumb_url", "label": "Thumbnail URL" },
-      { "type": "text", "id": "video_url", "label": "Video URL (optional)" },
+      { "type": "text", "id": "video_url", "label": "Video URL (MP4)" },
       { "type": "text", "id": "caption", "label": "Caption", "default": "Real result" }
     ]}
   ],
-  "presets": [
-    { "name": "VB · Customer videos", "blocks": [
-      { "type": "video", "settings": { "thumb_url": "https://www.velobiotics.com/cdn/shop/files/preview_images/f0fd8fd49a3744ad9e90235146a7d475.thumbnail.0000000000_1100x.jpg?v=1763719718", "caption": "From bloated to brilliant" } },
-      { "type": "video", "settings": { "thumb_url": "https://www.velobiotics.com/cdn/shop/files/preview_images/5ecc5e63fe5a49499af24850c49789c7.thumbnail.0000000000_1100x.jpg?v=1763719604", "caption": "Clearer skin in 21 days" } },
-      { "type": "video", "settings": { "thumb_url": "https://www.velobiotics.com/cdn/shop/files/preview_images/bb2ce6220768459abce27ac7094e03db.thumbnail.0000000000_1100x.jpg?v=1763719721", "caption": "Lost 42kg with Velo16" } },
-      { "type": "video", "settings": { "thumb_url": "https://www.velobiotics.com/cdn/shop/files/preview_images/d33cc78e6e03488d95f56b86e3b14038.thumbnail.0000000000_1100x.jpg?v=1763719696", "caption": "Goodbye recurring BV" } },
-      { "type": "video", "settings": { "thumb_url": "https://www.velobiotics.com/cdn/shop/files/preview_images/528b2fb7bf6041f1ac71b0dad68f375e.thumbnail.0000000000_1100x.jpg?v=1763719738", "caption": "My kids never get sick" } }
-    ]}
-  ]
+  "presets": [ { "name": "VB · Customer videos" } ]
 }
 {% endschema %}

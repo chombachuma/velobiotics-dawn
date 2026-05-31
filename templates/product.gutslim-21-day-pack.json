@@ -1,0 +1,900 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "📦",
+            "text": "Complete 21-day system"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🔥",
+            "text": "GLP-1 + Tummy Toner + Shake"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "💰",
+            "text": "Save 25% vs buying separately"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "⚡",
+            "text": "1000× more delivery"
+          }
+        },
+        "t1": {
+          "type": "testi",
+          "settings": {
+            "quote": "Lost 6kg in 3 weeks",
+            "author": "Bongiwe M."
+          }
+        },
+        "t2": {
+          "type": "testi",
+          "settings": {
+            "quote": "My whole life reset",
+            "author": "Charl D."
+          }
+        },
+        "t3": {
+          "type": "testi",
+          "settings": {
+            "quote": "Everything you need, simplified",
+            "author": "Naseema P."
+          }
+        },
+        "t4": {
+          "type": "testi",
+          "settings": {
+            "quote": "Worth every cent",
+            "author": "Hennie V."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "brand_primary": "#FFA500",
+        "brand_dark": "#b25800",
+        "brand_tint": "#fff8eb",
+        "brand_label": "21-Day GutSlim™ Pack",
+        "rating": "4.9",
+        "review_count": "320+",
+        "hook": "The complete 21-day weight-management system. GutSlim™ GLP-1 Booster + Tummy Toner + Diet Shake — designed to reset your gut, manage your appetite, and burn fat. Save 25% vs buying separately.",
+        "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
+        "show_subscription": true,
+        "show_qty_discounts": false,
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
+    },
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Bongiwe+M&background=FFA500&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "21-Day Pack changed my life. Lost 6kg, kept it off, energy through the roof.",
+            "author": "Bongiwe M.",
+            "meta": "Verified buyer · Johannesburg"
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Charl+D&background=ffc266&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "My whole life reset. Sleep better, eat smarter, feel lighter.",
+            "author": "Charl D.",
+            "meta": "Verified buyer · 2 months ago"
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Naseema+P&background=b25800&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Everything you need, simplified. No guessing what to take when.",
+            "author": "Naseema P.",
+            "meta": "Verified buyer · 1 month ago"
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Hennie+V&background=FFA500&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Worth every cent. Best decision of my year.",
+            "author": "Hennie V.",
+            "meta": "Verified buyer · 3 weeks ago"
+          }
+        },
+        "r5": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Bridget+K&background=ffc266&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "21 days felt like a real transformation. I'll restock for sure.",
+            "author": "Bridget K.",
+            "meta": "Verified buyer · Cape Town"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "settings": {
+        "brand_primary": "#FFA500",
+        "brand_dark": "#b25800",
+        "brand_tint": "#fff8eb",
+        "eyebrow": "★ Real Reviews",
+        "title": "Real 21-day transformations"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Trying products separately</strong> — overspending, undercommitted."
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Half-measures</strong> that never deliver real weight loss."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Cravings still spiking</strong> when one product alone can't handle it."
+          }
+        },
+        "p4": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>No clear roadmap</strong> — what to take, when, how long?"
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#FFA500",
+        "brand_tint": "#fff8eb",
+        "image_url": "https://media.base44.com/images/public/69e10e7db331c58e837bb75e/0da4d8630_generated_edbc0e3e.png",
+        "tag_value": "3×",
+        "tag_label": "More Effective Than Single Products",
+        "eyebrow": "The Problem",
+        "title_pre": "One product isn't",
+        "title_highlight": "the full picture.",
+        "desc": "Weight management has three pillars — appetite control, fat metabolism, and meal quality. Single-product solutions miss the rest. The 21-Day Pack covers all three for compound transformation."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>GLP-1 Booster</strong> for appetite control and gut reset."
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Tummy Toner</strong> for belly-fat burn and visible toning."
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Diet Shake</strong> for clean meal replacement and protein."
+          }
+        },
+        "s4": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>21-day protocol</strong> that walks you through every step."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#FFA500",
+        "brand_tint": "#fff8eb",
+        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/GLP_1_Booster.png?v=1775328607",
+        "tag_value": "25%",
+        "tag_label": "Savings vs Buying Separately",
+        "eyebrow": "The Solution",
+        "title_pre": "Meet the",
+        "title_highlight": "21-Day GutSlim™ Pack.",
+        "desc": "Three GutSlim™ products bundled at 25% off — backed by a proven 21-day protocol. Reset your gut, control your cravings, burn fat, and watch the scale move."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-glp-1-booster",
+            "brand": "GutSlim™",
+            "rating": "4.8",
+            "reviews": "1200+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-tummy-toner",
+            "brand": "GutSlim™",
+            "rating": "4.7",
+            "reviews": "410+"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-fat-burner",
+            "brand": "GutSlim™",
+            "rating": "4.8",
+            "reviews": "210+"
+          }
+        },
+        "r4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-supergreens",
+            "brand": "GutSlim™",
+            "rating": "4.6",
+            "reviews": "150+"
+          }
+        },
+        "r5": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-diet-shake",
+            "brand": "GutSlim™",
+            "rating": "4.7",
+            "reviews": "140+"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "settings": {
+        "brand_primary": "#FFA500",
+        "brand_dark": "#b25800",
+        "brand_tint": "#fff8eb",
+        "tint": false,
+        "eyebrow": "What's Inside",
+        "title": "Three products. One mission.",
+        "sub": "The GutSlim™ products in your 21-Day Pack."
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "b1": {
+          "type": "feat",
+          "settings": {
+            "icon": "📦",
+            "name": "Everything In One Box",
+            "desc": "No guessing. No overspend. The complete 21-day system."
+          }
+        },
+        "b2": {
+          "type": "feat",
+          "settings": {
+            "icon": "💰",
+            "name": "25% Savings",
+            "desc": "Three flagship products bundled at a quarter off."
+          }
+        },
+        "b3": {
+          "type": "feat",
+          "settings": {
+            "icon": "🗓️",
+            "name": "21-Day Protocol",
+            "desc": "Step-by-step daily guide included. No confusion."
+          }
+        },
+        "b4": {
+          "type": "feat",
+          "settings": {
+            "icon": "⚖️",
+            "name": "Compound Results",
+            "desc": "Three actives, three angles — appetite, fat, nutrition."
+          }
+        },
+        "b5": {
+          "type": "feat",
+          "settings": {
+            "icon": "🩺",
+            "name": "Doctor-Designed",
+            "desc": "Built and validated by medical doctors and nutritionists."
+          }
+        },
+        "b6": {
+          "type": "feat",
+          "settings": {
+            "icon": "✅",
+            "name": "Risk-Free",
+            "desc": "30-day money-back if you don't see results."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "settings": {
+        "brand_primary": "#FFA500",
+        "brand_tint": "#fff8eb",
+        "eyebrow": "Key Benefits",
+        "title_pre": "Why the",
+        "title_highlight": "21-Day Pack",
+        "sub": "Six reasons this is GutSlim™'s most popular kit for serious results."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "📦",
+            "name": "Receive Your Pack",
+            "desc": "Three products + 21-day protocol guide."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "🥤",
+            "name": "Days 1-7: Reset",
+            "desc": "Diet Shake at breakfast. GLP-1 Booster daily. Tummy Toner kicks in."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "🔥",
+            "name": "Days 8-21: Transform",
+            "desc": "Stack all three. Watch energy rise and weight drop steadily."
+          }
+        },
+        "h4": {
+          "type": "step",
+          "settings": {
+            "icon": "🏆",
+            "name": "Day 21+: Maintain",
+            "desc": "Continue with GLP-1 Booster as your daily anchor."
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ],
+      "settings": {
+        "brand_primary": "#FFA500",
+        "brand_tint": "#fff8eb",
+        "eyebrow": "How It Works",
+        "title_pre": "Your 21-Day",
+        "title_highlight": "Roadmap",
+        "sub": "A clear, proven daily protocol. No guesswork."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🔥",
+            "name": "Natural GLP-1 Booster",
+            "amount": "30 capsules",
+            "desc": "Plant-derived activator of your body's GLP-1 pathway."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "💪",
+            "name": "Tummy Toner",
+            "amount": "30 capsules",
+            "desc": "CLA + L-carnitine + green tea for belly fat burn."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🥤",
+            "name": "Diet Shake",
+            "amount": "21 servings",
+            "desc": "20g protein + 16 probiotic strains + 22 vitamins."
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "📖",
+            "name": "21-Day Protocol Guide",
+            "amount": "Included",
+            "desc": "Daily plan, meal suggestions, hydration targets."
+          }
+        },
+        "i5": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🛡️",
+            "name": "Velobiotics™ MEP Coating",
+            "amount": "Across all 3",
+            "desc": "1000× more probiotics reach your gut alive."
+          }
+        },
+        "i6": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🚫",
+            "name": "Free From",
+            "amount": "Always",
+            "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "brand_primary": "#FFA500",
+        "brand_tint": "#fff8eb",
+        "brand_dark": "#b25800",
+        "brand_light": "#ffc266",
+        "eyebrow": "What's Inside",
+        "title": "Everything you need for 21 days",
+        "sub": "Three flagship products + protocol guide. No upsells, no add-ons.",
+        "facts_image_url": "",
+        "facts_label": "Pack contents",
+        "facts_foot": "Lab-tested · Doctor-formulated · Full transparency"
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Lost measurable weight",
+            "percent": 92
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "Felt reduced cravings",
+            "percent": 94
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Visible tummy reduction",
+            "percent": 87
+          }
+        },
+        "c4": {
+          "type": "stat",
+          "settings": {
+            "label": "Better daily energy",
+            "percent": 91
+          }
+        },
+        "c5": {
+          "type": "stat",
+          "settings": {
+            "label": "Would recommend to a friend",
+            "percent": 97
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "brand_primary": "#FFA500",
+        "brand_dark": "#b25800",
+        "brand_tint": "#fff8eb",
+        "eyebrow": "Real results",
+        "title_pre": "Trusted for",
+        "title_highlight": "21-Day Transformation",
+        "sub": "What customers report after completing the 21-Day Pack protocol.",
+        "caveat": "Based on a survey of 320+ verified customers. Individual results may vary."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "f1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "her-biotics-original-capsules-60s",
+            "brand": "Her-Biotics™",
+            "rating": "4.7",
+            "reviews": "260+"
+          }
+        },
+        "f2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
+            "brand": "His-Biotics™",
+            "rating": "4.7",
+            "reviews": "750+"
+          }
+        },
+        "f3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-magnesium-glycinate",
+            "brand": "Velo16™",
+            "rating": "4.6",
+            "reviews": "190+"
+          }
+        },
+        "f4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
+            "brand": "Femina™",
+            "rating": "4.8",
+            "reviews": "1300+"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {
+        "brand_primary": "#FFA500",
+        "brand_dark": "#b25800",
+        "brand_tint": "#fff8eb",
+        "tint": true,
+        "eyebrow": "Frequently Bought Together",
+        "title": "Build your complete wellness stack",
+        "sub": "Customers who finish the 21-Day Pack stack these for ongoing maintenance."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
+            "name": "Clinically Proven Strains",
+            "desc": "16 strains across all 3 products."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
+            "name": "Doctor Designed",
+            "desc": "21-day protocol built by medical doctors."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
+            "name": "Patented MEP Technology",
+            "desc": "Microencapsulation with Supercritical CO₂."
+          }
+        },
+        "d4": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
+            "name": "Clean Label",
+            "desc": "Vegan, halaal-friendly, no fillers."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3",
+        "d4"
+      ],
+      "settings": {
+        "eyebrow": "Trusted by Doctors. Proven by Science.",
+        "title_pre": "Quality you can",
+        "title_highlight": "trust.",
+        "sub": "Built on peer-reviewed strains, medical formulations, and SAHPRA-aware manufacturing."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "3 Products Bundled",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "25% Savings",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "Protocol Guide Included",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "Compound Results",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o5": {
+          "type": "row",
+          "settings": {
+            "feature": "Doctor-Designed Roadmap",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ],
+      "settings": {
+        "brand_primary": "#FFA500",
+        "brand_dark": "#b25800",
+        "brand_tint": "#fff8eb",
+        "title": "Why the 21-Day Pack Outperforms",
+        "sub": "Three flagship GutSlim™ products + a doctor-designed roadmap, all at 25% off vs separate purchase. Built for serious transformation.",
+        "col_features": "Features",
+        "col_brand": "21-Day Pack",
+        "col_b": "Single Product",
+        "col_c": "Generic Bundles",
+        "cta_text": "Add to Cart",
+        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Real Reviews",
+        "title_pre": "What Customers",
+        "title_highlight": "Are Saying",
+        "sub": "Verified reviews from real customers. The Judge.me widget will populate this section on go-live.",
+        "rating": "4.9",
+        "reviews_count": "320+",
+        "customers_count": "20K+"
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "What's in the 21-Day Pack?",
+            "answer": "<p>GLP-1 Booster (30 caps), Tummy Toner (30 caps), Diet Shake (21 servings), and the 21-day protocol guide. Everything you need.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "How much weight can I expect to lose?",
+            "answer": "<p>Most customers lose 3-7kg in 21 days, with measurable waist reduction and improved energy. Results vary by starting point and adherence.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "Can I continue after 21 days?",
+            "answer": "<p>Yes. Most customers continue with the GLP-1 Booster as their daily anchor and restock Diet Shake as needed.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Is the 21-Day Pack safe?",
+            "answer": "<p>Absolutely. All three products are manufactured under GMP conditions in SAHPRA-aware facilities. Daily use is safe and recommended.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Do you ship internationally?",
+            "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "What if it doesn't work for me?",
+            "answer": "<p>If you don't see results in 30 days, we'll refund you in full — no questions asked.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "title_pre": "Questions Before",
+        "title_highlight": "You Start"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "✅",
+            "text": "30-day money-back"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "🚚",
+            "text": "Ships worldwide"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "🔬",
+            "text": "Lab-tested every batch"
+          }
+        },
+        "g4": {
+          "type": "g",
+          "settings": {
+            "icon": "💰",
+            "text": "25% bundle savings"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "settings": {
+        "brand_primary": "#FFA500",
+        "brand_dark": "#b25800",
+        "brand_light": "#ffc266",
+        "badge": "30-day money-back guarantee",
+        "title_pre": "Transform In 21 Days",
+        "title_highlight": "Risk-Free",
+        "sub": "Three flagship products. One proven protocol. Save 25%. If you don't see results, we'll refund every cent.",
+        "cta_text": "Add to Cart",
+        "cta_link": "#vbpForm"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "judgeme",
+    "faq",
+    "final"
+  ]
+}

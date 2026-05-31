@@ -400,12 +400,9 @@
           if (!res.ok) throw new Error('Add failed');
           atcBtn.classList.remove('is-loading');
           atcBtn.classList.add('is-added');
-          atcBtn.innerHTML = '✓ Added to Cart';
-          document.dispatchEvent(new CustomEvent('cart:refresh'));
-          const drawer = document.querySelector('cart-drawer');
-          if (drawer && typeof drawer.open === 'function') drawer.open();
-          else if (drawer && drawer.classList) drawer.classList.add('active', 'animate');
-          setTimeout(() => { atcBtn.classList.remove('is-added'); atcBtn.innerHTML = original; }, 2400);
+          atcBtn.innerHTML = '✓ Added — redirecting...';
+          // Redirect straight to cart page per Velobiotics flow
+          window.location.href = '/cart';
         } catch (err) {
           atcBtn.classList.remove('is-loading');
           atcBtn.innerHTML = '⚠ Try again';

@@ -304,6 +304,12 @@
   .vb-header__hamburger { display: none; }
 }
 
+/* Hide the Account icon on mobile to free up space — restored on desktop */
+.vb-header__actions a[aria-label="Account"] { display: none; }
+@media screen and (min-width: 990px) {
+  .vb-header__actions a[aria-label="Account"] { display: inline-flex; }
+}
+
 /* ---------- Mobile drawer ---------- */
 .vb-mobile-drawer {
   position: fixed;

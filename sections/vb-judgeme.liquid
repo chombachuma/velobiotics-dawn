@@ -51,13 +51,6 @@
 
     {%- if section.settings.judgeme_html != blank -%}
       <div class="vb-jm__embed">{{ section.settings.judgeme_html }}</div>
-    {%- else -%}
-      <div class="jdgm-widget jdgm-all-reviews-widget" data-product-id=""></div>
-      <div class="vb-jm__placeholder">
-        <strong>Judge.me review widget renders here</strong>
-        <p>If reviews aren't showing, paste your Judge.me All Reviews shortcode into the section settings, or confirm the Judge.me Shopify app is installed.</p>
-        <p style="margin-top:10px;"><code>&lt;div class="jdgm-widget jdgm-all-reviews-widget"&gt;&lt;/div&gt;</code></p>
-      </div>
     {%- endif -%}
   </div>
 </section>

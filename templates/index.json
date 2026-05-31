@@ -767,6 +767,19 @@
         "cta_link": "/collections/all"
       }
     },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Real Customer Stories",
+        "title_pre": "What 300,000+ Customers",
+        "title_highlight": "Are Saying",
+        "sub": "Read unfiltered, verified reviews from real customers — because transparency builds trust.",
+        "rating": "4.8",
+        "reviews_count": "3,500+",
+        "customers_count": "300K+",
+        "judgeme_html": ""
+      }
+    },
     "1780172743f274e3fe": {
       "type": "apps",
       "blocks": {
@@ -806,19 +819,6 @@
       ],
       "settings": {
         "include_margins": true
-      }
-    },
-    "judgeme": {
-      "type": "vb-judgeme",
-      "settings": {
-        "eyebrow": "Real Customer Stories",
-        "title_pre": "What 300,000+ Customers",
-        "title_highlight": "Are Saying",
-        "sub": "Read unfiltered, verified reviews from real customers — because transparency builds trust.",
-        "rating": "4.8",
-        "reviews_count": "3,500+",
-        "customers_count": "300K+",
-        "judgeme_html": ""
       }
     },
     "faq": {
@@ -962,8 +962,8 @@
     "science",
     "custom_liquid_eVChVA",
     "comparison",
-    "1780172743f274e3fe",
     "judgeme",
+    "1780172743f274e3fe",
     "faq",
     "contact-cta",
     "blog",

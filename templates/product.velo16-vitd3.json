@@ -12,170 +12,867 @@
     "hero": {
       "type": "vb-product-hero",
       "blocks": {
-        "b1": { "type": "benefit", "settings": { "icon": "☀️", "text": "1000 IU Vitamin D3" } },
-        "b2": { "type": "benefit", "settings": { "icon": "🦴", "text": "Bone & mood support" } },
-        "b3": { "type": "benefit", "settings": { "icon": "🛡️", "text": "Immune defence" } },
-        "b4": { "type": "benefit", "settings": { "icon": "⚡", "text": "1000× more delivery" } },
-        "t1": { "type": "testi", "settings": { "quote": "Winter blues — gone", "author": "Bongi M." } },
-        "t2": { "type": "testi", "settings": { "quote": "Energy back after years", "author": "Pieter S." } },
-        "t3": { "type": "testi", "settings": { "quote": "Bone density improving", "author": "Linda H." } },
-        "t4": { "type": "testi", "settings": { "quote": "Better mood, less fog", "author": "Sipho N." } }
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "☀️",
+            "text": "1000 IU Vitamin D3"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🦴",
+            "text": "Bone & mood support"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🛡️",
+            "text": "Immune defence"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "⚡",
+            "text": "1000× more delivery"
+          }
+        },
+        "t1": {
+          "type": "testi",
+          "settings": {
+            "quote": "Winter blues — gone",
+            "author": "Bongi M."
+          }
+        },
+        "t2": {
+          "type": "testi",
+          "settings": {
+            "quote": "Energy back after years",
+            "author": "Pieter S."
+          }
+        },
+        "t3": {
+          "type": "testi",
+          "settings": {
+            "quote": "Bone density improving",
+            "author": "Linda H."
+          }
+        },
+        "t4": {
+          "type": "testi",
+          "settings": {
+            "quote": "Better mood, less fog",
+            "author": "Sipho N."
+          }
+        }
       },
-      "block_order": ["b1","b2","b3","b4","t1","t2","t3","t4"],
-      "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "brand_label": "Velo16™ · Vit D3", "rating": "4.8", "review_count": "280+", "hook": "Sunshine in a capsule. Velo16™ Probiotics Vitamin D3 delivers 1000 IU cholecalciferol + 16 probiotic strains — for stronger bones, sharper mood, and immune defence even when the sun isn't shining.", "ship_note": "Ships worldwide · Free shipping over the threshold · 30-day money-back guarantee", "show_subscription": true, "show_qty_discounts": true, "show_buynow": true, "show_testi_marquee": true }
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "brand_label": "Velo16™ · Vit D3",
+        "rating": "4.8",
+        "review_count": "280+",
+        "hook": "Sunshine in a capsule. Velo16™ Probiotics Vitamin D3 delivers 1000 IU cholecalciferol + 16 probiotic strains — for stronger bones, sharper mood, and immune defence even when the sun isn't shining.",
+        "ship_note": "Ships worldwide · Free shipping over the threshold · 30-day money-back guarantee",
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
     },
     "reviews-carousel": {
       "type": "vb-product-reviews-carousel",
       "blocks": {
-        "r1": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Bongi+M&background=c8163c&color=ffffff&size=120&bold=true", "quote": "My winter mood used to crash. Velo16 D3 made winter bearable.", "author": "Bongi M.", "meta": "Verified buyer · Johannesburg" } },
-        "r2": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Pieter+S&background=ff5c7c&color=ffffff&size=120&bold=true", "quote": "After 6 weeks my doc confirmed my D levels are normal again.", "author": "Pieter S.", "meta": "Verified buyer · 6 weeks ago" } },
-        "r3": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Linda+H&background=6b0a1f&color=ffffff&size=120&bold=true", "quote": "Bone density scan improving year-over-year.", "author": "Linda H.", "meta": "Verified buyer · 8 months ago" } },
-        "r4": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Sipho+N&background=c8163c&color=ffffff&size=120&bold=true", "quote": "Brain fog gone. Energy and focus back.", "author": "Sipho N.", "meta": "Verified buyer · 2 months ago" } }
+        "r1": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Bongi+M&background=c8163c&color=ffffff&size=120&bold=true",
+            "author": "Bongi M.",
+            "meta": "Verified buyer · Johannesburg",
+            "quote": "My winter mood used to crash. Velo16 D3 made winter bearable."
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Pieter+S&background=ff5c7c&color=ffffff&size=120&bold=true",
+            "author": "Pieter S.",
+            "meta": "Verified buyer · 6 weeks ago",
+            "quote": "After 6 weeks my doc confirmed my D levels are normal again."
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Linda+H&background=6b0a1f&color=ffffff&size=120&bold=true",
+            "author": "Linda H.",
+            "meta": "Verified buyer · 8 months ago",
+            "quote": "Bone density scan improving year-over-year."
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Sipho+N&background=c8163c&color=ffffff&size=120&bold=true",
+            "author": "Sipho N.",
+            "meta": "Verified buyer · 2 months ago",
+            "quote": "Brain fog gone. Energy and focus back."
+          }
+        }
       },
-      "block_order": ["r1","r2","r3","r4"],
-      "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "eyebrow": "★ Real Reviews", "title": "Loved by sunshine-seekers" }
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "eyebrow": "★ Real Reviews",
+        "title": "Loved by sunshine-seekers"
+      }
     },
     "problem": {
       "type": "vb-product-story",
       "blocks": {
-        "p1": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Indoor lifestyles + sunscreen</strong> leave most South Africans D3 deficient." } },
-        "p2": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Brittle bones and aching joints</strong> as you age without enough D3." } },
-        "p3": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Winter mood dips</strong> and seasonal energy crashes." } },
-        "p4": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Generic D3 tablets</strong> with poor absorption — most ends up wasted." } }
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Indoor lifestyles + sunscreen</strong> leave most South Africans D3 deficient."
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Brittle bones and aching joints</strong> as you age without enough D3."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Winter mood dips</strong> and seasonal energy crashes."
+          }
+        },
+        "p4": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Generic D3 tablets</strong> with poor absorption — most ends up wasted."
+          }
+        }
       },
-      "block_order": ["p1","p2","p3","p4"],
-      "settings": { "reverse": false, "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "image_url": "", "tag_value": "80%", "tag_label": "Of Adults Have Low Vitamin D3", "eyebrow": "The Problem", "title_pre": "Sunshine deficiency is", "title_highlight": "more common than you think.", "desc": "Modern life keeps us indoors and behind sunscreen. The result? Most adults are chronically Vitamin D3 deficient — affecting bones, immunity, mood, and energy. Standard D3 tablets absorb poorly. There's a smarter way." }
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#c8163c",
+        "brand_tint": "#ffe8ec",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_111651_0428ef63-8627-4d23-b092-e3521befd82d.png",
+        "tag_value": "80%",
+        "tag_label": "Of Adults Have Low Vitamin D3",
+        "eyebrow": "The Problem",
+        "title_pre": "Sunshine deficiency is",
+        "title_highlight": "more common than you think.",
+        "desc": "Modern life keeps us indoors and behind sunscreen. The result? Most adults are chronically Vitamin D3 deficient — affecting bones, immunity, mood, and energy. Standard D3 tablets absorb poorly. There's a smarter way."
+      }
     },
     "solution": {
       "type": "vb-product-story",
       "blocks": {
-        "s1": { "type": "point", "settings": { "icon": "✓", "text": "<strong>1000 IU cholecalciferol</strong> — the bioactive D3 your body uses." } },
-        "s2": { "type": "point", "settings": { "icon": "✓", "text": "<strong>16-strain probiotic blend</strong> for gut, immunity, mood." } },
-        "s3": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more absorbed." } },
-        "s4": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Once-daily</strong>. Doctor-formulated. Lab-tested every batch." } }
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>1000 IU cholecalciferol</strong> — the bioactive D3 your body uses."
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>16-strain probiotic blend</strong> for gut, immunity, mood."
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more absorbed."
+          }
+        },
+        "s4": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Once-daily</strong>. Doctor-formulated. Lab-tested every batch."
+          }
+        }
       },
-      "block_order": ["s1","s2","s3","s4"],
-      "settings": { "reverse": true, "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "image_url": "", "tag_value": "1000 IU", "tag_label": "Bioactive D3", "eyebrow": "The Solution", "title_pre": "Meet", "title_highlight": "Velo16™ Probiotics Vit D3.", "desc": "Daily sunshine in a capsule. 1000 IU bioactive cholecalciferol + 16 probiotic strains, delivered by Velobiotics™ MEP technology — for stronger bones, sharper mood, and year-round immune defence." }
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#c8163c",
+        "brand_tint": "#ffe8ec",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_111651_0428ef63-8627-4d23-b092-e3521befd82d.png",
+        "tag_value": "1000 IU",
+        "tag_label": "Bioactive D3",
+        "eyebrow": "The Solution",
+        "title_pre": "Meet",
+        "title_highlight": "Velo16™ Probiotics Vit D3.",
+        "desc": "Daily sunshine in a capsule. 1000 IU bioactive cholecalciferol + 16 probiotic strains, delivered by Velobiotics™ MEP technology — for stronger bones, sharper mood, and year-round immune defence."
+      }
     },
     "related": {
       "type": "vb-product-related",
       "blocks": {
-        "r1": { "type": "product", "settings": { "product_handle": "velo16-probiotics-vitamin-c", "brand": "Velo16™", "rating": "4.7", "reviews": "320+" } },
-        "r2": { "type": "product", "settings": { "product_handle": "velo16-probiotics-calcium-magnesium", "brand": "Velo16™", "rating": "4.6", "reviews": "110+" } },
-        "r3": { "type": "product", "settings": { "product_handle": "velo16-probiotics-omega-3-vit-d3", "brand": "Velo16™", "rating": "4.8", "reviews": "150+" } },
-        "r4": { "type": "product", "settings": { "product_handle": "velo16-probiotics-magnesium-glycinate", "brand": "Velo16™", "rating": "4.7", "reviews": "190+" } }
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-vitamin-c",
+            "brand": "Velo16™",
+            "rating": "4.7",
+            "reviews": "320+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-calcium-magnesium",
+            "brand": "Velo16™",
+            "rating": "4.6",
+            "reviews": "110+"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-omega-3-vit-d3",
+            "brand": "Velo16™",
+            "rating": "4.8",
+            "reviews": "150+"
+          }
+        },
+        "r4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-magnesium-glycinate",
+            "brand": "Velo16™",
+            "rating": "4.7",
+            "reviews": "190+"
+          }
+        }
       },
-      "block_order": ["r1","r2","r3","r4"],
-      "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "tint": false, "eyebrow": "Complete the Bone Stack", "title": "More from the Velo16™ range", "sub": "Stack D3 with the rest of your daily mineral and immunity essentials." }
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "tint": false,
+        "eyebrow": "Complete the Bone Stack",
+        "title": "More from the Velo16™ range",
+        "sub": "Stack D3 with the rest of your daily mineral and immunity essentials."
+      }
     },
     "benefits": {
       "type": "vb-product-benefits",
       "blocks": {
-        "b1": { "type": "feat", "settings": { "icon": "🦴", "name": "Stronger Bones", "desc": "D3 unlocks calcium absorption — the foundation of bone health." } },
-        "b2": { "type": "feat", "settings": { "icon": "🌞", "name": "Mood & Energy", "desc": "D3 supports serotonin balance — banish the winter blues." } },
-        "b3": { "type": "feat", "settings": { "icon": "🛡️", "name": "Immune Defence", "desc": "D3 is one of the most important nutrients for immune resilience." } },
-        "b4": { "type": "feat", "settings": { "icon": "💪", "name": "Muscle Strength", "desc": "Adequate D3 supports muscle function and reduces fall risk." } },
-        "b5": { "type": "feat", "settings": { "icon": "🩺", "name": "Doctor Formulated", "desc": "Built on peer-reviewed clinical dosing." } },
-        "b6": { "type": "feat", "settings": { "icon": "🌿", "name": "100% Natural", "desc": "Vegan-friendly cholecalciferol, halaal-friendly, no fillers." } }
+        "b1": {
+          "type": "feat",
+          "settings": {
+            "icon": "🦴",
+            "name": "Stronger Bones",
+            "desc": "D3 unlocks calcium absorption — the foundation of bone health."
+          }
+        },
+        "b2": {
+          "type": "feat",
+          "settings": {
+            "icon": "🌞",
+            "name": "Mood & Energy",
+            "desc": "D3 supports serotonin balance — banish the winter blues."
+          }
+        },
+        "b3": {
+          "type": "feat",
+          "settings": {
+            "icon": "🛡️",
+            "name": "Immune Defence",
+            "desc": "D3 is one of the most important nutrients for immune resilience."
+          }
+        },
+        "b4": {
+          "type": "feat",
+          "settings": {
+            "icon": "💪",
+            "name": "Muscle Strength",
+            "desc": "Adequate D3 supports muscle function and reduces fall risk."
+          }
+        },
+        "b5": {
+          "type": "feat",
+          "settings": {
+            "icon": "🩺",
+            "name": "Doctor Formulated",
+            "desc": "Built on peer-reviewed clinical dosing."
+          }
+        },
+        "b6": {
+          "type": "feat",
+          "settings": {
+            "icon": "🌿",
+            "name": "100% Natural",
+            "desc": "Vegan-friendly cholecalciferol, halaal-friendly, no fillers."
+          }
+        }
       },
-      "block_order": ["b1","b2","b3","b4","b5","b6"],
-      "settings": { "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "eyebrow": "Key Benefits", "title_pre": "Why", "title_highlight": "Velo16™ Vit D3", "sub": "Six reasons it has become the daily D3 of choice for sun-starved adults." }
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_tint": "#ffe8ec",
+        "eyebrow": "Key Benefits",
+        "title_pre": "Why",
+        "title_highlight": "Velo16™ Vit D3",
+        "sub": "Six reasons it has become the daily D3 of choice for sun-starved adults."
+      }
     },
     "how": {
       "type": "vb-product-how",
       "blocks": {
-        "h1": { "type": "step", "settings": { "icon": "💊", "name": "Take One Capsule Daily", "desc": "With water, after a meal containing healthy fats for best absorption." } },
-        "h2": { "type": "step", "settings": { "icon": "🛡️", "name": "MEP Armour Survives", "desc": "Velobiotics™ shield protects D3 + probiotics through stomach acid." } },
-        "h3": { "type": "step", "settings": { "icon": "🎯", "name": "Delivered to Your Cells", "desc": "1000 IU D3 + 1000× more probiotics reach you alive." } },
-        "h4": { "type": "step", "settings": { "icon": "🌞", "name": "Bones, Mood & Defence", "desc": "Stronger bones, sharper mood, year-round immune protection." } }
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "💊",
+            "name": "Take One Capsule Daily",
+            "desc": "With water, after a meal containing healthy fats for best absorption."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "🛡️",
+            "name": "MEP Armour Survives",
+            "desc": "Velobiotics™ shield protects D3 + probiotics through stomach acid."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "🎯",
+            "name": "Delivered to Your Cells",
+            "desc": "1000 IU D3 + 1000× more probiotics reach you alive."
+          }
+        },
+        "h4": {
+          "type": "step",
+          "settings": {
+            "icon": "🌞",
+            "name": "Bones, Mood & Defence",
+            "desc": "Stronger bones, sharper mood, year-round immune protection."
+          }
+        }
       },
-      "block_order": ["h1","h2","h3","h4"],
-      "settings": { "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "eyebrow": "How It Works", "title_pre": "From Capsule to", "title_highlight": "Vitality", "sub": "Four simple steps. One daily ritual. Sunshine wellness." }
+      "block_order": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_tint": "#ffe8ec",
+        "eyebrow": "How It Works",
+        "title_pre": "From Capsule to",
+        "title_highlight": "Vitality",
+        "sub": "Four simple steps. One daily ritual. Sunshine wellness."
+      }
     },
     "ingredients": {
       "type": "vb-product-ingredients",
       "blocks": {
-        "i1": { "type": "ingredient", "settings": { "icon": "☀️", "name": "Vitamin D3 (Cholecalciferol)", "amount": "1000 IU", "desc": "The most bioactive form of Vit D — what your body actually uses." } },
-        "i2": { "type": "ingredient", "settings": { "icon": "🦠", "name": "16-Strain Probiotic Blend", "amount": "10 Billion CFU", "desc": "Strains for gut, immunity, mood, and overall vitality." } },
-        "i3": { "type": "ingredient", "settings": { "icon": "🛡️", "name": "Velobiotics™ MEP Coating", "amount": "Patented", "desc": "Supercritical CO₂ microencapsulation — 1000× more survive." } },
-        "i4": { "type": "ingredient", "settings": { "icon": "🌾", "name": "MCT Oil Carrier", "amount": "Trace", "desc": "Healthy fat carrier for maximum D3 absorption." } },
-        "i5": { "type": "ingredient", "settings": { "icon": "✓", "name": "Clean Capsule Shell", "amount": "Vegan HPMC", "desc": "No gelatin, no fillers, no allergens. Halaal-friendly." } },
-        "i6": { "type": "ingredient", "settings": { "icon": "🚫", "name": "Free From", "amount": "Always", "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO." } }
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "☀️",
+            "name": "Vitamin D3 (Cholecalciferol)",
+            "amount": "1000 IU",
+            "desc": "The most bioactive form of Vit D — what your body actually uses."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🦠",
+            "name": "16-Strain Probiotic Blend",
+            "amount": "10 Billion CFU",
+            "desc": "Strains for gut, immunity, mood, and overall vitality."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🛡️",
+            "name": "Velobiotics™ MEP Coating",
+            "amount": "Patented",
+            "desc": "Supercritical CO₂ microencapsulation — 1000× more survive."
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🌾",
+            "name": "MCT Oil Carrier",
+            "amount": "Trace",
+            "desc": "Healthy fat carrier for maximum D3 absorption."
+          }
+        },
+        "i5": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "✓",
+            "name": "Clean Capsule Shell",
+            "amount": "Vegan HPMC",
+            "desc": "No gelatin, no fillers, no allergens. Halaal-friendly."
+          }
+        },
+        "i6": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🚫",
+            "name": "Free From",
+            "amount": "Always",
+            "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO."
+          }
+        }
       },
-      "block_order": ["i1","i2","i3","i4","i5","i6"],
-      "settings": { "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "brand_dark": "#6b0a1f", "brand_light": "#ff5c7c", "eyebrow": "What's Inside", "title": "Every ingredient earns its place", "sub": "Six clean actives. Full transparency.", "facts_image_url": "", "facts_label": "Supplement facts", "facts_foot": "Lab-tested · Doctor-formulated" }
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "brand_light": "#ff5c7c",
+        "eyebrow": "What's Inside",
+        "title": "Every ingredient earns its place",
+        "sub": "Six clean actives. Full transparency.",
+        "facts_image_url": "",
+        "facts_label": "Supplement facts",
+        "facts_foot": "Lab-tested · Doctor-formulated"
+      }
     },
     "confidence": {
       "type": "vb-product-confidence",
       "blocks": {
-        "c1": { "type": "stat", "settings": { "label": "Restored D3 blood levels", "percent": 89 } },
-        "c2": { "type": "stat", "settings": { "label": "Better mood & focus", "percent": 86 } },
-        "c3": { "type": "stat", "settings": { "label": "Stronger bones & joints", "percent": 84 } },
-        "c4": { "type": "stat", "settings": { "label": "Fewer winter sick days", "percent": 88 } },
-        "c5": { "type": "stat", "settings": { "label": "Would recommend to a friend", "percent": 95 } }
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Restored D3 blood levels",
+            "percent": 89
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "Better mood & focus",
+            "percent": 86
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Stronger bones & joints",
+            "percent": 84
+          }
+        },
+        "c4": {
+          "type": "stat",
+          "settings": {
+            "label": "Fewer winter sick days",
+            "percent": 88
+          }
+        },
+        "c5": {
+          "type": "stat",
+          "settings": {
+            "label": "Would recommend to a friend",
+            "percent": 95
+          }
+        }
       },
-      "block_order": ["c1","c2","c3","c4","c5"],
-      "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "eyebrow": "Real results", "title_pre": "Trusted for", "title_highlight": "Daily Sunshine", "sub": "What customers report after 4–6 weeks of daily Velo16™ Vit D3.", "caveat": "Based on 280+ verified customers. Individual results may vary." }
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "eyebrow": "Real results",
+        "title_pre": "Trusted for",
+        "title_highlight": "Daily Sunshine",
+        "sub": "What customers report after 4–6 weeks of daily Velo16™ Vit D3.",
+        "caveat": "Based on 280+ verified customers. Individual results may vary."
+      }
     },
     "fbt": {
       "type": "vb-product-related",
       "blocks": {
-        "f1": { "type": "product", "settings": { "product_handle": "her-biotics-original-capsules-60s", "brand": "Her-Biotics™", "rating": "4.7", "reviews": "260+" } },
-        "f2": { "type": "product", "settings": { "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s", "brand": "His-Biotics™", "rating": "4.7", "reviews": "210+" } },
-        "f3": { "type": "product", "settings": { "product_handle": "gutslim-probiotics-glp-1-booster", "brand": "GutSlim™", "rating": "4.8", "reviews": "410+" } },
-        "f4": { "type": "product", "settings": { "product_handle": "pregbiotics-breastfeeding", "brand": "PregBiotics™", "rating": "4.9", "reviews": "150+" } }
+        "f1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "her-biotics-original-capsules-60s",
+            "brand": "Her-Biotics™",
+            "rating": "4.7",
+            "reviews": "260+"
+          }
+        },
+        "f2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
+            "brand": "His-Biotics™",
+            "rating": "4.7",
+            "reviews": "210+"
+          }
+        },
+        "f3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-glp-1-booster",
+            "brand": "GutSlim™",
+            "rating": "4.8",
+            "reviews": "410+"
+          }
+        },
+        "f4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "pregbiotics-breastfeeding",
+            "brand": "PregBiotics™",
+            "rating": "4.9",
+            "reviews": "150+"
+          }
+        }
       },
-      "block_order": ["f1","f2","f3","f4"],
-      "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "tint": true, "eyebrow": "Frequently Bought Together", "title": "Pair with the rest of your wellness stack", "sub": "Velo16™ D3 stacks beautifully with these Velobiotics favourites." }
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "tint": true,
+        "eyebrow": "Frequently Bought Together",
+        "title": "Pair with the rest of your wellness stack",
+        "sub": "Velo16™ D3 stacks beautifully with these Velobiotics favourites."
+      }
     },
     "doctors": {
       "type": "vb-doctors",
       "blocks": {
-        "d1": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966", "name": "Bioactive D3", "desc": "Cholecalciferol — the form your body actually uses." } },
-        "d2": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966", "name": "Doctor Formulated", "desc": "Developed by medical doctors and microbiologists." } },
-        "d3": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073", "name": "Patented MEP Technology", "desc": "Microencapsulation with Supercritical CO₂." } },
-        "d4": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199", "name": "Clean Label", "desc": "Vegan, halaal-friendly, no fillers." } }
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
+            "name": "Bioactive D3",
+            "desc": "Cholecalciferol — the form your body actually uses."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
+            "name": "Doctor Formulated",
+            "desc": "Developed by medical doctors and microbiologists."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
+            "name": "Patented MEP Technology",
+            "desc": "Microencapsulation with Supercritical CO₂."
+          }
+        },
+        "d4": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
+            "name": "Clean Label",
+            "desc": "Vegan, halaal-friendly, no fillers."
+          }
+        }
       },
-      "block_order": ["d1","d2","d3","d4"],
-      "settings": { "eyebrow": "Trusted by Doctors. Proven by Science.", "title_pre": "Quality you can", "title_highlight": "trust.", "sub": "Built on peer-reviewed strains, medical formulations, and SAHPRA-aware manufacturing." }
+      "block_order": [
+        "d1",
+        "d2",
+        "d3",
+        "d4"
+      ],
+      "settings": {
+        "eyebrow": "Trusted by Doctors. Proven by Science.",
+        "title_pre": "Quality you can",
+        "title_highlight": "trust.",
+        "sub": "Built on peer-reviewed strains, medical formulations, and SAHPRA-aware manufacturing."
+      }
     },
     "outperform": {
       "type": "vb-product-outperform",
       "blocks": {
-        "o1": { "type": "row", "settings": { "feature": "Bioactive D3 (Cholecalciferol)", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
-        "o2": { "type": "row", "settings": { "feature": "Advanced Absorption (MEP)", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
-        "o3": { "type": "row", "settings": { "feature": "16-Strain Probiotic Boost", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
-        "o4": { "type": "row", "settings": { "feature": "Daily Simplicity", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
-        "o5": { "type": "row", "settings": { "feature": "Long-Term Benefits", "brand_state": "yes", "b_state": "no", "c_state": "no" } }
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "Bioactive D3 (Cholecalciferol)",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "Advanced Absorption (MEP)",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "16-Strain Probiotic Boost",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "Daily Simplicity",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o5": {
+          "type": "row",
+          "settings": {
+            "feature": "Long-Term Benefits",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        }
       },
-      "block_order": ["o1","o2","o3","o4","o5"],
-      "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "title": "Why We Outperform Others", "sub": "Experience the most bioactive D3 with advanced absorption and 16-strain probiotic synergy.", "col_features": "Features", "col_brand": "Velo16™ D3", "col_b": "Generic D3", "col_c": "Others", "cta_text": "Add to Cart", "cta_note": "30-day money-back · Free shipping over the threshold" }
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "title": "Why We Outperform Others",
+        "sub": "Experience the most bioactive D3 with advanced absorption and 16-strain probiotic synergy.",
+        "col_features": "Features",
+        "col_brand": "Velo16™ D3",
+        "col_b": "Generic D3",
+        "col_c": "Others",
+        "cta_text": "Add to Cart",
+        "cta_note": "30-day money-back · Free shipping over the threshold"
+      }
     },
-    "judgeme": { "type": "vb-judgeme", "settings": { "eyebrow": "Real Reviews", "title_pre": "What Customers", "title_highlight": "Are Saying", "sub": "Verified reviews. Judge.me widget populates on go-live.", "rating": "4.8", "reviews_count": "280+", "customers_count": "35K+" } },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Real Reviews",
+        "title_pre": "What Customers",
+        "title_highlight": "Are Saying",
+        "sub": "Verified reviews. Judge.me widget populates on go-live.",
+        "rating": "4.8",
+        "reviews_count": "280+",
+        "customers_count": "35K+"
+      }
+    },
     "faq": {
       "type": "vb-faq",
       "blocks": {
-        "q1": { "type": "q", "settings": { "question": "Why D3 specifically and not D2?", "answer": "<p>D3 (cholecalciferol) is the form your body produces from sunlight. It's significantly more bioavailable than D2 (ergocalciferol) and raises blood D levels faster.</p>" } },
-        "q2": { "type": "q", "settings": { "question": "Can I take this with my calcium supplement?", "answer": "<p>Yes — D3 is what unlocks calcium absorption. They work together. Consider Velo16™ Calcium & Magnesium for a complete bone stack.</p>" } },
-        "q3": { "type": "q", "settings": { "question": "Is Velo16™ D3 safe daily?", "answer": "<p>Absolutely. 1000 IU is well below the safe daily upper limit (4000 IU). Manufactured under GMP / SAHPRA-aware.</p>" } },
-        "q4": { "type": "q", "settings": { "question": "How long until my blood D levels rise?", "answer": "<p>Most people see meaningful improvement at 8–12 weeks of consistent daily use. Some feel the mood benefits within 2–3 weeks.</p>" } },
-        "q5": { "type": "q", "settings": { "question": "Do you ship internationally?", "answer": "<p>Yes. 5–14 working days globally. Free shipping over the threshold.</p>" } },
-        "q6": { "type": "q", "settings": { "question": "What if it doesn't work for me?", "answer": "<p>30-day money-back, no questions asked.</p>" } }
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "Why D3 specifically and not D2?",
+            "answer": "<p>D3 (cholecalciferol) is the form your body produces from sunlight. It's significantly more bioavailable than D2 (ergocalciferol) and raises blood D levels faster.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "Can I take this with my calcium supplement?",
+            "answer": "<p>Yes — D3 is what unlocks calcium absorption. They work together. Consider Velo16™ Calcium & Magnesium for a complete bone stack.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "Is Velo16™ D3 safe daily?",
+            "answer": "<p>Absolutely. 1000 IU is well below the safe daily upper limit (4000 IU). Manufactured under GMP / SAHPRA-aware.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "How long until my blood D levels rise?",
+            "answer": "<p>Most people see meaningful improvement at 8–12 weeks of consistent daily use. Some feel the mood benefits within 2–3 weeks.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Do you ship internationally?",
+            "answer": "<p>Yes. 5–14 working days globally. Free shipping over the threshold.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "What if it doesn't work for me?",
+            "answer": "<p>30-day money-back, no questions asked.</p>"
+          }
+        }
       },
-      "block_order": ["q1","q2","q3","q4","q5","q6"],
-      "settings": { "eyebrow": "FAQ", "title_pre": "Questions Before", "title_highlight": "You Start" }
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "title_pre": "Questions Before",
+        "title_highlight": "You Start"
+      }
     },
     "final": {
       "type": "vb-product-final",
       "blocks": {
-        "g1": { "type": "g", "settings": { "icon": "✅", "text": "30-day money-back" } },
-        "g2": { "type": "g", "settings": { "icon": "🚚", "text": "Ships worldwide" } },
-        "g3": { "type": "g", "settings": { "icon": "🔬", "text": "Lab-tested every batch" } },
-        "g4": { "type": "g", "settings": { "icon": "☀️", "text": "Bioactive D3" } }
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "✅",
+            "text": "30-day money-back"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "🚚",
+            "text": "Ships worldwide"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "🔬",
+            "text": "Lab-tested every batch"
+          }
+        },
+        "g4": {
+          "type": "g",
+          "settings": {
+            "icon": "☀️",
+            "text": "Bioactive D3"
+          }
+        }
       },
-      "block_order": ["g1","g2","g3","g4"],
-      "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_light": "#ff5c7c", "badge": "30-day money-back guarantee", "title_pre": "Sunshine Every Day", "title_highlight": "Risk-Free for 30 Days", "sub": "Join the 35,000+ people who count on Velo16™ D3 for daily sunshine. If you don't feel the difference, we'll refund every cent.", "cta_text": "Add to Cart", "cta_link": "#vbpForm" }
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_light": "#ff5c7c",
+        "badge": "30-day money-back guarantee",
+        "title_pre": "Sunshine Every Day",
+        "title_highlight": "Risk-Free for 30 Days",
+        "sub": "Join the 35,000+ people who count on Velo16™ D3 for daily sunshine. If you don't feel the difference, we'll refund every cent.",
+        "cta_text": "Add to Cart",
+        "cta_link": "#vbpForm"
+      }
     }
   },
-  "order": ["hero","reviews-carousel","problem","solution","related","benefits","how","ingredients","confidence","fbt","doctors","outperform","judgeme","faq","final"]
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "judgeme",
+    "faq",
+    "final"
+  ]
 }

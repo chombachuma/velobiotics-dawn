@@ -14,10 +14,11 @@
 <style>
   .vb-hero3 { position: relative; padding: 72px 24px 60px; background: linear-gradient(180deg, #f5f9f3 0%, #e3efdf 100%); overflow: hidden; }
   .vb-hero3__bg { position: absolute; inset: 0; z-index: 0; }
-  .vb-hero3__bg-img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; -webkit-mask-image: linear-gradient(to right, transparent 0%, black 18%, black 82%, transparent 100%); mask-image: linear-gradient(to right, transparent 0%, black 18%, black 82%, transparent 100%); opacity: 0.55; }
-  .vb-hero3__bg-overlay { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 100%, rgba(77,140,68,0.18) 0%, transparent 60%), linear-gradient(180deg, rgba(245,249,243,0.55) 0%, rgba(227,239,223,0.85) 100%); }
+  .vb-hero3__bg-img { width: 100%; height: 100%; object-fit: cover; object-position: center 35%; opacity: 0.85; }
+  .vb-hero3__bg-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0.3) 35%, rgba(245,249,243,0.55) 70%, rgba(227,239,223,0.92) 100%); }
   .vb-hero3__inner { max-width: 1080px; margin: 0 auto; position: relative; z-index: 2; text-align: center; }
-  .vb-hero3__eyebrow { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: #4d8c44; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 8px 16px; border-radius: 999px; border: 1.5px solid #4d8c44; margin: 0 0 16px; box-shadow: 0 6px 14px rgba(77,140,68,0.10); }
+  .vb-hero3__eyebrow { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: #4d8c44; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 8px 16px; border-radius: 999px; border: 1.5px solid #4d8c44; margin: 0 0 16px; box-shadow: 0 6px 14px rgba(77,140,68,0.10); max-width: 100%; }
+  @media (max-width: 749px) { .vb-hero3__eyebrow { font-size: 9.5px; padding: 6px 12px; letter-spacing: 0.04em; } }
   .vb-hero3__eyebrow::before { content: ''; width: 8px; height: 8px; background: #4d8c44; border-radius: 50%; box-shadow: 0 0 10px #4d8c44; }
   .vb-hero3__rating { display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: center; margin: 0 0 16px; font-size: 13.5px; color: #2b3a2a; }
   .vb-hero3__rating .stars { color: #ffb43a; letter-spacing: 1px; font-size: 14px; }

@@ -11,46 +11,6 @@
   "sections": {
     "hero": {
       "type": "vb-hero",
-      "blocks": {
-        "p1": {
-          "type": "pill",
-          "settings": {
-            "icon": "🛡️",
-            "title": "Patented MEP",
-            "sub": "Technology"
-          }
-        },
-        "p2": {
-          "type": "pill",
-          "settings": {
-            "icon": "🩺",
-            "title": "Doctor",
-            "sub": "Formulated"
-          }
-        },
-        "p3": {
-          "type": "pill",
-          "settings": {
-            "icon": "🔬",
-            "title": "Lab-Tested",
-            "sub": "Every Batch"
-          }
-        },
-        "p4": {
-          "type": "pill",
-          "settings": {
-            "icon": "🔄",
-            "title": "Money-Back",
-            "sub": "Guarantee"
-          }
-        }
-      },
-      "block_order": [
-        "p1",
-        "p2",
-        "p3",
-        "p4"
-      ],
       "settings": {
         "bg_image_url": "",
         "bg_image": "shopify://shop_images/Femina_-_Hero_Banner_2.png",

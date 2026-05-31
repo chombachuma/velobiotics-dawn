@@ -249,6 +249,7 @@
         "reverse": true,
         "brand_primary": "#8d2a89",
         "brand_tint": "#fdf5fc",
+        "image": "shopify://shop_images/Cookie_Fresh_Boric_Acid.png",
         "image_url": "",
         "tag_value": "7-14",
         "tag_label": "Days To Restored Balance",

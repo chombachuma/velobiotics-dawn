@@ -9,21 +9,870 @@
  */
 {
   "sections": {
-    "hero": { "type": "vb-product-hero", "blocks": { "b1": { "type": "benefit", "settings": { "icon": "🍽️", "text": "Papain · Bromelain · Amylase · Lipase" } }, "b2": { "type": "benefit", "settings": { "icon": "💨", "text": "Beat bloating after meals" } }, "b3": { "type": "benefit", "settings": { "icon": "🌿", "text": "Plus ginger root" } }, "b4": { "type": "benefit", "settings": { "icon": "⚡", "text": "1000× more delivery" } }, "t1": { "type": "testi", "settings": { "quote": "No more after-dinner bloat", "author": "Pieter S." } }, "t2": { "type": "testi", "settings": { "quote": "Heavy meals don't ruin me anymore", "author": "Marco D." } }, "t3": { "type": "testi", "settings": { "quote": "Acid reflux finally tamed", "author": "Linda H." } }, "t4": { "type": "testi", "settings": { "quote": "Real digestive relief", "author": "Bongi M." } } }, "block_order": ["b1","b2","b3","b4","t1","t2","t3","t4"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "brand_label": "Velo16™ · Digestive Enzymes", "rating": "4.7", "review_count": "180+", "hook": "Eat. Enjoy. Digest. Velo16™ Probiotics Digestive Enzymes Complex delivers a full-spectrum enzyme blend (Papain, Bromelain, Amylase, Lipase) + ginger root + 16 probiotic strains — for comfort after every meal.", "ship_note": "Ships worldwide · Free shipping over the threshold · 30-day money-back guarantee", "show_subscription": true, "show_qty_discounts": true, "show_buynow": true, "show_testi_marquee": true } },
-    "reviews-carousel": { "type": "vb-product-reviews-carousel", "blocks": { "r1": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Pieter+S&background=c8163c&color=ffffff&size=120&bold=true", "quote": "I used to undo my belt after dinner. Not anymore.", "author": "Pieter S.", "meta": "Verified buyer · 2 months ago" } }, "r2": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Marco+D&background=ff5c7c&color=ffffff&size=120&bold=true", "quote": "Steak dinners don't wreck me anymore.", "author": "Marco D.", "meta": "Verified buyer · 6 weeks ago" } }, "r3": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Linda+H&background=6b0a1f&color=ffffff&size=120&bold=true", "quote": "Acid reflux at night gone. Sleep restored.", "author": "Linda H.", "meta": "Verified buyer · 3 months ago" } }, "r4": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Bongi+M&background=c8163c&color=ffffff&size=120&bold=true", "quote": "Real digestive relief — not just a placebo.", "author": "Bongi M.", "meta": "Verified buyer · 1 month ago" } } }, "block_order": ["r1","r2","r3","r4"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "eyebrow": "★ Real Reviews", "title": "Comfort after every meal" } },
-    "problem": { "type": "vb-product-story", "blocks": { "p1": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Bloating and discomfort</strong> after heavier meals." } }, "p2": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Acid reflux</strong> and indigestion." } }, "p3": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Gas and sluggish digestion</strong> ruining evenings." } }, "p4": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Generic digestive aids</strong> missing the full enzyme spectrum." } } }, "block_order": ["p1","p2","p3","p4"], "settings": { "reverse": false, "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "image_url": "", "tag_value": "4-in-1", "tag_label": "Full-Spectrum Enzyme Blend", "eyebrow": "The Problem", "title_pre": "Your stomach", "title_highlight": "needs better enzymes.", "desc": "Modern diets are heavy on processed food, sugar, and animal protein — but your stomach didn't evolve for it. The result: bloating, reflux, gas, sluggish digestion. There's a smarter way to digest." } },
-    "solution": { "type": "vb-product-story", "blocks": { "s1": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Papain + Bromelain</strong> — break down protein efficiently." } }, "s2": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Amylase + Lipase</strong> — digest carbs and fats." } }, "s3": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Ginger root extract</strong> — soothes stomach and reduces gas." } }, "s4": { "type": "point", "settings": { "icon": "✓", "text": "<strong>16-strain probiotic blend + MEP delivery</strong> — gut harmony." } } }, "block_order": ["s1","s2","s3","s4"], "settings": { "reverse": true, "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Digestive_Enzymes_Realistic_3D_Front_View.png?v=1775328666", "tag_value": "Full Spectrum", "tag_label": "Protein, Carb, Fat Digestion", "eyebrow": "The Solution", "title_pre": "Meet", "title_highlight": "Velo16™ Digestive Enzymes Complex.", "desc": "A full-spectrum enzyme blend (Papain, Bromelain, Amylase, Lipase) with ginger root and 16 probiotic strains. Velobiotics™ MEP delivery means enzymes survive stomach acid to work where they're needed — for comfort after every meal." } },
-    "related": { "type": "vb-product-related", "blocks": { "r1": { "type": "product", "settings": { "product_handle": "velo16-probiotic-digestive-capsules", "brand": "Velo16™", "rating": "4.7", "reviews": "220+" } }, "r2": { "type": "product", "settings": { "product_handle": "velo16-probiotics-apple-cider", "brand": "Velo16™", "rating": "4.6", "reviews": "170+" } }, "r3": { "type": "product", "settings": { "product_handle": "velo16-probiotics-magnesium-glycinate", "brand": "Velo16™", "rating": "4.7", "reviews": "190+" } }, "r4": { "type": "product", "settings": { "product_handle": "gutslim-probiotics-glp-1-booster", "brand": "GutSlim™", "rating": "4.8", "reviews": "410+" } } }, "block_order": ["r1","r2","r3","r4"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "tint": false, "eyebrow": "Complete the Gut Stack", "title": "More from the Velo16™ range", "sub": "Stack Digestive Enzymes with the rest of your gut comfort essentials." } },
-    "benefits": { "type": "vb-product-benefits", "blocks": { "b1": { "type": "feat", "settings": { "icon": "🍽️", "name": "Full-Spectrum Digestion", "desc": "Four enzymes covering protein, carbs, fats." } }, "b2": { "type": "feat", "settings": { "icon": "💨", "name": "Beat Bloating", "desc": "Less gas, lighter abdomen after meals." } }, "b3": { "type": "feat", "settings": { "icon": "🔥", "name": "Reduce Acid Reflux", "desc": "Better digestion = less acid rising." } }, "b4": { "type": "feat", "settings": { "icon": "🌿", "name": "Ginger Soothing", "desc": "Calms stomach and supports motility." } }, "b5": { "type": "feat", "settings": { "icon": "🩺", "name": "Doctor Formulated", "desc": "Built on clinical enzyme research." } }, "b6": { "type": "feat", "settings": { "icon": "🌿", "name": "100% Natural", "desc": "Vegan, halaal-friendly, no fillers." } } }, "block_order": ["b1","b2","b3","b4","b5","b6"], "settings": { "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "eyebrow": "Key Benefits", "title_pre": "Why", "title_highlight": "Velo16™ Digestive Enzymes", "sub": "Six reasons it has become the daily digestive ally of choice." } },
-    "how": { "type": "vb-product-how", "blocks": { "h1": { "type": "step", "settings": { "icon": "💊", "name": "Take One Capsule With Meals", "desc": "Especially heavy or rich meals." } }, "h2": { "type": "step", "settings": { "icon": "🛡️", "name": "MEP Armour Survives", "desc": "Velobiotics™ shield protects enzymes through stomach acid." } }, "h3": { "type": "step", "settings": { "icon": "🎯", "name": "Delivered to Your Gut", "desc": "Enzymes + 1000× more probiotics reach you alive." } }, "h4": { "type": "step", "settings": { "icon": "💨", "name": "Comfort After Every Meal", "desc": "No bloat, no reflux, no gas, no regret." } } }, "block_order": ["h1","h2","h3","h4"], "settings": { "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "eyebrow": "How It Works", "title_pre": "From Capsule to", "title_highlight": "Comfort", "sub": "Four simple steps. Eat what you love. Comfortably." } },
-    "ingredients": { "type": "vb-product-ingredients", "blocks": { "i1": { "type": "ingredient", "settings": { "icon": "🥩", "name": "Papain + Bromelain", "amount": "100 mg + 50 mg", "desc": "Protein-digesting enzymes from papaya and pineapple." } }, "i2": { "type": "ingredient", "settings": { "icon": "🍞", "name": "Amylase + Lipase", "amount": "150 mg + 50 mg", "desc": "For carb and fat digestion." } }, "i3": { "type": "ingredient", "settings": { "icon": "🫚", "name": "Ginger Root Extract", "amount": "100 mg", "desc": "Soothes stomach, supports motility." } }, "i4": { "type": "ingredient", "settings": { "icon": "🦠", "name": "16-Strain Probiotic Blend", "amount": "10 Billion CFU", "desc": "Strains for full gut + digestive synergy." } }, "i5": { "type": "ingredient", "settings": { "icon": "🛡️", "name": "Velobiotics™ MEP Coating", "amount": "Patented", "desc": "Supercritical CO₂ — enzymes reach gut alive." } }, "i6": { "type": "ingredient", "settings": { "icon": "🚫", "name": "Free From", "amount": "Always", "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO." } } }, "block_order": ["i1","i2","i3","i4","i5","i6"], "settings": { "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "brand_dark": "#6b0a1f", "brand_light": "#ff5c7c", "eyebrow": "What's Inside", "title": "Every ingredient earns its place", "sub": "Six clean actives. Full transparency.", "facts_image_url": "", "facts_label": "Supplement facts", "facts_foot": "Lab-tested · Doctor-formulated" } },
-    "confidence": { "type": "vb-product-confidence", "blocks": { "c1": { "type": "stat", "settings": { "label": "Less bloating after meals", "percent": 93 } }, "c2": { "type": "stat", "settings": { "label": "Reduced acid reflux", "percent": 86 } }, "c3": { "type": "stat", "settings": { "label": "Less gas and discomfort", "percent": 89 } }, "c4": { "type": "stat", "settings": { "label": "More food enjoyment", "percent": 91 } }, "c5": { "type": "stat", "settings": { "label": "Would recommend to a friend", "percent": 95 } } }, "block_order": ["c1","c2","c3","c4","c5"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "eyebrow": "Real results", "title_pre": "Trusted for", "title_highlight": "Meal-Time Comfort", "sub": "What customers report after 2–4 weeks of daily Velo16™ Digestive Enzymes.", "caveat": "Based on 180+ verified customers. Individual results may vary." } },
-    "fbt": { "type": "vb-product-related", "blocks": { "f1": { "type": "product", "settings": { "product_handle": "her-biotics-original-capsules-60s", "brand": "Her-Biotics™", "rating": "4.7", "reviews": "260+" } }, "f2": { "type": "product", "settings": { "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s", "brand": "His-Biotics™", "rating": "4.7", "reviews": "210+" } }, "f3": { "type": "product", "settings": { "product_handle": "gutslim-probiotics-glp-1-booster", "brand": "GutSlim™", "rating": "4.8", "reviews": "410+" } }, "f4": { "type": "product", "settings": { "product_handle": "femina-probiotic-capsules-with-cranberry-for-women", "brand": "Femina™", "rating": "4.8", "reviews": "1300+" } } }, "block_order": ["f1","f2","f3","f4"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "tint": true, "eyebrow": "Frequently Bought Together", "title": "Pair with the rest of your wellness stack", "sub": "Velo16™ Digestive Enzymes stacks beautifully with these favourites." } },
-    "doctors": { "type": "vb-doctors", "blocks": { "d1": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966", "name": "4-Enzyme Spectrum", "desc": "Covers protein, carb, fat digestion." } }, "d2": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966", "name": "Doctor Formulated", "desc": "Built on clinical enzyme research." } }, "d3": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073", "name": "Patented MEP Technology", "desc": "Microencapsulation with Supercritical CO₂." } }, "d4": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199", "name": "Clean Label", "desc": "Vegan, halaal-friendly, no fillers." } } }, "block_order": ["d1","d2","d3","d4"], "settings": { "eyebrow": "Trusted by Doctors. Proven by Science.", "title_pre": "Quality you can", "title_highlight": "trust.", "sub": "Built on full-spectrum enzyme science and SAHPRA-aware manufacturing." } },
-    "outperform": { "type": "vb-product-outperform", "blocks": { "o1": { "type": "row", "settings": { "feature": "4-Enzyme Spectrum", "brand_state": "yes", "b_state": "no", "c_state": "no" } }, "o2": { "type": "row", "settings": { "feature": "Ginger Soothing", "brand_state": "yes", "b_state": "no", "c_state": "no" } }, "o3": { "type": "row", "settings": { "feature": "16-Strain Probiotic Boost", "brand_state": "yes", "b_state": "no", "c_state": "no" } }, "o4": { "type": "row", "settings": { "feature": "Advanced Absorption (MEP)", "brand_state": "yes", "b_state": "no", "c_state": "no" } }, "o5": { "type": "row", "settings": { "feature": "Long-Term Gut Comfort", "brand_state": "yes", "b_state": "no", "c_state": "no" } } }, "block_order": ["o1","o2","o3","o4","o5"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "title": "Why We Outperform Others", "sub": "Experience the full enzyme spectrum + ginger + 16-strain probiotic synergy.", "col_features": "Features", "col_brand": "Velo16™ Enzymes", "col_b": "Generic Antacid", "col_c": "Others", "cta_text": "Add to Cart", "cta_note": "30-day money-back · Free shipping over the threshold" } },
-    "judgeme": { "type": "vb-judgeme", "settings": { "eyebrow": "Real Reviews", "title_pre": "What Customers", "title_highlight": "Are Saying", "sub": "Verified reviews. Judge.me widget populates on go-live.", "rating": "4.7", "reviews_count": "180+", "customers_count": "26K+" } },
-    "faq": { "type": "vb-faq", "blocks": { "q1": { "type": "q", "settings": { "question": "When should I take it?", "answer": "<p>With or just before meals — especially heavier ones. The enzymes go to work as food enters your stomach.</p>" } }, "q2": { "type": "q", "settings": { "question": "Is it safe to take every meal?", "answer": "<p>Yes — designed for daily use. Most customers take it before lunch and dinner.</p>" } }, "q3": { "type": "q", "settings": { "question": "Will this replace my acid blocker?", "answer": "<p>Many customers reduce their reflux meds over time. Always check with your doctor before stopping prescriptions.</p>" } }, "q4": { "type": "q", "settings": { "question": "Does this help with lactose intolerance?", "answer": "<p>It includes lipase which helps fat digestion. For specific lactose issues, look for a lactase enzyme — different category.</p>" } }, "q5": { "type": "q", "settings": { "question": "Do you ship internationally?", "answer": "<p>Yes. 5–14 working days. Free shipping over the threshold.</p>" } }, "q6": { "type": "q", "settings": { "question": "What if it doesn't work?", "answer": "<p>30-day money-back, no questions asked.</p>" } } }, "block_order": ["q1","q2","q3","q4","q5","q6"], "settings": { "eyebrow": "FAQ", "title_pre": "Questions Before", "title_highlight": "You Start" } },
-    "final": { "type": "vb-product-final", "blocks": { "g1": { "type": "g", "settings": { "icon": "✅", "text": "30-day money-back" } }, "g2": { "type": "g", "settings": { "icon": "🚚", "text": "Ships worldwide" } }, "g3": { "type": "g", "settings": { "icon": "🍽️", "text": "Comfort guaranteed" } }, "g4": { "type": "g", "settings": { "icon": "🔬", "text": "Lab-tested" } } }, "block_order": ["g1","g2","g3","g4"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_light": "#ff5c7c", "badge": "30-day money-back guarantee", "title_pre": "Eat. Enjoy. Digest.", "title_highlight": "Risk-Free for 30 Days", "sub": "Join the 26,000+ people who beat bloat after every meal with Velo16™ Digestive Enzymes. If you don't feel the difference, we'll refund every cent.", "cta_text": "Add to Cart", "cta_link": "#vbpForm" } }
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🍽️",
+            "text": "Papain · Bromelain · Amylase · Lipase"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "💨",
+            "text": "Beat bloating after meals"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🌿",
+            "text": "Plus ginger root"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "⚡",
+            "text": "1000× more delivery"
+          }
+        },
+        "t1": {
+          "type": "testi",
+          "settings": {
+            "quote": "No more after-dinner bloat",
+            "author": "Pieter S."
+          }
+        },
+        "t2": {
+          "type": "testi",
+          "settings": {
+            "quote": "Heavy meals don't ruin me anymore",
+            "author": "Marco D."
+          }
+        },
+        "t3": {
+          "type": "testi",
+          "settings": {
+            "quote": "Acid reflux finally tamed",
+            "author": "Linda H."
+          }
+        },
+        "t4": {
+          "type": "testi",
+          "settings": {
+            "quote": "Real digestive relief",
+            "author": "Bongi M."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "brand_label": "Velo16™ · Digestive Enzymes",
+        "rating": "4.7",
+        "review_count": "180+",
+        "hook": "Eat. Enjoy. Digest. Velo16™ Probiotics Digestive Enzymes Complex delivers a full-spectrum enzyme blend (Papain, Bromelain, Amylase, Lipase) + ginger root + 16 probiotic strains — for comfort after every meal.",
+        "ship_note": "Ships worldwide · Free shipping over the threshold · 30-day money-back guarantee",
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
+    },
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Pieter+S&background=c8163c&color=ffffff&size=120&bold=true",
+            "author": "Pieter S.",
+            "meta": "Verified buyer · 2 months ago",
+            "quote": "I used to undo my belt after dinner. Not anymore."
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Marco+D&background=ff5c7c&color=ffffff&size=120&bold=true",
+            "author": "Marco D.",
+            "meta": "Verified buyer · 6 weeks ago",
+            "quote": "Steak dinners don't wreck me anymore."
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Linda+H&background=6b0a1f&color=ffffff&size=120&bold=true",
+            "author": "Linda H.",
+            "meta": "Verified buyer · 3 months ago",
+            "quote": "Acid reflux at night gone. Sleep restored."
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Bongi+M&background=c8163c&color=ffffff&size=120&bold=true",
+            "author": "Bongi M.",
+            "meta": "Verified buyer · 1 month ago",
+            "quote": "Real digestive relief — not just a placebo."
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "eyebrow": "★ Real Reviews",
+        "title": "Comfort after every meal"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Bloating and discomfort</strong> after heavier meals."
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Acid reflux</strong> and indigestion."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Gas and sluggish digestion</strong> ruining evenings."
+          }
+        },
+        "p4": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Generic digestive aids</strong> missing the full enzyme spectrum."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#c8163c",
+        "brand_tint": "#ffe8ec",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_162436_3ab12921-f4d6-4829-bf89-95c9e90172f5.png",
+        "tag_value": "4-in-1",
+        "tag_label": "Full-Spectrum Enzyme Blend",
+        "eyebrow": "The Problem",
+        "title_pre": "Your stomach",
+        "title_highlight": "needs better enzymes.",
+        "desc": "Modern diets are heavy on processed food, sugar, and animal protein — but your stomach didn't evolve for it. The result: bloating, reflux, gas, sluggish digestion. There's a smarter way to digest."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Papain + Bromelain</strong> — break down protein efficiently."
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Amylase + Lipase</strong> — digest carbs and fats."
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Ginger root extract</strong> — soothes stomach and reduces gas."
+          }
+        },
+        "s4": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>16-strain probiotic blend + MEP delivery</strong> — gut harmony."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#c8163c",
+        "brand_tint": "#ffe8ec",
+        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Digestive_Enzymes_Realistic_3D_Front_View.png?v=1775328666",
+        "tag_value": "Full Spectrum",
+        "tag_label": "Protein, Carb, Fat Digestion",
+        "eyebrow": "The Solution",
+        "title_pre": "Meet",
+        "title_highlight": "Velo16™ Digestive Enzymes Complex.",
+        "desc": "A full-spectrum enzyme blend (Papain, Bromelain, Amylase, Lipase) with ginger root and 16 probiotic strains. Velobiotics™ MEP delivery means enzymes survive stomach acid to work where they're needed — for comfort after every meal."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotic-digestive-capsules",
+            "brand": "Velo16™",
+            "rating": "4.7",
+            "reviews": "220+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-apple-cider",
+            "brand": "Velo16™",
+            "rating": "4.6",
+            "reviews": "170+"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-magnesium-glycinate",
+            "brand": "Velo16™",
+            "rating": "4.7",
+            "reviews": "190+"
+          }
+        },
+        "r4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-glp-1-booster",
+            "brand": "GutSlim™",
+            "rating": "4.8",
+            "reviews": "410+"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "tint": false,
+        "eyebrow": "Complete the Gut Stack",
+        "title": "More from the Velo16™ range",
+        "sub": "Stack Digestive Enzymes with the rest of your gut comfort essentials."
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "b1": {
+          "type": "feat",
+          "settings": {
+            "icon": "🍽️",
+            "name": "Full-Spectrum Digestion",
+            "desc": "Four enzymes covering protein, carbs, fats."
+          }
+        },
+        "b2": {
+          "type": "feat",
+          "settings": {
+            "icon": "💨",
+            "name": "Beat Bloating",
+            "desc": "Less gas, lighter abdomen after meals."
+          }
+        },
+        "b3": {
+          "type": "feat",
+          "settings": {
+            "icon": "🔥",
+            "name": "Reduce Acid Reflux",
+            "desc": "Better digestion = less acid rising."
+          }
+        },
+        "b4": {
+          "type": "feat",
+          "settings": {
+            "icon": "🌿",
+            "name": "Ginger Soothing",
+            "desc": "Calms stomach and supports motility."
+          }
+        },
+        "b5": {
+          "type": "feat",
+          "settings": {
+            "icon": "🩺",
+            "name": "Doctor Formulated",
+            "desc": "Built on clinical enzyme research."
+          }
+        },
+        "b6": {
+          "type": "feat",
+          "settings": {
+            "icon": "🌿",
+            "name": "100% Natural",
+            "desc": "Vegan, halaal-friendly, no fillers."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_tint": "#ffe8ec",
+        "eyebrow": "Key Benefits",
+        "title_pre": "Why",
+        "title_highlight": "Velo16™ Digestive Enzymes",
+        "sub": "Six reasons it has become the daily digestive ally of choice."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "💊",
+            "name": "Take One Capsule With Meals",
+            "desc": "Especially heavy or rich meals."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "🛡️",
+            "name": "MEP Armour Survives",
+            "desc": "Velobiotics™ shield protects enzymes through stomach acid."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "🎯",
+            "name": "Delivered to Your Gut",
+            "desc": "Enzymes + 1000× more probiotics reach you alive."
+          }
+        },
+        "h4": {
+          "type": "step",
+          "settings": {
+            "icon": "💨",
+            "name": "Comfort After Every Meal",
+            "desc": "No bloat, no reflux, no gas, no regret."
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_tint": "#ffe8ec",
+        "eyebrow": "How It Works",
+        "title_pre": "From Capsule to",
+        "title_highlight": "Comfort",
+        "sub": "Four simple steps. Eat what you love. Comfortably."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🥩",
+            "name": "Papain + Bromelain",
+            "amount": "100 mg + 50 mg",
+            "desc": "Protein-digesting enzymes from papaya and pineapple."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🍞",
+            "name": "Amylase + Lipase",
+            "amount": "150 mg + 50 mg",
+            "desc": "For carb and fat digestion."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🫚",
+            "name": "Ginger Root Extract",
+            "amount": "100 mg",
+            "desc": "Soothes stomach, supports motility."
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🦠",
+            "name": "16-Strain Probiotic Blend",
+            "amount": "10 Billion CFU",
+            "desc": "Strains for full gut + digestive synergy."
+          }
+        },
+        "i5": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🛡️",
+            "name": "Velobiotics™ MEP Coating",
+            "amount": "Patented",
+            "desc": "Supercritical CO₂ — enzymes reach gut alive."
+          }
+        },
+        "i6": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🚫",
+            "name": "Free From",
+            "amount": "Always",
+            "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "brand_light": "#ff5c7c",
+        "eyebrow": "What's Inside",
+        "title": "Every ingredient earns its place",
+        "sub": "Six clean actives. Full transparency.",
+        "facts_image_url": "",
+        "facts_label": "Supplement facts",
+        "facts_foot": "Lab-tested · Doctor-formulated"
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Less bloating after meals",
+            "percent": 93
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "Reduced acid reflux",
+            "percent": 86
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Less gas and discomfort",
+            "percent": 89
+          }
+        },
+        "c4": {
+          "type": "stat",
+          "settings": {
+            "label": "More food enjoyment",
+            "percent": 91
+          }
+        },
+        "c5": {
+          "type": "stat",
+          "settings": {
+            "label": "Would recommend to a friend",
+            "percent": 95
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "eyebrow": "Real results",
+        "title_pre": "Trusted for",
+        "title_highlight": "Meal-Time Comfort",
+        "sub": "What customers report after 2–4 weeks of daily Velo16™ Digestive Enzymes.",
+        "caveat": "Based on 180+ verified customers. Individual results may vary."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "f1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "her-biotics-original-capsules-60s",
+            "brand": "Her-Biotics™",
+            "rating": "4.7",
+            "reviews": "260+"
+          }
+        },
+        "f2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
+            "brand": "His-Biotics™",
+            "rating": "4.7",
+            "reviews": "210+"
+          }
+        },
+        "f3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-glp-1-booster",
+            "brand": "GutSlim™",
+            "rating": "4.8",
+            "reviews": "410+"
+          }
+        },
+        "f4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
+            "brand": "Femina™",
+            "rating": "4.8",
+            "reviews": "1300+"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "tint": true,
+        "eyebrow": "Frequently Bought Together",
+        "title": "Pair with the rest of your wellness stack",
+        "sub": "Velo16™ Digestive Enzymes stacks beautifully with these favourites."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
+            "name": "4-Enzyme Spectrum",
+            "desc": "Covers protein, carb, fat digestion."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
+            "name": "Doctor Formulated",
+            "desc": "Built on clinical enzyme research."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
+            "name": "Patented MEP Technology",
+            "desc": "Microencapsulation with Supercritical CO₂."
+          }
+        },
+        "d4": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
+            "name": "Clean Label",
+            "desc": "Vegan, halaal-friendly, no fillers."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3",
+        "d4"
+      ],
+      "settings": {
+        "eyebrow": "Trusted by Doctors. Proven by Science.",
+        "title_pre": "Quality you can",
+        "title_highlight": "trust.",
+        "sub": "Built on full-spectrum enzyme science and SAHPRA-aware manufacturing."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "4-Enzyme Spectrum",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "Ginger Soothing",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "16-Strain Probiotic Boost",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "Advanced Absorption (MEP)",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o5": {
+          "type": "row",
+          "settings": {
+            "feature": "Long-Term Gut Comfort",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "title": "Why We Outperform Others",
+        "sub": "Experience the full enzyme spectrum + ginger + 16-strain probiotic synergy.",
+        "col_features": "Features",
+        "col_brand": "Velo16™ Enzymes",
+        "col_b": "Generic Antacid",
+        "col_c": "Others",
+        "cta_text": "Add to Cart",
+        "cta_note": "30-day money-back · Free shipping over the threshold"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Real Reviews",
+        "title_pre": "What Customers",
+        "title_highlight": "Are Saying",
+        "sub": "Verified reviews. Judge.me widget populates on go-live.",
+        "rating": "4.7",
+        "reviews_count": "180+",
+        "customers_count": "26K+"
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "When should I take it?",
+            "answer": "<p>With or just before meals — especially heavier ones. The enzymes go to work as food enters your stomach.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "Is it safe to take every meal?",
+            "answer": "<p>Yes — designed for daily use. Most customers take it before lunch and dinner.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "Will this replace my acid blocker?",
+            "answer": "<p>Many customers reduce their reflux meds over time. Always check with your doctor before stopping prescriptions.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Does this help with lactose intolerance?",
+            "answer": "<p>It includes lipase which helps fat digestion. For specific lactose issues, look for a lactase enzyme — different category.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Do you ship internationally?",
+            "answer": "<p>Yes. 5–14 working days. Free shipping over the threshold.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "What if it doesn't work?",
+            "answer": "<p>30-day money-back, no questions asked.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "title_pre": "Questions Before",
+        "title_highlight": "You Start"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "✅",
+            "text": "30-day money-back"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "🚚",
+            "text": "Ships worldwide"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "🍽️",
+            "text": "Comfort guaranteed"
+          }
+        },
+        "g4": {
+          "type": "g",
+          "settings": {
+            "icon": "🔬",
+            "text": "Lab-tested"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_light": "#ff5c7c",
+        "badge": "30-day money-back guarantee",
+        "title_pre": "Eat. Enjoy. Digest.",
+        "title_highlight": "Risk-Free for 30 Days",
+        "sub": "Join the 26,000+ people who beat bloat after every meal with Velo16™ Digestive Enzymes. If you don't feel the difference, we'll refund every cent.",
+        "cta_text": "Add to Cart",
+        "cta_link": "#vbpForm"
+      }
+    }
   },
-  "order": ["hero","reviews-carousel","problem","solution","related","benefits","how","ingredients","confidence","fbt","doctors","outperform","judgeme","faq","final"]
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "judgeme",
+    "faq",
+    "final"
+  ]
 }

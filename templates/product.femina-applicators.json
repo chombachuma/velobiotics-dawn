@@ -88,8 +88,6 @@
         "review_count": "120+",
         "hook": "Insertion, made effortless. Femina™ Suppository Applicators are medical-grade silicone applicators designed for Cookie Fresh suppositories — hygienic, comfortable, reusable.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
-        "show_subscription": false,
-        "show_qty_discounts": true,
         "show_buynow": true,
         "show_testi_marquee": true
       }
@@ -101,45 +99,45 @@
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Nomvula+M&background=8d2a89&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Cookie Fresh is so much easier with these. Wish I'd bought them sooner.",
             "author": "Nomvula M.",
-            "meta": "Verified buyer · Johannesburg"
+            "meta": "Verified buyer · Johannesburg",
+            "quote": "Cookie Fresh is so much easier with these. Wish I'd bought them sooner."
           }
         },
         "r2": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Sarah+L&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Game-changer for self-care. Quick and clean.",
             "author": "Sarah L.",
-            "meta": "Verified buyer · Cape Town"
+            "meta": "Verified buyer · Cape Town",
+            "quote": "Game-changer for self-care. Quick and clean."
           }
         },
         "r3": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Tumi+K&background=6b1f68&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Mess-free and hygienic. Wash, store, reuse.",
             "author": "Tumi K.",
-            "meta": "Verified buyer · 2 months ago"
+            "meta": "Verified buyer · 2 months ago",
+            "quote": "Mess-free and hygienic. Wash, store, reuse."
           }
         },
         "r4": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Caroline+B&background=8d2a89&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Reusable, sustainable. Smart product.",
             "author": "Caroline B.",
-            "meta": "Verified buyer · 1 month ago"
+            "meta": "Verified buyer · 1 month ago",
+            "quote": "Reusable, sustainable. Smart product."
           }
         },
         "r5": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Yasmin+B&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Two applicators means one can dry while I use the other.",
             "author": "Yasmin B.",
-            "meta": "Verified buyer · Pretoria"
+            "meta": "Verified buyer · Pretoria",
+            "quote": "Two applicators means one can dry while I use the other."
           }
         }
       },
@@ -200,7 +198,7 @@
         "reverse": false,
         "brand_primary": "#8d2a89",
         "brand_tint": "#fdf5fc",
-        "image_url": "",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_162443_31577670-7ba8-41ba-9623-bf6b187dd486.png",
         "tag_value": "2-Pack",
         "tag_label": "One To Use, One Drying",
         "eyebrow": "The Problem",
@@ -504,8 +502,8 @@
       ],
       "settings": {
         "brand_primary": "#8d2a89",
-        "brand_tint": "#fdf5fc",
         "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
         "brand_light": "#b94db4",
         "eyebrow": "What's Inside",
         "title": "Quality you can trust",

@@ -88,8 +88,6 @@
         "review_count": "180+",
         "hook": "Know your body. The Femina pH Self-Test Kit lets you check your vaginal pH at home in seconds — distinguish BV from yeast from healthy balance, and choose the right treatment with confidence.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
-        "show_subscription": false,
-        "show_qty_discounts": true,
         "show_buynow": true,
         "show_testi_marquee": true
       }
@@ -101,45 +99,45 @@
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Naseema+P&background=8d2a89&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Cleared up confusion in minutes. I finally knew what to do.",
             "author": "Naseema P.",
-            "meta": "Verified buyer · Pretoria"
+            "meta": "Verified buyer · Pretoria",
+            "quote": "Cleared up confusion in minutes. I finally knew what to do."
           }
         },
         "r2": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Lerato+K&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Finally I know what I'm dealing with — yeast, not BV. Choosing the right product matters.",
             "author": "Lerato K.",
-            "meta": "Verified buyer · 1 month ago"
+            "meta": "Verified buyer · 1 month ago",
+            "quote": "Finally I know what I'm dealing with — yeast, not BV. Choosing the right product matters."
           }
         },
         "r3": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Wendy+V&background=6b1f68&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Saved me a doctor visit. Discreet and accurate.",
             "author": "Wendy V.",
-            "meta": "Verified buyer · Cape Town"
+            "meta": "Verified buyer · Cape Town",
+            "quote": "Saved me a doctor visit. Discreet and accurate."
           }
         },
         "r4": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Carla+M&background=8d2a89&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Easy to use. Test, read result, done.",
             "author": "Carla M.",
-            "meta": "Verified buyer · Johannesburg"
+            "meta": "Verified buyer · Johannesburg",
+            "quote": "Easy to use. Test, read result, done."
           }
         },
         "r5": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Bongi+S&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Every woman should have this. Knowledge = control.",
             "author": "Bongi S.",
-            "meta": "Verified buyer · 2 months ago"
+            "meta": "Verified buyer · 2 months ago",
+            "quote": "Every woman should have this. Knowledge = control."
           }
         }
       },
@@ -200,7 +198,7 @@
         "reverse": false,
         "brand_primary": "#8d2a89",
         "brand_tint": "#fdf5fc",
-        "image_url": "",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_162441_ade38cc2-3ff8-406d-a7a8-3f22a89a3f9f.png",
         "tag_value": "60+",
         "tag_label": "Seconds to a Clear Answer",
         "eyebrow": "The Problem",
@@ -504,8 +502,8 @@
       ],
       "settings": {
         "brand_primary": "#8d2a89",
-        "brand_tint": "#fdf5fc",
         "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
         "brand_light": "#b94db4",
         "eyebrow": "What's In The Kit",
         "title": "Everything you need to know",

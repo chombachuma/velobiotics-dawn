@@ -9,21 +9,870 @@
  */
 {
   "sections": {
-    "hero": { "type": "vb-product-hero", "blocks": { "b1": { "type": "benefit", "settings": { "icon": "🛡️", "text": "15 mg Zinc Picolinate" } }, "b2": { "type": "benefit", "settings": { "icon": "✨", "text": "Skin & immune support" } }, "b3": { "type": "benefit", "settings": { "icon": "💪", "text": "Testosterone support" } }, "b4": { "type": "benefit", "settings": { "icon": "⚡", "text": "1000× more delivery" } }, "t1": { "type": "testi", "settings": { "quote": "Cold-free winter, finally", "author": "Themba M." } }, "t2": { "type": "testi", "settings": { "quote": "Acne calmed within 4 weeks", "author": "Kim F." } }, "t3": { "type": "testi", "settings": { "quote": "Better recovery from gym", "author": "Marco D." } }, "t4": { "type": "testi", "settings": { "quote": "Hair growing back stronger", "author": "Sarah B." } } }, "block_order": ["b1","b2","b3","b4","t1","t2","t3","t4"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "brand_label": "Velo16™ · Zinc", "rating": "4.6", "review_count": "200+", "hook": "The mineral your immune system runs on. Velo16™ Probiotics Zinc Picolinate delivers 15 mg of the most-absorbed zinc form + 16 probiotic strains — for stronger immunity, clearer skin, and testosterone support.", "ship_note": "Ships worldwide · Free shipping over the threshold · 30-day money-back guarantee", "show_subscription": true, "show_qty_discounts": true, "show_buynow": true, "show_testi_marquee": true } },
-    "reviews-carousel": { "type": "vb-product-reviews-carousel", "blocks": { "r1": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Themba+M&background=c8163c&color=ffffff&size=120&bold=true", "quote": "First winter in 5 years without a cold. Whatever this is, it works.", "author": "Themba M.", "meta": "Verified buyer · 5 months ago" } }, "r2": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Kim+F&background=ff5c7c&color=ffffff&size=120&bold=true", "quote": "Hormonal acne calmed within 4 weeks. Skin clearer than in years.", "author": "Kim F.", "meta": "Verified buyer · 1 month ago" } }, "r3": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Marco+D&background=6b0a1f&color=ffffff&size=120&bold=true", "quote": "Lift heavier, recover faster. Zinc was the missing piece.", "author": "Marco D.", "meta": "Verified buyer · 2 months ago" } }, "r4": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Sarah+B&background=c8163c&color=ffffff&size=120&bold=true", "quote": "Hair growing back thicker after months of shedding.", "author": "Sarah B.", "meta": "Verified buyer · 3 months ago" } } }, "block_order": ["r1","r2","r3","r4"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "eyebrow": "★ Real Reviews", "title": "Stronger immunity, clearer skin" } },
-    "problem": { "type": "vb-product-story", "blocks": { "p1": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Catching every cold</strong> — weak immune defence." } }, "p2": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Persistent acne</strong> and unhealed wounds." } }, "p3": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Slow recovery</strong> after training or stress." } }, "p4": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Generic zinc tablets</strong> with poor absorption forms." } } }, "block_order": ["p1","p2","p3","p4"], "settings": { "reverse": false, "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "image_url": "", "tag_value": "60%", "tag_label": "Of Adults Have Suboptimal Zinc", "eyebrow": "The Problem", "title_pre": "Zinc deficiency", "title_highlight": "is hiding in plain sight.", "desc": "Modern diets and stress chronically deplete zinc. The result: weaker immunity, persistent acne, slow wound healing, and (in men) lower testosterone. Cheap zinc oxide barely absorbs. There's a smarter form." } },
-    "solution": { "type": "vb-product-story", "blocks": { "s1": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Zinc Picolinate</strong> — the most bioavailable form of zinc." } }, "s2": { "type": "point", "settings": { "icon": "✓", "text": "<strong>16-strain probiotic blend</strong> for gut + immunity." } }, "s3": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive." } }, "s4": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Once-daily</strong>. Doctor-formulated. Lab-tested every batch." } } }, "block_order": ["s1","s2","s3","s4"], "settings": { "reverse": true, "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "image_url": "", "tag_value": "15mg", "tag_label": "Most Bioavailable Form", "eyebrow": "The Solution", "title_pre": "Meet", "title_highlight": "Velo16™ Probiotics Zinc.", "desc": "A once-daily capsule combining picolinate zinc — the most bioavailable form clinically studied — with 16 probiotic strains. Velobiotics™ MEP delivery means stronger immunity, clearer skin, faster recovery, and better testosterone support." } },
-    "related": { "type": "vb-product-related", "blocks": { "r1": { "type": "product", "settings": { "product_handle": "velo16-probiotics-vitamin-c", "brand": "Velo16™", "rating": "4.7", "reviews": "320+" } }, "r2": { "type": "product", "settings": { "product_handle": "velo16-probiotics-vitamin-d3", "brand": "Velo16™", "rating": "4.8", "reviews": "280+" } }, "r3": { "type": "product", "settings": { "product_handle": "velo16-probiotics-iron", "brand": "Velo16™", "rating": "4.7", "reviews": "240+" } }, "r4": { "type": "product", "settings": { "product_handle": "velo16-probiotics-magnesium-glycinate", "brand": "Velo16™", "rating": "4.7", "reviews": "190+" } } }, "block_order": ["r1","r2","r3","r4"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "tint": false, "eyebrow": "Complete the Immune Stack", "title": "More from the Velo16™ range", "sub": "Stack Zinc with the rest of your daily immune-and-recovery essentials." } },
-    "benefits": { "type": "vb-product-benefits", "blocks": { "b1": { "type": "feat", "settings": { "icon": "🛡️", "name": "Stronger Immunity", "desc": "Zinc is essential for T-cell function and immune response." } }, "b2": { "type": "feat", "settings": { "icon": "✨", "name": "Clearer Skin", "desc": "Zinc regulates sebum and supports wound healing." } }, "b3": { "type": "feat", "settings": { "icon": "💪", "name": "Testosterone Support", "desc": "Critical mineral for male hormone production." } }, "b4": { "type": "feat", "settings": { "icon": "🌱", "name": "Hair Growth", "desc": "Zinc supports hair follicle function and growth." } }, "b5": { "type": "feat", "settings": { "icon": "🩺", "name": "Doctor Formulated", "desc": "Built on the most bioavailable picolinate form." } }, "b6": { "type": "feat", "settings": { "icon": "🌿", "name": "100% Natural", "desc": "Vegan, halaal-friendly, no fillers." } } }, "block_order": ["b1","b2","b3","b4","b5","b6"], "settings": { "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "eyebrow": "Key Benefits", "title_pre": "Why", "title_highlight": "Velo16™ Zinc", "sub": "Six reasons it has become the daily zinc of choice." } },
-    "how": { "type": "vb-product-how", "blocks": { "h1": { "type": "step", "settings": { "icon": "💊", "name": "Take One Capsule Daily", "desc": "With water, after a meal. That's it." } }, "h2": { "type": "step", "settings": { "icon": "🛡️", "name": "MEP Armour Survives", "desc": "Velobiotics™ shield protects zinc + probiotics." } }, "h3": { "type": "step", "settings": { "icon": "🎯", "name": "Delivered to Your Cells", "desc": "Picolinate zinc + 1000× more probiotics reach you alive." } }, "h4": { "type": "step", "settings": { "icon": "🛡️", "name": "Defence & Repair", "desc": "Stronger immunity, clearer skin, faster recovery." } } }, "block_order": ["h1","h2","h3","h4"], "settings": { "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "eyebrow": "How It Works", "title_pre": "From Capsule to", "title_highlight": "Resilience", "sub": "Four simple steps. One daily ritual. Total immune defence." } },
-    "ingredients": { "type": "vb-product-ingredients", "blocks": { "i1": { "type": "ingredient", "settings": { "icon": "🛡️", "name": "Zinc Picolinate", "amount": "15 mg", "desc": "The most-absorbed form of zinc — clinical-grade bioavailability." } }, "i2": { "type": "ingredient", "settings": { "icon": "🦠", "name": "16-Strain Probiotic Blend", "amount": "10 Billion CFU", "desc": "Strains for gut + immunity synergy." } }, "i3": { "type": "ingredient", "settings": { "icon": "🛡️", "name": "Velobiotics™ MEP Coating", "amount": "Patented", "desc": "Supercritical CO₂ — 1000× more zinc reaches you alive." } }, "i4": { "type": "ingredient", "settings": { "icon": "🌾", "name": "Prebiotic Fibre", "amount": "Inulin", "desc": "Feeds your good bacteria so they thrive long-term." } }, "i5": { "type": "ingredient", "settings": { "icon": "✓", "name": "Clean Capsule Shell", "amount": "Vegan HPMC", "desc": "No gelatin, halaal-friendly." } }, "i6": { "type": "ingredient", "settings": { "icon": "🚫", "name": "Free From", "amount": "Always", "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO." } } }, "block_order": ["i1","i2","i3","i4","i5","i6"], "settings": { "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "brand_dark": "#6b0a1f", "brand_light": "#ff5c7c", "eyebrow": "What's Inside", "title": "Every ingredient earns its place", "sub": "Six clean actives. Full transparency.", "facts_image_url": "", "facts_label": "Supplement facts", "facts_foot": "Lab-tested · Doctor-formulated" } },
-    "confidence": { "type": "vb-product-confidence", "blocks": { "c1": { "type": "stat", "settings": { "label": "Stronger immune defence", "percent": 91 } }, "c2": { "type": "stat", "settings": { "label": "Clearer skin", "percent": 84 } }, "c3": { "type": "stat", "settings": { "label": "Faster recovery", "percent": 86 } }, "c4": { "type": "stat", "settings": { "label": "Less seasonal sickness", "percent": 89 } }, "c5": { "type": "stat", "settings": { "label": "Would recommend to a friend", "percent": 94 } } }, "block_order": ["c1","c2","c3","c4","c5"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "eyebrow": "Real results", "title_pre": "Trusted for", "title_highlight": "Immunity & Skin", "sub": "What customers report after 4–6 weeks of daily Velo16™ Zinc.", "caveat": "Based on 200+ verified customers. Individual results may vary." } },
-    "fbt": { "type": "vb-product-related", "blocks": { "f1": { "type": "product", "settings": { "product_handle": "her-biotics-original-capsules-60s", "brand": "Her-Biotics™", "rating": "4.7", "reviews": "260+" } }, "f2": { "type": "product", "settings": { "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s", "brand": "His-Biotics™", "rating": "4.7", "reviews": "210+" } }, "f3": { "type": "product", "settings": { "product_handle": "almasi-probiotics-skin-hair-nails-60s", "brand": "Almasi™", "rating": "4.9", "reviews": "180+" } }, "f4": { "type": "product", "settings": { "product_handle": "gutslim-probiotics-glp-1-booster", "brand": "GutSlim™", "rating": "4.8", "reviews": "410+" } } }, "block_order": ["f1","f2","f3","f4"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "tint": true, "eyebrow": "Frequently Bought Together", "title": "Pair with the rest of your wellness stack", "sub": "Velo16™ Zinc stacks beautifully with these Velobiotics favourites." } },
-    "doctors": { "type": "vb-doctors", "blocks": { "d1": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966", "name": "Picolinate Form", "desc": "Most bioavailable zinc form available." } }, "d2": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966", "name": "Doctor Formulated", "desc": "Built on clinically-validated dosing." } }, "d3": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073", "name": "Patented MEP Technology", "desc": "Microencapsulation with Supercritical CO₂." } }, "d4": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199", "name": "Clean Label", "desc": "Vegan, halaal-friendly, no fillers." } } }, "block_order": ["d1","d2","d3","d4"], "settings": { "eyebrow": "Trusted by Doctors. Proven by Science.", "title_pre": "Quality you can", "title_highlight": "trust.", "sub": "Built on the most bioavailable zinc form and SAHPRA-aware manufacturing." } },
-    "outperform": { "type": "vb-product-outperform", "blocks": { "o1": { "type": "row", "settings": { "feature": "Picolinate Form (Most Absorbed)", "brand_state": "yes", "b_state": "no", "c_state": "no" } }, "o2": { "type": "row", "settings": { "feature": "Advanced Absorption (MEP)", "brand_state": "yes", "b_state": "no", "c_state": "no" } }, "o3": { "type": "row", "settings": { "feature": "16-Strain Probiotic Boost", "brand_state": "yes", "b_state": "no", "c_state": "no" } }, "o4": { "type": "row", "settings": { "feature": "Daily Simplicity", "brand_state": "yes", "b_state": "no", "c_state": "no" } }, "o5": { "type": "row", "settings": { "feature": "Long-Term Immune Resilience", "brand_state": "yes", "b_state": "no", "c_state": "no" } } }, "block_order": ["o1","o2","o3","o4","o5"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "title": "Why We Outperform Others", "sub": "Experience the most-absorbed zinc form with advanced delivery and 16-strain immune synergy.", "col_features": "Features", "col_brand": "Velo16™ Zinc", "col_b": "Generic Zinc", "col_c": "Others", "cta_text": "Add to Cart", "cta_note": "30-day money-back · Free shipping over the threshold" } },
-    "judgeme": { "type": "vb-judgeme", "settings": { "eyebrow": "Real Reviews", "title_pre": "What Customers", "title_highlight": "Are Saying", "sub": "Verified reviews. Judge.me widget populates on go-live.", "rating": "4.6", "reviews_count": "200+", "customers_count": "28K+" } },
-    "faq": { "type": "vb-faq", "blocks": { "q1": { "type": "q", "settings": { "question": "Why picolinate over zinc gluconate?", "answer": "<p>Zinc picolinate has the highest bioavailability of any common zinc form. Studies show it raises blood zinc levels significantly faster than gluconate or oxide.</p>" } }, "q2": { "type": "q", "settings": { "question": "Will this help my acne?", "answer": "<p>Many customers see clearer skin within 4–6 weeks. Zinc regulates sebum production and supports wound healing.</p>" } }, "q3": { "type": "q", "settings": { "question": "Is Velo16™ Zinc safe daily?", "answer": "<p>Yes. 15 mg is the daily recommended intake. Don't exceed 40 mg/day without medical supervision.</p>" } }, "q4": { "type": "q", "settings": { "question": "Will it interact with my copper levels?", "answer": "<p>Long-term high-dose zinc can affect copper absorption. 15 mg daily is safe and won't deplete copper.</p>" } }, "q5": { "type": "q", "settings": { "question": "Do you ship internationally?", "answer": "<p>Yes. 5–14 working days. Free shipping over the threshold.</p>" } }, "q6": { "type": "q", "settings": { "question": "What if it doesn't work?", "answer": "<p>30-day money-back, no questions asked.</p>" } } }, "block_order": ["q1","q2","q3","q4","q5","q6"], "settings": { "eyebrow": "FAQ", "title_pre": "Questions Before", "title_highlight": "You Start" } },
-    "final": { "type": "vb-product-final", "blocks": { "g1": { "type": "g", "settings": { "icon": "✅", "text": "30-day money-back" } }, "g2": { "type": "g", "settings": { "icon": "🚚", "text": "Ships worldwide" } }, "g3": { "type": "g", "settings": { "icon": "🔬", "text": "Picolinate form" } }, "g4": { "type": "g", "settings": { "icon": "🛡️", "text": "Immune defence" } } }, "block_order": ["g1","g2","g3","g4"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_light": "#ff5c7c", "badge": "30-day money-back guarantee", "title_pre": "Defend Your Day", "title_highlight": "Risk-Free for 30 Days", "sub": "Join the 28,000+ people who count on Velo16™ Zinc for daily immune defence. If you don't feel the difference, we'll refund every cent.", "cta_text": "Add to Cart", "cta_link": "#vbpForm" } }
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🛡️",
+            "text": "15 mg Zinc Picolinate"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "✨",
+            "text": "Skin & immune support"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "💪",
+            "text": "Testosterone support"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "⚡",
+            "text": "1000× more delivery"
+          }
+        },
+        "t1": {
+          "type": "testi",
+          "settings": {
+            "quote": "Cold-free winter, finally",
+            "author": "Themba M."
+          }
+        },
+        "t2": {
+          "type": "testi",
+          "settings": {
+            "quote": "Acne calmed within 4 weeks",
+            "author": "Kim F."
+          }
+        },
+        "t3": {
+          "type": "testi",
+          "settings": {
+            "quote": "Better recovery from gym",
+            "author": "Marco D."
+          }
+        },
+        "t4": {
+          "type": "testi",
+          "settings": {
+            "quote": "Hair growing back stronger",
+            "author": "Sarah B."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "brand_label": "Velo16™ · Zinc",
+        "rating": "4.6",
+        "review_count": "200+",
+        "hook": "The mineral your immune system runs on. Velo16™ Probiotics Zinc Picolinate delivers 15 mg of the most-absorbed zinc form + 16 probiotic strains — for stronger immunity, clearer skin, and testosterone support.",
+        "ship_note": "Ships worldwide · Free shipping over the threshold · 30-day money-back guarantee",
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
+    },
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Themba+M&background=c8163c&color=ffffff&size=120&bold=true",
+            "author": "Themba M.",
+            "meta": "Verified buyer · 5 months ago",
+            "quote": "First winter in 5 years without a cold. Whatever this is, it works."
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Kim+F&background=ff5c7c&color=ffffff&size=120&bold=true",
+            "author": "Kim F.",
+            "meta": "Verified buyer · 1 month ago",
+            "quote": "Hormonal acne calmed within 4 weeks. Skin clearer than in years."
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Marco+D&background=6b0a1f&color=ffffff&size=120&bold=true",
+            "author": "Marco D.",
+            "meta": "Verified buyer · 2 months ago",
+            "quote": "Lift heavier, recover faster. Zinc was the missing piece."
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Sarah+B&background=c8163c&color=ffffff&size=120&bold=true",
+            "author": "Sarah B.",
+            "meta": "Verified buyer · 3 months ago",
+            "quote": "Hair growing back thicker after months of shedding."
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "eyebrow": "★ Real Reviews",
+        "title": "Stronger immunity, clearer skin"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Catching every cold</strong> — weak immune defence."
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Persistent acne</strong> and unhealed wounds."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Slow recovery</strong> after training or stress."
+          }
+        },
+        "p4": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Generic zinc tablets</strong> with poor absorption forms."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#c8163c",
+        "brand_tint": "#ffe8ec",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_111721_9f4dcf13-5c69-4189-8b1e-02e9facc5ec7.png",
+        "tag_value": "60%",
+        "tag_label": "Of Adults Have Suboptimal Zinc",
+        "eyebrow": "The Problem",
+        "title_pre": "Zinc deficiency",
+        "title_highlight": "is hiding in plain sight.",
+        "desc": "Modern diets and stress chronically deplete zinc. The result: weaker immunity, persistent acne, slow wound healing, and (in men) lower testosterone. Cheap zinc oxide barely absorbs. There's a smarter form."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Zinc Picolinate</strong> — the most bioavailable form of zinc."
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>16-strain probiotic blend</strong> for gut + immunity."
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
+          }
+        },
+        "s4": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Once-daily</strong>. Doctor-formulated. Lab-tested every batch."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#c8163c",
+        "brand_tint": "#ffe8ec",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_111721_9f4dcf13-5c69-4189-8b1e-02e9facc5ec7.png",
+        "tag_value": "15mg",
+        "tag_label": "Most Bioavailable Form",
+        "eyebrow": "The Solution",
+        "title_pre": "Meet",
+        "title_highlight": "Velo16™ Probiotics Zinc.",
+        "desc": "A once-daily capsule combining picolinate zinc — the most bioavailable form clinically studied — with 16 probiotic strains. Velobiotics™ MEP delivery means stronger immunity, clearer skin, faster recovery, and better testosterone support."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-vitamin-c",
+            "brand": "Velo16™",
+            "rating": "4.7",
+            "reviews": "320+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-vitamin-d3",
+            "brand": "Velo16™",
+            "rating": "4.8",
+            "reviews": "280+"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-iron",
+            "brand": "Velo16™",
+            "rating": "4.7",
+            "reviews": "240+"
+          }
+        },
+        "r4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-magnesium-glycinate",
+            "brand": "Velo16™",
+            "rating": "4.7",
+            "reviews": "190+"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "tint": false,
+        "eyebrow": "Complete the Immune Stack",
+        "title": "More from the Velo16™ range",
+        "sub": "Stack Zinc with the rest of your daily immune-and-recovery essentials."
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "b1": {
+          "type": "feat",
+          "settings": {
+            "icon": "🛡️",
+            "name": "Stronger Immunity",
+            "desc": "Zinc is essential for T-cell function and immune response."
+          }
+        },
+        "b2": {
+          "type": "feat",
+          "settings": {
+            "icon": "✨",
+            "name": "Clearer Skin",
+            "desc": "Zinc regulates sebum and supports wound healing."
+          }
+        },
+        "b3": {
+          "type": "feat",
+          "settings": {
+            "icon": "💪",
+            "name": "Testosterone Support",
+            "desc": "Critical mineral for male hormone production."
+          }
+        },
+        "b4": {
+          "type": "feat",
+          "settings": {
+            "icon": "🌱",
+            "name": "Hair Growth",
+            "desc": "Zinc supports hair follicle function and growth."
+          }
+        },
+        "b5": {
+          "type": "feat",
+          "settings": {
+            "icon": "🩺",
+            "name": "Doctor Formulated",
+            "desc": "Built on the most bioavailable picolinate form."
+          }
+        },
+        "b6": {
+          "type": "feat",
+          "settings": {
+            "icon": "🌿",
+            "name": "100% Natural",
+            "desc": "Vegan, halaal-friendly, no fillers."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_tint": "#ffe8ec",
+        "eyebrow": "Key Benefits",
+        "title_pre": "Why",
+        "title_highlight": "Velo16™ Zinc",
+        "sub": "Six reasons it has become the daily zinc of choice."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "💊",
+            "name": "Take One Capsule Daily",
+            "desc": "With water, after a meal. That's it."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "🛡️",
+            "name": "MEP Armour Survives",
+            "desc": "Velobiotics™ shield protects zinc + probiotics."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "🎯",
+            "name": "Delivered to Your Cells",
+            "desc": "Picolinate zinc + 1000× more probiotics reach you alive."
+          }
+        },
+        "h4": {
+          "type": "step",
+          "settings": {
+            "icon": "🛡️",
+            "name": "Defence & Repair",
+            "desc": "Stronger immunity, clearer skin, faster recovery."
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_tint": "#ffe8ec",
+        "eyebrow": "How It Works",
+        "title_pre": "From Capsule to",
+        "title_highlight": "Resilience",
+        "sub": "Four simple steps. One daily ritual. Total immune defence."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🛡️",
+            "name": "Zinc Picolinate",
+            "amount": "15 mg",
+            "desc": "The most-absorbed form of zinc — clinical-grade bioavailability."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🦠",
+            "name": "16-Strain Probiotic Blend",
+            "amount": "10 Billion CFU",
+            "desc": "Strains for gut + immunity synergy."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🛡️",
+            "name": "Velobiotics™ MEP Coating",
+            "amount": "Patented",
+            "desc": "Supercritical CO₂ — 1000× more zinc reaches you alive."
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🌾",
+            "name": "Prebiotic Fibre",
+            "amount": "Inulin",
+            "desc": "Feeds your good bacteria so they thrive long-term."
+          }
+        },
+        "i5": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "✓",
+            "name": "Clean Capsule Shell",
+            "amount": "Vegan HPMC",
+            "desc": "No gelatin, halaal-friendly."
+          }
+        },
+        "i6": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🚫",
+            "name": "Free From",
+            "amount": "Always",
+            "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "brand_light": "#ff5c7c",
+        "eyebrow": "What's Inside",
+        "title": "Every ingredient earns its place",
+        "sub": "Six clean actives. Full transparency.",
+        "facts_image_url": "",
+        "facts_label": "Supplement facts",
+        "facts_foot": "Lab-tested · Doctor-formulated"
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Stronger immune defence",
+            "percent": 91
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "Clearer skin",
+            "percent": 84
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Faster recovery",
+            "percent": 86
+          }
+        },
+        "c4": {
+          "type": "stat",
+          "settings": {
+            "label": "Less seasonal sickness",
+            "percent": 89
+          }
+        },
+        "c5": {
+          "type": "stat",
+          "settings": {
+            "label": "Would recommend to a friend",
+            "percent": 94
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "eyebrow": "Real results",
+        "title_pre": "Trusted for",
+        "title_highlight": "Immunity & Skin",
+        "sub": "What customers report after 4–6 weeks of daily Velo16™ Zinc.",
+        "caveat": "Based on 200+ verified customers. Individual results may vary."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "f1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "her-biotics-original-capsules-60s",
+            "brand": "Her-Biotics™",
+            "rating": "4.7",
+            "reviews": "260+"
+          }
+        },
+        "f2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
+            "brand": "His-Biotics™",
+            "rating": "4.7",
+            "reviews": "210+"
+          }
+        },
+        "f3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "almasi-probiotics-skin-hair-nails-60s",
+            "brand": "Almasi™",
+            "rating": "4.9",
+            "reviews": "180+"
+          }
+        },
+        "f4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-glp-1-booster",
+            "brand": "GutSlim™",
+            "rating": "4.8",
+            "reviews": "410+"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "tint": true,
+        "eyebrow": "Frequently Bought Together",
+        "title": "Pair with the rest of your wellness stack",
+        "sub": "Velo16™ Zinc stacks beautifully with these Velobiotics favourites."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
+            "name": "Picolinate Form",
+            "desc": "Most bioavailable zinc form available."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
+            "name": "Doctor Formulated",
+            "desc": "Built on clinically-validated dosing."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
+            "name": "Patented MEP Technology",
+            "desc": "Microencapsulation with Supercritical CO₂."
+          }
+        },
+        "d4": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
+            "name": "Clean Label",
+            "desc": "Vegan, halaal-friendly, no fillers."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3",
+        "d4"
+      ],
+      "settings": {
+        "eyebrow": "Trusted by Doctors. Proven by Science.",
+        "title_pre": "Quality you can",
+        "title_highlight": "trust.",
+        "sub": "Built on the most bioavailable zinc form and SAHPRA-aware manufacturing."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "Picolinate Form (Most Absorbed)",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "Advanced Absorption (MEP)",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "16-Strain Probiotic Boost",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "Daily Simplicity",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o5": {
+          "type": "row",
+          "settings": {
+            "feature": "Long-Term Immune Resilience",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "title": "Why We Outperform Others",
+        "sub": "Experience the most-absorbed zinc form with advanced delivery and 16-strain immune synergy.",
+        "col_features": "Features",
+        "col_brand": "Velo16™ Zinc",
+        "col_b": "Generic Zinc",
+        "col_c": "Others",
+        "cta_text": "Add to Cart",
+        "cta_note": "30-day money-back · Free shipping over the threshold"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Real Reviews",
+        "title_pre": "What Customers",
+        "title_highlight": "Are Saying",
+        "sub": "Verified reviews. Judge.me widget populates on go-live.",
+        "rating": "4.6",
+        "reviews_count": "200+",
+        "customers_count": "28K+"
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "Why picolinate over zinc gluconate?",
+            "answer": "<p>Zinc picolinate has the highest bioavailability of any common zinc form. Studies show it raises blood zinc levels significantly faster than gluconate or oxide.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "Will this help my acne?",
+            "answer": "<p>Many customers see clearer skin within 4–6 weeks. Zinc regulates sebum production and supports wound healing.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "Is Velo16™ Zinc safe daily?",
+            "answer": "<p>Yes. 15 mg is the daily recommended intake. Don't exceed 40 mg/day without medical supervision.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Will it interact with my copper levels?",
+            "answer": "<p>Long-term high-dose zinc can affect copper absorption. 15 mg daily is safe and won't deplete copper.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Do you ship internationally?",
+            "answer": "<p>Yes. 5–14 working days. Free shipping over the threshold.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "What if it doesn't work?",
+            "answer": "<p>30-day money-back, no questions asked.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "title_pre": "Questions Before",
+        "title_highlight": "You Start"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "✅",
+            "text": "30-day money-back"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "🚚",
+            "text": "Ships worldwide"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "🔬",
+            "text": "Picolinate form"
+          }
+        },
+        "g4": {
+          "type": "g",
+          "settings": {
+            "icon": "🛡️",
+            "text": "Immune defence"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_light": "#ff5c7c",
+        "badge": "30-day money-back guarantee",
+        "title_pre": "Defend Your Day",
+        "title_highlight": "Risk-Free for 30 Days",
+        "sub": "Join the 28,000+ people who count on Velo16™ Zinc for daily immune defence. If you don't feel the difference, we'll refund every cent.",
+        "cta_text": "Add to Cart",
+        "cta_link": "#vbpForm"
+      }
+    }
   },
-  "order": ["hero","reviews-carousel","problem","solution","related","benefits","how","ingredients","confidence","fbt","doctors","outperform","judgeme","faq","final"]
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "judgeme",
+    "faq",
+    "final"
+  ]
 }

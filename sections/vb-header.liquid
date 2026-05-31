@@ -279,7 +279,12 @@
   "settings": [
     { "type": "image_picker", "id": "logo",              "label": "Logo" },
     { "type": "checkbox",     "id": "show_announcement", "label": "Show announcement bar", "default": true },
-    { "type": "text",         "id": "announcement_text", "label": "Announcement text",     "default": "FRIDAY FLASH SALE – UP TO 25% OFF EVERYTHING BETWEEN 10:00 AM – 4:00 PM (AT CHECKOUT)" }
+    { "type": "header",       "content": "Announcement messages (rotates ticker)" },
+    { "type": "text",         "id": "announcement_msg1", "label": "Message 1 (🚚)",       "default": "Free Shipping over R500 (SA) / $30 (US)" },
+    { "type": "text",         "id": "announcement_msg2", "label": "Message 2 (⚡)",       "default": "Subscribe & Save 15% — free shipping included" },
+    { "type": "text",         "id": "announcement_msg3", "label": "Message 3 (🧪)",       "default": "Patented MEP Delivery Technology — 1000× more reach you alive" },
+    { "type": "text",         "id": "announcement_msg4", "label": "Message 4 (🔄)",       "default": "30-Day Money-Back Guarantee" },
+    { "type": "text",         "id": "announcement_text", "label": "(legacy) Promo text",  "default": "Subscribe & Save 15%" }
   ],
   "presets": [{ "name": "VB Header" }]
 }

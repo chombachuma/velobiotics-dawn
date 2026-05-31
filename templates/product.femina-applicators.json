@@ -1,0 +1,890 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🌸",
+            "text": "Reusable suppository applicators"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "💧",
+            "text": "Medical-grade silicone"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🧼",
+            "text": "Hygienic, easy to clean"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🔒",
+            "text": "Discreet · pack of 2"
+          }
+        },
+        "t1": {
+          "type": "testi",
+          "settings": {
+            "quote": "Cookie Fresh, so much easier",
+            "author": "Nomvula M."
+          }
+        },
+        "t2": {
+          "type": "testi",
+          "settings": {
+            "quote": "Game-changer for self-care",
+            "author": "Sarah L."
+          }
+        },
+        "t3": {
+          "type": "testi",
+          "settings": {
+            "quote": "Mess-free and hygienic",
+            "author": "Tumi K."
+          }
+        },
+        "t4": {
+          "type": "testi",
+          "settings": {
+            "quote": "Reusable, sustainable",
+            "author": "Caroline B."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
+        "brand_label": "Femina™ Applicators",
+        "rating": "4.7",
+        "review_count": "120+",
+        "hook": "Insertion, made effortless. Femina™ Suppository Applicators are medical-grade silicone applicators designed for Cookie Fresh suppositories — hygienic, comfortable, reusable.",
+        "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
+        "show_subscription": false,
+        "show_qty_discounts": true,
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
+    },
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Nomvula+M&background=8d2a89&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Cookie Fresh is so much easier with these. Wish I'd bought them sooner.",
+            "author": "Nomvula M.",
+            "meta": "Verified buyer · Johannesburg"
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Sarah+L&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Game-changer for self-care. Quick and clean.",
+            "author": "Sarah L.",
+            "meta": "Verified buyer · Cape Town"
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Tumi+K&background=6b1f68&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Mess-free and hygienic. Wash, store, reuse.",
+            "author": "Tumi K.",
+            "meta": "Verified buyer · 2 months ago"
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Caroline+B&background=8d2a89&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Reusable, sustainable. Smart product.",
+            "author": "Caroline B.",
+            "meta": "Verified buyer · 1 month ago"
+          }
+        },
+        "r5": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Yasmin+B&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Two applicators means one can dry while I use the other.",
+            "author": "Yasmin B.",
+            "meta": "Verified buyer · Pretoria"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
+        "eyebrow": "★ Real Reviews",
+        "title": "The Cookie Fresh upgrade"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Messy fingers</strong> when inserting suppositories."
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Uncomfortable positioning</strong> that takes practice."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Disposable applicators</strong> creating waste."
+          }
+        },
+        "p4": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Hygiene concerns</strong> about sterility."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#8d2a89",
+        "brand_tint": "#fdf5fc",
+        "image_url": "",
+        "tag_value": "2-Pack",
+        "tag_label": "One To Use, One Drying",
+        "eyebrow": "The Problem",
+        "title_pre": "Self-care",
+        "title_highlight": "made effortless.",
+        "desc": "Suppositories work — but applying them by hand is awkward and often messy. Disposable applicators are wasteful. Femina's medical-grade silicone applicators are designed specifically for our Cookie Fresh range. Reusable. Hygienic. Comfortable."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Medical-grade silicone</strong> — hypoallergenic, soft, durable."
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Plunger mechanism</strong> — clean, accurate placement."
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Easy to clean</strong> — wash with warm soapy water, boil to sterilise."
+          }
+        },
+        "s4": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Pack of 2</strong> — one in use, one drying. Reusable for years."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#8d2a89",
+        "brand_tint": "#fdf5fc",
+        "image_url": "",
+        "tag_value": "FDA",
+        "tag_label": "Medical-Grade Silicone",
+        "eyebrow": "The Solution",
+        "title_pre": "Meet the",
+        "title_highlight": "Femina Applicators.",
+        "desc": "Medical-grade silicone applicators — designed specifically for Femina Cookie Fresh suppositories. Hygienic plunger insertion, easy cleaning, reusable for years. Two-pack so one can dry while you use the other."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-probiotics-cookie-fresh-with-boric-acid-suppositories",
+            "brand": "Femina™",
+            "rating": "4.9",
+            "reviews": "320+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-cookie-fresh-boric-acid-only-suppositories",
+            "brand": "Femina™",
+            "rating": "4.8",
+            "reviews": "210+"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-mini-combo",
+            "brand": "Femina™",
+            "rating": "4.8",
+            "reviews": "260+"
+          }
+        },
+        "r4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
+            "brand": "Femina™",
+            "rating": "4.8",
+            "reviews": "1300+"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
+        "tint": false,
+        "eyebrow": "Use With",
+        "title": "Cookie Fresh suppositories",
+        "sub": "Applicators are made specifically for our Cookie Fresh range."
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "b1": {
+          "type": "feat",
+          "settings": {
+            "icon": "💧",
+            "name": "Medical-Grade Silicone",
+            "desc": "FDA-approved, hypoallergenic, BPA-free."
+          }
+        },
+        "b2": {
+          "type": "feat",
+          "settings": {
+            "icon": "🧼",
+            "name": "Easy To Clean",
+            "desc": "Warm soapy water + boil to sterilise."
+          }
+        },
+        "b3": {
+          "type": "feat",
+          "settings": {
+            "icon": "♻️",
+            "name": "Reusable For Years",
+            "desc": "Replace disposables for the long haul. Save money + planet."
+          }
+        },
+        "b4": {
+          "type": "feat",
+          "settings": {
+            "icon": "🌸",
+            "name": "Accurate Placement",
+            "desc": "Plunger mechanism for clean, comfortable insertion."
+          }
+        },
+        "b5": {
+          "type": "feat",
+          "settings": {
+            "icon": "🩺",
+            "name": "Gynae-Designed",
+            "desc": "Built with women's-health specialists."
+          }
+        },
+        "b6": {
+          "type": "feat",
+          "settings": {
+            "icon": "📦",
+            "name": "Two Per Pack",
+            "desc": "One to use, one drying."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_tint": "#fdf5fc",
+        "eyebrow": "Key Benefits",
+        "title_pre": "Why these",
+        "title_highlight": "Applicators",
+        "sub": "Six reasons Femina Applicators are the smart upgrade for Cookie Fresh users."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "🌸",
+            "name": "Load Suppository",
+            "desc": "Insert Cookie Fresh suppository into applicator chamber."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "👇",
+            "name": "Position & Push",
+            "desc": "Position comfortably. Plunger delivers suppository accurately."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "🧼",
+            "name": "Wash & Dry",
+            "desc": "Rinse with warm soapy water. Boil weekly to sterilise."
+          }
+        },
+        "h4": {
+          "type": "step",
+          "settings": {
+            "icon": "🔁",
+            "name": "Reuse Daily",
+            "desc": "Two applicators means one is always dry and ready."
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_tint": "#fdf5fc",
+        "eyebrow": "How To Use",
+        "title_pre": "Simple,",
+        "title_highlight": "Hygienic",
+        "sub": "Four simple steps. One simple upgrade."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "💧",
+            "name": "Medical-Grade Silicone",
+            "amount": "FDA",
+            "desc": "USP Class VI silicone. Hypoallergenic, soft, durable."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "📦",
+            "name": "Two Applicators",
+            "amount": "Per pack",
+            "desc": "One in use, one drying — always ready."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "📎",
+            "name": "Storage Pouch",
+            "amount": "Included",
+            "desc": "Discreet drawstring pouch for travel and storage."
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "📖",
+            "name": "Care Instructions",
+            "amount": "Included",
+            "desc": "How to clean, sterilise, and store."
+          }
+        },
+        "i5": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "♻️",
+            "name": "5+ Year Lifespan",
+            "amount": "With care",
+            "desc": "Boil-sterilise weekly for full lifespan."
+          }
+        },
+        "i6": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🚫",
+            "name": "Free From",
+            "amount": "Always",
+            "desc": "BPA · latex · phthalates · fragrance."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_tint": "#fdf5fc",
+        "brand_dark": "#6b1f68",
+        "brand_light": "#b94db4",
+        "eyebrow": "What's Inside",
+        "title": "Quality you can trust",
+        "sub": "Medical-grade silicone, two applicators, storage pouch.",
+        "facts_image_url": "",
+        "facts_label": "Pack contents",
+        "facts_foot": "FDA-approved · Medical-grade"
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Easier suppository use",
+            "percent": 94
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "More hygienic",
+            "percent": 92
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Less mess and stress",
+            "percent": 91
+          }
+        },
+        "c4": {
+          "type": "stat",
+          "settings": {
+            "label": "Better Cookie Fresh experience",
+            "percent": 95
+          }
+        },
+        "c5": {
+          "type": "stat",
+          "settings": {
+            "label": "Would recommend to a friend",
+            "percent": 97
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
+        "eyebrow": "Real results",
+        "title_pre": "Trusted for",
+        "title_highlight": "Easier Self-Care",
+        "sub": "What Cookie Fresh users report after switching to the applicators.",
+        "caveat": "Based on a survey of 120+ verified customers."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "f1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-probiotics-cookie-fresh-with-boric-acid-suppositories",
+            "brand": "Femina™",
+            "rating": "4.9",
+            "reviews": "320+"
+          }
+        },
+        "f2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-cookie-fresh-boric-acid-only-suppositories",
+            "brand": "Femina™",
+            "rating": "4.8",
+            "reviews": "210+"
+          }
+        },
+        "f3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
+            "brand": "Femina™",
+            "rating": "4.8",
+            "reviews": "1300+"
+          }
+        },
+        "f4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-mini-combo",
+            "brand": "Femina™",
+            "rating": "4.8",
+            "reviews": "260+"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
+        "tint": true,
+        "eyebrow": "Complete The Set",
+        "title": "Pair with Cookie Fresh",
+        "sub": "Applicators were designed for our Cookie Fresh range."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
+            "name": "Medical-Grade",
+            "desc": "FDA-approved silicone, USP Class VI."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
+            "name": "Gynae-Designed",
+            "desc": "Built with women's-health specialists."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
+            "name": "Sterilisable",
+            "desc": "Boil weekly to maintain hospital-grade hygiene."
+          }
+        },
+        "d4": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
+            "name": "Latex-Free",
+            "desc": "Hypoallergenic, no latex, BPA-free."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3",
+        "d4"
+      ],
+      "settings": {
+        "eyebrow": "Built for women's health",
+        "title_pre": "Quality you can",
+        "title_highlight": "trust.",
+        "sub": "Medical-grade, gynae-designed, hypoallergenic."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "Reusable Silicone",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "FDA-Grade",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "Hypoallergenic",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "Two Per Pack",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o5": {
+          "type": "row",
+          "settings": {
+            "feature": "Boil-Sterilisable",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
+        "title": "Why Femina Applicators Outperform",
+        "sub": "Medical-grade silicone, gynae-designed, reusable for years — the smart upgrade for Cookie Fresh users.",
+        "col_features": "Features",
+        "col_brand": "Femina Applicators",
+        "col_b": "Disposable Plastic",
+        "col_c": "Fingers",
+        "cta_text": "Add to Cart",
+        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Real Reviews",
+        "title_pre": "What Women",
+        "title_highlight": "Are Saying",
+        "sub": "Verified reviews from real women.",
+        "rating": "4.7",
+        "reviews_count": "120+",
+        "customers_count": "15K+"
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "Do these only work with Femina suppositories?",
+            "answer": "<p>Designed for Femina Cookie Fresh — but compatible with most standard vaginal suppositories.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "How do I clean them?",
+            "answer": "<p>Rinse with warm soapy water after each use. Boil for 3 minutes once a week to sterilise.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "How long do they last?",
+            "answer": "<p>5+ years with proper care. Replace if cracked or damaged.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Are they safe long-term?",
+            "answer": "<p>Yes — FDA-approved medical-grade silicone, the same used in cardiac and other long-term implant applications.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Do you ship internationally?",
+            "answer": "<p>Yes. We ship globally — 5–14 working days. Discreet packaging.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "What if it doesn't work for me?",
+            "answer": "<p>30-day money-back guarantee — full refund if not satisfied.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "title_pre": "Questions Before",
+        "title_highlight": "You Start"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "✅",
+            "text": "30-day money-back"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "🔒",
+            "text": "Discreet packaging"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "💧",
+            "text": "FDA medical-grade"
+          }
+        },
+        "g4": {
+          "type": "g",
+          "settings": {
+            "icon": "♻️",
+            "text": "5+ year lifespan"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_light": "#b94db4",
+        "badge": "30-day money-back guarantee",
+        "title_pre": "Self-Care, Upgraded",
+        "title_highlight": "Risk-Free",
+        "sub": "Hygienic. Comfortable. Reusable. The Cookie Fresh upgrade.",
+        "cta_text": "Add to Cart",
+        "cta_link": "#vbpForm"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "judgeme",
+    "faq",
+    "final"
+  ]
+}

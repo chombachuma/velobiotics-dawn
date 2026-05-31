@@ -901,7 +901,7 @@
         "show_view_all": true,
         "show_image": true,
         "show_date": true,
-        "show_author": false,
+        "show_author": true,
         "color_scheme": "scheme-1",
         "padding_top": 56,
         "padding_bottom": 56

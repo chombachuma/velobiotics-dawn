@@ -9,21 +9,870 @@
  */
 {
   "sections": {
-    "hero": { "type": "vb-product-hero", "blocks": { "b1": { "type": "benefit", "settings": { "icon": "🐟", "text": "Omega 3, 6 & 9 complete blend" } }, "b2": { "type": "benefit", "settings": { "icon": "🧠", "text": "Brain & joint support" } }, "b3": { "type": "benefit", "settings": { "icon": "❤️", "text": "Heart & inflammation" } }, "b4": { "type": "benefit", "settings": { "icon": "⚡", "text": "1000× more delivery" } }, "t1": { "type": "testi", "settings": { "quote": "Joint stiffness gone", "author": "Linda H." } }, "t2": { "type": "testi", "settings": { "quote": "Skin smoother in 6 weeks", "author": "Refilwe M." } }, "t3": { "type": "testi", "settings": { "quote": "Cholesterol numbers down", "author": "Jaco V." } }, "t4": { "type": "testi", "settings": { "quote": "No fish burps, no aftertaste", "author": "Sipho L." } } }, "block_order": ["b1","b2","b3","b4","t1","t2","t3","t4"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "brand_label": "Velo16™ · Omega 3/6/9", "rating": "4.7", "review_count": "210+", "hook": "The complete essential-fats blend. Velo16™ Probiotics Omega 3, 6 & 9 delivers a balanced ratio of fish, evening primrose, and olive oils + 16 probiotic strains — for full-body inflammatory balance, healthy skin, and cognitive support.", "ship_note": "Ships worldwide · Free shipping over the threshold · 30-day money-back guarantee", "show_subscription": true, "show_qty_discounts": true, "show_buynow": true, "show_testi_marquee": true } },
-    "reviews-carousel": { "type": "vb-product-reviews-carousel", "blocks": { "r1": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Linda+H&background=c8163c&color=ffffff&size=120&bold=true", "quote": "Knee stiffness gone after 6 weeks. Walking pain-free again.", "author": "Linda H.", "meta": "Verified buyer · 2 months ago" } }, "r2": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Refilwe+M&background=ff5c7c&color=ffffff&size=120&bold=true", "quote": "Skin smoother, hair shinier — full-body benefits.", "author": "Refilwe M.", "meta": "Verified buyer · 6 weeks ago" } }, "r3": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Jaco+V&background=6b0a1f&color=ffffff&size=120&bold=true", "quote": "Doctor says my LDL is down 12%. Confirmed.", "author": "Jaco V.", "meta": "Verified buyer · 4 months ago" } }, "r4": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Sipho+L&background=c8163c&color=ffffff&size=120&bold=true", "quote": "Zero fish aftertaste. MEP delivery actually works.", "author": "Sipho L.", "meta": "Verified buyer · 2 months ago" } } }, "block_order": ["r1","r2","r3","r4"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "eyebrow": "★ Real Reviews", "title": "Full-body fatty acid balance" } },
-    "problem": { "type": "vb-product-story", "blocks": { "p1": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Joint stiffness and inflammation</strong> creeping in with age." } }, "p2": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Dry, dull skin</strong> and brittle hair." } }, "p3": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Imbalanced cholesterol</strong> from typical Western diets." } }, "p4": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Plain fish oil</strong> misses the 6 & 9 fatty acids your body also needs." } } }, "block_order": ["p1","p2","p3","p4"], "settings": { "reverse": false, "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "image_url": "", "tag_value": "100%", "tag_label": "Essential Fats Your Body Needs", "eyebrow": "The Problem", "title_pre": "Omega-3 alone", "title_highlight": "isn't the full picture.", "desc": "Your body needs omegas 3, 6, and 9 in balance — for inflammation control, brain function, healthy skin, and hormone production. Plain fish oil is only one third of the story. There's a smarter complete blend." } },
-    "solution": { "type": "vb-product-story", "blocks": { "s1": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Omega-3</strong> from sustainably-sourced fish oil — EPA & DHA." } }, "s2": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Omega-6</strong> from evening primrose — GLA for skin & hormones." } }, "s3": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Omega-9</strong> from olive oil — heart and metabolic support." } }, "s4": { "type": "point", "settings": { "icon": "✓", "text": "<strong>16-strain probiotic blend + MEP delivery</strong> — no fish burps." } } }, "block_order": ["s1","s2","s3","s4"], "settings": { "reverse": true, "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "image_url": "", "tag_value": "3+6+9", "tag_label": "Complete Essential Fats", "eyebrow": "The Solution", "title_pre": "Meet", "title_highlight": "Velo16™ Omega 3, 6 & 9.", "desc": "A once-daily softgel combining all three essential fatty acids in clinical balance, with 16 probiotic strains and Velobiotics™ MEP delivery. The complete inflammatory-balance, skin-glow, brain-health, and cardiovascular blend in a single capsule." } },
-    "related": { "type": "vb-product-related", "blocks": { "r1": { "type": "product", "settings": { "product_handle": "velo16-probiotics-omega-3-vit-d3", "brand": "Velo16™", "rating": "4.8", "reviews": "260+" } }, "r2": { "type": "product", "settings": { "product_handle": "velo16-probiotics-vitamin-d3", "brand": "Velo16™", "rating": "4.8", "reviews": "280+" } }, "r3": { "type": "product", "settings": { "product_handle": "velo16-probiotics-magnesium-glycinate", "brand": "Velo16™", "rating": "4.7", "reviews": "190+" } }, "r4": { "type": "product", "settings": { "product_handle": "velo16-probiotics-vitamin-c", "brand": "Velo16™", "rating": "4.7", "reviews": "320+" } } }, "block_order": ["r1","r2","r3","r4"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "tint": false, "eyebrow": "Complete the Wellness Stack", "title": "More from the Velo16™ range", "sub": "Stack Omega 3/6/9 with the rest of your daily essentials." } },
-    "benefits": { "type": "vb-product-benefits", "blocks": { "b1": { "type": "feat", "settings": { "icon": "🧠", "name": "Brain Support", "desc": "DHA fuels cognition, EPA balances mood." } }, "b2": { "type": "feat", "settings": { "icon": "🦴", "name": "Joint Comfort", "desc": "Anti-inflammatory effect eases stiffness." } }, "b3": { "type": "feat", "settings": { "icon": "✨", "name": "Skin & Hair Glow", "desc": "GLA (omega-6) supports skin barrier and hair health." } }, "b4": { "type": "feat", "settings": { "icon": "❤️", "name": "Heart Health", "desc": "Omega-9 supports cardiovascular function." } }, "b5": { "type": "feat", "settings": { "icon": "🩺", "name": "Doctor Formulated", "desc": "Built on clinical fatty-acid ratios." } }, "b6": { "type": "feat", "settings": { "icon": "🌿", "name": "Mercury-Free", "desc": "Sustainably sourced, heavy-metal tested every batch." } } }, "block_order": ["b1","b2","b3","b4","b5","b6"], "settings": { "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "eyebrow": "Key Benefits", "title_pre": "Why", "title_highlight": "Velo16™ Omega 3/6/9", "sub": "Six reasons it has become the daily complete-omega of choice." } },
-    "how": { "type": "vb-product-how", "blocks": { "h1": { "type": "step", "settings": { "icon": "💊", "name": "Take One Softgel Daily", "desc": "With water, after a meal containing healthy fats." } }, "h2": { "type": "step", "settings": { "icon": "🛡️", "name": "MEP Armour Survives", "desc": "Velobiotics™ shield — no fish burps, no rancid release." } }, "h3": { "type": "step", "settings": { "icon": "🎯", "name": "Delivered to Your Cells", "desc": "All three omegas + 1000× more probiotics reach you alive." } }, "h4": { "type": "step", "settings": { "icon": "✨", "name": "Joint, Skin, Heart", "desc": "Full-body inflammatory balance and cellular health." } } }, "block_order": ["h1","h2","h3","h4"], "settings": { "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "eyebrow": "How It Works", "title_pre": "From Softgel to", "title_highlight": "Balance", "sub": "Four simple steps. One daily ritual. Complete fatty-acid wellness." } },
-    "ingredients": { "type": "vb-product-ingredients", "blocks": { "i1": { "type": "ingredient", "settings": { "icon": "🐟", "name": "Fish Oil (Omega-3)", "amount": "500 mg", "desc": "EPA & DHA from sustainably-sourced, mercury-tested fish." } }, "i2": { "type": "ingredient", "settings": { "icon": "🌸", "name": "Evening Primrose Oil (Omega-6)", "amount": "200 mg", "desc": "GLA for skin barrier, hormone balance, and inflammation." } }, "i3": { "type": "ingredient", "settings": { "icon": "🫒", "name": "Olive Oil (Omega-9)", "amount": "150 mg", "desc": "Monounsaturated fat for cardiovascular and metabolic health." } }, "i4": { "type": "ingredient", "settings": { "icon": "🦠", "name": "16-Strain Probiotic Blend", "amount": "10 Billion CFU", "desc": "Strains for gut and absorption support." } }, "i5": { "type": "ingredient", "settings": { "icon": "🛡️", "name": "Velobiotics™ MEP Coating", "amount": "Patented", "desc": "Supercritical CO₂ — no fish burps, no rancid release." } }, "i6": { "type": "ingredient", "settings": { "icon": "🚫", "name": "Free From", "amount": "Always", "desc": "Mercury, heavy metals, gluten, soy, dairy, artificial colours." } } }, "block_order": ["i1","i2","i3","i4","i5","i6"], "settings": { "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "brand_dark": "#6b0a1f", "brand_light": "#ff5c7c", "eyebrow": "What's Inside", "title": "Every ingredient earns its place", "sub": "Six clean actives. Full transparency.", "facts_image_url": "", "facts_label": "Supplement facts", "facts_foot": "Lab-tested · Doctor-formulated" } },
-    "confidence": { "type": "vb-product-confidence", "blocks": { "c1": { "type": "stat", "settings": { "label": "Reduced joint stiffness", "percent": 89 } }, "c2": { "type": "stat", "settings": { "label": "Smoother skin", "percent": 84 } }, "c3": { "type": "stat", "settings": { "label": "Better cholesterol readings", "percent": 81 } }, "c4": { "type": "stat", "settings": { "label": "More cognitive sharpness", "percent": 86 } }, "c5": { "type": "stat", "settings": { "label": "Would recommend to a friend", "percent": 93 } } }, "block_order": ["c1","c2","c3","c4","c5"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "eyebrow": "Real results", "title_pre": "Trusted for", "title_highlight": "Full-Body Balance", "sub": "What customers report after 6–8 weeks of daily Velo16™ Omega 3/6/9.", "caveat": "Based on 210+ verified customers. Individual results may vary." } },
-    "fbt": { "type": "vb-product-related", "blocks": { "f1": { "type": "product", "settings": { "product_handle": "her-biotics-original-capsules-60s", "brand": "Her-Biotics™", "rating": "4.7", "reviews": "260+" } }, "f2": { "type": "product", "settings": { "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s", "brand": "His-Biotics™", "rating": "4.7", "reviews": "210+" } }, "f3": { "type": "product", "settings": { "product_handle": "almasi-probiotics-skin-hair-nails-60s", "brand": "Almasi™", "rating": "4.9", "reviews": "180+" } }, "f4": { "type": "product", "settings": { "product_handle": "gutslim-probiotics-glp-1-booster", "brand": "GutSlim™", "rating": "4.8", "reviews": "410+" } } }, "block_order": ["f1","f2","f3","f4"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "tint": true, "eyebrow": "Frequently Bought Together", "title": "Pair with the rest of your wellness stack", "sub": "Velo16™ Omega 3/6/9 stacks beautifully with these favourites." } },
-    "doctors": { "type": "vb-doctors", "blocks": { "d1": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966", "name": "Complete Essential Fats", "desc": "All three omegas in clinical balance." } }, "d2": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966", "name": "Doctor Formulated", "desc": "Built on peer-reviewed fatty-acid research." } }, "d3": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073", "name": "Patented MEP Technology", "desc": "Microencapsulation with Supercritical CO₂." } }, "d4": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199", "name": "Mercury-Free", "desc": "Heavy-metal tested every batch." } } }, "block_order": ["d1","d2","d3","d4"], "settings": { "eyebrow": "Trusted by Doctors. Proven by Science.", "title_pre": "Quality you can", "title_highlight": "trust.", "sub": "Built on the complete essential-fats research and SAHPRA-aware manufacturing." } },
-    "outperform": { "type": "vb-product-outperform", "blocks": { "o1": { "type": "row", "settings": { "feature": "Complete 3/6/9 Blend", "brand_state": "yes", "b_state": "no", "c_state": "no" } }, "o2": { "type": "row", "settings": { "feature": "No Fish Burps (MEP)", "brand_state": "yes", "b_state": "no", "c_state": "no" } }, "o3": { "type": "row", "settings": { "feature": "16-Strain Probiotic Boost", "brand_state": "yes", "b_state": "no", "c_state": "no" } }, "o4": { "type": "row", "settings": { "feature": "Daily Simplicity", "brand_state": "yes", "b_state": "no", "c_state": "no" } }, "o5": { "type": "row", "settings": { "feature": "Full-Body Balance", "brand_state": "yes", "b_state": "no", "c_state": "no" } } }, "block_order": ["o1","o2","o3","o4","o5"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "title": "Why We Outperform Others", "sub": "Experience all three essential fats in balance — not just Omega-3.", "col_features": "Features", "col_brand": "Velo16™ 3/6/9", "col_b": "Plain Fish Oil", "col_c": "Others", "cta_text": "Add to Cart", "cta_note": "30-day money-back · Free shipping over the threshold" } },
-    "judgeme": { "type": "vb-judgeme", "settings": { "eyebrow": "Real Reviews", "title_pre": "What Customers", "title_highlight": "Are Saying", "sub": "Verified reviews. Judge.me widget populates on go-live.", "rating": "4.7", "reviews_count": "210+", "customers_count": "28K+" } },
-    "faq": { "type": "vb-faq", "blocks": { "q1": { "type": "q", "settings": { "question": "Do I need all three omegas?", "answer": "<p>Omega-3 and 6 are essential — your body can't make them. Omega-9 is conditionally essential. Most diets are heavy in 6 and light in 3, so balance matters.</p>" } }, "q2": { "type": "q", "settings": { "question": "Will I get fish burps?", "answer": "<p>No. MEP encapsulation prevents fish oil from releasing in the stomach.</p>" } }, "q3": { "type": "q", "settings": { "question": "Is this safe daily?", "answer": "<p>Absolutely. Manufactured under GMP / SAHPRA-aware conditions.</p>" } }, "q4": { "type": "q", "settings": { "question": "Is the fish oil sustainable?", "answer": "<p>Yes — sustainably sourced and heavy-metal tested every batch.</p>" } }, "q5": { "type": "q", "settings": { "question": "Do you ship internationally?", "answer": "<p>Yes. 5–14 working days. Free shipping over the threshold.</p>" } }, "q6": { "type": "q", "settings": { "question": "What if it doesn't work?", "answer": "<p>30-day money-back, no questions asked.</p>" } } }, "block_order": ["q1","q2","q3","q4","q5","q6"], "settings": { "eyebrow": "FAQ", "title_pre": "Questions Before", "title_highlight": "You Start" } },
-    "final": { "type": "vb-product-final", "blocks": { "g1": { "type": "g", "settings": { "icon": "✅", "text": "30-day money-back" } }, "g2": { "type": "g", "settings": { "icon": "🚚", "text": "Ships worldwide" } }, "g3": { "type": "g", "settings": { "icon": "🔬", "text": "Mercury-free" } }, "g4": { "type": "g", "settings": { "icon": "🐟", "text": "No fish burps" } } }, "block_order": ["g1","g2","g3","g4"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_light": "#ff5c7c", "badge": "30-day money-back guarantee", "title_pre": "Full-Body Fatty Acid Balance", "title_highlight": "Risk-Free for 30 Days", "sub": "Join the 28,000+ people who balance their essential fats with Velo16™ Omega 3/6/9. If you don't feel the difference, we'll refund every cent.", "cta_text": "Add to Cart", "cta_link": "#vbpForm" } }
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🐟",
+            "text": "Omega 3, 6 & 9 complete blend"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🧠",
+            "text": "Brain & joint support"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "❤️",
+            "text": "Heart & inflammation"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "⚡",
+            "text": "1000× more delivery"
+          }
+        },
+        "t1": {
+          "type": "testi",
+          "settings": {
+            "quote": "Joint stiffness gone",
+            "author": "Linda H."
+          }
+        },
+        "t2": {
+          "type": "testi",
+          "settings": {
+            "quote": "Skin smoother in 6 weeks",
+            "author": "Refilwe M."
+          }
+        },
+        "t3": {
+          "type": "testi",
+          "settings": {
+            "quote": "Cholesterol numbers down",
+            "author": "Jaco V."
+          }
+        },
+        "t4": {
+          "type": "testi",
+          "settings": {
+            "quote": "No fish burps, no aftertaste",
+            "author": "Sipho L."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "brand_label": "Velo16™ · Omega 3/6/9",
+        "rating": "4.7",
+        "review_count": "210+",
+        "hook": "The complete essential-fats blend. Velo16™ Probiotics Omega 3, 6 & 9 delivers a balanced ratio of fish, evening primrose, and olive oils + 16 probiotic strains — for full-body inflammatory balance, healthy skin, and cognitive support.",
+        "ship_note": "Ships worldwide · Free shipping over the threshold · 30-day money-back guarantee",
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
+    },
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Linda+H&background=c8163c&color=ffffff&size=120&bold=true",
+            "author": "Linda H.",
+            "meta": "Verified buyer · 2 months ago",
+            "quote": "Knee stiffness gone after 6 weeks. Walking pain-free again."
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Refilwe+M&background=ff5c7c&color=ffffff&size=120&bold=true",
+            "author": "Refilwe M.",
+            "meta": "Verified buyer · 6 weeks ago",
+            "quote": "Skin smoother, hair shinier — full-body benefits."
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Jaco+V&background=6b0a1f&color=ffffff&size=120&bold=true",
+            "author": "Jaco V.",
+            "meta": "Verified buyer · 4 months ago",
+            "quote": "Doctor says my LDL is down 12%. Confirmed."
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Sipho+L&background=c8163c&color=ffffff&size=120&bold=true",
+            "author": "Sipho L.",
+            "meta": "Verified buyer · 2 months ago",
+            "quote": "Zero fish aftertaste. MEP delivery actually works."
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "eyebrow": "★ Real Reviews",
+        "title": "Full-body fatty acid balance"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Joint stiffness and inflammation</strong> creeping in with age."
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Dry, dull skin</strong> and brittle hair."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Imbalanced cholesterol</strong> from typical Western diets."
+          }
+        },
+        "p4": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Plain fish oil</strong> misses the 6 & 9 fatty acids your body also needs."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#c8163c",
+        "brand_tint": "#ffe8ec",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_111655_34b2a2d0-fcce-4735-8837-f13ed7a10c3f.png",
+        "tag_value": "100%",
+        "tag_label": "Essential Fats Your Body Needs",
+        "eyebrow": "The Problem",
+        "title_pre": "Omega-3 alone",
+        "title_highlight": "isn't the full picture.",
+        "desc": "Your body needs omegas 3, 6, and 9 in balance — for inflammation control, brain function, healthy skin, and hormone production. Plain fish oil is only one third of the story. There's a smarter complete blend."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Omega-3</strong> from sustainably-sourced fish oil — EPA & DHA."
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Omega-6</strong> from evening primrose — GLA for skin & hormones."
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Omega-9</strong> from olive oil — heart and metabolic support."
+          }
+        },
+        "s4": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>16-strain probiotic blend + MEP delivery</strong> — no fish burps."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#c8163c",
+        "brand_tint": "#ffe8ec",
+        "image_url": "",
+        "tag_value": "3+6+9",
+        "tag_label": "Complete Essential Fats",
+        "eyebrow": "The Solution",
+        "title_pre": "Meet",
+        "title_highlight": "Velo16™ Omega 3, 6 & 9.",
+        "desc": "A once-daily softgel combining all three essential fatty acids in clinical balance, with 16 probiotic strains and Velobiotics™ MEP delivery. The complete inflammatory-balance, skin-glow, brain-health, and cardiovascular blend in a single capsule."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-omega-3-vit-d3",
+            "brand": "Velo16™",
+            "rating": "4.8",
+            "reviews": "260+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-vitamin-d3",
+            "brand": "Velo16™",
+            "rating": "4.8",
+            "reviews": "280+"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-magnesium-glycinate",
+            "brand": "Velo16™",
+            "rating": "4.7",
+            "reviews": "190+"
+          }
+        },
+        "r4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-vitamin-c",
+            "brand": "Velo16™",
+            "rating": "4.7",
+            "reviews": "320+"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "tint": false,
+        "eyebrow": "Complete the Wellness Stack",
+        "title": "More from the Velo16™ range",
+        "sub": "Stack Omega 3/6/9 with the rest of your daily essentials."
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "b1": {
+          "type": "feat",
+          "settings": {
+            "icon": "🧠",
+            "name": "Brain Support",
+            "desc": "DHA fuels cognition, EPA balances mood."
+          }
+        },
+        "b2": {
+          "type": "feat",
+          "settings": {
+            "icon": "🦴",
+            "name": "Joint Comfort",
+            "desc": "Anti-inflammatory effect eases stiffness."
+          }
+        },
+        "b3": {
+          "type": "feat",
+          "settings": {
+            "icon": "✨",
+            "name": "Skin & Hair Glow",
+            "desc": "GLA (omega-6) supports skin barrier and hair health."
+          }
+        },
+        "b4": {
+          "type": "feat",
+          "settings": {
+            "icon": "❤️",
+            "name": "Heart Health",
+            "desc": "Omega-9 supports cardiovascular function."
+          }
+        },
+        "b5": {
+          "type": "feat",
+          "settings": {
+            "icon": "🩺",
+            "name": "Doctor Formulated",
+            "desc": "Built on clinical fatty-acid ratios."
+          }
+        },
+        "b6": {
+          "type": "feat",
+          "settings": {
+            "icon": "🌿",
+            "name": "Mercury-Free",
+            "desc": "Sustainably sourced, heavy-metal tested every batch."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_tint": "#ffe8ec",
+        "eyebrow": "Key Benefits",
+        "title_pre": "Why",
+        "title_highlight": "Velo16™ Omega 3/6/9",
+        "sub": "Six reasons it has become the daily complete-omega of choice."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "💊",
+            "name": "Take One Softgel Daily",
+            "desc": "With water, after a meal containing healthy fats."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "🛡️",
+            "name": "MEP Armour Survives",
+            "desc": "Velobiotics™ shield — no fish burps, no rancid release."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "🎯",
+            "name": "Delivered to Your Cells",
+            "desc": "All three omegas + 1000× more probiotics reach you alive."
+          }
+        },
+        "h4": {
+          "type": "step",
+          "settings": {
+            "icon": "✨",
+            "name": "Joint, Skin, Heart",
+            "desc": "Full-body inflammatory balance and cellular health."
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_tint": "#ffe8ec",
+        "eyebrow": "How It Works",
+        "title_pre": "From Softgel to",
+        "title_highlight": "Balance",
+        "sub": "Four simple steps. One daily ritual. Complete fatty-acid wellness."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🐟",
+            "name": "Fish Oil (Omega-3)",
+            "amount": "500 mg",
+            "desc": "EPA & DHA from sustainably-sourced, mercury-tested fish."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🌸",
+            "name": "Evening Primrose Oil (Omega-6)",
+            "amount": "200 mg",
+            "desc": "GLA for skin barrier, hormone balance, and inflammation."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🫒",
+            "name": "Olive Oil (Omega-9)",
+            "amount": "150 mg",
+            "desc": "Monounsaturated fat for cardiovascular and metabolic health."
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🦠",
+            "name": "16-Strain Probiotic Blend",
+            "amount": "10 Billion CFU",
+            "desc": "Strains for gut and absorption support."
+          }
+        },
+        "i5": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🛡️",
+            "name": "Velobiotics™ MEP Coating",
+            "amount": "Patented",
+            "desc": "Supercritical CO₂ — no fish burps, no rancid release."
+          }
+        },
+        "i6": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🚫",
+            "name": "Free From",
+            "amount": "Always",
+            "desc": "Mercury, heavy metals, gluten, soy, dairy, artificial colours."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "brand_light": "#ff5c7c",
+        "eyebrow": "What's Inside",
+        "title": "Every ingredient earns its place",
+        "sub": "Six clean actives. Full transparency.",
+        "facts_image_url": "",
+        "facts_label": "Supplement facts",
+        "facts_foot": "Lab-tested · Doctor-formulated"
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Reduced joint stiffness",
+            "percent": 89
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "Smoother skin",
+            "percent": 84
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Better cholesterol readings",
+            "percent": 81
+          }
+        },
+        "c4": {
+          "type": "stat",
+          "settings": {
+            "label": "More cognitive sharpness",
+            "percent": 86
+          }
+        },
+        "c5": {
+          "type": "stat",
+          "settings": {
+            "label": "Would recommend to a friend",
+            "percent": 93
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "eyebrow": "Real results",
+        "title_pre": "Trusted for",
+        "title_highlight": "Full-Body Balance",
+        "sub": "What customers report after 6–8 weeks of daily Velo16™ Omega 3/6/9.",
+        "caveat": "Based on 210+ verified customers. Individual results may vary."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "f1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "her-biotics-original-capsules-60s",
+            "brand": "Her-Biotics™",
+            "rating": "4.7",
+            "reviews": "260+"
+          }
+        },
+        "f2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
+            "brand": "His-Biotics™",
+            "rating": "4.7",
+            "reviews": "210+"
+          }
+        },
+        "f3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "almasi-probiotics-skin-hair-nails-60s",
+            "brand": "Almasi™",
+            "rating": "4.9",
+            "reviews": "180+"
+          }
+        },
+        "f4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-glp-1-booster",
+            "brand": "GutSlim™",
+            "rating": "4.8",
+            "reviews": "410+"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "tint": true,
+        "eyebrow": "Frequently Bought Together",
+        "title": "Pair with the rest of your wellness stack",
+        "sub": "Velo16™ Omega 3/6/9 stacks beautifully with these favourites."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
+            "name": "Complete Essential Fats",
+            "desc": "All three omegas in clinical balance."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
+            "name": "Doctor Formulated",
+            "desc": "Built on peer-reviewed fatty-acid research."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
+            "name": "Patented MEP Technology",
+            "desc": "Microencapsulation with Supercritical CO₂."
+          }
+        },
+        "d4": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
+            "name": "Mercury-Free",
+            "desc": "Heavy-metal tested every batch."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3",
+        "d4"
+      ],
+      "settings": {
+        "eyebrow": "Trusted by Doctors. Proven by Science.",
+        "title_pre": "Quality you can",
+        "title_highlight": "trust.",
+        "sub": "Built on the complete essential-fats research and SAHPRA-aware manufacturing."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "Complete 3/6/9 Blend",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "No Fish Burps (MEP)",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "16-Strain Probiotic Boost",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "Daily Simplicity",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o5": {
+          "type": "row",
+          "settings": {
+            "feature": "Full-Body Balance",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "title": "Why We Outperform Others",
+        "sub": "Experience all three essential fats in balance — not just Omega-3.",
+        "col_features": "Features",
+        "col_brand": "Velo16™ 3/6/9",
+        "col_b": "Plain Fish Oil",
+        "col_c": "Others",
+        "cta_text": "Add to Cart",
+        "cta_note": "30-day money-back · Free shipping over the threshold"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Real Reviews",
+        "title_pre": "What Customers",
+        "title_highlight": "Are Saying",
+        "sub": "Verified reviews. Judge.me widget populates on go-live.",
+        "rating": "4.7",
+        "reviews_count": "210+",
+        "customers_count": "28K+"
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "Do I need all three omegas?",
+            "answer": "<p>Omega-3 and 6 are essential — your body can't make them. Omega-9 is conditionally essential. Most diets are heavy in 6 and light in 3, so balance matters.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "Will I get fish burps?",
+            "answer": "<p>No. MEP encapsulation prevents fish oil from releasing in the stomach.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "Is this safe daily?",
+            "answer": "<p>Absolutely. Manufactured under GMP / SAHPRA-aware conditions.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Is the fish oil sustainable?",
+            "answer": "<p>Yes — sustainably sourced and heavy-metal tested every batch.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Do you ship internationally?",
+            "answer": "<p>Yes. 5–14 working days. Free shipping over the threshold.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "What if it doesn't work?",
+            "answer": "<p>30-day money-back, no questions asked.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "title_pre": "Questions Before",
+        "title_highlight": "You Start"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "✅",
+            "text": "30-day money-back"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "🚚",
+            "text": "Ships worldwide"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "🔬",
+            "text": "Mercury-free"
+          }
+        },
+        "g4": {
+          "type": "g",
+          "settings": {
+            "icon": "🐟",
+            "text": "No fish burps"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_light": "#ff5c7c",
+        "badge": "30-day money-back guarantee",
+        "title_pre": "Full-Body Fatty Acid Balance",
+        "title_highlight": "Risk-Free for 30 Days",
+        "sub": "Join the 28,000+ people who balance their essential fats with Velo16™ Omega 3/6/9. If you don't feel the difference, we'll refund every cent.",
+        "cta_text": "Add to Cart",
+        "cta_link": "#vbpForm"
+      }
+    }
   },
-  "order": ["hero","reviews-carousel","problem","solution","related","benefits","how","ingredients","confidence","fbt","doctors","outperform","judgeme","faq","final"]
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "judgeme",
+    "faq",
+    "final"
+  ]
 }

@@ -13,10 +13,10 @@
       "type": "vb-hero",
       "settings": {
         "bg_image_url": "",
-        "bg_image": "shopify://shop_images/Homepage_Banner_Image_1.png",
+        "bg_image": "shopify://shop_images/Home_Page_Banner_Image_Velo_Green_2.png",
         "image_fit": "cover",
         "image_position": "center 55%",
-        "image_opacity": 60,
+        "image_opacity": 80,
         "image_edge_fade": false,
         "overlay_opacity": 60,
         "min_height": 800,

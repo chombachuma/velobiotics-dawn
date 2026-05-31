@@ -1,5 +1,5 @@
 {%- comment -%}
-  VB · Home Hero v3 — full-bleed background image with horizontal edge fade
+  VB · Home Hero v4 — fully user-controlled (image, font sizes, opacity, padding, overlay)
 {%- endcomment -%}
 
 {%- liquid
@@ -7,123 +7,102 @@
   if section.settings.bg_image_url != blank
     assign hero_image_src = section.settings.bg_image_url
   elsif section.settings.bg_image != blank
-    assign hero_image_src = section.settings.bg_image | image_url: width: 1800
+    assign hero_image_src = section.settings.bg_image | image_url: width: 2400
   endif
+  assign pad_t = section.settings.padding_top | default: 96
+  assign pad_b = section.settings.padding_bottom | default: 80
+  assign img_op = section.settings.image_opacity | default: 85 | times: 1.0 | divided_by: 100
+  assign ovly_op = section.settings.overlay_opacity | default: 35 | times: 1.0 | divided_by: 100
+  assign min_h = section.settings.min_height | default: 520
+  assign eyebrow_fs = section.settings.eyebrow_fs | default: 12
+  assign headline_fs = section.settings.headline_fs | default: 56
+  assign sub_fs = section.settings.sub_fs | default: 17
+  assign text_align = section.settings.text_align | default: 'center'
+  assign text_color = section.settings.text_color | default: '#1a1a1a'
+  assign accent = section.settings.accent_color | default: '#4d8c44'
 -%}
 
 <style>
-  .vb-hero3 { position: relative; padding: 72px 24px 60px; background: linear-gradient(180deg, #f5f9f3 0%, #e3efdf 100%); overflow: hidden; }
-  .vb-hero3__bg { position: absolute; inset: 0; z-index: 0; }
-  .vb-hero3__bg-img { width: 100%; height: 100%; object-fit: cover; object-position: center 35%; opacity: 0.85; }
-  .vb-hero3__bg-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0.3) 35%, rgba(245,249,243,0.55) 70%, rgba(227,239,223,0.92) 100%); }
-  .vb-hero3__inner { max-width: 1080px; margin: 0 auto; position: relative; z-index: 2; text-align: center; }
-  .vb-hero3__eyebrow { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: #4d8c44; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 8px 16px; border-radius: 999px; border: 1.5px solid #4d8c44; margin: 0 0 16px; box-shadow: 0 6px 14px rgba(77,140,68,0.10); max-width: 100%; }
-  @media (max-width: 749px) { .vb-hero3__eyebrow { font-size: 9.5px; padding: 6px 12px; letter-spacing: 0.04em; } }
-  .vb-hero3__eyebrow::before { content: ''; width: 8px; height: 8px; background: #4d8c44; border-radius: 50%; box-shadow: 0 0 10px #4d8c44; }
-  .vb-hero3__rating { display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: center; margin: 0 0 16px; font-size: 13.5px; color: #2b3a2a; }
-  .vb-hero3__rating .stars { color: #ffb43a; letter-spacing: 1px; font-size: 14px; }
-  .vb-hero3__rating .divider { width: 1px; height: 14px; background: #8db786; }
-  .vb-hero3__rating strong { color: #1a1a1a; font-weight: 700; }
-  .vb-hero3__headline { font-size: clamp(34px, 6vw, 64px); line-height: 1.04; font-weight: 800; color: #1a1a1a; margin: 0 auto 18px; letter-spacing: -0.015em; max-width: 920px; text-shadow: 0 1px 2px rgba(255,255,255,0.4); }
-  .vb-hero3__headline em { font-style: normal; color: #4d8c44; }
-  .vb-hero3__sub { font-size: 17px; line-height: 1.6; color: #2b3a2a; max-width: 620px; margin: 0 auto 24px; font-weight: 500; }
-  .vb-hero3__ctas { display: inline-flex; flex-wrap: wrap; gap: 12px; margin: 0 0 32px; justify-content: center; }
-  .vb-hero3 a.vb-hero3__cta { display: inline-flex; align-items: center; gap: 6px; padding: 15px 32px; border-radius: 999px; text-decoration: none; font-weight: 700; font-size: 15px; transition: all 0.18s ease; }
-  .vb-hero3 a.vb-hero3__cta--primary { background: #4d8c44; color: #fff !important; box-shadow: 0 12px 28px rgba(77, 140, 68, 0.40); }
-  .vb-hero3 a.vb-hero3__cta--primary:hover { background: #36632f; transform: translateY(-2px); box-shadow: 0 16px 32px rgba(77, 140, 68, 0.50); }
-  .vb-hero3 a.vb-hero3__cta--secondary { background: rgba(255,255,255,0.94); color: #2b3a2a !important; border: 2px solid #c9d6c7; backdrop-filter: blur(8px); }
-  .vb-hero3 a.vb-hero3__cta--secondary:hover { border-color: #4d8c44; color: #4d8c44 !important; transform: translateY(-2px); }
-
-  /* Floating badges around hero centred area */
-  .vb-hero3__floats { position: relative; max-width: 760px; margin: 0 auto 36px; height: 80px; }
-  .vb-hero3__badge { position: absolute; background: #fff; padding: 10px 16px; border-radius: 999px; box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12); display: inline-flex; flex-direction: column; align-items: center; line-height: 1.1; border: 1px solid #e3ece1; }
-  .vb-hero3__badge--green { background: #4d8c44; color: #fff !important; border: none; }
-  .vb-hero3__badge--green strong, .vb-hero3__badge--green small { color: #fff; }
-  .vb-hero3__badge strong { font-size: 16px; font-weight: 900; color: #1a1a1a; letter-spacing: -0.02em; }
-  .vb-hero3__badge small { font-size: 9.5px; font-weight: 700; opacity: 0.85; margin-top: 2px; letter-spacing: 0.06em; text-transform: uppercase; color: #4d8c44; }
-  .vb-hero3__badge--tl { top: 0; left: 5%; transform: rotate(-5deg); }
-  .vb-hero3__badge--tr { top: 12px; right: 5%; transform: rotate(4deg); }
-  .vb-hero3__badge--bl { bottom: 0; left: 18%; transform: rotate(2deg); }
-  .vb-hero3__badge--br { bottom: 6px; right: 18%; transform: rotate(-3deg); }
-
-  /* Trust pills */
-  .vb-hero3__pills { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; max-width: 820px; margin: 0 auto; }
-  .vb-hero3__pill { background: rgba(255,255,255,0.94); backdrop-filter: blur(10px); padding: 14px 14px; border-radius: 14px; border: 1px solid rgba(195,212,193,0.6); display: flex; align-items: center; gap: 10px; transition: all 0.18s ease; text-align: left; }
-  .vb-hero3__pill:hover { transform: translateY(-3px); box-shadow: 0 10px 22px rgba(77, 140, 68, 0.16); background: #fff; border-color: rgba(77,140,68,0.4); }
-  .vb-hero3__pill-icon { width: 36px; height: 36px; border-radius: 50%; background: rgba(77,140,68,0.14); color: #4d8c44; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
-  .vb-hero3__pill-text { display: flex; flex-direction: column; line-height: 1.2; min-width: 0; }
-  .vb-hero3__pill-title { font-size: 13px; font-weight: 800; color: #1a1a1a; }
-  .vb-hero3__pill-sub { font-size: 11px; color: #6c7a6b; margin-top: 2px; }
+  #vbh-{{ section.id }} {
+    position: relative;
+    padding: {{ pad_t }}px 24px {{ pad_b }}px;
+    min-height: {{ min_h }}px;
+    background: linear-gradient(180deg, #f5f9f3 0%, #e3efdf 100%);
+    overflow: hidden;
+    color: {{ text_color }};
+  }
+  #vbh-{{ section.id }} .vbh__bg { position: absolute; inset: 0; z-index: 0; }
+  #vbh-{{ section.id }} .vbh__bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: {{ section.settings.image_fit | default: 'cover' }};
+    object-position: {{ section.settings.image_position | default: 'center 35%' }};
+    opacity: {{ img_op }};
+    {% if section.settings.image_edge_fade %}
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
+    {% endif %}
+  }
+  #vbh-{{ section.id }} .vbh__overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(255,255,255,{{ ovly_op }}) 0%, rgba(255,255,255,{{ ovly_op | times: 0.5 }}) 35%, rgba(245,249,243,{{ ovly_op }}) 70%, rgba(227,239,223,{{ ovly_op | plus: 0.4 | at_most: 1 }}) 100%);
+  }
+  #vbh-{{ section.id }} .vbh__inner { max-width: 1080px; margin: 0 auto; position: relative; z-index: 2; text-align: {{ text_align }}; }
+  #vbh-{{ section.id }} .vbh__eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: #fff; color: {{ accent }};
+    font-size: {{ eyebrow_fs }}px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 8px 16px; border-radius: 999px; border: 1.5px solid {{ accent }};
+    margin: 0 0 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  }
+  #vbh-{{ section.id }} .vbh__eyebrow::before { content: ''; width: 8px; height: 8px; background: {{ accent }}; border-radius: 50%; }
+  #vbh-{{ section.id }} .vbh__rating { display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: {{ text_align }}; margin: 0 0 16px; font-size: 13.5px; color: {{ text_color }}; }
+  #vbh-{{ section.id }} .vbh__rating .stars { color: #ffb43a; letter-spacing: 1px; font-size: 14px; }
+  #vbh-{{ section.id }} .vbh__rating .divider { width: 1px; height: 14px; background: #8db786; }
+  #vbh-{{ section.id }} .vbh__rating strong { color: {{ text_color }}; font-weight: 700; }
+  #vbh-{{ section.id }} .vbh__headline { font-size: clamp(32px, {{ headline_fs | divided_by: 16.0 }}vw, {{ headline_fs }}px); line-height: 1.05; font-weight: 800; color: {{ text_color }}; margin: 0 auto 18px; letter-spacing: -0.015em; max-width: 920px; }
+  #vbh-{{ section.id }} .vbh__headline em { font-style: normal; color: {{ accent }}; }
+  #vbh-{{ section.id }} .vbh__sub { font-size: {{ sub_fs }}px; line-height: 1.6; color: {{ text_color }}; max-width: 620px; margin: 0 auto 24px; font-weight: 500; opacity: 0.9; }
+  #vbh-{{ section.id }} .vbh__ctas { display: inline-flex; flex-wrap: wrap; gap: 12px; margin: 0; justify-content: {{ text_align }}; }
+  #vbh-{{ section.id }} .vbh__cta { display: inline-flex; align-items: center; gap: 6px; padding: 15px 32px; border-radius: 999px; text-decoration: none; font-weight: 700; font-size: 15px; transition: all 0.18s ease; }
+  #vbh-{{ section.id }} .vbh__cta--primary { background: {{ accent }}; color: #fff !important; box-shadow: 0 12px 28px rgba(0,0,0,0.18); }
+  #vbh-{{ section.id }} .vbh__cta--primary:hover { filter: brightness(0.88); transform: translateY(-2px); }
+  #vbh-{{ section.id }} .vbh__cta--secondary { background: rgba(255,255,255,0.94); color: {{ text_color }} !important; border: 2px solid #c9d6c7; backdrop-filter: blur(8px); }
+  #vbh-{{ section.id }} .vbh__cta--secondary:hover { border-color: {{ accent }}; color: {{ accent }} !important; transform: translateY(-2px); }
 
   @media (max-width: 749px) {
-    .vb-hero3 { padding: 36px 16px 40px; }
-    .vb-hero3__bg-img { object-position: center 25%; opacity: 0.35; -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%); mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%); }
-    .vb-hero3__headline { font-size: clamp(28px, 9vw, 38px); }
-    .vb-hero3__sub { font-size: 14.5px; }
-    .vb-hero3__floats { height: 64px; margin-bottom: 24px; max-width: 100%; }
-    .vb-hero3__badge { padding: 7px 11px; }
-    .vb-hero3__badge strong { font-size: 12.5px; }
-    .vb-hero3__badge small { font-size: 8px; }
-    .vb-hero3__badge--tl { left: 0; }
-    .vb-hero3__badge--tr { right: 0; }
-    .vb-hero3__badge--bl { left: 10%; bottom: 0; }
-    .vb-hero3__badge--br { right: 10%; bottom: 4px; }
-    .vb-hero3__pills { grid-template-columns: 1fr 1fr; gap: 8px; }
-    .vb-hero3__pill { padding: 10px 12px; gap: 8px; border-radius: 12px; }
-    .vb-hero3__pill-icon { width: 30px; height: 30px; font-size: 14px; }
-    .vb-hero3__pill-title { font-size: 12px; }
-    .vb-hero3__pill-sub { font-size: 10px; }
-    .vb-hero3 a.vb-hero3__cta { padding: 12px 22px; font-size: 13.5px; }
+    #vbh-{{ section.id }} { padding: {{ pad_t | times: 0.55 | round: 0 }}px 16px {{ pad_b | times: 0.6 | round: 0 }}px; min-height: {{ min_h | times: 0.7 | round: 0 }}px; }
+    #vbh-{{ section.id }} .vbh__eyebrow { font-size: {{ eyebrow_fs | times: 0.78 | round }}px; padding: 6px 12px; letter-spacing: 0.04em; }
+    #vbh-{{ section.id }} .vbh__headline { font-size: clamp(26px, 8vw, {{ headline_fs | times: 0.6 | round }}px); }
+    #vbh-{{ section.id }} .vbh__sub { font-size: {{ sub_fs | times: 0.85 | round }}px; }
+    #vbh-{{ section.id }} .vbh__cta { padding: 12px 22px; font-size: 13.5px; }
   }
 </style>
 
-<section class="vb-hero3">
+<section id="vbh-{{ section.id }}">
   {%- if hero_image_src != blank -%}
-    <div class="vb-hero3__bg">
-      <img class="vb-hero3__bg-img" src="{{ hero_image_src }}" alt="" loading="eager" />
-    </div>
-    <div class="vb-hero3__bg-overlay"></div>
+    <div class="vbh__bg"><img class="vbh__bg-img" src="{{ hero_image_src }}" alt="" loading="eager" /></div>
+    <div class="vbh__overlay"></div>
   {%- endif -%}
 
-  <div class="vb-hero3__inner">
-    {%- if section.settings.eyebrow != blank -%}<span class="vb-hero3__eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+  <div class="vbh__inner">
+    {%- if section.settings.eyebrow != blank -%}<span class="vbh__eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
     {%- if section.settings.show_rating -%}
-      <div class="vb-hero3__rating">
+      <div class="vbh__rating">
         <span class="stars">★★★★★</span>
         <span>Over <strong>{{ section.settings.review_count }}</strong> Reviews</span>
         <span class="divider"></span>
-        <span><strong>{{ section.settings.customer_count }}</strong> Happy Customers Worldwide</span>
+        <span><strong>{{ section.settings.customer_count }}</strong> Happy Customers</span>
       </div>
     {%- endif -%}
-    <h1 class="vb-hero3__headline">
+    <h1 class="vbh__headline">
       {{ section.settings.headline_pre }}
       {%- if section.settings.headline_highlight != blank %} <em>{{ section.settings.headline_highlight }}</em>{%- endif -%}
     </h1>
-    {%- if section.settings.sub != blank -%}<p class="vb-hero3__sub">{{ section.settings.sub }}</p>{%- endif -%}
-    <div class="vb-hero3__ctas">
-      {%- if section.settings.cta1_text != blank -%}<a href="{{ section.settings.cta1_link | default: '#' }}" class="vb-hero3__cta vb-hero3__cta--primary">{{ section.settings.cta1_text }}</a>{%- endif -%}
-      {%- if section.settings.cta2_text != blank -%}<a href="{{ section.settings.cta2_link | default: '#' }}" class="vb-hero3__cta vb-hero3__cta--secondary">{{ section.settings.cta2_text }}</a>{%- endif -%}
-    </div>
-
-    <div class="vb-hero3__floats">
-      {%- if section.settings.badge_tl_value != blank -%}<span class="vb-hero3__badge vb-hero3__badge--green vb-hero3__badge--tl"><strong>{{ section.settings.badge_tl_value }}</strong><small>{{ section.settings.badge_tl_label }}</small></span>{%- endif -%}
-      {%- if section.settings.badge_tr_value != blank -%}<span class="vb-hero3__badge vb-hero3__badge--tr"><strong>{{ section.settings.badge_tr_value }}</strong><small>{{ section.settings.badge_tr_label }}</small></span>{%- endif -%}
-      {%- if section.settings.badge_bl_value != blank -%}<span class="vb-hero3__badge vb-hero3__badge--bl"><strong>{{ section.settings.badge_bl_value }}</strong><small>{{ section.settings.badge_bl_label }}</small></span>{%- endif -%}
-      {%- if section.settings.badge_br_value != blank -%}<span class="vb-hero3__badge vb-hero3__badge--green vb-hero3__badge--br"><strong>{{ section.settings.badge_br_value }}</strong><small>{{ section.settings.badge_br_label }}</small></span>{%- endif -%}
-    </div>
-
-    <div class="vb-hero3__pills">
-      {%- for block in section.blocks -%}
-        {%- if block.type == 'pill' -%}
-          <div class="vb-hero3__pill" {{ block.shopify_attributes }}>
-            <span class="vb-hero3__pill-icon">{{ block.settings.icon }}</span>
-            <span class="vb-hero3__pill-text">
-              <span class="vb-hero3__pill-title">{{ block.settings.title }}</span>
-              <span class="vb-hero3__pill-sub">{{ block.settings.sub }}</span>
-            </span>
-          </div>
-        {%- endif -%}
-      {%- endfor -%}
+    {%- if section.settings.sub != blank -%}<p class="vbh__sub">{{ section.settings.sub }}</p>{%- endif -%}
+    <div class="vbh__ctas">
+      {%- if section.settings.cta1_text != blank -%}<a href="{{ section.settings.cta1_link | default: '#' }}" class="vbh__cta vbh__cta--primary">{{ section.settings.cta1_text }}</a>{%- endif -%}
+      {%- if section.settings.cta2_text != blank -%}<a href="{{ section.settings.cta2_link | default: '#' }}" class="vbh__cta vbh__cta--secondary">{{ section.settings.cta2_text }}</a>{%- endif -%}
     </div>
   </div>
 </section>
@@ -134,46 +113,50 @@
   "tag": "section",
   "class": "vb-home-hero-section",
   "settings": [
-    { "type": "header", "content": "Background image (fades at edges)" },
+    { "type": "header", "content": "Background image" },
     { "type": "text", "id": "bg_image_url", "label": "External image URL" },
     { "type": "image_picker", "id": "bg_image", "label": "Hero image (uploaded)" },
+    { "type": "select", "id": "image_fit", "label": "Image fit", "default": "cover", "options": [
+      { "value": "cover", "label": "Cover (fill area, may crop)" },
+      { "value": "contain", "label": "Contain (whole image visible)" }
+    ]},
+    { "type": "text", "id": "image_position", "label": "Image position (CSS object-position)", "default": "center 35%", "info": "e.g. 'center top', 'center 35%', 'left center'" },
+    { "type": "range", "id": "image_opacity", "label": "Image opacity %", "min": 10, "max": 100, "step": 5, "default": 85 },
+    { "type": "checkbox", "id": "image_edge_fade", "label": "Fade image edges (like femina.care)", "default": false },
+    { "type": "range", "id": "overlay_opacity", "label": "Text-area overlay strength %", "min": 0, "max": 100, "step": 5, "default": 35, "info": "Higher = stronger white overlay over the image so text reads cleanly." },
+
+    { "type": "header", "content": "Layout & sizing" },
+    { "type": "range", "id": "min_height", "label": "Minimum hero height (px)", "min": 320, "max": 900, "step": 20, "default": 520 },
+    { "type": "range", "id": "padding_top", "label": "Padding top (px)", "min": 0, "max": 200, "step": 8, "default": 96 },
+    { "type": "range", "id": "padding_bottom", "label": "Padding bottom (px)", "min": 0, "max": 200, "step": 8, "default": 80 },
+    { "type": "select", "id": "text_align", "label": "Text alignment", "default": "center", "options": [
+      { "value": "left", "label": "Left" },
+      { "value": "center", "label": "Center" },
+      { "value": "right", "label": "Right" }
+    ]},
+
+    { "type": "header", "content": "Typography" },
+    { "type": "range", "id": "eyebrow_fs", "label": "Eyebrow font size (desktop, px)", "min": 8, "max": 20, "step": 1, "default": 12 },
+    { "type": "range", "id": "headline_fs", "label": "Headline font size (desktop max, px)", "min": 28, "max": 96, "step": 2, "default": 56 },
+    { "type": "range", "id": "sub_fs", "label": "Sub-text font size (px)", "min": 12, "max": 24, "step": 1, "default": 17 },
+    { "type": "color", "id": "text_color", "label": "Text colour", "default": "#1a1a1a" },
+    { "type": "color", "id": "accent_color", "label": "Accent colour", "default": "#4d8c44" },
+
     { "type": "header", "content": "Content" },
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Patented Probiotics That Actually Reach Your Gut" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow (small tag above headline)", "default": "Patented Probiotics That Actually Reach Your Gut" },
     { "type": "text", "id": "headline_pre", "label": "Headline (start)", "default": "Most Probiotics Die in Your Stomach." },
-    { "type": "text", "id": "headline_highlight", "label": "Headline (highlight)", "default": "Ours Don't!" },
-    { "type": "textarea", "id": "sub", "label": "Sub-headline", "default": "Velobiotics protects every live culture through stomach acid delivering 1000× more probiotics to your gut, where they're needed for real results, you can feel." },
+    { "type": "text", "id": "headline_highlight", "label": "Headline (highlight — green)", "default": "Ours Don't!" },
+    { "type": "textarea", "id": "sub", "label": "Sub-headline", "default": "Velobiotics protects every live culture through stomach acid — delivering 1000× more probiotics to your gut, where they actually work." },
     { "type": "checkbox", "id": "show_rating", "label": "Show rating row", "default": true },
     { "type": "text", "id": "review_count", "label": "Review count", "default": "3,500" },
     { "type": "text", "id": "customer_count", "label": "Customer count", "default": "300,000" },
+
     { "type": "header", "content": "CTAs" },
     { "type": "text", "id": "cta1_text", "label": "Primary CTA", "default": "Shop Products" },
     { "type": "url", "id": "cta1_link", "label": "Primary CTA link" },
     { "type": "text", "id": "cta2_text", "label": "Secondary CTA", "default": "🧬 Take The Quiz" },
-    { "type": "url", "id": "cta2_link", "label": "Secondary CTA link" },
-    { "type": "header", "content": "Floating badges" },
-    { "type": "text", "id": "badge_tl_value", "label": "Top-left value", "default": "1000×" },
-    { "type": "text", "id": "badge_tl_label", "label": "Top-left label", "default": "More Probiotics" },
-    { "type": "text", "id": "badge_tr_value", "label": "Top-right value", "default": "300K+" },
-    { "type": "text", "id": "badge_tr_label", "label": "Top-right label", "default": "Happy Customers" },
-    { "type": "text", "id": "badge_bl_value", "label": "Bottom-left value", "default": "16" },
-    { "type": "text", "id": "badge_bl_label", "label": "Bottom-left label", "default": "Probiotic Strains" },
-    { "type": "text", "id": "badge_br_value", "label": "Bottom-right value", "default": "30-day" },
-    { "type": "text", "id": "badge_br_label", "label": "Bottom-right label", "default": "Money Back" }
+    { "type": "url", "id": "cta2_link", "label": "Secondary CTA link" }
   ],
-  "blocks": [
-    { "type": "pill", "name": "Trust pill", "limit": 4, "settings": [
-      { "type": "text", "id": "icon", "label": "Icon / emoji", "default": "💊" },
-      { "type": "text", "id": "title", "label": "Title", "default": "Patented MEP" },
-      { "type": "text", "id": "sub", "label": "Sub-text", "default": "Technology" }
-    ]}
-  ],
-  "presets": [
-    { "name": "VB · Home hero", "blocks": [
-      { "type": "pill", "settings": { "icon": "💊", "title": "Patented MEP", "sub": "Technology" } },
-      { "type": "pill", "settings": { "icon": "🩺", "title": "Doctor", "sub": "Formulated" } },
-      { "type": "pill", "settings": { "icon": "🔬", "title": "Lab-Tested", "sub": "Every Batch" } },
-      { "type": "pill", "settings": { "icon": "🔄", "title": "Money-Back", "sub": "Guarantee" } }
-    ]}
-  ]
+  "presets": [ { "name": "VB · Home hero" } ]
 }
 {% endschema %}

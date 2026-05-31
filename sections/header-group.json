@@ -43,7 +43,13 @@
           }
         }
       },
-      "block_order": ["msg1", "msg2", "msg3", "msg4"],
+      "block_order": [
+        "msg1",
+        "msg2",
+        "msg3",
+        "msg4"
+      ],
+      "disabled": true,
       "settings": {
         "auto_rotate": true,
         "change_slides_speed": 5,
@@ -74,5 +80,8 @@
       }
     }
   },
-  "order": ["announcement-bar", "header"]
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
 }

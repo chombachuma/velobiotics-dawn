@@ -1,147 +1,217 @@
 {{ 'vb-footer.css' | asset_url | stylesheet_tag }}
 
+<style>
+  .vb-footer { background: #1a1a1a; color: #fff; }
+  .vb-footer * { box-sizing: border-box; }
+  .vb-footer__email-band { background: #4d8c44; color: #fff; padding: 36px 0; }
+  .vb-footer__email-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+  .vb-footer__email-heading { font-size: 22px; font-weight: 800; margin: 0 0 4px; color: #fff; }
+  .vb-footer__email-sub { font-size: 14px; margin: 0; color: rgba(255,255,255,0.85); }
+  .vb-footer__email-row { display: flex; gap: 8px; align-items: stretch; }
+  .vb-footer__email-input { padding: 12px 16px; border-radius: 10px; border: 0; min-width: 240px; font-size: 15px; color: #1a1a1a; }
+  .vb-footer__email-row button { background: #fff; color: #2e5d28; border: 0; padding: 12px 22px; border-radius: 10px; font-weight: 700; cursor: pointer; }
+  .vb-footer__email-note { font-size: 12px; color: rgba(255,255,255,0.75); margin: 4px 0 0; }
+
+  .vb-footer__main { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr; gap: 40px; max-width: 1280px; margin: 0 auto; padding: 60px 24px 40px; }
+  .vb-footer__brand-col p { color: rgba(255,255,255,0.75); line-height: 1.6; font-size: 14px; margin: 12px 0 20px; max-width: 320px; }
+  .vb-footer__logo, .vb-footer__logo-text { color: #fff; font-size: 22px; font-weight: 900; letter-spacing: -0.01em; display: inline-block; }
+  .vb-footer__col-heading { font-size: 13px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #fff; margin: 0 0 16px; }
+  .vb-footer__links { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+  .vb-footer__links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 14px; transition: color 0.15s; }
+  .vb-footer__links a:hover { color: #fff; }
+
+  .vb-footer__socials { display: flex; gap: 12px; margin: 20px 0 24px; }
+  .vb-footer__social-link { width: 38px; height: 38px; border-radius: 50%; border: 1.5px solid rgba(255,255,255,0.3); color: #fff; display: inline-flex; align-items: center; justify-content: center; transition: all 0.15s; }
+  .vb-footer__social-link:hover { background: #4d8c44; border-color: #4d8c44; }
+
+  .vb-footer__payment-band { border-top: 1px solid rgba(255,255,255,0.15); padding: 24px 0; }
+  .vb-footer__payment-inner { max-width: 1280px; margin: 0 auto; padding: 0 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
+  .vb-footer__payment-label { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin: 0; }
+  .vb-footer__payment-icons { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; list-style: none; padding: 0; margin: 0; }
+  .vb-footer__payment-icons li { background: #fff; border-radius: 6px; padding: 4px 8px; display: inline-flex; align-items: center; justify-content: center; min-width: 38px; height: 26px; }
+  .vb-footer__payment-icons svg { height: 18px; width: auto; max-width: 36px; }
+
+  .vb-footer__disclaimer { background: #0f0f0f; padding: 24px 0; border-top: 1px solid rgba(255,255,255,0.1); }
+  .vb-footer__disclaimer-inner { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+  .vb-footer__disclaimer p { color: rgba(255,255,255,0.55); font-size: 12px; line-height: 1.65; margin: 0; text-align: center; }
+
+  .vb-footer__bottom { background: #0a0a0a; padding: 18px 0; }
+  .vb-footer__bottom-inner { max-width: 1280px; margin: 0 auto; padding: 0 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+  .vb-footer__copy { color: rgba(255,255,255,0.55); font-size: 12px; margin: 0; }
+  .vb-footer__bottom-links { display: flex; gap: 16px; list-style: none; padding: 0; margin: 0; flex-wrap: wrap; }
+  .vb-footer__bottom-links a { color: rgba(255,255,255,0.55); font-size: 12px; text-decoration: none; }
+  .vb-footer__bottom-links a:hover { color: #fff; }
+
+  @media (max-width: 1024px) {
+    .vb-footer__main { grid-template-columns: 1.4fr 1fr 1fr; }
+    .vb-footer__brand-col { grid-column: 1 / -1; }
+  }
+  @media (max-width: 749px) {
+    .vb-footer__main { grid-template-columns: 1fr 1fr; padding: 40px 16px 24px; gap: 24px; }
+    .vb-footer__brand-col { grid-column: 1 / -1; }
+    .vb-footer__email-inner { flex-direction: column; align-items: stretch; padding: 0 16px; }
+    .vb-footer__email-row { flex-direction: column; }
+    .vb-footer__email-input { width: 100%; min-width: 0; }
+    .vb-footer__payment-inner, .vb-footer__bottom-inner { flex-direction: column; text-align: center; }
+  }
+
+  /* Eliminate white-space gap between page body and footer */
+  main + .vb-footer, .shopify-section + .vb-footer { margin-top: 0; }
+  .vb-footer { margin: 0 !important; }
+</style>
+
 <footer class="vb-footer" role="contentinfo">
 
   {%- comment -%} Email capture band {%- endcomment -%}
   <div class="vb-footer__email-band">
-    <div class="vb-footer__email-inner page-width">
+    <div class="vb-footer__email-inner">
       <div class="vb-footer__email-copy">
-        <h3 class="vb-footer__email-heading">Your Health. Our Knowledge.</h3>
-        <p class="vb-footer__email-sub">Get science-backed health tips, exclusive offers, and early access to new products.</p>
+        <h3 class="vb-footer__email-heading">{{ section.settings.email_heading | default: 'Your Health. Our Knowledge.' }}</h3>
+        <p class="vb-footer__email-sub">{{ section.settings.email_sub | default: 'Science-backed tips, exclusive offers, early access to new products.' }}</p>
       </div>
-      <form class="vb-footer__email-form" action="/contact#contact_form" method="post" accept-charset="UTF-8">
-        <input type="hidden" name="form_type" value="customer">
-        <input type="hidden" name="utf8" value="✓">
-        <label for="vb-footer-email" class="visually-hidden">Email address</label>
+      {%- form 'customer', id: 'VBFooterNewsletter' -%}
+        <input type="hidden" name="contact[tags]" value="newsletter">
         <div class="vb-footer__email-row">
-          <input
-            type="email"
-            id="vb-footer-email"
-            name="contact[email]"
-            placeholder="Enter your email address"
-            required
-            class="vb-footer__email-input"
-            autocomplete="email"
-          >
-          <button type="submit" class="vb-btn vb-btn--primary vb-btn--md">Subscribe</button>
+          <label for="vb-footer-email" class="visually-hidden">Email</label>
+          <input id="vb-footer-email" type="email" name="contact[email]" placeholder="Enter your email" required class="vb-footer__email-input" autocomplete="email">
+          <button type="submit">Subscribe</button>
         </div>
-        <p class="vb-footer__email-note">No spam. Unsubscribe any time.</p>
-      </form>
+        <p class="vb-footer__email-note">No spam. Unsubscribe anytime.</p>
+      {%- endform -%}
     </div>
   </div>
 
-  {%- comment -%} Main footer columns {%- endcomment -%}
-  <div class="vb-footer__main page-width">
+  {%- comment -%} Main footer columns — AG1-style 5-col {%- endcomment -%}
+  <div class="vb-footer__main">
+
+    {%- comment -%} Brand column {%- endcomment -%}
     <div class="vb-footer__brand-col">
       {%- if section.settings.footer_logo != blank -%}
-        {{
-          section.settings.footer_logo
-          | image_url: width: 240
-          | image_tag: loading: 'lazy', width: 140, height: 44, alt: shop.name, class: 'vb-footer__logo'
-        }}
+        {{ section.settings.footer_logo | image_url: width: 240 | image_tag: loading: 'lazy', width: 140, height: 44, alt: shop.name, class: 'vb-footer__logo' }}
       {%- else -%}
-        <span class="vb-footer__logo-text">{{ shop.name }}</span>
+        <span class="vb-footer__logo-text">VELOBIOTICS™</span>
       {%- endif -%}
-      <p class="vb-footer__brand-desc">Probiotics engineered to survive. Formulated by doctors. Trusted by 300,000+ South Africans.</p>
-
-      {%- comment -%} Trust badges {%- endcomment -%}
-      <div class="vb-footer__badges">
-        <div class="vb-footer__badge">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z" fill="currentColor" opacity=".2"/><path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Patented MEP Tech
-        </div>
-        <div class="vb-footer__badge">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 20c0-4 3.58-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          Doctor Formulated
-        </div>
-        <div class="vb-footer__badge">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" stroke="currentColor" stroke-width="1.5"/><rect x="9" y="3" width="6" height="4" rx="1" stroke="currentColor" stroke-width="1.5"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          SAHPRA Certified
-        </div>
-        <div class="vb-footer__badge">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4h16v2a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" stroke="currentColor" stroke-width="1.5"/><path d="M4 8v10a2 2 0 002 2h12a2 2 0 002-2V8" stroke="currentColor" stroke-width="1.5"/><path d="M10 12h4M12 10v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          Money-Back Guarantee
-        </div>
-      </div>
+      <p>{{ section.settings.brand_blurb | default: 'Probiotics engineered to survive. Formulated by doctors. Trusted by 300,000+ South Africans. Patented MEP delivery — 1000× more probiotics reach your gut alive.' }}</p>
 
       {%- comment -%} Social icons {%- endcomment -%}
       <div class="vb-footer__socials">
-        {%- if section.settings.social_instagram != blank -%}
-          <a href="{{ section.settings.social_instagram }}" class="vb-footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
-          </a>
-        {%- endif -%}
-        {%- if section.settings.social_facebook != blank -%}
-          <a href="{{ section.settings.social_facebook }}" class="vb-footer__social-link" aria-label="Facebook" target="_blank" rel="noopener">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-          </a>
-        {%- endif -%}
-        {%- if section.settings.social_tiktok != blank -%}
-          <a href="{{ section.settings.social_tiktok }}" class="vb-footer__social-link" aria-label="TikTok" target="_blank" rel="noopener">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 12a4 4 0 104 4V4a5 5 0 005 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-        {%- endif -%}
-        {%- if section.settings.social_youtube != blank -%}
-          <a href="{{ section.settings.social_youtube }}" class="vb-footer__social-link" aria-label="YouTube" target="_blank" rel="noopener">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="5" width="20" height="14" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M10 9l5 3-5 3V9z" fill="currentColor"/></svg>
-          </a>
-        {%- endif -%}
+        <a href="{{ section.settings.social_instagram | default: 'https://www.instagram.com/velobiotics' }}" class="vb-footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        </a>
+        <a href="{{ section.settings.social_facebook | default: 'https://www.facebook.com/velobiotics' }}" class="vb-footer__social-link" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+        </a>
+        <a href="{{ section.settings.social_tiktok | default: 'https://www.tiktok.com/@velobiotics' }}" class="vb-footer__social-link" aria-label="TikTok" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5.8 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.84-.1z"/></svg>
+        </a>
+        <a href="{{ section.settings.social_youtube | default: 'https://www.youtube.com/@velobiotics' }}" class="vb-footer__social-link" aria-label="YouTube" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+        <a href="{{ section.settings.social_x | default: 'https://x.com/velobiotics' }}" class="vb-footer__social-link" aria-label="X (Twitter)" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
       </div>
     </div>
 
-    <div class="vb-footer__nav-col">
+    {%- comment -%} Shop column {%- endcomment -%}
+    <div>
       <p class="vb-footer__col-heading">Shop</p>
       <ul class="vb-footer__links" role="list">
         <li><a href="/collections/all">All Products</a></li>
-        <li><a href="/collections/bundles">Bundles & Combos</a></li>
-        <li><a href="/collections/femina">Femina™</a></li>
-        <li><a href="/collections/gutslim">GutSlim™</a></li>
-        <li><a href="/collections/velo16">Velo16™</a></li>
-        <li><a href="/collections/biokid">BioKid™</a></li>
-        <li><a href="/collections/his-biotics">His-Biotics™</a></li>
-        <li><a href="/collections/her-biotics">Her-Biotics™</a></li>
-      </ul>
-    </div>
-
-    <div class="vb-footer__nav-col">
-      <p class="vb-footer__col-heading">Learn</p>
-      <ul class="vb-footer__links" role="list">
-        <li><a href="/pages/our-science">Our Science & Technology</a></li>
-        <li><a href="/pages/quiz">Product Recommendation Quiz</a></li>
-        <li><a href="/blogs/news">Health Blog</a></li>
-        <li><a href="/pages/about">About Velobiotics</a></li>
-        <li><a href="/pages/faq">FAQ</a></li>
-      </ul>
-    </div>
-
-    <div class="vb-footer__nav-col">
-      <p class="vb-footer__col-heading">Support</p>
-      <ul class="vb-footer__links" role="list">
-        <li><a href="/pages/contact">Contact Us</a></li>
-        <li><a href="/policies/shipping-policy">Shipping Policy</a></li>
-        <li><a href="/policies/refund-policy">Returns & Refunds</a></li>
-        <li><a href="/policies/privacy-policy">Privacy Policy</a></li>
-        <li><a href="/policies/terms-of-service">Terms of Service</a></li>
+        <li><a href="/collections/gut-bundles">Bundles & Combos</a></li>
+        <li><a href="/pages/quiz">Take the Quiz</a></li>
+        <li><a href="/a/track">Track My Order</a></li>
         <li><a href="{{ routes.account_url }}">My Account</a></li>
       </ul>
     </div>
 
+    {%- comment -%} Brands column {%- endcomment -%}
+    <div>
+      <p class="vb-footer__col-heading">Brands</p>
+      <ul class="vb-footer__links" role="list">
+        <li><a href="/collections/velo16">Velo16™</a></li>
+        <li><a href="/collections/femina">Femina™</a></li>
+        <li><a href="/collections/gutslim">GutSlim™</a></li>
+        <li><a href="/collections/her-biotics">Her-Biotics™</a></li>
+        <li><a href="/collections/his-biotics">His-Biotics™</a></li>
+        <li><a href="/collections/pregbiotics">PregBiotics™</a></li>
+        <li><a href="/collections/biokid">BioKid™</a></li>
+        <li><a href="/collections/biogain">BioGain™</a></li>
+        <li><a href="/collections/almasi">Almasi™</a></li>
+      </ul>
+    </div>
+
+    {%- comment -%} About + Science column {%- endcomment -%}
+    <div>
+      <p class="vb-footer__col-heading">About & Science</p>
+      <ul class="vb-footer__links" role="list">
+        <li><a href="/pages/new-about-us">About Velobiotics</a></li>
+        <li><a href="/pages/velobiotics-story">Founder's Story</a></li>
+        <li><a href="/pages/what-is-microencapsulation">Our Science</a></li>
+        <li><a href="/pages/find-our-stockists">Find Our Stockists</a></li>
+        <li><a href="/pages/reviews">Reviews</a></li>
+        <li><a href="/blogs/news">Health Blog</a></li>
+        <li><a href="/pages/collab">Collabs & Affiliates</a></li>
+      </ul>
+    </div>
+
+    {%- comment -%} Support column {%- endcomment -%}
+    <div>
+      <p class="vb-footer__col-heading">Support</p>
+      <ul class="vb-footer__links" role="list">
+        <li><a href="/pages/faq">FAQ</a></li>
+        <li><a href="/pages/new-contact-us">Contact Us</a></li>
+        <li><a href="/pages/store-locator">Store Locator</a></li>
+        <li><a href="/policies/shipping-policy">Shipping</a></li>
+        <li><a href="/policies/refund-policy">Returns & Refunds</a></li>
+        <li><a href="/policies/terms-of-service">Terms of Service</a></li>
+        <li><a href="/policies/privacy-policy">Privacy Policy</a></li>
+      </ul>
+    </div>
+
   </div>
 
-  {%- comment -%} Bottom bar {%- endcomment -%}
+  {%- comment -%} Payment band — Shopify requirement {%- endcomment -%}
+  <div class="vb-footer__payment-band">
+    <div class="vb-footer__payment-inner">
+      <p class="vb-footer__payment-label">Secure payments accepted</p>
+      <ul class="vb-footer__payment-icons" role="list" aria-label="Accepted payment methods">
+        {%- assign enabled_payments = shop.enabled_payment_types -%}
+        {%- if enabled_payments.size > 0 -%}
+          {%- for type in enabled_payments -%}
+            <li>{{ type | payment_type_svg_tag }}</li>
+          {%- endfor -%}
+        {%- else -%}
+          {%- comment -%} Fallback hardcoded icons {%- endcomment -%}
+          <li>{{ 'visa' | payment_type_svg_tag }}</li>
+          <li>{{ 'master' | payment_type_svg_tag }}</li>
+          <li>{{ 'american_express' | payment_type_svg_tag }}</li>
+          <li>{{ 'apple_pay' | payment_type_svg_tag }}</li>
+          <li>{{ 'google_pay' | payment_type_svg_tag }}</li>
+          <li>{{ 'paypal' | payment_type_svg_tag }}</li>
+        {%- endif -%}
+      </ul>
+    </div>
+  </div>
+
+  {%- comment -%} Disclaimer {%- endcomment -%}
+  <div class="vb-footer__disclaimer">
+    <div class="vb-footer__disclaimer-inner">
+      <p>{{ section.settings.disclaimer_text | default: 'These statements have not been evaluated by SAHPRA. This product is a food supplement and is not intended to diagnose, treat, cure, or prevent any disease. Always consult your healthcare practitioner before using any nutritional supplement, particularly if you are pregnant, breastfeeding, on chronic medication, or have a medical condition. Individual results may vary. Velobiotics products are SAHPRA-aware Category D complementary medicines, manufactured in SAHPRA-compliant facilities.' }}</p>
+    </div>
+  </div>
+
+  {%- comment -%} Bottom bar — copyright + legal links {%- endcomment -%}
   <div class="vb-footer__bottom">
-    <div class="vb-footer__bottom-inner page-width">
-      <p class="vb-footer__copy">
-        &copy; {{ 'now' | date: '%Y' }} {{ shop.name }}. All rights reserved.
-        Registered in South Africa. Products not intended to diagnose, treat, cure, or prevent any disease.
-      </p>
-      <div class="vb-footer__payment-icons" aria-label="Accepted payment methods">
-        <span class="vb-footer__payment-badge">Visa</span>
-        <span class="vb-footer__payment-badge">Mastercard</span>
-        <span class="vb-footer__payment-badge">EFT</span>
-        <span class="vb-footer__payment-badge">Instant EFT</span>
-        <span class="vb-footer__payment-badge">PayFlex</span>
-      </div>
+    <div class="vb-footer__bottom-inner">
+      <p class="vb-footer__copy">&copy; {{ 'now' | date: '%Y' }} Velobiotics (Pty) Ltd. Registered in South Africa. All rights reserved.</p>
+      <ul class="vb-footer__bottom-links" role="list">
+        <li><a href="/policies/terms-of-service">Terms</a></li>
+        <li><a href="/policies/privacy-policy">Privacy</a></li>
+        <li><a href="/pages/data-sharing-opt-out">Your Privacy Choices</a></li>
+        <li><a href="/policies/refund-policy">Refunds</a></li>
+        <li><a href="/policies/shipping-policy">Shipping</a></li>
+      </ul>
     </div>
   </div>
 
@@ -151,13 +221,22 @@
 {
   "name": "VB Footer",
   "tag": "div",
-  "class": "vb-section",
+  "class": "vb-section vb-section--footer",
   "settings": [
-    { "type": "image_picker", "id": "footer_logo",      "label": "Footer logo" },
-    { "type": "text",         "id": "social_instagram",  "label": "Instagram URL" },
-    { "type": "text",         "id": "social_facebook",   "label": "Facebook URL" },
-    { "type": "text",         "id": "social_tiktok",     "label": "TikTok URL" },
-    { "type": "text",         "id": "social_youtube",    "label": "YouTube URL" }
+    { "type": "header", "content": "Brand" },
+    { "type": "image_picker", "id": "footer_logo", "label": "Footer logo" },
+    { "type": "textarea", "id": "brand_blurb", "label": "Brand blurb (under logo)", "default": "Probiotics engineered to survive. Formulated by doctors. Trusted by 300,000+ South Africans. Patented MEP delivery — 1000× more probiotics reach your gut alive." },
+    { "type": "header", "content": "Newsletter band" },
+    { "type": "text", "id": "email_heading", "label": "Heading", "default": "Your Health. Our Knowledge." },
+    { "type": "text", "id": "email_sub", "label": "Sub-text", "default": "Science-backed tips, exclusive offers, early access to new products." },
+    { "type": "header", "content": "Social URLs" },
+    { "type": "url", "id": "social_instagram", "label": "Instagram URL" },
+    { "type": "url", "id": "social_facebook", "label": "Facebook URL" },
+    { "type": "url", "id": "social_tiktok", "label": "TikTok URL" },
+    { "type": "url", "id": "social_youtube", "label": "YouTube URL" },
+    { "type": "url", "id": "social_x", "label": "X (Twitter) URL" },
+    { "type": "header", "content": "SAHPRA Disclaimer" },
+    { "type": "textarea", "id": "disclaimer_text", "label": "Disclaimer copy", "default": "These statements have not been evaluated by SAHPRA. This product is a food supplement and is not intended to diagnose, treat, cure, or prevent any disease. Always consult your healthcare practitioner before using any nutritional supplement, particularly if you are pregnant, breastfeeding, on chronic medication, or have a medical condition. Individual results may vary. Velobiotics products are SAHPRA-aware Category D complementary medicines, manufactured in SAHPRA-compliant facilities." }
   ],
   "presets": [{ "name": "VB Footer" }]
 }

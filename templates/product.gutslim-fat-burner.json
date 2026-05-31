@@ -1,0 +1,900 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🔥",
+            "text": "Whole-body fat burn"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "⚡",
+            "text": "Sustained energy"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🦠",
+            "text": "16 probiotic strains"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "💧",
+            "text": "1000× more delivery"
+          }
+        },
+        "t1": {
+          "type": "testi",
+          "settings": {
+            "quote": "Down 5kg in 6 weeks",
+            "author": "Karabo M."
+          }
+        },
+        "t2": {
+          "type": "testi",
+          "settings": {
+            "quote": "Workouts feel easier",
+            "author": "Vusi N."
+          }
+        },
+        "t3": {
+          "type": "testi",
+          "settings": {
+            "quote": "Energy lasts all day",
+            "author": "Annerien V."
+          }
+        },
+        "t4": {
+          "type": "testi",
+          "settings": {
+            "quote": "Best fat-burner I've used",
+            "author": "Kobus M."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "brand_primary": "#FFA500",
+        "brand_dark": "#b25800",
+        "brand_tint": "#fff8eb",
+        "brand_label": "GutSlim™ Fat Burner",
+        "rating": "4.8",
+        "review_count": "210+",
+        "hook": "Burn fat from everywhere. GutSlim™ Fat Burner combines thermogenic actives with 16 probiotic strains for whole-body fat metabolism — clean energy, no crash.",
+        "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
+        "show_subscription": true,
+        "show_qty_discounts": true,
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
+    },
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Karabo+M&background=FFA500&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Down 5kg in 6 weeks. Fat coming off everywhere. No crashes.",
+            "author": "Karabo M.",
+            "meta": "Verified buyer · Johannesburg"
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Vusi+N&background=ffc266&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Energy through every workout. Fat melts.",
+            "author": "Vusi N.",
+            "meta": "Verified buyer · 1 month ago"
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Annerien+V&background=b25800&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Steady energy from sunrise. Best fat-burner I've tried.",
+            "author": "Annerien V.",
+            "meta": "Verified buyer · 2 months ago"
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Kobus+M&background=FFA500&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Stacks beautifully with my training. Lean and strong.",
+            "author": "Kobus M.",
+            "meta": "Verified buyer · 3 weeks ago"
+          }
+        },
+        "r5": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Linda+G&background=ffc266&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "My gut feels great and the scale keeps dropping.",
+            "author": "Linda G.",
+            "meta": "Verified buyer · Durban"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "settings": {
+        "brand_primary": "#FFA500",
+        "brand_dark": "#b25800",
+        "brand_tint": "#fff8eb",
+        "eyebrow": "★ Real Reviews",
+        "title": "Real fat loss, verified by customers"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Sluggish metabolism</strong> that resists every diet."
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Fat that hangs on</strong> despite hours at the gym."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Stim-heavy burners</strong> that wreck your sleep and heart."
+          }
+        },
+        "p4": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Crash diets</strong> that rebound within months."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#FFA500",
+        "brand_tint": "#fff8eb",
+        "image_url": "https://media.base44.com/images/public/69e10e7db331c58e837bb75e/0da4d8630_generated_edbc0e3e.png",
+        "tag_value": "73%",
+        "tag_label": "Of Diets Fail Within 12 Months",
+        "eyebrow": "The Problem",
+        "title_pre": "Your metabolism",
+        "title_highlight": "isn't broken — it's depleted.",
+        "desc": "Most fat burners load up on stimulants that ruin sleep and crash your energy. Your metabolism slows further. Meanwhile, your gut — the engine of fat metabolism — is ignored. Fat Burner does both."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Thermogenic actives</strong> — green tea + L-carnitine + cayenne."
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>16-strain probiotic blend</strong> for metabolic gut health."
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach your gut alive."
+          }
+        },
+        "s4": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Clean energy</strong>. No jitters, no crashes. Doctor-formulated."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#FFA500",
+        "brand_tint": "#fff8eb",
+        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/GLP_1_Booster.png?v=1775328607",
+        "tag_value": "1000×",
+        "tag_label": "More Probiotics Delivered",
+        "eyebrow": "The Solution",
+        "title_pre": "Meet",
+        "title_highlight": "GutSlim™ Fat Burner.",
+        "desc": "Thermogenic actives + 16 probiotic strains. Boost your metabolism cleanly, balance your gut, and burn fat from everywhere — without the side effects of stim-heavy burners."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-glp-1-booster",
+            "brand": "GutSlim™",
+            "rating": "4.8",
+            "reviews": "1200+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-tummy-toner",
+            "brand": "GutSlim™",
+            "rating": "4.7",
+            "reviews": "410+"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-supergreens",
+            "brand": "GutSlim™",
+            "rating": "4.6",
+            "reviews": "150+"
+          }
+        },
+        "r4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-diet-shake",
+            "brand": "GutSlim™",
+            "rating": "4.7",
+            "reviews": "140+"
+          }
+        },
+        "r5": {
+          "type": "product",
+          "settings": {
+            "product_handle": "21-day-gutslim-complete-pack",
+            "brand": "GutSlim™",
+            "rating": "4.9",
+            "reviews": "320+"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "settings": {
+        "brand_primary": "#FFA500",
+        "brand_dark": "#b25800",
+        "brand_tint": "#fff8eb",
+        "tint": false,
+        "eyebrow": "Complete the Reset",
+        "title": "More from the GutSlim™ range",
+        "sub": "Stack Fat Burner with the rest of the GutSlim™ weight-management system."
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "b1": {
+          "type": "feat",
+          "settings": {
+            "icon": "🔥",
+            "name": "Whole-Body Fat Burn",
+            "desc": "Targets fat from everywhere, not just one area."
+          }
+        },
+        "b2": {
+          "type": "feat",
+          "settings": {
+            "icon": "⚡",
+            "name": "Clean Energy",
+            "desc": "Sustained vitality with no jittery crash."
+          }
+        },
+        "b3": {
+          "type": "feat",
+          "settings": {
+            "icon": "🦠",
+            "name": "Gut-Powered Metabolism",
+            "desc": "16 probiotic strains for true metabolic balance."
+          }
+        },
+        "b4": {
+          "type": "feat",
+          "settings": {
+            "icon": "💪",
+            "name": "Workout Performance",
+            "desc": "Better endurance and faster recovery."
+          }
+        },
+        "b5": {
+          "type": "feat",
+          "settings": {
+            "icon": "🩺",
+            "name": "Doctor-Formulated",
+            "desc": "Built by medical doctors using clinically-studied actives."
+          }
+        },
+        "b6": {
+          "type": "feat",
+          "settings": {
+            "icon": "🌿",
+            "name": "100% Natural",
+            "desc": "Vegan, halaal-friendly, no fillers, no artificial nasties."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "settings": {
+        "brand_primary": "#FFA500",
+        "brand_tint": "#fff8eb",
+        "eyebrow": "Key Benefits",
+        "title_pre": "Why",
+        "title_highlight": "Fat Burner",
+        "sub": "Six reasons Fat Burner is the GutSlim™ favourite for serious fat-loss seekers."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "💊",
+            "name": "Take Daily",
+            "desc": "With water, before breakfast or your workout."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "🛡️",
+            "name": "MEP Armour Survives",
+            "desc": "Velobiotics™ shield protects every culture through stomach acid."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "🎯",
+            "name": "Thermogenic Boost",
+            "desc": "Green tea + L-carnitine + cayenne ignite fat metabolism."
+          }
+        },
+        "h4": {
+          "type": "step",
+          "settings": {
+            "icon": "🔥",
+            "name": "Fat Burns Cleanly",
+            "desc": "Whole-body fat loss with steady energy, no crash."
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ],
+      "settings": {
+        "brand_primary": "#FFA500",
+        "brand_tint": "#fff8eb",
+        "eyebrow": "How It Works",
+        "title_pre": "From Capsule to",
+        "title_highlight": "Visible Fat Loss",
+        "sub": "Four simple steps. One daily ritual. Clean, sustainable fat burn."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🍃",
+            "name": "Green Tea Extract",
+            "amount": "EGCG 250mg",
+            "desc": "Premium EGCG-standardised extract. Boosts thermogenesis without jitters."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "⚡",
+            "name": "L-Carnitine",
+            "amount": "500mg",
+            "desc": "Mobilises fat for energy. Fuels lean energy without stimulants."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🌶️",
+            "name": "Cayenne Pepper Extract",
+            "amount": "50mg",
+            "desc": "Capsaicin boosts metabolic rate cleanly and gently."
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🦠",
+            "name": "16-Strain Probiotic Blend",
+            "amount": "10 Billion CFU",
+            "desc": "Strains chosen for metabolic health and gut balance."
+          }
+        },
+        "i5": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🛡️",
+            "name": "Velobiotics™ MEP Coating",
+            "amount": "Patented",
+            "desc": "Supercritical CO₂ microencapsulation — 1000× more survive."
+          }
+        },
+        "i6": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🚫",
+            "name": "Free From",
+            "amount": "Always",
+            "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "brand_primary": "#FFA500",
+        "brand_tint": "#fff8eb",
+        "brand_dark": "#b25800",
+        "brand_light": "#ffc266",
+        "eyebrow": "What's Inside",
+        "title": "Every ingredient earns its place",
+        "sub": "Six clean actives. No proprietary blends. Full transparency.",
+        "facts_image_url": "",
+        "facts_label": "Supplement facts",
+        "facts_foot": "Lab-tested · Doctor-formulated · Full transparency"
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Lost measurable weight",
+            "percent": 89
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "Felt clean, sustained energy",
+            "percent": 94
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Better workout performance",
+            "percent": 86
+          }
+        },
+        "c4": {
+          "type": "stat",
+          "settings": {
+            "label": "No jitters or crashes",
+            "percent": 97
+          }
+        },
+        "c5": {
+          "type": "stat",
+          "settings": {
+            "label": "Would recommend to a friend",
+            "percent": 95
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "brand_primary": "#FFA500",
+        "brand_dark": "#b25800",
+        "brand_tint": "#fff8eb",
+        "eyebrow": "Real results",
+        "title_pre": "Trusted for",
+        "title_highlight": "Clean Fat Loss",
+        "sub": "What customers report after 6 weeks of daily Fat Burner use.",
+        "caveat": "Based on a survey of 210+ verified customers. Individual results may vary."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "f1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-glp-1-booster",
+            "brand": "GutSlim™",
+            "rating": "4.8",
+            "reviews": "1200+"
+          }
+        },
+        "f2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
+            "brand": "His-Biotics™",
+            "rating": "4.7",
+            "reviews": "750+"
+          }
+        },
+        "f3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-creatine",
+            "brand": "Velo16™",
+            "rating": "4.8",
+            "reviews": "180+"
+          }
+        },
+        "f4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "her-biotics-original-capsules-60s",
+            "brand": "Her-Biotics™",
+            "rating": "4.7",
+            "reviews": "260+"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {
+        "brand_primary": "#FFA500",
+        "brand_dark": "#b25800",
+        "brand_tint": "#fff8eb",
+        "tint": true,
+        "eyebrow": "Frequently Bought Together",
+        "title": "Pair with the rest of your wellness stack",
+        "sub": "Fat Burner stacks beautifully with these Velobiotics favourites."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
+            "name": "Clinically Proven Strains",
+            "desc": "16 strains studied in peer-reviewed clinical trials."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
+            "name": "Doctor Formulated",
+            "desc": "Developed by medical doctors and microbiologists."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
+            "name": "Patented MEP Technology",
+            "desc": "Microencapsulation with Supercritical CO₂."
+          }
+        },
+        "d4": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
+            "name": "Clean Label",
+            "desc": "Vegan, halaal-friendly, no fillers."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3",
+        "d4"
+      ],
+      "settings": {
+        "eyebrow": "Trusted by Doctors. Proven by Science.",
+        "title_pre": "Quality you can",
+        "title_highlight": "trust.",
+        "sub": "Built on peer-reviewed strains, medical formulations, and SAHPRA-aware manufacturing."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "Max Probiotic Strains",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "Thermogenic Trio",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "No Stimulant Crash",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "Daily Simplicity",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o5": {
+          "type": "row",
+          "settings": {
+            "feature": "Long-Term Benefits",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ],
+      "settings": {
+        "brand_primary": "#FFA500",
+        "brand_dark": "#b25800",
+        "brand_tint": "#fff8eb",
+        "title": "Why Fat Burner Outperforms",
+        "sub": "Clean thermogenic actives, clinically-researched probiotic strains, and Velobiotics™ delivery — built for sustainable, whole-body fat loss.",
+        "col_features": "Features",
+        "col_brand": "Fat Burner",
+        "col_b": "Generic Burner",
+        "col_c": "Others",
+        "cta_text": "Add to Cart",
+        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Real Reviews",
+        "title_pre": "What Customers",
+        "title_highlight": "Are Saying",
+        "sub": "Verified reviews from real customers. The Judge.me widget will populate this section on go-live.",
+        "rating": "4.8",
+        "reviews_count": "210+",
+        "customers_count": "25K+"
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "How is this different from coffee-based burners?",
+            "answer": "<p>Fat Burner uses thermogenic actives (green tea, L-carnitine, cayenne) — not heavy stimulants. You get clean energy and fat burn without the caffeine crash or heart palpitations.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "Can I take this with caffeine?",
+            "answer": "<p>Yes, but you usually won't need to. Many customers report dropping their morning coffee within 2 weeks.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "Will this affect my sleep?",
+            "answer": "<p>No — take it before breakfast or workouts. The thermogenic effect fades naturally before evening.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Is Fat Burner safe daily?",
+            "answer": "<p>Absolutely. Manufactured under GMP conditions in SAHPRA-aware facilities. Daily use is safe and recommended.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Do you ship internationally?",
+            "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "What if it doesn't work for me?",
+            "answer": "<p>If you don't see results in 30 days, we'll refund you in full — no questions asked.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "title_pre": "Questions Before",
+        "title_highlight": "You Start"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "✅",
+            "text": "30-day money-back"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "🚚",
+            "text": "Ships worldwide"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "🔬",
+            "text": "Lab-tested every batch"
+          }
+        },
+        "g4": {
+          "type": "g",
+          "settings": {
+            "icon": "🌿",
+            "text": "100% natural"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "settings": {
+        "brand_primary": "#FFA500",
+        "brand_dark": "#b25800",
+        "brand_light": "#ffc266",
+        "badge": "30-day money-back guarantee",
+        "title_pre": "Burn Fat Cleanly",
+        "title_highlight": "Risk-Free for 30 Days",
+        "sub": "Join thousands burning fat without the crash. If you don't see results, we'll refund every cent.",
+        "cta_text": "Add to Cart",
+        "cta_link": "#vbpForm"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "judgeme",
+    "faq",
+    "final"
+  ]
+}

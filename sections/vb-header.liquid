@@ -42,8 +42,15 @@
       {%- endif -%}
     </a>
 
-    {%- comment -%} Desktop Nav {%- endcomment -%}
-    <nav class="vb-nav" aria-label="Main navigation" id="vb-nav">
+    {%- comment -%} Buddha Mega Menu slot — drag the Buddha block into this section via Theme editor {%- endcomment -%}
+    <div class="vb-header__menu-slot" id="vb-buddha-slot">
+      {%- for block in section.blocks -%}
+        {%- if block.type == '@app' -%}{%- render block -%}{%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    {%- comment -%} Fallback hard-coded Nav (only shows if no Buddha block is dropped in) {%- endcomment -%}
+    <nav class="vb-nav vb-nav--fallback" aria-label="Main navigation" id="vb-nav">
       <ul class="vb-nav__list" role="list">
 
         {%- comment -%} Shop by Need (mega) {%- endcomment -%}

@@ -75,7 +75,23 @@
   letter-spacing: -0.01em;
 }
 
-/* ---------- Desktop nav ---------- */
+/* ---------- Buddha Mega Menu slot — when the Buddha app block is dropped in, it takes over the menu area ---------- */
+.vb-header__menu-slot { flex: 1; min-width: 0; }
+.vb-header__menu-slot:empty { display: none; }
+/* When Buddha is active, hide the fallback nav so we don't show two menus */
+.vb-header__menu-slot:not(:empty) ~ .vb-nav--fallback { display: none !important; }
+
+/* Force Buddha mega menu links to white on green */
+.vb-header__menu-slot a,
+.vb-header__menu-slot button,
+.vb-header__menu-slot li,
+.vb-header__menu-slot .bmm-menu-item-link,
+.vb-header__menu-slot .bmm-main-menu-item,
+.vb-header__menu-slot [class*="bmm-"] > a,
+.vb-header__menu-slot [class*="buddha"] > a { color: #fff !important; font-weight: 600 !important; }
+.vb-header__menu-slot a:hover { background: rgba(255,255,255,0.15) !important; }
+
+/* ---------- Desktop nav (FALLBACK only — hidden when Buddha is active) ---------- */
 .vb-nav {
   flex: 1;
   display: none;

@@ -52,7 +52,8 @@
         "p4"
       ],
       "settings": {
-        "bg_image_url": "https://media.base44.com/images/public/69e738ecdc7682bdadfe7c82/3806ee1d7_generated_image.png",
+        "bg_image_url": "",
+        "bg_image": "shopify://shop_images/new-hero-section-image-003.jpg",
         "eyebrow": "Patented Probiotics That Actually Reach Your Gut",
         "headline_pre": "Most Probiotics Die in Your Stomach.",
         "headline_highlight": "Ours Don't!",

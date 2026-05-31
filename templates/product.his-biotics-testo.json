@@ -88,8 +88,6 @@
         "review_count": "180+",
         "hook": "Reclaim your edge. His-Biotics™ Testo Boost combines 16 probiotic strains with ashwagandha, tongkat ali, zinc, and D3 — natural testosterone support without hormones.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
-        "show_subscription": true,
-        "show_qty_discounts": true,
         "show_buynow": true,
         "show_testi_marquee": true
       }
@@ -101,45 +99,45 @@
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Themba+V&background=0a3d3d&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Energy I forgot existed. Drive and focus restored at 42.",
             "author": "Themba V.",
-            "meta": "Verified buyer · Johannesburg"
+            "meta": "Verified buyer · Johannesburg",
+            "quote": "Energy I forgot existed. Drive and focus restored at 42."
           }
         },
         "r2": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Pieter+M&background=1c5856&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Drive back, libido up. My wife thanks me.",
             "author": "Pieter M.",
-            "meta": "Verified buyer · 2 months ago"
+            "meta": "Verified buyer · 2 months ago",
+            "quote": "Drive back, libido up. My wife thanks me."
           }
         },
         "r3": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Sipho+N&background=021212&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Lifts heavier, recovers faster. The combo of T-support + probiotics works.",
             "author": "Sipho N.",
-            "meta": "Verified buyer · 3 months ago"
+            "meta": "Verified buyer · 3 months ago",
+            "quote": "Lifts heavier, recovers faster. The combo of T-support + probiotics works."
           }
         },
         "r4": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Marco+D&background=0a3d3d&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "My doctor confirmed the difference in blood work.",
             "author": "Marco D.",
-            "meta": "Verified buyer · Pretoria"
+            "meta": "Verified buyer · Pretoria",
+            "quote": "My doctor confirmed the difference in blood work."
           }
         },
         "r5": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Andre+K&background=1c5856&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "At 45 I feel 35 again. Real, sustained difference.",
             "author": "Andre K.",
-            "meta": "Verified buyer · 2 months ago"
+            "meta": "Verified buyer · 2 months ago",
+            "quote": "At 45 I feel 35 again. Real, sustained difference."
           }
         }
       },
@@ -251,7 +249,7 @@
         "reverse": true,
         "brand_primary": "#0a3d3d",
         "brand_tint": "#e8f3f1",
-        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/1_transparent_Realistic_3D_product_mockup_5.png?v=1775328665",
+        "image_url": "",
         "tag_value": "1000×",
         "tag_label": "More Probiotics Delivered",
         "eyebrow": "The Solution",
@@ -269,7 +267,10 @@
             "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
             "brand": "His-Biotics™",
             "rating": "4.7",
-            "reviews": "750+"
+            "reviews": "750+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         },
         "r2": {
@@ -278,7 +279,10 @@
             "product_handle": "his-biotics-probiotics-sport-multivitamin-capsules",
             "brand": "His-Biotics™",
             "rating": "4.8",
-            "reviews": "150+"
+            "reviews": "150+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         },
         "r3": {
@@ -287,7 +291,10 @@
             "product_handle": "his-biotics-probiotics-ageless-50-multivitamin",
             "brand": "His-Biotics™",
             "rating": "4.7",
-            "reviews": "120+"
+            "reviews": "120+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         }
       },
@@ -494,14 +501,17 @@
       ],
       "settings": {
         "brand_primary": "#0a3d3d",
-        "brand_tint": "#e8f3f1",
         "brand_dark": "#021212",
+        "brand_tint": "#e8f3f1",
         "brand_light": "#1c5856",
         "eyebrow": "What's Inside",
         "title": "Every ingredient earns its place",
         "sub": "Five clinical actives + probiotic blend. No proprietary blends. Full transparency.",
         "facts_image_url": "",
         "facts_label": "Supplement facts",
+        "facts_col_a": "Ingredient",
+        "facts_col_b": "Per serving",
+        "facts_caption": "% Daily Value not established. Other Ingredients: HPMC, Magnesium Stearate.",
         "facts_foot": "Lab-tested · Doctor-formulated · Full transparency"
       }
     },
@@ -571,7 +581,10 @@
             "product_handle": "velo16-probiotics-ashwagandha-ksm-66-300mg",
             "brand": "Velo16™",
             "rating": "4.8",
-            "reviews": "170+"
+            "reviews": "170+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         },
         "f2": {
@@ -580,7 +593,10 @@
             "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
             "brand": "His-Biotics™",
             "rating": "4.7",
-            "reviews": "750+"
+            "reviews": "750+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         },
         "f3": {
@@ -589,7 +605,10 @@
             "product_handle": "velo16-probiotics-vitamin-d3-1000-iu",
             "brand": "Velo16™",
             "rating": "4.7",
-            "reviews": "190+"
+            "reviews": "190+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         },
         "f4": {
@@ -598,7 +617,10 @@
             "product_handle": "velo16-probiotics-creatine",
             "brand": "Velo16™",
             "rating": "4.8",
-            "reviews": "180+"
+            "reviews": "180+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         }
       },
@@ -625,6 +647,7 @@
           "type": "card",
           "settings": {
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
+            "icon_fallback": "✓",
             "name": "Clinically Validated",
             "desc": "Ashwagandha KSM-66 + tongkat ali — peer-reviewed for T-support."
           }
@@ -633,6 +656,7 @@
           "type": "card",
           "settings": {
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
+            "icon_fallback": "✓",
             "name": "Doctor Formulated",
             "desc": "Built by male-health specialists."
           }
@@ -641,6 +665,7 @@
           "type": "card",
           "settings": {
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
+            "icon_fallback": "✓",
             "name": "Patented MEP Technology",
             "desc": "Microencapsulation with Supercritical CO₂."
           }
@@ -649,6 +674,7 @@
           "type": "card",
           "settings": {
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
+            "icon_fallback": "✓",
             "name": "No Synthetic Hormones",
             "desc": "Natural T-support only. Drug-test safe."
           }
@@ -727,10 +753,12 @@
         "brand_primary": "#0a3d3d",
         "brand_dark": "#021212",
         "brand_tint": "#e8f3f1",
+        "eyebrow": "",
         "title": "Why Testo Boost Outperforms",
         "sub": "Ashwagandha KSM-66, tongkat ali, zinc, D3, 16 probiotic strains — natural testosterone support without synthetic hormones or side effects.",
         "col_features": "Features",
         "col_brand": "Testo Boost",
+        "brand_logo_url": "",
         "col_b": "Stim-Heavy Boosters",
         "col_c": "TRT",
         "cta_text": "Add to Cart",
@@ -746,7 +774,8 @@
         "sub": "Verified reviews from real men. The Judge.me widget will populate this section on go-live.",
         "rating": "4.8",
         "reviews_count": "180+",
-        "customers_count": "20K+"
+        "customers_count": "20K+",
+        "judgeme_html": ""
       }
     },
     "faq": {

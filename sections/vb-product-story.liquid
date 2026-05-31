@@ -9,6 +9,23 @@
   elsif section.settings.image != blank
     assign img_src = section.settings.image | image_url: width: 1200
   endif
+  comment
+    Smart fallback: if no image is set AND this is the reverse layout (Solution / Bundle Advantage section),
+    auto-use the actual product packshot from Shopify. Guarantees every Solution section has the right image
+    without manual wiring per product template.
+  endcomment
+  if img_src == blank and section.settings.reverse and product != blank and product.featured_image != blank
+    assign img_src = product.featured_image | image_url: width: 1200
+  endif
+  comment
+    Secondary fallback: for any non-reverse (Problem section) that's also blank, show the second product image
+    if it exists, otherwise the featured one — so no section is ever empty.
+  endcomment
+  if img_src == blank and product != blank and product.images.size > 1
+    assign img_src = product.images[1] | image_url: width: 1200
+  elsif img_src == blank and product != blank and product.featured_image != blank
+    assign img_src = product.featured_image | image_url: width: 1200
+  endif
 -%}
 
 <style>

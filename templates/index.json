@@ -514,55 +514,6 @@
         "cta_link": "https://www.velobiotics.com/pages/microencapsulation-research"
       }
     },
-    "science": {
-      "type": "vb-science",
-      "blocks": {
-        "st1": {
-          "type": "step",
-          "settings": {
-            "icon": "🧬",
-            "name": "Live Strain Selection",
-            "desc": "Clinically studied probiotic strains, hand-picked by microbiologists for measurable results."
-          }
-        },
-        "st2": {
-          "type": "step",
-          "settings": {
-            "icon": "🛡️",
-            "name": "MEP Encapsulation",
-            "desc": "Each culture is shielded using Supercritical CO₂ microencapsulation — our patented armour."
-          }
-        },
-        "st3": {
-          "type": "step",
-          "settings": {
-            "icon": "🌡️",
-            "name": "Acid-Resistant Coating",
-            "desc": "The coating survives stomach acid and bile, so probiotics arrive in your gut alive."
-          }
-        },
-        "st4": {
-          "type": "step",
-          "settings": {
-            "icon": "🎯",
-            "name": "Targeted Delivery",
-            "desc": "Cultures release exactly where they're needed — colon, vagina, or intimate microbiome."
-          }
-        }
-      },
-      "block_order": [
-        "st1",
-        "st2",
-        "st3",
-        "st4"
-      ],
-      "settings": {
-        "eyebrow": "The Science Behind the Difference",
-        "title_pre": "We Built Armour Around Every Probiotic",
-        "title_highlight": "So It Survives Where Others Don't.",
-        "sub": "Most probiotics die before they ever help. Velobiotics uses patented Microencapsulation with Supercritical CO₂ — a four-stage shielding process that lets billions of live cultures pass through stomach acid intact and active."
-      }
-    },
     "videos": {
       "type": "vb-videos",
       "blocks": {
@@ -637,6 +588,65 @@
         "title_pre": "Trusted by Thousands.",
         "title_highlight": "Backed by Science.",
         "sub": "Watch real people share their Velobiotics experience — in their own words."
+      }
+    },
+    "science": {
+      "type": "vb-science",
+      "blocks": {
+        "st1": {
+          "type": "step",
+          "settings": {
+            "icon": "🧬",
+            "name": "Live Strain Selection",
+            "desc": "Clinically studied probiotic strains, hand-picked by microbiologists for measurable results."
+          }
+        },
+        "st2": {
+          "type": "step",
+          "settings": {
+            "icon": "🛡️",
+            "name": "MEP Encapsulation",
+            "desc": "Each culture is shielded using Supercritical CO₂ microencapsulation — our patented armour."
+          }
+        },
+        "st3": {
+          "type": "step",
+          "settings": {
+            "icon": "🌡️",
+            "name": "Acid-Resistant Coating",
+            "desc": "The coating survives stomach acid and bile, so probiotics arrive in your gut alive."
+          }
+        },
+        "st4": {
+          "type": "step",
+          "settings": {
+            "icon": "🎯",
+            "name": "Targeted Delivery",
+            "desc": "Cultures release exactly where they're needed — colon, vagina, or intimate microbiome."
+          }
+        }
+      },
+      "block_order": [
+        "st1",
+        "st2",
+        "st3",
+        "st4"
+      ],
+      "settings": {
+        "eyebrow": "The Science Behind the Difference",
+        "title_pre": "We Built Armour Around Every Probiotic",
+        "title_highlight": "So It Survives Where Others Don't.",
+        "sub": "Most probiotics die before they ever help. Velobiotics uses patented Microencapsulation with Supercritical CO₂ — a four-stage shielding process that lets billions of live cultures pass through stomach acid intact and active."
+      }
+    },
+    "custom_liquid_eVChVA": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<!-- Elfsight Google Reviews | Velobiotics Reviews Home Page -->\n<script src=\"https://elfsightcdn.com/platform.js\" async></script>\n<div class=\"elfsight-app-0413e3aa-deaf-4570-9304-a8493fe2750f\" data-elfsight-app-lazy></div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "comparison": {
@@ -907,8 +917,9 @@
     "bestsellers",
     "quiz",
     "armoured",
-    "science",
     "videos",
+    "science",
+    "custom_liquid_eVChVA",
     "comparison",
     "judgeme",
     "faq",

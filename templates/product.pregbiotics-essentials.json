@@ -249,7 +249,7 @@
         "reverse": true,
         "brand_primary": "#1f6b3d",
         "brand_tint": "#f2f9ec",
-        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/7_transparent_Realistic_3D_product_mockup_1.png?v=1775328668",
+        "image_url": "",
         "tag_value": "1000×",
         "tag_label": "More Probiotics Delivered",
         "eyebrow": "The Solution",
@@ -267,7 +267,10 @@
             "product_handle": "pregbiotics-breastfeeding",
             "brand": "PregBiotics™",
             "rating": "4.9",
-            "reviews": "850+"
+            "reviews": "850+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         },
         "r2": {
@@ -276,7 +279,10 @@
             "product_handle": "pregbiotics-conception",
             "brand": "PregBiotics™",
             "rating": "4.8",
-            "reviews": "180+"
+            "reviews": "180+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         },
         "r3": {
@@ -285,7 +291,10 @@
             "product_handle": "pregbiotics-essentials-with-omega",
             "brand": "PregBiotics™",
             "rating": "4.8",
-            "reviews": "150+"
+            "reviews": "150+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         },
         "r4": {
@@ -294,7 +303,10 @@
             "product_handle": "c-essentials-kit",
             "brand": "PregBiotics™",
             "rating": "4.9",
-            "reviews": "120+"
+            "reviews": "120+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         }
       },
@@ -510,6 +522,9 @@
         "sub": "Six clean actives. No proprietary blends. Full transparency for the most important nine months.",
         "facts_image_url": "",
         "facts_label": "Supplement facts",
+        "facts_col_a": "Ingredient",
+        "facts_col_b": "Per serving",
+        "facts_caption": "% Daily Value not established. Other Ingredients: HPMC, Magnesium Stearate.",
         "facts_foot": "Lab-tested · OB-formulated · Full transparency"
       }
     },
@@ -579,7 +594,10 @@
             "product_handle": "pregbiotics-breastfeeding",
             "brand": "PregBiotics™",
             "rating": "4.9",
-            "reviews": "850+"
+            "reviews": "850+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         },
         "f2": {
@@ -588,7 +606,10 @@
             "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
             "brand": "Femina™",
             "rating": "4.8",
-            "reviews": "1300+"
+            "reviews": "1300+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         },
         "f3": {
@@ -597,7 +618,10 @@
             "product_handle": "biokid-chewable-probiotics-tablets-for-children",
             "brand": "BioKid™",
             "rating": "4.8",
-            "reviews": "200+"
+            "reviews": "200+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         },
         "f4": {
@@ -606,7 +630,10 @@
             "product_handle": "velo16-probiotics-vitamin-d3-1000-iu",
             "brand": "Velo16™",
             "rating": "4.7",
-            "reviews": "190+"
+            "reviews": "190+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         }
       },
@@ -633,6 +660,7 @@
           "type": "card",
           "settings": {
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
+            "icon_fallback": "✓",
             "name": "Clinically Proven Strains",
             "desc": "Strains studied for pregnancy safety."
           }
@@ -641,6 +669,7 @@
           "type": "card",
           "settings": {
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
+            "icon_fallback": "✓",
             "name": "OB Formulated",
             "desc": "Developed with obstetric and midwifery guidance."
           }
@@ -649,6 +678,7 @@
           "type": "card",
           "settings": {
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
+            "icon_fallback": "✓",
             "name": "Patented MEP Technology",
             "desc": "Microencapsulation with Supercritical CO₂."
           }
@@ -657,6 +687,7 @@
           "type": "card",
           "settings": {
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
+            "icon_fallback": "✓",
             "name": "Clean Label",
             "desc": "Pregnancy-friendly, no fillers, no artificial nasties."
           }
@@ -735,10 +766,12 @@
         "brand_primary": "#1f6b3d",
         "brand_dark": "#0a3d22",
         "brand_tint": "#f2f9ec",
+        "eyebrow": "",
         "title": "Why Essentials Outperforms",
         "sub": "Active folate, gentle iron, pregnancy-safe probiotics, and Velobiotics™ delivery — the complete daily prenatal designed for actual absorption.",
         "col_features": "Features",
         "col_brand": "Essentials",
+        "brand_logo_url": "",
         "col_b": "Generic Prenatal",
         "col_c": "Others",
         "cta_text": "Add to Cart",
@@ -754,7 +787,8 @@
         "sub": "Verified reviews from real mums. The Judge.me widget will populate this section on go-live.",
         "rating": "4.9",
         "reviews_count": "210+",
-        "customers_count": "25K+"
+        "customers_count": "25K+",
+        "judgeme_html": ""
       }
     },
     "faq": {

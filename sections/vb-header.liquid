@@ -5,22 +5,16 @@
 {%- if section.settings.show_announcement -%}
 <div class="vb-announcement" role="banner">
   <div class="vb-announcement__track">
-    <span>🚚 Free Shipping Over R400</span>
-    <span class="vb-announcement__dot">•</span>
-    <span>⚡ {{ section.settings.announcement_text }}</span>
-    <span class="vb-announcement__dot">•</span>
-    <span>🧪 Patented MEP Delivery Technology</span>
-    <span class="vb-announcement__dot">•</span>
-    <span>🔄 100% Money-Back Guarantee</span>
-    <span class="vb-announcement__dot">•</span>
-    <span>🚚 Free Shipping Over R400</span>
-    <span class="vb-announcement__dot">•</span>
-    <span>⚡ {{ section.settings.announcement_text }}</span>
-    <span class="vb-announcement__dot">•</span>
-    <span>🧪 Patented MEP Delivery Technology</span>
-    <span class="vb-announcement__dot">•</span>
-    <span>🔄 100% Money-Back Guarantee</span>
-    <span class="vb-announcement__dot">•</span>
+    {%- for i in (1..2) -%}
+      <span>🚚 {{ section.settings.announcement_msg1 | default: 'Free Shipping over R500 (SA) / $30 (US)' }}</span>
+      <span class="vb-announcement__dot">•</span>
+      <span>⚡ {{ section.settings.announcement_msg2 | default: section.settings.announcement_text | default: 'Subscribe & Save 15% — free shipping included' }}</span>
+      <span class="vb-announcement__dot">•</span>
+      <span>🧪 {{ section.settings.announcement_msg3 | default: 'Patented MEP Delivery Technology — 1000× more reach you alive' }}</span>
+      <span class="vb-announcement__dot">•</span>
+      <span>🔄 {{ section.settings.announcement_msg4 | default: '30-Day Money-Back Guarantee' }}</span>
+      <span class="vb-announcement__dot">•</span>
+    {%- endfor -%}
   </div>
 </div>
 {%- endif -%}

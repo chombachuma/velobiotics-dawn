@@ -1,0 +1,890 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🤰",
+            "text": "Pregnancy daily + omega-3"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🧠",
+            "text": "DHA for baby brain"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🦠",
+            "text": "Pregnancy-safe probiotic strains"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "⚡",
+            "text": "1000× more delivery"
+          }
+        },
+        "t1": {
+          "type": "testi",
+          "settings": {
+            "quote": "Better than two products",
+            "author": "Cheryl D."
+          }
+        },
+        "t2": {
+          "type": "testi",
+          "settings": {
+            "quote": "My baby's eyes are bright",
+            "author": "Lerato N."
+          }
+        },
+        "t3": {
+          "type": "testi",
+          "settings": {
+            "quote": "No fishy taste",
+            "author": "Mahlatse K."
+          }
+        },
+        "t4": {
+          "type": "testi",
+          "settings": {
+            "quote": "One capsule, complete coverage",
+            "author": "Sarah V."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
+        "brand_label": "PregBiotics™ Essentials + Omega",
+        "rating": "4.8",
+        "review_count": "150+",
+        "hook": "The complete pregnancy daily with omega-3. PregBiotics™ Essentials + Omega blends pregnancy-safe probiotic strains, active folate, iron, B12, AND DHA omega-3 — for baby brain, eye, and total prenatal nutrition.",
+        "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
+        "show_subscription": true,
+        "show_qty_discounts": true,
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
+    },
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Cheryl+D&background=1f6b3d&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Better than two products. Folate AND DHA in one daily.",
+            "author": "Cheryl D.",
+            "meta": "Verified buyer · 5 months ago"
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Lerato+N&background=5fa37a&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "My baby's eyes are bright and alert. DHA matters.",
+            "author": "Lerato N.",
+            "meta": "Verified buyer · 4 months ago"
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Mahlatse+K&background=0a3d22&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "No fishy taste. Capsule form means easy stomach.",
+            "author": "Mahlatse K.",
+            "meta": "Verified buyer · 2 months ago"
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Sarah+V&background=1f6b3d&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "One capsule, complete coverage. Smart product.",
+            "author": "Sarah V.",
+            "meta": "Verified buyer · 3 months ago"
+          }
+        },
+        "r5": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Naseema+R&background=5fa37a&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Worth the upgrade. Less pills to juggle.",
+            "author": "Naseema R.",
+            "meta": "Verified buyer · Johannesburg"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
+        "eyebrow": "★ Real Reviews",
+        "title": "Mothers thriving on Essentials + Omega"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Juggling two products</strong> — prenatal + DHA omega separately."
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Fish oil burps</strong> and stomach discomfort."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Inadequate DHA</strong> in standard prenatals."
+          }
+        },
+        "p4": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Concerns about heavy metals</strong> in low-grade fish oil."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#1f6b3d",
+        "brand_tint": "#f2f9ec",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_184202_d5eaad31-44eb-417f-8358-518ac825e668.png",
+        "tag_value": "DHA",
+        "tag_label": "Critical For Baby Brain Development",
+        "eyebrow": "The Problem",
+        "title_pre": "Two products,",
+        "title_highlight": "one simple solution.",
+        "desc": "Most mums take a prenatal AND a DHA omega separately — twice the cost, twice the pills, twice the chance of forgetting. Essentials + Omega combines both with purity-tested algae DHA for total daily coverage."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Pure algae DHA 300mg</strong> — vegan, heavy-metal-free, no fish taste."
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Active folate + iron + B12</strong> — complete prenatal nutrition."
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Pregnancy-safe probiotic strains</strong> — gut + immune support."
+          }
+        },
+        "s4": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#1f6b3d",
+        "brand_tint": "#f2f9ec",
+        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/7_transparent_Realistic_3D_product_mockup_1.png?v=1775328668",
+        "tag_value": "1000×",
+        "tag_label": "More Probiotics Delivered",
+        "eyebrow": "The Solution",
+        "title_pre": "Meet",
+        "title_highlight": "Essentials + Omega.",
+        "desc": "Active folate, gentle iron, B12, pregnancy-safe probiotics, AND pure algae DHA — in one capsule. Total daily prenatal coverage with no fish-oil burps."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "pregbiotics-breastfeeding",
+            "brand": "PregBiotics™",
+            "rating": "4.9",
+            "reviews": "850+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "pregbiotics-conception",
+            "brand": "PregBiotics™",
+            "rating": "4.8",
+            "reviews": "180+"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "pregbiotics-essentials",
+            "brand": "PregBiotics™",
+            "rating": "4.9",
+            "reviews": "210+"
+          }
+        },
+        "r4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "c-essentials-kit",
+            "brand": "PregBiotics™",
+            "rating": "4.9",
+            "reviews": "120+"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
+        "tint": false,
+        "eyebrow": "Complete the Journey",
+        "title": "More from the PregBiotics™ family",
+        "sub": "From conception through breastfeeding and beyond — we have you covered."
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "b1": {
+          "type": "feat",
+          "settings": {
+            "icon": "🧠",
+            "name": "Baby Brain Development",
+            "desc": "DHA omega-3 critical for healthy fetal brain."
+          }
+        },
+        "b2": {
+          "type": "feat",
+          "settings": {
+            "icon": "👁️",
+            "name": "Eye & Vision Development",
+            "desc": "DHA supports retina formation in utero."
+          }
+        },
+        "b3": {
+          "type": "feat",
+          "settings": {
+            "icon": "🤰",
+            "name": "Complete Prenatal",
+            "desc": "Folate + iron + B12 + probiotics in one capsule."
+          }
+        },
+        "b4": {
+          "type": "feat",
+          "settings": {
+            "icon": "🌱",
+            "name": "Algae-Sourced DHA",
+            "desc": "Vegan, heavy-metal-free, sustainable."
+          }
+        },
+        "b5": {
+          "type": "feat",
+          "settings": {
+            "icon": "🩺",
+            "name": "OB-Formulated",
+            "desc": "Built with obstetric and midwifery guidance."
+          }
+        },
+        "b6": {
+          "type": "feat",
+          "settings": {
+            "icon": "🌿",
+            "name": "Clean Label",
+            "desc": "No fish-oil burps, vegan-option, halaal-friendly."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_tint": "#f2f9ec",
+        "eyebrow": "Key Benefits",
+        "title_pre": "Why",
+        "title_highlight": "Essentials + Omega",
+        "sub": "Six reasons mothers choose the complete one-capsule prenatal."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "💊",
+            "name": "Take One Capsule Daily",
+            "desc": "With water, after a meal."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "🛡️",
+            "name": "MEP Armour Survives",
+            "desc": "Velobiotics™ shield protects every culture and active."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "🎯",
+            "name": "Complete Delivery",
+            "desc": "DHA + folate + iron + probiotics absorbed cleanly."
+          }
+        },
+        "h4": {
+          "type": "step",
+          "settings": {
+            "icon": "👶",
+            "name": "Healthy Mum, Smart Baby",
+            "desc": "Total prenatal coverage in one capsule."
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_tint": "#f2f9ec",
+        "eyebrow": "How It Works",
+        "title_pre": "From Capsule to",
+        "title_highlight": "Complete Coverage",
+        "sub": "Four simple steps. One daily ritual. Everything pregnancy needs."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🌱",
+            "name": "Pure Algae DHA",
+            "amount": "300mg",
+            "desc": "Vegan, heavy-metal-tested. Critical for baby brain and eye development."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🥬",
+            "name": "Active Folate (5-MTHF)",
+            "amount": "600µg",
+            "desc": "Bioavailable form. Critical for neural-tube development."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🔥",
+            "name": "Iron Bisglycinate",
+            "amount": "27mg",
+            "desc": "Gentle, highly absorbable iron — no constipation."
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "💎",
+            "name": "Vitamin B12 + B-Complex",
+            "amount": "Full daily",
+            "desc": "Energy, mood, neural development support."
+          }
+        },
+        "i5": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🦠",
+            "name": "Pregnancy-Safe Probiotics",
+            "amount": "10 Billion CFU",
+            "desc": "Strains chosen specifically for pregnancy."
+          }
+        },
+        "i6": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🚫",
+            "name": "Free From",
+            "amount": "Always",
+            "desc": "Fish · synthetic folic acid · gluten · soy · dairy · GMO."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_tint": "#f2f9ec",
+        "brand_dark": "#0a3d22",
+        "brand_light": "#5fa37a",
+        "eyebrow": "What's Inside",
+        "title": "Every ingredient earns its place",
+        "sub": "Six clean actives. No proprietary blends. Full transparency.",
+        "facts_image_url": "",
+        "facts_label": "Supplement facts",
+        "facts_foot": "Lab-tested · OB-formulated · Full transparency"
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "No fish-oil burps",
+            "percent": 97
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "Smoother digestion",
+            "percent": 91
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Sustained pregnancy energy",
+            "percent": 89
+          }
+        },
+        "c4": {
+          "type": "stat",
+          "settings": {
+            "label": "Confident in baby's nutrition",
+            "percent": 96
+          }
+        },
+        "c5": {
+          "type": "stat",
+          "settings": {
+            "label": "Would recommend to a friend",
+            "percent": 97
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
+        "eyebrow": "Real results",
+        "title_pre": "Trusted by",
+        "title_highlight": "Mothers Everywhere",
+        "sub": "What mums report after 4 weeks of daily Essentials + Omega use.",
+        "caveat": "Based on a survey of 150+ verified customers. Individual results may vary. Always consult your healthcare provider."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "f1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "pregbiotics-breastfeeding",
+            "brand": "PregBiotics™",
+            "rating": "4.9",
+            "reviews": "850+"
+          }
+        },
+        "f2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
+            "brand": "Femina™",
+            "rating": "4.8",
+            "reviews": "1300+"
+          }
+        },
+        "f3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "biokid-chewable-probiotics-tablets-for-children",
+            "brand": "BioKid™",
+            "rating": "4.8",
+            "reviews": "200+"
+          }
+        },
+        "f4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-vitamin-d3-1000-iu",
+            "brand": "Velo16™",
+            "rating": "4.7",
+            "reviews": "190+"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
+        "tint": true,
+        "eyebrow": "Frequently Bought Together",
+        "title": "Build your family wellness stack",
+        "sub": "Essentials + Omega pairs beautifully with these Velobiotics favourites."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
+            "name": "Clinically Proven",
+            "desc": "DHA + active folate — peer-reviewed for pregnancy."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
+            "name": "OB Formulated",
+            "desc": "Developed with obstetric guidance."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
+            "name": "Patented MEP Technology",
+            "desc": "Microencapsulation with Supercritical CO₂."
+          }
+        },
+        "d4": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
+            "name": "Algae-Sourced",
+            "desc": "Vegan DHA, heavy-metal-tested, sustainable."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3",
+        "d4"
+      ],
+      "settings": {
+        "eyebrow": "Trusted by OBs. Proven by Science.",
+        "title_pre": "Quality you can",
+        "title_highlight": "trust.",
+        "sub": "Built with obstetric guidance, peer-reviewed actives, and SAHPRA-aware manufacturing."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "Algae DHA Omega-3",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "Active Folate (5-MTHF)",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "Pregnancy-Safe Probiotics",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "One Capsule Daily",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o5": {
+          "type": "row",
+          "settings": {
+            "feature": "No Fish-Oil Burps",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
+        "title": "Why Essentials + Omega Outperforms",
+        "sub": "Active folate, algae DHA, gentle iron, pregnancy-safe probiotics — complete pregnancy daily in one capsule.",
+        "col_features": "Features",
+        "col_brand": "Essentials + Omega",
+        "col_b": "Prenatal + Fish Oil",
+        "col_c": "Others",
+        "cta_text": "Add to Cart",
+        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Real Reviews",
+        "title_pre": "What Mothers",
+        "title_highlight": "Are Saying",
+        "sub": "Verified reviews from real mums. The Judge.me widget will populate this section on go-live.",
+        "rating": "4.8",
+        "reviews_count": "150+",
+        "customers_count": "18K+"
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "Is the DHA from fish?",
+            "answer": "<p>No. Our DHA is from sustainable algae — vegan, heavy-metal-tested, and zero fish-oil burps.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "What's the difference vs Essentials (no omega)?",
+            "answer": "<p>Essentials + Omega adds 300mg algae DHA for baby brain and eye development. If you're already taking a separate DHA, choose plain Essentials.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "Is Essentials + Omega safe in the first trimester?",
+            "answer": "<p>Yes. Formulated for all three trimesters. Always check with your OB before starting any new supplement during pregnancy.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Can I take this with my OB-prescribed prenatal?",
+            "answer": "<p>Essentials + Omega is designed to replace standard prenatals. Check with your OB before stacking.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Do you ship internationally?",
+            "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "What if it doesn't work for me?",
+            "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full — no questions asked.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "title_pre": "Questions Before",
+        "title_highlight": "You Start"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "✅",
+            "text": "30-day money-back"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "🚚",
+            "text": "Ships worldwide"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "🔬",
+            "text": "Lab-tested every batch"
+          }
+        },
+        "g4": {
+          "type": "g",
+          "settings": {
+            "icon": "🌱",
+            "text": "Algae-sourced DHA"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_light": "#5fa37a",
+        "badge": "30-day money-back guarantee",
+        "title_pre": "Complete Pregnancy Daily",
+        "title_highlight": "Risk-Free for 30 Days",
+        "sub": "Join thousands of mothers with Essentials + Omega — total prenatal coverage in one capsule.",
+        "cta_text": "Add to Cart",
+        "cta_link": "#vbpForm"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "judgeme",
+    "faq",
+    "final"
+  ]
+}

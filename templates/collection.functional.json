@@ -1,0 +1,52 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "functional": {
+      "type": "vb-collection-functional",
+      "blocks": {
+        "ben1": { "type": "benefit", "settings": { "text": "Bioavailable absorption — gentle on the stomach" } },
+        "ben2": { "type": "benefit", "settings": { "text": "Velobiotics™ MEP delivery — 1000× more reach you alive" } },
+        "ben3": { "type": "benefit", "settings": { "text": "Doctor-formulated · Lab-tested every batch" } },
+        "ben4": { "type": "benefit", "settings": { "text": "Combined with 16-strain probiotic blend" } }
+      },
+      "block_order": ["ben1","ben2","ben3","ben4"],
+      "settings": {
+        "eyebrow": "Shop by Ingredient",
+        "title_pre": "Powered by",
+        "title_highlight": "this ingredient.",
+        "sub": "Discover all Velobiotics products formulated with this key ingredient — and learn why it matters for your daily wellness.",
+        "define_title": "Why does this ingredient matter?",
+        "define_desc": "<p>Every Velobiotics product combines this key ingredient with our patented MEP probiotic delivery — engineered for maximum absorption and real biological impact. Edit this text per collection in the theme editor.</p>",
+        "visual_emoji": "🌿",
+        "primary": "#4d8c44",
+        "dark": "#2e5d28",
+        "tint": "#eef7ec"
+      }
+    },
+    "grid": {
+      "type": "femina-product-grid",
+      "settings": {
+        "show_heading": true,
+        "eyebrow": "All Products",
+        "title": "Every product with this ingredient",
+        "sub": "Browse the full range below.",
+        "brand_primary": "#4d8c44",
+        "brand_secondary": "#2e5d28",
+        "card_bg": "#fafdf9",
+        "card_bg2": "#e3ece1",
+        "brand_label": "Velobiotics™",
+        "products_per_page": 24,
+        "card_min_width": 280
+      }
+    }
+  },
+  "order": ["functional","grid"]
+}

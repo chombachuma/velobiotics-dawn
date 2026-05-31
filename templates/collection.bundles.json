@@ -1,0 +1,56 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "functional": {
+      "type": "vb-collection-functional",
+      "blocks": {
+        "ben1": { "type": "benefit", "settings": { "text": "Save 15-25% vs buying products individually" } },
+        "ben2": { "type": "benefit", "settings": { "text": "Sequential protocols designed by doctors and nutritionists" } },
+        "ben3": { "type": "benefit", "settings": { "text": "Compound results — multiple actives, multiple angles" } },
+        "ben4": { "type": "benefit", "settings": { "text": "One transaction, one parcel — simpler ritual" } }
+      },
+      "block_order": ["ben1","ben2","ben3","ben4"],
+      "settings": {
+        "eyebrow": "Curated Combos",
+        "title_pre": "Compounded results,",
+        "title_highlight": "smarter savings.",
+        "sub": "Doctor-designed Velobiotics bundles — pre-configured stacks for weight management, women's health, pregnancy journey, daily wellness, and more. Save up to 25%.",
+        "define_title": "Why bundle?",
+        "define_desc": "<p>Single products solve single problems. Real transformation usually needs more than one active — and a clear protocol. Velobiotics bundles combine our flagship products at compound discounts, with doctor-designed protocols telling you exactly what to take, when, and how long for.</p>",
+        "visual_emoji": "📦",
+        "top1_handle": "21-day-gutslim-complete-pack",
+        "top1_badge": "Most Popular",
+        "top2_handle": "c-essentials-kit",
+        "top2_badge": "Doctor-Designed",
+        "primary": "#4d8c44",
+        "dark": "#2e5d28",
+        "tint": "#eef7ec"
+      }
+    },
+    "grid": {
+      "type": "femina-product-grid",
+      "settings": {
+        "show_heading": true,
+        "eyebrow": "All Bundles",
+        "title": "Browse every Velobiotics bundle",
+        "sub": "Pick the protocol that matches your goal — gut reset, women's health, men's performance, family wellness, and more.",
+        "brand_primary": "#4d8c44",
+        "brand_secondary": "#2e5d28",
+        "card_bg": "#fafdf9",
+        "card_bg2": "#e3ece1",
+        "brand_label": "Velobiotics™ Bundles",
+        "products_per_page": 24,
+        "card_min_width": 320
+      }
+    }
+  },
+  "order": ["functional","grid"]
+}

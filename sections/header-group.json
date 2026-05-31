@@ -13,8 +13,18 @@
   "sections": {
     "vb_header": {
       "type": "vb-header",
-      "settings": {}
+      "settings": {
+        "logo": "shopify://shop_images/Velobiotics_black_background222x55_547d0000-46b1-4046-b1ce-c4bf3be3418d.png",
+        "show_announcement": true,
+        "announcement_msg1": "Free Shipping over R500 (SA) / $30 (US)",
+        "announcement_msg2": "Subscribe & Save 15% — free shipping included",
+        "announcement_msg3": "Patented MEP Delivery Technology — 1000× more reach you alive",
+        "announcement_msg4": "30-Day Money-Back Guarantee",
+        "announcement_text": "Subscribe & Save 15%"
+      }
     }
   },
-  "order": ["vb_header"]
+  "order": [
+    "vb_header"
+  ]
 }

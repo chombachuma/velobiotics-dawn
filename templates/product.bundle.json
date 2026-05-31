@@ -1,0 +1,890 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "📦",
+            "text": "Curated bundle"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "💰",
+            "text": "Save vs separate purchase"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🩺",
+            "text": "Doctor-designed protocol"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "⚡",
+            "text": "1000× MEP delivery throughout"
+          }
+        },
+        "t1": {
+          "type": "testi",
+          "settings": {
+            "quote": "Compound results, single purchase",
+            "author": "Lerato M."
+          }
+        },
+        "t2": {
+          "type": "testi",
+          "settings": {
+            "quote": "Smarter than buying separately",
+            "author": "Marco D."
+          }
+        },
+        "t3": {
+          "type": "testi",
+          "settings": {
+            "quote": "Doctor-approved combo",
+            "author": "Caroline V."
+          }
+        },
+        "t4": {
+          "type": "testi",
+          "settings": {
+            "quote": "My favourite Velobiotics purchase",
+            "author": "Tshepo K."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "brand_label": "Velobiotics™ Bundle",
+        "rating": "4.9",
+        "review_count": "500+",
+        "hook": "Compound results, smarter savings. This bundle pairs Velobiotics flagship products into one transaction — bigger impact, lower price, simpler ritual. Doctor-designed protocols, save 15-25% vs buying separately.",
+        "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
+        "show_subscription": true,
+        "show_qty_discounts": false,
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
+    },
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Lerato+M&background=4d8c44&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Compound results, single purchase. This bundle changed my routine.",
+            "author": "Lerato M.",
+            "meta": "Verified buyer · Johannesburg"
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Marco+D&background=7eb375&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Smarter than buying separately. The savings add up.",
+            "author": "Marco D.",
+            "meta": "Verified buyer · 2 months ago"
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Caroline+V&background=2e5d28&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Doctor-approved combo. Each product complements the next.",
+            "author": "Caroline V.",
+            "meta": "Verified buyer · 1 month ago"
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Tshepo+K&background=4d8c44&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "My favourite Velobiotics purchase. Worth every cent.",
+            "author": "Tshepo K.",
+            "meta": "Verified buyer · Pretoria"
+          }
+        },
+        "r5": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Sarah+B&background=7eb375&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Bundle was the right starting point for me.",
+            "author": "Sarah B.",
+            "meta": "Verified buyer · Cape Town"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "eyebrow": "★ Real Reviews",
+        "title": "Bundle buyers, real reviews"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Half-measures</strong> — one product can't solve a complex problem."
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Cart juggling</strong> — buying products separately costs more."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>No clear protocol</strong> — when to take what?"
+          }
+        },
+        "p4": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Missing the compound effect</strong> of pairing the right actives."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#4d8c44",
+        "brand_tint": "#eef7ec",
+        "image_url": "",
+        "tag_value": "15-25%",
+        "tag_label": "Savings vs Buying Separately",
+        "eyebrow": "Why Bundle?",
+        "title_pre": "Single products,",
+        "title_highlight": "single problems.",
+        "desc": "Real transformation usually needs more than one active — and a clear protocol. Velobiotics bundles combine flagship products at compound discounts, with doctor-designed protocols telling you exactly what to take, when, and how long for. Smarter results. Lower price."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Curated products</strong> — each one earning its place in the stack."
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Doctor-designed protocol</strong> — clear daily, weekly, or sequential plan."
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Velobiotics™ MEP delivery</strong> — 1000× more reach you alive."
+          }
+        },
+        "s4": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Bundle savings</strong> — 15-25% off vs buying products separately."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#4d8c44",
+        "brand_tint": "#eef7ec",
+        "image_url": "",
+        "tag_value": "3-Step",
+        "tag_label": "Compound Daily Protocol",
+        "eyebrow": "The Bundle Advantage",
+        "title_pre": "The compound",
+        "title_highlight": "Velobiotics advantage.",
+        "desc": "Each Velobiotics bundle is a doctor-curated combination of complementary actives — chosen because they amplify each other's effects. You get bigger results from smaller daily effort, while saving 15-25% vs buying products on their own."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-glp-1-booster",
+            "brand": "GutSlim™",
+            "rating": "4.8",
+            "reviews": "410+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
+            "brand": "Femina™",
+            "rating": "4.8",
+            "reviews": "1300+"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "her-biotics-original-capsules-60s",
+            "brand": "Her-Biotics™",
+            "rating": "4.7",
+            "reviews": "950+"
+          }
+        },
+        "r4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
+            "brand": "His-Biotics™",
+            "rating": "4.7",
+            "reviews": "750+"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "tint": false,
+        "eyebrow": "What's Inside",
+        "title": "Products in this bundle",
+        "sub": "Open this section in the theme editor to set the exact product handles for this bundle. Each card auto-pulls image, price, and rating from the product page."
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "b1": {
+          "type": "feat",
+          "settings": {
+            "icon": "📦",
+            "name": "All-In-One",
+            "desc": "Everything you need, bundled into one transaction."
+          }
+        },
+        "b2": {
+          "type": "feat",
+          "settings": {
+            "icon": "💰",
+            "name": "15-25% Savings",
+            "desc": "Less than buying these products separately."
+          }
+        },
+        "b3": {
+          "type": "feat",
+          "settings": {
+            "icon": "⚡",
+            "name": "Compound Effects",
+            "desc": "Multiple actives, multiple angles, amplified results."
+          }
+        },
+        "b4": {
+          "type": "feat",
+          "settings": {
+            "icon": "🗓️",
+            "name": "Clear Protocol",
+            "desc": "Doctor-designed daily routine — no guesswork."
+          }
+        },
+        "b5": {
+          "type": "feat",
+          "settings": {
+            "icon": "🩺",
+            "name": "Doctor-Curated",
+            "desc": "Built and validated by medical practitioners."
+          }
+        },
+        "b6": {
+          "type": "feat",
+          "settings": {
+            "icon": "✅",
+            "name": "Risk-Free",
+            "desc": "30-day money-back if you don't see results."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_tint": "#eef7ec",
+        "eyebrow": "Why This Bundle",
+        "title_pre": "The compound",
+        "title_highlight": "advantage.",
+        "sub": "Six reasons bundles outperform single-product purchases."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "📦",
+            "name": "Receive Your Bundle",
+            "desc": "All products + protocol guide arrive together."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "📖",
+            "name": "Follow The Protocol",
+            "desc": "Clear daily / weekly / sequential plan included."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "🛡️",
+            "name": "MEP Delivery",
+            "desc": "Velobiotics™ tech protects every culture and active."
+          }
+        },
+        "h4": {
+          "type": "step",
+          "settings": {
+            "icon": "✨",
+            "name": "Compound Results",
+            "desc": "Multiple angles, amplified outcomes."
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_tint": "#eef7ec",
+        "eyebrow": "How It Works",
+        "title_pre": "Your bundle,",
+        "title_highlight": "simplified.",
+        "sub": "Four simple steps. One compound transformation."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "📦",
+            "name": "Bundle Contents",
+            "amount": "See product list",
+            "desc": "Each Velobiotics bundle contains 2-4 complementary flagship products. Check the product list for this specific bundle's contents."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🦠",
+            "name": "16-Strain Probiotic Blend",
+            "amount": "In each product",
+            "desc": "Lactobacillus & Bifidobacterium strains for gut, immunity, and total wellness."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🛡️",
+            "name": "Velobiotics™ MEP Coating",
+            "amount": "Across all products",
+            "desc": "Supercritical CO₂ microencapsulation — 1000× more probiotics survive."
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "📖",
+            "name": "Protocol Guide",
+            "amount": "Included",
+            "desc": "Doctor-designed protocol — when to take each product, daily, weekly, or sequentially."
+          }
+        },
+        "i5": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "💰",
+            "name": "Bundle Savings",
+            "amount": "15-25%",
+            "desc": "Compared to purchasing each product separately at retail."
+          }
+        },
+        "i6": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🚫",
+            "name": "Free From",
+            "amount": "Always",
+            "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_tint": "#eef7ec",
+        "brand_dark": "#2e5d28",
+        "brand_light": "#7eb375",
+        "eyebrow": "What's Inside",
+        "title": "Bundle essentials",
+        "sub": "Curated products + protocol guide. See product description for this bundle's specific contents.",
+        "facts_image_url": "",
+        "facts_label": "Bundle contents",
+        "facts_foot": "Lab-tested · Doctor-formulated · Full transparency"
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Felt compound results",
+            "percent": 91
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "Saved money vs separate buys",
+            "percent": 97
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Followed protocol easily",
+            "percent": 89
+          }
+        },
+        "c4": {
+          "type": "stat",
+          "settings": {
+            "label": "Better outcomes than single product",
+            "percent": 86
+          }
+        },
+        "c5": {
+          "type": "stat",
+          "settings": {
+            "label": "Would recommend to a friend",
+            "percent": 96
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "eyebrow": "Real results",
+        "title_pre": "Trusted for",
+        "title_highlight": "Compound Wins",
+        "sub": "What bundle buyers report after completing the protocol.",
+        "caveat": "Based on a survey of 500+ verified customers. Individual results may vary."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "f1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "21-day-gutslim-complete-pack",
+            "brand": "GutSlim™",
+            "rating": "4.9",
+            "reviews": "320+"
+          }
+        },
+        "f2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "c-essentials-kit",
+            "brand": "PregBiotics™",
+            "rating": "4.9",
+            "reviews": "120+"
+          }
+        },
+        "f3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-mini-combo",
+            "brand": "Femina™",
+            "rating": "4.8",
+            "reviews": "260+"
+          }
+        },
+        "f4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "6-week-total-transformation",
+            "brand": "Velobiotics™",
+            "rating": "4.9",
+            "reviews": "180+"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "tint": true,
+        "eyebrow": "Other Popular Bundles",
+        "title": "More Velobiotics bundles",
+        "sub": "Browse the full curated bundle range — pick the protocol that matches your goal."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
+            "name": "Clinically Validated",
+            "desc": "Every product in every bundle uses clinically-studied strains."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
+            "name": "Doctor-Designed",
+            "desc": "Curated and protocol-tested by medical practitioners."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
+            "name": "Patented MEP Technology",
+            "desc": "Microencapsulation with Supercritical CO₂."
+          }
+        },
+        "d4": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
+            "name": "Clean Label",
+            "desc": "Vegan, halaal-friendly, no fillers throughout."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3",
+        "d4"
+      ],
+      "settings": {
+        "eyebrow": "Trusted by Doctors. Proven by Science.",
+        "title_pre": "Quality you can",
+        "title_highlight": "trust.",
+        "sub": "Built on peer-reviewed actives, medical formulations, and SAHPRA-aware manufacturing."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "Multiple Products Bundled",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "15-25% Savings",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "Doctor-Designed Protocol",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "Compound Effects",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o5": {
+          "type": "row",
+          "settings": {
+            "feature": "Patented MEP Delivery",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "title": "Why Bundles Outperform",
+        "sub": "Curated products + doctor-designed protocol + 15-25% savings — built for compound transformation, not single-product cycles.",
+        "col_features": "Features",
+        "col_brand": "Velobiotics Bundle",
+        "col_b": "Single Product",
+        "col_c": "Generic Bundle",
+        "cta_text": "Add Bundle to Cart",
+        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Real Reviews",
+        "title_pre": "What Bundle Buyers",
+        "title_highlight": "Are Saying",
+        "sub": "Verified reviews from real customers who chose the bundle path.",
+        "rating": "4.9",
+        "reviews_count": "500+",
+        "customers_count": "40K+"
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "How much do I save with this bundle?",
+            "answer": "<p>Bundles save 15-25% vs purchasing each product separately at full retail. The exact discount is shown in the product price.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "What's in this bundle?",
+            "answer": "<p>See the product description and the 'What's Inside' section above. Each bundle is curated to cover a specific goal — gut reset, women's health, pregnancy, weight, immunity, performance, etc.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "How long does the bundle last?",
+            "answer": "<p>Most Velobiotics bundles include 30-90 days of supply depending on the products. The protocol guide details daily dosing.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Can I subscribe to this bundle?",
+            "answer": "<p>Select bundles offer subscribe-and-save options. Check the subscription toggle above the Add to Cart button.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Do you ship internationally?",
+            "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "What if the bundle doesn't work for me?",
+            "answer": "<p>30-day money-back guarantee — full refund if you don't see results. No questions asked.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "title_pre": "Questions Before",
+        "title_highlight": "You Start"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "✅",
+            "text": "30-day money-back"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "🚚",
+            "text": "Ships worldwide"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "🔬",
+            "text": "Lab-tested every batch"
+          }
+        },
+        "g4": {
+          "type": "g",
+          "settings": {
+            "icon": "💰",
+            "text": "15-25% bundle savings"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_light": "#7eb375",
+        "badge": "30-day money-back guarantee",
+        "title_pre": "Compound Transformation",
+        "title_highlight": "Risk-Free for 30 Days",
+        "sub": "One transaction. Multiple actives. Bigger results. If you don't see them, we'll refund every cent.",
+        "cta_text": "Add Bundle to Cart",
+        "cta_link": "#vbpForm"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "judgeme",
+    "faq",
+    "final"
+  ]
+}

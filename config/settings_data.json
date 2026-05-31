@@ -153,11 +153,6 @@
           "container_selector": "main"
         }
       },
-      "9901917232353999808": {
-        "type": "shopify://apps/buddha-mega-menu-navigation/blocks/megamenu/dbb4ce56-bf86-4830-9b3d-16efbef51c6f",
-        "disabled": false,
-        "settings": {}
-      },
       "13129208525377196889": {
         "type": "shopify://apps/mlv-multi-country-pricing/blocks/mlveda-mcp/a55f20a0-67fc-44fb-8f37-8dfe18bd61a2",
         "disabled": false,
@@ -181,6 +176,11 @@
       },
       "5134484470793087125": {
         "type": "shopify://apps/vitals/blocks/app-embed/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
+        "disabled": false,
+        "settings": {}
+      },
+      "9901917232353999808": {
+        "type": "shopify://apps/buddha-mega-menu-navigation/blocks/megamenu/dbb4ce56-bf86-4830-9b3d-16efbef51c6f",
         "disabled": false,
         "settings": {}
       }
@@ -210,13 +210,13 @@
       },
       "scheme-3": {
         "settings": {
-          "background": "#4D8C44",
+          "background": "#4d8c44",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
-          "button_label": "#000000",
+          "button_label": "#2e5d28",
           "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
+          "shadow": "#2e5d28"
         }
       },
       "scheme-4": {

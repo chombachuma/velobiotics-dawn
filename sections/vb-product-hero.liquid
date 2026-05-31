@@ -255,64 +255,7 @@
           <input type="hidden" name="id" value="{{ current_variant.id }}" />
         {%- endif -%}
 
-        {%- comment -%} ─── Subscription slot (PayWhirl) ─── {%- endcomment -%}
-        {%- if section.settings.show_subscription -%}
-          <div class="vb-pb__plugin vb-pb__plugin--sub" data-vbp-slot="subscription">
-            <p class="vb-pb__plugin-label">
-              <span class="vb-pb__plugin-pill">Save {{ section.settings.subscription_save_pct | default: '15' }}%</span>
-              {{ section.settings.subscription_label | default: 'Subscribe & Save' }}
-            </p>
-            {%- comment -%} PayWhirl auto-injects into ANY of these aliases. Apps differ — we offer them all. {%- endcomment -%}
-            <div
-              class="paywhirl-widget paywhirl-multi-plan-selector paywhirl-subscriptions pw-widget pw-multi-plan-selector"
-              id="paywhirl-widget"
-              data-paywhirl-widget
-              data-product-id="{{ product.id }}"
-              data-product-handle="{{ product.handle }}"
-              data-variant-id="{{ current_variant.id }}">
-              {%- comment -%} App blocks (drag-drop from theme editor) render here {%- endcomment -%}
-              {%- for block in section.blocks -%}
-                {%- if block.type == '@app' -%}{%- render block -%}{%- endif -%}
-              {%- endfor -%}
-              {%- comment -%} Elegant fallback shown only when PayWhirl hasn't injected its widget yet {%- endcomment -%}
-              <div class="vb-pb__plugin-fallback" data-vbp-fallback>
-                <div class="vb-pb__plugin-fallback-row">
-                  <span class="vb-pb__plugin-fallback-icon">🔁</span>
-                  <div>
-                    <strong>Subscribe & save {{ section.settings.subscription_save_pct | default: '15' }}% on every order.</strong>
-                    <span class="vb-pb__plugin-fallback-sub">{{ section.settings.subscription_sub | default: 'Pause, skip, or cancel anytime · Free shipping included' }}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        {%- endif -%}
-
-        {%- comment -%} ─── Quantity discount slot ─── {%- endcomment -%}
-        {%- if section.settings.show_qty_discounts -%}
-          <div class="vb-pb__plugin vb-pb__plugin--qty" data-vbp-slot="quantity">
-            <p class="vb-pb__plugin-label">
-              <span class="vb-pb__plugin-pill">Up to {{ section.settings.qty_max_pct | default: '25' }}% off</span>
-              {{ section.settings.qty_label | default: 'Buy More, Save More' }}
-            </p>
-            <div
-              class="qty-discount-widget hulk-vd-widget bold-bundles-widget volume-discount-widget bbw-widget"
-              data-qty-discount-widget
-              data-product-id="{{ product.id }}"
-              data-product-handle="{{ product.handle }}"
-              data-variant-id="{{ current_variant.id }}">
-              {%- comment -%} Elegant fallback shown only when QD app hasn't injected its widget yet {%- endcomment -%}
-              <div class="vb-pb__plugin-fallback" data-vbp-fallback>
-                <div class="vb-pb__qty-tiers">
-                  <div class="vb-pb__qty-tier"><span class="vb-pb__qty-tier-qty">×1</span><span class="vb-pb__qty-tier-save">{{ section.settings.qty_tier1 | default: 'Standard price' }}</span></div>
-                  <div class="vb-pb__qty-tier"><span class="vb-pb__qty-tier-qty">×2</span><span class="vb-pb__qty-tier-save">{{ section.settings.qty_tier2 | default: 'Save 10%' }}</span></div>
-                  <div class="vb-pb__qty-tier vb-pb__qty-tier--best"><span class="vb-pb__qty-tier-qty">×3+</span><span class="vb-pb__qty-tier-save">{{ section.settings.qty_tier3 | default: 'Save 25%' }}</span></div>
-                </div>
-                <p class="vb-pb__plugin-fallback-sub">{{ section.settings.qty_sub | default: 'Discount applied automatically at checkout.' }}</p>
-              </div>
-            </div>
-          </div>
-        {%- endif -%}
+        {%- comment -%} Subscription + Quantity-discount widgets are inserted manually by the user (PayWhirl + Bulk Discount apps). No slot machinery here. {%- endcomment -%}
 
         {%- comment -%} Price block — uses standard Shopify classes so the regional pricing plugin can localise it. Do NOT touch via JS. {%- endcomment -%}
         <div class="vb-pb__price-block price" data-vbp-price-block>
@@ -487,21 +430,8 @@
     { "type": "text", "id": "review_count", "label": "Review count", "default": "3,500+" },
     { "type": "textarea", "id": "hook", "label": "Hook line" },
     { "type": "text", "id": "ship_note", "label": "Shipping note", "default": "Free shipping over the free-shipping threshold · 30-day money-back guarantee" },
-    { "type": "checkbox", "id": "show_subscription", "label": "Subscription slot", "default": true },
-    { "type": "checkbox", "id": "show_qty_discounts", "label": "Quantity-discount slot", "default": true },
     { "type": "checkbox", "id": "show_buynow", "label": "Show Buy It Now", "default": true },
-    { "type": "checkbox", "id": "show_testi_marquee", "label": "Scrolling testimonials", "default": true },
-    { "type": "header", "content": "Subscription slot (PayWhirl)" },
-    { "type": "text", "id": "subscription_label", "label": "Slot heading", "default": "Subscribe & Save" },
-    { "type": "text", "id": "subscription_save_pct", "label": "Save %", "default": "15" },
-    { "type": "textarea", "id": "subscription_sub", "label": "Slot sub-text", "default": "Pause, skip, or cancel anytime · Free shipping included" },
-    { "type": "header", "content": "Quantity-discount slot" },
-    { "type": "text", "id": "qty_label", "label": "Slot heading", "default": "Buy More, Save More" },
-    { "type": "text", "id": "qty_max_pct", "label": "Max save %", "default": "25" },
-    { "type": "text", "id": "qty_tier1", "label": "Tier 1 (×1) label", "default": "Standard price" },
-    { "type": "text", "id": "qty_tier2", "label": "Tier 2 (×2) label", "default": "Save 10%" },
-    { "type": "text", "id": "qty_tier3", "label": "Tier 3 (×3+) label", "default": "Save 25%" },
-    { "type": "textarea", "id": "qty_sub", "label": "Slot footnote", "default": "Discount applied automatically at checkout." }
+    { "type": "checkbox", "id": "show_testi_marquee", "label": "Scrolling testimonials", "default": true }
   ],
   "blocks": [
     { "type": "@app" },

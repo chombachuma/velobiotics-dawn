@@ -490,9 +490,21 @@
     { "type": "checkbox", "id": "show_subscription", "label": "Subscription slot", "default": true },
     { "type": "checkbox", "id": "show_qty_discounts", "label": "Quantity-discount slot", "default": true },
     { "type": "checkbox", "id": "show_buynow", "label": "Show Buy It Now", "default": true },
-    { "type": "checkbox", "id": "show_testi_marquee", "label": "Scrolling testimonials", "default": true }
+    { "type": "checkbox", "id": "show_testi_marquee", "label": "Scrolling testimonials", "default": true },
+    { "type": "header", "content": "Subscription slot (PayWhirl)" },
+    { "type": "text", "id": "subscription_label", "label": "Slot heading", "default": "Subscribe & Save" },
+    { "type": "text", "id": "subscription_save_pct", "label": "Save %", "default": "15" },
+    { "type": "textarea", "id": "subscription_sub", "label": "Slot sub-text", "default": "Pause, skip, or cancel anytime · Free shipping included" },
+    { "type": "header", "content": "Quantity-discount slot" },
+    { "type": "text", "id": "qty_label", "label": "Slot heading", "default": "Buy More, Save More" },
+    { "type": "text", "id": "qty_max_pct", "label": "Max save %", "default": "25" },
+    { "type": "text", "id": "qty_tier1", "label": "Tier 1 (×1) label", "default": "Standard price" },
+    { "type": "text", "id": "qty_tier2", "label": "Tier 2 (×2) label", "default": "Save 10%" },
+    { "type": "text", "id": "qty_tier3", "label": "Tier 3 (×3+) label", "default": "Save 25%" },
+    { "type": "textarea", "id": "qty_sub", "label": "Slot footnote", "default": "Discount applied automatically at checkout." }
   ],
   "blocks": [
+    { "type": "@app" },
     { "type": "benefit", "name": "Quick benefit", "limit": 6, "settings": [
       { "type": "text", "id": "icon", "label": "Icon", "default": "✓" },
       { "type": "text", "id": "text", "label": "Text", "default": "Benefit" }

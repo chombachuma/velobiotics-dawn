@@ -64,9 +64,36 @@
   .vb-pb__variant-compare { font-size: 12px; color: #a0a0a0; text-decoration: line-through; }
   .vb-pb__variant-best { position: absolute; top: -10px; right: 14px; background: var(--bp); color: #fff; font-size: 9.5px; font-weight: 800; padding: 4px 9px; border-radius: 999px; letter-spacing: 0.06em; text-transform: uppercase; }
 
-  .vb-pb__plugin { background: var(--bt); border-radius: 14px; padding: 14px; margin: 0 0 16px; border: 1px solid color-mix(in srgb, var(--bp) 12%, transparent); }
-  .vb-pb__plugin-label { display: flex; align-items: center; gap: 8px; font-size: 11.5px; font-weight: 800; color: var(--bp); letter-spacing: 0.06em; text-transform: uppercase; margin: 0 0 10px; }
-  .vb-pb__plugin-label::before { content: ''; width: 8px; height: 8px; background: var(--bp); border-radius: 50%; }
+  .vb-pb__plugin { background: linear-gradient(135deg, var(--bt) 0%, #fff 100%); border-radius: 16px; padding: 16px; margin: 0 0 14px; border: 1.5px solid color-mix(in srgb, var(--bp) 18%, transparent); position: relative; overflow: hidden; }
+  .vb-pb__plugin--sub { background: linear-gradient(135deg, color-mix(in srgb, var(--bp) 8%, #fff) 0%, #fff 100%); }
+  .vb-pb__plugin--qty { background: linear-gradient(135deg, #fff8eb 0%, #fff 100%); border-color: color-mix(in srgb, #ff9500 25%, transparent); }
+  .vb-pb__plugin-label { display: flex; align-items: center; gap: 10px; font-size: 12.5px; font-weight: 800; color: var(--bp); letter-spacing: 0.06em; text-transform: uppercase; margin: 0 0 12px; flex-wrap: wrap; }
+  .vb-pb__plugin--qty .vb-pb__plugin-label { color: #b25800; }
+  .vb-pb__plugin-pill { display: inline-flex; align-items: center; background: var(--bp); color: #fff; padding: 4px 10px; border-radius: 999px; font-size: 11px; font-weight: 800; letter-spacing: 0.04em; }
+  .vb-pb__plugin--qty .vb-pb__plugin-pill { background: linear-gradient(135deg, #ff9500, #b25800); }
+
+  /* Elegant fallback — shown when app widget hasn't injected yet. Auto-hides once widget DOM appears */
+  .vb-pb__plugin-fallback { padding: 4px 0; }
+  .vb-pb__plugin-fallback-row { display: flex; align-items: flex-start; gap: 12px; }
+  .vb-pb__plugin-fallback-icon { font-size: 24px; line-height: 1; padding-top: 2px; flex-shrink: 0; }
+  .vb-pb__plugin-fallback strong { display: block; font-size: 14px; color: #1a1a1a; font-weight: 800; margin: 0 0 3px; }
+  .vb-pb__plugin-fallback-sub { display: block; font-size: 12.5px; color: #5c6664; font-weight: 500; line-height: 1.45; }
+
+  /* Quantity tier cards */
+  .vb-pb__qty-tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 0 0 10px; }
+  .vb-pb__qty-tier { background: #fff; border: 1.5px solid #f0e6d0; border-radius: 10px; padding: 10px 8px; text-align: center; display: flex; flex-direction: column; gap: 4px; transition: all 0.18s ease; }
+  .vb-pb__qty-tier--best { border-color: #ff9500; background: linear-gradient(135deg, #fff 0%, #fff8eb 100%); position: relative; box-shadow: 0 6px 14px rgba(255, 149, 0, 0.15); }
+  .vb-pb__qty-tier--best::before { content: 'BEST'; position: absolute; top: -8px; left: 50%; transform: translateX(-50%); background: #ff9500; color: #fff; padding: 2px 8px; border-radius: 999px; font-size: 9px; font-weight: 900; letter-spacing: 0.08em; }
+  .vb-pb__qty-tier-qty { font-size: 14px; font-weight: 900; color: #1a1a1a; letter-spacing: -0.01em; }
+  .vb-pb__qty-tier-save { font-size: 11px; font-weight: 700; color: #b25800; }
+  .vb-pb__qty-tier:not(.vb-pb__qty-tier--best) .vb-pb__qty-tier-save { color: #5c6664; }
+
+  /* Hide fallback when an app widget has injected real content */
+  [data-paywhirl-widget]:not(:empty) > [data-vbp-fallback]:not(:only-child) { display: none; }
+  [data-qty-discount-widget]:not(:empty) > [data-vbp-fallback]:not(:only-child) { display: none; }
+  /* Hide fallback when PayWhirl/QD apps insert siblings */
+  .paywhirl-widget.has-content [data-vbp-fallback],
+  .qty-discount-widget.has-content [data-vbp-fallback] { display: none; }
 
   .vb-pb__price-summary { display: flex; align-items: baseline; gap: 12px; padding: 14px 16px; background: linear-gradient(135deg, var(--bt) 0%, #fff 100%); border-radius: 14px; margin: 0 0 14px; border: 1px solid color-mix(in srgb, var(--bp) 14%, transparent); flex-wrap: wrap; }
   .vb-pb__price-now { font-size: 28px; font-weight: 900; color: #1a1a1a; letter-spacing: -0.02em; }

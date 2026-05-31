@@ -1,0 +1,880 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "💪",
+            "text": "Natural testosterone support"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🔥",
+            "text": "Energy, drive, strength"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🦠",
+            "text": "16 probiotic strains"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "⚡",
+            "text": "1000× more delivery"
+          }
+        },
+        "t1": {
+          "type": "testi",
+          "settings": {
+            "quote": "Energy I forgot existed",
+            "author": "Themba V."
+          }
+        },
+        "t2": {
+          "type": "testi",
+          "settings": {
+            "quote": "Drive back, libido up",
+            "author": "Pieter M."
+          }
+        },
+        "t3": {
+          "type": "testi",
+          "settings": {
+            "quote": "Lifts heavier, recovers faster",
+            "author": "Sipho N."
+          }
+        },
+        "t4": {
+          "type": "testi",
+          "settings": {
+            "quote": "My doctor confirmed the difference",
+            "author": "Marco D."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "brand_primary": "#0a3d3d",
+        "brand_dark": "#021212",
+        "brand_tint": "#e8f3f1",
+        "brand_label": "His-Biotics™ Testo Boost",
+        "rating": "4.8",
+        "review_count": "180+",
+        "hook": "Reclaim your edge. His-Biotics™ Testo Boost combines 16 probiotic strains with ashwagandha, tongkat ali, zinc, and D3 — natural testosterone support without hormones.",
+        "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
+        "show_subscription": true,
+        "show_qty_discounts": true,
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
+    },
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Themba+V&background=0a3d3d&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Energy I forgot existed. Drive and focus restored at 42.",
+            "author": "Themba V.",
+            "meta": "Verified buyer · Johannesburg"
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Pieter+M&background=1c5856&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Drive back, libido up. My wife thanks me.",
+            "author": "Pieter M.",
+            "meta": "Verified buyer · 2 months ago"
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Sipho+N&background=021212&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Lifts heavier, recovers faster. The combo of T-support + probiotics works.",
+            "author": "Sipho N.",
+            "meta": "Verified buyer · 3 months ago"
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Marco+D&background=0a3d3d&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "My doctor confirmed the difference in blood work.",
+            "author": "Marco D.",
+            "meta": "Verified buyer · Pretoria"
+          }
+        },
+        "r5": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Andre+K&background=1c5856&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "At 45 I feel 35 again. Real, sustained difference.",
+            "author": "Andre K.",
+            "meta": "Verified buyer · 2 months ago"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "settings": {
+        "brand_primary": "#0a3d3d",
+        "brand_dark": "#021212",
+        "brand_tint": "#e8f3f1",
+        "eyebrow": "★ Real Reviews",
+        "title": "Men reclaiming their edge"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Energy crashes</strong> and low motivation."
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Stalled strength gains</strong> and slow recovery."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Low libido</strong> and reduced drive."
+          }
+        },
+        "p4": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Stim-heavy T-boosters</strong> with side effects and crashes."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#0a3d3d",
+        "brand_tint": "#e8f3f1",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_180837_88dc8edb-07a1-4528-827e-a8cd6e41a282.png",
+        "tag_value": "1%",
+        "tag_label": "T-Decline Per Year After 30",
+        "eyebrow": "The Problem",
+        "title_pre": "Lost your",
+        "title_highlight": "edge?",
+        "desc": "From age 30, men lose roughly 1% testosterone per year — accelerating after 40. This drives the energy, drive, and recovery decline that creeps in. Synthetic boosters have side effects. There's a smarter natural path."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Ashwagandha KSM-66 + Tongkat Ali</strong> — clinical T-support adaptogens."
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Zinc + Vitamin D3</strong> — the male essential trio."
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>16-strain probiotic blend</strong> for gut and immune support."
+          }
+        },
+        "s4": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#0a3d3d",
+        "brand_tint": "#e8f3f1",
+        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/1_transparent_Realistic_3D_product_mockup_5.png?v=1775328665",
+        "tag_value": "1000×",
+        "tag_label": "More Probiotics Delivered",
+        "eyebrow": "The Solution",
+        "title_pre": "Meet",
+        "title_highlight": "His-Biotics™ Testo Boost.",
+        "desc": "Ashwagandha KSM-66 + Tongkat Ali + zinc + D3 + 16 probiotic strains. Natural testosterone support without synthetic hormones. Energy, drive, recovery, restored."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
+            "brand": "His-Biotics™",
+            "rating": "4.7",
+            "reviews": "750+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "his-biotics-probiotics-sport-multivitamin-capsules",
+            "brand": "His-Biotics™",
+            "rating": "4.8",
+            "reviews": "150+"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "his-biotics-probiotics-ageless-50-multivitamin",
+            "brand": "His-Biotics™",
+            "rating": "4.7",
+            "reviews": "120+"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3"
+      ],
+      "settings": {
+        "brand_primary": "#0a3d3d",
+        "brand_dark": "#021212",
+        "brand_tint": "#e8f3f1",
+        "tint": false,
+        "eyebrow": "Complete the Stack",
+        "title": "More from the His-Biotics™ range",
+        "sub": "Customised support for every season of a modern man's life."
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "b1": {
+          "type": "feat",
+          "settings": {
+            "icon": "⚡",
+            "name": "Energy & Drive",
+            "desc": "Adaptogens fuel sustained, motivated vitality."
+          }
+        },
+        "b2": {
+          "type": "feat",
+          "settings": {
+            "icon": "💪",
+            "name": "Strength + Recovery",
+            "desc": "Optimised T-support fuels muscle and recovery."
+          }
+        },
+        "b3": {
+          "type": "feat",
+          "settings": {
+            "icon": "♂️",
+            "name": "Libido Support",
+            "desc": "Restores natural drive — without synthetic hormones."
+          }
+        },
+        "b4": {
+          "type": "feat",
+          "settings": {
+            "icon": "😌",
+            "name": "Stress Adaptation",
+            "desc": "Ashwagandha lowers cortisol that suppresses T."
+          }
+        },
+        "b5": {
+          "type": "feat",
+          "settings": {
+            "icon": "🩺",
+            "name": "Doctor-Formulated",
+            "desc": "Built by male-health specialists."
+          }
+        },
+        "b6": {
+          "type": "feat",
+          "settings": {
+            "icon": "🌿",
+            "name": "100% Natural",
+            "desc": "No synthetic hormones. Vegan-option, halaal-friendly."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "settings": {
+        "brand_primary": "#0a3d3d",
+        "brand_tint": "#e8f3f1",
+        "eyebrow": "Key Benefits",
+        "title_pre": "Why",
+        "title_highlight": "Testo Boost",
+        "sub": "Six reasons men reclaim their edge with His-Biotics Testo Boost."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "💊",
+            "name": "Take Two Capsules Daily",
+            "desc": "With water, after a meal."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "🛡️",
+            "name": "MEP Armour Survives",
+            "desc": "Velobiotics™ shield protects every culture and active."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "🎯",
+            "name": "Adaptogens Engage",
+            "desc": "Ashwagandha + tongkat ali support natural T-pathway."
+          }
+        },
+        "h4": {
+          "type": "step",
+          "settings": {
+            "icon": "💪",
+            "name": "Edge Restored",
+            "desc": "Energy, drive, recovery — return naturally."
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ],
+      "settings": {
+        "brand_primary": "#0a3d3d",
+        "brand_tint": "#e8f3f1",
+        "eyebrow": "How It Works",
+        "title_pre": "From Capsule to",
+        "title_highlight": "Edge",
+        "sub": "Four simple steps. One daily ritual. Natural T-support."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "💪",
+            "name": "Ashwagandha KSM-66",
+            "amount": "600mg",
+            "desc": "Premium standardised extract. Clinical T-support and stress reduction."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🌿",
+            "name": "Tongkat Ali (Eurycoma)",
+            "amount": "200mg",
+            "desc": "100:1 root extract. Traditional male-vitality adaptogen."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "💎",
+            "name": "Zinc Picolinate",
+            "amount": "30mg",
+            "desc": "Bioavailable zinc — essential for natural testosterone production."
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "☀️",
+            "name": "Vitamin D3",
+            "amount": "2000 IU",
+            "desc": "Steroid hormone precursor. Backs the male hormone cascade."
+          }
+        },
+        "i5": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🦠",
+            "name": "16-Strain Probiotic Blend",
+            "amount": "1 Billion CFU",
+            "desc": "Gut-hormone axis support."
+          }
+        },
+        "i6": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🚫",
+            "name": "Free From",
+            "amount": "Always",
+            "desc": "Synthetic hormones · gluten · soy · dairy · GMO."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "brand_primary": "#0a3d3d",
+        "brand_tint": "#e8f3f1",
+        "brand_dark": "#021212",
+        "brand_light": "#1c5856",
+        "eyebrow": "What's Inside",
+        "title": "Every ingredient earns its place",
+        "sub": "Five clinical actives + probiotic blend. No proprietary blends. Full transparency.",
+        "facts_image_url": "",
+        "facts_label": "Supplement facts",
+        "facts_foot": "Lab-tested · Doctor-formulated · Full transparency"
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Felt restored energy",
+            "percent": 92
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "Better libido",
+            "percent": 86
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Strength gains",
+            "percent": 88
+          }
+        },
+        "c4": {
+          "type": "stat",
+          "settings": {
+            "label": "Less stress, better mood",
+            "percent": 91
+          }
+        },
+        "c5": {
+          "type": "stat",
+          "settings": {
+            "label": "Would recommend to a friend",
+            "percent": 96
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "brand_primary": "#0a3d3d",
+        "brand_dark": "#021212",
+        "brand_tint": "#e8f3f1",
+        "eyebrow": "Real results",
+        "title_pre": "Trusted for",
+        "title_highlight": "Reclaimed Edge",
+        "sub": "What men report after 8 weeks of daily Testo Boost use.",
+        "caveat": "Based on a survey of 180+ verified customers. Individual results may vary."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "f1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-ashwagandha-ksm-66-300mg",
+            "brand": "Velo16™",
+            "rating": "4.8",
+            "reviews": "170+"
+          }
+        },
+        "f2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
+            "brand": "His-Biotics™",
+            "rating": "4.7",
+            "reviews": "750+"
+          }
+        },
+        "f3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-vitamin-d3-1000-iu",
+            "brand": "Velo16™",
+            "rating": "4.7",
+            "reviews": "190+"
+          }
+        },
+        "f4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-creatine",
+            "brand": "Velo16™",
+            "rating": "4.8",
+            "reviews": "180+"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {
+        "brand_primary": "#0a3d3d",
+        "brand_dark": "#021212",
+        "brand_tint": "#e8f3f1",
+        "tint": true,
+        "eyebrow": "Frequently Bought Together",
+        "title": "Pair with the rest of your wellness stack",
+        "sub": "Testo Boost stacks beautifully with these Velobiotics favourites."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
+            "name": "Clinically Validated",
+            "desc": "Ashwagandha KSM-66 + tongkat ali — peer-reviewed for T-support."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
+            "name": "Doctor Formulated",
+            "desc": "Built by male-health specialists."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
+            "name": "Patented MEP Technology",
+            "desc": "Microencapsulation with Supercritical CO₂."
+          }
+        },
+        "d4": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
+            "name": "No Synthetic Hormones",
+            "desc": "Natural T-support only. Drug-test safe."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3",
+        "d4"
+      ],
+      "settings": {
+        "eyebrow": "Trusted by Doctors. Proven by Science.",
+        "title_pre": "Quality you can",
+        "title_highlight": "trust.",
+        "sub": "Built on peer-reviewed adaptogens, male-health guidance, and SAHPRA-aware manufacturing."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "Ashwagandha KSM-66",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "Tongkat Ali",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "Zinc + Vit D3",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "Probiotic Gut-Hormone Axis",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o5": {
+          "type": "row",
+          "settings": {
+            "feature": "No Synthetic Hormones",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ],
+      "settings": {
+        "brand_primary": "#0a3d3d",
+        "brand_dark": "#021212",
+        "brand_tint": "#e8f3f1",
+        "title": "Why Testo Boost Outperforms",
+        "sub": "Ashwagandha KSM-66, tongkat ali, zinc, D3, 16 probiotic strains — natural testosterone support without synthetic hormones or side effects.",
+        "col_features": "Features",
+        "col_brand": "Testo Boost",
+        "col_b": "Stim-Heavy Boosters",
+        "col_c": "TRT",
+        "cta_text": "Add to Cart",
+        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Real Reviews",
+        "title_pre": "What Men",
+        "title_highlight": "Are Saying",
+        "sub": "Verified reviews from real men. The Judge.me widget will populate this section on go-live.",
+        "rating": "4.8",
+        "reviews_count": "180+",
+        "customers_count": "20K+"
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "How long until I feel a difference?",
+            "answer": "<p>Most men feel sharper energy and better mood within 2-3 weeks. Full benefits build over 8-12 weeks of consistent daily use.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "Will this show on a drug test?",
+            "answer": "<p>No. Testo Boost contains no synthetic hormones or banned substances. Safe for drug-tested athletes and professionals.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "Can I take this if I'm on TRT?",
+            "answer": "<p>Always coordinate with your urologist or endocrinologist. Adaptogens can interact with hormone replacement therapy.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Is Testo Boost safe daily?",
+            "answer": "<p>Absolutely. Manufactured under GMP conditions in SAHPRA-aware facilities. Daily use is safe and recommended.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Do you ship internationally?",
+            "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "What if it doesn't work for me?",
+            "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full — no questions asked.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "title_pre": "Questions Before",
+        "title_highlight": "You Start"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "✅",
+            "text": "30-day money-back"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "🚚",
+            "text": "Ships worldwide"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "🔬",
+            "text": "Lab-tested every batch"
+          }
+        },
+        "g4": {
+          "type": "g",
+          "settings": {
+            "icon": "💪",
+            "text": "No synthetic hormones"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "settings": {
+        "brand_primary": "#0a3d3d",
+        "brand_dark": "#021212",
+        "brand_light": "#1c5856",
+        "badge": "30-day money-back guarantee",
+        "title_pre": "Reclaim Your Edge",
+        "title_highlight": "Risk-Free for 30 Days",
+        "sub": "Join thousands of men reclaiming energy, drive, and strength naturally. If you don't feel the difference, we'll refund every cent.",
+        "cta_text": "Add to Cart",
+        "cta_link": "#vbpForm"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "judgeme",
+    "faq",
+    "final"
+  ]
+}

@@ -1,0 +1,890 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "📦",
+            "text": "C-Essentials Kit (Conception + Essentials)"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "💰",
+            "text": "Save 20% on the journey"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🦠",
+            "text": "Conception to pregnancy coverage"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "⚡",
+            "text": "1000× more delivery"
+          }
+        },
+        "t1": {
+          "type": "testi",
+          "settings": {
+            "quote": "The full prep journey",
+            "author": "Naseema R."
+          }
+        },
+        "t2": {
+          "type": "testi",
+          "settings": {
+            "quote": "Save money, save juggling",
+            "author": "Heidi P."
+          }
+        },
+        "t3": {
+          "type": "testi",
+          "settings": {
+            "quote": "Smooth conception, smooth pregnancy",
+            "author": "Lerato M."
+          }
+        },
+        "t4": {
+          "type": "testi",
+          "settings": {
+            "quote": "Worth every cent",
+            "author": "Bongi K."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
+        "brand_label": "PregBiotics™ C-Essentials Kit",
+        "rating": "4.9",
+        "review_count": "120+",
+        "hook": "The complete conception-to-pregnancy journey. PregBiotics™ C-Essentials Kit bundles Conception + Essentials — preconception prep through trimesters, all covered. Save 20%.",
+        "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
+        "show_subscription": true,
+        "show_qty_discounts": false,
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
+    },
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Naseema+R&background=1f6b3d&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "The full prep journey in one bundle. Smart.",
+            "author": "Naseema R.",
+            "meta": "Verified buyer · Pretoria"
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Heidi+P&background=5fa37a&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Save money, save juggling. Switched in trimester 2 easy.",
+            "author": "Heidi P.",
+            "meta": "Verified buyer · 5 months ago"
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Lerato+M&background=0a3d22&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Smooth conception, smooth pregnancy. Highly recommend.",
+            "author": "Lerato M.",
+            "meta": "Verified buyer · 7 months ago"
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Bongi+K&background=1f6b3d&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Worth every cent. My investment in baby's start.",
+            "author": "Bongi K.",
+            "meta": "Verified buyer · 6 months ago"
+          }
+        },
+        "r5": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Sarah+B&background=5fa37a&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Best decision before trying. Conceived in 4 months.",
+            "author": "Sarah B.",
+            "meta": "Verified buyer · Cape Town"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
+        "eyebrow": "★ Real Reviews",
+        "title": "The full conception-to-pregnancy journey"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Buying products separately</strong> — overspending, undercommitted."
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Switching mid-journey</strong> — confusing, wasteful, easy to miss."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>No clear roadmap</strong> — preconception, then what?"
+          }
+        },
+        "p4": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Missing the early window</strong> when nutrition matters most."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#1f6b3d",
+        "brand_tint": "#f2f9ec",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_184202_d5eaad31-44eb-417f-8358-518ac825e668.png",
+        "tag_value": "3-mo",
+        "tag_label": "Preconception Window For Optimal Prep",
+        "eyebrow": "The Problem",
+        "title_pre": "One bundle,",
+        "title_highlight": "the full journey.",
+        "desc": "The 3 months before conception matter as much as the 9 after. The C-Essentials Kit covers both stages with the right actives at the right time — and saves you 20% over buying separately."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>PregBiotics Conception</strong> — preconception fertility prep."
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>PregBiotics Essentials</strong> — daily pregnancy nutrition."
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Pregnancy-safe probiotic strains</strong> across both products."
+          }
+        },
+        "s4": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>20% savings vs buying separately</strong>. One bundle, full journey."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#1f6b3d",
+        "brand_tint": "#f2f9ec",
+        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/7_transparent_Realistic_3D_product_mockup_1.png?v=1775328668",
+        "tag_value": "20%",
+        "tag_label": "Savings vs Buying Separately",
+        "eyebrow": "The Solution",
+        "title_pre": "Meet the",
+        "title_highlight": "C-Essentials Kit.",
+        "desc": "PregBiotics Conception (preconception) + PregBiotics Essentials (pregnancy) — bundled at 20% off. Smart, sequential, complete coverage."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "pregbiotics-breastfeeding",
+            "brand": "PregBiotics™",
+            "rating": "4.9",
+            "reviews": "850+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "pregbiotics-conception",
+            "brand": "PregBiotics™",
+            "rating": "4.8",
+            "reviews": "180+"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "pregbiotics-essentials",
+            "brand": "PregBiotics™",
+            "rating": "4.9",
+            "reviews": "210+"
+          }
+        },
+        "r4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "pregbiotics-essentials-with-omega",
+            "brand": "PregBiotics™",
+            "rating": "4.8",
+            "reviews": "150+"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
+        "tint": false,
+        "eyebrow": "What's Inside",
+        "title": "The C-Essentials Kit bundle",
+        "sub": "Conception + Essentials — the smart sequential journey."
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "b1": {
+          "type": "feat",
+          "settings": {
+            "icon": "📦",
+            "name": "Two Products Bundled",
+            "desc": "Conception + Essentials — sequential coverage."
+          }
+        },
+        "b2": {
+          "type": "feat",
+          "settings": {
+            "icon": "💰",
+            "name": "20% Savings",
+            "desc": "Two PregBiotics flagship products at a 20% bundle discount."
+          }
+        },
+        "b3": {
+          "type": "feat",
+          "settings": {
+            "icon": "🤰",
+            "name": "Complete Journey",
+            "desc": "Preconception prep through trimester 3."
+          }
+        },
+        "b4": {
+          "type": "feat",
+          "settings": {
+            "icon": "🧬",
+            "name": "Right Actives, Right Time",
+            "desc": "Fertility actives, then pregnancy actives."
+          }
+        },
+        "b5": {
+          "type": "feat",
+          "settings": {
+            "icon": "🩺",
+            "name": "OB-Designed",
+            "desc": "Built with obstetric and fertility specialists."
+          }
+        },
+        "b6": {
+          "type": "feat",
+          "settings": {
+            "icon": "✅",
+            "name": "Risk-Free",
+            "desc": "30-day money-back if it doesn't deliver."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_tint": "#f2f9ec",
+        "eyebrow": "Key Benefits",
+        "title_pre": "Why the",
+        "title_highlight": "C-Essentials Kit",
+        "sub": "Six reasons the C-Essentials Kit is the smartest way to start your journey."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "📦",
+            "name": "Start with Conception",
+            "desc": "3+ months before trying. Build fertility and egg quality."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "🤰",
+            "name": "Confirm Pregnancy",
+            "desc": "When test is positive, switch to Essentials."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "💊",
+            "name": "Continue with Essentials",
+            "desc": "Daily prenatal through all three trimesters."
+          }
+        },
+        "h4": {
+          "type": "step",
+          "settings": {
+            "icon": "👶",
+            "name": "Switch to Breastfeeding",
+            "desc": "Post-birth, transition to PregBiotics Breastfeeding."
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_tint": "#f2f9ec",
+        "eyebrow": "How It Works",
+        "title_pre": "Your Journey",
+        "title_highlight": "Roadmap",
+        "sub": "A clear, OB-designed sequential protocol."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🥚",
+            "name": "PregBiotics Conception",
+            "amount": "60 capsules",
+            "desc": "Active folate + myo-inositol + CoQ10 + probiotics for preconception."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🤰",
+            "name": "PregBiotics Essentials",
+            "amount": "60 capsules",
+            "desc": "Active folate + iron + B12 + pregnancy-safe probiotics."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "📖",
+            "name": "Kit Protocol Guide",
+            "amount": "Included",
+            "desc": "OB-designed sequential plan and timing."
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🛡️",
+            "name": "Velobiotics™ MEP Coating",
+            "amount": "Across both",
+            "desc": "1000× more probiotics reach you alive."
+          }
+        },
+        "i5": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "✓",
+            "name": "Clean Format",
+            "amount": "Throughout",
+            "desc": "Pregnancy-friendly, halaal-friendly, no fillers."
+          }
+        },
+        "i6": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🚫",
+            "name": "Free From",
+            "amount": "Always",
+            "desc": "Synthetic folic acid · gluten · soy · dairy · GMO."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_tint": "#f2f9ec",
+        "brand_dark": "#0a3d22",
+        "brand_light": "#5fa37a",
+        "eyebrow": "What's Inside",
+        "title": "Two PregBiotics flagships in one bundle",
+        "sub": "Conception + Essentials. Sequential coverage with 20% savings.",
+        "facts_image_url": "",
+        "facts_label": "Bundle contents",
+        "facts_foot": "Lab-tested · OB-formulated · Full transparency"
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Confident in journey",
+            "percent": 94
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "Smoother conception",
+            "percent": 85
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Better pregnancy energy",
+            "percent": 89
+          }
+        },
+        "c4": {
+          "type": "stat",
+          "settings": {
+            "label": "Saved money",
+            "percent": 97
+          }
+        },
+        "c5": {
+          "type": "stat",
+          "settings": {
+            "label": "Would recommend to a friend",
+            "percent": 97
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
+        "eyebrow": "Real results",
+        "title_pre": "Trusted for",
+        "title_highlight": "Complete Coverage",
+        "sub": "What mothers report after the full C-Essentials Kit journey.",
+        "caveat": "Based on a survey of 120+ verified customers. Individual results may vary."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "f1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "pregbiotics-breastfeeding",
+            "brand": "PregBiotics™",
+            "rating": "4.9",
+            "reviews": "850+"
+          }
+        },
+        "f2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "biokid-chewable-probiotics-tablets-for-children",
+            "brand": "BioKid™",
+            "rating": "4.8",
+            "reviews": "200+"
+          }
+        },
+        "f3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
+            "brand": "Femina™",
+            "rating": "4.8",
+            "reviews": "1300+"
+          }
+        },
+        "f4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "her-biotics-original-capsules-60s",
+            "brand": "Her-Biotics™",
+            "rating": "4.7",
+            "reviews": "950+"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
+        "tint": true,
+        "eyebrow": "Frequently Bought Together",
+        "title": "Build your full family wellness stack",
+        "sub": "Mums who love C-Essentials Kit stack these for the whole journey."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
+            "name": "Clinically Validated",
+            "desc": "Two flagship products evidence-based and OB-tested."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
+            "name": "OB Designed Protocol",
+            "desc": "Sequential plan built with obstetricians."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
+            "name": "Patented MEP Technology",
+            "desc": "Microencapsulation with Supercritical CO₂."
+          }
+        },
+        "d4": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
+            "name": "Clean Label",
+            "desc": "Pregnancy-friendly, no fillers, no synthetic folic acid."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3",
+        "d4"
+      ],
+      "settings": {
+        "eyebrow": "Trusted by OBs. Proven by Science.",
+        "title_pre": "Quality you can",
+        "title_highlight": "trust.",
+        "sub": "Built with obstetric guidance, peer-reviewed actives, and SAHPRA-aware manufacturing."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "Conception + Pregnancy",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "20% Bundle Savings",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "Sequential Protocol",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "OB-Designed Journey",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o5": {
+          "type": "row",
+          "settings": {
+            "feature": "Pregnancy-Safe Strains",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
+        "title": "Why the C-Essentials Kit Outperforms",
+        "sub": "Conception + Essentials bundled with OB-designed sequential protocol — the complete preconception-to-pregnancy coverage at 20% off.",
+        "col_features": "Features",
+        "col_brand": "C-Essentials Kit",
+        "col_b": "Single Prenatal",
+        "col_c": "Generic Bundles",
+        "cta_text": "Add to Cart",
+        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Real Reviews",
+        "title_pre": "What Mothers",
+        "title_highlight": "Are Saying",
+        "sub": "Verified reviews from real mums. The Judge.me widget will populate this section on go-live.",
+        "rating": "4.9",
+        "reviews_count": "120+",
+        "customers_count": "12K+"
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "What's in the C-Essentials Kit?",
+            "answer": "<p>PregBiotics Conception (60 caps) + PregBiotics Essentials (60 caps) + OB-designed protocol guide. About 4 months of complete coverage.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "When do I switch from Conception to Essentials?",
+            "answer": "<p>Switch when your pregnancy test is positive. Essentials supports the trimesters and is iron-rich for pregnancy demands.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "What if conception takes longer than 3 months?",
+            "answer": "<p>Continue with Conception until pregnancy. Restock as needed — fertility benefits compound.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Is the C-Essentials Kit safe?",
+            "answer": "<p>Absolutely. Both products manufactured under GMP conditions in SAHPRA-aware facilities. OB-formulated for both stages.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Do you ship internationally?",
+            "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "What if it doesn't work for me?",
+            "answer": "<p>If you don't see results in 30 days, we'll refund you in full — no questions asked.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "title_pre": "Questions Before",
+        "title_highlight": "You Start"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "✅",
+            "text": "30-day money-back"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "🚚",
+            "text": "Ships worldwide"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "🔬",
+            "text": "Lab-tested every batch"
+          }
+        },
+        "g4": {
+          "type": "g",
+          "settings": {
+            "icon": "💰",
+            "text": "20% bundle savings"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_light": "#5fa37a",
+        "badge": "30-day money-back guarantee",
+        "title_pre": "Start Your Journey",
+        "title_highlight": "Risk-Free for 30 Days",
+        "sub": "Two PregBiotics flagships, one smart kit. If it doesn't deliver, we'll refund every cent.",
+        "cta_text": "Add to Cart",
+        "cta_link": "#vbpForm"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "judgeme",
+    "faq",
+    "final"
+  ]
+}

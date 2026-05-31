@@ -821,6 +821,23 @@
         "include_margins": true
       }
     },
+    "blog": {
+      "type": "featured-blog",
+      "settings": {
+        "blog": "news",
+        "post_limit": 3,
+        "heading": "Your Health. Our Knowledge.",
+        "heading_size": "h1",
+        "columns_desktop": 3,
+        "show_view_all": true,
+        "show_image": true,
+        "show_date": true,
+        "show_author": true,
+        "color_scheme": "scheme-1",
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
     "faq": {
       "type": "vb-faq",
       "blocks": {
@@ -890,23 +907,6 @@
         "cta_link": "https://www.velobiotics.co.za/pages/new-contact-us"
       }
     },
-    "blog": {
-      "type": "featured-blog",
-      "settings": {
-        "blog": "news",
-        "post_limit": 3,
-        "heading": "Your Health. Our Knowledge.",
-        "heading_size": "h1",
-        "columns_desktop": 3,
-        "show_view_all": true,
-        "show_image": true,
-        "show_date": true,
-        "show_author": true,
-        "color_scheme": "scheme-1",
-        "padding_top": 56,
-        "padding_bottom": 56
-      }
-    },
     "final-cta": {
       "type": "vb-final-cta",
       "blocks": {
@@ -964,9 +964,9 @@
     "comparison",
     "judgeme",
     "1780172743f274e3fe",
+    "blog",
     "faq",
     "contact-cta",
-    "blog",
     "final-cta"
   ]
 }

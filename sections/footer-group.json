@@ -13,8 +13,21 @@
   "sections": {
     "vb_footer": {
       "type": "vb-footer",
-      "settings": {}
+      "settings": {
+        "footer_logo": "shopify://shop_images/Velobiotics_black_background222x55_547d0000-46b1-4046-b1ce-c4bf3be3418d.png",
+        "brand_blurb": "Probiotics engineered to survive. Formulated by doctors. Trusted by 500,000+ South Africans. Patented MEP delivery — 1000× more probiotics reach your gut alive.",
+        "email_heading": "Your Health. Our Knowledge.",
+        "email_sub": "Science-backed tips, exclusive offers, early access to new products.",
+        "social_instagram": "",
+        "social_facebook": "",
+        "social_tiktok": "",
+        "social_youtube": "",
+        "social_x": "",
+        "disclaimer_text": "These statements have not been evaluated by FDA|SAHPRA. This product is a food supplement and is not intended to diagnose, treat, cure, or prevent any disease. Always consult your healthcare practitioner before using any nutritional supplement, particularly if you are pregnant, breastfeeding, on chronic medication, or have a medical condition. Individual results may vary. Velobiotics products are SAHPRA-compliant Category D complementary medicines, manufactured in SAHPRA-compliant facilities."
+      }
     }
   },
-  "order": ["vb_footer"]
+  "order": [
+    "vb_footer"
+  ]
 }

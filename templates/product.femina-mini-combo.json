@@ -249,7 +249,7 @@
         "reverse": true,
         "brand_primary": "#8d2a89",
         "brand_tint": "#fdf5fc",
-        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Product-image---Femina_-Probiotic-Capsules-with-Cranberry-Extract.jpg?v=1775328667",
+        "image_url": "",
         "tag_value": "15%",
         "tag_label": "Savings vs Buying Separately",
         "eyebrow": "The Solution",
@@ -267,7 +267,10 @@
             "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
             "brand": "Femina™",
             "rating": "4.8",
-            "reviews": "1300+"
+            "reviews": "1300+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         },
         "r2": {
@@ -276,7 +279,10 @@
             "product_handle": "femina-probiotics-cookie-fresh-with-boric-acid-suppositories",
             "brand": "Femina™",
             "rating": "4.9",
-            "reviews": "320+"
+            "reviews": "320+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         },
         "r3": {
@@ -285,7 +291,10 @@
             "product_handle": "femina-cookie-fresh-boric-acid-only-suppositories",
             "brand": "Femina™",
             "rating": "4.8",
-            "reviews": "210+"
+            "reviews": "210+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         },
         "r4": {
@@ -294,7 +303,10 @@
             "product_handle": "femina-menstrual-cups-large-small-value-pack",
             "brand": "Femina™",
             "rating": "4.7",
-            "reviews": "180+"
+            "reviews": "180+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         },
         "r5": {
@@ -303,7 +315,10 @@
             "product_handle": "femina-probiotic-meal-replacement-cranberry-extract-for-women",
             "brand": "Femina™",
             "rating": "4.8",
-            "reviews": "150+"
+            "reviews": "150+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         }
       },
@@ -520,6 +535,9 @@
         "sub": "Probiotic Capsules + Cookie Fresh Suppositories. Complete intimate-health defence.",
         "facts_image_url": "",
         "facts_label": "Bundle contents",
+        "facts_col_a": "Ingredient",
+        "facts_col_b": "Per serving",
+        "facts_caption": "% Daily Value not established. Other Ingredients: HPMC, Magnesium Stearate.",
         "facts_foot": "Lab-tested · Doctor-formulated · Full transparency"
       }
     },
@@ -589,7 +607,10 @@
             "product_handle": "her-biotics-original-capsules-60s",
             "brand": "Her-Biotics™",
             "rating": "4.7",
-            "reviews": "260+"
+            "reviews": "260+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         },
         "f2": {
@@ -598,7 +619,10 @@
             "product_handle": "gutslim-probiotics-glp-1-booster",
             "brand": "GutSlim™",
             "rating": "4.8",
-            "reviews": "410+"
+            "reviews": "410+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         },
         "f3": {
@@ -607,7 +631,10 @@
             "product_handle": "velo16-probiotics-magnesium-glycinate",
             "brand": "Velo16™",
             "rating": "4.6",
-            "reviews": "190+"
+            "reviews": "190+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         },
         "f4": {
@@ -616,7 +643,10 @@
             "product_handle": "pregbiotics-breastfeeding",
             "brand": "PregBiotics™",
             "rating": "4.9",
-            "reviews": "150+"
+            "reviews": "150+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         }
       },
@@ -643,6 +673,7 @@
           "type": "card",
           "settings": {
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
+            "icon_fallback": "✓",
             "name": "Clinically Validated",
             "desc": "Both products evidence-based and clinically tested."
           }
@@ -651,6 +682,7 @@
           "type": "card",
           "settings": {
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
+            "icon_fallback": "✓",
             "name": "Gynae Formulated",
             "desc": "Built with women's health specialists."
           }
@@ -659,6 +691,7 @@
           "type": "card",
           "settings": {
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
+            "icon_fallback": "✓",
             "name": "Patented MEP Technology",
             "desc": "Microencapsulation with Supercritical CO₂."
           }
@@ -667,6 +700,7 @@
           "type": "card",
           "settings": {
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
+            "icon_fallback": "✓",
             "name": "Clean Label",
             "desc": "No parabens, no fragrance, no harsh chemicals."
           }
@@ -745,10 +779,12 @@
         "brand_primary": "#8d2a89",
         "brand_dark": "#6b1f68",
         "brand_tint": "#fdf5fc",
+        "eyebrow": "",
         "title": "Why the Mini Combo Outperforms",
         "sub": "Two complementary Femina flagships in one smart bundle — acute and daily defence at 15% off vs separate purchase.",
         "col_features": "Features",
         "col_brand": "Mini Combo",
+        "brand_logo_url": "",
         "col_b": "Single Product",
         "col_c": "Antibiotics",
         "cta_text": "Add to Cart",
@@ -764,7 +800,8 @@
         "sub": "Verified reviews from real women. The Judge.me widget will populate this section on go-live.",
         "rating": "4.8",
         "reviews_count": "260+",
-        "customers_count": "30K+"
+        "customers_count": "30K+",
+        "judgeme_html": ""
       }
     },
     "faq": {

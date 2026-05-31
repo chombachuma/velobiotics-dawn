@@ -1,0 +1,890 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🌸",
+            "text": "At-home vaginal pH self-test"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🛡️",
+            "text": "Distinguish BV vs yeast vs healthy"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "⏱️",
+            "text": "Results in seconds"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "💧",
+            "text": "Discreet · private · accurate"
+          }
+        },
+        "t1": {
+          "type": "testi",
+          "settings": {
+            "quote": "Cleared up confusion in minutes",
+            "author": "Naseema P."
+          }
+        },
+        "t2": {
+          "type": "testi",
+          "settings": {
+            "quote": "Finally I know what I'm dealing with",
+            "author": "Lerato K."
+          }
+        },
+        "t3": {
+          "type": "testi",
+          "settings": {
+            "quote": "Saved me a doctor visit",
+            "author": "Wendy V."
+          }
+        },
+        "t4": {
+          "type": "testi",
+          "settings": {
+            "quote": "Easy and accurate",
+            "author": "Carla M."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
+        "brand_label": "Femina pH Test Kit",
+        "rating": "4.8",
+        "review_count": "180+",
+        "hook": "Know your body. The Femina pH Self-Test Kit lets you check your vaginal pH at home in seconds — distinguish BV from yeast from healthy balance, and choose the right treatment with confidence.",
+        "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
+        "show_subscription": false,
+        "show_qty_discounts": true,
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
+    },
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Naseema+P&background=8d2a89&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Cleared up confusion in minutes. I finally knew what to do.",
+            "author": "Naseema P.",
+            "meta": "Verified buyer · Pretoria"
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Lerato+K&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Finally I know what I'm dealing with — yeast, not BV. Choosing the right product matters.",
+            "author": "Lerato K.",
+            "meta": "Verified buyer · 1 month ago"
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Wendy+V&background=6b1f68&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Saved me a doctor visit. Discreet and accurate.",
+            "author": "Wendy V.",
+            "meta": "Verified buyer · Cape Town"
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Carla+M&background=8d2a89&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Easy to use. Test, read result, done.",
+            "author": "Carla M.",
+            "meta": "Verified buyer · Johannesburg"
+          }
+        },
+        "r5": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Bongi+S&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Every woman should have this. Knowledge = control.",
+            "author": "Bongi S.",
+            "meta": "Verified buyer · 2 months ago"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
+        "eyebrow": "★ Real Reviews",
+        "title": "Women who know choose Femina pH Kit"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Unclear symptoms</strong> — is it BV, yeast, or normal?"
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Wrong treatment</strong> wasting time and money."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Embarrassing GP visits</strong> for something you could check yourself."
+          }
+        },
+        "p4": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Recurrent infections</strong> with no clear pattern."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#8d2a89",
+        "brand_tint": "#fdf5fc",
+        "image_url": "",
+        "tag_value": "60+",
+        "tag_label": "Seconds to a Clear Answer",
+        "eyebrow": "The Problem",
+        "title_pre": "Symptoms are confusing.",
+        "title_highlight": "pH tells the truth.",
+        "desc": "BV and yeast have similar symptoms but opposite causes — and need different treatment. Vaginal pH is the fastest way to tell the difference. Healthy pH (3.8-4.5) means yeast. Elevated pH (>4.5) means BV. Now you can check at home, in seconds."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Pharmaceutical-grade pH strips</strong> — accurate within 0.2 pH points."
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Clear colour chart</strong> — read your result in 60 seconds."
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Plain-English guide</strong> — what each result means + recommended action."
+          }
+        },
+        "s4": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Multiple-use kit</strong> — re-test as needed. Discreet packaging."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#8d2a89",
+        "brand_tint": "#fdf5fc",
+        "image_url": "",
+        "tag_value": "60s",
+        "tag_label": "From Swab to Answer",
+        "eyebrow": "The Solution",
+        "title_pre": "Meet the",
+        "title_highlight": "Femina pH Self-Test Kit.",
+        "desc": "Pharmaceutical-grade pH strips, clear colour chart, plain-English guide. Get a clear answer in 60 seconds. Then choose the right treatment — Cookie Fresh for BV, antifungal cream for yeast, daily Femina capsules for ongoing balance."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
+            "brand": "Femina™",
+            "rating": "4.8",
+            "reviews": "1300+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-probiotics-cookie-fresh-with-boric-acid-suppositories",
+            "brand": "Femina™",
+            "rating": "4.9",
+            "reviews": "320+"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-cookie-fresh-boric-acid-only-suppositories",
+            "brand": "Femina™",
+            "rating": "4.8",
+            "reviews": "210+"
+          }
+        },
+        "r4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-mini-combo",
+            "brand": "Femina™",
+            "rating": "4.8",
+            "reviews": "260+"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
+        "tint": false,
+        "eyebrow": "After Your Test",
+        "title": "Choose the right Femina™ product",
+        "sub": "Once you know what you're dealing with, treat it properly. These products match the most common pH results."
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "b1": {
+          "type": "feat",
+          "settings": {
+            "icon": "⏱️",
+            "name": "60-Second Result",
+            "desc": "Swab, dip, read. Done in under a minute."
+          }
+        },
+        "b2": {
+          "type": "feat",
+          "settings": {
+            "icon": "🎯",
+            "name": "Accurate Diagnosis",
+            "desc": "Distinguish BV from yeast from healthy balance."
+          }
+        },
+        "b3": {
+          "type": "feat",
+          "settings": {
+            "icon": "🔒",
+            "name": "Discreet & Private",
+            "desc": "Test at home, on your terms. Discreet packaging."
+          }
+        },
+        "b4": {
+          "type": "feat",
+          "settings": {
+            "icon": "💰",
+            "name": "Save Money",
+            "desc": "Skip unnecessary GP visits and wrong-treatment cycles."
+          }
+        },
+        "b5": {
+          "type": "feat",
+          "settings": {
+            "icon": "🩺",
+            "name": "Gynae-Endorsed",
+            "desc": "pH-based testing is the gold-standard first-line diagnostic."
+          }
+        },
+        "b6": {
+          "type": "feat",
+          "settings": {
+            "icon": "📖",
+            "name": "Plain-English Guide",
+            "desc": "Each result comes with recommended next steps."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_tint": "#fdf5fc",
+        "eyebrow": "Key Benefits",
+        "title_pre": "Why the",
+        "title_highlight": "pH Kit",
+        "sub": "Six reasons every Femina user keeps a pH kit at home."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "🧪",
+            "name": "Take The Swab",
+            "desc": "Sterile swab provided. Gentle vaginal sample."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "💧",
+            "name": "Apply To Strip",
+            "desc": "Touch swab to pH strip — strip changes colour."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "📊",
+            "name": "Read The Chart",
+            "desc": "Match strip colour to chart. pH < 4.5 or > 4.5?"
+          }
+        },
+        "h4": {
+          "type": "step",
+          "settings": {
+            "icon": "💊",
+            "name": "Choose Your Action",
+            "desc": "Acidic = yeast (antifungal). Alkaline = BV (Cookie Fresh). Healthy = daily capsules."
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_tint": "#fdf5fc",
+        "eyebrow": "How It Works",
+        "title_pre": "From Swab to",
+        "title_highlight": "Action Plan",
+        "sub": "Four simple steps. Clear answers. Right treatment."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🧪",
+            "name": "pH Test Strips",
+            "amount": "3 strips",
+            "desc": "Pharmaceutical-grade — accurate to within 0.2 pH points."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🧫",
+            "name": "Sterile Swabs",
+            "amount": "3 swabs",
+            "desc": "Individually wrapped, single-use, hypoallergenic."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "📊",
+            "name": "Colour Chart",
+            "amount": "Included",
+            "desc": "Easy-read pH chart with healthy/yeast/BV indicators."
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "📖",
+            "name": "Plain-English Guide",
+            "amount": "Included",
+            "desc": "What each result means + recommended treatment paths."
+          }
+        },
+        "i5": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "📦",
+            "name": "Discreet Packaging",
+            "amount": "Standard",
+            "desc": "Plain envelope, no product name on outside."
+          }
+        },
+        "i6": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🚫",
+            "name": "Free From",
+            "amount": "Always",
+            "desc": "Latex · fragrance · animal products."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_tint": "#fdf5fc",
+        "brand_dark": "#6b1f68",
+        "brand_light": "#b94db4",
+        "eyebrow": "What's In The Kit",
+        "title": "Everything you need to know",
+        "sub": "3 test strips, 3 sterile swabs, colour chart, and plain-English guide.",
+        "facts_image_url": "",
+        "facts_label": "Kit contents",
+        "facts_foot": "Pharmaceutical-grade · Gynae-endorsed"
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Got a clear answer",
+            "percent": 96
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "Avoided wrong treatment",
+            "percent": 89
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Saved a GP visit",
+            "percent": 78
+          }
+        },
+        "c4": {
+          "type": "stat",
+          "settings": {
+            "label": "Felt more in control",
+            "percent": 94
+          }
+        },
+        "c5": {
+          "type": "stat",
+          "settings": {
+            "label": "Would recommend to a friend",
+            "percent": 97
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
+        "eyebrow": "Real results",
+        "title_pre": "Trusted for",
+        "title_highlight": "Clarity & Control",
+        "sub": "What women report after using the Femina pH Kit.",
+        "caveat": "Based on a survey of 180+ verified customers."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "f1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
+            "brand": "Femina™",
+            "rating": "4.8",
+            "reviews": "1300+"
+          }
+        },
+        "f2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-probiotics-cookie-fresh-with-boric-acid-suppositories",
+            "brand": "Femina™",
+            "rating": "4.9",
+            "reviews": "320+"
+          }
+        },
+        "f3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-mini-combo",
+            "brand": "Femina™",
+            "rating": "4.8",
+            "reviews": "260+"
+          }
+        },
+        "f4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "her-biotics-original-capsules-60s",
+            "brand": "Her-Biotics™",
+            "rating": "4.7",
+            "reviews": "950+"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
+        "tint": true,
+        "eyebrow": "Stock Your Femina Stack",
+        "title": "Test, treat, prevent",
+        "sub": "Best paired with daily Femina capsules and acute-care Cookie Fresh."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
+            "name": "Gynae-Endorsed",
+            "desc": "pH testing is gold-standard first-line diagnostic."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
+            "name": "Pharmaceutical-Grade",
+            "desc": "Same strips used in medical labs."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
+            "name": "Lab-Accuracy",
+            "desc": "Accurate to within 0.2 pH points."
+          }
+        },
+        "d4": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
+            "name": "Hypoallergenic",
+            "desc": "Latex-free, fragrance-free, hypoallergenic."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3",
+        "d4"
+      ],
+      "settings": {
+        "eyebrow": "Trusted by Gynaecologists",
+        "title_pre": "Quality you can",
+        "title_highlight": "trust.",
+        "sub": "Used and endorsed by South African gynaecologists for first-line at-home diagnostics."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "60-Second Result",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "BV vs Yeast Differentiation",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "Pharmaceutical-Grade",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "Plain-English Guide",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o5": {
+          "type": "row",
+          "settings": {
+            "feature": "Multi-Use Kit",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
+        "title": "Why the pH Kit Outperforms",
+        "sub": "Pharmaceutical-grade strips, BV/yeast differentiation, action-plan guide — the gynae-endorsed home diagnostic.",
+        "col_features": "Features",
+        "col_brand": "Femina pH Kit",
+        "col_b": "OTC Strips",
+        "col_c": "Guesswork",
+        "cta_text": "Add to Cart",
+        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Real Reviews",
+        "title_pre": "What Women",
+        "title_highlight": "Are Saying",
+        "sub": "Verified reviews from real women.",
+        "rating": "4.8",
+        "reviews_count": "180+",
+        "customers_count": "20K+"
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "How accurate is it?",
+            "answer": "<p>Pharmaceutical-grade strips, accurate within 0.2 pH points — the same standard used in medical labs for first-line BV vs yeast differentiation.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "When should I test?",
+            "answer": "<p>Test when you have symptoms (unusual discharge, odour, itching, discomfort). Avoid testing within 24 hours of intercourse or menstruation as these can affect pH temporarily.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "What if my result is unclear?",
+            "answer": "<p>If symptoms persist or your pH reading is borderline, see your healthcare practitioner. This kit is a first-line diagnostic — not a replacement for clinical care for persistent issues.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Is it safe to use myself?",
+            "answer": "<p>Absolutely. The kit is designed for self-use with sterile single-use swabs and a step-by-step guide.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Do you ship internationally?",
+            "answer": "<p>Yes. We ship globally — 5–14 working days. Discreet packaging.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "What if it doesn't work for me?",
+            "answer": "<p>30-day money-back guarantee — full refund if not satisfied.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "title_pre": "Questions Before",
+        "title_highlight": "You Start"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "✅",
+            "text": "30-day money-back"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "🔒",
+            "text": "Discreet packaging"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "🔬",
+            "text": "Pharmaceutical-grade"
+          }
+        },
+        "g4": {
+          "type": "g",
+          "settings": {
+            "icon": "🌸",
+            "text": "Gynae-endorsed"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_light": "#b94db4",
+        "badge": "30-day money-back guarantee",
+        "title_pre": "Know Your Body",
+        "title_highlight": "In 60 Seconds",
+        "sub": "Test at home. Choose the right treatment. Restore balance with confidence.",
+        "cta_text": "Add to Cart",
+        "cta_link": "#vbpForm"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "judgeme",
+    "faq",
+    "final"
+  ]
+}

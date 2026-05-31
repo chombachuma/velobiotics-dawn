@@ -1,0 +1,900 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "📦",
+            "text": "Capsules + Cookie Fresh"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🛡️",
+            "text": "Daily + targeted defence"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "💰",
+            "text": "Save vs separate purchase"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "⚡",
+            "text": "1000× more delivery"
+          }
+        },
+        "t1": {
+          "type": "testi",
+          "settings": {
+            "quote": "Combo wiped out my BV cycle",
+            "author": "Lerato V."
+          }
+        },
+        "t2": {
+          "type": "testi",
+          "settings": {
+            "quote": "Best Femina value",
+            "author": "Cathy F."
+          }
+        },
+        "t3": {
+          "type": "testi",
+          "settings": {
+            "quote": "Daily + acute, both bases",
+            "author": "Ntombi K."
+          }
+        },
+        "t4": {
+          "type": "testi",
+          "settings": {
+            "quote": "Convinced after one course",
+            "author": "Jenny W."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
+        "brand_label": "Femina™ Mini Combo",
+        "rating": "4.8",
+        "review_count": "260+",
+        "hook": "The starter bundle. Femina™ Probiotic Capsules + Cookie Fresh™ Suppositories — daily systemic defence plus targeted vaginal action. Save vs separate purchase.",
+        "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
+        "show_subscription": true,
+        "show_qty_discounts": false,
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
+    },
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Lerato+V&background=8d2a89&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Combo wiped out my BV cycle in 14 days. Two angles work better than one.",
+            "author": "Lerato V.",
+            "meta": "Verified buyer · Johannesburg"
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Cathy+F&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Best Femina value. Capsules for prevention, suppositories for the acute fix.",
+            "author": "Cathy F.",
+            "meta": "Verified buyer · Pretoria"
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Ntombi+K&background=6b1f68&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Daily + acute, both bases covered. Smart combo.",
+            "author": "Ntombi K.",
+            "meta": "Verified buyer · 2 months ago"
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Jenny+W&background=8d2a89&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Convinced after one course. Restocking the capsules monthly.",
+            "author": "Jenny W.",
+            "meta": "Verified buyer · 1 month ago"
+          }
+        },
+        "r5": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Pia+L&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Perfect intro to Femina. Better than buying separately.",
+            "author": "Pia L.",
+            "meta": "Verified buyer · Cape Town"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
+        "eyebrow": "★ Real Reviews",
+        "title": "The smart Femina starter bundle"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>BV or yeast right now</strong> — you need immediate action."
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>And you want to prevent</strong> the next recurrence."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Single products miss</strong> one of those two needs."
+          }
+        },
+        "p4": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Buying them separately</strong> costs more and you might skip one."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#8d2a89",
+        "brand_tint": "#fdf5fc",
+        "image_url": "https://media.base44.com/images/public/69e1abc073bbccc7f63edacc/653a0d852_generated_image.png",
+        "tag_value": "2-in-1",
+        "tag_label": "Acute + Prevention In One Bundle",
+        "eyebrow": "The Problem",
+        "title_pre": "You need both",
+        "title_highlight": "acute relief and prevention.",
+        "desc": "Stopping BV and yeast cycles requires hitting both: relieving the current flare with direct vaginal action, and preventing the next with daily systemic support. The Mini Combo does both."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Cookie Fresh™ Suppositories</strong> — fast direct action."
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Femina™ Probiotic Capsules</strong> — daily systemic prevention."
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
+          }
+        },
+        "s4": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Save vs separate</strong>. One bundle, complete protection."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#8d2a89",
+        "brand_tint": "#fdf5fc",
+        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Product-image---Femina_-Probiotic-Capsules-with-Cranberry-Extract.jpg?v=1775328667",
+        "tag_value": "15%",
+        "tag_label": "Savings vs Buying Separately",
+        "eyebrow": "The Solution",
+        "title_pre": "Meet the",
+        "title_highlight": "Femina™ Mini Combo.",
+        "desc": "Two Femina flagship products bundled at 15% off — Cookie Fresh Suppositories for acute relief, Probiotic Capsules for daily prevention. Cover both needs, save money, simplify decisions."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
+            "brand": "Femina™",
+            "rating": "4.8",
+            "reviews": "1300+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-probiotics-cookie-fresh-with-boric-acid-suppositories",
+            "brand": "Femina™",
+            "rating": "4.9",
+            "reviews": "320+"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-cookie-fresh-boric-acid-only-suppositories",
+            "brand": "Femina™",
+            "rating": "4.8",
+            "reviews": "210+"
+          }
+        },
+        "r4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-menstrual-cups-large-small-value-pack",
+            "brand": "Femina™",
+            "rating": "4.7",
+            "reviews": "180+"
+          }
+        },
+        "r5": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-probiotic-meal-replacement-cranberry-extract-for-women",
+            "brand": "Femina™",
+            "rating": "4.8",
+            "reviews": "150+"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
+        "tint": false,
+        "eyebrow": "What's Inside",
+        "title": "The Femina™ Mini Combo bundle",
+        "sub": "Capsules + Cookie Fresh — your acute and daily defence."
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "b1": {
+          "type": "feat",
+          "settings": {
+            "icon": "📦",
+            "name": "Two Products Bundled",
+            "desc": "Capsules + Cookie Fresh — acute and daily covered."
+          }
+        },
+        "b2": {
+          "type": "feat",
+          "settings": {
+            "icon": "💰",
+            "name": "15% Savings",
+            "desc": "Two Femina flagship products at a 15% bundle discount."
+          }
+        },
+        "b3": {
+          "type": "feat",
+          "settings": {
+            "icon": "🛡️",
+            "name": "Complete Defence",
+            "desc": "Targeted vaginal action + systemic prevention."
+          }
+        },
+        "b4": {
+          "type": "feat",
+          "settings": {
+            "icon": "⚖️",
+            "name": "Acute & Prevention",
+            "desc": "Address what's happening now, prevent what's next."
+          }
+        },
+        "b5": {
+          "type": "feat",
+          "settings": {
+            "icon": "🩺",
+            "name": "Doctor-Designed",
+            "desc": "Built and validated by women's health specialists."
+          }
+        },
+        "b6": {
+          "type": "feat",
+          "settings": {
+            "icon": "✅",
+            "name": "Risk-Free",
+            "desc": "30-day money-back if you don't see results."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_tint": "#fdf5fc",
+        "eyebrow": "Key Benefits",
+        "title_pre": "Why the",
+        "title_highlight": "Mini Combo",
+        "sub": "Six reasons the Mini Combo is the smartest entry into the Femina range."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "📦",
+            "name": "Receive Your Combo",
+            "desc": "Capsules + Cookie Fresh Suppositories."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "🌸",
+            "name": "Cookie Fresh Nightly",
+            "desc": "For 7-14 nights — clears acute BV or yeast."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "💊",
+            "name": "Capsules Daily",
+            "desc": "Ongoing daily prevention with cranberry + probiotics."
+          }
+        },
+        "h4": {
+          "type": "step",
+          "settings": {
+            "icon": "✨",
+            "name": "Balance Maintained",
+            "desc": "Break the cycle. Stay confident, comfortable, clear."
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_tint": "#fdf5fc",
+        "eyebrow": "How It Works",
+        "title_pre": "Your Combo",
+        "title_highlight": "Protocol",
+        "sub": "A clear, doctor-designed protocol for acute relief and ongoing prevention."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "💊",
+            "name": "Femina™ Probiotic Capsules",
+            "amount": "60 capsules",
+            "desc": "10-strain probiotic blend + cranberry extract. Daily systemic defence."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🌸",
+            "name": "Cookie Fresh™ Suppositories",
+            "amount": "14 suppositories",
+            "desc": "Vaginal probiotic strains + boric acid. Direct, fast action."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🛡️",
+            "name": "Velobiotics™ MEP Coating",
+            "amount": "Across capsules",
+            "desc": "1000× more probiotics reach your gut alive."
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "📖",
+            "name": "Combo Protocol Guide",
+            "amount": "Included",
+            "desc": "Daily plan and timing of both products."
+          }
+        },
+        "i5": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "✓",
+            "name": "Clean Format",
+            "amount": "Throughout",
+            "desc": "No parabens, no fragrance, no harsh chemicals."
+          }
+        },
+        "i6": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🚫",
+            "name": "Free From",
+            "amount": "Always",
+            "desc": "Gluten · soy · dairy · artificial colours · GMO."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_tint": "#fdf5fc",
+        "brand_dark": "#6b1f68",
+        "brand_light": "#b94db4",
+        "eyebrow": "What's Inside",
+        "title": "Two Femina flagships in one bundle",
+        "sub": "Probiotic Capsules + Cookie Fresh Suppositories. Complete intimate-health defence.",
+        "facts_image_url": "",
+        "facts_label": "Bundle contents",
+        "facts_foot": "Lab-tested · Doctor-formulated · Full transparency"
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Acute BV/yeast cleared",
+            "percent": 91
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "Recurrence prevention",
+            "percent": 88
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Restored daily confidence",
+            "percent": 94
+          }
+        },
+        "c4": {
+          "type": "stat",
+          "settings": {
+            "label": "Felt complete defence",
+            "percent": 92
+          }
+        },
+        "c5": {
+          "type": "stat",
+          "settings": {
+            "label": "Would recommend to a friend",
+            "percent": 97
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
+        "eyebrow": "Real results",
+        "title_pre": "Trusted for",
+        "title_highlight": "Complete Defence",
+        "sub": "What women report after completing the Mini Combo protocol.",
+        "caveat": "Based on a survey of 260+ verified customers. Individual results may vary."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "f1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "her-biotics-original-capsules-60s",
+            "brand": "Her-Biotics™",
+            "rating": "4.7",
+            "reviews": "260+"
+          }
+        },
+        "f2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-glp-1-booster",
+            "brand": "GutSlim™",
+            "rating": "4.8",
+            "reviews": "410+"
+          }
+        },
+        "f3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-magnesium-glycinate",
+            "brand": "Velo16™",
+            "rating": "4.6",
+            "reviews": "190+"
+          }
+        },
+        "f4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "pregbiotics-breastfeeding",
+            "brand": "PregBiotics™",
+            "rating": "4.9",
+            "reviews": "150+"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
+        "tint": true,
+        "eyebrow": "Frequently Bought Together",
+        "title": "Pair with the rest of your wellness stack",
+        "sub": "Mini Combo stacks beautifully with these Velobiotics favourites."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
+            "name": "Clinically Validated",
+            "desc": "Both products evidence-based and clinically tested."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
+            "name": "Gynae Formulated",
+            "desc": "Built with women's health specialists."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
+            "name": "Patented MEP Technology",
+            "desc": "Microencapsulation with Supercritical CO₂."
+          }
+        },
+        "d4": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
+            "name": "Clean Label",
+            "desc": "No parabens, no fragrance, no harsh chemicals."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3",
+        "d4"
+      ],
+      "settings": {
+        "eyebrow": "Trusted by Doctors. Proven by Science.",
+        "title_pre": "Quality you can",
+        "title_highlight": "trust.",
+        "sub": "Built on peer-reviewed actives, gynaecology guidance, and SAHPRA-aware manufacturing."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "Acute + Prevention",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "Two Delivery Routes",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "15% Bundle Savings",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "Doctor-Designed Protocol",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o5": {
+          "type": "row",
+          "settings": {
+            "feature": "Microbiome-Friendly",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
+        "title": "Why the Mini Combo Outperforms",
+        "sub": "Two complementary Femina flagships in one smart bundle — acute and daily defence at 15% off vs separate purchase.",
+        "col_features": "Features",
+        "col_brand": "Mini Combo",
+        "col_b": "Single Product",
+        "col_c": "Antibiotics",
+        "cta_text": "Add to Cart",
+        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Real Reviews",
+        "title_pre": "What Women",
+        "title_highlight": "Are Saying",
+        "sub": "Verified reviews from real women. The Judge.me widget will populate this section on go-live.",
+        "rating": "4.8",
+        "reviews_count": "260+",
+        "customers_count": "30K+"
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "What's in the Mini Combo?",
+            "answer": "<p>Femina Probiotic Capsules (60s) + Cookie Fresh Suppositories (14s). Cover acute relief and daily prevention.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "How long does the combo last?",
+            "answer": "<p>14-day acute relief course, plus 60 days of daily prevention. About 2 months of complete coverage.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "Can I take Capsules while using Cookie Fresh?",
+            "answer": "<p>Yes — they're designed to work together. Capsules daily, Cookie Fresh nightly for 7-14 days.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Is the Mini Combo safe?",
+            "answer": "<p>Absolutely. Both products are manufactured under GMP conditions in SAHPRA-aware facilities. Daily use is safe and recommended.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Do you ship internationally?",
+            "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "What if it doesn't work for me?",
+            "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full — no questions asked.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "title_pre": "Questions Before",
+        "title_highlight": "You Start"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "✅",
+            "text": "30-day money-back"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "🚚",
+            "text": "Ships worldwide"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "🔬",
+            "text": "Lab-tested every batch"
+          }
+        },
+        "g4": {
+          "type": "g",
+          "settings": {
+            "icon": "💰",
+            "text": "15% bundle savings"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_light": "#b94db4",
+        "badge": "30-day money-back guarantee",
+        "title_pre": "Complete Defence",
+        "title_highlight": "Risk-Free for 30 Days",
+        "sub": "Two Femina flagships, one smart bundle. If you don't feel the difference, we'll refund every cent.",
+        "cta_text": "Add to Cart",
+        "cta_link": "#vbpForm"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "judgeme",
+    "faq",
+    "final"
+  ]
+}

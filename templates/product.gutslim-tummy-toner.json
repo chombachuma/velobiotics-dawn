@@ -80,7 +80,7 @@
         "t4"
       ],
       "settings": {
-        "brand_primary": "#FFA500",
+        "brand_primary": "#ffa500",
         "brand_dark": "#b25800",
         "brand_tint": "#fff8eb",
         "brand_label": "GutSlim™ Tummy Toner",
@@ -149,7 +149,7 @@
         "r5"
       ],
       "settings": {
-        "brand_primary": "#FFA500",
+        "brand_primary": "#ffa500",
         "brand_dark": "#b25800",
         "brand_tint": "#fff8eb",
         "eyebrow": "★ Real Reviews",
@@ -196,7 +196,7 @@
       ],
       "settings": {
         "reverse": false,
-        "brand_primary": "#FFA500",
+        "brand_primary": "#ffa500",
         "brand_tint": "#fff8eb",
         "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_162305_302cf6c4-0a17-4299-b211-b63c8704ae93.png",
         "tag_value": "68%",
@@ -247,9 +247,10 @@
       ],
       "settings": {
         "reverse": true,
-        "brand_primary": "#FFA500",
+        "brand_primary": "#ffa500",
         "brand_tint": "#fff8eb",
-        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/GLP_1_Booster.png?v=1775328607",
+        "image": "shopify://shop_images/Tummy_Toner.jpg",
+        "image_url": "",
         "tag_value": "1000×",
         "tag_label": "More Probiotics Delivered",
         "eyebrow": "The Solution",
@@ -267,7 +268,10 @@
             "product_handle": "gutslim-probiotics-glp-1-booster",
             "brand": "GutSlim™",
             "rating": "4.8",
-            "reviews": "1200+"
+            "reviews": "1200+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         },
         "r2": {
@@ -276,7 +280,10 @@
             "product_handle": "gutslim-probiotics-fat-burner",
             "brand": "GutSlim™",
             "rating": "4.8",
-            "reviews": "210+"
+            "reviews": "210+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         },
         "r3": {
@@ -285,7 +292,10 @@
             "product_handle": "gutslim-probiotics-supergreens",
             "brand": "GutSlim™",
             "rating": "4.6",
-            "reviews": "150+"
+            "reviews": "150+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         },
         "r4": {
@@ -294,7 +304,10 @@
             "product_handle": "gutslim-probiotics-diet-shake",
             "brand": "GutSlim™",
             "rating": "4.7",
-            "reviews": "140+"
+            "reviews": "140+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         },
         "r5": {
@@ -303,7 +316,10 @@
             "product_handle": "21-day-gutslim-complete-pack",
             "brand": "GutSlim™",
             "rating": "4.9",
-            "reviews": "320+"
+            "reviews": "320+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         }
       },
@@ -315,7 +331,7 @@
         "r5"
       ],
       "settings": {
-        "brand_primary": "#FFA500",
+        "brand_primary": "#ffa500",
         "brand_dark": "#b25800",
         "brand_tint": "#fff8eb",
         "tint": false,
@@ -385,7 +401,7 @@
         "b6"
       ],
       "settings": {
-        "brand_primary": "#FFA500",
+        "brand_primary": "#ffa500",
         "brand_tint": "#fff8eb",
         "eyebrow": "Key Benefits",
         "title_pre": "Why",
@@ -436,7 +452,7 @@
         "h4"
       ],
       "settings": {
-        "brand_primary": "#FFA500",
+        "brand_primary": "#ffa500",
         "brand_tint": "#fff8eb",
         "eyebrow": "How It Works",
         "title_pre": "From Capsule to",
@@ -511,7 +527,7 @@
         "i6"
       ],
       "settings": {
-        "brand_primary": "#FFA500",
+        "brand_primary": "#ffa500",
         "brand_dark": "#b25800",
         "brand_tint": "#fff8eb",
         "brand_light": "#ffc266",
@@ -520,6 +536,9 @@
         "sub": "Six clean actives. No proprietary blends. Full transparency.",
         "facts_image_url": "",
         "facts_label": "Supplement facts",
+        "facts_col_a": "Ingredient",
+        "facts_col_b": "Per serving",
+        "facts_caption": "% Daily Value not established. Other Ingredients: HPMC, Magnesium Stearate.",
         "facts_foot": "Lab-tested · Doctor-formulated · Full transparency"
       }
     },
@@ -570,7 +589,7 @@
         "c5"
       ],
       "settings": {
-        "brand_primary": "#FFA500",
+        "brand_primary": "#ffa500",
         "brand_dark": "#b25800",
         "brand_tint": "#fff8eb",
         "eyebrow": "Real results",
@@ -589,7 +608,10 @@
             "product_handle": "gutslim-probiotics-glp-1-booster",
             "brand": "GutSlim™",
             "rating": "4.8",
-            "reviews": "1200+"
+            "reviews": "1200+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         },
         "f2": {
@@ -598,7 +620,10 @@
             "product_handle": "her-biotics-original-capsules-60s",
             "brand": "Her-Biotics™",
             "rating": "4.7",
-            "reviews": "260+"
+            "reviews": "260+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         },
         "f3": {
@@ -607,7 +632,10 @@
             "product_handle": "velo16-probiotics-magnesium-glycinate",
             "brand": "Velo16™",
             "rating": "4.6",
-            "reviews": "190+"
+            "reviews": "190+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         },
         "f4": {
@@ -616,7 +644,10 @@
             "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
             "brand": "Femina™",
             "rating": "4.8",
-            "reviews": "1300+"
+            "reviews": "1300+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
           }
         }
       },
@@ -627,7 +658,7 @@
         "f4"
       ],
       "settings": {
-        "brand_primary": "#FFA500",
+        "brand_primary": "#ffa500",
         "brand_dark": "#b25800",
         "brand_tint": "#fff8eb",
         "tint": true,
@@ -643,6 +674,7 @@
           "type": "card",
           "settings": {
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
+            "icon_fallback": "✓",
             "name": "Clinically Proven Strains",
             "desc": "16 strains studied in peer-reviewed clinical trials."
           }
@@ -651,6 +683,7 @@
           "type": "card",
           "settings": {
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
+            "icon_fallback": "✓",
             "name": "Doctor Formulated",
             "desc": "Developed by medical doctors and microbiologists."
           }
@@ -659,6 +692,7 @@
           "type": "card",
           "settings": {
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
+            "icon_fallback": "✓",
             "name": "Patented MEP Technology",
             "desc": "Microencapsulation with Supercritical CO₂."
           }
@@ -667,6 +701,7 @@
           "type": "card",
           "settings": {
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
+            "icon_fallback": "✓",
             "name": "Clean Label",
             "desc": "Vegan, halaal-friendly, no fillers."
           }
@@ -742,13 +777,15 @@
         "o5"
       ],
       "settings": {
-        "brand_primary": "#FFA500",
+        "brand_primary": "#ffa500",
         "brand_dark": "#b25800",
         "brand_tint": "#fff8eb",
+        "eyebrow": "",
         "title": "Why Tummy Toner Outperforms",
         "sub": "Targeted belly-fat-burning actives, clinically-researched probiotic strains, and Velobiotics™ delivery — built specifically for visible tummy results.",
         "col_features": "Features",
         "col_brand": "Tummy Toner",
+        "brand_logo_url": "",
         "col_b": "Generic Fat Burner",
         "col_c": "Others",
         "cta_text": "Add to Cart",
@@ -764,7 +801,8 @@
         "sub": "Verified reviews from real customers. The Judge.me widget will populate this section on go-live.",
         "rating": "4.7",
         "reviews_count": "410+",
-        "customers_count": "30K+"
+        "customers_count": "30K+",
+        "judgeme_html": ""
       }
     },
     "faq": {
@@ -866,7 +904,7 @@
         "g4"
       ],
       "settings": {
-        "brand_primary": "#FFA500",
+        "brand_primary": "#ffa500",
         "brand_dark": "#b25800",
         "brand_light": "#ffc266",
         "badge": "30-day money-back guarantee",

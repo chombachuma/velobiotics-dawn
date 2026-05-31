@@ -19,51 +19,72 @@
     "hero": {
       "type": "vb-hero",
       "settings": {
-        "eyebrow": "Where to find us",
-        "sub": "Velobiotics is stocked at trusted pharmacies, health stores, and healthcare clinics nationwide. Find your nearest stockist below."
+        "eyebrow": "Where to find Velobiotics",
+        "sub": "Velobiotics is stocked at major South African pharmacies, online retailers, healthcare practices, and ships worldwide direct from velobiotics.com. Find your nearest stockist below."
       }
     },
-    "pharmacies": {
+    "online_direct": {
       "type": "vb-feature-row",
       "settings": {
-        "eyebrow": "National Pharmacies"
+        "eyebrow": "🚚 Direct from Velobiotics"
       }
     },
-    "online_retailers": {
+    "national_pharmacies": {
       "type": "vb-feature-row",
       "settings": {
-        "eyebrow": "Online Retailers"
+        "eyebrow": "🏪 National Pharmacies"
+      }
+    },
+    "independents": {
+      "type": "vb-feature-row",
+      "settings": {
+        "eyebrow": "🌿 Independent Health Stores"
+      }
+    },
+    "online_marketplaces": {
+      "type": "vb-feature-row",
+      "settings": {
+        "eyebrow": "🛒 Online Marketplaces"
       }
     },
     "clinics": {
       "type": "vb-feature-row",
       "settings": {
-        "eyebrow": "Healthcare Clinics"
+        "eyebrow": "🩺 Healthcare Clinics & Practitioners"
       }
     },
     "international": {
       "type": "vb-feature-row",
       "settings": {
-        "eyebrow": "International"
+        "eyebrow": "🌍 International"
+      }
+    },
+    "become_stockist": {
+      "type": "vb-feature-row",
+      "settings": {
+        "eyebrow": "🏬 Become a stockist"
       }
     },
     "final_cta": {
       "type": "vb-final-cta",
       "settings": {
         "eyebrow": "Can't find us locally?",
-        "title_pre": "Order direct",
-        "title_highlight": "on velobiotics.com.",
-        "sub": "Free shipping over R500 · 30-day money-back guarantee · Subscribe and save 15%."
+        "title_pre": "Order direct on",
+        "title_highlight": "velobiotics.com.",
+        "sub": "Free shipping over R500 (SA) / $30 (US) · 30-day money-back guarantee · Subscribe and save 15%."
       }
     }
   },
   "order": [
     "main",
     "hero",
-    "pharmacies",
-    "online_retailers",
+    "online_direct",
+    "national_pharmacies",
+    "independents",
+    "online_marketplaces",
     "clinics",
     "international",
+    "become_stockist",
     "final_cta"
   ]
 }

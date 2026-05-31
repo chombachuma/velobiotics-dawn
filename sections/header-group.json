@@ -11,20 +11,68 @@
   "name": "Header",
   "type": "header",
   "sections": {
-    "vb_header": {
-      "type": "vb-header",
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "msg1": {
+          "type": "announcement",
+          "settings": {
+            "text": "🚚 Free Shipping over R500 (SA) / $30 (US)",
+            "link": "/collections/all"
+          }
+        },
+        "msg2": {
+          "type": "announcement",
+          "settings": {
+            "text": "⚡ Subscribe & Save 15% — free shipping included",
+            "link": "/collections/all"
+          }
+        },
+        "msg3": {
+          "type": "announcement",
+          "settings": {
+            "text": "🧪 Patented MEP Delivery — 1000× more reach you alive",
+            "link": "/pages/what-is-microencapsulation"
+          }
+        },
+        "msg4": {
+          "type": "announcement",
+          "settings": {
+            "text": "🔄 30-Day Money-Back Guarantee",
+            "link": "/policies/refund-policy"
+          }
+        }
+      },
+      "block_order": ["msg1", "msg2", "msg3", "msg4"],
       "settings": {
-        "logo": "shopify://shop_images/Velobiotics_black_background222x55_547d0000-46b1-4046-b1ce-c4bf3be3418d.png",
-        "show_announcement": false,
-        "announcement_msg1": "Free Shipping over R500 (SA) / $30 (US)",
-        "announcement_msg2": "Subscribe & Save 15% — free shipping included",
-        "announcement_msg3": "Patented MEP Delivery Technology — 1000× more reach you alive",
-        "announcement_msg4": "30-Day Money-Back Guarantee",
-        "announcement_text": "Subscribe & Save 15%"
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "color_scheme": "scheme-3",
+        "show_line_separator": false,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "logo_position": "top-left",
+        "mobile_logo_position": "left",
+        "menu": "main-menu",
+        "menu_type_desktop": "mega",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": false,
+        "color_scheme": "scheme-3",
+        "menu_color_scheme": "scheme-3",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "enable_customer_avatar": false,
+        "margin_bottom": 0,
+        "padding_top": 16,
+        "padding_bottom": 16
       }
     }
   },
-  "order": [
-    "vb_header"
-  ]
+  "order": ["announcement-bar", "header"]
 }

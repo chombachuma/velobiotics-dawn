@@ -14,6 +14,20 @@
       "settings": {
         "bg_image_url": "",
         "bg_image": "shopify://shop_images/Femina_-_Hero_Banner_2.png",
+        "image_fit": "cover",
+        "image_position": "center 55%",
+        "image_opacity": 75,
+        "image_edge_fade": true,
+        "overlay_opacity": 60,
+        "min_height": 760,
+        "padding_top": 104,
+        "padding_bottom": 64,
+        "text_align": "center",
+        "eyebrow_fs": 11,
+        "headline_fs": 56,
+        "sub_fs": 17,
+        "text_color": "#1a1a1a",
+        "accent_color": "#4d8c44",
         "eyebrow": "Patented Probiotics That Actually Reach Your Gut",
         "headline_pre": "Most Probiotics Die in Your Stomach.",
         "headline_highlight": "Ours Don't!",
@@ -24,15 +38,7 @@
         "cta1_text": "Shop Products",
         "cta1_link": "/collections/all",
         "cta2_text": "🧬 Take The Quiz",
-        "cta2_link": "/pages/quiz",
-        "badge_tl_value": "",
-        "badge_tl_label": "",
-        "badge_tr_value": "",
-        "badge_tr_label": "",
-        "badge_bl_value": "",
-        "badge_bl_label": "",
-        "badge_br_value": "",
-        "badge_br_label": ""
+        "cta2_link": "/pages/quiz"
       }
     },
     "trust-logos": {

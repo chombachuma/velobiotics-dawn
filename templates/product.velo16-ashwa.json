@@ -9,21 +9,870 @@
  */
 {
   "sections": {
-    "hero": { "type": "vb-product-hero", "blocks": { "b1": { "type": "benefit", "settings": { "icon": "🧘", "text": "KSM-66 Ashwagandha" } }, "b2": { "type": "benefit", "settings": { "icon": "😌", "text": "Stress & anxiety relief" } }, "b3": { "type": "benefit", "settings": { "icon": "😴", "text": "Deeper sleep" } }, "b4": { "type": "benefit", "settings": { "icon": "⚡", "text": "1000× more delivery" } }, "t1": { "type": "testi", "settings": { "quote": "Calmer in two weeks", "author": "Naledi K." } }, "t2": { "type": "testi", "settings": { "quote": "I sleep through the night now", "author": "Marco D." } }, "t3": { "type": "testi", "settings": { "quote": "Anxiety dialled way down", "author": "Sarah B." } }, "t4": { "type": "testi", "settings": { "quote": "Calm without drowsy", "author": "Tshepo M." } } }, "block_order": ["b1","b2","b3","b4","t1","t2","t3","t4"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "brand_label": "Velo16™ · Calm Biotics", "rating": "4.8", "review_count": "440+", "hook": "Calm Biotics — the modern stress reset. Velo16™ Probiotics Ashwagandha (KSM-66 standardised) + 16 probiotic strains for clinically-studied stress relief, deeper sleep, and gut-mood balance.", "ship_note": "Ships worldwide · Free shipping over the threshold · 30-day money-back guarantee", "show_subscription": true, "show_qty_discounts": true, "show_buynow": true, "show_testi_marquee": true } },
-    "reviews-carousel": { "type": "vb-product-reviews-carousel", "blocks": { "r1": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Naledi+K&background=c8163c&color=ffffff&size=120&bold=true", "quote": "Two weeks in. I noticed I wasn't reaching for wine to unwind anymore.", "author": "Naledi K.", "meta": "Verified buyer · Sandton" } }, "r2": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Marco+D&background=ff5c7c&color=ffffff&size=120&bold=true", "quote": "Full nights of sleep. First time in years.", "author": "Marco D.", "meta": "Verified buyer · 3 months ago" } }, "r3": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Sarah+B&background=6b0a1f&color=ffffff&size=120&bold=true", "quote": "Replaced my afternoon panic with quiet calm.", "author": "Sarah B.", "meta": "Verified buyer · 6 weeks ago" } }, "r4": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Tshepo+M&background=c8163c&color=ffffff&size=120&bold=true", "quote": "Calmer without the brain fog. Won't run out.", "author": "Tshepo M.", "meta": "Verified buyer · 2 months ago" } } }, "block_order": ["r1","r2","r3","r4"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "eyebrow": "★ Real Reviews", "title": "Calmer thousands at a time" } },
-    "problem": { "type": "vb-product-story", "blocks": { "p1": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Racing thoughts</strong> that won't switch off at bedtime." } }, "p2": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Chronic anxiety</strong> hijacking your day." } }, "p3": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Poor sleep</strong> leaving you exhausted and irritable." } }, "p4": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Generic ashwagandha</strong> with no standardisation — hit or miss." } } }, "block_order": ["p1","p2","p3","p4"], "settings": { "reverse": false, "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "image_url": "", "tag_value": "72%", "tag_label": "Of Adults Report Chronic Stress", "eyebrow": "The Problem", "title_pre": "Modern stress", "title_highlight": "is silently breaking you.", "desc": "Cortisol-driven stress is wrecking sleep, mood, and gut health for millions. Cheap ashwagandha capsules aren't standardised and often don't contain enough of the active withanolides to do anything. There's a smarter calm." } },
-    "solution": { "type": "vb-product-story", "blocks": { "s1": { "type": "point", "settings": { "icon": "✓", "text": "<strong>KSM-66 ashwagandha</strong> — gold-standard standardised extract (5% withanolides)." } }, "s2": { "type": "point", "settings": { "icon": "✓", "text": "<strong>16-strain probiotic blend</strong> — the gut-mood axis." } }, "s3": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive." } }, "s4": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Once-daily</strong>. Doctor-formulated. Lab-tested every batch." } } }, "block_order": ["s1","s2","s3","s4"], "settings": { "reverse": true, "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "image_url": "", "tag_value": "KSM-66", "tag_label": "Gold-Standard Standardised", "eyebrow": "The Solution", "title_pre": "Meet", "title_highlight": "Velo16™ Calm Biotics.", "desc": "A once-daily capsule combining KSM-66 standardised ashwagandha (the most-studied form in clinical research) with 16 probiotic strains. Velobiotics™ MEP delivery means every withanolide reaches your system — for clinically-validated stress relief, deeper sleep, and balanced mood." } },
-    "related": { "type": "vb-product-related", "blocks": { "r1": { "type": "product", "settings": { "product_handle": "velo16-probiotics-lions-mane", "brand": "Velo16™", "rating": "4.7", "reviews": "120+" } }, "r2": { "type": "product", "settings": { "product_handle": "velo16-probiotics-magnesium-glycinate", "brand": "Velo16™", "rating": "4.7", "reviews": "190+" } }, "r3": { "type": "product", "settings": { "product_handle": "velo16-probiotics-omega-3-vit-d3", "brand": "Velo16™", "rating": "4.8", "reviews": "260+" } }, "r4": { "type": "product", "settings": { "product_handle": "velo16-probiotics-vitamin-d3", "brand": "Velo16™", "rating": "4.8", "reviews": "280+" } } }, "block_order": ["r1","r2","r3","r4"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "tint": false, "eyebrow": "Complete the Calm Stack", "title": "More from the Velo16™ range", "sub": "Stack Ashwagandha with the rest of your daily calm and sleep essentials." } },
-    "benefits": { "type": "vb-product-benefits", "blocks": { "b1": { "type": "feat", "settings": { "icon": "😌", "name": "Lower Cortisol", "desc": "KSM-66 clinically shown to reduce cortisol (stress hormone) by ~28%." } }, "b2": { "type": "feat", "settings": { "icon": "😴", "name": "Deeper Sleep", "desc": "Calms racing thoughts so you fall asleep faster and stay asleep longer." } }, "b3": { "type": "feat", "settings": { "icon": "🧠", "name": "Sharper Focus", "desc": "Lower stress means clearer thinking, better daily decisions." } }, "b4": { "type": "feat", "settings": { "icon": "💚", "name": "Gut-Mood Axis", "desc": "16 probiotic strains amplify the calm effect via the gut-brain connection." } }, "b5": { "type": "feat", "settings": { "icon": "🩺", "name": "Doctor Formulated", "desc": "Built on peer-reviewed KSM-66 dosing." } }, "b6": { "type": "feat", "settings": { "icon": "🌿", "name": "Non-Habit Forming", "desc": "Adaptogenic — not sedating. Calm without dependence." } } }, "block_order": ["b1","b2","b3","b4","b5","b6"], "settings": { "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "eyebrow": "Key Benefits", "title_pre": "Why", "title_highlight": "Calm Biotics", "sub": "Six reasons it has become South Africa's calm daily of choice." } },
-    "how": { "type": "vb-product-how", "blocks": { "h1": { "type": "step", "settings": { "icon": "💊", "name": "Take One Capsule Daily", "desc": "With water, in the evening for sleep support, or morning for daily calm." } }, "h2": { "type": "step", "settings": { "icon": "🛡️", "name": "MEP Armour Survives", "desc": "Velobiotics™ shield protects the withanolides + probiotics." } }, "h3": { "type": "step", "settings": { "icon": "🎯", "name": "Delivered to Your Cells", "desc": "KSM-66 + 1000× more probiotics reach you alive." } }, "h4": { "type": "step", "settings": { "icon": "🧘", "name": "Calm, Sleep, Focus", "desc": "Cortisol balanced. Mind quieted. Sleep restored." } } }, "block_order": ["h1","h2","h3","h4"], "settings": { "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "eyebrow": "How It Works", "title_pre": "From Capsule to", "title_highlight": "Calm", "sub": "Four simple steps. One daily ritual. Modern stress reset." } },
-    "ingredients": { "type": "vb-product-ingredients", "blocks": { "i1": { "type": "ingredient", "settings": { "icon": "🌿", "name": "KSM-66 Ashwagandha", "amount": "600 mg", "desc": "Gold-standard standardised extract (5% withanolides) — the most-studied form in stress research." } }, "i2": { "type": "ingredient", "settings": { "icon": "🦠", "name": "16-Strain Probiotic Blend", "amount": "10 Billion CFU", "desc": "Lactobacillus + Bifidobacterium for gut-mood axis support." } }, "i3": { "type": "ingredient", "settings": { "icon": "🛡️", "name": "Velobiotics™ MEP Coating", "amount": "Patented", "desc": "Supercritical CO₂ — 1000× more withanolides reach you alive." } }, "i4": { "type": "ingredient", "settings": { "icon": "🌾", "name": "Prebiotic Fibre", "amount": "Inulin", "desc": "Feeds your good bacteria so they thrive long-term." } }, "i5": { "type": "ingredient", "settings": { "icon": "✓", "name": "Clean Capsule Shell", "amount": "Vegan HPMC", "desc": "No gelatin, halaal-friendly." } }, "i6": { "type": "ingredient", "settings": { "icon": "🚫", "name": "Free From", "amount": "Always", "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO." } } }, "block_order": ["i1","i2","i3","i4","i5","i6"], "settings": { "brand_primary": "#c8163c", "brand_tint": "#ffe8ec", "brand_dark": "#6b0a1f", "brand_light": "#ff5c7c", "eyebrow": "What's Inside", "title": "Every ingredient earns its place", "sub": "Six clean actives. Full transparency.", "facts_image_url": "", "facts_label": "Supplement facts", "facts_foot": "Lab-tested · Doctor-formulated" } },
-    "confidence": { "type": "vb-product-confidence", "blocks": { "c1": { "type": "stat", "settings": { "label": "Felt reduced daily stress", "percent": 91 } }, "c2": { "type": "stat", "settings": { "label": "Better sleep quality", "percent": 88 } }, "c3": { "type": "stat", "settings": { "label": "Calmer mood throughout day", "percent": 87 } }, "c4": { "type": "stat", "settings": { "label": "Better focus and clarity", "percent": 84 } }, "c5": { "type": "stat", "settings": { "label": "Would recommend to a friend", "percent": 96 } } }, "block_order": ["c1","c2","c3","c4","c5"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "eyebrow": "Real results", "title_pre": "Trusted for", "title_highlight": "Modern Calm", "sub": "What customers report after 4 weeks of daily Velo16™ Calm Biotics.", "caveat": "Based on 440+ verified customers. Individual results may vary." } },
-    "fbt": { "type": "vb-product-related", "blocks": { "f1": { "type": "product", "settings": { "product_handle": "her-biotics-original-capsules-60s", "brand": "Her-Biotics™", "rating": "4.7", "reviews": "260+" } }, "f2": { "type": "product", "settings": { "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s", "brand": "His-Biotics™", "rating": "4.7", "reviews": "210+" } }, "f3": { "type": "product", "settings": { "product_handle": "gutslim-probiotics-glp-1-booster", "brand": "GutSlim™", "rating": "4.8", "reviews": "410+" } }, "f4": { "type": "product", "settings": { "product_handle": "almasi-probiotics-skin-hair-nails-60s", "brand": "Almasi™", "rating": "4.9", "reviews": "180+" } } }, "block_order": ["f1","f2","f3","f4"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "tint": true, "eyebrow": "Frequently Bought Together", "title": "Pair with the rest of your wellness stack", "sub": "Calm Biotics stacks beautifully with these Velobiotics favourites." } },
-    "doctors": { "type": "vb-doctors", "blocks": { "d1": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966", "name": "KSM-66 Standardised", "desc": "Gold-standard ashwagandha with 5% withanolides." } }, "d2": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966", "name": "Doctor Formulated", "desc": "Built on clinically-validated dosing." } }, "d3": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073", "name": "Patented MEP Technology", "desc": "Microencapsulation with Supercritical CO₂." } }, "d4": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199", "name": "Clean Label", "desc": "Non-habit-forming adaptogen, halaal-friendly." } } }, "block_order": ["d1","d2","d3","d4"], "settings": { "eyebrow": "Trusted by Doctors. Proven by Science.", "title_pre": "Quality you can", "title_highlight": "trust.", "sub": "Built on KSM-66 clinical research and SAHPRA-aware manufacturing." } },
-    "outperform": { "type": "vb-product-outperform", "blocks": { "o1": { "type": "row", "settings": { "feature": "KSM-66 Gold-Standard Extract", "brand_state": "yes", "b_state": "no", "c_state": "no" } }, "o2": { "type": "row", "settings": { "feature": "Advanced Absorption (MEP)", "brand_state": "yes", "b_state": "no", "c_state": "no" } }, "o3": { "type": "row", "settings": { "feature": "16-Strain Gut-Mood Boost", "brand_state": "yes", "b_state": "no", "c_state": "no" } }, "o4": { "type": "row", "settings": { "feature": "Non-Habit Forming", "brand_state": "yes", "b_state": "no", "c_state": "no" } }, "o5": { "type": "row", "settings": { "feature": "Long-Term Benefits", "brand_state": "yes", "b_state": "no", "c_state": "no" } } }, "block_order": ["o1","o2","o3","o4","o5"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_tint": "#ffe8ec", "title": "Why We Outperform Others", "sub": "Experience the most-studied form of ashwagandha with advanced absorption and 16-strain gut-mood synergy.", "col_features": "Features", "col_brand": "Calm Biotics", "col_b": "Generic Ashwagandha", "col_c": "Others", "cta_text": "Add to Cart", "cta_note": "30-day money-back · Free shipping over the threshold" } },
-    "judgeme": { "type": "vb-judgeme", "settings": { "eyebrow": "Real Reviews", "title_pre": "What Customers", "title_highlight": "Are Saying", "sub": "Verified reviews. Judge.me widget populates on go-live.", "rating": "4.8", "reviews_count": "440+", "customers_count": "50K+" } },
-    "faq": { "type": "vb-faq", "blocks": { "q1": { "type": "q", "settings": { "question": "What is KSM-66?", "answer": "<p>KSM-66 is the most-studied, gold-standard ashwagandha extract. It's standardised to 5% withanolides and used in nearly every peer-reviewed ashwagandha clinical trial.</p>" } }, "q2": { "type": "q", "settings": { "question": "Will it make me drowsy?", "answer": "<p>No. Ashwagandha is adaptogenic — it lowers cortisol without sedating. You feel calmer and more focused, not sleepy.</p>" } }, "q3": { "type": "q", "settings": { "question": "Is Calm Biotics safe daily?", "answer": "<p>Absolutely. Adaptogens like ashwagandha are designed for long-term daily use. Non-habit-forming.</p>" } }, "q4": { "type": "q", "settings": { "question": "Can I take this with antidepressants?", "answer": "<p>Generally yes, but always check with your healthcare practitioner if you're on prescription mood medication.</p>" } }, "q5": { "type": "q", "settings": { "question": "Do you ship internationally?", "answer": "<p>Yes. 5–14 working days. Free shipping over the threshold.</p>" } }, "q6": { "type": "q", "settings": { "question": "What if it doesn't work?", "answer": "<p>30-day money-back, no questions asked.</p>" } } }, "block_order": ["q1","q2","q3","q4","q5","q6"], "settings": { "eyebrow": "FAQ", "title_pre": "Questions Before", "title_highlight": "You Start" } },
-    "final": { "type": "vb-product-final", "blocks": { "g1": { "type": "g", "settings": { "icon": "✅", "text": "30-day money-back" } }, "g2": { "type": "g", "settings": { "icon": "🚚", "text": "Ships worldwide" } }, "g3": { "type": "g", "settings": { "icon": "🔬", "text": "KSM-66 standardised" } }, "g4": { "type": "g", "settings": { "icon": "🧘", "text": "Non-habit-forming" } } }, "block_order": ["g1","g2","g3","g4"], "settings": { "brand_primary": "#c8163c", "brand_dark": "#6b0a1f", "brand_light": "#ff5c7c", "badge": "30-day money-back guarantee", "title_pre": "Reset Your Stress", "title_highlight": "Risk-Free for 30 Days", "sub": "Join the 50,000+ people who've replaced racing thoughts with daily calm. If you don't feel the difference, we'll refund every cent.", "cta_text": "Add to Cart", "cta_link": "#vbpForm" } }
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🧘",
+            "text": "KSM-66 Ashwagandha"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "😌",
+            "text": "Stress & anxiety relief"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "😴",
+            "text": "Deeper sleep"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "⚡",
+            "text": "1000× more delivery"
+          }
+        },
+        "t1": {
+          "type": "testi",
+          "settings": {
+            "quote": "Calmer in two weeks",
+            "author": "Naledi K."
+          }
+        },
+        "t2": {
+          "type": "testi",
+          "settings": {
+            "quote": "I sleep through the night now",
+            "author": "Marco D."
+          }
+        },
+        "t3": {
+          "type": "testi",
+          "settings": {
+            "quote": "Anxiety dialled way down",
+            "author": "Sarah B."
+          }
+        },
+        "t4": {
+          "type": "testi",
+          "settings": {
+            "quote": "Calm without drowsy",
+            "author": "Tshepo M."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "brand_label": "Velo16™ · Calm Biotics",
+        "rating": "4.8",
+        "review_count": "440+",
+        "hook": "Calm Biotics — the modern stress reset. Velo16™ Probiotics Ashwagandha (KSM-66 standardised) + 16 probiotic strains for clinically-studied stress relief, deeper sleep, and gut-mood balance.",
+        "ship_note": "Ships worldwide · Free shipping over the threshold · 30-day money-back guarantee",
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
+    },
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Naledi+K&background=c8163c&color=ffffff&size=120&bold=true",
+            "author": "Naledi K.",
+            "meta": "Verified buyer · Sandton",
+            "quote": "Two weeks in. I noticed I wasn't reaching for wine to unwind anymore."
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Marco+D&background=ff5c7c&color=ffffff&size=120&bold=true",
+            "author": "Marco D.",
+            "meta": "Verified buyer · 3 months ago",
+            "quote": "Full nights of sleep. First time in years."
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Sarah+B&background=6b0a1f&color=ffffff&size=120&bold=true",
+            "author": "Sarah B.",
+            "meta": "Verified buyer · 6 weeks ago",
+            "quote": "Replaced my afternoon panic with quiet calm."
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Tshepo+M&background=c8163c&color=ffffff&size=120&bold=true",
+            "author": "Tshepo M.",
+            "meta": "Verified buyer · 2 months ago",
+            "quote": "Calmer without the brain fog. Won't run out."
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "eyebrow": "★ Real Reviews",
+        "title": "Calmer thousands at a time"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Racing thoughts</strong> that won't switch off at bedtime."
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Chronic anxiety</strong> hijacking your day."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Poor sleep</strong> leaving you exhausted and irritable."
+          }
+        },
+        "p4": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Generic ashwagandha</strong> with no standardisation — hit or miss."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#c8163c",
+        "brand_tint": "#ffe8ec",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_111658_13b67f4c-902d-4c34-9fd6-d4b0254a041b.png",
+        "tag_value": "72%",
+        "tag_label": "Of Adults Report Chronic Stress",
+        "eyebrow": "The Problem",
+        "title_pre": "Modern stress",
+        "title_highlight": "is silently breaking you.",
+        "desc": "Cortisol-driven stress is wrecking sleep, mood, and gut health for millions. Cheap ashwagandha capsules aren't standardised and often don't contain enough of the active withanolides to do anything. There's a smarter calm."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>KSM-66 ashwagandha</strong> — gold-standard standardised extract (5% withanolides)."
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>16-strain probiotic blend</strong> — the gut-mood axis."
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
+          }
+        },
+        "s4": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Once-daily</strong>. Doctor-formulated. Lab-tested every batch."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#c8163c",
+        "brand_tint": "#ffe8ec",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_111658_13b67f4c-902d-4c34-9fd6-d4b0254a041b.png",
+        "tag_value": "KSM-66",
+        "tag_label": "Gold-Standard Standardised",
+        "eyebrow": "The Solution",
+        "title_pre": "Meet",
+        "title_highlight": "Velo16™ Calm Biotics.",
+        "desc": "A once-daily capsule combining KSM-66 standardised ashwagandha (the most-studied form in clinical research) with 16 probiotic strains. Velobiotics™ MEP delivery means every withanolide reaches your system — for clinically-validated stress relief, deeper sleep, and balanced mood."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-lions-mane",
+            "brand": "Velo16™",
+            "rating": "4.7",
+            "reviews": "120+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-magnesium-glycinate",
+            "brand": "Velo16™",
+            "rating": "4.7",
+            "reviews": "190+"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-omega-3-vit-d3",
+            "brand": "Velo16™",
+            "rating": "4.8",
+            "reviews": "260+"
+          }
+        },
+        "r4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-vitamin-d3",
+            "brand": "Velo16™",
+            "rating": "4.8",
+            "reviews": "280+"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "tint": false,
+        "eyebrow": "Complete the Calm Stack",
+        "title": "More from the Velo16™ range",
+        "sub": "Stack Ashwagandha with the rest of your daily calm and sleep essentials."
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "b1": {
+          "type": "feat",
+          "settings": {
+            "icon": "😌",
+            "name": "Lower Cortisol",
+            "desc": "KSM-66 clinically shown to reduce cortisol (stress hormone) by ~28%."
+          }
+        },
+        "b2": {
+          "type": "feat",
+          "settings": {
+            "icon": "😴",
+            "name": "Deeper Sleep",
+            "desc": "Calms racing thoughts so you fall asleep faster and stay asleep longer."
+          }
+        },
+        "b3": {
+          "type": "feat",
+          "settings": {
+            "icon": "🧠",
+            "name": "Sharper Focus",
+            "desc": "Lower stress means clearer thinking, better daily decisions."
+          }
+        },
+        "b4": {
+          "type": "feat",
+          "settings": {
+            "icon": "💚",
+            "name": "Gut-Mood Axis",
+            "desc": "16 probiotic strains amplify the calm effect via the gut-brain connection."
+          }
+        },
+        "b5": {
+          "type": "feat",
+          "settings": {
+            "icon": "🩺",
+            "name": "Doctor Formulated",
+            "desc": "Built on peer-reviewed KSM-66 dosing."
+          }
+        },
+        "b6": {
+          "type": "feat",
+          "settings": {
+            "icon": "🌿",
+            "name": "Non-Habit Forming",
+            "desc": "Adaptogenic — not sedating. Calm without dependence."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_tint": "#ffe8ec",
+        "eyebrow": "Key Benefits",
+        "title_pre": "Why",
+        "title_highlight": "Calm Biotics",
+        "sub": "Six reasons it has become South Africa's calm daily of choice."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "💊",
+            "name": "Take One Capsule Daily",
+            "desc": "With water, in the evening for sleep support, or morning for daily calm."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "🛡️",
+            "name": "MEP Armour Survives",
+            "desc": "Velobiotics™ shield protects the withanolides + probiotics."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "🎯",
+            "name": "Delivered to Your Cells",
+            "desc": "KSM-66 + 1000× more probiotics reach you alive."
+          }
+        },
+        "h4": {
+          "type": "step",
+          "settings": {
+            "icon": "🧘",
+            "name": "Calm, Sleep, Focus",
+            "desc": "Cortisol balanced. Mind quieted. Sleep restored."
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_tint": "#ffe8ec",
+        "eyebrow": "How It Works",
+        "title_pre": "From Capsule to",
+        "title_highlight": "Calm",
+        "sub": "Four simple steps. One daily ritual. Modern stress reset."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🌿",
+            "name": "KSM-66 Ashwagandha",
+            "amount": "600 mg",
+            "desc": "Gold-standard standardised extract (5% withanolides) — the most-studied form in stress research."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🦠",
+            "name": "16-Strain Probiotic Blend",
+            "amount": "10 Billion CFU",
+            "desc": "Lactobacillus + Bifidobacterium for gut-mood axis support."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🛡️",
+            "name": "Velobiotics™ MEP Coating",
+            "amount": "Patented",
+            "desc": "Supercritical CO₂ — 1000× more withanolides reach you alive."
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🌾",
+            "name": "Prebiotic Fibre",
+            "amount": "Inulin",
+            "desc": "Feeds your good bacteria so they thrive long-term."
+          }
+        },
+        "i5": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "✓",
+            "name": "Clean Capsule Shell",
+            "amount": "Vegan HPMC",
+            "desc": "No gelatin, halaal-friendly."
+          }
+        },
+        "i6": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🚫",
+            "name": "Free From",
+            "amount": "Always",
+            "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "brand_light": "#ff5c7c",
+        "eyebrow": "What's Inside",
+        "title": "Every ingredient earns its place",
+        "sub": "Six clean actives. Full transparency.",
+        "facts_image_url": "",
+        "facts_label": "Supplement facts",
+        "facts_foot": "Lab-tested · Doctor-formulated"
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Felt reduced daily stress",
+            "percent": 91
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "Better sleep quality",
+            "percent": 88
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Calmer mood throughout day",
+            "percent": 87
+          }
+        },
+        "c4": {
+          "type": "stat",
+          "settings": {
+            "label": "Better focus and clarity",
+            "percent": 84
+          }
+        },
+        "c5": {
+          "type": "stat",
+          "settings": {
+            "label": "Would recommend to a friend",
+            "percent": 96
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "eyebrow": "Real results",
+        "title_pre": "Trusted for",
+        "title_highlight": "Modern Calm",
+        "sub": "What customers report after 4 weeks of daily Velo16™ Calm Biotics.",
+        "caveat": "Based on 440+ verified customers. Individual results may vary."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "f1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "her-biotics-original-capsules-60s",
+            "brand": "Her-Biotics™",
+            "rating": "4.7",
+            "reviews": "260+"
+          }
+        },
+        "f2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
+            "brand": "His-Biotics™",
+            "rating": "4.7",
+            "reviews": "210+"
+          }
+        },
+        "f3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-glp-1-booster",
+            "brand": "GutSlim™",
+            "rating": "4.8",
+            "reviews": "410+"
+          }
+        },
+        "f4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "almasi-probiotics-skin-hair-nails-60s",
+            "brand": "Almasi™",
+            "rating": "4.9",
+            "reviews": "180+"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "tint": true,
+        "eyebrow": "Frequently Bought Together",
+        "title": "Pair with the rest of your wellness stack",
+        "sub": "Calm Biotics stacks beautifully with these Velobiotics favourites."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
+            "name": "KSM-66 Standardised",
+            "desc": "Gold-standard ashwagandha with 5% withanolides."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
+            "name": "Doctor Formulated",
+            "desc": "Built on clinically-validated dosing."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
+            "name": "Patented MEP Technology",
+            "desc": "Microencapsulation with Supercritical CO₂."
+          }
+        },
+        "d4": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
+            "name": "Clean Label",
+            "desc": "Non-habit-forming adaptogen, halaal-friendly."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3",
+        "d4"
+      ],
+      "settings": {
+        "eyebrow": "Trusted by Doctors. Proven by Science.",
+        "title_pre": "Quality you can",
+        "title_highlight": "trust.",
+        "sub": "Built on KSM-66 clinical research and SAHPRA-aware manufacturing."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "KSM-66 Gold-Standard Extract",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "Advanced Absorption (MEP)",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "16-Strain Gut-Mood Boost",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "Non-Habit Forming",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o5": {
+          "type": "row",
+          "settings": {
+            "feature": "Long-Term Benefits",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
+        "title": "Why We Outperform Others",
+        "sub": "Experience the most-studied form of ashwagandha with advanced absorption and 16-strain gut-mood synergy.",
+        "col_features": "Features",
+        "col_brand": "Calm Biotics",
+        "col_b": "Generic Ashwagandha",
+        "col_c": "Others",
+        "cta_text": "Add to Cart",
+        "cta_note": "30-day money-back · Free shipping over the threshold"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Real Reviews",
+        "title_pre": "What Customers",
+        "title_highlight": "Are Saying",
+        "sub": "Verified reviews. Judge.me widget populates on go-live.",
+        "rating": "4.8",
+        "reviews_count": "440+",
+        "customers_count": "50K+"
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "What is KSM-66?",
+            "answer": "<p>KSM-66 is the most-studied, gold-standard ashwagandha extract. It's standardised to 5% withanolides and used in nearly every peer-reviewed ashwagandha clinical trial.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "Will it make me drowsy?",
+            "answer": "<p>No. Ashwagandha is adaptogenic — it lowers cortisol without sedating. You feel calmer and more focused, not sleepy.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "Is Calm Biotics safe daily?",
+            "answer": "<p>Absolutely. Adaptogens like ashwagandha are designed for long-term daily use. Non-habit-forming.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Can I take this with antidepressants?",
+            "answer": "<p>Generally yes, but always check with your healthcare practitioner if you're on prescription mood medication.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Do you ship internationally?",
+            "answer": "<p>Yes. 5–14 working days. Free shipping over the threshold.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "What if it doesn't work?",
+            "answer": "<p>30-day money-back, no questions asked.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "title_pre": "Questions Before",
+        "title_highlight": "You Start"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "✅",
+            "text": "30-day money-back"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "🚚",
+            "text": "Ships worldwide"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "🔬",
+            "text": "KSM-66 standardised"
+          }
+        },
+        "g4": {
+          "type": "g",
+          "settings": {
+            "icon": "🧘",
+            "text": "Non-habit-forming"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "settings": {
+        "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
+        "brand_light": "#ff5c7c",
+        "badge": "30-day money-back guarantee",
+        "title_pre": "Reset Your Stress",
+        "title_highlight": "Risk-Free for 30 Days",
+        "sub": "Join the 50,000+ people who've replaced racing thoughts with daily calm. If you don't feel the difference, we'll refund every cent.",
+        "cta_text": "Add to Cart",
+        "cta_link": "#vbpForm"
+      }
+    }
   },
-  "order": ["hero","reviews-carousel","problem","solution","related","benefits","how","ingredients","confidence","fbt","doctors","outperform","judgeme","faq","final"]
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "judgeme",
+    "faq",
+    "final"
+  ]
 }

@@ -56,16 +56,71 @@ button.button:not(.button--secondary):not(.button--tertiary)::after { box-shadow
 .cart-remove-button:hover { background: #fef2f2 !important; color: #b91c1c !important; border-color: #fecaca !important; }
 
 /* ============================================================
-   HEADER — Sleek minimalist, sticky
+   HEADER — Velobiotics Green, sticky
    ============================================================ */
 .header-wrapper {
-  background: #fff !important;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.025);
+  background: #4d8c44 !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
   border: none !important;
   position: sticky !important;
   top: 0;
-  z-index: 100;
+  z-index: 99999 !important;
+  isolation: isolate;
 }
+.section-header { z-index: 99999 !important; position: relative; }
+.header-wrapper .mega-menu__content,
+.header-wrapper .header__submenu,
+.header-wrapper details[open] > ul,
+.header-wrapper details[open] > .mega-menu__content { z-index: 999999 !important; position: absolute; }
+
+/* Force every page section to sit BELOW the header chrome */
+main .shopify-section,
+main section,
+main .section,
+main > .section-header ~ .shopify-section,
+.template-collection .shopify-section,
+.collection,
+.collection-hero,
+.product-grid,
+.fpg-section,
+.femina-product-grid-section,
+.facets,
+.facets-wrapper,
+.facets__form,
+.facets__list,
+.template-collection { z-index: 1 !important; position: relative; }
+.header-wrapper * { color: #fff; }
+.header-wrapper .header__heading-logo-wrapper img { filter: brightness(0) invert(1); }
+.header-wrapper .header__inline-menu .list-menu__item,
+.header-wrapper .header__menu-item,
+.header-wrapper .mega-menu__link { color: #fff !important; font-weight: 600 !important; }
+.header-wrapper .header__inline-menu .list-menu__item:hover,
+.header-wrapper .header__menu-item:hover { color: #fff !important; background: rgba(255,255,255,0.18) !important; border-radius: 8px; }
+.header-wrapper .mega-menu__content { background: #fff !important; color: #1a1a1a !important; z-index: 99999 !important; }
+.header-wrapper .mega-menu__content * { color: #1a1a1a !important; }
+.header-wrapper .mega-menu__content a { color: #1a1a1a !important; }
+.header-wrapper .mega-menu__content a:hover { color: #4d8c44 !important; background: #eef7ec !important; }
+.header-wrapper .header__icon { color: #fff !important; background: rgba(255,255,255,0.10) !important; }
+.header-wrapper .header__icon:hover { background: rgba(255,255,255,0.25) !important; }
+.header-wrapper .header__icon svg path,
+.header-wrapper .header__icon svg circle,
+.header-wrapper .header__icon svg line { stroke: #fff !important; fill: none !important; }
+.header-wrapper .cart-count-bubble { background: #fff !important; color: #4d8c44 !important; border: 2px solid #4d8c44; }
+
+/* Hide account icon on mobile to free up space */
+@media (max-width: 989px) {
+  .header-wrapper .header__icon--account { display: none !important; }
+}
+
+/* Announcement bar — green, white text, larger pill */
+.utility-bar,
+.announcement-bar {
+  background: #2e5d28 !important;
+  color: #fff !important;
+}
+.utility-bar *, .announcement-bar * { color: #fff !important; }
+.announcement-bar__message { font-weight: 600 !important; font-size: 13px !important; }
+.announcement-bar__link { color: #fff !important; text-decoration: underline; }
 
 .header {
   padding-top: 14px !important;

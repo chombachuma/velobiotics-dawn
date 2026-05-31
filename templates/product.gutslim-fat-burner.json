@@ -88,8 +88,6 @@
         "review_count": "210+",
         "hook": "Burn fat from everywhere. GutSlim™ Fat Burner combines thermogenic actives with 16 probiotic strains for whole-body fat metabolism — clean energy, no crash.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
-        "show_subscription": true,
-        "show_qty_discounts": true,
         "show_buynow": true,
         "show_testi_marquee": true
       }
@@ -101,45 +99,45 @@
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Karabo+M&background=FFA500&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Down 5kg in 6 weeks. Fat coming off everywhere. No crashes.",
             "author": "Karabo M.",
-            "meta": "Verified buyer · Johannesburg"
+            "meta": "Verified buyer · Johannesburg",
+            "quote": "Down 5kg in 6 weeks. Fat coming off everywhere. No crashes."
           }
         },
         "r2": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Vusi+N&background=ffc266&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Energy through every workout. Fat melts.",
             "author": "Vusi N.",
-            "meta": "Verified buyer · 1 month ago"
+            "meta": "Verified buyer · 1 month ago",
+            "quote": "Energy through every workout. Fat melts."
           }
         },
         "r3": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Annerien+V&background=b25800&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Steady energy from sunrise. Best fat-burner I've tried.",
             "author": "Annerien V.",
-            "meta": "Verified buyer · 2 months ago"
+            "meta": "Verified buyer · 2 months ago",
+            "quote": "Steady energy from sunrise. Best fat-burner I've tried."
           }
         },
         "r4": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Kobus+M&background=FFA500&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Stacks beautifully with my training. Lean and strong.",
             "author": "Kobus M.",
-            "meta": "Verified buyer · 3 weeks ago"
+            "meta": "Verified buyer · 3 weeks ago",
+            "quote": "Stacks beautifully with my training. Lean and strong."
           }
         },
         "r5": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Linda+G&background=ffc266&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "My gut feels great and the scale keeps dropping.",
             "author": "Linda G.",
-            "meta": "Verified buyer · Durban"
+            "meta": "Verified buyer · Durban",
+            "quote": "My gut feels great and the scale keeps dropping."
           }
         }
       },
@@ -200,7 +198,7 @@
         "reverse": false,
         "brand_primary": "#FFA500",
         "brand_tint": "#fff8eb",
-        "image_url": "https://media.base44.com/images/public/69e10e7db331c58e837bb75e/0da4d8630_generated_edbc0e3e.png",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_162307_9bdce74d-f4c3-4365-a8e4-49d7f33fba7c.png",
         "tag_value": "73%",
         "tag_label": "Of Diets Fail Within 12 Months",
         "eyebrow": "The Problem",
@@ -514,8 +512,8 @@
       ],
       "settings": {
         "brand_primary": "#FFA500",
-        "brand_tint": "#fff8eb",
         "brand_dark": "#b25800",
+        "brand_tint": "#fff8eb",
         "brand_light": "#ffc266",
         "eyebrow": "What's Inside",
         "title": "Every ingredient earns its place",

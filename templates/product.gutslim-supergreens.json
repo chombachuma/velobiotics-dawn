@@ -88,8 +88,6 @@
         "review_count": "150+",
         "hook": "30+ greens, 1 scoop. GutSlim™ Supergreens delivers a full day of leafy nutrition + 16 probiotic strains — for detox, alkalinity, and effortless gut health.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
-        "show_subscription": true,
-        "show_qty_discounts": true,
         "show_buynow": true,
         "show_testi_marquee": true
       }
@@ -101,45 +99,45 @@
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Bongi+K&background=FFA500&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "One scoop in water every morning. My greens game-changer.",
             "author": "Bongi K.",
-            "meta": "Verified buyer · Pretoria"
+            "meta": "Verified buyer · Pretoria",
+            "quote": "One scoop in water every morning. My greens game-changer."
           }
         },
         "r2": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Yusuf+T&background=ffc266&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Skin glowing, energy steady, bloat gone. Three weeks in.",
             "author": "Yusuf T.",
-            "meta": "Verified buyer · 3 weeks ago"
+            "meta": "Verified buyer · 3 weeks ago",
+            "quote": "Skin glowing, energy steady, bloat gone. Three weeks in."
           }
         },
         "r3": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Carla+vdB&background=b25800&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "I'm a busy mum, eating greens daily was impossible. Now it's effortless.",
             "author": "Carla v.d.B.",
-            "meta": "Verified buyer · 1 month ago"
+            "meta": "Verified buyer · 1 month ago",
+            "quote": "I'm a busy mum, eating greens daily was impossible. Now it's effortless."
           }
         },
         "r4": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Nthabi+S&background=FFA500&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "My energy levels are completely different. Worth every cent.",
             "author": "Nthabi S.",
-            "meta": "Verified buyer · 2 months ago"
+            "meta": "Verified buyer · 2 months ago",
+            "quote": "My energy levels are completely different. Worth every cent."
           }
         },
         "r5": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Marlon+P&background=ffc266&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Best greens powder I've tried. Mixes clean, tastes mild.",
             "author": "Marlon P.",
-            "meta": "Verified buyer · Cape Town"
+            "meta": "Verified buyer · Cape Town",
+            "quote": "Best greens powder I've tried. Mixes clean, tastes mild."
           }
         }
       },
@@ -200,7 +198,7 @@
         "reverse": false,
         "brand_primary": "#FFA500",
         "brand_tint": "#fff8eb",
-        "image_url": "https://media.base44.com/images/public/69e10e7db331c58e837bb75e/0da4d8630_generated_edbc0e3e.png",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_162310_e61e3361-af71-4768-9d46-2973d474689e.png",
         "tag_value": "90%",
         "tag_label": "Of Adults Don't Eat Enough Greens",
         "eyebrow": "The Problem",
@@ -514,8 +512,8 @@
       ],
       "settings": {
         "brand_primary": "#FFA500",
-        "brand_tint": "#fff8eb",
         "brand_dark": "#b25800",
+        "brand_tint": "#fff8eb",
         "brand_light": "#ffc266",
         "eyebrow": "What's Inside",
         "title": "Every ingredient earns its place",

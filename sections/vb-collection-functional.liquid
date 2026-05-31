@@ -1,0 +1,132 @@
+{% liquid
+  assign primary = section.settings.primary | default: '#4d8c44'
+  assign dark = section.settings.dark | default: '#2e5d28'
+  assign tint = section.settings.tint | default: '#eef7ec'
+%}
+<style>
+  #vb-fc-{{ section.id }} { background: linear-gradient(180deg, #fff 0%, {{ tint }} 55%, #fff 100%); padding: 80px 24px; }
+  #vb-fc-{{ section.id }} .vb-fc-wrap { max-width: 1180px; margin: 0 auto; }
+  #vb-fc-{{ section.id }} .vb-fc-head { text-align: center; max-width: 760px; margin: 0 auto 50px; }
+  #vb-fc-{{ section.id }} .vb-fc-eyebrow { color: {{ primary }}; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin: 0 0 14px; display: inline-block; padding: 6px 14px; background: rgba(255,255,255,0.7); border: 1px solid {{ primary }}; border-radius: 999px; }
+  #vb-fc-{{ section.id }} .vb-fc-title { font-size: clamp(32px, 5vw, 52px); font-weight: 800; color: #111; line-height: 1.1; margin: 0 0 18px; letter-spacing: -0.02em; }
+  #vb-fc-{{ section.id }} .vb-fc-title span { color: {{ primary }}; }
+  #vb-fc-{{ section.id }} .vb-fc-sub { color: #444; font-size: 18px; line-height: 1.65; margin: 0; }
+
+  #vb-fc-{{ section.id }} .vb-fc-define { background: #fff; border-radius: 24px; padding: 40px; box-shadow: 0 12px 36px rgba(0,0,0,0.08); display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center; margin: 0 0 60px; }
+  #vb-fc-{{ section.id }} .vb-fc-define__copy h3 { font-size: 24px; font-weight: 800; color: #111; margin: 0 0 12px; }
+  #vb-fc-{{ section.id }} .vb-fc-define__copy p { font-size: 16px; line-height: 1.65; color: #444; margin: 0 0 18px; }
+  #vb-fc-{{ section.id }} .vb-fc-benefits { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr; gap: 10px; }
+  #vb-fc-{{ section.id }} .vb-fc-benefits li { display: flex; gap: 12px; align-items: flex-start; color: #222; font-size: 15px; line-height: 1.5; }
+  #vb-fc-{{ section.id }} .vb-fc-benefits li::before { content: '✓'; flex-shrink: 0; width: 22px; height: 22px; background: {{ primary }}; color: #fff; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: 900; font-size: 12px; margin-top: 1px; }
+
+  #vb-fc-{{ section.id }} .vb-fc-define__visual { aspect-ratio: 4/3; background: linear-gradient(135deg, {{ primary }}, {{ dark }}); border-radius: 18px; display: flex; align-items: center; justify-content: center; color: #fff; padding: 30px; position: relative; overflow: hidden; }
+  #vb-fc-{{ section.id }} .vb-fc-define__visual img { width: 100%; height: 100%; object-fit: cover; border-radius: 18px; position: absolute; inset: 0; }
+  #vb-fc-{{ section.id }} .vb-fc-define__icon { font-size: 80px; line-height: 1; z-index: 1; position: relative; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.25)); }
+
+  #vb-fc-{{ section.id }} .vb-fc-top { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin: 0 0 30px; }
+  #vb-fc-{{ section.id }} .vb-fc-top__card { background: #fff; border-radius: 20px; padding: 28px; box-shadow: 0 8px 24px rgba(0,0,0,0.06); border: 2px solid transparent; transition: all 0.2s ease; }
+  #vb-fc-{{ section.id }} .vb-fc-top__card:hover { border-color: {{ primary }}; transform: translateY(-4px); box-shadow: 0 16px 36px rgba(0,0,0,0.12); }
+  #vb-fc-{{ section.id }} .vb-fc-top__badge { display: inline-block; background: {{ primary }}; color: #fff; padding: 4px 12px; border-radius: 999px; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 14px; }
+  #vb-fc-{{ section.id }} .vb-fc-top__img { width: 100%; aspect-ratio: 16/10; background: {{ tint }}; border-radius: 14px; object-fit: contain; margin: 0 0 16px; padding: 12px; }
+  #vb-fc-{{ section.id }} .vb-fc-top__title { font-size: 20px; font-weight: 800; color: #111; margin: 0 0 8px; }
+  #vb-fc-{{ section.id }} .vb-fc-top__desc { color: #555; line-height: 1.5; font-size: 14px; margin: 0 0 16px; }
+  #vb-fc-{{ section.id }} .vb-fc-top__btn { background: {{ primary }}; color: #fff; padding: 10px 20px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 14px; display: inline-block; }
+  #vb-fc-{{ section.id }} .vb-fc-top__btn:hover { background: {{ dark }}; }
+
+  @media (max-width: 749px) {
+    #vb-fc-{{ section.id }} { padding: 48px 14px; }
+    #vb-fc-{{ section.id }} .vb-fc-define { grid-template-columns: 1fr; padding: 24px; gap: 24px; }
+    #vb-fc-{{ section.id }} .vb-fc-top { grid-template-columns: 1fr; }
+  }
+</style>
+
+<section id="vb-fc-{{ section.id }}">
+  <div class="vb-fc-wrap">
+    <div class="vb-fc-head">
+      {%- if section.settings.eyebrow != blank -%}<span class="vb-fc-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+      <h1 class="vb-fc-title">{{ section.settings.title_pre }} <span>{{ section.settings.title_highlight }}</span></h1>
+      {%- if section.settings.sub != blank -%}<p class="vb-fc-sub">{{ section.settings.sub }}</p>{%- endif -%}
+    </div>
+
+    {%- if section.settings.define_title != blank or section.settings.define_desc != blank -%}
+    <div class="vb-fc-define">
+      <div class="vb-fc-define__copy">
+        {%- if section.settings.define_title != blank -%}<h3>{{ section.settings.define_title }}</h3>{%- endif -%}
+        {%- if section.settings.define_desc != blank -%}<p>{{ section.settings.define_desc }}</p>{%- endif -%}
+        {%- if section.blocks.size > 0 -%}
+          <ul class="vb-fc-benefits">
+            {%- for block in section.blocks -%}
+              {%- if block.type == 'benefit' -%}<li {{ block.shopify_attributes }}>{{ block.settings.text }}</li>{%- endif -%}
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+      </div>
+      <div class="vb-fc-define__visual">
+        {%- if section.settings.visual_url != blank -%}
+          <img src="{{ section.settings.visual_url }}" alt="{{ section.settings.title_highlight | escape }}">
+        {%- else -%}
+          <span class="vb-fc-define__icon">{{ section.settings.visual_emoji | default: '🌿' }}</span>
+        {%- endif -%}
+      </div>
+    </div>
+    {%- endif -%}
+
+    {%- if section.settings.top1_handle != blank or section.settings.top2_handle != blank -%}
+    <div class="vb-fc-top">
+      {%- if section.settings.top1_handle != blank -%}
+        {%- assign top1 = all_products[section.settings.top1_handle] -%}
+        <a class="vb-fc-top__card" href="{{ top1.url }}" style="text-decoration:none;color:inherit;">
+          <span class="vb-fc-top__badge">{{ section.settings.top1_badge | default: 'Top Pick' }}</span>
+          {%- if top1.featured_image != blank -%}<img class="vb-fc-top__img" src="{{ top1.featured_image | image_url: width: 600 }}" alt="{{ top1.title | escape }}">{%- endif -%}
+          <h4 class="vb-fc-top__title">{{ top1.title }}</h4>
+          <p class="vb-fc-top__desc">{{ top1.description | strip_html | truncate: 120 }}</p>
+          <span class="vb-fc-top__btn">Shop now →</span>
+        </a>
+      {%- endif -%}
+      {%- if section.settings.top2_handle != blank -%}
+        {%- assign top2 = all_products[section.settings.top2_handle] -%}
+        <a class="vb-fc-top__card" href="{{ top2.url }}" style="text-decoration:none;color:inherit;">
+          <span class="vb-fc-top__badge">{{ section.settings.top2_badge | default: 'Also Loved' }}</span>
+          {%- if top2.featured_image != blank -%}<img class="vb-fc-top__img" src="{{ top2.featured_image | image_url: width: 600 }}" alt="{{ top2.title | escape }}">{%- endif -%}
+          <h4 class="vb-fc-top__title">{{ top2.title }}</h4>
+          <p class="vb-fc-top__desc">{{ top2.description | strip_html | truncate: 120 }}</p>
+          <span class="vb-fc-top__btn">Shop now →</span>
+        </a>
+      {%- endif -%}
+    </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "VB · Functional",
+  "settings": [
+    { "type": "header", "content": "Hero" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Shop by Ingredient" },
+    { "type": "text", "id": "title_pre", "label": "Title (pre)", "default": "Powered by" },
+    { "type": "text", "id": "title_highlight", "label": "Title (highlight)", "default": "Iron." },
+    { "type": "textarea", "id": "sub", "label": "Sub-text", "default": "Combat fatigue, support oxygen transport, and restore energy with our iron-rich probiotic supplements." },
+    { "type": "header", "content": "Define the benefit" },
+    { "type": "text", "id": "define_title", "label": "Definition title", "default": "Why does iron matter?" },
+    { "type": "richtext", "id": "define_desc", "label": "Definition description", "default": "<p>Iron is essential for haemoglobin production and oxygen delivery. Low iron causes fatigue, brain fog, and weakened immunity — especially in women.</p>" },
+    { "type": "text", "id": "visual_emoji", "label": "Visual emoji (fallback)", "default": "🔥" },
+    { "type": "url", "id": "visual_url", "label": "Visual image URL (optional)" },
+    { "type": "header", "content": "Top product highlights" },
+    { "type": "text", "id": "top1_handle", "label": "Top product 1 handle" },
+    { "type": "text", "id": "top1_badge", "label": "Top 1 badge", "default": "Bestseller" },
+    { "type": "text", "id": "top2_handle", "label": "Top product 2 handle" },
+    { "type": "text", "id": "top2_badge", "label": "Top 2 badge", "default": "Also Loved" },
+    { "type": "header", "content": "Colours" },
+    { "type": "color", "id": "primary", "label": "Primary", "default": "#4d8c44" },
+    { "type": "color", "id": "dark", "label": "Dark", "default": "#2e5d28" },
+    { "type": "color", "id": "tint", "label": "Tint", "default": "#eef7ec" }
+  ],
+  "blocks": [
+    { "type": "benefit", "name": "Benefit", "settings": [
+      { "type": "text", "id": "text", "label": "Benefit", "default": "Restores healthy iron levels" }
+    ]}
+  ],
+  "presets": [ { "name": "VB · Functional" } ]
+}
+{% endschema %}

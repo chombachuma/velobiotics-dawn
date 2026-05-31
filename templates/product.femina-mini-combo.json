@@ -88,8 +88,6 @@
         "review_count": "260+",
         "hook": "The starter bundle. Femina™ Probiotic Capsules + Cookie Fresh™ Suppositories — daily systemic defence plus targeted vaginal action. Save vs separate purchase.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
-        "show_subscription": true,
-        "show_qty_discounts": false,
         "show_buynow": true,
         "show_testi_marquee": true
       }
@@ -101,45 +99,45 @@
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Lerato+V&background=8d2a89&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Combo wiped out my BV cycle in 14 days. Two angles work better than one.",
             "author": "Lerato V.",
-            "meta": "Verified buyer · Johannesburg"
+            "meta": "Verified buyer · Johannesburg",
+            "quote": "Combo wiped out my BV cycle in 14 days. Two angles work better than one."
           }
         },
         "r2": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Cathy+F&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Best Femina value. Capsules for prevention, suppositories for the acute fix.",
             "author": "Cathy F.",
-            "meta": "Verified buyer · Pretoria"
+            "meta": "Verified buyer · Pretoria",
+            "quote": "Best Femina value. Capsules for prevention, suppositories for the acute fix."
           }
         },
         "r3": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Ntombi+K&background=6b1f68&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Daily + acute, both bases covered. Smart combo.",
             "author": "Ntombi K.",
-            "meta": "Verified buyer · 2 months ago"
+            "meta": "Verified buyer · 2 months ago",
+            "quote": "Daily + acute, both bases covered. Smart combo."
           }
         },
         "r4": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Jenny+W&background=8d2a89&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Convinced after one course. Restocking the capsules monthly.",
             "author": "Jenny W.",
-            "meta": "Verified buyer · 1 month ago"
+            "meta": "Verified buyer · 1 month ago",
+            "quote": "Convinced after one course. Restocking the capsules monthly."
           }
         },
         "r5": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Pia+L&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Perfect intro to Femina. Better than buying separately.",
             "author": "Pia L.",
-            "meta": "Verified buyer · Cape Town"
+            "meta": "Verified buyer · Cape Town",
+            "quote": "Perfect intro to Femina. Better than buying separately."
           }
         }
       },
@@ -200,7 +198,7 @@
         "reverse": false,
         "brand_primary": "#8d2a89",
         "brand_tint": "#fdf5fc",
-        "image_url": "https://media.base44.com/images/public/69e1abc073bbccc7f63edacc/653a0d852_generated_image.png",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_162334_548efa2c-3d7d-47af-88ca-ffeafd86debb.png",
         "tag_value": "2-in-1",
         "tag_label": "Acute + Prevention In One Bundle",
         "eyebrow": "The Problem",
@@ -514,8 +512,8 @@
       ],
       "settings": {
         "brand_primary": "#8d2a89",
-        "brand_tint": "#fdf5fc",
         "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
         "brand_light": "#b94db4",
         "eyebrow": "What's Inside",
         "title": "Two Femina flagships in one bundle",

@@ -88,8 +88,6 @@
         "review_count": "210+",
         "hook": "Pure boric acid suppositories. The simple, clinically-validated formula for BV, yeast, and pH restoration — without antibiotics or harsh chemicals.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
-        "show_subscription": true,
-        "show_qty_discounts": true,
         "show_buynow": true,
         "show_testi_marquee": true
       }
@@ -101,45 +99,45 @@
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Rachel+S&background=8d2a89&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Cleared up in 5 days. Better than the antibiotics that failed.",
             "author": "Rachel S.",
-            "meta": "Verified buyer · 1 month ago"
+            "meta": "Verified buyer · 1 month ago",
+            "quote": "Cleared up in 5 days. Better than the antibiotics that failed."
           }
         },
         "r2": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Mpho+J&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Better than any antibiotic course I tried.",
             "author": "Mpho J.",
-            "meta": "Verified buyer · Pretoria"
+            "meta": "Verified buyer · Pretoria",
+            "quote": "Better than any antibiotic course I tried."
           }
         },
         "r3": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Lisa+H&background=6b1f68&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "No more recurrence. Six months free and counting.",
             "author": "Lisa H.",
-            "meta": "Verified buyer · 6 months ago"
+            "meta": "Verified buyer · 6 months ago",
+            "quote": "No more recurrence. Six months free and counting."
           }
         },
         "r4": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Caroline+T&background=8d2a89&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Gentle and effective. The simplest fix I've used.",
             "author": "Caroline T.",
-            "meta": "Verified buyer · 3 weeks ago"
+            "meta": "Verified buyer · 3 weeks ago",
+            "quote": "Gentle and effective. The simplest fix I've used."
           }
         },
         "r5": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Yasmin+B&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Perfect for chronic BV. Antibiotics never lasted.",
             "author": "Yasmin B.",
-            "meta": "Verified buyer · Cape Town"
+            "meta": "Verified buyer · Cape Town",
+            "quote": "Perfect for chronic BV. Antibiotics never lasted."
           }
         }
       },
@@ -200,7 +198,7 @@
         "reverse": false,
         "brand_primary": "#8d2a89",
         "brand_tint": "#fdf5fc",
-        "image_url": "https://media.base44.com/images/public/69e1abc073bbccc7f63edacc/653a0d852_generated_image.png",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_162331_5996ca1f-da23-45fa-9a3b-8e34d98af30e.png",
         "tag_value": "75%",
         "tag_label": "Of BV Cases Recur Within 12 Months",
         "eyebrow": "The Problem",
@@ -514,8 +512,8 @@
       ],
       "settings": {
         "brand_primary": "#8d2a89",
-        "brand_tint": "#fdf5fc",
         "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
         "brand_light": "#b94db4",
         "eyebrow": "What's Inside",
         "title": "Just the actives that matter",

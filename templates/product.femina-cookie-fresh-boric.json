@@ -88,8 +88,6 @@
         "review_count": "320+",
         "hook": "Targeted defence where it matters. Cookie Fresh™ combines probiotic strains with boric acid for direct vaginal microbiome rebalancing — break the BV and yeast cycle.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
-        "show_subscription": true,
-        "show_qty_discounts": true,
         "show_buynow": true,
         "show_testi_marquee": true
       }
@@ -101,45 +99,45 @@
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Tebogo+M&background=8d2a89&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "BV gone for the first time in years. Cookie Fresh saved my sanity.",
             "author": "Tebogo M.",
-            "meta": "Verified buyer · Johannesburg"
+            "meta": "Verified buyer · Johannesburg",
+            "quote": "BV gone for the first time in years. Cookie Fresh saved my sanity."
           }
         },
         "r2": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Ayesha+K&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Day 3 noticeable difference. Boric acid + probiotics = magic combo.",
             "author": "Ayesha K.",
-            "meta": "Verified buyer · 2 weeks ago"
+            "meta": "Verified buyer · 2 weeks ago",
+            "quote": "Day 3 noticeable difference. Boric acid + probiotics = magic combo."
           }
         },
         "r3": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Olivia+P&background=6b1f68&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "My pH back to normal. Smell finally gone for good.",
             "author": "Olivia P.",
-            "meta": "Verified buyer · 1 month ago"
+            "meta": "Verified buyer · 1 month ago",
+            "quote": "My pH back to normal. Smell finally gone for good."
           }
         },
         "r4": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Tumi+R&background=8d2a89&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "No more antibiotic cycle. This works where pills failed.",
             "author": "Tumi R.",
-            "meta": "Verified buyer · 3 weeks ago"
+            "meta": "Verified buyer · 3 weeks ago",
+            "quote": "No more antibiotic cycle. This works where pills failed."
           }
         },
         "r5": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Karen+B&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Best intimate health product I've used. Period.",
             "author": "Karen B.",
-            "meta": "Verified buyer · Cape Town"
+            "meta": "Verified buyer · Cape Town",
+            "quote": "Best intimate health product I've used. Period."
           }
         }
       },
@@ -200,7 +198,7 @@
         "reverse": false,
         "brand_primary": "#8d2a89",
         "brand_tint": "#fdf5fc",
-        "image_url": "https://media.base44.com/images/public/69e1abc073bbccc7f63edacc/653a0d852_generated_image.png",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_162328_74b88aef-5063-4411-97cd-060a5ef86a0b.png",
         "tag_value": "75%",
         "tag_label": "Of BV Cases Recur Within 12 Months",
         "eyebrow": "The Problem",
@@ -514,8 +512,8 @@
       ],
       "settings": {
         "brand_primary": "#8d2a89",
-        "brand_tint": "#fdf5fc",
         "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
         "brand_light": "#b94db4",
         "eyebrow": "What's Inside",
         "title": "Every ingredient earns its place",

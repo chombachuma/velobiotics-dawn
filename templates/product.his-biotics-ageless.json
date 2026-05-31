@@ -1,0 +1,880 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "💎",
+            "text": "Men 50+ daily multivitamin"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "❤️",
+            "text": "Heart & prostate support"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🦠",
+            "text": "16 probiotic strains"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "⚡",
+            "text": "1000× more delivery"
+          }
+        },
+        "t1": {
+          "type": "testi",
+          "settings": {
+            "quote": "Energy at 62 that's new",
+            "author": "Frank N."
+          }
+        },
+        "t2": {
+          "type": "testi",
+          "settings": {
+            "quote": "Sharp mind, vibrant body",
+            "author": "Hannes V."
+          }
+        },
+        "t3": {
+          "type": "testi",
+          "settings": {
+            "quote": "My doctor approved",
+            "author": "Themba M."
+          }
+        },
+        "t4": {
+          "type": "testi",
+          "settings": {
+            "quote": "Aging gracefully now",
+            "author": "Kevin P."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "brand_primary": "#0a3d3d",
+        "brand_dark": "#021212",
+        "brand_tint": "#e8f3f1",
+        "brand_label": "His-Biotics™ Ageless 50+",
+        "rating": "4.7",
+        "review_count": "120+",
+        "hook": "Vibrant after 50. His-Biotics™ Ageless 50+ combines 16 probiotic strains with CoQ10, saw palmetto, omega-3, and B-complex — for men's heart, prostate, and cognitive vitality.",
+        "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
+        "show_subscription": true,
+        "show_qty_discounts": true,
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
+    },
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Frank+N&background=0a3d3d&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Energy at 62 that's new. Mind sharper than in years.",
+            "author": "Frank N.",
+            "meta": "Verified buyer · Pretoria"
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Hannes+V&background=1c5856&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Sharp mind, vibrant body. Saw palmetto fixed my prostate symptoms.",
+            "author": "Hannes V.",
+            "meta": "Verified buyer · 3 months ago"
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Themba+M&background=021212&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "My doctor approved. Cholesterol down, energy up.",
+            "author": "Themba M.",
+            "meta": "Verified buyer · Johannesburg"
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Kevin+P&background=0a3d3d&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "Aging gracefully now. This is my anchor daily.",
+            "author": "Kevin P.",
+            "meta": "Verified buyer · 2 months ago"
+          }
+        },
+        "r5": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Mike+B&background=1c5856&color=ffffff&size=120&bold=true&font-size=0.42",
+            "quote": "At 67 my golf swing returned. Joint pain is half what it was.",
+            "author": "Mike B.",
+            "meta": "Verified buyer · Cape Town"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "settings": {
+        "brand_primary": "#0a3d3d",
+        "brand_dark": "#021212",
+        "brand_tint": "#e8f3f1",
+        "eyebrow": "★ Real Reviews",
+        "title": "Men thriving after 50"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Heart and cholesterol</strong> concerns building with age."
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Prostate health</strong> shifting after 50."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Cognitive sharpness</strong> not quite what it was."
+          }
+        },
+        "p4": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Generic seniors' multivits</strong> that miss men's biology entirely."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#0a3d3d",
+        "brand_tint": "#e8f3f1",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_180837_88dc8edb-07a1-4528-827e-a8cd6e41a282.png",
+        "tag_value": "50+",
+        "tag_label": "Men's Specific Biology Targeted",
+        "eyebrow": "The Problem",
+        "title_pre": "Men over 50 need",
+        "title_highlight": "more than a generic vit.",
+        "desc": "Post-50 men face heart, prostate, and cognitive shifts that women don't. A unisex seniors' multivit misses every one. Ageless 50+ is built specifically for the male system."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>CoQ10 + Omega-3</strong> — heart and cardiovascular support."
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Saw palmetto + zinc</strong> — prostate and male hormone health."
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>B-complex + Vit D3</strong> — cognitive, mood, immune support."
+          }
+        },
+        "s4": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>16-strain probiotic blend</strong> for gut and microbiome harmony."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#0a3d3d",
+        "brand_tint": "#e8f3f1",
+        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/1_transparent_Realistic_3D_product_mockup_5.png?v=1775328665",
+        "tag_value": "1000×",
+        "tag_label": "More Probiotics Delivered",
+        "eyebrow": "The Solution",
+        "title_pre": "Meet",
+        "title_highlight": "His-Biotics™ Ageless 50+.",
+        "desc": "CoQ10 + saw palmetto + omega-3 + B-complex + 16 probiotic strains. Built for men navigating their 50s and beyond — heart, prostate, mind, and gut all covered."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
+            "brand": "His-Biotics™",
+            "rating": "4.7",
+            "reviews": "750+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "his-biotics-probiotics-sport-multivitamin-capsules",
+            "brand": "His-Biotics™",
+            "rating": "4.8",
+            "reviews": "150+"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "his-biotics-probiotics-testo-boost",
+            "brand": "His-Biotics™",
+            "rating": "4.8",
+            "reviews": "180+"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3"
+      ],
+      "settings": {
+        "brand_primary": "#0a3d3d",
+        "brand_dark": "#021212",
+        "brand_tint": "#e8f3f1",
+        "tint": false,
+        "eyebrow": "Complete the Stack",
+        "title": "More from the His-Biotics™ range",
+        "sub": "Customised support for every season of a modern man's life."
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "b1": {
+          "type": "feat",
+          "settings": {
+            "icon": "❤️",
+            "name": "Heart Health",
+            "desc": "CoQ10 + omega-3 support cardiovascular function."
+          }
+        },
+        "b2": {
+          "type": "feat",
+          "settings": {
+            "icon": "♂️",
+            "name": "Prostate Support",
+            "desc": "Saw palmetto + zinc address typical post-50 changes."
+          }
+        },
+        "b3": {
+          "type": "feat",
+          "settings": {
+            "icon": "🧠",
+            "name": "Cognitive Edge",
+            "desc": "B-complex + omega-3 keep your mind sharp."
+          }
+        },
+        "b4": {
+          "type": "feat",
+          "settings": {
+            "icon": "⚡",
+            "name": "Sustained Energy",
+            "desc": "CoQ10 fuels mitochondria for steady vitality."
+          }
+        },
+        "b5": {
+          "type": "feat",
+          "settings": {
+            "icon": "🩺",
+            "name": "Doctor-Formulated",
+            "desc": "Built by male-health and geriatric specialists."
+          }
+        },
+        "b6": {
+          "type": "feat",
+          "settings": {
+            "icon": "🌿",
+            "name": "Clean Label",
+            "desc": "Vegan-option, halaal-friendly, no fillers."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "settings": {
+        "brand_primary": "#0a3d3d",
+        "brand_tint": "#e8f3f1",
+        "eyebrow": "Key Benefits",
+        "title_pre": "Why",
+        "title_highlight": "Ageless 50+",
+        "sub": "Six reasons men over 50 choose His-Biotics Ageless 50+ for ongoing vitality."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "💊",
+            "name": "Take Two Capsules Daily",
+            "desc": "With water, after a meal."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "🛡️",
+            "name": "MEP Armour Survives",
+            "desc": "Velobiotics™ shield protects every culture and active."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "🎯",
+            "name": "Heart, Prostate, Mind",
+            "desc": "Targeted male-specific support delivered where you need it."
+          }
+        },
+        "h4": {
+          "type": "step",
+          "settings": {
+            "icon": "✨",
+            "name": "Vibrant 50+",
+            "desc": "Energy steady, mind sharp, body resilient."
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ],
+      "settings": {
+        "brand_primary": "#0a3d3d",
+        "brand_tint": "#e8f3f1",
+        "eyebrow": "How It Works",
+        "title_pre": "From Capsule to",
+        "title_highlight": "Vibrant 50+",
+        "sub": "Four simple steps. One daily ritual. Vitality without fade."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "❤️",
+            "name": "CoQ10 + Omega-3",
+            "amount": "50mg + 600mg",
+            "desc": "Heart-supporting duo. Ubiquinol form for max absorption."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "♂️",
+            "name": "Saw Palmetto + Zinc",
+            "amount": "320mg + 15mg",
+            "desc": "Prostate and male hormone support."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🧠",
+            "name": "B-Complex",
+            "amount": "Full daily",
+            "desc": "Cognitive function, mood, energy production."
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "☀️",
+            "name": "Vitamin D3 + K2",
+            "amount": "1000 IU + 90µg",
+            "desc": "Bone, immunity, calcium-directing duo."
+          }
+        },
+        "i5": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🦠",
+            "name": "16-Strain Probiotic Blend",
+            "amount": "1 Billion CFU",
+            "desc": "Gut and immunity for the changing microbiome."
+          }
+        },
+        "i6": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🚫",
+            "name": "Free From",
+            "amount": "Always",
+            "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "brand_primary": "#0a3d3d",
+        "brand_tint": "#e8f3f1",
+        "brand_dark": "#021212",
+        "brand_light": "#1c5856",
+        "eyebrow": "What's Inside",
+        "title": "Every ingredient earns its place",
+        "sub": "Six clean active groups. No proprietary blends. Full transparency.",
+        "facts_image_url": "",
+        "facts_label": "Supplement facts",
+        "facts_foot": "Lab-tested · Doctor-formulated · Full transparency"
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Felt sustained energy",
+            "percent": 89
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "Better mental sharpness",
+            "percent": 86
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Easier prostate function",
+            "percent": 83
+          }
+        },
+        "c4": {
+          "type": "stat",
+          "settings": {
+            "label": "Improved sleep",
+            "percent": 88
+          }
+        },
+        "c5": {
+          "type": "stat",
+          "settings": {
+            "label": "Would recommend to a friend",
+            "percent": 95
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "brand_primary": "#0a3d3d",
+        "brand_dark": "#021212",
+        "brand_tint": "#e8f3f1",
+        "eyebrow": "Real results",
+        "title_pre": "Trusted for",
+        "title_highlight": "Vibrant 50+",
+        "sub": "What men report after 8 weeks of daily Ageless 50+ use.",
+        "caveat": "Based on a survey of 120+ verified customers. Individual results may vary."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "f1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-vitamin-d3-1000-iu",
+            "brand": "Velo16™",
+            "rating": "4.7",
+            "reviews": "190+"
+          }
+        },
+        "f2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-magnesium-glycinate",
+            "brand": "Velo16™",
+            "rating": "4.6",
+            "reviews": "190+"
+          }
+        },
+        "f3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
+            "brand": "His-Biotics™",
+            "rating": "4.7",
+            "reviews": "750+"
+          }
+        },
+        "f4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-glp-1-booster",
+            "brand": "GutSlim™",
+            "rating": "4.8",
+            "reviews": "410+"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {
+        "brand_primary": "#0a3d3d",
+        "brand_dark": "#021212",
+        "brand_tint": "#e8f3f1",
+        "tint": true,
+        "eyebrow": "Frequently Bought Together",
+        "title": "Pair with the rest of your wellness stack",
+        "sub": "Ageless 50+ stacks beautifully with these Velobiotics favourites."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
+            "name": "Clinically Proven",
+            "desc": "CoQ10 + saw palmetto — peer-reviewed for men over 50."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
+            "name": "Doctor Formulated",
+            "desc": "Built by male-health specialists."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
+            "name": "Patented MEP Technology",
+            "desc": "Microencapsulation with Supercritical CO₂."
+          }
+        },
+        "d4": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
+            "name": "Clean Label",
+            "desc": "Vegan-option, halaal-friendly, no fillers."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3",
+        "d4"
+      ],
+      "settings": {
+        "eyebrow": "Trusted by Doctors. Proven by Science.",
+        "title_pre": "Quality you can",
+        "title_highlight": "trust.",
+        "sub": "Built on peer-reviewed actives, male-health guidance, and SAHPRA-aware manufacturing."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "Heart Health Trio",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "Saw Palmetto Prostate",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "Max Probiotic Strains",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "Daily Simplicity",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o5": {
+          "type": "row",
+          "settings": {
+            "feature": "50+ Men's Biology",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ],
+      "settings": {
+        "brand_primary": "#0a3d3d",
+        "brand_dark": "#021212",
+        "brand_tint": "#e8f3f1",
+        "title": "Why His-Biotics Ageless 50+ Outperforms",
+        "sub": "CoQ10, saw palmetto, omega-3, B-complex, and 16 probiotic strains — built for men navigating their 50s and beyond.",
+        "col_features": "Features",
+        "col_brand": "Ageless 50+",
+        "col_b": "Generic Seniors Vit",
+        "col_c": "Others",
+        "cta_text": "Add to Cart",
+        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Real Reviews",
+        "title_pre": "What Men",
+        "title_highlight": "Are Saying",
+        "sub": "Verified reviews from real men. The Judge.me widget will populate this section on go-live.",
+        "rating": "4.7",
+        "reviews_count": "120+",
+        "customers_count": "14K+"
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "How long until I feel a difference?",
+            "answer": "<p>Most men feel sharper energy within 2-3 weeks. Heart and prostate benefits build over 8-12 weeks of consistent daily use.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "Is this safe with blood thinners?",
+            "answer": "<p>Always check with your healthcare practitioner. The vitamin K2 in this formula may interact with warfarin and other blood thinners.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "Will saw palmetto interfere with prostate medication?",
+            "answer": "<p>Check with your urologist if you're on prescription prostate medication. Many men use both, but coordination is important.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Is Ageless 50+ safe daily?",
+            "answer": "<p>Absolutely. Manufactured under GMP conditions in SAHPRA-aware facilities. Daily use is safe and recommended.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Do you ship internationally?",
+            "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "What if it doesn't work for me?",
+            "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full — no questions asked.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "title_pre": "Questions Before",
+        "title_highlight": "You Start"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "✅",
+            "text": "30-day money-back"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "🚚",
+            "text": "Ships worldwide"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "🔬",
+            "text": "Lab-tested every batch"
+          }
+        },
+        "g4": {
+          "type": "g",
+          "settings": {
+            "icon": "🌿",
+            "text": "100% natural"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "settings": {
+        "brand_primary": "#0a3d3d",
+        "brand_dark": "#021212",
+        "brand_light": "#1c5856",
+        "badge": "30-day money-back guarantee",
+        "title_pre": "Thrive After 50",
+        "title_highlight": "Risk-Free for 30 Days",
+        "sub": "Join thousands of men thriving in their 50s and beyond. If you don't feel the difference, we'll refund every cent.",
+        "cta_text": "Add to Cart",
+        "cta_link": "#vbpForm"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "judgeme",
+    "faq",
+    "final"
+  ]
+}

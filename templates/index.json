@@ -89,7 +89,7 @@
           "type": "logo",
           "settings": {
             "logo_url": "https://www.velobiotics.com/cdn/shop/files/new-custom-logo-002.png?v=1763318533",
-            "title": "SAHPRA-Aware",
+            "title": "FDA|SAHPRA",
             "sub": "Regulatory compliant"
           }
         },
@@ -566,6 +566,22 @@
     "videos": {
       "type": "vb-videos",
       "blocks": {
+        "video_6UFaKN": {
+          "type": "video",
+          "settings": {
+            "thumb_url": "",
+            "video_url": "",
+            "caption": "Real result"
+          }
+        },
+        "video_tGVYaV": {
+          "type": "video",
+          "settings": {
+            "thumb_url": "",
+            "video_url": "",
+            "caption": "Real result"
+          }
+        },
         "v1": {
           "type": "video",
           "settings": {
@@ -608,6 +624,8 @@
         }
       },
       "block_order": [
+        "video_6UFaKN",
+        "video_tGVYaV",
         "v1",
         "v2",
         "v3",

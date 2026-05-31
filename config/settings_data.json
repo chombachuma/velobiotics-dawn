@@ -10,7 +10,7 @@
 {
   "current": {
     "logo": "shopify://shop_images/Velobiotics_Logo_-_Horizontal_1200x400_5a948102-4f67-4bab-bf44-78b1106e5c05.png",
-    "logo_width": 180,
+    "logo_width": 140,
     "favicon": "shopify://shop_images/Velobiotics_640_x_640_Square_Logo.png",
     "type_header_font": "poppins_n4",
     "heading_scale": 100,
@@ -137,6 +137,49 @@
       }
     },
     "content_for_index": [],
+    "blocks": {
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      },
+      "12107416968155278870": {
+        "type": "shopify://apps/paywhirl-subscriptions/blocks/paywhirl-customer-portal/41e95d60-82cf-46e8-84de-618d7e4c37b7",
+        "disabled": false,
+        "settings": {
+          "show_subscriptions_link": false,
+          "show_customer_login_note": false,
+          "show_address_change_note": false,
+          "container_selector": "main"
+        }
+      },
+      "9901917232353999808": {
+        "type": "shopify://apps/buddha-mega-menu-navigation/blocks/megamenu/dbb4ce56-bf86-4830-9b3d-16efbef51c6f",
+        "disabled": false,
+        "settings": {}
+      },
+      "13129208525377196889": {
+        "type": "shopify://apps/mlv-multi-country-pricing/blocks/mlveda-mcp/a55f20a0-67fc-44fb-8f37-8dfe18bd61a2",
+        "disabled": false,
+        "settings": {}
+      },
+      "1513253815146976218": {
+        "type": "shopify://apps/omnisend-email-marketing-sms/blocks/app-embed/44704aa2-794f-4c5d-8c8e-039c841158e9",
+        "disabled": false,
+        "settings": {}
+      },
+      "6159598353363395418": {
+        "type": "shopify://apps/google-youtube/blocks/store_widget/14ec7bd0-ac77-49a9-9417-90752398bdff",
+        "disabled": false,
+        "settings": {
+          "widget_position": "LEFT_BOTTOM",
+          "side_margin": 36,
+          "bottom_margin": 36,
+          "mobile_side_margin": 16,
+          "mobile_bottom_margin": 46
+        }
+      }
+    },
     "color_schemes": {
       "scheme-1": {
         "settings": {

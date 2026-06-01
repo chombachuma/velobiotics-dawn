@@ -183,6 +183,11 @@
         "type": "shopify://apps/buddha-mega-menu-navigation/blocks/megamenu/dbb4ce56-bf86-4830-9b3d-16efbef51c6f",
         "disabled": false,
         "settings": {}
+      },
+      "12168986436008309812": {
+        "type": "shopify://apps/parkour-tiktok-pixel/blocks/threasury_pixel/6c589340-c893-4a7c-ad89-703f18722d60",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {

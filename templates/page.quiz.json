@@ -9,11 +9,130 @@
  */
 {
   "sections": {
-    "minimal_top": {"type":"vb-quiz-topbar","settings":{}},
-    "quiz": {"type":"vb-quiz","settings":{"eyebrow":"The Velobiotics V-Check","hero_title_pre":"Find your","hero_title_highlight":"perfect probiotic","hero_sub":"7 quick questions. 60 seconds. A doctor-built recommendation backed by the Velobiotics™ MEP science.","cta_start":"Start the V-Check →","lead_sub":"Get your recommendation plus a free 7-day gut-reset email series, science guides, and exclusive subscriber pricing.","omnisend_api_key":"","fallback_collection":"all"}},
-    "social_proof": {"type":"vb-quiz-socialproof","blocks":{"s1":{"type":"stat","settings":{"value":"50,000+","label":"South Africans served"}},"s2":{"type":"stat","settings":{"value":"4.9★","label":"Average customer rating"}},"s3":{"type":"stat","settings":{"value":"16","label":"Probiotic strains per dose"}},"s4":{"type":"stat","settings":{"value":"1000×","label":"More delivered alive (MEP)"}}},"block_order":["s1","s2","s3","s4"],"settings":{"eyebrow":"Why South Africa Trusts Velobiotics","title_pre":"Doctor-built.","title_highlight":"Lab-proven.","sub":"From Cape Town clinics to Johannesburg homes — the new daily standard for gut, intimate, and family wellness."}},
-    "faq": {"type":"vb-faq","blocks":{"q1":{"type":"q","settings":{"question":"How does the V-Check work?","answer":"<p>You answer 7 short questions about your goals, body, and lifestyle. Our algorithm scores your answers against the Velobiotics product range — built on 12+ years of probiotic research — and recommends your top 3 matches in under 60 seconds.</p>"}},"q2":{"type":"q","settings":{"question":"Is this medical advice?","answer":"<p>No. The V-Check is a wellness recommendation tool, not a diagnostic. If you have a medical condition, are pregnant, or on prescription medication, please consult your healthcare provider before starting any supplement.</p>"}},"q3":{"type":"q","settings":{"question":"Will my answers be private?","answer":"<p>Yes. Your answers are used only to generate your personalised recommendation. We never sell your data. If you choose to receive your results by email, your email goes only to Velobiotics — unsubscribe anytime.</p>"}},"q4":{"type":"q","settings":{"question":"What if I get the recommendation wrong?","answer":"<p>Every Velobiotics product is backed by our 30-day money-back guarantee. If your stack doesn't work for you, contact us within 30 days for a full refund.</p>"}},"q5":{"type":"q","settings":{"question":"Can I share my results?","answer":"<p>Yes — at the end of the quiz you can copy your link or share via WhatsApp. Great for sending to a partner or family member.</p>"}}},"block_order":["q1","q2","q3","q4","q5"],"settings":{"eyebrow":"FAQ","title_pre":"Questions","title_highlight":"Before You Start"}},
-    "minimal_footer": {"type":"vb-quiz-bottombar","settings":{}}
+    "minimal_top": {
+      "type": "vb-quiz-topbar",
+      "settings": {}
+    },
+    "quiz": {
+      "type": "vb-quiz",
+      "settings": {
+        "eyebrow": "The Velobiotics V-Check",
+        "hero_title_pre": "Find your",
+        "hero_title_highlight": "perfect probiotic",
+        "hero_sub": "7 quick questions. 60 seconds. A doctor-built recommendation backed by the Velobiotics™ MEP science.",
+        "cta_start": "Start the V-Check →",
+        "lead_sub": "Get your recommendation plus a free 7-day gut-reset email series, science guides, and exclusive subscriber pricing.",
+        "omnisend_api_key": "6742f2b11d1247c5759cf8bb-uzWb2POzoyyL2ce7OquQGZ5j2xQ5vc09JwgGH0Tdm4OSmH49yB",
+        "fallback_collection": "all"
+      }
+    },
+    "social_proof": {
+      "type": "vb-quiz-socialproof",
+      "blocks": {
+        "s1": {
+          "type": "stat",
+          "settings": {
+            "value": "50,000+",
+            "label": "South Africans served"
+          }
+        },
+        "s2": {
+          "type": "stat",
+          "settings": {
+            "value": "4.9★",
+            "label": "Average customer rating"
+          }
+        },
+        "s3": {
+          "type": "stat",
+          "settings": {
+            "value": "16",
+            "label": "Probiotic strains per dose"
+          }
+        },
+        "s4": {
+          "type": "stat",
+          "settings": {
+            "value": "1000×",
+            "label": "More delivered alive (MEP)"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "eyebrow": "Why South Africa Trusts Velobiotics",
+        "title_pre": "Doctor-built.",
+        "title_highlight": "Lab-proven.",
+        "sub": "From Cape Town clinics to Johannesburg homes — the new daily standard for gut, intimate, and family wellness."
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "How does the V-Check work?",
+            "answer": "<p>You answer 7 short questions about your goals, body, and lifestyle. Our algorithm scores your answers against the Velobiotics product range — built on 12+ years of probiotic research — and recommends your top 3 matches in under 60 seconds.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "Is this medical advice?",
+            "answer": "<p>No. The V-Check is a wellness recommendation tool, not a diagnostic. If you have a medical condition, are pregnant, or on prescription medication, please consult your healthcare provider before starting any supplement.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "Will my answers be private?",
+            "answer": "<p>Yes. Your answers are used only to generate your personalised recommendation. We never sell your data. If you choose to receive your results by email, your email goes only to Velobiotics — unsubscribe anytime.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "What if I get the recommendation wrong?",
+            "answer": "<p>Every Velobiotics product is backed by our 30-day money-back guarantee. If your stack doesn't work for you, contact us within 30 days for a full refund.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Can I share my results?",
+            "answer": "<p>Yes — at the end of the quiz you can copy your link or share via WhatsApp. Great for sending to a partner or family member.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "title_pre": "Questions",
+        "title_highlight": "Before You Start"
+      }
+    },
+    "minimal_footer": {
+      "type": "vb-quiz-bottombar",
+      "settings": {}
+    }
   },
-  "order": ["minimal_top","quiz","social_proof","faq","minimal_footer"]
+  "order": [
+    "minimal_top",
+    "quiz",
+    "social_proof",
+    "faq",
+    "minimal_footer"
+  ]
 }

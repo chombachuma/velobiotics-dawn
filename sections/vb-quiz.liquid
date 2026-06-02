@@ -480,23 +480,56 @@
       const fill=$('#vbq-fill'); if(fill) fill.style.width=((qIdx+1)/7*100)+'%';
       const stp=$('#vbq-step'); if(stp) stp.textContent=Math.min(qIdx+1,7);
     }
-    /* Scroll */
-    if(root.classList.contains('is-fs')){ root.scrollTop=0; }
-    else { try{ window.scrollTo({top:0,behavior:'smooth'}); }catch(e){ window.scrollTo(0,0); } }
+    /* Scroll to top of quiz container */
+    try {
+      if(root.classList.contains('is-fs')){
+        const top = root.getBoundingClientRect().top + window.pageYOffset;
+        window.scrollTo({top:Math.max(0,top), behavior:'smooth'});
+      } else {
+        window.scrollTo({top:0,behavior:'smooth'});
+      }
+    } catch(e){ window.scrollTo(0,0); }
   }
 
+  /* Hide/restore sibling shopify sections so quiz takes over visually without position:fixed */
+  function hideSiblings(){
+    const ownSection = root.closest('.shopify-section');
+    document.querySelectorAll('.shopify-section').forEach(function(s){
+      if(s === ownSection) return;
+      if(s.contains(root)) return;
+      s.setAttribute('data-vbq-hidden','1');
+      s.style.display='none';
+    });
+    /* Also hide common chrome */
+    ['header','footer','#shopify-section-header','#shopify-section-footer','.announcement-bar','.header-wrapper'].forEach(function(sel){
+      document.querySelectorAll(sel).forEach(function(el){
+        if(el.contains(root)) return;
+        if(el.hasAttribute('data-vbq-hidden')) return;
+        el.setAttribute('data-vbq-hidden','1');
+        el.style.display='none';
+      });
+    });
+  }
+  function showSiblings(){
+    document.querySelectorAll('[data-vbq-hidden="1"]').forEach(function(el){
+      el.style.display='';
+      el.removeAttribute('data-vbq-hidden');
+    });
+  }
   function start(){
     console.log('[VBQ] start');
     track('quiz_started',{});
-    document.body.classList.add('vbq-fs');
+    document.body.classList.add('vbq-active');
     root.classList.add('is-fs');
+    hideSiblings();
     STATE.idx = 1;
     render();
   }
   function exit(){
     if(!window.confirm('Exit the quiz? Your progress will be lost.')) return;
-    document.body.classList.remove('vbq-fs');
+    document.body.classList.remove('vbq-active');
     root.classList.remove('is-fs');
+    showSiblings();
     STATE.idx = 0;
     STATE.answers = {};
     $$('.vbq__opt').forEach(o=>o.classList.remove('is-on'));
@@ -517,8 +550,9 @@
     STATE.idx=0; STATE.answers={}; STATE.recs=[];
     $$('.vbq__opt').forEach(o=>o.classList.remove('is-on'));
     $$('.vbq__btn--prime').forEach(b=>{ if(b.id!=='vbq-lead-btn') b.disabled=true; });
-    document.body.classList.remove('vbq-fs');
+    document.body.classList.remove('vbq-active');
     root.classList.remove('is-fs');
+    showSiblings();
     render();
   }
 

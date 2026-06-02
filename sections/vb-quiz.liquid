@@ -634,23 +634,39 @@
     track('quiz_lead',{email});
     const apiKey = root.dataset.omnisendKey;
     if(apiKey){
+      const now = new Date().toISOString();
+      const goalVal = Array.isArray(STATE.answers.goal)?STATE.answers.goal.join(','):(STATE.answers.goal||'');
+      const goalPrimary = Array.isArray(STATE.answers.goal)?STATE.answers.goal[0]:(STATE.answers.goal||'general');
+      const payload = {
+        firstName: name,
+        identifiers: [{
+          type: 'email',
+          id: email,
+          channels: { email: { status: 'subscribed', statusChangedAt: now } },
+          consent: { source: 'BioMatch Quiz', createdAt: now }
+        }],
+        tags: ['quiz_taken','biomatch', topBrand.replace(/[^a-z0-9]/gi,'').toLowerCase(), 'goal_'+goalPrimary, 'sex_'+STATE.answers.sex].filter(Boolean),
+        customProperties: {
+          quiz_top_product: topProduct, quiz_top_brand: topBrand,
+          quiz_goal: goalVal,
+          quiz_symptom: STATE.answers.symptom||'', quiz_sex: STATE.answers.sex||'',
+          quiz_age: STATE.answers.age||'', quiz_who: STATE.answers.who||'',
+          quiz_experience: STATE.answers.experience||'',
+          quiz_recs: STATE.recs.map(function(r){return r.handle;}).join(',')
+        }
+      };
       try {
-        await fetch('https://api.omnisend.com/v3/contacts',{
+        const r = await fetch('https://api.omnisend.com/api/contacts',{
           method:'POST',
-          headers:{'Content-Type':'application/json','X-API-KEY':apiKey},
-          body: JSON.stringify({
-            email, firstName:name, status:'subscribed', statusDate:new Date().toISOString(),
-            tags:['quiz_taken','biomatch', topBrand.replace(/[^a-z0-9]/gi,'').toLowerCase(), 'goal_'+(Array.isArray(STATE.answers.goal)?STATE.answers.goal[0]:STATE.answers.goal||'general'), 'sex_'+STATE.answers.sex].filter(Boolean),
-            customProperties:{
-              quiz_top_product: topProduct, quiz_top_brand: topBrand,
-              quiz_goal: (Array.isArray(STATE.answers.goal)?STATE.answers.goal.join(','):STATE.answers.goal)||'',
-              quiz_symptom: STATE.answers.symptom||'', quiz_sex: STATE.answers.sex||'',
-              quiz_age: STATE.answers.age||'', quiz_who: STATE.answers.who||'',
-              quiz_experience: STATE.answers.experience||'',
-              quiz_recs: STATE.recs.map(function(r){return r.handle;}).join(',')
-            }
-          })
+          headers:{
+            'Content-Type':'application/json',
+            'Authorization':'Omnisend-API-Key '+apiKey,
+            'Omnisend-Version':'2026-03-15'
+          },
+          body: JSON.stringify(payload)
         });
+        if(!r.ok){ console.warn('[VBQ] Omnisend non-OK', r.status, await r.text()); }
+        else { console.log('[VBQ] Omnisend contact created/updated'); }
       } catch(err){ console.warn('[VBQ] Omnisend submit failed', err); }
     } else {
       try {
@@ -702,7 +718,7 @@
           '<div class="vbq__rec-brand">'+p.brand+'</div>'+
           '<h3 class="vbq__rec-title">'+p.title+'</h3>'+
           '<p class="vbq__rec-why">'+rec.reason+'</p>'+
-          '<a class="vbq__rec-cta" href="'+productUrl+'" onclick="window.VBQ.clickRec(\''+rec.handle+'\','+(i+1)+')">Shop '+p.price+' →</a>'+
+          '<a class="vbq__rec-cta" href="'+productUrl+'" onclick="window.VBQ.clickRec(\''+rec.handle+'\','+(i+1)+')">Shop now →</a>'+
           '<a class="vbq__rec-cta-secondary" href="'+productUrl+'">Learn more</a>'+
         '</div></div>';
     }).join('');

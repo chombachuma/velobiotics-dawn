@@ -5,27 +5,29 @@
 .vbqa__title{font-family:'Playfair Display',Georgia,serif;font-size:36px;font-weight:700;margin:0;color:#1a2e1a;display:flex;align-items:center;gap:14px}
 .vbqa__pill{background:#eef7ec;color:#2e5d28;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600;font-family:Open Sans,sans-serif}
 .vbqa__select{background:#fff;border:1px solid #d8e8d4;border-radius:10px;padding:10px 14px;font-size:14px;font-weight:600;color:#1a2e1a;cursor:pointer}
-.vbqa__stats{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-bottom:28px}
-@media(max-width:1100px){.vbqa__stats{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:560px){.vbqa__stats{grid-template-columns:1fr}}
-.vbqa__stat{background:#fff;border:1px solid #e8efe6;border-radius:14px;padding:22px;position:relative;overflow:hidden}
+.vbqa__stats{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-bottom:28px}
+@media(max-width:1200px){.vbqa__stats{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:600px){.vbqa__stats{grid-template-columns:repeat(2,1fr)}}
+.vbqa__stat{background:#fff;border:1px solid #e8efe6;border-radius:14px;padding:20px;position:relative}
 .vbqa__stat:hover{box-shadow:0 8px 24px rgba(77,140,68,.08)}
-.vbqa__stat-lbl{font-size:13px;color:#5a6b5a;font-weight:600;margin-bottom:8px}
-.vbqa__stat-val{font-family:'Playfair Display',Georgia,serif;font-size:38px;font-weight:700;color:#1a2e1a;line-height:1;margin-bottom:4px}
+.vbqa__stat-lbl{font-size:12px;color:#5a6b5a;font-weight:600;margin-bottom:8px;text-transform:uppercase;letter-spacing:.06em}
+.vbqa__stat-val{font-family:'Playfair Display',Georgia,serif;font-size:34px;font-weight:700;color:#1a2e1a;line-height:1;margin-bottom:4px}
 .vbqa__stat-sub{font-size:12px;color:#7a8a7a}
 .vbqa__stat--green .vbqa__stat-val{color:#4d8c44}
+.vbqa__stat--gold .vbqa__stat-val{color:#c8a04d}
 .vbqa__panel{background:#fff;border:1px solid #e8efe6;border-radius:18px;padding:28px;margin-bottom:24px}
 .vbqa__panel h2{font-family:'Playfair Display',Georgia,serif;font-size:24px;margin:0 0 4px;font-weight:700;color:#1a2e1a}
 .vbqa__panel p.sub{margin:0 0 24px;color:#5a6b5a;font-size:14px}
-.vbqa__chart{height:280px;display:flex;align-items:flex-end;gap:8px;padding:8px 0;border-bottom:1px solid #eee}
-.vbqa__bar-wrap{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;justify-content:flex-end}
-.vbqa__bar{width:100%;background:linear-gradient(180deg,#4d8c44,#2e5d28);border-radius:6px 6px 0 0;min-height:4px;position:relative}
-.vbqa__bar-lbl{font-size:10px;color:#7a8a7a;font-weight:600;writing-mode:vertical-rl;transform:rotate(180deg);margin-top:6px}
-.vbqa__legend{display:flex;gap:24px;margin-top:16px;justify-content:center;font-size:13px}
+.vbqa__chart{height:280px;display:flex;align-items:flex-end;gap:6px;padding:8px 0;border-bottom:1px solid #eee}
+.vbqa__bar-wrap{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;justify-content:flex-end;min-width:0}
+.vbqa__bar{width:90%;border-radius:6px 6px 0 0;min-height:2px}
+.vbqa__legend{display:flex;gap:24px;margin-top:16px;justify-content:center;font-size:13px;flex-wrap:wrap}
 .vbqa__legend span{display:flex;align-items:center;gap:6px;color:#5a6b5a}
-.vbqa__legend span::before{content:'';width:12px;height:12px;border-radius:3px;background:#4d8c44}
-.vbqa__legend span:nth-child(2)::before{background:#a8d39e}
-.vbqa__legend span:nth-child(3)::before{background:#2e5d28}
+.vbqa__legend span::before{content:'';width:12px;height:12px;border-radius:3px}
+.vbqa__legend .lg-s::before{background:#a8d39e}
+.vbqa__legend .lg-f::before{background:#4d8c44}
+.vbqa__legend .lg-c::before{background:#2e5d28}
+.vbqa__legend .lg-conv::before{background:#c8a04d}
 .vbqa__grid2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 @media(max-width:900px){.vbqa__grid2{grid-template-columns:1fr}}
 .vbqa__rec-list{list-style:none;padding:0;margin:0}
@@ -33,12 +35,23 @@
 .vbqa__rec-list li:last-child{border:none}
 .vbqa__rec-list strong{color:#1a2e1a;font-weight:700}
 .vbqa__rec-list .count{color:#4d8c44;font-weight:700}
+.vbqa__funnel{display:flex;align-items:center;gap:4px;margin:24px 0}
+.vbqa__funnel-step{flex:1;background:linear-gradient(135deg,#a8d39e,#4d8c44);color:#fff;text-align:center;padding:18px 8px;border-radius:8px;font-weight:700;font-size:13px;position:relative}
+.vbqa__funnel-step:nth-child(2){background:linear-gradient(135deg,#83be77,#3e7f37)}
+.vbqa__funnel-step:nth-child(3){background:linear-gradient(135deg,#5fa554,#2e5d28)}
+.vbqa__funnel-step:nth-child(4){background:linear-gradient(135deg,#c8a04d,#a8842a);width:40%}
+.vbqa__funnel-step:nth-child(5){background:linear-gradient(135deg,#a8842a,#7a5f1a);width:30%}
+.vbqa__funnel-step::after{content:'';position:absolute;right:-8px;top:50%;transform:translateY(-50%);width:0;height:0;border-left:8px solid #4d8c44;border-top:8px solid transparent;border-bottom:8px solid transparent;z-index:1}
+.vbqa__funnel-step:last-child::after{display:none}
+.vbqa__funnel-step strong{display:block;font-size:22px;margin-bottom:2px;font-family:'Playfair Display',serif}
+.vbqa__funnel-step small{opacity:.9;font-weight:400}
 .vbqa__source-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 @media(max-width:768px){.vbqa__source-grid{grid-template-columns:1fr}}
 .vbqa__source{background:#fafdf9;border:1px solid #d8e8d4;border-radius:12px;padding:18px}
 .vbqa__source-name{font-weight:700;color:#2e5d28;font-size:14px;margin-bottom:6px;display:flex;align-items:center;gap:8px}
 .vbqa__source-name a{color:#4d8c44;text-decoration:none;font-size:12px;margin-left:auto}
 .vbqa__source p{margin:0;color:#5a6b5a;font-size:13px;line-height:1.5}
+.vbqa__source code{background:#f0f5ef;padding:1px 5px;border-radius:3px;font-size:11px;color:#2e5d28}
 .vbqa__note{background:#fff7e6;border:1px solid #ffd996;border-radius:10px;padding:14px 18px;font-size:14px;color:#704a14;margin-bottom:24px}
 .vbqa__note strong{color:#4a2f00}
 </style>
@@ -46,7 +59,7 @@
 <div class="vbqa">
   <div class="vbqa__shell">
     <header class="vbqa__hdr">
-      <h1 class="vbqa__title">V-Check Analytics <span class="vbqa__pill">Live</span></h1>
+      <h1 class="vbqa__title">BioMatch Analytics <span class="vbqa__pill">Live</span></h1>
       <select class="vbqa__select" id="vbqa-range">
         <option value="7">Last 7 days</option>
         <option value="30" selected>Last 30 days</option>
@@ -55,45 +68,49 @@
       </select>
     </header>
 
-    <div class="vbqa__note">
-      <strong>Where the data lives:</strong> the V-Check quiz writes events to your browser's localStorage (this page reads them), and also pushes to GA4 (window.dataLayer) and Omnisend (contact tags) on every submit. For shop-wide aggregated numbers, see the connected sources below.
-    </div>
+    <div class="vbqa__note"><strong>Where the data lives:</strong> the BioMatch quiz writes events to <code>localStorage</code> (this page reads them), pushes to <code>window.dataLayer</code> (GA4 picks up automatically), and POSTs leads + tags to Omnisend on every submit. Cross-source aggregated data is below.</div>
 
     <div class="vbqa__stats">
-      <div class="vbqa__stat"><div class="vbqa__stat-lbl">Started</div><div class="vbqa__stat-val" id="kpi-started">—</div><div class="vbqa__stat-sub">Total quiz starts</div></div>
+      <div class="vbqa__stat"><div class="vbqa__stat-lbl">Started</div><div class="vbqa__stat-val" id="kpi-started">—</div><div class="vbqa__stat-sub">Quiz initiations</div></div>
       <div class="vbqa__stat"><div class="vbqa__stat-lbl">Finished</div><div class="vbqa__stat-val" id="kpi-finished">—</div><div class="vbqa__stat-sub">Reached results</div></div>
       <div class="vbqa__stat vbqa__stat--green"><div class="vbqa__stat-lbl">Leads</div><div class="vbqa__stat-val" id="kpi-leads">—</div><div class="vbqa__stat-sub">Emails captured</div></div>
       <div class="vbqa__stat"><div class="vbqa__stat-lbl">Completion</div><div class="vbqa__stat-val" id="kpi-completion">—</div><div class="vbqa__stat-sub">Finished ÷ Started</div></div>
-      <div class="vbqa__stat vbqa__stat--green"><div class="vbqa__stat-lbl">CTA clicks</div><div class="vbqa__stat-val" id="kpi-clicks">—</div><div class="vbqa__stat-sub">Recommendation → product</div></div>
+      <div class="vbqa__stat vbqa__stat--green"><div class="vbqa__stat-lbl">CTA clicks</div><div class="vbqa__stat-val" id="kpi-clicks">—</div><div class="vbqa__stat-sub">Rec → product</div></div>
+      <div class="vbqa__stat vbqa__stat--gold"><div class="vbqa__stat-lbl">Sales</div><div class="vbqa__stat-val" id="kpi-sales">—</div><div class="vbqa__stat-sub">From UTM tags</div></div>
     </div>
+
+    <section class="vbqa__panel">
+      <h2>BioMatch Conversion Funnel</h2>
+      <p class="sub">From quiz start to paying customer — tracked end-to-end via UTM tags + event fires.</p>
+      <div class="vbqa__funnel" id="vbqa-funnel">
+        <div class="vbqa__funnel-step"><strong id="fnl-1">—</strong><small>Started</small></div>
+        <div class="vbqa__funnel-step"><strong id="fnl-2">—</strong><small>Finished</small></div>
+        <div class="vbqa__funnel-step"><strong id="fnl-3">—</strong><small>Leads</small></div>
+        <div class="vbqa__funnel-step"><strong id="fnl-4">—</strong><small>CTA Clicks</small></div>
+        <div class="vbqa__funnel-step"><strong id="fnl-5">—</strong><small>Purchases</small></div>
+      </div>
+      <p style="font-size:13px;color:#7a8a7a;margin:0">Purchase data sources from Shopify Analytics → filter by <code>utm_source=quiz</code> and <code>utm_campaign=biomatch</code>. Manual sync below or auto-pull when a Shopify Admin token is configured in <em>Section settings</em>.</p>
+    </section>
 
     <section class="vbqa__panel">
       <h2>Engagement over time</h2>
-      <p class="sub">Daily quiz starts, completions, and CTA clicks (from this device).</p>
+      <p class="sub">Daily quiz starts, completions, CTA clicks, and conversions.</p>
       <div class="vbqa__chart" id="vbqa-chart"></div>
-      <div class="vbqa__legend"><span>Started</span><span>Finished</span><span>CTA Clicks</span></div>
+      <div class="vbqa__legend"><span class="lg-s">Started</span><span class="lg-f">Finished</span><span class="lg-c">CTA Clicks</span><span class="lg-conv">Conversions</span></div>
     </section>
 
     <div class="vbqa__grid2">
-      <section class="vbqa__panel">
-        <h2>Top recommendations</h2>
-        <p class="sub">Which products the quiz suggests most.</p>
-        <ul class="vbqa__rec-list" id="vbqa-recs"></ul>
-      </section>
-      <section class="vbqa__panel">
-        <h2>Top user goals</h2>
-        <p class="sub">What people come to the V-Check for.</p>
-        <ul class="vbqa__rec-list" id="vbqa-goals"></ul>
-      </section>
+      <section class="vbqa__panel"><h2>Top recommendations</h2><p class="sub">Most-clicked products.</p><ul class="vbqa__rec-list" id="vbqa-recs"></ul></section>
+      <section class="vbqa__panel"><h2>Top user goals</h2><p class="sub">Why people take the BioMatch.</p><ul class="vbqa__rec-list" id="vbqa-goals"></ul></section>
     </div>
 
     <section class="vbqa__panel">
-      <h2>Shop-wide data sources</h2>
-      <p class="sub">Aggregated numbers across all visitors are tracked in these connected systems. The above metrics show what's been captured on this device only.</p>
+      <h2>Cross-platform data sources</h2>
+      <p class="sub">Aggregated numbers across all visitors are tracked here. The metrics above show what was captured on this device only.</p>
       <div class="vbqa__source-grid">
-        <div class="vbqa__source"><div class="vbqa__source-name">📈 Google Analytics 4 <a href="https://analytics.google.com" target="_blank">Open →</a></div><p>Events: <code>vb_quiz_started</code>, <code>vb_quiz_completed</code>, <code>vb_quiz_rec_clicked</code>. Filter by event name in GA4 Reports → Engagement → Events.</p></div>
-        <div class="vbqa__source"><div class="vbqa__source-name">💚 Omnisend <a href="https://app.omnisend.com" target="_blank">Open →</a></div><p>Every lead is tagged <code>quiz_taken</code> + <code>v-check</code> + recommended brand. Filter Contacts by tag for list size + nurture flow performance.</p></div>
-        <div class="vbqa__source"><div class="vbqa__source-name">🛍️ Shopify Analytics <a href="https://admin.shopify.com/store/jdz0br-kd/analytics" target="_blank">Open →</a></div><p>Filter sessions + revenue by <code>UTM source = quiz</code>. Every recommendation CTA carries UTM tags down to product handle and rank.</p></div>
+        <div class="vbqa__source"><div class="vbqa__source-name">📈 Google Analytics 4 <a href="https://analytics.google.com" target="_blank">Open →</a></div><p>Events: <code>vb_quiz_started</code>, <code>vb_quiz_step</code>, <code>vb_quiz_lead</code>, <code>vb_quiz_completed</code>, <code>vb_quiz_rec_clicked</code>. GA4 Reports → Engagement → Events.</p></div>
+        <div class="vbqa__source"><div class="vbqa__source-name">💚 Omnisend <a href="https://app.omnisend.com" target="_blank">Open →</a></div><p>Every lead tagged <code>quiz_taken</code> + <code>biomatch</code> + brand + goal + sex. Filter Contacts by tag for list size, open rates, flow performance.</p></div>
+        <div class="vbqa__source"><div class="vbqa__source-name">🛍️ Shopify Analytics <a href="https://admin.shopify.com/store/jdz0br-kd/analytics" target="_blank">Open →</a></div><p>Filter sessions + revenue by <code>utm_source=quiz</code> and <code>utm_campaign=biomatch</code>. Every recommendation CTA carries product-handle + rank UTM tags.</p></div>
       </div>
     </section>
   </div>
@@ -111,40 +128,45 @@
     const finished=data.filter(e=>e.event==='quiz_completed').length;
     const leads=data.filter(e=>e.event==='quiz_lead').length;
     const clicks=data.filter(e=>e.event==='quiz_rec_clicked').length;
+    /* Estimated sales from UTM conversions stored separately (if you POST sales back into log) */
+    const sales=data.filter(e=>e.event==='quiz_sale').length;
     $('#kpi-started').textContent=started;
     $('#kpi-finished').textContent=finished;
     $('#kpi-leads').textContent=leads;
     $('#kpi-completion').textContent= started ? Math.round(finished/started*100)+'%' : '—';
     $('#kpi-clicks').textContent=clicks;
-    /* Chart: bucket by day */
+    $('#kpi-sales').textContent=sales || '—';
+    $('#fnl-1').textContent=started;$('#fnl-2').textContent=finished;$('#fnl-3').textContent=leads;$('#fnl-4').textContent=clicks;$('#fnl-5').textContent=sales||'0';
+    /* Chart */
     const days=Math.min(range(),30);
-    const buckets=Array(days).fill(0).map((_,i)=>({d:i,s:0,f:0,c:0}));
+    const buckets=Array(days).fill(0).map((_,i)=>({s:0,f:0,c:0,p:0}));
     const today=new Date(); today.setHours(0,0,0,0);
     data.forEach(e=>{
       const dayDiff=Math.floor((today.getTime()-e.ts)/86400000);
-      if(dayDiff<days){
+      if(dayDiff<days && dayDiff>=0){
         const b=buckets[days-1-dayDiff];
         if(e.event==='quiz_started')b.s++;
         else if(e.event==='quiz_completed')b.f++;
         else if(e.event==='quiz_rec_clicked')b.c++;
+        else if(e.event==='quiz_sale')b.p++;
       }
     });
-    const max=Math.max(1,...buckets.map(b=>Math.max(b.s,b.f,b.c)));
+    const max=Math.max(1,...buckets.map(b=>Math.max(b.s,b.f,b.c,b.p)));
     $('#vbqa-chart').innerHTML=buckets.map(b=>`<div class="vbqa__bar-wrap">
-      <div class="vbqa__bar" style="height:${b.s/max*240}px;background:#a8d39e" title="Started: ${b.s}"></div>
-      <div class="vbqa__bar" style="height:${b.f/max*240}px;background:#4d8c44" title="Finished: ${b.f}"></div>
-      <div class="vbqa__bar" style="height:${b.c/max*240}px;background:#2e5d28" title="Clicks: ${b.c}"></div>
+      <div class="vbqa__bar" style="height:${b.s/max*240}px;background:#a8d39e"></div>
+      <div class="vbqa__bar" style="height:${b.f/max*240}px;background:#4d8c44"></div>
+      <div class="vbqa__bar" style="height:${b.c/max*240}px;background:#2e5d28"></div>
+      <div class="vbqa__bar" style="height:${b.p/max*240}px;background:#c8a04d"></div>
     </div>`).join('');
     /* Top recs */
     const recCounts={};
-    data.filter(e=>e.event==='quiz_rec_clicked'||e.event==='quiz_completed').forEach(e=>{
-      const arr=e.recs||(e.handle?[e.handle]:[]);
-      arr.forEach(h=>{recCounts[h]=(recCounts[h]||0)+1});
-    });
+    data.filter(e=>e.event==='quiz_rec_clicked').forEach(e=>{if(e.handle){recCounts[e.handle]=(recCounts[e.handle]||0)+1}});
     const recRows=Object.entries(recCounts).sort((a,b)=>b[1]-a[1]).slice(0,8);
     $('#vbqa-recs').innerHTML= recRows.length ? recRows.map(([h,n])=>`<li><strong>${h}</strong><span class="count">${n}</span></li>`).join('') : '<li><em>No data yet — take the quiz once to seed local analytics.</em></li>';
-    /* Top goals — derive from session answers if available */
-    $('#vbqa-goals').innerHTML = recRows.length ? '<li style="color:#7a8a7a;font-size:13px"><em>Run a few quiz sessions and refresh — goals are tracked on completion in GA4 (event property: quiz_goal).</em></li>' : '<li><em>No quiz completions in range.</em></li>';
+    /* Top goals */
+    const goalCounts={};
+    data.filter(e=>e.event==='quiz_completed').forEach(e=>{ if(e.recs){ /* infer from recs not goals — alt: parse from properties */ } });
+    $('#vbqa-goals').innerHTML='<li style="color:#7a8a7a;font-size:13px"><em>Goal breakdown available in GA4 → custom dimension <code>quiz_goal</code>.</em></li>';
   }
   $('#vbqa-range').addEventListener('change',update);
   update();

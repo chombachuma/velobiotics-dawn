@@ -1,97 +1,153 @@
-{%- comment -%} VB Quiz — Velobiotics Personalised Wellness Check {%- endcomment -%}
+{%- comment -%} VB BioMatch — Velobiotics Personalised Wellness Quiz {%- endcomment -%}
 <style>
-  .vbq{--g:#4d8c44;--g2:#2e5d28;--cream:#fdf9f1;--ink:#1a2e1a;--mute:#5a6b5a;--border:#e8efe6;--tint:#eef7ec;font-family:'Open Sans','Inter',system-ui,sans-serif;background:linear-gradient(180deg,#fdf9f1 0%,#fff 100%);min-height:100vh;color:var(--ink)}
-  .vbq__shell{max-width:680px;margin:0 auto;padding:48px 20px 80px}
-  .vbq__bar{height:6px;background:#eee;border-radius:6px;overflow:hidden;margin-bottom:32px}
-  .vbq__bar-fill{height:100%;background:linear-gradient(90deg,var(--g),var(--g2));transition:width .5s cubic-bezier(.4,0,.2,1)}
-  .vbq__step{display:none;animation:vbqfade .4s ease}
+  .vbq{--g:#4d8c44;--g2:#2e5d28;--cream:#fdf9f1;--ink:#1a2e1a;--mute:#5a6b5a;--border:#e8efe6;--tint:#eef7ec;font-family:'Open Sans','Inter',system-ui,sans-serif;color:var(--ink);position:relative}
+  body.vbq-fs{overflow:hidden}
+  .vbq.is-fs{position:fixed;inset:0;background:linear-gradient(180deg,#fdf9f1 0%,#fff 60%);z-index:99999;overflow-y:auto;-webkit-overflow-scrolling:touch}
+  .vbq.is-fs::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(77,140,68,.05) 0%,transparent 70%);pointer-events:none}
+  .vbq__shell{max-width:680px;margin:0 auto;padding:32px 20px 80px;position:relative;z-index:1}
+  .vbq.is-fs .vbq__shell{padding-top:64px}
+  /* Sticky progress bar */
+  .vbq__progress{position:sticky;top:0;left:0;right:0;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:14px 20px;z-index:20;border-bottom:1px solid var(--border);display:none}
+  .vbq.is-fs .vbq__progress{position:fixed;top:0}
+  .vbq__progress.is-on{display:flex;align-items:center;gap:14px}
+  .vbq__exit{appearance:none;border:none;background:none;cursor:pointer;color:var(--mute);font-size:24px;line-height:1;padding:4px 8px;border-radius:8px;transition:.2s}
+  .vbq__exit:hover{background:var(--tint);color:var(--ink)}
+  .vbq__progress-track{flex:1;height:8px;background:#eee;border-radius:99px;overflow:hidden;position:relative}
+  .vbq__progress-fill{height:100%;background:linear-gradient(90deg,var(--g),var(--g2));border-radius:99px;transition:width .5s cubic-bezier(.4,0,.2,1);position:relative}
+  .vbq__progress-fill::after{content:'';position:absolute;right:0;top:50%;transform:translateY(-50%);width:14px;height:14px;background:#fff;border:3px solid var(--g);border-radius:50%;box-shadow:0 2px 8px rgba(77,140,68,.4)}
+  .vbq__progress-label{font-size:13px;color:var(--mute);font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+  .vbq__progress-label strong{color:var(--g)}
+  /* Step transitions */
+  .vbq__step{display:none;animation:vbqfade .45s cubic-bezier(.4,0,.2,1)}
   .vbq__step.is-active{display:block}
-  @keyframes vbqfade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
-  .vbq__eyebrow{display:inline-block;background:var(--tint);color:var(--g2);padding:6px 14px;border-radius:999px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:20px}
-  .vbq__h{font-family:'Playfair Display',Georgia,serif;font-size:clamp(28px,5vw,44px);line-height:1.15;margin:0 0 12px;font-weight:700}
+  @keyframes vbqfade{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+  .vbq__eyebrow{display:inline-block;background:var(--tint);color:var(--g2);padding:6px 14px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:20px}
+  .vbq__h{font-family:'Playfair Display',Georgia,serif;font-size:clamp(28px,5.5vw,46px);line-height:1.1;margin:0 0 14px;font-weight:700;letter-spacing:-.01em}
   .vbq__h .vbq__hl{color:var(--g);font-style:italic}
-  .vbq__sub{font-size:18px;line-height:1.55;color:var(--mute);margin:0 0 32px;max-width:540px}
+  .vbq__sub{font-size:17px;line-height:1.55;color:var(--mute);margin:0 0 32px;max-width:540px}
+  /* Hero — femina.care style */
+  .vbq__hero{position:relative;text-align:center;min-height:calc(100vh - 60px);display:flex;flex-direction:column;justify-content:center;align-items:center;padding:48px 20px;overflow:hidden}
+  .vbq__hero-bg{position:absolute;inset:0;z-index:0;overflow:hidden}
+  .vbq__hero-bg::before{content:'';position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(253,249,241,1) 0%,rgba(253,249,241,0) 25%,rgba(253,249,241,0) 75%,rgba(253,249,241,1) 100%),linear-gradient(180deg,rgba(253,249,241,0) 40%,rgba(253,249,241,.7) 80%,rgba(253,249,241,1) 100%);z-index:2}
+  .vbq__hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 20%;filter:saturate(.95) contrast(1.02)}
+  .vbq__hero-content{position:relative;z-index:3;max-width:640px}
+  .vbq__hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.85);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid #d8e8d4;color:var(--g2);padding:8px 18px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:28px;box-shadow:0 4px 20px rgba(0,0,0,.06)}
+  .vbq__hero-eyebrow::before{content:'';width:6px;height:6px;background:var(--g);border-radius:50%;animation:vbqpulse 2s ease-in-out infinite}
+  @keyframes vbqpulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.4)}}
+  .vbq__hero-title{font-family:'Playfair Display',Georgia,serif;font-size:clamp(40px,8vw,84px);line-height:.98;font-weight:700;margin:0 0 20px;letter-spacing:-.025em;color:var(--ink);text-shadow:0 2px 20px rgba(255,255,255,.5)}
+  .vbq__hero-title .vbq__hl{color:var(--g);font-style:italic;display:block}
+  .vbq__hero-sub{font-size:clamp(16px,2.2vw,20px);line-height:1.5;color:#3a4a3a;margin:0 0 36px;max-width:520px;margin-left:auto;margin-right:auto;font-weight:500}
+  .vbq__hero-cta{display:inline-flex;align-items:center;gap:10px;background:var(--g);color:#fff;padding:20px 44px;border-radius:99px;font-size:18px;font-weight:700;text-decoration:none;border:none;cursor:pointer;font-family:inherit;box-shadow:0 12px 40px rgba(77,140,68,.4);transition:all .3s cubic-bezier(.4,0,.2,1)}
+  .vbq__hero-cta:hover{background:var(--g2);transform:translateY(-3px) scale(1.02);box-shadow:0 18px 56px rgba(77,140,68,.5);color:#fff}
+  .vbq__hero-cta::after{content:'→';display:inline-block;transition:transform .3s}
+  .vbq__hero-cta:hover::after{transform:translateX(6px)}
+  .vbq__hero-meta{display:flex;justify-content:center;gap:32px;margin-top:32px;flex-wrap:wrap;font-size:13px;color:var(--mute);font-weight:600}
+  .vbq__hero-meta span{display:flex;align-items:center;gap:8px}
+  .vbq__hero-meta span::before{font-size:18px}
+  .vbq__hero-meta .meta-time::before{content:'⏱'}
+  .vbq__hero-meta .meta-md::before{content:'🩺'}
+  .vbq__hero-meta .meta-free::before{content:'💚'}
+  /* Options */
   .vbq__opts{display:grid;gap:12px;margin-bottom:24px}
   .vbq__opts.cols-2{grid-template-columns:repeat(2,1fr)}
   .vbq__opts.cols-3{grid-template-columns:repeat(3,1fr)}
   @media (max-width:640px){.vbq__opts.cols-2,.vbq__opts.cols-3{grid-template-columns:1fr}}
-  .vbq__opt{display:flex;align-items:center;gap:14px;padding:18px 20px;background:#fff;border:2px solid var(--border);border-radius:14px;cursor:pointer;font-weight:600;font-size:16px;color:var(--ink);text-align:left;transition:all .2s;user-select:none}
+  .vbq__opt{display:flex;align-items:center;gap:14px;padding:18px 20px;background:#fff;border:2px solid var(--border);border-radius:16px;cursor:pointer;font-weight:600;font-size:16px;color:var(--ink);text-align:left;transition:all .25s cubic-bezier(.4,0,.2,1);user-select:none;font-family:inherit}
   .vbq__opt:hover{border-color:var(--g);background:var(--tint);transform:translateY(-2px);box-shadow:0 8px 24px rgba(77,140,68,.18)}
   .vbq__opt.is-on{border-color:var(--g);background:var(--tint);box-shadow:0 4px 16px rgba(77,140,68,.2)}
-  .vbq__opt-icon{font-size:24px;flex-shrink:0}
+  .vbq__opt-icon{font-size:24px;flex-shrink:0;width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:var(--cream);border-radius:50%}
+  .vbq__opt.is-on .vbq__opt-icon{background:var(--g);color:#fff}
   .vbq__opt-text{flex:1}
   .vbq__opt-text small{display:block;font-weight:400;color:var(--mute);font-size:13px;margin-top:2px}
   .vbq__check{width:22px;height:22px;border:2px solid #ccc;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:.2s}
   .vbq__opt.is-on .vbq__check{background:var(--g);border-color:var(--g)}
-  .vbq__opt.is-on .vbq__check::after{content:'';width:8px;height:14px;border:solid #fff;border-width:0 3px 3px 0;transform:rotate(45deg);margin-top:-3px}
-  .vbq__nav{display:flex;gap:12px;align-items:center;margin-top:28px}
-  .vbq__btn{appearance:none;border:none;cursor:pointer;font-weight:700;font-size:16px;padding:16px 32px;border-radius:12px;transition:.2s;font-family:inherit;display:inline-flex;align-items:center;gap:8px}
-  .vbq__btn--prime{background:var(--g);color:#fff;flex:1;justify-content:center}
-  .vbq__btn--prime:hover:not(:disabled){background:var(--g2);transform:translateY(-2px);box-shadow:0 8px 20px rgba(77,140,68,.3)}
-  .vbq__btn--prime:disabled{opacity:.4;cursor:not-allowed}
+  .vbq__opt.is-on .vbq__check::after{content:'';width:7px;height:12px;border:solid #fff;border-width:0 3px 3px 0;transform:rotate(45deg);margin-top:-2px}
+  .vbq__nav{display:flex;gap:12px;align-items:center;margin-top:32px}
+  .vbq__btn{appearance:none;border:none;cursor:pointer;font-weight:700;font-size:16px;padding:16px 32px;border-radius:99px;transition:all .25s;font-family:inherit;display:inline-flex;align-items:center;gap:8px}
+  .vbq__btn--prime{background:var(--g);color:#fff;flex:1;justify-content:center;box-shadow:0 4px 16px rgba(77,140,68,.25)}
+  .vbq__btn--prime:hover:not(:disabled){background:var(--g2);transform:translateY(-2px);box-shadow:0 10px 28px rgba(77,140,68,.35)}
+  .vbq__btn--prime:disabled{opacity:.4;cursor:not-allowed;box-shadow:none}
   .vbq__btn--ghost{background:transparent;color:var(--mute);padding:16px 20px}
-  .vbq__btn--ghost:hover{color:var(--g)}
-  .vbq__input{width:100%;padding:16px 20px;border:2px solid var(--border);border-radius:12px;font-size:16px;font-family:inherit;background:#fff;transition:.2s;color:var(--ink)}
+  .vbq__btn--ghost:hover{color:var(--g);background:var(--tint)}
+  .vbq__input{width:100%;padding:18px 22px;border:2px solid var(--border);border-radius:14px;font-size:16px;font-family:inherit;background:#fff;transition:.2s;color:var(--ink);box-sizing:border-box}
   .vbq__input:focus{outline:none;border-color:var(--g);box-shadow:0 0 0 4px rgba(77,140,68,.12)}
-  .vbq__field{margin-bottom:16px}
-  .vbq__field label{display:block;font-weight:600;font-size:14px;margin-bottom:6px;color:var(--ink)}
-  .vbq__legal{font-size:13px;color:var(--mute);line-height:1.5;margin-top:12px}
+  .vbq__field{margin-bottom:18px}
+  .vbq__field label{display:block;font-weight:600;font-size:14px;margin-bottom:8px;color:var(--ink)}
+  .vbq__legal{font-size:13px;color:var(--mute);line-height:1.55;margin-top:14px}
   .vbq__legal a{color:var(--g);text-decoration:underline}
-  /* Hero / start screen */
-  .vbq__hero{text-align:center;padding-top:24px}
-  .vbq__badges{display:flex;justify-content:center;gap:24px;margin-top:36px;flex-wrap:wrap}
-  .vbq__badge{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--mute);font-weight:600}
-  .vbq__badge-icon{width:32px;height:32px;background:var(--tint);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px}
-  /* Loading screen */
-  .vbq__loader{text-align:center;padding:48px 0}
-  .vbq__spinner{width:64px;height:64px;border:5px solid var(--tint);border-top-color:var(--g);border-radius:50%;margin:0 auto 24px;animation:vbqspin 1s linear infinite}
+  /* Interstitial "We hear you" screens */
+  .vbq__inter{text-align:center;padding:40px 20px;animation:vbqfade .5s}
+  .vbq__inter-emoji{font-size:64px;margin-bottom:20px;display:block;animation:vbqbounce .6s cubic-bezier(.34,1.56,.64,1)}
+  @keyframes vbqbounce{0%{transform:scale(0)}60%{transform:scale(1.15)}100%{transform:scale(1)}}
+  .vbq__inter-h{font-family:'Playfair Display',Georgia,serif;font-size:clamp(24px,4vw,36px);line-height:1.2;margin:0 0 14px;font-weight:700;color:var(--ink)}
+  .vbq__inter-h .vbq__hl{color:var(--g);font-style:italic}
+  .vbq__inter-sub{font-size:17px;line-height:1.55;color:var(--mute);margin:0 auto 28px;max-width:480px}
+  .vbq__inter-stat{display:inline-block;background:linear-gradient(135deg,var(--tint),#fff);border:1px solid #d8e8d4;border-radius:18px;padding:18px 32px;margin-bottom:24px}
+  .vbq__inter-stat strong{font-family:'Playfair Display',Georgia,serif;font-size:36px;color:var(--g);display:block;line-height:1}
+  .vbq__inter-stat small{color:var(--mute);font-size:13px;font-weight:600}
+  /* Loader */
+  .vbq__loader{text-align:center;padding:64px 0}
+  .vbq__spinner{width:72px;height:72px;border:5px solid var(--tint);border-top-color:var(--g);border-radius:50%;margin:0 auto 28px;animation:vbqspin 1s linear infinite}
   @keyframes vbqspin{to{transform:rotate(360deg)}}
-  .vbq__loader-msg{font-size:18px;font-weight:600;color:var(--g2);margin:0}
+  .vbq__loader-msg{font-size:18px;font-weight:600;color:var(--g2);margin:0;min-height:28px}
   /* Results */
-  .vbq__results-header{text-align:center;margin-bottom:36px}
-  .vbq__profile{background:var(--tint);border:1px solid #d8e8d4;border-radius:16px;padding:20px;margin-bottom:32px;font-size:15px;color:var(--ink);line-height:1.6}
-  .vbq__profile strong{color:var(--g2)}
-  .vbq__rec{background:#fff;border:2px solid var(--border);border-radius:18px;padding:24px;margin-bottom:20px;display:flex;gap:20px;align-items:flex-start;position:relative;overflow:hidden}
-  .vbq__rec.is-top{border-color:var(--g);box-shadow:0 12px 36px rgba(77,140,68,.16)}
-  .vbq__rec-rank{position:absolute;top:0;right:0;background:var(--g);color:#fff;padding:6px 14px;border-bottom-left-radius:12px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
-  .vbq__rec-img{width:120px;height:120px;flex-shrink:0;background:#f6f6f4;border-radius:12px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+  .vbq__results-header{text-align:center;margin-bottom:32px}
+  .vbq__profile{background:linear-gradient(135deg,var(--tint),#fff);border:1px solid #d8e8d4;border-radius:18px;padding:22px;margin-bottom:28px;font-size:15px;color:var(--ink);line-height:1.6}
+  .vbq__profile strong{color:var(--g2);font-weight:700}
+  .vbq__rec{background:#fff;border:2px solid var(--border);border-radius:20px;padding:24px;margin-bottom:18px;display:flex;gap:20px;align-items:flex-start;position:relative;overflow:hidden;transition:.3s}
+  .vbq__rec:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(77,140,68,.08)}
+  .vbq__rec.is-top{border-color:var(--g);box-shadow:0 16px 48px rgba(77,140,68,.18)}
+  .vbq__rec-rank{position:absolute;top:0;right:0;background:var(--g);color:#fff;padding:6px 16px;border-bottom-left-radius:14px;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+  .vbq__rec-img{width:120px;height:120px;flex-shrink:0;background:#f6f6f4;border-radius:14px;overflow:hidden;display:flex;align-items:center;justify-content:center}
   .vbq__rec-img img{width:100%;height:100%;object-fit:contain}
   .vbq__rec-body{flex:1;min-width:0}
-  .vbq__rec-brand{font-size:12px;font-weight:700;color:var(--g);text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
-  .vbq__rec-title{font-size:18px;font-weight:700;color:var(--ink);margin:0 0 8px;line-height:1.3}
-  .vbq__rec-why{font-size:14px;color:var(--mute);line-height:1.5;margin:0 0 12px}
+  .vbq__rec-brand{font-size:11px;font-weight:700;color:var(--g);text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
+  .vbq__rec-title{font-size:18px;font-weight:700;color:var(--ink);margin:0 0 10px;line-height:1.3}
+  .vbq__rec-why{font-size:14px;color:var(--mute);line-height:1.55;margin:0 0 14px}
   .vbq__rec-why strong{color:var(--ink)}
-  .vbq__rec-cta{display:inline-flex;align-items:center;gap:6px;background:var(--g);color:#fff;padding:10px 18px;border-radius:8px;font-weight:700;font-size:14px;text-decoration:none;transition:.2s}
+  .vbq__rec-cta{display:inline-flex;align-items:center;gap:6px;background:var(--g);color:#fff;padding:11px 20px;border-radius:99px;font-weight:700;font-size:14px;text-decoration:none;transition:.2s}
   .vbq__rec-cta:hover{background:var(--g2);transform:translateY(-1px);color:#fff}
   .vbq__rec-cta-secondary{display:inline-block;margin-left:12px;font-size:13px;color:var(--mute);text-decoration:underline}
-  @media (max-width:640px){.vbq__rec{flex-direction:column;align-items:stretch}.vbq__rec-img{width:100%;height:200px}}
-  .vbq__share{text-align:center;margin-top:32px;padding-top:24px;border-top:1px solid var(--border)}
-  .vbq__share p{margin:0 0 12px;color:var(--mute);font-size:14px}
-  .vbq__share-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-  .vbq__share-btn{padding:10px 18px;background:var(--tint);border:1px solid #d8e8d4;border-radius:8px;color:var(--g2);text-decoration:none;font-size:13px;font-weight:600;cursor:pointer}
-  .vbq__share-btn:hover{background:var(--g);color:#fff}
-  /* Multi-select hint */
-  .vbq__hint{font-size:13px;color:var(--mute);margin:-12px 0 16px;font-style:italic}
+  @media (max-width:640px){.vbq__rec{flex-direction:column;align-items:stretch}.vbq__rec-img{width:100%;height:180px}}
+  .vbq__share{text-align:center;margin-top:36px;padding-top:28px;border-top:1px solid var(--border)}
+  .vbq__share p{margin:0 0 14px;color:var(--mute);font-size:14px}
+  .vbq__share-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+  .vbq__share-btn{padding:10px 20px;background:var(--tint);border:1px solid #d8e8d4;border-radius:99px;color:var(--g2);text-decoration:none;font-size:13px;font-weight:600;cursor:pointer;transition:.2s}
+  .vbq__share-btn:hover{background:var(--g);color:#fff;border-color:var(--g)}
+  .vbq__hint{font-size:13px;color:var(--mute);margin:-14px 0 16px;font-style:italic}
 </style>
 
-<div class="vbq" id="vbq" data-omnisend-key="{{ section.settings.omnisend_api_key }}" data-collection-handle="{{ section.settings.fallback_collection | default: 'all' }}">
-  <div class="vbq__shell">
-    <div class="vbq__bar" id="vbq-bar" style="display:none"><div class="vbq__bar-fill" id="vbq-fill" style="width:0%"></div></div>
+<div class="vbq" id="vbq" data-omnisend-key="{{ section.settings.omnisend_api_key }}" data-quiz-name="{{ section.settings.quiz_name | default: 'BioMatch' }}">
+  {%- comment -%} ============ Sticky progress bar (only shows during quiz) ============ {%- endcomment -%}
+  <div class="vbq__progress" id="vbq-progress">
+    <button class="vbq__exit" onclick="VBQ.exit()" aria-label="Exit quiz">✕</button>
+    <div class="vbq__progress-track"><div class="vbq__progress-fill" id="vbq-fill" style="width:0%"></div></div>
+    <div class="vbq__progress-label">Step <strong id="vbq-step">1</strong> / 7</div>
+  </div>
 
-    {%- comment -%} ============ STEP 0: HERO START ============ {%- endcomment -%}
-    <section class="vbq__step is-active vbq__hero" data-step="start">
-      <div class="vbq__eyebrow">{{ section.settings.eyebrow | default: 'The Velobiotics V-Check' }}</div>
-      <h1 class="vbq__h">{{ section.settings.hero_title_pre | default: 'Find your' }} <span class="vbq__hl">{{ section.settings.hero_title_highlight | default: 'perfect probiotic' }}</span>.</h1>
-      <p class="vbq__sub">{{ section.settings.hero_sub | default: '7 quick questions. 60 seconds. A personalised recommendation from our gut-health doctors — backed by the Velobiotics™ MEP science.' }}</p>
-      <button class="vbq__btn vbq__btn--prime" onclick="VBQ.next()" style="max-width:320px;width:100%">{{ section.settings.cta_start | default: 'Start the V-Check →' }}</button>
-      <div class="vbq__badges">
-        <div class="vbq__badge"><div class="vbq__badge-icon">⏱</div> 60 seconds</div>
-        <div class="vbq__badge"><div class="vbq__badge-icon">🩺</div> Doctor-built</div>
-        <div class="vbq__badge"><div class="vbq__badge-icon">💚</div> 100% free</div>
+  <div class="vbq__shell">
+
+    {%- comment -%} ============ STEP 0: HERO (femina.care style) ============ {%- endcomment -%}
+    <section class="vbq__step is-active" data-step="start">
+      <div class="vbq__hero">
+        <div class="vbq__hero-bg">
+          <img src="{{ section.settings.hero_image_url | default: 'https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_111648_3fbd3644-aa6e-4f4d-8cdc-d92377a17835.png' }}" alt="" loading="eager">
+        </div>
+        <div class="vbq__hero-content">
+          <div class="vbq__hero-eyebrow">{{ section.settings.eyebrow | default: 'The Velobiotics BioMatch' }}</div>
+          <h1 class="vbq__hero-title">{{ section.settings.hero_title_pre | default: 'Find your' }}<span class="vbq__hl">{{ section.settings.hero_title_highlight | default: 'perfect probiotic.' }}</span></h1>
+          <p class="vbq__hero-sub">{{ section.settings.hero_sub | default: '7 quick questions. 60 seconds. A personalised stack — built by doctors, backed by Velobiotics™ MEP science.' }}</p>
+          <button class="vbq__hero-cta" onclick="VBQ.start()">{{ section.settings.cta_start | default: 'Start the BioMatch' }}</button>
+          <div class="vbq__hero-meta">
+            <span class="meta-time">60 seconds</span>
+            <span class="meta-md">Doctor-built</span>
+            <span class="meta-free">100% free</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    {%- comment -%} ============ STEP 1: WHO ============ {%- endcomment -%}
+    {%- comment -%} ============ Q1: WHO ============ {%- endcomment -%}
     <section class="vbq__step" data-step="q" data-key="who">
       <div class="vbq__eyebrow">Question 1 of 7</div>
       <h2 class="vbq__h">Who is this <span class="vbq__hl">for?</span></h2>
@@ -105,45 +161,54 @@
       <div class="vbq__nav"><button class="vbq__btn vbq__btn--ghost" onclick="VBQ.prev()">← Back</button><button class="vbq__btn vbq__btn--prime" onclick="VBQ.next()" disabled>Continue</button></div>
     </section>
 
-    {%- comment -%} ============ STEP 2: SEX ============ {%- endcomment -%}
+    {%- comment -%} ============ Q2: SEX (early — drives all gender-locked rec logic) ============ {%- endcomment -%}
     <section class="vbq__step" data-step="q" data-key="sex">
       <div class="vbq__eyebrow">Question 2 of 7</div>
-      <h2 class="vbq__h">Tell us about <span class="vbq__hl">biological sex.</span></h2>
-      <p class="vbq__sub">Some of our formulations are body-specific — this helps us match the right one.</p>
-      <div class="vbq__opts cols-3">
-        <button class="vbq__opt" data-val="female"><span class="vbq__opt-icon">♀</span><span class="vbq__opt-text">Female</span><span class="vbq__check"></span></button>
-        <button class="vbq__opt" data-val="male"><span class="vbq__opt-icon">♂</span><span class="vbq__opt-text">Male</span><span class="vbq__check"></span></button>
-        <button class="vbq__opt" data-val="any"><span class="vbq__opt-icon">⚧</span><span class="vbq__opt-text">Prefer not to say</span><span class="vbq__check"></span></button>
+      <h2 class="vbq__h">Biological <span class="vbq__hl">sex?</span></h2>
+      <p class="vbq__sub">Some of our formulas are body-specific — this helps us match the right one. We honour all identities; biology guides the science.</p>
+      <div class="vbq__opts cols-2">
+        <button class="vbq__opt" data-val="female"><span class="vbq__opt-icon">♀</span><span class="vbq__opt-text">Female<small>Femina + Her-Biotics</small></span><span class="vbq__check"></span></button>
+        <button class="vbq__opt" data-val="male"><span class="vbq__opt-icon">♂</span><span class="vbq__opt-text">Male<small>His-Biotics + Velo16</small></span><span class="vbq__check"></span></button>
       </div>
       <div class="vbq__nav"><button class="vbq__btn vbq__btn--ghost" onclick="VBQ.prev()">← Back</button><button class="vbq__btn vbq__btn--prime" onclick="VBQ.next()" disabled>Continue</button></div>
     </section>
 
-    {%- comment -%} ============ STEP 3: AGE ============ {%- endcomment -%}
+    {%- comment -%} ============ INTERSTITIAL 1: post-sex personalised greeting ============ {%- endcomment -%}
+    <section class="vbq__step" data-step="inter" data-after="sex">
+      <div class="vbq__inter">
+        <span class="vbq__inter-emoji" id="vbq-i1-emoji">💚</span>
+        <h3 class="vbq__inter-h" id="vbq-i1-h">Got it.</h3>
+        <p class="vbq__inter-sub" id="vbq-i1-sub">We'll match you with formulas built specifically for your body's biology.</p>
+        <button class="vbq__btn vbq__btn--prime" onclick="VBQ.next()" style="max-width:280px;width:100%">Continue →</button>
+      </div>
+    </section>
+
+    {%- comment -%} ============ Q3: AGE ============ {%- endcomment -%}
     <section class="vbq__step" data-step="q" data-key="age">
       <div class="vbq__eyebrow">Question 3 of 7</div>
-      <h2 class="vbq__h">What is your <span class="vbq__hl">age range?</span></h2>
+      <h2 class="vbq__h">What's your <span class="vbq__hl">age range?</span></h2>
       <p class="vbq__sub">Nutritional needs shift with every life stage.</p>
       <div class="vbq__opts cols-2">
-        <button class="vbq__opt" data-val="under18"><span class="vbq__opt-icon">🧒</span><span class="vbq__opt-text">Under 18 <small>BioKid range</small></span><span class="vbq__check"></span></button>
-        <button class="vbq__opt" data-val="18_30"><span class="vbq__opt-icon">🌱</span><span class="vbq__opt-text">18 – 30 <small>Early adult</small></span><span class="vbq__check"></span></button>
-        <button class="vbq__opt" data-val="30_45"><span class="vbq__opt-icon">⚡</span><span class="vbq__opt-text">30 – 45 <small>Peak years</small></span><span class="vbq__check"></span></button>
-        <button class="vbq__opt" data-val="45_60"><span class="vbq__opt-icon">🌿</span><span class="vbq__opt-text">45 – 60 <small>Hormone shift</small></span><span class="vbq__check"></span></button>
-        <button class="vbq__opt" data-val="over60"><span class="vbq__opt-icon">🌟</span><span class="vbq__opt-text">60+ <small>Ageless wellness</small></span><span class="vbq__check"></span></button>
+        <button class="vbq__opt" data-val="under18"><span class="vbq__opt-icon">🧒</span><span class="vbq__opt-text">Under 18<small>BioKid range</small></span><span class="vbq__check"></span></button>
+        <button class="vbq__opt" data-val="18_30"><span class="vbq__opt-icon">🌱</span><span class="vbq__opt-text">18 – 30<small>Early adult</small></span><span class="vbq__check"></span></button>
+        <button class="vbq__opt" data-val="30_45"><span class="vbq__opt-icon">⚡</span><span class="vbq__opt-text">30 – 45<small>Peak years</small></span><span class="vbq__check"></span></button>
+        <button class="vbq__opt" data-val="45_60"><span class="vbq__opt-icon">🌿</span><span class="vbq__opt-text">45 – 60<small>Hormone shift</small></span><span class="vbq__check"></span></button>
+        <button class="vbq__opt" data-val="over60"><span class="vbq__opt-icon">🌟</span><span class="vbq__opt-text">60+<small>Ageless wellness</small></span><span class="vbq__check"></span></button>
       </div>
       <div class="vbq__nav"><button class="vbq__btn vbq__btn--ghost" onclick="VBQ.prev()">← Back</button><button class="vbq__btn vbq__btn--prime" onclick="VBQ.next()" disabled>Continue</button></div>
     </section>
 
-    {%- comment -%} ============ STEP 4: PRIMARY GOAL ============ {%- endcomment -%}
+    {%- comment -%} ============ Q4: GOAL (gender-aware options) ============ {%- endcomment -%}
     <section class="vbq__step" data-step="q" data-key="goal" data-multi="true" data-max="2">
       <div class="vbq__eyebrow">Question 4 of 7</div>
-      <h2 class="vbq__h">What's your <span class="vbq__hl">top wellness goal?</span></h2>
+      <h2 class="vbq__h">Your top <span class="vbq__hl">wellness goal?</span></h2>
       <p class="vbq__sub">Pick up to 2 — we'll prioritise these.</p>
-      <p class="vbq__hint">You can select 2 goals.</p>
-      <div class="vbq__opts cols-2">
+      <p class="vbq__hint">You can select up to 2 goals.</p>
+      <div class="vbq__opts cols-2" id="vbq-goal-opts">
         <button class="vbq__opt" data-val="gut"><span class="vbq__opt-icon">🦠</span><span class="vbq__opt-text">Gut & digestion</span><span class="vbq__check"></span></button>
         <button class="vbq__opt" data-val="weight"><span class="vbq__opt-icon">⚖️</span><span class="vbq__opt-text">Weight management</span><span class="vbq__check"></span></button>
-        <button class="vbq__opt" data-val="intimate"><span class="vbq__opt-icon">🌸</span><span class="vbq__opt-text">Intimate health</span><span class="vbq__check"></span></button>
-        <button class="vbq__opt" data-val="pregnancy"><span class="vbq__opt-icon">🤰</span><span class="vbq__opt-text">Pregnancy & fertility</span><span class="vbq__check"></span></button>
+        <button class="vbq__opt" data-val="intimate" data-female-only="true"><span class="vbq__opt-icon">🌸</span><span class="vbq__opt-text">Intimate health</span><span class="vbq__check"></span></button>
+        <button class="vbq__opt" data-val="pregnancy" data-female-only="true"><span class="vbq__opt-icon">🤰</span><span class="vbq__opt-text">Pregnancy & fertility</span><span class="vbq__check"></span></button>
         <button class="vbq__opt" data-val="energy"><span class="vbq__opt-icon">⚡</span><span class="vbq__opt-text">Energy & performance</span><span class="vbq__check"></span></button>
         <button class="vbq__opt" data-val="immune"><span class="vbq__opt-icon">🛡️</span><span class="vbq__opt-text">Immunity & daily wellness</span><span class="vbq__check"></span></button>
         <button class="vbq__opt" data-val="calm"><span class="vbq__opt-icon">🧘</span><span class="vbq__opt-text">Calm, sleep & focus</span><span class="vbq__check"></span></button>
@@ -154,17 +219,29 @@
       <div class="vbq__nav"><button class="vbq__btn vbq__btn--ghost" onclick="VBQ.prev()">← Back</button><button class="vbq__btn vbq__btn--prime" onclick="VBQ.next()" disabled>Continue</button></div>
     </section>
 
-    {%- comment -%} ============ STEP 5: SYMPTOM ============ {%- endcomment -%}
+    {%- comment -%} ============ INTERSTITIAL 2: post-goal "we get it" ============ {%- endcomment -%}
+    <section class="vbq__step" data-step="inter" data-after="goal">
+      <div class="vbq__inter">
+        <span class="vbq__inter-emoji" id="vbq-i2-emoji">🙌</span>
+        <h3 class="vbq__inter-h" id="vbq-i2-h">You're not alone.</h3>
+        <div class="vbq__inter-stat" id="vbq-i2-stat"><strong>50,000+</strong><small>have walked this path with Velobiotics</small></div>
+        <p class="vbq__inter-sub" id="vbq-i2-sub">Almost done — just a couple more questions to lock in your best stack.</p>
+        <button class="vbq__btn vbq__btn--prime" onclick="VBQ.next()" style="max-width:280px;width:100%">Continue →</button>
+      </div>
+    </section>
+
+    {%- comment -%} ============ Q5: SYMPTOM (gender-aware filter) ============ {%- endcomment -%}
     <section class="vbq__step" data-step="q" data-key="symptom">
       <div class="vbq__eyebrow">Question 5 of 7</div>
-      <h2 class="vbq__h">What's bothering you <span class="vbq__hl">the most?</span></h2>
-      <p class="vbq__sub">Pick the one symptom that feels most urgent right now.</p>
-      <div class="vbq__opts cols-2">
+      <h2 class="vbq__h">What's bothering you <span class="vbq__hl">most?</span></h2>
+      <p class="vbq__sub">Pick the symptom that feels most urgent right now.</p>
+      <div class="vbq__opts cols-2" id="vbq-symptom-opts">
         <button class="vbq__opt" data-val="bloat"><span class="vbq__opt-icon">💨</span><span class="vbq__opt-text">Bloating / digestion</span><span class="vbq__check"></span></button>
         <button class="vbq__opt" data-val="fatigue"><span class="vbq__opt-icon">😴</span><span class="vbq__opt-text">Low energy / fatigue</span><span class="vbq__check"></span></button>
         <button class="vbq__opt" data-val="stress"><span class="vbq__opt-icon">😰</span><span class="vbq__opt-text">Stress / poor sleep</span><span class="vbq__check"></span></button>
-        <button class="vbq__opt" data-val="bv_yeast"><span class="vbq__opt-icon">🌸</span><span class="vbq__opt-text">Recurring BV / yeast</span><span class="vbq__check"></span></button>
-        <button class="vbq__opt" data-val="pms"><span class="vbq__opt-icon">💢</span><span class="vbq__opt-text">PMS / menopause</span><span class="vbq__check"></span></button>
+        <button class="vbq__opt" data-val="bv_yeast" data-female-only="true"><span class="vbq__opt-icon">🌸</span><span class="vbq__opt-text">Recurring BV / yeast</span><span class="vbq__check"></span></button>
+        <button class="vbq__opt" data-val="pms" data-female-only="true"><span class="vbq__opt-icon">💢</span><span class="vbq__opt-text">PMS / menopause</span><span class="vbq__check"></span></button>
+        <button class="vbq__opt" data-val="low_t" data-male-only="true"><span class="vbq__opt-icon">💪</span><span class="vbq__opt-text">Low drive / vitality</span><span class="vbq__check"></span></button>
         <button class="vbq__opt" data-val="weight_stuck"><span class="vbq__opt-icon">📉</span><span class="vbq__opt-text">Weight won't shift</span><span class="vbq__check"></span></button>
         <button class="vbq__opt" data-val="immunity_low"><span class="vbq__opt-icon">🤒</span><span class="vbq__opt-text">Getting sick often</span><span class="vbq__check"></span></button>
         <button class="vbq__opt" data-val="skin"><span class="vbq__opt-icon">✨</span><span class="vbq__opt-text">Skin / hair issues</span><span class="vbq__check"></span></button>
@@ -174,50 +251,60 @@
       <div class="vbq__nav"><button class="vbq__btn vbq__btn--ghost" onclick="VBQ.prev()">← Back</button><button class="vbq__btn vbq__btn--prime" onclick="VBQ.next()" disabled>Continue</button></div>
     </section>
 
-    {%- comment -%} ============ STEP 6: DIET ============ {%- endcomment -%}
+    {%- comment -%} ============ Q6: DIET ============ {%- endcomment -%}
     <section class="vbq__step" data-step="q" data-key="diet" data-multi="true" data-max="4">
       <div class="vbq__eyebrow">Question 6 of 7</div>
       <h2 class="vbq__h">Any dietary <span class="vbq__hl">preferences?</span></h2>
-      <p class="vbq__sub">All Velobiotics products are SAHPRA-compliant. This just helps us flag formulations.</p>
+      <p class="vbq__sub">All Velobiotics products are clean-label. This just helps us highlight the right formulas.</p>
       <p class="vbq__hint">Select all that apply.</p>
       <div class="vbq__opts cols-2">
         <button class="vbq__opt" data-val="none"><span class="vbq__opt-icon">🍽️</span><span class="vbq__opt-text">No restrictions</span><span class="vbq__check"></span></button>
         <button class="vbq__opt" data-val="vegan"><span class="vbq__opt-icon">🌱</span><span class="vbq__opt-text">Vegan / Vegetarian</span><span class="vbq__check"></span></button>
-        <button class="vbq__opt" data-val="halaal"><span class="vbq__opt-icon">☪️</span><span class="vbq__opt-text">Halaal</span><span class="vbq__check"></span></button>
+        <button class="vbq__opt" data-val="halaal"><span class="vbq__opt-icon">☪️</span><span class="vbq__opt-text">Halaal / Kosher</span><span class="vbq__check"></span></button>
         <button class="vbq__opt" data-val="gluten_free"><span class="vbq__opt-icon">🌾</span><span class="vbq__opt-text">Gluten-free</span><span class="vbq__check"></span></button>
         <button class="vbq__opt" data-val="dairy_free"><span class="vbq__opt-icon">🥛</span><span class="vbq__opt-text">Dairy / lactose-free</span><span class="vbq__check"></span></button>
-        <button class="vbq__opt" data-val="pregnant"><span class="vbq__opt-icon">🤰</span><span class="vbq__opt-text">Pregnant / breastfeeding</span><span class="vbq__check"></span></button>
+        <button class="vbq__opt" data-val="pregnant" data-female-only="true"><span class="vbq__opt-icon">🤰</span><span class="vbq__opt-text">Pregnant / breastfeeding</span><span class="vbq__check"></span></button>
       </div>
       <div class="vbq__nav"><button class="vbq__btn vbq__btn--ghost" onclick="VBQ.prev()">← Back</button><button class="vbq__btn vbq__btn--prime" onclick="VBQ.next()" disabled>Continue</button></div>
     </section>
 
-    {%- comment -%} ============ STEP 7: EXPERIENCE ============ {%- endcomment -%}
+    {%- comment -%} ============ Q7: EXPERIENCE ============ {%- endcomment -%}
     <section class="vbq__step" data-step="q" data-key="experience">
       <div class="vbq__eyebrow">Question 7 of 7</div>
-      <h2 class="vbq__h">Have you tried <span class="vbq__hl">probiotics before?</span></h2>
+      <h2 class="vbq__h">Tried <span class="vbq__hl">probiotics before?</span></h2>
       <p class="vbq__sub">We'll tune the explanation to where you're starting from.</p>
       <div class="vbq__opts cols-3">
-        <button class="vbq__opt" data-val="new"><span class="vbq__opt-icon">🌱</span><span class="vbq__opt-text">Never <small>I'm new to this</small></span><span class="vbq__check"></span></button>
-        <button class="vbq__opt" data-val="tried"><span class="vbq__opt-icon">🤔</span><span class="vbq__opt-text">Tried some <small>Didn't work</small></span><span class="vbq__check"></span></button>
-        <button class="vbq__opt" data-val="experienced"><span class="vbq__opt-icon">💪</span><span class="vbq__opt-text">Daily user <small>Looking to upgrade</small></span><span class="vbq__check"></span></button>
+        <button class="vbq__opt" data-val="new"><span class="vbq__opt-icon">🌱</span><span class="vbq__opt-text">Never<small>I'm new</small></span><span class="vbq__check"></span></button>
+        <button class="vbq__opt" data-val="tried"><span class="vbq__opt-icon">🤔</span><span class="vbq__opt-text">Tried some<small>Didn't work</small></span><span class="vbq__check"></span></button>
+        <button class="vbq__opt" data-val="experienced"><span class="vbq__opt-icon">💪</span><span class="vbq__opt-text">Daily user<small>Upgrading</small></span><span class="vbq__check"></span></button>
       </div>
       <div class="vbq__nav"><button class="vbq__btn vbq__btn--ghost" onclick="VBQ.prev()">← Back</button><button class="vbq__btn vbq__btn--prime" onclick="VBQ.next()" disabled>See my results →</button></div>
     </section>
 
-    {%- comment -%} ============ STEP 8: LEAD CAPTURE ============ {%- endcomment -%}
+    {%- comment -%} ============ INTERSTITIAL 3: pre-lead encouragement ============ {%- endcomment -%}
+    <section class="vbq__step" data-step="inter" data-after="experience">
+      <div class="vbq__inter">
+        <span class="vbq__inter-emoji">🎯</span>
+        <h3 class="vbq__inter-h">Your <span class="vbq__hl">stack is ready.</span></h3>
+        <p class="vbq__inter-sub">Just one last step — tell us where to send your personalised plan + free 7-day wellness email series.</p>
+        <button class="vbq__btn vbq__btn--prime" onclick="VBQ.next()" style="max-width:280px;width:100%">Show me my results →</button>
+      </div>
+    </section>
+
+    {%- comment -%} ============ Lead capture ============ {%- endcomment -%}
     <section class="vbq__step" data-step="lead">
       <div class="vbq__eyebrow">Almost there</div>
       <h2 class="vbq__h">Where should we send your <span class="vbq__hl">personalised plan?</span></h2>
-      <p class="vbq__sub">{{ section.settings.lead_sub | default: 'Get your recommendation plus a free 7-day gut reset email series, science guides, and exclusive subscriber pricing.' }}</p>
+      <p class="vbq__sub">{{ section.settings.lead_sub | default: 'Get your recommendation plus a free 7-day wellness email series, science guides, and exclusive subscriber pricing.' }}</p>
       <form id="vbq-lead" onsubmit="event.preventDefault();VBQ.submitLead()">
-        <div class="vbq__field"><label for="vbq-name">Your first name</label><input class="vbq__input" type="text" id="vbq-name" required placeholder="e.g. Lerato"></div>
+        <div class="vbq__field"><label for="vbq-name">Your first name</label><input class="vbq__input" type="text" id="vbq-name" required placeholder="e.g. Sarah"></div>
         <div class="vbq__field"><label for="vbq-email">Email address</label><input class="vbq__input" type="email" id="vbq-email" required placeholder="you@example.com"></div>
         <button type="submit" class="vbq__btn vbq__btn--prime" style="width:100%" id="vbq-lead-btn">Show my recommendation →</button>
-        <p class="vbq__legal">By continuing you agree to receive emails from Velobiotics. Unsubscribe anytime. We respect your privacy — see our <a href="/policies/privacy-policy">privacy policy</a>.</p>
+        <p class="vbq__legal">By continuing you agree to receive emails from Velobiotics. Unsubscribe anytime. See our <a href="/policies/privacy-policy">privacy policy</a>.</p>
       </form>
     </section>
 
-    {%- comment -%} ============ STEP 9: LOADING ============ {%- endcomment -%}
+    {%- comment -%} ============ Loading ============ {%- endcomment -%}
     <section class="vbq__step" data-step="loading">
       <div class="vbq__loader">
         <div class="vbq__spinner"></div>
@@ -225,16 +312,16 @@
       </div>
     </section>
 
-    {%- comment -%} ============ STEP 10: RESULTS ============ {%- endcomment -%}
+    {%- comment -%} ============ Results ============ {%- endcomment -%}
     <section class="vbq__step" data-step="results">
       <div class="vbq__results-header">
-        <div class="vbq__eyebrow">Your V-Check Results</div>
-        <h2 class="vbq__h"><span id="vbq-greet">Here's your</span> <span class="vbq__hl">personalised stack</span>.</h2>
+        <div class="vbq__eyebrow">Your BioMatch Results</div>
+        <h2 class="vbq__h"><span id="vbq-greet">Here's your</span> <span class="vbq__hl">personalised stack.</span></h2>
       </div>
       <div class="vbq__profile" id="vbq-profile"></div>
       <div id="vbq-recs"></div>
       <div class="vbq__share">
-        <p>Share your V-Check or save for later</p>
+        <p>Share your BioMatch or save for later</p>
         <div class="vbq__share-btns">
           <a class="vbq__share-btn" href="javascript:VBQ.shareWhatsApp()">📱 WhatsApp</a>
           <a class="vbq__share-btn" href="javascript:VBQ.copyLink()">🔗 Copy link</a>
@@ -247,152 +334,227 @@
 
 <script>
 (function(){
-  /* ============================================================
-   * VB Quiz Engine — recommendation scoring + UTM + Omnisend
-   * ============================================================ */
-  const STEPS = ['start','who','sex','age','goal','symptom','diet','experience','lead','loading','results'];
-  const STATE = { idx:0, answers:{}, recs:[], startTime:Date.now(), quizId:'v-check-2026', sessionId:null };
+  const STEPS = ['start','q-who','q-sex','inter-sex','q-age','q-goal','inter-goal','q-symptom','q-diet','q-experience','inter-experience','lead','loading','results'];
+  const QUIZ_NAME = 'BioMatch';
+  const STATE = { idx:0, answers:{}, recs:[], startTime:Date.now(), quizId:'biomatch-2026', sessionId:null };
   const $ = (s,c=document)=>c.querySelector(s);
   const $$ = (s,c=document)=>Array.from(c.querySelectorAll(s));
 
-  /* ---- Product catalogue (handle → metadata) ---- */
+  /* ---- Product catalogue (handle → metadata + gender) ---- */
   const CATALOG = {
-    'femina-probiotic-capsules-with-cranberry-for-women': {brand:'Femina™', title:'Femina™ Probiotic Capsules + Cranberry', price:'R 299.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/FEMINA-60s.jpg?v=1775328667'},
-    'femina-probiotics-cookie-fresh-with-boric-acid-suppositories': {brand:'Femina™', title:'Femina™ Cookie Fresh Boric+Probiotic Suppositories', price:'R 399.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Front-Femina-COOKIE-FRESH-Transparent.png?v=1775328725'},
-    'femina-intimate-starter-pack': {brand:'Femina™', title:'Femina Intimate Reset Kit (Starter)', price:'R 619.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/FeminaIntimateHealthStarterPack.png?v=1775328667'},
-    'femina-ph-self-test-kit-for-vaginal-infections': {brand:'Femina™', title:'Femina Self-Test pH Kit', price:'R 199.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Femina-Kit-1000x1336.jpg?v=1772290471'},
-    'femina-mini-combo': {brand:'Femina™', title:'Femina Mini Combo', price:'R 359.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/WhatsApp-Image-2024-10-07-at-11.50.30_8a2e6af9-da3e-4803-8e73-eda725942526.jpg?v=1775328725'},
-    'her-biotics-original-capsules-60s': {brand:'Her-Biotics™', title:'Her-Biotics™ Original Multivitamin', price:'R 299.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/4_transparent_Realistic_3D_product_mockup_2.png?v=1775328607'},
-    'his-biotics-probiotics-original-multivitamins-capsules-60s': {brand:'His-Biotics™', title:'His-Biotics™ Original Multivitamin', price:'R 349.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/1_transparent_Realistic_3D_product_mockup_5.png?v=1775328665'},
-    'velo16-probiotic-digestive-capsules': {brand:'Velo16™', title:'Velo16™ Probiotic Digestive Capsules', price:'R 299.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/VELO16-60s.jpg?v=1775328668'},
-    'velo16-probiotics-ashwagandha': {brand:'Velo16™', title:'Velo16™ Ashwagandha KSM-66', price:'R 299.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/AshwagandhaRealistic3DFrontView.png?v=1775328608'},
-    'velo16-probiotics-calcium-magnesium': {brand:'Velo16™', title:'Velo16™ Calcium & Magnesium', price:'R 299.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Calcium_MagnesiumRealistic3DFrontView.png?v=1775328607'},
-    'velo16-probiotics-fulvic-acid': {brand:'Velo16™', title:'Velo16™ Fulvic Acid', price:'R 349.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/FulvicAcidRealistic3DFrontView.png?v=1775328666'},
-    'gutslim-probiotics-tummy-toner': {brand:'GutSlim™', title:'GutSlim™ Tummy Toner', price:'R 349.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Tummy_Toner.jpg?v=1775328667'},
-    '14-day-gut-reboot-starter-pack': {brand:'GutSlim™', title:'14-Day GutSlim Reboot Starter Pack', price:'R 799.50', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/14_Day_Gut_Reboot_Right-Facing.png?v=1775328667'},
-    '6-week-total-transformation-pack': {brand:'GutSlim™', title:'6-Week GutSlim Transformation Pack', price:'R 1 990.50', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/6-wk_-_Right_Facing.png?v=1775328668'},
-    'probiotics-protein-collagen-peptides-skin-hair-nails': {brand:'Almasi™', title:'Almasi™ Collagen Peptides 30s', price:'R 269.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Collagen_30_Capsules-1000x1000-1.png?v=1775328607'},
-    'her-glow-combo': {brand:'Her-Biotics™', title:'Her Glow Combo', price:'R 569.90', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Concept49-Editable11.png?v=1775328606'},
-    'c-essentials-kit': {brand:'PregBiotics™', title:'TC-Essentials Pregnancy Kit', price:'R 509.90', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Concept3-Editable11_6.png?v=1775328607'},
-    'calm-nights-bundle-magnesium-glycinate-ashwagandha-gut-calm-support': {brand:'Velo16™', title:'Calm Nights Bundle (Magnesium + Ashwagandha)', price:'R 509.92', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Velo16_probioticsupplementbundle_36686f53-aae5-46dd-8fd9-a2fc1524dfd7.png?v=1775328607'},
-    'family-health-bundle': {brand:'Family', title:'Family Gut-Health Bundle', price:'R 764.87', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Family_Health_Bundle_2.png?v=1775328666'},
-    'femina-combo-care': {brand:'Femina™', title:'Femina Combo Care', price:'R 499.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Femina_Combo_Care_1.png?v=1775328668'}
+    /* Femina + Her-Biotics — FEMALE only */
+    'femina-probiotic-capsules-with-cranberry-for-women': {brand:'Femina™', title:'Femina™ Probiotic Capsules + Cranberry', price:'$19.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/FEMINA-60s.jpg?v=1775328667', sex:'female'},
+    'femina-probiotics-cookie-fresh-with-boric-acid-suppositories': {brand:'Femina™', title:'Femina™ Cookie Fresh Boric+Probiotic Suppositories', price:'$26.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Front-Femina-COOKIE-FRESH-Transparent.png?v=1775328725', sex:'female'},
+    'femina-intimate-starter-pack': {brand:'Femina™', title:'Femina Intimate Reset Kit', price:'$42.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/FeminaIntimateHealthStarterPack.png?v=1775328667', sex:'female'},
+    'femina-ph-self-test-kit-for-vaginal-infections': {brand:'Femina™', title:'Femina Self-Test pH Kit', price:'$12.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Femina-Kit-1000x1336.jpg?v=1772290471', sex:'female'},
+    'femina-mini-combo': {brand:'Femina™', title:'Femina Mini Combo', price:'$23.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/WhatsApp-Image-2024-10-07-at-11.50.30_8a2e6af9-da3e-4803-8e73-eda725942526.jpg?v=1775328725', sex:'female'},
+    'femina-combo-care': {brand:'Femina™', title:'Femina Combo Care', price:'$32.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Femina_Combo_Care_1.png?v=1775328668', sex:'female'},
+    'her-biotics-original-capsules-60s': {brand:'Her-Biotics™', title:'Her-Biotics™ Original Multivitamin', price:'$19.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/4_transparent_Realistic_3D_product_mockup_2.png?v=1775328607', sex:'female'},
+    'her-glow-combo': {brand:'Her-Biotics™', title:'Her Glow Combo', price:'$37.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Concept49-Editable11.png?v=1775328606', sex:'female'},
+    'c-essentials-kit': {brand:'PregBiotics™', title:'PregBiotics Essentials Kit', price:'$33.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Concept3-Editable11_6.png?v=1775328607', sex:'female'},
+    /* His-Biotics — MALE only */
+    'his-biotics-probiotics-original-multivitamins-capsules-60s': {brand:'His-Biotics™', title:'His-Biotics™ Original Multivitamin', price:'$22.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/1_transparent_Realistic_3D_product_mockup_5.png?v=1775328665', sex:'male'},
+    /* Velo16, GutSlim, Almasi — UNISEX */
+    'velo16-probiotic-digestive-capsules': {brand:'Velo16™', title:'Velo16™ Probiotic Digestive Capsules', price:'$19.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/VELO16-60s.jpg?v=1775328668', sex:'unisex'},
+    'velo16-probiotics-ashwagandha': {brand:'Velo16™', title:'Velo16™ Ashwagandha KSM-66', price:'$19.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/AshwagandhaRealistic3DFrontView.png?v=1775328608', sex:'unisex'},
+    'velo16-probiotics-calcium-magnesium': {brand:'Velo16™', title:'Velo16™ Calcium & Magnesium', price:'$19.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Calcium_MagnesiumRealistic3DFrontView.png?v=1775328607', sex:'unisex'},
+    'velo16-probiotics-fulvic-acid': {brand:'Velo16™', title:'Velo16™ Fulvic Acid', price:'$22.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/FulvicAcidRealistic3DFrontView.png?v=1775328666', sex:'unisex'},
+    'gutslim-probiotics-tummy-toner': {brand:'GutSlim™', title:'GutSlim™ Tummy Toner', price:'$22.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Tummy_Toner.jpg?v=1775328667', sex:'unisex'},
+    '14-day-gut-reboot-starter-pack': {brand:'GutSlim™', title:'14-Day GutSlim Reboot', price:'$52.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/14_Day_Gut_Reboot_Right-Facing.png?v=1775328667', sex:'unisex'},
+    '6-week-total-transformation-pack': {brand:'GutSlim™', title:'6-Week GutSlim Transformation', price:'$129.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/6-wk_-_Right_Facing.png?v=1775328668', sex:'unisex'},
+    'probiotics-protein-collagen-peptides-skin-hair-nails': {brand:'Almasi™', title:'Almasi™ Collagen Peptides', price:'$17.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Collagen_30_Capsules-1000x1000-1.png?v=1775328607', sex:'unisex'},
+    'calm-nights-bundle-magnesium-glycinate-ashwagandha-gut-calm-support': {brand:'Velo16™', title:'Calm Nights Bundle', price:'$33.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Velo16_probioticsupplementbundle_36686f53-aae5-46dd-8fd9-a2fc1524dfd7.png?v=1775328607', sex:'unisex'},
+    'family-health-bundle': {brand:'Family', title:'Family Gut-Health Bundle', price:'$49.95', img:'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Family_Health_Bundle_2.png?v=1775328666', sex:'unisex'}
   };
 
-  /* ---- Recommendation engine ---- */
+  /* ---- Recommendation engine — STRICT gender lock ---- */
   function recommend(a){
-    /* Scoring map: each (signal, value) → list of {handle, score, reason} */
-    const scores = {};   // handle → total score
-    const reasons = {};  // handle → reason chosen
-    const sex = a.sex || 'any';
-    const goals = Array.isArray(a.goal) ? a.goal : (a.goal ? [a.goal] : []);
-    const goal = goals[0];
+    const scores={}, reasons={};
+    const sex = a.sex; /* always set */
+    const goals = Array.isArray(a.goal)?a.goal:(a.goal?[a.goal]:[]);
     const sym = a.symptom;
     const age = a.age;
     const who = a.who;
-    const exp = a.experience;
 
     function bump(handle, n, why){
-      scores[handle] = (scores[handle] || 0) + n;
-      if(!reasons[handle] || n >= 5) reasons[handle] = why;
+      const p = CATALOG[handle];
+      if(!p) return;
+      /* STRICT GENDER LOCK: never recommend a sex-locked product to the wrong sex */
+      if(p.sex==='female' && sex!=='female') return;
+      if(p.sex==='male' && sex!=='male') return;
+      scores[handle]=(scores[handle]||0)+n;
+      if(!reasons[handle] || n>=5) reasons[handle]=why;
     }
 
-    /* --- Goal-based scoring --- */
+    /* Goal-based */
     goals.forEach(g=>{
-      if(g==='gut') { bump('velo16-probiotic-digestive-capsules', 8, 'Velo16™ Probiotic Digestive Capsules — daily 16-strain probiotic for gut comfort, less bloat, better digestion.'); }
-      if(g==='weight'){ bump('gutslim-probiotics-tummy-toner', 8, 'GutSlim™ Tummy Toner — GLP-1-style appetite control + probiotic synergy for weight management.'); bump('14-day-gut-reboot-starter-pack', 5, '14-Day GutSlim Reboot — kick-start the metabolism with a structured 2-week reset.'); }
-      if(g==='intimate' && sex==='female'){ bump('femina-probiotic-capsules-with-cranberry-for-women', 10, 'Femina™ Probiotic Capsules + Cranberry — daily vaginal pH balance, UTI defence, BV/yeast prevention.'); }
-      if(g==='pregnancy' && sex==='female'){ bump('c-essentials-kit', 10, 'TC-Essentials Pregnancy Kit — pre-conception through breastfeeding, OB-GYN-approved.'); }
-      if(g==='energy'){ bump('his-biotics-probiotics-original-multivitamins-capsules-60s', 6, 'His-Biotics™ Original — daily multivitamin engineered for male energy and recovery.'); if(sex==='female') bump('her-biotics-original-capsules-60s', 8, 'Her-Biotics™ Original — daily multivitamin tuned to female biology with iron and B-complex for energy.'); }
-      if(g==='immune'){ bump('velo16-probiotics-fulvic-acid', 7, 'Velo16™ Fulvic Acid — mineral-rich daily immune booster with 16-strain probiotic.'); }
-      if(g==='calm'){ bump('velo16-probiotics-ashwagandha', 9, 'Velo16™ Ashwagandha KSM-66 — clinical-grade adaptogen for stress, sleep, and mental calm.'); bump('calm-nights-bundle-magnesium-glycinate-ashwagandha-gut-calm-support', 6, 'Calm Nights Bundle — Magnesium + Ashwagandha stacked for deep restorative sleep.'); }
-      if(g==='hormone'){ if(sex==='female') bump('her-biotics-original-capsules-60s', 8, 'Her-Biotics™ Original — hormone-cycle support for women with iron, B6, and probiotics.'); else bump('his-biotics-probiotics-original-multivitamins-capsules-60s', 8, 'His-Biotics™ Original — testosterone-supporting zinc, D3 and 16-strain probiotic blend.'); }
-      if(g==='beauty'){ bump('probiotics-protein-collagen-peptides-skin-hair-nails', 10, 'Almasi™ Collagen Peptides — protein collagen for skin glow, hair strength, nail health.'); if(sex==='female') bump('her-glow-combo', 7, 'Her Glow Combo — Her-Biotics + Collagen for the complete beauty-from-within stack.'); }
-      if(g==='kids'){ bump('family-health-bundle', 9, 'Family Gut-Health Bundle — Velo16 + Femina + BioKid chewables for the whole house.'); }
+      if(g==='gut') bump('velo16-probiotic-digestive-capsules',8,'Velo16™ Probiotic Digestive Capsules — daily 16-strain probiotic for gut comfort, less bloat, better digestion.');
+      if(g==='weight'){bump('gutslim-probiotics-tummy-toner',8,'GutSlim™ Tummy Toner — GLP-1-style appetite control + probiotic synergy for weight management.');bump('14-day-gut-reboot-starter-pack',5,'14-Day GutSlim Reboot — kick-start the metabolism with a structured 2-week reset.');}
+      if(g==='intimate' && sex==='female') bump('femina-probiotic-capsules-with-cranberry-for-women',10,'Femina™ Probiotic Capsules + Cranberry — daily vaginal pH balance, UTI defence, BV/yeast prevention.');
+      if(g==='pregnancy' && sex==='female') bump('c-essentials-kit',10,'PregBiotics Essentials Kit — pre-conception through breastfeeding, OB-GYN-approved.');
+      if(g==='energy'){
+        if(sex==='female') bump('her-biotics-original-capsules-60s',9,'Her-Biotics™ Original — daily multivitamin tuned to female biology with iron and B-complex for energy.');
+        if(sex==='male') bump('his-biotics-probiotics-original-multivitamins-capsules-60s',9,'His-Biotics™ Original — daily multivitamin engineered for male energy and recovery.');
+      }
+      if(g==='immune') bump('velo16-probiotics-fulvic-acid',7,'Velo16™ Fulvic Acid — mineral-rich daily immune booster with 16-strain probiotic.');
+      if(g==='calm'){bump('velo16-probiotics-ashwagandha',9,'Velo16™ Ashwagandha KSM-66 — clinical-grade adaptogen for stress, sleep, and mental calm.');bump('calm-nights-bundle-magnesium-glycinate-ashwagandha-gut-calm-support',6,'Calm Nights Bundle — Magnesium + Ashwagandha stacked for deep restorative sleep.');}
+      if(g==='hormone'){
+        if(sex==='female') bump('her-biotics-original-capsules-60s',8,'Her-Biotics™ Original — hormone-cycle support for women with iron, B6, and probiotics.');
+        if(sex==='male') bump('his-biotics-probiotics-original-multivitamins-capsules-60s',8,'His-Biotics™ Original — testosterone-supporting zinc, D3 and 16-strain probiotic blend.');
+      }
+      if(g==='beauty'){
+        bump('probiotics-protein-collagen-peptides-skin-hair-nails',10,'Almasi™ Collagen Peptides — protein collagen for skin glow, hair strength, nail health.');
+        if(sex==='female') bump('her-glow-combo',7,'Her Glow Combo — Her-Biotics + Collagen for the complete beauty-from-within stack.');
+      }
+      if(g==='kids') bump('family-health-bundle',9,'Family Gut-Health Bundle — Velo16 + Femina + BioKid chewables for the whole house.');
     });
 
-    /* --- Symptom overrides --- */
-    if(sym==='bloat') bump('velo16-probiotic-digestive-capsules', 6, 'Velo16™ Probiotic Digestive Capsules — targeted relief for bloating, gas, and slow digestion.');
-    if(sym==='fatigue' && sex==='female') bump('her-biotics-original-capsules-60s', 7, 'Her-Biotics™ Original — iron + B-complex specifically dosed for women fighting fatigue.');
-    if(sym==='fatigue' && sex==='male') bump('his-biotics-probiotics-original-multivitamins-capsules-60s', 7, 'His-Biotics™ Original — zinc, D3, and 16-strain probiotic to restore daily energy.');
-    if(sym==='stress'){ bump('velo16-probiotics-ashwagandha', 9, 'Velo16™ Ashwagandha — KSM-66 clinically lowers cortisol and improves sleep within 4 weeks.'); bump('velo16-probiotics-calcium-magnesium', 5, 'Velo16™ Calcium & Magnesium — magnesium glycinate for muscle relaxation and deep sleep.'); }
-    if(sym==='bv_yeast'){ bump('femina-probiotics-cookie-fresh-with-boric-acid-suppositories', 10, 'Femina™ Cookie Fresh with Boric — gold-standard acute BV/yeast treatment, OB-GYN-endorsed.'); bump('femina-intimate-starter-pack', 8, 'Femina Intimate Reset Kit — pH test + Cookie Fresh + daily Femina capsules in one starter.'); }
-    if(sym==='pms'){ bump('her-biotics-original-capsules-60s', 6, 'Her-Biotics™ Original — daily hormone-cycle support with iron, B6, and magnesium.'); bump('velo16-probiotics-ashwagandha', 5, 'Velo16™ Ashwagandha — eases PMS mood swings and menopausal hot flashes.'); }
-    if(sym==='weight_stuck'){ bump('gutslim-probiotics-tummy-toner', 8, 'GutSlim™ Tummy Toner — GLP-1 booster + probiotics restart stalled weight loss.'); bump('14-day-gut-reboot-starter-pack', 6, '14-Day GutSlim Reboot — proven 2-week kick-start for stubborn weight plateaus.'); }
-    if(sym==='immunity_low') bump('velo16-probiotics-fulvic-acid', 8, 'Velo16™ Fulvic Acid — 70+ trace minerals + 16 strains to rebuild your immune defence.');
-    if(sym==='skin'){ bump('probiotics-protein-collagen-peptides-skin-hair-nails', 9, 'Almasi™ Collagen — Type I & III collagen for skin elasticity, hair growth, nail strength.'); }
-    if(sym==='focus') bump('velo16-probiotics-ashwagandha', 7, 'Velo16™ Ashwagandha + Lion\'s Mane — clinical adaptogens for brain fog and focus.');
-    if(sym==='general'){ if(sex==='female') bump('her-biotics-original-capsules-60s', 8, 'Her-Biotics™ Original — your everyday women\'s multivitamin with 16-strain probiotic.'); else bump('his-biotics-probiotics-original-multivitamins-capsules-60s', 8, 'His-Biotics™ Original — your everyday men\'s multivitamin with 16-strain probiotic.'); }
+    /* Symptom overrides */
+    if(sym==='bloat') bump('velo16-probiotic-digestive-capsules',6,'Velo16™ Probiotic Digestive Capsules — targeted relief for bloating, gas, and slow digestion.');
+    if(sym==='fatigue'){
+      if(sex==='female') bump('her-biotics-original-capsules-60s',7,'Her-Biotics™ Original — iron + B-complex specifically dosed for women fighting fatigue.');
+      if(sex==='male') bump('his-biotics-probiotics-original-multivitamins-capsules-60s',7,'His-Biotics™ Original — zinc, D3, and 16-strain probiotic to restore daily male energy.');
+    }
+    if(sym==='stress'){bump('velo16-probiotics-ashwagandha',9,'Velo16™ Ashwagandha — KSM-66 clinically lowers cortisol and improves sleep within 4 weeks.');bump('velo16-probiotics-calcium-magnesium',5,'Velo16™ Calcium & Magnesium — magnesium glycinate for muscle relaxation and deep sleep.');}
+    if(sym==='bv_yeast' && sex==='female'){bump('femina-probiotics-cookie-fresh-with-boric-acid-suppositories',10,'Femina™ Cookie Fresh with Boric — gold-standard acute BV/yeast treatment, OB-GYN-endorsed.');bump('femina-intimate-starter-pack',8,'Femina Intimate Reset Kit — pH test + Cookie Fresh + daily Femina capsules in one starter.');}
+    if(sym==='pms' && sex==='female'){bump('her-biotics-original-capsules-60s',6,'Her-Biotics™ Original — daily hormone-cycle support with iron, B6, and magnesium.');bump('velo16-probiotics-ashwagandha',5,'Velo16™ Ashwagandha — eases PMS mood swings and menopausal hot flashes.');}
+    if(sym==='low_t' && sex==='male') bump('his-biotics-probiotics-original-multivitamins-capsules-60s',9,'His-Biotics™ Original — clinically-formulated zinc + D3 + Ashwagandha for natural T support.');
+    if(sym==='weight_stuck'){bump('gutslim-probiotics-tummy-toner',8,'GutSlim™ Tummy Toner — GLP-1 booster + probiotics restart stalled weight loss.');bump('14-day-gut-reboot-starter-pack',6,'14-Day GutSlim Reboot — proven 2-week kick-start for stubborn weight plateaus.');}
+    if(sym==='immunity_low') bump('velo16-probiotics-fulvic-acid',8,'Velo16™ Fulvic Acid — 70+ trace minerals + 16 strains to rebuild your immune defence.');
+    if(sym==='skin') bump('probiotics-protein-collagen-peptides-skin-hair-nails',9,'Almasi™ Collagen — Type I & III collagen for skin elasticity, hair growth, nail strength.');
+    if(sym==='focus') bump('velo16-probiotics-ashwagandha',7,'Velo16™ Ashwagandha + Lion\'s Mane — clinical adaptogens for brain fog and focus.');
+    if(sym==='general'){
+      if(sex==='female') bump('her-biotics-original-capsules-60s',8,'Her-Biotics™ Original — your everyday women\'s multivitamin with 16-strain probiotic.');
+      if(sex==='male') bump('his-biotics-probiotics-original-multivitamins-capsules-60s',8,'His-Biotics™ Original — your everyday men\'s multivitamin with 16-strain probiotic.');
+    }
 
-    /* --- Age modifiers --- */
-    if(age==='over60') bump('velo16-probiotics-calcium-magnesium', 4, 'Velo16™ Calcium & Magnesium — supports bone health, joint comfort, and restorative sleep after 60.');
-    if(age==='45_60' && sex==='female') bump('velo16-probiotics-ashwagandha', 4, 'Velo16™ Ashwagandha — eases perimenopausal symptoms and sleep disruption.');
+    /* Age modifiers */
+    if(age==='over60') bump('velo16-probiotics-calcium-magnesium',4,'Velo16™ Calcium & Magnesium — supports bone health, joint comfort, restorative sleep after 60.');
+    if(age==='45_60' && sex==='female') bump('velo16-probiotics-ashwagandha',4,'Velo16™ Ashwagandha — eases perimenopausal symptoms and sleep disruption.');
 
-    /* --- Who modifier (Family) --- */
-    if(who==='family') bump('family-health-bundle', 10, 'Family Gut-Health Bundle — Velo16 + Femina + BioKid Chewables in one box for the whole household.');
-    if(who==='child') bump('family-health-bundle', 7, 'Family Bundle includes BioKid Chewables — safe daily probiotics for children.');
+    /* Who modifiers */
+    if(who==='family') bump('family-health-bundle',10,'Family Gut-Health Bundle — Velo16 + Femina + BioKid chewables for the whole household.');
+    if(who==='child') bump('family-health-bundle',7,'Family Bundle includes BioKid Chewables — safe daily probiotics for children.');
 
-    /* --- Sort and pick top 3 --- */
-    const ranked = Object.keys(scores).filter(h=>CATALOG[h]).map(h=>({handle:h,score:scores[h],reason:reasons[h]})).sort((a,b)=>b.score-a.score);
-    /* Always at least 1 result */
-    if(ranked.length===0){
-      ranked.push({handle:'velo16-probiotic-digestive-capsules',score:5,reason:CATALOG['velo16-probiotic-digestive-capsules'] ? 'Velo16™ Digestive Capsules — our most popular daily probiotic, the right starting point for anyone.' : ''});
+    const ranked = Object.keys(scores).map(h=>({handle:h,score:scores[h],reason:reasons[h]})).sort((a,b)=>b.score-a.score);
+    /* Always at least 1 safe default */
+    if(!ranked.length){
+      const fallback = (sex==='male') ? 'his-biotics-probiotics-original-multivitamins-capsules-60s' : (sex==='female' ? 'her-biotics-original-capsules-60s' : 'velo16-probiotic-digestive-capsules');
+      ranked.push({handle:fallback, score:5, reason:'Our most popular daily probiotic — a safe, effective starting point.'});
     }
     return ranked.slice(0,3);
+  }
+
+  /* ---- Gender-aware option filtering ---- */
+  function applyGenderFilter(){
+    const sex = STATE.answers.sex;
+    if(!sex) return;
+    $$('.vbq__opt[data-female-only="true"]').forEach(o=>{ o.style.display = (sex==='female') ? '' : 'none'; });
+    $$('.vbq__opt[data-male-only="true"]').forEach(o=>{ o.style.display = (sex==='male') ? '' : 'none'; });
+  }
+
+  /* ---- Interstitial dynamic content ---- */
+  function fillInterstitials(){
+    const sex = STATE.answers.sex;
+    const goals = Array.isArray(STATE.answers.goal) ? STATE.answers.goal : [];
+    /* I1: post-sex */
+    if(sex==='female'){
+      $('#vbq-i1-emoji').textContent='🌸';
+      $('#vbq-i1-h').textContent='Welcome.';
+      $('#vbq-i1-sub').textContent='Our women\'s formulations — Femina, Her-Biotics, PregBiotics — are some of the most researched probiotic blends in the world. You\'re in good hands.';
+    } else if(sex==='male'){
+      $('#vbq-i1-emoji').textContent='💪';
+      $('#vbq-i1-h').textContent='Welcome.';
+      $('#vbq-i1-sub').textContent='Our His-Biotics + Velo16 men\'s range is built around energy, recovery, and natural testosterone support. Let\'s get you matched.';
+    }
+    /* I2: post-goal */
+    const goalLabels = {gut:'gut health',weight:'weight management',intimate:'intimate health',pregnancy:'pregnancy & fertility',energy:'energy & performance',immune:'daily immunity',calm:'calm & sleep',hormone:'hormone vitality',beauty:'skin & beauty',kids:'kids\' wellness'};
+    if(goals.length){
+      const label = goalLabels[goals[0]]||'wellness';
+      $('#vbq-i2-h').innerHTML = 'Focused on <span class="vbq__hl">'+label+'</span>?';
+      const stats = {intimate:'250,000+ women', pregnancy:'12,000+ moms-to-be', weight:'30,000+ on the journey', calm:'80,000+ sleeping better', beauty:'40,000+ glowing'};
+      const stat = stats[goals[0]] || '50,000+ globally';
+      $('#vbq-i2-stat').innerHTML = '<strong>'+stat+'</strong><small>have walked this path with Velobiotics</small>';
+      $('#vbq-i2-sub').textContent = 'Almost done — just a couple more questions to lock in your best stack.';
+    }
   }
 
   /* ---- UI navigation ---- */
   function render(){
     $$('.vbq__step').forEach(s=>s.classList.remove('is-active'));
-    const cur = STATE.idx;
-    const stepEl = $$('.vbq__step')[cur];
+    const stepEl = $$('.vbq__step')[STATE.idx];
     if(stepEl) stepEl.classList.add('is-active');
-    /* Progress bar */
-    const showBar = cur > 0 && cur < 8;
-    $('#vbq-bar').style.display = showBar ? 'block':'none';
-    if(showBar) $('#vbq-fill').style.width = ((cur)/7*100)+'%';
-    window.scrollTo({top:0,behavior:'smooth'});
+    /* Progress bar: show for all states except hero (0) and results (last) */
+    const showBar = STATE.idx > 0 && STATE.idx < STEPS.length-1;
+    const bar = $('#vbq-progress');
+    bar.classList.toggle('is-on', showBar);
+    if(showBar){
+      /* Question-only progress count (skip interstitials in the count) */
+      const qCount = ['q-who','q-sex','q-age','q-goal','q-symptom','q-diet','q-experience'];
+      const cur = STEPS[STATE.idx];
+      let qIdx = qCount.indexOf(cur);
+      if(qIdx<0){ /* on interstitial → show the upcoming q */
+        for(let i=STATE.idx+1;i<STEPS.length;i++){
+          const nq = qCount.indexOf(STEPS[i]);
+          if(nq>=0){qIdx=nq;break;}
+        }
+      }
+      if(qIdx<0) qIdx = 6; /* lead/loading → full bar */
+      $('#vbq-fill').style.width = ((qIdx+1)/7*100)+'%';
+      $('#vbq-step').textContent = Math.min(qIdx+1,7);
+    }
+    /* Scroll to top of fullscreen container */
+    const c = $('#vbq');
+    if(c.classList.contains('is-fs')) c.scrollTop = 0;
+    else window.scrollTo({top:0,behavior:'smooth'});
   }
-  function next(){ if(STATE.idx === 7){ goLead(); return;} STATE.idx++; render(); track('quiz_step', {step:STEPS[STATE.idx]}); }
-  function prev(){ if(STATE.idx>0){ STATE.idx--; render(); }}
-  function goLead(){ STATE.idx = 8; render(); track('quiz_step',{step:'lead'}); }
-  function goLoading(){ STATE.idx = 9; render(); animateLoader(); }
-  function goResults(){ STATE.idx = 10; render(); renderResults(); track('quiz_completed',{ recs: STATE.recs.map(r=>r.handle), duration: Math.round((Date.now()-STATE.startTime)/1000) }); }
-  function animateLoader(){
-    const msgs = ['Analysing your answers…','Matching with 50+ products…','Cross-checking with our doctors…','Finalising your stack…'];
-    let i=0;
-    const id=setInterval(()=>{
-      i++;
-      if(i>=msgs.length){clearInterval(id); STATE.recs = recommend(STATE.answers); setTimeout(goResults, 600); return;}
-      $('#vbq-loader-msg').textContent = msgs[i];
-    },700);
+  function start(){
+    track('quiz_started',{});
+    document.body.classList.add('vbq-fs');
+    $('#vbq').classList.add('is-fs');
+    STATE.idx = 1;
+    render();
   }
+  function exit(){
+    if(!confirm('Exit the quiz? Your progress will be lost.')) return;
+    document.body.classList.remove('vbq-fs');
+    $('#vbq').classList.remove('is-fs');
+    STATE.idx = 0;
+    STATE.answers = {};
+    $$('.vbq__opt').forEach(o=>o.classList.remove('is-on'));
+    $$('.vbq__btn--prime').forEach(b=>{ if(b.id!=='vbq-lead-btn') b.disabled = true; });
+    render();
+  }
+  function next(){
+    /* If we just answered sex → apply gender filter to downstream questions */
+    if(STEPS[STATE.idx]==='q-sex') applyGenderFilter();
+    /* If we're about to enter an interstitial → fill it with dynamic content */
+    if(STATE.idx+1 < STEPS.length && STEPS[STATE.idx+1].startsWith('inter')) fillInterstitials();
+    STATE.idx++;
+    render();
+    track('quiz_step',{step:STEPS[STATE.idx]});
+  }
+  function prev(){ if(STATE.idx>0){STATE.idx--;render();}}
 
-  /* ---- Option click handlers ---- */
+  /* ---- Option clicks ---- */
   document.addEventListener('click', e=>{
     const opt = e.target.closest('.vbq__opt');
     if(!opt) return;
     const step = opt.closest('.vbq__step');
     if(!step) return;
     const key = step.dataset.key;
-    const multi = step.dataset.multi === 'true';
-    const max = parseInt(step.dataset.max || '1');
+    const multi = step.dataset.multi==='true';
+    const max = parseInt(step.dataset.max||'1');
     const val = opt.dataset.val;
     if(multi){
       const existing = Array.isArray(STATE.answers[key]) ? STATE.answers[key] : [];
-      if(existing.includes(val)){
-        STATE.answers[key] = existing.filter(v=>v!==val);
-        opt.classList.remove('is-on');
-      } else if(existing.length < max){
-        STATE.answers[key] = [...existing, val];
-        opt.classList.add('is-on');
-      }
+      if(existing.includes(val)){STATE.answers[key]=existing.filter(v=>v!==val);opt.classList.remove('is-on');}
+      else if(existing.length<max){STATE.answers[key]=[...existing,val];opt.classList.add('is-on');}
     } else {
       step.querySelectorAll('.vbq__opt').forEach(o=>o.classList.remove('is-on'));
       opt.classList.add('is-on');
-      STATE.answers[key] = val;
+      STATE.answers[key]=val;
     }
-    /* Enable Continue button */
     const btn = step.querySelector('.vbq__btn--prime');
     const v = STATE.answers[key];
     const ok = multi ? (Array.isArray(v) && v.length>0) : !!v;
@@ -403,67 +565,73 @@
   async function submitLead(){
     const name = $('#vbq-name').value.trim();
     const email = $('#vbq-email').value.trim();
-    if(!name || !email) return;
-    STATE.answers.name = name;
-    STATE.answers.email = email;
+    if(!name||!email) return;
+    STATE.answers.name=name;
+    STATE.answers.email=email;
     const btn = $('#vbq-lead-btn');
     btn.disabled = true;
     btn.textContent = 'Building your stack…';
-    track('quiz_lead', {email: email});
-    /* Compute recs first so we can tag the contact */
     STATE.recs = recommend(STATE.answers);
-    const topBrand = (STATE.recs[0] && CATALOG[STATE.recs[0].handle]) ? CATALOG[STATE.recs[0].handle].brand : '';
-    /* Send to Omnisend */
+    const topProduct = STATE.recs[0]?.handle || '';
+    const topBrand = topProduct ? (CATALOG[topProduct]?.brand || '') : '';
+    track('quiz_lead',{email});
     const apiKey = $('#vbq').dataset.omnisendKey;
     if(apiKey){
       try {
-        await fetch('https://api.omnisend.com/v3/contacts', {
+        await fetch('https://api.omnisend.com/v3/contacts',{
           method:'POST',
-          headers:{'Content-Type':'application/json', 'X-API-KEY': apiKey},
+          headers:{'Content-Type':'application/json','X-API-KEY':apiKey},
           body: JSON.stringify({
-            email,
-            firstName: name,
-            status:'subscribed',
-            statusDate: new Date().toISOString(),
-            tags:['quiz_taken','v-check', topBrand.replace(/[^a-z0-9]/gi,'').toLowerCase(), 'goal_'+(STATE.answers.goal||[''])[0]||'general'].filter(Boolean),
-            customProperties:{ quiz_top_product: STATE.recs[0]?.handle, quiz_top_brand: topBrand, quiz_goal: (Array.isArray(STATE.answers.goal)?STATE.answers.goal.join(','):STATE.answers.goal)||'', quiz_symptom: STATE.answers.symptom||'', quiz_sex: STATE.answers.sex||'', quiz_age: STATE.answers.age||'' }
+            email, firstName:name, status:'subscribed', statusDate:new Date().toISOString(),
+            tags:['quiz_taken','biomatch', topBrand.replace(/[^a-z0-9]/gi,'').toLowerCase(), 'goal_'+(Array.isArray(STATE.answers.goal)?STATE.answers.goal[0]:STATE.answers.goal||'general'), 'sex_'+STATE.answers.sex].filter(Boolean),
+            customProperties:{
+              quiz_top_product: topProduct, quiz_top_brand: topBrand,
+              quiz_goal: (Array.isArray(STATE.answers.goal)?STATE.answers.goal.join(','):STATE.answers.goal)||'',
+              quiz_symptom: STATE.answers.symptom||'', quiz_sex: STATE.answers.sex||'',
+              quiz_age: STATE.answers.age||'', quiz_who: STATE.answers.who||'',
+              quiz_experience: STATE.answers.experience||'',
+              quiz_recs: STATE.recs.map(r=>r.handle).join(',')
+            }
           })
         });
       } catch(err){ console.warn('Omnisend submit failed', err); }
     } else {
-      /* No Omnisend key — capture lead via Shopify customer form fallback */
       try {
         const fd = new FormData();
-        fd.append('form_type','customer');
-        fd.append('utf8','✓');
-        fd.append('contact[tags]','quiz_taken,v-check');
-        fd.append('contact[email]',email);
-        fd.append('contact[first_name]',name);
-        await fetch('/contact', {method:'POST', body:fd});
-      } catch(err){ console.warn('Shopify fallback failed', err);}
+        fd.append('form_type','customer');fd.append('utf8','✓');
+        fd.append('contact[tags]','quiz_taken,biomatch,'+topBrand.toLowerCase().replace(/[^a-z0-9]/gi,''));
+        fd.append('contact[email]',email);fd.append('contact[first_name]',name);
+        await fetch('/contact',{method:'POST',body:fd});
+      } catch(err){}
     }
-    goLoading();
+    STATE.idx = STEPS.indexOf('loading'); render(); animateLoader();
   }
 
-  /* ---- Results render ---- */
+  function animateLoader(){
+    const msgs = ['Analysing your answers…','Matching with our 50+ formulas…','Cross-checking with our doctors…','Finalising your stack…'];
+    let i=0;
+    const id=setInterval(()=>{
+      i++;
+      if(i>=msgs.length){clearInterval(id); setTimeout(()=>{STATE.idx=STEPS.indexOf('results'); render(); renderResults(); track('quiz_completed',{recs:STATE.recs.map(r=>r.handle),duration:Math.round((Date.now()-STATE.startTime)/1000)});}, 600); return;}
+      $('#vbq-loader-msg').textContent = msgs[i];
+    },700);
+  }
+
+  /* ---- Render results ---- */
   function renderResults(){
-    /* Greeting */
     const name = STATE.answers.name || 'there';
     $('#vbq-greet').textContent = name + ', here\'s your';
-    /* Profile sentence */
     const goals = Array.isArray(STATE.answers.goal) ? STATE.answers.goal.join(' + ') : STATE.answers.goal || '';
-    const profileBits = [];
-    if(STATE.answers.sex && STATE.answers.sex!=='any') profileBits.push(STATE.answers.sex+'');
-    if(STATE.answers.age) profileBits.push(STATE.answers.age.replace('_','–'));
-    if(goals) profileBits.push('focused on '+goals);
-    if(STATE.answers.symptom) profileBits.push('addressing '+STATE.answers.symptom.replace('_',' '));
-    $('#vbq-profile').innerHTML = '<strong>Your profile:</strong> ' + profileBits.join(' · ') + '. Based on your answers and Velobiotics\'s research database, here are the top matches.';
-    /* Render each rec */
-    const recsHtml = STATE.recs.map((rec,i)=>{
+    const bits = [];
+    if(STATE.answers.sex) bits.push(STATE.answers.sex);
+    if(STATE.answers.age) bits.push(STATE.answers.age.replace('_','–'));
+    if(goals) bits.push('focused on '+goals);
+    if(STATE.answers.symptom) bits.push('addressing '+STATE.answers.symptom.replace(/_/g,' '));
+    $('#vbq-profile').innerHTML = '<strong>Your profile:</strong> ' + bits.join(' · ') + '. Based on your answers and Velobiotics\'s research database, here are the top matches.';
+    $('#vbq-recs').innerHTML = STATE.recs.map((rec,i)=>{
       const p = CATALOG[rec.handle] || {brand:'Velobiotics', title:rec.handle, price:'', img:''};
-      const utm = `?utm_source=quiz&utm_medium=recommendation&utm_campaign=v-check&utm_content=${rec.handle}&utm_term=rank-${i+1}`;
+      const utm = `?utm_source=quiz&utm_medium=recommendation&utm_campaign=biomatch&utm_content=${rec.handle}&utm_term=rank-${i+1}`;
       const productUrl = `/products/${rec.handle}${utm}`;
-      const cartUrl = `/cart/add?id=&quantity=1${utm.replace('?','&')}`;
       return `<div class="vbq__rec ${i===0?'is-top':''}">${i===0?'<div class="vbq__rec-rank">★ Best Match</div>':''}
         <div class="vbq__rec-img"><img src="${p.img}" alt="${p.title}" loading="lazy"></div>
         <div class="vbq__rec-body">
@@ -474,61 +642,46 @@
           <a class="vbq__rec-cta-secondary" href="${productUrl}" onclick="VBQ.clickRec('${rec.handle}',${i+1})">Learn more</a>
         </div></div>`;
     }).join('');
-    $('#vbq-recs').innerHTML = recsHtml;
   }
 
-  function clickRec(handle, rank){ track('quiz_rec_clicked',{handle:handle, rank:rank}); }
-  function shareWhatsApp(){
-    const msg = encodeURIComponent('I just took the Velobiotics V-Check and got my personalised wellness plan: '+ window.location.href);
-    window.open('https://wa.me/?text='+msg,'_blank');
-  }
-  function copyLink(){
-    navigator.clipboard.writeText(window.location.href);
-    alert('Link copied!');
-  }
-  function restart(){ STATE.idx=0; STATE.answers={}; STATE.recs=[]; $$('.vbq__opt').forEach(o=>o.classList.remove('is-on')); $$('.vbq__btn--prime').forEach(b=>{if(b.id!=='vbq-lead-btn')b.disabled=true}); render(); }
+  function clickRec(handle, rank){ track('quiz_rec_clicked',{handle, rank}); }
+  function shareWhatsApp(){const msg=encodeURIComponent('I just took the Velobiotics BioMatch and got my personalised wellness plan: '+window.location.href);window.open('https://wa.me/?text='+msg,'_blank');}
+  function copyLink(){navigator.clipboard.writeText(window.location.href);alert('Link copied!');}
+  function restart(){STATE.idx=0;STATE.answers={};STATE.recs=[];$$('.vbq__opt').forEach(o=>o.classList.remove('is-on'));$$('.vbq__btn--prime').forEach(b=>{if(b.id!=='vbq-lead-btn')b.disabled=true});document.body.classList.remove('vbq-fs');$('#vbq').classList.remove('is-fs');render();}
 
-  /* ---- Analytics event hooks ---- */
   function track(name, props){
     try {
       const payload = {event:name, quiz:STATE.quizId, session:STATE.sessionId, ts:Date.now(), ...props};
-      /* Shopify Analytics */
       if(window.analytics && window.analytics.publish) window.analytics.publish('vb_quiz_'+name, payload);
-      /* dataLayer (GA4) */
       if(window.dataLayer) window.dataLayer.push({event:'vb_quiz_'+name, ...payload});
-      /* localStorage event log for the dashboard */
       const log = JSON.parse(localStorage.getItem('vbq_log')||'[]');
-      log.push(payload);
-      localStorage.setItem('vbq_log', JSON.stringify(log.slice(-200)));
-      /* Beacon to /apps/vb-analytics endpoint if configured (optional, future) */
+      log.push(payload); localStorage.setItem('vbq_log', JSON.stringify(log.slice(-300)));
     } catch(e){}
   }
 
-  /* ---- Init ---- */
   STATE.sessionId = 'vbq_'+Date.now()+'_'+Math.random().toString(36).slice(2,8);
-  track('quiz_started',{});
-  window.VBQ = { next, prev, submitLead, restart, clickRec, shareWhatsApp, copyLink };
-  /* Disable continue buttons by default */
+  window.VBQ = { start, next, prev, exit, submitLead, restart, clickRec, shareWhatsApp, copyLink };
   $$('.vbq__step[data-step="q"] .vbq__btn--prime').forEach(b=>b.disabled = true);
 })();
 </script>
 
 {% schema %}
 {
-  "name": "VB Quiz",
+  "name": "VB BioMatch Quiz",
   "settings": [
     {"type":"header","content":"Hero (Start Screen)"},
-    {"type":"text","id":"eyebrow","label":"Eyebrow","default":"The Velobiotics V-Check"},
+    {"type":"text","id":"eyebrow","label":"Eyebrow","default":"The Velobiotics BioMatch"},
     {"type":"text","id":"hero_title_pre","label":"Title (pre)","default":"Find your"},
-    {"type":"text","id":"hero_title_highlight","label":"Title (highlighted)","default":"perfect probiotic"},
-    {"type":"textarea","id":"hero_sub","label":"Sub-headline","default":"7 quick questions. 60 seconds. A personalised recommendation from our gut-health doctors — backed by the Velobiotics™ MEP science."},
-    {"type":"text","id":"cta_start","label":"Start button text","default":"Start the V-Check →"},
+    {"type":"text","id":"hero_title_highlight","label":"Title (highlighted, italic)","default":"perfect probiotic."},
+    {"type":"textarea","id":"hero_sub","label":"Sub-headline","default":"7 quick questions. 60 seconds. A personalised stack — built by doctors, backed by Velobiotics™ MEP science."},
+    {"type":"text","id":"cta_start","label":"Start button text","default":"Start the BioMatch"},
+    {"type":"url","id":"hero_image_url","label":"Hero image URL (full-bleed background)","info":"Wide editorial portrait — preferably a confident person, soft natural light. Fades to cream at the edges."},
     {"type":"header","content":"Lead Capture"},
-    {"type":"textarea","id":"lead_sub","label":"Lead capture sub-text","default":"Get your recommendation plus a free 7-day gut reset email series, science guides, and exclusive subscriber pricing."},
+    {"type":"textarea","id":"lead_sub","label":"Lead capture sub-text","default":"Get your recommendation plus a free 7-day wellness email series, science guides, and exclusive subscriber pricing."},
     {"type":"header","content":"Integrations"},
-    {"type":"text","id":"omnisend_api_key","label":"Omnisend API Key","info":"Paste your Omnisend API key (Settings → API in Omnisend). Leave blank to use Shopify customer-fallback only."},
-    {"type":"text","id":"fallback_collection","label":"Fallback collection handle","default":"all","info":"If recommendation engine returns nothing, link to this collection."}
+    {"type":"text","id":"omnisend_api_key","label":"Omnisend API Key","info":"Paste your Omnisend API key (Settings → API in Omnisend)."},
+    {"type":"text","id":"quiz_name","label":"Quiz name (analytics tag)","default":"BioMatch"}
   ],
-  "presets":[{"name":"VB Quiz"}]
+  "presets":[{"name":"VB BioMatch Quiz"}]
 }
 {% endschema %}

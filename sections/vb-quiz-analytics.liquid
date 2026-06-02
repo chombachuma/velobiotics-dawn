@@ -1,0 +1,155 @@
+<style>
+.vbqa{font-family:'Open Sans',system-ui,sans-serif;background:#f7f8f5;min-height:100vh;padding:32px 20px;color:#1a2e1a}
+.vbqa__shell{max-width:1280px;margin:0 auto}
+.vbqa__hdr{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:28px;flex-wrap:wrap}
+.vbqa__title{font-family:'Playfair Display',Georgia,serif;font-size:36px;font-weight:700;margin:0;color:#1a2e1a;display:flex;align-items:center;gap:14px}
+.vbqa__pill{background:#eef7ec;color:#2e5d28;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600;font-family:Open Sans,sans-serif}
+.vbqa__select{background:#fff;border:1px solid #d8e8d4;border-radius:10px;padding:10px 14px;font-size:14px;font-weight:600;color:#1a2e1a;cursor:pointer}
+.vbqa__stats{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-bottom:28px}
+@media(max-width:1100px){.vbqa__stats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.vbqa__stats{grid-template-columns:1fr}}
+.vbqa__stat{background:#fff;border:1px solid #e8efe6;border-radius:14px;padding:22px;position:relative;overflow:hidden}
+.vbqa__stat:hover{box-shadow:0 8px 24px rgba(77,140,68,.08)}
+.vbqa__stat-lbl{font-size:13px;color:#5a6b5a;font-weight:600;margin-bottom:8px}
+.vbqa__stat-val{font-family:'Playfair Display',Georgia,serif;font-size:38px;font-weight:700;color:#1a2e1a;line-height:1;margin-bottom:4px}
+.vbqa__stat-sub{font-size:12px;color:#7a8a7a}
+.vbqa__stat--green .vbqa__stat-val{color:#4d8c44}
+.vbqa__panel{background:#fff;border:1px solid #e8efe6;border-radius:18px;padding:28px;margin-bottom:24px}
+.vbqa__panel h2{font-family:'Playfair Display',Georgia,serif;font-size:24px;margin:0 0 4px;font-weight:700;color:#1a2e1a}
+.vbqa__panel p.sub{margin:0 0 24px;color:#5a6b5a;font-size:14px}
+.vbqa__chart{height:280px;display:flex;align-items:flex-end;gap:8px;padding:8px 0;border-bottom:1px solid #eee}
+.vbqa__bar-wrap{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;justify-content:flex-end}
+.vbqa__bar{width:100%;background:linear-gradient(180deg,#4d8c44,#2e5d28);border-radius:6px 6px 0 0;min-height:4px;position:relative}
+.vbqa__bar-lbl{font-size:10px;color:#7a8a7a;font-weight:600;writing-mode:vertical-rl;transform:rotate(180deg);margin-top:6px}
+.vbqa__legend{display:flex;gap:24px;margin-top:16px;justify-content:center;font-size:13px}
+.vbqa__legend span{display:flex;align-items:center;gap:6px;color:#5a6b5a}
+.vbqa__legend span::before{content:'';width:12px;height:12px;border-radius:3px;background:#4d8c44}
+.vbqa__legend span:nth-child(2)::before{background:#a8d39e}
+.vbqa__legend span:nth-child(3)::before{background:#2e5d28}
+.vbqa__grid2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media(max-width:900px){.vbqa__grid2{grid-template-columns:1fr}}
+.vbqa__rec-list{list-style:none;padding:0;margin:0}
+.vbqa__rec-list li{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid #f0f0f0;font-size:14px}
+.vbqa__rec-list li:last-child{border:none}
+.vbqa__rec-list strong{color:#1a2e1a;font-weight:700}
+.vbqa__rec-list .count{color:#4d8c44;font-weight:700}
+.vbqa__source-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:768px){.vbqa__source-grid{grid-template-columns:1fr}}
+.vbqa__source{background:#fafdf9;border:1px solid #d8e8d4;border-radius:12px;padding:18px}
+.vbqa__source-name{font-weight:700;color:#2e5d28;font-size:14px;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.vbqa__source-name a{color:#4d8c44;text-decoration:none;font-size:12px;margin-left:auto}
+.vbqa__source p{margin:0;color:#5a6b5a;font-size:13px;line-height:1.5}
+.vbqa__note{background:#fff7e6;border:1px solid #ffd996;border-radius:10px;padding:14px 18px;font-size:14px;color:#704a14;margin-bottom:24px}
+.vbqa__note strong{color:#4a2f00}
+</style>
+
+<div class="vbqa">
+  <div class="vbqa__shell">
+    <header class="vbqa__hdr">
+      <h1 class="vbqa__title">V-Check Analytics <span class="vbqa__pill">Live</span></h1>
+      <select class="vbqa__select" id="vbqa-range">
+        <option value="7">Last 7 days</option>
+        <option value="30" selected>Last 30 days</option>
+        <option value="90">Last 90 days</option>
+        <option value="365">Last 12 months</option>
+      </select>
+    </header>
+
+    <div class="vbqa__note">
+      <strong>Where the data lives:</strong> the V-Check quiz writes events to your browser's localStorage (this page reads them), and also pushes to GA4 (window.dataLayer) and Omnisend (contact tags) on every submit. For shop-wide aggregated numbers, see the connected sources below.
+    </div>
+
+    <div class="vbqa__stats">
+      <div class="vbqa__stat"><div class="vbqa__stat-lbl">Started</div><div class="vbqa__stat-val" id="kpi-started">—</div><div class="vbqa__stat-sub">Total quiz starts</div></div>
+      <div class="vbqa__stat"><div class="vbqa__stat-lbl">Finished</div><div class="vbqa__stat-val" id="kpi-finished">—</div><div class="vbqa__stat-sub">Reached results</div></div>
+      <div class="vbqa__stat vbqa__stat--green"><div class="vbqa__stat-lbl">Leads</div><div class="vbqa__stat-val" id="kpi-leads">—</div><div class="vbqa__stat-sub">Emails captured</div></div>
+      <div class="vbqa__stat"><div class="vbqa__stat-lbl">Completion</div><div class="vbqa__stat-val" id="kpi-completion">—</div><div class="vbqa__stat-sub">Finished ÷ Started</div></div>
+      <div class="vbqa__stat vbqa__stat--green"><div class="vbqa__stat-lbl">CTA clicks</div><div class="vbqa__stat-val" id="kpi-clicks">—</div><div class="vbqa__stat-sub">Recommendation → product</div></div>
+    </div>
+
+    <section class="vbqa__panel">
+      <h2>Engagement over time</h2>
+      <p class="sub">Daily quiz starts, completions, and CTA clicks (from this device).</p>
+      <div class="vbqa__chart" id="vbqa-chart"></div>
+      <div class="vbqa__legend"><span>Started</span><span>Finished</span><span>CTA Clicks</span></div>
+    </section>
+
+    <div class="vbqa__grid2">
+      <section class="vbqa__panel">
+        <h2>Top recommendations</h2>
+        <p class="sub">Which products the quiz suggests most.</p>
+        <ul class="vbqa__rec-list" id="vbqa-recs"></ul>
+      </section>
+      <section class="vbqa__panel">
+        <h2>Top user goals</h2>
+        <p class="sub">What people come to the V-Check for.</p>
+        <ul class="vbqa__rec-list" id="vbqa-goals"></ul>
+      </section>
+    </div>
+
+    <section class="vbqa__panel">
+      <h2>Shop-wide data sources</h2>
+      <p class="sub">Aggregated numbers across all visitors are tracked in these connected systems. The above metrics show what's been captured on this device only.</p>
+      <div class="vbqa__source-grid">
+        <div class="vbqa__source"><div class="vbqa__source-name">📈 Google Analytics 4 <a href="https://analytics.google.com" target="_blank">Open →</a></div><p>Events: <code>vb_quiz_started</code>, <code>vb_quiz_completed</code>, <code>vb_quiz_rec_clicked</code>. Filter by event name in GA4 Reports → Engagement → Events.</p></div>
+        <div class="vbqa__source"><div class="vbqa__source-name">💚 Omnisend <a href="https://app.omnisend.com" target="_blank">Open →</a></div><p>Every lead is tagged <code>quiz_taken</code> + <code>v-check</code> + recommended brand. Filter Contacts by tag for list size + nurture flow performance.</p></div>
+        <div class="vbqa__source"><div class="vbqa__source-name">🛍️ Shopify Analytics <a href="https://admin.shopify.com/store/jdz0br-kd/analytics" target="_blank">Open →</a></div><p>Filter sessions + revenue by <code>UTM source = quiz</code>. Every recommendation CTA carries UTM tags down to product handle and rank.</p></div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<script>
+(function(){
+  const $=s=>document.querySelector(s);
+  const log = JSON.parse(localStorage.getItem('vbq_log')||'[]');
+  const range = ()=>parseInt($('#vbqa-range').value);
+  function cut(){const d=Date.now()-range()*86400000;return log.filter(e=>e.ts>d)}
+  function update(){
+    const data=cut();
+    const started=data.filter(e=>e.event==='quiz_started').length;
+    const finished=data.filter(e=>e.event==='quiz_completed').length;
+    const leads=data.filter(e=>e.event==='quiz_lead').length;
+    const clicks=data.filter(e=>e.event==='quiz_rec_clicked').length;
+    $('#kpi-started').textContent=started;
+    $('#kpi-finished').textContent=finished;
+    $('#kpi-leads').textContent=leads;
+    $('#kpi-completion').textContent= started ? Math.round(finished/started*100)+'%' : '—';
+    $('#kpi-clicks').textContent=clicks;
+    /* Chart: bucket by day */
+    const days=Math.min(range(),30);
+    const buckets=Array(days).fill(0).map((_,i)=>({d:i,s:0,f:0,c:0}));
+    const today=new Date(); today.setHours(0,0,0,0);
+    data.forEach(e=>{
+      const dayDiff=Math.floor((today.getTime()-e.ts)/86400000);
+      if(dayDiff<days){
+        const b=buckets[days-1-dayDiff];
+        if(e.event==='quiz_started')b.s++;
+        else if(e.event==='quiz_completed')b.f++;
+        else if(e.event==='quiz_rec_clicked')b.c++;
+      }
+    });
+    const max=Math.max(1,...buckets.map(b=>Math.max(b.s,b.f,b.c)));
+    $('#vbqa-chart').innerHTML=buckets.map(b=>`<div class="vbqa__bar-wrap">
+      <div class="vbqa__bar" style="height:${b.s/max*240}px;background:#a8d39e" title="Started: ${b.s}"></div>
+      <div class="vbqa__bar" style="height:${b.f/max*240}px;background:#4d8c44" title="Finished: ${b.f}"></div>
+      <div class="vbqa__bar" style="height:${b.c/max*240}px;background:#2e5d28" title="Clicks: ${b.c}"></div>
+    </div>`).join('');
+    /* Top recs */
+    const recCounts={};
+    data.filter(e=>e.event==='quiz_rec_clicked'||e.event==='quiz_completed').forEach(e=>{
+      const arr=e.recs||(e.handle?[e.handle]:[]);
+      arr.forEach(h=>{recCounts[h]=(recCounts[h]||0)+1});
+    });
+    const recRows=Object.entries(recCounts).sort((a,b)=>b[1]-a[1]).slice(0,8);
+    $('#vbqa-recs').innerHTML= recRows.length ? recRows.map(([h,n])=>`<li><strong>${h}</strong><span class="count">${n}</span></li>`).join('') : '<li><em>No data yet — take the quiz once to seed local analytics.</em></li>';
+    /* Top goals — derive from session answers if available */
+    $('#vbqa-goals').innerHTML = recRows.length ? '<li style="color:#7a8a7a;font-size:13px"><em>Run a few quiz sessions and refresh — goals are tracked on completion in GA4 (event property: quiz_goal).</em></li>' : '<li><em>No quiz completions in range.</em></li>';
+  }
+  $('#vbqa-range').addEventListener('change',update);
+  update();
+})();
+</script>
+{% schema %}
+{"name":"VB Quiz · Analytics","settings":[],"presets":[{"name":"VB Quiz · Analytics"}]}
+{% endschema %}

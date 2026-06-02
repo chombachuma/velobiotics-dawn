@@ -1,10 +1,11 @@
 {%- comment -%} VB BioMatch — Velobiotics Personalised Wellness Quiz v3 {%- endcomment -%}
 <style>
   .vbq{--g:#4d8c44;--g2:#2e5d28;--cream:#fdf9f1;--ink:#1a2e1a;--mute:#5a6b5a;--border:#e8efe6;--tint:#eef7ec;font-family:'Open Sans','Inter',system-ui,sans-serif;color:var(--ink);position:relative;display:block}
-  body.vbq-fs{overflow:hidden}
-  .vbq.is-fs{position:fixed;inset:0;background:#fdf9f1;z-index:99999;overflow-y:auto;-webkit-overflow-scrolling:touch}
+  /* Active mode: no position:fixed (Shopify section wrappers break it). We hide sibling sections via JS instead. */
+  body.vbq-active{background:#fdf9f1}
+  .vbq.is-fs{background:#fdf9f1;min-height:100vh}
   .vbq__shell{max-width:680px;margin:0 auto;padding:32px 20px 80px;position:relative;z-index:1}
-  .vbq.is-fs .vbq__shell{padding-top:64px}
+  .vbq.is-fs .vbq__shell{padding-top:32px;min-height:calc(100vh - 60px);display:flex;flex-direction:column;justify-content:center}
 
   /* Step visibility — bulletproof */
   .vbq__step{display:none}
@@ -12,9 +13,8 @@
   .vbq__step--full.is-active{display:block;padding:0}
   @keyframes vbqfade{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
 
-  /* Sticky progress */
-  .vbq__progress{position:sticky;top:0;left:0;right:0;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:14px 20px;z-index:20;border-bottom:1px solid var(--border);display:none}
-  .vbq.is-fs .vbq__progress{position:fixed;top:0;background:rgba(255,255,255,.98)}
+  /* Sticky progress — sticks to the body viewport since body is the scroll container */
+  .vbq__progress{position:sticky;top:0;left:0;right:0;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:14px 20px;z-index:200;border-bottom:1px solid var(--border);display:none}
   .vbq__progress.is-on{display:flex;align-items:center;gap:14px}
   .vbq__exit{appearance:none;border:none;background:none;cursor:pointer;color:var(--mute);font-size:22px;line-height:1;padding:6px 10px;border-radius:8px;transition:.2s}
   .vbq__exit:hover{background:var(--tint);color:var(--ink)}

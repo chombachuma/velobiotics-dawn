@@ -450,8 +450,8 @@
     if(goals.length){
       const label=goalLabels[goals[0]]||'wellness';
       const h2=$('#vbq-i2-h'); if(h2) h2.innerHTML='Focused on <span class="vbq__hl">'+label+'</span>?';
-      const stats={intimate:'250,000+ women',pregnancy:'12,000+ moms-to-be',weight:'30,000+ on the journey',calm:'80,000+ sleeping better',beauty:'40,000+ glowing'};
-      const stat=stats[goals[0]]||'50,000+ globally';
+      const stats={intimate:'250,000+ women',pregnancy:'12,000+ moms-to-be',weight:'30,000+ on the journey',calm:'80,000+ sleeping better',beauty:'40,000+ glowing',gut:'500,000+ globally',energy:'500,000+ globally',immune:'500,000+ globally',hormone:'500,000+ globally',kids:'500,000+ families'};
+      const stat=stats[goals[0]]||'500,000+ globally';
       const st=$('#vbq-i2-stat'); if(st) st.innerHTML='<strong>'+stat+'</strong><small>have walked this path with Velobiotics</small>';
     }
   }
@@ -477,8 +477,15 @@
         for(let i=STATE.idx+1;i<STEPS.length;i++){const nq=qCount.indexOf(STEPS[i]);if(nq>=0){qIdx=nq;break;}}
       }
       if(qIdx<0) qIdx=6;
-      const fill=$('#vbq-fill'); if(fill) fill.style.width=((qIdx+1)/7*100)+'%';
-      const stp=$('#vbq-step'); if(stp) stp.textContent=Math.min(qIdx+1,7);
+      /* Count answered questions for a more responsive fill */
+      const answered = ['who','sex','age','goal','symptom','diet','experience'].filter(function(k){
+        const v = STATE.answers[k];
+        return Array.isArray(v) ? v.length>0 : !!v;
+      }).length;
+      /* Progress = max(current step position, answered count) so it never goes backwards */
+      const progress = Math.max(qIdx+1, answered);
+      const fill=$('#vbq-fill'); if(fill) fill.style.width=Math.min(100, progress/7*100)+'%';
+      const stp=$('#vbq-step'); if(stp) stp.textContent=Math.min(progress,7);
     }
     /* Scroll to top of quiz container */
     try {

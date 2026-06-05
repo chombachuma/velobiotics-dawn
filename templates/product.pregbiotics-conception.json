@@ -255,7 +255,7 @@
         "eyebrow": "The Solution",
         "title_pre": "Meet",
         "title_highlight": "PregBiotics™ Conception.",
-        "desc": "Active folate + myo-inositol + pregnancy-safe probiotics. Built specifically for women preparing to conceive — egg quality, ovulation, neural-tube prep, all covered."
+        "desc": "A complete preconception multivitamin — Folic Acid + full B-complex, iron, zinc, iodine, selenium, Myo-Inositol — paired with our 16-strain pregnancy-safe MEP probiotic blend. Built specifically for women preparing to conceive."
       }
     },
     "related": {
@@ -402,8 +402,8 @@
           "type": "step",
           "settings": {
             "icon": "💊",
-            "name": "Take Two Capsules Daily",
-            "desc": "With water, after a meal. Start 3+ months before trying."
+            "name": "Take One Capsule Daily",
+            "desc": "With water, after a meal. 60 capsules = 60-day supply. Start 3+ months before trying."
           }
         },
         "h2": {

@@ -334,7 +334,7 @@
           "settings": {
             "icon": "🥚",
             "name": "Egg Quality",
-            "desc": "CoQ10 supports cellular energy in developing eggs."
+            "desc": "Myo-inositol + B-vitamins support follicle health and egg maturation."
           }
         },
         "b2": {
@@ -419,7 +419,7 @@
           "settings": {
             "icon": "🎯",
             "name": "Egg & Cycle Support",
-            "desc": "CoQ10 + myo-inositol prepare egg quality and ovulation."
+            "desc": "Myo-inositol prepares egg quality and supports ovulation regularity."
           }
         },
         "h4": {
@@ -662,7 +662,7 @@
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
             "icon_fallback": "✓",
             "name": "Clinically Validated",
-            "desc": "Myo-inositol + CoQ10 — peer-reviewed for fertility."
+            "desc": "Myo-inositol + active folate — peer-reviewed for fertility."
           }
         },
         "d2": {
@@ -730,7 +730,7 @@
         "o3": {
           "type": "row",
           "settings": {
-            "feature": "CoQ10 For Egg Quality",
+            "feature": "Active Folate (5-MTHF)",
             "brand_state": "yes",
             "b_state": "no",
             "c_state": "no"

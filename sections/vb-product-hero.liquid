@@ -564,6 +564,192 @@
       });
     });
 
+    /* ============ Dynamic price display ============
+       Watches subscription + qty selection and updates the displayed price
+       WITHOUT breaking regional pricing plugin compatibility.
+       Approach:
+         1. Read the currently-displayed price text (already localised by plugin)
+         2. Parse currency format (prefix, decimal sep, thousand sep)
+         3. Multiply by qty * factor
+         4. Re-render in the same currency format
+         5. MutationObserver detects when plugin re-renders (e.g. region change)
+            and re-applies our multiplier without conflict.
+    */
+    const priceBlock = root.querySelector('[data-vbp-price-block]');
+    const priceDisp = priceBlock?.querySelector('[data-vbp-price-display]');
+    const compDisp = priceBlock?.querySelector('[data-vbp-compare-display]');
+    const saveDisp = priceBlock?.querySelector('[data-vbp-save-display]');
+    const modeLabel = priceBlock?.querySelector('[data-vbp-mode-label]');
+    const subPriceDisp = root.querySelector('[data-vbp-sub-price]');
+    const subCompareDisp = root.querySelector('[data-vbp-sub-compare]');
+    const annualSaveDisp = root.querySelector('[data-vbp-annual-save]');
+
+    let baseDisplayText = priceDisp?.textContent || '';
+    let baseCompareText = compDisp?.textContent || '';
+    let isInternalUpdate = false;
+
+    function parseCurrency(text) {
+      if (!text) return null;
+      const m = String(text).trim().match(/^([^\d-]*)([\d., ]+)([^\d.,]*)$/);
+      if (!m) return null;
+      const prefix = m[1] || '';
+      const suffix = m[3] || '';
+      const numStr = m[2].replace(/ /g, '');
+      const lastDot = numStr.lastIndexOf('.');
+      const lastComma = numStr.lastIndexOf(',');
+      let decimal = '.', thousand = ',';
+      if (lastComma > lastDot && numStr.length - lastComma - 1 <= 2) { decimal = ','; thousand = '.'; }
+      const clean = numStr.split('').map(c => c === decimal ? '.' : (c === thousand ? '' : c)).join('');
+      const value = parseFloat(clean);
+      if (!isFinite(value)) return null;
+      return { prefix, suffix, decimal, thousand, value };
+    }
+
+    function formatCurrency(fmt, value) {
+      if (!fmt) return String(value);
+      const fixed = value.toFixed(2);
+      const [maj, min] = fixed.split('.');
+      const majSep = maj.replace(/\B(?=(\d{3})+(?!\d))/g, fmt.thousand);
+      return `${fmt.prefix}${majSep}${fmt.decimal}${min}${fmt.suffix}`;
+    }
+
+    function setText(el, text) {
+      if (!el) return;
+      isInternalUpdate = true;
+      el.textContent = text;
+      setTimeout(() => { isInternalUpdate = false; }, 80);
+    }
+
+    function getCurrentFactors() {
+      const isSub = !!root.querySelector('input[name="purchase_mode"][value="subscribe"]:checked');
+      const qty = parseInt(root.querySelector('[data-vbp-qty]')?.value || '1', 10) || 1;
+      const subPct = parseFloat(priceBlock?.dataset.subPctOff || '15') / 100;
+      const t2 = parseFloat(priceBlock?.dataset.tier2Pct || '10') / 100;
+      const t3 = parseFloat(priceBlock?.dataset.tier3Pct || '15') / 100;
+      let factor = 1;
+      if (isSub) factor *= (1 - subPct);
+      if (qty >= 3) factor *= (1 - t3);
+      else if (qty === 2) factor *= (1 - t2);
+      return { isSub, qty, factor, subPct, t2, t3 };
+    }
+
+    function updatePriceDisplay() {
+      if (!priceDisp) return;
+      if (!baseDisplayText) baseDisplayText = priceDisp.textContent;
+      const fmt = parseCurrency(baseDisplayText);
+      if (!fmt) return;
+      const { isSub, qty, factor } = getCurrentFactors();
+      const total = fmt.value * qty * factor;
+      const totalText = formatCurrency(fmt, total);
+      setText(priceDisp, totalText);
+      /* Compare = base × qty (no discount) — only show if there IS a discount */
+      const compareVal = fmt.value * qty;
+      if (factor < 1) {
+        if (compDisp) {
+          setText(compDisp, formatCurrency(fmt, compareVal));
+          compDisp.style.display = '';
+        }
+        if (saveDisp) {
+          const pct = Math.round((1 - factor) * 100);
+          setText(saveDisp, `SAVE −${pct}%`);
+          saveDisp.style.display = '';
+        }
+      } else {
+        /* No discount — show compare only if variant has one (line-through on regular price) */
+        const baseCompare = parseCurrency(baseCompareText);
+        if (baseCompare && baseCompare.value > fmt.value) {
+          if (compDisp) {
+            setText(compDisp, formatCurrency(baseCompare, baseCompare.value * qty));
+            compDisp.style.display = '';
+          }
+          if (saveDisp) {
+            const sp = Math.round((1 - fmt.value / baseCompare.value) * 100);
+            setText(saveDisp, `SAVE −${sp}%`);
+            saveDisp.style.display = '';
+          }
+        } else {
+          if (compDisp) compDisp.style.display = 'none';
+          if (saveDisp) saveDisp.style.display = 'none';
+        }
+      }
+      /* Mode label */
+      if (modeLabel) {
+        let label = '';
+        if (isSub && qty > 1) label = `${qty}× per delivery · Subscription`;
+        else if (isSub) label = 'Per delivery · Subscription';
+        else if (qty > 1) label = `${qty} pack total`;
+        setText(modeLabel, label);
+      }
+      /* Class on block for subscription styling */
+      priceBlock.classList.toggle('is-sub', isSub);
+
+      /* Update the subscription card's displayed price too (it shows base × sub factor for 1 unit) */
+      if (subPriceDisp && fmt) {
+        const subPct = parseFloat(priceBlock?.dataset.subPctOff || '15') / 100;
+        setText(subPriceDisp, formatCurrency(fmt, fmt.value * (1 - subPct)));
+      }
+      if (subCompareDisp && fmt) {
+        setText(subCompareDisp, formatCurrency(fmt, fmt.value));
+      }
+      if (annualSaveDisp && fmt) {
+        const freq = parseInt(priceBlock?.dataset.deliveriesPerYear || '6', 10) || 6;
+        const subPct2 = parseFloat(priceBlock?.dataset.subPctOff || '15') / 100;
+        const yearSav = fmt.value * subPct2 * freq;
+        setText(annualSaveDisp, formatCurrency(fmt, yearSav));
+      }
+    }
+
+    /* MutationObserver — re-capture base when plugin updates display externally */
+    if (priceDisp) {
+      const obs = new MutationObserver(() => {
+        if (isInternalUpdate) return;
+        /* External update — re-capture base then re-apply */
+        baseDisplayText = priceDisp.textContent;
+        const { factor, qty } = getCurrentFactors();
+        if (factor !== 1 || qty !== 1) updatePriceDisplay();
+      });
+      obs.observe(priceDisp, { childList: true, characterData: true, subtree: true });
+    }
+    if (compDisp) {
+      const obs2 = new MutationObserver(() => {
+        if (isInternalUpdate) return;
+        baseCompareText = compDisp.textContent;
+      });
+      obs2.observe(compDisp, { childList: true, characterData: true, subtree: true });
+    }
+
+    /* Trigger updates */
+    root.querySelectorAll('input[name="purchase_mode"]').forEach(r => r.addEventListener('change', updatePriceDisplay));
+    root.querySelectorAll('input[name="qty_tier"]').forEach(r => r.addEventListener('change', () => setTimeout(updatePriceDisplay, 0)));
+    if (qty) qty.addEventListener('input', () => setTimeout(updatePriceDisplay, 0));
+    /* Variant change — re-cache base from new variant after plugin updates */
+    root.querySelectorAll('input[name="id"]').forEach(r => {
+      r.addEventListener('change', () => {
+        baseDisplayText = '';
+        baseCompareText = '';
+        /* Update base attribute values from variant data */
+        if (priceBlock) {
+          priceBlock.dataset.basePriceCents = r.dataset.price || priceBlock.dataset.basePriceCents;
+          priceBlock.dataset.baseCompareCents = r.dataset.compare || '0';
+        }
+        /* Reset displayed price to variant's localised base, then re-apply if needed */
+        if (priceDisp && r.dataset.moneyPrice) setText(priceDisp, r.dataset.moneyPrice);
+        if (compDisp && r.dataset.moneyCompare) {
+          setText(compDisp, r.dataset.moneyCompare);
+          compDisp.style.display = '';
+        } else if (compDisp) {
+          compDisp.style.display = 'none';
+        }
+        setTimeout(() => {
+          if (priceDisp) baseDisplayText = priceDisp.textContent;
+          if (compDisp) baseCompareText = compDisp.textContent;
+          updatePriceDisplay();
+        }, 300);
+      });
+    });
+    /* Apply on first paint */
+    setTimeout(updatePriceDisplay, 50);
+
     /* AJAX add to cart */
     const form = root.querySelector('[data-vbp-form]');
     if (form && atcBtn) {

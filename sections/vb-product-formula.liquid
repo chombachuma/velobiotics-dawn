@@ -1,0 +1,274 @@
+{%- comment -%}
+  VB Product Formula — beautiful all-inclusive Supplement Facts
+  ----------------------------------------------------------------
+  Replaces the older vb-product-ingredients section with:
+   • Marketable Ingredient Cards (default view)
+   • Regulated Supplement Facts panel (toggle)
+   • Per-ingredient fields: name, amount, %DV, role, source, tags, icon
+   • Optional Supplement Facts panel image (the actual SAHPRA/FDA label)
+   • Serving size + servings per container header (regulated format)
+   • Vegan / Halaal / Gluten-free badges
+   • "Other ingredients" footer line
+  ----------------------------------------------------------------
+{%- endcomment -%}
+
+{%- liquid
+  assign p = section.settings.brand_primary | default: '#4d8c44'
+  assign d = section.settings.brand_dark | default: '#2e5d28'
+  assign t = section.settings.brand_tint | default: '#eef7ec'
+  assign l = section.settings.brand_light | default: '#a8d39e'
+-%}
+
+<style>
+  .vbpf-{{ section.id }}{--p:{{p}};--d:{{d}};--t:{{t}};--l:{{l}};font-family:'Open Sans',system-ui,sans-serif;padding:80px 20px;background:#fff;color:#1a2e1a}
+  .vbpf-{{ section.id }} .vbpf__wrap{max-width:1180px;margin:0 auto}
+  .vbpf-{{ section.id }} .vbpf__head{text-align:center;max-width:680px;margin:0 auto 48px}
+  .vbpf-{{ section.id }} .vbpf__eb{display:inline-block;background:var(--t);color:var(--d);padding:6px 14px;border-radius:99px;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:18px}
+  .vbpf-{{ section.id }} .vbpf__h{font-family:'Playfair Display',Georgia,serif;font-size:clamp(28px,4vw,42px);font-weight:700;margin:0 0 14px;letter-spacing:-.01em;line-height:1.1}
+  .vbpf-{{ section.id }} .vbpf__h .vbpf__hl{color:var(--p);font-style:italic}
+  .vbpf-{{ section.id }} .vbpf__sub{font-size:17px;color:#5a6b5a;line-height:1.55;margin:0}
+  .vbpf-{{ section.id }} .vbpf__badges{display:flex;gap:8px;justify-content:center;margin:20px 0 0;flex-wrap:wrap}
+  .vbpf-{{ section.id }} .vbpf__badge{display:inline-flex;align-items:center;gap:6px;background:var(--t);border:1px solid var(--l);color:var(--d);padding:6px 14px;border-radius:99px;font-size:12px;font-weight:700}
+  .vbpf-{{ section.id }} .vbpf__tabs{display:inline-flex;gap:4px;background:#f6f6f4;padding:4px;border-radius:99px;margin:32px 0 32px}
+  .vbpf-{{ section.id }} .vbpf__tab{appearance:none;border:none;background:none;cursor:pointer;padding:8px 18px;border-radius:99px;font-weight:700;font-size:13px;font-family:inherit;color:#5a6b5a;transition:.2s}
+  .vbpf-{{ section.id }} .vbpf__tab.is-on{background:var(--p);color:#fff;box-shadow:0 2px 8px rgba(77,140,68,.3)}
+  .vbpf-{{ section.id }} .vbpf__layout{display:grid;grid-template-columns:1.4fr 1fr;gap:32px;align-items:flex-start}
+  @media(max-width:900px){.vbpf-{{ section.id }} .vbpf__layout{grid-template-columns:1fr}}
+
+  /* ============ View 1: Ingredient Cards ============ */
+  .vbpf-{{ section.id }} .vbpf__cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  @media(max-width:640px){.vbpf-{{ section.id }} .vbpf__cards{grid-template-columns:1fr}}
+  .vbpf-{{ section.id }} .vbpf__card{background:#fff;border:1px solid #e8efe6;border-radius:16px;padding:20px;transition:.25s;position:relative;overflow:hidden}
+  .vbpf-{{ section.id }} .vbpf__card:hover{transform:translateY(-2px);border-color:var(--p);box-shadow:0 12px 32px rgba(77,140,68,.1)}
+  .vbpf-{{ section.id }} .vbpf__card-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;gap:10px}
+  .vbpf-{{ section.id }} .vbpf__card-name{display:flex;align-items:center;gap:10px;font-weight:700;font-size:16px;color:#1a2e1a;flex:1;min-width:0}
+  .vbpf-{{ section.id }} .vbpf__card-icon{width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--t);border-radius:12px;font-size:20px;flex-shrink:0}
+  .vbpf-{{ section.id }} .vbpf__card-amount{font-family:'Playfair Display',Georgia,serif;font-size:20px;font-weight:700;color:var(--p);white-space:nowrap;line-height:1}
+  .vbpf-{{ section.id }} .vbpf__card-amount .vbpf__dv{display:block;font-size:11px;color:#7a8a7a;font-weight:600;font-family:'Open Sans',sans-serif;margin-top:2px}
+  .vbpf-{{ section.id }} .vbpf__card-role{font-size:14px;color:#5a6b5a;line-height:1.5;margin:0 0 10px}
+  .vbpf-{{ section.id }} .vbpf__card-src{font-size:12px;color:#7a8a7a;font-style:italic;padding-top:10px;border-top:1px dashed #e8efe6}
+  .vbpf-{{ section.id }} .vbpf__card-src strong{color:var(--d);font-weight:700;font-style:normal}
+  .vbpf-{{ section.id }} .vbpf__card-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+  .vbpf-{{ section.id }} .vbpf__card-tag{font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border-radius:99px;background:#f0f5ef;color:var(--d)}
+
+  /* ============ View 2: Supplement Facts panel ============ */
+  .vbpf-{{ section.id }} .vbpf__sf{background:#fff;border:2px solid #1a2e1a;border-radius:6px;padding:16px;font-family:'Helvetica Neue','Arial',sans-serif;color:#1a2e1a;font-size:13px;line-height:1.35}
+  .vbpf-{{ section.id }} .vbpf__sf-title{font-size:28px;font-weight:900;line-height:1;margin:0 0 4px;letter-spacing:-.01em}
+  .vbpf-{{ section.id }} .vbpf__sf-serving{font-size:13px;border-bottom:8px solid #1a2e1a;padding-bottom:6px;margin-bottom:6px}
+  .vbpf-{{ section.id }} .vbpf__sf-cont{font-size:13px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #1a2e1a}
+  .vbpf-{{ section.id }} .vbpf__sf-hdr{display:flex;justify-content:space-between;font-size:11px;font-weight:700;padding:6px 0;border-bottom:1px solid #1a2e1a;text-transform:uppercase;letter-spacing:.02em}
+  .vbpf-{{ section.id }} .vbpf__sf-hdr-right{text-align:right}
+  .vbpf-{{ section.id }} .vbpf__sf-row{display:grid;grid-template-columns:1fr auto auto;gap:12px;padding:8px 0;border-bottom:1px solid #d0d0d0;font-size:13px;align-items:baseline}
+  .vbpf-{{ section.id }} .vbpf__sf-row:last-of-type{border-bottom:8px solid #1a2e1a}
+  .vbpf-{{ section.id }} .vbpf__sf-row-name{font-weight:700}
+  .vbpf-{{ section.id }} .vbpf__sf-row-amount{white-space:nowrap;font-weight:400}
+  .vbpf-{{ section.id }} .vbpf__sf-row-dv{white-space:nowrap;font-weight:700;text-align:right;min-width:48px}
+  .vbpf-{{ section.id }} .vbpf__sf-foot{font-size:10px;color:#1a2e1a;margin-top:8px;line-height:1.5}
+  .vbpf-{{ section.id }} .vbpf__sf-foot p{margin:0 0 4px}
+  .vbpf-{{ section.id }} .vbpf__sf-img{margin-top:18px;text-align:center}
+  .vbpf-{{ section.id }} .vbpf__sf-img img{max-width:100%;border:1px solid #e8efe6;border-radius:8px}
+  .vbpf-{{ section.id }} .vbpf__sf-dl{margin-top:14px;text-align:center}
+  .vbpf-{{ section.id }} .vbpf__sf-dl a{display:inline-flex;align-items:center;gap:8px;background:var(--t);color:var(--d);padding:10px 18px;border-radius:99px;text-decoration:none;font-weight:700;font-size:13px;border:1px solid var(--l)}
+  .vbpf-{{ section.id }} .vbpf__sf-dl a:hover{background:var(--p);color:#fff;border-color:var(--p)}
+
+  /* View switching */
+  .vbpf-{{ section.id }} .vbpf__view{display:none}
+  .vbpf-{{ section.id }} .vbpf__view.is-on{display:block}
+  .vbpf-{{ section.id }} .vbpf__center{text-align:center}
+
+  /* Side panel (image / "trust note") */
+  .vbpf-{{ section.id }} .vbpf__side{position:sticky;top:24px}
+  .vbpf-{{ section.id }} .vbpf__side-img{width:100%;aspect-ratio:1/1;border-radius:18px;overflow:hidden;background:#f6f6f4;display:flex;align-items:center;justify-content:center;margin-bottom:18px;border:1px solid #e8efe6}
+  .vbpf-{{ section.id }} .vbpf__side-img img{width:100%;height:100%;object-fit:contain}
+  .vbpf-{{ section.id }} .vbpf__side-trust{background:linear-gradient(135deg,var(--t),#fff);border:1px solid var(--l);border-radius:16px;padding:20px}
+  .vbpf-{{ section.id }} .vbpf__trust-row{display:flex;gap:12px;padding:8px 0;align-items:flex-start;border-bottom:1px solid var(--l)}
+  .vbpf-{{ section.id }} .vbpf__trust-row:last-child{border-bottom:none}
+  .vbpf-{{ section.id }} .vbpf__trust-icon{font-size:18px;flex-shrink:0;width:28px;text-align:center}
+  .vbpf-{{ section.id }} .vbpf__trust-text{font-size:13px;color:#1a2e1a;line-height:1.5}
+  .vbpf-{{ section.id }} .vbpf__trust-text strong{color:var(--d);font-weight:700}
+</style>
+
+<section class="vbpf-{{ section.id }}" id="vbpf-{{ section.id }}">
+  <div class="vbpf__wrap">
+    <div class="vbpf__head">
+      <div class="vbpf__eb">{{ section.settings.eyebrow | default: "What's Inside" }}</div>
+      <h2 class="vbpf__h">{{ section.settings.title_pre | default: 'The verified' }} <span class="vbpf__hl">{{ section.settings.title_highlight | default: 'formula.' }}</span></h2>
+      <p class="vbpf__sub">{{ section.settings.sub | default: 'Every ingredient is listed at its exact daily dose. No proprietary blends. No mystery filler. Lab-tested every batch.' }}</p>
+      {%- if section.settings.show_badges -%}
+      <div class="vbpf__badges">
+        {%- if section.settings.badge_vegan -%}<span class="vbpf__badge">🌱 Vegan</span>{%- endif -%}
+        {%- if section.settings.badge_halaal -%}<span class="vbpf__badge">☪️ Halaal</span>{%- endif -%}
+        {%- if section.settings.badge_kosher -%}<span class="vbpf__badge">✡ Kosher</span>{%- endif -%}
+        {%- if section.settings.badge_gluten_free -%}<span class="vbpf__badge">🌾 Gluten-free</span>{%- endif -%}
+        {%- if section.settings.badge_dairy_free -%}<span class="vbpf__badge">🥛 Dairy-free</span>{%- endif -%}
+        {%- if section.settings.badge_non_gmo -%}<span class="vbpf__badge">🧬 Non-GMO</span>{%- endif -%}
+        {%- if section.settings.badge_lab_tested -%}<span class="vbpf__badge">🧪 Lab-tested</span>{%- endif -%}
+      </div>
+      {%- endif -%}
+    </div>
+
+    <div class="vbpf__center"><div class="vbpf__tabs" role="tablist">
+      <button type="button" class="vbpf__tab is-on" data-vbpf-view="cards">✨ Ingredient cards</button>
+      <button type="button" class="vbpf__tab" data-vbpf-view="facts">📋 Supplement facts</button>
+    </div></div>
+
+    <div class="vbpf__layout">
+      <div>
+        <div class="vbpf__view is-on" data-vbpf-view="cards">
+          <div class="vbpf__cards">
+            {%- for block in section.blocks -%}
+              {%- if block.type == 'ingredient' -%}
+                <div class="vbpf__card">
+                  <div class="vbpf__card-head">
+                    <div class="vbpf__card-name">
+                      <div class="vbpf__card-icon">{{ block.settings.icon | default: '🧬' }}</div>
+                      <span>{{ block.settings.name }}</span>
+                    </div>
+                    <div class="vbpf__card-amount">
+                      {{ block.settings.amount }}
+                      {%- if block.settings.dv != blank -%}<span class="vbpf__dv">{{ block.settings.dv }} DV</span>{%- endif -%}
+                    </div>
+                  </div>
+                  {%- if block.settings.role != blank -%}<p class="vbpf__card-role">{{ block.settings.role }}</p>{%- endif -%}
+                  {%- if block.settings.source != blank -%}<div class="vbpf__card-src"><strong>Source:</strong> {{ block.settings.source }}</div>{%- endif -%}
+                  {%- if block.settings.tags != blank -%}
+                    <div class="vbpf__card-tags">
+                      {%- assign tags = block.settings.tags | split: ',' -%}
+                      {%- for tg in tags -%}<span class="vbpf__card-tag">{{ tg | strip }}</span>{%- endfor -%}
+                    </div>
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+        </div>
+
+        <div class="vbpf__view" data-vbpf-view="facts">
+          <div class="vbpf__sf">
+            <div class="vbpf__sf-title">Supplement Facts</div>
+            <div class="vbpf__sf-serving">Serving Size: <strong>{{ section.settings.serving_size | default: '2 capsules' }}</strong></div>
+            <div class="vbpf__sf-cont">Servings Per Container: {{ section.settings.servings_per_container | default: '30' }}</div>
+            <div class="vbpf__sf-hdr">
+              <span>Ingredient</span>
+              <span class="vbpf__sf-hdr-right">Amount Per Serving / % DV</span>
+            </div>
+            {%- for block in section.blocks -%}
+              {%- if block.type == 'ingredient' -%}
+                <div class="vbpf__sf-row">
+                  <div class="vbpf__sf-row-name">{{ block.settings.name }}</div>
+                  <div class="vbpf__sf-row-amount">{{ block.settings.amount }}</div>
+                  <div class="vbpf__sf-row-dv">{{ block.settings.dv | default: '†' }}</div>
+                </div>
+              {%- endif -%}
+            {%- endfor -%}
+            <div class="vbpf__sf-foot">
+              {%- if section.settings.other_ingredients != blank -%}<p><strong>Other Ingredients:</strong> {{ section.settings.other_ingredients }}</p>{%- endif -%}
+              {%- if section.settings.allergens != blank -%}<p><strong>Allergen info:</strong> {{ section.settings.allergens }}</p>{%- endif -%}
+              <p>† Daily Value not established. {{ section.settings.dv_note | default: '% Daily Value based on a 2,000 calorie diet.' }}</p>
+            </div>
+            {%- if section.settings.facts_image_url != blank -%}
+              <div class="vbpf__sf-img"><img src="{{ section.settings.facts_image_url }}" alt="Supplement facts panel" loading="lazy"></div>
+            {%- endif -%}
+            {%- if section.settings.facts_pdf_url != blank -%}
+              <div class="vbpf__sf-dl"><a href="{{ section.settings.facts_pdf_url }}" target="_blank" rel="noopener">📄 Download full facts PDF</a></div>
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+
+      <aside class="vbpf__side">
+        {%- if section.settings.side_image_url != blank -%}
+          <div class="vbpf__side-img"><img src="{{ section.settings.side_image_url }}" alt="{{ section.settings.title_highlight }}" loading="lazy"></div>
+        {%- endif -%}
+        <div class="vbpf__side-trust">
+          {%- for block in section.blocks -%}
+            {%- if block.type == 'trust' -%}
+              <div class="vbpf__trust-row">
+                <span class="vbpf__trust-icon">{{ block.settings.icon | default: '✓' }}</span>
+                <div class="vbpf__trust-text"><strong>{{ block.settings.title }}.</strong> {{ block.settings.text }}</div>
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  const root = document.getElementById('vbpf-{{ section.id }}');
+  if(!root) return;
+  root.addEventListener('click', function(e){
+    const tab = e.target.closest('.vbpf__tab');
+    if(!tab) return;
+    const v = tab.dataset.vbpfView;
+    root.querySelectorAll('.vbpf__tab').forEach(function(t){t.classList.toggle('is-on', t.dataset.vbpfView===v);});
+    root.querySelectorAll('.vbpf__view').forEach(function(view){view.classList.toggle('is-on', view.dataset.vbpfView===v);});
+  });
+})();
+</script>
+
+{% schema %}
+{
+  "name": "VB Product Formula",
+  "settings": [
+    {"type":"header","content":"Heading"},
+    {"type":"text","id":"eyebrow","label":"Eyebrow","default":"What's Inside"},
+    {"type":"text","id":"title_pre","label":"Title (pre)","default":"The verified"},
+    {"type":"text","id":"title_highlight","label":"Title (highlighted, italic)","default":"formula."},
+    {"type":"textarea","id":"sub","label":"Sub-headline","default":"Every ingredient is listed at its exact daily dose. No proprietary blends. No mystery filler. Lab-tested every batch."},
+
+    {"type":"header","content":"Certification badges"},
+    {"type":"checkbox","id":"show_badges","label":"Show badges","default":true},
+    {"type":"checkbox","id":"badge_vegan","label":"🌱 Vegan","default":false},
+    {"type":"checkbox","id":"badge_halaal","label":"☪️ Halaal","default":false},
+    {"type":"checkbox","id":"badge_kosher","label":"✡ Kosher","default":false},
+    {"type":"checkbox","id":"badge_gluten_free","label":"🌾 Gluten-free","default":true},
+    {"type":"checkbox","id":"badge_dairy_free","label":"🥛 Dairy-free","default":true},
+    {"type":"checkbox","id":"badge_non_gmo","label":"🧬 Non-GMO","default":true},
+    {"type":"checkbox","id":"badge_lab_tested","label":"🧪 Lab-tested","default":true},
+
+    {"type":"header","content":"Supplement Facts panel"},
+    {"type":"text","id":"serving_size","label":"Serving size","default":"2 capsules"},
+    {"type":"text","id":"servings_per_container","label":"Servings per container","default":"30"},
+    {"type":"textarea","id":"other_ingredients","label":"Other ingredients","default":"HPMC (vegetable capsule), Rice flour, Magnesium stearate."},
+    {"type":"text","id":"allergens","label":"Allergen info","default":"Manufactured in a facility that handles soy and dairy."},
+    {"type":"text","id":"dv_note","label":"DV footnote","default":"% Daily Value based on a 2,000 calorie diet."},
+    {"type":"url","id":"facts_image_url","label":"Supplement Facts panel image URL","info":"Optional. Upload your scanned SAHPRA/FDA label image."},
+    {"type":"url","id":"facts_pdf_url","label":"Full facts PDF URL","info":"Optional. Link to the PDF for download."},
+
+    {"type":"header","content":"Side imagery"},
+    {"type":"url","id":"side_image_url","label":"Side product image URL","info":"Square product packshot or lifestyle. Optional."},
+
+    {"type":"header","content":"Colors (auto from brand)"},
+    {"type":"color","id":"brand_primary","label":"Primary","default":"#4d8c44"},
+    {"type":"color","id":"brand_dark","label":"Dark","default":"#2e5d28"},
+    {"type":"color","id":"brand_tint","label":"Tint","default":"#eef7ec"},
+    {"type":"color","id":"brand_light","label":"Light","default":"#a8d39e"}
+  ],
+  "blocks":[
+    {
+      "type":"ingredient","name":"Ingredient","limit":30,
+      "settings":[
+        {"type":"text","id":"icon","label":"Icon (emoji)","default":"🧬"},
+        {"type":"text","id":"name","label":"Ingredient name","default":"Active Folate (L-5-MTHF)"},
+        {"type":"text","id":"amount","label":"Amount per serving","default":"800 µg"},
+        {"type":"text","id":"dv","label":"% Daily Value","default":"200%","info":"Use '†' if not established."},
+        {"type":"textarea","id":"role","label":"Role / benefit","default":"Bioavailable folate for neural-tube preparation and homocysteine balance."},
+        {"type":"text","id":"source","label":"Source / form","default":"Quatrefolic® (Gnosis SpA)"},
+        {"type":"text","id":"tags","label":"Tags (comma-separated)","default":"Bioavailable, Patented","info":"e.g. 'Vegan, Patented, Clinical Dose'"}
+      ]
+    },
+    {
+      "type":"trust","name":"Trust line","limit":6,
+      "settings":[
+        {"type":"text","id":"icon","label":"Icon (emoji)","default":"✓"},
+        {"type":"text","id":"title","label":"Title","default":"Lab-tested"},
+        {"type":"textarea","id":"text","label":"Text","default":"Every batch verified by independent third-party labs for purity, potency, and contaminants."}
+      ]
+    }
+  ],
+  "presets":[{"name":"VB Product Formula"}]
+}
+{% endschema %}

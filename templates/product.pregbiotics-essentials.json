@@ -23,7 +23,7 @@
           "type": "benefit",
           "settings": {
             "icon": "🧬",
-            "text": "Folate + iron + B12"
+            "text": "20 actives + 16-strain blend"
           }
         },
         "b3": {
@@ -86,7 +86,7 @@
         "brand_label": "PregBiotics™ Essentials",
         "rating": "4.9",
         "review_count": "210+",
-        "hook": "The complete daily prenatal. PregBiotics™ Essentials blends pregnancy-safe probiotic strains with high-dose folate, iron, B12, and prenatal vitamins — for healthy mums and thriving babies.",
+        "hook": "The complete daily prenatal. PregBiotics™ Essentials delivers 20 actives — Folic Acid, full B-complex, iron, zinc, iodine, choline + magnesium — backed by our 16-strain pregnancy-safe MEP probiotic blend. One capsule, total prenatal coverage.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
         "show_buynow": true,
         "show_testi_marquee": true
@@ -184,7 +184,7 @@
           "type": "point",
           "settings": {
             "icon": "✕",
-            "text": "<strong>Synthetic folic acid</strong> instead of bioavailable folate."
+            "text": "<strong>Missing key actives</strong> like choline and iodine for baby's brain."
           }
         }
       },

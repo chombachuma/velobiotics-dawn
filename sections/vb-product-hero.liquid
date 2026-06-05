@@ -1,5 +1,5 @@
 {%- comment -%}
-  VB · Product Hero v4 — swipeable gallery (scroll-snap), variant change without reload
+  VB · Product Hero v5 — native Subscription + Quantity Discount selectors
 {%- endcomment -%}
 
 {%- liquid
@@ -9,6 +9,50 @@
   assign brand_dark   = section.settings.brand_dark    | default: '#36632f'
   assign brand_label  = section.settings.brand_label   | default: 'Velobiotics™'
   assign current_variant = product.selected_or_first_available_variant
+
+  assign default_match_raw = section.settings.default_plan_slug | default: 'every-2-months'
+  assign default_match = default_match_raw | replace: '-', ' '
+  assign has_subscription = false
+  assign sub_plan_id = ''
+  assign sub_plan_label = ''
+  for group in product.selling_plan_groups
+    for plan in group.selling_plans
+      assign plan_name_lower = plan.name | downcase
+      if plan_name_lower contains default_match
+        assign sub_plan_id = plan.id
+        assign sub_plan_label = plan.name
+        assign has_subscription = true
+        break
+      endif
+    endfor
+    if has_subscription
+      break
+    endif
+  endfor
+
+  assign sub_pct_off = section.settings.sub_pct_off | default: 15
+  assign sub_each_pct = 100 | minus: sub_pct_off
+  assign sub_price = current_variant.price | times: sub_each_pct | divided_by: 100
+
+  assign tier2_pct = section.settings.tier2_pct | default: 10
+  assign tier3_pct = section.settings.tier3_pct | default: 15
+  assign tier2_each_pct = 100 | minus: tier2_pct
+  assign tier3_each_pct = 100 | minus: tier3_pct
+  assign tier1_total = current_variant.price
+  assign tier2_total = current_variant.price | times: 2 | times: tier2_each_pct | divided_by: 100
+  assign tier3_total = current_variant.price | times: 3 | times: tier3_each_pct | divided_by: 100
+  assign tier2_each = tier2_total | divided_by: 2
+  assign tier3_each = tier3_total | divided_by: 3
+
+  assign default_freq_days = section.settings.default_frequency_days | default: 60
+  assign freq_label = 'Every 2 months'
+  if default_freq_days == 30
+    assign freq_label = 'Monthly'
+  elsif default_freq_days == 90
+    assign freq_label = 'Every 3 months'
+  elsif default_freq_days == 14
+    assign freq_label = 'Every 2 weeks'
+  endif
 -%}
 
 <style>
@@ -17,7 +61,6 @@
   .vb-ph__grid > * { min-width: 0; }
   .vb-pg { position: sticky; top: 80px; min-width: 0; }
 
-  /* Swipeable gallery: scroll-snap horizontal carousel */
   .vb-pg__track-wrap { position: relative; border-radius: 22px; overflow: hidden; background: var(--bt); margin: 0 0 14px; }
   .vb-pg__track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none; }
   .vb-pg__track::-webkit-scrollbar { display: none; }
@@ -26,12 +69,10 @@
   .vb-pg__save { position: absolute; top: 14px; right: 14px; background: radial-gradient(circle at 30% 30%, #ff5c8a 0%, #ff2e63 50%, #cd1f4c 100%); color: #fff; font-weight: 900; font-size: 16px; padding: 14px 8px; min-width: 64px; height: 64px; border-radius: 50%; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 10px 26px rgba(214, 39, 90, 0.45); transform: rotate(-8deg); border: 3px solid rgba(255,255,255,0.55); line-height: 1; text-align: center; z-index: 3; pointer-events: none; }
   .vb-pg__save small { font-size: 9px; font-weight: 800; letter-spacing: 0.08em; margin-top: 2px; }
 
-  /* Dots indicator (mobile primarily) */
   .vb-pg__dots { display: flex; gap: 6px; justify-content: center; margin: 10px 0 4px; }
   .vb-pg__dot { width: 8px; height: 8px; border-radius: 50%; background: color-mix(in srgb, var(--bp) 25%, #fff); border: none; padding: 0; cursor: pointer; transition: all 0.18s ease; }
   .vb-pg__dot.is-active { background: var(--bp); width: 22px; border-radius: 999px; }
 
-  /* Thumbnails (desktop) */
   .vb-pg__thumbs { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
   .vb-pg__thumb { aspect-ratio: 1/1; border-radius: 10px; overflow: hidden; background: var(--bt); border: 2px solid transparent; cursor: pointer; transition: border-color 0.18s ease, transform 0.18s ease; padding: 0; }
   .vb-pg__thumb img { width: 100%; height: 100%; object-fit: contain; padding: 6px; mix-blend-mode: multiply; }
@@ -50,7 +91,7 @@
   .vb-pb__benefit-icon { width: 32px; height: 32px; border-radius: 50%; background: #fff; color: var(--bp); display: inline-flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; }
   .vb-pb__benefit-text { font-size: 12.5px; font-weight: 700; color: #1a1a1a; line-height: 1.3; min-width: 0; }
 
-  .vb-pb__variants-label { font-size: 12.5px; font-weight: 700; color: #1a1a1a; letter-spacing: 0.04em; text-transform: uppercase; margin: 0 0 10px; }
+  .vb-pb__variants-label, .vb-pb__group-label { font-size: 12.5px; font-weight: 800; color: #1a1a1a; letter-spacing: 0.04em; text-transform: uppercase; margin: 0 0 10px; }
   .vb-pb__variants { display: grid; gap: 10px; margin: 0 0 20px; }
   .vb-pb__variant { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 16px; border: 2px solid #e3ece1; border-radius: 14px; cursor: pointer; transition: all 0.18s ease; background: #fff; }
   .vb-pb__variant:hover { border-color: var(--bp); }
@@ -64,41 +105,41 @@
   .vb-pb__variant-compare { font-size: 12px; color: #a0a0a0; text-decoration: line-through; }
   .vb-pb__variant-best { position: absolute; top: -10px; right: 14px; background: var(--bp); color: #fff; font-size: 9.5px; font-weight: 800; padding: 4px 9px; border-radius: 999px; letter-spacing: 0.06em; text-transform: uppercase; }
 
-  .vb-pb__plugin { background: linear-gradient(135deg, var(--bt) 0%, #fff 100%); border-radius: 16px; padding: 16px; margin: 0 0 14px; border: 1.5px solid color-mix(in srgb, var(--bp) 18%, transparent); position: relative; overflow: hidden; }
-  .vb-pb__plugin--sub { background: linear-gradient(135deg, color-mix(in srgb, var(--bp) 8%, #fff) 0%, #fff 100%); }
-  .vb-pb__plugin--qty { background: linear-gradient(135deg, #fff8eb 0%, #fff 100%); border-color: color-mix(in srgb, #ff9500 25%, transparent); }
-  .vb-pb__plugin-label { display: flex; align-items: center; gap: 10px; font-size: 12.5px; font-weight: 800; color: var(--bp); letter-spacing: 0.06em; text-transform: uppercase; margin: 0 0 12px; flex-wrap: wrap; }
-  .vb-pb__plugin--qty .vb-pb__plugin-label { color: #b25800; }
-  .vb-pb__plugin-pill { display: inline-flex; align-items: center; background: var(--bp); color: #fff; padding: 4px 10px; border-radius: 999px; font-size: 11px; font-weight: 800; letter-spacing: 0.04em; }
-  .vb-pb__plugin--qty .vb-pb__plugin-pill { background: linear-gradient(135deg, #ff9500, #b25800); }
+  /* ============ SUBSCRIPTION SELECTOR ============ */
+  .vb-pb__sub-group { margin: 0 0 16px; }
+  .vb-pb__sub-options { display: grid; gap: 10px; }
+  .vb-pb__sub-opt { position: relative; display: block; padding: 16px 18px 16px 50px; background: #fff; border: 2px solid #e3ece1; border-radius: 14px; cursor: pointer; transition: all 0.18s ease; }
+  .vb-pb__sub-opt:hover { border-color: var(--bp); }
+  .vb-pb__sub-opt input { position: absolute; left: 18px; top: 22px; width: 20px; height: 20px; accent-color: var(--bp); cursor: pointer; margin: 0; }
+  .vb-pb__sub-opt:has(input:checked) { border-color: var(--bp); background: color-mix(in srgb, var(--bp) 7%, #fff); box-shadow: 0 8px 20px color-mix(in srgb, var(--bp) 18%, transparent); }
+  .vb-pb__sub-opt-row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin: 0 0 4px; }
+  .vb-pb__sub-opt-title { font-size: 14.5px; font-weight: 800; color: #1a1a1a; display: inline-flex; align-items: center; gap: 6px; }
+  .vb-pb__sub-opt-price-group { display: inline-flex; align-items: baseline; gap: 8px; flex-shrink: 0; }
+  .vb-pb__sub-opt-price { font-size: 17px; font-weight: 800; color: #1a1a1a; }
+  .vb-pb__sub-opt-compare { font-size: 13px; color: #a0a0a0; text-decoration: line-through; }
+  .vb-pb__sub-opt-sub { font-size: 12.5px; color: #5c6664; line-height: 1.4; }
+  .vb-pb__sub-opt-badge { position: absolute; top: -10px; right: 14px; background: var(--bp); color: #fff; font-size: 9.5px; font-weight: 800; padding: 4px 9px; border-radius: 999px; letter-spacing: 0.06em; text-transform: uppercase; box-shadow: 0 4px 10px color-mix(in srgb, var(--bp) 35%, transparent); }
+  .vb-pb__sub-opt-save { background: var(--bp); color: #fff; padding: 2px 8px; border-radius: 999px; font-size: 10.5px; font-weight: 800; letter-spacing: 0.04em; margin-left: 6px; }
 
-  /* Elegant fallback — shown when app widget hasn't injected yet. Auto-hides once widget DOM appears */
-  .vb-pb__plugin-fallback { padding: 4px 0; }
-  .vb-pb__plugin-fallback-row { display: flex; align-items: flex-start; gap: 12px; }
-  .vb-pb__plugin-fallback-icon { font-size: 24px; line-height: 1; padding-top: 2px; flex-shrink: 0; }
-  .vb-pb__plugin-fallback strong { display: block; font-size: 14px; color: #1a1a1a; font-weight: 800; margin: 0 0 3px; }
-  .vb-pb__plugin-fallback-sub { display: block; font-size: 12.5px; color: #5c6664; font-weight: 500; line-height: 1.45; }
+  /* ============ QUANTITY DISCOUNT TIERS ============ */
+  .vb-pb__tier-group { margin: 0 0 16px; }
+  .vb-pb__tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .vb-pb__tier { position: relative; display: block; background: #fff; border: 2px solid #e3ece1; border-radius: 14px; padding: 18px 12px 14px; text-align: center; cursor: pointer; transition: all 0.2s ease; }
+  .vb-pb__tier:hover { border-color: var(--bp); transform: translateY(-2px); }
+  .vb-pb__tier input { position: absolute; opacity: 0; pointer-events: none; }
+  .vb-pb__tier:has(input:checked) { border-color: var(--bp); background: color-mix(in srgb, var(--bp) 6%, #fff); box-shadow: 0 10px 24px color-mix(in srgb, var(--bp) 22%, transparent); }
+  .vb-pb__tier--best { border-color: #ff9500; }
+  .vb-pb__tier--best:hover { border-color: #ff9500; }
+  .vb-pb__tier--best:has(input:checked) { border-color: #ff9500; background: linear-gradient(135deg, #fff8eb 0%, #fff 100%); box-shadow: 0 10px 26px rgba(255, 149, 0, 0.22); }
+  .vb-pb__tier-badge { position: absolute; top: -10px; left: 50%; transform: translateX(-50%); padding: 4px 10px; border-radius: 999px; font-size: 9.5px; font-weight: 900; letter-spacing: 0.08em; white-space: nowrap; }
+  .vb-pb__tier--best .vb-pb__tier-badge { background: linear-gradient(135deg, #ff9500, #b25800); color: #fff; box-shadow: 0 4px 10px rgba(255, 149, 0, 0.35); }
+  .vb-pb__tier-qty { font-size: 17px; font-weight: 900; color: #1a1a1a; letter-spacing: -0.01em; margin: 0 0 4px; }
+  .vb-pb__tier-save { font-size: 11.5px; font-weight: 800; color: #5c6664; margin: 0 0 6px; text-transform: uppercase; letter-spacing: 0.04em; }
+  .vb-pb__tier--best .vb-pb__tier-save { color: #b25800; }
+  .vb-pb__tier:has(input:checked) .vb-pb__tier-save { color: var(--bp); }
+  .vb-pb__tier-price { font-size: 14.5px; font-weight: 800; color: #1a1a1a; line-height: 1.2; }
+  .vb-pb__tier-each { font-size: 10.5px; color: #5c6664; font-weight: 600; margin-top: 3px; }
 
-  /* Quantity tier cards */
-  .vb-pb__qty-tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 0 0 10px; }
-  .vb-pb__qty-tier { background: #fff; border: 1.5px solid #f0e6d0; border-radius: 10px; padding: 10px 8px; text-align: center; display: flex; flex-direction: column; gap: 4px; transition: all 0.18s ease; }
-  .vb-pb__qty-tier--best { border-color: #ff9500; background: linear-gradient(135deg, #fff 0%, #fff8eb 100%); position: relative; box-shadow: 0 6px 14px rgba(255, 149, 0, 0.15); }
-  .vb-pb__qty-tier--best::before { content: 'BEST'; position: absolute; top: -8px; left: 50%; transform: translateX(-50%); background: #ff9500; color: #fff; padding: 2px 8px; border-radius: 999px; font-size: 9px; font-weight: 900; letter-spacing: 0.08em; }
-  .vb-pb__qty-tier-qty { font-size: 14px; font-weight: 900; color: #1a1a1a; letter-spacing: -0.01em; }
-  .vb-pb__qty-tier-save { font-size: 11px; font-weight: 700; color: #b25800; }
-  .vb-pb__qty-tier:not(.vb-pb__qty-tier--best) .vb-pb__qty-tier-save { color: #5c6664; }
-
-  /* Hide fallback when an app widget has injected real content */
-  [data-paywhirl-widget]:not(:empty) > [data-vbp-fallback]:not(:only-child) { display: none; }
-  [data-qty-discount-widget]:not(:empty) > [data-vbp-fallback]:not(:only-child) { display: none; }
-  /* Hide fallback when PayWhirl/QD apps insert siblings */
-  .paywhirl-widget.has-content [data-vbp-fallback],
-  .qty-discount-widget.has-content [data-vbp-fallback] { display: none; }
-
-  .vb-pb__price-summary { display: flex; align-items: baseline; gap: 12px; padding: 14px 16px; background: linear-gradient(135deg, var(--bt) 0%, #fff 100%); border-radius: 14px; margin: 0 0 14px; border: 1px solid color-mix(in srgb, var(--bp) 14%, transparent); flex-wrap: wrap; }
-  .vb-pb__price-now { font-size: 28px; font-weight: 900; color: #1a1a1a; letter-spacing: -0.02em; }
-  .vb-pb__price-was { font-size: 14px; color: #a0a0a0; text-decoration: line-through; }
-  .vb-pb__price-save { background: var(--bp); color: #fff; padding: 4px 10px; border-radius: 999px; font-size: 11px; font-weight: 800; letter-spacing: 0.04em; }
   .vb-pb__price-block { display: flex; align-items: baseline; flex-wrap: wrap; gap: 12px; padding: 14px 16px; background: linear-gradient(135deg, var(--bt) 0%, #fff 100%); border-radius: 14px; margin: 0 0 14px; border: 1px solid color-mix(in srgb, var(--bp) 14%, transparent); }
   .vb-pb__price-block .price__container { display: inline-flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
   .vb-pb__price-now { font-size: 28px; font-weight: 900; color: #1a1a1a; letter-spacing: -0.02em; }
@@ -162,6 +203,12 @@
     .vb-pb__pay-icon { font-size: 10px; height: 20px; min-width: 36px; padding: 2px 5px; }
     .vb-pb__price-now { font-size: 24px; }
     .vb-pb__testi { font-size: 11px; padding: 6px 11px; }
+    .vb-pb__tier-qty { font-size: 14px; }
+    .vb-pb__tier-price { font-size: 13px; }
+    .vb-pb__tier { padding: 16px 8px 12px; }
+    .vb-pb__sub-opt { padding: 14px 14px 14px 44px; }
+    .vb-pb__sub-opt-title { font-size: 13px; }
+    .vb-pb__sub-opt-price { font-size: 15px; }
   }
 </style>
 
@@ -255,75 +302,78 @@
           <input type="hidden" name="id" value="{{ current_variant.id }}" />
         {%- endif -%}
 
-        {%- comment -%} PayWhirl Subscribe & Save slot — auto-rendered on every product. Toggle off per-product in Theme editor → "Show subscription". {%- endcomment -%}
+        {%- comment -%} ============ SUBSCRIPTION SELECTOR (replaces PayWhirl widget visually) ============ {%- endcomment -%}
         {%- if section.settings.show_subscription -%}
-        <div class="vb-pb__plugin vb-pb__plugin--sub" data-vbp-paywhirl-slot>
-          <div class="vb-pb__plugin-label">
-            <span>🔁 Subscribe & Save</span>
-            <span class="vb-pb__plugin-pill">{{ section.settings.subscription_save | default: 'Save 15%' }}</span>
+        <div class="vb-pb__sub-group" data-vbp-sub-group>
+          <p class="vb-pb__group-label">🔁 Choose how you buy</p>
+          <div class="vb-pb__sub-options">
+            <label class="vb-pb__sub-opt">
+              <input type="radio" name="purchase_mode" value="onetime" {% unless section.settings.default_subscribe %}checked{% endunless %} data-selling-plan="">
+              <div class="vb-pb__sub-opt-row">
+                <span class="vb-pb__sub-opt-title">One-time purchase</span>
+                <span class="vb-pb__sub-opt-price-group">
+                  <span class="vb-pb__sub-opt-price">{{ current_variant.price | money }}</span>
+                </span>
+              </div>
+              <span class="vb-pb__sub-opt-sub">Single order · No commitment</span>
+            </label>
+            <label class="vb-pb__sub-opt">
+              <span class="vb-pb__sub-opt-badge">Best Value</span>
+              <input type="radio" name="purchase_mode" value="subscribe" {% if section.settings.default_subscribe %}checked{% endif %} data-selling-plan="{{ sub_plan_id }}">
+              <div class="vb-pb__sub-opt-row">
+                <span class="vb-pb__sub-opt-title">🔁 Subscribe & Save <span class="vb-pb__sub-opt-save">−{{ sub_pct_off }}%</span></span>
+                <span class="vb-pb__sub-opt-price-group">
+                  <span class="vb-pb__sub-opt-price">{{ sub_price | money }}</span>
+                  <span class="vb-pb__sub-opt-compare">{{ current_variant.price | money }}</span>
+                </span>
+              </div>
+              <span class="vb-pb__sub-opt-sub">{{ freq_label }} delivery · Pause, skip, or cancel anytime · Free shipping included</span>
+            </label>
           </div>
+          {%- comment -%} Hidden field — populated by JS on radio change. Shopify natively reads `selling_plan` to attach the subscription. {%- endcomment -%}
+          <input type="hidden" name="selling_plan" value="{% if section.settings.default_subscribe %}{{ sub_plan_id }}{% endif %}" data-vbp-selling-plan>
 
-          {%- comment -%} Render any PayWhirl app block dragged into the section via Theme editor {%- endcomment -%}
+          {%- comment -%} Render any PayWhirl app block dragged into the section via Theme editor (kept for backward compat) {%- endcomment -%}
           {%- for block in section.blocks -%}
             {%- if block.type == '@app' -%}
-              <div class="vb-pb__plugin-appblock">{% render block %}</div>
+              <div style="margin-top:10px">{% render block %}</div>
             {%- endif -%}
           {%- endfor -%}
-
-          {%- comment -%}
-            PayWhirl auto-inject target — uses every selector PayWhirl JS looks for:
-              #paywhirl-multi-plan-selector (Shopify default ID)
-              .paywhirl-multi-plan-selector, .paywhirl-widget, .pw-widget (class fallbacks)
-            Data attributes guide the plan default:
-              data-default-frequency="{{ default_frequency_days }}" — frequency in days
-              data-default-plan-slug — slug match in PayWhirl dashboard
-          {%- endcomment -%}
-          <div
-            id="paywhirl-multi-plan-selector"
-            class="paywhirl-multi-plan-selector paywhirl-widget paywhirl-subscriptions pw-widget pw-multi-plan-selector pw-subscription-widget"
-            data-paywhirl-widget
-            data-paywhirl-product-id="{{ product.id }}"
-            data-product-id="{{ product.id }}"
-            data-product-handle="{{ product.handle }}"
-            data-variant-id="{{ current_variant.id }}"
-            data-default-frequency="{{ section.settings.default_frequency_days | default: 60 }}"
-            data-default-plan-slug="{{ section.settings.default_plan_slug | default: 'every-2-months' }}"
-            data-mode="selector"
-          >
-            <div class="vb-pb__plugin-fallback" data-vbp-fallback>
-              <div class="vb-pb__plugin-fallback-row">
-                <span class="vb-pb__plugin-fallback-icon">🔁</span>
-                <div>
-                  <strong>{{ section.settings.subscription_headline | default: 'Subscribe & save 15% — Every 2 months' }}</strong>
-                  <span class="vb-pb__plugin-fallback-sub">{{ section.settings.subscription_sub | default: 'Pause, skip or cancel anytime · Free shipping included · Set up at checkout' }}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {%- comment -%}
-            Best-effort lazy load of PayWhirl's widget script.
-            Safe-by-default: only loads if PayWhirl JS isn't already on the page
-            and only once per page-view. Will not double-load.
-          {%- endcomment -%}
-          <script>
-            (function(){
-              if (window.PaywhirlBootstrapped) return;
-              window.PaywhirlBootstrapped = true;
-              /* Try to refresh widget if PayWhirl already loaded */
-              if (window.paywhirl && typeof window.paywhirl.refresh === 'function') {
-                try { window.paywhirl.refresh(); } catch(e){}
-                return;
-              }
-              /* If PayWhirl's theme extension hasn't injected its script yet,
-                 there's nothing to do — the @app block render above will inject it.
-                 The auto-inject DIV above will then be detected. */
-            })();
-          </script>
         </div>
         {%- endif -%}
 
-        {%- comment -%} Price block — uses standard Shopify classes so the regional pricing plugin can localise it. Do NOT touch via JS. {%- endcomment -%}
+        {%- comment -%} ============ QUANTITY DISCOUNT TIERS (replaces Vital/HulkApps widget visually) ============ {%- endcomment -%}
+        {%- if section.settings.show_qty_discount -%}
+        <div class="vb-pb__tier-group" data-vbp-tier-group>
+          <p class="vb-pb__group-label">💰 Stack & save more</p>
+          <div class="vb-pb__tiers">
+            <label class="vb-pb__tier">
+              <input type="radio" name="qty_tier" value="1" checked>
+              <div class="vb-pb__tier-qty">1 {{ section.settings.tier_unit | default: 'Bottle' }}</div>
+              <div class="vb-pb__tier-save">Full Price</div>
+              <div class="vb-pb__tier-price">{{ tier1_total | money }}</div>
+            </label>
+            <label class="vb-pb__tier">
+              <input type="radio" name="qty_tier" value="2">
+              <div class="vb-pb__tier-qty">2 {{ section.settings.tier_unit_plural | default: 'Bottles' }}</div>
+              <div class="vb-pb__tier-save">Save {{ tier2_pct }}%</div>
+              <div class="vb-pb__tier-price">{{ tier2_total | money }}</div>
+              <div class="vb-pb__tier-each">{{ tier2_each | money }} each</div>
+            </label>
+            <label class="vb-pb__tier vb-pb__tier--best">
+              <span class="vb-pb__tier-badge">★ BEST DEAL</span>
+              <input type="radio" name="qty_tier" value="3">
+              <div class="vb-pb__tier-qty">3 {{ section.settings.tier_unit_plural | default: 'Bottles' }}</div>
+              <div class="vb-pb__tier-save">Save {{ tier3_pct }}%</div>
+              <div class="vb-pb__tier-price">{{ tier3_total | money }}</div>
+              <div class="vb-pb__tier-each">{{ tier3_each | money }} each</div>
+            </label>
+          </div>
+          <p style="font-size:11.5px;color:#6c7a6b;margin:10px 0 0;text-align:center;font-weight:600">Discount automatically applied at checkout</p>
+        </div>
+        {%- endif -%}
+
+        {%- comment -%} Price block — uses standard Shopify classes so the regional pricing plugin can localise it. {%- endcomment -%}
         <div class="vb-pb__price-block price" data-vbp-price-block>
           <span class="price__container">
             <span class="price-item price-item--regular vb-pb__price-now">{{ current_variant.price | money }}</span>
@@ -345,7 +395,7 @@
         <div class="vb-pb__qty-row">
           <div class="vb-pb__qty">
             <button type="button" aria-label="Decrease" data-qty-minus>−</button>
-            <input type="number" name="quantity" value="1" min="1" />
+            <input type="number" name="quantity" value="1" min="1" data-vbp-qty />
             <button type="button" aria-label="Increase" data-qty-plus>+</button>
           </div>
           <button type="submit" class="vb-pb__atc" data-vbp-atc {% unless current_variant.available %}disabled{% endunless %}>{% if current_variant.available %}🛒 Add to Cart{% else %}Sold out{% endif %}</button>
@@ -411,7 +461,6 @@
     };
     dots.forEach(d => d.addEventListener('click', () => goTo(parseInt(d.dataset.vbpgDot))));
     thumbs.forEach(t => t.addEventListener('click', () => goTo(parseInt(t.dataset.vbpgThumb))));
-    // Listen to scroll to update dots/thumbs as user swipes
     let scrollT;
     track?.addEventListener('scroll', () => {
       clearTimeout(scrollT);
@@ -421,14 +470,43 @@
       }, 80);
     });
 
-    // Qty
-    const qty = root.querySelector('[name="quantity"]');
-    root.querySelector('[data-qty-minus]')?.addEventListener('click', () => { qty.value = Math.max(1, parseInt(qty.value||1)-1); });
-    root.querySelector('[data-qty-plus]')?.addEventListener('click', () => { qty.value = parseInt(qty.value||1)+1; });
+    const qty = root.querySelector('[data-vbp-qty]');
+    root.querySelector('[data-qty-minus]')?.addEventListener('click', () => { qty.value = Math.max(1, parseInt(qty.value||1)-1); qty.dispatchEvent(new Event('input',{bubbles:true})); });
+    root.querySelector('[data-qty-plus]')?.addEventListener('click', () => { qty.value = parseInt(qty.value||1)+1; qty.dispatchEvent(new Event('input',{bubbles:true})); });
 
-    // Variant change WITHOUT page reload — ONLY update variant ID + ATC availability.
-    // PRICES are intentionally NOT touched here — the regional pricing plugin (US/SA)
-    // owns the price field and must not be overridden by this section.
+    /* ============ Subscription radio → set selling_plan hidden input ============ */
+    const sellingInput = root.querySelector('[data-vbp-selling-plan]');
+    root.querySelectorAll('input[name="purchase_mode"]').forEach(r => {
+      r.addEventListener('change', () => {
+        if (sellingInput) sellingInput.value = r.dataset.sellingPlan || '';
+      });
+    });
+
+    /* ============ Quantity tier radio → set quantity input ============ */
+    root.querySelectorAll('input[name="qty_tier"]').forEach(r => {
+      r.addEventListener('change', () => {
+        if (qty) qty.value = parseInt(r.value, 10) || 1;
+      });
+    });
+
+    /* When user manually changes qty via stepper, sync the tier highlight */
+    if (qty) {
+      qty.addEventListener('input', () => {
+        const v = parseInt(qty.value, 10);
+        const tier = root.querySelector('input[name="qty_tier"][value="'+v+'"]');
+        if (tier) {
+          tier.checked = true;
+        } else {
+          /* For qty > 3, keep tier 3 selected (3+ tier) */
+          if (v >= 3) {
+            const t3 = root.querySelector('input[name="qty_tier"][value="3"]');
+            if (t3) t3.checked = true;
+          }
+        }
+      });
+    }
+
+    /* Variant change — only update variant ID + ATC availability. Prices NOT touched (regional pricing plugin owns them) */
     const atcBtn = root.querySelector('[data-vbp-atc]');
     root.querySelectorAll('input[name="id"]').forEach(r => {
       r.addEventListener('change', () => {
@@ -437,22 +515,19 @@
           atcBtn.disabled = !isAvailable;
           atcBtn.innerHTML = isAvailable ? '🛒 Add to Cart' : 'Sold out';
         }
-        // Update URL silently so Buy It Now / shareable links still target the right variant
         if (window.history && window.history.replaceState) {
           const u = new URL(window.location);
           u.searchParams.set('variant', r.value);
           window.history.replaceState({}, '', u);
         }
-        // Let the regional pricing plugin re-resolve prices — dispatch a Shopify-standard event
         document.dispatchEvent(new CustomEvent('variant:change', { detail: { variantId: r.value } }));
       });
     });
 
-    // AJAX add to cart — keep user on page
+    /* AJAX add to cart */
     const form = root.querySelector('[data-vbp-form]');
     if (form && atcBtn) {
       form.addEventListener('submit', async (e) => {
-        // Only intercept the Add to Cart, not Buy It Now (Buy It Now uses name=checkout)
         const submitter = e.submitter;
         if (submitter && submitter.name === 'checkout') return;
         e.preventDefault();
@@ -462,12 +537,13 @@
         atcBtn.innerHTML = '⏳ Adding...';
         try {
           const fd = new FormData(form);
+          /* Strip empty selling_plan so Shopify treats as one-time */
+          if (fd.get('selling_plan') === '') fd.delete('selling_plan');
           const res = await fetch('/cart/add.js', { method: 'POST', headers: { 'Accept': 'application/json' }, body: fd });
           if (!res.ok) throw new Error('Add failed');
           atcBtn.classList.remove('is-loading');
           atcBtn.classList.add('is-added');
           atcBtn.innerHTML = '✓ Added — redirecting...';
-          // Redirect straight to cart page per Velobiotics flow
           window.location.href = '/cart';
         } catch (err) {
           atcBtn.classList.remove('is-loading');
@@ -493,17 +569,23 @@
     { "type": "text", "id": "review_count", "label": "Review count", "default": "3,500+" },
     { "type": "textarea", "id": "hook", "label": "Hook line" },
     { "type": "text", "id": "ship_note", "label": "Shipping note", "default": "Free shipping over the free-shipping threshold · 30-day money-back guarantee" },
-    { "type": "header", "content": "Subscription (PayWhirl)" },
-    { "type": "checkbox", "id": "show_subscription", "label": "Show subscription option", "default": true, "info": "Renders the PayWhirl Subscribe & Save slot above Add to Cart. Uncheck on one-off products that don't need subscription (kits, applicators, tests)." },
-    { "type": "select", "id": "default_plan_slug", "label": "Default plan", "options": [
-      {"value":"every-2-months","label":"Every 2 Months · Save 15% (default)"},
-      {"value":"monthly","label":"Monthly · Save 15%"},
-      {"value":"every-3-months","label":"Every 3 Months · Save 15%"}
-    ], "default": "every-2-months", "info": "Which PayWhirl plan to default-select. Must match the plan slug in PayWhirl dashboard." },
-    { "type": "number", "id": "default_frequency_days", "label": "Default frequency (days)", "default": 60, "info": "60 = every 2 months · 30 = monthly · 90 = every 3 months." },
-    { "type": "text", "id": "subscription_save", "label": "Savings pill", "default": "Save 15%" },
-    { "type": "text", "id": "subscription_headline", "label": "Headline (fallback only)", "default": "Subscribe & save 15% — Every 2 months" },
-    { "type": "textarea", "id": "subscription_sub", "label": "Sub-line (fallback only)", "default": "Pause, skip or cancel anytime · Free shipping included · Set up at checkout" },
+    { "type": "header", "content": "Subscription · Native UI + PayWhirl backend" },
+    { "type": "checkbox", "id": "show_subscription", "label": "Show subscription selector", "default": true, "info": "Renders the Velobiotics-styled Subscribe & Save selector. Uncheck on one-off products (kits, applicators, tests)." },
+    { "type": "checkbox", "id": "default_subscribe", "label": "Default to Subscribe (vs One-time)", "default": false, "info": "If checked, the Subscribe option is preselected. If unchecked, One-time is preselected." },
+    { "type": "select", "id": "default_plan_slug", "label": "Default subscription plan", "options": [
+      {"value":"every-2-months","label":"Every 2 Months (default)"},
+      {"value":"monthly","label":"Monthly"},
+      {"value":"every-3-months","label":"Every 3 Months"},
+      {"value":"every-2-weeks","label":"Every 2 Weeks"}
+    ], "default": "every-2-months", "info": "Must match a Selling Plan name in PayWhirl. We match case-insensitive substring (e.g. 'every 2 months')." },
+    { "type": "number", "id": "default_frequency_days", "label": "Frequency (days) — for display label", "default": 60, "info": "60 = every 2 months · 30 = monthly · 90 = every 3 months · 14 = every 2 weeks." },
+    { "type": "number", "id": "sub_pct_off", "label": "Subscription discount %", "default": 15 },
+    { "type": "header", "content": "Quantity Discount · Native UI" },
+    { "type": "checkbox", "id": "show_qty_discount", "label": "Show quantity discount tiers", "default": true, "info": "Renders 3 tier cards (Buy 1 / 2 / 3). Set up matching Shopify Automatic Discounts in Admin → Discounts → Create discount → Automatic: 'Buy 2+ get 10% off' and 'Buy 3+ get 15% off'." },
+    { "type": "number", "id": "tier2_pct", "label": "Tier 2 discount %", "default": 10 },
+    { "type": "number", "id": "tier3_pct", "label": "Tier 3 discount %", "default": 15 },
+    { "type": "text", "id": "tier_unit", "label": "Unit (singular)", "default": "Bottle" },
+    { "type": "text", "id": "tier_unit_plural", "label": "Unit (plural)", "default": "Bottles" },
     { "type": "header", "content": "Other" },
     { "type": "checkbox", "id": "show_buynow", "label": "Show Buy It Now", "default": true },
     { "type": "checkbox", "id": "show_testi_marquee", "label": "Scrolling testimonials", "default": true }

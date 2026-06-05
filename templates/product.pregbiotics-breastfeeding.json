@@ -1,0 +1,351 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {"type":"benefit","settings":{"icon":"🤱","text":"Postpartum + breastfeeding daily"}},
+        "b2": {"type":"benefit","settings":{"icon":"🧠","text":"DHA for baby brain via milk"}},
+        "b3": {"type":"benefit","settings":{"icon":"🦠","text":"16-strain MEP probiotic blend"}},
+        "b4": {"type":"benefit","settings":{"icon":"⚡","text":"1000× more delivery"}},
+        "t1": {"type":"testi","settings":{"quote":"My energy came back","author":"Nomvula T."}},
+        "t2": {"type":"testi","settings":{"quote":"Baby is thriving","author":"Ayesha M."}},
+        "t3": {"type":"testi","settings":{"quote":"No hair loss this time","author":"Rebecca J."}},
+        "t4": {"type":"testi","settings":{"quote":"OB recommended it","author":"Linda S."}}
+      },
+      "block_order": ["b1","b2","b3","b4","t1","t2","t3","t4"],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
+        "brand_label": "PregBiotics™ Breastfeeding",
+        "rating": "4.9",
+        "review_count": "850+",
+        "hook": "Nourish your baby. Restore yourself. PregBiotics™ Breastfeeding delivers 20 postpartum-essential actives (calcium, magnesium, full B-complex, iron, iodine) plus a pharmaceutical-grade fish-oil soft gel (300mg DHA + 400mg EPA) — backed by our 16-strain MEP probiotic blend. Everything mum and baby need through breast milk.",
+        "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
+    },
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {"type":"review","settings":{"avatar_url":"https://ui-avatars.com/api/?name=Nomvula+T&background=1f6b3d&color=ffffff&size=120&bold=true&font-size=0.42","author":"Nomvula T.","meta":"Verified buyer · Pretoria","quote":"My energy came back by week 3. The B-complex is potent."}},
+        "r2": {"type":"review","settings":{"avatar_url":"https://ui-avatars.com/api/?name=Ayesha+M&background=5fa37a&color=ffffff&size=120&bold=true&font-size=0.42","author":"Ayesha M.","meta":"Verified buyer · 5 months ago","quote":"Baby is thriving and putting on healthy weight. DHA through breast milk works."}},
+        "r3": {"type":"review","settings":{"avatar_url":"https://ui-avatars.com/api/?name=Rebecca+J&background=0a3d22&color=ffffff&size=120&bold=true&font-size=0.42","author":"Rebecca J.","meta":"Verified buyer · 4 months ago","quote":"No hair loss this time around. Biotin + iron made the difference."}},
+        "r4": {"type":"review","settings":{"avatar_url":"https://ui-avatars.com/api/?name=Linda+S&background=1f6b3d&color=ffffff&size=120&bold=true&font-size=0.42","author":"Linda S.","meta":"Verified buyer · Johannesburg","quote":"My OB recommended PregBiotics for breastfeeding. Smart choice."}},
+        "r5": {"type":"review","settings":{"avatar_url":"https://ui-avatars.com/api/?name=Caroline+B&background=5fa37a&color=ffffff&size=120&bold=true&font-size=0.42","author":"Caroline B.","meta":"Verified buyer · Cape Town","quote":"Postpartum mood was steadier. Probably the omega-3 + B-vitamins."}}
+      },
+      "block_order": ["r1","r2","r3","r4","r5"],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
+        "eyebrow": "★ Real Reviews",
+        "title": "Breastfeeding mothers thriving"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {"type":"point","settings":{"icon":"✕","text":"<strong>Postpartum depletion</strong> — your body is feeding two people."}},
+        "p2": {"type":"point","settings":{"icon":"✕","text":"<strong>Hair loss + brittle nails</strong> from depleted biotin and iron."}},
+        "p3": {"type":"point","settings":{"icon":"✕","text":"<strong>Baby brain & eye development</strong> needs DHA through breast milk."}},
+        "p4": {"type":"point","settings":{"icon":"✕","text":"<strong>Generic prenatals</strong> don't account for breastfeeding demands."}}
+      },
+      "block_order": ["p1","p2","p3","p4"],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#1f6b3d",
+        "brand_tint": "#f2f9ec",
+        "image_url": "",
+        "tag_value": "2×",
+        "tag_label": "Nutrient Demand While Breastfeeding",
+        "eyebrow": "The Problem",
+        "title_pre": "Breastfeeding takes",
+        "title_highlight": "everything you've got.",
+        "desc": "While you're feeding your baby, your body is giving away calcium, iron, B-vitamins, choline, DHA — every day. Generic post-natal vitamins don't account for the doubled nutritional load. Breastfeeding is built specifically for the most demanding nutritional season of motherhood."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {"type":"point","settings":{"icon":"✓","text":"<strong>Calcium 400mg + Magnesium 150mg</strong> — replenish what breast milk takes."}},
+        "s2": {"type":"point","settings":{"icon":"✓","text":"<strong>Iron 16mg + B-complex</strong> — restore stores depleted by birth + breastfeeding."}},
+        "s3": {"type":"point","settings":{"icon":"✓","text":"<strong>DHA 300mg + EPA 400mg</strong> — passes into breast milk for baby's brain + eyes."}},
+        "s4": {"type":"point","settings":{"icon":"✓","text":"<strong>16-strain MEP Blend</strong> — gut + immune signals also pass to baby."}}
+      },
+      "block_order": ["s1","s2","s3","s4"],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#1f6b3d",
+        "brand_tint": "#f2f9ec",
+        "image_url": "",
+        "tag_value": "1000×",
+        "tag_label": "More Probiotics Delivered",
+        "eyebrow": "The Solution",
+        "title_pre": "Meet",
+        "title_highlight": "PregBiotics™ Breastfeeding.",
+        "desc": "20 actives at clinical doses to replenish mum + nourish baby through breast milk. Higher calcium, higher zinc, fish-oil DHA + EPA, and our 16-strain MEP probiotic blend — engineered specifically for the breastfeeding season."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {"type":"product","settings":{"product_handle":"pregbiotics-essentials","brand":"PregBiotics™","rating":"4.9","reviews":"210+","fallback_title":"","fallback_url":"","fallback_price":""}},
+        "r2": {"type":"product","settings":{"product_handle":"pregbiotics-essentials-with-omega","brand":"PregBiotics™","rating":"4.8","reviews":"150+","fallback_title":"","fallback_url":"","fallback_price":""}},
+        "r3": {"type":"product","settings":{"product_handle":"pregbiotics-conception","brand":"PregBiotics™","rating":"4.8","reviews":"180+","fallback_title":"","fallback_url":"","fallback_price":""}},
+        "r4": {"type":"product","settings":{"product_handle":"biokid-chewable-probiotics-tablets-for-children","brand":"BioKid™","rating":"4.8","reviews":"200+","fallback_title":"","fallback_url":"","fallback_price":""}}
+      },
+      "block_order": ["r1","r2","r3","r4"],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
+        "tint": false,
+        "eyebrow": "Complete the Journey",
+        "title": "More from the PregBiotics™ family",
+        "sub": "From conception through breastfeeding and beyond — we have you covered."
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "b1": {"type":"feat","settings":{"icon":"🤱","name":"Milk Supply Support","desc":"B-vitamins, iodine, and zinc support lactation and milk-nutrient density."}},
+        "b2": {"type":"feat","settings":{"icon":"🧠","name":"Baby Brain via Breast Milk","desc":"DHA 300mg + EPA 400mg pass directly to baby's developing nervous system."}},
+        "b3": {"type":"feat","settings":{"icon":"💪","name":"Maternal Recovery","desc":"Iron, calcium, and full B-complex restore postpartum stores."}},
+        "b4": {"type":"feat","settings":{"icon":"✨","name":"Hair + Skin + Nails","desc":"Biotin and zinc combat postpartum hair shedding."}},
+        "b5": {"type":"feat","settings":{"icon":"😌","name":"Mood Steadiness","desc":"Omega-3 + B-complex support postpartum emotional balance."}},
+        "b6": {"type":"feat","settings":{"icon":"🦠","name":"Microbiome Priming","desc":"16-strain blend supports both mum's and baby's gut development."}}
+      },
+      "block_order": ["b1","b2","b3","b4","b5","b6"],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_tint": "#f2f9ec",
+        "eyebrow": "Key Benefits",
+        "title_pre": "Why",
+        "title_highlight": "Breastfeeding",
+        "sub": "Six reasons nursing mothers choose Breastfeeding as their daily ritual."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": {"type":"step","settings":{"icon":"💊","name":"Take 1 Capsule + 1 Soft Gel Daily","desc":"With water, after a meal. Continue for the full breastfeeding journey."}},
+        "h2": {"type":"step","settings":{"icon":"🛡️","name":"MEP Armour Survives","desc":"Velobiotics™ shield protects every culture and active."}},
+        "h3": {"type":"step","settings":{"icon":"🤱","name":"Nutrients Reach Baby","desc":"DHA, B-vitamins, iodine, and probiotics pass to baby through breast milk."}},
+        "h4": {"type":"step","settings":{"icon":"👶","name":"Healthy Mum, Thriving Baby","desc":"You feel restored. Baby gets everything they need."}}
+      },
+      "block_order": ["h1","h2","h3","h4"],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_tint": "#f2f9ec",
+        "eyebrow": "How It Works",
+        "title_pre": "From Capsule to",
+        "title_highlight": "Complete Coverage",
+        "sub": "Four simple steps. One daily ritual. Everything breastfeeding takes."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-formula",
+      "blocks": {
+        "i1":  {"type":"ingredient","settings":{"icon":"☀️","name":"Vitamin D","amount":"10 mcg (400 IU)","dv":"200%","role":"Supports calcium absorption and baby's bone development; vital nutrient often missing from breast milk.","source":"Cholecalciferol","tags":"Bone, Essential for milk"}},
+        "i2":  {"type":"ingredient","settings":{"icon":"🛡️","name":"Vitamin E","amount":"20 mg α-TE","dv":"167%","role":"Antioxidant protection for both mother and infant during demanding postpartum recovery.","source":"Tocopherol","tags":"Antioxidant"}},
+        "i3":  {"type":"ingredient","settings":{"icon":"🍊","name":"Vitamin C","amount":"120 mg","dv":"88%","role":"Antioxidant defence + iron absorption for mothers replenishing nutrient stores.","source":"Ascorbic Acid","tags":"Immune, Iron-helper"}},
+        "i4":  {"type":"ingredient","settings":{"icon":"⚡","name":"Vitamin B1 (Thiamin)","amount":"5 mg","dv":"455%","role":"Energy metabolism for the round-the-clock demands of new motherhood.","source":"Thiamin","tags":"Energy, B-Complex"}},
+        "i5":  {"type":"ingredient","settings":{"icon":"⚡","name":"Vitamin B2 (Riboflavin)","amount":"2 mg","dv":"143%","role":"Critical B-vitamin that passes into breast milk for baby's growth.","source":"Riboflavin","tags":"Passes to baby"}},
+        "i6":  {"type":"ingredient","settings":{"icon":"⚡","name":"Vitamin B3 (Niacin)","amount":"20 mg NE","dv":"125%","role":"Skin, nervous system, and energy support for both mother and infant.","source":"Niacin","tags":"B-Complex"}},
+        "i7":  {"type":"ingredient","settings":{"icon":"⚡","name":"Vitamin B6","amount":"10 mg","dv":"714%","role":"Helps regulate mood, supports milk production, and reaches baby through breast milk.","source":"Pyridoxine","tags":"Mood, Milk supply"}},
+        "i8":  {"type":"ingredient","settings":{"icon":"🧬","name":"Folic Acid","amount":"400 mcg","dv":"200%","role":"Continues supporting cell division and DNA synthesis postpartum.","source":"Folic Acid","tags":"Essential"}},
+        "i9":  {"type":"ingredient","settings":{"icon":"⚡","name":"Vitamin B12","amount":"6 mcg","dv":"240%","role":"Essential for baby's neural development; passes through breast milk.","source":"Cyanocobalamin","tags":"Passes to baby"}},
+        "i10": {"type":"ingredient","settings":{"icon":"✨","name":"Biotin","amount":"50 mcg","dv":"100%","role":"Hair, skin, and nail support — combats postpartum hair shedding.","source":"D-Biotin","tags":"Beauty, Anti-shed"}},
+        "i11": {"type":"ingredient","settings":{"icon":"⚡","name":"Pantothenic Acid (B5)","amount":"6 mg","dv":"100%","role":"Energy synthesis and hormone balance during postpartum recalibration.","source":"Calcium Pantothenate","tags":"B-Complex"}},
+        "i12": {"type":"ingredient","settings":{"icon":"🦴","name":"Calcium","amount":"400 mg","dv":"50%","role":"Replenishes maternal bone stores depleted by breast-milk production.","source":"Calcium carbonate","tags":"Mineral, Replenish"}},
+        "i13": {"type":"ingredient","settings":{"icon":"💎","name":"Magnesium","amount":"150 mg","dv":"40%","role":"Muscle relaxation, sleep support, and recovery for nursing mothers.","source":"Magnesium glycinate","tags":"Mineral, Sleep"}},
+        "i14": {"type":"ingredient","settings":{"icon":"💎","name":"Iron","amount":"16 mg","dv":"114%","role":"Restores iron lost during birth and replenishes maternal stores.","source":"Ferrous fumarate","tags":"Mineral, Essential"}},
+        "i15": {"type":"ingredient","settings":{"icon":"💎","name":"Zinc","amount":"15 mg","dv":"150%","role":"Immune health for mother + supports baby's growth via breast milk.","source":"Zinc oxide","tags":"Mineral, Immune"}},
+        "i16": {"type":"ingredient","settings":{"icon":"💎","name":"Copper","amount":"500 mcg","dv":"50%","role":"Iron metabolism partner, supports connective-tissue recovery.","source":"Copper glycinate","tags":"Mineral"}},
+        "i17": {"type":"ingredient","settings":{"icon":"💎","name":"Selenium","amount":"60 mcg","dv":"55%","role":"Thyroid support during the postpartum hormonal recalibration.","source":"Selenium glycinate","tags":"Mineral, Thyroid"}},
+        "i18": {"type":"ingredient","settings":{"icon":"💎","name":"Iodine","amount":"150 mcg","dv":"100%","role":"Critical for baby's thyroid + brain development through breast milk.","source":"Potassium iodide","tags":"Mineral, Passes to baby"}},
+        "i19": {"type":"ingredient","settings":{"icon":"🥕","name":"Betacarotene","amount":"3 mg","dv":"†","role":"Natural-source Vitamin A precursor for immune + vision support.","source":"Natural Source","tags":"Antioxidant, Natural"}},
+        "i20": {"type":"ingredient","settings":{"icon":"🦠","name":"PregBiotics MEP Blend","amount":"1 Billion CFUs","dv":"†","role":"16-strain probiotic for maternal gut + immune health — beneficial signals pass to baby through breast milk.","source":"L. acidophilus · plantarum · casei · reuteri · rhamnosus · fermentum · salivarus · paracasei · bulgaricus · helveticus + B. lactis · infantis · breve · bifidum · longum + S. thermophiles. Microencapsulated (MEP).","tags":"16-strain, MEP delivery, Pregnancy-safe"}},
+        "i21": {"type":"ingredient","settings":{"icon":"🐟","name":"Omega-3 Fish Oil (1 Soft Gel)","amount":"1000 mg","dv":"†","role":"Pharmaceutical-grade, molecularly distilled fish oil — heavy-metal-tested. Provides DHA + EPA for baby's brain through breast milk + maternal mood.","source":"Pharmaceutical-grade fish oil","tags":"Soft gel, Lab-tested"}},
+        "i22": {"type":"ingredient","settings":{"icon":"🧠","name":"DHA (Docosahexaenoic Acid)","amount":"300 mg","dv":"†","role":"Critical for baby's brain and eye development — passes directly through breast milk.","source":"From Omega-3 fish oil","tags":"Brain, Passes to baby"}},
+        "i23": {"type":"ingredient","settings":{"icon":"💗","name":"EPA (Eicosapentaenoic Acid)","amount":"400 mg","dv":"†","role":"Anti-inflammatory support for maternal postpartum recovery and mood balance.","source":"From Omega-3 fish oil","tags":"Mood, Anti-inflammatory"}},
+        "t1": {"type":"trust","settings":{"icon":"🩺","title":"OB-formulated","text":"Built with obstetric and midwifery guidance for postpartum and breastfeeding."}},
+        "t2": {"type":"trust","settings":{"icon":"🧪","title":"Heavy-metal-tested","text":"Fish oil is molecularly distilled and lab-tested for mercury, lead, and PCBs."}},
+        "t3": {"type":"trust","settings":{"icon":"🤱","title":"Breast-milk-safe","text":"Every strain and active selected for safety during lactation. Strains pass beneficial signals to baby."}},
+        "t4": {"type":"trust","settings":{"icon":"🌱","title":"Clean label","text":"No proprietary blends. Every dose disclosed on the panel."}}
+      },
+      "block_order": ["i1","i2","i3","i4","i5","i6","i7","i8","i9","i10","i11","i12","i13","i14","i15","i16","i17","i18","i19","i20","i21","i22","i23","t1","t2","t3","t4"],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
+        "brand_light": "#5fa37a",
+        "eyebrow": "What's Inside",
+        "title_pre": "The complete",
+        "title_highlight": "breastfeeding daily.",
+        "sub": "23 actives at clinical doses + our 16-strain MEP probiotic blend + pharmaceutical-grade fish-oil soft gel. Engineered for the most demanding nutritional season of motherhood.",
+        "show_badges": true,
+        "badge_vegan": false,
+        "badge_halaal": true,
+        "badge_kosher": false,
+        "badge_gluten_free": true,
+        "badge_dairy_free": true,
+        "badge_non_gmo": true,
+        "badge_lab_tested": true,
+        "serving_size": "1 capsule + 1 soft gel",
+        "servings_per_container": "30",
+        "other_ingredients": "Capsule: HPMC (vegetable), Magnesium Stearate. Soft gel: gelatin, glycerin, purified water.",
+        "allergens": "Contains fish (omega-3 soft gel). Manufactured in a SAHPRA-aware facility.",
+        "dv_note": "% Daily Value (DV) based on a 2,000-calorie diet. † = DV not established.",
+        "facts_image_url": "",
+        "facts_pdf_url": "",
+        "side_image_url": ""
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {"type":"stat","settings":{"label":"More energy postpartum","percent":92}},
+        "c2": {"type":"stat","settings":{"label":"Less hair shedding","percent":86}},
+        "c3": {"type":"stat","settings":{"label":"Healthy baby weight gain","percent":94}},
+        "c4": {"type":"stat","settings":{"label":"Mood steadier than expected","percent":88}},
+        "c5": {"type":"stat","settings":{"label":"Would recommend to a friend","percent":98}}
+      },
+      "block_order": ["c1","c2","c3","c4","c5"],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
+        "eyebrow": "Real results",
+        "title_pre": "Trusted by",
+        "title_highlight": "Nursing Mothers",
+        "sub": "What mothers report after 3 months of daily Breastfeeding use.",
+        "caveat": "Based on a survey of 850+ verified customers. Individual results may vary. Always consult your healthcare provider."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "f1": {"type":"product","settings":{"product_handle":"biokid-chewable-probiotics-tablets-for-children","brand":"BioKid™","rating":"4.8","reviews":"200+","fallback_title":"","fallback_url":"","fallback_price":""}},
+        "f2": {"type":"product","settings":{"product_handle":"femina-probiotic-capsules-with-cranberry-for-women","brand":"Femina™","rating":"4.8","reviews":"1300+","fallback_title":"","fallback_url":"","fallback_price":""}},
+        "f3": {"type":"product","settings":{"product_handle":"velo16-probiotics-vitamin-d3-1000-iu","brand":"Velo16™","rating":"4.7","reviews":"190+","fallback_title":"","fallback_url":"","fallback_price":""}},
+        "f4": {"type":"product","settings":{"product_handle":"velo16-probiotics-iron-bisglycinate","brand":"Velo16™","rating":"4.7","reviews":"170+","fallback_title":"","fallback_url":"","fallback_price":""}}
+      },
+      "block_order": ["f1","f2","f3","f4"],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
+        "tint": true,
+        "eyebrow": "Frequently Bought Together",
+        "title": "Build your postpartum stack",
+        "sub": "Breastfeeding mums also pair these for the whole family."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {"type":"card","settings":{"icon_url":"https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966","icon_fallback":"✓","name":"Clinically Validated","desc":"DHA + B-vitamins — peer-reviewed for breastfeeding nutrition."}},
+        "d2": {"type":"card","settings":{"icon_url":"https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966","icon_fallback":"✓","name":"OB Formulated","desc":"Developed with obstetric and midwifery guidance for postpartum."}},
+        "d3": {"type":"card","settings":{"icon_url":"https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073","icon_fallback":"✓","name":"Patented MEP Technology","desc":"Microencapsulation with Supercritical CO₂."}},
+        "d4": {"type":"card","settings":{"icon_url":"https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199","icon_fallback":"✓","name":"Heavy-Metal-Tested","desc":"Fish oil molecularly distilled, lab-tested for mercury, lead, PCBs."}}
+      },
+      "block_order": ["d1","d2","d3","d4"],
+      "settings": {
+        "eyebrow": "Trusted by OBs. Proven by Science.",
+        "title_pre": "Quality you can",
+        "title_highlight": "trust.",
+        "sub": "Built with obstetric guidance and SAHPRA-aware manufacturing."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {"type":"row","settings":{"feature":"Calcium 400mg for milk supply","brand_state":"yes","b_state":"no","c_state":"no"}},
+        "o2": {"type":"row","settings":{"feature":"Fish-Oil DHA 300mg + EPA 400mg","brand_state":"yes","b_state":"no","c_state":"no"}},
+        "o3": {"type":"row","settings":{"feature":"Iron 16mg for postpartum","brand_state":"yes","b_state":"no","c_state":"no"}},
+        "o4": {"type":"row","settings":{"feature":"16-Strain MEP Probiotic Blend","brand_state":"yes","b_state":"no","c_state":"no"}},
+        "o5": {"type":"row","settings":{"feature":"Breastfeeding-Specific Dosing","brand_state":"yes","b_state":"no","c_state":"no"}}
+      },
+      "block_order": ["o1","o2","o3","o4","o5"],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
+        "eyebrow": "",
+        "title": "Why Breastfeeding Outperforms",
+        "sub": "Higher calcium, fish-oil DHA + EPA, 16-strain MEP blend — engineered specifically for the breastfeeding season.",
+        "col_features": "Features",
+        "col_brand": "Breastfeeding",
+        "brand_logo_url": "",
+        "col_b": "Generic Post-Natal",
+        "col_c": "Others",
+        "cta_text": "Add to Cart",
+        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Real Reviews",
+        "title_pre": "What Mothers",
+        "title_highlight": "Are Saying",
+        "sub": "Verified reviews from real nursing mums. The Judge.me widget populates this section on go-live.",
+        "rating": "4.9",
+        "reviews_count": "850+",
+        "customers_count": "30K+",
+        "judgeme_html": ""
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {"type":"q","settings":{"question":"When should I switch from Essentials to Breastfeeding?","answer":"<p>Switch the day baby is born. Breastfeeding contains higher calcium, iron, and DHA + EPA tuned for milk production and postpartum recovery — different from pregnancy demands.</p>"}},
+        "q2": {"type":"q","settings":{"question":"How long should I take Breastfeeding?","answer":"<p>For the entire breastfeeding journey. Most mums take it 6-24 months, until weaning. After weaning, switch to Her-Biotics or a daily multi.</p>"}},
+        "q3": {"type":"q","settings":{"question":"Is the fish oil safe for breastfeeding?","answer":"<p>Yes — pharmaceutical-grade, molecularly distilled fish oil, independently lab-tested for mercury, lead, and PCBs. DHA + EPA pass to baby through breast milk and support brain + eye development.</p>"}},
+        "q4": {"type":"q","settings":{"question":"Will it affect my milk supply?","answer":"<p>Most mums report stable or improved supply. B-vitamins, iodine, and zinc support lactation. If you notice any change, consult your OB or lactation consultant.</p>"}},
+        "q5": {"type":"q","settings":{"question":"Do you ship internationally?","answer":"<p>Yes. We ship globally — 5–14 working days. Free shipping over the threshold.</p>"}},
+        "q6": {"type":"q","settings":{"question":"What if it doesn't work for me?","answer":"<p>30-day money-back guarantee, no questions asked.</p>"}}
+      },
+      "block_order": ["q1","q2","q3","q4","q5","q6"],
+      "settings": {
+        "eyebrow": "FAQ",
+        "title_pre": "Questions Before",
+        "title_highlight": "You Start"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {"type":"g","settings":{"icon":"✅","text":"30-day money-back"}},
+        "g2": {"type":"g","settings":{"icon":"🚚","text":"Ships worldwide"}},
+        "g3": {"type":"g","settings":{"icon":"🔬","text":"Heavy-metal-tested fish oil"}},
+        "g4": {"type":"g","settings":{"icon":"🤱","text":"Breast-milk-safe"}}
+      },
+      "block_order": ["g1","g2","g3","g4"],
+      "settings": {
+        "brand_primary": "#1f6b3d",
+        "brand_dark": "#0a3d22",
+        "brand_light": "#5fa37a",
+        "badge": "30-day money-back guarantee",
+        "title_pre": "Nourish Yourself",
+        "title_highlight": "Risk-Free for 30 Days",
+        "sub": "Join thousands of breastfeeding mothers thriving with PregBiotics Breastfeeding. If you don't feel the difference, we'll refund every cent.",
+        "cta_text": "Add to Cart",
+        "cta_link": "#vbpForm"
+      }
+    }
+  },
+  "order": ["hero","reviews-carousel","problem","solution","related","benefits","how","ingredients","confidence","fbt","doctors","outperform","judgeme","faq","final"]
+}

@@ -229,7 +229,13 @@
   }
 </style>
 
-<section class="vb-ph" data-product-section data-product-id="{{ product.id }}">
+{%- comment -%} Variant → selling-plans map for the JS to switch plan ids on variant change {%- endcomment -%}
+<script type="application/json" data-vbp-variant-plans>{
+{%- for variant in product.variants -%}"{{ variant.id }}":[{%- for alloc in variant.selling_plan_allocations -%}{"id":"{{ alloc.selling_plan.id }}","name":"{{ alloc.selling_plan.name | escape }}"}{%- unless forloop.last %},{% endunless -%}{%- endfor -%}]{%- unless forloop.last %},{% endunless -%}
+{%- endfor -%}
+}</script>
+
+<section class="vb-ph" data-product-section data-product-id="{{ product.id }}" data-monthly-variant-ids="{{ section.settings.monthly_variant_ids }}">
   <div class="vb-ph__grid">
     <div class="vb-pg">
       <div class="vb-pg__track-wrap">
@@ -722,21 +728,46 @@
       obs2.observe(compDisp, { childList: true, characterData: true, subtree: true });
     }
 
+    /* ============ Variant-aware subscription plan switching ============
+       For products where some variants need a different cadence (e.g. 30s = Monthly, 60s = Every 2 Months),
+       the section setting `monthly_variant_ids` (comma-separated variant IDs) flags which variants
+       should switch to the Monthly plan. The variant-to-plans JSON map below holds the actual
+       Shopify selling-plan IDs per variant (PayWhirl populates these). On variant change we pick
+       the matching plan name and update the Subscribe radio's selling_plan + the displayed label. */
+    let variantPlans = {};
+    const vpScript = root.querySelector('[data-vbp-variant-plans]');
+    if (vpScript) { try { variantPlans = JSON.parse(vpScript.textContent || '{}'); } catch(e){} }
+    const monthlyVariantIds = (root.dataset.monthlyVariantIds || '').split(',').map(s => s.trim()).filter(Boolean);
+    const freqLabel = root.querySelector('[data-vbp-freq-label]');
+    const subRadio = root.querySelector('input[name="purchase_mode"][value="subscribe"]');
+    const sellingInput = root.querySelector('[data-vbp-selling-plan]');
+    function applyVariantPlanSwitch(variantId) {
+      if (!variantId) return;
+      const plans = variantPlans[variantId] || variantPlans[String(variantId)] || [];
+      if (!plans.length) return;
+      const isMonthly = monthlyVariantIds.indexOf(String(variantId)) !== -1;
+      const matchStr = isMonthly ? 'monthly' : 'every 2';
+      let chosen = plans.find(function(p){ return (p.name||'').toLowerCase().indexOf(matchStr) !== -1; });
+      if (!chosen) chosen = plans[0];
+      if (subRadio && chosen) {
+        subRadio.dataset.sellingPlan = chosen.id;
+        if (subRadio.checked && sellingInput) sellingInput.value = chosen.id;
+      }
+      if (freqLabel && chosen) freqLabel.textContent = chosen.name + ' delivery';
+    }
+
     /* Trigger updates */
     root.querySelectorAll('input[name="purchase_mode"]').forEach(r => r.addEventListener('change', updatePriceDisplay));
     root.querySelectorAll('input[name="qty_tier"]').forEach(r => r.addEventListener('change', () => setTimeout(updatePriceDisplay, 0)));
     if (qty) qty.addEventListener('input', () => setTimeout(updatePriceDisplay, 0));
-    /* Variant change — re-cache base from new variant after plugin updates */
     root.querySelectorAll('input[name="id"]').forEach(r => {
       r.addEventListener('change', () => {
         baseDisplayText = '';
         baseCompareText = '';
-        /* Update base attribute values from variant data */
         if (priceBlock) {
           priceBlock.dataset.basePriceCents = r.dataset.price || priceBlock.dataset.basePriceCents;
           priceBlock.dataset.baseCompareCents = r.dataset.compare || '0';
         }
-        /* Reset displayed price to variant's localised base, then re-apply if needed */
         if (priceDisp && r.dataset.moneyPrice) setText(priceDisp, r.dataset.moneyPrice);
         if (compDisp && r.dataset.moneyCompare) {
           setText(compDisp, r.dataset.moneyCompare);
@@ -744,14 +775,17 @@
         } else if (compDisp) {
           compDisp.style.display = 'none';
         }
+        applyVariantPlanSwitch(r.value);
         setTimeout(() => {
-          if (priceDisp) baseDisplayText = priceDisp.textContent;
-          if (compDisp) baseCompareText = compDisp.textContent;
+          if (priceDisp) baseDisplayText = stripHtml(priceDisp.textContent);
+          if (compDisp) baseCompareText = stripHtml(compDisp.textContent);
           updatePriceDisplay();
         }, 300);
       });
     });
-    /* Apply on first paint */
+    /* Initial paint */
+    const initVar = root.querySelector('input[name="id"]:checked');
+    if (initVar) applyVariantPlanSwitch(initVar.value);
     setTimeout(updatePriceDisplay, 50);
 
     /* AJAX add to cart */
@@ -810,6 +844,7 @@
     ], "default": "every-2-months", "info": "Must match a Selling Plan name in PayWhirl. We match case-insensitive substring (e.g. 'every 2 months')." },
     { "type": "number", "id": "default_frequency_days", "label": "Frequency (days) — for display label", "default": 60, "info": "60 = every 2 months · 30 = monthly · 90 = every 3 months · 14 = every 2 weeks." },
     { "type": "number", "id": "sub_pct_off", "label": "Subscription discount %", "default": 15 },
+    { "type": "text", "id": "monthly_variant_ids", "label": "Monthly-plan variant IDs", "info": "Comma-separated variant IDs that should default to Monthly (e.g. the 30s SKU for Femina/BioKid/Velo16). Leave blank if all variants use the default plan." },
     { "type": "header", "content": "Quantity Discount · Native UI" },
     { "type": "checkbox", "id": "show_qty_discount", "label": "Show quantity discount tiers", "default": true, "info": "Renders 3 tier cards (Buy 1 / 2 / 3). Set up matching Shopify Automatic Discounts in Admin → Discounts → Create discount → Automatic: 'Buy 2+ get 10% off' and 'Buy 3+ get 15% off'." },
     { "type": "number", "id": "tier2_pct", "label": "Tier 2 discount %", "default": 10 },

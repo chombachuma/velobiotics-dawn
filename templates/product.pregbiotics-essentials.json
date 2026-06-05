@@ -342,7 +342,7 @@
           "settings": {
             "icon": "🧬",
             "name": "Neural Tube Support",
-            "desc": "Active folate critical for healthy fetal development."
+            "desc": "Folic Acid (400µg, 200% DV) supports healthy neural-tube formation."
           }
         },
         "b3": {
@@ -686,7 +686,7 @@
         "o1": {
           "type": "row",
           "settings": {
-            "feature": "Active Folate (5-MTHF)",
+            "feature": "20 Pregnancy Actives",
             "brand_state": "yes",
             "b_state": "no",
             "c_state": "no"
@@ -695,7 +695,7 @@
         "o2": {
           "type": "row",
           "settings": {
-            "feature": "Gentle Iron Bisglycinate",
+            "feature": "Choline (Often Missed)",
             "brand_state": "yes",
             "b_state": "no",
             "c_state": "no"

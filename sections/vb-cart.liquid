@@ -171,7 +171,7 @@
                         {%- endif -%}
                         {%- if item.line_level_discount_allocations.size > 0 -%}
                           {%- for alloc in item.line_level_discount_allocations -%}
-                            <span class="vbc__line-tag vbc__line-tag--disc">💰 {{ alloc.discount_application.title }} (−{{ alloc.amount | money }})</span>
+                            <span class="vbc__line-tag vbc__line-tag--disc">💰 Save {{ alloc.amount | money }}</span>
                           {%- endfor -%}
                         {%- endif -%}
                       </div>
@@ -216,7 +216,14 @@
           <div class="vbc__divider"></div>
           <div class="vbc__total"><strong>Total</strong><span class="vbc__total-amt" id="vbc-total">{{ cart.total_price | money }}</span></div>
 
-          {%- assign ship_threshold = section.settings.free_ship_threshold | default: 50000 -%}
+          {%- comment -%} Dynamic free-shipping threshold per currency {%- endcomment -%}
+          {%- case cart.currency.iso_code -%}
+            {%- when 'USD' -%}{%- assign ship_threshold = section.settings.free_ship_threshold_usd | default: 3000 -%}
+            {%- when 'GBP' -%}{%- assign ship_threshold = section.settings.free_ship_threshold_gbp | default: 2500 -%}
+            {%- when 'EUR' -%}{%- assign ship_threshold = section.settings.free_ship_threshold_eur | default: 3000 -%}
+            {%- when 'AUD' -%}{%- assign ship_threshold = section.settings.free_ship_threshold_aud | default: 5000 -%}
+            {%- else -%}{%- assign ship_threshold = section.settings.free_ship_threshold | default: 50000 -%}
+          {%- endcase -%}
           {%- if cart.total_price < ship_threshold -%}
             {%- assign remaining = ship_threshold | minus: cart.total_price -%}
             <div class="vbc__shipnote">
@@ -350,7 +357,7 @@
           el.querySelectorAll('[data-line]').forEach(c=>c.dataset.line=newIdx);
         });
       }
-      const threshold = {{ section.settings.free_ship_threshold | default: 50000 }};
+      const threshold = {%- case cart.currency.iso_code -%}{%- when 'USD' -%}{{ section.settings.free_ship_threshold_usd | default: 3000 }}{%- when 'GBP' -%}{{ section.settings.free_ship_threshold_gbp | default: 2500 }}{%- when 'EUR' -%}{{ section.settings.free_ship_threshold_eur | default: 3000 }}{%- when 'AUD' -%}{{ section.settings.free_ship_threshold_aud | default: 5000 }}{%- else -%}{{ section.settings.free_ship_threshold | default: 50000 }}{%- endcase -%};
       const remaining = threshold - data.total_price;
       if(remaining > 0){
         const pct = Math.min(100, (data.total_price/threshold)*100);
@@ -400,7 +407,12 @@
     {"type":"text","id":"title_pre","label":"Title (pre)","default":"Almost"},
     {"type":"text","id":"title_highlight","label":"Title (highlighted)","default":"there."},
     {"type":"textarea","id":"sub","label":"Sub-headline","default":"Free shipping kicks in soon · 30-day money-back covers everything."},
-    {"type":"number","id":"free_ship_threshold","label":"Free-shipping threshold","default":50000,"info":"In lowest currency units. 50000 = R 500 ZAR or $50 USD."},
+    {"type":"header","content":"Free-shipping thresholds (multi-currency)"},
+    {"type":"number","id":"free_ship_threshold","label":"ZAR threshold (cents)","default":50000,"info":"50000 = R 500"},
+    {"type":"number","id":"free_ship_threshold_usd","label":"USD threshold (cents)","default":3000,"info":"3000 = $30"},
+    {"type":"number","id":"free_ship_threshold_gbp","label":"GBP threshold (pence)","default":2500,"info":"2500 = £25"},
+    {"type":"number","id":"free_ship_threshold_eur","label":"EUR threshold (cents)","default":3000,"info":"3000 = €30"},
+    {"type":"number","id":"free_ship_threshold_aud","label":"AUD threshold (cents)","default":5000,"info":"5000 = AUD $50"},
     {"type":"header","content":"Reviews section"},
     {"type":"text","id":"reviews_eyebrow","label":"Eyebrow","default":"Loved by 300,000+"},
     {"type":"text","id":"reviews_title_pre","label":"Title (pre)","default":"You are in"},

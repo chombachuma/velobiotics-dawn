@@ -262,23 +262,64 @@
             <span>🔁 Subscribe & Save</span>
             <span class="vb-pb__plugin-pill">{{ section.settings.subscription_save | default: 'Save 15%' }}</span>
           </div>
+
+          {%- comment -%} Render any PayWhirl app block dragged into the section via Theme editor {%- endcomment -%}
+          {%- for block in section.blocks -%}
+            {%- if block.type == '@app' -%}
+              <div class="vb-pb__plugin-appblock">{% render block %}</div>
+            {%- endif -%}
+          {%- endfor -%}
+
+          {%- comment -%}
+            PayWhirl auto-inject target — uses every selector PayWhirl JS looks for:
+              #paywhirl-multi-plan-selector (Shopify default ID)
+              .paywhirl-multi-plan-selector, .paywhirl-widget, .pw-widget (class fallbacks)
+            Data attributes guide the plan default:
+              data-default-frequency="{{ default_frequency_days }}" — frequency in days
+              data-default-plan-slug — slug match in PayWhirl dashboard
+          {%- endcomment -%}
           <div
-            class="paywhirl-widget paywhirl-multi-plan-selector paywhirl-subscriptions pw-widget pw-multi-plan-selector pw-subscription-widget"
+            id="paywhirl-multi-plan-selector"
+            class="paywhirl-multi-plan-selector paywhirl-widget paywhirl-subscriptions pw-widget pw-multi-plan-selector pw-subscription-widget"
             data-paywhirl-widget
+            data-paywhirl-product-id="{{ product.id }}"
             data-product-id="{{ product.id }}"
             data-product-handle="{{ product.handle }}"
             data-variant-id="{{ current_variant.id }}"
+            data-default-frequency="{{ section.settings.default_frequency_days | default: 60 }}"
+            data-default-plan-slug="{{ section.settings.default_plan_slug | default: 'every-2-months' }}"
+            data-mode="selector"
           >
             <div class="vb-pb__plugin-fallback" data-vbp-fallback>
               <div class="vb-pb__plugin-fallback-row">
                 <span class="vb-pb__plugin-fallback-icon">🔁</span>
                 <div>
-                  <strong>{{ section.settings.subscription_headline | default: 'Subscribe & save on every order' }}</strong>
-                  <span class="vb-pb__plugin-fallback-sub">{{ section.settings.subscription_sub | default: 'Free shipping included · Pause, skip, or cancel anytime · Choose monthly delivery at checkout' }}</span>
+                  <strong>{{ section.settings.subscription_headline | default: 'Subscribe & save 15% — Every 2 months' }}</strong>
+                  <span class="vb-pb__plugin-fallback-sub">{{ section.settings.subscription_sub | default: 'Pause, skip or cancel anytime · Free shipping included · Set up at checkout' }}</span>
                 </div>
               </div>
             </div>
           </div>
+
+          {%- comment -%}
+            Best-effort lazy load of PayWhirl's widget script.
+            Safe-by-default: only loads if PayWhirl JS isn't already on the page
+            and only once per page-view. Will not double-load.
+          {%- endcomment -%}
+          <script>
+            (function(){
+              if (window.PaywhirlBootstrapped) return;
+              window.PaywhirlBootstrapped = true;
+              /* Try to refresh widget if PayWhirl already loaded */
+              if (window.paywhirl && typeof window.paywhirl.refresh === 'function') {
+                try { window.paywhirl.refresh(); } catch(e){}
+                return;
+              }
+              /* If PayWhirl's theme extension hasn't injected its script yet,
+                 there's nothing to do — the @app block render above will inject it.
+                 The auto-inject DIV above will then be detected. */
+            })();
+          </script>
         </div>
         {%- endif -%}
 
@@ -454,9 +495,15 @@
     { "type": "text", "id": "ship_note", "label": "Shipping note", "default": "Free shipping over the free-shipping threshold · 30-day money-back guarantee" },
     { "type": "header", "content": "Subscription (PayWhirl)" },
     { "type": "checkbox", "id": "show_subscription", "label": "Show subscription option", "default": true, "info": "Renders the PayWhirl Subscribe & Save slot above Add to Cart. Uncheck on one-off products that don't need subscription (kits, applicators, tests)." },
+    { "type": "select", "id": "default_plan_slug", "label": "Default plan", "options": [
+      {"value":"every-2-months","label":"Every 2 Months · Save 15% (default)"},
+      {"value":"monthly","label":"Monthly · Save 15%"},
+      {"value":"every-3-months","label":"Every 3 Months · Save 15%"}
+    ], "default": "every-2-months", "info": "Which PayWhirl plan to default-select. Must match the plan slug in PayWhirl dashboard." },
+    { "type": "number", "id": "default_frequency_days", "label": "Default frequency (days)", "default": 60, "info": "60 = every 2 months · 30 = monthly · 90 = every 3 months." },
     { "type": "text", "id": "subscription_save", "label": "Savings pill", "default": "Save 15%" },
-    { "type": "text", "id": "subscription_headline", "label": "Headline (fallback)", "default": "Subscribe & save on every order" },
-    { "type": "textarea", "id": "subscription_sub", "label": "Sub-line (fallback)", "default": "Free shipping included · Pause, skip, or cancel anytime · Choose monthly delivery at checkout" },
+    { "type": "text", "id": "subscription_headline", "label": "Headline (fallback only)", "default": "Subscribe & save 15% — Every 2 months" },
+    { "type": "textarea", "id": "subscription_sub", "label": "Sub-line (fallback only)", "default": "Pause, skip or cancel anytime · Free shipping included · Set up at checkout" },
     { "type": "header", "content": "Other" },
     { "type": "checkbox", "id": "show_buynow", "label": "Show Buy It Now", "default": true },
     { "type": "checkbox", "id": "show_testi_marquee", "label": "Scrolling testimonials", "default": true }

@@ -119,7 +119,7 @@
             "avatar_url": "https://ui-avatars.com/api/?name=Mahlatse+K&background=0a3d22&color=ffffff&size=120&bold=true&font-size=0.42",
             "author": "Mahlatse K.",
             "meta": "Verified buyer · 2 months ago",
-            "quote": "No fishy taste. Capsule form means easy stomach."
+            "quote": "Easy soft gel daily. No burps, no chasing pills."
           }
         },
         "r4": {
@@ -666,8 +666,8 @@
           "settings": {
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
             "icon_fallback": "✓",
-            "name": "Algae-Sourced",
-            "desc": "Vegan DHA, heavy-metal-tested, sustainable."
+            "name": "Heavy-Metal-Tested",
+            "desc": "Fish oil molecularly distilled, lab-tested for mercury, lead, PCBs."
           }
         }
       },
@@ -726,7 +726,7 @@
         "o5": {
           "type": "row",
           "settings": {
-            "feature": "No Fish-Oil Burps",
+            "feature": "16-Strain MEP Probiotic Blend",
             "brand_state": "yes",
             "b_state": "no",
             "c_state": "no"
@@ -776,7 +776,7 @@
           "type": "q",
           "settings": {
             "question": "Is the DHA from fish?",
-            "answer": "<p>No. Our DHA is from sustainable algae — vegan, heavy-metal-tested, and zero fish-oil burps.</p>"
+            "answer": "<p>Yes — pharmaceutical-grade fish oil, molecularly distilled and independently lab-tested for mercury, lead, and PCBs. Each soft gel delivers 300mg DHA + 400mg EPA in a small, easy-swallow format.</p>"
           }
         },
         "q2": {
@@ -857,7 +857,7 @@
           "type": "g",
           "settings": {
             "icon": "🌱",
-            "text": "Algae-sourced DHA"
+            "text": "Heavy-metal-tested fish oil"
           }
         }
       },

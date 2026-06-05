@@ -118,8 +118,21 @@
   .vb-pb__sub-opt-price { font-size: 17px; font-weight: 800; color: #1a1a1a; }
   .vb-pb__sub-opt-compare { font-size: 13px; color: #a0a0a0; text-decoration: line-through; }
   .vb-pb__sub-opt-sub { font-size: 12.5px; color: #5c6664; line-height: 1.4; }
-  .vb-pb__sub-opt-badge { position: absolute; top: -10px; right: 14px; background: var(--bp); color: #fff; font-size: 9.5px; font-weight: 800; padding: 4px 9px; border-radius: 999px; letter-spacing: 0.06em; text-transform: uppercase; box-shadow: 0 4px 10px color-mix(in srgb, var(--bp) 35%, transparent); }
+  .vb-pb__sub-opt-badge { position: absolute; top: -10px; right: 14px; background: linear-gradient(135deg, var(--bp), var(--bd)); color: #fff; font-size: 9.5px; font-weight: 900; padding: 5px 11px; border-radius: 999px; letter-spacing: 0.08em; text-transform: uppercase; box-shadow: 0 6px 14px color-mix(in srgb, var(--bp) 45%, transparent); animation: vb-pb-badgepulse 2.6s ease-in-out infinite; }
+  @keyframes vb-pb-badgepulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.06); } }
   .vb-pb__sub-opt-save { background: var(--bp); color: #fff; padding: 2px 8px; border-radius: 999px; font-size: 10.5px; font-weight: 800; letter-spacing: 0.04em; margin-left: 6px; }
+  /* Stand-out subscribe card */
+  .vb-pb__sub-opt--star { position: relative; overflow: hidden; }
+  .vb-pb__sub-opt--star::before { content: ''; position: absolute; inset: -3px; border-radius: 16px; background: linear-gradient(135deg, color-mix(in srgb, var(--bp) 65%, transparent), color-mix(in srgb, #ff9500 35%, transparent), color-mix(in srgb, var(--bp) 65%, transparent)); background-size: 200% 200%; opacity: 0; transition: opacity 0.3s ease; z-index: -1; animation: vb-pb-glow 4s ease-in-out infinite; }
+  .vb-pb__sub-opt--star:has(input:checked)::before { opacity: 1; }
+  @keyframes vb-pb-glow { 0%,100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+  .vb-pb__sub-opt--star:has(input:checked) { border-color: transparent; background: linear-gradient(135deg, color-mix(in srgb, var(--bp) 10%, #fff), color-mix(in srgb, var(--bp) 3%, #fff)); box-shadow: 0 14px 32px color-mix(in srgb, var(--bp) 28%, transparent); }
+  .vb-pb__sub-perks { display: flex; gap: 6px; flex-wrap: wrap; margin: 8px 0 0; }
+  .vb-pb__sub-perk { display: inline-flex; align-items: center; gap: 4px; background: var(--bp); color: #fff; padding: 4px 9px; border-radius: 999px; font-size: 10.5px; font-weight: 800; letter-spacing: 0.04em; }
+  .vb-pb__sub-perk--ship { background: linear-gradient(135deg, #ff9500, #b25800); }
+  .vb-pb__sub-perk--social { background: #1a2e1a; }
+  .vb-pb__sub-annual { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; font-size: 13px; color: var(--bd); font-weight: 800; background: color-mix(in srgb, var(--bp) 8%, #fff); padding: 6px 11px; border-radius: 8px; border-left: 3px solid var(--bp); }
+  .vb-pb__sub-annual-icon { font-size: 16px; }
 
   /* ============ QUANTITY DISCOUNT TIERS ============ */
   .vb-pb__tier-group { margin: 0 0 16px; }
@@ -317,17 +330,37 @@
               </div>
               <span class="vb-pb__sub-opt-sub">Single order · No commitment</span>
             </label>
-            <label class="vb-pb__sub-opt">
-              <span class="vb-pb__sub-opt-badge">Best Value</span>
+            {%- liquid
+              assign deliveries_per_year = 6
+              if default_freq_days == 30
+                assign deliveries_per_year = 12
+              endif
+              if default_freq_days == 90
+                assign deliveries_per_year = 4
+              endif
+              if default_freq_days == 14
+                assign deliveries_per_year = 26
+              endif
+              assign per_delivery_savings = current_variant.price | times: sub_pct_off | divided_by: 100
+              assign annual_savings = per_delivery_savings | times: deliveries_per_year
+            -%}
+            <label class="vb-pb__sub-opt vb-pb__sub-opt--star">
+              <span class="vb-pb__sub-opt-badge">✨ Best Value</span>
               <input type="radio" name="purchase_mode" value="subscribe" {% if section.settings.default_subscribe %}checked{% endif %} data-selling-plan="{{ sub_plan_id }}">
               <div class="vb-pb__sub-opt-row">
                 <span class="vb-pb__sub-opt-title">🔁 Subscribe & Save <span class="vb-pb__sub-opt-save">−{{ sub_pct_off }}%</span></span>
                 <span class="vb-pb__sub-opt-price-group">
-                  <span class="vb-pb__sub-opt-price">{{ sub_price | money }}</span>
-                  <span class="vb-pb__sub-opt-compare">{{ current_variant.price | money }}</span>
+                  <span class="vb-pb__sub-opt-price" data-vbp-sub-price>{{ sub_price | money }}</span>
+                  <span class="vb-pb__sub-opt-compare" data-vbp-sub-compare>{{ current_variant.price | money }}</span>
                 </span>
               </div>
-              <span class="vb-pb__sub-opt-sub">{{ freq_label }} delivery · Pause, skip, or cancel anytime · Free shipping included</span>
+              <span class="vb-pb__sub-opt-sub"><strong data-vbp-freq-label>{{ freq_label }} delivery</strong> · Pause, skip, or cancel anytime</span>
+              <div class="vb-pb__sub-perks">
+                <span class="vb-pb__sub-perk vb-pb__sub-perk--ship">🎁 FREE SHIPPING · No minimum</span>
+                <span class="vb-pb__sub-perk">🔄 Cancel anytime</span>
+                <span class="vb-pb__sub-perk vb-pb__sub-perk--social">★ 8,400+ subscribers</span>
+              </div>
+              <div class="vb-pb__sub-annual"><span class="vb-pb__sub-annual-icon">💚</span><span>You save <strong data-vbp-annual-save>{{ annual_savings | money }}</strong>/year vs one-time</span></div>
             </label>
           </div>
           {%- comment -%} Hidden field — populated by JS on radio change. Shopify natively reads `selling_plan` to attach the subscription. {%- endcomment -%}

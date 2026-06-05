@@ -255,7 +255,32 @@
           <input type="hidden" name="id" value="{{ current_variant.id }}" />
         {%- endif -%}
 
-        {%- comment -%} Subscription + Quantity-discount widgets are inserted manually by the user (PayWhirl + Bulk Discount apps). No slot machinery here. {%- endcomment -%}
+        {%- comment -%} PayWhirl Subscribe & Save slot — auto-rendered on every product. Toggle off per-product in Theme editor → "Show subscription". {%- endcomment -%}
+        {%- if section.settings.show_subscription -%}
+        <div class="vb-pb__plugin vb-pb__plugin--sub" data-vbp-paywhirl-slot>
+          <div class="vb-pb__plugin-label">
+            <span>🔁 Subscribe & Save</span>
+            <span class="vb-pb__plugin-pill">{{ section.settings.subscription_save | default: 'Save 15%' }}</span>
+          </div>
+          <div
+            class="paywhirl-widget paywhirl-multi-plan-selector paywhirl-subscriptions pw-widget pw-multi-plan-selector pw-subscription-widget"
+            data-paywhirl-widget
+            data-product-id="{{ product.id }}"
+            data-product-handle="{{ product.handle }}"
+            data-variant-id="{{ current_variant.id }}"
+          >
+            <div class="vb-pb__plugin-fallback" data-vbp-fallback>
+              <div class="vb-pb__plugin-fallback-row">
+                <span class="vb-pb__plugin-fallback-icon">🔁</span>
+                <div>
+                  <strong>{{ section.settings.subscription_headline | default: 'Subscribe & save on every order' }}</strong>
+                  <span class="vb-pb__plugin-fallback-sub">{{ section.settings.subscription_sub | default: 'Free shipping included · Pause, skip, or cancel anytime · Choose monthly delivery at checkout' }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {%- endif -%}
 
         {%- comment -%} Price block — uses standard Shopify classes so the regional pricing plugin can localise it. Do NOT touch via JS. {%- endcomment -%}
         <div class="vb-pb__price-block price" data-vbp-price-block>
@@ -427,6 +452,12 @@
     { "type": "text", "id": "review_count", "label": "Review count", "default": "3,500+" },
     { "type": "textarea", "id": "hook", "label": "Hook line" },
     { "type": "text", "id": "ship_note", "label": "Shipping note", "default": "Free shipping over the free-shipping threshold · 30-day money-back guarantee" },
+    { "type": "header", "content": "Subscription (PayWhirl)" },
+    { "type": "checkbox", "id": "show_subscription", "label": "Show subscription option", "default": true, "info": "Renders the PayWhirl Subscribe & Save slot above Add to Cart. Uncheck on one-off products that don't need subscription (kits, applicators, tests)." },
+    { "type": "text", "id": "subscription_save", "label": "Savings pill", "default": "Save 15%" },
+    { "type": "text", "id": "subscription_headline", "label": "Headline (fallback)", "default": "Subscribe & save on every order" },
+    { "type": "textarea", "id": "subscription_sub", "label": "Sub-line (fallback)", "default": "Free shipping included · Pause, skip, or cancel anytime · Choose monthly delivery at checkout" },
+    { "type": "header", "content": "Other" },
     { "type": "checkbox", "id": "show_buynow", "label": "Show Buy It Now", "default": true },
     { "type": "checkbox", "id": "show_testi_marquee", "label": "Scrolling testimonials", "default": true }
   ],

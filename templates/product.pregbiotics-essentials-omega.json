@@ -23,7 +23,7 @@
           "type": "benefit",
           "settings": {
             "icon": "🧠",
-            "text": "DHA for baby brain"
+            "text": "DHA + EPA for baby"
           }
         },
         "b3": {
@@ -170,7 +170,7 @@
           "type": "point",
           "settings": {
             "icon": "✕",
-            "text": "<strong>Fish oil burps</strong> and stomach discomfort."
+            "text": "<strong>Cheap fish oil</strong> with mercury/contaminant concerns."
           }
         },
         "p3": {
@@ -184,7 +184,7 @@
           "type": "point",
           "settings": {
             "icon": "✕",
-            "text": "<strong>Concerns about heavy metals</strong> in low-grade fish oil."
+            "text": "<strong>Missing key actives</strong> like choline and K1 in standard prenatals."
           }
         }
       },

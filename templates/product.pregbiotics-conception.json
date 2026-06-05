@@ -350,7 +350,7 @@
           "settings": {
             "icon": "🧬",
             "name": "Neural Tube Prep",
-            "desc": "High-dose active folate prevents birth defects."
+            "desc": "Folic Acid (500µg) supports healthy neural tube formation from earliest pregnancy."
           }
         },
         "b4": {
@@ -447,85 +447,59 @@
       }
     },
     "ingredients": {
-      "type": "vb-product-ingredients",
+      "type": "vb-product-formula",
       "blocks": {
-        "i1": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "🥬",
-            "name": "Active Folate (5-MTHF)",
-            "amount": "800µg",
-            "desc": "Bioavailable form. Critical for neural-tube prep — start months before conception."
-          }
-        },
-        "i2": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "🥚",
-            "name": "Myo-Inositol + D-Chiro",
-            "amount": "2,000mg",
-            "desc": "40:1 ratio. Clinical for PCOS and ovulation regulation."
-          }
-        },
-        "i3": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "⏳",
-            "name": "Awaiting verified formula",
-            "amount": "—",
-            "desc": "This ingredient line will be updated with the verified PregBiotics Conception formula. The supplement-facts panel is currently being re-verified."
-          }
-        },
-        "i4": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "🦠",
-            "name": "Pregnancy-Safe Probiotics",
-            "amount": "10 Billion CFU",
-            "desc": "Strains chosen for pregnancy and preconception safety."
-          }
-        },
-        "i5": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "💎",
-            "name": "Iron + B-Complex",
-            "amount": "Full daily",
-            "desc": "Energy, mood, and red-blood-cell foundations."
-          }
-        },
-        "i6": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "🚫",
-            "name": "Free From",
-            "amount": "Always",
-            "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO."
-          }
-        }
+        "i1":  {"type":"ingredient","settings":{"icon":"🥚","name":"Inositol (Myo-Inositol)","amount":"400 mg","dv":"†","role":"Supports ovulation regularity and egg quality — especially helpful for PCOS-related infertility.","source":"Myo-Inositol","tags":"Fertility, PCOS support"}},
+        "i2":  {"type":"ingredient","settings":{"icon":"☀️","name":"Vitamin D3","amount":"800 IU","dv":"133%","role":"Hormone-system support and immune function; essential for reproductive health.","source":"Cholecalciferol","tags":"Hormone, Immune"}},
+        "i3":  {"type":"ingredient","settings":{"icon":"🛡️","name":"Vitamin E","amount":"4 mg α-TE","dv":"27%","role":"Antioxidant that protects reproductive cells from oxidative stress.","source":"dl-Alpha Tocopherol Acetate","tags":"Antioxidant"}},
+        "i4":  {"type":"ingredient","settings":{"icon":"🍊","name":"Vitamin C","amount":"90 mg","dv":"90%","role":"Antioxidant defence and collagen synthesis for reproductive tissues.","source":"L-Ascorbic Acid","tags":"Antioxidant, Immune"}},
+        "i5":  {"type":"ingredient","settings":{"icon":"⚡","name":"Vitamin B1 (Thiamine)","amount":"8 mg","dv":"667%","role":"Energy metabolism critical during preconception preparation.","source":"Thiamine HCL","tags":"B-Complex"}},
+        "i6":  {"type":"ingredient","settings":{"icon":"⚡","name":"Vitamin B2 (Riboflavin)","amount":"5 mg","dv":"385%","role":"Activated form for cellular energy and red-blood-cell formation.","source":"Riboflavin-5-Phosphate","tags":"B-Complex, Activated"}},
+        "i7":  {"type":"ingredient","settings":{"icon":"⚡","name":"Vitamin B3 (Niacin)","amount":"20 mg NE","dv":"125%","role":"DNA repair and energy production during cellular development.","source":"Nicotinamide","tags":"B-Complex"}},
+        "i8":  {"type":"ingredient","settings":{"icon":"⚡","name":"Vitamin B6","amount":"10 mg","dv":"588%","role":"Hormone balance, mood support, and morning-sickness preparation.","source":"Pyridoxine HCL","tags":"B-Complex, Hormone"}},
+        "i9":  {"type":"ingredient","settings":{"icon":"🧬","name":"Vitamin B9 (Folic Acid)","amount":"500 µg","dv":"100%","role":"Critical for neural-tube development and DNA synthesis from the earliest moment of pregnancy.","source":"Folic Acid","tags":"Essential, Neural tube"}},
+        "i10": {"type":"ingredient","settings":{"icon":"⚡","name":"Vitamin B12","amount":"20 µg","dv":"833%","role":"Works synergistically with folate for cell division and nerve function.","source":"Cyanocobalamin","tags":"B-Complex, Energy"}},
+        "i11": {"type":"ingredient","settings":{"icon":"✨","name":"Vitamin B7 (Biotin)","amount":"150 µg","dv":"500%","role":"Healthy skin, hair, and metabolism during preconception.","source":"D-Biotin","tags":"Beauty, B-Complex"}},
+        "i12": {"type":"ingredient","settings":{"icon":"⚡","name":"Vitamin B5 (Pantothenic Acid)","amount":"6 mg","dv":"120%","role":"Adrenal support and energy synthesis for fertility readiness.","source":"Calcium D-Pantothenate","tags":"B-Complex"}},
+        "i13": {"type":"ingredient","settings":{"icon":"💎","name":"Iron","amount":"14 mg","dv":"78%","role":"Builds healthy haemoglobin and red-blood-cell stores ahead of pregnancy.","source":"Ferrous Fumarate","tags":"Mineral"}},
+        "i14": {"type":"ingredient","settings":{"icon":"💎","name":"Zinc","amount":"15 mg","dv":"136%","role":"Reproductive health, ovulation, and immune defence.","source":"Zinc Oxide","tags":"Mineral, Fertility"}},
+        "i15": {"type":"ingredient","settings":{"icon":"💎","name":"Copper","amount":"1000 µg","dv":"111%","role":"Works with iron for red-blood-cell formation and connective tissue.","source":"Copper Glycinate","tags":"Mineral"}},
+        "i16": {"type":"ingredient","settings":{"icon":"💎","name":"Selenium","amount":"50 µg","dv":"91%","role":"Thyroid support and protects developing eggs from oxidative damage.","source":"Selenium Glycinate","tags":"Mineral, Antioxidant"}},
+        "i17": {"type":"ingredient","settings":{"icon":"💎","name":"Iodine","amount":"150 µg","dv":"100%","role":"Essential for thyroid hormones, maternal metabolism, and foetal brain development.","source":"Potassium Iodide","tags":"Mineral, Thyroid"}},
+        "i18": {"type":"ingredient","settings":{"icon":"🩸","name":"L-Arginine","amount":"50 mg","dv":"†","role":"Supports healthy blood flow to reproductive tissues.","source":"Arginine HCL","tags":"Amino acid"}},
+        "i19": {"type":"ingredient","settings":{"icon":"🧠","name":"Choline","amount":"30 mg","dv":"5%","role":"Supports foetal brain and nervous-system development.","source":"Choline Bitartrate","tags":"Brain health"}},
+        "i20": {"type":"ingredient","settings":{"icon":"🦠","name":"PregBiotics MEP Blend","amount":"1 Billion CFUs","dv":"†","role":"16-strain pregnancy-safe probiotic blend for gut microbiome readiness, immune support, and digestive comfort during preconception.","source":"L. acidophilus · plantarum · casei · reuteri · rhamnosus · fermentum · salivarus · paracasei · bulgaricus · helveticus + B. lactis · infantis · breve · bifidum · longum + S. thermophiles. Microencapsulated (MEP).","tags":"16-strain, MEP delivery, Pregnancy-safe"}},
+        "t1": {"type":"trust","settings":{"icon":"🩺","title":"OB-formulated","text":"Built with obstetric and fertility specialists for preconception preparation."}},
+        "t2": {"type":"trust","settings":{"icon":"🧪","title":"Lab-tested","text":"Every batch verified by independent labs for purity, potency, and contaminants."}},
+        "t3": {"type":"trust","settings":{"icon":"🛡️","title":"Pregnancy-safe","text":"Every strain selected for safety during preconception, pregnancy, and breastfeeding."}},
+        "t4": {"type":"trust","settings":{"icon":"🌱","title":"Clean label","text":"No proprietary blends. Every dose is disclosed on the panel."}}
       },
-      "block_order": [
-        "i1",
-        "i2",
-        "i3",
-        "i4",
-        "i5",
-        "i6"
-      ],
+      "block_order": ["i1","i2","i3","i4","i5","i6","i7","i8","i9","i10","i11","i12","i13","i14","i15","i16","i17","i18","i19","i20","t1","t2","t3","t4"],
       "settings": {
         "brand_primary": "#1f6b3d",
         "brand_dark": "#0a3d22",
         "brand_tint": "#f2f9ec",
         "brand_light": "#5fa37a",
         "eyebrow": "What's Inside",
-        "title": "Every ingredient earns its place",
-        "sub": "Six clean actives. No proprietary blends. Full transparency for the most important step.",
+        "title_pre": "The verified",
+        "title_highlight": "Conception formula.",
+        "sub": "20 fertility-supporting actives at clinical doses + our 16-strain MEP probiotic blend. No proprietary blends. Verified against the SAHPRA-compliant supplement-facts panel.",
+        "show_badges": true,
+        "badge_vegan": false,
+        "badge_halaal": true,
+        "badge_kosher": false,
+        "badge_gluten_free": true,
+        "badge_dairy_free": true,
+        "badge_non_gmo": true,
+        "badge_lab_tested": true,
+        "serving_size": "1 capsule",
+        "servings_per_container": "60",
+        "other_ingredients": "HPMC (vegetable capsule), Magnesium Stearate.",
+        "allergens": "Manufactured in a SAHPRA-aware facility.",
+        "dv_note": "% Daily Value (DV) based on a 2,000-calorie diet. † = DV not established.",
         "facts_image_url": "",
-        "facts_label": "Supplement facts",
-        "facts_col_a": "Ingredient",
-        "facts_col_b": "Per serving",
-        "facts_caption": "% Daily Value not established. Other Ingredients: HPMC, Magnesium Stearate.",
-        "facts_foot": "Lab-tested · OB-formulated · Full transparency"
+        "facts_pdf_url": "",
+        "side_image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Concept3-Editable11_6.png?v=1775328607"
       }
     },
     "confidence": {
@@ -730,7 +704,7 @@
         "o3": {
           "type": "row",
           "settings": {
-            "feature": "Active Folate (5-MTHF)",
+            "feature": "16-Strain MEP Probiotic Blend",
             "brand_state": "yes",
             "b_state": "no",
             "c_state": "no"

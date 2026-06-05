@@ -214,21 +214,21 @@
           "type": "point",
           "settings": {
             "icon": "✓",
-            "text": "<strong>Active folate (5-MTHF) 600µg</strong> — bioavailable, not synthetic."
+            "text": "<strong>Folic Acid 400µg (200% DV)</strong> — for healthy neural-tube development."
           }
         },
         "s2": {
           "type": "point",
           "settings": {
             "icon": "✓",
-            "text": "<strong>Iron bisglycinate + B12</strong> — energy without constipation."
+            "text": "<strong>Iron 17mg + Full B-Complex</strong> — energy, mood, blood-volume support."
           }
         },
         "s3": {
           "type": "point",
           "settings": {
             "icon": "✓",
-            "text": "<strong>Pregnancy-safe probiotic strains</strong> — ease morning sickness, digestion."
+            "text": "<strong>16-strain MEP Blend (1 billion CFUs)</strong> — ease morning sickness, support digestion."
           }
         },
         "s4": {
@@ -255,7 +255,7 @@
         "eyebrow": "The Solution",
         "title_pre": "Meet",
         "title_highlight": "PregBiotics™ Essentials.",
-        "desc": "Active folate + gentle iron + B12 + pregnancy-safe probiotics. The complete daily prenatal — bioavailable, gut-friendly, and engineered for pregnancy."
+        "desc": "Folic Acid + iron + complete B-complex, magnesium, choline, iodine + Myo-Inositol — paired with our 16-strain MEP probiotic blend. The complete daily prenatal — engineered for all three trimesters."
       }
     },
     "related": {
@@ -447,85 +447,59 @@
       }
     },
     "ingredients": {
-      "type": "vb-product-ingredients",
+      "type": "vb-product-formula",
       "blocks": {
-        "i1": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "🥬",
-            "name": "Active Folate (5-MTHF)",
-            "amount": "600µg",
-            "desc": "Bioavailable form. Critical for neural-tube development."
-          }
-        },
-        "i2": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "🔥",
-            "name": "Iron Bisglycinate",
-            "amount": "27mg",
-            "desc": "Gentle, highly absorbable iron — no constipation."
-          }
-        },
-        "i3": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "💎",
-            "name": "Vitamin B12 + B-Complex",
-            "amount": "Full daily",
-            "desc": "Energy, mood, neural development support."
-          }
-        },
-        "i4": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "🦠",
-            "name": "Pregnancy-Safe Probiotics",
-            "amount": "10 Billion CFU",
-            "desc": "Strains chosen specifically for pregnancy."
-          }
-        },
-        "i5": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "🛡️",
-            "name": "Velobiotics™ MEP Coating",
-            "amount": "Patented",
-            "desc": "Supercritical CO₂ microencapsulation — 1000× more survive."
-          }
-        },
-        "i6": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "🚫",
-            "name": "Free From",
-            "amount": "Always",
-            "desc": "Synthetic folic acid · gluten · soy · dairy · artificial colours · GMO."
-          }
-        }
+        "i1":  {"type":"ingredient","settings":{"icon":"☀️","name":"Vitamin D","amount":"10 mcg (400 IU)","dv":"200%","role":"Foundation for foetal bone development and maternal calcium absorption.","source":"Cholecalciferol","tags":"Bone, Immune"}},
+        "i2":  {"type":"ingredient","settings":{"icon":"🛡️","name":"Vitamin E","amount":"10 mg","dv":"100%","role":"Natural-source antioxidant that protects developing cells from oxidative stress.","source":"Natural Source (Tocopherols)","tags":"Antioxidant, Natural"}},
+        "i3":  {"type":"ingredient","settings":{"icon":"🍊","name":"Vitamin C","amount":"70 mg","dv":"117%","role":"Immune defence + collagen synthesis for baby's connective tissue.","source":"Ascorbic Acid","tags":"Antioxidant, Immune"}},
+        "i4":  {"type":"ingredient","settings":{"icon":"⚡","name":"Vitamin B1 (Thiamin)","amount":"3 mg","dv":"214%","role":"Energy metabolism during the demanding first trimester.","source":"Thiamin","tags":"B-Complex"}},
+        "i5":  {"type":"ingredient","settings":{"icon":"⚡","name":"Vitamin B2 (Riboflavin)","amount":"2 mg","dv":"125%","role":"Healthy growth and red-blood-cell formation for mother and baby.","source":"Riboflavin","tags":"B-Complex"}},
+        "i6":  {"type":"ingredient","settings":{"icon":"⚡","name":"Vitamin B3 (Niacin)","amount":"20 mg","dv":"111%","role":"Supports placenta development and energy production.","source":"Niacin","tags":"B-Complex"}},
+        "i7":  {"type":"ingredient","settings":{"icon":"⚡","name":"Vitamin B6","amount":"10 mg","dv":"500%","role":"Eases morning sickness and supports baby's brain development.","source":"Pyridoxine","tags":"B-Complex, Morning sickness"}},
+        "i8":  {"type":"ingredient","settings":{"icon":"⚡","name":"Pantothenic Acid (B5)","amount":"6 mg","dv":"100%","role":"Adrenal support during pregnancy stress.","source":"Calcium Pantothenate","tags":"B-Complex"}},
+        "i9":  {"type":"ingredient","settings":{"icon":"🧬","name":"Folic Acid (Vitamin B9)","amount":"400 mcg","dv":"200%","role":"Essential for healthy neural-tube development from the earliest moments of pregnancy.","source":"Folic Acid","tags":"Essential, Neural tube"}},
+        "i10": {"type":"ingredient","settings":{"icon":"⚡","name":"Vitamin B12","amount":"6 mcg","dv":"600%","role":"Critical for foetal nervous-system formation and works synergistically with folate.","source":"Cyanocobalamin","tags":"B-Complex, Essential"}},
+        "i11": {"type":"ingredient","settings":{"icon":"✨","name":"Biotin (Vitamin B7)","amount":"50 mcg","dv":"100%","role":"Skin, hair, and metabolism support during pregnancy.","source":"D-Biotin","tags":"Beauty"}},
+        "i12": {"type":"ingredient","settings":{"icon":"🥕","name":"Beta-carotene","amount":"3 mg","dv":"†","role":"Natural-source Vitamin A precursor for foetal vision and immune development. Body converts only what is needed — safer than direct Vit A in pregnancy.","source":"Natural Source","tags":"Antioxidant, Natural"}},
+        "i13": {"type":"ingredient","settings":{"icon":"💎","name":"Iron","amount":"17 mg","dv":"121%","role":"Supports expanded maternal blood volume and prevents pregnancy anaemia.","source":"Ferrous fumarate","tags":"Mineral, Essential"}},
+        "i14": {"type":"ingredient","settings":{"icon":"💎","name":"Selenium","amount":"60 mcg","dv":"†","role":"Thyroid support and antioxidant protection for the developing baby.","source":"Selenium glycinate","tags":"Mineral, Thyroid"}},
+        "i15": {"type":"ingredient","settings":{"icon":"💎","name":"Magnesium","amount":"250 mg","dv":"100%","role":"Eases muscle cramps, supports sleep, and relaxes uterine smooth muscle.","source":"Magnesium glycinate","tags":"Mineral, Calm"}},
+        "i16": {"type":"ingredient","settings":{"icon":"💎","name":"Zinc","amount":"15 mg","dv":"100%","role":"Cell division and growth for the developing baby.","source":"Zinc oxide","tags":"Mineral"}},
+        "i17": {"type":"ingredient","settings":{"icon":"💎","name":"Iodine","amount":"140 mcg","dv":"93%","role":"Critical for baby's brain development and thyroid function.","source":"Potassium iodide","tags":"Mineral, Thyroid"}},
+        "i18": {"type":"ingredient","settings":{"icon":"🧠","name":"Choline","amount":"300 mg","dv":"†","role":"Essential for foetal brain and spinal-cord development — most prenatals miss this.","source":"Choline Bitartrate","tags":"Brain, Often missed"}},
+        "i19": {"type":"ingredient","settings":{"icon":"💎","name":"Copper","amount":"1 mg","dv":"†","role":"Works with iron for healthy blood and connective tissue formation.","source":"Copper glycinate","tags":"Mineral"}},
+        "i20": {"type":"ingredient","settings":{"icon":"🦠","name":"PregBiotics MEP Blend","amount":"1 Billion CFUs","dv":"†","role":"16-strain pregnancy-safe probiotic blend for maternal gut + immune health. Eases morning sickness, supports digestion, and primes baby's microbiome.","source":"L. acidophilus · plantarum · casei · reuteri · rhamnosus · fermentum · salivarus · paracasei · bulgaricus · helveticus + B. lactis · infantis · breve · bifidum · longum + S. thermophiles. Microencapsulated (MEP).","tags":"16-strain, MEP delivery, Pregnancy-safe"}},
+        "t1": {"type":"trust","settings":{"icon":"🩺","title":"OB-formulated","text":"Built with obstetric and midwifery guidance for all three trimesters."}},
+        "t2": {"type":"trust","settings":{"icon":"🧪","title":"Lab-tested","text":"Every batch verified by independent labs for purity and potency."}},
+        "t3": {"type":"trust","settings":{"icon":"🛡️","title":"Pregnancy-safe","text":"Every strain selected for safety during all stages of pregnancy."}},
+        "t4": {"type":"trust","settings":{"icon":"🌱","title":"Clean label","text":"No proprietary blends. Every dose disclosed on the panel."}}
       },
-      "block_order": [
-        "i1",
-        "i2",
-        "i3",
-        "i4",
-        "i5",
-        "i6"
-      ],
+      "block_order": ["i1","i2","i3","i4","i5","i6","i7","i8","i9","i10","i11","i12","i13","i14","i15","i16","i17","i18","i19","i20","t1","t2","t3","t4"],
       "settings": {
         "brand_primary": "#1f6b3d",
         "brand_dark": "#0a3d22",
         "brand_tint": "#f2f9ec",
         "brand_light": "#5fa37a",
         "eyebrow": "What's Inside",
-        "title": "Every ingredient earns its place",
-        "sub": "Six clean actives. No proprietary blends. Full transparency for the most important nine months.",
+        "title_pre": "The complete",
+        "title_highlight": "pregnancy daily.",
+        "sub": "20 actives at clinical doses + our 16-strain MEP probiotic blend. No proprietary blends. Verified against the SAHPRA-compliant supplement-facts panel.",
+        "show_badges": true,
+        "badge_vegan": false,
+        "badge_halaal": true,
+        "badge_kosher": false,
+        "badge_gluten_free": true,
+        "badge_dairy_free": true,
+        "badge_non_gmo": true,
+        "badge_lab_tested": true,
+        "serving_size": "1 capsule",
+        "servings_per_container": "60",
+        "other_ingredients": "HPMC (vegetable capsule), Magnesium Stearate.",
+        "allergens": "Manufactured in a SAHPRA-aware facility.",
+        "dv_note": "% Daily Value (DV) based on a 2,000-calorie diet. † = DV not established.",
         "facts_image_url": "",
-        "facts_label": "Supplement facts",
-        "facts_col_a": "Ingredient",
-        "facts_col_b": "Per serving",
-        "facts_caption": "% Daily Value not established. Other Ingredients: HPMC, Magnesium Stearate.",
-        "facts_foot": "Lab-tested · OB-formulated · Full transparency"
+        "facts_pdf_url": "",
+        "side_image_url": ""
       }
     },
     "confidence": {

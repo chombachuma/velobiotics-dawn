@@ -121,9 +121,10 @@
   .vb-pb__sub-opt-badge { position: absolute; top: -10px; right: 14px; background: linear-gradient(135deg, var(--bp), var(--bd)); color: #fff; font-size: 9.5px; font-weight: 900; padding: 5px 11px; border-radius: 999px; letter-spacing: 0.08em; text-transform: uppercase; box-shadow: 0 6px 14px color-mix(in srgb, var(--bp) 45%, transparent); animation: vb-pb-badgepulse 2.6s ease-in-out infinite; }
   @keyframes vb-pb-badgepulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.06); } }
   .vb-pb__sub-opt-save { background: var(--bp); color: #fff; padding: 2px 8px; border-radius: 999px; font-size: 10.5px; font-weight: 800; letter-spacing: 0.04em; margin-left: 6px; }
-  /* Stand-out subscribe card */
-  .vb-pb__sub-opt--star { position: relative; overflow: hidden; }
-  .vb-pb__sub-opt--star::before { content: ''; position: absolute; inset: -3px; border-radius: 16px; background: linear-gradient(135deg, color-mix(in srgb, var(--bp) 65%, transparent), color-mix(in srgb, #ff9500 35%, transparent), color-mix(in srgb, var(--bp) 65%, transparent)); background-size: 200% 200%; opacity: 0; transition: opacity 0.3s ease; z-index: -1; animation: vb-pb-glow 4s ease-in-out infinite; }
+  /* Stand-out subscribe card — overflow visible so the floating badge isn't clipped */
+  .vb-pb__sub-opt--star { position: relative; overflow: visible; }
+  .vb-pb__sub-opt--star::before { content: ''; position: absolute; inset: -3px; border-radius: 16px; background: linear-gradient(135deg, color-mix(in srgb, var(--bp) 65%, transparent), color-mix(in srgb, #ff9500 35%, transparent), color-mix(in srgb, var(--bp) 65%, transparent)); background-size: 200% 200%; opacity: 0; transition: opacity 0.3s ease; z-index: 0; animation: vb-pb-glow 4s ease-in-out infinite; pointer-events: none; }
+  .vb-pb__sub-opt--star > * { position: relative; z-index: 1; }
   .vb-pb__sub-opt--star:has(input:checked)::before { opacity: 1; }
   @keyframes vb-pb-glow { 0%,100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
   .vb-pb__sub-opt--star:has(input:checked) { border-color: transparent; background: linear-gradient(135deg, color-mix(in srgb, var(--bp) 10%, #fff), color-mix(in srgb, var(--bp) 3%, #fff)); box-shadow: 0 14px 32px color-mix(in srgb, var(--bp) 28%, transparent); }
@@ -613,10 +614,13 @@
       return `${fmt.prefix}${majSep}${fmt.decimal}${min}${fmt.suffix}`;
     }
 
+    function stripHtml(s) { return String(s||'').replace(/<[^>]+>/g, '').trim(); }
     function setText(el, text) {
       if (!el) return;
       isInternalUpdate = true;
-      el.textContent = text;
+      /* Strip HTML — regional pricing plugins sometimes wrap prices in <span class="money">…</span>
+         via the money_format setting; that HTML must not leak into textContent. */
+      el.textContent = stripHtml(text);
       setTimeout(() => { isInternalUpdate = false; }, 80);
     }
 

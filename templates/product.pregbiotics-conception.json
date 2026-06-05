@@ -470,10 +470,10 @@
         "i3": {
           "type": "ingredient",
           "settings": {
-            "icon": "⚡",
-            "name": "CoQ10",
-            "amount": "100mg",
-            "desc": "Ubiquinol form. Cellular energy for egg mitochondria."
+            "icon": "⏳",
+            "name": "Awaiting verified formula",
+            "amount": "—",
+            "desc": "This ingredient line will be updated with the verified PregBiotics Conception formula. The supplement-facts panel is currently being re-verified."
           }
         },
         "i4": {

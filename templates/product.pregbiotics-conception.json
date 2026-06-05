@@ -86,7 +86,7 @@
         "brand_label": "PregBiotics™ Conception",
         "rating": "4.8",
         "review_count": "180+",
-        "hook": "Prepare your body for pregnancy. PregBiotics™ Conception combines pregnancy-safe probiotic strains with high-dose active folate and myo-inositol — engineered for fertility and preconception nutrition.",
+        "hook": "Prepare your body for pregnancy. PregBiotics™ Conception delivers a full preconception multivitamin — Folic Acid, complete B-complex, iron, zinc, iodine + Myo-Inositol — backed by our 16-strain pregnancy-safe probiotic MEP Blend.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
         "show_buynow": true,
         "show_testi_marquee": true
@@ -214,21 +214,21 @@
           "type": "point",
           "settings": {
             "icon": "✓",
-            "text": "<strong>800µg active folate (5-MTHF)</strong> — bioavailable form, neural tube prep."
+            "text": "<strong>500µg Folic Acid (Vitamin B9)</strong> — full daily value for neural-tube preparation."
           }
         },
         "s2": {
           "type": "point",
           "settings": {
             "icon": "✓",
-            "text": "<strong>Myo-inositol + D-chiro</strong> — egg quality and ovulation regulation."
+            "text": "<strong>400mg Myo-Inositol</strong> — supports ovulation regularity and egg quality."
           }
         },
         "s3": {
           "type": "point",
           "settings": {
             "icon": "✓",
-            "text": "<strong>Pregnancy-safe probiotic strains</strong> — gut health for pregnancy."
+            "text": "<strong>16-strain MEP Blend (1 billion CFUs)</strong> — pregnancy-safe gut + immune support."
           }
         },
         "s4": {

@@ -155,9 +155,12 @@
 
   .vb-pb__price-block { display: flex; align-items: baseline; flex-wrap: wrap; gap: 12px; padding: 14px 16px; background: linear-gradient(135deg, var(--bt) 0%, #fff 100%); border-radius: 14px; margin: 0 0 14px; border: 1px solid color-mix(in srgb, var(--bp) 14%, transparent); }
   .vb-pb__price-block .price__container { display: inline-flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
-  .vb-pb__price-now { font-size: 28px; font-weight: 900; color: #1a1a1a; letter-spacing: -0.02em; }
+  .vb-pb__price-now { font-size: 28px; font-weight: 900; color: #1a1a1a; letter-spacing: -0.02em; transition: color 0.3s ease; }
   .vb-pb__price-was { font-size: 14px; color: #a0a0a0; text-decoration: line-through; }
   .vb-pb__price-save { background: var(--bp); color: #fff; padding: 4px 10px; border-radius: 999px; font-size: 11px; font-weight: 800; letter-spacing: 0.04em; }
+  .vb-pb__price-mode { display: inline-flex; align-items: center; gap: 4px; background: color-mix(in srgb, var(--bp) 14%, #fff); color: var(--bd); padding: 3px 9px; border-radius: 999px; font-size: 10.5px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; white-space: nowrap; }
+  .vb-pb__price-mode:empty { display: none; }
+  .vb-pb__price-block.is-sub .vb-pb__price-now { color: var(--bd); }
   .vb-pb__price-unit { display: block; width: 100%; font-size: 11.5px; color: #6c7a6b; font-weight: 600; }
   .vb-pb__shipnote { display: flex; align-items: center; gap: 8px; padding: 10px 14px; background: color-mix(in srgb, var(--bp) 8%, #fff); border-radius: 12px; margin: 0 0 14px; font-size: 13px; color: #2b3a2a; font-weight: 600; }
   .vb-pb__shipnote-icon { color: var(--bp); font-size: 16px; }
@@ -406,14 +409,18 @@
         </div>
         {%- endif -%}
 
-        {%- comment -%} Price block — uses standard Shopify classes so the regional pricing plugin can localise it. {%- endcomment -%}
-        <div class="vb-pb__price-block price" data-vbp-price-block>
+        {%- comment -%}
+          Price block — preserves regional pricing plugin compatibility.
+          The plugin owns the BASE displayed text. Our JS reads the displayed value, applies subscription/qty multipliers,
+          and re-renders in the same currency format. MutationObserver detects external plugin updates (e.g. region change)
+          and re-applies our multiplier without breaking the plugin's localisation.
+        {%- endcomment -%}
+        <div class="vb-pb__price-block price" data-vbp-price-block data-base-price-cents="{{ current_variant.price }}" data-base-compare-cents="{{ current_variant.compare_at_price | default: 0 }}" data-sub-pct-off="{{ sub_pct_off }}" data-tier2-pct="{{ tier2_pct }}" data-tier3-pct="{{ tier3_pct }}">
           <span class="price__container">
-            <span class="price-item price-item--regular vb-pb__price-now">{{ current_variant.price | money }}</span>
-            {%- if current_variant.compare_at_price > current_variant.price -%}
-              <span class="price-item price-item--regular vb-pb__price-was">{{ current_variant.compare_at_price | money }}</span>
-              <span class="vb-pb__price-save">SAVE −{{ savings_pct }}%</span>
-            {%- endif -%}
+            <span class="price-item price-item--regular vb-pb__price-now" data-vbp-price-display data-vbp-base-text="{{ current_variant.price | money }}">{{ current_variant.price | money }}</span>
+            <span class="price-item price-item--regular vb-pb__price-was" data-vbp-compare-display data-vbp-base-compare-text="{{ current_variant.compare_at_price | money }}"{% if current_variant.compare_at_price <= current_variant.price %} style="display:none"{% endif %}>{{ current_variant.compare_at_price | money }}</span>
+            <span class="vb-pb__price-save" data-vbp-save-display{% if current_variant.compare_at_price <= current_variant.price %} style="display:none"{% endif %}>SAVE −{{ savings_pct }}%</span>
+            <span class="vb-pb__price-mode" data-vbp-mode-label></span>
           </span>
           {%- if current_variant.unit_price_measurement -%}
             <span class="vb-pb__price-unit">{{ current_variant.unit_price | money }} / {{ current_variant.unit_price_measurement.reference_value }} {{ current_variant.unit_price_measurement.reference_unit }}</span>

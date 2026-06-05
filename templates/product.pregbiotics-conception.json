@@ -662,7 +662,7 @@
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
             "icon_fallback": "✓",
             "name": "Clinically Validated",
-            "desc": "Myo-inositol + active folate — peer-reviewed for fertility."
+            "desc": "Myo-Inositol + complete B-complex — peer-reviewed for fertility."
           }
         },
         "d2": {
@@ -712,7 +712,7 @@
         "o1": {
           "type": "row",
           "settings": {
-            "feature": "Active Folate (5-MTHF)",
+            "feature": "Folic Acid + Full B-Complex",
             "brand_state": "yes",
             "b_state": "no",
             "c_state": "no"
@@ -721,7 +721,7 @@
         "o2": {
           "type": "row",
           "settings": {
-            "feature": "Myo-Inositol + D-Chiro",
+            "feature": "Myo-Inositol for Egg Quality",
             "brand_state": "yes",
             "b_state": "no",
             "c_state": "no"

@@ -89,6 +89,8 @@
         "hook": "The complete pregnancy daily with omega. PregBiotics™ Essentials + Omega delivers 21 actives in one capsule (Folic Acid + full B-complex + iron + zinc + iodine + choline + K1 + magnesium) plus a pharmaceutical-grade fish-oil soft gel (300mg DHA + 400mg EPA) — backed by our 16-strain MEP probiotic blend.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
         "show_buynow": true,
+        "default_plan_slug": "monthly",
+        "default_frequency_days": 30,
         "show_testi_marquee": true
       }
     },

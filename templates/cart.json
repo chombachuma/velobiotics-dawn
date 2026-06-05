@@ -11,12 +11,22 @@
   "sections": {
     "cart": {
       "type": "vb-cart",
+      "blocks": {
+        "r1": {"type":"review","settings":{"quote":"My energy came back within 2 weeks. I'd been on probiotics for years and never felt this difference.","author":"Naseema P.","meta":"Verified buyer · Cape Town","initials":"NP","source":"Google ★★★★★"}},
+        "r2": {"type":"review","settings":{"quote":"Femina Cookie Fresh changed everything. Cleared a 3-month recurring issue in days. My OB even noticed at my next visit.","author":"Lerato M.","meta":"Verified buyer · Johannesburg","initials":"LM","source":"Judge.me ★★★★★"}},
+        "r3": {"type":"review","settings":{"quote":"Subscribed monthly for the family. Free shipping + the BioKid chewables — my kids actually ask for them now.","author":"Pieter V.","meta":"Verified buyer · 4 months in","initials":"PV","source":"Google ★★★★★"}}
+      },
+      "block_order": ["r1","r2","r3"],
       "settings": {
-        "eyebrow": "Your Wellness Stack",
+        "eyebrow": "Your wellness stack",
         "title_pre": "Almost",
         "title_highlight": "there.",
-        "sub": "Review your stack. Free shipping kicks in soon — and a 30-day money-back guarantee covers everything.",
-        "free_ship_threshold": 50000
+        "sub": "Free shipping kicks in soon · 30-day money-back covers everything.",
+        "free_ship_threshold": 50000,
+        "reviews_eyebrow": "Loved by 300,000+",
+        "reviews_title_pre": "You are in",
+        "reviews_title_highlight": "good company.",
+        "reviews_sub": "4.8★ average across 30,000+ verified reviews — Judge.me + Google."
       }
     },
     "fbt": {

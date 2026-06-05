@@ -86,7 +86,7 @@
         "brand_label": "PregBiotics™ Essentials + Omega",
         "rating": "4.8",
         "review_count": "150+",
-        "hook": "The complete pregnancy daily with omega-3. PregBiotics™ Essentials + Omega blends pregnancy-safe probiotic strains, active folate, iron, B12, AND DHA omega-3 — for baby brain, eye, and total prenatal nutrition.",
+        "hook": "The complete pregnancy daily with omega. PregBiotics™ Essentials + Omega delivers 21 actives in one capsule (Folic Acid + full B-complex + iron + zinc + iodine + choline + K1 + magnesium) plus a pharmaceutical-grade fish-oil soft gel (300mg DHA + 400mg EPA) — backed by our 16-strain MEP probiotic blend.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
         "show_buynow": true,
         "show_testi_marquee": true
@@ -255,7 +255,7 @@
         "eyebrow": "The Solution",
         "title_pre": "Meet",
         "title_highlight": "Essentials + Omega.",
-        "desc": "Active folate, gentle iron, B12, pregnancy-safe probiotics, AND pure algae DHA — in one capsule. Total daily prenatal coverage with no fish-oil burps."
+        "desc": "20 capsule actives + 1 soft gel of pharmaceutical-grade fish oil (300mg DHA + 400mg EPA) + our 16-strain pregnancy-safe MEP probiotic blend. The complete pregnancy daily — engineered for baby's brain, eye, and total prenatal nutrition."
       }
     },
     "related": {
@@ -357,8 +357,8 @@
           "type": "feat",
           "settings": {
             "icon": "🌱",
-            "name": "Algae-Sourced DHA",
-            "desc": "Vegan, heavy-metal-free, sustainable."
+            "name": "Pharmaceutical-Grade Fish Oil",
+            "desc": "Molecularly distilled, heavy-metal-tested. 300mg DHA + 400mg EPA per soft gel."
           }
         },
         "b5": {
@@ -690,7 +690,7 @@
         "o1": {
           "type": "row",
           "settings": {
-            "feature": "Algae DHA Omega-3",
+            "feature": "Fish-Oil DHA 300mg + EPA 400mg",
             "brand_state": "yes",
             "b_state": "no",
             "c_state": "no"
@@ -699,7 +699,7 @@
         "o2": {
           "type": "row",
           "settings": {
-            "feature": "Active Folate (5-MTHF)",
+            "feature": "Choline + Vitamin K1",
             "brand_state": "yes",
             "b_state": "no",
             "c_state": "no"

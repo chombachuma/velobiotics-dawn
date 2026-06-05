@@ -23,7 +23,7 @@
           "type": "benefit",
           "settings": {
             "icon": "🧬",
-            "text": "Folate + CoQ10 + myo-inositol"
+            "text": "Active folate + myo-inositol"
           }
         },
         "b3": {
@@ -86,7 +86,7 @@
         "brand_label": "PregBiotics™ Conception",
         "rating": "4.8",
         "review_count": "180+",
-        "hook": "Prepare your body for pregnancy. PregBiotics™ Conception combines pregnancy-safe probiotic strains with high-dose folate, CoQ10, and myo-inositol — engineered for fertility and preconception nutrition.",
+        "hook": "Prepare your body for pregnancy. PregBiotics™ Conception combines pregnancy-safe probiotic strains with high-dose active folate and myo-inositol — engineered for fertility and preconception nutrition.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
         "show_buynow": true,
         "show_testi_marquee": true
@@ -221,7 +221,7 @@
           "type": "point",
           "settings": {
             "icon": "✓",
-            "text": "<strong>Myo-inositol + CoQ10</strong> — egg quality and ovulation regulation."
+            "text": "<strong>Myo-inositol + D-chiro</strong> — egg quality and ovulation regulation."
           }
         },
         "s3": {
@@ -255,7 +255,7 @@
         "eyebrow": "The Solution",
         "title_pre": "Meet",
         "title_highlight": "PregBiotics™ Conception.",
-        "desc": "Active folate + myo-inositol + CoQ10 + pregnancy-safe probiotics. Built specifically for women preparing to conceive — egg quality, ovulation, neural-tube prep, all covered."
+        "desc": "Active folate + myo-inositol + pregnancy-safe probiotics. Built specifically for women preparing to conceive — egg quality, ovulation, neural-tube prep, all covered."
       }
     },
     "related": {

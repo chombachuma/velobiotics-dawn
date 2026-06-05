@@ -739,8 +739,8 @@
     if (vpScript) { try { variantPlans = JSON.parse(vpScript.textContent || '{}'); } catch(e){} }
     const monthlyVariantIds = (root.dataset.monthlyVariantIds || '').split(',').map(s => s.trim()).filter(Boolean);
     const freqLabel = root.querySelector('[data-vbp-freq-label]');
-    const subRadio = root.querySelector('input[name="purchase_mode"][value="subscribe"]');
-    const sellingInput = root.querySelector('[data-vbp-selling-plan]');
+    const subRadioVar = root.querySelector('input[name="purchase_mode"][value="subscribe"]');
+    /* sellingInput already declared above in this IIFE — reuse it */
     function applyVariantPlanSwitch(variantId) {
       if (!variantId) return;
       const plans = variantPlans[variantId] || variantPlans[String(variantId)] || [];
@@ -749,9 +749,9 @@
       const matchStr = isMonthly ? 'monthly' : 'every 2';
       let chosen = plans.find(function(p){ return (p.name||'').toLowerCase().indexOf(matchStr) !== -1; });
       if (!chosen) chosen = plans[0];
-      if (subRadio && chosen) {
-        subRadio.dataset.sellingPlan = chosen.id;
-        if (subRadio.checked && sellingInput) sellingInput.value = chosen.id;
+      if (subRadioVar && chosen) {
+        subRadioVar.dataset.sellingPlan = chosen.id;
+        if (subRadioVar.checked && sellingInput) sellingInput.value = chosen.id;
       }
       if (freqLabel && chosen) freqLabel.textContent = chosen.name + ' delivery';
     }

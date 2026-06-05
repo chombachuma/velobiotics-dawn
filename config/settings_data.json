@@ -143,16 +143,6 @@
         "disabled": false,
         "settings": {}
       },
-      "12107416968155278870": {
-        "type": "shopify://apps/paywhirl-subscriptions/blocks/paywhirl-customer-portal/41e95d60-82cf-46e8-84de-618d7e4c37b7",
-        "disabled": false,
-        "settings": {
-          "show_subscriptions_link": false,
-          "show_customer_login_note": false,
-          "show_address_change_note": false,
-          "container_selector": "main"
-        }
-      },
       "13129208525377196889": {
         "type": "shopify://apps/mlv-multi-country-pricing/blocks/mlveda-mcp/a55f20a0-67fc-44fb-8f37-8dfe18bd61a2",
         "disabled": false,
@@ -193,6 +183,16 @@
         "type": "shopify://apps/zipchat-ai-chatbot/blocks/widget/09531fba-7e12-4949-9b23-92e32b5e5456",
         "disabled": false,
         "settings": {}
+      },
+      "12107416968155278870": {
+        "type": "shopify://apps/paywhirl-subscriptions/blocks/paywhirl-customer-portal/41e95d60-82cf-46e8-84de-618d7e4c37b7",
+        "disabled": false,
+        "settings": {
+          "show_subscriptions_link": false,
+          "show_customer_login_note": false,
+          "show_address_change_note": false,
+          "container_selector": "main"
+        }
       }
     },
     "color_schemes": {

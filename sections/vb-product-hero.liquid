@@ -394,22 +394,22 @@
               <input type="radio" name="qty_tier" value="1" checked>
               <div class="vb-pb__tier-qty">1 {{ section.settings.tier_unit | default: 'Bottle' }}</div>
               <div class="vb-pb__tier-save">Full Price</div>
-              <div class="vb-pb__tier-price">{{ tier1_total | money }}</div>
+              <div class="vb-pb__tier-price" data-vbp-tier-price="1">{{ tier1_total | money }}</div>
             </label>
             <label class="vb-pb__tier">
               <input type="radio" name="qty_tier" value="2">
               <div class="vb-pb__tier-qty">2 {{ section.settings.tier_unit_plural | default: 'Bottles' }}</div>
               <div class="vb-pb__tier-save">Save {{ tier2_pct }}%</div>
-              <div class="vb-pb__tier-price">{{ tier2_total | money }}</div>
-              <div class="vb-pb__tier-each">{{ tier2_each | money }} each</div>
+              <div class="vb-pb__tier-price" data-vbp-tier-price="2">{{ tier2_total | money }}</div>
+              <div class="vb-pb__tier-each" data-vbp-tier-each="2">{{ tier2_each | money }} each</div>
             </label>
             <label class="vb-pb__tier vb-pb__tier--best">
               <span class="vb-pb__tier-badge">★ BEST DEAL</span>
               <input type="radio" name="qty_tier" value="3">
               <div class="vb-pb__tier-qty">3 {{ section.settings.tier_unit_plural | default: 'Bottles' }}</div>
               <div class="vb-pb__tier-save">Save {{ tier3_pct }}%</div>
-              <div class="vb-pb__tier-price">{{ tier3_total | money }}</div>
-              <div class="vb-pb__tier-each">{{ tier3_each | money }} each</div>
+              <div class="vb-pb__tier-price" data-vbp-tier-price="3">{{ tier3_total | money }}</div>
+              <div class="vb-pb__tier-each" data-vbp-tier-each="3">{{ tier3_each | money }} each</div>
             </label>
           </div>
           <p style="font-size:11.5px;color:#6c7a6b;margin:10px 0 0;text-align:center;font-weight:600">Discount automatically applied at checkout</p>
@@ -707,6 +707,23 @@
         const yearSav = fmt.value * subPct2 * freq;
         setText(annualSaveDisp, formatCurrency(fmt, yearSav));
       }
+      /* Update Qty Discount tier card prices on variant change */
+      const t2P = parseFloat(priceBlock?.dataset.tier2Pct || '10') / 100;
+      const t3P = parseFloat(priceBlock?.dataset.tier3Pct || '15') / 100;
+      root.querySelectorAll('[data-vbp-tier-price]').forEach(function(el){
+        const t = parseInt(el.dataset.vbpTierPrice, 10) || 1;
+        let f = 1;
+        if (t === 2) f = (1 - t2P);
+        if (t === 3) f = (1 - t3P);
+        setText(el, formatCurrency(fmt, fmt.value * t * f));
+      });
+      root.querySelectorAll('[data-vbp-tier-each]').forEach(function(el){
+        const t = parseInt(el.dataset.vbpTierEach, 10) || 1;
+        let f = 1;
+        if (t === 2) f = (1 - t2P);
+        if (t === 3) f = (1 - t3P);
+        setText(el, formatCurrency(fmt, fmt.value * f) + ' each');
+      });
     }
 
     /* MutationObserver — re-capture base when plugin updates display externally */

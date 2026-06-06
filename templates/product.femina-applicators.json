@@ -89,6 +89,8 @@
         "hook": "Insertion, made effortless. Femina™ Suppository Applicators are medical-grade silicone applicators designed for Cookie Fresh suppositories — hygienic, comfortable, reusable.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
         "show_subscription": false,
+        "tier_unit": "Pack",
+        "tier_unit_plural": "Packs",
         "show_buynow": true,
         "show_testi_marquee": true
       }

@@ -89,7 +89,8 @@
         "hook": "Compound results, smarter savings. This bundle pairs Velobiotics flagship products into one transaction — bigger impact, lower price, simpler ritual. Doctor-designed protocols, save 15-25% vs buying separately.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
         "show_subscription": true,
-        "show_qty_discounts": false,
+        "tier_unit": "Pack",
+        "tier_unit_plural": "Packs",
         "show_buynow": true,
         "show_testi_marquee": true
       }
@@ -101,45 +102,45 @@
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Lerato+M&background=4d8c44&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Compound results, single purchase. This bundle changed my routine.",
             "author": "Lerato M.",
-            "meta": "Verified buyer · Johannesburg"
+            "meta": "Verified buyer · Johannesburg",
+            "quote": "Compound results, single purchase. This bundle changed my routine."
           }
         },
         "r2": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Marco+D&background=7eb375&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Smarter than buying separately. The savings add up.",
             "author": "Marco D.",
-            "meta": "Verified buyer · 2 months ago"
+            "meta": "Verified buyer · 2 months ago",
+            "quote": "Smarter than buying separately. The savings add up."
           }
         },
         "r3": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Caroline+V&background=2e5d28&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Doctor-approved combo. Each product complements the next.",
             "author": "Caroline V.",
-            "meta": "Verified buyer · 1 month ago"
+            "meta": "Verified buyer · 1 month ago",
+            "quote": "Doctor-approved combo. Each product complements the next."
           }
         },
         "r4": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Tshepo+K&background=4d8c44&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "My favourite Velobiotics purchase. Worth every cent.",
             "author": "Tshepo K.",
-            "meta": "Verified buyer · Pretoria"
+            "meta": "Verified buyer · Pretoria",
+            "quote": "My favourite Velobiotics purchase. Worth every cent."
           }
         },
         "r5": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Sarah+B&background=7eb375&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Bundle was the right starting point for me.",
             "author": "Sarah B.",
-            "meta": "Verified buyer · Cape Town"
+            "meta": "Verified buyer · Cape Town",
+            "quote": "Bundle was the right starting point for me."
           }
         }
       },
@@ -504,8 +505,8 @@
       ],
       "settings": {
         "brand_primary": "#4d8c44",
-        "brand_tint": "#eef7ec",
         "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
         "brand_light": "#7eb375",
         "eyebrow": "What's Inside",
         "title": "Bundle essentials",

@@ -88,6 +88,9 @@
         "review_count": "260+",
         "hook": "The starter bundle. Femina™ Probiotic Capsules + Cookie Fresh™ Suppositories — daily systemic defence plus targeted vaginal action. Save vs separate purchase.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
+        "show_subscription": false,
+        "tier_unit": "Pack",
+        "tier_unit_plural": "Packs",
         "show_buynow": true,
         "show_testi_marquee": true
       }

@@ -1,0 +1,244 @@
+{%- comment -%}
+  VB · Dynamic Free-Shipping Announcement Bar
+  Multi-currency · live cart polling · velobiotics green
+{%- endcomment -%}
+
+{%- liquid
+  case cart.currency.iso_code
+    when 'USD'
+      assign threshold = section.settings.threshold_usd | default: 30
+      assign symbol = '$'
+      assign code = 'USD'
+    when 'EUR'
+      assign threshold = section.settings.threshold_eur | default: 30
+      assign symbol = '€'
+      assign code = 'EUR'
+    when 'GBP'
+      assign threshold = section.settings.threshold_gbp | default: 25
+      assign symbol = '£'
+      assign code = 'GBP'
+    when 'AUD'
+      assign threshold = section.settings.threshold_aud | default: 50
+      assign symbol = 'A$'
+      assign code = 'AUD'
+    when 'CAD'
+      assign threshold = section.settings.threshold_cad | default: 40
+      assign symbol = 'C$'
+      assign code = 'CAD'
+    else
+      assign threshold = section.settings.threshold_zar | default: 500
+      assign symbol = 'R'
+      assign code = 'ZAR'
+  endcase
+  assign threshold_cents = threshold | times: 100
+  assign current_cents = cart.total_price | default: 0
+  assign remaining_cents = threshold_cents | minus: current_cents
+-%}
+
+<div
+  class="vb-shipbar"
+  data-vb-shipbar
+  data-threshold-zar="{{ section.settings.threshold_zar | default: 500 }}"
+  data-threshold-usd="{{ section.settings.threshold_usd | default: 30 }}"
+  data-threshold-eur="{{ section.settings.threshold_eur | default: 30 }}"
+  data-threshold-gbp="{{ section.settings.threshold_gbp | default: 25 }}"
+  data-threshold-aud="{{ section.settings.threshold_aud | default: 50 }}"
+  data-threshold-cad="{{ section.settings.threshold_cad | default: 40 }}"
+  data-empty-tpl="{{ section.settings.empty_text | escape }}"
+  data-progress-tpl="{{ section.settings.progress_text | escape }}"
+  data-success-tpl="{{ section.settings.success_text | escape }}"
+  style="--vbsb-bg: {{ section.settings.bg_color | default: '#4d8c44' }}; --vbsb-fg: {{ section.settings.text_color | default: '#ffffff' }};"
+  role="status"
+  aria-live="polite"
+>
+  <div class="vb-shipbar__inner">
+    <span class="vb-shipbar__text" data-vb-shipbar-text>
+      {%- if current_cents <= 0 -%}
+        🚚 FREE shipping on orders over {{ symbol }}{{ threshold }}
+      {%- elsif remaining_cents > 0 -%}
+        {%- assign remaining_display = remaining_cents | divided_by: 100.0 -%}
+        🚚 Add {{ symbol }}{{ remaining_display | round: 2 }} more for FREE shipping!
+      {%- else -%}
+        ✓ You've unlocked FREE shipping!
+      {%- endif -%}
+    </span>
+  </div>
+</div>
+
+<style>
+  .vb-shipbar {
+    background: var(--vbsb-bg, #4d8c44);
+    color: var(--vbsb-fg, #ffffff);
+    font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif !important;
+    font-weight: 500;
+    font-size: 13.5px;
+    line-height: 1.3;
+    padding: 9px 16px;
+    text-align: center;
+    position: relative;
+    z-index: 20;
+    letter-spacing: 0.01em;
+  }
+  .vb-shipbar * { font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif !important; }
+  .vb-shipbar__inner { max-width: 1400px; margin: 0 auto; }
+  .vb-shipbar__text { display: inline-block; transition: opacity 0.25s ease; }
+  .vb-shipbar__text--unlocked { font-weight: 600; }
+  @media (max-width: 600px) {
+    .vb-shipbar { font-size: 11.5px; padding: 7px 10px; letter-spacing: 0; }
+  }
+</style>
+
+<script>
+(function(){
+  const bar = document.querySelector('[data-vb-shipbar]');
+  if (!bar) return;
+  const textEl = bar.querySelector('[data-vb-shipbar-text]');
+
+  const THRESHOLDS = {
+    ZAR: parseFloat(bar.dataset.thresholdZar) || 500,
+    USD: parseFloat(bar.dataset.thresholdUsd) || 30,
+    EUR: parseFloat(bar.dataset.thresholdEur) || 30,
+    GBP: parseFloat(bar.dataset.thresholdGbp) || 25,
+    AUD: parseFloat(bar.dataset.thresholdAud) || 50,
+    CAD: parseFloat(bar.dataset.thresholdCad) || 40
+  };
+  const SYMBOLS = { ZAR: 'R', USD: '$', EUR: '€', GBP: '£', AUD: 'A$', CAD: 'C$' };
+
+  const emptyTpl = bar.dataset.emptyTpl || '🚚 FREE shipping on orders over {threshold}';
+  const progressTpl = bar.dataset.progressTpl || '🚚 Add {remaining} more for FREE shipping!';
+  const successTpl = bar.dataset.successTpl || "✓ You've unlocked FREE shipping!";
+
+  function detectCurrency(cartCurrency) {
+    // Priority 1: window.Shopify.currency.active (set by MLVeda / Shopify Markets)
+    if (window.Shopify && window.Shopify.currency && window.Shopify.currency.active) {
+      return window.Shopify.currency.active;
+    }
+    // Priority 2: cart's reported currency from /cart.js
+    if (cartCurrency) return cartCurrency;
+    // Priority 3: html lang or default
+    return 'ZAR';
+  }
+
+  function getConversionRate() {
+    // MLVeda / Shopify currency rate from base store currency
+    if (window.Shopify && window.Shopify.currency && window.Shopify.currency.rate) {
+      const r = parseFloat(window.Shopify.currency.rate);
+      if (r > 0) return r;
+    }
+    return 1;
+  }
+
+  function fmtMoney(amount, currency) {
+    const sym = SYMBOLS[currency] || 'R';
+    const num = Math.max(0, amount);
+    const formatted = num.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    return sym + formatted;
+  }
+
+  function render(cartTotalCents, cartCurrencyCode) {
+    const active = detectCurrency(cartCurrencyCode);
+    const threshold = THRESHOLDS[active] || THRESHOLDS.ZAR;
+    // Cart total may need conversion if store base currency != display currency
+    // Heuristic: if cart returns its currency, that's the cart's actual unit
+    let cartTotal = cartTotalCents / 100;
+    // If the cart currency differs from display and a rate exists, convert
+    if (cartCurrencyCode && cartCurrencyCode !== active) {
+      const rate = getConversionRate();
+      cartTotal = cartTotal * rate;
+    }
+    const remaining = threshold - cartTotal;
+    let txt, unlocked = false;
+    if (cartTotal <= 0) {
+      txt = emptyTpl.replace('{threshold}', fmtMoney(threshold, active));
+    } else if (remaining > 0) {
+      txt = progressTpl.replace('{remaining}', fmtMoney(remaining, active));
+    } else {
+      txt = successTpl;
+      unlocked = true;
+    }
+    if (textEl.textContent.trim() !== txt) {
+      textEl.style.opacity = '0.35';
+      setTimeout(() => {
+        textEl.textContent = txt;
+        textEl.classList.toggle('vb-shipbar__text--unlocked', unlocked);
+        textEl.style.opacity = '1';
+      }, 110);
+    } else {
+      textEl.classList.toggle('vb-shipbar__text--unlocked', unlocked);
+    }
+  }
+
+  let refreshing = false;
+  function refresh() {
+    if (refreshing) return;
+    refreshing = true;
+    fetch('/cart.js', { credentials: 'same-origin', headers: { 'Accept': 'application/json' } })
+      .then(r => r.json())
+      .then(c => render(c.total_price || 0, c.currency || null))
+      .catch(() => {})
+      .finally(() => { refreshing = false; });
+  }
+
+  // Initial: refresh ~150ms after load to confirm Liquid-rendered state
+  setTimeout(refresh, 150);
+
+  // Hook into fetch to detect cart mutations
+  const origFetch = window.fetch;
+  window.fetch = function() {
+    const result = origFetch.apply(this, arguments);
+    const url = (arguments[0] && (typeof arguments[0] === 'string' ? arguments[0] : arguments[0].url)) || '';
+    if (/\/cart\/(add|change|update|clear)(\.js)?/.test(url) || /\/cart\.js/.test(url)) {
+      result.then(() => setTimeout(refresh, 120)).catch(() => {});
+    }
+    return result;
+  };
+
+  // Hook into XHR too (some apps use XHR not fetch)
+  const origOpen = XMLHttpRequest.prototype.open;
+  XMLHttpRequest.prototype.open = function(method, url) {
+    if (typeof url === 'string' && /\/cart\/(add|change|update|clear)/.test(url)) {
+      this.addEventListener('load', () => setTimeout(refresh, 120));
+    }
+    return origOpen.apply(this, arguments);
+  };
+
+  // Dawn-themed events
+  ['cart:updated', 'cart:refresh', 'cart:open', 'cart-update'].forEach(ev => {
+    document.addEventListener(ev, refresh);
+  });
+
+  // Tab focus
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) refresh(); });
+  window.addEventListener('pageshow', refresh);
+  window.addEventListener('focus', refresh);
+})();
+</script>
+
+{% schema %}
+{
+  "name": "VB Shipping Bar",
+  "tag": "section",
+  "class": "vb-shipbar-wrap",
+  "settings": [
+    { "type": "header", "content": "Free-Shipping Thresholds (per currency)" },
+    { "type": "paragraph", "content": "Set the cart subtotal above which shipping becomes free, in each currency. The bar auto-picks based on the customer's active currency." },
+    { "type": "number", "id": "threshold_zar", "label": "🇿🇦 ZAR threshold (R)", "default": 500 },
+    { "type": "number", "id": "threshold_usd", "label": "🇺🇸 USD threshold ($)", "default": 30 },
+    { "type": "number", "id": "threshold_eur", "label": "🇪🇺 EUR threshold (€)", "default": 30 },
+    { "type": "number", "id": "threshold_gbp", "label": "🇬🇧 GBP threshold (£)", "default": 25 },
+    { "type": "number", "id": "threshold_aud", "label": "🇦🇺 AUD threshold (A$)", "default": 50 },
+    { "type": "number", "id": "threshold_cad", "label": "🇨🇦 CAD threshold (C$)", "default": 40 },
+    { "type": "header", "content": "Copy templates" },
+    { "type": "paragraph", "content": "Use {threshold} = the free-shipping target, {remaining} = how much more the customer needs. Templates auto-pick based on cart state." },
+    { "type": "text", "id": "empty_text", "label": "Empty cart message", "default": "🚚 FREE shipping on orders over {threshold}" },
+    { "type": "text", "id": "progress_text", "label": "Below threshold message", "default": "🚚 Add {remaining} more for FREE shipping!" },
+    { "type": "text", "id": "success_text", "label": "Above threshold message", "default": "✓ You've unlocked FREE shipping!" },
+    { "type": "header", "content": "Style" },
+    { "type": "color", "id": "bg_color", "label": "Background colour", "default": "#4d8c44" },
+    { "type": "color", "id": "text_color", "label": "Text colour", "default": "#ffffff" }
+  ],
+  "presets": [
+    { "name": "VB Shipping Bar" }
+  ]
+}
+{% endschema %}

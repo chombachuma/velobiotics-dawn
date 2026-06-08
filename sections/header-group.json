@@ -11,6 +11,22 @@
   "name": "Header",
   "type": "header",
   "sections": {
+    "vb-shipping-bar": {
+      "type": "vb-shipping-bar",
+      "settings": {
+        "threshold_zar": 500,
+        "threshold_usd": 30,
+        "threshold_eur": 30,
+        "threshold_gbp": 25,
+        "threshold_aud": 50,
+        "threshold_cad": 40,
+        "empty_text": "🚚 FREE shipping on orders over {threshold}",
+        "progress_text": "🚚 Add {remaining} more for FREE shipping!",
+        "success_text": "✓ You've unlocked FREE shipping!",
+        "bg_color": "#4d8c44",
+        "text_color": "#ffffff"
+      }
+    },
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
@@ -67,7 +83,7 @@
         "mobile_logo_position": "left",
         "menu": "main-menu",
         "menu_type_desktop": "mega",
-        "sticky_header_type": "on-scroll-up",
+        "sticky_header_type": "reduce-logo-size",
         "show_line_separator": false,
         "color_scheme": "scheme-3",
         "menu_color_scheme": "scheme-3",
@@ -75,12 +91,13 @@
         "enable_language_selector": false,
         "enable_customer_avatar": false,
         "margin_bottom": 0,
-        "padding_top": 16,
+        "padding_top": 36,
         "padding_bottom": 16
       }
     }
   },
   "order": [
+    "vb-shipping-bar",
     "announcement-bar",
     "header"
   ]

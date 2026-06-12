@@ -1,0 +1,493 @@
+{%- comment -%}
+  VB · Native Mega Menu — replaces Buddha Mega Menu
+  Reads section.settings.menu link-list, renders mega panels for items with children.
+  Drop-in replacement for `header-mega-menu` snippet.
+{%- endcomment -%}
+
+<nav class="vb-mm" aria-label="Main" data-vb-mm>
+  <ul class="vb-mm__list" role="menubar">
+    {%- for link in section.settings.menu.links -%}
+      {%- assign has_children = false -%}
+      {%- if link.links.size > 0 -%}{%- assign has_children = true -%}{%- endif -%}
+      {%- assign link_handle = link.title | handle -%}
+
+      {%- if has_children -%}
+        <li class="vb-mm__item vb-mm__item--mega" role="none">
+          <button
+            type="button"
+            class="vb-mm__trigger"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-controls="vb-mm-panel-{{ forloop.index }}"
+            data-vb-mm-trigger="{{ forloop.index }}"
+            role="menuitem"
+          >
+            {{ link.title }}
+            <svg class="vb-mm__chev" viewBox="0 0 12 8" aria-hidden="true">
+              <path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <div
+            class="vb-mm__panel"
+            id="vb-mm-panel-{{ forloop.index }}"
+            data-vb-mm-panel="{{ forloop.index }}"
+            aria-hidden="true"
+            role="menu"
+          >
+            <div class="vb-mm__panel-inner">
+              {%- comment -%} ====== LEFT: Link grid ====== {%- endcomment -%}
+              <div class="vb-mm__panel-cols">
+                <div class="vb-mm__panel-heading">
+                  <span class="vb-mm__eyebrow">Explore</span>
+                  <h3 class="vb-mm__title">{{ link.title }}</h3>
+                </div>
+                <ul class="vb-mm__panel-list" role="none">
+                  {%- for child in link.links -%}
+                    {%- liquid
+                      assign child_handle = child.title | handle
+                      assign emoji = ''
+                      case child_handle
+                        when 'female-intimate-health' or 'femina'
+                          assign emoji = '🌸'
+                        when 'weight-loss-management' or 'gutslim'
+                          assign emoji = '🔥'
+                        when 'gut-health'
+                          assign emoji = '🌿'
+                        when 'pregnancy-support' or 'pregbiotics'
+                          assign emoji = '🤰'
+                        when 'skin-hair-nails' or 'almasi'
+                          assign emoji = '✨'
+                        when 'meal-replacements'
+                          assign emoji = '🥤'
+                        when 'velobiotics-story' or 'founder-s-story'
+                          assign emoji = '📖'
+                        when 'microencapsulation' or 'what-is-microencapsulation'
+                          assign emoji = '🧬'
+                        when 'microencapsulation-research'
+                          assign emoji = '🔬'
+                        when 'heat-stability-and-shelf-life'
+                          assign emoji = '🌡️'
+                        when 'probiotics-tolerance-to-gastric-acid'
+                          assign emoji = '🛡️'
+                        when 'probiotics-what-are-the-challenges'
+                          assign emoji = '❓'
+                        when 'contact-us' or 'new-contact-us'
+                          assign emoji = '💬'
+                        when 'affiliates'
+                          assign emoji = '🤝'
+                        when 'collabs' or 'collab'
+                          assign emoji = '✨'
+                        when 'store-locator' or 'find-our-stockists'
+                          assign emoji = '📍'
+                        else
+                          assign emoji = '→'
+                      endcase
+                    -%}
+                    <li class="vb-mm__panel-li" role="none">
+                      <a href="{{ child.url }}" class="vb-mm__panel-link" role="menuitem">
+                        <span class="vb-mm__panel-link-icon">{{ emoji }}</span>
+                        <span class="vb-mm__panel-link-text">{{ child.title }}</span>
+                        <span class="vb-mm__panel-link-arrow" aria-hidden="true">→</span>
+                      </a>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              </div>
+
+              {%- comment -%} ====== RIGHT: Feature card (contextual per top-level) ====== {%- endcomment -%}
+              <aside class="vb-mm__feature" aria-label="Featured">
+                {%- case link_handle -%}
+                  {%- when 'shop-now' -%}
+                    <div class="vb-mm__feature-card vb-mm__feature-card--quiz">
+                      <span class="vb-mm__feature-eyebrow">Not sure which one?</span>
+                      <h4 class="vb-mm__feature-title">Take the 60-second V-Check</h4>
+                      <p class="vb-mm__feature-desc">Answer 7 quick questions and get matched to your perfect Velobiotics probiotic — built by doctors, tailored for your goal.</p>
+                      <a href="/pages/quiz" class="vb-mm__feature-btn">🧬 Start the V-Check →</a>
+                    </div>
+                  {%- when 'velobiotics' or 'probiotics' or 'science' -%}
+                    <div class="vb-mm__feature-card vb-mm__feature-card--science">
+                      <span class="vb-mm__feature-eyebrow">Velobiotics™ MEP</span>
+                      <h4 class="vb-mm__feature-title">1000× more probiotics survive your stomach</h4>
+                      <p class="vb-mm__feature-desc">Most probiotics die before they reach your gut. Our patented Microencapsulation with Supercritical CO₂ keeps every culture alive — clinically proven.</p>
+                      <a href="/pages/what-is-microencapsulation" class="vb-mm__feature-btn">Discover the science →</a>
+                    </div>
+                  {%- when 'resources' -%}
+                    <div class="vb-mm__feature-card vb-mm__feature-card--bundle">
+                      <span class="vb-mm__feature-eyebrow">Best Sellers</span>
+                      <h4 class="vb-mm__feature-title">Save up to 25% with curated bundles</h4>
+                      <p class="vb-mm__feature-desc">Doctor-designed product stacks — perfect for gut reset, pregnancy, weight management, and intimate health.</p>
+                      <a href="/collections/gut-bundles" class="vb-mm__feature-btn">Shop bundles →</a>
+                    </div>
+                  {%- else -%}
+                    <div class="vb-mm__feature-card vb-mm__feature-card--default">
+                      <span class="vb-mm__feature-eyebrow">Velobiotics</span>
+                      <h4 class="vb-mm__feature-title">South Africa's #1 microencapsulated probiotic</h4>
+                      <p class="vb-mm__feature-desc">Trusted by 500,000+ South Africans. Doctor-formulated. SAHPRA-compliant.</p>
+                      <a href="/collections/all" class="vb-mm__feature-btn">Shop the range →</a>
+                    </div>
+                {%- endcase -%}
+              </aside>
+            </div>
+          </div>
+        </li>
+      {%- else -%}
+        <li class="vb-mm__item" role="none">
+          <a href="{{ link.url }}" class="vb-mm__link" role="menuitem">{{ link.title }}</a>
+        </li>
+      {%- endif -%}
+    {%- endfor -%}
+  </ul>
+</nav>
+
+<style>
+  .vb-mm,
+  .vb-mm * {
+    font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif !important;
+    box-sizing: border-box;
+  }
+  .vb-mm { display: none; }
+  @media screen and (min-width: 990px) { .vb-mm { display: block; } }
+
+  .vb-mm__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 4px;
+    align-items: stretch;
+  }
+  .vb-mm__item { position: static; display: flex; align-items: stretch; }
+  .vb-mm__trigger,
+  .vb-mm__link {
+    background: transparent;
+    border: 0;
+    padding: 14px 14px;
+    font-size: 13.5px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.15s ease, opacity 0.15s ease;
+    line-height: 1;
+  }
+  .vb-mm__trigger:hover,
+  .vb-mm__trigger[aria-expanded="true"],
+  .vb-mm__link:hover {
+    opacity: 0.85;
+  }
+  .vb-mm__chev {
+    width: 9px;
+    height: 9px;
+    transition: transform 0.2s ease;
+  }
+  .vb-mm__trigger[aria-expanded="true"] .vb-mm__chev {
+    transform: rotate(180deg);
+  }
+
+  /* ========== MEGA PANEL ========== */
+  .vb-mm__panel {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: #ffffff;
+    color: #2e5d28;
+    border-top: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 18px 40px -10px rgba(0,0,0,0.18);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0s linear 0.25s;
+    z-index: 90;
+    pointer-events: none;
+  }
+  .vb-mm__panel[data-vb-mm-open="true"] {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0s linear 0s;
+    pointer-events: auto;
+  }
+  .vb-mm__panel-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 38px 48px 44px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 60px;
+  }
+  .vb-mm__panel-heading {
+    margin-bottom: 22px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eef7ec;
+  }
+  .vb-mm__eyebrow {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #7eb375;
+    margin-bottom: 6px;
+  }
+  .vb-mm__title {
+    font-family: 'Playfair Display', 'Poppins', serif !important;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.2;
+    color: #2e5d28;
+    margin: 0;
+  }
+  .vb-mm__panel-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px 18px;
+  }
+  .vb-mm__panel-li { margin: 0; }
+  .vb-mm__panel-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 11px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #2e5d28;
+    font-size: 14.5px;
+    font-weight: 500;
+    transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
+  }
+  .vb-mm__panel-link:hover {
+    background: #eef7ec;
+    color: #4d8c44;
+  }
+  .vb-mm__panel-link:hover .vb-mm__panel-link-arrow {
+    transform: translateX(4px);
+    opacity: 1;
+  }
+  .vb-mm__panel-link-icon {
+    font-size: 17px;
+    flex-shrink: 0;
+    width: 24px;
+    text-align: center;
+  }
+  .vb-mm__panel-link-text { flex: 1; }
+  .vb-mm__panel-link-arrow {
+    color: #4d8c44;
+    font-weight: 600;
+    opacity: 0;
+    transition: transform 0.18s ease, opacity 0.18s ease;
+  }
+
+  /* ========== FEATURE CARD ========== */
+  .vb-mm__feature-card {
+    border-radius: 14px;
+    padding: 28px 26px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .vb-mm__feature-card--quiz {
+    background: linear-gradient(135deg, #4d8c44 0%, #2e5d28 100%);
+    color: #ffffff;
+  }
+  .vb-mm__feature-card--science {
+    background: #eef7ec;
+    color: #2e5d28;
+  }
+  .vb-mm__feature-card--bundle {
+    background: linear-gradient(135deg, #fff8eb 0%, #ffe9c0 100%);
+    color: #6b4a00;
+  }
+  .vb-mm__feature-card--default {
+    background: #f8fcf6;
+    color: #2e5d28;
+    border: 1px solid #eef7ec;
+  }
+  .vb-mm__feature-eyebrow {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 8px;
+  }
+  .vb-mm__feature-title {
+    font-family: 'Playfair Display', 'Poppins', serif !important;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.25;
+    margin: 0 0 12px;
+  }
+  .vb-mm__feature-desc {
+    margin: 0 0 18px;
+    font-size: 13.5px;
+    line-height: 1.55;
+    opacity: 0.88;
+  }
+  .vb-mm__feature-btn {
+    display: inline-flex;
+    align-self: flex-start;
+    align-items: center;
+    gap: 6px;
+    padding: 11px 18px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.95);
+    color: #2e5d28;
+    font-weight: 600;
+    font-size: 13.5px;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .vb-mm__feature-card--quiz .vb-mm__feature-btn {
+    background: #ffffff;
+    color: #2e5d28;
+  }
+  .vb-mm__feature-card--science .vb-mm__feature-btn {
+    background: #4d8c44;
+    color: #ffffff;
+  }
+  .vb-mm__feature-card--bundle .vb-mm__feature-btn {
+    background: #ffa500;
+    color: #ffffff;
+  }
+  .vb-mm__feature-card--default .vb-mm__feature-btn {
+    background: #4d8c44;
+    color: #ffffff;
+  }
+  .vb-mm__feature-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px -4px rgba(0,0,0,0.18);
+  }
+
+  /* ========== BACKDROP ========== */
+  .vb-mm-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+    z-index: 89;
+  }
+  .vb-mm-backdrop[data-vb-mm-backdrop-open="true"] {
+    opacity: 1;
+    pointer-events: auto;
+  }
+</style>
+
+<script>
+(function(){
+  const nav = document.querySelector('[data-vb-mm]');
+  if (!nav) return;
+
+  const triggers = nav.querySelectorAll('[data-vb-mm-trigger]');
+  const panels = nav.querySelectorAll('[data-vb-mm-panel]');
+  let openIdx = null;
+  let hoverTimeout = null;
+  let closeTimeout = null;
+
+  // Backdrop
+  let backdrop = document.querySelector('.vb-mm-backdrop');
+  if (!backdrop) {
+    backdrop = document.createElement('div');
+    backdrop.className = 'vb-mm-backdrop';
+    document.body.appendChild(backdrop);
+  }
+
+  function openPanel(idx) {
+    clearTimeout(closeTimeout);
+    if (openIdx === idx) return;
+    closeAll(false);
+    const trig = nav.querySelector('[data-vb-mm-trigger="' + idx + '"]');
+    const panel = nav.querySelector('[data-vb-mm-panel="' + idx + '"]');
+    if (!trig || !panel) return;
+    trig.setAttribute('aria-expanded', 'true');
+    panel.setAttribute('data-vb-mm-open', 'true');
+    panel.setAttribute('aria-hidden', 'false');
+    backdrop.setAttribute('data-vb-mm-backdrop-open', 'true');
+    openIdx = idx;
+  }
+
+  function closeAll(removeBackdrop) {
+    if (removeBackdrop === undefined) removeBackdrop = true;
+    triggers.forEach(t => t.setAttribute('aria-expanded', 'false'));
+    panels.forEach(p => {
+      p.removeAttribute('data-vb-mm-open');
+      p.setAttribute('aria-hidden', 'true');
+    });
+    if (removeBackdrop) backdrop.removeAttribute('data-vb-mm-backdrop-open');
+    openIdx = null;
+  }
+
+  // Click triggers (toggle)
+  triggers.forEach(trigger => {
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
+      const idx = trigger.dataset.vbMmTrigger;
+      if (openIdx === idx) {
+        closeAll();
+      } else {
+        openPanel(idx);
+      }
+    });
+
+    // Hover-intent open (300ms delay so brushing past doesn't fire)
+    trigger.addEventListener('mouseenter', () => {
+      clearTimeout(hoverTimeout);
+      clearTimeout(closeTimeout);
+      const idx = trigger.dataset.vbMmTrigger;
+      hoverTimeout = setTimeout(() => openPanel(idx), 120);
+    });
+    trigger.addEventListener('mouseleave', () => {
+      clearTimeout(hoverTimeout);
+    });
+  });
+
+  // Keep panel open while hovering it
+  panels.forEach(panel => {
+    panel.addEventListener('mouseenter', () => {
+      clearTimeout(closeTimeout);
+    });
+    panel.addEventListener('mouseleave', () => {
+      closeTimeout = setTimeout(closeAll, 200);
+    });
+  });
+
+  // Close on nav leave
+  nav.addEventListener('mouseleave', () => {
+    closeTimeout = setTimeout(closeAll, 250);
+  });
+
+  // Click outside to close
+  document.addEventListener('click', (e) => {
+    if (!nav.contains(e.target) && openIdx !== null) {
+      closeAll();
+    }
+  });
+
+  // Escape key to close
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && openIdx !== null) {
+      closeAll();
+      const trig = nav.querySelector('[data-vb-mm-trigger="' + openIdx + '"]');
+      if (trig) trig.focus();
+    }
+  });
+
+  // Backdrop click to close
+  backdrop.addEventListener('click', closeAll);
+})();
+</script>

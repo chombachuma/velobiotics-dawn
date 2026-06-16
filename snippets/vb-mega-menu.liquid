@@ -1,12 +1,30 @@
 {%- comment -%}
-  VB · Native Mega Menu — replaces Buddha Mega Menu
-  Reads section.settings.menu link-list, renders mega panels for items with children.
+  VB · Native Mega Menu v2
+  Desktop: full-width mega panels with cream-tinted background + explicit colors
+  Mobile: slide-from-left drawer (no fallback to Dawn/Buddha)
   Drop-in replacement for `header-mega-menu` snippet.
 {%- endcomment -%}
 
+{%- assign menu = section.settings.menu -%}
+
+{%- comment -%} ============ HAMBURGER TRIGGER (mobile only) ============ {%- endcomment -%}
+<button
+  type="button"
+  class="vb-mm-burger"
+  data-vb-mm-burger
+  aria-expanded="false"
+  aria-label="Open menu"
+  aria-controls="vb-mm-drawer"
+>
+  <span class="vb-mm-burger__bars" aria-hidden="true">
+    <span></span><span></span><span></span>
+  </span>
+</button>
+
+{%- comment -%} ============ DESKTOP MEGA MENU ============ {%- endcomment -%}
 <nav class="vb-mm" aria-label="Main" data-vb-mm>
   <ul class="vb-mm__list" role="menubar">
-    {%- for link in section.settings.menu.links -%}
+    {%- for link in menu.links -%}
       {%- assign has_children = false -%}
       {%- if link.links.size > 0 -%}{%- assign has_children = true -%}{%- endif -%}
       {%- assign link_handle = link.title | handle -%}
@@ -22,9 +40,9 @@
             data-vb-mm-trigger="{{ forloop.index }}"
             role="menuitem"
           >
-            {{ link.title }}
+            <span class="vb-mm__trigger-text">{{ link.title }}</span>
             <svg class="vb-mm__chev" viewBox="0 0 12 8" aria-hidden="true">
-              <path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </button>
 
@@ -36,7 +54,6 @@
             role="menu"
           >
             <div class="vb-mm__panel-inner">
-              {%- comment -%} ====== LEFT: Link grid ====== {%- endcomment -%}
               <div class="vb-mm__panel-cols">
                 <div class="vb-mm__panel-heading">
                   <span class="vb-mm__eyebrow">Explore</span>
@@ -46,7 +63,7 @@
                   {%- for child in link.links -%}
                     {%- liquid
                       assign child_handle = child.title | handle
-                      assign emoji = ''
+                      assign emoji = '→'
                       case child_handle
                         when 'female-intimate-health' or 'femina'
                           assign emoji = '🌸'
@@ -77,11 +94,9 @@
                         when 'affiliates'
                           assign emoji = '🤝'
                         when 'collabs' or 'collab'
-                          assign emoji = '✨'
+                          assign emoji = '🎯'
                         when 'store-locator' or 'find-our-stockists'
                           assign emoji = '📍'
-                        else
-                          assign emoji = '→'
                       endcase
                     -%}
                     <li class="vb-mm__panel-li" role="none">
@@ -95,7 +110,6 @@
                 </ul>
               </div>
 
-              {%- comment -%} ====== RIGHT: Feature card (contextual per top-level) ====== {%- endcomment -%}
               <aside class="vb-mm__feature" aria-label="Featured">
                 {%- case link_handle -%}
                   {%- when 'shop-now' -%}
@@ -122,8 +136,8 @@
                   {%- else -%}
                     <div class="vb-mm__feature-card vb-mm__feature-card--default">
                       <span class="vb-mm__feature-eyebrow">Velobiotics</span>
-                      <h4 class="vb-mm__feature-title">South Africa's #1 microencapsulated probiotic</h4>
-                      <p class="vb-mm__feature-desc">Trusted by 500,000+ South Africans. Doctor-formulated. SAHPRA-compliant.</p>
+                      <h4 class="vb-mm__feature-title">Patented MEP™ Probiotics</h4>
+                      <p class="vb-mm__feature-desc">Trusted globally. Doctor-formulated. Clinically studied. Nine brands. One uncompromising science.</p>
                       <a href="/collections/all" class="vb-mm__feature-btn">Shop the range →</a>
                     </div>
                 {%- endcase -%}
@@ -140,71 +154,143 @@
   </ul>
 </nav>
 
+{%- comment -%} ============ MOBILE DRAWER ============ {%- endcomment -%}
+<div class="vb-mmd" id="vb-mm-drawer" data-vb-mm-drawer aria-hidden="true">
+  <div class="vb-mmd__overlay" data-vb-mmd-close></div>
+  <aside class="vb-mmd__panel" role="dialog" aria-modal="true" aria-label="Menu">
+    <header class="vb-mmd__header">
+      <a href="{{ routes.root_url }}" class="vb-mmd__logo">
+        {%- if settings.logo != blank -%}
+          {{ settings.logo | image_url: width: 200 | image_tag: alt: shop.name, class: 'vb-mmd__logo-img', loading: 'lazy', widths: '100,200' }}
+        {%- else -%}
+          <span class="vb-mmd__logo-text">{{ shop.name }}</span>
+        {%- endif -%}
+      </a>
+      <button type="button" class="vb-mmd__close" data-vb-mmd-close aria-label="Close menu">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <path d="M6 6l12 12M6 18L18 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </header>
+
+    <nav class="vb-mmd__nav" aria-label="Mobile main">
+      <ul class="vb-mmd__list">
+        {%- for link in menu.links -%}
+          {%- if link.links.size > 0 -%}
+            <li class="vb-mmd__item vb-mmd__item--has-children">
+              <button type="button" class="vb-mmd__item-toggle" data-vb-mmd-toggle aria-expanded="false">
+                <span>{{ link.title }}</span>
+                <svg class="vb-mmd__chev" viewBox="0 0 12 8" width="11" height="11" aria-hidden="true">
+                  <path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <ul class="vb-mmd__sub" data-vb-mmd-sub>
+                {%- for child in link.links -%}
+                  <li><a href="{{ child.url }}" class="vb-mmd__sub-link">{{ child.title }}</a></li>
+                {%- endfor -%}
+              </ul>
+            </li>
+          {%- else -%}
+            <li class="vb-mmd__item">
+              <a href="{{ link.url }}" class="vb-mmd__item-link">{{ link.title }}</a>
+            </li>
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    </nav>
+
+    <footer class="vb-mmd__footer">
+      <a href="/pages/quiz" class="vb-mmd__cta">🧬 Take the V-Check Quiz</a>
+      <div class="vb-mmd__support">
+        <a href="/cart" class="vb-mmd__support-link">🛒 Cart</a>
+        <a href="/account" class="vb-mmd__support-link">👤 Account</a>
+      </div>
+    </footer>
+  </aside>
+</div>
+
 <style>
-  .vb-mm,
-  .vb-mm * {
+  .vb-mm, .vb-mm *, .vb-mmd, .vb-mmd *, .vb-mm-burger, .vb-mm-burger * {
     font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif !important;
     box-sizing: border-box;
   }
+
+  /* ====== HAMBURGER (mobile only) ====== */
+  .vb-mm-burger {
+    display: none;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.25);
+    color: #ffffff;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    flex-shrink: 0;
+  }
+  .vb-mm-burger:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.5); }
+  .vb-mm-burger__bars { display: flex; flex-direction: column; gap: 4px; width: 20px; }
+  .vb-mm-burger__bars span { display: block; width: 100%; height: 2px; background: #ffffff; border-radius: 2px; transition: all 0.25s ease; }
+  .vb-mm-burger[aria-expanded="true"] .vb-mm-burger__bars span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+  .vb-mm-burger[aria-expanded="true"] .vb-mm-burger__bars span:nth-child(2) { opacity: 0; }
+  .vb-mm-burger[aria-expanded="true"] .vb-mm-burger__bars span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+  /* ====== DESKTOP MEGA MENU ====== */
   .vb-mm { display: none; }
-  @media screen and (min-width: 990px) { .vb-mm { display: block; } }
+  @media screen and (min-width: 990px) { .vb-mm { display: block !important; } }
 
   .vb-mm__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 4px;
-    align-items: stretch;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    gap: 4px !important;
+    align-items: stretch !important;
   }
-  .vb-mm__item { position: static; display: flex; align-items: stretch; }
+  .vb-mm__item { position: static !important; display: flex !important; align-items: stretch !important; }
+
   .vb-mm__trigger,
   .vb-mm__link {
-    background: transparent;
-    border: 0;
-    padding: 14px 14px;
-    font-size: 13.5px;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: inherit;
-    text-decoration: none;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    transition: color 0.15s ease, opacity 0.15s ease;
-    line-height: 1;
+    background: transparent !important;
+    border: 0 !important;
+    padding: 14px 14px !important;
+    font-size: 13.5px !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.04em !important;
+    text-transform: uppercase !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    transition: opacity 0.15s ease !important;
+    line-height: 1 !important;
   }
   .vb-mm__trigger:hover,
   .vb-mm__trigger[aria-expanded="true"],
-  .vb-mm__link:hover {
-    opacity: 0.85;
-  }
-  .vb-mm__chev {
-    width: 9px;
-    height: 9px;
-    transition: transform 0.2s ease;
-  }
-  .vb-mm__trigger[aria-expanded="true"] .vb-mm__chev {
-    transform: rotate(180deg);
-  }
+  .vb-mm__link:hover { opacity: 0.78 !important; }
+
+  .vb-mm__chev { width: 9px; height: 9px; transition: transform 0.2s ease; flex-shrink: 0; }
+  .vb-mm__trigger[aria-expanded="true"] .vb-mm__chev { transform: rotate(180deg); }
 
   /* ========== MEGA PANEL ========== */
   .vb-mm__panel {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 100%;
-    background: #ffffff;
-    color: #2e5d28;
-    border-top: 1px solid rgba(0,0,0,0.06);
-    box-shadow: 0 18px 40px -10px rgba(0,0,0,0.18);
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 100% !important;
+    background: #fdfaf2 !important;
+    color: #2e5d28 !important;
+    border-top: 2px solid #4d8c44 !important;
+    box-shadow: 0 24px 50px -14px rgba(0,0,0,0.22) !important;
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
     transition: opacity 0.25s ease, transform 0.25s ease, visibility 0s linear 0.25s;
-    z-index: 90;
+    z-index: 90 !important;
     pointer-events: none;
   }
   .vb-mm__panel[data-vb-mm-open="true"] {
@@ -215,168 +301,166 @@
     pointer-events: auto;
   }
   .vb-mm__panel-inner {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 38px 48px 44px;
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 60px;
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+    padding: 42px 48px 48px !important;
+    display: grid !important;
+    grid-template-columns: 1.5fr 1fr !important;
+    gap: 64px !important;
   }
   .vb-mm__panel-heading {
-    margin-bottom: 22px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid #eef7ec;
+    margin-bottom: 24px !important;
+    padding-bottom: 18px !important;
+    border-bottom: 1px solid #e2efde !important;
   }
   .vb-mm__eyebrow {
-    display: inline-block;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: #7eb375;
-    margin-bottom: 6px;
+    display: inline-block !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.18em !important;
+    text-transform: uppercase !important;
+    color: #4d8c44 !important;
+    margin-bottom: 8px !important;
+    opacity: 1 !important;
   }
   .vb-mm__title {
     font-family: 'Playfair Display', 'Poppins', serif !important;
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 1.2;
-    color: #2e5d28;
-    margin: 0;
+    font-weight: 600 !important;
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+    color: #1a4015 !important;
+    margin: 0 !important;
   }
   .vb-mm__panel-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4px 18px;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 4px 18px !important;
   }
-  .vb-mm__panel-li { margin: 0; }
+  .vb-mm__panel-li { margin: 0 !important; }
   .vb-mm__panel-link {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 11px 14px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: #2e5d28;
-    font-size: 14.5px;
-    font-weight: 500;
-    transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+    padding: 12px 14px !important;
+    border-radius: 10px !important;
+    text-decoration: none !important;
+    color: #1a4015 !important;
+    font-size: 14.5px !important;
+    font-weight: 500 !important;
+    background: transparent !important;
+    transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease !important;
   }
   .vb-mm__panel-link:hover {
-    background: #eef7ec;
-    color: #4d8c44;
+    background: #eef7ec !important;
+    color: #4d8c44 !important;
+    text-decoration: none !important;
   }
   .vb-mm__panel-link:hover .vb-mm__panel-link-arrow {
-    transform: translateX(4px);
-    opacity: 1;
+    transform: translateX(4px) !important;
+    opacity: 1 !important;
   }
   .vb-mm__panel-link-icon {
-    font-size: 17px;
-    flex-shrink: 0;
-    width: 24px;
-    text-align: center;
+    font-size: 18px !important;
+    flex-shrink: 0 !important;
+    width: 26px !important;
+    text-align: center !important;
+    color: inherit !important;
   }
-  .vb-mm__panel-link-text { flex: 1; }
+  .vb-mm__panel-link-text { flex: 1 !important; color: inherit !important; }
   .vb-mm__panel-link-arrow {
-    color: #4d8c44;
-    font-weight: 600;
+    color: #4d8c44 !important;
+    font-weight: 600 !important;
     opacity: 0;
     transition: transform 0.18s ease, opacity 0.18s ease;
   }
 
   /* ========== FEATURE CARD ========== */
   .vb-mm__feature-card {
-    border-radius: 14px;
-    padding: 28px 26px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
+    border-radius: 14px !important;
+    padding: 28px 26px !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    position: relative !important;
+    overflow: hidden !important;
   }
   .vb-mm__feature-card--quiz {
-    background: linear-gradient(135deg, #4d8c44 0%, #2e5d28 100%);
-    color: #ffffff;
+    background: linear-gradient(135deg, #4d8c44 0%, #2e5d28 100%) !important;
+    color: #ffffff !important;
   }
   .vb-mm__feature-card--science {
-    background: #eef7ec;
-    color: #2e5d28;
+    background: #eef7ec !important;
+    color: #1a4015 !important;
+    border: 1px solid #c4e8be !important;
   }
   .vb-mm__feature-card--bundle {
-    background: linear-gradient(135deg, #fff8eb 0%, #ffe9c0 100%);
-    color: #6b4a00;
+    background: linear-gradient(135deg, #fff8eb 0%, #ffe9c0 100%) !important;
+    color: #6b4a00 !important;
+    border: 1px solid #f5d690 !important;
   }
   .vb-mm__feature-card--default {
-    background: #f8fcf6;
-    color: #2e5d28;
-    border: 1px solid #eef7ec;
+    background: #ffffff !important;
+    color: #1a4015 !important;
+    border: 1px solid #d5ead0 !important;
   }
   .vb-mm__feature-eyebrow {
-    display: inline-block;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    opacity: 0.7;
-    margin-bottom: 8px;
+    display: inline-block !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.14em !important;
+    text-transform: uppercase !important;
+    opacity: 0.85 !important;
+    margin-bottom: 10px !important;
+    color: inherit !important;
   }
   .vb-mm__feature-title {
     font-family: 'Playfair Display', 'Poppins', serif !important;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 1.25;
-    margin: 0 0 12px;
+    font-weight: 600 !important;
+    font-size: 22px !important;
+    line-height: 1.25 !important;
+    margin: 0 0 12px !important;
+    color: inherit !important;
   }
   .vb-mm__feature-desc {
-    margin: 0 0 18px;
-    font-size: 13.5px;
-    line-height: 1.55;
-    opacity: 0.88;
+    margin: 0 0 18px !important;
+    font-size: 13.5px !important;
+    line-height: 1.55 !important;
+    opacity: 0.92 !important;
+    color: inherit !important;
   }
   .vb-mm__feature-btn {
-    display: inline-flex;
-    align-self: flex-start;
-    align-items: center;
-    gap: 6px;
-    padding: 11px 18px;
-    border-radius: 8px;
-    background: rgba(255,255,255,0.95);
-    color: #2e5d28;
-    font-weight: 600;
-    font-size: 13.5px;
-    text-decoration: none;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    display: inline-flex !important;
+    align-self: flex-start !important;
+    align-items: center !important;
+    gap: 6px !important;
+    padding: 11px 18px !important;
+    border-radius: 8px !important;
+    background: #ffffff !important;
+    color: #2e5d28 !important;
+    font-weight: 600 !important;
+    font-size: 13.5px !important;
+    text-decoration: none !important;
+    transition: transform 0.15s ease, box-shadow 0.15s ease !important;
   }
-  .vb-mm__feature-card--quiz .vb-mm__feature-btn {
-    background: #ffffff;
-    color: #2e5d28;
-  }
-  .vb-mm__feature-card--science .vb-mm__feature-btn {
-    background: #4d8c44;
-    color: #ffffff;
-  }
-  .vb-mm__feature-card--bundle .vb-mm__feature-btn {
-    background: #ffa500;
-    color: #ffffff;
-  }
-  .vb-mm__feature-card--default .vb-mm__feature-btn {
-    background: #4d8c44;
-    color: #ffffff;
-  }
+  .vb-mm__feature-card--quiz .vb-mm__feature-btn { background: #ffffff !important; color: #2e5d28 !important; }
+  .vb-mm__feature-card--science .vb-mm__feature-btn { background: #4d8c44 !important; color: #ffffff !important; }
+  .vb-mm__feature-card--bundle .vb-mm__feature-btn { background: #ffa500 !important; color: #ffffff !important; }
+  .vb-mm__feature-card--default .vb-mm__feature-btn { background: #4d8c44 !important; color: #ffffff !important; }
   .vb-mm__feature-btn:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 6px 14px -4px rgba(0,0,0,0.18);
+    transform: translateY(-1px) !important;
+    box-shadow: 0 8px 18px -4px rgba(0,0,0,0.22) !important;
+    text-decoration: none !important;
   }
 
   /* ========== BACKDROP ========== */
   .vb-mm-backdrop {
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.35);
+    background: rgba(0,0,0,0.4);
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.25s ease;
@@ -386,108 +470,286 @@
     opacity: 1;
     pointer-events: auto;
   }
+
+  /* ========== HAMBURGER on mobile ========== */
+  @media screen and (max-width: 989px) {
+    .vb-mm { display: none !important; }
+    .vb-mm-burger { display: inline-flex !important; }
+  }
+  @media screen and (min-width: 990px) {
+    .vb-mm-burger { display: none !important; }
+  }
+
+  /* ========== MOBILE DRAWER ========== */
+  .vb-mmd {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: 1000 !important;
+    pointer-events: none !important;
+    visibility: hidden;
+  }
+  .vb-mmd[data-vb-mmd-open="true"] {
+    pointer-events: auto !important;
+    visibility: visible;
+  }
+  .vb-mmd__overlay {
+    position: absolute !important;
+    inset: 0 !important;
+    background: rgba(0,0,0,0.55);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .vb-mmd[data-vb-mmd-open="true"] .vb-mmd__overlay { opacity: 1; }
+  .vb-mmd__panel {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    width: 88% !important;
+    max-width: 380px !important;
+    background: #fdfaf2 !important;
+    color: #1a4015 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    transform: translateX(-100%);
+    transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 8px 0 32px -8px rgba(0,0,0,0.3);
+    overflow: hidden !important;
+  }
+  .vb-mmd[data-vb-mmd-open="true"] .vb-mmd__panel { transform: translateX(0); }
+  .vb-mmd__header {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 18px 22px !important;
+    border-bottom: 1px solid #e2efde !important;
+    flex-shrink: 0 !important;
+    background: #ffffff !important;
+  }
+  .vb-mmd__logo { display: inline-flex !important; align-items: center !important; height: 38px !important; text-decoration: none !important; }
+  .vb-mmd__logo-img { height: 38px !important; width: auto !important; display: block !important; max-width: 160px !important; object-fit: contain !important; }
+  .vb-mmd__logo-text { font-family: 'Playfair Display', serif !important; font-weight: 700 !important; font-size: 20px !important; color: #1a4015 !important; }
+  .vb-mmd__close {
+    background: #eef7ec !important;
+    border: 0 !important;
+    width: 38px !important;
+    height: 38px !important;
+    border-radius: 10px !important;
+    color: #2e5d28 !important;
+    cursor: pointer !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    transition: background 0.15s ease;
+  }
+  .vb-mmd__close:hover { background: #c4e8be !important; }
+  .vb-mmd__nav {
+    flex: 1 !important;
+    overflow-y: auto !important;
+    padding: 14px 16px !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  .vb-mmd__list { list-style: none !important; margin: 0 !important; padding: 0 !important; }
+  .vb-mmd__item { margin: 0 !important; border-bottom: 1px solid rgba(77,140,68,0.1) !important; }
+  .vb-mmd__item:last-child { border-bottom: 0 !important; }
+  .vb-mmd__item-link,
+  .vb-mmd__item-toggle {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    background: transparent !important;
+    border: 0 !important;
+    padding: 16px 10px !important;
+    text-align: left !important;
+    text-decoration: none !important;
+    color: #1a4015 !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.02em !important;
+    cursor: pointer !important;
+    font-family: 'Poppins', sans-serif !important;
+  }
+  .vb-mmd__item-link:hover,
+  .vb-mmd__item-toggle:hover { color: #4d8c44 !important; }
+  .vb-mmd__chev { transition: transform 0.25s ease; flex-shrink: 0; }
+  .vb-mmd__item-toggle[aria-expanded="true"] .vb-mmd__chev { transform: rotate(180deg); }
+  .vb-mmd__sub {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 0 12px 8px !important;
+    max-height: 0 !important;
+    overflow: hidden !important;
+    transition: max-height 0.35s ease !important;
+  }
+  .vb-mmd__item-toggle[aria-expanded="true"] + .vb-mmd__sub {
+    max-height: 720px !important;
+  }
+  .vb-mmd__sub li { margin: 0 !important; }
+  .vb-mmd__sub-link {
+    display: block !important;
+    padding: 12px 14px !important;
+    color: #3d4f3a !important;
+    text-decoration: none !important;
+    font-size: 14.5px !important;
+    font-weight: 500 !important;
+    border-radius: 8px !important;
+    transition: background 0.15s ease, color 0.15s ease !important;
+  }
+  .vb-mmd__sub-link:hover {
+    background: #eef7ec !important;
+    color: #4d8c44 !important;
+    text-decoration: none !important;
+  }
+  .vb-mmd__footer {
+    padding: 16px 22px 22px !important;
+    background: #ffffff !important;
+    border-top: 1px solid #e2efde !important;
+    flex-shrink: 0 !important;
+  }
+  .vb-mmd__cta {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    width: 100% !important;
+    padding: 14px 18px !important;
+    background: #4d8c44 !important;
+    color: #ffffff !important;
+    border-radius: 10px !important;
+    font-size: 14.5px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    margin-bottom: 14px !important;
+    transition: background 0.15s ease;
+  }
+  .vb-mmd__cta:hover { background: #2e5d28 !important; color: #ffffff !important; text-decoration: none !important; }
+  .vb-mmd__support {
+    display: flex !important;
+    gap: 10px !important;
+  }
+  .vb-mmd__support-link {
+    flex: 1 !important;
+    text-align: center !important;
+    padding: 11px 14px !important;
+    background: #eef7ec !important;
+    color: #2e5d28 !important;
+    border-radius: 10px !important;
+    font-size: 13.5px !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    transition: background 0.15s ease;
+  }
+  .vb-mmd__support-link:hover { background: #c4e8be !important; color: #2e5d28 !important; text-decoration: none !important; }
+
+  body.vb-mmd-open { overflow: hidden !important; }
 </style>
 
 <script>
 (function(){
+  /* ============ DESKTOP MEGA PANELS ============ */
   const nav = document.querySelector('[data-vb-mm]');
-  if (!nav) return;
+  if (nav) {
+    const triggers = nav.querySelectorAll('[data-vb-mm-trigger]');
+    const panels = nav.querySelectorAll('[data-vb-mm-panel]');
+    let openIdx = null, hoverTimeout = null, closeTimeout = null;
 
-  const triggers = nav.querySelectorAll('[data-vb-mm-trigger]');
-  const panels = nav.querySelectorAll('[data-vb-mm-panel]');
-  let openIdx = null;
-  let hoverTimeout = null;
-  let closeTimeout = null;
+    let backdrop = document.querySelector('.vb-mm-backdrop');
+    if (!backdrop) {
+      backdrop = document.createElement('div');
+      backdrop.className = 'vb-mm-backdrop';
+      document.body.appendChild(backdrop);
+    }
 
-  // Backdrop
-  let backdrop = document.querySelector('.vb-mm-backdrop');
-  if (!backdrop) {
-    backdrop = document.createElement('div');
-    backdrop.className = 'vb-mm-backdrop';
-    document.body.appendChild(backdrop);
-  }
-
-  function openPanel(idx) {
-    clearTimeout(closeTimeout);
-    if (openIdx === idx) return;
-    closeAll(false);
-    const trig = nav.querySelector('[data-vb-mm-trigger="' + idx + '"]');
-    const panel = nav.querySelector('[data-vb-mm-panel="' + idx + '"]');
-    if (!trig || !panel) return;
-    trig.setAttribute('aria-expanded', 'true');
-    panel.setAttribute('data-vb-mm-open', 'true');
-    panel.setAttribute('aria-hidden', 'false');
-    backdrop.setAttribute('data-vb-mm-backdrop-open', 'true');
-    openIdx = idx;
-  }
-
-  function closeAll(removeBackdrop) {
-    if (removeBackdrop === undefined) removeBackdrop = true;
-    triggers.forEach(t => t.setAttribute('aria-expanded', 'false'));
-    panels.forEach(p => {
-      p.removeAttribute('data-vb-mm-open');
-      p.setAttribute('aria-hidden', 'true');
+    function openPanel(idx) {
+      clearTimeout(closeTimeout);
+      if (openIdx === idx) return;
+      closeAll(false);
+      const trig = nav.querySelector('[data-vb-mm-trigger="' + idx + '"]');
+      const panel = nav.querySelector('[data-vb-mm-panel="' + idx + '"]');
+      if (!trig || !panel) return;
+      trig.setAttribute('aria-expanded', 'true');
+      panel.setAttribute('data-vb-mm-open', 'true');
+      panel.setAttribute('aria-hidden', 'false');
+      backdrop.setAttribute('data-vb-mm-backdrop-open', 'true');
+      openIdx = idx;
+    }
+    function closeAll(removeBackdrop) {
+      if (removeBackdrop === undefined) removeBackdrop = true;
+      triggers.forEach(t => t.setAttribute('aria-expanded', 'false'));
+      panels.forEach(p => { p.removeAttribute('data-vb-mm-open'); p.setAttribute('aria-hidden', 'true'); });
+      if (removeBackdrop) backdrop.removeAttribute('data-vb-mm-backdrop-open');
+      openIdx = null;
+    }
+    triggers.forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const idx = trigger.dataset.vbMmTrigger;
+        if (openIdx === idx) { closeAll(); } else { openPanel(idx); }
+      });
+      trigger.addEventListener('mouseenter', () => {
+        clearTimeout(hoverTimeout); clearTimeout(closeTimeout);
+        const idx = trigger.dataset.vbMmTrigger;
+        hoverTimeout = setTimeout(() => openPanel(idx), 120);
+      });
+      trigger.addEventListener('mouseleave', () => { clearTimeout(hoverTimeout); });
     });
-    if (removeBackdrop) backdrop.removeAttribute('data-vb-mm-backdrop-open');
-    openIdx = null;
-  }
-
-  // Click triggers (toggle)
-  triggers.forEach(trigger => {
-    trigger.addEventListener('click', (e) => {
-      e.preventDefault();
-      const idx = trigger.dataset.vbMmTrigger;
-      if (openIdx === idx) {
+    panels.forEach(panel => {
+      panel.addEventListener('mouseenter', () => { clearTimeout(closeTimeout); });
+      panel.addEventListener('mouseleave', () => { closeTimeout = setTimeout(closeAll, 200); });
+    });
+    nav.addEventListener('mouseleave', () => { closeTimeout = setTimeout(closeAll, 250); });
+    document.addEventListener('click', (e) => {
+      if (!nav.contains(e.target) && openIdx !== null) closeAll();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && openIdx !== null) {
         closeAll();
-      } else {
-        openPanel(idx);
+        const trig = nav.querySelector('[data-vb-mm-trigger="' + openIdx + '"]');
+        if (trig) trig.focus();
       }
     });
+    backdrop.addEventListener('click', closeAll);
+  }
 
-    // Hover-intent open (300ms delay so brushing past doesn't fire)
-    trigger.addEventListener('mouseenter', () => {
-      clearTimeout(hoverTimeout);
-      clearTimeout(closeTimeout);
-      const idx = trigger.dataset.vbMmTrigger;
-      hoverTimeout = setTimeout(() => openPanel(idx), 120);
-    });
-    trigger.addEventListener('mouseleave', () => {
-      clearTimeout(hoverTimeout);
-    });
-  });
+  /* ============ MOBILE DRAWER ============ */
+  const burger = document.querySelector('[data-vb-mm-burger]');
+  const drawer = document.querySelector('[data-vb-mm-drawer]');
+  if (burger && drawer) {
+    const closers = drawer.querySelectorAll('[data-vb-mmd-close]');
+    const toggles = drawer.querySelectorAll('[data-vb-mmd-toggle]');
 
-  // Keep panel open while hovering it
-  panels.forEach(panel => {
-    panel.addEventListener('mouseenter', () => {
-      clearTimeout(closeTimeout);
-    });
-    panel.addEventListener('mouseleave', () => {
-      closeTimeout = setTimeout(closeAll, 200);
-    });
-  });
-
-  // Close on nav leave
-  nav.addEventListener('mouseleave', () => {
-    closeTimeout = setTimeout(closeAll, 250);
-  });
-
-  // Click outside to close
-  document.addEventListener('click', (e) => {
-    if (!nav.contains(e.target) && openIdx !== null) {
-      closeAll();
+    function openDrawer() {
+      drawer.setAttribute('data-vb-mmd-open', 'true');
+      drawer.setAttribute('aria-hidden', 'false');
+      burger.setAttribute('aria-expanded', 'true');
+      burger.setAttribute('aria-label', 'Close menu');
+      document.body.classList.add('vb-mmd-open');
     }
-  });
-
-  // Escape key to close
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && openIdx !== null) {
-      closeAll();
-      const trig = nav.querySelector('[data-vb-mm-trigger="' + openIdx + '"]');
-      if (trig) trig.focus();
+    function closeDrawer() {
+      drawer.removeAttribute('data-vb-mmd-open');
+      drawer.setAttribute('aria-hidden', 'true');
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Open menu');
+      document.body.classList.remove('vb-mmd-open');
+      toggles.forEach(t => t.setAttribute('aria-expanded', 'false'));
     }
-  });
-
-  // Backdrop click to close
-  backdrop.addEventListener('click', closeAll);
+    burger.addEventListener('click', () => {
+      if (drawer.dataset.vbMmdOpen === 'true') closeDrawer(); else openDrawer();
+    });
+    closers.forEach(c => c.addEventListener('click', closeDrawer));
+    drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeDrawer));
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && drawer.dataset.vbMmdOpen === 'true') closeDrawer();
+    });
+    toggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        const open = toggle.getAttribute('aria-expanded') === 'true';
+        toggles.forEach(t => { if (t !== toggle) t.setAttribute('aria-expanded', 'false'); });
+        toggle.setAttribute('aria-expanded', open ? 'false' : 'true');
+      });
+    });
+  }
 })();
 </script>

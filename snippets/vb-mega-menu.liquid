@@ -555,6 +555,61 @@
 
   body.vb-mmd-open{overflow:hidden !important}
 
+  /* ============ MOBILE DRAWER COLOR & TYPE BULLETPROOFING ============ */
+  /* Boost specificity to beat Dawn header color-scheme inheritance */
+  body .vb-mmd,
+  body .vb-mmd *,
+  body .vb-mmd .vb-mmd__panel,
+  body .vb-mmd .vb-mmd__panel * {
+    text-transform: none !important;
+    letter-spacing: 0.02em !important;
+  }
+  body .vb-mmd .vb-mmd__item-toggle,
+  body .vb-mmd .vb-mmd__item-link,
+  body .vb-mmd .vb-mmd__item-toggle > span,
+  body .vb-mmd .vb-mmd__item-toggle span {
+    color: #1a4015 !important;
+    background: transparent !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    text-transform: none !important;
+    opacity: 1 !important;
+  }
+  body .vb-mmd .vb-mmd__sub-link {
+    color: #3d4f3a !important;
+    font-weight: 500 !important;
+    text-transform: none !important;
+    opacity: 1 !important;
+  }
+  body .vb-mmd .vb-mmd__sub-head {
+    color: #4d8c44 !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    opacity: 1 !important;
+  }
+  body .vb-mmd .vb-mmd__panel {
+    background: #fdfaf2 !important;
+    color: #1a4015 !important;
+  }
+  body .vb-mmd .vb-mmd__chev {
+    color: #4d8c44 !important;
+    opacity: 1 !important;
+  }
+  body .vb-mmd .vb-mmd__close {
+    background: #eef7ec !important;
+    color: #2e5d28 !important;
+  }
+  body .vb-mmd .vb-mmd__cta {
+    background: #4d8c44 !important;
+    color: #ffffff !important;
+    text-transform: none !important;
+  }
+  body .vb-mmd .vb-mmd__support-link {
+    background: #eef7ec !important;
+    color: #2e5d28 !important;
+    text-transform: none !important;
+  }
+
   /* ============ MEGA PANEL MOBILE-WIDTH SAFETY ============ */
   @media screen and (max-width:1100px){
     .vb-mm__panel-inner{padding:20px 24px !important;grid-template-columns:1fr 200px !important;gap:16px 20px !important}

@@ -1,0 +1,115 @@
+{%- liquid
+  assign sale_start_iso = '2026-06-26T10:00:00+02:00'
+  assign sale_end_iso = '2026-06-26T16:00:00+02:00'
+  assign sale_start_ms = sale_start_iso | date: '%s' | times: 1000
+  assign sale_end_ms = sale_end_iso | date: '%s' | times: 1000
+  assign now_s = 'now' | date: '%s' | times: 1
+  assign sale_end_s = sale_end_iso | date: '%s' | times: 1
+  assign show_banner = true
+  if now_s > sale_end_s
+    assign show_banner = false
+  endif
+-%}
+
+{%- if show_banner -%}
+<div class="vb-payday-countdown" data-start="{{ sale_start_ms }}" data-end="{{ sale_end_ms }}" role="region" aria-label="Pay Day Flash Sale countdown">
+  <div class="vb-payday-countdown__inner">
+    <span class="vb-payday-countdown__label" id="vb-payday-label">PAY DAY FLASH SALE · 25% OFF SITEWIDE · Friday 26 June 10AM SAST</span>
+    <span class="vb-payday-countdown__timer" id="vb-payday-timer" aria-live="polite">--:--:--</span>
+    <span class="vb-payday-countdown__code">code <strong>FLASHFRI25</strong></span>
+  </div>
+</div>
+
+<style>
+.vb-payday-countdown {
+  background: #4D8C44;
+  color: #FAF7F2;
+  padding: 10px 16px;
+  text-align: center;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 9;
+}
+.vb-payday-countdown__inner {
+  display: inline-flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.vb-payday-countdown__label { font-weight: 600; }
+.vb-payday-countdown__timer {
+  background: #FAF7F2;
+  color: #4D8C44;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  min-width: 90px;
+  display: inline-block;
+}
+.vb-payday-countdown__code { font-weight: 500; letter-spacing: 0.06em; }
+.vb-payday-countdown__code strong { font-weight: 700; letter-spacing: 0.08em; }
+@media (max-width: 600px) {
+  .vb-payday-countdown { font-size: 12px; padding: 8px 10px; }
+  .vb-payday-countdown__inner { gap: 8px; }
+}
+</style>
+
+<script>
+(function () {
+  var el = document.querySelector('.vb-payday-countdown');
+  if (!el) return;
+  var startMs = parseInt(el.getAttribute('data-start'), 10);
+  var endMs = parseInt(el.getAttribute('data-end'), 10);
+  var timerEl = document.getElementById('vb-payday-timer');
+  var labelEl = document.getElementById('vb-payday-label');
+
+  function pad(n) { return String(n).padStart(2, '0'); }
+
+  function tick() {
+    var now = Date.now();
+    if (now >= endMs) {
+      el.style.display = 'none';
+      return;
+    }
+    var target, label;
+    if (now < startMs) {
+      target = startMs;
+      label = 'PAY DAY FLASH SALE · 25% OFF SITEWIDE · GOES LIVE IN';
+    } else {
+      target = endMs;
+      label = '🚨 PAY DAY LIVE NOW · 25% OFF SITEWIDE · ENDS IN';
+    }
+    labelEl.textContent = label;
+    var diff = Math.max(0, target - now);
+    var hours = Math.floor(diff / 3600000);
+    var mins = Math.floor((diff % 3600000) / 60000);
+    var secs = Math.floor((diff % 60000) / 1000);
+    timerEl.textContent = pad(hours) + ':' + pad(mins) + ':' + pad(secs);
+  }
+
+  tick();
+  setInterval(tick, 1000);
+})();
+</script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "VB Pay Day Countdown",
+  "tag": "section",
+  "class": "vb-payday-countdown-section",
+  "settings": [],
+  "presets": [
+    { "name": "VB Pay Day Countdown" }
+  ]
+}
+{% endschema %}

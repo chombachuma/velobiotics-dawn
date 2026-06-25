@@ -11,6 +11,11 @@
   "name": "Header",
   "type": "header",
   "sections": {
+    "vb_payday_countdown_xbbRi3": {
+      "type": "vb-payday-countdown",
+      "name": "VB Pay Day Countdown",
+      "settings": {}
+    },
     "vb-shipping-bar": {
       "type": "vb-shipping-bar",
       "settings": {
@@ -97,6 +102,7 @@
     }
   },
   "order": [
+    "vb_payday_countdown_xbbRi3",
     "vb-shipping-bar",
     "announcement-bar",
     "header"

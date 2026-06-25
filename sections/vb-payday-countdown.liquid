@@ -1,5 +1,5 @@
 {%- liquid
-  assign sale_start_iso = '2026-06-26T05:00:00+02:00'
+  assign sale_start_iso = '2026-06-26T10:00:00+02:00'
   assign sale_end_iso = '2026-06-26T16:00:00+02:00'
   assign sale_start_ms = sale_start_iso | date: '%s' | times: 1000
   assign sale_end_ms = sale_end_iso | date: '%s' | times: 1000
@@ -14,7 +14,7 @@
 {%- if show_banner -%}
 <div class="vb-payday-countdown" data-start="{{ sale_start_ms }}" data-end="{{ sale_end_ms }}" role="region" aria-label="Pay Day Flash Sale countdown">
   <div class="vb-payday-countdown__inner">
-    <span class="vb-payday-countdown__label" id="vb-payday-label">PAY DAY FLASH SALE · 25% OFF SITEWIDE · Friday 26 June 5AM SAST</span>
+    <span class="vb-payday-countdown__label" id="vb-payday-label">PAY DAY FLASH SALE · 25% OFF SITEWIDE · Friday 26 June 10AM SAST</span>
     <span class="vb-payday-countdown__timer" id="vb-payday-timer" aria-live="polite">--:--:--</span>
     <span class="vb-payday-countdown__code">code <strong>FLASHFRI25</strong></span>
   </div>
@@ -86,7 +86,7 @@
       label = 'PAY DAY FLASH SALE · 25% OFF SITEWIDE · GOES LIVE IN';
     } else {
       target = endMs;
-      label = '🚨 PAY DAY LIVE NOW · 25% OFF SITEWIDE · ENDS IN';
+      label = '🚨 NOW LIVE · 25% OFF SITEWIDE · ENDS IN';
     }
     labelEl.textContent = label;
     var diff = Math.max(0, target - now);

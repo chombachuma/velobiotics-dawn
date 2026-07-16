@@ -464,3 +464,111 @@ main > .section-header ~ .shopify-section,
   .footer__disclaimer-text p { display: block; margin-top: 6px; font-size: 11.5px; }
   .footer__disclaimer-label { display: inline-block; margin-bottom: 4px; }
 }
+
+/* ============================================================
+   SEARCH MODAL FIX — force visible input against dark green header
+   ============================================================ */
+.header-wrapper details-modal { z-index: 9999999 !important; }
+.header-wrapper details-modal[open] > details { position: relative; z-index: 9999999 !important; }
+.header-wrapper .search-modal,
+.search-modal {
+  background: #ffffff !important;
+  color: #1a2e1a !important;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.2);
+  border-top: 2px solid #4d8c44 !important;
+  z-index: 9999999 !important;
+}
+.header-wrapper .search-modal *,
+.search-modal * { color: #1a2e1a !important; }
+.header-wrapper .search-modal .field,
+.search-modal .field {
+  background: #f8fcf6 !important;
+  border: 1.5px solid #d5ead0 !important;
+  border-radius: 10px !important;
+}
+.header-wrapper .search-modal .field:focus-within {
+  border-color: #4d8c44 !important;
+  box-shadow: 0 0 0 3px rgba(77,140,68,0.18) !important;
+}
+.header-wrapper .search-modal .field__input,
+.search-modal .field__input,
+.search-modal input[type="search"] {
+  color: #1a2e1a !important;
+  background: transparent !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+}
+.header-wrapper .search-modal .field__input::placeholder,
+.search-modal .field__input::placeholder { color: #7a8a7a !important; opacity: 1 !important; }
+.header-wrapper .search-modal .field__label,
+.search-modal .field__label { color: #7a8a7a !important; }
+.header-wrapper .search-modal .search__button svg,
+.search-modal .search__button svg,
+.header-wrapper .search-modal .reset__button svg,
+.search-modal .reset__button svg { color: #4d8c44 !important; }
+.header-wrapper .search-modal .search__button,
+.search-modal .search__button { color: #4d8c44 !important; background: transparent !important; }
+.search-modal__form { background: transparent !important; }
+.search-modal__content { padding: 28px !important; background: #ffffff !important; }
+.search-modal .predictive-search { background: #ffffff !important; }
+.search-modal .predictive-search__item a { color: #1a2e1a !important; padding: 10px 12px !important; }
+.search-modal .predictive-search__item a:hover,
+.search-modal .predictive-search__item--link:hover { background: #eef7ec !important; color: #2e5d28 !important; }
+.search-modal .predictive-search__heading { color: #4d8c44 !important; font-weight: 700 !important; letter-spacing: 0.08em; }
+.search-modal .predictive-search__item-content--search { color: #1a2e1a !important; }
+.search-modal .predictive-search__item-vendor { color: #7a8a7a !important; }
+.search-modal .predictive-search__item-heading { color: #1a2e1a !important; font-weight: 600 !important; }
+.header-wrapper .search-modal button[type="reset"],
+.search-modal button[type="reset"] { color: #4d8c44 !important; }
+
+/* ============================================================
+   CART BUBBLE — high-visibility gold badge with pulse
+   ============================================================ */
+.header-wrapper .cart-count-bubble,
+.header .cart-count-bubble,
+.header__icon--cart .cart-count-bubble,
+#cart-icon-bubble .cart-count-bubble {
+  background: #ffd57a !important;
+  color: #1a4015 !important;
+  border: 2px solid #ffffff !important;
+  min-width: 22px !important;
+  height: 22px !important;
+  border-radius: 50% !important;
+  font-size: 11px !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 5px !important;
+  position: absolute !important;
+  top: -4px !important;
+  right: -4px !important;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25), 0 0 0 3px rgba(255,213,122,0.35) !important;
+  animation: vb-cart-pulse 1.6s ease-in-out infinite;
+  z-index: 3 !important;
+  letter-spacing: 0 !important;
+}
+.header-wrapper .cart-count-bubble span,
+.header .cart-count-bubble span { color: #1a4015 !important; font-weight: 800 !important; }
+.header-wrapper #cart-icon-bubble,
+.header #cart-icon-bubble,
+.header__icon--cart { position: relative !important; overflow: visible !important; }
+@keyframes vb-cart-pulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 3px 8px rgba(0,0,0,0.25), 0 0 0 3px rgba(255,213,122,0.35); }
+  50% { transform: scale(1.1); box-shadow: 0 4px 12px rgba(0,0,0,0.3), 0 0 0 5px rgba(255,213,122,0.15); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .header-wrapper .cart-count-bubble, .header .cart-count-bubble { animation: none !important; }
+}
+
+/* ============================================================
+   Hide Google Store Quality widget (belt-and-braces — also disabled in settings)
+   ============================================================ */
+.google-store-quality-widget,
+[class*="google-store-quality"],
+[id*="google-store-quality"],
+shopify-app-embed[type*="google-youtube"] .store-quality,
+iframe[src*="storequality"],
+iframe[src*="store-quality"] { display: none !important; visibility: hidden !important; }

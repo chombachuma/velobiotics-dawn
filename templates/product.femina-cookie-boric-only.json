@@ -88,6 +88,17 @@
         "review_count": "210+",
         "hook": "Pure boric acid suppositories. The simple, clinically-validated formula for BV, yeast, and pH restoration — without antibiotics or harsh chemicals.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
+        "show_subscription": true,
+        "default_subscribe": false,
+        "default_plan_slug": "every-2-months",
+        "default_frequency_days": 60,
+        "sub_pct_off": 15,
+        "monthly_variant_ids": "",
+        "show_qty_discount": true,
+        "tier2_pct": 10,
+        "tier3_pct": 15,
+        "tier_unit": "Bottle",
+        "tier_unit_plural": "Bottles",
         "show_buynow": true,
         "show_testi_marquee": true
       }
@@ -914,6 +925,26 @@
         "cta_text": "Add to Cart",
         "cta_link": "#vbpForm"
       }
+    },
+    "178919322866ac7075": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_XtR3kK": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_XtR3kK"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -931,6 +962,7 @@
     "outperform",
     "judgeme",
     "faq",
-    "final"
+    "final",
+    "178919322866ac7075"
   ]
 }

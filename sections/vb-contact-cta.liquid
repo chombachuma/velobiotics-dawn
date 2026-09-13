@@ -21,7 +21,7 @@
       <h2 class="vb-ctk__title">{{ section.settings.title | default: 'Have More Questions?' }}</h2>
       {%- if section.settings.sub != blank -%}<p class="vb-ctk__sub">{{ section.settings.sub }}</p>{%- endif -%}
     </div>
-    {%- if section.settings.cta_text != blank -%}<a href="{{ section.settings.cta_link | default: '/pages/contact' }}" class="vb-ctk__cta">{{ section.settings.cta_text }} →</a>{%- endif -%}
+    {%- if section.settings.cta_text != blank -%}<a href="{{ section.settings.cta_link | default: '/pages/new-contact-us' }}" class="vb-ctk__cta">{{ section.settings.cta_text }} →</a>{%- endif -%}
   </div>
 </section>
 

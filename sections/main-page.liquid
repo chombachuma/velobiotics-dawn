@@ -15,9 +15,12 @@
 {%- endstyle -%}
 
 <div class="page-width page-width--narrow section-{{ section.id }}-padding">
+  {%- comment -%} 13 Sep 2026: designed page templates carry their own hero/H1, so the Dawn title is suppressed there (and on any page when the section setting is off). Plain pages keep it. {%- endcomment -%}
+  {%- if section.settings.show_title and page.template_suffix == blank -%}
   <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     {{ page.title | escape }}
   </h1>
+  {%- endif -%}
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     {{ page.content }}
   </div>
@@ -29,6 +32,12 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_title",
+      "label": "Show page title (plain pages only)",
+      "default": true
+    },
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"

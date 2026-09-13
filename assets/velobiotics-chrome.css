@@ -469,7 +469,6 @@ main > .section-header ~ .shopify-section,
    SEARCH MODAL FIX — force visible input against dark green header
    ============================================================ */
 .header-wrapper details-modal { z-index: 9999999 !important; }
-.header-wrapper details-modal[open] > details { position: relative; z-index: 9999999 !important; }
 .header-wrapper .search-modal,
 .search-modal {
   background: #ffffff !important;
@@ -500,7 +499,6 @@ main > .section-header ~ .shopify-section,
   font-weight: 500 !important;
 }
 .header-wrapper .search-modal .field__input::placeholder,
-.search-modal .field__input::placeholder { color: #7a8a7a !important; opacity: 1 !important; }
 .header-wrapper .search-modal .field__label,
 .search-modal .field__label { color: #7a8a7a !important; }
 .header-wrapper .search-modal .search__button svg,
@@ -572,3 +570,9 @@ main > .section-header ~ .shopify-section,
 shopify-app-embed[type*="google-youtube"] .store-quality,
 iframe[src*="storequality"],
 iframe[src*="store-quality"] { display: none !important; visibility: hidden !important; }
+
+/* 13 Sep 2026: search modal must size to the header, not the icon; Dawn hides the placeholder behind the floating label */
+.header-wrapper details-modal[open] > details { position: static !important; }
+.search-modal .field__input::placeholder { opacity: 0 !important; }
+.search-modal .modal-overlay { display: none; }
+details[open] > .search-modal .modal-overlay { display: block; }

@@ -101,8 +101,8 @@
     </h1>
     {%- if section.settings.sub != blank -%}<p class="vbh__sub">{{ section.settings.sub }}</p>{%- endif -%}
     <div class="vbh__ctas">
-      {%- if section.settings.cta1_text != blank -%}<a href="{{ section.settings.cta1_link | default: '#' }}" class="vbh__cta vbh__cta--primary">{{ section.settings.cta1_text }}</a>{%- endif -%}
-      {%- if section.settings.cta2_text != blank -%}<a href="{{ section.settings.cta2_link | default: '#' }}" class="vbh__cta vbh__cta--secondary">{{ section.settings.cta2_text }}</a>{%- endif -%}
+      {%- if section.settings.cta1_text != blank -%}<a href="{{ section.settings.cta1_link | default: '/collections/all' }}" class="vbh__cta vbh__cta--primary">{{ section.settings.cta1_text }}</a>{%- endif -%}
+      {%- if section.settings.cta2_text != blank -%}<a href="{{ section.settings.cta2_link | default: '/pages/quiz' }}" class="vbh__cta vbh__cta--secondary">{{ section.settings.cta2_text }}</a>{%- endif -%}
     </div>
   </div>
 </section>

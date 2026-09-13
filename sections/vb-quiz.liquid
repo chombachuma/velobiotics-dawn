@@ -128,9 +128,14 @@
   .vbq__share-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
   .vbq__share-btn{padding:10px 20px;background:var(--tint);border:1px solid #d8e8d4;border-radius:99px;color:var(--g2);text-decoration:none;font-size:13px;font-weight:600;cursor:pointer;transition:.2s}
   .vbq__share-btn:hover{background:var(--g);color:#fff;border-color:var(--g)}
+  .vbq__code{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;background:var(--tint);border:1px dashed var(--g);border-radius:14px;padding:14px 18px;margin:0 0 22px}
+  .vbq__code-l{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--g2);font-weight:700}
+  .vbq__code-v{font-size:20px;letter-spacing:.06em;color:var(--g2)}
+  .vbq__code-r{font-size:13px;color:var(--mute);flex-basis:100%}
+  #omnisend-forms-wrapper,.omnisend-form-wrapper,[id^="omnisend-form"]{display:none !important}
 </style>
 
-<div class="vbq" id="vbq" data-omnisend-key="{{ section.settings.omnisend_api_key }}" data-quiz-name="{{ section.settings.quiz_name | default: 'BioMatch' }}">
+<div class="vbq" id="vbq" data-quiz-name="{{ section.settings.quiz_name | default: 'BioMatch' }}">
 
   {%- comment -%} Sticky progress bar (shown during quiz only) {%- endcomment -%}
   <div class="vbq__progress" id="vbq-progress">
@@ -148,12 +153,12 @@
       <div class="vbq__hero-content">
         <div class="vbq__hero-eyebrow">{{ section.settings.eyebrow | default: 'The Velobiotics BioMatch' }}</div>
         <h1 class="vbq__hero-title">{{ section.settings.hero_title_pre | default: 'Find your' }}<span class="vbq__hl">{{ section.settings.hero_title_highlight | default: 'perfect probiotic.' }}</span></h1>
-        <p class="vbq__hero-sub">{{ section.settings.hero_sub | default: '7 quick questions. 60 seconds. A personalised stack — built by doctors, backed by Velobiotics™ MEP science.' }}</p>
+        <p class="vbq__hero-sub">{{ section.settings.hero_sub | default: '7 quick questions. 60 seconds. Your personalised probiotic stack — plus 10% off to start it.' }}</p>
         <button type="button" class="vbq__hero-cta" id="vbq-start-btn">{{ section.settings.cta_start | default: 'Start the BioMatch' }}</button>
         <div class="vbq__hero-meta">
           <span>⏱ 60 seconds</span>
           <span>🩺 Doctor-built</span>
-          <span>💚 100% free</span>
+          <span>🎁 10% off your matched stack</span>
         </div>
       </div>
     </div>
@@ -184,15 +189,6 @@
         <button type="button" class="vbq__opt" data-val="male"><span class="vbq__opt-icon">♂</span><span class="vbq__opt-text">Male<small>His-Biotics + Velo16</small></span><span class="vbq__check"></span></button>
       </div>
       <div class="vbq__nav"><button type="button" class="vbq__btn vbq__btn--ghost" data-vbq-action="prev">← Back</button><button type="button" class="vbq__btn vbq__btn--prime" data-vbq-action="next" disabled>Continue</button></div>
-    </section>
-
-    <section class="vbq__step" data-step="inter" data-after="sex">
-      <div class="vbq__inter">
-        <span class="vbq__inter-emoji" id="vbq-i1-emoji">💚</span>
-        <h3 class="vbq__inter-h" id="vbq-i1-h">Got it.</h3>
-        <p class="vbq__inter-sub" id="vbq-i1-sub">We'll match you with formulas built specifically for your body's biology.</p>
-        <button type="button" class="vbq__btn vbq__btn--prime" data-vbq-action="next" style="max-width:280px;width:100%">Continue →</button>
-      </div>
     </section>
 
     <section class="vbq__step" data-step="q" data-key="age">
@@ -227,16 +223,6 @@
         <button type="button" class="vbq__opt" data-val="kids"><span class="vbq__opt-icon">👶</span><span class="vbq__opt-text">Kids' wellness</span><span class="vbq__check"></span></button>
       </div>
       <div class="vbq__nav"><button type="button" class="vbq__btn vbq__btn--ghost" data-vbq-action="prev">← Back</button><button type="button" class="vbq__btn vbq__btn--prime" data-vbq-action="next" disabled>Continue</button></div>
-    </section>
-
-    <section class="vbq__step" data-step="inter" data-after="goal">
-      <div class="vbq__inter">
-        <span class="vbq__inter-emoji" id="vbq-i2-emoji">🙌</span>
-        <h3 class="vbq__inter-h" id="vbq-i2-h">You're not alone.</h3>
-        <div class="vbq__inter-stat" id="vbq-i2-stat"><strong>50,000+</strong><small>have walked this path with Velobiotics</small></div>
-        <p class="vbq__inter-sub" id="vbq-i2-sub">Almost done — just a couple more questions to lock in your best stack.</p>
-        <button type="button" class="vbq__btn vbq__btn--prime" data-vbq-action="next" style="max-width:280px;width:100%">Continue →</button>
-      </div>
     </section>
 
     <section class="vbq__step" data-step="q" data-key="symptom">
@@ -287,24 +273,16 @@
       <div class="vbq__nav"><button type="button" class="vbq__btn vbq__btn--ghost" data-vbq-action="prev">← Back</button><button type="button" class="vbq__btn vbq__btn--prime" data-vbq-action="next" disabled>See my results →</button></div>
     </section>
 
-    <section class="vbq__step" data-step="inter" data-after="experience">
-      <div class="vbq__inter">
-        <span class="vbq__inter-emoji">🎯</span>
-        <h3 class="vbq__inter-h">Your <span class="vbq__hl">stack is ready.</span></h3>
-        <p class="vbq__inter-sub">Just one last step — tell us where to send your personalised plan + free 7-day wellness email series.</p>
-        <button type="button" class="vbq__btn vbq__btn--prime" data-vbq-action="next" style="max-width:280px;width:100%">Show me my results →</button>
-      </div>
-    </section>
-
     <section class="vbq__step" data-step="lead">
-      <div class="vbq__eyebrow">Almost there</div>
-      <h2 class="vbq__h">Where should we send your <span class="vbq__hl">personalised plan?</span></h2>
-      <p class="vbq__sub">{{ section.settings.lead_sub | default: 'Get your recommendation plus a free 7-day wellness email series, science guides, and exclusive subscriber pricing.' }}</p>
-      <form id="vbq-lead">
-        <div class="vbq__field"><label for="vbq-name">Your first name</label><input class="vbq__input" type="text" id="vbq-name" required placeholder="e.g. Sarah"></div>
-        <div class="vbq__field"><label for="vbq-email">Email address</label><input class="vbq__input" type="email" id="vbq-email" required placeholder="you@example.com"></div>
-        <button type="submit" class="vbq__btn vbq__btn--prime" style="width:100%" id="vbq-lead-btn">Show my recommendation →</button>
-        <p class="vbq__legal">By continuing you agree to receive emails from Velobiotics. Unsubscribe anytime. See our <a href="/policies/privacy-policy">privacy policy</a>.</p>
+      <div class="vbq__eyebrow">Your stack is ready</div>
+      <h2 class="vbq__h">Unlock your results <span class="vbq__hl">+ 10% off.</span></h2>
+      <p class="vbq__sub">{{ section.settings.lead_sub | default: 'Tell us where to send your personalised plan. You get your BioMatch instantly, your 10% code, and a short 3-part series on getting results from your stack.' }}</p>
+      <form id="vbq-lead" novalidate>
+        <div class="vbq__field"><label for="vbq-email">Email address</label><input class="vbq__input" type="email" id="vbq-email" required autocomplete="email" inputmode="email" placeholder="you@example.com"></div>
+        <div class="vbq__field"><label for="vbq-name">First name <span style="color:var(--mute);font-weight:400">(optional)</span></label><input class="vbq__input" type="text" id="vbq-name" autocomplete="given-name" placeholder="e.g. Sarah"></div>
+        <button type="submit" class="vbq__btn vbq__btn--prime" style="width:100%" id="vbq-lead-btn">Show my results &amp; 10% code →</button>
+        <p class="vbq__legal" id="vbq-lead-err" style="color:#b00020;display:none">Please enter a valid email address.</p>
+        <p class="vbq__legal">🔒 No spam. Unsubscribe anytime. <a href="/policies/privacy-policy">Privacy policy</a>.</p>
       </form>
     </section>
 
@@ -321,6 +299,7 @@
         <h2 class="vbq__h"><span id="vbq-greet">Here's your</span> <span class="vbq__hl">personalised stack.</span></h2>
       </div>
       <div class="vbq__profile" id="vbq-profile"></div>
+      <div class="vbq__code" id="vbq-code"><span class="vbq__code-l">Your 10% code</span><strong class="vbq__code-v" id="vbq-code-v">BIOMATCH10</strong><span class="vbq__code-r">applied automatically when you tap Shop — also in your inbox</span></div>
       <div id="vbq-recs"></div>
       <div class="vbq__share">
         <p>Share your BioMatch or save for later</p>
@@ -337,7 +316,9 @@
 <script>
 (function(){
   'use strict';
-  const STEPS = ['start','q-who','q-sex','inter-sex','q-age','q-goal','inter-goal','q-symptom','q-diet','q-experience','inter-experience','lead','loading','results'];
+  const STEPS = ['start','q-who','q-sex','q-age','q-goal','q-symptom','q-diet','q-experience','lead','loading','results'];
+  const DISCOUNT = 'BIOMATCH10';
+  const LEAD_ENDPOINT = 'https://base44.app/api/apps/6a5cd0747d0dd238cef2631f/functions/biomatchLead';
   const STATE = { idx:0, answers:{}, recs:[], startTime:Date.now(), quizId:'biomatch-2026', sessionId:'vbq_'+Date.now()+'_'+Math.random().toString(36).slice(2,8) };
   const $ = (s,c)=> (c||document).querySelector(s);
   const $$ = (s,c)=> Array.from((c||document).querySelectorAll(s));
@@ -545,7 +526,6 @@
   }
   function next(){
     if(STEPS[STATE.idx]==='q-sex') applyGenderFilter();
-    if(STATE.idx+1 < STEPS.length && STEPS[STATE.idx+1].indexOf('inter')===0) fillInterstitials();
     STATE.idx = Math.min(STATE.idx+1, STEPS.length-1);
     render();
     track('quiz_step',{step:STEPS[STATE.idx]});
@@ -591,6 +571,8 @@
       const v = STATE.answers[key];
       const ok = multi ? (Array.isArray(v) && v.length>0) : !!v;
       if(btn) btn.disabled = !ok;
+      /* Single-choice questions advance by themselves (one tap fewer per question) */
+      if(!multi && ok){ clearTimeout(STATE._auto); STATE._auto = setTimeout(function(){ if(STEPS[STATE.idx]===step.dataset.step+'-'+key || step.classList.contains('is-active')) next(); }, 320); }
       return;
     }
     /* Action buttons */
@@ -622,61 +604,26 @@
   }
 
   async function submitLead(){
-    const name = $('#vbq-name').value.trim();
-    const email = $('#vbq-email').value.trim();
-    if(!name||!email) return;
+    const name = ($('#vbq-name').value||'').trim();
+    const email = ($('#vbq-email').value||'').trim();
+    const err = $('#vbq-lead-err');
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){ if(err) err.style.display='block'; $('#vbq-email').focus(); return; }
+    if(err) err.style.display='none';
     STATE.answers.name=name;
     STATE.answers.email=email;
     const btn = $('#vbq-lead-btn'); if(btn){ btn.disabled=true; btn.textContent='Building your stack…'; }
     STATE.recs = recommend(STATE.answers);
-    const topProduct = (STATE.recs[0]&&STATE.recs[0].handle)||'';
-    const topBrand = topProduct ? ((CATALOG[topProduct]||{}).brand||'') : '';
-    track('quiz_lead',{email});
-    const apiKey = root.dataset.omnisendKey;
-    if(apiKey){
-      const now = new Date().toISOString();
-      const goalVal = Array.isArray(STATE.answers.goal)?STATE.answers.goal.join(','):(STATE.answers.goal||'');
-      const goalPrimary = Array.isArray(STATE.answers.goal)?STATE.answers.goal[0]:(STATE.answers.goal||'general');
-      const payload = {
-        firstName: name,
-        identifiers: [{
-          type: 'email',
-          id: email,
-          channels: { email: { status: 'subscribed', statusChangedAt: now } },
-          consent: { source: 'BioMatch Quiz', createdAt: now }
-        }],
-        tags: ['quiz_taken','biomatch', topBrand.replace(/[^a-z0-9]/gi,'').toLowerCase(), 'goal_'+goalPrimary, 'sex_'+STATE.answers.sex].filter(Boolean),
-        customProperties: {
-          quiz_top_product: topProduct, quiz_top_brand: topBrand,
-          quiz_goal: goalVal,
-          quiz_symptom: STATE.answers.symptom||'', quiz_sex: STATE.answers.sex||'',
-          quiz_age: STATE.answers.age||'', quiz_who: STATE.answers.who||'',
-          quiz_experience: STATE.answers.experience||'',
-          quiz_recs: STATE.recs.map(function(r){return r.handle;}).join(',')
-        }
-      };
-      try {
-        const r = await fetch('https://api.omnisend.com/api/contacts',{
-          method:'POST',
-          headers:{
-            'Content-Type':'application/json',
-            'Authorization':'Omnisend-API-Key '+apiKey,
-            'Omnisend-Version':'2026-03-15'
-          },
-          body: JSON.stringify(payload)
-        });
-        if(!r.ok){ console.warn('[VBQ] Omnisend non-OK', r.status, await r.text()); }
-        else { console.log('[VBQ] Omnisend contact created/updated'); }
-      } catch(err){ console.warn('[VBQ] Omnisend submit failed', err); }
-    } else {
-      try {
-        const fd = new FormData();
-        fd.append('form_type','customer'); fd.append('utf8','✓');
-        fd.append('contact[tags]','quiz_taken,biomatch,'+topBrand.toLowerCase().replace(/[^a-z0-9]/gi,''));
-        fd.append('contact[email]',email); fd.append('contact[first_name]',name);
-        await fetch('/contact',{method:'POST',body:fd});
-      } catch(err){}
-    }
+    track('quiz_lead',{email:email});
+    /* Server-side capture: Omnisend contact + "biomatch completed" event (starts the 3-email series) + Shopify customer tags.
+       The API key never touches the browser. Fire-and-forget with a short cap so the results are never blocked. */
+    try {
+      const recs = STATE.recs.slice(0,3).map(function(r){ const p=CATALOG[r.handle]||{}; return {handle:r.handle,title:p.title||r.handle,brand:(p.brand||'').replace('™',''),image:p.img||'',price:p.price||'',why:r.reason||''}; });
+      const payload = { email:email, name:name, answers:STATE.answers, recs:recs, discountCode:DISCOUNT, quiz:STATE.quizId, session:STATE.sessionId, page:location.href };
+      const ctl = ('AbortController' in window) ? new AbortController() : null;
+      if(ctl) setTimeout(function(){ ctl.abort(); }, 6000);
+      await fetch(LEAD_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload),signal:ctl?ctl.signal:undefined,keepalive:true})
+        .then(function(r){ return r.json(); }).then(function(j){ console.log('[VBQ] lead saved',j&&j.ok); }).catch(function(e){ console.warn('[VBQ] lead endpoint',e); });
+    } catch(e){ console.warn('[VBQ] lead capture failed', e); }
     STATE.idx = STEPS.indexOf('loading'); render(); animateLoader();
   }
 
@@ -711,15 +658,15 @@
     rc.innerHTML = STATE.recs.map(function(rec,i){
       const p = CATALOG[rec.handle] || {brand:'Velobiotics', title:rec.handle, price:'', img:''};
       const utm = '?utm_source=quiz&utm_medium=recommendation&utm_campaign=biomatch&utm_content='+rec.handle+'&utm_term=rank-'+(i+1);
-      const productUrl = '/products/'+rec.handle+utm;
+      const productUrl = '/discount/'+DISCOUNT+'?redirect='+encodeURIComponent('/products/'+rec.handle+utm);
       return '<div class="vbq__rec '+(i===0?'is-top':'')+'">'+(i===0?'<div class="vbq__rec-rank">★ Best Match</div>':'')+
         '<div class="vbq__rec-img"><img src="'+p.img+'" alt="'+p.title+'" loading="lazy"></div>'+
         '<div class="vbq__rec-body">'+
           '<div class="vbq__rec-brand">'+p.brand+'</div>'+
           '<h3 class="vbq__rec-title">'+p.title+'</h3>'+
           '<p class="vbq__rec-why">'+rec.reason+'</p>'+
-          '<a class="vbq__rec-cta" href="'+productUrl+'" onclick="window.VBQ.clickRec(\''+rec.handle+'\','+(i+1)+')">Shop now →</a>'+
-          '<a class="vbq__rec-cta-secondary" href="'+productUrl+'">Learn more</a>'+
+          '<a class="vbq__rec-cta" href="'+productUrl+'" onclick="window.VBQ.clickRec(\''+rec.handle+'\','+(i+1)+')">Shop with 10% off →</a>'+
+          '<a class="vbq__rec-cta-secondary" href="/products/'+rec.handle+utm+'">Learn more</a>'+
         '</div></div>';
     }).join('');
   }

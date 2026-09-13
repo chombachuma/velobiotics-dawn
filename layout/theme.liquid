@@ -39,6 +39,11 @@
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
+    
+    {%- comment -%} 13 Sep 2026: Zipchat "AI Search" hijacks Dawn's search box and opens its own overlay at z-index 999, which sits behind the header (z 99999) — the customer sees a dimmed page and no search. Keep the native Dawn search until the Zipchat search z-index/feature is fixed in the Zipchat dashboard. {%- endcomment -%}
+    <script>
+    (function(){var n=0;function fix(){var Z=window.Zipchat;if(Z){Z.setupSearchHijacking=function(){};if(Z._searchHijackCleanup){try{Z._searchHijackCleanup();}catch(e){}}}if(++n<80)setTimeout(fix,250);}fix();})();
+    </script>
     {{ content_for_header }}
 
     {%- liquid

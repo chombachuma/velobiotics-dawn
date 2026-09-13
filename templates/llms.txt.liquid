@@ -1,7 +1,7 @@
 {% layout none %}# Velobiotics
 
 Website: https://www.velobiotics.com
-Last updated: {{ 'now' | date: '%Y-%m-%d' }} (collections and articles generated live; products and pages snapshot 2026-09-13)
+Last updated: 2026-09-13 (catalogue snapshot after site clean-up)
 
 > Velobiotics is a biotechnology company that specializes in advanced probiotic solutions designed to improve gut, immune, and urogenital health. The company utilizes a globally patented SCO2 micro-encapsulation technology that protects live bacteria from stomach acid and heat, delivering up to 1000 times more probiotics to the gut.
 
@@ -11,8 +11,70 @@ Last updated: {{ 'now' | date: '%Y-%m-%d' }} (collections and articles generated
 - Search: https://www.velobiotics.com/search?q={query}
 
 ## Collections
-{% for collection in collections %}{% unless collection.handle contains 'featured-collection-' or collection.all_products_count == 0 %}- [{{ collection.title | strip | escape }}](https://www.velobiotics.com/collections/{{ collection.handle }}){% if collection.description != blank %}: {{ collection.description | strip_html | strip_newlines | truncate: 160 }}{% endif %}
-{% endunless %}{% endfor %}
+- [All Velobiotics Products](https://www.velobiotics.com/collections/all)
+- [Almasi - Probiotics Skin Care](https://www.velobiotics.com/collections/almasi-probiotics-skin-care)
+- [Ashwagadha](https://www.velobiotics.com/collections/ashwagadha)
+- [BioGain](https://www.velobiotics.com/collections/biogain)
+- [BioKid](https://www.velobiotics.com/collections/biokid)
+- [Biotin (Vitamin B7)](https://www.velobiotics.com/collections/biotin-vitamin-b7)
+- [Bones & Joints](https://www.velobiotics.com/collections/bones-joints)
+- [Calcium](https://www.velobiotics.com/collections/calcium)
+- [Co-Enzyme Q10 (Co-Q10)](https://www.velobiotics.com/collections/co-enzyme-q10-co-q10)
+- [Collagen](https://www.velobiotics.com/collections/collagen)
+- [Copper](https://www.velobiotics.com/collections/copper)
+- [Creatine Monohydrate](https://www.velobiotics.com/collections/creatine-monohydrate)
+- [Digestive Health](https://www.velobiotics.com/collections/digestive-health)
+- [Femina](https://www.velobiotics.com/collections/femina): 🛡 SAHPRA-aware · Regulatory compliant 🏭 GMP-manufactured 🌿 100% vegan ☪ Halaal-friendly 🔬 Lab-tested · Independently verified Real Numbers from Real Reviews…
+- [Folic Acid (Vitamin B9)](https://www.velobiotics.com/collections/folic-acid-vitamin-b9)
+- [For Athletes](https://www.velobiotics.com/collections/for-athletes)
+- [Ginkgo Biloba](https://www.velobiotics.com/collections/ginkgo-biloba)
+- [Ginseng Extract](https://www.velobiotics.com/collections/ginseng-extract)
+- [Green Tea Extract](https://www.velobiotics.com/collections/green-tea-extract)
+- [Gut Health](https://www.velobiotics.com/collections/gut-health)
+- [GutBundle](https://www.velobiotics.com/collections/gut-bundles): We have put together our best product combinations for you, your family and specific conditions for our customers. Find discounted GutBundles discounted by as…
+- [GutSlim](https://www.velobiotics.com/collections/gutslim): Ready to unlock effortless weight loss , boost your energy , and finally feel amazing in your own skin? GutSlim is built on the powerful connection between gut…
+- [Healing & Recovery](https://www.velobiotics.com/collections/healing-recovery)
+- [Her-Biotics](https://www.velobiotics.com/collections/her-biotics)
+- [His-Biotics](https://www.velobiotics.com/collections/his-biotics)
+- [Immune Support](https://www.velobiotics.com/collections/immune-support)
+- [Iron](https://www.velobiotics.com/collections/iron)
+- [Magnesium](https://www.velobiotics.com/collections/magnesium)
+- [Meal Replacements](https://www.velobiotics.com/collections/probiotics-meal-replacements): Probiotics Meal Replacements for Healing and Recovery, Sports Nutrition, Children and Female Intimate Health
+- [Men's 50+ Support](https://www.velobiotics.com/collections/men-50)
+- [Men's Sports Performance](https://www.velobiotics.com/collections/mens-sports-performance)
+- [Menopause Support](https://www.velobiotics.com/collections/menopause-support)
+- [Mind & Focus](https://www.velobiotics.com/collections/mind-focus)
+- [Multivitamins for Men](https://www.velobiotics.com/collections/multivitamins-for-men)
+- [Multivitamins for Women](https://www.velobiotics.com/collections/multivitamins-for-women)
+- [Omega-3 Oils](https://www.velobiotics.com/collections/omega-3-oils)
+- [Other Probiotics Ingredients](https://www.velobiotics.com/collections/other-probiotics-ingredients)
+- [P.A.B.A. (Vitamin B10)](https://www.velobiotics.com/collections/p-a-b-a)
+- [PMS Support](https://www.velobiotics.com/collections/pms-support)
+- [Pantothenic Acid (Vitamin B5)](https://www.velobiotics.com/collections/pantothenic-acid-vitamin-b5)
+- [PregBiotics](https://www.velobiotics.com/collections/pregbiotics): PregBiotics: Happy Gut, Healthy Mum! 💖 Discover our unique range combining essential prenatal & postnatal nutrients with vital probiotics to support your…
+- [Pregnancy & Conception](https://www.velobiotics.com/collections/pregnancy-conception)
+- [Probiotic Herbs & Botanicals](https://www.velobiotics.com/collections/herbs-botanicals)
+- [Probiotics Fatty Acids](https://www.velobiotics.com/collections/fatty-acids)
+- [Probiotics Minerals](https://www.velobiotics.com/collections/minerals)
+- [Probiotics Only](https://www.velobiotics.com/collections/probiotics-only)
+- [Probiotics Vitamins](https://www.velobiotics.com/collections/vitamins)
+- [Selenium](https://www.velobiotics.com/collections/selenium)
+- [Skin, Hair & Nails](https://www.velobiotics.com/collections/skin-hair-nails)
+- [Sports Nutrition](https://www.velobiotics.com/collections/sports-nutrition)
+- [Velo16](https://www.velobiotics.com/collections/velo16)
+- [Vitality & Libido](https://www.velobiotics.com/collections/vitality-libido)
+- [Vitamin A](https://www.velobiotics.com/collections/vitamin-a)
+- [Vitamin B1 (Thiamine)](https://www.velobiotics.com/collections/vitamin-b)
+- [Vitamin B12](https://www.velobiotics.com/collections/vitamin-b12)
+- [Vitamin B2 (Riboflavin)](https://www.velobiotics.com/collections/vitamin-b2-riboflavin)
+- [Vitamin B6 (Pyridoxine)](https://www.velobiotics.com/collections/vitamin-b6-pyridoxine)
+- [Vitamin D](https://www.velobiotics.com/collections/vitamin-d)
+- [Vitamin E](https://www.velobiotics.com/collections/vitamin-e)
+- [Weight Management](https://www.velobiotics.com/collections/weight-management)
+- [Women 50+ Support](https://www.velobiotics.com/collections/women-50)
+- [Women's Sports Performance](https://www.velobiotics.com/collections/women-s-sports-performance)
+- [Zinc](https://www.velobiotics.com/collections/zinc)
+
 ## Products
 - [14-DAY GUTSLIM GUT-REBOOT STARTER PACK](https://www.velobiotics.com/products/14-day-gut-reboot-starter-pack) — R799.50 ZAR
 - [21-DAY GUTSLIM COMPLETE PACK](https://www.velobiotics.com/products/21-day-gutslim-complete-pack) — R1,299.95 ZAR

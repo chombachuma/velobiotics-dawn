@@ -86,6 +86,28 @@
             </div>
           </div>
 
+
+          <div class="vb-mm__brands-strip vb-mm__ing-strip">
+            <div class="vb-mm__brands-label">Shop by Ingredient</div>
+            <div class="vb-mm__brands-row">
+              <a href="/collections/vitamins" class="vb-mm__brand-chip" style="--c:#2e5d28">Vitamins</a>
+              <a href="/collections/minerals" class="vb-mm__brand-chip" style="--c:#2e5d28">Minerals</a>
+              <a href="/collections/herbs-botanicals" class="vb-mm__brand-chip" style="--c:#2e5d28">Herbs &amp; Botanicals</a>
+              <a href="/collections/omega-3-oils" class="vb-mm__brand-chip" style="--c:#2e5d28">Omega-3</a>
+              <a href="/collections/magnesium" class="vb-mm__brand-chip" style="--c:#2e5d28">Magnesium</a>
+              <a href="/collections/zinc" class="vb-mm__brand-chip" style="--c:#2e5d28">Zinc</a>
+              <a href="/collections/iron" class="vb-mm__brand-chip" style="--c:#2e5d28">Iron</a>
+              <a href="/collections/vitamin-d" class="vb-mm__brand-chip" style="--c:#2e5d28">Vitamin D</a>
+              <a href="/collections/vitamin-b12" class="vb-mm__brand-chip" style="--c:#2e5d28">Vitamin B12</a>
+              <a href="/collections/collagen" class="vb-mm__brand-chip" style="--c:#2e5d28">Collagen</a>
+              <a href="/collections/co-enzyme-q10-co-q10" class="vb-mm__brand-chip" style="--c:#2e5d28">CoQ10</a>
+              <a href="/collections/creatine-monohydrate" class="vb-mm__brand-chip" style="--c:#2e5d28">Creatine</a>
+              <a href="/collections/ashwagandha" class="vb-mm__brand-chip" style="--c:#2e5d28">Ashwagandha</a>
+              <a href="/collections/probiotics-only" class="vb-mm__brand-chip" style="--c:#2e5d28">Probiotics Only</a>
+              <a href="/pages/shop-by-ingredient" class="vb-mm__brand-chip vb-mm__brand-chip--all" style="--c:#1a4015">All ingredients A–Z →</a>
+            </div>
+          </div>
+
           <aside class="vb-mm__feature vb-mm__feature--quiz">
             <span class="vb-mm__feat-eyebrow">Not sure which?</span>
             <h4 class="vb-mm__feat-title">Take the 60-sec BioMatch</h4>
@@ -229,6 +251,13 @@
             <li><a href="/collections/biokid" class="vb-mmd__sub-link">BioKid™</a></li>
             <li><a href="/collections/biogain" class="vb-mmd__sub-link">BioGain®</a></li>
             <li><a href="/collections/almasi-probiotics-skin-care" class="vb-mmd__sub-link">Almasi™</a></li>
+            <li class="vb-mmd__sub-head">🧪 Shop by Ingredient</li>
+            <li><a href="/collections/vitamins" class="vb-mmd__sub-link">Vitamins</a></li>
+            <li><a href="/collections/minerals" class="vb-mmd__sub-link">Minerals</a></li>
+            <li><a href="/collections/herbs-botanicals" class="vb-mmd__sub-link">Herbs &amp; Botanicals</a></li>
+            <li><a href="/collections/fatty-acids" class="vb-mmd__sub-link">Omega &amp; Fatty Acids</a></li>
+            <li><a href="/collections/other-probiotics-ingredients" class="vb-mmd__sub-link">Other Actives</a></li>
+            <li><a href="/pages/shop-by-ingredient" class="vb-mmd__sub-link"><strong>All ingredients A–Z →</strong></a></li>
           </ul>
         </li>
 
@@ -446,8 +475,10 @@
   }
 
   /* Adjust Shop panel layout to fit brands strip */
-  #vb-mm-p-shop .vb-mm__panel-inner{grid-template-rows:auto auto !important}
+  #vb-mm-p-shop .vb-mm__panel-inner{grid-template-rows:auto auto auto !important}
   #vb-mm-p-shop .vb-mm__brands-strip{grid-row:2 !important}
+  #vb-mm-p-shop .vb-mm__ing-strip{grid-row:3 !important;background:#f8fcf6 !important}
+  .vb-mm__brand-chip--all{background:#1a4015 !important;color:#fff !important}
   #vb-mm-p-shop .vb-mm__feature{grid-row:1 !important;grid-column:2 !important}
 
   /* ============ BACKDROP ============ */

@@ -361,8 +361,8 @@
   }
   function userNeeds(){
     var a=S.answers, w={}; var gk=a.who==='child'?'kids':a.goal; var g=FLOW.goal_groups[gk]||FLOW.goal_groups.gut;
-    (g.codes||[]).forEach(function(c){ w[c]=Math.max(w[c]||0,1.2); });
-    if(a.focus) w[a.focus]=Math.max(w[a.focus]||0,3);
+    (g.codes||[]).forEach(function(c){ w[c]=Math.max(w[c]||0,0.6); });
+    if(a.focus) w[a.focus]=Math.max(w[a.focus]||0,4);
     if(a.life_stage==='pregnant') w.pregnancy=Math.max(w.pregnancy||0,2);
     if(a.life_stage==='trying_to_conceive') w.conception=Math.max(w.conception||0,2);
     if(a.life_stage==='postnatal') w.postnatal_breastfeeding=Math.max(w.postnatal_breastfeeding||0,2);
@@ -374,12 +374,12 @@
     var s=0, hit=0; (p.needs||[]).forEach(function(n){ if(w[n.code]){ s+=w[n.code]*n.w; hit++; } });
     if(!hit) return 0;
     var a=S.answers;
-    if(a.urgency==='now'){ if(p.form==='suppository'||p.form==='kit') s*=1.25; if(p.is_bundle) s*=1.05; }
+    if(a.urgency==='now'){ if(p.form==='suppository'||p.form==='kit') s*=1.4; if(p.is_bundle) s*=1.05; }
     if(a.urgency==='recurring'){ if(p.form==='capsules'||p.form==='chewable') s*=1.15; if(p.is_bundle) s*=1.1; }
     if(a.urgency==='optimise'){ if(p.is_bundle) s*=.85; if(p.form==='suppository') s*=.8; }
     if(p.is_hero) s*=1.08;
     if(p.form==='accessory') s*=.3;
-    s*=1+Math.min(0.1,(p.sales_units||0)/5000);
+    s*=1+Math.min(0.15,(p.sales_units||0)/1500);
     return s;
   }
   function recommend(){
@@ -392,7 +392,7 @@
     if(b) out.push(b); 
     for(var j=0;j<singles.length&&out.length<3;j++){ if(out.indexOf(singles[j])<0) out.push(singles[j]); }
     var max=out[0]?out[0].score:1;
-    return out.slice(0,3).map(function(x,i){ return {handle:x.handle,score:x.score,fit:Math.round(Math.min(98,Math.max(72,(x.score/max)*96-(i*3)))),role:i===0?'Best match':(x.p.is_bundle?'Complete stack':'Supporting')}; });
+    return out.slice(0,3).map(function(x,i){ return {handle:x.handle,score:x.score,fit:Math.round(Math.min(98,Math.max(64,70+28*(x.score/max)-(i*2)))),role:i===0?'Best match':(x.p.is_bundle?'Complete stack':'Supporting')}; });
   }
 
   /* ---------- lead + results ---------- */

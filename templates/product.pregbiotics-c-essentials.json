@@ -89,7 +89,6 @@
         "hook": "The complete conception-to-pregnancy journey. PregBiotics™ C-Essentials Kit bundles Conception + Essentials — preconception prep through trimesters, all covered. Save 20%.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
         "show_subscription": true,
-        "show_qty_discounts": false,
         "show_buynow": true,
         "show_testi_marquee": true
       }
@@ -101,45 +100,45 @@
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Naseema+R&background=1f6b3d&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "The full prep journey in one bundle. Smart.",
             "author": "Naseema R.",
-            "meta": "Verified buyer · Pretoria"
+            "meta": "Verified buyer · Pretoria",
+            "quote": "The full prep journey in one bundle. Smart."
           }
         },
         "r2": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Heidi+P&background=5fa37a&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Save money, save juggling. Switched in trimester 2 easy.",
             "author": "Heidi P.",
-            "meta": "Verified buyer · 5 months ago"
+            "meta": "Verified buyer · 5 months ago",
+            "quote": "Save money, save juggling. Switched in trimester 2 easy."
           }
         },
         "r3": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Lerato+M&background=0a3d22&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Smooth conception, smooth pregnancy. Highly recommend.",
             "author": "Lerato M.",
-            "meta": "Verified buyer · 7 months ago"
+            "meta": "Verified buyer · 7 months ago",
+            "quote": "Smooth conception, smooth pregnancy. Highly recommend."
           }
         },
         "r4": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Bongi+K&background=1f6b3d&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Worth every cent. My investment in baby's start.",
             "author": "Bongi K.",
-            "meta": "Verified buyer · 6 months ago"
+            "meta": "Verified buyer · 6 months ago",
+            "quote": "Worth every cent. My investment in baby's start."
           }
         },
         "r5": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Sarah+B&background=5fa37a&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Best decision before trying. Conceived in 4 months.",
             "author": "Sarah B.",
-            "meta": "Verified buyer · Cape Town"
+            "meta": "Verified buyer · Cape Town",
+            "quote": "Best decision before trying. Conceived in 4 months."
           }
         }
       },
@@ -504,8 +503,8 @@
       ],
       "settings": {
         "brand_primary": "#1f6b3d",
-        "brand_tint": "#f2f9ec",
         "brand_dark": "#0a3d22",
+        "brand_tint": "#f2f9ec",
         "brand_light": "#5fa37a",
         "eyebrow": "What's Inside",
         "title": "Two PregBiotics flagships in one bundle",
@@ -750,13 +749,12 @@
     "judgeme": {
       "type": "vb-judgeme",
       "settings": {
+        "scope": "product",
+        "show_stats": true,
         "eyebrow": "Real Reviews",
         "title_pre": "What Mothers",
         "title_highlight": "Are Saying",
-        "sub": "Verified reviews from real mums. The Judge.me widget will populate this section on go-live.",
-        "rating": "4.9",
-        "reviews_count": "120+",
-        "customers_count": "12K+"
+        "sub": "Verified reviews collected independently by Judge.me from customers who bought this product."
       }
     },
     "faq": {

@@ -89,7 +89,6 @@
         "hook": "Ancient mineral, modern science. Velo16™ Fulvic Acid delivers humic and fulvic acids alongside 16 probiotic strains — detox support, mineral transport, and gut harmony in one capsule.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
         "show_subscription": true,
-        "show_qty_discounts": true,
         "show_buynow": true,
         "show_testi_marquee": true
       }
@@ -101,45 +100,45 @@
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Lerato+V&background=c8163c&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Energy I haven't had in years. Brain fog lifted in 3 weeks.",
             "author": "Lerato V.",
-            "meta": "Verified buyer · Pretoria"
+            "meta": "Verified buyer · Pretoria",
+            "quote": "Energy I haven't had in years. Brain fog lifted in 3 weeks."
           }
         },
         "r2": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Marco+D&background=ff5c7c&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Brain fog finally lifted. Steady mental clarity.",
             "author": "Marco D.",
-            "meta": "Verified buyer · Johannesburg"
+            "meta": "Verified buyer · Johannesburg",
+            "quote": "Brain fog finally lifted. Steady mental clarity."
           }
         },
         "r3": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Carla+N&background=6b0a1f&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Inflammation down, joints quieter, gut calmer.",
             "author": "Carla N.",
-            "meta": "Verified buyer · 2 months ago"
+            "meta": "Verified buyer · 2 months ago",
+            "quote": "Inflammation down, joints quieter, gut calmer."
           }
         },
         "r4": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Tshepo+K&background=c8163c&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Real natural detox without harsh side effects.",
             "author": "Tshepo K.",
-            "meta": "Verified buyer · 1 month ago"
+            "meta": "Verified buyer · 1 month ago",
+            "quote": "Real natural detox without harsh side effects."
           }
         },
         "r5": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Naseema+B&background=ff5c7c&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "My nutrition absorption transformed.",
             "author": "Naseema B.",
-            "meta": "Verified buyer · Cape Town"
+            "meta": "Verified buyer · Cape Town",
+            "quote": "My nutrition absorption transformed."
           }
         }
       },
@@ -504,8 +503,8 @@
       ],
       "settings": {
         "brand_primary": "#c8163c",
-        "brand_tint": "#ffe8ec",
         "brand_dark": "#6b0a1f",
+        "brand_tint": "#ffe8ec",
         "brand_light": "#ff5c7c",
         "eyebrow": "What's Inside",
         "title": "Every ingredient earns its place",
@@ -750,13 +749,12 @@
     "judgeme": {
       "type": "vb-judgeme",
       "settings": {
+        "scope": "product",
+        "show_stats": true,
         "eyebrow": "Real Reviews",
         "title_pre": "What Customers",
         "title_highlight": "Are Saying",
-        "sub": "Verified reviews from real customers.",
-        "rating": "4.7",
-        "reviews_count": "120+",
-        "customers_count": "12K+"
+        "sub": "Verified reviews collected independently by Judge.me from customers who bought this product."
       }
     },
     "faq": {

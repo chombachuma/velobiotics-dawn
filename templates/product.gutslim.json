@@ -12,16 +12,73 @@
     "hero": {
       "type": "vb-product-hero",
       "blocks": {
-        "b1": { "type": "benefit", "settings": { "icon": "🔥", "text": "Natural GLP-1 boost" } },
-        "b2": { "type": "benefit", "settings": { "icon": "🍽️", "text": "Appetite control" } },
-        "b3": { "type": "benefit", "settings": { "icon": "⚖️", "text": "Healthy weight management" } },
-        "b4": { "type": "benefit", "settings": { "icon": "⚡", "text": "1000× more delivery" } },
-        "t1": { "type": "testi", "settings": { "quote": "Dropped 6kg in 8 weeks", "author": "Lerato S." } },
-        "t2": { "type": "testi", "settings": { "quote": "Cravings just… stopped", "author": "Brenda P." } },
-        "t3": { "type": "testi", "settings": { "quote": "Bloat-free, finally", "author": "Jaco V." } },
-        "t4": { "type": "testi", "settings": { "quote": "Like Ozempic — without the side effects", "author": "Naledi M." } }
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🔥",
+            "text": "Natural GLP-1 boost"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🍽️",
+            "text": "Appetite control"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "⚖️",
+            "text": "Healthy weight management"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "⚡",
+            "text": "1000× more delivery"
+          }
+        },
+        "t1": {
+          "type": "testi",
+          "settings": {
+            "quote": "Dropped 6kg in 8 weeks",
+            "author": "Lerato S."
+          }
+        },
+        "t2": {
+          "type": "testi",
+          "settings": {
+            "quote": "Cravings just… stopped",
+            "author": "Brenda P."
+          }
+        },
+        "t3": {
+          "type": "testi",
+          "settings": {
+            "quote": "Bloat-free, finally",
+            "author": "Jaco V."
+          }
+        },
+        "t4": {
+          "type": "testi",
+          "settings": {
+            "quote": "Like Ozempic — without the side effects",
+            "author": "Naledi M."
+          }
+        }
       },
-      "block_order": ["b1","b2","b3","b4","t1","t2","t3","t4"],
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
       "settings": {
         "brand_primary": "#FFA500",
         "brand_dark": "#b25800",
@@ -32,7 +89,6 @@
         "hook": "Reset your gut. Manage your appetite. GutSlim™ blends a natural GLP-1 booster with clinically researched probiotic strains for healthy, sustainable weight management.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
         "show_subscription": true,
-        "show_qty_discounts": true,
         "show_buynow": true,
         "show_testi_marquee": true
       }
@@ -40,13 +96,59 @@
     "reviews-carousel": {
       "type": "vb-product-reviews-carousel",
       "blocks": {
-        "r1": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Lerato+S&background=FFA500&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "GutSlim changed my relationship with food. Cravings down, energy up.", "author": "Lerato S.", "meta": "Verified buyer · Sandton" } },
-        "r2": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Brenda+P&background=ffc266&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "Eight weeks in, my jeans fit again. No nausea, no crashes.", "author": "Brenda P.", "meta": "Verified buyer · 2 months ago" } },
-        "r3": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Jaco+V&background=b25800&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "Goodbye bloat. My gut feels lighter every morning.", "author": "Jaco V.", "meta": "Verified buyer · 1 month ago" } },
-        "r4": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Naledi+M&background=FFA500&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "Tried Ozempic. Quit it. GutSlim does the job without the headaches.", "author": "Naledi M.", "meta": "Verified buyer · 3 weeks ago" } },
-        "r5": { "type": "review", "settings": { "avatar_url": "https://ui-avatars.com/api/?name=Sarah+T&background=ffc266&color=ffffff&size=120&bold=true&font-size=0.42", "quote": "Real science behind weight loss. Daily ritual now.", "author": "Sarah T.", "meta": "Verified buyer · Cape Town" } }
+        "r1": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Lerato+S&background=FFA500&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Lerato S.",
+            "meta": "Verified buyer · Sandton",
+            "quote": "GutSlim changed my relationship with food. Cravings down, energy up."
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Brenda+P&background=ffc266&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Brenda P.",
+            "meta": "Verified buyer · 2 months ago",
+            "quote": "Eight weeks in, my jeans fit again. No nausea, no crashes."
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Jaco+V&background=b25800&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Jaco V.",
+            "meta": "Verified buyer · 1 month ago",
+            "quote": "Goodbye bloat. My gut feels lighter every morning."
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Naledi+M&background=FFA500&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Naledi M.",
+            "meta": "Verified buyer · 3 weeks ago",
+            "quote": "Tried Ozempic. Quit it. GutSlim does the job without the headaches."
+          }
+        },
+        "r5": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Sarah+T&background=ffc266&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Sarah T.",
+            "meta": "Verified buyer · Cape Town",
+            "quote": "Real science behind weight loss. Daily ritual now."
+          }
+        }
       },
-      "block_order": ["r1","r2","r3","r4","r5"],
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
       "settings": {
         "brand_primary": "#FFA500",
         "brand_dark": "#b25800",
@@ -58,12 +160,41 @@
     "problem": {
       "type": "vb-product-story",
       "blocks": {
-        "p1": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Endless cravings</strong> that hijack your diet." } },
-        "p2": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Bloated, sluggish gut</strong> that makes you feel heavy." } },
-        "p3": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Crash diets</strong> that rebound within months." } },
-        "p4": { "type": "point", "settings": { "icon": "✕", "text": "<strong>Expensive injectables</strong> with brutal side effects." } }
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Endless cravings</strong> that hijack your diet."
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Bloated, sluggish gut</strong> that makes you feel heavy."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Crash diets</strong> that rebound within months."
+          }
+        },
+        "p4": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Expensive injectables</strong> with brutal side effects."
+          }
+        }
       },
-      "block_order": ["p1","p2","p3","p4"],
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
       "settings": {
         "reverse": false,
         "brand_primary": "#FFA500",
@@ -80,12 +211,41 @@
     "solution": {
       "type": "vb-product-story",
       "blocks": {
-        "s1": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Natural GLP-1 booster</strong> — appetite control without injectables." } },
-        "s2": { "type": "point", "settings": { "icon": "✓", "text": "<strong>16 probiotic strains</strong> for gut, metabolism, and weight." } },
-        "s3": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more probiotics survive." } },
-        "s4": { "type": "point", "settings": { "icon": "✓", "text": "<strong>Once-daily</strong>. Doctor-formulated. Lab-tested every batch." } }
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Natural GLP-1 booster</strong> — appetite control without injectables."
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>16 probiotic strains</strong> for gut, metabolism, and weight."
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more probiotics survive."
+          }
+        },
+        "s4": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Once-daily</strong>. Doctor-formulated. Lab-tested every batch."
+          }
+        }
       },
-      "block_order": ["s1","s2","s3","s4"],
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
       "settings": {
         "reverse": true,
         "brand_primary": "#FFA500",
@@ -102,13 +262,59 @@
     "related": {
       "type": "vb-product-related",
       "blocks": {
-        "r1": { "type": "product", "settings": { "product_handle": "gutslim-probiotics-tummy-toner", "brand": "GutSlim™", "rating": "4.7", "reviews": "180+" } },
-        "r2": { "type": "product", "settings": { "product_handle": "gutslim-probiotics-fat-burner", "brand": "GutSlim™", "rating": "4.8", "reviews": "210+" } },
-        "r3": { "type": "product", "settings": { "product_handle": "gutslim-probiotics-supergreens", "brand": "GutSlim™", "rating": "4.6", "reviews": "150+" } },
-        "r4": { "type": "product", "settings": { "product_handle": "gutslim-probiotics-diet-shake", "brand": "GutSlim™", "rating": "4.7", "reviews": "140+" } },
-        "r5": { "type": "product", "settings": { "product_handle": "21-day-gutslim-complete-pack", "brand": "GutSlim™", "rating": "4.9", "reviews": "320+" } }
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-tummy-toner",
+            "brand": "GutSlim™",
+            "rating": "4.7",
+            "reviews": "180+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-fat-burner",
+            "brand": "GutSlim™",
+            "rating": "4.8",
+            "reviews": "210+"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-supergreens",
+            "brand": "GutSlim™",
+            "rating": "4.6",
+            "reviews": "150+"
+          }
+        },
+        "r4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-diet-shake",
+            "brand": "GutSlim™",
+            "rating": "4.7",
+            "reviews": "140+"
+          }
+        },
+        "r5": {
+          "type": "product",
+          "settings": {
+            "product_handle": "21-day-gutslim-complete-pack",
+            "brand": "GutSlim™",
+            "rating": "4.9",
+            "reviews": "320+"
+          }
+        }
       },
-      "block_order": ["r1","r2","r3","r4","r5"],
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
       "settings": {
         "brand_primary": "#FFA500",
         "brand_dark": "#b25800",
@@ -122,14 +328,63 @@
     "benefits": {
       "type": "vb-product-benefits",
       "blocks": {
-        "b1": { "type": "feat", "settings": { "icon": "🔥", "name": "Natural GLP-1 Boost", "desc": "Tames cravings the way nature intended — no jabs, no side effects." } },
-        "b2": { "type": "feat", "settings": { "icon": "⚖️", "name": "Sustainable Weight Loss", "desc": "Lose it. Keep it off. Real, gradual fat loss without crashes." } },
-        "b3": { "type": "feat", "settings": { "icon": "💨", "name": "Beat the Bloat", "desc": "Balances your gut for a lighter, calmer abdomen." } },
-        "b4": { "type": "feat", "settings": { "icon": "⚡", "name": "Steady Energy", "desc": "No more sugar-crash rollercoasters. Just sustained vitality." } },
-        "b5": { "type": "feat", "settings": { "icon": "🩺", "name": "Doctor-Formulated", "desc": "Built by medical doctors using clinically-studied strains." } },
-        "b6": { "type": "feat", "settings": { "icon": "🌿", "name": "100% Natural", "desc": "Vegan, halaal-friendly, no fillers, no artificial nasties." } }
+        "b1": {
+          "type": "feat",
+          "settings": {
+            "icon": "🔥",
+            "name": "Natural GLP-1 Boost",
+            "desc": "Tames cravings the way nature intended — no jabs, no side effects."
+          }
+        },
+        "b2": {
+          "type": "feat",
+          "settings": {
+            "icon": "⚖️",
+            "name": "Sustainable Weight Loss",
+            "desc": "Lose it. Keep it off. Real, gradual fat loss without crashes."
+          }
+        },
+        "b3": {
+          "type": "feat",
+          "settings": {
+            "icon": "💨",
+            "name": "Beat the Bloat",
+            "desc": "Balances your gut for a lighter, calmer abdomen."
+          }
+        },
+        "b4": {
+          "type": "feat",
+          "settings": {
+            "icon": "⚡",
+            "name": "Steady Energy",
+            "desc": "No more sugar-crash rollercoasters. Just sustained vitality."
+          }
+        },
+        "b5": {
+          "type": "feat",
+          "settings": {
+            "icon": "🩺",
+            "name": "Doctor-Formulated",
+            "desc": "Built by medical doctors using clinically-studied strains."
+          }
+        },
+        "b6": {
+          "type": "feat",
+          "settings": {
+            "icon": "🌿",
+            "name": "100% Natural",
+            "desc": "Vegan, halaal-friendly, no fillers, no artificial nasties."
+          }
+        }
       },
-      "block_order": ["b1","b2","b3","b4","b5","b6"],
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
       "settings": {
         "brand_primary": "#FFA500",
         "brand_tint": "#fff8eb",
@@ -142,12 +397,45 @@
     "how": {
       "type": "vb-product-how",
       "blocks": {
-        "h1": { "type": "step", "settings": { "icon": "💊", "name": "Take One Capsule Daily", "desc": "With water, before your largest meal." } },
-        "h2": { "type": "step", "settings": { "icon": "🛡️", "name": "MEP Armour Survives", "desc": "Velobiotics™ shield protects every culture through stomach acid." } },
-        "h3": { "type": "step", "settings": { "icon": "🎯", "name": "Delivered to Your Gut", "desc": "GLP-1 booster + 1000× more probiotics reach your gut alive." } },
-        "h4": { "type": "step", "settings": { "icon": "⚖️", "name": "Cravings Down, Weight Down", "desc": "Eat less, feel fuller, lose weight steadily." } }
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "💊",
+            "name": "Take One Capsule Daily",
+            "desc": "With water, before your largest meal."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "🛡️",
+            "name": "MEP Armour Survives",
+            "desc": "Velobiotics™ shield protects every culture through stomach acid."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "🎯",
+            "name": "Delivered to Your Gut",
+            "desc": "GLP-1 booster + 1000× more probiotics reach your gut alive."
+          }
+        },
+        "h4": {
+          "type": "step",
+          "settings": {
+            "icon": "⚖️",
+            "name": "Cravings Down, Weight Down",
+            "desc": "Eat less, feel fuller, lose weight steadily."
+          }
+        }
       },
-      "block_order": ["h1","h2","h3","h4"],
+      "block_order": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ],
       "settings": {
         "brand_primary": "#FFA500",
         "brand_tint": "#fff8eb",
@@ -160,18 +448,73 @@
     "ingredients": {
       "type": "vb-product-ingredients",
       "blocks": {
-        "i1": { "type": "ingredient", "settings": { "icon": "🔥", "name": "Natural GLP-1 Booster", "amount": "Patented", "desc": "Plant-derived activator of your body's own GLP-1 pathway — appetite control without injectables." } },
-        "i2": { "type": "ingredient", "settings": { "icon": "🦠", "name": "16-Strain Probiotic Blend", "amount": "10 Billion CFU", "desc": "Strains chosen for gut health, metabolism, and weight regulation." } },
-        "i3": { "type": "ingredient", "settings": { "icon": "🛡️", "name": "Velobiotics™ MEP Coating", "amount": "Patented", "desc": "Supercritical CO₂ microencapsulation — 1000× more survive." } },
-        "i4": { "type": "ingredient", "settings": { "icon": "🌾", "name": "Prebiotic Fibre", "amount": "Inulin", "desc": "Feeds your good bacteria so they thrive long-term." } },
-        "i5": { "type": "ingredient", "settings": { "icon": "✓", "name": "Clean Capsule Shell", "amount": "Vegan HPMC", "desc": "No gelatin, no fillers, no allergens. Halaal-friendly." } },
-        "i6": { "type": "ingredient", "settings": { "icon": "🚫", "name": "Free From", "amount": "Always", "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO." } }
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🔥",
+            "name": "Natural GLP-1 Booster",
+            "amount": "Patented",
+            "desc": "Plant-derived activator of your body's own GLP-1 pathway — appetite control without injectables."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🦠",
+            "name": "16-Strain Probiotic Blend",
+            "amount": "10 Billion CFU",
+            "desc": "Strains chosen for gut health, metabolism, and weight regulation."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🛡️",
+            "name": "Velobiotics™ MEP Coating",
+            "amount": "Patented",
+            "desc": "Supercritical CO₂ microencapsulation — 1000× more survive."
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🌾",
+            "name": "Prebiotic Fibre",
+            "amount": "Inulin",
+            "desc": "Feeds your good bacteria so they thrive long-term."
+          }
+        },
+        "i5": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "✓",
+            "name": "Clean Capsule Shell",
+            "amount": "Vegan HPMC",
+            "desc": "No gelatin, no fillers, no allergens. Halaal-friendly."
+          }
+        },
+        "i6": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🚫",
+            "name": "Free From",
+            "amount": "Always",
+            "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO."
+          }
+        }
       },
-      "block_order": ["i1","i2","i3","i4","i5","i6"],
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
       "settings": {
         "brand_primary": "#FFA500",
-        "brand_tint": "#fff8eb",
         "brand_dark": "#b25800",
+        "brand_tint": "#fff8eb",
         "brand_light": "#ffc266",
         "eyebrow": "What's Inside",
         "title": "Every ingredient earns its place",
@@ -184,13 +527,49 @@
     "confidence": {
       "type": "vb-product-confidence",
       "blocks": {
-        "c1": { "type": "stat", "settings": { "label": "Felt reduced cravings", "percent": 93 } },
-        "c2": { "type": "stat", "settings": { "label": "Lost measurable weight", "percent": 87 } },
-        "c3": { "type": "stat", "settings": { "label": "Less bloating", "percent": 89 } },
-        "c4": { "type": "stat", "settings": { "label": "More daily energy", "percent": 91 } },
-        "c5": { "type": "stat", "settings": { "label": "Would recommend to a friend", "percent": 96 } }
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Felt reduced cravings",
+            "percent": 93
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "Lost measurable weight",
+            "percent": 87
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Less bloating",
+            "percent": 89
+          }
+        },
+        "c4": {
+          "type": "stat",
+          "settings": {
+            "label": "More daily energy",
+            "percent": 91
+          }
+        },
+        "c5": {
+          "type": "stat",
+          "settings": {
+            "label": "Would recommend to a friend",
+            "percent": 96
+          }
+        }
       },
-      "block_order": ["c1","c2","c3","c4","c5"],
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
       "settings": {
         "brand_primary": "#FFA500",
         "brand_dark": "#b25800",
@@ -205,12 +584,49 @@
     "fbt": {
       "type": "vb-product-related",
       "blocks": {
-        "f1": { "type": "product", "settings": { "product_handle": "her-biotics-original-capsules-60s", "brand": "Her-Biotics™", "rating": "4.7", "reviews": "260+" } },
-        "f2": { "type": "product", "settings": { "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s", "brand": "His-Biotics™", "rating": "4.7", "reviews": "210+" } },
-        "f3": { "type": "product", "settings": { "product_handle": "velo16-probiotics-magnesium-glycinate", "brand": "Velo16™", "rating": "4.6", "reviews": "190+" } },
-        "f4": { "type": "product", "settings": { "product_handle": "femina-probiotic-capsules-with-cranberry-for-women", "brand": "Femina™", "rating": "4.8", "reviews": "1300+" } }
+        "f1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "her-biotics-original-capsules-60s",
+            "brand": "Her-Biotics™",
+            "rating": "4.7",
+            "reviews": "260+"
+          }
+        },
+        "f2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
+            "brand": "His-Biotics™",
+            "rating": "4.7",
+            "reviews": "210+"
+          }
+        },
+        "f3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-magnesium-glycinate",
+            "brand": "Velo16™",
+            "rating": "4.6",
+            "reviews": "190+"
+          }
+        },
+        "f4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
+            "brand": "Femina™",
+            "rating": "4.8",
+            "reviews": "1300+"
+          }
+        }
       },
-      "block_order": ["f1","f2","f3","f4"],
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
       "settings": {
         "brand_primary": "#FFA500",
         "brand_dark": "#b25800",
@@ -224,12 +640,45 @@
     "doctors": {
       "type": "vb-doctors",
       "blocks": {
-        "d1": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966", "name": "Clinically Proven Strains", "desc": "16 strains studied in peer-reviewed clinical trials." } },
-        "d2": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966", "name": "Doctor Formulated", "desc": "Developed by medical doctors and microbiologists." } },
-        "d3": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073", "name": "Patented MEP Technology", "desc": "Microencapsulation with Supercritical CO₂." } },
-        "d4": { "type": "card", "settings": { "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199", "name": "Clean Label", "desc": "Vegan, halaal-friendly, no fillers." } }
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
+            "name": "Clinically Proven Strains",
+            "desc": "16 strains studied in peer-reviewed clinical trials."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
+            "name": "Doctor Formulated",
+            "desc": "Developed by medical doctors and microbiologists."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
+            "name": "Patented MEP Technology",
+            "desc": "Microencapsulation with Supercritical CO₂."
+          }
+        },
+        "d4": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
+            "name": "Clean Label",
+            "desc": "Vegan, halaal-friendly, no fillers."
+          }
+        }
       },
-      "block_order": ["d1","d2","d3","d4"],
+      "block_order": [
+        "d1",
+        "d2",
+        "d3",
+        "d4"
+      ],
       "settings": {
         "eyebrow": "Trusted by Doctors. Proven by Science.",
         "title_pre": "Quality you can",
@@ -240,13 +689,59 @@
     "outperform": {
       "type": "vb-product-outperform",
       "blocks": {
-        "o1": { "type": "row", "settings": { "feature": "Max Probiotic Strains", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
-        "o2": { "type": "row", "settings": { "feature": "Advanced Absorption", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
-        "o3": { "type": "row", "settings": { "feature": "Natural GLP-1 Boost", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
-        "o4": { "type": "row", "settings": { "feature": "Daily Simplicity", "brand_state": "yes", "b_state": "no", "c_state": "no" } },
-        "o5": { "type": "row", "settings": { "feature": "Long-Term Benefits", "brand_state": "yes", "b_state": "no", "c_state": "no" } }
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "Max Probiotic Strains",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "Advanced Absorption",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "Natural GLP-1 Boost",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "Daily Simplicity",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o5": {
+          "type": "row",
+          "settings": {
+            "feature": "Long-Term Benefits",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        }
       },
-      "block_order": ["o1","o2","o3","o4","o5"],
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ],
       "settings": {
         "brand_primary": "#FFA500",
         "brand_dark": "#b25800",
@@ -264,26 +759,68 @@
     "judgeme": {
       "type": "vb-judgeme",
       "settings": {
+        "scope": "product",
+        "show_stats": true,
         "eyebrow": "Real Reviews",
         "title_pre": "What Customers",
         "title_highlight": "Are Saying",
-        "sub": "Verified reviews from real customers. The Judge.me widget will populate this section on go-live.",
-        "rating": "4.8",
-        "reviews_count": "1,200+",
-        "customers_count": "80K+"
+        "sub": "Verified reviews collected independently by Judge.me from customers who bought this product."
       }
     },
     "faq": {
       "type": "vb-faq",
       "blocks": {
-        "q1": { "type": "q", "settings": { "question": "How long until I see weight loss?", "answer": "<p>Most customers report less hunger within 7 days, visible weight loss within 4–6 weeks, and sustainable results at 12 weeks of daily use.</p>" } },
-        "q2": { "type": "q", "settings": { "question": "Is GutSlim™ like Ozempic or Wegovy?", "answer": "<p>GutSlim™ supports your body's natural GLP-1 pathway — without injections or pharmaceutical side effects. It's a daily oral supplement, not a prescription drug.</p>" } },
-        "q3": { "type": "q", "settings": { "question": "Is GutSlim™ safe daily?", "answer": "<p>Absolutely. Manufactured under GMP conditions in SAHPRA-aware facilities. Daily use is safe and recommended for sustained results.</p>" } },
-        "q4": { "type": "q", "settings": { "question": "Can I take this if I'm diabetic?", "answer": "<p>GutSlim™ supports healthy blood sugar, but always check with your healthcare practitioner before starting any new supplement when managing diabetes.</p>" } },
-        "q5": { "type": "q", "settings": { "question": "Do you ship internationally?", "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>" } },
-        "q6": { "type": "q", "settings": { "question": "What if GutSlim™ doesn't work for me?", "answer": "<p>If you don't see results in 30 days, we'll refund you in full — no questions asked.</p>" } }
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "How long until I see weight loss?",
+            "answer": "<p>Most customers report less hunger within 7 days, visible weight loss within 4–6 weeks, and sustainable results at 12 weeks of daily use.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "Is GutSlim™ like Ozempic or Wegovy?",
+            "answer": "<p>GutSlim™ supports your body's natural GLP-1 pathway — without injections or pharmaceutical side effects. It's a daily oral supplement, not a prescription drug.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "Is GutSlim™ safe daily?",
+            "answer": "<p>Absolutely. Manufactured under GMP conditions in SAHPRA-aware facilities. Daily use is safe and recommended for sustained results.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Can I take this if I'm diabetic?",
+            "answer": "<p>GutSlim™ supports healthy blood sugar, but always check with your healthcare practitioner before starting any new supplement when managing diabetes.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Do you ship internationally?",
+            "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "What if GutSlim™ doesn't work for me?",
+            "answer": "<p>If you don't see results in 30 days, we'll refund you in full — no questions asked.</p>"
+          }
+        }
       },
-      "block_order": ["q1","q2","q3","q4","q5","q6"],
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
       "settings": {
         "eyebrow": "FAQ",
         "title_pre": "Questions Before",
@@ -293,12 +830,41 @@
     "final": {
       "type": "vb-product-final",
       "blocks": {
-        "g1": { "type": "g", "settings": { "icon": "✅", "text": "30-day money-back" } },
-        "g2": { "type": "g", "settings": { "icon": "🚚", "text": "Ships worldwide" } },
-        "g3": { "type": "g", "settings": { "icon": "🔬", "text": "Lab-tested every batch" } },
-        "g4": { "type": "g", "settings": { "icon": "🌿", "text": "100% natural" } }
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "✅",
+            "text": "30-day money-back"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "🚚",
+            "text": "Ships worldwide"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "🔬",
+            "text": "Lab-tested every batch"
+          }
+        },
+        "g4": {
+          "type": "g",
+          "settings": {
+            "icon": "🌿",
+            "text": "100% natural"
+          }
+        }
       },
-      "block_order": ["g1","g2","g3","g4"],
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
       "settings": {
         "brand_primary": "#FFA500",
         "brand_dark": "#b25800",
@@ -312,5 +878,21 @@
       }
     }
   },
-  "order": ["hero","reviews-carousel","problem","solution","related","benefits","how","ingredients","confidence","fbt","doctors","outperform","judgeme","faq","final"]
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "judgeme",
+    "faq",
+    "final"
+  ]
 }

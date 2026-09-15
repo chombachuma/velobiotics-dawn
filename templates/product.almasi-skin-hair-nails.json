@@ -89,7 +89,6 @@
         "hook": "The beauty trio in one capsule. Almasi™ Skin/Hair/Nails combines probiotic strains with biotin, silica, zinc, and vitamin C — for visibly stronger hair, glowing skin, and resilient nails.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
         "show_subscription": true,
-        "show_qty_discounts": true,
         "show_buynow": true,
         "show_testi_marquee": true
       }
@@ -101,45 +100,45 @@
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Naseema+P&background=1a1a1a&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Nails finally strong. No more breaks, no more splits.",
             "author": "Naseema P.",
-            "meta": "Verified buyer · Pretoria"
+            "meta": "Verified buyer · Pretoria",
+            "quote": "Nails finally strong. No more breaks, no more splits."
           }
         },
         "r2": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Bianca+M&background=7a5252&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Hair growth I'd given up on at 45. This is real.",
             "author": "Bianca M.",
-            "meta": "Verified buyer · 3 months ago"
+            "meta": "Verified buyer · 3 months ago",
+            "quote": "Hair growth I'd given up on at 45. This is real."
           }
         },
         "r3": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Lerato+K&background=000000&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Skin glowing in 6 weeks. Strangers ask what I'm using.",
             "author": "Lerato K.",
-            "meta": "Verified buyer · 2 months ago"
+            "meta": "Verified buyer · 2 months ago",
+            "quote": "Skin glowing in 6 weeks. Strangers ask what I'm using."
           }
         },
         "r4": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Sarah+V&background=1a1a1a&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Best beauty supplement I've used. Vegan-friendly, all-in-one.",
             "author": "Sarah V.",
-            "meta": "Verified buyer · 1 month ago"
+            "meta": "Verified buyer · 1 month ago",
+            "quote": "Best beauty supplement I've used. Vegan-friendly, all-in-one."
           }
         },
         "r5": {
           "type": "review",
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Aisha+B&background=7a5252&color=ffffff&size=120&bold=true&font-size=0.42",
-            "quote": "Three months in. I'm 47 and feel 35.",
             "author": "Aisha B.",
-            "meta": "Verified buyer · Cape Town"
+            "meta": "Verified buyer · Cape Town",
+            "quote": "Three months in. I'm 47 and feel 35."
           }
         }
       },
@@ -484,8 +483,8 @@
       ],
       "settings": {
         "brand_primary": "#1a1a1a",
-        "brand_tint": "#fdf5f3",
         "brand_dark": "#000000",
+        "brand_tint": "#fdf5f3",
         "brand_light": "#7a5252",
         "eyebrow": "What's Inside",
         "title": "Every ingredient earns its place",
@@ -730,13 +729,12 @@
     "judgeme": {
       "type": "vb-judgeme",
       "settings": {
+        "scope": "product",
+        "show_stats": true,
         "eyebrow": "Real Reviews",
         "title_pre": "What Customers",
         "title_highlight": "Are Saying",
-        "sub": "Verified reviews from real customers. The Judge.me widget will populate this section on go-live.",
-        "rating": "4.9",
-        "reviews_count": "180+",
-        "customers_count": "20K+"
+        "sub": "Verified reviews collected independently by Judge.me from customers who bought this product."
       }
     },
     "faq": {

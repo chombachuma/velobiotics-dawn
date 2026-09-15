@@ -385,54 +385,20 @@
       }
     },
     "how": {
-      "type": "vb-product-how",
-      "blocks": {
-        "h1": {
-          "type": "step",
-          "settings": {
-            "icon": "💊",
-            "name": "Take Two Capsules Daily",
-            "desc": "With water, after a meal. That's it."
-          }
-        },
-        "h2": {
-          "type": "step",
-          "settings": {
-            "icon": "🛡️",
-            "name": "MEP Armour Survives",
-            "desc": "Velobiotics™ shield protects every culture and nutrient."
-          }
-        },
-        "h3": {
-          "type": "step",
-          "settings": {
-            "icon": "🎯",
-            "name": "Delivered to Your Body",
-            "desc": "1000× more probiotics + full vitamin absorption."
-          }
-        },
-        "h4": {
-          "type": "step",
-          "settings": {
-            "icon": "✨",
-            "name": "Glow & Energy",
-            "desc": "Feel sharper, brighter, more in balance."
-          }
-        }
-      },
-      "block_order": [
-        "h1",
-        "h2",
-        "h3",
-        "h4"
-      ],
+      "type": "vb-product-ritual",
       "settings": {
         "brand_primary": "#f5908d",
+        "brand_dark": "#b85a58",
         "brand_tint": "#fff5f3",
-        "eyebrow": "How It Works",
-        "title_pre": "From Capsule to",
-        "title_highlight": "Glow",
-        "sub": "Four simple steps. One daily ritual. Total women's wellness."
+        "form": "capsule",
+        "dose": "2 capsules",
+        "when": "with water, preferably with a meal",
+        "course": "Every day, ongoing",
+        "timeofday": "morning",
+        "mix_volume": "250 ml water or milk",
+        "eyebrow": "How to use",
+        "title_pre": "Your daily ritual,",
+        "title_highlight": "made effortless."
       }
     },
     "ingredients": {
@@ -996,12 +962,10 @@
     "judgeme": {
       "type": "vb-judgeme",
       "settings": {
-        "scope": "product",
-        "show_stats": true,
         "eyebrow": "Real Reviews",
         "title_pre": "What Women",
         "title_highlight": "Are Saying",
-        "sub": "Verified reviews collected independently by Judge.me from customers who bought this product."
+        "sub": "Verified reviews from real women. The Judge.me widget will populate this section on go-live."
       }
     },
     "faq": {

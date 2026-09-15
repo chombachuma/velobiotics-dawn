@@ -8,913 +8,877 @@
  * ------------------------------------------------------------
  */
 {
- "sections": {
-  "hero": {
-   "type": "vb-product-hero",
-   "blocks": {
-    "b1": {
-     "type": "benefit",
-     "settings": {
-      "icon": "\ud83c\udf38",
-      "text": "Menopause symptom relief"
-     }
+  "sections": {
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🌸",
+            "text": "Menopause symptom relief"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🔥",
+            "text": "Hot flash reduction"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🦠",
+            "text": "16 probiotic strains"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "⚡",
+            "text": "1000× more delivery"
+          }
+        },
+        "t1": {
+          "type": "testi",
+          "settings": {
+            "quote": "Hot flashes finally manageable",
+            "author": "Lerato P."
+          }
+        },
+        "t2": {
+          "type": "testi",
+          "settings": {
+            "quote": "Better sleep at last",
+            "author": "Christine V."
+          }
+        },
+        "t3": {
+          "type": "testi",
+          "settings": {
+            "quote": "Mood swings eased",
+            "author": "Bridget M."
+          }
+        },
+        "t4": {
+          "type": "testi",
+          "settings": {
+            "quote": "Energy I forgot I had",
+            "author": "Karin S."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "brand_primary": "#f5908d",
+        "brand_dark": "#b85a58",
+        "brand_tint": "#fff5f3",
+        "brand_label": "Her-Biotics™ Menopause",
+        "rating": "4.8",
+        "review_count": "180+",
+        "hook": "Menopause support, naturally. Her-Biotics™ Menopausal Support combines 16 probiotic strains with phytoestrogens, black cohosh, and adaptogens — clinical relief for hot flashes, mood, and sleep.",
+        "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
     },
-    "b2": {
-     "type": "benefit",
-     "settings": {
-      "icon": "\ud83d\udd25",
-      "text": "Hot flash reduction"
-     }
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Lerato+P&background=f5908d&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Lerato P.",
+            "meta": "Verified buyer · Pretoria",
+            "quote": "Hot flashes finally manageable. Bearable, even."
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Christine+V&background=ffc0bd&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Christine V.",
+            "meta": "Verified buyer · Johannesburg",
+            "quote": "Better sleep at last. Energy back. Mood steadier."
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Bridget+M&background=b85a58&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Bridget M.",
+            "meta": "Verified buyer · Cape Town",
+            "quote": "Mood swings eased within 3 weeks. My family thanks me."
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Karin+S&background=f5908d&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Karin S.",
+            "meta": "Verified buyer · 2 months ago",
+            "quote": "Energy I forgot I had. This is the menopause answer I needed."
+          }
+        },
+        "r5": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Marlene+B&background=ffc0bd&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Marlene B.",
+            "meta": "Verified buyer · 3 months ago",
+            "quote": "No HRT, no pharmaceuticals — this clean blend works."
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "settings": {
+        "brand_primary": "#f5908d",
+        "brand_dark": "#b85a58",
+        "brand_tint": "#fff5f3",
+        "eyebrow": "★ Real Reviews",
+        "title": "Menopause support that works"
+      }
     },
-    "b3": {
-     "type": "benefit",
-     "settings": {
-      "icon": "\ud83e\udda0",
-      "text": "16 probiotic strains"
-     }
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Hot flashes</strong> that disrupt your day and night."
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Sleep loss</strong> from night sweats and racing thoughts."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Mood swings, anxiety</strong> that strain relationships."
+          }
+        },
+        "p4": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>HRT side-effects</strong> or hesitation about hormone therapy."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#f5908d",
+        "brand_tint": "#fff5f3",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_162340_517c515f-8800-4906-8bed-94d5cba09604.png",
+        "tag_value": "75%",
+        "tag_label": "Of Women Suffer Menopause Symptoms",
+        "eyebrow": "The Problem",
+        "title_pre": "Menopause",
+        "title_highlight": "shouldn't run your life.",
+        "desc": "Hot flashes, sleepless nights, mood storms — menopause symptoms strip your quality of life. HRT isn't for everyone, and most generic supplements don't deliver. There's a smarter natural path."
+      }
     },
-    "b4": {
-     "type": "benefit",
-     "settings": {
-      "icon": "\u26a1",
-      "text": "1000\u00d7 more delivery"
-     }
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Phytoestrogens</strong> — soy isoflavones and red clover for hormonal balance."
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Black cohosh + ashwagandha</strong> — clinical hot flash and stress relief."
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>16-strain probiotic blend</strong> for gut and immune support."
+          }
+        },
+        "s4": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#f5908d",
+        "brand_tint": "#fff5f3",
+        "image_url": "",
+        "tag_value": "1000×",
+        "tag_label": "More Probiotics Delivered",
+        "eyebrow": "The Solution",
+        "title_pre": "Meet",
+        "title_highlight": "Her-Biotics™ Menopause.",
+        "desc": "Phytoestrogens + black cohosh + ashwagandha + 16 probiotic strains. Clinical relief for hot flashes, mood, and sleep — natural, hormone-free, and effective."
+      }
     },
-    "t1": {
-     "type": "testi",
-     "settings": {
-      "quote": "Hot flashes finally manageable",
-      "author": "Lerato P."
-     }
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "her-biotics-original-capsules-60s",
+            "brand": "Her-Biotics™",
+            "rating": "4.7",
+            "reviews": "950+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "her-biotics-probiotics-pms-pre-menstrual-support",
+            "brand": "Her-Biotics™",
+            "rating": "4.7",
+            "reviews": "150+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "her-biotics-probiotics-ageless-multivitamin-50",
+            "brand": "Her-Biotics™",
+            "rating": "4.8",
+            "reviews": "120+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
+          }
+        },
+        "r4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "her-biotics-probiotics-sport-multivitamin-capsules-60",
+            "brand": "Her-Biotics™",
+            "rating": "4.6",
+            "reviews": "100+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "settings": {
+        "brand_primary": "#f5908d",
+        "brand_dark": "#b85a58",
+        "brand_tint": "#fff5f3",
+        "tint": false,
+        "eyebrow": "Complete the Stack",
+        "title": "More from the Her-Biotics™ range",
+        "sub": "Customised support for every season of a woman's life."
+      }
     },
-    "t2": {
-     "type": "testi",
-     "settings": {
-      "quote": "Better sleep at last",
-      "author": "Christine V."
-     }
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "b1": {
+          "type": "feat",
+          "settings": {
+            "icon": "🔥",
+            "name": "Hot Flash Relief",
+            "desc": "Phytoestrogens reduce frequency and intensity."
+          }
+        },
+        "b2": {
+          "type": "feat",
+          "settings": {
+            "icon": "😴",
+            "name": "Better Sleep",
+            "desc": "Less night sweats, deeper sleep, restored rest."
+          }
+        },
+        "b3": {
+          "type": "feat",
+          "settings": {
+            "icon": "😊",
+            "name": "Mood Stability",
+            "desc": "Ashwagandha + B-complex steady your nerves."
+          }
+        },
+        "b4": {
+          "type": "feat",
+          "settings": {
+            "icon": "⚡",
+            "name": "Energy Return",
+            "desc": "Sustained vitality through perimenopause and beyond."
+          }
+        },
+        "b5": {
+          "type": "feat",
+          "settings": {
+            "icon": "🩺",
+            "name": "Doctor-Formulated",
+            "desc": "Built by women's-health specialists."
+          }
+        },
+        "b6": {
+          "type": "feat",
+          "settings": {
+            "icon": "🌿",
+            "name": "100% Natural",
+            "desc": "No hormones, no synthetics. Vegan, halaal-friendly."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "settings": {
+        "brand_primary": "#f5908d",
+        "brand_tint": "#fff5f3",
+        "eyebrow": "Key Benefits",
+        "title_pre": "Why",
+        "title_highlight": "Menopause",
+        "sub": "Six reasons women navigating menopause choose this Her-Biotics blend."
+      }
     },
-    "t3": {
-     "type": "testi",
-     "settings": {
-      "quote": "Mood swings eased",
-      "author": "Bridget M."
-     }
+    "how": {
+      "type": "vb-product-ritual",
+      "settings": {
+        "brand_primary": "#f5908d",
+        "brand_dark": "#b85a58",
+        "brand_tint": "#fff5f3",
+        "form": "capsule",
+        "dose": "2 capsules",
+        "when": "with water, preferably with a meal",
+        "course": "Every day, ongoing",
+        "timeofday": "morning",
+        "mix_volume": "250 ml water or milk",
+        "eyebrow": "How to use",
+        "title_pre": "Your daily ritual,",
+        "title_highlight": "made effortless."
+      }
     },
-    "t4": {
-     "type": "testi",
-     "settings": {
-      "quote": "Energy I forgot I had",
-      "author": "Karin S."
-     }
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🌸",
+            "name": "Soy Isoflavones",
+            "amount": "40mg",
+            "desc": "Plant-based phytoestrogens. Clinically proven for hot flashes."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🌿",
+            "name": "Black Cohosh + Red Clover",
+            "amount": "Standardised",
+            "desc": "Clinical herbal combination for menopause symptom relief."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "😌",
+            "name": "Ashwagandha KSM-66",
+            "amount": "300mg",
+            "desc": "Adaptogenic herb for mood, stress, and sleep."
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🦠",
+            "name": "16-Strain Probiotic Blend",
+            "amount": "1 Billion CFU",
+            "desc": "Strains for gut, immunity, and women's microbiome."
+          }
+        },
+        "i5": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🛡️",
+            "name": "Velobiotics™ MEP Coating",
+            "amount": "Patented",
+            "desc": "Supercritical CO₂ microencapsulation — 1000× more survive."
+          }
+        },
+        "i6": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🚫",
+            "name": "Free From",
+            "amount": "Always",
+            "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "brand_primary": "#f5908d",
+        "brand_dark": "#b85a58",
+        "brand_tint": "#fff5f3",
+        "brand_light": "#ffc0bd",
+        "eyebrow": "What's Inside",
+        "title": "Every ingredient earns its place",
+        "sub": "Six clean actives. No proprietary blends. Full transparency.",
+        "facts_image_url": "",
+        "facts_label": "Supplement facts",
+        "facts_col_a": "Ingredient",
+        "facts_col_b": "Per serving",
+        "facts_caption": "% Daily Value not established. Other Ingredients: HPMC, Magnesium Stearate.",
+        "facts_foot": "Lab-tested · Doctor-formulated · Full transparency"
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Less hot flashes",
+            "percent": 86
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "Better sleep quality",
+            "percent": 89
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Steadier mood",
+            "percent": 92
+          }
+        },
+        "c4": {
+          "type": "stat",
+          "settings": {
+            "label": "Restored daily energy",
+            "percent": 88
+          }
+        },
+        "c5": {
+          "type": "stat",
+          "settings": {
+            "label": "Would recommend to a friend",
+            "percent": 96
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "brand_primary": "#f5908d",
+        "brand_dark": "#b85a58",
+        "brand_tint": "#fff5f3",
+        "eyebrow": "Real results",
+        "title_pre": "Trusted for",
+        "title_highlight": "Menopause Relief",
+        "sub": "What women report after 6 weeks of daily Menopause use.",
+        "caveat": "Based on a survey of 180+ verified customers. Individual results may vary."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "f1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
+            "brand": "Femina™",
+            "rating": "4.8",
+            "reviews": "1300+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
+          }
+        },
+        "f2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-glp-1-booster",
+            "brand": "GutSlim™",
+            "rating": "4.8",
+            "reviews": "410+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
+          }
+        },
+        "f3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-magnesium-glycinate",
+            "brand": "Velo16™",
+            "rating": "4.6",
+            "reviews": "190+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
+          }
+        },
+        "f4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-ashwagandha-ksm-66-300mg",
+            "brand": "Velo16™",
+            "rating": "4.8",
+            "reviews": "170+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {
+        "brand_primary": "#f5908d",
+        "brand_dark": "#b85a58",
+        "brand_tint": "#fff5f3",
+        "tint": true,
+        "eyebrow": "Frequently Bought Together",
+        "title": "Pair with the rest of your wellness stack",
+        "sub": "Menopause stacks beautifully with these Velobiotics favourites."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
+            "icon_fallback": "✓",
+            "name": "Clinically Proven",
+            "desc": "Phytoestrogens + black cohosh — peer-reviewed for menopause."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
+            "icon_fallback": "✓",
+            "name": "Doctor Formulated",
+            "desc": "Built by women's-health specialists."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
+            "icon_fallback": "✓",
+            "name": "Patented MEP Technology",
+            "desc": "Microencapsulation with Supercritical CO₂."
+          }
+        },
+        "d4": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
+            "icon_fallback": "✓",
+            "name": "Clean Label",
+            "desc": "No hormones, no synthetics, no fillers."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3",
+        "d4"
+      ],
+      "settings": {
+        "eyebrow": "Trusted by Doctors. Proven by Science.",
+        "title_pre": "Quality you can",
+        "title_highlight": "trust.",
+        "sub": "Built on peer-reviewed actives, women's-health guidance, and SAHPRA-aware manufacturing."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "Max Probiotic Strains",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "Phytoestrogen Blend",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "Adaptogenic Support",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "No Hormone Side Effects",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o5": {
+          "type": "row",
+          "settings": {
+            "feature": "Daily Simplicity",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ],
+      "settings": {
+        "brand_primary": "#f5908d",
+        "brand_dark": "#b85a58",
+        "brand_tint": "#fff5f3",
+        "eyebrow": "",
+        "title": "Why Her-Biotics Menopause Outperforms",
+        "sub": "Phytoestrogens, adaptogens, 16 probiotic strains, and Velobiotics™ delivery — natural menopause relief without HRT.",
+        "col_features": "Features",
+        "col_brand": "Menopause",
+        "brand_logo_url": "",
+        "col_b": "Generic Multivit",
+        "col_c": "HRT",
+        "cta_text": "Add to Cart",
+        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Real Reviews",
+        "title_pre": "What Women",
+        "title_highlight": "Are Saying",
+        "sub": "Verified reviews from real women. The Judge.me widget will populate this section on go-live."
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "How long until I feel relief?",
+            "answer": "<p>Most women report easier sleep and less mood swing within 2-3 weeks. Hot flash relief typically builds over 4-6 weeks of consistent daily use.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "Is this safe with HRT?",
+            "answer": "<p>Many women use both, but always check with your healthcare practitioner before stacking — phytoestrogens can interact with hormone therapy.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "Is Menopause safe daily?",
+            "answer": "<p>Absolutely. Manufactured under GMP conditions in SAHPRA-aware facilities. Daily use is safe and recommended.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Can I take this in perimenopause?",
+            "answer": "<p>Yes — perimenopause is the ideal time to start as symptoms first appear. The blend supports the transition.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Do you ship internationally?",
+            "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "What if it doesn't work for me?",
+            "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full — no questions asked.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "title_pre": "Questions Before",
+        "title_highlight": "You Start"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "✅",
+            "text": "30-day money-back"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "🚚",
+            "text": "Ships worldwide"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "🔬",
+            "text": "Lab-tested every batch"
+          }
+        },
+        "g4": {
+          "type": "g",
+          "settings": {
+            "icon": "🌿",
+            "text": "100% natural"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "settings": {
+        "brand_primary": "#f5908d",
+        "brand_dark": "#b85a58",
+        "brand_light": "#ffc0bd",
+        "badge": "30-day money-back guarantee",
+        "title_pre": "Navigate Menopause",
+        "title_highlight": "Risk-Free for 30 Days",
+        "sub": "Join thousands of women navigating menopause naturally. If you don't feel the difference, we'll refund every cent.",
+        "cta_text": "Add to Cart",
+        "cta_link": "#vbpForm"
+      }
     }
-   },
-   "block_order": [
-    "b1",
-    "b2",
-    "b3",
-    "b4",
-    "t1",
-    "t2",
-    "t3",
-    "t4"
-   ],
-   "settings": {
-    "brand_primary": "#f5908d",
-    "brand_dark": "#b85a58",
-    "brand_tint": "#fff5f3",
-    "brand_label": "Her-Biotics\u2122 Menopause",
-    "rating": "4.8",
-    "review_count": "180+",
-    "hook": "Menopause support, naturally. Her-Biotics\u2122 Menopausal Support combines 16 probiotic strains with phytoestrogens, black cohosh, and adaptogens \u2014 clinical relief for hot flashes, mood, and sleep.",
-    "ship_note": "Ships worldwide \u00b7 Free shipping over the free-shipping threshold \u00b7 30-day money-back guarantee",
-    "show_buynow": true,
-    "show_testi_marquee": true
-   }
   },
-  "reviews-carousel": {
-   "type": "vb-product-reviews-carousel",
-   "blocks": {
-    "r1": {
-     "type": "review",
-     "settings": {
-      "avatar_url": "https://ui-avatars.com/api/?name=Lerato+P&background=f5908d&color=ffffff&size=120&bold=true&font-size=0.42",
-      "author": "Lerato P.",
-      "meta": "Verified buyer \u00b7 Pretoria",
-      "quote": "Hot flashes finally manageable. Bearable, even."
-     }
-    },
-    "r2": {
-     "type": "review",
-     "settings": {
-      "avatar_url": "https://ui-avatars.com/api/?name=Christine+V&background=ffc0bd&color=ffffff&size=120&bold=true&font-size=0.42",
-      "author": "Christine V.",
-      "meta": "Verified buyer \u00b7 Johannesburg",
-      "quote": "Better sleep at last. Energy back. Mood steadier."
-     }
-    },
-    "r3": {
-     "type": "review",
-     "settings": {
-      "avatar_url": "https://ui-avatars.com/api/?name=Bridget+M&background=b85a58&color=ffffff&size=120&bold=true&font-size=0.42",
-      "author": "Bridget M.",
-      "meta": "Verified buyer \u00b7 Cape Town",
-      "quote": "Mood swings eased within 3 weeks. My family thanks me."
-     }
-    },
-    "r4": {
-     "type": "review",
-     "settings": {
-      "avatar_url": "https://ui-avatars.com/api/?name=Karin+S&background=f5908d&color=ffffff&size=120&bold=true&font-size=0.42",
-      "author": "Karin S.",
-      "meta": "Verified buyer \u00b7 2 months ago",
-      "quote": "Energy I forgot I had. This is the menopause answer I needed."
-     }
-    },
-    "r5": {
-     "type": "review",
-     "settings": {
-      "avatar_url": "https://ui-avatars.com/api/?name=Marlene+B&background=ffc0bd&color=ffffff&size=120&bold=true&font-size=0.42",
-      "author": "Marlene B.",
-      "meta": "Verified buyer \u00b7 3 months ago",
-      "quote": "No HRT, no pharmaceuticals \u2014 this clean blend works."
-     }
-    }
-   },
-   "block_order": [
-    "r1",
-    "r2",
-    "r3",
-    "r4",
-    "r5"
-   ],
-   "settings": {
-    "brand_primary": "#f5908d",
-    "brand_dark": "#b85a58",
-    "brand_tint": "#fff5f3",
-    "eyebrow": "\u2605 Real Reviews",
-    "title": "Menopause support that works"
-   }
-  },
-  "problem": {
-   "type": "vb-product-story",
-   "blocks": {
-    "p1": {
-     "type": "point",
-     "settings": {
-      "icon": "\u2715",
-      "text": "<strong>Hot flashes</strong> that disrupt your day and night."
-     }
-    },
-    "p2": {
-     "type": "point",
-     "settings": {
-      "icon": "\u2715",
-      "text": "<strong>Sleep loss</strong> from night sweats and racing thoughts."
-     }
-    },
-    "p3": {
-     "type": "point",
-     "settings": {
-      "icon": "\u2715",
-      "text": "<strong>Mood swings, anxiety</strong> that strain relationships."
-     }
-    },
-    "p4": {
-     "type": "point",
-     "settings": {
-      "icon": "\u2715",
-      "text": "<strong>HRT side-effects</strong> or hesitation about hormone therapy."
-     }
-    }
-   },
-   "block_order": [
-    "p1",
-    "p2",
-    "p3",
-    "p4"
-   ],
-   "settings": {
-    "reverse": false,
-    "brand_primary": "#f5908d",
-    "brand_tint": "#fff5f3",
-    "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_162340_517c515f-8800-4906-8bed-94d5cba09604.png",
-    "tag_value": "75%",
-    "tag_label": "Of Women Suffer Menopause Symptoms",
-    "eyebrow": "The Problem",
-    "title_pre": "Menopause",
-    "title_highlight": "shouldn't run your life.",
-    "desc": "Hot flashes, sleepless nights, mood storms \u2014 menopause symptoms strip your quality of life. HRT isn't for everyone, and most generic supplements don't deliver. There's a smarter natural path."
-   }
-  },
-  "solution": {
-   "type": "vb-product-story",
-   "blocks": {
-    "s1": {
-     "type": "point",
-     "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Phytoestrogens</strong> \u2014 soy isoflavones and red clover for hormonal balance."
-     }
-    },
-    "s2": {
-     "type": "point",
-     "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Black cohosh + ashwagandha</strong> \u2014 clinical hot flash and stress relief."
-     }
-    },
-    "s3": {
-     "type": "point",
-     "settings": {
-      "icon": "\u2713",
-      "text": "<strong>16-strain probiotic blend</strong> for gut and immune support."
-     }
-    },
-    "s4": {
-     "type": "point",
-     "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Velobiotics\u2122 MEP technology</strong> \u2014 1000\u00d7 more reach you alive."
-     }
-    }
-   },
-   "block_order": [
-    "s1",
-    "s2",
-    "s3",
-    "s4"
-   ],
-   "settings": {
-    "reverse": true,
-    "brand_primary": "#f5908d",
-    "brand_tint": "#fff5f3",
-    "image_url": "",
-    "tag_value": "1000\u00d7",
-    "tag_label": "More Probiotics Delivered",
-    "eyebrow": "The Solution",
-    "title_pre": "Meet",
-    "title_highlight": "Her-Biotics\u2122 Menopause.",
-    "desc": "Phytoestrogens + black cohosh + ashwagandha + 16 probiotic strains. Clinical relief for hot flashes, mood, and sleep \u2014 natural, hormone-free, and effective."
-   }
-  },
-  "related": {
-   "type": "vb-product-related",
-   "blocks": {
-    "r1": {
-     "type": "product",
-     "settings": {
-      "product_handle": "her-biotics-original-capsules-60s",
-      "brand": "Her-Biotics\u2122",
-      "rating": "4.7",
-      "reviews": "950+",
-      "fallback_title": "",
-      "fallback_url": "",
-      "fallback_price": ""
-     }
-    },
-    "r2": {
-     "type": "product",
-     "settings": {
-      "product_handle": "her-biotics-probiotics-pms-pre-menstrual-support",
-      "brand": "Her-Biotics\u2122",
-      "rating": "4.7",
-      "reviews": "150+",
-      "fallback_title": "",
-      "fallback_url": "",
-      "fallback_price": ""
-     }
-    },
-    "r3": {
-     "type": "product",
-     "settings": {
-      "product_handle": "her-biotics-probiotics-ageless-multivitamin-50",
-      "brand": "Her-Biotics\u2122",
-      "rating": "4.8",
-      "reviews": "120+",
-      "fallback_title": "",
-      "fallback_url": "",
-      "fallback_price": ""
-     }
-    },
-    "r4": {
-     "type": "product",
-     "settings": {
-      "product_handle": "her-biotics-probiotics-sport-multivitamin-capsules-60",
-      "brand": "Her-Biotics\u2122",
-      "rating": "4.6",
-      "reviews": "100+",
-      "fallback_title": "",
-      "fallback_url": "",
-      "fallback_price": ""
-     }
-    }
-   },
-   "block_order": [
-    "r1",
-    "r2",
-    "r3",
-    "r4"
-   ],
-   "settings": {
-    "brand_primary": "#f5908d",
-    "brand_dark": "#b85a58",
-    "brand_tint": "#fff5f3",
-    "tint": false,
-    "eyebrow": "Complete the Stack",
-    "title": "More from the Her-Biotics\u2122 range",
-    "sub": "Customised support for every season of a woman's life."
-   }
-  },
-  "benefits": {
-   "type": "vb-product-benefits",
-   "blocks": {
-    "b1": {
-     "type": "feat",
-     "settings": {
-      "icon": "\ud83d\udd25",
-      "name": "Hot Flash Relief",
-      "desc": "Phytoestrogens reduce frequency and intensity."
-     }
-    },
-    "b2": {
-     "type": "feat",
-     "settings": {
-      "icon": "\ud83d\ude34",
-      "name": "Better Sleep",
-      "desc": "Less night sweats, deeper sleep, restored rest."
-     }
-    },
-    "b3": {
-     "type": "feat",
-     "settings": {
-      "icon": "\ud83d\ude0a",
-      "name": "Mood Stability",
-      "desc": "Ashwagandha + B-complex steady your nerves."
-     }
-    },
-    "b4": {
-     "type": "feat",
-     "settings": {
-      "icon": "\u26a1",
-      "name": "Energy Return",
-      "desc": "Sustained vitality through perimenopause and beyond."
-     }
-    },
-    "b5": {
-     "type": "feat",
-     "settings": {
-      "icon": "\ud83e\ude7a",
-      "name": "Doctor-Formulated",
-      "desc": "Built by women's-health specialists."
-     }
-    },
-    "b6": {
-     "type": "feat",
-     "settings": {
-      "icon": "\ud83c\udf3f",
-      "name": "100% Natural",
-      "desc": "No hormones, no synthetics. Vegan, halaal-friendly."
-     }
-    }
-   },
-   "block_order": [
-    "b1",
-    "b2",
-    "b3",
-    "b4",
-    "b5",
-    "b6"
-   ],
-   "settings": {
-    "brand_primary": "#f5908d",
-    "brand_tint": "#fff5f3",
-    "eyebrow": "Key Benefits",
-    "title_pre": "Why",
-    "title_highlight": "Menopause",
-    "sub": "Six reasons women navigating menopause choose this Her-Biotics blend."
-   }
-  },
-  "how": {
-   "type": "vb-product-how",
-   "blocks": {
-    "h1": {
-     "type": "step",
-     "settings": {
-      "icon": "\ud83d\udc8a",
-      "name": "Take Two Capsules Daily",
-      "desc": "With water, after a meal."
-     }
-    },
-    "h2": {
-     "type": "step",
-     "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
-      "name": "MEP Armour Survives",
-      "desc": "Velobiotics\u2122 shield protects every culture and active."
-     }
-    },
-    "h3": {
-     "type": "step",
-     "settings": {
-      "icon": "\ud83c\udfaf",
-      "name": "Phytoestrogens Engage",
-      "desc": "Plant compounds gently support hormonal balance."
-     }
-    },
-    "h4": {
-     "type": "step",
-     "settings": {
-      "icon": "\ud83c\udf38",
-      "name": "Symptoms Ease",
-      "desc": "Hot flashes lighten, sleep returns, mood steadies."
-     }
-    }
-   },
-   "block_order": [
-    "h1",
-    "h2",
-    "h3",
-    "h4"
-   ],
-   "settings": {
-    "brand_primary": "#f5908d",
-    "brand_tint": "#fff5f3",
-    "eyebrow": "How It Works",
-    "title_pre": "From Capsule to",
-    "title_highlight": "Calm",
-    "sub": "Four simple steps. One daily ritual. Menopause without the chaos."
-   }
-  },
-  "ingredients": {
-   "type": "vb-product-ingredients",
-   "blocks": {
-    "i1": {
-     "type": "ingredient",
-     "settings": {
-      "icon": "\ud83c\udf38",
-      "name": "Soy Isoflavones",
-      "amount": "40mg",
-      "desc": "Plant-based phytoestrogens. Clinically proven for hot flashes."
-     }
-    },
-    "i2": {
-     "type": "ingredient",
-     "settings": {
-      "icon": "\ud83c\udf3f",
-      "name": "Black Cohosh + Red Clover",
-      "amount": "Standardised",
-      "desc": "Clinical herbal combination for menopause symptom relief."
-     }
-    },
-    "i3": {
-     "type": "ingredient",
-     "settings": {
-      "icon": "\ud83d\ude0c",
-      "name": "Ashwagandha KSM-66",
-      "amount": "300mg",
-      "desc": "Adaptogenic herb for mood, stress, and sleep."
-     }
-    },
-    "i4": {
-     "type": "ingredient",
-     "settings": {
-      "icon": "\ud83e\udda0",
-      "name": "16-Strain Probiotic Blend",
-      "amount": "1 Billion CFU",
-      "desc": "Strains for gut, immunity, and women's microbiome."
-     }
-    },
-    "i5": {
-     "type": "ingredient",
-     "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
-      "name": "Velobiotics\u2122 MEP Coating",
-      "amount": "Patented",
-      "desc": "Supercritical CO\u2082 microencapsulation \u2014 1000\u00d7 more survive."
-     }
-    },
-    "i6": {
-     "type": "ingredient",
-     "settings": {
-      "icon": "\ud83d\udeab",
-      "name": "Free From",
-      "amount": "Always",
-      "desc": "Gluten \u00b7 soy \u00b7 dairy \u00b7 artificial colours \u00b7 preservatives \u00b7 GMO."
-     }
-    }
-   },
-   "block_order": [
-    "i1",
-    "i2",
-    "i3",
-    "i4",
-    "i5",
-    "i6"
-   ],
-   "settings": {
-    "brand_primary": "#f5908d",
-    "brand_dark": "#b85a58",
-    "brand_tint": "#fff5f3",
-    "brand_light": "#ffc0bd",
-    "eyebrow": "What's Inside",
-    "title": "Every ingredient earns its place",
-    "sub": "Six clean actives. No proprietary blends. Full transparency.",
-    "facts_image_url": "",
-    "facts_label": "Supplement facts",
-    "facts_col_a": "Ingredient",
-    "facts_col_b": "Per serving",
-    "facts_caption": "% Daily Value not established. Other Ingredients: HPMC, Magnesium Stearate.",
-    "facts_foot": "Lab-tested \u00b7 Doctor-formulated \u00b7 Full transparency"
-   }
-  },
-  "confidence": {
-   "type": "vb-product-confidence",
-   "blocks": {
-    "c1": {
-     "type": "stat",
-     "settings": {
-      "label": "Less hot flashes",
-      "percent": 86
-     }
-    },
-    "c2": {
-     "type": "stat",
-     "settings": {
-      "label": "Better sleep quality",
-      "percent": 89
-     }
-    },
-    "c3": {
-     "type": "stat",
-     "settings": {
-      "label": "Steadier mood",
-      "percent": 92
-     }
-    },
-    "c4": {
-     "type": "stat",
-     "settings": {
-      "label": "Restored daily energy",
-      "percent": 88
-     }
-    },
-    "c5": {
-     "type": "stat",
-     "settings": {
-      "label": "Would recommend to a friend",
-      "percent": 96
-     }
-    }
-   },
-   "block_order": [
-    "c1",
-    "c2",
-    "c3",
-    "c4",
-    "c5"
-   ],
-   "settings": {
-    "brand_primary": "#f5908d",
-    "brand_dark": "#b85a58",
-    "brand_tint": "#fff5f3",
-    "eyebrow": "Real results",
-    "title_pre": "Trusted for",
-    "title_highlight": "Menopause Relief",
-    "sub": "What women report after 6 weeks of daily Menopause use.",
-    "caveat": "Based on a survey of 180+ verified customers. Individual results may vary."
-   }
-  },
-  "fbt": {
-   "type": "vb-product-related",
-   "blocks": {
-    "f1": {
-     "type": "product",
-     "settings": {
-      "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
-      "brand": "Femina\u2122",
-      "rating": "4.8",
-      "reviews": "1300+",
-      "fallback_title": "",
-      "fallback_url": "",
-      "fallback_price": ""
-     }
-    },
-    "f2": {
-     "type": "product",
-     "settings": {
-      "product_handle": "gutslim-probiotics-glp-1-booster",
-      "brand": "GutSlim\u2122",
-      "rating": "4.8",
-      "reviews": "410+",
-      "fallback_title": "",
-      "fallback_url": "",
-      "fallback_price": ""
-     }
-    },
-    "f3": {
-     "type": "product",
-     "settings": {
-      "product_handle": "velo16-probiotics-magnesium-glycinate",
-      "brand": "Velo16\u2122",
-      "rating": "4.6",
-      "reviews": "190+",
-      "fallback_title": "",
-      "fallback_url": "",
-      "fallback_price": ""
-     }
-    },
-    "f4": {
-     "type": "product",
-     "settings": {
-      "product_handle": "velo16-probiotics-ashwagandha-ksm-66-300mg",
-      "brand": "Velo16\u2122",
-      "rating": "4.8",
-      "reviews": "170+",
-      "fallback_title": "",
-      "fallback_url": "",
-      "fallback_price": ""
-     }
-    }
-   },
-   "block_order": [
-    "f1",
-    "f2",
-    "f3",
-    "f4"
-   ],
-   "settings": {
-    "brand_primary": "#f5908d",
-    "brand_dark": "#b85a58",
-    "brand_tint": "#fff5f3",
-    "tint": true,
-    "eyebrow": "Frequently Bought Together",
-    "title": "Pair with the rest of your wellness stack",
-    "sub": "Menopause stacks beautifully with these Velobiotics favourites."
-   }
-  },
-  "doctors": {
-   "type": "vb-doctors",
-   "blocks": {
-    "d1": {
-     "type": "card",
-     "settings": {
-      "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
-      "icon_fallback": "\u2713",
-      "name": "Clinically Proven",
-      "desc": "Phytoestrogens + black cohosh \u2014 peer-reviewed for menopause."
-     }
-    },
-    "d2": {
-     "type": "card",
-     "settings": {
-      "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
-      "icon_fallback": "\u2713",
-      "name": "Doctor Formulated",
-      "desc": "Built by women's-health specialists."
-     }
-    },
-    "d3": {
-     "type": "card",
-     "settings": {
-      "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "icon_fallback": "\u2713",
-      "name": "Patented MEP Technology",
-      "desc": "Microencapsulation with Supercritical CO\u2082."
-     }
-    },
-    "d4": {
-     "type": "card",
-     "settings": {
-      "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
-      "icon_fallback": "\u2713",
-      "name": "Clean Label",
-      "desc": "No hormones, no synthetics, no fillers."
-     }
-    }
-   },
-   "block_order": [
-    "d1",
-    "d2",
-    "d3",
-    "d4"
-   ],
-   "settings": {
-    "eyebrow": "Trusted by Doctors. Proven by Science.",
-    "title_pre": "Quality you can",
-    "title_highlight": "trust.",
-    "sub": "Built on peer-reviewed actives, women's-health guidance, and SAHPRA-aware manufacturing."
-   }
-  },
-  "outperform": {
-   "type": "vb-product-outperform",
-   "blocks": {
-    "o1": {
-     "type": "row",
-     "settings": {
-      "feature": "Max Probiotic Strains",
-      "brand_state": "yes",
-      "b_state": "no",
-      "c_state": "no"
-     }
-    },
-    "o2": {
-     "type": "row",
-     "settings": {
-      "feature": "Phytoestrogen Blend",
-      "brand_state": "yes",
-      "b_state": "no",
-      "c_state": "no"
-     }
-    },
-    "o3": {
-     "type": "row",
-     "settings": {
-      "feature": "Adaptogenic Support",
-      "brand_state": "yes",
-      "b_state": "no",
-      "c_state": "no"
-     }
-    },
-    "o4": {
-     "type": "row",
-     "settings": {
-      "feature": "No Hormone Side Effects",
-      "brand_state": "yes",
-      "b_state": "no",
-      "c_state": "no"
-     }
-    },
-    "o5": {
-     "type": "row",
-     "settings": {
-      "feature": "Daily Simplicity",
-      "brand_state": "yes",
-      "b_state": "no",
-      "c_state": "no"
-     }
-    }
-   },
-   "block_order": [
-    "o1",
-    "o2",
-    "o3",
-    "o4",
-    "o5"
-   ],
-   "settings": {
-    "brand_primary": "#f5908d",
-    "brand_dark": "#b85a58",
-    "brand_tint": "#fff5f3",
-    "eyebrow": "",
-    "title": "Why Her-Biotics Menopause Outperforms",
-    "sub": "Phytoestrogens, adaptogens, 16 probiotic strains, and Velobiotics\u2122 delivery \u2014 natural menopause relief without HRT.",
-    "col_features": "Features",
-    "col_brand": "Menopause",
-    "brand_logo_url": "",
-    "col_b": "Generic Multivit",
-    "col_c": "HRT",
-    "cta_text": "Add to Cart",
-    "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
-   }
-  },
-  "judgeme": {
-   "type": "vb-judgeme",
-   "settings": {
-    "eyebrow": "Real Reviews",
-    "title_pre": "What Women",
-    "title_highlight": "Are Saying",
-    "sub": "Verified reviews collected independently by Judge.me from customers who bought this product.",
-    "scope": "product",
-    "show_stats": true
-   }
-  },
-  "faq": {
-   "type": "vb-faq",
-   "blocks": {
-    "q1": {
-     "type": "q",
-     "settings": {
-      "question": "How long until I feel relief?",
-      "answer": "<p>Most women report easier sleep and less mood swing within 2-3 weeks. Hot flash relief typically builds over 4-6 weeks of consistent daily use.</p>"
-     }
-    },
-    "q2": {
-     "type": "q",
-     "settings": {
-      "question": "Is this safe with HRT?",
-      "answer": "<p>Many women use both, but always check with your healthcare practitioner before stacking \u2014 phytoestrogens can interact with hormone therapy.</p>"
-     }
-    },
-    "q3": {
-     "type": "q",
-     "settings": {
-      "question": "Is Menopause safe daily?",
-      "answer": "<p>Absolutely. Manufactured under GMP conditions in SAHPRA-aware facilities. Daily use is safe and recommended.</p>"
-     }
-    },
-    "q4": {
-     "type": "q",
-     "settings": {
-      "question": "Can I take this in perimenopause?",
-      "answer": "<p>Yes \u2014 perimenopause is the ideal time to start as symptoms first appear. The blend supports the transition.</p>"
-     }
-    },
-    "q5": {
-     "type": "q",
-     "settings": {
-      "question": "Do you ship internationally?",
-      "answer": "<p>Yes. We ship globally \u2014 5\u201314 working days. Free shipping over the free-shipping threshold.</p>"
-     }
-    },
-    "q6": {
-     "type": "q",
-     "settings": {
-      "question": "What if it doesn't work for me?",
-      "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full \u2014 no questions asked.</p>"
-     }
-    }
-   },
-   "block_order": [
-    "q1",
-    "q2",
-    "q3",
-    "q4",
-    "q5",
-    "q6"
-   ],
-   "settings": {
-    "eyebrow": "FAQ",
-    "title_pre": "Questions Before",
-    "title_highlight": "You Start"
-   }
-  },
-  "final": {
-   "type": "vb-product-final",
-   "blocks": {
-    "g1": {
-     "type": "g",
-     "settings": {
-      "icon": "\u2705",
-      "text": "30-day money-back"
-     }
-    },
-    "g2": {
-     "type": "g",
-     "settings": {
-      "icon": "\ud83d\ude9a",
-      "text": "Ships worldwide"
-     }
-    },
-    "g3": {
-     "type": "g",
-     "settings": {
-      "icon": "\ud83d\udd2c",
-      "text": "Lab-tested every batch"
-     }
-    },
-    "g4": {
-     "type": "g",
-     "settings": {
-      "icon": "\ud83c\udf3f",
-      "text": "100% natural"
-     }
-    }
-   },
-   "block_order": [
-    "g1",
-    "g2",
-    "g3",
-    "g4"
-   ],
-   "settings": {
-    "brand_primary": "#f5908d",
-    "brand_dark": "#b85a58",
-    "brand_light": "#ffc0bd",
-    "badge": "30-day money-back guarantee",
-    "title_pre": "Navigate Menopause",
-    "title_highlight": "Risk-Free for 30 Days",
-    "sub": "Join thousands of women navigating menopause naturally. If you don't feel the difference, we'll refund every cent.",
-    "cta_text": "Add to Cart",
-    "cta_link": "#vbpForm"
-   }
-  }
- },
- "order": [
-  "hero",
-  "reviews-carousel",
-  "problem",
-  "solution",
-  "related",
-  "benefits",
-  "how",
-  "ingredients",
-  "confidence",
-  "fbt",
-  "doctors",
-  "outperform",
-  "judgeme",
-  "faq",
-  "final"
- ]
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "judgeme",
+    "faq",
+    "final"
+  ]
 }

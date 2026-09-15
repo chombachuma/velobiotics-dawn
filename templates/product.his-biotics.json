@@ -375,54 +375,20 @@
       }
     },
     "how": {
-      "type": "vb-product-how",
-      "blocks": {
-        "h1": {
-          "type": "step",
-          "settings": {
-            "icon": "💊",
-            "name": "Take One Capsule Daily",
-            "desc": "With water, after a meal. That's it."
-          }
-        },
-        "h2": {
-          "type": "step",
-          "settings": {
-            "icon": "🛡️",
-            "name": "MEP Armour Survives",
-            "desc": "Velobiotics™ shield protects every culture and nutrient."
-          }
-        },
-        "h3": {
-          "type": "step",
-          "settings": {
-            "icon": "🎯",
-            "name": "Delivered to Your Body",
-            "desc": "1000× more probiotics + full nutrient absorption."
-          }
-        },
-        "h4": {
-          "type": "step",
-          "settings": {
-            "icon": "💪",
-            "name": "Performance & Recovery",
-            "desc": "Feel sharper, lift heavier, recover faster."
-          }
-        }
-      },
-      "block_order": [
-        "h1",
-        "h2",
-        "h3",
-        "h4"
-      ],
+      "type": "vb-product-ritual",
       "settings": {
         "brand_primary": "#0a3d3d",
+        "brand_dark": "#021212",
         "brand_tint": "#e8f3f1",
-        "eyebrow": "How It Works",
-        "title_pre": "From Capsule to",
-        "title_highlight": "Performance",
-        "sub": "Four simple steps. One daily ritual. Total men's wellness."
+        "form": "capsule",
+        "dose": "2 capsules",
+        "when": "with water, preferably with a meal",
+        "course": "Every day, ongoing",
+        "timeofday": "morning",
+        "mix_volume": "250 ml water or milk",
+        "eyebrow": "How to use",
+        "title_pre": "Your daily ritual,",
+        "title_highlight": "made effortless."
       }
     },
     "ingredients": {
@@ -739,12 +705,10 @@
     "judgeme": {
       "type": "vb-judgeme",
       "settings": {
-        "scope": "product",
-        "show_stats": true,
         "eyebrow": "Real Reviews",
         "title_pre": "What Men",
         "title_highlight": "Are Saying",
-        "sub": "Verified reviews collected independently by Judge.me from customers who bought this product."
+        "sub": "Verified reviews from real customers. The Judge.me widget will populate this section on go-live."
       }
     },
     "faq": {

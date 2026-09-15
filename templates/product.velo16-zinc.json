@@ -239,7 +239,7 @@
         "reverse": true,
         "brand_primary": "#c8163c",
         "brand_tint": "#ffe8ec",
-        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_111721_9f4dcf13-5c69-4189-8b1e-02e9facc5ec7.png",
+        "image_url": "",
         "tag_value": "15mg",
         "tag_label": "Most Bioavailable Form",
         "eyebrow": "The Solution",
@@ -374,54 +374,20 @@
       }
     },
     "how": {
-      "type": "vb-product-how",
-      "blocks": {
-        "h1": {
-          "type": "step",
-          "settings": {
-            "icon": "💊",
-            "name": "Take One Capsule Daily",
-            "desc": "With water, after a meal. That's it."
-          }
-        },
-        "h2": {
-          "type": "step",
-          "settings": {
-            "icon": "🛡️",
-            "name": "MEP Armour Survives",
-            "desc": "Velobiotics™ shield protects zinc + probiotics."
-          }
-        },
-        "h3": {
-          "type": "step",
-          "settings": {
-            "icon": "🎯",
-            "name": "Delivered to Your Cells",
-            "desc": "Picolinate zinc + 1000× more probiotics reach you alive."
-          }
-        },
-        "h4": {
-          "type": "step",
-          "settings": {
-            "icon": "🛡️",
-            "name": "Defence & Repair",
-            "desc": "Stronger immunity, clearer skin, faster recovery."
-          }
-        }
-      },
-      "block_order": [
-        "h1",
-        "h2",
-        "h3",
-        "h4"
-      ],
+      "type": "vb-product-ritual",
       "settings": {
         "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
         "brand_tint": "#ffe8ec",
-        "eyebrow": "How It Works",
-        "title_pre": "From Capsule to",
-        "title_highlight": "Resilience",
-        "sub": "Four simple steps. One daily ritual. Total immune defence."
+        "form": "capsule",
+        "dose": "2 capsules",
+        "when": "with water",
+        "course": "Every day, ongoing",
+        "timeofday": "morning",
+        "mix_volume": "250 ml water or milk",
+        "eyebrow": "How to use",
+        "title_pre": "Your daily ritual,",
+        "title_highlight": "made effortless."
       }
     },
     "ingredients": {
@@ -741,10 +707,7 @@
         "eyebrow": "Real Reviews",
         "title_pre": "What Customers",
         "title_highlight": "Are Saying",
-        "sub": "Verified reviews. Judge.me widget populates on go-live.",
-        "rating": "4.6",
-        "reviews_count": "200+",
-        "customers_count": "28K+"
+        "sub": "Verified reviews. Judge.me widget populates on go-live."
       }
     },
     "faq": {

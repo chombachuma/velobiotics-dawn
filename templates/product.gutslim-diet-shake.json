@@ -8,926 +8,891 @@
  * ------------------------------------------------------------
  */
 {
- "sections": {
-  "hero": {
-   "type": "vb-product-hero",
-   "blocks": {
-    "b1": {
-     "type": "benefit",
-     "settings": {
-      "icon": "\ud83e\udd64",
-      "text": "Meal replacement shake"
-     }
+  "sections": {
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🥤",
+            "text": "Meal replacement shake"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🔥",
+            "text": "20g protein per serving"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🦠",
+            "text": "16 probiotic strains"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "⚡",
+            "text": "1000× more delivery"
+          }
+        },
+        "t1": {
+          "type": "testi",
+          "settings": {
+            "quote": "Skipping breakfast saved me",
+            "author": "Maya R."
+          }
+        },
+        "t2": {
+          "type": "testi",
+          "settings": {
+            "quote": "Down 4kg in 5 weeks",
+            "author": "Tumi K."
+          }
+        },
+        "t3": {
+          "type": "testi",
+          "settings": {
+            "quote": "My lunch sorted, every day",
+            "author": "Jacques V."
+          }
+        },
+        "t4": {
+          "type": "testi",
+          "settings": {
+            "quote": "Tastes amazing, fills me up",
+            "author": "Riana S."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "brand_primary": "#ffa500",
+        "brand_dark": "#b25800",
+        "brand_tint": "#fff8eb",
+        "brand_label": "GutSlim™ Diet Shake",
+        "rating": "4.7",
+        "review_count": "140+",
+        "hook": "Replace a meal. Reset your gut. GutSlim™ Diet Shake delivers 20g protein, 16 probiotic strains, and full nutrition — in one delicious shake. No more skipped meals.",
+        "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
     },
-    "b2": {
-     "type": "benefit",
-     "settings": {
-      "icon": "\ud83d\udd25",
-      "text": "20g protein per serving"
-     }
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Maya+R&background=FFA500&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Maya R.",
+            "meta": "Verified buyer · Pretoria",
+            "quote": "Diet Shake replaced my breakfast. Steady energy until lunch."
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Tumi+K&background=ffc266&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Tumi K.",
+            "meta": "Verified buyer · Johannesburg",
+            "quote": "Down 4kg in 5 weeks. Shake at breakfast, normal lunch and dinner."
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Jacques+V&background=b25800&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Jacques V.",
+            "meta": "Verified buyer · 1 month ago",
+            "quote": "My lunch sorted, every day. Tasty and convenient."
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Riana+S&background=FFA500&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Riana S.",
+            "meta": "Verified buyer · 2 weeks ago",
+            "quote": "Tastes amazing, fills me up for hours. No bloat at all."
+          }
+        },
+        "r5": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Ofentse+M&background=ffc266&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Ofentse M.",
+            "meta": "Verified buyer · Cape Town",
+            "quote": "Stacks with GLP-1 Booster — together they're unstoppable."
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "settings": {
+        "brand_primary": "#ffa500",
+        "brand_dark": "#b25800",
+        "brand_tint": "#fff8eb",
+        "eyebrow": "★ Real Reviews",
+        "title": "Meal-replacement that actually works"
+      }
     },
-    "b3": {
-     "type": "benefit",
-     "settings": {
-      "icon": "\ud83e\udda0",
-      "text": "16 probiotic strains"
-     }
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Skipped meals</strong> that crash your blood sugar and metabolism."
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Generic shakes</strong> packed with sugar and synthetic protein."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>No gut support</strong> in your shake — just empty calories."
+          }
+        },
+        "p4": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Cravings hit hard</strong> a few hours after — back to square one."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#ffa500",
+        "brand_tint": "#fff8eb",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_162312_4636937d-c5b0-4790-bed1-a94824d12361.png",
+        "tag_value": "42%",
+        "tag_label": "Skip Breakfast — Worst Habit For Weight",
+        "eyebrow": "The Problem",
+        "title_pre": "Meal-replacements",
+        "title_highlight": "that miss the gut.",
+        "desc": "Most diet shakes are sugar bombs masquerading as health food. They spike blood sugar, leave your gut imbalanced, and fail you within 3 hours. Diet Shake is different."
+      }
     },
-    "b4": {
-     "type": "benefit",
-     "settings": {
-      "icon": "\u26a1",
-      "text": "1000\u00d7 more delivery"
-     }
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>20g clean plant + whey protein</strong> per serving."
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>16-strain probiotic blend</strong> for gut and metabolic balance."
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach your gut alive."
+          }
+        },
+        "s4": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Low GI, low sugar</strong>. Doctor-formulated. Lab-tested every batch."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#ffa500",
+        "brand_tint": "#fff8eb",
+        "image_url": "",
+        "tag_value": "1000×",
+        "tag_label": "More Probiotics Delivered",
+        "eyebrow": "The Solution",
+        "title_pre": "Meet",
+        "title_highlight": "GutSlim™ Diet Shake.",
+        "desc": "20g protein, 16 probiotic strains, low-GI carbs, and full vitamin profile — in one delicious shake. Replace a meal cleanly, fuel your gut, lose weight sustainably."
+      }
     },
-    "t1": {
-     "type": "testi",
-     "settings": {
-      "quote": "Skipping breakfast saved me",
-      "author": "Maya R."
-     }
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-glp-1-booster",
+            "brand": "GutSlim™",
+            "rating": "4.8",
+            "reviews": "1200+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-tummy-toner",
+            "brand": "GutSlim™",
+            "rating": "4.7",
+            "reviews": "410+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-fat-burner",
+            "brand": "GutSlim™",
+            "rating": "4.8",
+            "reviews": "210+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
+          }
+        },
+        "r4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-supergreens",
+            "brand": "GutSlim™",
+            "rating": "4.6",
+            "reviews": "150+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
+          }
+        },
+        "r5": {
+          "type": "product",
+          "settings": {
+            "product_handle": "21-day-gutslim-complete-pack",
+            "brand": "GutSlim™",
+            "rating": "4.9",
+            "reviews": "320+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "settings": {
+        "brand_primary": "#ffa500",
+        "brand_dark": "#b25800",
+        "brand_tint": "#fff8eb",
+        "tint": false,
+        "eyebrow": "Complete the Reset",
+        "title": "More from the GutSlim™ range",
+        "sub": "Stack Diet Shake with the rest of the GutSlim™ weight-management system."
+      }
     },
-    "t2": {
-     "type": "testi",
-     "settings": {
-      "quote": "Down 4kg in 5 weeks",
-      "author": "Tumi K."
-     }
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "b1": {
+          "type": "feat",
+          "settings": {
+            "icon": "🥤",
+            "name": "Convenient Meal Replacement",
+            "desc": "Mix, shake, drink. 60 seconds to a complete meal."
+          }
+        },
+        "b2": {
+          "type": "feat",
+          "settings": {
+            "icon": "🔥",
+            "name": "Sustained Satiety",
+            "desc": "20g protein + fibre keep you full for 4-5 hours."
+          }
+        },
+        "b3": {
+          "type": "feat",
+          "settings": {
+            "icon": "🦠",
+            "name": "Probiotic Powered",
+            "desc": "16 strains support gut and metabolic health."
+          }
+        },
+        "b4": {
+          "type": "feat",
+          "settings": {
+            "icon": "⚡",
+            "name": "Steady Energy",
+            "desc": "Low-GI fuel means no blood sugar crashes."
+          }
+        },
+        "b5": {
+          "type": "feat",
+          "settings": {
+            "icon": "🩺",
+            "name": "Doctor-Formulated",
+            "desc": "Built by medical doctors and nutritionists."
+          }
+        },
+        "b6": {
+          "type": "feat",
+          "settings": {
+            "icon": "😋",
+            "name": "Delicious Taste",
+            "desc": "Creamy and smooth. Naturally sweetened, no artificial flavours."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "settings": {
+        "brand_primary": "#ffa500",
+        "brand_tint": "#fff8eb",
+        "eyebrow": "Key Benefits",
+        "title_pre": "Why",
+        "title_highlight": "Diet Shake",
+        "sub": "Six reasons Diet Shake is the easiest, tastiest way to replace a meal cleanly."
+      }
     },
-    "t3": {
-     "type": "testi",
-     "settings": {
-      "quote": "My lunch sorted, every day",
-      "author": "Jacques V."
-     }
+    "how": {
+      "type": "vb-product-ritual",
+      "settings": {
+        "brand_primary": "#ffa500",
+        "brand_dark": "#b25800",
+        "brand_tint": "#fff8eb",
+        "form": "shake",
+        "dose": "2 level scoops (33 g)",
+        "when": "as a meal replacement or high-protein snack",
+        "course": "Every day, one meal",
+        "timeofday": "morning",
+        "mix_volume": "250 ml cold water or milk",
+        "eyebrow": "How to use",
+        "title_pre": "Your daily ritual,",
+        "title_highlight": "made effortless.",
+        "anchors": "Breakfast|Post-workout|Lunch|Afternoon snack"
+      }
     },
-    "t4": {
-     "type": "testi",
-     "settings": {
-      "quote": "Tastes amazing, fills me up",
-      "author": "Riana S."
-     }
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🥛",
+            "name": "20g Protein Blend",
+            "amount": "Whey + plant",
+            "desc": "Premium isolate + pea protein. Complete amino acid profile."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🦠",
+            "name": "16-Strain Probiotic Blend",
+            "amount": "10 Billion CFU",
+            "desc": "Strains chosen for gut and metabolic health."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🛡️",
+            "name": "Velobiotics™ MEP Coating",
+            "amount": "Patented",
+            "desc": "Supercritical CO₂ microencapsulation — 1000× more survive."
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "💎",
+            "name": "22 Vitamins + Minerals",
+            "amount": "Full daily",
+            "desc": "B-complex, C, D3, calcium, iron, magnesium, zinc and more."
+          }
+        },
+        "i5": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🌾",
+            "name": "Low-GI Carb Blend",
+            "amount": "Oat + chia",
+            "desc": "Slow-release fuel for steady energy. No blood sugar spikes."
+          }
+        },
+        "i6": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🚫",
+            "name": "Free From",
+            "amount": "Always",
+            "desc": "Added sugar · gluten · soy · artificial colours · preservatives · GMO."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "brand_primary": "#ffa500",
+        "brand_dark": "#b25800",
+        "brand_tint": "#fff8eb",
+        "brand_light": "#ffc266",
+        "eyebrow": "What's Inside",
+        "title": "Every ingredient earns its place",
+        "sub": "Six clean active groups. No proprietary blends. Full transparency.",
+        "facts_image_url": "",
+        "facts_label": "Supplement facts",
+        "facts_col_a": "Ingredient",
+        "facts_col_b": "Per serving",
+        "facts_caption": "% Daily Value not established. Other Ingredients: HPMC, Magnesium Stearate.",
+        "facts_foot": "Lab-tested · Doctor-formulated · Full transparency"
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Felt full for 4+ hours",
+            "percent": 91
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "Lost measurable weight",
+            "percent": 86
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Loved the taste",
+            "percent": 93
+          }
+        },
+        "c4": {
+          "type": "stat",
+          "settings": {
+            "label": "Better daily energy",
+            "percent": 89
+          }
+        },
+        "c5": {
+          "type": "stat",
+          "settings": {
+            "label": "Would recommend to a friend",
+            "percent": 95
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "brand_primary": "#ffa500",
+        "brand_dark": "#b25800",
+        "brand_tint": "#fff8eb",
+        "eyebrow": "Real results",
+        "title_pre": "Trusted for",
+        "title_highlight": "Easy Meal Replacement",
+        "sub": "What customers report after 4 weeks of daily Diet Shake use.",
+        "caveat": "Based on a survey of 140+ verified customers. Individual results may vary."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "f1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-glp-1-booster",
+            "brand": "GutSlim™",
+            "rating": "4.8",
+            "reviews": "1200+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
+          }
+        },
+        "f2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "her-biotics-original-capsules-60s",
+            "brand": "Her-Biotics™",
+            "rating": "4.7",
+            "reviews": "260+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
+          }
+        },
+        "f3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
+            "brand": "His-Biotics™",
+            "rating": "4.7",
+            "reviews": "750+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
+          }
+        },
+        "f4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-magnesium-glycinate",
+            "brand": "Velo16™",
+            "rating": "4.6",
+            "reviews": "190+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {
+        "brand_primary": "#ffa500",
+        "brand_dark": "#b25800",
+        "brand_tint": "#fff8eb",
+        "tint": true,
+        "eyebrow": "Frequently Bought Together",
+        "title": "Pair with the rest of your wellness stack",
+        "sub": "Diet Shake stacks beautifully with these Velobiotics favourites."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
+            "icon_fallback": "✓",
+            "name": "Clinically Proven Strains",
+            "desc": "16 strains studied in peer-reviewed clinical trials."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
+            "icon_fallback": "✓",
+            "name": "Doctor Formulated",
+            "desc": "Developed by medical doctors and nutritionists."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
+            "icon_fallback": "✓",
+            "name": "Patented MEP Technology",
+            "desc": "Microencapsulation with Supercritical CO₂."
+          }
+        },
+        "d4": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
+            "icon_fallback": "✓",
+            "name": "Clean Label",
+            "desc": "Naturally sweetened, no fillers, no artificial nasties."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3",
+        "d4"
+      ],
+      "settings": {
+        "eyebrow": "Trusted by Doctors. Proven by Science.",
+        "title_pre": "Quality you can",
+        "title_highlight": "trust.",
+        "sub": "Built on peer-reviewed strains, medical formulations, and SAHPRA-aware manufacturing."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "Max Probiotic Strains",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "20g Clean Protein",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "Low Sugar Recipe",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "Daily Simplicity",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o5": {
+          "type": "row",
+          "settings": {
+            "feature": "Long-Lasting Satiety",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ],
+      "settings": {
+        "brand_primary": "#ffa500",
+        "brand_dark": "#b25800",
+        "brand_tint": "#fff8eb",
+        "eyebrow": "",
+        "title": "Why Diet Shake Outperforms",
+        "sub": "Clean protein, low-GI carbs, 16 probiotic strains, and Velobiotics™ delivery — a meal-replacement that fuels weight loss without crashes.",
+        "col_features": "Features",
+        "col_brand": "Diet Shake",
+        "brand_logo_url": "",
+        "col_b": "Generic Shake",
+        "col_c": "Others",
+        "cta_text": "Add to Cart",
+        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Real Reviews",
+        "title_pre": "What Customers",
+        "title_highlight": "Are Saying",
+        "sub": "Verified reviews from real customers. The Judge.me widget will populate this section on go-live."
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "Which meal should I replace?",
+            "answer": "<p>Most customers replace breakfast for the easiest start. You can replace any meal, but we don't recommend replacing more than one per day.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "How does it taste?",
+            "answer": "<p>Creamy and smooth. Naturally sweetened with stevia and monk fruit. Mixes cleanly with water or any plant milk.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "Is the protein vegan?",
+            "answer": "<p>Our standard Diet Shake uses a whey + pea protein blend. We're launching a 100% plant version in 2026 — sign up for our newsletter to be notified.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Is Diet Shake safe daily?",
+            "answer": "<p>Absolutely. Manufactured under GMP conditions in SAHPRA-aware facilities. Daily use is safe and recommended.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Do you ship internationally?",
+            "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "What if it doesn't work for me?",
+            "answer": "<p>If you don't see results in 30 days, we'll refund you in full — no questions asked.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "title_pre": "Questions Before",
+        "title_highlight": "You Start"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "✅",
+            "text": "30-day money-back"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "🚚",
+            "text": "Ships worldwide"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "🔬",
+            "text": "Lab-tested every batch"
+          }
+        },
+        "g4": {
+          "type": "g",
+          "settings": {
+            "icon": "🌿",
+            "text": "100% natural"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "settings": {
+        "brand_primary": "#ffa500",
+        "brand_dark": "#b25800",
+        "brand_light": "#ffc266",
+        "badge": "30-day money-back guarantee",
+        "title_pre": "Replace a Meal",
+        "title_highlight": "Risk-Free for 30 Days",
+        "sub": "Join thousands replacing a meal the smart way. If you don't love it, we'll refund every cent.",
+        "cta_text": "Add to Cart",
+        "cta_link": "#vbpForm"
+      }
     }
-   },
-   "block_order": [
-    "b1",
-    "b2",
-    "b3",
-    "b4",
-    "t1",
-    "t2",
-    "t3",
-    "t4"
-   ],
-   "settings": {
-    "brand_primary": "#ffa500",
-    "brand_dark": "#b25800",
-    "brand_tint": "#fff8eb",
-    "brand_label": "GutSlim\u2122 Diet Shake",
-    "rating": "4.7",
-    "review_count": "140+",
-    "hook": "Replace a meal. Reset your gut. GutSlim\u2122 Diet Shake delivers 20g protein, 16 probiotic strains, and full nutrition \u2014 in one delicious shake. No more skipped meals.",
-    "ship_note": "Ships worldwide \u00b7 Free shipping over the free-shipping threshold \u00b7 30-day money-back guarantee",
-    "show_buynow": true,
-    "show_testi_marquee": true
-   }
   },
-  "reviews-carousel": {
-   "type": "vb-product-reviews-carousel",
-   "blocks": {
-    "r1": {
-     "type": "review",
-     "settings": {
-      "avatar_url": "https://ui-avatars.com/api/?name=Maya+R&background=FFA500&color=ffffff&size=120&bold=true&font-size=0.42",
-      "author": "Maya R.",
-      "meta": "Verified buyer \u00b7 Pretoria",
-      "quote": "Diet Shake replaced my breakfast. Steady energy until lunch."
-     }
-    },
-    "r2": {
-     "type": "review",
-     "settings": {
-      "avatar_url": "https://ui-avatars.com/api/?name=Tumi+K&background=ffc266&color=ffffff&size=120&bold=true&font-size=0.42",
-      "author": "Tumi K.",
-      "meta": "Verified buyer \u00b7 Johannesburg",
-      "quote": "Down 4kg in 5 weeks. Shake at breakfast, normal lunch and dinner."
-     }
-    },
-    "r3": {
-     "type": "review",
-     "settings": {
-      "avatar_url": "https://ui-avatars.com/api/?name=Jacques+V&background=b25800&color=ffffff&size=120&bold=true&font-size=0.42",
-      "author": "Jacques V.",
-      "meta": "Verified buyer \u00b7 1 month ago",
-      "quote": "My lunch sorted, every day. Tasty and convenient."
-     }
-    },
-    "r4": {
-     "type": "review",
-     "settings": {
-      "avatar_url": "https://ui-avatars.com/api/?name=Riana+S&background=FFA500&color=ffffff&size=120&bold=true&font-size=0.42",
-      "author": "Riana S.",
-      "meta": "Verified buyer \u00b7 2 weeks ago",
-      "quote": "Tastes amazing, fills me up for hours. No bloat at all."
-     }
-    },
-    "r5": {
-     "type": "review",
-     "settings": {
-      "avatar_url": "https://ui-avatars.com/api/?name=Ofentse+M&background=ffc266&color=ffffff&size=120&bold=true&font-size=0.42",
-      "author": "Ofentse M.",
-      "meta": "Verified buyer \u00b7 Cape Town",
-      "quote": "Stacks with GLP-1 Booster \u2014 together they're unstoppable."
-     }
-    }
-   },
-   "block_order": [
-    "r1",
-    "r2",
-    "r3",
-    "r4",
-    "r5"
-   ],
-   "settings": {
-    "brand_primary": "#ffa500",
-    "brand_dark": "#b25800",
-    "brand_tint": "#fff8eb",
-    "eyebrow": "\u2605 Real Reviews",
-    "title": "Meal-replacement that actually works"
-   }
-  },
-  "problem": {
-   "type": "vb-product-story",
-   "blocks": {
-    "p1": {
-     "type": "point",
-     "settings": {
-      "icon": "\u2715",
-      "text": "<strong>Skipped meals</strong> that crash your blood sugar and metabolism."
-     }
-    },
-    "p2": {
-     "type": "point",
-     "settings": {
-      "icon": "\u2715",
-      "text": "<strong>Generic shakes</strong> packed with sugar and synthetic protein."
-     }
-    },
-    "p3": {
-     "type": "point",
-     "settings": {
-      "icon": "\u2715",
-      "text": "<strong>No gut support</strong> in your shake \u2014 just empty calories."
-     }
-    },
-    "p4": {
-     "type": "point",
-     "settings": {
-      "icon": "\u2715",
-      "text": "<strong>Cravings hit hard</strong> a few hours after \u2014 back to square one."
-     }
-    }
-   },
-   "block_order": [
-    "p1",
-    "p2",
-    "p3",
-    "p4"
-   ],
-   "settings": {
-    "reverse": false,
-    "brand_primary": "#ffa500",
-    "brand_tint": "#fff8eb",
-    "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_162312_4636937d-c5b0-4790-bed1-a94824d12361.png",
-    "tag_value": "42%",
-    "tag_label": "Skip Breakfast \u2014 Worst Habit For Weight",
-    "eyebrow": "The Problem",
-    "title_pre": "Meal-replacements",
-    "title_highlight": "that miss the gut.",
-    "desc": "Most diet shakes are sugar bombs masquerading as health food. They spike blood sugar, leave your gut imbalanced, and fail you within 3 hours. Diet Shake is different."
-   }
-  },
-  "solution": {
-   "type": "vb-product-story",
-   "blocks": {
-    "s1": {
-     "type": "point",
-     "settings": {
-      "icon": "\u2713",
-      "text": "<strong>20g clean plant + whey protein</strong> per serving."
-     }
-    },
-    "s2": {
-     "type": "point",
-     "settings": {
-      "icon": "\u2713",
-      "text": "<strong>16-strain probiotic blend</strong> for gut and metabolic balance."
-     }
-    },
-    "s3": {
-     "type": "point",
-     "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Velobiotics\u2122 MEP technology</strong> \u2014 1000\u00d7 more reach your gut alive."
-     }
-    },
-    "s4": {
-     "type": "point",
-     "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Low GI, low sugar</strong>. Doctor-formulated. Lab-tested every batch."
-     }
-    }
-   },
-   "block_order": [
-    "s1",
-    "s2",
-    "s3",
-    "s4"
-   ],
-   "settings": {
-    "reverse": true,
-    "brand_primary": "#ffa500",
-    "brand_tint": "#fff8eb",
-    "image_url": "",
-    "tag_value": "1000\u00d7",
-    "tag_label": "More Probiotics Delivered",
-    "eyebrow": "The Solution",
-    "title_pre": "Meet",
-    "title_highlight": "GutSlim\u2122 Diet Shake.",
-    "desc": "20g protein, 16 probiotic strains, low-GI carbs, and full vitamin profile \u2014 in one delicious shake. Replace a meal cleanly, fuel your gut, lose weight sustainably."
-   }
-  },
-  "related": {
-   "type": "vb-product-related",
-   "blocks": {
-    "r1": {
-     "type": "product",
-     "settings": {
-      "product_handle": "gutslim-probiotics-glp-1-booster",
-      "brand": "GutSlim\u2122",
-      "rating": "4.8",
-      "reviews": "1200+",
-      "fallback_title": "",
-      "fallback_url": "",
-      "fallback_price": ""
-     }
-    },
-    "r2": {
-     "type": "product",
-     "settings": {
-      "product_handle": "gutslim-probiotics-tummy-toner",
-      "brand": "GutSlim\u2122",
-      "rating": "4.7",
-      "reviews": "410+",
-      "fallback_title": "",
-      "fallback_url": "",
-      "fallback_price": ""
-     }
-    },
-    "r3": {
-     "type": "product",
-     "settings": {
-      "product_handle": "gutslim-probiotics-fat-burner",
-      "brand": "GutSlim\u2122",
-      "rating": "4.8",
-      "reviews": "210+",
-      "fallback_title": "",
-      "fallback_url": "",
-      "fallback_price": ""
-     }
-    },
-    "r4": {
-     "type": "product",
-     "settings": {
-      "product_handle": "gutslim-probiotics-supergreens",
-      "brand": "GutSlim\u2122",
-      "rating": "4.6",
-      "reviews": "150+",
-      "fallback_title": "",
-      "fallback_url": "",
-      "fallback_price": ""
-     }
-    },
-    "r5": {
-     "type": "product",
-     "settings": {
-      "product_handle": "21-day-gutslim-complete-pack",
-      "brand": "GutSlim\u2122",
-      "rating": "4.9",
-      "reviews": "320+",
-      "fallback_title": "",
-      "fallback_url": "",
-      "fallback_price": ""
-     }
-    }
-   },
-   "block_order": [
-    "r1",
-    "r2",
-    "r3",
-    "r4",
-    "r5"
-   ],
-   "settings": {
-    "brand_primary": "#ffa500",
-    "brand_dark": "#b25800",
-    "brand_tint": "#fff8eb",
-    "tint": false,
-    "eyebrow": "Complete the Reset",
-    "title": "More from the GutSlim\u2122 range",
-    "sub": "Stack Diet Shake with the rest of the GutSlim\u2122 weight-management system."
-   }
-  },
-  "benefits": {
-   "type": "vb-product-benefits",
-   "blocks": {
-    "b1": {
-     "type": "feat",
-     "settings": {
-      "icon": "\ud83e\udd64",
-      "name": "Convenient Meal Replacement",
-      "desc": "Mix, shake, drink. 60 seconds to a complete meal."
-     }
-    },
-    "b2": {
-     "type": "feat",
-     "settings": {
-      "icon": "\ud83d\udd25",
-      "name": "Sustained Satiety",
-      "desc": "20g protein + fibre keep you full for 4-5 hours."
-     }
-    },
-    "b3": {
-     "type": "feat",
-     "settings": {
-      "icon": "\ud83e\udda0",
-      "name": "Probiotic Powered",
-      "desc": "16 strains support gut and metabolic health."
-     }
-    },
-    "b4": {
-     "type": "feat",
-     "settings": {
-      "icon": "\u26a1",
-      "name": "Steady Energy",
-      "desc": "Low-GI fuel means no blood sugar crashes."
-     }
-    },
-    "b5": {
-     "type": "feat",
-     "settings": {
-      "icon": "\ud83e\ude7a",
-      "name": "Doctor-Formulated",
-      "desc": "Built by medical doctors and nutritionists."
-     }
-    },
-    "b6": {
-     "type": "feat",
-     "settings": {
-      "icon": "\ud83d\ude0b",
-      "name": "Delicious Taste",
-      "desc": "Creamy and smooth. Naturally sweetened, no artificial flavours."
-     }
-    }
-   },
-   "block_order": [
-    "b1",
-    "b2",
-    "b3",
-    "b4",
-    "b5",
-    "b6"
-   ],
-   "settings": {
-    "brand_primary": "#ffa500",
-    "brand_tint": "#fff8eb",
-    "eyebrow": "Key Benefits",
-    "title_pre": "Why",
-    "title_highlight": "Diet Shake",
-    "sub": "Six reasons Diet Shake is the easiest, tastiest way to replace a meal cleanly."
-   }
-  },
-  "how": {
-   "type": "vb-product-how",
-   "blocks": {
-    "h1": {
-     "type": "step",
-     "settings": {
-      "icon": "\ud83e\udd64",
-      "name": "Mix One Scoop",
-      "desc": "With cold water or your favourite plant milk."
-     }
-    },
-    "h2": {
-     "type": "step",
-     "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
-      "name": "MEP Armour Survives",
-      "desc": "Velobiotics\u2122 shield protects every culture through stomach acid."
-     }
-    },
-    "h3": {
-     "type": "step",
-     "settings": {
-      "icon": "\ud83c\udfaf",
-      "name": "Full Meal Delivered",
-      "desc": "Protein + probiotics + nutrients in one drink."
-     }
-    },
-    "h4": {
-     "type": "step",
-     "settings": {
-      "icon": "\ud83d\udcaa",
-      "name": "Stay Full, Lose Weight",
-      "desc": "Sustained satiety means no cravings, real weight loss."
-     }
-    }
-   },
-   "block_order": [
-    "h1",
-    "h2",
-    "h3",
-    "h4"
-   ],
-   "settings": {
-    "brand_primary": "#ffa500",
-    "brand_tint": "#fff8eb",
-    "eyebrow": "How It Works",
-    "title_pre": "From Scoop to",
-    "title_highlight": "Satisfaction",
-    "sub": "Four simple steps. One delicious shake. Real meal replacement."
-   }
-  },
-  "ingredients": {
-   "type": "vb-product-ingredients",
-   "blocks": {
-    "i1": {
-     "type": "ingredient",
-     "settings": {
-      "icon": "\ud83e\udd5b",
-      "name": "20g Protein Blend",
-      "amount": "Whey + plant",
-      "desc": "Premium isolate + pea protein. Complete amino acid profile."
-     }
-    },
-    "i2": {
-     "type": "ingredient",
-     "settings": {
-      "icon": "\ud83e\udda0",
-      "name": "16-Strain Probiotic Blend",
-      "amount": "10 Billion CFU",
-      "desc": "Strains chosen for gut and metabolic health."
-     }
-    },
-    "i3": {
-     "type": "ingredient",
-     "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
-      "name": "Velobiotics\u2122 MEP Coating",
-      "amount": "Patented",
-      "desc": "Supercritical CO\u2082 microencapsulation \u2014 1000\u00d7 more survive."
-     }
-    },
-    "i4": {
-     "type": "ingredient",
-     "settings": {
-      "icon": "\ud83d\udc8e",
-      "name": "22 Vitamins + Minerals",
-      "amount": "Full daily",
-      "desc": "B-complex, C, D3, calcium, iron, magnesium, zinc and more."
-     }
-    },
-    "i5": {
-     "type": "ingredient",
-     "settings": {
-      "icon": "\ud83c\udf3e",
-      "name": "Low-GI Carb Blend",
-      "amount": "Oat + chia",
-      "desc": "Slow-release fuel for steady energy. No blood sugar spikes."
-     }
-    },
-    "i6": {
-     "type": "ingredient",
-     "settings": {
-      "icon": "\ud83d\udeab",
-      "name": "Free From",
-      "amount": "Always",
-      "desc": "Added sugar \u00b7 gluten \u00b7 soy \u00b7 artificial colours \u00b7 preservatives \u00b7 GMO."
-     }
-    }
-   },
-   "block_order": [
-    "i1",
-    "i2",
-    "i3",
-    "i4",
-    "i5",
-    "i6"
-   ],
-   "settings": {
-    "brand_primary": "#ffa500",
-    "brand_dark": "#b25800",
-    "brand_tint": "#fff8eb",
-    "brand_light": "#ffc266",
-    "eyebrow": "What's Inside",
-    "title": "Every ingredient earns its place",
-    "sub": "Six clean active groups. No proprietary blends. Full transparency.",
-    "facts_image_url": "",
-    "facts_label": "Supplement facts",
-    "facts_col_a": "Ingredient",
-    "facts_col_b": "Per serving",
-    "facts_caption": "% Daily Value not established. Other Ingredients: HPMC, Magnesium Stearate.",
-    "facts_foot": "Lab-tested \u00b7 Doctor-formulated \u00b7 Full transparency"
-   }
-  },
-  "confidence": {
-   "type": "vb-product-confidence",
-   "blocks": {
-    "c1": {
-     "type": "stat",
-     "settings": {
-      "label": "Felt full for 4+ hours",
-      "percent": 91
-     }
-    },
-    "c2": {
-     "type": "stat",
-     "settings": {
-      "label": "Lost measurable weight",
-      "percent": 86
-     }
-    },
-    "c3": {
-     "type": "stat",
-     "settings": {
-      "label": "Loved the taste",
-      "percent": 93
-     }
-    },
-    "c4": {
-     "type": "stat",
-     "settings": {
-      "label": "Better daily energy",
-      "percent": 89
-     }
-    },
-    "c5": {
-     "type": "stat",
-     "settings": {
-      "label": "Would recommend to a friend",
-      "percent": 95
-     }
-    }
-   },
-   "block_order": [
-    "c1",
-    "c2",
-    "c3",
-    "c4",
-    "c5"
-   ],
-   "settings": {
-    "brand_primary": "#ffa500",
-    "brand_dark": "#b25800",
-    "brand_tint": "#fff8eb",
-    "eyebrow": "Real results",
-    "title_pre": "Trusted for",
-    "title_highlight": "Easy Meal Replacement",
-    "sub": "What customers report after 4 weeks of daily Diet Shake use.",
-    "caveat": "Based on a survey of 140+ verified customers. Individual results may vary."
-   }
-  },
-  "fbt": {
-   "type": "vb-product-related",
-   "blocks": {
-    "f1": {
-     "type": "product",
-     "settings": {
-      "product_handle": "gutslim-probiotics-glp-1-booster",
-      "brand": "GutSlim\u2122",
-      "rating": "4.8",
-      "reviews": "1200+",
-      "fallback_title": "",
-      "fallback_url": "",
-      "fallback_price": ""
-     }
-    },
-    "f2": {
-     "type": "product",
-     "settings": {
-      "product_handle": "her-biotics-original-capsules-60s",
-      "brand": "Her-Biotics\u2122",
-      "rating": "4.7",
-      "reviews": "260+",
-      "fallback_title": "",
-      "fallback_url": "",
-      "fallback_price": ""
-     }
-    },
-    "f3": {
-     "type": "product",
-     "settings": {
-      "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
-      "brand": "His-Biotics\u2122",
-      "rating": "4.7",
-      "reviews": "750+",
-      "fallback_title": "",
-      "fallback_url": "",
-      "fallback_price": ""
-     }
-    },
-    "f4": {
-     "type": "product",
-     "settings": {
-      "product_handle": "velo16-probiotics-magnesium-glycinate",
-      "brand": "Velo16\u2122",
-      "rating": "4.6",
-      "reviews": "190+",
-      "fallback_title": "",
-      "fallback_url": "",
-      "fallback_price": ""
-     }
-    }
-   },
-   "block_order": [
-    "f1",
-    "f2",
-    "f3",
-    "f4"
-   ],
-   "settings": {
-    "brand_primary": "#ffa500",
-    "brand_dark": "#b25800",
-    "brand_tint": "#fff8eb",
-    "tint": true,
-    "eyebrow": "Frequently Bought Together",
-    "title": "Pair with the rest of your wellness stack",
-    "sub": "Diet Shake stacks beautifully with these Velobiotics favourites."
-   }
-  },
-  "doctors": {
-   "type": "vb-doctors",
-   "blocks": {
-    "d1": {
-     "type": "card",
-     "settings": {
-      "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
-      "icon_fallback": "\u2713",
-      "name": "Clinically Proven Strains",
-      "desc": "16 strains studied in peer-reviewed clinical trials."
-     }
-    },
-    "d2": {
-     "type": "card",
-     "settings": {
-      "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
-      "icon_fallback": "\u2713",
-      "name": "Doctor Formulated",
-      "desc": "Developed by medical doctors and nutritionists."
-     }
-    },
-    "d3": {
-     "type": "card",
-     "settings": {
-      "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "icon_fallback": "\u2713",
-      "name": "Patented MEP Technology",
-      "desc": "Microencapsulation with Supercritical CO\u2082."
-     }
-    },
-    "d4": {
-     "type": "card",
-     "settings": {
-      "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
-      "icon_fallback": "\u2713",
-      "name": "Clean Label",
-      "desc": "Naturally sweetened, no fillers, no artificial nasties."
-     }
-    }
-   },
-   "block_order": [
-    "d1",
-    "d2",
-    "d3",
-    "d4"
-   ],
-   "settings": {
-    "eyebrow": "Trusted by Doctors. Proven by Science.",
-    "title_pre": "Quality you can",
-    "title_highlight": "trust.",
-    "sub": "Built on peer-reviewed strains, medical formulations, and SAHPRA-aware manufacturing."
-   }
-  },
-  "outperform": {
-   "type": "vb-product-outperform",
-   "blocks": {
-    "o1": {
-     "type": "row",
-     "settings": {
-      "feature": "Max Probiotic Strains",
-      "brand_state": "yes",
-      "b_state": "no",
-      "c_state": "no"
-     }
-    },
-    "o2": {
-     "type": "row",
-     "settings": {
-      "feature": "20g Clean Protein",
-      "brand_state": "yes",
-      "b_state": "no",
-      "c_state": "no"
-     }
-    },
-    "o3": {
-     "type": "row",
-     "settings": {
-      "feature": "Low Sugar Recipe",
-      "brand_state": "yes",
-      "b_state": "no",
-      "c_state": "no"
-     }
-    },
-    "o4": {
-     "type": "row",
-     "settings": {
-      "feature": "Daily Simplicity",
-      "brand_state": "yes",
-      "b_state": "no",
-      "c_state": "no"
-     }
-    },
-    "o5": {
-     "type": "row",
-     "settings": {
-      "feature": "Long-Lasting Satiety",
-      "brand_state": "yes",
-      "b_state": "no",
-      "c_state": "no"
-     }
-    }
-   },
-   "block_order": [
-    "o1",
-    "o2",
-    "o3",
-    "o4",
-    "o5"
-   ],
-   "settings": {
-    "brand_primary": "#ffa500",
-    "brand_dark": "#b25800",
-    "brand_tint": "#fff8eb",
-    "eyebrow": "",
-    "title": "Why Diet Shake Outperforms",
-    "sub": "Clean protein, low-GI carbs, 16 probiotic strains, and Velobiotics\u2122 delivery \u2014 a meal-replacement that fuels weight loss without crashes.",
-    "col_features": "Features",
-    "col_brand": "Diet Shake",
-    "brand_logo_url": "",
-    "col_b": "Generic Shake",
-    "col_c": "Others",
-    "cta_text": "Add to Cart",
-    "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
-   }
-  },
-  "judgeme": {
-   "type": "vb-judgeme",
-   "settings": {
-    "eyebrow": "Real Reviews",
-    "title_pre": "What Customers",
-    "title_highlight": "Are Saying",
-    "sub": "Verified reviews collected independently by Judge.me from customers who bought this product.",
-    "scope": "product",
-    "show_stats": true
-   }
-  },
-  "faq": {
-   "type": "vb-faq",
-   "blocks": {
-    "q1": {
-     "type": "q",
-     "settings": {
-      "question": "Which meal should I replace?",
-      "answer": "<p>Most customers replace breakfast for the easiest start. You can replace any meal, but we don't recommend replacing more than one per day.</p>"
-     }
-    },
-    "q2": {
-     "type": "q",
-     "settings": {
-      "question": "How does it taste?",
-      "answer": "<p>Creamy and smooth. Naturally sweetened with stevia and monk fruit. Mixes cleanly with water or any plant milk.</p>"
-     }
-    },
-    "q3": {
-     "type": "q",
-     "settings": {
-      "question": "Is the protein vegan?",
-      "answer": "<p>Our standard Diet Shake uses a whey + pea protein blend. We're launching a 100% plant version in 2026 \u2014 sign up for our newsletter to be notified.</p>"
-     }
-    },
-    "q4": {
-     "type": "q",
-     "settings": {
-      "question": "Is Diet Shake safe daily?",
-      "answer": "<p>Absolutely. Manufactured under GMP conditions in SAHPRA-aware facilities. Daily use is safe and recommended.</p>"
-     }
-    },
-    "q5": {
-     "type": "q",
-     "settings": {
-      "question": "Do you ship internationally?",
-      "answer": "<p>Yes. We ship globally \u2014 5\u201314 working days. Free shipping over the free-shipping threshold.</p>"
-     }
-    },
-    "q6": {
-     "type": "q",
-     "settings": {
-      "question": "What if it doesn't work for me?",
-      "answer": "<p>If you don't see results in 30 days, we'll refund you in full \u2014 no questions asked.</p>"
-     }
-    }
-   },
-   "block_order": [
-    "q1",
-    "q2",
-    "q3",
-    "q4",
-    "q5",
-    "q6"
-   ],
-   "settings": {
-    "eyebrow": "FAQ",
-    "title_pre": "Questions Before",
-    "title_highlight": "You Start"
-   }
-  },
-  "final": {
-   "type": "vb-product-final",
-   "blocks": {
-    "g1": {
-     "type": "g",
-     "settings": {
-      "icon": "\u2705",
-      "text": "30-day money-back"
-     }
-    },
-    "g2": {
-     "type": "g",
-     "settings": {
-      "icon": "\ud83d\ude9a",
-      "text": "Ships worldwide"
-     }
-    },
-    "g3": {
-     "type": "g",
-     "settings": {
-      "icon": "\ud83d\udd2c",
-      "text": "Lab-tested every batch"
-     }
-    },
-    "g4": {
-     "type": "g",
-     "settings": {
-      "icon": "\ud83c\udf3f",
-      "text": "100% natural"
-     }
-    }
-   },
-   "block_order": [
-    "g1",
-    "g2",
-    "g3",
-    "g4"
-   ],
-   "settings": {
-    "brand_primary": "#ffa500",
-    "brand_dark": "#b25800",
-    "brand_light": "#ffc266",
-    "badge": "30-day money-back guarantee",
-    "title_pre": "Replace a Meal",
-    "title_highlight": "Risk-Free for 30 Days",
-    "sub": "Join thousands replacing a meal the smart way. If you don't love it, we'll refund every cent.",
-    "cta_text": "Add to Cart",
-    "cta_link": "#vbpForm"
-   }
-  }
- },
- "order": [
-  "hero",
-  "reviews-carousel",
-  "problem",
-  "solution",
-  "related",
-  "benefits",
-  "how",
-  "ingredients",
-  "confidence",
-  "fbt",
-  "doctors",
-  "outperform",
-  "judgeme",
-  "faq",
-  "final"
- ]
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "judgeme",
+    "faq",
+    "final"
+  ]
 }

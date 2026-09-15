@@ -385,54 +385,20 @@
       }
     },
     "how": {
-      "type": "vb-product-how",
-      "blocks": {
-        "h1": {
-          "type": "step",
-          "settings": {
-            "icon": "💊",
-            "name": "Take One Capsule Daily",
-            "desc": "With water, after a meal."
-          }
-        },
-        "h2": {
-          "type": "step",
-          "settings": {
-            "icon": "🛡️",
-            "name": "MEP Armour Survives",
-            "desc": "Velobiotics™ shield protects every culture."
-          }
-        },
-        "h3": {
-          "type": "step",
-          "settings": {
-            "icon": "🎯",
-            "name": "Minerals Delivered",
-            "desc": "Fulvic transports trace minerals into cells."
-          }
-        },
-        "h4": {
-          "type": "step",
-          "settings": {
-            "icon": "✨",
-            "name": "Energy + Clarity",
-            "desc": "Steady vitality, sharper mind, calmer gut."
-          }
-        }
-      },
-      "block_order": [
-        "h1",
-        "h2",
-        "h3",
-        "h4"
-      ],
+      "type": "vb-product-ritual",
       "settings": {
         "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
         "brand_tint": "#ffe8ec",
-        "eyebrow": "How It Works",
-        "title_pre": "From Capsule to",
-        "title_highlight": "Cellular Vitality",
-        "sub": "Four simple steps. One daily ritual. Mineral mastery."
+        "form": "capsule",
+        "dose": "2 capsules",
+        "when": "with water",
+        "course": "Every day, ongoing",
+        "timeofday": "morning",
+        "mix_volume": "250 ml water or milk",
+        "eyebrow": "How to use",
+        "title_pre": "Your daily ritual,",
+        "title_highlight": "made effortless."
       }
     },
     "ingredients": {
@@ -749,12 +715,10 @@
     "judgeme": {
       "type": "vb-judgeme",
       "settings": {
-        "scope": "product",
-        "show_stats": true,
         "eyebrow": "Real Reviews",
         "title_pre": "What Customers",
         "title_highlight": "Are Saying",
-        "sub": "Verified reviews collected independently by Judge.me from customers who bought this product."
+        "sub": "Verified reviews from real customers."
       }
     },
     "faq": {

@@ -385,54 +385,21 @@
       }
     },
     "how": {
-      "type": "vb-product-how",
-      "blocks": {
-        "h1": {
-          "type": "step",
-          "settings": {
-            "icon": "💊",
-            "name": "Take One Capsule Daily",
-            "desc": "With water, after a meal. That's it."
-          }
-        },
-        "h2": {
-          "type": "step",
-          "settings": {
-            "icon": "🛡️",
-            "name": "MEP Armour Survives",
-            "desc": "Velobiotics™ shield protects every culture and nutrient."
-          }
-        },
-        "h3": {
-          "type": "step",
-          "settings": {
-            "icon": "🎯",
-            "name": "Delivered to Your Skin",
-            "desc": "1000× more probiotics + skin-supporting nutrients reach you alive."
-          }
-        },
-        "h4": {
-          "type": "step",
-          "settings": {
-            "icon": "🦶",
-            "name": "Healthier Skin & Feet",
-            "desc": "Softer, stronger, more resilient."
-          }
-        }
-      },
-      "block_order": [
-        "h1",
-        "h2",
-        "h3",
-        "h4"
-      ],
+      "type": "vb-product-ritual",
       "settings": {
         "brand_primary": "#ff6b35",
+        "brand_dark": "#b03515",
         "brand_tint": "#fff5ec",
-        "eyebrow": "How It Works",
-        "title_pre": "From Capsule to",
-        "title_highlight": "Confidence",
-        "sub": "Four simple steps. One daily ritual. Confident, comfortable mobility."
+        "form": "shake",
+        "dose": "1 serving (35 g)",
+        "when": "into water, milk or a smoothie",
+        "course": "Once a day during recovery",
+        "timeofday": "morning",
+        "mix_volume": "250 ml water, milk or smoothie",
+        "eyebrow": "How to use",
+        "title_pre": "Your daily ritual,",
+        "title_highlight": "made effortless.",
+        "anchors": "Breakfast|Post-workout|Lunch|Afternoon snack"
       }
     },
     "ingredients": {
@@ -749,12 +716,10 @@
     "judgeme": {
       "type": "vb-judgeme",
       "settings": {
-        "scope": "product",
-        "show_stats": true,
         "eyebrow": "Real Reviews",
         "title_pre": "What Customers",
         "title_highlight": "Are Saying",
-        "sub": "Verified reviews collected independently by Judge.me from customers who bought this product."
+        "sub": "Verified reviews from real customers. The Judge.me widget will populate this section on go-live."
       }
     },
     "faq": {

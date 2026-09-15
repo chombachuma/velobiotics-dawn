@@ -385,54 +385,22 @@
       }
     },
     "how": {
-      "type": "vb-product-how",
-      "blocks": {
-        "h1": {
-          "type": "step",
-          "settings": {
-            "icon": "🍓",
-            "name": "One Chewable Daily",
-            "desc": "Yummy berry flavour. Kids actually ask for it."
-          }
-        },
-        "h2": {
-          "type": "step",
-          "settings": {
-            "icon": "🛡️",
-            "name": "MEP Armour Survives",
-            "desc": "Velobiotics™ shield protects every culture and nutrient."
-          }
-        },
-        "h3": {
-          "type": "step",
-          "settings": {
-            "icon": "🎯",
-            "name": "Delivered to Their Gut",
-            "desc": "1000× more probiotics + full vitamin absorption."
-          }
-        },
-        "h4": {
-          "type": "step",
-          "settings": {
-            "icon": "🌟",
-            "name": "Happy & Healthy Kids",
-            "desc": "Stronger, calmer, brighter — every day."
-          }
-        }
-      },
-      "block_order": [
-        "h1",
-        "h2",
-        "h3",
-        "h4"
-      ],
+      "type": "vb-product-ritual",
       "settings": {
         "brand_primary": "#FF6A1A",
+        "brand_dark": "#B33C00",
         "brand_tint": "#FFF1E5",
-        "eyebrow": "How It Works",
-        "title_pre": "From Chewable to",
-        "title_highlight": "Healthy Kids",
-        "sub": "Four simple steps. One daily ritual. Kid-safe wellness."
+        "form": "chewable",
+        "dose": "1 tablet",
+        "when": "preferably with a meal",
+        "course": "Every day, ongoing",
+        "timeofday": "morning",
+        "mix_volume": "250 ml water or milk",
+        "eyebrow": "How to use",
+        "title_pre": "A tiny ritual",
+        "title_highlight": "kids love.",
+        "thanks": "Thank you for looking after a little gut so early — the habits you build now last a lifetime.",
+        "anchors": "Breakfast|School run|Brushing teeth|Bedtime story"
       }
     },
     "ingredients": {
@@ -749,12 +717,10 @@
     "judgeme": {
       "type": "vb-judgeme",
       "settings": {
-        "scope": "product",
-        "show_stats": true,
         "eyebrow": "Real Reviews",
         "title_pre": "What Parents",
         "title_highlight": "Are Saying",
-        "sub": "Verified reviews collected independently by Judge.me from customers who bought this product."
+        "sub": "Verified reviews from real parents. The Judge.me widget will populate this section on go-live."
       }
     },
     "faq": {

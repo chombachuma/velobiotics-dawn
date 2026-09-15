@@ -395,54 +395,20 @@
       }
     },
     "how": {
-      "type": "vb-product-how",
-      "blocks": {
-        "h1": {
-          "type": "step",
-          "settings": {
-            "icon": "💊",
-            "name": "Take One Capsule Daily",
-            "desc": "With water, before your largest meal."
-          }
-        },
-        "h2": {
-          "type": "step",
-          "settings": {
-            "icon": "🛡️",
-            "name": "MEP Armour Survives",
-            "desc": "Velobiotics™ shield protects every culture through stomach acid."
-          }
-        },
-        "h3": {
-          "type": "step",
-          "settings": {
-            "icon": "🎯",
-            "name": "Delivered to Your Gut",
-            "desc": "GLP-1 booster + 1000× more probiotics reach your gut alive."
-          }
-        },
-        "h4": {
-          "type": "step",
-          "settings": {
-            "icon": "⚖️",
-            "name": "Cravings Down, Weight Down",
-            "desc": "Eat less, feel fuller, lose weight steadily."
-          }
-        }
-      },
-      "block_order": [
-        "h1",
-        "h2",
-        "h3",
-        "h4"
-      ],
+      "type": "vb-product-ritual",
       "settings": {
         "brand_primary": "#FFA500",
+        "brand_dark": "#b25800",
         "brand_tint": "#fff8eb",
-        "eyebrow": "How It Works",
-        "title_pre": "From Capsule to",
-        "title_highlight": "Control",
-        "sub": "Four simple steps. One daily ritual. Sustainable weight management."
+        "form": "capsule",
+        "dose": "2 capsules",
+        "when": "with water, preferably before meals",
+        "course": "Every day, ongoing",
+        "timeofday": "morning",
+        "mix_volume": "250 ml water or milk",
+        "eyebrow": "How to use",
+        "title_pre": "Your daily ritual,",
+        "title_highlight": "made effortless."
       }
     },
     "ingredients": {
@@ -759,12 +725,10 @@
     "judgeme": {
       "type": "vb-judgeme",
       "settings": {
-        "scope": "product",
-        "show_stats": true,
         "eyebrow": "Real Reviews",
         "title_pre": "What Customers",
         "title_highlight": "Are Saying",
-        "sub": "Verified reviews collected independently by Judge.me from customers who bought this product."
+        "sub": "Verified reviews from real customers. The Judge.me widget will populate this section on go-live."
       }
     },
     "faq": {

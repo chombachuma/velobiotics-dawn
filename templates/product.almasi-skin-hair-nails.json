@@ -365,54 +365,20 @@
       }
     },
     "how": {
-      "type": "vb-product-how",
-      "blocks": {
-        "h1": {
-          "type": "step",
-          "settings": {
-            "icon": "💊",
-            "name": "Take One Capsule Daily",
-            "desc": "With water, after a meal."
-          }
-        },
-        "h2": {
-          "type": "step",
-          "settings": {
-            "icon": "🛡️",
-            "name": "MEP Armour Survives",
-            "desc": "Velobiotics™ shield protects every culture and active."
-          }
-        },
-        "h3": {
-          "type": "step",
-          "settings": {
-            "icon": "🎯",
-            "name": "Beauty Actives Deliver",
-            "desc": "Biotin + silica + zinc reach where they're needed."
-          }
-        },
-        "h4": {
-          "type": "step",
-          "settings": {
-            "icon": "✨",
-            "name": "Visible Glow",
-            "desc": "Visibly smoother skin, stronger hair and nails."
-          }
-        }
-      },
-      "block_order": [
-        "h1",
-        "h2",
-        "h3",
-        "h4"
-      ],
+      "type": "vb-product-ritual",
       "settings": {
         "brand_primary": "#1a1a1a",
+        "brand_dark": "#000000",
         "brand_tint": "#fdf5f3",
-        "eyebrow": "How It Works",
-        "title_pre": "From Capsule to",
-        "title_highlight": "Radiance",
-        "sub": "Four simple steps. One daily ritual. Beauty-from-within."
+        "form": "capsule",
+        "dose": "2 capsules",
+        "when": "with water, preferably with a meal",
+        "course": "Every day, ongoing",
+        "timeofday": "morning",
+        "mix_volume": "250 ml water or milk",
+        "eyebrow": "How to use",
+        "title_pre": "Your daily ritual,",
+        "title_highlight": "made effortless."
       }
     },
     "ingredients": {
@@ -729,12 +695,10 @@
     "judgeme": {
       "type": "vb-judgeme",
       "settings": {
-        "scope": "product",
-        "show_stats": true,
         "eyebrow": "Real Reviews",
         "title_pre": "What Customers",
         "title_highlight": "Are Saying",
-        "sub": "Verified reviews collected independently by Judge.me from customers who bought this product."
+        "sub": "Verified reviews from real customers. The Judge.me widget will populate this section on go-live."
       }
     },
     "faq": {

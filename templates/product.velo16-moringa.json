@@ -375,54 +375,20 @@
       }
     },
     "how": {
-      "type": "vb-product-how",
-      "blocks": {
-        "h1": {
-          "type": "step",
-          "settings": {
-            "icon": "🥤",
-            "name": "One Scoop Daily",
-            "desc": "Mix with water, smoothie, or juice."
-          }
-        },
-        "h2": {
-          "type": "step",
-          "settings": {
-            "icon": "🛡️",
-            "name": "MEP Armour Survives",
-            "desc": "Velobiotics™ shield protects nutrients + probiotics."
-          }
-        },
-        "h3": {
-          "type": "step",
-          "settings": {
-            "icon": "🎯",
-            "name": "Delivered to Your Body",
-            "desc": "Moringa + 1000× more probiotics reach you alive."
-          }
-        },
-        "h4": {
-          "type": "step",
-          "settings": {
-            "icon": "🌱",
-            "name": "Energy, Glow, Defence",
-            "desc": "Sustained energy, visible glow, immune resilience."
-          }
-        }
-      },
-      "block_order": [
-        "h1",
-        "h2",
-        "h3",
-        "h4"
-      ],
+      "type": "vb-product-ritual",
       "settings": {
         "brand_primary": "#c8163c",
+        "brand_dark": "#6b0a1f",
         "brand_tint": "#ffe8ec",
-        "eyebrow": "How It Works",
-        "title_pre": "From Scoop to",
-        "title_highlight": "Wellness",
-        "sub": "Four simple steps. One daily ritual. Greens, perfected."
+        "form": "capsule",
+        "dose": "2 capsules",
+        "when": "with water",
+        "course": "Every day, ongoing",
+        "timeofday": "morning",
+        "mix_volume": "250 ml water or milk",
+        "eyebrow": "How to use",
+        "title_pre": "Your daily ritual,",
+        "title_highlight": "made effortless."
       }
     },
     "ingredients": {
@@ -739,12 +705,10 @@
     "judgeme": {
       "type": "vb-judgeme",
       "settings": {
-        "scope": "product",
-        "show_stats": true,
         "eyebrow": "Real Reviews",
         "title_pre": "What Customers",
         "title_highlight": "Are Saying",
-        "sub": "Verified reviews collected independently by Judge.me from customers who bought this product."
+        "sub": "Verified reviews. Judge.me widget populates on go-live."
       }
     },
     "faq": {

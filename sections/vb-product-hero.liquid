@@ -228,6 +228,27 @@
     .vb-pb__sub-opt-title { font-size: 13px; }
     .vb-pb__sub-opt-price { font-size: 15px; }
   }
+
+  /* ===== Full-bleed immersive hero (mobile) — 15 Sep 2026 ===== */
+  @media (max-width: 749px) {
+    .vb-ph { padding-top: 0; }
+    .vb-pg { margin: 0 -14px 6px; }                                /* bleed to viewport edges */
+    .vb-pg__track-wrap {
+      border-radius: 0 0 28px 28px; border: 0; margin: 0;
+      background:
+        radial-gradient(120% 90% at 50% 0%, #ffffff 0%, var(--bt) 55%, color-mix(in srgb, var(--bt) 78%, var(--bp) 22%) 100%);
+      box-shadow: 0 18px 40px -28px rgba(0,0,0,.35);
+    }
+    .vb-pg__slide { aspect-ratio: 4 / 4.6; padding: 26px 10px 44px; }
+    .vb-pg__slide img { object-fit: contain; filter: drop-shadow(0 22px 26px rgba(0,0,0,.18)); }
+    .vb-pg__save { top: 14px; left: 14px; }
+    .vb-pg__dots { position: relative; z-index: 2; margin: -34px 0 18px; justify-content: center; }
+    .vb-pg__dot { background: rgba(255,255,255,.75); border: 1px solid rgba(0,0,0,.08); }
+    .vb-pg__dot.is-active { background: var(--bp); width: 22px; }
+    .vb-pg__count { position: absolute; right: 14px; bottom: 14px; z-index: 2; font-size: 11.5px; font-weight: 700; letter-spacing: .04em; color: #fff; background: rgba(20,30,20,.45); backdrop-filter: blur(6px); padding: 5px 10px; border-radius: 999px; }
+    .vb-pb { padding: 0 2px; }
+  }
+  @media (min-width: 750px) { .vb-pg__count { display: none; } }
 </style>
 
 {%- comment -%} Variant → selling-plans map for the JS to switch plan ids on variant change {%- endcomment -%}
@@ -258,6 +279,7 @@
             assign savings_pct = diff | times: 100.0 | divided_by: current_variant.compare_at_price | round
           endif
         -%}
+        {%- if product.images.size > 1 -%}<span class="vb-pg__count" data-vbpg-count><span data-vbpg-count-cur>1</span> / {{ product.images.size | at_most: 10 }}</span>{%- endif -%}
         {%- if savings_pct > 0 -%}<span class="vb-pg__save" data-vbpg-save>−{{ savings_pct }}%<small>SAVE</small></span>{%- endif -%}
       </div>
       {%- if product.images.size > 1 -%}
@@ -506,6 +528,7 @@
     const setActive = (idx) => {
       dots.forEach(d => d.classList.toggle('is-active', parseInt(d.dataset.vbpgDot) === idx));
       thumbs.forEach(t => t.classList.toggle('is-active', parseInt(t.dataset.vbpgThumb) === idx));
+      const c = root.querySelector('[data-vbpg-count-cur]'); if (c) c.textContent = idx + 1;
     };
     const goTo = (idx) => {
       if (!slides[idx]) return;

@@ -8,891 +8,893 @@
  * ------------------------------------------------------------
  */
 {
-  "sections": {
-    "hero": {
-      "type": "vb-product-hero",
-      "blocks": {
-        "b1": {
-          "type": "benefit",
-          "settings": {
-            "icon": "🌸",
-            "text": "Daily intimate balance"
-          }
-        },
-        "b2": {
-          "type": "benefit",
-          "settings": {
-            "icon": "🛡️",
-            "text": "Recurrent BV & UTI defence"
-          }
-        },
-        "b3": {
-          "type": "benefit",
-          "settings": {
-            "icon": "💧",
-            "text": "Cranberry urinary support"
-          }
-        },
-        "b4": {
-          "type": "benefit",
-          "settings": {
-            "icon": "⚡",
-            "text": "1000× more delivery"
-          }
-        },
-        "t1": {
-          "type": "testi",
-          "settings": {
-            "quote": "Day 3 and already a difference",
-            "author": "Cindy M."
-          }
-        },
-        "t2": {
-          "type": "testi",
-          "settings": {
-            "quote": "Goodbye recurring BV",
-            "author": "Priya M."
-          }
-        },
-        "t3": {
-          "type": "testi",
-          "settings": {
-            "quote": "Finally something that WORKS",
-            "author": "Nomvula K."
-          }
-        },
-        "t4": {
-          "type": "testi",
-          "settings": {
-            "quote": "Real science, real results",
-            "author": "Kim F."
-          }
-        },
-        "t5": {
-          "type": "testi",
-          "settings": {
-            "quote": "Regained my confidence",
-            "author": "Mahlako K."
-          }
-        },
-        "t6": {
-          "type": "testi",
-          "settings": {
-            "quote": "My go-to daily supplement",
-            "author": "Liezel v.d.M."
-          }
-        }
-      },
-      "block_order": [
-        "b1",
-        "b2",
-        "b3",
-        "b4",
-        "t1",
-        "t2",
-        "t3",
-        "t4",
-        "t5",
-        "t6"
-      ],
-      "settings": {
-        "brand_primary": "#8d2a89",
-        "brand_dark": "#6b1f68",
-        "brand_tint": "#fdf5fc",
-        "brand_label": "Femina™",
-        "rating": "4.8",
-        "review_count": "1,300+",
-        "hook": "Feel fresh, confident, and balanced — every single day. Femina™ restores your intimate microbiome from the inside out, with 10 clinically researched probiotic strains + cranberry extract.",
-        "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
-        "show_subscription": true,
-        "show_buynow": true,
-        "show_testi_marquee": true
-      }
+ "sections": {
+  "hero": {
+   "type": "vb-product-hero",
+   "blocks": {
+    "b1": {
+     "type": "benefit",
+     "settings": {
+      "icon": "\ud83c\udf38",
+      "text": "Daily intimate balance"
+     }
     },
-    "reviews-carousel": {
-      "type": "vb-product-reviews-carousel",
-      "blocks": {
-        "r1": {
-          "type": "review",
-          "settings": {
-            "avatar_url": "https://ui-avatars.com/api/?name=Cindy+Mpalala&background=8d2a89&color=ffffff&size=120&bold=true&font-size=0.42",
-            "author": "Cindy Mpalala",
-            "meta": "Verified buyer · 2 weeks ago",
-            "quote": "I am in love with my Femina — saw the difference by day 3. Will definitely come back."
-          }
-        },
-        "r2": {
-          "type": "review",
-          "settings": {
-            "avatar_url": "https://ui-avatars.com/api/?name=Archie+N&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
-            "author": "Archie N.",
-            "meta": "Verified buyer · 1 month ago",
-            "quote": "Best product, really changed my life since I started. I want to share this with every woman."
-          }
-        },
-        "r3": {
-          "type": "review",
-          "settings": {
-            "avatar_url": "https://ui-avatars.com/api/?name=Nomvula+K&background=6b1f68&color=ffffff&size=120&bold=true&font-size=0.42",
-            "author": "Nomvula K.",
-            "meta": "Verified buyer · Johannesburg",
-            "quote": "I have been struggling with recurring BV for over 3 years. Tried every antibiotic — none worked like Femina."
-          }
-        },
-        "r4": {
-          "type": "review",
-          "settings": {
-            "avatar_url": "https://ui-avatars.com/api/?name=Mahlako+K&background=8d2a89&color=ffffff&size=120&bold=true&font-size=0.42",
-            "author": "Mahlako K.",
-            "meta": "Verified buyer · 3 weeks ago",
-            "quote": "Smelly discharge after my periods is gone. I feel confident again."
-          }
-        },
-        "r5": {
-          "type": "review",
-          "settings": {
-            "avatar_url": "https://ui-avatars.com/api/?name=Kim+F&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
-            "author": "Kim F.",
-            "meta": "Verified buyer · 2 months ago",
-            "quote": "Love the science behind these probiotics. Daily ritual now — wouldn't go without."
-          }
-        },
-        "r6": {
-          "type": "review",
-          "settings": {
-            "avatar_url": "https://ui-avatars.com/api/?name=Dieketseng+M&background=6b1f68&color=ffffff&size=120&bold=true&font-size=0.42",
-            "author": "Dieketseng M.",
-            "meta": "Verified buyer · 1 month ago",
-            "quote": "Saw results after the first capsule. Boosted my confidence after going off antibiotics."
-          }
-        },
-        "r7": {
-          "type": "review",
-          "settings": {
-            "avatar_url": "https://ui-avatars.com/api/?name=Liezel+vd+M&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
-            "author": "Liezel v.d.M.",
-            "meta": "Verified buyer · Cape Town",
-            "quote": "4 months in. No yeast infections, no BV, no UTIs. The cranberry is a game-changer."
-          }
-        }
-      },
-      "block_order": [
-        "r1",
-        "r2",
-        "r3",
-        "r4",
-        "r5",
-        "r6",
-        "r7"
-      ],
-      "settings": {
-        "brand_primary": "#8d2a89",
-        "brand_dark": "#6b1f68",
-        "brand_tint": "#fdf5fc",
-        "eyebrow": "★ Real Reviews",
-        "title": "Loved by thousands of women"
-      }
+    "b2": {
+     "type": "benefit",
+     "settings": {
+      "icon": "\ud83d\udee1\ufe0f",
+      "text": "Recurrent BV & UTI defence"
+     }
     },
-    "problem": {
-      "type": "vb-product-story",
-      "blocks": {
-        "p1": {
-          "type": "point",
-          "settings": {
-            "icon": "✕",
-            "text": "<strong>Recurrent BV, yeast infections or UTIs</strong> — the cycle that keeps coming back."
-          }
-        },
-        "p2": {
-          "type": "point",
-          "settings": {
-            "icon": "✕",
-            "text": "<strong>Unpleasant odour or imbalance</strong> that you can't quite shake."
-          }
-        },
-        "p3": {
-          "type": "point",
-          "settings": {
-            "icon": "✕",
-            "text": "<strong>Antibiotics that work briefly</strong>, then leave you worse off."
-          }
-        },
-        "p4": {
-          "type": "point",
-          "settings": {
-            "icon": "✕",
-            "text": "<strong>Probiotics that promise everything</strong> and deliver nothing."
-          }
-        }
-      },
-      "block_order": [
-        "p1",
-        "p2",
-        "p3",
-        "p4"
-      ],
-      "settings": {
-        "reverse": false,
-        "brand_primary": "#8d2a89",
-        "brand_tint": "#fdf5fc",
-        "image_url": "https://media.base44.com/images/public/69e1abc073bbccc7f63edacc/653a0d852_generated_image.png",
-        "tag_value": "99%",
-        "tag_label": "Probiotics Don't Reach Your Gut",
-        "eyebrow": "The Problem",
-        "title_pre": "Sound familiar?",
-        "title_highlight": "You're not the problem — your probiotics are.",
-        "desc": "Most probiotics — and antibiotics — break down in stomach acid before they ever reach the places that matter. The result? A cycle of recurring intimate health issues that traditional treatment can't break."
-      }
+    "b3": {
+     "type": "benefit",
+     "settings": {
+      "icon": "\ud83d\udca7",
+      "text": "Cranberry urinary support"
+     }
     },
-    "solution": {
-      "type": "vb-product-story",
-      "blocks": {
-        "s1": {
-          "type": "point",
-          "settings": {
-            "icon": "✓",
-            "text": "<strong>10 clinically researched probiotic strains</strong> for full microbiome balance."
-          }
-        },
-        "s2": {
-          "type": "point",
-          "settings": {
-            "icon": "✓",
-            "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more probiotics reach your gut alive."
-          }
-        },
-        "s3": {
-          "type": "point",
-          "settings": {
-            "icon": "✓",
-            "text": "<strong>Cranberry extract</strong> for urinary tract support and UTI defence."
-          }
-        },
-        "s4": {
-          "type": "point",
-          "settings": {
-            "icon": "✓",
-            "text": "<strong>One capsule daily</strong>. Effortless. Doctor-formulated. Lab-tested every batch."
-          }
-        }
-      },
-      "block_order": [
-        "s1",
-        "s2",
-        "s3",
-        "s4"
-      ],
-      "settings": {
-        "reverse": true,
-        "brand_primary": "#8d2a89",
-        "brand_tint": "#fdf5fc",
-        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Product-image---Femina_-Probiotic-Capsules-with-Cranberry-Extract.jpg?v=1775328667",
-        "tag_value": "1000×",
-        "tag_label": "More Probiotics Delivered",
-        "eyebrow": "The Solution",
-        "title_pre": "Meet",
-        "title_highlight": "Femina™ Probiotic Capsules.",
-        "desc": "A once-daily oral supplement that combines 10 clinically researched probiotic strains with advanced Velobiotics™ technology — delivering 1000× more probiotics directly to your gut, where they balance your vaginal flora, support healthy pH, and address the root causes of recurring imbalance."
-      }
+    "b4": {
+     "type": "benefit",
+     "settings": {
+      "icon": "\u26a1",
+      "text": "1000\u00d7 more delivery"
+     }
     },
-    "related": {
-      "type": "vb-product-related",
-      "blocks": {
-        "r1": {
-          "type": "product",
-          "settings": {
-            "product_handle": "femina-probiotics-cookie-fresh-with-boric-acid-suppositories",
-            "brand": "Femina™",
-            "rating": "4.9",
-            "reviews": "320+"
-          }
-        },
-        "r2": {
-          "type": "product",
-          "settings": {
-            "product_handle": "femina-mini-combo",
-            "brand": "Femina™",
-            "rating": "4.8",
-            "reviews": "260+"
-          }
-        },
-        "r3": {
-          "type": "product",
-          "settings": {
-            "product_handle": "femina-cookie-fresh-boric-acid-only-suppositories",
-            "brand": "Femina™",
-            "rating": "4.8",
-            "reviews": "210+"
-          }
-        },
-        "r4": {
-          "type": "product",
-          "settings": {
-            "product_handle": "femina-menstrual-cups-large-small-value-pack",
-            "brand": "Femina™",
-            "rating": "4.7",
-            "reviews": "180+"
-          }
-        },
-        "r5": {
-          "type": "product",
-          "settings": {
-            "product_handle": "femina-probiotic-meal-replacement-cranberry-extract-for-women",
-            "brand": "Femina™",
-            "rating": "4.8",
-            "reviews": "150+"
-          }
-        }
-      },
-      "block_order": [
-        "r1",
-        "r2",
-        "r3",
-        "r4",
-        "r5"
-      ],
-      "settings": {
-        "brand_primary": "#8d2a89",
-        "brand_dark": "#6b1f68",
-        "brand_tint": "#fdf5fc",
-        "tint": false,
-        "eyebrow": "Complete the Ritual",
-        "title": "More from the Femina™ range",
-        "sub": "Pair your daily capsules with the rest of the Femina™ intimate-health system."
-      }
+    "t1": {
+     "type": "testi",
+     "settings": {
+      "quote": "Day 3 and already a difference",
+      "author": "Cindy M."
+     }
     },
-    "benefits": {
-      "type": "vb-product-benefits",
-      "blocks": {
-        "b1": {
-          "type": "feat",
-          "settings": {
-            "icon": "🌸",
-            "name": "Tackle Odour from Within",
-            "desc": "Balances the vaginal microbiome naturally — no more masking, just fresh."
-          }
-        },
-        "b2": {
-          "type": "feat",
-          "settings": {
-            "icon": "🛡️",
-            "name": "Prevent Recurrences",
-            "desc": "Helps stop the recurring BV, yeast and UTI cycle at its root."
-          }
-        },
-        "b3": {
-          "type": "feat",
-          "settings": {
-            "icon": "✨",
-            "name": "Long-Lasting Freshness",
-            "desc": "Supports your body's natural defences for sustainable, daily confidence."
-          }
-        },
-        "b4": {
-          "type": "feat",
-          "settings": {
-            "icon": "💪",
-            "name": "Boost Inner Confidence",
-            "desc": "Regain control of your intimate health — and feel your best in every aspect of life."
-          }
-        },
-        "b5": {
-          "type": "feat",
-          "settings": {
-            "icon": "🩺",
-            "name": "Doctor-Formulated",
-            "desc": "Developed by medical doctors using clinically-studied probiotic strains."
-          }
-        },
-        "b6": {
-          "type": "feat",
-          "settings": {
-            "icon": "🌿",
-            "name": "100% Natural",
-            "desc": "Vegan, halaal-friendly, no fillers, no artificial nasties."
-          }
-        }
-      },
-      "block_order": [
-        "b1",
-        "b2",
-        "b3",
-        "b4",
-        "b5",
-        "b6"
-      ],
-      "settings": {
-        "brand_primary": "#8d2a89",
-        "brand_tint": "#fdf5fc",
-        "eyebrow": "Key Benefits",
-        "title_pre": "Why",
-        "title_highlight": "Femina™",
-        "sub": "Six reasons women across South Africa and the world choose Femina™ over everything else on the shelf."
-      }
+    "t2": {
+     "type": "testi",
+     "settings": {
+      "quote": "Goodbye recurring BV",
+      "author": "Priya M."
+     }
     },
-    "how": {
-      "type": "vb-product-ritual",
-      "settings": {
-        "brand_primary": "#8d2a89",
-        "brand_dark": "#6b1f68",
-        "brand_tint": "#fdf5fc",
-        "form": "capsule",
-        "dose": "1 capsule",
-        "when": "with water, after a meal",
-        "course": "Every day, ongoing",
-        "timeofday": "morning",
-        "mix_volume": "250 ml water or milk",
-        "eyebrow": "How to use",
-        "title_pre": "Your daily ritual,",
-        "title_highlight": "made effortless."
-      }
+    "t3": {
+     "type": "testi",
+     "settings": {
+      "quote": "Finally something that WORKS",
+      "author": "Nomvula K."
+     }
     },
-    "ingredients": {
-      "type": "vb-product-ingredients",
-      "blocks": {
-        "i1": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "🦠",
-            "name": "10-Strain Probiotic Blend",
-            "amount": "5 Billion CFU",
-            "desc": "Lactobacillus & Bifidobacterium strains for full microbiome rebalancing."
-          }
-        },
-        "i2": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "🌿",
-            "name": "Cranberry Extract",
-            "amount": "PACs-standardised",
-            "desc": "Clinically backed for urinary tract support and UTI defence."
-          }
-        },
-        "i3": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "🛡️",
-            "name": "Velobiotics™ MEP Coating",
-            "amount": "Patented",
-            "desc": "Supercritical CO₂ microencapsulation — 1000× more probiotics survive."
-          }
-        },
-        "i4": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "🌾",
-            "name": "Prebiotic Fibre",
-            "amount": "Inulin",
-            "desc": "Feeds your good bacteria so they thrive long-term."
-          }
-        },
-        "i5": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "✓",
-            "name": "Clean Capsule Shell",
-            "amount": "Vegan HPMC",
-            "desc": "No gelatin, no fillers, no allergens. Halaal-friendly."
-          }
-        },
-        "i6": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "🚫",
-            "name": "Free From",
-            "amount": "Always",
-            "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO."
-          }
-        }
-      },
-      "block_order": [
-        "i1",
-        "i2",
-        "i3",
-        "i4",
-        "i5",
-        "i6"
-      ],
-      "settings": {
-        "brand_primary": "#8d2a89",
-        "brand_dark": "#6b1f68",
-        "brand_tint": "#fdf5fc",
-        "brand_light": "#b94db4",
-        "eyebrow": "What's Inside",
-        "title": "Every ingredient earns its place",
-        "sub": "Six clean actives. No proprietary blends. Full transparency.",
-        "facts_image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Femina-Probiotic-Caps-Supplement-Facts_4ce5fab2-c32d-44c7-aa2d-50fc1d8d71f2.jpg?v=1773693145",
-        "facts_label": "Supplement facts",
-        "facts_foot": "Lab-tested · Doctor-formulated · Full transparency"
-      }
+    "t4": {
+     "type": "testi",
+     "settings": {
+      "quote": "Real science, real results",
+      "author": "Kim F."
+     }
     },
-    "confidence": {
-      "type": "vb-product-confidence",
-      "blocks": {
-        "c1": {
-          "type": "stat",
-          "settings": {
-            "label": "Reported daily freshness",
-            "percent": 94
-          }
-        },
-        "c2": {
-          "type": "stat",
-          "settings": {
-            "label": "Felt restored intimate balance",
-            "percent": 89
-          }
-        },
-        "c3": {
-          "type": "stat",
-          "settings": {
-            "label": "Reduced recurring BV / yeast / UTI",
-            "percent": 82
-          }
-        },
-        "c4": {
-          "type": "stat",
-          "settings": {
-            "label": "Increased confidence & comfort",
-            "percent": 91
-          }
-        },
-        "c5": {
-          "type": "stat",
-          "settings": {
-            "label": "Would recommend to a friend",
-            "percent": 96
-          }
-        }
-      },
-      "block_order": [
-        "c1",
-        "c2",
-        "c3",
-        "c4",
-        "c5"
-      ],
-      "settings": {
-        "brand_primary": "#8d2a89",
-        "brand_dark": "#6b1f68",
-        "brand_tint": "#fdf5fc",
-        "eyebrow": "Real results",
-        "title_pre": "Trusted for",
-        "title_highlight": "Everyday Confidence",
-        "sub": "What women report after 4 weeks of daily Femina™ use.",
-        "caveat": "Based on a survey of 1,300+ verified customers. Individual results may vary."
-      }
+    "t5": {
+     "type": "testi",
+     "settings": {
+      "quote": "Regained my confidence",
+      "author": "Mahlako K."
+     }
     },
-    "fbt": {
-      "type": "vb-product-related",
-      "blocks": {
-        "f1": {
-          "type": "product",
-          "settings": {
-            "product_handle": "her-biotics-original-capsules-60s",
-            "brand": "Her-Biotics™",
-            "rating": "4.7",
-            "reviews": "260+"
-          }
-        },
-        "f2": {
-          "type": "product",
-          "settings": {
-            "product_handle": "gutslim-probiotics-glp-1-booster",
-            "brand": "GutSlim™",
-            "rating": "4.8",
-            "reviews": "410+"
-          }
-        },
-        "f3": {
-          "type": "product",
-          "settings": {
-            "product_handle": "velo16-probiotics-magnesium-glycinate",
-            "brand": "Velo16™",
-            "rating": "4.6",
-            "reviews": "190+"
-          }
-        },
-        "f4": {
-          "type": "product",
-          "settings": {
-            "product_handle": "pregbiotics-breastfeeding",
-            "brand": "PregBiotics™",
-            "rating": "4.9",
-            "reviews": "150+"
-          }
-        }
-      },
-      "block_order": [
-        "f1",
-        "f2",
-        "f3",
-        "f4"
-      ],
-      "settings": {
-        "brand_primary": "#8d2a89",
-        "brand_dark": "#6b1f68",
-        "brand_tint": "#fdf5fc",
-        "tint": true,
-        "eyebrow": "Frequently Bought Together",
-        "title": "Pair with the rest of your wellness stack",
-        "sub": "Women who love Femina™ also stack it with these Velobiotics favourites."
-      }
-    },
-    "doctors": {
-      "type": "vb-doctors",
-      "blocks": {
-        "d1": {
-          "type": "card",
-          "settings": {
-            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
-            "name": "Clinically Proven Strains",
-            "desc": "10 strains studied in peer-reviewed clinical trials."
-          }
-        },
-        "d2": {
-          "type": "card",
-          "settings": {
-            "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
-            "name": "Doctor Formulated",
-            "desc": "Developed by medical doctors and microbiologists."
-          }
-        },
-        "d3": {
-          "type": "card",
-          "settings": {
-            "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-            "name": "Patented MEP Technology",
-            "desc": "Microencapsulation with Supercritical CO₂."
-          }
-        },
-        "d4": {
-          "type": "card",
-          "settings": {
-            "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
-            "name": "Clean Label",
-            "desc": "Vegan, halaal-friendly, no fillers."
-          }
-        }
-      },
-      "block_order": [
-        "d1",
-        "d2",
-        "d3",
-        "d4"
-      ],
-      "settings": {
-        "eyebrow": "Trusted by Doctors. Proven by Science.",
-        "title_pre": "Quality you can",
-        "title_highlight": "trust.",
-        "sub": "Built on peer-reviewed strains, medical formulations, and SAHPRA-aware manufacturing."
-      }
-    },
-    "outperform": {
-      "type": "vb-product-outperform",
-      "blocks": {
-        "o1": {
-          "type": "row",
-          "settings": {
-            "feature": "Max Probiotic Strains",
-            "brand_state": "yes",
-            "b_state": "no",
-            "c_state": "no"
-          }
-        },
-        "o2": {
-          "type": "row",
-          "settings": {
-            "feature": "Advanced Absorption",
-            "brand_state": "yes",
-            "b_state": "no",
-            "c_state": "no"
-          }
-        },
-        "o3": {
-          "type": "row",
-          "settings": {
-            "feature": "Cranberry Boost",
-            "brand_state": "yes",
-            "b_state": "no",
-            "c_state": "no"
-          }
-        },
-        "o4": {
-          "type": "row",
-          "settings": {
-            "feature": "Daily Simplicity",
-            "brand_state": "yes",
-            "b_state": "no",
-            "c_state": "no"
-          }
-        },
-        "o5": {
-          "type": "row",
-          "settings": {
-            "feature": "Long-Term Benefits",
-            "brand_state": "yes",
-            "b_state": "no",
-            "c_state": "no"
-          }
-        }
-      },
-      "block_order": [
-        "o1",
-        "o2",
-        "o3",
-        "o4",
-        "o5"
-      ],
-      "settings": {
-        "brand_primary": "#8d2a89",
-        "brand_dark": "#6b1f68",
-        "brand_tint": "#fdf5fc",
-        "title": "Why We Outperform Others",
-        "sub": "Experience unmatched freshness and confidence with our unique blend of powerful probiotics and advanced absorption technology tailored for women's health.",
-        "col_features": "Features",
-        "col_brand": "Femina™",
-        "col_b": "General Probiotic",
-        "col_c": "Others",
-        "cta_text": "Add to Cart",
-        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
-      }
-    },
-    "judgeme": {
-      "type": "vb-judgeme",
-      "settings": {
-        "eyebrow": "Real Reviews",
-        "title_pre": "What Women",
-        "title_highlight": "Are Saying",
-        "sub": "Verified reviews from real women. The Judge.me widget will populate this section on go-live."
-      }
-    },
-    "faq": {
-      "type": "vb-faq",
-      "blocks": {
-        "q1": {
-          "type": "q",
-          "settings": {
-            "question": "How long until I see results?",
-            "answer": "<p>Most women feel a difference within 7–14 days — improved freshness, less imbalance, fewer recurrences. Full microbiome rebalancing takes 4–6 weeks of consistent daily use.</p>"
-          }
-        },
-        "q2": {
-          "type": "q",
-          "settings": {
-            "question": "Can I take Femina™ while on antibiotics?",
-            "answer": "<p>Yes — and it's actually recommended. Antibiotics wipe out both bad AND good bacteria. Femina™ helps replenish your healthy intimate flora during and after antibiotic treatment.</p>"
-          }
-        },
-        "q3": {
-          "type": "q",
-          "settings": {
-            "question": "Is Femina™ safe daily?",
-            "answer": "<p>Absolutely. Femina™ is manufactured under GMP conditions in SAHPRA-aware facilities. Daily use is safe and recommended for sustained intimate wellness.</p>"
-          }
-        },
-        "q4": {
-          "type": "q",
-          "settings": {
-            "question": "Can I take this if I'm pregnant or breastfeeding?",
-            "answer": "<p>Probiotics are generally safe in pregnancy and breastfeeding, but always check with your healthcare practitioner before starting any new supplement during these stages.</p>"
-          }
-        },
-        "q5": {
-          "type": "q",
-          "settings": {
-            "question": "Do you ship internationally?",
-            "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
-          }
-        },
-        "q6": {
-          "type": "q",
-          "settings": {
-            "question": "What if Femina™ doesn't work for me?",
-            "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full — no questions asked.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "q1",
-        "q2",
-        "q3",
-        "q4",
-        "q5",
-        "q6"
-      ],
-      "settings": {
-        "eyebrow": "FAQ",
-        "title_pre": "Questions Before",
-        "title_highlight": "You Start"
-      }
-    },
-    "final": {
-      "type": "vb-product-final",
-      "blocks": {
-        "g1": {
-          "type": "g",
-          "settings": {
-            "icon": "✅",
-            "text": "30-day money-back"
-          }
-        },
-        "g2": {
-          "type": "g",
-          "settings": {
-            "icon": "🚚",
-            "text": "Ships worldwide"
-          }
-        },
-        "g3": {
-          "type": "g",
-          "settings": {
-            "icon": "🔬",
-            "text": "Lab-tested every batch"
-          }
-        },
-        "g4": {
-          "type": "g",
-          "settings": {
-            "icon": "🌿",
-            "text": "100% natural"
-          }
-        }
-      },
-      "block_order": [
-        "g1",
-        "g2",
-        "g3",
-        "g4"
-      ],
-      "settings": {
-        "brand_primary": "#8d2a89",
-        "brand_dark": "#6b1f68",
-        "brand_light": "#b94db4",
-        "badge": "30-day money-back guarantee",
-        "title_pre": "Feel the Difference",
-        "title_highlight": "Risk-Free for 30 Days",
-        "sub": "Join the 100,000+ women who've reclaimed their intimate confidence with Femina™. If you don't feel the difference, we'll refund every cent.",
-        "cta_text": "Add to Cart",
-        "cta_link": "#vbpForm"
-      }
+    "t6": {
+     "type": "testi",
+     "settings": {
+      "quote": "My go-to daily supplement",
+      "author": "Liezel v.d.M."
+     }
     }
+   },
+   "block_order": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "t1",
+    "t2",
+    "t3",
+    "t4",
+    "t5",
+    "t6"
+   ],
+   "settings": {
+    "brand_primary": "#8d2a89",
+    "brand_dark": "#6b1f68",
+    "brand_tint": "#fdf5fc",
+    "brand_label": "Femina\u2122",
+    "rating": "4.8",
+    "review_count": "1,300+",
+    "hook": "Feel fresh, confident, and balanced \u2014 every single day. Femina\u2122 restores your intimate microbiome from the inside out, with 10 clinically researched probiotic strains + cranberry extract.",
+    "ship_note": "Ships worldwide \u00b7 Free shipping over the free-shipping threshold \u00b7 30-day money-back guarantee",
+    "show_subscription": true,
+    "show_buynow": true,
+    "show_testi_marquee": true
+   }
   },
-  "order": [
-    "hero",
-    "reviews-carousel",
-    "problem",
-    "solution",
-    "related",
-    "benefits",
-    "how",
-    "ingredients",
-    "confidence",
-    "fbt",
-    "doctors",
-    "outperform",
-    "judgeme",
-    "faq",
-    "final"
-  ]
+  "reviews-carousel": {
+   "type": "vb-product-reviews-carousel",
+   "blocks": {
+    "r1": {
+     "type": "review",
+     "settings": {
+      "avatar_url": "https://ui-avatars.com/api/?name=Cindy+Mpalala&background=8d2a89&color=ffffff&size=120&bold=true&font-size=0.42",
+      "author": "Cindy Mpalala",
+      "meta": "Verified buyer \u00b7 2 weeks ago",
+      "quote": "I am in love with my Femina \u2014 saw the difference by day 3. Will definitely come back."
+     }
+    },
+    "r2": {
+     "type": "review",
+     "settings": {
+      "avatar_url": "https://ui-avatars.com/api/?name=Archie+N&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
+      "author": "Archie N.",
+      "meta": "Verified buyer \u00b7 1 month ago",
+      "quote": "Best product, really changed my life since I started. I want to share this with every woman."
+     }
+    },
+    "r3": {
+     "type": "review",
+     "settings": {
+      "avatar_url": "https://ui-avatars.com/api/?name=Nomvula+K&background=6b1f68&color=ffffff&size=120&bold=true&font-size=0.42",
+      "author": "Nomvula K.",
+      "meta": "Verified buyer \u00b7 Johannesburg",
+      "quote": "I have been struggling with recurring BV for over 3 years. Tried every antibiotic \u2014 none worked like Femina."
+     }
+    },
+    "r4": {
+     "type": "review",
+     "settings": {
+      "avatar_url": "https://ui-avatars.com/api/?name=Mahlako+K&background=8d2a89&color=ffffff&size=120&bold=true&font-size=0.42",
+      "author": "Mahlako K.",
+      "meta": "Verified buyer \u00b7 3 weeks ago",
+      "quote": "Smelly discharge after my periods is gone. I feel confident again."
+     }
+    },
+    "r5": {
+     "type": "review",
+     "settings": {
+      "avatar_url": "https://ui-avatars.com/api/?name=Kim+F&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
+      "author": "Kim F.",
+      "meta": "Verified buyer \u00b7 2 months ago",
+      "quote": "Love the science behind these probiotics. Daily ritual now \u2014 wouldn't go without."
+     }
+    },
+    "r6": {
+     "type": "review",
+     "settings": {
+      "avatar_url": "https://ui-avatars.com/api/?name=Dieketseng+M&background=6b1f68&color=ffffff&size=120&bold=true&font-size=0.42",
+      "author": "Dieketseng M.",
+      "meta": "Verified buyer \u00b7 1 month ago",
+      "quote": "Saw results after the first capsule. Boosted my confidence after going off antibiotics."
+     }
+    },
+    "r7": {
+     "type": "review",
+     "settings": {
+      "avatar_url": "https://ui-avatars.com/api/?name=Liezel+vd+M&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
+      "author": "Liezel v.d.M.",
+      "meta": "Verified buyer \u00b7 Cape Town",
+      "quote": "4 months in. No yeast infections, no BV, no UTIs. The cranberry is a game-changer."
+     }
+    }
+   },
+   "block_order": [
+    "r1",
+    "r2",
+    "r3",
+    "r4",
+    "r5",
+    "r6",
+    "r7"
+   ],
+   "settings": {
+    "brand_primary": "#8d2a89",
+    "brand_dark": "#6b1f68",
+    "brand_tint": "#fdf5fc",
+    "eyebrow": "\u2605 Real Reviews",
+    "title": "Loved by thousands of women"
+   }
+  },
+  "problem": {
+   "type": "vb-product-story",
+   "blocks": {
+    "p1": {
+     "type": "point",
+     "settings": {
+      "icon": "\u2715",
+      "text": "<strong>Recurrent BV, yeast infections or UTIs</strong> \u2014 the cycle that keeps coming back."
+     }
+    },
+    "p2": {
+     "type": "point",
+     "settings": {
+      "icon": "\u2715",
+      "text": "<strong>Unpleasant odour or imbalance</strong> that you can't quite shake."
+     }
+    },
+    "p3": {
+     "type": "point",
+     "settings": {
+      "icon": "\u2715",
+      "text": "<strong>Antibiotics that work briefly</strong>, then leave you worse off."
+     }
+    },
+    "p4": {
+     "type": "point",
+     "settings": {
+      "icon": "\u2715",
+      "text": "<strong>Probiotics that promise everything</strong> and deliver nothing."
+     }
+    }
+   },
+   "block_order": [
+    "p1",
+    "p2",
+    "p3",
+    "p4"
+   ],
+   "settings": {
+    "reverse": false,
+    "brand_primary": "#8d2a89",
+    "brand_tint": "#fdf5fc",
+    "image_url": "https://media.base44.com/images/public/69e1abc073bbccc7f63edacc/653a0d852_generated_image.png",
+    "tag_value": "99%",
+    "tag_label": "Probiotics Don't Reach Your Gut",
+    "eyebrow": "The Problem",
+    "title_pre": "Sound familiar?",
+    "title_highlight": "You're not the problem \u2014 your probiotics are.",
+    "desc": "Most probiotics \u2014 and antibiotics \u2014 break down in stomach acid before they ever reach the places that matter. The result? A cycle of recurring intimate health issues that traditional treatment can't break."
+   }
+  },
+  "solution": {
+   "type": "vb-product-story",
+   "blocks": {
+    "s1": {
+     "type": "point",
+     "settings": {
+      "icon": "\u2713",
+      "text": "<strong>10 clinically researched probiotic strains</strong> for full microbiome balance."
+     }
+    },
+    "s2": {
+     "type": "point",
+     "settings": {
+      "icon": "\u2713",
+      "text": "<strong>Velobiotics\u2122 MEP technology</strong> \u2014 1000\u00d7 more probiotics reach your gut alive."
+     }
+    },
+    "s3": {
+     "type": "point",
+     "settings": {
+      "icon": "\u2713",
+      "text": "<strong>Cranberry extract</strong> for urinary tract support and UTI defence."
+     }
+    },
+    "s4": {
+     "type": "point",
+     "settings": {
+      "icon": "\u2713",
+      "text": "<strong>One capsule daily</strong>. Effortless. Doctor-formulated. Lab-tested every batch."
+     }
+    }
+   },
+   "block_order": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ],
+   "settings": {
+    "reverse": true,
+    "brand_primary": "#8d2a89",
+    "brand_tint": "#fdf5fc",
+    "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Product-image---Femina_-Probiotic-Capsules-with-Cranberry-Extract.jpg?v=1775328667",
+    "tag_value": "1000\u00d7",
+    "tag_label": "More Probiotics Delivered",
+    "eyebrow": "The Solution",
+    "title_pre": "Meet",
+    "title_highlight": "Femina\u2122 Probiotic Capsules.",
+    "desc": "A once-daily oral supplement that combines 10 clinically researched probiotic strains with advanced Velobiotics\u2122 technology \u2014 delivering 1000\u00d7 more probiotics directly to your gut, where they balance your vaginal flora, support healthy pH, and address the root causes of recurring imbalance."
+   }
+  },
+  "related": {
+   "type": "vb-product-related",
+   "blocks": {
+    "r1": {
+     "type": "product",
+     "settings": {
+      "product_handle": "femina-probiotics-cookie-fresh-with-boric-acid-suppositories",
+      "brand": "Femina\u2122",
+      "rating": "4.9",
+      "reviews": "320+"
+     }
+    },
+    "r2": {
+     "type": "product",
+     "settings": {
+      "product_handle": "femina-mini-combo",
+      "brand": "Femina\u2122",
+      "rating": "4.8",
+      "reviews": "260+"
+     }
+    },
+    "r3": {
+     "type": "product",
+     "settings": {
+      "product_handle": "femina-cookie-fresh-boric-acid-only-suppositories",
+      "brand": "Femina\u2122",
+      "rating": "4.8",
+      "reviews": "210+"
+     }
+    },
+    "r4": {
+     "type": "product",
+     "settings": {
+      "product_handle": "femina-menstrual-cups-large-small-value-pack",
+      "brand": "Femina\u2122",
+      "rating": "4.7",
+      "reviews": "180+"
+     }
+    },
+    "r5": {
+     "type": "product",
+     "settings": {
+      "product_handle": "femina-probiotic-meal-replacement-cranberry-extract-for-women",
+      "brand": "Femina\u2122",
+      "rating": "4.8",
+      "reviews": "150+"
+     }
+    }
+   },
+   "block_order": [
+    "r1",
+    "r2",
+    "r3",
+    "r4",
+    "r5"
+   ],
+   "settings": {
+    "brand_primary": "#8d2a89",
+    "brand_dark": "#6b1f68",
+    "brand_tint": "#fdf5fc",
+    "tint": false,
+    "eyebrow": "Complete the Ritual",
+    "title": "More from the Femina\u2122 range",
+    "sub": "Pair your daily capsules with the rest of the Femina\u2122 intimate-health system."
+   }
+  },
+  "benefits": {
+   "type": "vb-product-benefits",
+   "blocks": {
+    "b1": {
+     "type": "feat",
+     "settings": {
+      "icon": "\ud83c\udf38",
+      "name": "Tackle Odour from Within",
+      "desc": "Balances the vaginal microbiome naturally \u2014 no more masking, just fresh."
+     }
+    },
+    "b2": {
+     "type": "feat",
+     "settings": {
+      "icon": "\ud83d\udee1\ufe0f",
+      "name": "Prevent Recurrences",
+      "desc": "Helps stop the recurring BV, yeast and UTI cycle at its root."
+     }
+    },
+    "b3": {
+     "type": "feat",
+     "settings": {
+      "icon": "\u2728",
+      "name": "Long-Lasting Freshness",
+      "desc": "Supports your body's natural defences for sustainable, daily confidence."
+     }
+    },
+    "b4": {
+     "type": "feat",
+     "settings": {
+      "icon": "\ud83d\udcaa",
+      "name": "Boost Inner Confidence",
+      "desc": "Regain control of your intimate health \u2014 and feel your best in every aspect of life."
+     }
+    },
+    "b5": {
+     "type": "feat",
+     "settings": {
+      "icon": "\ud83e\ude7a",
+      "name": "Doctor-Formulated",
+      "desc": "Developed by medical doctors using clinically-studied probiotic strains."
+     }
+    },
+    "b6": {
+     "type": "feat",
+     "settings": {
+      "icon": "\ud83c\udf3f",
+      "name": "100% Natural",
+      "desc": "Vegan, halaal-friendly, no fillers, no artificial nasties."
+     }
+    }
+   },
+   "block_order": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6"
+   ],
+   "settings": {
+    "brand_primary": "#8d2a89",
+    "brand_tint": "#fdf5fc",
+    "eyebrow": "Key Benefits",
+    "title_pre": "Why",
+    "title_highlight": "Femina\u2122",
+    "sub": "Six reasons women across South Africa and the world choose Femina\u2122 over everything else on the shelf."
+   }
+  },
+  "how": {
+   "type": "vb-product-ritual",
+   "settings": {
+    "brand_primary": "#8d2a89",
+    "brand_dark": "#6b1f68",
+    "brand_tint": "#fdf5fc",
+    "form": "capsule",
+    "dose": "1 capsule",
+    "when": "with water, after a meal",
+    "course": "Every day, ongoing",
+    "timeofday": "morning",
+    "mix_volume": "250 ml water or milk",
+    "eyebrow": "How to use",
+    "title_pre": "Your daily ritual,",
+    "title_highlight": "made effortless."
+   }
+  },
+  "ingredients": {
+   "type": "vb-product-ingredients",
+   "blocks": {
+    "i1": {
+     "type": "ingredient",
+     "settings": {
+      "icon": "\ud83e\udda0",
+      "name": "10-Strain Probiotic Blend",
+      "amount": "5 Billion CFU",
+      "desc": "Lactobacillus & Bifidobacterium strains for full microbiome rebalancing."
+     }
+    },
+    "i2": {
+     "type": "ingredient",
+     "settings": {
+      "icon": "\ud83c\udf3f",
+      "name": "Cranberry Extract",
+      "amount": "PACs-standardised",
+      "desc": "Clinically backed for urinary tract support and UTI defence."
+     }
+    },
+    "i3": {
+     "type": "ingredient",
+     "settings": {
+      "icon": "\ud83d\udee1\ufe0f",
+      "name": "Velobiotics\u2122 MEP Coating",
+      "amount": "Patented",
+      "desc": "Supercritical CO\u2082 microencapsulation \u2014 1000\u00d7 more probiotics survive."
+     }
+    },
+    "i4": {
+     "type": "ingredient",
+     "settings": {
+      "icon": "\ud83c\udf3e",
+      "name": "Prebiotic Fibre",
+      "amount": "Inulin",
+      "desc": "Feeds your good bacteria so they thrive long-term."
+     }
+    },
+    "i5": {
+     "type": "ingredient",
+     "settings": {
+      "icon": "\u2713",
+      "name": "Clean Capsule Shell",
+      "amount": "Vegan HPMC",
+      "desc": "No gelatin, no fillers, no allergens. Halaal-friendly."
+     }
+    },
+    "i6": {
+     "type": "ingredient",
+     "settings": {
+      "icon": "\ud83d\udeab",
+      "name": "Free From",
+      "amount": "Always",
+      "desc": "Gluten \u00b7 soy \u00b7 dairy \u00b7 artificial colours \u00b7 preservatives \u00b7 GMO."
+     }
+    }
+   },
+   "block_order": [
+    "i1",
+    "i2",
+    "i3",
+    "i4",
+    "i5",
+    "i6"
+   ],
+   "settings": {
+    "brand_primary": "#8d2a89",
+    "brand_dark": "#6b1f68",
+    "brand_tint": "#fdf5fc",
+    "brand_light": "#b94db4",
+    "eyebrow": "What's Inside",
+    "title": "Every ingredient earns its place",
+    "sub": "Six clean actives. No proprietary blends. Full transparency.",
+    "facts_image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Femina-Probiotic-Caps-Supplement-Facts_4ce5fab2-c32d-44c7-aa2d-50fc1d8d71f2.jpg?v=1773693145",
+    "facts_label": "Supplement facts",
+    "facts_foot": "Lab-tested \u00b7 Doctor-formulated \u00b7 Full transparency"
+   }
+  },
+  "confidence": {
+   "type": "vb-product-confidence",
+   "blocks": {
+    "c1": {
+     "type": "stat",
+     "settings": {
+      "label": "Reported daily freshness",
+      "percent": 94
+     }
+    },
+    "c2": {
+     "type": "stat",
+     "settings": {
+      "label": "Felt restored intimate balance",
+      "percent": 89
+     }
+    },
+    "c3": {
+     "type": "stat",
+     "settings": {
+      "label": "Reduced recurring BV / yeast / UTI",
+      "percent": 82
+     }
+    },
+    "c4": {
+     "type": "stat",
+     "settings": {
+      "label": "Increased confidence & comfort",
+      "percent": 91
+     }
+    },
+    "c5": {
+     "type": "stat",
+     "settings": {
+      "label": "Would recommend to a friend",
+      "percent": 96
+     }
+    }
+   },
+   "block_order": [
+    "c1",
+    "c2",
+    "c3",
+    "c4",
+    "c5"
+   ],
+   "settings": {
+    "brand_primary": "#8d2a89",
+    "brand_dark": "#6b1f68",
+    "brand_tint": "#fdf5fc",
+    "eyebrow": "Real results",
+    "title_pre": "Trusted for",
+    "title_highlight": "Everyday Confidence",
+    "sub": "What women report after 4 weeks of daily Femina\u2122 use.",
+    "caveat": "Based on a survey of 1,300+ verified customers. Individual results may vary."
+   }
+  },
+  "fbt": {
+   "type": "vb-product-related",
+   "blocks": {
+    "f1": {
+     "type": "product",
+     "settings": {
+      "product_handle": "her-biotics-original-capsules-60s",
+      "brand": "Her-Biotics\u2122",
+      "rating": "4.7",
+      "reviews": "260+"
+     }
+    },
+    "f2": {
+     "type": "product",
+     "settings": {
+      "product_handle": "gutslim-probiotics-glp-1-booster",
+      "brand": "GutSlim\u2122",
+      "rating": "4.8",
+      "reviews": "410+"
+     }
+    },
+    "f3": {
+     "type": "product",
+     "settings": {
+      "product_handle": "velo16-probiotics-magnesium-glycinate",
+      "brand": "Velo16\u2122",
+      "rating": "4.6",
+      "reviews": "190+"
+     }
+    },
+    "f4": {
+     "type": "product",
+     "settings": {
+      "product_handle": "pregbiotics-breastfeeding",
+      "brand": "PregBiotics\u2122",
+      "rating": "4.9",
+      "reviews": "150+"
+     }
+    }
+   },
+   "block_order": [
+    "f1",
+    "f2",
+    "f3",
+    "f4"
+   ],
+   "settings": {
+    "brand_primary": "#8d2a89",
+    "brand_dark": "#6b1f68",
+    "brand_tint": "#fdf5fc",
+    "tint": true,
+    "eyebrow": "Frequently Bought Together",
+    "title": "Pair with the rest of your wellness stack",
+    "sub": "Women who love Femina\u2122 also stack it with these Velobiotics favourites."
+   }
+  },
+  "doctors": {
+   "type": "vb-doctors",
+   "blocks": {
+    "d1": {
+     "type": "card",
+     "settings": {
+      "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
+      "name": "Clinically Proven Strains",
+      "desc": "10 strains studied in peer-reviewed clinical trials."
+     }
+    },
+    "d2": {
+     "type": "card",
+     "settings": {
+      "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
+      "name": "Doctor Formulated",
+      "desc": "Developed by medical doctors and microbiologists."
+     }
+    },
+    "d3": {
+     "type": "card",
+     "settings": {
+      "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
+      "name": "Patented MEP Technology",
+      "desc": "Microencapsulation with Supercritical CO\u2082."
+     }
+    },
+    "d4": {
+     "type": "card",
+     "settings": {
+      "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
+      "name": "Clean Label",
+      "desc": "Vegan, halaal-friendly, no fillers."
+     }
+    }
+   },
+   "block_order": [
+    "d1",
+    "d2",
+    "d3",
+    "d4"
+   ],
+   "settings": {
+    "eyebrow": "Trusted by Doctors. Proven by Science.",
+    "title_pre": "Quality you can",
+    "title_highlight": "trust.",
+    "sub": "Built on peer-reviewed strains, medical formulations, and SAHPRA-aware manufacturing."
+   }
+  },
+  "outperform": {
+   "type": "vb-product-outperform",
+   "blocks": {
+    "o1": {
+     "type": "row",
+     "settings": {
+      "feature": "Max Probiotic Strains",
+      "brand_state": "yes",
+      "b_state": "no",
+      "c_state": "no"
+     }
+    },
+    "o2": {
+     "type": "row",
+     "settings": {
+      "feature": "Advanced Absorption",
+      "brand_state": "yes",
+      "b_state": "no",
+      "c_state": "no"
+     }
+    },
+    "o3": {
+     "type": "row",
+     "settings": {
+      "feature": "Cranberry Boost",
+      "brand_state": "yes",
+      "b_state": "no",
+      "c_state": "no"
+     }
+    },
+    "o4": {
+     "type": "row",
+     "settings": {
+      "feature": "Daily Simplicity",
+      "brand_state": "yes",
+      "b_state": "no",
+      "c_state": "no"
+     }
+    },
+    "o5": {
+     "type": "row",
+     "settings": {
+      "feature": "Long-Term Benefits",
+      "brand_state": "yes",
+      "b_state": "no",
+      "c_state": "no"
+     }
+    }
+   },
+   "block_order": [
+    "o1",
+    "o2",
+    "o3",
+    "o4",
+    "o5"
+   ],
+   "settings": {
+    "brand_primary": "#8d2a89",
+    "brand_dark": "#6b1f68",
+    "brand_tint": "#fdf5fc",
+    "title": "Why We Outperform Others",
+    "sub": "Experience unmatched freshness and confidence with our unique blend of powerful probiotics and advanced absorption technology tailored for women's health.",
+    "col_features": "Features",
+    "col_brand": "Femina\u2122",
+    "col_b": "General Probiotic",
+    "col_c": "Others",
+    "cta_text": "Add to Cart",
+    "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
+   }
+  },
+  "judgeme": {
+   "type": "vb-judgeme",
+   "settings": {
+    "eyebrow": "Real Reviews",
+    "title_pre": "What Women",
+    "title_highlight": "Are Saying",
+    "sub": "Verified reviews collected independently by Judge.me from customers who bought this product.",
+    "scope": "product",
+    "show_stats": true
+   }
+  },
+  "faq": {
+   "type": "vb-faq",
+   "blocks": {
+    "q1": {
+     "type": "q",
+     "settings": {
+      "question": "How long until I see results?",
+      "answer": "<p>Most women feel a difference within 7\u201314 days \u2014 improved freshness, less imbalance, fewer recurrences. Full microbiome rebalancing takes 4\u20136 weeks of consistent daily use.</p>"
+     }
+    },
+    "q2": {
+     "type": "q",
+     "settings": {
+      "question": "Can I take Femina\u2122 while on antibiotics?",
+      "answer": "<p>Yes \u2014 and it's actually recommended. Antibiotics wipe out both bad AND good bacteria. Femina\u2122 helps replenish your healthy intimate flora during and after antibiotic treatment.</p>"
+     }
+    },
+    "q3": {
+     "type": "q",
+     "settings": {
+      "question": "Is Femina\u2122 safe daily?",
+      "answer": "<p>Absolutely. Femina\u2122 is manufactured under GMP conditions in SAHPRA-aware facilities. Daily use is safe and recommended for sustained intimate wellness.</p>"
+     }
+    },
+    "q4": {
+     "type": "q",
+     "settings": {
+      "question": "Can I take this if I'm pregnant or breastfeeding?",
+      "answer": "<p>Probiotics are generally safe in pregnancy and breastfeeding, but always check with your healthcare practitioner before starting any new supplement during these stages.</p>"
+     }
+    },
+    "q5": {
+     "type": "q",
+     "settings": {
+      "question": "Do you ship internationally?",
+      "answer": "<p>Yes. We ship globally \u2014 5\u201314 working days. Free shipping over the free-shipping threshold.</p>"
+     }
+    },
+    "q6": {
+     "type": "q",
+     "settings": {
+      "question": "What if Femina\u2122 doesn't work for me?",
+      "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full \u2014 no questions asked.</p>"
+     }
+    }
+   },
+   "block_order": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5",
+    "q6"
+   ],
+   "settings": {
+    "eyebrow": "FAQ",
+    "title_pre": "Questions Before",
+    "title_highlight": "You Start"
+   }
+  },
+  "final": {
+   "type": "vb-product-final",
+   "blocks": {
+    "g1": {
+     "type": "g",
+     "settings": {
+      "icon": "\u2705",
+      "text": "30-day money-back"
+     }
+    },
+    "g2": {
+     "type": "g",
+     "settings": {
+      "icon": "\ud83d\ude9a",
+      "text": "Ships worldwide"
+     }
+    },
+    "g3": {
+     "type": "g",
+     "settings": {
+      "icon": "\ud83d\udd2c",
+      "text": "Lab-tested every batch"
+     }
+    },
+    "g4": {
+     "type": "g",
+     "settings": {
+      "icon": "\ud83c\udf3f",
+      "text": "100% natural"
+     }
+    }
+   },
+   "block_order": [
+    "g1",
+    "g2",
+    "g3",
+    "g4"
+   ],
+   "settings": {
+    "brand_primary": "#8d2a89",
+    "brand_dark": "#6b1f68",
+    "brand_light": "#b94db4",
+    "badge": "30-day money-back guarantee",
+    "title_pre": "Feel the Difference",
+    "title_highlight": "Risk-Free for 30 Days",
+    "sub": "Join the 100,000+ women who've reclaimed their intimate confidence with Femina\u2122. If you don't feel the difference, we'll refund every cent.",
+    "cta_text": "Add to Cart",
+    "cta_link": "#vbpForm"
+   }
+  }
+ },
+ "order": [
+  "hero",
+  "reviews-carousel",
+  "problem",
+  "solution",
+  "related",
+  "benefits",
+  "how",
+  "ingredients",
+  "confidence",
+  "fbt",
+  "doctors",
+  "outperform",
+  "judgeme",
+  "faq",
+  "final"
+ ]
 }

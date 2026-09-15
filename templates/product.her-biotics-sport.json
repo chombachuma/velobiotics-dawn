@@ -8,877 +8,879 @@
  * ------------------------------------------------------------
  */
 {
-  "sections": {
-    "hero": {
-      "type": "vb-product-hero",
-      "blocks": {
-        "b1": {
-          "type": "benefit",
-          "settings": {
-            "icon": "💪",
-            "text": "Active women's multivit"
-          }
-        },
-        "b2": {
-          "type": "benefit",
-          "settings": {
-            "icon": "🔥",
-            "text": "Training recovery + iron"
-          }
-        },
-        "b3": {
-          "type": "benefit",
-          "settings": {
-            "icon": "🦠",
-            "text": "16 probiotic strains"
-          }
-        },
-        "b4": {
-          "type": "benefit",
-          "settings": {
-            "icon": "⚡",
-            "text": "1000× more delivery"
-          }
-        },
-        "t1": {
-          "type": "testi",
-          "settings": {
-            "quote": "Recovery cut in half",
-            "author": "Aisha B."
-          }
-        },
-        "t2": {
-          "type": "testi",
-          "settings": {
-            "quote": "PRs every month",
-            "author": "Lerato M."
-          }
-        },
-        "t3": {
-          "type": "testi",
-          "settings": {
-            "quote": "Iron deficiency gone",
-            "author": "Naomi P."
-          }
-        },
-        "t4": {
-          "type": "testi",
-          "settings": {
-            "quote": "Best gym fuel",
-            "author": "Charmaine V."
-          }
-        }
-      },
-      "block_order": [
-        "b1",
-        "b2",
-        "b3",
-        "b4",
-        "t1",
-        "t2",
-        "t3",
-        "t4"
-      ],
-      "settings": {
-        "brand_primary": "#f5908d",
-        "brand_dark": "#b85a58",
-        "brand_tint": "#fff5f3",
-        "brand_label": "Her-Biotics™ Sport",
-        "rating": "4.6",
-        "review_count": "100+",
-        "hook": "Built for the active woman. Her-Biotics™ Sport combines 16 probiotic strains with iron, BCAAs, electrolytes, and recovery actives — engineered for women who train hard.",
-        "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
-        "show_buynow": true,
-        "show_testi_marquee": true
-      }
+ "sections": {
+  "hero": {
+   "type": "vb-product-hero",
+   "blocks": {
+    "b1": {
+     "type": "benefit",
+     "settings": {
+      "icon": "\ud83d\udcaa",
+      "text": "Active women's multivit"
+     }
     },
-    "reviews-carousel": {
-      "type": "vb-product-reviews-carousel",
-      "blocks": {
-        "r1": {
-          "type": "review",
-          "settings": {
-            "avatar_url": "https://ui-avatars.com/api/?name=Aisha+B&background=f5908d&color=ffffff&size=120&bold=true&font-size=0.42",
-            "author": "Aisha B.",
-            "meta": "Verified buyer · Pretoria",
-            "quote": "Recovery cut in half. I train 6 days now, no fatigue."
-          }
-        },
-        "r2": {
-          "type": "review",
-          "settings": {
-            "avatar_url": "https://ui-avatars.com/api/?name=Lerato+M&background=ffc0bd&color=ffffff&size=120&bold=true&font-size=0.42",
-            "author": "Lerato M.",
-            "meta": "Verified buyer · 2 months ago",
-            "quote": "PRs every month. Iron sorted my energy plateau."
-          }
-        },
-        "r3": {
-          "type": "review",
-          "settings": {
-            "avatar_url": "https://ui-avatars.com/api/?name=Naomi+P&background=b85a58&color=ffffff&size=120&bold=true&font-size=0.42",
-            "author": "Naomi P.",
-            "meta": "Verified buyer · 1 month ago",
-            "quote": "Iron deficiency gone in 6 weeks. Crossfit performance up."
-          }
-        },
-        "r4": {
-          "type": "review",
-          "settings": {
-            "avatar_url": "https://ui-avatars.com/api/?name=Charmaine+V&background=f5908d&color=ffffff&size=120&bold=true&font-size=0.42",
-            "author": "Charmaine V.",
-            "meta": "Verified buyer · 3 weeks ago",
-            "quote": "Best gym fuel I've used. Specifically for women — finally."
-          }
-        },
-        "r5": {
-          "type": "review",
-          "settings": {
-            "avatar_url": "https://ui-avatars.com/api/?name=Bianca+T&background=ffc0bd&color=ffffff&size=120&bold=true&font-size=0.42",
-            "author": "Bianca T.",
-            "meta": "Verified buyer · Cape Town",
-            "quote": "Marathon training fuelled cleanly. No gut issues during long runs."
-          }
-        }
-      },
-      "block_order": [
-        "r1",
-        "r2",
-        "r3",
-        "r4",
-        "r5"
-      ],
-      "settings": {
-        "brand_primary": "#f5908d",
-        "brand_dark": "#b85a58",
-        "brand_tint": "#fff5f3",
-        "eyebrow": "★ Real Reviews",
-        "title": "Active women, real reviews"
-      }
+    "b2": {
+     "type": "benefit",
+     "settings": {
+      "icon": "\ud83d\udd25",
+      "text": "Training recovery + iron"
+     }
     },
-    "problem": {
-      "type": "vb-product-story",
-      "blocks": {
-        "p1": {
-          "type": "point",
-          "settings": {
-            "icon": "✕",
-            "text": "<strong>Iron deficiency</strong> from menstrual losses + training demands."
-          }
-        },
-        "p2": {
-          "type": "point",
-          "settings": {
-            "icon": "✕",
-            "text": "<strong>Slow recovery</strong> between training sessions."
-          }
-        },
-        "p3": {
-          "type": "point",
-          "settings": {
-            "icon": "✕",
-            "text": "<strong>Gut issues</strong> during long runs and intense workouts."
-          }
-        },
-        "p4": {
-          "type": "point",
-          "settings": {
-            "icon": "✕",
-            "text": "<strong>Men's sport supplements</strong> that miss women's biology."
-          }
-        }
-      },
-      "block_order": [
-        "p1",
-        "p2",
-        "p3",
-        "p4"
-      ],
-      "settings": {
-        "reverse": false,
-        "brand_primary": "#f5908d",
-        "brand_tint": "#fff5f3",
-        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_180903_da282482-2786-4615-882c-560e2ec0ef35.jpeg",
-        "tag_value": "22%",
-        "tag_label": "Of Active Women Are Iron Deficient",
-        "eyebrow": "The Problem",
-        "title_pre": "Active women",
-        "title_highlight": "deserve a women's fuel.",
-        "desc": "Active women lose iron through menstruation AND training. Men's sport supplements don't account for that. Generic women's multivits don't account for athletic demands. Her-Biotics Sport closes both gaps."
-      }
+    "b3": {
+     "type": "benefit",
+     "settings": {
+      "icon": "\ud83e\udda0",
+      "text": "16 probiotic strains"
+     }
     },
-    "solution": {
-      "type": "vb-product-story",
-      "blocks": {
-        "s1": {
-          "type": "point",
-          "settings": {
-            "icon": "✓",
-            "text": "<strong>Iron bisglycinate + Vit C</strong> — gentle, absorbable, no constipation."
-          }
-        },
-        "s2": {
-          "type": "point",
-          "settings": {
-            "icon": "✓",
-            "text": "<strong>BCAAs + L-glutamine</strong> — recovery actives for women's biology."
-          }
-        },
-        "s3": {
-          "type": "point",
-          "settings": {
-            "icon": "✓",
-            "text": "<strong>Electrolyte blend</strong> — magnesium, potassium, sodium, calcium."
-          }
-        },
-        "s4": {
-          "type": "point",
-          "settings": {
-            "icon": "✓",
-            "text": "<strong>16-strain probiotic blend</strong> for gut + immune support."
-          }
-        }
-      },
-      "block_order": [
-        "s1",
-        "s2",
-        "s3",
-        "s4"
-      ],
-      "settings": {
-        "reverse": true,
-        "brand_primary": "#f5908d",
-        "brand_tint": "#fff5f3",
-        "image_url": "",
-        "tag_value": "1000×",
-        "tag_label": "More Probiotics Delivered",
-        "eyebrow": "The Solution",
-        "title_pre": "Meet",
-        "title_highlight": "Her-Biotics™ Sport.",
-        "desc": "Iron + BCAAs + electrolytes + 16 probiotic strains. Built for women who train hard — fuelled recovery, sharper performance, no gut issues mid-workout."
-      }
+    "b4": {
+     "type": "benefit",
+     "settings": {
+      "icon": "\u26a1",
+      "text": "1000\u00d7 more delivery"
+     }
     },
-    "related": {
-      "type": "vb-product-related",
-      "blocks": {
-        "r1": {
-          "type": "product",
-          "settings": {
-            "product_handle": "her-biotics-original-capsules-60s",
-            "brand": "Her-Biotics™",
-            "rating": "4.7",
-            "reviews": "950+",
-            "fallback_title": "",
-            "fallback_url": "",
-            "fallback_price": ""
-          }
-        },
-        "r2": {
-          "type": "product",
-          "settings": {
-            "product_handle": "her-biotics-probiotics-menopausal-support",
-            "brand": "Her-Biotics™",
-            "rating": "4.8",
-            "reviews": "180+",
-            "fallback_title": "",
-            "fallback_url": "",
-            "fallback_price": ""
-          }
-        },
-        "r3": {
-          "type": "product",
-          "settings": {
-            "product_handle": "her-biotics-probiotics-pms-pre-menstrual-support",
-            "brand": "Her-Biotics™",
-            "rating": "4.7",
-            "reviews": "150+",
-            "fallback_title": "",
-            "fallback_url": "",
-            "fallback_price": ""
-          }
-        },
-        "r4": {
-          "type": "product",
-          "settings": {
-            "product_handle": "her-biotics-probiotics-ageless-multivitamin-50",
-            "brand": "Her-Biotics™",
-            "rating": "4.8",
-            "reviews": "120+",
-            "fallback_title": "",
-            "fallback_url": "",
-            "fallback_price": ""
-          }
-        }
-      },
-      "block_order": [
-        "r1",
-        "r2",
-        "r3",
-        "r4"
-      ],
-      "settings": {
-        "brand_primary": "#f5908d",
-        "brand_dark": "#b85a58",
-        "brand_tint": "#fff5f3",
-        "tint": false,
-        "eyebrow": "Complete the Stack",
-        "title": "More from the Her-Biotics™ range",
-        "sub": "Customised support for every season of a woman's life."
-      }
+    "t1": {
+     "type": "testi",
+     "settings": {
+      "quote": "Recovery cut in half",
+      "author": "Aisha B."
+     }
     },
-    "benefits": {
-      "type": "vb-product-benefits",
-      "blocks": {
-        "b1": {
-          "type": "feat",
-          "settings": {
-            "icon": "🔥",
-            "name": "Iron Energy",
-            "desc": "Bisglycinate form — absorbable, gentle on stomach."
-          }
-        },
-        "b2": {
-          "type": "feat",
-          "settings": {
-            "icon": "💪",
-            "name": "Faster Recovery",
-            "desc": "BCAAs + L-glutamine rebuild muscle quickly."
-          }
-        },
-        "b3": {
-          "type": "feat",
-          "settings": {
-            "icon": "💧",
-            "name": "Electrolyte Balance",
-            "desc": "Replenish what sweat takes — cramp prevention."
-          }
-        },
-        "b4": {
-          "type": "feat",
-          "settings": {
-            "icon": "🦠",
-            "name": "Gut-Friendly Training",
-            "desc": "16 probiotic strains for race-day gut stability."
-          }
-        },
-        "b5": {
-          "type": "feat",
-          "settings": {
-            "icon": "🩺",
-            "name": "Doctor-Formulated",
-            "desc": "Built by sports-medicine and women's-health specialists."
-          }
-        },
-        "b6": {
-          "type": "feat",
-          "settings": {
-            "icon": "🌿",
-            "name": "Clean Formula",
-            "desc": "Vegan-option, halaal-friendly, no banned substances."
-          }
-        }
-      },
-      "block_order": [
-        "b1",
-        "b2",
-        "b3",
-        "b4",
-        "b5",
-        "b6"
-      ],
-      "settings": {
-        "brand_primary": "#f5908d",
-        "brand_tint": "#fff5f3",
-        "eyebrow": "Key Benefits",
-        "title_pre": "Why",
-        "title_highlight": "Her-Biotics Sport",
-        "sub": "Six reasons active women across South Africa fuel with Her-Biotics Sport."
-      }
+    "t2": {
+     "type": "testi",
+     "settings": {
+      "quote": "PRs every month",
+      "author": "Lerato M."
+     }
     },
-    "how": {
-      "type": "vb-product-ritual",
-      "settings": {
-        "brand_primary": "#f5908d",
-        "brand_dark": "#b85a58",
-        "brand_tint": "#fff5f3",
-        "form": "capsule",
-        "dose": "2 capsules",
-        "when": "with water, preferably with a meal",
-        "course": "Every day, ongoing",
-        "timeofday": "morning",
-        "mix_volume": "250 ml water or milk",
-        "eyebrow": "How to use",
-        "title_pre": "Your daily ritual,",
-        "title_highlight": "made effortless."
-      }
+    "t3": {
+     "type": "testi",
+     "settings": {
+      "quote": "Iron deficiency gone",
+      "author": "Naomi P."
+     }
     },
-    "ingredients": {
-      "type": "vb-product-ingredients",
-      "blocks": {
-        "i1": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "🔥",
-            "name": "Iron Bisglycinate + Vit C",
-            "amount": "20mg + 250mg",
-            "desc": "Gentle, highly absorbable iron with Vit C cofactor."
-          }
-        },
-        "i2": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "💪",
-            "name": "BCAAs + L-Glutamine",
-            "amount": "3,000mg",
-            "desc": "Branched-chain amino acids for recovery."
-          }
-        },
-        "i3": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "💧",
-            "name": "Electrolyte Blend",
-            "amount": "Full daily",
-            "desc": "Magnesium, potassium, sodium, calcium for hydration."
-          }
-        },
-        "i4": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "🦠",
-            "name": "16-Strain Probiotic Blend",
-            "amount": "1 Billion CFU",
-            "desc": "Strains chosen for athletic gut tolerance."
-          }
-        },
-        "i5": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "🛡️",
-            "name": "Velobiotics™ MEP Coating",
-            "amount": "Patented",
-            "desc": "Supercritical CO₂ microencapsulation — 1000× more survive."
-          }
-        },
-        "i6": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "🚫",
-            "name": "Free From",
-            "amount": "Always",
-            "desc": "WADA banned substances · gluten · soy · dairy · GMO."
-          }
-        }
-      },
-      "block_order": [
-        "i1",
-        "i2",
-        "i3",
-        "i4",
-        "i5",
-        "i6"
-      ],
-      "settings": {
-        "brand_primary": "#f5908d",
-        "brand_dark": "#b85a58",
-        "brand_tint": "#fff5f3",
-        "brand_light": "#ffc0bd",
-        "eyebrow": "What's Inside",
-        "title": "Every ingredient earns its place",
-        "sub": "Six clean actives. WADA-compliant. Full transparency.",
-        "facts_image_url": "",
-        "facts_label": "Supplement facts",
-        "facts_col_a": "Ingredient",
-        "facts_col_b": "Per serving",
-        "facts_caption": "% Daily Value not established. Other Ingredients: HPMC, Magnesium Stearate.",
-        "facts_foot": "Lab-tested · Sport-formulated · Full transparency"
-      }
-    },
-    "confidence": {
-      "type": "vb-product-confidence",
-      "blocks": {
-        "c1": {
-          "type": "stat",
-          "settings": {
-            "label": "Faster training recovery",
-            "percent": 89
-          }
-        },
-        "c2": {
-          "type": "stat",
-          "settings": {
-            "label": "Better workout performance",
-            "percent": 86
-          }
-        },
-        "c3": {
-          "type": "stat",
-          "settings": {
-            "label": "Less training fatigue",
-            "percent": 91
-          }
-        },
-        "c4": {
-          "type": "stat",
-          "settings": {
-            "label": "Iron levels improved",
-            "percent": 92
-          }
-        },
-        "c5": {
-          "type": "stat",
-          "settings": {
-            "label": "Would recommend to a friend",
-            "percent": 94
-          }
-        }
-      },
-      "block_order": [
-        "c1",
-        "c2",
-        "c3",
-        "c4",
-        "c5"
-      ],
-      "settings": {
-        "brand_primary": "#f5908d",
-        "brand_dark": "#b85a58",
-        "brand_tint": "#fff5f3",
-        "eyebrow": "Real results",
-        "title_pre": "Trusted for",
-        "title_highlight": "Active Performance",
-        "sub": "What active women report after 6 weeks of daily Sport use.",
-        "caveat": "Based on a survey of 100+ verified customers. Individual results may vary."
-      }
-    },
-    "fbt": {
-      "type": "vb-product-related",
-      "blocks": {
-        "f1": {
-          "type": "product",
-          "settings": {
-            "product_handle": "velo16-probiotics-creatine",
-            "brand": "Velo16™",
-            "rating": "4.8",
-            "reviews": "180+",
-            "fallback_title": "",
-            "fallback_url": "",
-            "fallback_price": ""
-          }
-        },
-        "f2": {
-          "type": "product",
-          "settings": {
-            "product_handle": "her-biotics-original-capsules-60s",
-            "brand": "Her-Biotics™",
-            "rating": "4.7",
-            "reviews": "950+",
-            "fallback_title": "",
-            "fallback_url": "",
-            "fallback_price": ""
-          }
-        },
-        "f3": {
-          "type": "product",
-          "settings": {
-            "product_handle": "velo16-probiotics-magnesium-glycinate",
-            "brand": "Velo16™",
-            "rating": "4.6",
-            "reviews": "190+",
-            "fallback_title": "",
-            "fallback_url": "",
-            "fallback_price": ""
-          }
-        },
-        "f4": {
-          "type": "product",
-          "settings": {
-            "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
-            "brand": "Femina™",
-            "rating": "4.8",
-            "reviews": "1300+",
-            "fallback_title": "",
-            "fallback_url": "",
-            "fallback_price": ""
-          }
-        }
-      },
-      "block_order": [
-        "f1",
-        "f2",
-        "f3",
-        "f4"
-      ],
-      "settings": {
-        "brand_primary": "#f5908d",
-        "brand_dark": "#b85a58",
-        "brand_tint": "#fff5f3",
-        "tint": true,
-        "eyebrow": "Frequently Bought Together",
-        "title": "Pair with the rest of your wellness stack",
-        "sub": "Her-Biotics Sport stacks beautifully with these Velobiotics favourites."
-      }
-    },
-    "doctors": {
-      "type": "vb-doctors",
-      "blocks": {
-        "d1": {
-          "type": "card",
-          "settings": {
-            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
-            "icon_fallback": "✓",
-            "name": "Clinically Validated",
-            "desc": "Iron bisglycinate + BCAAs — peer-reviewed for active women."
-          }
-        },
-        "d2": {
-          "type": "card",
-          "settings": {
-            "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
-            "icon_fallback": "✓",
-            "name": "Sport Formulated",
-            "desc": "Built by sports-medicine and women's-health specialists."
-          }
-        },
-        "d3": {
-          "type": "card",
-          "settings": {
-            "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-            "icon_fallback": "✓",
-            "name": "Patented MEP Technology",
-            "desc": "Microencapsulation with Supercritical CO₂."
-          }
-        },
-        "d4": {
-          "type": "card",
-          "settings": {
-            "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
-            "icon_fallback": "✓",
-            "name": "WADA-Compliant",
-            "desc": "No banned substances. Competition-safe."
-          }
-        }
-      },
-      "block_order": [
-        "d1",
-        "d2",
-        "d3",
-        "d4"
-      ],
-      "settings": {
-        "eyebrow": "Trusted by Doctors. Proven by Science.",
-        "title_pre": "Quality you can",
-        "title_highlight": "trust.",
-        "sub": "Built on peer-reviewed actives, sports-medicine guidance, and SAHPRA-aware manufacturing."
-      }
-    },
-    "outperform": {
-      "type": "vb-product-outperform",
-      "blocks": {
-        "o1": {
-          "type": "row",
-          "settings": {
-            "feature": "Iron Bisglycinate",
-            "brand_state": "yes",
-            "b_state": "no",
-            "c_state": "no"
-          }
-        },
-        "o2": {
-          "type": "row",
-          "settings": {
-            "feature": "BCAAs + L-Glutamine",
-            "brand_state": "yes",
-            "b_state": "no",
-            "c_state": "no"
-          }
-        },
-        "o3": {
-          "type": "row",
-          "settings": {
-            "feature": "Electrolyte Blend",
-            "brand_state": "yes",
-            "b_state": "no",
-            "c_state": "no"
-          }
-        },
-        "o4": {
-          "type": "row",
-          "settings": {
-            "feature": "Max Probiotic Strains",
-            "brand_state": "yes",
-            "b_state": "no",
-            "c_state": "no"
-          }
-        },
-        "o5": {
-          "type": "row",
-          "settings": {
-            "feature": "Women's-Specific Biology",
-            "brand_state": "yes",
-            "b_state": "no",
-            "c_state": "no"
-          }
-        }
-      },
-      "block_order": [
-        "o1",
-        "o2",
-        "o3",
-        "o4",
-        "o5"
-      ],
-      "settings": {
-        "brand_primary": "#f5908d",
-        "brand_dark": "#b85a58",
-        "brand_tint": "#fff5f3",
-        "eyebrow": "",
-        "title": "Why Her-Biotics Sport Outperforms",
-        "sub": "Iron, BCAAs, electrolytes, probiotic strains, and Velobiotics™ delivery — built for active women's biology.",
-        "col_features": "Features",
-        "col_brand": "Sport",
-        "brand_logo_url": "",
-        "col_b": "Men's Sport Vit",
-        "col_c": "Generic Vit",
-        "cta_text": "Add to Cart",
-        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
-      }
-    },
-    "judgeme": {
-      "type": "vb-judgeme",
-      "settings": {
-        "eyebrow": "Real Reviews",
-        "title_pre": "What Active Women",
-        "title_highlight": "Are Saying",
-        "sub": "Verified reviews from real active women. The Judge.me widget will populate this section on go-live."
-      }
-    },
-    "faq": {
-      "type": "vb-faq",
-      "blocks": {
-        "q1": {
-          "type": "q",
-          "settings": {
-            "question": "Is this WADA-compliant?",
-            "answer": "<p>Yes. Her-Biotics Sport contains no banned substances. Safe for competition and drug-tested sport.</p>"
-          }
-        },
-        "q2": {
-          "type": "q",
-          "settings": {
-            "question": "When should I take it?",
-            "answer": "<p>With your first meal of the day. For 2-a-day training, take with breakfast and post-workout meal.</p>"
-          }
-        },
-        "q3": {
-          "type": "q",
-          "settings": {
-            "question": "Can I stack with whey protein?",
-            "answer": "<p>Yes — they're complementary. Whey for total protein, Sport for women-specific actives.</p>"
-          }
-        },
-        "q4": {
-          "type": "q",
-          "settings": {
-            "question": "Is Sport safe daily?",
-            "answer": "<p>Absolutely. Manufactured under GMP conditions in SAHPRA-aware facilities. Daily use is safe and recommended.</p>"
-          }
-        },
-        "q5": {
-          "type": "q",
-          "settings": {
-            "question": "Do you ship internationally?",
-            "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
-          }
-        },
-        "q6": {
-          "type": "q",
-          "settings": {
-            "question": "What if it doesn't work for me?",
-            "answer": "<p>If you don't see results in 30 days, we'll refund you in full — no questions asked.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "q1",
-        "q2",
-        "q3",
-        "q4",
-        "q5",
-        "q6"
-      ],
-      "settings": {
-        "eyebrow": "FAQ",
-        "title_pre": "Questions Before",
-        "title_highlight": "You Start"
-      }
-    },
-    "final": {
-      "type": "vb-product-final",
-      "blocks": {
-        "g1": {
-          "type": "g",
-          "settings": {
-            "icon": "✅",
-            "text": "30-day money-back"
-          }
-        },
-        "g2": {
-          "type": "g",
-          "settings": {
-            "icon": "🚚",
-            "text": "Ships worldwide"
-          }
-        },
-        "g3": {
-          "type": "g",
-          "settings": {
-            "icon": "🔬",
-            "text": "Lab-tested every batch"
-          }
-        },
-        "g4": {
-          "type": "g",
-          "settings": {
-            "icon": "💪",
-            "text": "WADA-compliant"
-          }
-        }
-      },
-      "block_order": [
-        "g1",
-        "g2",
-        "g3",
-        "g4"
-      ],
-      "settings": {
-        "brand_primary": "#f5908d",
-        "brand_dark": "#b85a58",
-        "brand_light": "#ffc0bd",
-        "badge": "30-day money-back guarantee",
-        "title_pre": "Train Hard, Recover Fast",
-        "title_highlight": "Risk-Free for 30 Days",
-        "sub": "Join thousands of active women fuelling cleanly. If you don't see results, we'll refund every cent.",
-        "cta_text": "Add to Cart",
-        "cta_link": "#vbpForm"
-      }
+    "t4": {
+     "type": "testi",
+     "settings": {
+      "quote": "Best gym fuel",
+      "author": "Charmaine V."
+     }
     }
+   },
+   "block_order": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "t1",
+    "t2",
+    "t3",
+    "t4"
+   ],
+   "settings": {
+    "brand_primary": "#f5908d",
+    "brand_dark": "#b85a58",
+    "brand_tint": "#fff5f3",
+    "brand_label": "Her-Biotics\u2122 Sport",
+    "rating": "4.6",
+    "review_count": "100+",
+    "hook": "Built for the active woman. Her-Biotics\u2122 Sport combines 16 probiotic strains with iron, BCAAs, electrolytes, and recovery actives \u2014 engineered for women who train hard.",
+    "ship_note": "Ships worldwide \u00b7 Free shipping over the free-shipping threshold \u00b7 30-day money-back guarantee",
+    "show_buynow": true,
+    "show_testi_marquee": true
+   }
   },
-  "order": [
-    "hero",
-    "reviews-carousel",
-    "problem",
-    "solution",
-    "related",
-    "benefits",
-    "how",
-    "ingredients",
-    "confidence",
-    "fbt",
-    "doctors",
-    "outperform",
-    "judgeme",
-    "faq",
-    "final"
-  ]
+  "reviews-carousel": {
+   "type": "vb-product-reviews-carousel",
+   "blocks": {
+    "r1": {
+     "type": "review",
+     "settings": {
+      "avatar_url": "https://ui-avatars.com/api/?name=Aisha+B&background=f5908d&color=ffffff&size=120&bold=true&font-size=0.42",
+      "author": "Aisha B.",
+      "meta": "Verified buyer \u00b7 Pretoria",
+      "quote": "Recovery cut in half. I train 6 days now, no fatigue."
+     }
+    },
+    "r2": {
+     "type": "review",
+     "settings": {
+      "avatar_url": "https://ui-avatars.com/api/?name=Lerato+M&background=ffc0bd&color=ffffff&size=120&bold=true&font-size=0.42",
+      "author": "Lerato M.",
+      "meta": "Verified buyer \u00b7 2 months ago",
+      "quote": "PRs every month. Iron sorted my energy plateau."
+     }
+    },
+    "r3": {
+     "type": "review",
+     "settings": {
+      "avatar_url": "https://ui-avatars.com/api/?name=Naomi+P&background=b85a58&color=ffffff&size=120&bold=true&font-size=0.42",
+      "author": "Naomi P.",
+      "meta": "Verified buyer \u00b7 1 month ago",
+      "quote": "Iron deficiency gone in 6 weeks. Crossfit performance up."
+     }
+    },
+    "r4": {
+     "type": "review",
+     "settings": {
+      "avatar_url": "https://ui-avatars.com/api/?name=Charmaine+V&background=f5908d&color=ffffff&size=120&bold=true&font-size=0.42",
+      "author": "Charmaine V.",
+      "meta": "Verified buyer \u00b7 3 weeks ago",
+      "quote": "Best gym fuel I've used. Specifically for women \u2014 finally."
+     }
+    },
+    "r5": {
+     "type": "review",
+     "settings": {
+      "avatar_url": "https://ui-avatars.com/api/?name=Bianca+T&background=ffc0bd&color=ffffff&size=120&bold=true&font-size=0.42",
+      "author": "Bianca T.",
+      "meta": "Verified buyer \u00b7 Cape Town",
+      "quote": "Marathon training fuelled cleanly. No gut issues during long runs."
+     }
+    }
+   },
+   "block_order": [
+    "r1",
+    "r2",
+    "r3",
+    "r4",
+    "r5"
+   ],
+   "settings": {
+    "brand_primary": "#f5908d",
+    "brand_dark": "#b85a58",
+    "brand_tint": "#fff5f3",
+    "eyebrow": "\u2605 Real Reviews",
+    "title": "Active women, real reviews"
+   }
+  },
+  "problem": {
+   "type": "vb-product-story",
+   "blocks": {
+    "p1": {
+     "type": "point",
+     "settings": {
+      "icon": "\u2715",
+      "text": "<strong>Iron deficiency</strong> from menstrual losses + training demands."
+     }
+    },
+    "p2": {
+     "type": "point",
+     "settings": {
+      "icon": "\u2715",
+      "text": "<strong>Slow recovery</strong> between training sessions."
+     }
+    },
+    "p3": {
+     "type": "point",
+     "settings": {
+      "icon": "\u2715",
+      "text": "<strong>Gut issues</strong> during long runs and intense workouts."
+     }
+    },
+    "p4": {
+     "type": "point",
+     "settings": {
+      "icon": "\u2715",
+      "text": "<strong>Men's sport supplements</strong> that miss women's biology."
+     }
+    }
+   },
+   "block_order": [
+    "p1",
+    "p2",
+    "p3",
+    "p4"
+   ],
+   "settings": {
+    "reverse": false,
+    "brand_primary": "#f5908d",
+    "brand_tint": "#fff5f3",
+    "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_180903_da282482-2786-4615-882c-560e2ec0ef35.jpeg",
+    "tag_value": "22%",
+    "tag_label": "Of Active Women Are Iron Deficient",
+    "eyebrow": "The Problem",
+    "title_pre": "Active women",
+    "title_highlight": "deserve a women's fuel.",
+    "desc": "Active women lose iron through menstruation AND training. Men's sport supplements don't account for that. Generic women's multivits don't account for athletic demands. Her-Biotics Sport closes both gaps."
+   }
+  },
+  "solution": {
+   "type": "vb-product-story",
+   "blocks": {
+    "s1": {
+     "type": "point",
+     "settings": {
+      "icon": "\u2713",
+      "text": "<strong>Iron bisglycinate + Vit C</strong> \u2014 gentle, absorbable, no constipation."
+     }
+    },
+    "s2": {
+     "type": "point",
+     "settings": {
+      "icon": "\u2713",
+      "text": "<strong>BCAAs + L-glutamine</strong> \u2014 recovery actives for women's biology."
+     }
+    },
+    "s3": {
+     "type": "point",
+     "settings": {
+      "icon": "\u2713",
+      "text": "<strong>Electrolyte blend</strong> \u2014 magnesium, potassium, sodium, calcium."
+     }
+    },
+    "s4": {
+     "type": "point",
+     "settings": {
+      "icon": "\u2713",
+      "text": "<strong>16-strain probiotic blend</strong> for gut + immune support."
+     }
+    }
+   },
+   "block_order": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ],
+   "settings": {
+    "reverse": true,
+    "brand_primary": "#f5908d",
+    "brand_tint": "#fff5f3",
+    "image_url": "",
+    "tag_value": "1000\u00d7",
+    "tag_label": "More Probiotics Delivered",
+    "eyebrow": "The Solution",
+    "title_pre": "Meet",
+    "title_highlight": "Her-Biotics\u2122 Sport.",
+    "desc": "Iron + BCAAs + electrolytes + 16 probiotic strains. Built for women who train hard \u2014 fuelled recovery, sharper performance, no gut issues mid-workout."
+   }
+  },
+  "related": {
+   "type": "vb-product-related",
+   "blocks": {
+    "r1": {
+     "type": "product",
+     "settings": {
+      "product_handle": "her-biotics-original-capsules-60s",
+      "brand": "Her-Biotics\u2122",
+      "rating": "4.7",
+      "reviews": "950+",
+      "fallback_title": "",
+      "fallback_url": "",
+      "fallback_price": ""
+     }
+    },
+    "r2": {
+     "type": "product",
+     "settings": {
+      "product_handle": "her-biotics-probiotics-menopausal-support",
+      "brand": "Her-Biotics\u2122",
+      "rating": "4.8",
+      "reviews": "180+",
+      "fallback_title": "",
+      "fallback_url": "",
+      "fallback_price": ""
+     }
+    },
+    "r3": {
+     "type": "product",
+     "settings": {
+      "product_handle": "her-biotics-probiotics-pms-pre-menstrual-support",
+      "brand": "Her-Biotics\u2122",
+      "rating": "4.7",
+      "reviews": "150+",
+      "fallback_title": "",
+      "fallback_url": "",
+      "fallback_price": ""
+     }
+    },
+    "r4": {
+     "type": "product",
+     "settings": {
+      "product_handle": "her-biotics-probiotics-ageless-multivitamin-50",
+      "brand": "Her-Biotics\u2122",
+      "rating": "4.8",
+      "reviews": "120+",
+      "fallback_title": "",
+      "fallback_url": "",
+      "fallback_price": ""
+     }
+    }
+   },
+   "block_order": [
+    "r1",
+    "r2",
+    "r3",
+    "r4"
+   ],
+   "settings": {
+    "brand_primary": "#f5908d",
+    "brand_dark": "#b85a58",
+    "brand_tint": "#fff5f3",
+    "tint": false,
+    "eyebrow": "Complete the Stack",
+    "title": "More from the Her-Biotics\u2122 range",
+    "sub": "Customised support for every season of a woman's life."
+   }
+  },
+  "benefits": {
+   "type": "vb-product-benefits",
+   "blocks": {
+    "b1": {
+     "type": "feat",
+     "settings": {
+      "icon": "\ud83d\udd25",
+      "name": "Iron Energy",
+      "desc": "Bisglycinate form \u2014 absorbable, gentle on stomach."
+     }
+    },
+    "b2": {
+     "type": "feat",
+     "settings": {
+      "icon": "\ud83d\udcaa",
+      "name": "Faster Recovery",
+      "desc": "BCAAs + L-glutamine rebuild muscle quickly."
+     }
+    },
+    "b3": {
+     "type": "feat",
+     "settings": {
+      "icon": "\ud83d\udca7",
+      "name": "Electrolyte Balance",
+      "desc": "Replenish what sweat takes \u2014 cramp prevention."
+     }
+    },
+    "b4": {
+     "type": "feat",
+     "settings": {
+      "icon": "\ud83e\udda0",
+      "name": "Gut-Friendly Training",
+      "desc": "16 probiotic strains for race-day gut stability."
+     }
+    },
+    "b5": {
+     "type": "feat",
+     "settings": {
+      "icon": "\ud83e\ude7a",
+      "name": "Doctor-Formulated",
+      "desc": "Built by sports-medicine and women's-health specialists."
+     }
+    },
+    "b6": {
+     "type": "feat",
+     "settings": {
+      "icon": "\ud83c\udf3f",
+      "name": "Clean Formula",
+      "desc": "Vegan-option, halaal-friendly, no banned substances."
+     }
+    }
+   },
+   "block_order": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6"
+   ],
+   "settings": {
+    "brand_primary": "#f5908d",
+    "brand_tint": "#fff5f3",
+    "eyebrow": "Key Benefits",
+    "title_pre": "Why",
+    "title_highlight": "Her-Biotics Sport",
+    "sub": "Six reasons active women across South Africa fuel with Her-Biotics Sport."
+   }
+  },
+  "how": {
+   "type": "vb-product-ritual",
+   "settings": {
+    "brand_primary": "#f5908d",
+    "brand_dark": "#b85a58",
+    "brand_tint": "#fff5f3",
+    "form": "capsule",
+    "dose": "2 capsules",
+    "when": "with water, preferably with a meal",
+    "course": "Every day, ongoing",
+    "timeofday": "morning",
+    "mix_volume": "250 ml water or milk",
+    "eyebrow": "How to use",
+    "title_pre": "Your daily ritual,",
+    "title_highlight": "made effortless."
+   }
+  },
+  "ingredients": {
+   "type": "vb-product-ingredients",
+   "blocks": {
+    "i1": {
+     "type": "ingredient",
+     "settings": {
+      "icon": "\ud83d\udd25",
+      "name": "Iron Bisglycinate + Vit C",
+      "amount": "20mg + 250mg",
+      "desc": "Gentle, highly absorbable iron with Vit C cofactor."
+     }
+    },
+    "i2": {
+     "type": "ingredient",
+     "settings": {
+      "icon": "\ud83d\udcaa",
+      "name": "BCAAs + L-Glutamine",
+      "amount": "3,000mg",
+      "desc": "Branched-chain amino acids for recovery."
+     }
+    },
+    "i3": {
+     "type": "ingredient",
+     "settings": {
+      "icon": "\ud83d\udca7",
+      "name": "Electrolyte Blend",
+      "amount": "Full daily",
+      "desc": "Magnesium, potassium, sodium, calcium for hydration."
+     }
+    },
+    "i4": {
+     "type": "ingredient",
+     "settings": {
+      "icon": "\ud83e\udda0",
+      "name": "16-Strain Probiotic Blend",
+      "amount": "1 Billion CFU",
+      "desc": "Strains chosen for athletic gut tolerance."
+     }
+    },
+    "i5": {
+     "type": "ingredient",
+     "settings": {
+      "icon": "\ud83d\udee1\ufe0f",
+      "name": "Velobiotics\u2122 MEP Coating",
+      "amount": "Patented",
+      "desc": "Supercritical CO\u2082 microencapsulation \u2014 1000\u00d7 more survive."
+     }
+    },
+    "i6": {
+     "type": "ingredient",
+     "settings": {
+      "icon": "\ud83d\udeab",
+      "name": "Free From",
+      "amount": "Always",
+      "desc": "WADA banned substances \u00b7 gluten \u00b7 soy \u00b7 dairy \u00b7 GMO."
+     }
+    }
+   },
+   "block_order": [
+    "i1",
+    "i2",
+    "i3",
+    "i4",
+    "i5",
+    "i6"
+   ],
+   "settings": {
+    "brand_primary": "#f5908d",
+    "brand_dark": "#b85a58",
+    "brand_tint": "#fff5f3",
+    "brand_light": "#ffc0bd",
+    "eyebrow": "What's Inside",
+    "title": "Every ingredient earns its place",
+    "sub": "Six clean actives. WADA-compliant. Full transparency.",
+    "facts_image_url": "",
+    "facts_label": "Supplement facts",
+    "facts_col_a": "Ingredient",
+    "facts_col_b": "Per serving",
+    "facts_caption": "% Daily Value not established. Other Ingredients: HPMC, Magnesium Stearate.",
+    "facts_foot": "Lab-tested \u00b7 Sport-formulated \u00b7 Full transparency"
+   }
+  },
+  "confidence": {
+   "type": "vb-product-confidence",
+   "blocks": {
+    "c1": {
+     "type": "stat",
+     "settings": {
+      "label": "Faster training recovery",
+      "percent": 89
+     }
+    },
+    "c2": {
+     "type": "stat",
+     "settings": {
+      "label": "Better workout performance",
+      "percent": 86
+     }
+    },
+    "c3": {
+     "type": "stat",
+     "settings": {
+      "label": "Less training fatigue",
+      "percent": 91
+     }
+    },
+    "c4": {
+     "type": "stat",
+     "settings": {
+      "label": "Iron levels improved",
+      "percent": 92
+     }
+    },
+    "c5": {
+     "type": "stat",
+     "settings": {
+      "label": "Would recommend to a friend",
+      "percent": 94
+     }
+    }
+   },
+   "block_order": [
+    "c1",
+    "c2",
+    "c3",
+    "c4",
+    "c5"
+   ],
+   "settings": {
+    "brand_primary": "#f5908d",
+    "brand_dark": "#b85a58",
+    "brand_tint": "#fff5f3",
+    "eyebrow": "Real results",
+    "title_pre": "Trusted for",
+    "title_highlight": "Active Performance",
+    "sub": "What active women report after 6 weeks of daily Sport use.",
+    "caveat": "Based on a survey of 100+ verified customers. Individual results may vary."
+   }
+  },
+  "fbt": {
+   "type": "vb-product-related",
+   "blocks": {
+    "f1": {
+     "type": "product",
+     "settings": {
+      "product_handle": "velo16-probiotics-creatine",
+      "brand": "Velo16\u2122",
+      "rating": "4.8",
+      "reviews": "180+",
+      "fallback_title": "",
+      "fallback_url": "",
+      "fallback_price": ""
+     }
+    },
+    "f2": {
+     "type": "product",
+     "settings": {
+      "product_handle": "her-biotics-original-capsules-60s",
+      "brand": "Her-Biotics\u2122",
+      "rating": "4.7",
+      "reviews": "950+",
+      "fallback_title": "",
+      "fallback_url": "",
+      "fallback_price": ""
+     }
+    },
+    "f3": {
+     "type": "product",
+     "settings": {
+      "product_handle": "velo16-probiotics-magnesium-glycinate",
+      "brand": "Velo16\u2122",
+      "rating": "4.6",
+      "reviews": "190+",
+      "fallback_title": "",
+      "fallback_url": "",
+      "fallback_price": ""
+     }
+    },
+    "f4": {
+     "type": "product",
+     "settings": {
+      "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
+      "brand": "Femina\u2122",
+      "rating": "4.8",
+      "reviews": "1300+",
+      "fallback_title": "",
+      "fallback_url": "",
+      "fallback_price": ""
+     }
+    }
+   },
+   "block_order": [
+    "f1",
+    "f2",
+    "f3",
+    "f4"
+   ],
+   "settings": {
+    "brand_primary": "#f5908d",
+    "brand_dark": "#b85a58",
+    "brand_tint": "#fff5f3",
+    "tint": true,
+    "eyebrow": "Frequently Bought Together",
+    "title": "Pair with the rest of your wellness stack",
+    "sub": "Her-Biotics Sport stacks beautifully with these Velobiotics favourites."
+   }
+  },
+  "doctors": {
+   "type": "vb-doctors",
+   "blocks": {
+    "d1": {
+     "type": "card",
+     "settings": {
+      "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
+      "icon_fallback": "\u2713",
+      "name": "Clinically Validated",
+      "desc": "Iron bisglycinate + BCAAs \u2014 peer-reviewed for active women."
+     }
+    },
+    "d2": {
+     "type": "card",
+     "settings": {
+      "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
+      "icon_fallback": "\u2713",
+      "name": "Sport Formulated",
+      "desc": "Built by sports-medicine and women's-health specialists."
+     }
+    },
+    "d3": {
+     "type": "card",
+     "settings": {
+      "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
+      "icon_fallback": "\u2713",
+      "name": "Patented MEP Technology",
+      "desc": "Microencapsulation with Supercritical CO\u2082."
+     }
+    },
+    "d4": {
+     "type": "card",
+     "settings": {
+      "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
+      "icon_fallback": "\u2713",
+      "name": "WADA-Compliant",
+      "desc": "No banned substances. Competition-safe."
+     }
+    }
+   },
+   "block_order": [
+    "d1",
+    "d2",
+    "d3",
+    "d4"
+   ],
+   "settings": {
+    "eyebrow": "Trusted by Doctors. Proven by Science.",
+    "title_pre": "Quality you can",
+    "title_highlight": "trust.",
+    "sub": "Built on peer-reviewed actives, sports-medicine guidance, and SAHPRA-aware manufacturing."
+   }
+  },
+  "outperform": {
+   "type": "vb-product-outperform",
+   "blocks": {
+    "o1": {
+     "type": "row",
+     "settings": {
+      "feature": "Iron Bisglycinate",
+      "brand_state": "yes",
+      "b_state": "no",
+      "c_state": "no"
+     }
+    },
+    "o2": {
+     "type": "row",
+     "settings": {
+      "feature": "BCAAs + L-Glutamine",
+      "brand_state": "yes",
+      "b_state": "no",
+      "c_state": "no"
+     }
+    },
+    "o3": {
+     "type": "row",
+     "settings": {
+      "feature": "Electrolyte Blend",
+      "brand_state": "yes",
+      "b_state": "no",
+      "c_state": "no"
+     }
+    },
+    "o4": {
+     "type": "row",
+     "settings": {
+      "feature": "Max Probiotic Strains",
+      "brand_state": "yes",
+      "b_state": "no",
+      "c_state": "no"
+     }
+    },
+    "o5": {
+     "type": "row",
+     "settings": {
+      "feature": "Women's-Specific Biology",
+      "brand_state": "yes",
+      "b_state": "no",
+      "c_state": "no"
+     }
+    }
+   },
+   "block_order": [
+    "o1",
+    "o2",
+    "o3",
+    "o4",
+    "o5"
+   ],
+   "settings": {
+    "brand_primary": "#f5908d",
+    "brand_dark": "#b85a58",
+    "brand_tint": "#fff5f3",
+    "eyebrow": "",
+    "title": "Why Her-Biotics Sport Outperforms",
+    "sub": "Iron, BCAAs, electrolytes, probiotic strains, and Velobiotics\u2122 delivery \u2014 built for active women's biology.",
+    "col_features": "Features",
+    "col_brand": "Sport",
+    "brand_logo_url": "",
+    "col_b": "Men's Sport Vit",
+    "col_c": "Generic Vit",
+    "cta_text": "Add to Cart",
+    "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
+   }
+  },
+  "judgeme": {
+   "type": "vb-judgeme",
+   "settings": {
+    "eyebrow": "Real Reviews",
+    "title_pre": "What Active Women",
+    "title_highlight": "Are Saying",
+    "sub": "Verified reviews collected independently by Judge.me from customers who bought this product.",
+    "scope": "product",
+    "show_stats": true
+   }
+  },
+  "faq": {
+   "type": "vb-faq",
+   "blocks": {
+    "q1": {
+     "type": "q",
+     "settings": {
+      "question": "Is this WADA-compliant?",
+      "answer": "<p>Yes. Her-Biotics Sport contains no banned substances. Safe for competition and drug-tested sport.</p>"
+     }
+    },
+    "q2": {
+     "type": "q",
+     "settings": {
+      "question": "When should I take it?",
+      "answer": "<p>With your first meal of the day. For 2-a-day training, take with breakfast and post-workout meal.</p>"
+     }
+    },
+    "q3": {
+     "type": "q",
+     "settings": {
+      "question": "Can I stack with whey protein?",
+      "answer": "<p>Yes \u2014 they're complementary. Whey for total protein, Sport for women-specific actives.</p>"
+     }
+    },
+    "q4": {
+     "type": "q",
+     "settings": {
+      "question": "Is Sport safe daily?",
+      "answer": "<p>Absolutely. Manufactured under GMP conditions in SAHPRA-aware facilities. Daily use is safe and recommended.</p>"
+     }
+    },
+    "q5": {
+     "type": "q",
+     "settings": {
+      "question": "Do you ship internationally?",
+      "answer": "<p>Yes. We ship globally \u2014 5\u201314 working days. Free shipping over the free-shipping threshold.</p>"
+     }
+    },
+    "q6": {
+     "type": "q",
+     "settings": {
+      "question": "What if it doesn't work for me?",
+      "answer": "<p>If you don't see results in 30 days, we'll refund you in full \u2014 no questions asked.</p>"
+     }
+    }
+   },
+   "block_order": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5",
+    "q6"
+   ],
+   "settings": {
+    "eyebrow": "FAQ",
+    "title_pre": "Questions Before",
+    "title_highlight": "You Start"
+   }
+  },
+  "final": {
+   "type": "vb-product-final",
+   "blocks": {
+    "g1": {
+     "type": "g",
+     "settings": {
+      "icon": "\u2705",
+      "text": "30-day money-back"
+     }
+    },
+    "g2": {
+     "type": "g",
+     "settings": {
+      "icon": "\ud83d\ude9a",
+      "text": "Ships worldwide"
+     }
+    },
+    "g3": {
+     "type": "g",
+     "settings": {
+      "icon": "\ud83d\udd2c",
+      "text": "Lab-tested every batch"
+     }
+    },
+    "g4": {
+     "type": "g",
+     "settings": {
+      "icon": "\ud83d\udcaa",
+      "text": "WADA-compliant"
+     }
+    }
+   },
+   "block_order": [
+    "g1",
+    "g2",
+    "g3",
+    "g4"
+   ],
+   "settings": {
+    "brand_primary": "#f5908d",
+    "brand_dark": "#b85a58",
+    "brand_light": "#ffc0bd",
+    "badge": "30-day money-back guarantee",
+    "title_pre": "Train Hard, Recover Fast",
+    "title_highlight": "Risk-Free for 30 Days",
+    "sub": "Join thousands of active women fuelling cleanly. If you don't see results, we'll refund every cent.",
+    "cta_text": "Add to Cart",
+    "cta_link": "#vbpForm"
+   }
+  }
+ },
+ "order": [
+  "hero",
+  "reviews-carousel",
+  "problem",
+  "solution",
+  "related",
+  "benefits",
+  "how",
+  "ingredients",
+  "confidence",
+  "fbt",
+  "doctors",
+  "outperform",
+  "judgeme",
+  "faq",
+  "final"
+ ]
 }

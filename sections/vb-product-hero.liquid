@@ -83,6 +83,7 @@
   .vb-pb__pill { display: inline-flex; align-items: center; gap: 6px; background: #fff; color: var(--bp); padding: 4px 11px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; border: 1px solid color-mix(in srgb, var(--bp) 25%, #fff); }
   .vb-pb__title { font-size: clamp(26px, 3.4vw, 36px); font-weight: 800; line-height: 1.15; margin: 0 0 12px; color: #1a1a1a; letter-spacing: -0.01em; }
   .vb-pb__rating { display: inline-flex; align-items: center; gap: 8px; margin: 0 0 16px; font-size: 13.5px; color: #2b3a2a; flex-wrap: wrap; }
+  .vb-pb__rating .jdgm-preview-badge { display:inline-flex; align-items:center; gap:6px; } .vb-pb__rating .jdgm-prev-badge__text { color: var(--bp); font-weight:700; text-decoration: underline; text-underline-offset:3px; cursor:pointer; }
   .vb-pb__rating .stars { color: #ffb43a; letter-spacing: 1px; font-size: 15px; }
   .vb-pb__rating a { color: var(--bp); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
   .vb-pb__hook { font-size: 16px; line-height: 1.55; color: #4a5a48; margin: 0 0 20px; padding: 14px 16px; background: var(--bt); border-left: 3px solid var(--bp); border-radius: 4px 14px 14px 4px; }
@@ -282,9 +283,14 @@
       </div>
       <h1 class="vb-pb__title">{{ product.title }}</h1>
       <div class="vb-pb__rating">
-        <span class="stars">★★★★★</span>
-        <strong>{{ section.settings.rating | default: '4.8' }}</strong>
-        <a href="#vb-reviews">({{ section.settings.review_count | default: '3,500+' }} reviews)</a>
+        {%- assign rw = product.metafields.judgeme.review_widget_data.value -%}
+        {%- if product.metafields.judgeme.badge.size > 20 -%}
+        <div class='jdgm-widget jdgm-preview-badge' data-id='{{ product.id }}' data-auto-install='false'>{{ product.metafields.judgeme.badge }}</div>
+        {%- elsif rw.number_of_reviews > 0 -%}
+        <span class="stars">★★★★★</span> <strong>{{ rw.average_rating | round: 1 }}</strong> <a href="#vb-reviews">({{ rw.number_of_reviews }} reviews)</a>
+        {%- else -%}
+        <a href="#vb-reviews">Be the first to review</a>
+        {%- endif -%}
       </div>
       {%- if section.settings.hook != blank -%}<p class="vb-pb__hook">{{ section.settings.hook }}</p>{%- endif -%}
       {%- assign benefit_count = 0 -%}

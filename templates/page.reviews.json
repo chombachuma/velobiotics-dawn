@@ -113,11 +113,7 @@
         "eyebrow": "Verified by Judge.me",
         "title_pre": "Read all",
         "title_highlight": "verified reviews.",
-        "sub": "Every review below is from a verified buyer. We don't moderate. We don't curate. What you see is what people actually wrote.",
-        "rating": "4.8",
-        "reviews_count": "10,000+",
-        "customers_count": "300K+",
-        "judgeme_html": "<div class='jdgm-widget jdgm-all-reviews-widget'></div>"
+        "sub": "Every review below was collected independently by Judge.me from real Velobiotics customers."
       }
     },
     "final_cta": {
@@ -129,36 +125,16 @@
         "sub": "30-day money-back guarantee · If you don't love it, you don't pay for it."
       }
     },
-    "jm_apps": {
+    "jm_medals": {
       "type": "apps",
       "blocks": {
-        "b_medals": {
+        "m": {
           "type": "shopify://apps/judge-me-reviews/blocks/medals/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        },
-        "b_all_reviews_text": {
-          "type": "shopify://apps/judge-me-reviews/blocks/all_reviews_text/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        },
-        "b_popup_widget": {
-          "type": "shopify://apps/judge-me-reviews/blocks/popup_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        },
-        "b_reviews_tab": {
-          "type": "shopify://apps/judge-me-reviews/blocks/reviews_tab/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        },
-        "b_verified_badge": {
-          "type": "shopify://apps/judge-me-reviews/blocks/verified_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         }
       },
       "block_order": [
-        "b_medals",
-        "b_all_reviews_text",
-        "b_popup_widget",
-        "b_reviews_tab",
-        "b_verified_badge"
+        "m"
       ],
       "settings": {
         "include_margins": true
@@ -169,8 +145,8 @@
     "main",
     "hero",
     "reviews",
-    "jm_apps",
     "judgeme",
+    "jm_medals",
     "final_cta"
   ]
 }

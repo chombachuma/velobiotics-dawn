@@ -76,8 +76,25 @@
           <input id="vb-footer-email" type="email" name="contact[email]" placeholder="Enter your email" required class="vb-footer__email-input" autocomplete="email">
           <button type="submit">Subscribe</button>
         </div>
-        <p class="vb-footer__email-note">No spam. Unsubscribe anytime.</p>
+        <p class="vb-footer__email-note" data-vb-nl-note>No spam. Unsubscribe anytime.</p>
       {%- endform -%}
+      <script>
+      (function(){
+        var f = document.getElementById('VBFooterNewsletter'); if (!f) return;
+        var note = f.querySelector('[data-vb-nl-note]'), btn = f.querySelector('button[type=submit]'), input = f.querySelector('input[type=email]');
+        f.addEventListener('submit', function(e){
+          var email = (input.value || '').trim(); if (!email) return;
+          e.preventDefault(); btn.disabled = true; var label = btn.textContent; btn.textContent = 'Adding you…';
+          fetch('https://elara-cef2631f.base44.app/functions/newsletterSubscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: email, source: 'footer' }) })
+            .then(function(r){ return r.json(); })
+            .then(function(d){
+              if (d && d.ok) { note.textContent = '✓ You are in. Welcome to the Velobiotics community — first tips land in your inbox soon.'; note.style.color = '#fff'; input.value = ''; btn.textContent = 'Subscribed'; try { window.omnisend = window.omnisend || []; window.omnisend.push(['identifyContact', { email: email }]); } catch (x) {} }
+              else { throw new Error('bad'); }
+            })
+            .catch(function(){ btn.disabled = false; btn.textContent = label; f.removeEventListener('submit', arguments.callee); f.submit(); });
+        });
+      })();
+      </script>
     </div>
   </div>
 

@@ -1,0 +1,75 @@
+{%- comment -%} VB · Ingredient Repository hub — 15 Sep 2026. page.content holds the generated card grid (.vb-ih__card[data-cat][data-name][data-search]); this section adds hero, search and filters. {%- endcomment -%}
+<style>
+  .vbh { --bp:#4d8c44; --bd:#2e5d28; --bt:#eef7ec; --ink:#1a2e1a; --mut:#5c6a5c; }
+  .vbh__hero { background: radial-gradient(120% 100% at 50% 0%, #fff 0%, var(--bt) 70%); padding: 60px 20px 30px; text-align: center; }
+  .vbh__eyebrow { color: var(--bp); font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; margin: 0 0 10px; }
+  .vbh__title { font-size: clamp(30px, 5vw, 50px); font-weight: 800; letter-spacing: -.02em; line-height: 1.08; color: var(--ink); margin: 0 0 12px; }
+  .vbh__title em { color: var(--bp); font-style: normal; }
+  .vbh__sub { font-size: 17px; line-height: 1.55; color: var(--mut); max-width: 720px; margin: 0 auto 26px; }
+  .vbh__search { max-width: 560px; margin: 0 auto; position: relative; }
+  .vbh__search input { width: 100%; box-sizing: border-box; font-size: 16px; padding: 16px 18px 16px 48px; border-radius: 999px; border: 1px solid #dfe7dd; background: #fff; box-shadow: 0 14px 34px -24px rgba(0,0,0,.35); outline: none; }
+  .vbh__search input:focus { border-color: var(--bp); }
+  .vbh__search svg { position: absolute; left: 18px; top: 50%; transform: translateY(-50%); color: var(--mut); }
+  .vbh__filters { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; max-width: 980px; margin: 22px auto 0; padding: 0 16px; }
+  .vbh__f { font-size: 13px; font-weight: 700; color: var(--bd); background: #fff; border: 1px solid #dfe7dd; border-radius: 999px; padding: 8px 14px; cursor: pointer; }
+  .vbh__f.is-on { background: var(--bp); color: #fff; border-color: var(--bp); }
+  .vbh__body { max-width: 1180px; margin: 0 auto; padding: 30px 20px 70px; }
+  .vbh__count { font-size: 13px; color: var(--mut); margin: 0 0 14px; }
+  .vb-ih__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
+  .vb-ih__card { display: block; text-decoration: none; background: #fff; border: 1px solid #e6ede4; border-radius: 20px; padding: 18px; transition: transform .2s, box-shadow .2s, border-color .2s; }
+  .vb-ih__card:hover { transform: translateY(-3px); box-shadow: 0 18px 40px -28px rgba(0,0,0,.4); border-color: color-mix(in srgb, var(--bp) 40%, #fff); }
+  .vb-ih__card.is-hidden { display: none; }
+  .vb-ih__top { display: flex; align-items: center; gap: 12px; margin: 0 0 10px; }
+  .vb-ih__icon { width: 44px; height: 44px; border-radius: 14px; background: var(--bt); display: grid; place-items: center; font-size: 22px; flex: 0 0 44px; }
+  .vb-ih__cat { font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--bp); }
+  .vb-ih__name { font-size: 16.5px; font-weight: 800; color: var(--ink); margin: 0; line-height: 1.25; }
+  .vb-ih__one { font-size: 13.5px; line-height: 1.55; color: var(--mut); margin: 0 0 10px; }
+  .vb-ih__foot { font-size: 12px; color: var(--mut); display: flex; justify-content: space-between; }
+  .vb-ih__foot b { color: var(--bd); }
+  .vbh__empty { text-align: center; color: var(--mut); padding: 40px; display: none; }
+  .vbh__synergy { max-width: 980px; margin: 0 auto 30px; background: linear-gradient(135deg, var(--bt), #fff); border: 1px solid color-mix(in srgb, var(--bp) 20%, #fff); border-radius: 22px; padding: 22px 24px; display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: center; }
+  .vbh__synergy .ic { font-size: 34px; }
+  .vbh__synergy h3 { margin: 0 0 4px; font-size: 17px; color: var(--ink); }
+  .vbh__synergy p { margin: 0; font-size: 14.5px; line-height: 1.6; color: #33422f; }
+  @media (max-width: 700px) { .vbh__synergy { grid-template-columns: 1fr; } .vbh__hero { padding: 40px 16px 22px; } }
+</style>
+<div class="vbh" data-vbh>
+  <div class="vbh__hero">
+    <p class="vbh__eyebrow">{{ section.settings.eyebrow | default: 'Ingredient Repository' }}</p>
+    <h1 class="vbh__title">{{ section.settings.title_pre | default: 'Every ingredient,' }} <em>{{ section.settings.title_highlight | default: 'explained.' }}</em></h1>
+    <p class="vbh__sub">{{ section.settings.sub | default: 'What each active does, the evidence behind it, and how live probiotics help your body absorb and use it. One source of truth for every Velobiotics formula.' }}</p>
+    <div class="vbh__search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" placeholder="Search an ingredient — e.g. zinc, L. rhamnosus, cranberry" data-vbh-q aria-label="Search ingredients"></div>
+    <div class="vbh__filters" data-vbh-filters>
+      <button class="vbh__f is-on" data-cat="">All</button>
+      <button class="vbh__f" data-cat="probiotic_strain">Probiotic strains</button><button class="vbh__f" data-cat="prebiotic">Prebiotics</button><button class="vbh__f" data-cat="enzyme">Enzymes</button>
+      <button class="vbh__f" data-cat="vitamin">Vitamins</button><button class="vbh__f" data-cat="mineral">Minerals</button><button class="vbh__f" data-cat="botanical">Botanicals</button>
+      <button class="vbh__f" data-cat="amino_protein">Proteins & aminos</button><button class="vbh__f" data-cat="fatty_acid">Fatty acids</button><button class="vbh__f" data-cat="functional_other">Functional actives</button>
+    </div>
+  </div>
+  <div class="vbh__body">
+    <div class="vbh__synergy"><div class="ic">🛡️</div><div><h3>Why probiotics change the maths</h3><p>Nutrients only work once they are absorbed. Live cultures lower gut pH, produce short-chain fatty acids, strengthen the gut lining and even synthesise vitamins — so the actives in each formula are taken up and used more completely. Every Velobiotics culture is protected by patented MEP microencapsulation to arrive alive.</p></div></div>
+    <p class="vbh__count" data-vbh-count></p>
+    <div data-vbh-grid>{{ page.content }}</div>
+    <p class="vbh__empty" data-vbh-empty>No ingredient matches that search yet.</p>
+  </div>
+</div>
+<script>
+(function(){
+  const root = document.querySelector('[data-vbh]'); if (!root) return;
+  const cards = [...root.querySelectorAll('.vb-ih__card')], q = root.querySelector('[data-vbh-q]'), count = root.querySelector('[data-vbh-count]'), empty = root.querySelector('[data-vbh-empty]');
+  let cat = '';
+  const apply = () => { const s = (q.value || '').trim().toLowerCase(); let n = 0;
+    cards.forEach(c => { const ok = (!cat || c.dataset.cat === cat) && (!s || (c.dataset.search || '').includes(s)); c.classList.toggle('is-hidden', !ok); if (ok) n++; });
+    count.textContent = n + ' of ' + cards.length + ' ingredients'; empty.style.display = n ? 'none' : 'block'; };
+  root.querySelectorAll('[data-vbh-filters] button').forEach(b => b.addEventListener('click', () => { root.querySelectorAll('[data-vbh-filters] button').forEach(x => x.classList.remove('is-on')); b.classList.add('is-on'); cat = b.dataset.cat; apply(); }));
+  q.addEventListener('input', apply);
+  const p = new URLSearchParams(location.search); if (p.get('cat')) { const b = root.querySelector(`[data-cat="${p.get('cat')}"]`); if (b) b.click(); }
+  if (p.get('q')) { q.value = p.get('q'); }
+  apply();
+})();
+</script>
+{% schema %}
+{ "name": "VB · Ingredient hub", "tag": "section", "settings": [
+  { "type": "text", "id": "eyebrow", "label": "Eyebrow" }, { "type": "text", "id": "title_pre", "label": "Title (start)" }, { "type": "text", "id": "title_highlight", "label": "Title (highlight)" }, { "type": "textarea", "id": "sub", "label": "Sub-text" } ],
+  "presets": [{ "name": "VB · Ingredient hub" }] }
+{% endschema %}

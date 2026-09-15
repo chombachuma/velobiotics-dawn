@@ -23,35 +23,75 @@
     .vb-jm__divider { display: none; }
     .vb-jm__stat-value { font-size: 22px; }
   }
+  .vb-jm__embed { max-width: 1080px; margin: 0 auto; }
+  .vb-jm__embed .jdgm-rev-widg, .vb-jm__embed .jdgm-all-reviews-widget { border: 0; padding: 0; }
+  .vb-jm__embed .jdgm-rev-widg__title, .vb-jm__embed .jdgm-all-reviews__header-title { display: none; }
+  .vb-jm__stat-meta small { display:block; font-size: 11px; color:#8a948a; }
+  .vb-jm__empty { text-align:center; color:#5c6664; padding: 28px; background:#f7faf6; border-radius: 16px; }
 </style>
-
-<section class="vb-jm">
+{%- comment -%}
+  VB · Judge.me reviews v2 (15 Sep 2026). Renders Judge.me's own embed code so reviews always show:
+   - on a product page (scope auto/product): the Review Widget for this product
+   - elsewhere (scope auto/store): the Happy Customers / All Reviews widget
+  Numbers come from Judge.me metafields, never hardcoded.
+{%- endcomment -%}
+{%- assign jm = shop.metafields.judgeme -%}
+{%- assign scope = section.settings.scope | default: 'auto' -%}
+{%- if scope == 'auto' -%}{%- if product -%}{%- assign scope = 'product' -%}{%- else -%}{%- assign scope = 'store' -%}{%- endif -%}{%- endif -%}
+{%- if scope == 'product' -%}
+  {%- assign rw = product.metafields.judgeme.review_widget_data.value -%}
+  {%- assign stat_rating = rw.average_rating | default: jm.all_reviews_rating -%}
+  {%- assign stat_count = rw.number_of_reviews | default: 0 -%}
+{%- else -%}
+  {%- assign stat_rating = jm.all_reviews_rating -%}
+  {%- assign stat_count = jm.all_reviews_count -%}
+{%- endif -%}
+<section class="vb-jm" id="vb-reviews">
   <div class="vb-jm__inner">
     <div class="vb-jm__head">
       {%- if section.settings.eyebrow != blank -%}<p class="vb-jm__eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
       <h2 class="vb-jm__title">{{ section.settings.title_pre }}{%- if section.settings.title_highlight != blank %} <em>{{ section.settings.title_highlight }}</em>{%- endif -%}</h2>
       {%- if section.settings.sub != blank -%}<p class="vb-jm__sub">{{ section.settings.sub }}</p>{%- endif -%}
     </div>
+    {%- if section.settings.show_stats -%}
     <div class="vb-jm__stats">
       <div class="vb-jm__stat">
-        <div class="vb-jm__stat-value">{{ section.settings.rating | default: '4.8' }}</div>
-        <div class="vb-jm__stat-meta"><strong>★★★★★</strong>Average rating</div>
+        <div class="vb-jm__stat-value">{{ stat_rating | round: 1 }}</div>
+        <div class="vb-jm__stat-meta"><strong>★★★★★</strong>Average rating{% if scope == 'product' %}<small>this product</small>{% endif %}</div>
       </div>
       <div class="vb-jm__divider"></div>
       <div class="vb-jm__stat">
-        <div class="vb-jm__stat-value">{{ section.settings.reviews_count | default: '3,500+' }}</div>
-        <div class="vb-jm__stat-meta"><strong>Verified Reviews</strong>via Judge.me</div>
+        <div class="vb-jm__stat-value">{{ stat_count }}</div>
+        <div class="vb-jm__stat-meta"><strong>Verified reviews</strong>via Judge.me{% if scope == 'product' %}<small>{{ jm.all_reviews_count }} across Velobiotics</small>{% endif %}</div>
       </div>
       <div class="vb-jm__divider"></div>
       <div class="vb-jm__stat">
-        <div class="vb-jm__stat-value">{{ section.settings.customers_count | default: '300K+' }}</div>
-        <div class="vb-jm__stat-meta"><strong>Happy Customers</strong>across 12 countries</div>
+        <div class="vb-jm__stat-value">{{ jm['trust_badge.verified_reviews_count'] | default: jm.shop_reviews_count }}</div>
+        <div class="vb-jm__stat-meta"><strong>Verified buyers</strong>independently checked</div>
       </div>
     </div>
-
-    {%- if section.settings.judgeme_html != blank -%}
-      <div class="vb-jm__embed">{{ section.settings.judgeme_html }}</div>
     {%- endif -%}
+
+    <div class="vb-jm__embed">
+    {%- if scope == 'product' -%}
+      <!-- Start of Judge.me code -->
+      {%- assign has_legacy = false -%}{%- if product.metafields.judgeme.widget.size > 20 -%}{%- assign has_legacy = true -%}{%- endif -%}
+      <div style='clear:both'></div>
+      <div id='judgeme_product_reviews' class='jdgm-widget jdgm-review-widget' data-product-title='{{ product.title | escape }}' data-id='{{ product.id }}' data-product-id='{{ product.id }}' data-widget='review' data-auto-install='false' data-shop-reviews-count='{{ jm.shop_reviews_count | default: 0 | escape }}' data-entry-point='review_widget.js' data-entry-key='review-widget/main.js'>
+        {%- if has_legacy -%}<div class='jdgm-legacy-widget-content' style='display: none;'>{{ product.metafields.judgeme.widget }}</div>{%- endif -%}
+      </div>
+      {%- if product.metafields.judgeme.review_widget_data -%}<script>jdgm.data ||= {}; jdgm.data.reviewWidget ||= {}; jdgm.data.reviewWidget[{{ product.id }}] = {{ product.metafields.judgeme.review_widget_data }}</script>{%- endif -%}
+      <!-- End of Judge.me code -->
+    {%- else -%}
+      <!-- Start of Judge.me code -->
+      {%- assign has_legacy = false -%}{%- if jm.all_reviews_header.size > 20 -%}{%- assign has_legacy = true -%}{%- endif -%}
+      <div class='jdgm-widget jdgm-all-reviews-widget-v2025' data-widget='all-reviews-v2025' data-auto-install='false' data-entry-point='all_reviews_widget_v2025.js' data-entry-key='all-reviews-widget-v2025/main.js'>
+        {%- if has_legacy -%}<div class='jdgm-legacy-widget-content' style='display: none;'><article class='jdgm-widget jdgm-all-reviews-widget'><style class='jdgm-temp-hiding-style'>.jdgm-all-reviews-widget{ display: none }</style>{{ jm.all_reviews_header }}<div class='jdgm-all-reviews__body'>{%- assign prefix = 'all_reviews_' -%}{%- for count in (0..65535) -%}{%- assign metafield_key = prefix | append: count -%}{%- assign current_metafield = jm[metafield_key] -%}{%- unless current_metafield -%}{%- break -%}{%- endunless -%}{{ current_metafield }}{%- endfor -%}</div></article></div>{%- endif -%}
+      </div>
+      {%- if jm.all_reviews_widget_v2025_data -%}<script>jdgm.data ||= {}; jdgm.data.allReviewsWidgetV2025 = {{ jm.all_reviews_widget_v2025_data }};</script>{%- endif -%}
+      <!-- End of Judge.me code -->
+    {%- endif -%}
+    </div>
   </div>
 </section>
 
@@ -60,14 +100,15 @@
   "name": "VB · Judge.me reviews",
   "tag": "section",
   "settings": [
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Real Customer Stories" },
-    { "type": "text", "id": "title_pre", "label": "Title (start)", "default": "What 300,000+ Customers" },
-    { "type": "text", "id": "title_highlight", "label": "Title (highlight)", "default": "Are Saying" },
-    { "type": "textarea", "id": "sub", "label": "Sub-text", "default": "Read unfiltered, verified reviews from real customers — because transparency builds trust." },
-    { "type": "text", "id": "rating", "label": "Headline rating", "default": "4.8" },
-    { "type": "text", "id": "reviews_count", "label": "Review count", "default": "3,500+" },
-    { "type": "text", "id": "customers_count", "label": "Customer count", "default": "300K+" },
-    { "type": "liquid", "id": "judgeme_html", "label": "Judge.me embed (Liquid/HTML)" }
+    { "type": "select", "id": "scope", "label": "Which reviews", "default": "auto", "options": [
+      { "value": "auto", "label": "Auto (product page → product; else store)" },
+      { "value": "product", "label": "This product only" },
+      { "value": "store", "label": "Whole store (Happy Customers)" } ] },
+    { "type": "checkbox", "id": "show_stats", "label": "Show live rating / count strip", "default": true },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Real Reviews" },
+    { "type": "text", "id": "title_pre", "label": "Title (start)", "default": "What our customers" },
+    { "type": "text", "id": "title_highlight", "label": "Title (highlight)", "default": "are saying" },
+    { "type": "textarea", "id": "sub", "label": "Sub-text", "default": "Unfiltered, verified reviews collected independently by Judge.me." }
   ],
   "presets": [{ "name": "VB · Judge.me reviews" }]
 }

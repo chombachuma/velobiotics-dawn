@@ -1,0 +1,411 @@
+{%- comment -%}
+  VB · Product ritual — animated "how to use" (15 Sep 2026)
+  Form-aware (capsule / tablet / softgel_combo / suppository / shake / scoop / chewable), dosage-driven,
+  auto-plays step by step when scrolled into view, with a 4-week expectations strip, habit anchors and
+  a one-tap calendar reminder. Steps auto-generate from the dosage settings; add "step" blocks to override.
+{%- endcomment -%}
+{%- liquid
+  assign bp = section.settings.brand_primary | default: '#4d8c44'
+  assign bd = section.settings.brand_dark | default: '#2e5d28'
+  assign bt = section.settings.brand_tint | default: '#eef7ec'
+  assign form = section.settings.form | default: 'capsule'
+  assign dose = section.settings.dose | default: '1 capsule'
+  assign when = section.settings.when | default: 'with water, after a meal'
+  assign course = section.settings.course | default: 'Every day, ongoing'
+  assign timeofday = section.settings.timeofday | default: 'morning'
+  assign mix_volume = section.settings.mix_volume | default: '250 ml water or milk'
+  assign product_short = section.settings.product_short | default: product.title
+  assign uid = section.id | slice: -6, 6
+-%}
+<style>
+  #vbr-{{ uid }} { --bp: {{ bp }}; --bd: {{ bd }}; --bt: {{ bt }}; --ink:#1a2e1a; --mut:#5c6a5c; padding: 64px 20px; background: linear-gradient(180deg, #fff 0%, var(--bt) 100%); }
+  #vbr-{{ uid }} .vbr__inner { max-width: 1180px; margin: 0 auto; }
+  #vbr-{{ uid }} .vbr__head { text-align: center; max-width: 720px; margin: 0 auto 34px; }
+  #vbr-{{ uid }} .vbr__eyebrow { color: var(--bp); font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; margin: 0 0 10px; }
+  #vbr-{{ uid }} .vbr__title { font-size: clamp(26px, 4.2vw, 40px); font-weight: 800; color: var(--ink); line-height: 1.12; margin: 0 0 12px; letter-spacing: -.01em; }
+  #vbr-{{ uid }} .vbr__title em { color: var(--bp); font-style: normal; }
+  #vbr-{{ uid }} .vbr__sub { font-size: 16px; line-height: 1.6; color: var(--mut); margin: 0; }
+
+  /* dose card */
+  #vbr-{{ uid }} .vbr__dose { display: flex; align-items: center; gap: 14px; justify-content: center; flex-wrap: wrap; margin: 0 auto 30px; padding: 14px 18px; background: #fff; border: 1px solid color-mix(in srgb, var(--bp) 18%, #fff); border-radius: 999px; max-width: 760px; box-shadow: 0 10px 30px -18px rgba(0,0,0,.25); }
+  #vbr-{{ uid }} .vbr__dose b { color: var(--bd); font-size: 15px; }
+  #vbr-{{ uid }} .vbr__dose span { color: var(--mut); font-size: 14px; }
+  #vbr-{{ uid }} .vbr__dose i { width: 1px; height: 18px; background: #dfe7dd; display: inline-block; }
+
+  /* stage */
+  #vbr-{{ uid }} .vbr__stage { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 34px; align-items: center; }
+  #vbr-{{ uid }} .vbr__scene { position: relative; aspect-ratio: 1 / 1; max-height: 420px; border-radius: 28px; background: radial-gradient(120% 100% at 50% 0%, #fff 0%, var(--bt) 60%, color-mix(in srgb, var(--bt) 80%, var(--bp) 20%) 100%); overflow: hidden; box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--bp) 14%, #fff); }
+  #vbr-{{ uid }} .vbr__scene svg { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; transform: scale(.96); transition: opacity .5s ease, transform .5s ease; }
+  #vbr-{{ uid }} .vbr__scene svg.is-on { opacity: 1; transform: none; }
+  #vbr-{{ uid }} .vbr__scene .vbr__caption { position: absolute; left: 16px; right: 16px; bottom: 14px; text-align: center; font-size: 13px; font-weight: 700; color: var(--bd); background: rgba(255,255,255,.75); backdrop-filter: blur(6px); border-radius: 999px; padding: 8px 12px; }
+
+  /* steps */
+  #vbr-{{ uid }} .vbr__steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+  #vbr-{{ uid }} .vbr__step { position: relative; display: grid; grid-template-columns: 44px 1fr; gap: 14px; padding: 14px 16px; border-radius: 18px; background: #fff; border: 1px solid #e6ede4; cursor: pointer; transition: border-color .25s, box-shadow .25s, transform .25s; overflow: hidden; }
+  #vbr-{{ uid }} .vbr__step:hover { border-color: color-mix(in srgb, var(--bp) 40%, #fff); }
+  #vbr-{{ uid }} .vbr__step.is-active { border-color: var(--bp); box-shadow: 0 14px 34px -22px color-mix(in srgb, var(--bp) 70%, #000); transform: translateX(4px); }
+  #vbr-{{ uid }} .vbr__num { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; font-weight: 800; color: var(--bd); background: var(--bt); font-size: 15px; transition: background .25s, color .25s; }
+  #vbr-{{ uid }} .vbr__step.is-active .vbr__num { background: var(--bp); color: #fff; }
+  #vbr-{{ uid }} .vbr__step.is-done .vbr__num { background: color-mix(in srgb, var(--bp) 22%, #fff); color: var(--bd); }
+  #vbr-{{ uid }} .vbr__step h4 { margin: 0 0 3px; font-size: 16px; font-weight: 800; color: var(--ink); }
+  #vbr-{{ uid }} .vbr__step p { margin: 0; font-size: 14px; line-height: 1.55; color: var(--mut); }
+  #vbr-{{ uid }} .vbr__bar { position: absolute; left: 0; bottom: 0; height: 3px; width: 0; background: var(--bp); }
+  #vbr-{{ uid }} .vbr__step.is-active .vbr__bar { animation: vbr-bar var(--dur, 3.4s) linear forwards; }
+  @keyframes vbr-bar { to { width: 100%; } }
+  #vbr-{{ uid }} .vbr__thanks { margin: 14px 0 0; font-size: 14px; color: var(--bd); background: color-mix(in srgb, var(--bt) 70%, #fff); border-left: 3px solid var(--bp); padding: 10px 14px; border-radius: 0 12px 12px 0; line-height: 1.55; }
+
+  /* weeks */
+  #vbr-{{ uid }} .vbr__weeks { margin: 38px 0 0; }
+  #vbr-{{ uid }} .vbr__weeks-title { text-align: center; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; font-weight: 800; color: var(--mut); margin: 0 0 16px; }
+  #vbr-{{ uid }} .vbr__track { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  #vbr-{{ uid }} .vbr__track:before { content: ''; position: absolute; left: 12%; right: 12%; top: 22px; height: 2px; background: color-mix(in srgb, var(--bp) 30%, #fff); }
+  #vbr-{{ uid }} .vbr__track:after { content: ''; position: absolute; left: 12%; top: 22px; height: 2px; width: 0; background: var(--bp); transition: width 2.4s cubic-bezier(.2,.7,.2,1); }
+  #vbr-{{ uid }}.is-live .vbr__track:after { width: 76%; }
+  #vbr-{{ uid }} .vbr__week { text-align: center; position: relative; padding: 0 6px; }
+  #vbr-{{ uid }} .vbr__week i { display: grid; place-items: center; width: 44px; height: 44px; margin: 0 auto 10px; border-radius: 50%; background: #fff; border: 2px solid color-mix(in srgb, var(--bp) 35%, #fff); color: var(--bd); font-style: normal; font-weight: 800; font-size: 13px; position: relative; z-index: 1; transform: scale(.85); opacity: .6; transition: all .5s ease; }
+  #vbr-{{ uid }}.is-live .vbr__week i { transform: none; opacity: 1; border-color: var(--bp); }
+  #vbr-{{ uid }} .vbr__week:nth-child(1) i { transition-delay: .2s } #vbr-{{ uid }} .vbr__week:nth-child(2) i { transition-delay: .8s } #vbr-{{ uid }} .vbr__week:nth-child(3) i { transition-delay: 1.4s } #vbr-{{ uid }} .vbr__week:nth-child(4) i { transition-delay: 2s }
+  #vbr-{{ uid }} .vbr__week b { display: block; font-size: 13.5px; color: var(--ink); margin: 0 0 3px; }
+  #vbr-{{ uid }} .vbr__week span { font-size: 12.5px; color: var(--mut); line-height: 1.45; display: block; }
+
+  /* habit */
+  #vbr-{{ uid }} .vbr__habit { margin: 34px auto 0; max-width: 860px; background: #fff; border-radius: 22px; border: 1px solid #e6ede4; padding: 22px 22px 20px; display: grid; grid-template-columns: 1fr auto; gap: 18px; align-items: center; }
+  #vbr-{{ uid }} .vbr__habit h5 { margin: 0 0 6px; font-size: 16px; font-weight: 800; color: var(--ink); }
+  #vbr-{{ uid }} .vbr__habit p { margin: 0 0 10px; font-size: 14px; color: var(--mut); line-height: 1.55; }
+  #vbr-{{ uid }} .vbr__chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  #vbr-{{ uid }} .vbr__chip { font-size: 12.5px; font-weight: 700; color: var(--bd); background: var(--bt); border-radius: 999px; padding: 6px 12px; border: 1px solid transparent; cursor: pointer; }
+  #vbr-{{ uid }} .vbr__chip.is-on { border-color: var(--bp); background: #fff; }
+  #vbr-{{ uid }} .vbr__remind { display: inline-flex; align-items: center; gap: 8px; background: var(--bp); color: #fff; font-weight: 800; font-size: 14px; border: 0; border-radius: 999px; padding: 13px 20px; cursor: pointer; white-space: nowrap; box-shadow: 0 12px 26px -14px var(--bp); }
+  #vbr-{{ uid }} .vbr__remind:hover { background: var(--bd); }
+  #vbr-{{ uid }} .vbr__remind small { display: block; font-weight: 600; font-size: 11px; opacity: .85; }
+  #vbr-{{ uid }} .vbr__note { margin: 12px 0 0; font-size: 12px; color: #7b877b; text-align: center; }
+
+  /* SVG animation primitives */
+  #vbr-{{ uid }} .a-float { animation: vbr-float 3.2s ease-in-out infinite; }
+  #vbr-{{ uid }} .a-drop { animation: vbr-drop 3.4s cubic-bezier(.4,0,.2,1) infinite; }
+  #vbr-{{ uid }} .a-bubble { animation: vbr-bubble 2.6s ease-in infinite; opacity: 0; }
+  #vbr-{{ uid }} .a-bubble:nth-child(2) { animation-delay: .6s } #vbr-{{ uid }} .a-bubble:nth-child(3) { animation-delay: 1.2s } #vbr-{{ uid }} .a-bubble:nth-child(4) { animation-delay: 1.8s }
+  #vbr-{{ uid }} .a-wave { animation: vbr-wave 4s linear infinite; }
+  #vbr-{{ uid }} .a-shake { animation: vbr-shake 1.6s ease-in-out infinite; transform-origin: 50% 90%; }
+  #vbr-{{ uid }} .a-pour { animation: vbr-pour 2.4s ease-in infinite; opacity: 0; }
+  #vbr-{{ uid }} .a-pour:nth-child(2) { animation-delay: .3s } #vbr-{{ uid }} .a-pour:nth-child(3) { animation-delay: .6s } #vbr-{{ uid }} .a-pour:nth-child(4) { animation-delay: .9s } #vbr-{{ uid }} .a-pour:nth-child(5) { animation-delay: 1.2s }
+  #vbr-{{ uid }} .a-tick { stroke-dasharray: 40; stroke-dashoffset: 40; animation: vbr-tick 3.6s ease forwards infinite; }
+  #vbr-{{ uid }} .a-tick:nth-of-type(2) { animation-delay: .35s } #vbr-{{ uid }} .a-tick:nth-of-type(3) { animation-delay: .7s } #vbr-{{ uid }} .a-tick:nth-of-type(4) { animation-delay: 1.05s } #vbr-{{ uid }} .a-tick:nth-of-type(5) { animation-delay: 1.4s } #vbr-{{ uid }} .a-tick:nth-of-type(6) { animation-delay: 1.75s } #vbr-{{ uid }} .a-tick:nth-of-type(7) { animation-delay: 2.1s }
+  #vbr-{{ uid }} .a-pulse { animation: vbr-pulse 2.2s ease-in-out infinite; transform-origin: center; }
+  #vbr-{{ uid }} .a-orbit { animation: vbr-orbit 9s linear infinite; transform-origin: 160px 160px; }
+  #vbr-{{ uid }} .a-slide { animation: vbr-slide 3.6s ease-in-out infinite; }
+  #vbr-{{ uid }} .a-ring { stroke-dasharray: 280; stroke-dashoffset: 280; animation: vbr-ring 3.6s linear infinite; }
+  #vbr-{{ uid }} .a-glow { animation: vbr-glow 2.6s ease-in-out infinite; }
+  #vbr-{{ uid }} .a-chew { animation: vbr-chew 1.4s ease-in-out infinite; transform-origin: 160px 150px; }
+  #vbr-{{ uid }} .a-star { animation: vbr-star 2s ease-in-out infinite; transform-origin: center; }
+  @keyframes vbr-float { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-8px) } }
+  @keyframes vbr-drop { 0% { transform: translateY(-110px) rotate(-20deg); opacity: 0 } 15% { opacity: 1 } 55% { transform: translateY(0) rotate(0) } 70% { transform: translateY(-6px) } 80%,100% { transform: translateY(0) } }
+  @keyframes vbr-bubble { 0% { transform: translateY(0); opacity: 0 } 20% { opacity: .9 } 100% { transform: translateY(-70px); opacity: 0 } }
+  @keyframes vbr-wave { to { transform: translateX(-60px) } }
+  @keyframes vbr-shake { 0%,100% { transform: rotate(-9deg) } 50% { transform: rotate(9deg) } }
+  @keyframes vbr-pour { 0% { transform: translateY(0); opacity: 0 } 20% { opacity: 1 } 100% { transform: translateY(90px); opacity: 0 } }
+  @keyframes vbr-tick { 0% { stroke-dashoffset: 40 } 30%,85% { stroke-dashoffset: 0 } 100% { stroke-dashoffset: 40 } }
+  @keyframes vbr-pulse { 0%,100% { transform: scale(1); opacity: .9 } 50% { transform: scale(1.08); opacity: 1 } }
+  @keyframes vbr-orbit { to { transform: rotate(360deg) } }
+  @keyframes vbr-slide { 0%,15% { transform: translateX(-40px); opacity: 0 } 35%,70% { transform: translateX(0); opacity: 1 } 90%,100% { transform: translateX(10px); opacity: 0 } }
+  @keyframes vbr-ring { to { stroke-dashoffset: 0 } }
+  @keyframes vbr-glow { 0%,100% { opacity: .35 } 50% { opacity: .9 } }
+  @keyframes vbr-chew { 0%,100% { transform: scaleY(1) } 50% { transform: scaleY(.82) } }
+  @keyframes vbr-star { 0%,100% { transform: scale(.6); opacity: .2 } 50% { transform: scale(1); opacity: 1 } }
+  @media (prefers-reduced-motion: reduce) { #vbr-{{ uid }} * { animation: none !important; transition: none !important; } }
+
+  @media (max-width: 860px) {
+    #vbr-{{ uid }} { padding: 48px 16px; }
+    #vbr-{{ uid }} .vbr__stage { grid-template-columns: 1fr; gap: 18px; }
+    #vbr-{{ uid }} .vbr__scene { max-height: 300px; margin: 0 auto; width: 100%; max-width: 360px; }
+    #vbr-{{ uid }} .vbr__track { grid-template-columns: repeat(2, 1fr); gap: 16px 10px; }
+    #vbr-{{ uid }} .vbr__track:before, #vbr-{{ uid }} .vbr__track:after { display: none; }
+    #vbr-{{ uid }} .vbr__habit { grid-template-columns: 1fr; }
+    #vbr-{{ uid }} .vbr__remind { justify-content: center; }
+  }
+</style>
+
+{%- comment -%} ---- Build the step list (blocks override; otherwise per-form defaults) ---- {%- endcomment -%}
+{%- liquid
+  assign ST = ''
+  assign SB = ''
+  assign SS = ''
+  if section.blocks.size > 0
+    for b in section.blocks
+      assign ST = ST | append: b.settings.title | append: '||'
+      assign SB = SB | append: b.settings.body | append: '||'
+      assign SS = SS | append: b.settings.scene | append: '||'
+    endfor
+  else
+    case form
+      when 'suppository'
+        assign t1 = 'Tonight, at bedtime'
+        assign b1 = 'Wash your hands, unwrap one suppository and load it into the applicator. Lying down makes it easiest.'
+        assign t2 = 'Insert gently'
+        assign b2 = 'Insert the applicator comfortably and press the plunger. It takes a few seconds — no discomfort expected.'
+        assign t3 = 'Rest 10–15 minutes'
+        assign b3 = 'Stay lying down so the suppository dissolves where it works. A panty liner overnight is normal.'
+        assign t4 = course
+        assign b4 = 'One each night, ' | append: course | downcase | append: '. Pause during your period and right after intercourse. Pair it with your Femina daily capsule to keep the balance.'
+        assign ST = t1 | append: '||' | append: t2 | append: '||' | append: t3 | append: '||' | append: t4 | append: '||'
+        assign SB = b1 | append: '||' | append: b2 | append: '||' | append: b3 | append: '||' | append: b4 | append: '||'
+        assign SS = 'night||applicator||timer||calendar||'
+      when 'shake' or 'scoop'
+        assign t1 = 'Measure ' | append: dose
+        assign b1 = 'Add ' | append: dose | append: ' to ' | append: mix_volume | append: '. Cold liquid mixes smoothest.'
+        assign t2 = 'Shake for 20 seconds'
+        assign b2 = 'Shaker, blender or a fork in a glass — it dissolves quickly. Add fruit or ice if you like.'
+        assign t3 = 'Enjoy ' | append: when
+        assign b3 = 'Sip it slowly. The live cultures ride along with the protein and fibre, protected by the MEP armour.'
+        assign t4 = course
+        assign b4 = 'Same time each day builds the habit — and steady daily cultures are what shift your gut for good.'
+        assign ST = t1 | append: '||' | append: t2 | append: '||' | append: t3 | append: '||' | append: t4 | append: '||'
+        assign SB = b1 | append: '||' | append: b2 | append: '||' | append: b3 | append: '||' | append: b4 | append: '||'
+        assign SS = 'scoop||shake||timeofday||calendar||'
+      when 'chewable'
+        assign t1 = 'Chew ' | append: dose
+        assign b1 = 'Raspberry-flavoured and made to be chewed — no water needed. Best ' | append: when | append: '.'
+        assign t2 = 'Make it a moment'
+        assign b2 = 'Same time as breakfast or the school run. A tiny ritual that kids look forward to.'
+        assign t3 = 'MEP armour does the work'
+        assign b3 = 'Velobiotics microencapsulation carries the cultures safely past stomach acid to the gut.'
+        assign t4 = course
+        assign b4 = 'Daily consistency matters more than perfection. Missed a day? Simply carry on tomorrow.'
+        assign ST = t1 | append: '||' | append: t2 | append: '||' | append: t3 | append: '||' | append: t4 | append: '||'
+        assign SB = b1 | append: '||' | append: b2 | append: '||' | append: b3 | append: '||' | append: b4 | append: '||'
+        assign SS = 'chew||timeofday||shield||calendar||'
+      else
+        assign t1 = 'Take ' | append: dose
+        assign b1 = 'Swallow ' | append: when | append: '. That is the whole routine — under ten seconds.'
+        assign t2 = 'Anchor it to your ' | append: timeofday
+        assign b2 = 'Keep the bottle where you will see it. Same moment every day and it becomes automatic within two weeks.'
+        assign t3 = 'MEP armour survives the stomach'
+        assign b3 = 'Velobiotics supercritical-CO₂ microencapsulation shields every culture through stomach acid — up to 1000× more arrive alive.'
+        assign t4 = course
+        assign b4 = 'Live cultures work by showing up daily. Missed one? Just take today’s — never double up.'
+        assign ST = t1 | append: '||' | append: t2 | append: '||' | append: t3 | append: '||' | append: t4 | append: '||'
+        assign SB = b1 | append: '||' | append: b2 | append: '||' | append: b3 | append: '||' | append: b4 | append: '||'
+        assign SS = 'capsule||timeofday||shield||calendar||'
+    endcase
+  endif
+  assign steps_title = ST | split: '||'
+  assign steps_body = SB | split: '||'
+  assign steps_scene = SS | split: '||'
+-%}
+
+<section id="vbr-{{ uid }}" class="vbr" data-vbr data-form="{{ form }}" data-dose="{{ dose | escape }}" data-course="{{ course | escape }}" data-time="{{ timeofday }}" data-product="{{ product_short | escape }}">
+  <div class="vbr__inner">
+    <div class="vbr__head">
+      <p class="vbr__eyebrow">{{ section.settings.eyebrow | default: 'How to use' }}</p>
+      <h2 class="vbr__title">{{ section.settings.title_pre | default: 'Your daily ritual,' }} <em>{{ section.settings.title_highlight | default: 'made effortless.' }}</em></h2>
+      <p class="vbr__sub">{{ section.settings.sub | default: 'You have taken the first step by choosing better gut health — here is exactly how easy the rest is.' }}</p>
+    </div>
+
+    <div class="vbr__dose" aria-label="Dosage">
+      <b>{{ dose }}</b><i></i><span>{{ when }}</span><i></i><span>{{ course }}</span>
+    </div>
+
+    <div class="vbr__stage">
+      <div class="vbr__scene" aria-hidden="true">
+        {%- comment -%} capsule + glass {%- endcomment -%}
+        <svg data-scene="capsule" viewBox="0 0 320 320"><defs><clipPath id="glass-{{ uid }}"><path d="M100 120 L220 120 L206 268 Q160 284 114 268 Z"/></clipPath></defs>
+          <path d="M100 120 L220 120 L206 268 Q160 284 114 268 Z" fill="#fff" stroke="{{ bp }}" stroke-width="3" opacity=".95"/>
+          <g clip-path="url(#glass-{{ uid }})"><g class="a-wave"><path d="M40 190 Q70 180 100 190 T160 190 T220 190 T280 190 T340 190 V300 H40 Z" fill="{{ bp }}" opacity=".22"/></g>
+            <g><circle class="a-bubble" cx="140" cy="250" r="4" fill="#fff"/><circle class="a-bubble" cx="170" cy="255" r="3" fill="#fff"/><circle class="a-bubble" cx="155" cy="245" r="5" fill="#fff"/><circle class="a-bubble" cx="185" cy="250" r="3" fill="#fff"/></g></g>
+          <g class="a-drop"><rect x="138" y="150" width="44" height="20" rx="10" fill="{{ bd }}"/><rect x="138" y="150" width="22" height="20" rx="10" fill="{{ bp }}"/></g>
+          <text x="160" y="80" text-anchor="middle" font-family="Poppins,Arial" font-weight="800" font-size="30" fill="{{ bd }}">{{ dose | split: ' ' | first }}</text>
+          <text x="160" y="102" text-anchor="middle" font-family="Poppins,Arial" font-weight="600" font-size="13" fill="{{ bd }}" opacity=".8">{{ dose | split: ' ' | last | upcase }}</text>
+        </svg>
+        {%- comment -%} time of day {%- endcomment -%}
+        <svg data-scene="timeofday" viewBox="0 0 320 320">
+          {%- if timeofday contains 'bed' or timeofday contains 'night' or timeofday contains 'evening' -%}
+            <circle cx="160" cy="150" r="58" fill="#f6e7a7"/><circle cx="185" cy="135" r="52" fill="{{ bt }}"/>
+            <g><circle class="a-star" cx="70" cy="80" r="4" fill="{{ bp }}"/><circle class="a-star" cx="250" cy="70" r="3" fill="{{ bp }}" style="animation-delay:.6s"/><circle class="a-star" cx="240" cy="220" r="3" fill="{{ bp }}" style="animation-delay:1.1s"/></g>
+            <text x="160" y="265" text-anchor="middle" font-family="Poppins,Arial" font-weight="800" font-size="16" fill="{{ bd }}">Bedtime — let it work while you sleep</text>
+          {%- else -%}
+            <g class="a-orbit"><g stroke="{{ bp }}" stroke-width="5" stroke-linecap="round" opacity=".7">{% for i in (0..11) %}<line x1="160" y1="60" x2="160" y2="78" transform="rotate({{ i | times: 30 }} 160 160)"/>{% endfor %}</g></g>
+            <circle class="a-pulse" cx="160" cy="160" r="54" fill="#ffd66b"/><circle cx="160" cy="160" r="54" fill="none" stroke="#fff" stroke-width="4" opacity=".6"/>
+            <text x="160" y="270" text-anchor="middle" font-family="Poppins,Arial" font-weight="800" font-size="16" fill="{{ bd }}">Same {{ timeofday }} moment, every day</text>
+          {%- endif -%}
+        </svg>
+        {%- comment -%} shield / MEP {%- endcomment -%}
+        <svg data-scene="shield" viewBox="0 0 320 320">
+          <path class="a-pulse" d="M160 52 L236 84 V160 C236 214 200 250 160 270 C120 250 84 214 84 160 V84 Z" fill="{{ bp }}" opacity=".18"/>
+          <path d="M160 70 L222 96 V160 C222 206 192 236 160 252 C128 236 98 206 98 160 V96 Z" fill="#fff" stroke="{{ bp }}" stroke-width="3"/>
+          <g fill="{{ bd }}"><ellipse cx="140" cy="150" rx="16" ry="9" transform="rotate(-25 140 150)"/><ellipse cx="176" cy="140" rx="14" ry="8" transform="rotate(20 176 140)"/><ellipse cx="160" cy="180" rx="17" ry="9" transform="rotate(5 160 180)"/><ellipse cx="190" cy="176" rx="11" ry="7" transform="rotate(-40 190 176)"/><ellipse cx="128" cy="184" rx="11" ry="7" transform="rotate(35 128 184)"/></g>
+          <g class="a-glow" fill="none" stroke="{{ bp }}" stroke-width="2"><circle cx="160" cy="160" r="88"/><circle cx="160" cy="160" r="104" opacity=".5"/></g>
+          <text x="160" y="296" text-anchor="middle" font-family="Poppins,Arial" font-weight="800" font-size="15" fill="{{ bd }}">MEP armour · alive to the gut</text>
+        </svg>
+        {%- comment -%} calendar / streak {%- endcomment -%}
+        <svg data-scene="calendar" viewBox="0 0 320 320">
+          <rect x="44" y="70" width="232" height="190" rx="22" fill="#fff" stroke="{{ bp }}" stroke-width="3"/><rect x="44" y="70" width="232" height="44" rx="22" fill="{{ bp }}"/><rect x="44" y="96" width="232" height="18" fill="{{ bp }}"/>
+          <text x="160" y="100" text-anchor="middle" font-family="Poppins,Arial" font-weight="800" font-size="16" fill="#fff">{{ course | truncate: 26 }}</text>
+          <g fill="none" stroke="{{ bd }}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+            {%- for i in (0..6) -%}{%- assign col = i | modulo: 4 -%}{%- assign row = i | divided_by: 4 -%}
+            {%- assign x = col | times: 56 | plus: 64 -%}{%- assign y = row | times: 66 | plus: 136 -%}
+            <rect x="{{ x }}" y="{{ y }}" width="40" height="40" rx="10" fill="{{ bt }}" stroke="none"/><path class="a-tick" d="M{{ x | plus: 10 }} {{ y | plus: 21 }} l8 8 l14 -16"/>
+            {%- endfor -%}
+          </g>
+          <text x="160" y="292" text-anchor="middle" font-family="Poppins,Arial" font-weight="700" font-size="14" fill="{{ bd }}">Consistency is the active ingredient</text>
+        </svg>
+        {%- comment -%} night (suppository step 1) {%- endcomment -%}
+        <svg data-scene="night" viewBox="0 0 320 320">
+          <circle cx="150" cy="120" r="50" fill="#f6e7a7"/><circle cx="172" cy="106" r="46" fill="{{ bt }}"/>
+          <g><circle class="a-star" cx="70" cy="70" r="4" fill="{{ bp }}"/><circle class="a-star" cx="250" cy="60" r="3" fill="{{ bp }}" style="animation-delay:.6s"/><circle class="a-star" cx="236" cy="150" r="3" fill="{{ bp }}" style="animation-delay:1.1s"/></g>
+          <rect x="60" y="212" width="200" height="34" rx="14" fill="#fff" stroke="{{ bp }}" stroke-width="3"/><rect x="72" y="196" width="60" height="22" rx="10" fill="{{ bp }}" opacity=".6"/><path d="M60 246 v22 M260 246 v22" stroke="{{ bd }}" stroke-width="4" stroke-linecap="round"/>
+          <text x="160" y="292" text-anchor="middle" font-family="Poppins,Arial" font-weight="800" font-size="15" fill="{{ bd }}">Bedtime · wash hands · lie down</text>
+        </svg>
+        {%- comment -%} applicator (abstract, tasteful) {%- endcomment -%}
+        <svg data-scene="applicator" viewBox="0 0 320 320">
+          <circle cx="160" cy="160" r="96" fill="{{ bp }}" opacity=".12"/>
+          <g class="a-slide"><rect x="70" y="146" width="150" height="28" rx="14" fill="#fff" stroke="{{ bp }}" stroke-width="3"/><rect x="40" y="152" width="44" height="16" rx="8" fill="{{ bd }}"/><ellipse cx="228" cy="160" rx="18" ry="12" fill="{{ bp }}"/></g>
+          <text x="160" y="250" text-anchor="middle" font-family="Poppins,Arial" font-weight="800" font-size="15" fill="{{ bd }}">Gentle · a few seconds</text>
+          <text x="160" y="272" text-anchor="middle" font-family="Poppins,Arial" font-weight="600" font-size="13" fill="{{ bd }}" opacity=".8">2 applicators included</text>
+        </svg>
+        {%- comment -%} timer {%- endcomment -%}
+        <svg data-scene="timer" viewBox="0 0 320 320">
+          <circle cx="160" cy="160" r="88" fill="#fff" stroke="{{ bt }}" stroke-width="14"/><circle class="a-ring" cx="160" cy="160" r="88" fill="none" stroke="{{ bp }}" stroke-width="14" stroke-linecap="round" transform="rotate(-90 160 160)" style="stroke-dasharray:553;stroke-dashoffset:553;animation-name:vbr-ring"/>
+          <text x="160" y="152" text-anchor="middle" font-family="Poppins,Arial" font-weight="800" font-size="40" fill="{{ bd }}">10–15</text><text x="160" y="182" text-anchor="middle" font-family="Poppins,Arial" font-weight="700" font-size="14" fill="{{ bd }}" opacity=".8">MINUTES LYING DOWN</text>
+          <text x="160" y="284" text-anchor="middle" font-family="Poppins,Arial" font-weight="700" font-size="14" fill="{{ bd }}">Scroll your phone. Read. Breathe.</text>
+        </svg>
+        {%- comment -%} scoop {%- endcomment -%}
+        <svg data-scene="scoop" viewBox="0 0 320 320">
+          <path d="M96 150 L224 150 L212 262 Q160 278 108 262 Z" fill="#fff" stroke="{{ bp }}" stroke-width="3"/>
+          <g class="a-float"><path d="M190 60 l60 -18 l6 14 l-58 22 Z" fill="{{ bd }}"/><ellipse cx="180" cy="82" rx="30" ry="16" fill="{{ bp }}"/><ellipse cx="180" cy="78" rx="26" ry="10" fill="#fff" opacity=".8"/></g>
+          <g fill="{{ bp }}"><circle class="a-pour" cx="170" cy="100" r="4"/><circle class="a-pour" cx="180" cy="104" r="3"/><circle class="a-pour" cx="160" cy="98" r="3"/><circle class="a-pour" cx="176" cy="96" r="4"/><circle class="a-pour" cx="166" cy="106" r="3"/></g>
+          <text x="160" y="300" text-anchor="middle" font-family="Poppins,Arial" font-weight="800" font-size="15" fill="{{ bd }}">{{ dose }} → {{ mix_volume }}</text>
+        </svg>
+        {%- comment -%} shake {%- endcomment -%}
+        <svg data-scene="shake" viewBox="0 0 320 320">
+          <g class="a-shake"><rect x="112" y="78" width="96" height="190" rx="26" fill="#fff" stroke="{{ bp }}" stroke-width="3"/><rect x="124" y="60" width="72" height="30" rx="12" fill="{{ bd }}"/><path d="M112 160 Q160 140 208 160 V242 Q160 262 112 242 Z" fill="{{ bp }}" opacity=".35"/><circle cx="150" cy="200" r="6" fill="#fff"/><circle cx="176" cy="220" r="4" fill="#fff"/></g>
+          <text x="160" y="300" text-anchor="middle" font-family="Poppins,Arial" font-weight="800" font-size="15" fill="{{ bd }}">20 seconds · smooth</text>
+        </svg>
+        {%- comment -%} chew {%- endcomment -%}
+        <svg data-scene="chew" viewBox="0 0 320 320">
+          <g class="a-chew"><circle cx="160" cy="150" r="70" fill="#f7b5c4"/><circle cx="160" cy="150" r="70" fill="none" stroke="#fff" stroke-width="5" opacity=".7"/><path d="M128 150 Q160 186 192 150" stroke="{{ bd }}" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="140" cy="132" r="6" fill="{{ bd }}"/><circle cx="180" cy="132" r="6" fill="{{ bd }}"/></g>
+          <text x="160" y="270" text-anchor="middle" font-family="Poppins,Arial" font-weight="800" font-size="15" fill="{{ bd }}">Chew · no water needed</text>
+        </svg>
+        <div class="vbr__caption" data-vbr-caption>{{ steps_title[0] }}</div>
+      </div>
+
+      <div>
+        <ol class="vbr__steps" data-vbr-steps>
+          {%- for t in steps_title -%}
+          <li class="vbr__step{% if forloop.first %} is-active{% endif %}" data-vbr-step data-scene="{{ steps_scene[forloop.index0] }}" tabindex="0">
+            <span class="vbr__num">{{ forloop.index }}</span>
+            <div><h4>{{ t }}</h4><p>{{ steps_body[forloop.index0] }}</p></div>
+            <span class="vbr__bar"></span>
+          </li>
+          {%- endfor -%}
+        </ol>
+        <p class="vbr__thanks">{{ section.settings.thanks | default: 'Thank you for trusting us with something this personal. Thousands of people take this exact step each morning — you are in good company.' }}</p>
+      </div>
+    </div>
+
+    <div class="vbr__weeks">
+      <p class="vbr__weeks-title">What to expect</p>
+      <div class="vbr__track">
+        <div class="vbr__week"><i>W1</i><b>{{ section.settings.w1_title | default: 'Settling in' }}</b><span>{{ section.settings.w1 | default: 'Cultures begin colonising. Mild changes in digestion can be normal as the microbiome shifts.' }}</span></div>
+        <div class="vbr__week"><i>W2</i><b>{{ section.settings.w2_title | default: 'First signals' }}</b><span>{{ section.settings.w2 | default: 'Many people notice comfort, regularity or freshness improving. The habit is forming.' }}</span></div>
+        <div class="vbr__week"><i>W3–4</i><b>{{ section.settings.w3_title | default: 'Momentum' }}</b><span>{{ section.settings.w3 | default: 'Benefits become consistent as the balance stabilises. Keep going — this is where it compounds.' }}</span></div>
+        <div class="vbr__week"><i>∞</i><b>{{ section.settings.w4_title | default: 'Your new normal' }}</b><span>{{ section.settings.w4 | default: 'Daily use maintains the balance. Most customers reorder monthly so they never break the streak.' }}</span></div>
+      </div>
+    </div>
+
+    <div class="vbr__habit">
+      <div>
+        <h5>Make it stick — pick your anchor</h5>
+        <p>Habits form fastest when they ride on something you already do. Choose one; we will set the reminder to match.</p>
+        <div class="vbr__chips" data-vbr-chips>
+          {%- assign anchors = section.settings.anchors | default: 'Morning coffee|Brushing teeth|Breakfast|Bedtime routine' | split: '|' -%}
+          {%- for a in anchors -%}<button type="button" class="vbr__chip{% if forloop.first %} is-on{% endif %}" data-vbr-chip data-hour="{% case forloop.index %}{% when 1 %}07{% when 2 %}07{% when 3 %}08{% else %}21{% endcase %}">{{ a | strip }}</button>{%- endfor -%}
+        </div>
+      </div>
+      <button type="button" class="vbr__remind" data-vbr-remind>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>
+        <span>Set my reminder<small>adds to your phone calendar</small></span>
+      </button>
+    </div>
+    <p class="vbr__note">{{ section.settings.note | default: 'Food supplements support a balanced diet and healthy lifestyle; they do not treat or cure disease. If pregnant, breastfeeding or on medication, check with your healthcare professional.' }}</p>
+  </div>
+</section>
+
+<script>
+(function(){
+  const root = document.getElementById('vbr-{{ uid }}'); if (!root) return;
+  const steps = [...root.querySelectorAll('[data-vbr-step]')];
+  const scenes = [...root.querySelectorAll('[data-scene]')].filter(s => s.tagName.toLowerCase() === 'svg');
+  const cap = root.querySelector('[data-vbr-caption]');
+  let i = 0, timer = null, live = false;
+  const DUR = 3600;
+  function show(n){
+    i = n % steps.length;
+    steps.forEach((s, k) => { s.classList.toggle('is-active', k === i); s.classList.toggle('is-done', k < i); s.style.setProperty('--dur', DUR + 'ms'); });
+    const sc = steps[i].dataset.scene;
+    scenes.forEach(s => s.classList.toggle('is-on', s.dataset.scene === sc));
+    if (cap) cap.textContent = steps[i].querySelector('h4').textContent;
+  }
+  function play(){ clearInterval(timer); timer = setInterval(() => show(i + 1), DUR); }
+  steps.forEach((s, k) => { const go = () => { show(k); play(); }; s.addEventListener('click', go); s.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } }); });
+  show(0);
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { root.classList.add('is-live'); if (!live) { live = true; play(); } } else { clearInterval(timer); live = false; } }), { threshold: .25 });
+  io.observe(root);
+  // habit anchors + calendar reminder (.ics, daily; suppository = 7 nights)
+  let hour = (root.querySelector('[data-vbr-chip].is-on') || {}).dataset?.hour || '07';
+  root.querySelectorAll('[data-vbr-chip]').forEach(c => c.addEventListener('click', () => { root.querySelectorAll('[data-vbr-chip]').forEach(x => x.classList.remove('is-on')); c.classList.add('is-on'); hour = c.dataset.hour; }));
+  root.querySelector('[data-vbr-remind]')?.addEventListener('click', () => {
+    const form = root.dataset.form, name = root.dataset.product, dose = root.dataset.dose;
+    const d = new Date(); d.setDate(d.getDate() + 1); const pad = n => String(n).padStart(2, '0');
+    const start = `${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}T${form === 'suppository' ? '21' : hour}0000`;
+    const rule = form === 'suppository' ? 'RRULE:FREQ=DAILY;COUNT=7' : 'RRULE:FREQ=DAILY';
+    const ics = ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Velobiotics//Ritual//EN','BEGIN:VEVENT',`UID:${Date.now()}@velobiotics.com`,`DTSTART:${start}`,'DURATION:PT10M',rule,`SUMMARY:${name} — ${dose}`,`DESCRIPTION:Your Velobiotics ritual. ${root.dataset.course}. Reorder: https://www.velobiotics.com/products/{{ product.handle }}`,'BEGIN:VALARM','TRIGGER:-PT0M','ACTION:DISPLAY','DESCRIPTION:Time for your Velobiotics','END:VALARM','END:VEVENT','END:VCALENDAR'].join('\r\n');
+    const a = document.createElement('a'); a.href = 'data:text/calendar;charset=utf-8,' + encodeURIComponent(ics); a.download = 'velobiotics-ritual.ics'; document.body.appendChild(a); a.click(); a.remove();
+  });
+})();
+</script>
+
+{% schema %}
+{
+  "name": "VB · Ritual (how to use)",
+  "tag": "section",
+  "enabled_on": { "templates": ["product"] },
+  "settings": [
+    { "type": "color", "id": "brand_primary", "label": "Brand primary", "default": "#4d8c44" },
+    { "type": "color", "id": "brand_dark", "label": "Brand dark", "default": "#2e5d28" },
+    { "type": "color", "id": "brand_tint", "label": "Brand tint", "default": "#eef7ec" },
+    { "type": "header", "content": "Dosage (drives the animation)" },
+    { "type": "select", "id": "form", "label": "Format", "default": "capsule", "options": [
+      { "value": "capsule", "label": "Capsule" }, { "value": "tablet", "label": "Tablet" }, { "value": "softgel_combo", "label": "Capsule + softgel" },
+      { "value": "suppository", "label": "Vaginal suppository" }, { "value": "shake", "label": "Shake / meal" }, { "value": "scoop", "label": "Powder scoop" }, { "value": "chewable", "label": "Chewable" } ] },
+    { "type": "text", "id": "dose", "label": "Dose", "default": "1 capsule" },
+    { "type": "text", "id": "when", "label": "When / how", "default": "with water, after a meal" },
+    { "type": "text", "id": "course", "label": "Course", "default": "Every day, ongoing" },
+    { "type": "text", "id": "timeofday", "label": "Time of day (morning/bedtime)", "default": "morning" },
+    { "type": "text", "id": "mix_volume", "label": "Mix volume (powders)", "default": "250 ml water or milk" },
+    { "type": "text", "id": "product_short", "label": "Short product name (reminder)" },
+    { "type": "header", "content": "Copy" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "How to use" },
+    { "type": "text", "id": "title_pre", "label": "Title (start)", "default": "Your daily ritual," },
+    { "type": "text", "id": "title_highlight", "label": "Title (highlight)", "default": "made effortless." },
+    { "type": "textarea", "id": "sub", "label": "Sub-text" },
+    { "type": "textarea", "id": "thanks", "label": "Appreciation line" },
+    { "type": "text", "id": "anchors", "label": "Habit anchors (pipe-separated)", "default": "Morning coffee|Brushing teeth|Breakfast|Bedtime routine" },
+    { "type": "header", "content": "What to expect" },
+    { "type": "text", "id": "w1_title", "label": "Week 1 title" }, { "type": "textarea", "id": "w1", "label": "Week 1" },
+    { "type": "text", "id": "w2_title", "label": "Week 2 title" }, { "type": "textarea", "id": "w2", "label": "Week 2" },
+    { "type": "text", "id": "w3_title", "label": "Week 3–4 title" }, { "type": "textarea", "id": "w3", "label": "Week 3–4" },
+    { "type": "text", "id": "w4_title", "label": "Ongoing title" }, { "type": "textarea", "id": "w4", "label": "Ongoing" },
+    { "type": "textarea", "id": "note", "label": "Small print" }
+  ],
+  "blocks": [
+    { "type": "step", "name": "Custom step", "settings": [
+      { "type": "text", "id": "title", "label": "Title" },
+      { "type": "textarea", "id": "body", "label": "Body" },
+      { "type": "select", "id": "scene", "label": "Animation", "default": "capsule", "options": [
+        { "value": "capsule", "label": "Capsule into water" }, { "value": "timeofday", "label": "Time of day" }, { "value": "shield", "label": "MEP shield" }, { "value": "calendar", "label": "Streak calendar" },
+        { "value": "night", "label": "Bedtime" }, { "value": "applicator", "label": "Applicator" }, { "value": "timer", "label": "Rest timer" }, { "value": "scoop", "label": "Scoop" }, { "value": "shake", "label": "Shaker" }, { "value": "chew", "label": "Chewable" } ] }
+    ] }
+  ],
+  "presets": [{ "name": "VB · Ritual (how to use)" }]
+}
+{% endschema %}

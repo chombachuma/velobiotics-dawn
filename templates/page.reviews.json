@@ -128,12 +128,19 @@
         "title_highlight": "risk-free.",
         "sub": "30-day money-back guarantee · If you don't love it, you don't pay for it."
       }
+    },
+    "jm_apps": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
     "hero",
     "reviews",
+    "jm_apps",
     "judgeme",
     "final_cta"
   ]

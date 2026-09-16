@@ -86,6 +86,24 @@
   .vbpf-{{ section.id }} .vbpf__trust-icon{font-size:18px;flex-shrink:0;width:28px;text-align:center}
   .vbpf-{{ section.id }} .vbpf__trust-text{font-size:13px;color:#1a2e1a;line-height:1.5}
   .vbpf-{{ section.id }} .vbpf__trust-text strong{color:var(--d);font-weight:700}
+
+/* repo chips (shared with vb-product-ingredients) */
+.vb-pin__repo { margin: 26px 0 0; padding: 20px; background: #fff; border: 1px solid #e6ede4; border-radius: 20px; }
+.vb-pin__repo-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin: 0 0 12px; }
+.vb-pin__repo-head h3 { margin: 0; font-size: 15px; font-weight: 800; color: #1a2e1a; }
+.vb-pin__repo-head a { font-size: 13px; font-weight: 700; color: var(--bd, #2e5d28); text-decoration: none; }
+.vb-pin__chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.vb-pin__chip { position: relative; display: inline-flex; align-items: center; gap: 7px; font-size: 13px; font-weight: 700; color: var(--bd, #2e5d28); background: var(--bt, #eef7ec); border: 1px solid transparent; border-radius: 999px; padding: 8px 12px 8px 9px; text-decoration: none; transition: all .18s; }
+.vb-pin__chip:hover, .vb-pin__chip:focus-visible { border-color: var(--bp, #4d8c44); background: #fff; }
+.vb-pin__chip small { font-weight: 600; color: #5c6a5c; }
+.vb-pin__chip .ic { font-size: 14px; }
+.vb-pin__peek { position: absolute; left: 0; bottom: calc(100% + 8px); z-index: 20; width: 280px; background: #fff; border: 1px solid #e6ede4; border-radius: 16px; padding: 14px; box-shadow: 0 18px 40px -20px rgba(0,0,0,.4); font-size: 13px; line-height: 1.5; color: #33422f; font-weight: 500; display: none; text-align: left; }
+.vb-pin__peek b { display: block; color: #1a2e1a; margin: 0 0 4px; }
+.vb-pin__peek em { display: block; margin: 8px 0 0; font-style: normal; font-size: 12px; color: var(--bd, #2e5d28); font-weight: 700; }
+.vb-pin__chip:hover .vb-pin__peek, .vb-pin__chip:focus-within .vb-pin__peek { display: block; }
+@media (max-width: 600px) { .vb-pin__peek { display: none !important; } }
+.vb-pin__repo-foot { margin: 12px 0 0; font-size: 12.5px; color: #5c6a5c; }
+.vbpf .vb-pin__repo{margin-top:28px}
 </style>
 
 <section class="vbpf-{{ section.id }}" id="vbpf-{{ section.id }}">
@@ -192,7 +210,22 @@
         </div>
       </aside>
     </div>
-  </div>
+    {%- assign repo = product.metafields.custom.ingredients.value -%}
+  {%- if repo and repo.size > 0 -%}
+    <div class="vb-pin__repo" data-vb-pin-repo>
+      <div class="vb-pin__repo-head"><h3>Every active, explained</h3><a href="/pages/ingredients">Open the Ingredient Repository →</a></div>
+      <div class="vb-pin__chips">
+      {%- for r in repo -%}
+        <a class="vb-pin__chip" href="/pages/ingredient-{{ r.handle }}">
+          <span class="ic">{{ r.icon | default: '🌿' }}</span>{{ r.name }}{% if r.amount != blank %} <small>{{ r.amount }}</small>{% endif %}
+        {%- if r.one_liner != blank -%}<span class="vb-pin__peek"><b>{{ r.name }}</b>{{ r.one_liner }}<em>Tap to read how probiotics amplify it →</em></span>{%- endif -%}
+        </a>
+      {%- endfor -%}
+      </div>
+      <p class="vb-pin__repo-foot">Each ingredient links to its dossier: what it does, the evidence, typical dose, safety — and how the live cultures in this formula help your body absorb and use it.</p>
+    </div>
+  {%- endif -%}
+</div>
 </section>
 
 <script>

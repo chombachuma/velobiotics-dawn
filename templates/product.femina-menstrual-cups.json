@@ -8,928 +8,845 @@
  * ------------------------------------------------------------
  */
 {
- "sections": {
-  "hero": {
-   "type": "vb-product-hero",
-   "blocks": {
-    "b1": {
-     "type": "benefit",
-     "settings": {
-      "icon": "\ud83c\udf38",
-      "text": "Medical-grade silicone"
-     }
+  "sections": {
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "\ud83c\udf38",
+            "text": "Medical-grade silicone"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "\ud83d\udce6",
+            "text": "Large + Small in one pack"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "\u267b\ufe0f",
+            "text": "Reusable for 10+ years"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "\u23f0",
+            "text": "12-hour wear time"
+          }
+        },
+        "t1": {
+          "type": "testi",
+          "settings": {
+            "quote": "Changed my period forever",
+            "author": "Bongani N."
+          }
+        },
+        "t2": {
+          "type": "testi",
+          "settings": {
+            "quote": "Never buying tampons again",
+            "author": "Sarah M."
+          }
+        },
+        "t3": {
+          "type": "testi",
+          "settings": {
+            "quote": "Two sizes, perfect coverage",
+            "author": "Lisa K."
+          }
+        },
+        "t4": {
+          "type": "testi",
+          "settings": {
+            "quote": "Best money I've ever spent",
+            "author": "Karen V."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
+        "brand_label": "Femina\u2122 Cups",
+        "rating": "4.7",
+        "review_count": "180+",
+        "hook": "The smart period upgrade. Medical-grade silicone menstrual cups \u2014 large + small in one value pack. 12 hours of leak-free wear, reusable for 10+ years. Sustainable, comfortable, life-changing.",
+        "ship_note": "Ships worldwide \u00b7 Free shipping over the free-shipping threshold \u00b7 30-day money-back guarantee",
+        "tier_unit": "Pack",
+        "tier_unit_plural": "Packs",
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
     },
-    "b2": {
-     "type": "benefit",
-     "settings": {
-      "icon": "\ud83d\udce6",
-      "text": "Large + Small in one pack"
-     }
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Bongani+N&background=8d2a89&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Bongani N.",
+            "meta": "Verified buyer \u00b7 Johannesburg",
+            "quote": "Changed my period forever. Why didn't I switch sooner?"
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Sarah+M&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Sarah M.",
+            "meta": "Verified buyer \u00b7 Cape Town",
+            "quote": "Never buying tampons again. Two sizes is genius."
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Lisa+K&background=6b1f68&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Lisa K.",
+            "meta": "Verified buyer \u00b7 2 months ago",
+            "quote": "Two sizes, perfect coverage for heavy and light days."
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Karen+V&background=8d2a89&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Karen V.",
+            "meta": "Verified buyer \u00b7 3 months ago",
+            "quote": "Best money I've ever spent. Reusable, comfortable, leak-free."
+          }
+        },
+        "r5": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Naledi+B&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Naledi B.",
+            "meta": "Verified buyer \u00b7 1 month ago",
+            "quote": "My gym days are normal again. Cup goes in, life continues."
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
+        "eyebrow": "\u2605 Real Reviews",
+        "title": "Period upgrades, real reviews"
+      }
     },
-    "b3": {
-     "type": "benefit",
-     "settings": {
-      "icon": "\u267b\ufe0f",
-      "text": "Reusable for 10+ years"
-     }
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "\u2715",
+            "text": "<strong>Tampons and pads</strong> cost a fortune over a lifetime."
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "\u2715",
+            "text": "<strong>Single-use waste</strong> \u2014 11,000+ products in your lifetime."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "\u2715",
+            "text": "<strong>Bleaches and fragrances</strong> disrupting your vaginal microbiome."
+          }
+        },
+        "p4": {
+          "type": "point",
+          "settings": {
+            "icon": "\u2715",
+            "text": "<strong>Leaks and discomfort</strong> on heavy days."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#8d2a89",
+        "brand_tint": "#fdf5fc",
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_162336_4cb24b2a-cada-4879-9262-685e66780468.png",
+        "tag_value": "11K+",
+        "tag_label": "Tampons/Pads Used Per Lifetime",
+        "eyebrow": "The Problem",
+        "title_pre": "Periods deserve",
+        "title_highlight": "a smarter solution.",
+        "desc": "Disposable products are expensive, wasteful, and packed with bleach and synthetic fibres your vaginal microbiome doesn't need. There's a better way \u2014 medical-grade silicone, reusable for a decade."
+      }
     },
-    "b4": {
-     "type": "benefit",
-     "settings": {
-      "icon": "\u23f0",
-      "text": "12-hour wear time"
-     }
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "\u2713",
+            "text": "<strong>Medical-grade silicone</strong> \u2014 safe, soft, hypoallergenic."
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "\u2713",
+            "text": "<strong>Large + small in one pack</strong> \u2014 heavy days and light days covered."
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "\u2713",
+            "text": "<strong>12 hours of leak-free wear</strong> \u2014 sleep, work, exercise without a thought."
+          }
+        },
+        "s4": {
+          "type": "point",
+          "settings": {
+            "icon": "\u2713",
+            "text": "<strong>Reusable for 10+ years</strong>. Save thousands. Save the planet."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#8d2a89",
+        "brand_tint": "#fdf5fc",
+        "image_url": "",
+        "tag_value": "10yr",
+        "tag_label": "Reusable Lifetime",
+        "eyebrow": "The Solution",
+        "title_pre": "Meet",
+        "title_highlight": "Femina\u2122 Cups.",
+        "desc": "Medical-grade silicone menstrual cups in large + small. Soft, comfortable, leak-free for 12 hours. The smart period upgrade for the modern woman."
+      }
     },
-    "t1": {
-     "type": "testi",
-     "settings": {
-      "quote": "Changed my period forever",
-      "author": "Bongani N."
-     }
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
+            "brand": "Femina\u2122",
+            "rating": "4.8",
+            "reviews": "1300+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-probiotics-cookie-fresh-with-boric-acid-suppositories",
+            "brand": "Femina\u2122",
+            "rating": "4.9",
+            "reviews": "320+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-mini-combo",
+            "brand": "Femina\u2122",
+            "rating": "4.8",
+            "reviews": "260+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
+          }
+        },
+        "r4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-cookie-fresh-boric-acid-only-suppositories",
+            "brand": "Femina\u2122",
+            "rating": "4.8",
+            "reviews": "210+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
+          }
+        },
+        "r5": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-probiotic-meal-replacement-cranberry-extract-for-women",
+            "brand": "Femina\u2122",
+            "rating": "4.8",
+            "reviews": "150+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
+        "tint": false,
+        "eyebrow": "Complete the Ritual",
+        "title": "More from the Femina\u2122 range",
+        "sub": "Pair Cups with the rest of the Femina\u2122 intimate-health system."
+      }
     },
-    "t2": {
-     "type": "testi",
-     "settings": {
-      "quote": "Never buying tampons again",
-      "author": "Sarah M."
-     }
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "b1": {
+          "type": "feat",
+          "settings": {
+            "icon": "\ud83c\udf38",
+            "name": "Medical-Grade Silicone",
+            "desc": "Hypoallergenic, BPA-free, latex-free."
+          }
+        },
+        "b2": {
+          "type": "feat",
+          "settings": {
+            "icon": "\ud83d\udce6",
+            "name": "Two Sizes Included",
+            "desc": "Large for heavy days, small for light days."
+          }
+        },
+        "b3": {
+          "type": "feat",
+          "settings": {
+            "icon": "\u23f0",
+            "name": "12-Hour Wear",
+            "desc": "Sleep, work, exercise \u2014 without thinking about it."
+          }
+        },
+        "b4": {
+          "type": "feat",
+          "settings": {
+            "icon": "\u267b\ufe0f",
+            "name": "10+ Year Lifespan",
+            "desc": "Reusable, sustainable, money-saving."
+          }
+        },
+        "b5": {
+          "type": "feat",
+          "settings": {
+            "icon": "\ud83e\ude7a",
+            "name": "Microbiome-Friendly",
+            "desc": "No bleaches, no fragrances, no microbiome disruption."
+          }
+        },
+        "b6": {
+          "type": "feat",
+          "settings": {
+            "icon": "\ud83c\udf3f",
+            "name": "Eco-Friendly",
+            "desc": "Save 11,000+ disposables from landfill over your lifetime."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_tint": "#fdf5fc",
+        "eyebrow": "Key Benefits",
+        "title_pre": "Why",
+        "title_highlight": "Femina\u2122 Cups",
+        "sub": "Six reasons women across South Africa upgrade their period with Femina Cups."
+      }
     },
-    "t3": {
-     "type": "testi",
-     "settings": {
-      "quote": "Two sizes, perfect coverage",
-      "author": "Lisa K."
-     }
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "\ud83c\udf38",
+            "name": "Fold & Insert",
+            "desc": "Fold the cup, insert, and let it open inside."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "\u23f0",
+            "name": "Wear 12 Hours",
+            "desc": "Live your life \u2014 sleep, exercise, swim, work."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "\ud83d\udca7",
+            "name": "Empty & Rinse",
+            "desc": "Remove, empty, rinse with water, reinsert."
+          }
+        },
+        "h4": {
+          "type": "step",
+          "settings": {
+            "icon": "\ud83e\uddfc",
+            "name": "Sterilise Between Cycles",
+            "desc": "Boil for 5 minutes to sterilise. Ready for next month."
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_tint": "#fdf5fc",
+        "eyebrow": "How It Works",
+        "title_pre": "From Cup to",
+        "title_highlight": "Confidence",
+        "sub": "Four simple steps. A whole new period experience."
+      }
     },
-    "t4": {
-     "type": "testi",
-     "settings": {
-      "quote": "Best money I've ever spent",
-      "author": "Karen V."
-     }
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Leak-free for 12 hours",
+            "percent": 89
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "Period anxiety reduced",
+            "percent": 93
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Replaced tampons completely",
+            "percent": 86
+          }
+        },
+        "c4": {
+          "type": "stat",
+          "settings": {
+            "label": "More comfortable than tampons",
+            "percent": 91
+          }
+        },
+        "c5": {
+          "type": "stat",
+          "settings": {
+            "label": "Would recommend to a friend",
+            "percent": 97
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
+        "eyebrow": "Real results",
+        "title_pre": "Trusted for",
+        "title_highlight": "Period Upgrade",
+        "sub": "What women report after one cycle with Femina Cups.",
+        "caveat": "Based on a survey of 180+ verified customers. Individual results may vary."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "f1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
+            "brand": "Femina\u2122",
+            "rating": "4.8",
+            "reviews": "1300+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
+          }
+        },
+        "f2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "her-biotics-original-capsules-60s",
+            "brand": "Her-Biotics\u2122",
+            "rating": "4.7",
+            "reviews": "260+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
+          }
+        },
+        "f3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-glp-1-booster",
+            "brand": "GutSlim\u2122",
+            "rating": "4.8",
+            "reviews": "410+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
+          }
+        },
+        "f4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-magnesium-glycinate",
+            "brand": "Velo16\u2122",
+            "rating": "4.6",
+            "reviews": "190+",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
+        "tint": true,
+        "eyebrow": "Frequently Bought Together",
+        "title": "Pair with the rest of your wellness stack",
+        "sub": "Femina Cups stack beautifully with these Velobiotics favourites."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
+            "icon_fallback": "\u2713",
+            "name": "Medical-Grade",
+            "desc": "FDA-approved silicone, USP Class VI."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
+            "icon_fallback": "\u2713",
+            "name": "Gynae Endorsed",
+            "desc": "Recommended by gynaecologists worldwide."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
+            "icon_fallback": "\u2713",
+            "name": "Microbiome Friendly",
+            "desc": "Won't disrupt vaginal pH or flora."
+          }
+        },
+        "d4": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
+            "icon_fallback": "\u2713",
+            "name": "Clean & Reusable",
+            "desc": "No bleach, no fragrance, no waste."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3",
+        "d4"
+      ],
+      "settings": {
+        "eyebrow": "Trusted by Doctors. Designed for Women.",
+        "title_pre": "Quality you can",
+        "title_highlight": "trust.",
+        "sub": "Built to medical-grade standards and reviewed by gynaecologists."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "Two Sizes Included",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "12-Hour Wear Time",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "Medical-Grade Silicone",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "Microbiome Friendly",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o5": {
+          "type": "row",
+          "settings": {
+            "feature": "10+ Year Lifespan",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_tint": "#fdf5fc",
+        "eyebrow": "",
+        "title": "Why Femina Cups Outperform",
+        "sub": "Medical-grade silicone, two sizes, microbiome-friendly \u2014 built to upgrade your period for the next decade.",
+        "col_features": "Features",
+        "col_brand": "Femina Cups",
+        "brand_logo_url": "",
+        "col_b": "Tampons",
+        "col_c": "Pads",
+        "cta_text": "Add to Cart",
+        "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Real Reviews",
+        "title_pre": "What Women",
+        "title_highlight": "Are Saying",
+        "sub": "Verified reviews collected independently by Judge.me from customers who bought this product.",
+        "scope": "product",
+        "show_stats": true
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "Which size should I use?",
+            "answer": "<p>The pack includes both. Start with small for lighter days, large for heavy days or post-childbirth. Most women use both across a cycle.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "Will it leak?",
+            "answer": "<p>When inserted correctly and emptied within 12 hours, leaks are rare. Practice during a lighter period and watch for the seal pop-open.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "Is it safe long-term?",
+            "answer": "<p>Yes. Medical-grade silicone is FDA-approved and used in cardiac and other implant applications. Boil to sterilise between cycles.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Can I sleep with it in?",
+            "answer": "<p>Yes \u2014 12-hour wear time means it's safe for full nights of sleep.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Do you ship internationally?",
+            "answer": "<p>Yes. We ship globally \u2014 5\u201314 working days. Free shipping over the free-shipping threshold.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "What if it doesn't work for me?",
+            "answer": "<p>If it's not for you within 30 days, we'll refund you in full \u2014 no questions asked.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "title_pre": "Questions Before",
+        "title_highlight": "You Start"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "\u2705",
+            "text": "30-day money-back"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "\ud83d\ude9a",
+            "text": "Ships worldwide"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "\ud83d\udd2c",
+            "text": "FDA-approved silicone"
+          }
+        },
+        "g4": {
+          "type": "g",
+          "settings": {
+            "icon": "\u267b\ufe0f",
+            "text": "10+ year lifespan"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "settings": {
+        "brand_primary": "#8d2a89",
+        "brand_dark": "#6b1f68",
+        "brand_light": "#b94db4",
+        "badge": "30-day money-back guarantee",
+        "title_pre": "Upgrade Your Period",
+        "title_highlight": "Risk-Free for 30 Days",
+        "sub": "Join thousands of women who upgraded their period. If it's not right, we'll refund every cent.",
+        "cta_text": "Add to Cart",
+        "cta_link": "#vbpForm"
+      }
     }
-   },
-   "block_order": [
-    "b1",
-    "b2",
-    "b3",
-    "b4",
-    "t1",
-    "t2",
-    "t3",
-    "t4"
-   ],
-   "settings": {
-    "brand_primary": "#8d2a89",
-    "brand_dark": "#6b1f68",
-    "brand_tint": "#fdf5fc",
-    "brand_label": "Femina\u2122 Cups",
-    "rating": "4.7",
-    "review_count": "180+",
-    "hook": "The smart period upgrade. Medical-grade silicone menstrual cups \u2014 large + small in one value pack. 12 hours of leak-free wear, reusable for 10+ years. Sustainable, comfortable, life-changing.",
-    "ship_note": "Ships worldwide \u00b7 Free shipping over the free-shipping threshold \u00b7 30-day money-back guarantee",
-    "tier_unit": "Pack",
-    "tier_unit_plural": "Packs",
-    "show_buynow": true,
-    "show_testi_marquee": true
-   }
   },
-  "reviews-carousel": {
-   "type": "vb-product-reviews-carousel",
-   "blocks": {
-    "r1": {
-     "type": "review",
-     "settings": {
-      "avatar_url": "https://ui-avatars.com/api/?name=Bongani+N&background=8d2a89&color=ffffff&size=120&bold=true&font-size=0.42",
-      "author": "Bongani N.",
-      "meta": "Verified buyer \u00b7 Johannesburg",
-      "quote": "Changed my period forever. Why didn't I switch sooner?"
-     }
-    },
-    "r2": {
-     "type": "review",
-     "settings": {
-      "avatar_url": "https://ui-avatars.com/api/?name=Sarah+M&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
-      "author": "Sarah M.",
-      "meta": "Verified buyer \u00b7 Cape Town",
-      "quote": "Never buying tampons again. Two sizes is genius."
-     }
-    },
-    "r3": {
-     "type": "review",
-     "settings": {
-      "avatar_url": "https://ui-avatars.com/api/?name=Lisa+K&background=6b1f68&color=ffffff&size=120&bold=true&font-size=0.42",
-      "author": "Lisa K.",
-      "meta": "Verified buyer \u00b7 2 months ago",
-      "quote": "Two sizes, perfect coverage for heavy and light days."
-     }
-    },
-    "r4": {
-     "type": "review",
-     "settings": {
-      "avatar_url": "https://ui-avatars.com/api/?name=Karen+V&background=8d2a89&color=ffffff&size=120&bold=true&font-size=0.42",
-      "author": "Karen V.",
-      "meta": "Verified buyer \u00b7 3 months ago",
-      "quote": "Best money I've ever spent. Reusable, comfortable, leak-free."
-     }
-    },
-    "r5": {
-     "type": "review",
-     "settings": {
-      "avatar_url": "https://ui-avatars.com/api/?name=Naledi+B&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
-      "author": "Naledi B.",
-      "meta": "Verified buyer \u00b7 1 month ago",
-      "quote": "My gym days are normal again. Cup goes in, life continues."
-     }
-    }
-   },
-   "block_order": [
-    "r1",
-    "r2",
-    "r3",
-    "r4",
-    "r5"
-   ],
-   "settings": {
-    "brand_primary": "#8d2a89",
-    "brand_dark": "#6b1f68",
-    "brand_tint": "#fdf5fc",
-    "eyebrow": "\u2605 Real Reviews",
-    "title": "Period upgrades, real reviews"
-   }
-  },
-  "problem": {
-   "type": "vb-product-story",
-   "blocks": {
-    "p1": {
-     "type": "point",
-     "settings": {
-      "icon": "\u2715",
-      "text": "<strong>Tampons and pads</strong> cost a fortune over a lifetime."
-     }
-    },
-    "p2": {
-     "type": "point",
-     "settings": {
-      "icon": "\u2715",
-      "text": "<strong>Single-use waste</strong> \u2014 11,000+ products in your lifetime."
-     }
-    },
-    "p3": {
-     "type": "point",
-     "settings": {
-      "icon": "\u2715",
-      "text": "<strong>Bleaches and fragrances</strong> disrupting your vaginal microbiome."
-     }
-    },
-    "p4": {
-     "type": "point",
-     "settings": {
-      "icon": "\u2715",
-      "text": "<strong>Leaks and discomfort</strong> on heavy days."
-     }
-    }
-   },
-   "block_order": [
-    "p1",
-    "p2",
-    "p3",
-    "p4"
-   ],
-   "settings": {
-    "reverse": false,
-    "brand_primary": "#8d2a89",
-    "brand_tint": "#fdf5fc",
-    "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_162336_4cb24b2a-cada-4879-9262-685e66780468.png",
-    "tag_value": "11K+",
-    "tag_label": "Tampons/Pads Used Per Lifetime",
-    "eyebrow": "The Problem",
-    "title_pre": "Periods deserve",
-    "title_highlight": "a smarter solution.",
-    "desc": "Disposable products are expensive, wasteful, and packed with bleach and synthetic fibres your vaginal microbiome doesn't need. There's a better way \u2014 medical-grade silicone, reusable for a decade."
-   }
-  },
-  "solution": {
-   "type": "vb-product-story",
-   "blocks": {
-    "s1": {
-     "type": "point",
-     "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Medical-grade silicone</strong> \u2014 safe, soft, hypoallergenic."
-     }
-    },
-    "s2": {
-     "type": "point",
-     "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Large + small in one pack</strong> \u2014 heavy days and light days covered."
-     }
-    },
-    "s3": {
-     "type": "point",
-     "settings": {
-      "icon": "\u2713",
-      "text": "<strong>12 hours of leak-free wear</strong> \u2014 sleep, work, exercise without a thought."
-     }
-    },
-    "s4": {
-     "type": "point",
-     "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Reusable for 10+ years</strong>. Save thousands. Save the planet."
-     }
-    }
-   },
-   "block_order": [
-    "s1",
-    "s2",
-    "s3",
-    "s4"
-   ],
-   "settings": {
-    "reverse": true,
-    "brand_primary": "#8d2a89",
-    "brand_tint": "#fdf5fc",
-    "image_url": "",
-    "tag_value": "10yr",
-    "tag_label": "Reusable Lifetime",
-    "eyebrow": "The Solution",
-    "title_pre": "Meet",
-    "title_highlight": "Femina\u2122 Cups.",
-    "desc": "Medical-grade silicone menstrual cups in large + small. Soft, comfortable, leak-free for 12 hours. The smart period upgrade for the modern woman."
-   }
-  },
-  "related": {
-   "type": "vb-product-related",
-   "blocks": {
-    "r1": {
-     "type": "product",
-     "settings": {
-      "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
-      "brand": "Femina\u2122",
-      "rating": "4.8",
-      "reviews": "1300+",
-      "fallback_title": "",
-      "fallback_url": "",
-      "fallback_price": ""
-     }
-    },
-    "r2": {
-     "type": "product",
-     "settings": {
-      "product_handle": "femina-probiotics-cookie-fresh-with-boric-acid-suppositories",
-      "brand": "Femina\u2122",
-      "rating": "4.9",
-      "reviews": "320+",
-      "fallback_title": "",
-      "fallback_url": "",
-      "fallback_price": ""
-     }
-    },
-    "r3": {
-     "type": "product",
-     "settings": {
-      "product_handle": "femina-mini-combo",
-      "brand": "Femina\u2122",
-      "rating": "4.8",
-      "reviews": "260+",
-      "fallback_title": "",
-      "fallback_url": "",
-      "fallback_price": ""
-     }
-    },
-    "r4": {
-     "type": "product",
-     "settings": {
-      "product_handle": "femina-cookie-fresh-boric-acid-only-suppositories",
-      "brand": "Femina\u2122",
-      "rating": "4.8",
-      "reviews": "210+",
-      "fallback_title": "",
-      "fallback_url": "",
-      "fallback_price": ""
-     }
-    },
-    "r5": {
-     "type": "product",
-     "settings": {
-      "product_handle": "femina-probiotic-meal-replacement-cranberry-extract-for-women",
-      "brand": "Femina\u2122",
-      "rating": "4.8",
-      "reviews": "150+",
-      "fallback_title": "",
-      "fallback_url": "",
-      "fallback_price": ""
-     }
-    }
-   },
-   "block_order": [
-    "r1",
-    "r2",
-    "r3",
-    "r4",
-    "r5"
-   ],
-   "settings": {
-    "brand_primary": "#8d2a89",
-    "brand_dark": "#6b1f68",
-    "brand_tint": "#fdf5fc",
-    "tint": false,
-    "eyebrow": "Complete the Ritual",
-    "title": "More from the Femina\u2122 range",
-    "sub": "Pair Cups with the rest of the Femina\u2122 intimate-health system."
-   }
-  },
-  "benefits": {
-   "type": "vb-product-benefits",
-   "blocks": {
-    "b1": {
-     "type": "feat",
-     "settings": {
-      "icon": "\ud83c\udf38",
-      "name": "Medical-Grade Silicone",
-      "desc": "Hypoallergenic, BPA-free, latex-free."
-     }
-    },
-    "b2": {
-     "type": "feat",
-     "settings": {
-      "icon": "\ud83d\udce6",
-      "name": "Two Sizes Included",
-      "desc": "Large for heavy days, small for light days."
-     }
-    },
-    "b3": {
-     "type": "feat",
-     "settings": {
-      "icon": "\u23f0",
-      "name": "12-Hour Wear",
-      "desc": "Sleep, work, exercise \u2014 without thinking about it."
-     }
-    },
-    "b4": {
-     "type": "feat",
-     "settings": {
-      "icon": "\u267b\ufe0f",
-      "name": "10+ Year Lifespan",
-      "desc": "Reusable, sustainable, money-saving."
-     }
-    },
-    "b5": {
-     "type": "feat",
-     "settings": {
-      "icon": "\ud83e\ude7a",
-      "name": "Microbiome-Friendly",
-      "desc": "No bleaches, no fragrances, no microbiome disruption."
-     }
-    },
-    "b6": {
-     "type": "feat",
-     "settings": {
-      "icon": "\ud83c\udf3f",
-      "name": "Eco-Friendly",
-      "desc": "Save 11,000+ disposables from landfill over your lifetime."
-     }
-    }
-   },
-   "block_order": [
-    "b1",
-    "b2",
-    "b3",
-    "b4",
-    "b5",
-    "b6"
-   ],
-   "settings": {
-    "brand_primary": "#8d2a89",
-    "brand_tint": "#fdf5fc",
-    "eyebrow": "Key Benefits",
-    "title_pre": "Why",
-    "title_highlight": "Femina\u2122 Cups",
-    "sub": "Six reasons women across South Africa upgrade their period with Femina Cups."
-   }
-  },
-  "how": {
-   "type": "vb-product-how",
-   "blocks": {
-    "h1": {
-     "type": "step",
-     "settings": {
-      "icon": "\ud83c\udf38",
-      "name": "Fold & Insert",
-      "desc": "Fold the cup, insert, and let it open inside."
-     }
-    },
-    "h2": {
-     "type": "step",
-     "settings": {
-      "icon": "\u23f0",
-      "name": "Wear 12 Hours",
-      "desc": "Live your life \u2014 sleep, exercise, swim, work."
-     }
-    },
-    "h3": {
-     "type": "step",
-     "settings": {
-      "icon": "\ud83d\udca7",
-      "name": "Empty & Rinse",
-      "desc": "Remove, empty, rinse with water, reinsert."
-     }
-    },
-    "h4": {
-     "type": "step",
-     "settings": {
-      "icon": "\ud83e\uddfc",
-      "name": "Sterilise Between Cycles",
-      "desc": "Boil for 5 minutes to sterilise. Ready for next month."
-     }
-    }
-   },
-   "block_order": [
-    "h1",
-    "h2",
-    "h3",
-    "h4"
-   ],
-   "settings": {
-    "brand_primary": "#8d2a89",
-    "brand_tint": "#fdf5fc",
-    "eyebrow": "How It Works",
-    "title_pre": "From Cup to",
-    "title_highlight": "Confidence",
-    "sub": "Four simple steps. A whole new period experience."
-   }
-  },
-  "ingredients": {
-   "type": "vb-product-ingredients",
-   "blocks": {
-    "i1": {
-     "type": "ingredient",
-     "settings": {
-      "icon": "\ud83c\udf38",
-      "name": "Medical-Grade Silicone",
-      "amount": "100% silicone",
-      "desc": "FDA-approved, USP Class VI. Hypoallergenic, soft, durable."
-     }
-    },
-    "i2": {
-     "type": "ingredient",
-     "settings": {
-      "icon": "\ud83d\udce6",
-      "name": "Large Cup",
-      "amount": "30ml capacity",
-      "desc": "For heavy days or post-childbirth use."
-     }
-    },
-    "i3": {
-     "type": "ingredient",
-     "settings": {
-      "icon": "\ud83d\udce6",
-      "name": "Small Cup",
-      "amount": "20ml capacity",
-      "desc": "For light days or first-time users."
-     }
-    },
-    "i4": {
-     "type": "ingredient",
-     "settings": {
-      "icon": "\ud83d\udcce",
-      "name": "Storage Pouch",
-      "amount": "Cotton",
-      "desc": "Breathable cotton pouch included with each pack."
-     }
-    },
-    "i5": {
-     "type": "ingredient",
-     "settings": {
-      "icon": "\ud83d\udcd6",
-      "name": "Instructions",
-      "amount": "Included",
-      "desc": "Full insertion, removal, and care guide."
-     }
-    },
-    "i6": {
-     "type": "ingredient",
-     "settings": {
-      "icon": "\ud83d\udeab",
-      "name": "Free From",
-      "amount": "Always",
-      "desc": "BPA \u00b7 latex \u00b7 bleach \u00b7 phthalates \u00b7 dye \u00b7 fragrance."
-     }
-    }
-   },
-   "block_order": [
-    "i1",
-    "i2",
-    "i3",
-    "i4",
-    "i5",
-    "i6"
-   ],
-   "settings": {
-    "brand_primary": "#8d2a89",
-    "brand_dark": "#6b1f68",
-    "brand_tint": "#fdf5fc",
-    "brand_light": "#b94db4",
-    "eyebrow": "What's Inside",
-    "title": "Two sizes, one smart pack",
-    "sub": "Medical-grade silicone, two sizes, cotton storage pouch.",
-    "facts_image_url": "",
-    "facts_label": "Pack contents",
-    "facts_col_a": "Ingredient",
-    "facts_col_b": "Per serving",
-    "facts_caption": "% Daily Value not established. Other Ingredients: HPMC, Magnesium Stearate.",
-    "facts_foot": "FDA-approved \u00b7 Medical-grade \u00b7 Full transparency"
-   }
-  },
-  "confidence": {
-   "type": "vb-product-confidence",
-   "blocks": {
-    "c1": {
-     "type": "stat",
-     "settings": {
-      "label": "Leak-free for 12 hours",
-      "percent": 89
-     }
-    },
-    "c2": {
-     "type": "stat",
-     "settings": {
-      "label": "Period anxiety reduced",
-      "percent": 93
-     }
-    },
-    "c3": {
-     "type": "stat",
-     "settings": {
-      "label": "Replaced tampons completely",
-      "percent": 86
-     }
-    },
-    "c4": {
-     "type": "stat",
-     "settings": {
-      "label": "More comfortable than tampons",
-      "percent": 91
-     }
-    },
-    "c5": {
-     "type": "stat",
-     "settings": {
-      "label": "Would recommend to a friend",
-      "percent": 97
-     }
-    }
-   },
-   "block_order": [
-    "c1",
-    "c2",
-    "c3",
-    "c4",
-    "c5"
-   ],
-   "settings": {
-    "brand_primary": "#8d2a89",
-    "brand_dark": "#6b1f68",
-    "brand_tint": "#fdf5fc",
-    "eyebrow": "Real results",
-    "title_pre": "Trusted for",
-    "title_highlight": "Period Upgrade",
-    "sub": "What women report after one cycle with Femina Cups.",
-    "caveat": "Based on a survey of 180+ verified customers. Individual results may vary."
-   }
-  },
-  "fbt": {
-   "type": "vb-product-related",
-   "blocks": {
-    "f1": {
-     "type": "product",
-     "settings": {
-      "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
-      "brand": "Femina\u2122",
-      "rating": "4.8",
-      "reviews": "1300+",
-      "fallback_title": "",
-      "fallback_url": "",
-      "fallback_price": ""
-     }
-    },
-    "f2": {
-     "type": "product",
-     "settings": {
-      "product_handle": "her-biotics-original-capsules-60s",
-      "brand": "Her-Biotics\u2122",
-      "rating": "4.7",
-      "reviews": "260+",
-      "fallback_title": "",
-      "fallback_url": "",
-      "fallback_price": ""
-     }
-    },
-    "f3": {
-     "type": "product",
-     "settings": {
-      "product_handle": "gutslim-probiotics-glp-1-booster",
-      "brand": "GutSlim\u2122",
-      "rating": "4.8",
-      "reviews": "410+",
-      "fallback_title": "",
-      "fallback_url": "",
-      "fallback_price": ""
-     }
-    },
-    "f4": {
-     "type": "product",
-     "settings": {
-      "product_handle": "velo16-probiotics-magnesium-glycinate",
-      "brand": "Velo16\u2122",
-      "rating": "4.6",
-      "reviews": "190+",
-      "fallback_title": "",
-      "fallback_url": "",
-      "fallback_price": ""
-     }
-    }
-   },
-   "block_order": [
-    "f1",
-    "f2",
-    "f3",
-    "f4"
-   ],
-   "settings": {
-    "brand_primary": "#8d2a89",
-    "brand_dark": "#6b1f68",
-    "brand_tint": "#fdf5fc",
-    "tint": true,
-    "eyebrow": "Frequently Bought Together",
-    "title": "Pair with the rest of your wellness stack",
-    "sub": "Femina Cups stack beautifully with these Velobiotics favourites."
-   }
-  },
-  "doctors": {
-   "type": "vb-doctors",
-   "blocks": {
-    "d1": {
-     "type": "card",
-     "settings": {
-      "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
-      "icon_fallback": "\u2713",
-      "name": "Medical-Grade",
-      "desc": "FDA-approved silicone, USP Class VI."
-     }
-    },
-    "d2": {
-     "type": "card",
-     "settings": {
-      "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
-      "icon_fallback": "\u2713",
-      "name": "Gynae Endorsed",
-      "desc": "Recommended by gynaecologists worldwide."
-     }
-    },
-    "d3": {
-     "type": "card",
-     "settings": {
-      "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "icon_fallback": "\u2713",
-      "name": "Microbiome Friendly",
-      "desc": "Won't disrupt vaginal pH or flora."
-     }
-    },
-    "d4": {
-     "type": "card",
-     "settings": {
-      "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
-      "icon_fallback": "\u2713",
-      "name": "Clean & Reusable",
-      "desc": "No bleach, no fragrance, no waste."
-     }
-    }
-   },
-   "block_order": [
-    "d1",
-    "d2",
-    "d3",
-    "d4"
-   ],
-   "settings": {
-    "eyebrow": "Trusted by Doctors. Designed for Women.",
-    "title_pre": "Quality you can",
-    "title_highlight": "trust.",
-    "sub": "Built to medical-grade standards and reviewed by gynaecologists."
-   }
-  },
-  "outperform": {
-   "type": "vb-product-outperform",
-   "blocks": {
-    "o1": {
-     "type": "row",
-     "settings": {
-      "feature": "Two Sizes Included",
-      "brand_state": "yes",
-      "b_state": "no",
-      "c_state": "no"
-     }
-    },
-    "o2": {
-     "type": "row",
-     "settings": {
-      "feature": "12-Hour Wear Time",
-      "brand_state": "yes",
-      "b_state": "no",
-      "c_state": "no"
-     }
-    },
-    "o3": {
-     "type": "row",
-     "settings": {
-      "feature": "Medical-Grade Silicone",
-      "brand_state": "yes",
-      "b_state": "no",
-      "c_state": "no"
-     }
-    },
-    "o4": {
-     "type": "row",
-     "settings": {
-      "feature": "Microbiome Friendly",
-      "brand_state": "yes",
-      "b_state": "no",
-      "c_state": "no"
-     }
-    },
-    "o5": {
-     "type": "row",
-     "settings": {
-      "feature": "10+ Year Lifespan",
-      "brand_state": "yes",
-      "b_state": "no",
-      "c_state": "no"
-     }
-    }
-   },
-   "block_order": [
-    "o1",
-    "o2",
-    "o3",
-    "o4",
-    "o5"
-   ],
-   "settings": {
-    "brand_primary": "#8d2a89",
-    "brand_dark": "#6b1f68",
-    "brand_tint": "#fdf5fc",
-    "eyebrow": "",
-    "title": "Why Femina Cups Outperform",
-    "sub": "Medical-grade silicone, two sizes, microbiome-friendly \u2014 built to upgrade your period for the next decade.",
-    "col_features": "Features",
-    "col_brand": "Femina Cups",
-    "brand_logo_url": "",
-    "col_b": "Tampons",
-    "col_c": "Pads",
-    "cta_text": "Add to Cart",
-    "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
-   }
-  },
-  "judgeme": {
-   "type": "vb-judgeme",
-   "settings": {
-    "eyebrow": "Real Reviews",
-    "title_pre": "What Women",
-    "title_highlight": "Are Saying",
-    "sub": "Verified reviews collected independently by Judge.me from customers who bought this product.",
-    "scope": "product",
-    "show_stats": true
-   }
-  },
-  "faq": {
-   "type": "vb-faq",
-   "blocks": {
-    "q1": {
-     "type": "q",
-     "settings": {
-      "question": "Which size should I use?",
-      "answer": "<p>The pack includes both. Start with small for lighter days, large for heavy days or post-childbirth. Most women use both across a cycle.</p>"
-     }
-    },
-    "q2": {
-     "type": "q",
-     "settings": {
-      "question": "Will it leak?",
-      "answer": "<p>When inserted correctly and emptied within 12 hours, leaks are rare. Practice during a lighter period and watch for the seal pop-open.</p>"
-     }
-    },
-    "q3": {
-     "type": "q",
-     "settings": {
-      "question": "Is it safe long-term?",
-      "answer": "<p>Yes. Medical-grade silicone is FDA-approved and used in cardiac and other implant applications. Boil to sterilise between cycles.</p>"
-     }
-    },
-    "q4": {
-     "type": "q",
-     "settings": {
-      "question": "Can I sleep with it in?",
-      "answer": "<p>Yes \u2014 12-hour wear time means it's safe for full nights of sleep.</p>"
-     }
-    },
-    "q5": {
-     "type": "q",
-     "settings": {
-      "question": "Do you ship internationally?",
-      "answer": "<p>Yes. We ship globally \u2014 5\u201314 working days. Free shipping over the free-shipping threshold.</p>"
-     }
-    },
-    "q6": {
-     "type": "q",
-     "settings": {
-      "question": "What if it doesn't work for me?",
-      "answer": "<p>If it's not for you within 30 days, we'll refund you in full \u2014 no questions asked.</p>"
-     }
-    }
-   },
-   "block_order": [
-    "q1",
-    "q2",
-    "q3",
-    "q4",
-    "q5",
-    "q6"
-   ],
-   "settings": {
-    "eyebrow": "FAQ",
-    "title_pre": "Questions Before",
-    "title_highlight": "You Start"
-   }
-  },
-  "final": {
-   "type": "vb-product-final",
-   "blocks": {
-    "g1": {
-     "type": "g",
-     "settings": {
-      "icon": "\u2705",
-      "text": "30-day money-back"
-     }
-    },
-    "g2": {
-     "type": "g",
-     "settings": {
-      "icon": "\ud83d\ude9a",
-      "text": "Ships worldwide"
-     }
-    },
-    "g3": {
-     "type": "g",
-     "settings": {
-      "icon": "\ud83d\udd2c",
-      "text": "FDA-approved silicone"
-     }
-    },
-    "g4": {
-     "type": "g",
-     "settings": {
-      "icon": "\u267b\ufe0f",
-      "text": "10+ year lifespan"
-     }
-    }
-   },
-   "block_order": [
-    "g1",
-    "g2",
-    "g3",
-    "g4"
-   ],
-   "settings": {
-    "brand_primary": "#8d2a89",
-    "brand_dark": "#6b1f68",
-    "brand_light": "#b94db4",
-    "badge": "30-day money-back guarantee",
-    "title_pre": "Upgrade Your Period",
-    "title_highlight": "Risk-Free for 30 Days",
-    "sub": "Join thousands of women who upgraded their period. If it's not right, we'll refund every cent.",
-    "cta_text": "Add to Cart",
-    "cta_link": "#vbpForm"
-   }
-  }
- },
- "order": [
-  "hero",
-  "reviews-carousel",
-  "problem",
-  "solution",
-  "related",
-  "benefits",
-  "how",
-  "ingredients",
-  "confidence",
-  "fbt",
-  "doctors",
-  "outperform",
-  "judgeme",
-  "faq",
-  "final"
- ]
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "judgeme",
+    "faq",
+    "final"
+  ]
 }

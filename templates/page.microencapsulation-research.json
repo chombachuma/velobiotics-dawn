@@ -8,394 +8,322 @@
  * ------------------------------------------------------------
  */
 {
- "sections": {
-  "sci_nav": {
-   "type": "vb-science-nav",
-   "settings": {
-    "mode": "bar",
-    "label": "The science"
-   },
-   "blocks": {
-    "nl_135": {
-     "type": "link",
-     "settings": {
-      "title": "Founder's story",
-      "short": "Our story",
-      "url": "/pages/velobiotics-story",
-      "blurb": "A father, a hospital bed, and the question that started everything."
-     }
+  "sections": {
+    "science": {
+      "type": "vb-science-page",
+      "blocks": {
+        "hea_62": {
+          "type": "heading",
+          "settings": {
+            "kicker": "Where it began",
+            "title": "A materials lab and a microbiology department"
+          }
+        },
+        "tex_63": {
+          "type": "text",
+          "settings": {
+            "content": "<p>The story starts at South Africa's <strong>Council for Scientific and Industrial Research</strong> (CSIR) in Pretoria, where polymer scientists were looking for a way to protect fragile \"actives\" such as drugs and living cells without exposing them to water, solvents or heat. Across town, microbiologists at the <strong>University of Pretoria</strong> were studying why bifidobacteria die so quickly in the stomach. The two groups joined forces, and the result was a series of papers that form the scientific foundation of every Velobiotics™ product.</p>"
+          }
+        },
+        "fig_64": {
+          "type": "figure",
+          "settings": {
+            "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-fig-lab.jpg?v=1790193717",
+            "alt": "Scientists examining micro-shielded probiotic powder beside a high-pressure reactor",
+            "label": "",
+            "caption": "The CSIR's supercritical-fluid laboratory in Pretoria, where the first shielded probiotic powders were made.",
+            "size": "wide"
+          }
+        },
+        "hea_65": {
+          "type": "heading",
+          "settings": {
+            "kicker": "Paper 1 · 2006",
+            "title": "The founding paper"
+          }
+        },
+        "pap_66": {
+          "type": "paper",
+          "settings": {
+            "year": "2006",
+            "title": "Encapsulating probiotics with an interpolymer complex in supercritical carbon dioxide",
+            "authors": "F.S. Moolman, P.W. Labuschagne, M.S. Thantsha, T.L. van der Merwe, H. Rolfes, T.E. Cloete",
+            "journal": "South African Journal of Science, 102, 349–354",
+            "pdf_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Velobiotics-Research-Encapsulating-Probiotics-Interpolymer-Complex-scCO2-SAJS-2006.pdf?v=1789280831",
+            "did": "Developed a new encapsulation method: two food-grade polymers (PVP and PVAc-CA) are bonded into an \"interpolymer complex\" around Bifidobacterium longum inside supercritical CO₂ at 40 °C and 300 bar, then expanded into a dry powder. Confirmed the bond by infrared spectroscopy and moisture tests, and measured release at stomach and intestinal pH.",
+            "found": "The matrix released under 5% of its contents in stomach-strength acid but 85% at intestinal pH within 24 hours. Bonded polymers absorbed about 30% less moisture than simple blends. Exposure to supercritical CO₂ did no immediate or delayed harm to the bacteria. Shielded B. longum survived simulated digestion 1.81 log (about 65 times) better than free cells.",
+            "matters": "This is the invention itself. It proved that living bacteria can be individually coated without water, solvent or heat, and that the coat opens in the right place. Every later result builds on it."
+          }
+        },
+        "hea_67": {
+          "type": "heading",
+          "settings": {
+            "kicker": "Paper 2 · 2009",
+            "title": "Surviving the stomach"
+          }
+        },
+        "pap_68": {
+          "type": "paper",
+          "settings": {
+            "year": "2009",
+            "title": "Supercritical carbon dioxide interpolymer complexes improve survival of B. longum Bb-46 in simulated gastrointestinal fluids",
+            "authors": "M.S. Thantsha, T.E. Cloete, F.S. Moolman, P.W. Labuschagne",
+            "journal": "International Journal of Food Microbiology, 129, 88–92",
+            "pdf_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Velobiotics-Research-scCO2-Interpolymer-Survival-Simulated-GI-Fluids-IJFM-2009.pdf?v=1789280831",
+            "did": "Exposed shielded and unprotected B. longum Bb-46 to simulated gastric fluid (pH 2, 2 h) followed by simulated intestinal fluid (pH 6.8, up to 24 h) at 37 °C, then counted the live cells. Tested variations of the matrix, added glyceryl monostearate (GMS) and gelatine capsules, and repeated the test after seven weeks of storage at 30 °C.",
+            "found": "The basic matrix released no live cells in acid and about 9 log per gram in intestinal fluid. Average improvement over unprotected cells: 1.61 log (about 40 times), p < 0.05. GMS significantly improved protection further; gelatine capsules added a one-hour delay. After seven weeks at 30 °C, unprotected survivors were all killed by acid while shielded cells came through and were released alive.",
+            "matters": "This is the evidence behind \"reaches your gut alive\". It shows the shield holds in stomach acid, opens in the intestine and keeps working after months in storage."
+          }
+        },
+        "hea_69": {
+          "type": "heading",
+          "settings": {
+            "kicker": "Paper 3 · 2014",
+            "title": "Beating the heat"
+          }
+        },
+        "pap_70": {
+          "type": "paper",
+          "settings": {
+            "year": "2014",
+            "title": "Supercritical CO₂ interpolymer complex encapsulation improves heat stability of probiotic bifidobacteria",
+            "authors": "M.S. Thantsha, P.W. Labuschagne, C.I. Mamvura",
+            "journal": "World Journal of Microbiology and Biotechnology, 30, 479–486",
+            "pdf_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Velobiotics-Research-scCO2-Encapsulation-Heat-Stability-Shelf-Life-WJMB-2014.pdf?v=1789280831",
+            "did": "Stored shielded and unprotected B. longum Bb46 and B. lactis Bb12 as dry powders at 30 °C for 12 weeks, measuring live counts and water activity every one to two weeks.",
+            "found": "Unprotected B. longum fell below the therapeutic minimum after 6 weeks and was gone by week 10; shielded cells stayed above the minimum for 10 to 12 weeks and retained 6 log (a million times) more live cells at the end. B. lactis went from 5 weeks unprotected to 12 weeks shielded, a 3.3-log gain.",
+            "matters": "This is why Velobiotics™ does not need a fridge, and why the count on our label is closer to the count in your hand."
+          }
+        },
+        "hea_71": {
+          "type": "heading",
+          "settings": {
+            "kicker": "Reading the numbers",
+            "title": "What the results add up to"
+          }
+        },
+        "fig_72": {
+          "type": "figure",
+          "settings": {
+            "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-chart-gastric-survival.png?v=1790180516",
+            "alt": "Chart: microencapsulated probiotics deliver 40 to 65 times more live bacteria through simulated stomach and intestine than unprotected bacteria",
+            "label": "Digestion",
+            "caption": "Live cells delivered through simulated digestion, relative to unprotected bacteria (2006 and 2009 papers).",
+            "size": "normal"
+          }
+        },
+        "fig_73": {
+          "type": "figure",
+          "settings": {
+            "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-chart-shelf-life-30c.png?v=1790180516",
+            "alt": "Chart: at 30 °C microencapsulated bifidobacteria stay above the therapeutic minimum for 10 to 12 weeks versus 5 to 6 weeks unprotected",
+            "label": "Storage",
+            "caption": "Weeks above the therapeutic minimum and total losses after 12 weeks at 30 °C (2014 paper).",
+            "size": "wide"
+          }
+        },
+        "tex_74": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Two independent effects, both published and both statistically significant: 40 to 65 times more live bacteria through digestion, and up to a million times more live bacteria after 12 weeks of heat. In real life a probiotic has to survive both, so the benefits compound. That is the basis of our promise of <strong>1000× more live probiotics to your gut</strong> compared with unprotected cultures.</p>"
+          }
+        },
+        "hea_75": {
+          "type": "heading",
+          "settings": {
+            "kicker": "What comes next",
+            "title": "The research continues"
+          }
+        },
+        "tex_76": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Velobiotics licensed and refined this technology, and continues to work with the CSIR. In 2026 Velobiotics and the CSIR committed R1.2 million to a joint programme on next-generation lipid-based microencapsulation, aimed at even greater protection and a broader range of strains. As new results are peer-reviewed and published, they will appear on this page.</p>"
+          }
+        },
+        "fig_77": {
+          "type": "figure",
+          "settings": {
+            "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-fig-timeline.jpg?v=1790193718",
+            "alt": "A laboratory notebook, vial and powder, from research to product",
+            "label": "",
+            "caption": "From notebook to bottle: the same matrix studied in these papers is in every Velobiotics™ product today.",
+            "size": "normal"
+          }
+        },
+        "det_78": {
+          "type": "details",
+          "settings": {
+            "title": "What is \"log CFU/g\"?",
+            "content": "<p>CFU means colony-forming units: the number of live bacteria that grow into colonies on an agar plate, per gram of product. Because the numbers are huge, they are written as logarithms (powers of ten). 6 log = 10⁶ = one million live cells per gram; 9 log = one billion. A difference of 1 log is a factor of ten; 3 log is a thousand-fold; 6 log is a million-fold. The \"therapeutic minimum\" used in these studies is 6 log CFU/g.</p>"
+          }
+        },
+        "det_79": {
+          "type": "details",
+          "settings": {
+            "title": "What are SGF and SIF?",
+            "content": "<p>Simulated gastric fluid (SGF, sometimes SGJ) is a laboratory solution at about pH 2 that mimics stomach acid. Simulated intestinal fluid (SIF) is a buffered solution at about pH 6.8 that mimics the small intestine, prepared to the US Pharmacopeia standard. Exposing a sample first to SGF for two hours and then to SIF reproduces the sequence and timing a swallowed probiotic experiences.</p>"
+          }
+        },
+        "det_80": {
+          "type": "details",
+          "settings": {
+            "title": "What does p < 0.05 mean?",
+            "content": "<p>It is the conventional threshold for statistical significance: there is less than a 5% probability that a difference this large would appear by chance if the two samples were really the same. The key survival gains in the 2006, 2009 and 2014 papers all meet this threshold. Where a result did <em>not</em> (for example the PEO-PPO-PEO variant in 2009), the authors said so, and we report it the same way.</p>"
+          }
+        },
+        "det_81": {
+          "type": "details",
+          "settings": {
+            "title": "What is an \"accelerated\" shelf-life test?",
+            "content": "<p>Storing a product at a temperature higher than normal to make degradation happen faster, so that months of ordinary shelf life can be observed in weeks. The 2014 study used 30 °C. Survival at cooler, real-world temperatures is expected to be better than the figures reported, not worse.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "hea_62",
+        "tex_63",
+        "fig_64",
+        "hea_65",
+        "pap_66",
+        "hea_67",
+        "pap_68",
+        "hea_69",
+        "pap_70",
+        "hea_71",
+        "fig_72",
+        "fig_73",
+        "tex_74",
+        "hea_75",
+        "tex_76",
+        "fig_77",
+        "det_78",
+        "det_79",
+        "det_80",
+        "det_81"
+      ],
+      "settings": {
+        "eyebrow": "The Science · The evidence",
+        "title_pre": "Three peer-reviewed papers.",
+        "title_highlight": "One technology.",
+        "intro": "Velobiotics™ was not invented in a marketing meeting. It grew out of a decade of published research by the CSIR and the University of Pretoria, reviewed by independent scientists before it was printed. Here is every paper, what it did, what it found and why it matters to you.",
+        "read_time": "4 min read",
+        "reviewed": "Curated by Dr Chomba Chuma, MD",
+        "sources": "2006 · 2009 · 2014",
+        "hero_image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-hero-research.jpg?v=1790193718",
+        "hero_alt": "The three peer-reviewed Velobiotics research papers with laboratory samples",
+        "hero_cta_text": "Start with Part 1: What is microencapsulation?",
+        "hero_cta_url": "/pages/what-is-microencapsulation",
+        "summary_label": "What the research established",
+        "summary_points": "2006: a new way to coat sensitive living cells in supercritical CO₂, with no water, solvent or heat, was demonstrated for the first time. The coat stays sealed in acid and dissolves at intestinal pH.\n2009: micro-shielded B. longum survived simulated stomach acid and intestinal fluid with an average of 1.6 log (about 40 times) more live cells than unprotected bacteria. Protection held after seven weeks at 30 °C.\n2014: at 30 °C for 12 weeks, shielded bifidobacteria stayed above the therapeutic minimum for 10 to 12 weeks versus 5 to 6 weeks unprotected, retaining up to a million times more live cells.\nAll three papers are open for you to read. Download links are on every card below.",
+        "stat1_value": "3",
+        "stat1_label": "Peer-reviewed papers in international journals",
+        "stat2_value": "2",
+        "stat2_label": "Research institutions: CSIR and the University of Pretoria",
+        "stat3_value": "8 yrs",
+        "stat3_label": "Of published work, 2006 to 2014, before Velobiotics™ launched",
+        "show_toc": true,
+        "deep_title": "How to read a probiotic study",
+        "deep_sub": "A short guide to the terms and units used in these papers."
+      }
     },
-    "nl_136": {
-     "type": "link",
-     "settings": {
-      "title": "What is microencapsulation?",
-      "short": "What is it?",
-      "url": "/pages/what-is-microencapsulation",
-      "blurb": "Each bacterium gets its own micron-thin shield. Here is how, and why it matters."
-     }
+    "explore": {
+      "type": "vb-science-nav",
+      "blocks": {
+        "nl_117": {
+          "type": "link",
+          "settings": {
+            "title": "Founder's story",
+            "short": "Our story",
+            "url": "/pages/velobiotics-story",
+            "blurb": "A father, a hospital bed, and the question that started everything."
+          }
+        },
+        "nl_118": {
+          "type": "link",
+          "settings": {
+            "title": "What is microencapsulation?",
+            "short": "What is it?",
+            "url": "/pages/what-is-microencapsulation",
+            "blurb": "Each bacterium gets its own micron-thin shield. Here is how, and why it matters."
+          }
+        },
+        "nl_119": {
+          "type": "link",
+          "settings": {
+            "title": "Surviving stomach acid",
+            "short": "Stomach acid",
+            "url": "/pages/probiotics-tolerance-to-gastric-acid",
+            "blurb": "Peer-reviewed: 40 to 65 times more live bacteria make it through."
+          }
+        },
+        "nl_120": {
+          "type": "link",
+          "settings": {
+            "title": "Heat stability & shelf life",
+            "short": "Heat & shelf life",
+            "url": "/pages/heat-stability-and-shelf-life",
+            "blurb": "Stays potent at 30 °C for up to 12 weeks. No fridge needed."
+          }
+        },
+        "nl_121": {
+          "type": "link",
+          "settings": {
+            "title": "The published research",
+            "short": "Research",
+            "url": "/pages/microencapsulation-research",
+            "blurb": "Three peer-reviewed papers from CSIR and the University of Pretoria, explained."
+          }
+        },
+        "nl_122": {
+          "type": "link",
+          "settings": {
+            "title": "About Velobiotics",
+            "short": "About us",
+            "url": "/pages/new-about-us",
+            "blurb": "The team turning South African science into probiotics that work."
+          }
+        }
+      },
+      "block_order": [
+        "nl_117",
+        "nl_118",
+        "nl_119",
+        "nl_120",
+        "nl_121",
+        "nl_122"
+      ],
+      "settings": {
+        "mode": "cards",
+        "label": "Continue exploring",
+        "title": "The rest of the science, in order",
+        "sub": "Six short pages. Start anywhere; each one stands on its own.",
+        "hide_current": true
+      }
     },
-    "nl_137": {
-     "type": "link",
-     "settings": {
-      "title": "Surviving stomach acid",
-      "short": "Stomach acid",
-      "url": "/pages/probiotics-tolerance-to-gastric-acid",
-      "blurb": "Peer-reviewed: 40 to 65 times more live bacteria make it through."
-     }
+    "brand_family": {
+      "type": "vb-brand-family",
+      "settings": {
+        "eyebrow": "Powered by MEP",
+        "title_pre": "Every brand",
+        "title_highlight": "uses the same delivery.",
+        "sub": "Nine brands. One patented MEP delivery. All engineered to reach you alive."
+      }
     },
-    "nl_138": {
-     "type": "link",
-     "settings": {
-      "title": "Heat stability & shelf life",
-      "short": "Heat & shelf life",
-      "url": "/pages/heat-stability-and-shelf-life",
-      "blurb": "Stays potent at 30 °C for up to 12 weeks. No fridge needed."
-     }
-    },
-    "nl_139": {
-     "type": "link",
-     "settings": {
-      "title": "The published research",
-      "short": "Research",
-      "url": "/pages/microencapsulation-research",
-      "blurb": "Three peer-reviewed papers from CSIR and the University of Pretoria, explained."
-     }
-    },
-    "nl_140": {
-     "type": "link",
-     "settings": {
-      "title": "About Velobiotics",
-      "short": "About us",
-      "url": "/pages/new-about-us",
-      "blurb": "The team turning South African science into probiotics that work."
-     }
+    "final_cta": {
+      "type": "vb-final-cta",
+      "settings": {
+        "eyebrow": "Experience the difference",
+        "title_pre": "Probiotics that",
+        "title_highlight": "actually work.",
+        "sub": "30-day money-back guarantee · Ships worldwide · Lab-tested every batch."
+      }
     }
-   },
-   "block_order": [
-    "nl_135",
-    "nl_136",
-    "nl_137",
-    "nl_138",
-    "nl_139",
-    "nl_140"
-   ]
   },
-  "science": {
-   "type": "vb-science-page",
-   "settings": {
-    "eyebrow": "The Science · The evidence",
-    "title_pre": "Three peer-reviewed papers.",
-    "title_highlight": "One technology.",
-    "intro": "Velobiotics™ was not invented in a marketing meeting. It grew out of a decade of published research by the CSIR and the University of Pretoria, reviewed by independent scientists before it was printed. Here is every paper, what it did, what it found and why it matters to you.",
-    "read_time": "4 min read",
-    "reviewed": "Curated by Dr Chomba Chuma, MD",
-    "sources": "2006 · 2009 · 2014",
-    "hero_image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-hero-research.jpg?v=1790193718",
-    "hero_alt": "The three peer-reviewed Velobiotics research papers with laboratory samples",
-    "hero_cta_text": "Start with Part 1: What is microencapsulation?",
-    "hero_cta_url": "/pages/what-is-microencapsulation",
-    "summary_label": "What the research established",
-    "summary_points": "2006: a new way to coat sensitive living cells in supercritical CO₂, with no water, solvent or heat, was demonstrated for the first time. The coat stays sealed in acid and dissolves at intestinal pH.\n2009: micro-shielded B. longum survived simulated stomach acid and intestinal fluid with an average of 1.6 log (about 40 times) more live cells than unprotected bacteria. Protection held after seven weeks at 30 °C.\n2014: at 30 °C for 12 weeks, shielded bifidobacteria stayed above the therapeutic minimum for 10 to 12 weeks versus 5 to 6 weeks unprotected, retaining up to a million times more live cells.\nAll three papers are open for you to read. Download links are on every card below.",
-    "stat1_value": "3",
-    "stat1_label": "Peer-reviewed papers in international journals",
-    "stat2_value": "2",
-    "stat2_label": "Research institutions: CSIR and the University of Pretoria",
-    "stat3_value": "8 yrs",
-    "stat3_label": "Of published work, 2006 to 2014, before Velobiotics™ launched",
-    "show_toc": true,
-    "deep_title": "How to read a probiotic study",
-    "deep_sub": "A short guide to the terms and units used in these papers."
-   },
-   "blocks": {
-    "hea_62": {
-     "type": "heading",
-     "settings": {
-      "kicker": "Where it began",
-      "title": "A materials lab and a microbiology department"
-     }
-    },
-    "tex_63": {
-     "type": "text",
-     "settings": {
-      "content": "<p>The story starts at South Africa's <strong>Council for Scientific and Industrial Research</strong> (CSIR) in Pretoria, where polymer scientists were looking for a way to protect fragile \"actives\" such as drugs and living cells without exposing them to water, solvents or heat. Across town, microbiologists at the <strong>University of Pretoria</strong> were studying why bifidobacteria die so quickly in the stomach. The two groups joined forces, and the result was a series of papers that form the scientific foundation of every Velobiotics™ product.</p>"
-     }
-    },
-    "fig_64": {
-     "type": "figure",
-     "settings": {
-      "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-fig-lab.jpg?v=1790193717",
-      "alt": "Scientists examining micro-shielded probiotic powder beside a high-pressure reactor",
-      "label": "",
-      "caption": "The CSIR's supercritical-fluid laboratory in Pretoria, where the first shielded probiotic powders were made.",
-      "size": "wide"
-     }
-    },
-    "hea_65": {
-     "type": "heading",
-     "settings": {
-      "kicker": "Paper 1 · 2006",
-      "title": "The founding paper"
-     }
-    },
-    "pap_66": {
-     "type": "paper",
-     "settings": {
-      "year": "2006",
-      "title": "Encapsulating probiotics with an interpolymer complex in supercritical carbon dioxide",
-      "authors": "F.S. Moolman, P.W. Labuschagne, M.S. Thantsha, T.L. van der Merwe, H. Rolfes, T.E. Cloete",
-      "journal": "South African Journal of Science, 102, 349–354",
-      "pdf_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Velobiotics-Research-Encapsulating-Probiotics-Interpolymer-Complex-scCO2-SAJS-2006.pdf?v=1789280831",
-      "did": "Developed a new encapsulation method: two food-grade polymers (PVP and PVAc-CA) are bonded into an \"interpolymer complex\" around Bifidobacterium longum inside supercritical CO₂ at 40 °C and 300 bar, then expanded into a dry powder. Confirmed the bond by infrared spectroscopy and moisture tests, and measured release at stomach and intestinal pH.",
-      "found": "The matrix released under 5% of its contents in stomach-strength acid but 85% at intestinal pH within 24 hours. Bonded polymers absorbed about 30% less moisture than simple blends. Exposure to supercritical CO₂ did no immediate or delayed harm to the bacteria. Shielded B. longum survived simulated digestion 1.81 log (about 65 times) better than free cells.",
-      "matters": "This is the invention itself. It proved that living bacteria can be individually coated without water, solvent or heat, and that the coat opens in the right place. Every later result builds on it."
-     }
-    },
-    "hea_67": {
-     "type": "heading",
-     "settings": {
-      "kicker": "Paper 2 · 2009",
-      "title": "Surviving the stomach"
-     }
-    },
-    "pap_68": {
-     "type": "paper",
-     "settings": {
-      "year": "2009",
-      "title": "Supercritical carbon dioxide interpolymer complexes improve survival of B. longum Bb-46 in simulated gastrointestinal fluids",
-      "authors": "M.S. Thantsha, T.E. Cloete, F.S. Moolman, P.W. Labuschagne",
-      "journal": "International Journal of Food Microbiology, 129, 88–92",
-      "pdf_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Velobiotics-Research-scCO2-Interpolymer-Survival-Simulated-GI-Fluids-IJFM-2009.pdf?v=1789280831",
-      "did": "Exposed shielded and unprotected B. longum Bb-46 to simulated gastric fluid (pH 2, 2 h) followed by simulated intestinal fluid (pH 6.8, up to 24 h) at 37 °C, then counted the live cells. Tested variations of the matrix, added glyceryl monostearate (GMS) and gelatine capsules, and repeated the test after seven weeks of storage at 30 °C.",
-      "found": "The basic matrix released no live cells in acid and about 9 log per gram in intestinal fluid. Average improvement over unprotected cells: 1.61 log (about 40 times), p < 0.05. GMS significantly improved protection further; gelatine capsules added a one-hour delay. After seven weeks at 30 °C, unprotected survivors were all killed by acid while shielded cells came through and were released alive.",
-      "matters": "This is the evidence behind \"reaches your gut alive\". It shows the shield holds in stomach acid, opens in the intestine and keeps working after months in storage."
-     }
-    },
-    "hea_69": {
-     "type": "heading",
-     "settings": {
-      "kicker": "Paper 3 · 2014",
-      "title": "Beating the heat"
-     }
-    },
-    "pap_70": {
-     "type": "paper",
-     "settings": {
-      "year": "2014",
-      "title": "Supercritical CO₂ interpolymer complex encapsulation improves heat stability of probiotic bifidobacteria",
-      "authors": "M.S. Thantsha, P.W. Labuschagne, C.I. Mamvura",
-      "journal": "World Journal of Microbiology and Biotechnology, 30, 479–486",
-      "pdf_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Velobiotics-Research-scCO2-Encapsulation-Heat-Stability-Shelf-Life-WJMB-2014.pdf?v=1789280831",
-      "did": "Stored shielded and unprotected B. longum Bb46 and B. lactis Bb12 as dry powders at 30 °C for 12 weeks, measuring live counts and water activity every one to two weeks.",
-      "found": "Unprotected B. longum fell below the therapeutic minimum after 6 weeks and was gone by week 10; shielded cells stayed above the minimum for 10 to 12 weeks and retained 6 log (a million times) more live cells at the end. B. lactis went from 5 weeks unprotected to 12 weeks shielded, a 3.3-log gain.",
-      "matters": "This is why Velobiotics™ does not need a fridge, and why the count on our label is closer to the count in your hand."
-     }
-    },
-    "hea_71": {
-     "type": "heading",
-     "settings": {
-      "kicker": "Reading the numbers",
-      "title": "What the results add up to"
-     }
-    },
-    "fig_72": {
-     "type": "figure",
-     "settings": {
-      "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-chart-gastric-survival.png?v=1790180516",
-      "alt": "Chart: microencapsulated probiotics deliver 40 to 65 times more live bacteria through simulated stomach and intestine than unprotected bacteria",
-      "label": "Digestion",
-      "caption": "Live cells delivered through simulated digestion, relative to unprotected bacteria (2006 and 2009 papers).",
-      "size": "normal"
-     }
-    },
-    "fig_73": {
-     "type": "figure",
-     "settings": {
-      "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-chart-shelf-life-30c.png?v=1790180516",
-      "alt": "Chart: at 30 °C microencapsulated bifidobacteria stay above the therapeutic minimum for 10 to 12 weeks versus 5 to 6 weeks unprotected",
-      "label": "Storage",
-      "caption": "Weeks above the therapeutic minimum and total losses after 12 weeks at 30 °C (2014 paper).",
-      "size": "wide"
-     }
-    },
-    "tex_74": {
-     "type": "text",
-     "settings": {
-      "content": "<p>Two independent effects, both published and both statistically significant: 40 to 65 times more live bacteria through digestion, and up to a million times more live bacteria after 12 weeks of heat. In real life a probiotic has to survive both, so the benefits compound. That is the basis of our promise of <strong>1000× more live probiotics to your gut</strong> compared with unprotected cultures.</p>"
-     }
-    },
-    "hea_75": {
-     "type": "heading",
-     "settings": {
-      "kicker": "What comes next",
-      "title": "The research continues"
-     }
-    },
-    "tex_76": {
-     "type": "text",
-     "settings": {
-      "content": "<p>Velobiotics licensed and refined this technology, and continues to work with the CSIR. In 2026 Velobiotics and the CSIR committed R1.2 million to a joint programme on next-generation lipid-based microencapsulation, aimed at even greater protection and a broader range of strains. As new results are peer-reviewed and published, they will appear on this page.</p>"
-     }
-    },
-    "fig_77": {
-     "type": "figure",
-     "settings": {
-      "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-fig-timeline.jpg?v=1790193718",
-      "alt": "A laboratory notebook, vial and powder, from research to product",
-      "label": "",
-      "caption": "From notebook to bottle: the same matrix studied in these papers is in every Velobiotics™ product today.",
-      "size": "normal"
-     }
-    },
-    "det_78": {
-     "type": "details",
-     "settings": {
-      "title": "What is \"log CFU/g\"?",
-      "content": "<p>CFU means colony-forming units: the number of live bacteria that grow into colonies on an agar plate, per gram of product. Because the numbers are huge, they are written as logarithms (powers of ten). 6 log = 10⁶ = one million live cells per gram; 9 log = one billion. A difference of 1 log is a factor of ten; 3 log is a thousand-fold; 6 log is a million-fold. The \"therapeutic minimum\" used in these studies is 6 log CFU/g.</p>"
-     }
-    },
-    "det_79": {
-     "type": "details",
-     "settings": {
-      "title": "What are SGF and SIF?",
-      "content": "<p>Simulated gastric fluid (SGF, sometimes SGJ) is a laboratory solution at about pH 2 that mimics stomach acid. Simulated intestinal fluid (SIF) is a buffered solution at about pH 6.8 that mimics the small intestine, prepared to the US Pharmacopeia standard. Exposing a sample first to SGF for two hours and then to SIF reproduces the sequence and timing a swallowed probiotic experiences.</p>"
-     }
-    },
-    "det_80": {
-     "type": "details",
-     "settings": {
-      "title": "What does p < 0.05 mean?",
-      "content": "<p>It is the conventional threshold for statistical significance: there is less than a 5% probability that a difference this large would appear by chance if the two samples were really the same. The key survival gains in the 2006, 2009 and 2014 papers all meet this threshold. Where a result did <em>not</em> (for example the PEO-PPO-PEO variant in 2009), the authors said so, and we report it the same way.</p>"
-     }
-    },
-    "det_81": {
-     "type": "details",
-     "settings": {
-      "title": "What is an \"accelerated\" shelf-life test?",
-      "content": "<p>Storing a product at a temperature higher than normal to make degradation happen faster, so that months of ordinary shelf life can be observed in weeks. The 2014 study used 30 °C. Survival at cooler, real-world temperatures is expected to be better than the figures reported, not worse.</p>"
-     }
-    }
-   },
-   "block_order": [
-    "hea_62",
-    "tex_63",
-    "fig_64",
-    "hea_65",
-    "pap_66",
-    "hea_67",
-    "pap_68",
-    "hea_69",
-    "pap_70",
-    "hea_71",
-    "fig_72",
-    "fig_73",
-    "tex_74",
-    "hea_75",
-    "tex_76",
-    "fig_77",
-    "det_78",
-    "det_79",
-    "det_80",
-    "det_81"
-   ]
-  },
-  "explore": {
-   "type": "vb-science-nav",
-   "settings": {
-    "mode": "cards",
-    "label": "Continue exploring",
-    "title": "The rest of the science, in order",
-    "sub": "Six short pages. Start anywhere; each one stands on its own.",
-    "hide_current": true
-   },
-   "blocks": {
-    "nl_141": {
-     "type": "link",
-     "settings": {
-      "title": "Founder's story",
-      "short": "Our story",
-      "url": "/pages/velobiotics-story",
-      "blurb": "A father, a hospital bed, and the question that started everything."
-     }
-    },
-    "nl_142": {
-     "type": "link",
-     "settings": {
-      "title": "What is microencapsulation?",
-      "short": "What is it?",
-      "url": "/pages/what-is-microencapsulation",
-      "blurb": "Each bacterium gets its own micron-thin shield. Here is how, and why it matters."
-     }
-    },
-    "nl_143": {
-     "type": "link",
-     "settings": {
-      "title": "Surviving stomach acid",
-      "short": "Stomach acid",
-      "url": "/pages/probiotics-tolerance-to-gastric-acid",
-      "blurb": "Peer-reviewed: 40 to 65 times more live bacteria make it through."
-     }
-    },
-    "nl_144": {
-     "type": "link",
-     "settings": {
-      "title": "Heat stability & shelf life",
-      "short": "Heat & shelf life",
-      "url": "/pages/heat-stability-and-shelf-life",
-      "blurb": "Stays potent at 30 °C for up to 12 weeks. No fridge needed."
-     }
-    },
-    "nl_145": {
-     "type": "link",
-     "settings": {
-      "title": "The published research",
-      "short": "Research",
-      "url": "/pages/microencapsulation-research",
-      "blurb": "Three peer-reviewed papers from CSIR and the University of Pretoria, explained."
-     }
-    },
-    "nl_146": {
-     "type": "link",
-     "settings": {
-      "title": "About Velobiotics",
-      "short": "About us",
-      "url": "/pages/new-about-us",
-      "blurb": "The team turning South African science into probiotics that work."
-     }
-    }
-   },
-   "block_order": [
-    "nl_141",
-    "nl_142",
-    "nl_143",
-    "nl_144",
-    "nl_145",
-    "nl_146"
-   ]
-  },
-  "brand_family": {
-   "type": "vb-brand-family",
-   "settings": {
-    "eyebrow": "Powered by MEP",
-    "title_pre": "Every brand",
-    "title_highlight": "uses the same delivery.",
-    "sub": "Nine brands. One patented MEP delivery. All engineered to reach you alive."
-   }
-  },
-  "final_cta": {
-   "type": "vb-final-cta",
-   "settings": {
-    "eyebrow": "Experience the difference",
-    "title_pre": "Probiotics that",
-    "title_highlight": "actually work.",
-    "sub": "30-day money-back guarantee · Ships worldwide · Lab-tested every batch."
-   }
-  }
- },
- "order": [
-  "sci_nav",
-  "science",
-  "explore",
-  "brand_family",
-  "final_cta"
- ]
+  "order": [
+    "science",
+    "explore",
+    "brand_family",
+    "final_cta"
+  ]
 }

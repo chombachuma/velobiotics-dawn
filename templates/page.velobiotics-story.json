@@ -8,344 +8,272 @@
  * ------------------------------------------------------------
  */
 {
- "sections": {
-  "sci_nav": {
-   "type": "vb-science-nav",
-   "settings": {
-    "mode": "bar",
-    "label": "The science"
-   },
-   "blocks": {
-    "nl_147": {
-     "type": "link",
-     "settings": {
-      "title": "Founder's story",
-      "short": "Our story",
-      "url": "/pages/velobiotics-story",
-      "blurb": "A father, a hospital bed, and the question that started everything."
-     }
+  "sections": {
+    "science": {
+      "type": "vb-science-page",
+      "blocks": {
+        "hea_82": {
+          "type": "heading",
+          "settings": {
+            "kicker": "Chapter 1",
+            "title": "A \"simple stomach bug\""
+          }
+        },
+        "tex_83": {
+          "type": "text",
+          "settings": {
+            "content": "<p>It was 2008. My three-year-old daughter lay weak and dehydrated in a hospital bed with a severe bout of viral diarrhoea. A simple stomach bug, everyone said. My wife and I are both medical doctors. We had done everything the guidelines asked: fluids, early probiotics, patience. She kept getting worse.</p><p>I will never forget the sight of her small body hooked up to an IV line, lips dry, energy gone. She recovered, two long weeks later. Relief gave way to something else: disbelief. The research was clear that probiotics shorten this kind of illness. So why had they done nothing for her?</p>"
+          }
+        },
+        "quo_84": {
+          "type": "quote",
+          "settings": {
+            "text": "We had done everything right. Modern medicine, with all its science, had still failed to prevent what probiotics were supposed to help.",
+            "cite": "Dr Chomba Chuma"
+          }
+        },
+        "hea_85": {
+          "type": "heading",
+          "settings": {
+            "kicker": "Chapter 2",
+            "title": "The uncomfortable answer"
+          }
+        },
+        "tex_86": {
+          "type": "text",
+          "settings": {
+            "content": "<p>I went looking. Study after study showed probiotics could reduce the duration of diarrhoea and speed recovery. And study after study, if you read the fine print, showed something else: <strong>most commercial probiotics never reach the gut alive</strong>. They die in stomach acid, or before that, on a warm shelf. The billions on the label were billions at the factory gate, not billions in the intestine.</p><p>If probiotics were going to help children like my daughter, they needed protection. Not a better pill. Protection for every single bacterium.</p>"
+          }
+        },
+        "fig_87": {
+          "type": "figure",
+          "settings": {
+            "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-hero-acid.jpg?v=1790193717",
+            "alt": "Unprotected probiotics dissolving in stomach acid while micro-shielded bacteria pass through intact",
+            "label": "",
+            "caption": "The problem in one picture: unprotected bacteria dissolve in stomach acid; shielded bacteria pass through. Artist's visualisation.",
+            "size": "wide"
+          }
+        },
+        "hea_88": {
+          "type": "heading",
+          "settings": {
+            "kicker": "Chapter 3",
+            "title": "A eureka moment in Pretoria"
+          }
+        },
+        "tex_89": {
+          "type": "text",
+          "settings": {
+            "content": "<p>The search led me to scientists at South Africa's Council for Scientific and Industrial Research. For more than a decade they had been developing a way to wrap individual bacteria in a micron-thin polymer coat, using supercritical carbon dioxide instead of water or heat, so that each cell was shielded from acid and humidity and released only in the intestine. Their work had been peer-reviewed and published in 2006, 2009 and 2014. It was exactly the answer I had been looking for.</p><p>We licensed the patent, refined the process for manufacturing, and Velobiotics™ was born on three words: <strong>Protect. Deliver. Thrive.</strong></p>"
+          }
+        },
+        "fig_90": {
+          "type": "figure",
+          "settings": {
+            "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-fig-lab.jpg?v=1790193717",
+            "alt": "Scientists examining micro-shielded probiotic powder beside a high-pressure reactor",
+            "label": "",
+            "caption": "The CSIR laboratory in Pretoria where the shield was developed. Read the full science on our research page.",
+            "size": "normal"
+          }
+        },
+        "ste_91": {
+          "type": "steps",
+          "settings": {
+            "items": "Protect | Every bacterium is individually shielded against acid, heat and moisture.\nDeliver | The shield dissolves only in the small intestine, where probiotics do their work.\nThrive | More live bacteria arrive, so your body actually benefits.",
+            "cols": 3,
+            "numbered": false
+          }
+        },
+        "hea_92": {
+          "type": "heading",
+          "settings": {
+            "kicker": "Chapter 4",
+            "title": "From one hospital room to a global mission"
+          }
+        },
+        "tex_93": {
+          "type": "text",
+          "settings": {
+            "content": "<p>What began as one father's question has become a South African company with a global goal: to touch <strong>100 million lives by 2035</strong>. We now make nine specialist brands, each built for a particular person and a particular need, and every one of them uses the same shielded delivery technology.</p>"
+          }
+        },
+        "ste_94": {
+          "type": "steps",
+          "settings": {
+            "items": "Femina™ | Women's intimate and hormonal health.\nPregBiotics™ | Pregnancy and prenatal wellness.\nBioKid™ | Children's digestive and immune support.\nHis-Biotics™ and Her-Biotics™ | Targeted daily balance for men and women.\nGutSlim™ | Weight, appetite and metabolism.\nVelo16™, BioGain™ and Almasi™ | Everyday gut and immune health, healthy weight gain, and skin, hair and nails.",
+            "cols": 3,
+            "numbered": false
+          }
+        },
+        "quo_95": {
+          "type": "quote",
+          "settings": {
+            "text": "Velobiotics is not just science. It is deeply personal. I built this for my daughter, and for every family that has ever felt helpless when medicine alone was not enough.",
+            "cite": "Dr Chomba Chuma, Founder & CEO"
+          }
+        },
+        "hea_96": {
+          "type": "heading",
+          "settings": {
+            "kicker": "Chapter 5",
+            "title": "The future of wellness, made in Africa"
+          }
+        },
+        "tex_97": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Today Velobiotics stands at the frontier of probiotic innovation, blending African ingenuity with world-class science. We continue to work with the CSIR on the next generation of the technology, and we test every batch so that the count on the label means something.</p><p>We are not just building a brand. We are building a legacy, one healthy gut at a time.</p>"
+          }
+        },
+        "cal_98": {
+          "type": "callout",
+          "settings": {
+            "label": "Want the science?",
+            "text": "Start with what microencapsulation actually is, then read how it survives stomach acid and heat. Every claim links to the published paper.",
+            "tone": "green"
+          }
+        }
+      },
+      "block_order": [
+        "hea_82",
+        "tex_83",
+        "quo_84",
+        "hea_85",
+        "tex_86",
+        "fig_87",
+        "hea_88",
+        "tex_89",
+        "fig_90",
+        "ste_91",
+        "hea_92",
+        "tex_93",
+        "ste_94",
+        "quo_95",
+        "hea_96",
+        "tex_97",
+        "cal_98"
+      ],
+      "settings": {
+        "eyebrow": "Our story",
+        "title_pre": "It started with a father",
+        "title_highlight": "who ran out of answers.",
+        "intro": "In 2008 two doctors watched their three-year-old daughter fight a stomach bug that the textbooks said probiotics should have helped. They did not. The question of why became Velobiotics.",
+        "read_time": "4 min read",
+        "reviewed": "By Dr Chomba Chuma, Founder & CEO",
+        "hero_image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-hero-story.jpg?v=1790193718",
+        "hero_alt": "A doctor father at the bedside of his young daughter as she recovers",
+        "hero_cta_text": "Meet the team",
+        "hero_cta_url": "/pages/new-about-us",
+        "summary_label": "The story in brief",
+        "summary_points": "Two medical doctors did everything right for their sick daughter, including probiotics. She still spent two weeks in hospital.\nThe reason turned out to be simple and shocking: most probiotics die in stomach acid before they can help anyone.\nScientists at the CSIR had spent years building a shield for exactly this problem. Velobiotics licensed it and built a company around it.\nToday nine specialist brands share one mission: to touch 100 million lives by 2035 with probiotics that reach the gut alive.",
+        "stat1_value": "2008",
+        "stat1_label": "The hospital stay that started it all",
+        "stat2_value": "9",
+        "stat2_label": "Specialist brands, one delivery technology",
+        "stat3_value": "100M",
+        "stat3_label": "Lives we intend to touch by 2035",
+        "show_toc": false
+      }
     },
-    "nl_148": {
-     "type": "link",
-     "settings": {
-      "title": "What is microencapsulation?",
-      "short": "What is it?",
-      "url": "/pages/what-is-microencapsulation",
-      "blurb": "Each bacterium gets its own micron-thin shield. Here is how, and why it matters."
-     }
+    "explore": {
+      "type": "vb-science-nav",
+      "blocks": {
+        "nl_123": {
+          "type": "link",
+          "settings": {
+            "title": "Founder's story",
+            "short": "Our story",
+            "url": "/pages/velobiotics-story",
+            "blurb": "A father, a hospital bed, and the question that started everything."
+          }
+        },
+        "nl_124": {
+          "type": "link",
+          "settings": {
+            "title": "What is microencapsulation?",
+            "short": "What is it?",
+            "url": "/pages/what-is-microencapsulation",
+            "blurb": "Each bacterium gets its own micron-thin shield. Here is how, and why it matters."
+          }
+        },
+        "nl_125": {
+          "type": "link",
+          "settings": {
+            "title": "Surviving stomach acid",
+            "short": "Stomach acid",
+            "url": "/pages/probiotics-tolerance-to-gastric-acid",
+            "blurb": "Peer-reviewed: 40 to 65 times more live bacteria make it through."
+          }
+        },
+        "nl_126": {
+          "type": "link",
+          "settings": {
+            "title": "Heat stability & shelf life",
+            "short": "Heat & shelf life",
+            "url": "/pages/heat-stability-and-shelf-life",
+            "blurb": "Stays potent at 30 °C for up to 12 weeks. No fridge needed."
+          }
+        },
+        "nl_127": {
+          "type": "link",
+          "settings": {
+            "title": "The published research",
+            "short": "Research",
+            "url": "/pages/microencapsulation-research",
+            "blurb": "Three peer-reviewed papers from CSIR and the University of Pretoria, explained."
+          }
+        },
+        "nl_128": {
+          "type": "link",
+          "settings": {
+            "title": "About Velobiotics",
+            "short": "About us",
+            "url": "/pages/new-about-us",
+            "blurb": "The team turning South African science into probiotics that work."
+          }
+        }
+      },
+      "block_order": [
+        "nl_123",
+        "nl_124",
+        "nl_125",
+        "nl_126",
+        "nl_127",
+        "nl_128"
+      ],
+      "settings": {
+        "mode": "cards",
+        "label": "Continue exploring",
+        "title": "The rest of the science, in order",
+        "sub": "Six short pages. Start anywhere; each one stands on its own.",
+        "hide_current": true
+      }
     },
-    "nl_149": {
-     "type": "link",
-     "settings": {
-      "title": "Surviving stomach acid",
-      "short": "Stomach acid",
-      "url": "/pages/probiotics-tolerance-to-gastric-acid",
-      "blurb": "Peer-reviewed: 40 to 65 times more live bacteria make it through."
-     }
+    "brand_family": {
+      "type": "vb-brand-family",
+      "settings": {
+        "eyebrow": "Powered by MEP",
+        "title_pre": "Every brand",
+        "title_highlight": "uses the same delivery.",
+        "sub": "Nine brands. One patented MEP delivery. All engineered to reach you alive."
+      }
     },
-    "nl_150": {
-     "type": "link",
-     "settings": {
-      "title": "Heat stability & shelf life",
-      "short": "Heat & shelf life",
-      "url": "/pages/heat-stability-and-shelf-life",
-      "blurb": "Stays potent at 30 °C for up to 12 weeks. No fridge needed."
-     }
-    },
-    "nl_151": {
-     "type": "link",
-     "settings": {
-      "title": "The published research",
-      "short": "Research",
-      "url": "/pages/microencapsulation-research",
-      "blurb": "Three peer-reviewed papers from CSIR and the University of Pretoria, explained."
-     }
-    },
-    "nl_152": {
-     "type": "link",
-     "settings": {
-      "title": "About Velobiotics",
-      "short": "About us",
-      "url": "/pages/new-about-us",
-      "blurb": "The team turning South African science into probiotics that work."
-     }
+    "final_cta": {
+      "type": "vb-final-cta",
+      "settings": {
+        "eyebrow": "Experience the difference",
+        "title_pre": "Probiotics that",
+        "title_highlight": "actually work.",
+        "sub": "30-day money-back guarantee · Ships worldwide · Lab-tested every batch."
+      }
     }
-   },
-   "block_order": [
-    "nl_147",
-    "nl_148",
-    "nl_149",
-    "nl_150",
-    "nl_151",
-    "nl_152"
-   ]
   },
-  "science": {
-   "type": "vb-science-page",
-   "settings": {
-    "eyebrow": "Our story",
-    "title_pre": "It started with a father",
-    "title_highlight": "who ran out of answers.",
-    "intro": "In 2008 two doctors watched their three-year-old daughter fight a stomach bug that the textbooks said probiotics should have helped. They did not. The question of why became Velobiotics.",
-    "read_time": "4 min read",
-    "reviewed": "By Dr Chomba Chuma, Founder & CEO",
-    "hero_image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-hero-story.jpg?v=1790193718",
-    "hero_alt": "A doctor father at the bedside of his young daughter as she recovers",
-    "hero_cta_text": "Meet the team",
-    "hero_cta_url": "/pages/new-about-us",
-    "summary_label": "The story in brief",
-    "summary_points": "Two medical doctors did everything right for their sick daughter, including probiotics. She still spent two weeks in hospital.\nThe reason turned out to be simple and shocking: most probiotics die in stomach acid before they can help anyone.\nScientists at the CSIR had spent years building a shield for exactly this problem. Velobiotics licensed it and built a company around it.\nToday nine specialist brands share one mission: to touch 100 million lives by 2035 with probiotics that reach the gut alive.",
-    "stat1_value": "2008",
-    "stat1_label": "The hospital stay that started it all",
-    "stat2_value": "9",
-    "stat2_label": "Specialist brands, one delivery technology",
-    "stat3_value": "100M",
-    "stat3_label": "Lives we intend to touch by 2035",
-    "show_toc": false
-   },
-   "blocks": {
-    "hea_82": {
-     "type": "heading",
-     "settings": {
-      "kicker": "Chapter 1",
-      "title": "A \"simple stomach bug\""
-     }
-    },
-    "tex_83": {
-     "type": "text",
-     "settings": {
-      "content": "<p>It was 2008. My three-year-old daughter lay weak and dehydrated in a hospital bed with a severe bout of viral diarrhoea. A simple stomach bug, everyone said. My wife and I are both medical doctors. We had done everything the guidelines asked: fluids, early probiotics, patience. She kept getting worse.</p><p>I will never forget the sight of her small body hooked up to an IV line, lips dry, energy gone. She recovered, two long weeks later. Relief gave way to something else: disbelief. The research was clear that probiotics shorten this kind of illness. So why had they done nothing for her?</p>"
-     }
-    },
-    "quo_84": {
-     "type": "quote",
-     "settings": {
-      "text": "We had done everything right. Modern medicine, with all its science, had still failed to prevent what probiotics were supposed to help.",
-      "cite": "Dr Chomba Chuma"
-     }
-    },
-    "hea_85": {
-     "type": "heading",
-     "settings": {
-      "kicker": "Chapter 2",
-      "title": "The uncomfortable answer"
-     }
-    },
-    "tex_86": {
-     "type": "text",
-     "settings": {
-      "content": "<p>I went looking. Study after study showed probiotics could reduce the duration of diarrhoea and speed recovery. And study after study, if you read the fine print, showed something else: <strong>most commercial probiotics never reach the gut alive</strong>. They die in stomach acid, or before that, on a warm shelf. The billions on the label were billions at the factory gate, not billions in the intestine.</p><p>If probiotics were going to help children like my daughter, they needed protection. Not a better pill. Protection for every single bacterium.</p>"
-     }
-    },
-    "fig_87": {
-     "type": "figure",
-     "settings": {
-      "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-hero-acid.jpg?v=1790193717",
-      "alt": "Unprotected probiotics dissolving in stomach acid while micro-shielded bacteria pass through intact",
-      "label": "",
-      "caption": "The problem in one picture: unprotected bacteria dissolve in stomach acid; shielded bacteria pass through. Artist's visualisation.",
-      "size": "wide"
-     }
-    },
-    "hea_88": {
-     "type": "heading",
-     "settings": {
-      "kicker": "Chapter 3",
-      "title": "A eureka moment in Pretoria"
-     }
-    },
-    "tex_89": {
-     "type": "text",
-     "settings": {
-      "content": "<p>The search led me to scientists at South Africa's Council for Scientific and Industrial Research. For more than a decade they had been developing a way to wrap individual bacteria in a micron-thin polymer coat, using supercritical carbon dioxide instead of water or heat, so that each cell was shielded from acid and humidity and released only in the intestine. Their work had been peer-reviewed and published in 2006, 2009 and 2014. It was exactly the answer I had been looking for.</p><p>We licensed the patent, refined the process for manufacturing, and Velobiotics™ was born on three words: <strong>Protect. Deliver. Thrive.</strong></p>"
-     }
-    },
-    "fig_90": {
-     "type": "figure",
-     "settings": {
-      "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-fig-lab.jpg?v=1790193717",
-      "alt": "Scientists examining micro-shielded probiotic powder beside a high-pressure reactor",
-      "label": "",
-      "caption": "The CSIR laboratory in Pretoria where the shield was developed. Read the full science on our research page.",
-      "size": "normal"
-     }
-    },
-    "ste_91": {
-     "type": "steps",
-     "settings": {
-      "numbered": false,
-      "cols": 3,
-      "items": "Protect | Every bacterium is individually shielded against acid, heat and moisture.\nDeliver | The shield dissolves only in the small intestine, where probiotics do their work.\nThrive | More live bacteria arrive, so your body actually benefits."
-     }
-    },
-    "hea_92": {
-     "type": "heading",
-     "settings": {
-      "kicker": "Chapter 4",
-      "title": "From one hospital room to a global mission"
-     }
-    },
-    "tex_93": {
-     "type": "text",
-     "settings": {
-      "content": "<p>What began as one father's question has become a South African company with a global goal: to touch <strong>100 million lives by 2035</strong>. We now make nine specialist brands, each built for a particular person and a particular need, and every one of them uses the same shielded delivery technology.</p>"
-     }
-    },
-    "ste_94": {
-     "type": "steps",
-     "settings": {
-      "numbered": false,
-      "cols": 3,
-      "items": "Femina™ | Women's intimate and hormonal health.\nPregBiotics™ | Pregnancy and prenatal wellness.\nBioKid™ | Children's digestive and immune support.\nHis-Biotics™ and Her-Biotics™ | Targeted daily balance for men and women.\nGutSlim™ | Weight, appetite and metabolism.\nVelo16™, BioGain™ and Almasi™ | Everyday gut and immune health, healthy weight gain, and skin, hair and nails."
-     }
-    },
-    "quo_95": {
-     "type": "quote",
-     "settings": {
-      "text": "Velobiotics is not just science. It is deeply personal. I built this for my daughter, and for every family that has ever felt helpless when medicine alone was not enough.",
-      "cite": "Dr Chomba Chuma, Founder & CEO"
-     }
-    },
-    "hea_96": {
-     "type": "heading",
-     "settings": {
-      "kicker": "Chapter 5",
-      "title": "The future of wellness, made in Africa"
-     }
-    },
-    "tex_97": {
-     "type": "text",
-     "settings": {
-      "content": "<p>Today Velobiotics stands at the frontier of probiotic innovation, blending African ingenuity with world-class science. We continue to work with the CSIR on the next generation of the technology, and we test every batch so that the count on the label means something.</p><p>We are not just building a brand. We are building a legacy, one healthy gut at a time.</p>"
-     }
-    },
-    "cal_98": {
-     "type": "callout",
-     "settings": {
-      "label": "Want the science?",
-      "text": "Start with what microencapsulation actually is, then read how it survives stomach acid and heat. Every claim links to the published paper.",
-      "tone": "green"
-     }
-    }
-   },
-   "block_order": [
-    "hea_82",
-    "tex_83",
-    "quo_84",
-    "hea_85",
-    "tex_86",
-    "fig_87",
-    "hea_88",
-    "tex_89",
-    "fig_90",
-    "ste_91",
-    "hea_92",
-    "tex_93",
-    "ste_94",
-    "quo_95",
-    "hea_96",
-    "tex_97",
-    "cal_98"
-   ]
-  },
-  "explore": {
-   "type": "vb-science-nav",
-   "settings": {
-    "mode": "cards",
-    "label": "Continue exploring",
-    "title": "The rest of the science, in order",
-    "sub": "Six short pages. Start anywhere; each one stands on its own.",
-    "hide_current": true
-   },
-   "blocks": {
-    "nl_153": {
-     "type": "link",
-     "settings": {
-      "title": "Founder's story",
-      "short": "Our story",
-      "url": "/pages/velobiotics-story",
-      "blurb": "A father, a hospital bed, and the question that started everything."
-     }
-    },
-    "nl_154": {
-     "type": "link",
-     "settings": {
-      "title": "What is microencapsulation?",
-      "short": "What is it?",
-      "url": "/pages/what-is-microencapsulation",
-      "blurb": "Each bacterium gets its own micron-thin shield. Here is how, and why it matters."
-     }
-    },
-    "nl_155": {
-     "type": "link",
-     "settings": {
-      "title": "Surviving stomach acid",
-      "short": "Stomach acid",
-      "url": "/pages/probiotics-tolerance-to-gastric-acid",
-      "blurb": "Peer-reviewed: 40 to 65 times more live bacteria make it through."
-     }
-    },
-    "nl_156": {
-     "type": "link",
-     "settings": {
-      "title": "Heat stability & shelf life",
-      "short": "Heat & shelf life",
-      "url": "/pages/heat-stability-and-shelf-life",
-      "blurb": "Stays potent at 30 °C for up to 12 weeks. No fridge needed."
-     }
-    },
-    "nl_157": {
-     "type": "link",
-     "settings": {
-      "title": "The published research",
-      "short": "Research",
-      "url": "/pages/microencapsulation-research",
-      "blurb": "Three peer-reviewed papers from CSIR and the University of Pretoria, explained."
-     }
-    },
-    "nl_158": {
-     "type": "link",
-     "settings": {
-      "title": "About Velobiotics",
-      "short": "About us",
-      "url": "/pages/new-about-us",
-      "blurb": "The team turning South African science into probiotics that work."
-     }
-    }
-   },
-   "block_order": [
-    "nl_153",
-    "nl_154",
-    "nl_155",
-    "nl_156",
-    "nl_157",
-    "nl_158"
-   ]
-  },
-  "brand_family": {
-   "type": "vb-brand-family",
-   "settings": {
-    "eyebrow": "Powered by MEP",
-    "title_pre": "Every brand",
-    "title_highlight": "uses the same delivery.",
-    "sub": "Nine brands. One patented MEP delivery. All engineered to reach you alive."
-   }
-  },
-  "final_cta": {
-   "type": "vb-final-cta",
-   "settings": {
-    "eyebrow": "Experience the difference",
-    "title_pre": "Probiotics that",
-    "title_highlight": "actually work.",
-    "sub": "30-day money-back guarantee · Ships worldwide · Lab-tested every batch."
-   }
-  }
- },
- "order": [
-  "sci_nav",
-  "science",
-  "explore",
-  "brand_family",
-  "final_cta"
- ]
+  "order": [
+    "science",
+    "explore",
+    "brand_family",
+    "final_cta"
+  ]
 }

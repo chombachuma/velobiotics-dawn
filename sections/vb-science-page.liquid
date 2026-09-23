@@ -29,6 +29,12 @@
   .vbsp__hero-cta{display:inline-flex;margin-top:22px;padding:13px 22px;border-radius:999px;background:#fff;color:var(--dg)!important;font-weight:800;text-decoration:none;font-size:15px}
   .vbsp__hero-cta:hover{background:#d6f5c9}
   .vbsp__hero-cap{position:absolute;right:16px;bottom:12px;z-index:1;font-size:11.5px;color:rgba(255,255,255,.6)}
+  .vbsp__series{display:flex;align-items:center;gap:8px;overflow-x:auto;scrollbar-width:none;padding:2px 0 6px;margin:0 0 6px}
+  .vbsp__series::-webkit-scrollbar{display:none}
+  .vbsp__series-lbl{flex:none;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;font-weight:800;color:var(--mut);margin-right:6px}
+  .vbsp__series-a{flex:none;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--ink)!important;text-decoration:none;font-size:13.5px;font-weight:600;white-space:nowrap}
+  .vbsp__series-a:hover{border-color:var(--g);color:var(--dg)!important}
+  .vbsp__series-a.is-on{background:var(--dg);border-color:var(--dg);color:#fff!important}
   /* summary card */
   .vbsp__sum{display:grid;grid-template-columns:1.25fr .9fr;gap:22px;margin:34px 0 8px}
   .vbsp__sumcard{background:linear-gradient(160deg,#f4f9f2,#eaf3e7);border:1px solid var(--line);border-radius:20px;padding:26px 28px}
@@ -129,7 +135,7 @@
     .vbsp__text{font-size:16.5px}
     .vbsp__h2{margin-top:40px}
   }
-  @media (max-width:560px){ .vbsp__stats{grid-template-columns:1fr 1fr} .vbsp__steps{grid-template-columns:1fr} .vbsp__intro{font-size:18px} }
+  @media (max-width:560px){ .vbsp__series-lbl{display:none} .vbsp__stats{grid-template-columns:1fr 1fr} .vbsp__steps{grid-template-columns:1fr} .vbsp__intro{font-size:18px} }
 </style>
 
 <section class="vbsp" id="vbsp-{{ sid }}">
@@ -152,6 +158,16 @@
     {%- if section.settings.hero_caption != blank -%}<span class="vbsp__hero-cap">{{ section.settings.hero_caption }}</span>{%- endif -%}
   </div>
   <div class="vbsp__wrap">
+  {%- if section.settings.show_series -%}
+  <nav class="vbsp__series" aria-label="The Velobiotics science series">
+    <span class="vbsp__series-lbl">In this series</span>
+    {%- assign s_titles = "Our story|What is it?|Stomach acid|Heat & shelf life|Research|About us" | split: "|" -%}
+    {%- assign s_urls = "/pages/velobiotics-story|/pages/what-is-microencapsulation|/pages/probiotics-tolerance-to-gastric-acid|/pages/heat-stability-and-shelf-life|/pages/microencapsulation-research|/pages/new-about-us" | split: "|" -%}
+    {%- for u in s_urls -%}
+      <a class="vbsp__series-a{% if request.path == u %} is-on{% endif %}" href="{{ u }}"{% if request.path == u %} aria-current="page"{% endif %}>{{ s_titles[forloop.index0] }}</a>
+    {%- endfor -%}
+  </nav>
+  {%- endif -%}
     {%- assign pts = section.settings.summary_points | newline_to_br | split: '<br />' -%}
     {%- if section.settings.summary_points != blank or section.settings.stat1_value != blank -%}
     <div class="vbsp__sum">
@@ -275,6 +291,7 @@
     { "type": "text", "id": "stat2_value", "label": "Stat 2 value" }, { "type": "text", "id": "stat2_label", "label": "Stat 2 label" },
     { "type": "text", "id": "stat3_value", "label": "Stat 3 value" }, { "type": "text", "id": "stat3_label", "label": "Stat 3 label" },
     { "type": "checkbox", "id": "show_toc", "label": "Show 'On this page' links", "default": true },
+    { "type": "checkbox", "id": "show_series", "label": "Show 'In this series' pill bar under the hero", "default": true },
     { "type": "header", "content": "Deep-dive section (details blocks)" },
     { "type": "text", "id": "deep_title", "label": "Deep-dive title", "default": "The science in detail" },
     { "type": "text", "id": "deep_sub", "label": "Deep-dive sub-line", "default": "Open any panel for the methods, numbers and references behind the story above." }

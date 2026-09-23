@@ -15,29 +15,29 @@
     "b1": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83d\udc8e",
+      "icon": "💎",
       "text": "Collagen peptide capsules"
      }
     },
     "b2": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83d\udc81",
+      "icon": "💁",
       "text": "Hair, skin, nails support"
      }
     },
     "b3": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "text": "Probiotic gut-skin axis"
      }
     },
     "b4": {
      "type": "benefit",
      "settings": {
-      "icon": "\u26a1",
-      "text": "1000\u00d7 more delivery"
+      "icon": "⚡",
+      "text": "1000× more delivery"
      }
     },
     "t1": {
@@ -50,7 +50,7 @@
     "t2": {
      "type": "testi",
      "settings": {
-      "quote": "Hair, nails, skin \u2014 all glowing",
+      "quote": "Hair, nails, skin — all glowing",
       "author": "Lebo K."
      }
     },
@@ -83,11 +83,11 @@
     "brand_primary": "#1a1a1a",
     "brand_dark": "#000000",
     "brand_tint": "#fdf5f3",
-    "brand_label": "Almasi\u2122 Collagen Capsules",
+    "brand_label": "Almasi™ Collagen Capsules",
     "rating": "4.8",
     "review_count": "150+",
-    "hook": "Collagen peptides, simplified. Almasi\u2122 Collagen Peptide Capsules deliver the same beauty-from-within benefits as our powder \u2014 in convenient capsule form. Travel-friendly, mess-free.",
-    "ship_note": "Ships worldwide \u00b7 Free shipping over the free-shipping threshold \u00b7 30-day money-back guarantee",
+    "hook": "Collagen peptides, simplified. Almasi™ Collagen Peptide Capsules deliver the same beauty-from-within benefits as our powder — in convenient capsule form. Travel-friendly, mess-free.",
+    "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
     "show_buynow": true,
     "show_testi_marquee": true
    }
@@ -100,7 +100,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Catherine+P&background=1a1a1a&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Catherine P.",
-      "meta": "Verified buyer \u00b7 Sandton",
+      "meta": "Verified buyer · Sandton",
       "quote": "No more powder mess. Capsules are so much easier daily."
      }
     },
@@ -109,8 +109,8 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Lebo+K&background=7a5252&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Lebo K.",
-      "meta": "Verified buyer \u00b7 3 months ago",
-      "quote": "Hair, nails, skin \u2014 all glowing. Same results, easier form."
+      "meta": "Verified buyer · 3 months ago",
+      "quote": "Hair, nails, skin — all glowing. Same results, easier form."
      }
     },
     "r3": {
@@ -118,7 +118,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Mahlatse+V&background=000000&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Mahlatse V.",
-      "meta": "Verified buyer \u00b7 2 months ago",
+      "meta": "Verified buyer · 2 months ago",
       "quote": "Travel-friendly. Take with me everywhere. Daily ritual sorted."
      }
     },
@@ -127,7 +127,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Naomi+B&background=1a1a1a&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Naomi B.",
-      "meta": "Verified buyer \u00b7 1 month ago",
+      "meta": "Verified buyer · 1 month ago",
       "quote": "Easier than powder. Same skin glow at 6 weeks."
      }
     },
@@ -136,7 +136,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Bridget+S&background=7a5252&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Bridget S.",
-      "meta": "Verified buyer \u00b7 Cape Town",
+      "meta": "Verified buyer · Cape Town",
       "quote": "Capsules suit my routine. Highly recommend."
      }
     }
@@ -152,7 +152,7 @@
     "brand_primary": "#1a1a1a",
     "brand_dark": "#000000",
     "brand_tint": "#fdf5f3",
-    "eyebrow": "\u2605 Real Reviews",
+    "eyebrow": "★ Real Reviews",
     "title": "Collagen capsules, real reviews"
    }
   },
@@ -162,28 +162,28 @@
     "p1": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
-      "text": "<strong>Powder collagen is messy</strong> \u2014 mixing, dishes, daily friction."
+      "icon": "✕",
+      "text": "<strong>Powder collagen is messy</strong> — mixing, dishes, daily friction."
      }
     },
     "p2": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
-      "text": "<strong>Travel-unfriendly</strong> \u2014 bulky tubs, scoopless airport security."
+      "icon": "✕",
+      "text": "<strong>Travel-unfriendly</strong> — bulky tubs, scoopless airport security."
      }
     },
     "p3": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Forgetfulness rises</strong> when daily ritual takes effort."
      }
     },
     "p4": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Some palates dislike</strong> collagen taste in coffee or smoothies."
      }
     }
@@ -204,7 +204,7 @@
     "eyebrow": "The Problem",
     "title_pre": "Even the best supplement",
     "title_highlight": "only works when you take it.",
-    "desc": "Collagen powder works \u2014 but daily mixing, taste, and travel are real barriers. Capsule form means consistency. Consistency means results. Same actives, easier ritual."
+    "desc": "Collagen powder works — but daily mixing, taste, and travel are real barriers. Capsule form means consistency. Consistency means results. Same actives, easier ritual."
    }
   },
   "solution": {
@@ -213,29 +213,29 @@
     "s1": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Hydrolysed collagen peptides</strong> \u2014 same bioavailable Type I + III."
+      "icon": "✓",
+      "text": "<strong>Hydrolysed collagen peptides</strong> — same bioavailable Type I + III."
      }
     },
     "s2": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Travel-friendly capsule form</strong> \u2014 no scoop, no mixing."
+      "icon": "✓",
+      "text": "<strong>Travel-friendly capsule form</strong> — no scoop, no mixing."
      }
     },
     "s3": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>Probiotic strains</strong> for gut and skin microbiome harmony."
      }
     },
     "s4": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Velobiotics\u2122 MEP technology</strong> \u2014 1000\u00d7 more reach you alive."
+      "icon": "✓",
+      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
      }
     }
    },
@@ -250,12 +250,12 @@
     "brand_primary": "#1a1a1a",
     "brand_tint": "#fdf5fc",
     "image_url": "",
-    "tag_value": "1000\u00d7",
+    "tag_value": "1000×",
     "tag_label": "More Probiotics Delivered",
     "eyebrow": "The Solution",
     "title_pre": "Meet",
-    "title_highlight": "Almasi\u2122 Collagen Capsules.",
-    "desc": "Hydrolysed Type I + III collagen peptides + probiotic strains \u2014 in convenient capsule form. Same beauty results, simpler daily ritual."
+    "title_highlight": "Almasi™ Collagen Capsules.",
+    "desc": "Hydrolysed Type I + III collagen peptides + probiotic strains — in convenient capsule form. Same beauty results, simpler daily ritual."
    }
   },
   "related": {
@@ -265,7 +265,7 @@
      "type": "product",
      "settings": {
       "product_handle": "probiotics-collagen-peptides-powder",
-      "brand": "Almasi\u2122",
+      "brand": "Almasi™",
       "rating": "4.9",
       "reviews": "420+",
       "fallback_title": "",
@@ -277,7 +277,7 @@
      "type": "product",
      "settings": {
       "product_handle": "almasi-probiotics-skin-hair-nails-60s",
-      "brand": "Almasi\u2122",
+      "brand": "Almasi™",
       "rating": "4.9",
       "reviews": "180+",
       "fallback_title": "",
@@ -296,7 +296,7 @@
     "brand_tint": "#fdf5f3",
     "tint": false,
     "eyebrow": "Complete the Beauty Stack",
-    "title": "More from the Almasi\u2122 range",
+    "title": "More from the Almasi™ range",
     "sub": "Three forms of beauty-from-within."
    }
   },
@@ -306,7 +306,7 @@
     "b1": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udc81",
+      "icon": "💁",
       "name": "Stronger Hair",
       "desc": "Collagen peptides fuel hair growth and resilience."
      }
@@ -314,7 +314,7 @@
     "b2": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udc85",
+      "icon": "💅",
       "name": "Resilient Nails",
       "desc": "Collagen + amino acids end brittle nails."
      }
@@ -322,7 +322,7 @@
     "b3": {
      "type": "feat",
      "settings": {
-      "icon": "\u2728",
+      "icon": "✨",
       "name": "Glowing Skin",
       "desc": "Collagen rebuilds the dermis from within."
      }
@@ -330,7 +330,7 @@
     "b4": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
+      "icon": "🛡️",
       "name": "Joint Support",
       "desc": "Type II collagen aids cartilage and joint comfort."
      }
@@ -338,15 +338,15 @@
     "b5": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udce6",
+      "icon": "📦",
       "name": "Capsule Convenience",
-      "desc": "No mixing, no mess, no taste \u2014 easier daily."
+      "desc": "No mixing, no mess, no taste — easier daily."
      }
     },
     "b6": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\ude7a",
+      "icon": "🩺",
       "name": "Doctor-Formulated",
       "desc": "Built with women's-health and dermatology guidance."
      }
@@ -377,10 +377,10 @@
     "brand_tint": "#fdf5f3",
     "form": "scoop",
     "dose": "1 scoop",
-    "when": "mixed into 200\u2013250 ml, best on an empty stomach",
+    "when": "mixed into 200–250 ml, best on an empty stomach",
     "course": "Every day, ongoing",
     "timeofday": "morning",
-    "mix_volume": "200\u2013250 ml of your favourite drink",
+    "mix_volume": "200–250 ml of your favourite drink",
     "eyebrow": "How to use",
     "title_pre": "Your daily ritual,",
     "title_highlight": "made effortless.",
@@ -393,7 +393,7 @@
     "i1": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\uddec",
+      "icon": "🧬",
       "name": "Hydrolysed Collagen Peptides",
       "amount": "2,500mg",
       "desc": "Type I + III peptides. Bioavailable, optimal absorption."
@@ -402,7 +402,7 @@
     "i2": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udc8e",
+      "icon": "💎",
       "name": "Biotin + Vitamin C",
       "amount": "Full daily",
       "desc": "Hair, skin, collagen synthesis cofactors."
@@ -411,7 +411,7 @@
     "i3": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "name": "Hyaluronic Acid",
       "amount": "60mg",
       "desc": "Skin hydration and elasticity from within."
@@ -420,7 +420,7 @@
     "i4": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "name": "Probiotic Blend",
       "amount": "10 Billion CFU",
       "desc": "Gut-skin microbiome harmony."
@@ -429,19 +429,19 @@
     "i5": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
-      "name": "Velobiotics\u2122 MEP Coating",
+      "icon": "🛡️",
+      "name": "Velobiotics™ MEP Coating",
       "amount": "Patented",
-      "desc": "Supercritical CO\u2082 microencapsulation \u2014 1000\u00d7 more survive."
+      "desc": "Supercritical CO₂ microencapsulation — 1000× more survive."
      }
     },
     "i6": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udeab",
+      "icon": "🚫",
       "name": "Free From",
       "amount": "Always",
-      "desc": "Parabens \u00b7 gluten \u00b7 soy \u00b7 dairy \u00b7 artificial colours \u00b7 preservatives \u00b7 GMO."
+      "desc": "Parabens · gluten · soy · dairy · artificial colours · preservatives · GMO."
      }
     }
    },
@@ -466,7 +466,7 @@
     "facts_col_a": "Ingredient",
     "facts_col_b": "Per serving",
     "facts_caption": "% Daily Value not established. Other Ingredients: HPMC, Magnesium Stearate.",
-    "facts_foot": "Lab-tested \u00b7 Doctor-formulated \u00b7 Clean luxury"
+    "facts_foot": "Lab-tested · Doctor-formulated · Clean luxury"
    }
   },
   "confidence": {
@@ -533,7 +533,7 @@
      "type": "product",
      "settings": {
       "product_handle": "almasi-probiotics-skin-hair-nails-60s",
-      "brand": "Almasi\u2122",
+      "brand": "Almasi™",
       "rating": "4.9",
       "reviews": "180+",
       "fallback_title": "",
@@ -545,7 +545,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-original-capsules-60s",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.7",
       "reviews": "950+",
       "fallback_title": "",
@@ -557,7 +557,7 @@
      "type": "product",
      "settings": {
       "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
-      "brand": "Femina\u2122",
+      "brand": "Femina™",
       "rating": "4.8",
       "reviews": "1300+",
       "fallback_title": "",
@@ -569,7 +569,7 @@
      "type": "product",
      "settings": {
       "product_handle": "gutslim-probiotics-glp-1-booster",
-      "brand": "GutSlim\u2122",
+      "brand": "GutSlim™",
       "rating": "4.8",
       "reviews": "410+",
       "fallback_title": "",
@@ -601,16 +601,16 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Clinically Validated",
-      "desc": "Hydrolysed collagen peptides \u2014 peer-reviewed for beauty."
+      "desc": "Hydrolysed collagen peptides — peer-reviewed for beauty."
      }
     },
     "d2": {
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Doctor Formulated",
       "desc": "Built with women's-health and dermatology guidance."
      }
@@ -619,16 +619,16 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Patented MEP Technology",
-      "desc": "Microencapsulation with Supercritical CO\u2082."
+      "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
     "d4": {
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Clean Luxury",
       "desc": "Halaal-friendly, no parabens, no harsh chemicals."
      }
@@ -709,14 +709,14 @@
     "brand_tint": "#fdf5f3",
     "eyebrow": "",
     "title": "Why Collagen Capsules Outperform",
-    "sub": "Hydrolysed collagen + hyaluronic acid + probiotics \u2014 same powder benefits, simpler daily ritual.",
+    "sub": "Hydrolysed collagen + hyaluronic acid + probiotics — same powder benefits, simpler daily ritual.",
     "col_features": "Features",
     "col_brand": "Collagen Capsules",
     "brand_logo_url": "",
     "col_b": "Powder Collagen",
     "col_c": "Topical Creams",
     "cta_text": "Add to Cart",
-    "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
+    "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
    }
   },
   "judgeme": {
@@ -736,15 +736,15 @@
     "q1": {
      "type": "q",
      "settings": {
-      "question": "Capsule or powder \u2014 which to choose?",
-      "answer": "<p>Capsules are travel-friendly and easy daily. Powder is better for high-dose users (10g+) or those mixing into coffee/smoothies. Both work \u2014 choose based on your routine.</p>"
+      "question": "Capsule or powder — which to choose?",
+      "answer": "<p>Capsules are travel-friendly and easy daily. Powder is better for high-dose users (10g+) or those mixing into coffee/smoothies. Both work — choose based on your routine.</p>"
      }
     },
     "q2": {
      "type": "q",
      "settings": {
       "question": "Is the collagen vegan?",
-      "answer": "<p>No \u2014 our collagen is sourced from grass-fed bovine for optimal Type I + III bioavailability. For vegan beauty support, see Almasi Skin/Hair/Nails (60s).</p>"
+      "answer": "<p>No — our collagen is sourced from grass-fed bovine for optimal Type I + III bioavailability. For vegan beauty support, see Almasi Skin/Hair/Nails (60s).</p>"
      }
     },
     "q3": {
@@ -765,14 +765,14 @@
      "type": "q",
      "settings": {
       "question": "Do you ship internationally?",
-      "answer": "<p>Yes. We ship globally \u2014 5\u201314 working days. Free shipping over the free-shipping threshold.</p>"
+      "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
      }
     },
     "q6": {
      "type": "q",
      "settings": {
       "question": "What if it doesn't work for me?",
-      "answer": "<p>If you don't see the difference in 30 days, we'll refund you in full \u2014 no questions asked.</p>"
+      "answer": "<p>If you don't see the difference in 30 days, we'll refund you in full — no questions asked.</p>"
      }
     }
    },
@@ -796,28 +796,28 @@
     "g1": {
      "type": "g",
      "settings": {
-      "icon": "\u2705",
+      "icon": "✅",
       "text": "30-day money-back"
      }
     },
     "g2": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\ude9a",
+      "icon": "🚚",
       "text": "Ships worldwide"
      }
     },
     "g3": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\udd2c",
+      "icon": "🔬",
       "text": "Lab-tested every batch"
      }
     },
     "g4": {
      "type": "g",
      "settings": {
-      "icon": "\u2728",
+      "icon": "✨",
       "text": "Clean luxury"
      }
     }
@@ -839,6 +839,20 @@
     "cta_text": "Add to Cart",
     "cta_link": "#vbpForm"
    }
+  },
+  "science_strip": {
+   "type": "vb-science-strip",
+   "settings": {
+    "kicker": "Backed by peer-reviewed science",
+    "title_pre": "Don't take our word for it.",
+    "title_highlight": "View the science.",
+    "sub": "The shielding technology in this product was studied in three peer-reviewed papers. Read what the research actually showed, in plain English.",
+    "all_text": "View the science",
+    "all_url": "/pages/what-is-microencapsulation",
+    "bg": "#f6faf5",
+    "pad_top": 40,
+    "pad_bottom": 40
+   }
   }
  },
  "order": [
@@ -854,6 +868,7 @@
   "fbt",
   "doctors",
   "outperform",
+  "science_strip",
   "judgeme",
   "faq",
   "final"

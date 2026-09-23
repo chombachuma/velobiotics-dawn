@@ -15,28 +15,28 @@
     "b1": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83c\udf38",
+      "icon": "🌸",
       "text": "Boric acid suppositories"
      }
     },
     "b2": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
+      "icon": "🛡️",
       "text": "BV & yeast defence"
      }
     },
     "b3": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83d\udca7",
+      "icon": "💧",
       "text": "Restores vaginal pH"
      }
     },
     "b4": {
      "type": "benefit",
      "settings": {
-      "icon": "\u26a1",
+      "icon": "⚡",
       "text": "Targeted direct action"
      }
     },
@@ -83,11 +83,11 @@
     "brand_primary": "#8d2a89",
     "brand_dark": "#6b1f68",
     "brand_tint": "#fdf5fc",
-    "brand_label": "Cookie Fresh\u2122 Boric",
+    "brand_label": "Cookie Fresh™ Boric",
     "rating": "4.8",
     "review_count": "210+",
-    "hook": "Pure boric acid suppositories. The simple, clinically-validated formula for BV, yeast, and pH restoration \u2014 without antibiotics or harsh chemicals.",
-    "ship_note": "Ships worldwide \u00b7 Free shipping over the free-shipping threshold \u00b7 30-day money-back guarantee",
+    "hook": "Pure boric acid suppositories. The simple, clinically-validated formula for BV, yeast, and pH restoration — without antibiotics or harsh chemicals.",
+    "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
     "show_subscription": true,
     "default_subscribe": false,
     "default_plan_slug": "every-2-months",
@@ -111,7 +111,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Rachel+S&background=8d2a89&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Rachel S.",
-      "meta": "Verified buyer \u00b7 1 month ago",
+      "meta": "Verified buyer · 1 month ago",
       "quote": "Cleared up in 5 days. Better than the antibiotics that failed."
      }
     },
@@ -120,7 +120,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Mpho+J&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Mpho J.",
-      "meta": "Verified buyer \u00b7 Pretoria",
+      "meta": "Verified buyer · Pretoria",
       "quote": "Better than any antibiotic course I tried."
      }
     },
@@ -129,7 +129,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Lisa+H&background=6b1f68&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Lisa H.",
-      "meta": "Verified buyer \u00b7 6 months ago",
+      "meta": "Verified buyer · 6 months ago",
       "quote": "No more recurrence. Six months free and counting."
      }
     },
@@ -138,7 +138,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Caroline+T&background=8d2a89&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Caroline T.",
-      "meta": "Verified buyer \u00b7 3 weeks ago",
+      "meta": "Verified buyer · 3 weeks ago",
       "quote": "Gentle and effective. The simplest fix I've used."
      }
     },
@@ -147,7 +147,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Yasmin+B&background=b94db4&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Yasmin B.",
-      "meta": "Verified buyer \u00b7 Cape Town",
+      "meta": "Verified buyer · Cape Town",
       "quote": "Perfect for chronic BV. Antibiotics never lasted."
      }
     }
@@ -163,7 +163,7 @@
     "brand_primary": "#8d2a89",
     "brand_dark": "#6b1f68",
     "brand_tint": "#fdf5fc",
-    "eyebrow": "\u2605 Real Reviews",
+    "eyebrow": "★ Real Reviews",
     "title": "Clinical boric acid, real reviews"
    }
   },
@@ -173,28 +173,28 @@
     "p1": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Recurrent BV</strong> that antibiotics only briefly clear."
      }
     },
     "p2": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Repeat yeast infections</strong> from medication-resistant strains."
      }
     },
     "p3": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Constant antibiotic cycles</strong> that further disrupt your microbiome."
      }
     },
     "p4": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Generic OTC creams</strong> that mask symptoms but don't restore pH."
      }
     }
@@ -224,28 +224,28 @@
     "s1": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>600mg pharmaceutical-grade boric acid</strong> per suppository."
      }
     },
     "s2": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Direct vaginal pH restoration</strong> \u2014 fast and targeted."
+      "icon": "✓",
+      "text": "<strong>Direct vaginal pH restoration</strong> — fast and targeted."
      }
     },
     "s3": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>No antibiotics, no harsh chemicals</strong>. Preserves your microbiome."
      }
     },
     "s4": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>One suppository nightly</strong> for 7-14 days. Doctor-formulated."
      }
     }
@@ -266,8 +266,8 @@
     "tag_label": "Days To Restored Balance",
     "eyebrow": "The Solution",
     "title_pre": "Meet",
-    "title_highlight": "Cookie Fresh\u2122 Boric Acid Only.",
-    "desc": "Pure 600mg pharmaceutical-grade boric acid suppositories. Simple, clinical, effective. The clean choice for stubborn BV and yeast \u2014 without antibiotics."
+    "title_highlight": "Cookie Fresh™ Boric Acid Only.",
+    "desc": "Pure 600mg pharmaceutical-grade boric acid suppositories. Simple, clinical, effective. The clean choice for stubborn BV and yeast — without antibiotics."
    }
   },
   "related": {
@@ -277,7 +277,7 @@
      "type": "product",
      "settings": {
       "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
-      "brand": "Femina\u2122",
+      "brand": "Femina™",
       "rating": "4.8",
       "reviews": "1300+",
       "fallback_title": "",
@@ -289,7 +289,7 @@
      "type": "product",
      "settings": {
       "product_handle": "femina-probiotics-cookie-fresh-with-boric-acid-suppositories",
-      "brand": "Femina\u2122",
+      "brand": "Femina™",
       "rating": "4.9",
       "reviews": "320+",
       "fallback_title": "",
@@ -301,7 +301,7 @@
      "type": "product",
      "settings": {
       "product_handle": "femina-mini-combo",
-      "brand": "Femina\u2122",
+      "brand": "Femina™",
       "rating": "4.8",
       "reviews": "260+",
       "fallback_title": "",
@@ -313,7 +313,7 @@
      "type": "product",
      "settings": {
       "product_handle": "femina-menstrual-cups-large-small-value-pack",
-      "brand": "Femina\u2122",
+      "brand": "Femina™",
       "rating": "4.7",
       "reviews": "180+",
       "fallback_title": "",
@@ -325,7 +325,7 @@
      "type": "product",
      "settings": {
       "product_handle": "femina-probiotic-meal-replacement-cranberry-extract-for-women",
-      "brand": "Femina\u2122",
+      "brand": "Femina™",
       "rating": "4.8",
       "reviews": "150+",
       "fallback_title": "",
@@ -347,8 +347,8 @@
     "brand_tint": "#fdf5fc",
     "tint": false,
     "eyebrow": "Complete the Ritual",
-    "title": "More from the Femina\u2122 range",
-    "sub": "Pair Cookie Fresh Boric with the rest of the Femina\u2122 intimate-health system."
+    "title": "More from the Femina™ range",
+    "sub": "Pair Cookie Fresh Boric with the rest of the Femina™ intimate-health system."
    }
   },
   "benefits": {
@@ -357,7 +357,7 @@
     "b1": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83c\udf38",
+      "icon": "🌸",
       "name": "Pharmaceutical-Grade Boric",
       "desc": "600mg per suppository. Clinically-validated dose."
      }
@@ -365,7 +365,7 @@
     "b2": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
+      "icon": "🛡️",
       "name": "BV & Yeast Defence",
       "desc": "Direct action where antibiotics often fail."
      }
@@ -373,7 +373,7 @@
     "b3": {
      "type": "feat",
      "settings": {
-      "icon": "\u2696\ufe0f",
+      "icon": "⚖️",
       "name": "Restores pH",
       "desc": "Returns vaginal pH to healthy 3.5-4.5 range."
      }
@@ -381,7 +381,7 @@
     "b4": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udca7",
+      "icon": "💧",
       "name": "Microbiome-Friendly",
       "desc": "Unlike antibiotics, doesn't kill good bacteria."
      }
@@ -389,7 +389,7 @@
     "b5": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\ude7a",
+      "icon": "🩺",
       "name": "Doctor-Formulated",
       "desc": "Built with gynaecology guidance."
      }
@@ -397,7 +397,7 @@
     "b6": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "name": "Clean Format",
       "desc": "Vegetable suppository, no parabens, no fragrance."
      }
@@ -436,11 +436,11 @@
     "title_pre": "Seven nights to",
     "title_highlight": "balance.",
     "anchors": "Bedtime routine|After brushing teeth|Lights out",
-    "w1_title": "Nights 1\u20132",
-    "w1": "Relief from itching, burning and odour often begins within 24\u201348 hours.",
-    "w2_title": "Nights 3\u20135",
+    "w1_title": "Nights 1–2",
+    "w1": "Relief from itching, burning and odour often begins within 24–48 hours.",
+    "w2_title": "Nights 3–5",
     "w2": "pH settles into the healthy acidic range; discharge and odour normalise.",
-    "w3_title": "Nights 6\u20137",
+    "w3_title": "Nights 6–7",
     "w3": "Course complete. Continue your daily Femina capsule to keep the flora balanced.",
     "w4_title": "Maintenance",
     "w4": "Repeat a 7-night course if symptoms return; many women use one course a month, or a single night after their period."
@@ -452,7 +452,7 @@
     "i1": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83c\udf38",
+      "icon": "🌸",
       "name": "Boric Acid",
       "amount": "600mg",
       "desc": "Pharmaceutical-grade. Clinically-validated dose for BV and yeast."
@@ -461,7 +461,7 @@
     "i2": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
+      "icon": "🛡️",
       "name": "Vegetable Suppository Base",
       "amount": "Cocoa butter",
       "desc": "Hypoallergenic carrier, dissolves at body temperature."
@@ -470,7 +470,7 @@
     "i3": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udca7",
+      "icon": "💧",
       "name": "Lactic Acid",
       "amount": "Trace",
       "desc": "Supports pH restoration."
@@ -479,7 +479,7 @@
     "i4": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "name": "Gentle Format",
       "amount": "No fragrance",
       "desc": "No parabens, no artificial colour, no fragrance."
@@ -488,7 +488,7 @@
     "i5": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udeab",
+      "icon": "🚫",
       "name": "No Antibiotics",
       "amount": "By design",
       "desc": "Won't kill good bacteria or fuel resistance."
@@ -497,10 +497,10 @@
     "i6": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udeab",
+      "icon": "🚫",
       "name": "Free From",
       "amount": "Always",
-      "desc": "Parabens \u00b7 sulphates \u00b7 fragrance \u00b7 artificial colours \u00b7 GMO."
+      "desc": "Parabens · sulphates · fragrance · artificial colours · GMO."
      }
     }
    },
@@ -525,7 +525,7 @@
     "facts_col_a": "Ingredient",
     "facts_col_b": "Per serving",
     "facts_caption": "% Daily Value not established. Other Ingredients: HPMC, Magnesium Stearate.",
-    "facts_foot": "Lab-tested \u00b7 Doctor-formulated \u00b7 Full transparency"
+    "facts_foot": "Lab-tested · Doctor-formulated · Full transparency"
    }
   },
   "confidence": {
@@ -592,7 +592,7 @@
      "type": "product",
      "settings": {
       "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
-      "brand": "Femina\u2122",
+      "brand": "Femina™",
       "rating": "4.8",
       "reviews": "1300+",
       "fallback_title": "",
@@ -604,7 +604,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-original-capsules-60s",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.7",
       "reviews": "260+",
       "fallback_title": "",
@@ -616,7 +616,7 @@
      "type": "product",
      "settings": {
       "product_handle": "gutslim-probiotics-glp-1-booster",
-      "brand": "GutSlim\u2122",
+      "brand": "GutSlim™",
       "rating": "4.8",
       "reviews": "410+",
       "fallback_title": "",
@@ -628,7 +628,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-magnesium-glycinate",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.6",
       "reviews": "190+",
       "fallback_title": "",
@@ -660,7 +660,7 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Clinically Validated",
       "desc": "100+ years of evidence-based use."
      }
@@ -669,7 +669,7 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Gynae Formulated",
       "desc": "Built with women's health specialists."
      }
@@ -678,7 +678,7 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Direct-Action Format",
       "desc": "Vaginal suppository for targeted relief."
      }
@@ -687,7 +687,7 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Clean Label",
       "desc": "No parabens, no fragrance, no harsh chemicals."
      }
@@ -768,14 +768,14 @@
     "brand_tint": "#fdf5fc",
     "eyebrow": "",
     "title": "Why Cookie Fresh Boric Outperforms",
-    "sub": "Pharmaceutical-grade boric acid in a clean vaginal suppository \u2014 clinical-grade BV and yeast relief without antibiotics or harsh chemicals.",
+    "sub": "Pharmaceutical-grade boric acid in a clean vaginal suppository — clinical-grade BV and yeast relief without antibiotics or harsh chemicals.",
     "col_features": "Features",
     "col_brand": "Cookie Fresh Boric",
     "brand_logo_url": "",
     "col_b": "OTC Creams",
     "col_c": "Antibiotics",
     "cta_text": "Add to Cart",
-    "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
+    "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
    }
   },
   "judgeme": {
@@ -803,7 +803,7 @@
      "type": "q",
      "settings": {
       "question": "Is boric acid safe?",
-      "answer": "<p>Yes \u2014 vaginal boric acid suppositories have been clinically used for over 100 years. They are not for oral use.</p>"
+      "answer": "<p>Yes — vaginal boric acid suppositories have been clinically used for over 100 years. They are not for oral use.</p>"
      }
     },
     "q3": {
@@ -817,21 +817,21 @@
      "type": "q",
      "settings": {
       "question": "Can I use this with antibiotics?",
-      "answer": "<p>Yes \u2014 boric acid can complement antibiotic treatment and helps prevent recurrence after antibiotics finish.</p>"
+      "answer": "<p>Yes — boric acid can complement antibiotic treatment and helps prevent recurrence after antibiotics finish.</p>"
      }
     },
     "q5": {
      "type": "q",
      "settings": {
       "question": "Do you ship internationally?",
-      "answer": "<p>Yes. We ship globally \u2014 5\u201314 working days. Free shipping over the free-shipping threshold.</p>"
+      "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
      }
     },
     "q6": {
      "type": "q",
      "settings": {
       "question": "What if it doesn't work for me?",
-      "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full \u2014 no questions asked.</p>"
+      "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full — no questions asked.</p>"
      }
     }
    },
@@ -855,28 +855,28 @@
     "g1": {
      "type": "g",
      "settings": {
-      "icon": "\u2705",
+      "icon": "✅",
       "text": "30-day money-back"
      }
     },
     "g2": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\ude9a",
+      "icon": "🚚",
       "text": "Ships worldwide"
      }
     },
     "g3": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\udd2c",
+      "icon": "🔬",
       "text": "Lab-tested every batch"
      }
     },
     "g4": {
      "type": "g",
      "settings": {
-      "icon": "\ud83c\udf38",
+      "icon": "🌸",
       "text": "Gynae-formulated"
      }
     }
@@ -918,6 +918,20 @@
    "settings": {
     "include_margins": true
    }
+  },
+  "science_strip": {
+   "type": "vb-science-strip",
+   "settings": {
+    "kicker": "Backed by peer-reviewed science",
+    "title_pre": "Don't take our word for it.",
+    "title_highlight": "View the science.",
+    "sub": "The shielding technology in this product was studied in three peer-reviewed papers. Read what the research actually showed, in plain English.",
+    "all_text": "View the science",
+    "all_url": "/pages/what-is-microencapsulation",
+    "bg": "#f6faf5",
+    "pad_top": 40,
+    "pad_bottom": 40
+   }
   }
  },
  "order": [
@@ -933,6 +947,7 @@
   "fbt",
   "doctors",
   "outperform",
+  "science_strip",
   "judgeme",
   "faq",
   "final",

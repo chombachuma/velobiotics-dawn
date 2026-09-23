@@ -15,29 +15,29 @@
     "b1": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83d\udcaa",
+      "icon": "💪",
       "text": "Men's daily performance"
      }
     },
     "b2": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83d\udc8e",
+      "icon": "💎",
       "text": "Zinc + magnesium + B-complex"
      }
     },
     "b3": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "text": "16 probiotic strains"
      }
     },
     "b4": {
      "type": "benefit",
      "settings": {
-      "icon": "\u26a1",
-      "text": "1000\u00d7 more delivery"
+      "icon": "⚡",
+      "text": "1000× more delivery"
      }
     },
     "t1": {
@@ -83,11 +83,11 @@
     "brand_primary": "#0a3d3d",
     "brand_dark": "#021212",
     "brand_tint": "#e8f3f1",
-    "brand_label": "His-Biotics\u2122",
+    "brand_label": "His-Biotics™",
     "rating": "4.7",
     "review_count": "750+",
-    "hook": "Built for the modern man. His-Biotics\u2122 blends 16 probiotic strains with zinc, magnesium, and B-complex for daily energy, focus, performance, and recovery.",
-    "ship_note": "Ships worldwide \u00b7 Free shipping over the free-shipping threshold \u00b7 30-day money-back guarantee",
+    "hook": "Built for the modern man. His-Biotics™ blends 16 probiotic strains with zinc, magnesium, and B-complex for daily energy, focus, performance, and recovery.",
+    "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
     "show_subscription": true,
     "show_buynow": true,
     "show_testi_marquee": true
@@ -101,8 +101,8 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Bongani+Z&background=0a3d3d&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Bongani Z.",
-      "meta": "Verified buyer \u00b7 Soweto",
-      "quote": "His-Biotics is my daily edge. Energy, focus, recovery \u2014 all up."
+      "meta": "Verified buyer · Soweto",
+      "quote": "His-Biotics is my daily edge. Energy, focus, recovery — all up."
      }
     },
     "r2": {
@@ -110,7 +110,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Marco+D&background=1c5856&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Marco D.",
-      "meta": "Verified buyer \u00b7 2 months ago",
+      "meta": "Verified buyer · 2 months ago",
       "quote": "I lift 5 days a week. His-Biotics cut my recovery time in half."
      }
     },
@@ -119,7 +119,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Tshepo+M&background=021212&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Tshepo M.",
-      "meta": "Verified buyer \u00b7 1 month ago",
+      "meta": "Verified buyer · 1 month ago",
       "quote": "Sharper mornings, deeper sleep, no afternoon slump."
      }
     },
@@ -128,7 +128,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Pieter+V&background=0a3d3d&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Pieter V.",
-      "meta": "Verified buyer \u00b7 3 weeks ago",
+      "meta": "Verified buyer · 3 weeks ago",
       "quote": "Built for performance. I feel it."
      }
     },
@@ -137,7 +137,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Riaan+S&background=1c5856&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Riaan S.",
-      "meta": "Verified buyer \u00b7 Cape Town",
+      "meta": "Verified buyer · Cape Town",
       "quote": "Doctor-formulated and it shows. Best men's supplement I've taken."
      }
     }
@@ -153,7 +153,7 @@
     "brand_primary": "#0a3d3d",
     "brand_dark": "#021212",
     "brand_tint": "#e8f3f1",
-    "eyebrow": "\u2605 Real Reviews",
+    "eyebrow": "★ Real Reviews",
     "title": "Trusted by thousands of men"
    }
   },
@@ -163,28 +163,28 @@
     "p1": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Afternoon energy crashes</strong> that wreck your day."
      }
     },
     "p2": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Slow recovery</strong> from training or work stress."
      }
     },
     "p3": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Brain fog</strong> when you need to stay sharp."
      }
     },
     "p4": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Multivitamins</strong> built for women, not for men's biology."
      }
     }
@@ -205,7 +205,7 @@
     "eyebrow": "The Problem",
     "title_pre": "Built different,",
     "title_highlight": "fuelled the same?",
-    "desc": "Modern men face their own biology \u2014 testosterone, recovery, focus. But most multivitamins are generic, poorly absorbed, and not built for the male system. His-Biotics\u2122 closes that gap."
+    "desc": "Modern men face their own biology — testosterone, recovery, focus. But most multivitamins are generic, poorly absorbed, and not built for the male system. His-Biotics™ closes that gap."
    }
   },
   "solution": {
@@ -214,28 +214,28 @@
     "s1": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Zinc, magnesium, B-complex</strong> \u2014 the male-essential trio."
+      "icon": "✓",
+      "text": "<strong>Zinc, magnesium, B-complex</strong> — the male-essential trio."
      }
     },
     "s2": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>16 probiotic strains</strong> for gut, immunity, and performance."
      }
     },
     "s3": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Velobiotics\u2122 MEP technology</strong> \u2014 1000\u00d7 more reach you alive."
+      "icon": "✓",
+      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
      }
     },
     "s4": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>One capsule daily</strong>. Doctor-formulated. Lab-tested every batch."
      }
     }
@@ -251,12 +251,12 @@
     "brand_primary": "#0a3d3d",
     "brand_tint": "#e8f3f1",
     "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/1_transparent_Realistic_3D_product_mockup_5.png?v=1775328665",
-    "tag_value": "1000\u00d7",
+    "tag_value": "1000×",
     "tag_label": "More Probiotics Delivered",
     "eyebrow": "The Solution",
     "title_pre": "Meet",
-    "title_highlight": "His-Biotics\u2122 Original.",
-    "desc": "The all-in-one men's daily. Zinc, magnesium, B-complex + 16 clinically researched probiotic strains, delivered by Velobiotics\u2122 technology \u2014 1000\u00d7 more reach your gut alive, where they fuel energy, focus, recovery, and performance."
+    "title_highlight": "His-Biotics™ Original.",
+    "desc": "The all-in-one men's daily. Zinc, magnesium, B-complex + 16 clinically researched probiotic strains, delivered by Velobiotics™ technology — 1000× more reach your gut alive, where they fuel energy, focus, recovery, and performance."
    }
   },
   "related": {
@@ -266,7 +266,7 @@
      "type": "product",
      "settings": {
       "product_handle": "his-biotics-probiotics-sport-multivitamin-capsules",
-      "brand": "His-Biotics\u2122",
+      "brand": "His-Biotics™",
       "rating": "4.8",
       "reviews": "150+"
      }
@@ -275,7 +275,7 @@
      "type": "product",
      "settings": {
       "product_handle": "his-biotics-probiotics-ageless-50-multivitamin",
-      "brand": "His-Biotics\u2122",
+      "brand": "His-Biotics™",
       "rating": "4.7",
       "reviews": "120+"
      }
@@ -284,7 +284,7 @@
      "type": "product",
      "settings": {
       "product_handle": "his-biotics-probiotics-testo-boost",
-      "brand": "His-Biotics\u2122",
+      "brand": "His-Biotics™",
       "rating": "4.8",
       "reviews": "180+"
      }
@@ -301,7 +301,7 @@
     "brand_tint": "#e8f3f1",
     "tint": false,
     "eyebrow": "Complete the Stack",
-    "title": "More from the His-Biotics\u2122 range",
+    "title": "More from the His-Biotics™ range",
     "sub": "Customised support for every season of a modern man's life."
    }
   },
@@ -311,7 +311,7 @@
     "b1": {
      "type": "feat",
      "settings": {
-      "icon": "\u26a1",
+      "icon": "⚡",
       "name": "Sustained Energy",
       "desc": "No crashes. Steady focus, vitality, drive."
      }
@@ -319,7 +319,7 @@
     "b2": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udcaa",
+      "icon": "💪",
       "name": "Faster Recovery",
       "desc": "Hit the gym, recover quick, repeat."
      }
@@ -327,15 +327,15 @@
     "b3": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\udde0",
+      "icon": "🧠",
       "name": "Sharp Focus",
-      "desc": "Banish brain fog \u2014 sharper thinking, better performance."
+      "desc": "Banish brain fog — sharper thinking, better performance."
      }
     },
     "b4": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
+      "icon": "🛡️",
       "name": "Immunity & Gut",
       "desc": "Stronger immune defence, calmer gut."
      }
@@ -343,7 +343,7 @@
     "b5": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\ude7a",
+      "icon": "🩺",
       "name": "Doctor-Formulated",
       "desc": "Built for the male system by medical specialists."
      }
@@ -351,7 +351,7 @@
     "b6": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "name": "100% Natural",
       "desc": "Vegan, halaal-friendly, no fillers."
      }
@@ -370,8 +370,8 @@
     "brand_tint": "#e8f3f1",
     "eyebrow": "Key Benefits",
     "title_pre": "Why",
-    "title_highlight": "His-Biotics\u2122",
-    "sub": "Six reasons men across South Africa and the world choose His-Biotics\u2122 as their daily edge."
+    "title_highlight": "His-Biotics™",
+    "sub": "Six reasons men across South Africa and the world choose His-Biotics™ as their daily edge."
    }
   },
   "how": {
@@ -397,7 +397,7 @@
     "i1": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udc8e",
+      "icon": "💎",
       "name": "Zinc + Magnesium + B-Complex",
       "amount": "Full daily",
       "desc": "The male-essential trio for energy, testosterone support, and recovery."
@@ -406,7 +406,7 @@
     "i2": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "name": "16-Strain Probiotic Blend",
       "amount": "10 Billion CFU",
       "desc": "Strains for gut, immunity, and performance."
@@ -415,16 +415,16 @@
     "i3": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
-      "name": "Velobiotics\u2122 MEP Coating",
+      "icon": "🛡️",
+      "name": "Velobiotics™ MEP Coating",
       "amount": "Patented",
-      "desc": "Supercritical CO\u2082 microencapsulation \u2014 1000\u00d7 more survive."
+      "desc": "Supercritical CO₂ microencapsulation — 1000× more survive."
      }
     },
     "i4": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83c\udf3e",
+      "icon": "🌾",
       "name": "Prebiotic Fibre",
       "amount": "Inulin",
       "desc": "Feeds your good bacteria so they thrive long-term."
@@ -433,7 +433,7 @@
     "i5": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "name": "Clean Capsule Shell",
       "amount": "Vegan HPMC",
       "desc": "No gelatin, no fillers, no allergens. Halaal-friendly."
@@ -442,10 +442,10 @@
     "i6": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udeab",
+      "icon": "🚫",
       "name": "Free From",
       "amount": "Always",
-      "desc": "Gluten \u00b7 soy \u00b7 dairy \u00b7 artificial colours \u00b7 preservatives \u00b7 GMO."
+      "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO."
      }
     }
    },
@@ -467,7 +467,7 @@
     "sub": "Six clean actives. No proprietary blends. Full transparency.",
     "facts_image_url": "",
     "facts_label": "Supplement facts",
-    "facts_foot": "Lab-tested \u00b7 Doctor-formulated \u00b7 Full transparency"
+    "facts_foot": "Lab-tested · Doctor-formulated · Full transparency"
    }
   },
   "confidence": {
@@ -523,7 +523,7 @@
     "eyebrow": "Real results",
     "title_pre": "Trusted for",
     "title_highlight": "Daily Performance",
-    "sub": "What men report after 4 weeks of daily His-Biotics\u2122 use.",
+    "sub": "What men report after 4 weeks of daily His-Biotics™ use.",
     "caveat": "Based on a survey of 750+ verified customers. Individual results may vary."
    }
   },
@@ -534,7 +534,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-magnesium-glycinate",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.6",
       "reviews": "190+"
      }
@@ -543,7 +543,7 @@
      "type": "product",
      "settings": {
       "product_handle": "gutslim-probiotics-glp-1-booster",
-      "brand": "GutSlim\u2122",
+      "brand": "GutSlim™",
       "rating": "4.8",
       "reviews": "410+"
      }
@@ -552,7 +552,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-original-capsules-60s",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.7",
       "reviews": "260+"
      }
@@ -561,7 +561,7 @@
      "type": "product",
      "settings": {
       "product_handle": "biogain-probiotic-meal",
-      "brand": "BioGain\u2122",
+      "brand": "BioGain™",
       "rating": "4.7",
       "reviews": "180+"
      }
@@ -580,7 +580,7 @@
     "tint": true,
     "eyebrow": "Frequently Bought Together",
     "title": "Pair with the rest of your wellness stack",
-    "sub": "His-Biotics\u2122 stacks beautifully with these Velobiotics favourites."
+    "sub": "His-Biotics™ stacks beautifully with these Velobiotics favourites."
    }
   },
   "doctors": {
@@ -607,7 +607,7 @@
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
       "name": "Patented MEP Technology",
-      "desc": "Microencapsulation with Supercritical CO\u2082."
+      "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
     "d4": {
@@ -693,13 +693,13 @@
     "brand_dark": "#021212",
     "brand_tint": "#e8f3f1",
     "title": "Why We Outperform Others",
-    "sub": "Experience daily performance with our unique blend of 16 probiotic strains, male-essential nutrients, and Velobiotics\u2122 absorption technology.",
+    "sub": "Experience daily performance with our unique blend of 16 probiotic strains, male-essential nutrients, and Velobiotics™ absorption technology.",
     "col_features": "Features",
-    "col_brand": "His-Biotics\u2122",
+    "col_brand": "His-Biotics™",
     "col_b": "General Probiotic",
     "col_c": "Others",
     "cta_text": "Add to Cart",
-    "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
+    "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
    }
   },
   "judgeme": {
@@ -720,20 +720,20 @@
      "type": "q",
      "settings": {
       "question": "How long until I feel a difference?",
-      "answer": "<p>Most men feel sharper energy within 7\u201314 days. Recovery and focus benefits build over 4\u20136 weeks of consistent daily use.</p>"
+      "answer": "<p>Most men feel sharper energy within 7–14 days. Recovery and focus benefits build over 4–6 weeks of consistent daily use.</p>"
      }
     },
     "q2": {
      "type": "q",
      "settings": {
       "question": "Will this affect my testosterone?",
-      "answer": "<p>Zinc supports natural testosterone production. His-Biotics\u2122 doesn't add hormones \u2014 it provides the nutrients your body needs to support healthy levels.</p>"
+      "answer": "<p>Zinc supports natural testosterone production. His-Biotics™ doesn't add hormones — it provides the nutrients your body needs to support healthy levels.</p>"
      }
     },
     "q3": {
      "type": "q",
      "settings": {
-      "question": "Is His-Biotics\u2122 safe daily?",
+      "question": "Is His-Biotics™ safe daily?",
       "answer": "<p>Absolutely. Manufactured under GMP conditions in SAHPRA-aware facilities. Daily use is safe and recommended.</p>"
      }
     },
@@ -741,21 +741,21 @@
      "type": "q",
      "settings": {
       "question": "Can I take this with my pre-workout?",
-      "answer": "<p>Yes \u2014 they're complementary. His-Biotics\u2122 provides daily-foundation nutrients while pre-workouts give acute training stimulation.</p>"
+      "answer": "<p>Yes — they're complementary. His-Biotics™ provides daily-foundation nutrients while pre-workouts give acute training stimulation.</p>"
      }
     },
     "q5": {
      "type": "q",
      "settings": {
       "question": "Do you ship internationally?",
-      "answer": "<p>Yes. We ship globally \u2014 5\u201314 working days. Free shipping over the free-shipping threshold.</p>"
+      "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
      }
     },
     "q6": {
      "type": "q",
      "settings": {
-      "question": "What if His-Biotics\u2122 doesn't work for me?",
-      "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full \u2014 no questions asked.</p>"
+      "question": "What if His-Biotics™ doesn't work for me?",
+      "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full — no questions asked.</p>"
      }
     }
    },
@@ -779,28 +779,28 @@
     "g1": {
      "type": "g",
      "settings": {
-      "icon": "\u2705",
+      "icon": "✅",
       "text": "30-day money-back"
      }
     },
     "g2": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\ude9a",
+      "icon": "🚚",
       "text": "Ships worldwide"
      }
     },
     "g3": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\udd2c",
+      "icon": "🔬",
       "text": "Lab-tested every batch"
      }
     },
     "g4": {
      "type": "g",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "text": "100% natural"
      }
     }
@@ -818,9 +818,23 @@
     "badge": "30-day money-back guarantee",
     "title_pre": "Your Daily Edge",
     "title_highlight": "Risk-Free for 30 Days",
-    "sub": "Join the 55,000+ men who've made His-Biotics\u2122 their daily edge. If you don't feel the difference, we'll refund every cent.",
+    "sub": "Join the 55,000+ men who've made His-Biotics™ their daily edge. If you don't feel the difference, we'll refund every cent.",
     "cta_text": "Add to Cart",
     "cta_link": "#vbpForm"
+   }
+  },
+  "science_strip": {
+   "type": "vb-science-strip",
+   "settings": {
+    "kicker": "Backed by peer-reviewed science",
+    "title_pre": "Don't take our word for it.",
+    "title_highlight": "View the science.",
+    "sub": "The shielding technology in this product was studied in three peer-reviewed papers. Read what the research actually showed, in plain English.",
+    "all_text": "View the science",
+    "all_url": "/pages/what-is-microencapsulation",
+    "bg": "#f6faf5",
+    "pad_top": 40,
+    "pad_bottom": 40
    }
   }
  },
@@ -837,6 +851,7 @@
   "fbt",
   "doctors",
   "outperform",
+  "science_strip",
   "judgeme",
   "faq",
   "final"

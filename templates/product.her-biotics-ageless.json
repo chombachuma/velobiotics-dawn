@@ -15,29 +15,29 @@
     "b1": {
      "type": "benefit",
      "settings": {
-      "icon": "\u2728",
+      "icon": "✨",
       "text": "Women 50+ daily multivitamin"
      }
     },
     "b2": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83d\udcaa",
+      "icon": "💪",
       "text": "Bone & joint support"
      }
     },
     "b3": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "text": "16 probiotic strains"
      }
     },
     "b4": {
      "type": "benefit",
      "settings": {
-      "icon": "\u26a1",
-      "text": "1000\u00d7 more delivery"
+      "icon": "⚡",
+      "text": "1000× more delivery"
      }
     },
     "t1": {
@@ -83,11 +83,11 @@
     "brand_primary": "#f5908d",
     "brand_dark": "#b85a58",
     "brand_tint": "#fff5f3",
-    "brand_label": "Her-Biotics\u2122 Ageless 50+",
+    "brand_label": "Her-Biotics™ Ageless 50+",
     "rating": "4.8",
     "review_count": "120+",
-    "hook": "Vibrant after 50. Her-Biotics\u2122 Ageless 50+ combines 16 probiotic strains with calcium, vitamin D3, collagen, and CoQ10 \u2014 engineered for women's vitality in their fifties and beyond.",
-    "ship_note": "Ships worldwide \u00b7 Free shipping over the free-shipping threshold \u00b7 30-day money-back guarantee",
+    "hook": "Vibrant after 50. Her-Biotics™ Ageless 50+ combines 16 probiotic strains with calcium, vitamin D3, collagen, and CoQ10 — engineered for women's vitality in their fifties and beyond.",
+    "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
     "show_buynow": true,
     "show_testi_marquee": true
    }
@@ -100,7 +100,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Lillian+P&background=f5908d&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Lillian P.",
-      "meta": "Verified buyer \u00b7 Pretoria",
+      "meta": "Verified buyer · Pretoria",
       "quote": "Energy at 58 I haven't had in 20 years. This is real."
      }
     },
@@ -109,7 +109,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Marion+S&background=ffc0bd&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Marion S.",
-      "meta": "Verified buyer \u00b7 Cape Town",
+      "meta": "Verified buyer · Cape Town",
       "quote": "Joints quieter, skin brighter. Aging gracefully now."
      }
     },
@@ -118,7 +118,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Catherine+M&background=b85a58&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Catherine M.",
-      "meta": "Verified buyer \u00b7 3 months ago",
+      "meta": "Verified buyer · 3 months ago",
       "quote": "My doctor approved. Bone density steady, energy back."
      }
     },
@@ -127,7 +127,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Beverly+D&background=f5908d&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Beverly D.",
-      "meta": "Verified buyer \u00b7 Johannesburg",
+      "meta": "Verified buyer · Johannesburg",
       "quote": "Aging? Not anymore. Ageless 50+ keeps me thriving."
      }
     },
@@ -136,7 +136,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Susan+B&background=ffc0bd&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Susan B.",
-      "meta": "Verified buyer \u00b7 2 months ago",
+      "meta": "Verified buyer · 2 months ago",
       "quote": "At 63 I run a marathon next month. This is my fuel."
      }
     }
@@ -152,7 +152,7 @@
     "brand_primary": "#f5908d",
     "brand_dark": "#b85a58",
     "brand_tint": "#fff5f3",
-    "eyebrow": "\u2605 Real Reviews",
+    "eyebrow": "★ Real Reviews",
     "title": "Women thriving after 50"
    }
   },
@@ -162,28 +162,28 @@
     "p1": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Bone density decline</strong> accelerates after 50."
      }
     },
     "p2": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Joint stiffness</strong> from collagen and CoQ10 depletion."
      }
     },
     "p3": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Energy that fades</strong> faster than it used to."
      }
     },
     "p4": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Generic seniors' multivits</strong> that miss women's biology entirely."
      }
     }
@@ -199,7 +199,7 @@
     "brand_primary": "#f5908d",
     "brand_tint": "#fff5f3",
     "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_162404_0b3a347b-dc23-48a4-8943-52673c72933c.png",
-    "tag_value": "3\u00d7",
+    "tag_value": "3×",
     "tag_label": "Women's Bone Loss Rate After 50",
     "eyebrow": "The Problem",
     "title_pre": "50+ women need",
@@ -213,29 +213,29 @@
     "s1": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Calcium + Vitamin D3 + K2</strong> \u2014 bone density support trio."
+      "icon": "✓",
+      "text": "<strong>Calcium + Vitamin D3 + K2</strong> — bone density support trio."
      }
     },
     "s2": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Collagen peptides + CoQ10</strong> \u2014 joint, skin, cellular energy."
+      "icon": "✓",
+      "text": "<strong>Collagen peptides + CoQ10</strong> — joint, skin, cellular energy."
      }
     },
     "s3": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>16-strain probiotic blend</strong> for gut, immunity, and microbiome harmony."
      }
     },
     "s4": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Velobiotics\u2122 MEP technology</strong> \u2014 1000\u00d7 more reach you alive."
+      "icon": "✓",
+      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
      }
     }
    },
@@ -250,12 +250,12 @@
     "brand_primary": "#f5908d",
     "brand_tint": "#fff5f3",
     "image_url": "",
-    "tag_value": "1000\u00d7",
+    "tag_value": "1000×",
     "tag_label": "More Probiotics Delivered",
     "eyebrow": "The Solution",
     "title_pre": "Meet",
-    "title_highlight": "Her-Biotics\u2122 Ageless 50+.",
-    "desc": "Bone, joint, skin, energy, and gut \u2014 covered in one daily. Built for women navigating post-menopause and beyond, with the actives generic seniors' formulas miss."
+    "title_highlight": "Her-Biotics™ Ageless 50+.",
+    "desc": "Bone, joint, skin, energy, and gut — covered in one daily. Built for women navigating post-menopause and beyond, with the actives generic seniors' formulas miss."
    }
   },
   "related": {
@@ -265,7 +265,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-original-capsules-60s",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.7",
       "reviews": "950+",
       "fallback_title": "",
@@ -277,7 +277,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-probiotics-menopausal-support",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.8",
       "reviews": "180+",
       "fallback_title": "",
@@ -289,7 +289,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-probiotics-pms-pre-menstrual-support",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.7",
       "reviews": "150+",
       "fallback_title": "",
@@ -301,7 +301,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-probiotics-sport-multivitamin-capsules-60",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.6",
       "reviews": "100+",
       "fallback_title": "",
@@ -322,7 +322,7 @@
     "brand_tint": "#fff5f3",
     "tint": false,
     "eyebrow": "Complete the Stack",
-    "title": "More from the Her-Biotics\u2122 range",
+    "title": "More from the Her-Biotics™ range",
     "sub": "Customised support for every season of a woman's life."
    }
   },
@@ -332,7 +332,7 @@
     "b1": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\uddb4",
+      "icon": "🦴",
       "name": "Bone Density Support",
       "desc": "Calcium + D3 + K2 trio preserves bone strength."
      }
@@ -340,7 +340,7 @@
     "b2": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\uddb5",
+      "icon": "🦵",
       "name": "Joint Mobility",
       "desc": "Collagen peptides cushion joints, reduce stiffness."
      }
@@ -348,7 +348,7 @@
     "b3": {
      "type": "feat",
      "settings": {
-      "icon": "\u26a1",
+      "icon": "⚡",
       "name": "Cellular Energy",
       "desc": "CoQ10 fuels mitochondria for steady vitality."
      }
@@ -356,7 +356,7 @@
     "b4": {
      "type": "feat",
      "settings": {
-      "icon": "\u2728",
+      "icon": "✨",
       "name": "Glow Maintenance",
       "desc": "Collagen + biotin keep skin and hair vibrant."
      }
@@ -364,7 +364,7 @@
     "b5": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\ude7a",
+      "icon": "🩺",
       "name": "Doctor-Formulated",
       "desc": "Built by women's-health and geriatric specialists."
      }
@@ -372,7 +372,7 @@
     "b6": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "name": "100% Natural",
       "desc": "Vegan-option, halaal-friendly, no fillers."
      }
@@ -418,7 +418,7 @@
     "i1": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\uddb4",
+      "icon": "🦴",
       "name": "Calcium + Vit D3 + K2",
       "amount": "Full daily",
       "desc": "Bone density support trio. K2 directs calcium to bones, not arteries."
@@ -427,7 +427,7 @@
     "i2": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\uddec",
+      "icon": "🧬",
       "name": "Collagen Peptides",
       "amount": "2,500mg",
       "desc": "Hydrolysed Type I + III. Joint, skin, hair maintenance."
@@ -436,7 +436,7 @@
     "i3": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u26a1",
+      "icon": "⚡",
       "name": "CoQ10",
       "amount": "50mg",
       "desc": "Cellular energy and heart health. Declines fast after 50."
@@ -445,7 +445,7 @@
     "i4": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "name": "16-Strain Probiotic Blend",
       "amount": "1 Billion CFU",
       "desc": "Gut and immunity for the changing microbiome."
@@ -454,19 +454,19 @@
     "i5": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
-      "name": "Velobiotics\u2122 MEP Coating",
+      "icon": "🛡️",
+      "name": "Velobiotics™ MEP Coating",
       "amount": "Patented",
-      "desc": "Supercritical CO\u2082 microencapsulation \u2014 1000\u00d7 more survive."
+      "desc": "Supercritical CO₂ microencapsulation — 1000× more survive."
      }
     },
     "i6": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udeab",
+      "icon": "🚫",
       "name": "Free From",
       "amount": "Always",
-      "desc": "Gluten \u00b7 soy \u00b7 dairy \u00b7 artificial colours \u00b7 preservatives \u00b7 GMO."
+      "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO."
      }
     }
    },
@@ -491,7 +491,7 @@
     "facts_col_a": "Ingredient",
     "facts_col_b": "Per serving",
     "facts_caption": "% Daily Value not established. Other Ingredients: HPMC, Magnesium Stearate.",
-    "facts_foot": "Lab-tested \u00b7 Doctor-formulated \u00b7 Full transparency"
+    "facts_foot": "Lab-tested · Doctor-formulated · Full transparency"
    }
   },
   "confidence": {
@@ -558,7 +558,7 @@
      "type": "product",
      "settings": {
       "product_handle": "almasi-probiotics-collagen-peptides-powder",
-      "brand": "Almasi\u2122",
+      "brand": "Almasi™",
       "rating": "4.8",
       "reviews": "120+",
       "fallback_title": "",
@@ -570,7 +570,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-probiotics-menopausal-support",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.8",
       "reviews": "180+",
       "fallback_title": "",
@@ -582,7 +582,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-vitamin-d3-1000-iu",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.7",
       "reviews": "190+",
       "fallback_title": "",
@@ -594,7 +594,7 @@
      "type": "product",
      "settings": {
       "product_handle": "gutslim-probiotics-glp-1-booster",
-      "brand": "GutSlim\u2122",
+      "brand": "GutSlim™",
       "rating": "4.8",
       "reviews": "410+",
       "fallback_title": "",
@@ -626,16 +626,16 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Clinically Proven",
-      "desc": "Calcium + D3 + K2 \u2014 peer-reviewed for bone density."
+      "desc": "Calcium + D3 + K2 — peer-reviewed for bone density."
      }
     },
     "d2": {
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Doctor Formulated",
       "desc": "Built by women's-health specialists."
      }
@@ -644,16 +644,16 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Patented MEP Technology",
-      "desc": "Microencapsulation with Supercritical CO\u2082."
+      "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
     "d4": {
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Clean Label",
       "desc": "Vegan-option, halaal-friendly, no fillers."
      }
@@ -734,14 +734,14 @@
     "brand_tint": "#fff5f3",
     "eyebrow": "",
     "title": "Why Ageless 50+ Outperforms",
-    "sub": "Bone density trio, collagen, CoQ10, 16 probiotic strains \u2014 engineered specifically for women navigating post-menopause and beyond.",
+    "sub": "Bone density trio, collagen, CoQ10, 16 probiotic strains — engineered specifically for women navigating post-menopause and beyond.",
     "col_features": "Features",
     "col_brand": "Ageless 50+",
     "brand_logo_url": "",
     "col_b": "Generic Seniors Vit",
     "col_c": "Others",
     "cta_text": "Add to Cart",
-    "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
+    "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
    }
   },
   "judgeme": {
@@ -790,14 +790,14 @@
      "type": "q",
      "settings": {
       "question": "Do you ship internationally?",
-      "answer": "<p>Yes. We ship globally \u2014 5\u201314 working days. Free shipping over the free-shipping threshold.</p>"
+      "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
      }
     },
     "q6": {
      "type": "q",
      "settings": {
       "question": "What if it doesn't work for me?",
-      "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full \u2014 no questions asked.</p>"
+      "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full — no questions asked.</p>"
      }
     }
    },
@@ -821,28 +821,28 @@
     "g1": {
      "type": "g",
      "settings": {
-      "icon": "\u2705",
+      "icon": "✅",
       "text": "30-day money-back"
      }
     },
     "g2": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\ude9a",
+      "icon": "🚚",
       "text": "Ships worldwide"
      }
     },
     "g3": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\udd2c",
+      "icon": "🔬",
       "text": "Lab-tested every batch"
      }
     },
     "g4": {
      "type": "g",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "text": "100% natural"
      }
     }
@@ -864,6 +864,20 @@
     "cta_text": "Add to Cart",
     "cta_link": "#vbpForm"
    }
+  },
+  "science_strip": {
+   "type": "vb-science-strip",
+   "settings": {
+    "kicker": "Backed by peer-reviewed science",
+    "title_pre": "Don't take our word for it.",
+    "title_highlight": "View the science.",
+    "sub": "The shielding technology in this product was studied in three peer-reviewed papers. Read what the research actually showed, in plain English.",
+    "all_text": "View the science",
+    "all_url": "/pages/what-is-microencapsulation",
+    "bg": "#f6faf5",
+    "pad_top": 40,
+    "pad_bottom": 40
+   }
   }
  },
  "order": [
@@ -879,6 +893,7 @@
   "fbt",
   "doctors",
   "outperform",
+  "science_strip",
   "judgeme",
   "faq",
   "final"

@@ -15,29 +15,29 @@
     "b1": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83e\uddb6",
+      "icon": "🦶",
       "text": "Diabetic foot care"
      }
     },
     "b2": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "text": "Natural probiotic blend"
      }
     },
     "b3": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
+      "icon": "🛡️",
       "text": "Wound-healing support"
      }
     },
     "b4": {
      "type": "benefit",
      "settings": {
-      "icon": "\u26a1",
-      "text": "1000\u00d7 more delivery"
+      "icon": "⚡",
+      "text": "1000× more delivery"
      }
     },
     "t1": {
@@ -83,11 +83,11 @@
     "brand_primary": "#ff6b35",
     "brand_dark": "#b03515",
     "brand_tint": "#fff5ec",
-    "brand_label": "BioGain\u2122",
+    "brand_label": "BioGain™",
     "rating": "4.7",
     "review_count": "650+",
-    "hook": "Reclaim your feet. BioGain\u2122 combines targeted probiotic strains with skin-supportive nutrients for diabetic-safe foot care, wound healing, and confident, comfortable mobility.",
-    "ship_note": "Ships worldwide \u00b7 Free shipping over the free-shipping threshold \u00b7 30-day money-back guarantee",
+    "hook": "Reclaim your feet. BioGain™ combines targeted probiotic strains with skin-supportive nutrients for diabetic-safe foot care, wound healing, and confident, comfortable mobility.",
+    "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
     "show_subscription": true,
     "show_buynow": true,
     "show_testi_marquee": true
@@ -101,7 +101,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Sipho+M&background=ff6b35&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Sipho M.",
-      "meta": "Verified buyer \u00b7 Diabetic for 8yrs",
+      "meta": "Verified buyer · Diabetic for 8yrs",
       "quote": "Type 2 diabetic, BioGain has been a game-changer for my feet."
      }
     },
@@ -110,7 +110,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Beatrice+K&background=ff9a5a&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Beatrice K.",
-      "meta": "Verified buyer \u00b7 2 months ago",
+      "meta": "Verified buyer · 2 months ago",
       "quote": "No more cracking heels, no more anxiety about my feet."
      }
     },
@@ -119,7 +119,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Themba+D&background=b03515&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Themba D.",
-      "meta": "Verified buyer \u00b7 1 month ago",
+      "meta": "Verified buyer · 1 month ago",
       "quote": "Healing time on a small cut went from weeks to days."
      }
     },
@@ -128,7 +128,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Linda+V&background=ff6b35&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Linda V.",
-      "meta": "Verified buyer \u00b7 3 weeks ago",
+      "meta": "Verified buyer · 3 weeks ago",
       "quote": "My podiatrist approved it. Confidence in every step."
      }
     },
@@ -137,7 +137,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Pieter+S&background=ff9a5a&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Pieter S.",
-      "meta": "Verified buyer \u00b7 Cape Town",
+      "meta": "Verified buyer · Cape Town",
       "quote": "Daily ritual now. Feet feel softer, stronger, comfortable."
      }
     }
@@ -153,7 +153,7 @@
     "brand_primary": "#ff6b35",
     "brand_dark": "#b03515",
     "brand_tint": "#fff5ec",
-    "eyebrow": "\u2605 Real Reviews",
+    "eyebrow": "★ Real Reviews",
     "title": "Trusted by thousands"
    }
   },
@@ -163,28 +163,28 @@
     "p1": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Cracked, dry feet</strong> that refuse to heal."
      }
     },
     "p2": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
-      "text": "<strong>Slow wound healing</strong> \u2014 diabetics especially at risk."
+      "icon": "✕",
+      "text": "<strong>Slow wound healing</strong> — diabetics especially at risk."
      }
     },
     "p3": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Skin issues</strong> from poor circulation or compromised immunity."
      }
     },
     "p4": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Standard creams</strong> that mask, never heal."
      }
     }
@@ -205,7 +205,7 @@
     "eyebrow": "The Problem",
     "title_pre": "Feet are the first to",
     "title_highlight": "feel the trouble.",
-    "desc": "Diabetics and people with circulation issues face foot problems daily \u2014 cracking, infections, slow healing. Standard creams won't fix it. BioGain\u2122 supports skin and tissue from the inside out."
+    "desc": "Diabetics and people with circulation issues face foot problems daily — cracking, infections, slow healing. Standard creams won't fix it. BioGain™ supports skin and tissue from the inside out."
    }
   },
   "solution": {
@@ -214,28 +214,28 @@
     "s1": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>Probiotic strains</strong> chosen for skin and tissue support."
      }
     },
     "s2": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>Vitamin D, biotin, zinc</strong> for skin barrier and wound healing."
      }
     },
     "s3": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Velobiotics\u2122 MEP technology</strong> \u2014 1000\u00d7 more reach you alive."
+      "icon": "✓",
+      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
      }
     },
     "s4": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>Diabetic-safe</strong>. Doctor-formulated. Lab-tested every batch."
      }
     }
@@ -251,12 +251,12 @@
     "brand_primary": "#ff6b35",
     "brand_tint": "#fff5ec",
     "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/BioGain-Strawberry.png?v=1775328669",
-    "tag_value": "1000\u00d7",
+    "tag_value": "1000×",
     "tag_label": "More Probiotics Delivered",
     "eyebrow": "The Solution",
     "title_pre": "Meet",
-    "title_highlight": "BioGain\u2122 Foot Care.",
-    "desc": "A diabetic-safe daily supplement combining skin-supportive probiotic strains with Vitamin D, biotin, zinc, and selenium \u2014 delivered by Velobiotics\u2122 technology. 1000\u00d7 more reach your tissues alive to support faster healing, softer skin, and confident steps."
+    "title_highlight": "BioGain™ Foot Care.",
+    "desc": "A diabetic-safe daily supplement combining skin-supportive probiotic strains with Vitamin D, biotin, zinc, and selenium — delivered by Velobiotics™ technology. 1000× more reach your tissues alive to support faster healing, softer skin, and confident steps."
    }
   },
   "related": {
@@ -266,7 +266,7 @@
      "type": "product",
      "settings": {
       "product_handle": "biogain-probiotic-meal",
-      "brand": "BioGain\u2122",
+      "brand": "BioGain™",
       "rating": "4.7",
       "reviews": "180+"
      }
@@ -275,7 +275,7 @@
      "type": "product",
      "settings": {
       "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
-      "brand": "His-Biotics\u2122",
+      "brand": "His-Biotics™",
       "rating": "4.7",
       "reviews": "210+"
      }
@@ -284,7 +284,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-original-capsules-60s",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.7",
       "reviews": "260+"
      }
@@ -293,7 +293,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-magnesium-glycinate",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.6",
       "reviews": "190+"
      }
@@ -311,7 +311,7 @@
     "brand_tint": "#fff5ec",
     "tint": false,
     "eyebrow": "Complete the Care",
-    "title": "More from the BioGain\u2122 range",
+    "title": "More from the BioGain™ range",
     "sub": "Comprehensive foot and skin care for diabetic-safe daily wellness."
    }
   },
@@ -321,7 +321,7 @@
     "b1": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\uddb6",
+      "icon": "🦶",
       "name": "Soft, Crack-Free Feet",
       "desc": "Targets the root cause of dry, cracked skin."
      }
@@ -329,7 +329,7 @@
     "b2": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\ude79",
+      "icon": "🩹",
       "name": "Faster Wound Healing",
       "desc": "Supports the body's natural healing pathways."
      }
@@ -337,7 +337,7 @@
     "b3": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
+      "icon": "🛡️",
       "name": "Diabetic-Safe",
       "desc": "Built specifically for diabetics and compromised circulation."
      }
@@ -345,7 +345,7 @@
     "b4": {
      "type": "feat",
      "settings": {
-      "icon": "\u2728",
+      "icon": "✨",
       "name": "Healthier Skin Barrier",
       "desc": "Strengthens skin integrity for fewer infections."
      }
@@ -353,7 +353,7 @@
     "b5": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\ude7a",
+      "icon": "🩺",
       "name": "Doctor-Formulated",
       "desc": "Built with podiatry and diabetic-care guidance."
      }
@@ -361,7 +361,7 @@
     "b6": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "name": "100% Natural",
       "desc": "Vegan, halaal-friendly, no fillers."
      }
@@ -380,8 +380,8 @@
     "brand_tint": "#fff5ec",
     "eyebrow": "Key Benefits",
     "title_pre": "Why",
-    "title_highlight": "BioGain\u2122",
-    "sub": "Six reasons people across South Africa and the world choose BioGain\u2122 for daily foot and skin support."
+    "title_highlight": "BioGain™",
+    "sub": "Six reasons people across South Africa and the world choose BioGain™ for daily foot and skin support."
    }
   },
   "how": {
@@ -408,7 +408,7 @@
     "i1": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "name": "Skin-Support Probiotics",
       "amount": "10 Billion CFU",
       "desc": "Strains chosen for skin barrier and tissue support."
@@ -417,7 +417,7 @@
     "i2": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udc8e",
+      "icon": "💎",
       "name": "Vitamin D + Biotin + Zinc",
       "amount": "Full daily",
       "desc": "The skin-and-wound-healing trio."
@@ -426,16 +426,16 @@
     "i3": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
-      "name": "Velobiotics\u2122 MEP Coating",
+      "icon": "🛡️",
+      "name": "Velobiotics™ MEP Coating",
       "amount": "Patented",
-      "desc": "Supercritical CO\u2082 microencapsulation \u2014 1000\u00d7 more survive."
+      "desc": "Supercritical CO₂ microencapsulation — 1000× more survive."
      }
     },
     "i4": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83c\udf3e",
+      "icon": "🌾",
       "name": "Selenium + Vitamin E",
       "amount": "Antioxidant duo",
       "desc": "Protects skin cells from oxidative damage."
@@ -444,7 +444,7 @@
     "i5": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "name": "Clean Capsule Shell",
       "amount": "Vegan HPMC",
       "desc": "No gelatin, no fillers, no allergens. Halaal-friendly."
@@ -453,10 +453,10 @@
     "i6": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udeab",
+      "icon": "🚫",
       "name": "Free From",
       "amount": "Always",
-      "desc": "Gluten \u00b7 soy \u00b7 dairy \u00b7 artificial colours \u00b7 preservatives \u00b7 GMO."
+      "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO."
      }
     }
    },
@@ -478,7 +478,7 @@
     "sub": "Six clean actives. No proprietary blends. Full transparency.",
     "facts_image_url": "",
     "facts_label": "Supplement facts",
-    "facts_foot": "Lab-tested \u00b7 Doctor-formulated \u00b7 Diabetic-safe"
+    "facts_foot": "Lab-tested · Doctor-formulated · Diabetic-safe"
    }
   },
   "confidence": {
@@ -534,7 +534,7 @@
     "eyebrow": "Real results",
     "title_pre": "Trusted for",
     "title_highlight": "Daily Comfort",
-    "sub": "What customers report after 4 weeks of daily BioGain\u2122 use.",
+    "sub": "What customers report after 4 weeks of daily BioGain™ use.",
     "caveat": "Based on a survey of 650+ verified customers. Individual results may vary. Always consult your healthcare provider if diabetic."
    }
   },
@@ -545,7 +545,7 @@
      "type": "product",
      "settings": {
       "product_handle": "gutslim-probiotics-glp-1-booster",
-      "brand": "GutSlim\u2122",
+      "brand": "GutSlim™",
       "rating": "4.8",
       "reviews": "410+"
      }
@@ -554,7 +554,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-magnesium-glycinate",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.6",
       "reviews": "190+"
      }
@@ -563,7 +563,7 @@
      "type": "product",
      "settings": {
       "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
-      "brand": "His-Biotics\u2122",
+      "brand": "His-Biotics™",
       "rating": "4.7",
       "reviews": "210+"
      }
@@ -572,7 +572,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-original-capsules-60s",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.7",
       "reviews": "260+"
      }
@@ -591,7 +591,7 @@
     "tint": true,
     "eyebrow": "Frequently Bought Together",
     "title": "Pair with the rest of your wellness stack",
-    "sub": "BioGain\u2122 stacks beautifully with these Velobiotics favourites."
+    "sub": "BioGain™ stacks beautifully with these Velobiotics favourites."
    }
   },
   "doctors": {
@@ -618,7 +618,7 @@
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
       "name": "Patented MEP Technology",
-      "desc": "Microencapsulation with Supercritical CO\u2082."
+      "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
     "d4": {
@@ -706,11 +706,11 @@
     "title": "Why We Outperform Others",
     "sub": "Experience diabetic-safe daily foot and skin care with our unique blend of probiotic strains and skin-supportive nutrients.",
     "col_features": "Features",
-    "col_brand": "BioGain\u2122",
+    "col_brand": "BioGain™",
     "col_b": "General Probiotic",
     "col_c": "Others",
     "cta_text": "Add to Cart",
-    "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
+    "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
    }
   },
   "judgeme": {
@@ -730,43 +730,43 @@
     "q1": {
      "type": "q",
      "settings": {
-      "question": "Is BioGain\u2122 safe for diabetics?",
-      "answer": "<p>Yes \u2014 diabetic-safe formulation. Always check with your healthcare provider before starting any new supplement when managing diabetes.</p>"
+      "question": "Is BioGain™ safe for diabetics?",
+      "answer": "<p>Yes — diabetic-safe formulation. Always check with your healthcare provider before starting any new supplement when managing diabetes.</p>"
      }
     },
     "q2": {
      "type": "q",
      "settings": {
       "question": "How long until I see results?",
-      "answer": "<p>Most customers see softer skin within 2 weeks. Full wound-healing and tissue benefits build over 4\u20136 weeks of consistent daily use.</p>"
+      "answer": "<p>Most customers see softer skin within 2 weeks. Full wound-healing and tissue benefits build over 4–6 weeks of consistent daily use.</p>"
      }
     },
     "q3": {
      "type": "q",
      "settings": {
-      "question": "Is BioGain\u2122 safe daily?",
+      "question": "Is BioGain™ safe daily?",
       "answer": "<p>Absolutely. Manufactured under GMP conditions in SAHPRA-aware facilities. Daily use is safe and recommended.</p>"
      }
     },
     "q4": {
      "type": "q",
      "settings": {
-      "question": "Can I use this with the BioGain\u2122 cream?",
-      "answer": "<p>Yes \u2014 they're designed to work together. The capsule supports from the inside, the cream from the outside.</p>"
+      "question": "Can I use this with the BioGain™ cream?",
+      "answer": "<p>Yes — they're designed to work together. The capsule supports from the inside, the cream from the outside.</p>"
      }
     },
     "q5": {
      "type": "q",
      "settings": {
       "question": "Do you ship internationally?",
-      "answer": "<p>Yes. We ship globally \u2014 5\u201314 working days. Free shipping over the free-shipping threshold.</p>"
+      "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
      }
     },
     "q6": {
      "type": "q",
      "settings": {
-      "question": "What if BioGain\u2122 doesn't work for me?",
-      "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full \u2014 no questions asked.</p>"
+      "question": "What if BioGain™ doesn't work for me?",
+      "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full — no questions asked.</p>"
      }
     }
    },
@@ -790,28 +790,28 @@
     "g1": {
      "type": "g",
      "settings": {
-      "icon": "\u2705",
+      "icon": "✅",
       "text": "30-day money-back"
      }
     },
     "g2": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\ude9a",
+      "icon": "🚚",
       "text": "Ships worldwide"
      }
     },
     "g3": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\udd2c",
+      "icon": "🔬",
       "text": "Lab-tested every batch"
      }
     },
     "g4": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
+      "icon": "🛡️",
       "text": "Diabetic-safe"
      }
     }
@@ -829,9 +829,23 @@
     "badge": "30-day money-back guarantee",
     "title_pre": "Reclaim Your Feet",
     "title_highlight": "Risk-Free for 30 Days",
-    "sub": "Join the 45,000+ people who've reclaimed comfortable, confident mobility with BioGain\u2122. If you don't feel the difference, we'll refund every cent.",
+    "sub": "Join the 45,000+ people who've reclaimed comfortable, confident mobility with BioGain™. If you don't feel the difference, we'll refund every cent.",
     "cta_text": "Add to Cart",
     "cta_link": "#vbpForm"
+   }
+  },
+  "science_strip": {
+   "type": "vb-science-strip",
+   "settings": {
+    "kicker": "Backed by peer-reviewed science",
+    "title_pre": "Don't take our word for it.",
+    "title_highlight": "View the science.",
+    "sub": "The shielding technology in this product was studied in three peer-reviewed papers. Read what the research actually showed, in plain English.",
+    "all_text": "View the science",
+    "all_url": "/pages/what-is-microencapsulation",
+    "bg": "#f6faf5",
+    "pad_top": 40,
+    "pad_bottom": 40
    }
   }
  },
@@ -848,6 +862,7 @@
   "fbt",
   "doctors",
   "outperform",
+  "science_strip",
   "judgeme",
   "faq",
   "final"

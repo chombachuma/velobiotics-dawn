@@ -1,40 +1,66 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-  "sections": {
-    "main": {
-      "type": "main-article",
-      "blocks": {
-        "featured_image": {
-          "type": "featured_image",
-          "settings": {
-            "image_height": "adapt"
-          }
-        },
-        "title": {
-          "type": "title",
-          "settings": {
-            "blog_show_date": true,
-            "blog_show_author": false
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        },
-        "content": {
-          "type": "content"
-        }
-      },
-      "block_order": [
-        "featured_image",
-        "title",
-        "share",
-        "content"
-      ]
+ "sections": {
+  "main": {
+   "type": "main-article",
+   "blocks": {
+    "featured_image": {
+     "type": "featured_image",
+     "settings": {
+      "image_height": "adapt"
+     }
+    },
+    "title": {
+     "type": "title",
+     "settings": {
+      "blog_show_date": true,
+      "blog_show_author": false
+     }
+    },
+    "share": {
+     "type": "share",
+     "settings": {
+      "share_label": "Share"
+     }
+    },
+    "content": {
+     "type": "content",
+     "settings": {}
     }
+   },
+   "block_order": [
+    "featured_image",
+    "title",
+    "share",
+    "content"
+   ],
+   "settings": {}
   },
-  "order": [
-    "main"
-  ]
+  "science_strip": {
+   "type": "vb-science-strip",
+   "settings": {
+    "kicker": "Backed by peer-reviewed science",
+    "title_pre": "Don't take our word for it.",
+    "title_highlight": "View the science.",
+    "sub": "Every article we write rests on the same shielding technology, studied in three peer-reviewed papers. Read the research, in plain English.",
+    "all_text": "View the science",
+    "all_url": "/pages/what-is-microencapsulation",
+    "bg": "#f6faf5",
+    "pad_top": 48,
+    "pad_bottom": 48
+   }
+  }
+ },
+ "order": [
+  "main",
+  "science_strip"
+ ]
 }

@@ -15,29 +15,29 @@
     "b1": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83d\udce6",
+      "icon": "📦",
       "text": "Complete 21-day system"
      }
     },
     "b2": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83d\udd25",
+      "icon": "🔥",
       "text": "GLP-1 + Tummy Toner + Shake"
      }
     },
     "b3": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83d\udcb0",
+      "icon": "💰",
       "text": "Save 25% vs buying separately"
      }
     },
     "b4": {
      "type": "benefit",
      "settings": {
-      "icon": "\u26a1",
-      "text": "1000\u00d7 more delivery"
+      "icon": "⚡",
+      "text": "1000× more delivery"
      }
     },
     "t1": {
@@ -83,11 +83,11 @@
     "brand_primary": "#ffa500",
     "brand_dark": "#b25800",
     "brand_tint": "#fff8eb",
-    "brand_label": "21-Day GutSlim\u2122 Pack",
+    "brand_label": "21-Day GutSlim™ Pack",
     "rating": "4.9",
     "review_count": "320+",
-    "hook": "The complete 21-day weight-management system. GutSlim\u2122 GLP-1 Booster + Tummy Toner + Diet Shake \u2014 designed to reset your gut, manage your appetite, and burn fat. Save 25% vs buying separately.",
-    "ship_note": "Ships worldwide \u00b7 Free shipping over the free-shipping threshold \u00b7 30-day money-back guarantee",
+    "hook": "The complete 21-day weight-management system. GutSlim™ GLP-1 Booster + Tummy Toner + Diet Shake — designed to reset your gut, manage your appetite, and burn fat. Save 25% vs buying separately.",
+    "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
     "tier_unit": "Pack",
     "tier_unit_plural": "Packs",
     "show_buynow": true,
@@ -102,7 +102,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Bongiwe+M&background=FFA500&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Bongiwe M.",
-      "meta": "Verified buyer \u00b7 Johannesburg",
+      "meta": "Verified buyer · Johannesburg",
       "quote": "21-Day Pack changed my life. Lost 6kg, kept it off, energy through the roof."
      }
     },
@@ -111,7 +111,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Charl+D&background=ffc266&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Charl D.",
-      "meta": "Verified buyer \u00b7 2 months ago",
+      "meta": "Verified buyer · 2 months ago",
       "quote": "My whole life reset. Sleep better, eat smarter, feel lighter."
      }
     },
@@ -120,7 +120,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Naseema+P&background=b25800&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Naseema P.",
-      "meta": "Verified buyer \u00b7 1 month ago",
+      "meta": "Verified buyer · 1 month ago",
       "quote": "Everything you need, simplified. No guessing what to take when."
      }
     },
@@ -129,7 +129,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Hennie+V&background=FFA500&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Hennie V.",
-      "meta": "Verified buyer \u00b7 3 weeks ago",
+      "meta": "Verified buyer · 3 weeks ago",
       "quote": "Worth every cent. Best decision of my year."
      }
     },
@@ -138,7 +138,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Bridget+K&background=ffc266&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Bridget K.",
-      "meta": "Verified buyer \u00b7 Cape Town",
+      "meta": "Verified buyer · Cape Town",
       "quote": "21 days felt like a real transformation. I'll restock for sure."
      }
     }
@@ -154,7 +154,7 @@
     "brand_primary": "#ffa500",
     "brand_dark": "#b25800",
     "brand_tint": "#fff8eb",
-    "eyebrow": "\u2605 Real Reviews",
+    "eyebrow": "★ Real Reviews",
     "title": "Real 21-day transformations"
    }
   },
@@ -164,29 +164,29 @@
     "p1": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
-      "text": "<strong>Trying products separately</strong> \u2014 overspending, undercommitted."
+      "icon": "✕",
+      "text": "<strong>Trying products separately</strong> — overspending, undercommitted."
      }
     },
     "p2": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Half-measures</strong> that never deliver real weight loss."
      }
     },
     "p3": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Cravings still spiking</strong> when one product alone can't handle it."
      }
     },
     "p4": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
-      "text": "<strong>No clear roadmap</strong> \u2014 what to take, when, how long?"
+      "icon": "✕",
+      "text": "<strong>No clear roadmap</strong> — what to take, when, how long?"
      }
     }
    },
@@ -201,12 +201,12 @@
     "brand_primary": "#ffa500",
     "brand_tint": "#fff8eb",
     "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260531_162315_7f195fc2-1e54-4513-8602-756d2cb222b6.png",
-    "tag_value": "3\u00d7",
+    "tag_value": "3×",
     "tag_label": "More Effective Than Single Products",
     "eyebrow": "The Problem",
     "title_pre": "One product isn't",
     "title_highlight": "the full picture.",
-    "desc": "Weight management has three pillars \u2014 appetite control, fat metabolism, and meal quality. Single-product solutions miss the rest. The 21-Day Pack covers all three for compound transformation."
+    "desc": "Weight management has three pillars — appetite control, fat metabolism, and meal quality. Single-product solutions miss the rest. The 21-Day Pack covers all three for compound transformation."
    }
   },
   "solution": {
@@ -215,28 +215,28 @@
     "s1": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>GLP-1 Booster</strong> for appetite control and gut reset."
      }
     },
     "s2": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>Tummy Toner</strong> for belly-fat burn and visible toning."
      }
     },
     "s3": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>Diet Shake</strong> for clean meal replacement and protein."
      }
     },
     "s4": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>21-day protocol</strong> that walks you through every step."
      }
     }
@@ -256,8 +256,8 @@
     "tag_label": "Savings vs Buying Separately",
     "eyebrow": "The Solution",
     "title_pre": "Meet the",
-    "title_highlight": "21-Day GutSlim\u2122 Pack.",
-    "desc": "Three GutSlim\u2122 products bundled at 25% off \u2014 backed by a proven 21-day protocol. Reset your gut, control your cravings, burn fat, and watch the scale move."
+    "title_highlight": "21-Day GutSlim™ Pack.",
+    "desc": "Three GutSlim™ products bundled at 25% off — backed by a proven 21-day protocol. Reset your gut, control your cravings, burn fat, and watch the scale move."
    }
   },
   "related": {
@@ -267,7 +267,7 @@
      "type": "product",
      "settings": {
       "product_handle": "gutslim-probiotics-glp-1-booster",
-      "brand": "GutSlim\u2122",
+      "brand": "GutSlim™",
       "rating": "4.8",
       "reviews": "1200+",
       "fallback_title": "",
@@ -279,7 +279,7 @@
      "type": "product",
      "settings": {
       "product_handle": "gutslim-probiotics-tummy-toner",
-      "brand": "GutSlim\u2122",
+      "brand": "GutSlim™",
       "rating": "4.7",
       "reviews": "410+",
       "fallback_title": "",
@@ -291,7 +291,7 @@
      "type": "product",
      "settings": {
       "product_handle": "gutslim-probiotics-fat-burner",
-      "brand": "GutSlim\u2122",
+      "brand": "GutSlim™",
       "rating": "4.8",
       "reviews": "210+",
       "fallback_title": "",
@@ -303,7 +303,7 @@
      "type": "product",
      "settings": {
       "product_handle": "gutslim-probiotics-supergreens",
-      "brand": "GutSlim\u2122",
+      "brand": "GutSlim™",
       "rating": "4.6",
       "reviews": "150+",
       "fallback_title": "",
@@ -315,7 +315,7 @@
      "type": "product",
      "settings": {
       "product_handle": "gutslim-probiotics-diet-shake",
-      "brand": "GutSlim\u2122",
+      "brand": "GutSlim™",
       "rating": "4.7",
       "reviews": "140+",
       "fallback_title": "",
@@ -338,7 +338,7 @@
     "tint": false,
     "eyebrow": "What's Inside",
     "title": "Three products. One mission.",
-    "sub": "The GutSlim\u2122 products in your 21-Day Pack."
+    "sub": "The GutSlim™ products in your 21-Day Pack."
    }
   },
   "benefits": {
@@ -347,7 +347,7 @@
     "b1": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udce6",
+      "icon": "📦",
       "name": "Everything In One Box",
       "desc": "No guessing. No overspend. The complete 21-day system."
      }
@@ -355,7 +355,7 @@
     "b2": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udcb0",
+      "icon": "💰",
       "name": "25% Savings",
       "desc": "Three flagship products bundled at a quarter off."
      }
@@ -363,7 +363,7 @@
     "b3": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\uddd3\ufe0f",
+      "icon": "🗓️",
       "name": "21-Day Protocol",
       "desc": "Step-by-step daily guide included. No confusion."
      }
@@ -371,15 +371,15 @@
     "b4": {
      "type": "feat",
      "settings": {
-      "icon": "\u2696\ufe0f",
+      "icon": "⚖️",
       "name": "Compound Results",
-      "desc": "Three actives, three angles \u2014 appetite, fat, nutrition."
+      "desc": "Three actives, three angles — appetite, fat, nutrition."
      }
     },
     "b5": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\ude7a",
+      "icon": "🩺",
       "name": "Doctor-Designed",
       "desc": "Built and validated by medical doctors and nutritionists."
      }
@@ -387,7 +387,7 @@
     "b6": {
      "type": "feat",
      "settings": {
-      "icon": "\u2705",
+      "icon": "✅",
       "name": "Risk-Free",
       "desc": "30-day money-back if you don't see results."
      }
@@ -407,7 +407,7 @@
     "eyebrow": "Key Benefits",
     "title_pre": "Why the",
     "title_highlight": "21-Day Pack",
-    "sub": "Six reasons this is GutSlim\u2122's most popular kit for serious results."
+    "sub": "Six reasons this is GutSlim™'s most popular kit for serious results."
    }
   },
   "how": {
@@ -416,7 +416,7 @@
     "h1": {
      "type": "step",
      "settings": {
-      "icon": "\ud83d\udce6",
+      "icon": "📦",
       "name": "Receive Your Pack",
       "desc": "Three products + 21-day protocol guide."
      }
@@ -424,7 +424,7 @@
     "h2": {
      "type": "step",
      "settings": {
-      "icon": "\ud83e\udd64",
+      "icon": "🥤",
       "name": "Days 1-7: Reset",
       "desc": "Diet Shake at breakfast. GLP-1 Booster daily. Tummy Toner kicks in."
      }
@@ -432,7 +432,7 @@
     "h3": {
      "type": "step",
      "settings": {
-      "icon": "\ud83d\udd25",
+      "icon": "🔥",
       "name": "Days 8-21: Transform",
       "desc": "Stack all three. Watch energy rise and weight drop steadily."
      }
@@ -440,7 +440,7 @@
     "h4": {
      "type": "step",
      "settings": {
-      "icon": "\ud83c\udfc6",
+      "icon": "🏆",
       "name": "Day 21+: Maintain",
       "desc": "Continue with GLP-1 Booster as your daily anchor."
      }
@@ -467,7 +467,7 @@
     "i1": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udd25",
+      "icon": "🔥",
       "name": "Natural GLP-1 Booster",
       "amount": "30 capsules",
       "desc": "Plant-derived activator of your body's GLP-1 pathway."
@@ -476,7 +476,7 @@
     "i2": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udcaa",
+      "icon": "💪",
       "name": "Tummy Toner",
       "amount": "30 capsules",
       "desc": "CLA + L-carnitine + green tea for belly fat burn."
@@ -485,7 +485,7 @@
     "i3": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\udd64",
+      "icon": "🥤",
       "name": "Diet Shake",
       "amount": "21 servings",
       "desc": "20g protein + 16 probiotic strains + 22 vitamins."
@@ -494,7 +494,7 @@
     "i4": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udcd6",
+      "icon": "📖",
       "name": "21-Day Protocol Guide",
       "amount": "Included",
       "desc": "Daily plan, meal suggestions, hydration targets."
@@ -503,19 +503,19 @@
     "i5": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
-      "name": "Velobiotics\u2122 MEP Coating",
+      "icon": "🛡️",
+      "name": "Velobiotics™ MEP Coating",
       "amount": "Across all 3",
-      "desc": "1000\u00d7 more probiotics reach your gut alive."
+      "desc": "1000× more probiotics reach your gut alive."
      }
     },
     "i6": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udeab",
+      "icon": "🚫",
       "name": "Free From",
       "amount": "Always",
-      "desc": "Gluten \u00b7 soy \u00b7 dairy \u00b7 artificial colours \u00b7 preservatives \u00b7 GMO."
+      "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO."
      }
     }
    },
@@ -540,7 +540,7 @@
     "facts_col_a": "Ingredient",
     "facts_col_b": "Per serving",
     "facts_caption": "% Daily Value not established. Other Ingredients: HPMC, Magnesium Stearate.",
-    "facts_foot": "Lab-tested \u00b7 Doctor-formulated \u00b7 Full transparency"
+    "facts_foot": "Lab-tested · Doctor-formulated · Full transparency"
    }
   },
   "confidence": {
@@ -607,7 +607,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-original-capsules-60s",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.7",
       "reviews": "260+",
       "fallback_title": "",
@@ -619,7 +619,7 @@
      "type": "product",
      "settings": {
       "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
-      "brand": "His-Biotics\u2122",
+      "brand": "His-Biotics™",
       "rating": "4.7",
       "reviews": "750+",
       "fallback_title": "",
@@ -631,7 +631,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-magnesium-glycinate",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.6",
       "reviews": "190+",
       "fallback_title": "",
@@ -643,7 +643,7 @@
      "type": "product",
      "settings": {
       "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
-      "brand": "Femina\u2122",
+      "brand": "Femina™",
       "rating": "4.8",
       "reviews": "1300+",
       "fallback_title": "",
@@ -675,7 +675,7 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Clinically Proven Strains",
       "desc": "16 strains across all 3 products."
      }
@@ -684,7 +684,7 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Doctor Designed",
       "desc": "21-day protocol built by medical doctors."
      }
@@ -693,16 +693,16 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Patented MEP Technology",
-      "desc": "Microencapsulation with Supercritical CO\u2082."
+      "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
     "d4": {
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Clean Label",
       "desc": "Vegan, halaal-friendly, no fillers."
      }
@@ -783,14 +783,14 @@
     "brand_tint": "#fff8eb",
     "eyebrow": "",
     "title": "Why the 21-Day Pack Outperforms",
-    "sub": "Three flagship GutSlim\u2122 products + a doctor-designed roadmap, all at 25% off vs separate purchase. Built for serious transformation.",
+    "sub": "Three flagship GutSlim™ products + a doctor-designed roadmap, all at 25% off vs separate purchase. Built for serious transformation.",
     "col_features": "Features",
     "col_brand": "21-Day Pack",
     "brand_logo_url": "",
     "col_b": "Single Product",
     "col_c": "Generic Bundles",
     "cta_text": "Add to Cart",
-    "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
+    "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
    }
   },
   "judgeme": {
@@ -839,14 +839,14 @@
      "type": "q",
      "settings": {
       "question": "Do you ship internationally?",
-      "answer": "<p>Yes. We ship globally \u2014 5\u201314 working days. Free shipping over the free-shipping threshold.</p>"
+      "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
      }
     },
     "q6": {
      "type": "q",
      "settings": {
       "question": "What if it doesn't work for me?",
-      "answer": "<p>If you don't see results in 30 days, we'll refund you in full \u2014 no questions asked.</p>"
+      "answer": "<p>If you don't see results in 30 days, we'll refund you in full — no questions asked.</p>"
      }
     }
    },
@@ -870,28 +870,28 @@
     "g1": {
      "type": "g",
      "settings": {
-      "icon": "\u2705",
+      "icon": "✅",
       "text": "30-day money-back"
      }
     },
     "g2": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\ude9a",
+      "icon": "🚚",
       "text": "Ships worldwide"
      }
     },
     "g3": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\udd2c",
+      "icon": "🔬",
       "text": "Lab-tested every batch"
      }
     },
     "g4": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\udcb0",
+      "icon": "💰",
       "text": "25% bundle savings"
      }
     }
@@ -913,6 +913,20 @@
     "cta_text": "Add to Cart",
     "cta_link": "#vbpForm"
    }
+  },
+  "science_strip": {
+   "type": "vb-science-strip",
+   "settings": {
+    "kicker": "Backed by peer-reviewed science",
+    "title_pre": "Don't take our word for it.",
+    "title_highlight": "View the science.",
+    "sub": "The shielding technology in this product was studied in three peer-reviewed papers. Read what the research actually showed, in plain English.",
+    "all_text": "View the science",
+    "all_url": "/pages/what-is-microencapsulation",
+    "bg": "#f6faf5",
+    "pad_top": 40,
+    "pad_bottom": 40
+   }
   }
  },
  "order": [
@@ -928,6 +942,7 @@
   "fbt",
   "doctors",
   "outperform",
+  "science_strip",
   "judgeme",
   "faq",
   "final"

@@ -15,29 +15,29 @@
     "b1": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83d\udcaa",
+      "icon": "💪",
       "text": "Men's sport multivitamin"
      }
     },
     "b2": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83d\udd25",
+      "icon": "🔥",
       "text": "Recovery + strength"
      }
     },
     "b3": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "text": "16 probiotic strains"
      }
     },
     "b4": {
      "type": "benefit",
      "settings": {
-      "icon": "\u26a1",
-      "text": "1000\u00d7 more delivery"
+      "icon": "⚡",
+      "text": "1000× more delivery"
      }
     },
     "t1": {
@@ -83,11 +83,11 @@
     "brand_primary": "#0a3d3d",
     "brand_dark": "#021212",
     "brand_tint": "#e8f3f1",
-    "brand_label": "His-Biotics\u2122 Sport",
+    "brand_label": "His-Biotics™ Sport",
     "rating": "4.8",
     "review_count": "150+",
-    "hook": "Train hard. Recover harder. His-Biotics\u2122 Sport combines 16 probiotic strains with BCAAs, creatine, electrolytes, and Vit D3 \u2014 built for active men's biology.",
-    "ship_note": "Ships worldwide \u00b7 Free shipping over the free-shipping threshold \u00b7 30-day money-back guarantee",
+    "hook": "Train hard. Recover harder. His-Biotics™ Sport combines 16 probiotic strains with BCAAs, creatine, electrolytes, and Vit D3 — built for active men's biology.",
+    "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
     "show_buynow": true,
     "show_testi_marquee": true
    }
@@ -100,7 +100,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Marco+N&background=0a3d3d&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Marco N.",
-      "meta": "Verified buyer \u00b7 Pretoria",
+      "meta": "Verified buyer · Pretoria",
       "quote": "Recovery cut in half. I train 6 days now, feel fresh."
      }
     },
@@ -109,7 +109,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Sipho+K&background=1c5856&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Sipho K.",
-      "meta": "Verified buyer \u00b7 2 months ago",
+      "meta": "Verified buyer · 2 months ago",
       "quote": "PRs every month now. Best men's sport vit I've used."
      }
     },
@@ -118,7 +118,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Pieter+V&background=021212&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Pieter V.",
-      "meta": "Verified buyer \u00b7 Johannesburg",
+      "meta": "Verified buyer · Johannesburg",
       "quote": "Strength up, fatigue down. The trio of creatine + BCAAs + probiotics works."
      }
     },
@@ -127,7 +127,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Riaan+B&background=0a3d3d&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Riaan B.",
-      "meta": "Verified buyer \u00b7 Cape Town",
+      "meta": "Verified buyer · Cape Town",
       "quote": "Best men's sport vit. Will be restocking monthly."
      }
     },
@@ -136,7 +136,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Tshepo+M&background=1c5856&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Tshepo M.",
-      "meta": "Verified buyer \u00b7 3 weeks ago",
+      "meta": "Verified buyer · 3 weeks ago",
       "quote": "Marathon training fuelled cleanly. No gut issues mid-run."
      }
     }
@@ -152,7 +152,7 @@
     "brand_primary": "#0a3d3d",
     "brand_dark": "#021212",
     "brand_tint": "#e8f3f1",
-    "eyebrow": "\u2605 Real Reviews",
+    "eyebrow": "★ Real Reviews",
     "title": "Active men, real reviews"
    }
   },
@@ -162,28 +162,28 @@
     "p1": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Slow recovery</strong> between training sessions."
      }
     },
     "p2": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Stalled strength gains</strong> despite consistent training."
      }
     },
     "p3": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Stim-heavy pre-workouts</strong> that wreck sleep."
      }
     },
     "p4": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Generic multivitamins</strong> with poor absorption."
      }
     }
@@ -213,29 +213,29 @@
     "s1": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>BCAAs + Creatine monohydrate</strong> \u2014 clinical strength + recovery actives."
+      "icon": "✓",
+      "text": "<strong>BCAAs + Creatine monohydrate</strong> — clinical strength + recovery actives."
      }
     },
     "s2": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Electrolyte + Vit D3</strong> \u2014 hydration, immunity, performance."
+      "icon": "✓",
+      "text": "<strong>Electrolyte + Vit D3</strong> — hydration, immunity, performance."
      }
     },
     "s3": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>16-strain probiotic blend</strong> for gut + immune support."
      }
     },
     "s4": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Velobiotics\u2122 MEP technology</strong> \u2014 1000\u00d7 more reach you alive."
+      "icon": "✓",
+      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
      }
     }
    },
@@ -250,12 +250,12 @@
     "brand_primary": "#0a3d3d",
     "brand_tint": "#e8f3f1",
     "image_url": "",
-    "tag_value": "1000\u00d7",
+    "tag_value": "1000×",
     "tag_label": "More Probiotics Delivered",
     "eyebrow": "The Solution",
     "title_pre": "Meet",
-    "title_highlight": "His-Biotics\u2122 Sport.",
-    "desc": "BCAAs + Creatine + electrolytes + 16 probiotic strains. Built for the active man \u2014 recovery, strength, performance, gut tolerance, all in one daily."
+    "title_highlight": "His-Biotics™ Sport.",
+    "desc": "BCAAs + Creatine + electrolytes + 16 probiotic strains. Built for the active man — recovery, strength, performance, gut tolerance, all in one daily."
    }
   },
   "related": {
@@ -265,7 +265,7 @@
      "type": "product",
      "settings": {
       "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
-      "brand": "His-Biotics\u2122",
+      "brand": "His-Biotics™",
       "rating": "4.7",
       "reviews": "750+",
       "fallback_title": "",
@@ -277,7 +277,7 @@
      "type": "product",
      "settings": {
       "product_handle": "his-biotics-probiotics-ageless-50-multivitamin",
-      "brand": "His-Biotics\u2122",
+      "brand": "His-Biotics™",
       "rating": "4.7",
       "reviews": "120+",
       "fallback_title": "",
@@ -289,7 +289,7 @@
      "type": "product",
      "settings": {
       "product_handle": "his-biotics-probiotics-testo-boost",
-      "brand": "His-Biotics\u2122",
+      "brand": "His-Biotics™",
       "rating": "4.8",
       "reviews": "180+",
       "fallback_title": "",
@@ -309,7 +309,7 @@
     "brand_tint": "#e8f3f1",
     "tint": false,
     "eyebrow": "Complete the Stack",
-    "title": "More from the His-Biotics\u2122 range",
+    "title": "More from the His-Biotics™ range",
     "sub": "Customised support for every season of a modern man's life."
    }
   },
@@ -319,7 +319,7 @@
     "b1": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udcaa",
+      "icon": "💪",
       "name": "Faster Recovery",
       "desc": "BCAAs + creatine rebuild muscle quickly."
      }
@@ -327,23 +327,23 @@
     "b2": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udd25",
+      "icon": "🔥",
       "name": "Stronger Performance",
-      "desc": "Creapure\u00ae creatine for proven strength and power."
+      "desc": "Creapure® creatine for proven strength and power."
      }
     },
     "b3": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udca7",
+      "icon": "💧",
       "name": "Electrolyte Balance",
-      "desc": "Replenish what sweat takes \u2014 cramp prevention."
+      "desc": "Replenish what sweat takes — cramp prevention."
      }
     },
     "b4": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "name": "Gut-Friendly Training",
       "desc": "16 probiotic strains for race-day gut stability."
      }
@@ -351,7 +351,7 @@
     "b5": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\ude7a",
+      "icon": "🩺",
       "name": "Doctor-Formulated",
       "desc": "Built by sports-medicine specialists."
      }
@@ -359,7 +359,7 @@
     "b6": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "name": "Clean Formula",
       "desc": "WADA-compliant, vegan-option, no banned substances."
      }
@@ -405,7 +405,7 @@
     "i1": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udcaa",
+      "icon": "💪",
       "name": "BCAAs",
       "amount": "3,000mg",
       "desc": "2:1:1 ratio of leucine, isoleucine, valine for recovery."
@@ -414,8 +414,8 @@
     "i2": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udd25",
-      "name": "Creapure\u00ae Creatine",
+      "icon": "🔥",
+      "name": "Creapure® Creatine",
       "amount": "2,500mg",
       "desc": "Pharmaceutical-grade creatine monohydrate. Strength + power."
      }
@@ -423,7 +423,7 @@
     "i3": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udca7",
+      "icon": "💧",
       "name": "Electrolyte Blend",
       "amount": "Full daily",
       "desc": "Magnesium, potassium, sodium, calcium for hydration."
@@ -432,7 +432,7 @@
     "i4": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u2600\ufe0f",
+      "icon": "☀️",
       "name": "Vitamin D3",
       "amount": "1000 IU",
       "desc": "Bone, immunity, testosterone-supporting vitamin."
@@ -441,7 +441,7 @@
     "i5": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "name": "16-Strain Probiotic Blend",
       "amount": "10 Billion CFU",
       "desc": "Strains chosen for athletic gut tolerance."
@@ -450,10 +450,10 @@
     "i6": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udeab",
+      "icon": "🚫",
       "name": "Free From",
       "amount": "Always",
-      "desc": "WADA banned substances \u00b7 gluten \u00b7 soy \u00b7 dairy \u00b7 GMO."
+      "desc": "WADA banned substances · gluten · soy · dairy · GMO."
      }
     }
    },
@@ -478,7 +478,7 @@
     "facts_col_a": "Ingredient",
     "facts_col_b": "Per serving",
     "facts_caption": "% Daily Value not established. Other Ingredients: HPMC, Magnesium Stearate.",
-    "facts_foot": "Lab-tested \u00b7 Sport-formulated \u00b7 Full transparency"
+    "facts_foot": "Lab-tested · Sport-formulated · Full transparency"
    }
   },
   "confidence": {
@@ -545,7 +545,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-creatine",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.8",
       "reviews": "180+",
       "fallback_title": "",
@@ -557,7 +557,7 @@
      "type": "product",
      "settings": {
       "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
-      "brand": "His-Biotics\u2122",
+      "brand": "His-Biotics™",
       "rating": "4.7",
       "reviews": "750+",
       "fallback_title": "",
@@ -569,7 +569,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-magnesium-glycinate",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.6",
       "reviews": "190+",
       "fallback_title": "",
@@ -581,7 +581,7 @@
      "type": "product",
      "settings": {
       "product_handle": "gutslim-probiotics-glp-1-booster",
-      "brand": "GutSlim\u2122",
+      "brand": "GutSlim™",
       "rating": "4.8",
       "reviews": "410+",
       "fallback_title": "",
@@ -613,16 +613,16 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Clinically Validated",
-      "desc": "Creatine + BCAAs \u2014 peer-reviewed for active men."
+      "desc": "Creatine + BCAAs — peer-reviewed for active men."
      }
     },
     "d2": {
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Sport Formulated",
       "desc": "Built by sports-medicine specialists."
      }
@@ -631,16 +631,16 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Patented MEP Technology",
-      "desc": "Microencapsulation with Supercritical CO\u2082."
+      "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
     "d4": {
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "WADA-Compliant",
       "desc": "No banned substances. Competition-safe."
      }
@@ -665,7 +665,7 @@
     "o1": {
      "type": "row",
      "settings": {
-      "feature": "Creapure\u00ae Creatine",
+      "feature": "Creapure® Creatine",
       "brand_state": "yes",
       "b_state": "no",
       "c_state": "no"
@@ -721,14 +721,14 @@
     "brand_tint": "#e8f3f1",
     "eyebrow": "",
     "title": "Why His-Biotics Sport Outperforms",
-    "sub": "Creatine, BCAAs, electrolytes, 16 probiotic strains, and Velobiotics\u2122 delivery \u2014 built for active men's biology.",
+    "sub": "Creatine, BCAAs, electrolytes, 16 probiotic strains, and Velobiotics™ delivery — built for active men's biology.",
     "col_features": "Features",
     "col_brand": "Sport",
     "brand_logo_url": "",
     "col_b": "Generic Sport Vit",
     "col_c": "Pre-Workout",
     "cta_text": "Add to Cart",
-    "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
+    "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
    }
   },
   "judgeme": {
@@ -763,7 +763,7 @@
      "type": "q",
      "settings": {
       "question": "Can I stack with whey protein?",
-      "answer": "<p>Yes \u2014 they're complementary. Whey for total protein, Sport for performance actives.</p>"
+      "answer": "<p>Yes — they're complementary. Whey for total protein, Sport for performance actives.</p>"
      }
     },
     "q4": {
@@ -777,14 +777,14 @@
      "type": "q",
      "settings": {
       "question": "Do you ship internationally?",
-      "answer": "<p>Yes. We ship globally \u2014 5\u201314 working days. Free shipping over the free-shipping threshold.</p>"
+      "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
      }
     },
     "q6": {
      "type": "q",
      "settings": {
       "question": "What if it doesn't work for me?",
-      "answer": "<p>If you don't see results in 30 days, we'll refund you in full \u2014 no questions asked.</p>"
+      "answer": "<p>If you don't see results in 30 days, we'll refund you in full — no questions asked.</p>"
      }
     }
    },
@@ -808,28 +808,28 @@
     "g1": {
      "type": "g",
      "settings": {
-      "icon": "\u2705",
+      "icon": "✅",
       "text": "30-day money-back"
      }
     },
     "g2": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\ude9a",
+      "icon": "🚚",
       "text": "Ships worldwide"
      }
     },
     "g3": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\udd2c",
+      "icon": "🔬",
       "text": "Lab-tested every batch"
      }
     },
     "g4": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\udcaa",
+      "icon": "💪",
       "text": "WADA-compliant"
      }
     }
@@ -851,6 +851,20 @@
     "cta_text": "Add to Cart",
     "cta_link": "#vbpForm"
    }
+  },
+  "science_strip": {
+   "type": "vb-science-strip",
+   "settings": {
+    "kicker": "Backed by peer-reviewed science",
+    "title_pre": "Don't take our word for it.",
+    "title_highlight": "View the science.",
+    "sub": "The shielding technology in this product was studied in three peer-reviewed papers. Read what the research actually showed, in plain English.",
+    "all_text": "View the science",
+    "all_url": "/pages/what-is-microencapsulation",
+    "bg": "#f6faf5",
+    "pad_top": 40,
+    "pad_bottom": 40
+   }
   }
  },
  "order": [
@@ -866,6 +880,7 @@
   "fbt",
   "doctors",
   "outperform",
+  "science_strip",
   "judgeme",
   "faq",
   "final"

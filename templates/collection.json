@@ -1,32 +1,56 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-  "sections": {
-    "banner": {
-      "type": "main-collection-banner",
-      "settings": {
-        "show_collection_description": true,
-        "show_collection_image": false,
-        "color_scheme": "scheme-1"
-      }
-    },
-    "product-grid": {
-      "type": "main-collection-product-grid",
-      "settings": {
-        "products_per_page": 16,
-        "columns_desktop": 4,
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_filtering": true,
-        "enable_sorting": true,
-        "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    }
+ "sections": {
+  "banner": {
+   "type": "main-collection-banner",
+   "settings": {
+    "show_collection_description": true,
+    "show_collection_image": false,
+    "color_scheme": "scheme-1"
+   }
   },
-  "order": [
-    "banner",
-    "product-grid"
-  ]
+  "product-grid": {
+   "type": "main-collection-product-grid",
+   "settings": {
+    "products_per_page": 16,
+    "columns_desktop": 4,
+    "image_ratio": "adapt",
+    "show_secondary_image": false,
+    "show_vendor": false,
+    "show_rating": false,
+    "enable_filtering": true,
+    "enable_sorting": true,
+    "columns_mobile": "2",
+    "padding_top": 36,
+    "padding_bottom": 36
+   }
+  },
+  "science_strip": {
+   "type": "vb-science-strip",
+   "settings": {
+    "kicker": "Backed by peer-reviewed science",
+    "title_pre": "Don't take our word for it.",
+    "title_highlight": "View the science.",
+    "sub": "Every Velobiotics™ product uses the same patented microencapsulation studied in three peer-reviewed papers. Here is what the research actually showed, in plain English.",
+    "all_text": "View the science",
+    "all_url": "/pages/what-is-microencapsulation",
+    "bg": "#f6faf5",
+    "pad_top": 48,
+    "pad_bottom": 48
+   }
+  }
+ },
+ "order": [
+  "banner",
+  "product-grid",
+  "science_strip"
+ ]
 }

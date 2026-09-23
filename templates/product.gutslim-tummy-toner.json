@@ -15,29 +15,29 @@
     "b1": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83d\udcaa",
+      "icon": "💪",
       "text": "Tones tummy from within"
      }
     },
     "b2": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83d\udd25",
+      "icon": "🔥",
       "text": "Stubborn belly-fat burner"
      }
     },
     "b3": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83d\udca7",
+      "icon": "💧",
       "text": "De-bloats overnight"
      }
     },
     "b4": {
      "type": "benefit",
      "settings": {
-      "icon": "\u26a1",
-      "text": "1000\u00d7 more delivery"
+      "icon": "⚡",
+      "text": "1000× more delivery"
      }
     },
     "t1": {
@@ -83,11 +83,11 @@
     "brand_primary": "#ffa500",
     "brand_dark": "#b25800",
     "brand_tint": "#fff8eb",
-    "brand_label": "GutSlim\u2122 Tummy Toner",
+    "brand_label": "GutSlim™ Tummy Toner",
     "rating": "4.7",
     "review_count": "410+",
-    "hook": "Target the belly. Strip the bloat. GutSlim\u2122 Tummy Toner combines belly-fat burners with 16 probiotic strains for a visibly leaner, calmer tummy.",
-    "ship_note": "Ships worldwide \u00b7 Free shipping over the free-shipping threshold \u00b7 30-day money-back guarantee",
+    "hook": "Target the belly. Strip the bloat. GutSlim™ Tummy Toner combines belly-fat burners with 16 probiotic strains for a visibly leaner, calmer tummy.",
+    "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
     "default_plan_slug": "monthly",
     "default_frequency_days": 30,
     "show_buynow": true,
@@ -102,7 +102,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Cherrise+V&background=FFA500&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Cherrise V.",
-      "meta": "Verified buyer \u00b7 Pretoria",
+      "meta": "Verified buyer · Pretoria",
       "quote": "My tummy is visibly tighter in 3 weeks. Bloat gone. Energy up."
      }
     },
@@ -111,7 +111,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Yusra+A&background=ffc266&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Yusra A.",
-      "meta": "Verified buyer \u00b7 1 month ago",
+      "meta": "Verified buyer · 1 month ago",
       "quote": "Goodbye bloat. My belly feels flat every morning now."
      }
     },
@@ -120,7 +120,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Mpho+B&background=b25800&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Mpho B.",
-      "meta": "Verified buyer \u00b7 2 months ago",
+      "meta": "Verified buyer · 2 months ago",
       "quote": "Lost 2 inches off my waist in 6 weeks. Tummy Toner is my staple."
      }
     },
@@ -129,7 +129,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Anneline+V&background=FFA500&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Anneline V.",
-      "meta": "Verified buyer \u00b7 3 weeks ago",
+      "meta": "Verified buyer · 3 weeks ago",
       "quote": "My old jeans fit again. Best R-rand I've spent."
      }
     },
@@ -138,7 +138,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Lebo+M&background=ffc266&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Lebo M.",
-      "meta": "Verified buyer \u00b7 Cape Town",
+      "meta": "Verified buyer · Cape Town",
       "quote": "Tummy Toner stacks beautifully with GLP-1 Booster. Belly = gone."
      }
     }
@@ -154,7 +154,7 @@
     "brand_primary": "#ffa500",
     "brand_dark": "#b25800",
     "brand_tint": "#fff8eb",
-    "eyebrow": "\u2605 Real Reviews",
+    "eyebrow": "★ Real Reviews",
     "title": "Tummy transformations, real and verified"
    }
   },
@@ -164,28 +164,28 @@
     "p1": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Stubborn belly fat</strong> that won't budge no matter what you try."
      }
     },
     "p2": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Bloating every evening</strong> that hides your progress."
      }
     },
     "p3": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
-      "text": "<strong>Cardio doesn't touch it</strong> \u2014 your belly stays the same."
+      "icon": "✕",
+      "text": "<strong>Cardio doesn't touch it</strong> — your belly stays the same."
      }
     },
     "p4": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Fat-burners with crashes</strong> that wreck your sleep and mood."
      }
     }
@@ -206,7 +206,7 @@
     "eyebrow": "The Problem",
     "title_pre": "Belly fat that",
     "title_highlight": "won't shift?",
-    "desc": "Visceral belly fat is metabolically active and tightly linked to gut health. Generic diet pills miss this \u2014 they spike cortisol, crash your energy, and leave your tummy untouched. There's a smarter way."
+    "desc": "Visceral belly fat is metabolically active and tightly linked to gut health. Generic diet pills miss this — they spike cortisol, crash your energy, and leave your tummy untouched. There's a smarter way."
    }
   },
   "solution": {
@@ -215,28 +215,28 @@
     "s1": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Belly-fat burners</strong> \u2014 CLA, L-carnitine, green tea extract."
+      "icon": "✓",
+      "text": "<strong>Belly-fat burners</strong> — CLA, L-carnitine, green tea extract."
      }
     },
     "s2": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>16-strain probiotic blend</strong> for gut and metabolic balance."
      }
     },
     "s3": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Velobiotics\u2122 MEP technology</strong> \u2014 1000\u00d7 more reach your gut alive."
+      "icon": "✓",
+      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach your gut alive."
      }
     },
     "s4": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>No jitters, no crashes</strong>. Doctor-formulated for daily use."
      }
     }
@@ -253,12 +253,12 @@
     "brand_tint": "#fff8eb",
     "image": "shopify://shop_images/Tummy_Toner.jpg",
     "image_url": "",
-    "tag_value": "1000\u00d7",
+    "tag_value": "1000×",
     "tag_label": "More Probiotics Delivered",
     "eyebrow": "The Solution",
     "title_pre": "Meet",
-    "title_highlight": "GutSlim\u2122 Tummy Toner.",
-    "desc": "Targeted belly-fat-burning actives combined with 16 probiotic strains \u2014 delivered by Velobiotics\u2122 MEP technology. Burn visceral fat, balance your gut, and watch your tummy tone up."
+    "title_highlight": "GutSlim™ Tummy Toner.",
+    "desc": "Targeted belly-fat-burning actives combined with 16 probiotic strains — delivered by Velobiotics™ MEP technology. Burn visceral fat, balance your gut, and watch your tummy tone up."
    }
   },
   "related": {
@@ -268,7 +268,7 @@
      "type": "product",
      "settings": {
       "product_handle": "gutslim-probiotics-glp-1-booster",
-      "brand": "GutSlim\u2122",
+      "brand": "GutSlim™",
       "rating": "4.8",
       "reviews": "1200+",
       "fallback_title": "",
@@ -280,7 +280,7 @@
      "type": "product",
      "settings": {
       "product_handle": "gutslim-probiotics-fat-burner",
-      "brand": "GutSlim\u2122",
+      "brand": "GutSlim™",
       "rating": "4.8",
       "reviews": "210+",
       "fallback_title": "",
@@ -292,7 +292,7 @@
      "type": "product",
      "settings": {
       "product_handle": "gutslim-probiotics-supergreens",
-      "brand": "GutSlim\u2122",
+      "brand": "GutSlim™",
       "rating": "4.6",
       "reviews": "150+",
       "fallback_title": "",
@@ -304,7 +304,7 @@
      "type": "product",
      "settings": {
       "product_handle": "gutslim-probiotics-diet-shake",
-      "brand": "GutSlim\u2122",
+      "brand": "GutSlim™",
       "rating": "4.7",
       "reviews": "140+",
       "fallback_title": "",
@@ -316,7 +316,7 @@
      "type": "product",
      "settings": {
       "product_handle": "21-day-gutslim-complete-pack",
-      "brand": "GutSlim\u2122",
+      "brand": "GutSlim™",
       "rating": "4.9",
       "reviews": "320+",
       "fallback_title": "",
@@ -338,8 +338,8 @@
     "brand_tint": "#fff8eb",
     "tint": false,
     "eyebrow": "Complete the Reset",
-    "title": "More from the GutSlim\u2122 range",
-    "sub": "Stack Tummy Toner with the rest of the GutSlim\u2122 weight-management system."
+    "title": "More from the GutSlim™ range",
+    "sub": "Stack Tummy Toner with the rest of the GutSlim™ weight-management system."
    }
   },
   "benefits": {
@@ -348,7 +348,7 @@
     "b1": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udd25",
+      "icon": "🔥",
       "name": "Targeted Belly Fat Burn",
       "desc": "CLA + L-carnitine attack visceral fat specifically."
      }
@@ -356,7 +356,7 @@
     "b2": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udcaa",
+      "icon": "💪",
       "name": "Visible Tummy Toning",
       "desc": "Most users see waist measurement drop within 4 weeks."
      }
@@ -364,7 +364,7 @@
     "b3": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udca8",
+      "icon": "💨",
       "name": "Beat the Bloat",
       "desc": "Probiotics calm the gut for a flatter morning belly."
      }
@@ -372,7 +372,7 @@
     "b4": {
      "type": "feat",
      "settings": {
-      "icon": "\u26a1",
+      "icon": "⚡",
       "name": "No Jitters, No Crashes",
       "desc": "Clean metabolic boost without stimulants."
      }
@@ -380,7 +380,7 @@
     "b5": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\ude7a",
+      "icon": "🩺",
       "name": "Doctor-Formulated",
       "desc": "Built by medical doctors using clinically-studied actives."
      }
@@ -388,7 +388,7 @@
     "b6": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "name": "100% Natural",
       "desc": "Vegan, halaal-friendly, no fillers, no artificial nasties."
      }
@@ -408,7 +408,7 @@
     "eyebrow": "Key Benefits",
     "title_pre": "Why",
     "title_highlight": "Tummy Toner",
-    "sub": "Six reasons Tummy Toner has become the GutSlim\u2122 favourite for visible belly results."
+    "sub": "Six reasons Tummy Toner has become the GutSlim™ favourite for visible belly results."
    }
   },
   "how": {
@@ -434,7 +434,7 @@
     "i1": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udd25",
+      "icon": "🔥",
       "name": "CLA + L-Carnitine",
       "amount": "800mg",
       "desc": "Belly-fat-targeting duo. Mobilises and metabolises visceral fat."
@@ -443,7 +443,7 @@
     "i2": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83c\udf43",
+      "icon": "🍃",
       "name": "Green Tea Extract",
       "amount": "EGCG-standardised",
       "desc": "Boosts thermogenesis without jitters."
@@ -452,7 +452,7 @@
     "i3": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "name": "16-Strain Probiotic Blend",
       "amount": "10 Billion CFU",
       "desc": "Strains chosen for gut health and metabolic balance."
@@ -461,16 +461,16 @@
     "i4": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
-      "name": "Velobiotics\u2122 MEP Coating",
+      "icon": "🛡️",
+      "name": "Velobiotics™ MEP Coating",
       "amount": "Patented",
-      "desc": "Supercritical CO\u2082 microencapsulation \u2014 1000\u00d7 more survive."
+      "desc": "Supercritical CO₂ microencapsulation — 1000× more survive."
      }
     },
     "i5": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "name": "Clean Capsule Shell",
       "amount": "Vegan HPMC",
       "desc": "No gelatin, no fillers, no allergens. Halaal-friendly."
@@ -479,10 +479,10 @@
     "i6": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udeab",
+      "icon": "🚫",
       "name": "Free From",
       "amount": "Always",
-      "desc": "Gluten \u00b7 soy \u00b7 dairy \u00b7 artificial colours \u00b7 preservatives \u00b7 GMO."
+      "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO."
      }
     }
    },
@@ -507,7 +507,7 @@
     "facts_col_a": "Ingredient",
     "facts_col_b": "Per serving",
     "facts_caption": "% Daily Value not established. Other Ingredients: HPMC, Magnesium Stearate.",
-    "facts_foot": "Lab-tested \u00b7 Doctor-formulated \u00b7 Full transparency"
+    "facts_foot": "Lab-tested · Doctor-formulated · Full transparency"
    }
   },
   "confidence": {
@@ -574,7 +574,7 @@
      "type": "product",
      "settings": {
       "product_handle": "gutslim-probiotics-glp-1-booster",
-      "brand": "GutSlim\u2122",
+      "brand": "GutSlim™",
       "rating": "4.8",
       "reviews": "1200+",
       "fallback_title": "",
@@ -586,7 +586,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-original-capsules-60s",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.7",
       "reviews": "260+",
       "fallback_title": "",
@@ -598,7 +598,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-magnesium-glycinate",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.6",
       "reviews": "190+",
       "fallback_title": "",
@@ -610,7 +610,7 @@
      "type": "product",
      "settings": {
       "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
-      "brand": "Femina\u2122",
+      "brand": "Femina™",
       "rating": "4.8",
       "reviews": "1300+",
       "fallback_title": "",
@@ -642,7 +642,7 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Clinically Proven Strains",
       "desc": "16 strains studied in peer-reviewed clinical trials."
      }
@@ -651,7 +651,7 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Doctor Formulated",
       "desc": "Developed by medical doctors and microbiologists."
      }
@@ -660,16 +660,16 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Patented MEP Technology",
-      "desc": "Microencapsulation with Supercritical CO\u2082."
+      "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
     "d4": {
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Clean Label",
       "desc": "Vegan, halaal-friendly, no fillers."
      }
@@ -750,14 +750,14 @@
     "brand_tint": "#fff8eb",
     "eyebrow": "",
     "title": "Why Tummy Toner Outperforms",
-    "sub": "Targeted belly-fat-burning actives, clinically-researched probiotic strains, and Velobiotics\u2122 delivery \u2014 built specifically for visible tummy results.",
+    "sub": "Targeted belly-fat-burning actives, clinically-researched probiotic strains, and Velobiotics™ delivery — built specifically for visible tummy results.",
     "col_features": "Features",
     "col_brand": "Tummy Toner",
     "brand_logo_url": "",
     "col_b": "Generic Fat Burner",
     "col_c": "Others",
     "cta_text": "Add to Cart",
-    "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
+    "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
    }
   },
   "judgeme": {
@@ -792,7 +792,7 @@
      "type": "q",
      "settings": {
       "question": "Can I take it with the GLP-1 Booster?",
-      "answer": "<p>Yes \u2014 they're complementary. GLP-1 Booster controls appetite, Tummy Toner targets belly fat. Many customers stack both.</p>"
+      "answer": "<p>Yes — they're complementary. GLP-1 Booster controls appetite, Tummy Toner targets belly fat. Many customers stack both.</p>"
      }
     },
     "q4": {
@@ -806,14 +806,14 @@
      "type": "q",
      "settings": {
       "question": "Do you ship internationally?",
-      "answer": "<p>Yes. We ship globally \u2014 5\u201314 working days. Free shipping over the free-shipping threshold.</p>"
+      "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
      }
     },
     "q6": {
      "type": "q",
      "settings": {
       "question": "What if it doesn't work for me?",
-      "answer": "<p>If you don't see results in 30 days, we'll refund you in full \u2014 no questions asked.</p>"
+      "answer": "<p>If you don't see results in 30 days, we'll refund you in full — no questions asked.</p>"
      }
     }
    },
@@ -837,28 +837,28 @@
     "g1": {
      "type": "g",
      "settings": {
-      "icon": "\u2705",
+      "icon": "✅",
       "text": "30-day money-back"
      }
     },
     "g2": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\ude9a",
+      "icon": "🚚",
       "text": "Ships worldwide"
      }
     },
     "g3": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\udd2c",
+      "icon": "🔬",
       "text": "Lab-tested every batch"
      }
     },
     "g4": {
      "type": "g",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "text": "100% natural"
      }
     }
@@ -880,6 +880,20 @@
     "cta_text": "Add to Cart",
     "cta_link": "#vbpForm"
    }
+  },
+  "science_strip": {
+   "type": "vb-science-strip",
+   "settings": {
+    "kicker": "Backed by peer-reviewed science",
+    "title_pre": "Don't take our word for it.",
+    "title_highlight": "View the science.",
+    "sub": "The shielding technology in this product was studied in three peer-reviewed papers. Read what the research actually showed, in plain English.",
+    "all_text": "View the science",
+    "all_url": "/pages/what-is-microencapsulation",
+    "bg": "#f6faf5",
+    "pad_top": 40,
+    "pad_bottom": 40
+   }
   }
  },
  "order": [
@@ -895,6 +909,7 @@
   "fbt",
   "doctors",
   "outperform",
+  "science_strip",
   "judgeme",
   "faq",
   "final"

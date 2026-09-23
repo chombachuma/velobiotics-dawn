@@ -470,7 +470,7 @@
         "f4"
       ],
       "settings": {
-        "image_url": "https://media.base44.com/images/public/69e737526bad1370b33f0de7/6bf436fa2_generated_image.png",
+        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-hero-shield.jpg?v=1790193717",
         "stat_value": "1000×",
         "stat_label": "More Probiotics Reach Your Gut",
         "eyebrow": "Patented MEP Technology",
@@ -478,7 +478,7 @@
         "title_highlight": "Real Results.",
         "desc": "Every Velobiotics probiotic is encapsulated using Microencapsulation with Supercritical CO₂ — a patented shielding process that lets billions of live cultures survive stomach acid and bile, so they reach your gut alive and active.",
         "cta_text": "See the Science",
-        "cta_link": "https://www.velobiotics.com/pages/microencapsulation-research"
+        "cta_link": "/pages/what-is-microencapsulation"
       }
     },
     "videos": {
@@ -722,11 +722,7 @@
         "eyebrow": "Real Customer Stories",
         "title_pre": "What 300,000+ Customers",
         "title_highlight": "Are Saying",
-        "sub": "Read unfiltered, verified reviews from real customers — because transparency builds trust.",
-        "rating": "4.72",
-        "reviews_count": "3,500+",
-        "customers_count": "300K+",
-        "judgeme_html": ""
+        "sub": "Read unfiltered, verified reviews from real customers — because transparency builds trust."
       }
     },
     "1780172743f274e3fe": {
@@ -896,6 +892,20 @@
         "cta2_text": "🧬 Take The Quiz",
         "cta2_link": "/pages/quiz"
       }
+    },
+    "science_strip": {
+      "type": "vb-science-strip",
+      "settings": {
+        "kicker": "Peer-reviewed, not just promised",
+        "title_pre": "Read the research behind",
+        "title_highlight": "every Velobiotics™ product.",
+        "sub": "Three published papers from the CSIR and the University of Pretoria. We explain each one in plain English and link to the PDF.",
+        "all_text": "View the science",
+        "all_url": "/pages/what-is-microencapsulation",
+        "bg": "#ffffff",
+        "pad_top": 32,
+        "pad_bottom": 56
+      }
     }
   },
   "order": [
@@ -909,6 +919,7 @@
     "armoured",
     "videos",
     "science",
+    "science_strip",
     "custom_liquid_eVChVA",
     "comparison",
     "judgeme",

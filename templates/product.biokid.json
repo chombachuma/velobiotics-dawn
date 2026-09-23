@@ -15,29 +15,29 @@
     "b1": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83e\uddd2",
+      "icon": "🧒",
       "text": "Kid-safe formula"
      }
     },
     "b2": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83c\udf53",
+      "icon": "🍓",
       "text": "Yummy berry flavour"
      }
     },
     "b3": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "text": "Pediatrician-approved strains"
      }
     },
     "b4": {
      "type": "benefit",
      "settings": {
-      "icon": "\u26a1",
-      "text": "1000\u00d7 more delivery"
+      "icon": "⚡",
+      "text": "1000× more delivery"
      }
     },
     "t1": {
@@ -83,11 +83,11 @@
     "brand_primary": "#FF6A1A",
     "brand_dark": "#B33C00",
     "brand_tint": "#FFF1E5",
-    "brand_label": "BioKid\u2122",
+    "brand_label": "BioKid™",
     "rating": "4.8",
     "review_count": "1,100+",
-    "hook": "Daily wellness your kids will actually love. BioKid\u2122 blends pediatrician-approved probiotic strains with kid-essential vitamins in a yummy berry chewable \u2014 for stronger immunity, happy tummies, and fewer sick days.",
-    "ship_note": "Ships worldwide \u00b7 Free shipping over the free-shipping threshold \u00b7 30-day money-back guarantee",
+    "hook": "Daily wellness your kids will actually love. BioKid™ blends pediatrician-approved probiotic strains with kid-essential vitamins in a yummy berry chewable — for stronger immunity, happy tummies, and fewer sick days.",
+    "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
     "show_subscription": true,
     "show_buynow": true,
     "show_testi_marquee": true
@@ -101,7 +101,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Refilwe+M&background=FF6A1A&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Refilwe M.",
-      "meta": "Mum of 2 \u00b7 Verified buyer",
+      "meta": "Mum of 2 · Verified buyer",
       "quote": "My 6yo asks for her BioKid every morning. Sick days down to almost zero."
      }
     },
@@ -110,7 +110,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Sarah+B&background=FFA063&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Sarah B.",
-      "meta": "Verified buyer \u00b7 2 months ago",
+      "meta": "Verified buyer · 2 months ago",
       "quote": "Daycare was a revolving door of colds. Not anymore."
      }
     },
@@ -119,7 +119,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Charmaine+D&background=B33C00&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Charmaine D.",
-      "meta": "Verified buyer \u00b7 1 month ago",
+      "meta": "Verified buyer · 1 month ago",
       "quote": "My son's tummy aches stopped within a week."
      }
     },
@@ -128,7 +128,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Thandi+K&background=FF6A1A&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Thandi K.",
-      "meta": "Mum of 3 \u00b7 Cape Town",
+      "meta": "Mum of 3 · Cape Town",
       "quote": "Easier mornings. Better moods. Why didn't I find this sooner?"
      }
     },
@@ -137,7 +137,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Anna+P&background=FFA063&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Anna P.",
-      "meta": "Verified buyer \u00b7 3 weeks ago",
+      "meta": "Verified buyer · 3 weeks ago",
       "quote": "Pediatrician recommended. We're sold."
      }
     }
@@ -153,7 +153,7 @@
     "brand_primary": "#FF6A1A",
     "brand_dark": "#B33C00",
     "brand_tint": "#FFF1E5",
-    "eyebrow": "\u2605 Real Reviews",
+    "eyebrow": "★ Real Reviews",
     "title": "Loved by parents and kids"
    }
   },
@@ -163,28 +163,28 @@
     "p1": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Endless daycare colds</strong> and stuffy noses."
      }
     },
     "p2": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Tummy aches and constipation</strong> that worry every parent."
      }
     },
     "p3": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Picky eating</strong> that leaves you wondering if they're getting enough."
      }
     },
     "p4": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Adult supplements</strong> kids won't take or shouldn't have."
      }
     }
@@ -205,7 +205,7 @@
     "eyebrow": "The Problem",
     "title_pre": "Kids deserve better",
     "title_highlight": "than adult supplements.",
-    "desc": "Children's immune systems are still building. Daycare and school are bug factories. And most kids' supplements are sugar-bombs with poorly-absorbed nutrients. BioKid\u2122 is built different \u2014 kid-safe, kid-yummy, kid-effective."
+    "desc": "Children's immune systems are still building. Daycare and school are bug factories. And most kids' supplements are sugar-bombs with poorly-absorbed nutrients. BioKid™ is built different — kid-safe, kid-yummy, kid-effective."
    }
   },
   "solution": {
@@ -214,28 +214,28 @@
     "s1": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Pediatrician-approved probiotic strains</strong> \u2014 gut, immunity, mood."
+      "icon": "✓",
+      "text": "<strong>Pediatrician-approved probiotic strains</strong> — gut, immunity, mood."
      }
     },
     "s2": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Kid-essential vitamins</strong> \u2014 D3, C, B-complex, zinc."
+      "icon": "✓",
+      "text": "<strong>Kid-essential vitamins</strong> — D3, C, B-complex, zinc."
      }
     },
     "s3": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Velobiotics\u2122 MEP technology</strong> \u2014 1000\u00d7 more reach them alive."
+      "icon": "✓",
+      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach them alive."
      }
     },
     "s4": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>Yummy berry chewable</strong>. No sugar bombs. No artificial junk."
      }
     }
@@ -251,12 +251,12 @@
     "brand_primary": "#FF6A1A",
     "brand_tint": "#FFF1E5",
     "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/BIOKID-60s.jpg?v=1775328668",
-    "tag_value": "1000\u00d7",
+    "tag_value": "1000×",
     "tag_label": "More Probiotics Delivered",
     "eyebrow": "The Solution",
     "title_pre": "Meet",
-    "title_highlight": "BioKid\u2122 Chewables.",
-    "desc": "A once-daily berry chewable combining pediatrician-approved probiotic strains with kid-essential vitamins \u2014 delivered by Velobiotics\u2122 technology. 1000\u00d7 more reach their gut alive, where they support stronger immunity, calmer tummies, and brighter moods."
+    "title_highlight": "BioKid™ Chewables.",
+    "desc": "A once-daily berry chewable combining pediatrician-approved probiotic strains with kid-essential vitamins — delivered by Velobiotics™ technology. 1000× more reach their gut alive, where they support stronger immunity, calmer tummies, and brighter moods."
    }
   },
   "related": {
@@ -266,7 +266,7 @@
      "type": "product",
      "settings": {
       "product_handle": "biokid-chewable-probiotics-tablets-for-children",
-      "brand": "BioKid\u2122",
+      "brand": "BioKid™",
       "rating": "4.8",
       "reviews": "200+"
      }
@@ -275,7 +275,7 @@
      "type": "product",
      "settings": {
       "product_handle": "pregbiotics-essentials",
-      "brand": "PregBiotics\u2122",
+      "brand": "PregBiotics™",
       "rating": "4.9",
       "reviews": "210+"
      }
@@ -284,7 +284,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-original-capsules-60s",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.7",
       "reviews": "260+"
      }
@@ -293,7 +293,7 @@
      "type": "product",
      "settings": {
       "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
-      "brand": "His-Biotics\u2122",
+      "brand": "His-Biotics™",
       "rating": "4.7",
       "reviews": "210+"
      }
@@ -311,8 +311,8 @@
     "brand_tint": "#FFF1E5",
     "tint": false,
     "eyebrow": "Complete the Routine",
-    "title": "More from the BioKid\u2122 range",
-    "sub": "Daily wellness your kids will love \u2014 from drops to chewables."
+    "title": "More from the BioKid™ range",
+    "sub": "Daily wellness your kids will love — from drops to chewables."
    }
   },
   "benefits": {
@@ -321,7 +321,7 @@
     "b1": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
+      "icon": "🛡️",
       "name": "Stronger Immunity",
       "desc": "Fewer colds, fewer sick days, fewer worry-filled nights."
      }
@@ -329,7 +329,7 @@
     "b2": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udc9a",
+      "icon": "💚",
       "name": "Happy Tummies",
       "desc": "Calmer digestion, less constipation, fewer tummy aches."
      }
@@ -337,7 +337,7 @@
     "b3": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\ude0a",
+      "icon": "😊",
       "name": "Better Moods",
       "desc": "Gut-brain axis means calmer, happier kids."
      }
@@ -345,7 +345,7 @@
     "b4": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83c\udf53",
+      "icon": "🍓",
       "name": "Yummy Berry Flavour",
       "desc": "Kids genuinely ask for it. No fight every morning."
      }
@@ -353,7 +353,7 @@
     "b5": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\ude7a",
+      "icon": "🩺",
       "name": "Pediatrician-Approved",
       "desc": "Built with paediatric guidance. Kid-safe, age-appropriate."
      }
@@ -361,7 +361,7 @@
     "b6": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "name": "100% Natural",
       "desc": "Sugar-free, no artificial colours, halaal-friendly."
      }
@@ -380,8 +380,8 @@
     "brand_tint": "#FFF1E5",
     "eyebrow": "Key Benefits",
     "title_pre": "Why",
-    "title_highlight": "BioKid\u2122",
-    "sub": "Six reasons parents across South Africa and the world choose BioKid\u2122 as their family's daily anchor."
+    "title_highlight": "BioKid™",
+    "sub": "Six reasons parents across South Africa and the world choose BioKid™ as their family's daily anchor."
    }
   },
   "how": {
@@ -399,7 +399,7 @@
     "eyebrow": "How to use",
     "title_pre": "A tiny ritual",
     "title_highlight": "kids love.",
-    "thanks": "Thank you for looking after a little gut so early \u2014 the habits you build now last a lifetime.",
+    "thanks": "Thank you for looking after a little gut so early — the habits you build now last a lifetime.",
     "anchors": "Breakfast|School run|Brushing teeth|Bedtime story"
    }
   },
@@ -409,7 +409,7 @@
     "i1": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "name": "Kid-Safe Probiotic Blend",
       "amount": "5 Billion CFU",
       "desc": "Pediatrician-approved strains for kids 3+."
@@ -418,7 +418,7 @@
     "i2": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udc8e",
+      "icon": "💎",
       "name": "Vitamin D3 + C + Zinc",
       "amount": "Kid daily",
       "desc": "Immunity-essential trio in kid-appropriate doses."
@@ -427,16 +427,16 @@
     "i3": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
-      "name": "Velobiotics\u2122 MEP Coating",
+      "icon": "🛡️",
+      "name": "Velobiotics™ MEP Coating",
       "amount": "Patented",
-      "desc": "Supercritical CO\u2082 microencapsulation \u2014 1000\u00d7 more survive."
+      "desc": "Supercritical CO₂ microencapsulation — 1000× more survive."
      }
     },
     "i4": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83c\udf53",
+      "icon": "🍓",
       "name": "Natural Berry Flavour",
       "amount": "Real fruit",
       "desc": "No artificial colours, no artificial flavours."
@@ -445,19 +445,19 @@
     "i5": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "name": "Stevia Sweetened",
       "amount": "Sugar-free",
-      "desc": "Naturally sweet \u2014 no sugar, no cavities."
+      "desc": "Naturally sweet — no sugar, no cavities."
      }
     },
     "i6": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udeab",
+      "icon": "🚫",
       "name": "Free From",
       "amount": "Always",
-      "desc": "Sugar \u00b7 gluten \u00b7 soy \u00b7 dairy \u00b7 artificial colours \u00b7 preservatives \u00b7 GMO."
+      "desc": "Sugar · gluten · soy · dairy · artificial colours · preservatives · GMO."
      }
     }
    },
@@ -479,7 +479,7 @@
     "sub": "Six clean actives. No sugar bombs. Full transparency for parents.",
     "facts_image_url": "",
     "facts_label": "Supplement facts",
-    "facts_foot": "Lab-tested \u00b7 Pediatrician-approved \u00b7 Kid-safe"
+    "facts_foot": "Lab-tested · Pediatrician-approved · Kid-safe"
    }
   },
   "confidence": {
@@ -535,7 +535,7 @@
     "eyebrow": "Real results",
     "title_pre": "Trusted by",
     "title_highlight": "Parents Everywhere",
-    "sub": "What parents report after 4 weeks of daily BioKid\u2122 use.",
+    "sub": "What parents report after 4 weeks of daily BioKid™ use.",
     "caveat": "Based on a survey of 1,100+ verified parents. Individual results may vary."
    }
   },
@@ -546,7 +546,7 @@
      "type": "product",
      "settings": {
       "product_handle": "pregbiotics-breastfeeding",
-      "brand": "PregBiotics\u2122",
+      "brand": "PregBiotics™",
       "rating": "4.9",
       "reviews": "150+"
      }
@@ -555,7 +555,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-original-capsules-60s",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.7",
       "reviews": "260+"
      }
@@ -564,7 +564,7 @@
      "type": "product",
      "settings": {
       "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
-      "brand": "His-Biotics\u2122",
+      "brand": "His-Biotics™",
       "rating": "4.7",
       "reviews": "210+"
      }
@@ -573,7 +573,7 @@
      "type": "product",
      "settings": {
       "product_handle": "gutslim-probiotics-glp-1-booster",
-      "brand": "GutSlim\u2122",
+      "brand": "GutSlim™",
       "rating": "4.8",
       "reviews": "410+"
      }
@@ -592,7 +592,7 @@
     "tint": true,
     "eyebrow": "The Family Wellness Stack",
     "title": "Pair with the rest of your family's wellness",
-    "sub": "Parents who love BioKid\u2122 also stack these for the whole family."
+    "sub": "Parents who love BioKid™ also stack these for the whole family."
    }
   },
   "doctors": {
@@ -619,7 +619,7 @@
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
       "name": "Patented MEP Technology",
-      "desc": "Microencapsulation with Supercritical CO\u2082."
+      "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
     "d4": {
@@ -705,13 +705,13 @@
     "brand_dark": "#B33C00",
     "brand_tint": "#FFF1E5",
     "title": "Why We Outperform Others",
-    "sub": "Experience the family wellness daily \u2014 pediatrician-approved probiotic strains, kid-essential vitamins, and Velobiotics\u2122 absorption technology in a yummy berry chewable.",
+    "sub": "Experience the family wellness daily — pediatrician-approved probiotic strains, kid-essential vitamins, and Velobiotics™ absorption technology in a yummy berry chewable.",
     "col_features": "Features",
-    "col_brand": "BioKid\u2122",
+    "col_brand": "BioKid™",
     "col_b": "Kid Probiotic",
     "col_c": "Others",
     "cta_text": "Add to Cart",
-    "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
+    "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
    }
   },
   "judgeme": {
@@ -731,8 +731,8 @@
     "q1": {
      "type": "q",
      "settings": {
-      "question": "From what age is BioKid\u2122 safe?",
-      "answer": "<p>BioKid\u2122 Chewables are formulated for kids 3 years and older. For younger children, see BioKid\u2122 Probiotic Drops.</p>"
+      "question": "From what age is BioKid™ safe?",
+      "answer": "<p>BioKid™ Chewables are formulated for kids 3 years and older. For younger children, see BioKid™ Probiotic Drops.</p>"
      }
     },
     "q2": {
@@ -745,7 +745,7 @@
     "q3": {
      "type": "q",
      "settings": {
-      "question": "Is BioKid\u2122 safe daily?",
+      "question": "Is BioKid™ safe daily?",
       "answer": "<p>Absolutely. Manufactured under GMP conditions in SAHPRA-aware facilities. Daily use is safe and recommended for sustained wellness.</p>"
      }
     },
@@ -760,14 +760,14 @@
      "type": "q",
      "settings": {
       "question": "Do you ship internationally?",
-      "answer": "<p>Yes. We ship globally \u2014 5\u201314 working days. Free shipping over the free-shipping threshold.</p>"
+      "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
      }
     },
     "q6": {
      "type": "q",
      "settings": {
-      "question": "What if BioKid\u2122 doesn't work for my child?",
-      "answer": "<p>If you don't see the difference in 30 days, we'll refund you in full \u2014 no questions asked.</p>"
+      "question": "What if BioKid™ doesn't work for my child?",
+      "answer": "<p>If you don't see the difference in 30 days, we'll refund you in full — no questions asked.</p>"
      }
     }
    },
@@ -791,28 +791,28 @@
     "g1": {
      "type": "g",
      "settings": {
-      "icon": "\u2705",
+      "icon": "✅",
       "text": "30-day money-back"
      }
     },
     "g2": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\ude9a",
+      "icon": "🚚",
       "text": "Ships worldwide"
      }
     },
     "g3": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\udd2c",
+      "icon": "🔬",
       "text": "Lab-tested every batch"
      }
     },
     "g4": {
      "type": "g",
      "settings": {
-      "icon": "\ud83e\uddd2",
+      "icon": "🧒",
       "text": "Pediatrician-approved"
      }
     }
@@ -830,9 +830,23 @@
     "badge": "30-day money-back guarantee",
     "title_pre": "Healthier, Happier Kids",
     "title_highlight": "Risk-Free for 30 Days",
-    "sub": "Join the 65,000+ families who've made BioKid\u2122 their daily ritual. If you don't see the difference, we'll refund every cent.",
+    "sub": "Join the 65,000+ families who've made BioKid™ their daily ritual. If you don't see the difference, we'll refund every cent.",
     "cta_text": "Add to Cart",
     "cta_link": "#vbpForm"
+   }
+  },
+  "science_strip": {
+   "type": "vb-science-strip",
+   "settings": {
+    "kicker": "Backed by peer-reviewed science",
+    "title_pre": "Don't take our word for it.",
+    "title_highlight": "View the science.",
+    "sub": "The shielding technology in this product was studied in three peer-reviewed papers. Read what the research actually showed, in plain English.",
+    "all_text": "View the science",
+    "all_url": "/pages/what-is-microencapsulation",
+    "bg": "#f6faf5",
+    "pad_top": 40,
+    "pad_bottom": 40
    }
   }
  },
@@ -849,6 +863,7 @@
   "fbt",
   "doctors",
   "outperform",
+  "science_strip",
   "judgeme",
   "faq",
   "final"

@@ -15,29 +15,29 @@
     "b1": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83c\udf38",
+      "icon": "🌸",
       "text": "Women's daily wellness"
      }
     },
     "b2": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83d\udc8e",
+      "icon": "💎",
       "text": "12 essential vitamins"
      }
     },
     "b3": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "text": "16 probiotic strains"
      }
     },
     "b4": {
      "type": "benefit",
      "settings": {
-      "icon": "\u26a1",
-      "text": "1000\u00d7 more delivery"
+      "icon": "⚡",
+      "text": "1000× more delivery"
      }
     },
     "t1": {
@@ -50,7 +50,7 @@
     "t2": {
      "type": "testi",
      "settings": {
-      "quote": "My skin, hair, nails \u2014 all glowing",
+      "quote": "My skin, hair, nails — all glowing",
       "author": "Refilwe M."
      }
     },
@@ -83,11 +83,11 @@
     "brand_primary": "#f5908d",
     "brand_dark": "#b85a58",
     "brand_tint": "#fff5f3",
-    "brand_label": "Her-Biotics\u2122",
+    "brand_label": "Her-Biotics™",
     "rating": "4.7",
     "review_count": "950+",
-    "hook": "The all-in-one women's daily \u2014 Her-Biotics\u2122 blends 16 probiotic strains with 25 essential vitamins, minerals, and beauty actives for energy, hormone balance, skin glow, and total wellness.",
-    "ship_note": "Ships worldwide \u00b7 Free shipping over the free-shipping threshold \u00b7 30-day money-back guarantee",
+    "hook": "The all-in-one women's daily — Her-Biotics™ blends 16 probiotic strains with 25 essential vitamins, minerals, and beauty actives for energy, hormone balance, skin glow, and total wellness.",
+    "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
     "show_subscription": true,
     "show_buynow": true,
     "show_testi_marquee": true
@@ -101,7 +101,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Amanda+B&background=f5908d&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Amanda B.",
-      "meta": "Verified buyer \u00b7 Pretoria",
+      "meta": "Verified buyer · Pretoria",
       "quote": "Her-Biotics is my daily anchor. Better mood, better energy, glowing skin."
      }
     },
@@ -110,7 +110,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Refilwe+M&background=ffc0bd&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Refilwe M.",
-      "meta": "Verified buyer \u00b7 3 months ago",
+      "meta": "Verified buyer · 3 months ago",
       "quote": "Three months in. Hair shinier, nails stronger, energy steady all day."
      }
     },
@@ -119,7 +119,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Bridget+D&background=b85a58&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Bridget D.",
-      "meta": "Verified buyer \u00b7 Johannesburg",
+      "meta": "Verified buyer · Johannesburg",
       "quote": "Menopause hot flashes finally bearable. Game-changer."
      }
     },
@@ -128,7 +128,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Karabo+S&background=f5908d&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Karabo S.",
-      "meta": "Verified buyer \u00b7 2 months ago",
+      "meta": "Verified buyer · 2 months ago",
       "quote": "I tried 4 multivitamins before Her-Biotics. None compare."
      }
     },
@@ -137,7 +137,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Lisa+P&background=ffc0bd&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Lisa P.",
-      "meta": "Verified buyer \u00b7 Cape Town",
+      "meta": "Verified buyer · Cape Town",
       "quote": "Daily ritual. PMS symptoms milder, mood steadier."
      }
     }
@@ -153,7 +153,7 @@
     "brand_primary": "#f5908d",
     "brand_dark": "#b85a58",
     "brand_tint": "#fff5f3",
-    "eyebrow": "\u2605 Real Reviews",
+    "eyebrow": "★ Real Reviews",
     "title": "Loved by thousands of women"
    }
   },
@@ -163,28 +163,28 @@
     "p1": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Energy crashes</strong> and unexplained fatigue."
      }
     },
     "p2": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Brittle hair and nails</strong>, dull skin."
      }
     },
     "p3": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Hormone swings</strong> through PMS, perimenopause, menopause."
      }
     },
     "p4": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>10 pills a day</strong> to cover every base."
      }
     }
@@ -205,7 +205,7 @@
     "eyebrow": "The Problem",
     "title_pre": "Juggling it all",
     "title_highlight": "and running on empty?",
-    "desc": "Modern women carry it all \u2014 career, family, ambition. But typical multivitamins are over-stuffed pills with poorly-absorbed nutrients that never reach where they're needed. There's a smarter daily."
+    "desc": "Modern women carry it all — career, family, ambition. But typical multivitamins are over-stuffed pills with poorly-absorbed nutrients that never reach where they're needed. There's a smarter daily."
    }
   },
   "solution": {
@@ -214,28 +214,28 @@
     "s1": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>25 essential vitamins, minerals & beauty actives</strong> for women's biology."
      }
     },
     "s2": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>16-strain MEP\u03b2 probiotic blend</strong> for gut, immunity, mood, glow."
+      "icon": "✓",
+      "text": "<strong>16-strain MEPβ probiotic blend</strong> for gut, immunity, mood, glow."
      }
     },
     "s3": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Velobiotics\u2122 MEP technology</strong> \u2014 1000\u00d7 more reach you alive."
+      "icon": "✓",
+      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
      }
     },
     "s4": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>Two capsules daily</strong>. Doctor-formulated. Lab-tested every batch."
      }
     }
@@ -251,12 +251,12 @@
     "brand_primary": "#f5908d",
     "brand_tint": "#fff5f3",
     "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/4_transparent_Realistic_3D_product_mockup_2.png?v=1775328607",
-    "tag_value": "1000\u00d7",
+    "tag_value": "1000×",
     "tag_label": "More Probiotics Delivered",
     "eyebrow": "The Solution",
     "title_pre": "Meet",
-    "title_highlight": "Her-Biotics\u2122 Original.",
-    "desc": "The all-in-one women's daily. 25 essential vitamins, minerals, and beauty actives + 16-strain MEP\u03b2 probiotic blend, delivered by Velobiotics\u2122 technology \u2014 1000\u00d7 more reach your gut alive, where they go to work on energy, glow, hormones, and immunity."
+    "title_highlight": "Her-Biotics™ Original.",
+    "desc": "The all-in-one women's daily. 25 essential vitamins, minerals, and beauty actives + 16-strain MEPβ probiotic blend, delivered by Velobiotics™ technology — 1000× more reach your gut alive, where they go to work on energy, glow, hormones, and immunity."
    }
   },
   "related": {
@@ -266,7 +266,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-probiotics-menopausal-support",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.8",
       "reviews": "180+"
      }
@@ -275,7 +275,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-probiotics-pms-pre-menstrual-support",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.7",
       "reviews": "150+"
      }
@@ -284,7 +284,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-probiotics-ageless-multivitamin-50",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.8",
       "reviews": "120+"
      }
@@ -293,7 +293,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-probiotics-sport-multivitamin-capsules-60",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.6",
       "reviews": "100+"
      }
@@ -311,7 +311,7 @@
     "brand_tint": "#fff5f3",
     "tint": false,
     "eyebrow": "Complete the Stack",
-    "title": "More from the Her-Biotics\u2122 range",
+    "title": "More from the Her-Biotics™ range",
     "sub": "Customised support for every season of a woman's life."
    }
   },
@@ -321,7 +321,7 @@
     "b1": {
      "type": "feat",
      "settings": {
-      "icon": "\u26a1",
+      "icon": "⚡",
       "name": "Sustained Energy",
       "desc": "No crashes. Steady focus, vitality, drive."
      }
@@ -329,15 +329,15 @@
     "b2": {
      "type": "feat",
      "settings": {
-      "icon": "\u2728",
+      "icon": "✨",
       "name": "Hair, Skin & Nails",
-      "desc": "Visible glow within weeks \u2014 beauty from within."
+      "desc": "Visible glow within weeks — beauty from within."
      }
     },
     "b3": {
      "type": "feat",
      "settings": {
-      "icon": "\u2696\ufe0f",
+      "icon": "⚖️",
       "name": "Hormone Balance",
       "desc": "Smoother PMS, perimenopause, menopause."
      }
@@ -345,7 +345,7 @@
     "b4": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
+      "icon": "🛡️",
       "name": "Immunity & Gut",
       "desc": "Stronger immune defence, calmer gut."
      }
@@ -353,7 +353,7 @@
     "b5": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\ude7a",
+      "icon": "🩺",
       "name": "Doctor-Formulated",
       "desc": "Built by women's-health specialists."
      }
@@ -361,7 +361,7 @@
     "b6": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "name": "100% Natural",
       "desc": "Vegan, halaal-friendly, no fillers."
      }
@@ -380,8 +380,8 @@
     "brand_tint": "#fff5f3",
     "eyebrow": "Key Benefits",
     "title_pre": "Why",
-    "title_highlight": "Her-Biotics\u2122",
-    "sub": "Six reasons women across South Africa and the world choose Her-Biotics\u2122 as their daily anchor."
+    "title_highlight": "Her-Biotics™",
+    "sub": "Six reasons women across South Africa and the world choose Her-Biotics™ as their daily anchor."
    }
   },
   "how": {
@@ -407,7 +407,7 @@
     "i1": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udc8e",
+      "icon": "💎",
       "name": "25 Vitamins, Minerals & Actives",
       "amount": "Full daily",
       "desc": "B-complex, C, D3, E, biotin, folate, iron, magnesium, zinc, selenium, plus citrus bioflavonoids, beta-carotene & PABA."
@@ -416,8 +416,8 @@
     "i2": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\udda0",
-      "name": "16-Strain MEP\u03b2 Probiotic Blend",
+      "icon": "🦠",
+      "name": "16-Strain MEPβ Probiotic Blend",
       "amount": "1 Billion CFU",
       "desc": "Lactobacillus & Bifidobacterium strains for gut, immunity, mood, and feminine balance."
      }
@@ -425,16 +425,16 @@
     "i3": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
-      "name": "Velobiotics\u2122 MEP Coating",
+      "icon": "🛡️",
+      "name": "Velobiotics™ MEP Coating",
       "amount": "Patented",
-      "desc": "Supercritical CO\u2082 microencapsulation \u2014 1000\u00d7 more survive."
+      "desc": "Supercritical CO₂ microencapsulation — 1000× more survive."
      }
     },
     "i4": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83c\udf3e",
+      "icon": "🌾",
       "name": "Prebiotic Fibre",
       "amount": "Inulin 200mg",
       "desc": "Chicory root extract feeds your good bacteria so they thrive long-term."
@@ -443,7 +443,7 @@
     "i5": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "name": "Clean Capsule Shell",
       "amount": "Vegan HPMC",
       "desc": "No gelatin, no fillers, no allergens. Halaal-friendly."
@@ -452,10 +452,10 @@
     "i6": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udeab",
+      "icon": "🚫",
       "name": "Free From",
       "amount": "Always",
-      "desc": "Gluten \u00b7 soy \u00b7 dairy \u00b7 artificial colours \u00b7 preservatives \u00b7 GMO."
+      "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO."
      }
     }
    },
@@ -477,7 +477,7 @@
     "sub": "Six clean active groups. No proprietary blends. Full transparency.",
     "facts_image_url": "",
     "facts_label": "Quick view",
-    "facts_foot": "Scroll down for the full clinical label \u2192"
+    "facts_foot": "Scroll down for the full clinical label →"
    }
   },
   "supp-facts": {
@@ -495,7 +495,7 @@
      "type": "row",
      "settings": {
       "ingredient": "Vitamin B12",
-      "amount": "20 \u00b5g",
+      "amount": "20 µg",
       "dv": "200"
      }
     },
@@ -535,7 +535,7 @@
      "type": "row",
      "settings": {
       "ingredient": "Vitamin D (as D3 400IU)",
-      "amount": "10 \u00b5g",
+      "amount": "10 µg",
       "dv": "200"
      }
     },
@@ -551,7 +551,7 @@
      "type": "row",
      "settings": {
       "ingredient": "Folic Acid",
-      "amount": "400 \u00b5g",
+      "amount": "400 µg",
       "dv": "200"
      }
     },
@@ -567,7 +567,7 @@
      "type": "row",
      "settings": {
       "ingredient": "Biotin",
-      "amount": "50 \u00b5g",
+      "amount": "50 µg",
       "dv": "100"
      }
     },
@@ -599,7 +599,7 @@
      "type": "row",
      "settings": {
       "ingredient": "Copper",
-      "amount": "1500 \u00b5g",
+      "amount": "1500 µg",
       "dv": "150"
      }
     },
@@ -615,7 +615,7 @@
      "type": "row",
      "settings": {
       "ingredient": "Chromium",
-      "amount": "50 \u00b5g",
+      "amount": "50 µg",
       "dv": "125"
      }
     },
@@ -623,7 +623,7 @@
      "type": "row",
      "settings": {
       "ingredient": "Selenium",
-      "amount": "110 \u00b5g",
+      "amount": "110 µg",
       "dv": "200"
      }
     },
@@ -662,16 +662,16 @@
     "r23": {
      "type": "row",
      "settings": {
-      "ingredient": "Her-Biotics\u2122 MEP\u03b2 Blend",
-      "amount": "1 billion CFUs\u00a7",
+      "ingredient": "Her-Biotics™ MEPβ Blend",
+      "amount": "1 billion CFUs§",
       "dv": "*"
      }
     },
     "s1": {
      "type": "strains",
      "settings": {
-      "label": "Her-Biotics\u2122 MEP\u03b2 Blend",
-      "cfu": "1 billion CFUs\u00a7",
+      "label": "Her-Biotics™ MEPβ Blend",
+      "cfu": "1 billion CFUs§",
       "strains": "Lactobacillus acidophilus, Lactobacillus plantarum, Lactobacillus casei, Lactobacillus reuteri, Lactobacillus rhamnosus, Lactobacillus fermentum, Lactobacillus salivarus, Lactobacillus paracasei, Lactobacillus bulgaricus, Lactobacillus helveticus, Bifidobacterium lactis, Bifidobacterium infantis, Bifidobacterium breve, Bifidobacterium bifidum, Bifidobacterium longum, Streptococcus thermophilus."
      }
     }
@@ -708,21 +708,21 @@
     "brand_tint": "#fff5f3",
     "eyebrow": "Full transparency",
     "title": "25 Essential Ingredients for Women's Health & Vitality",
-    "sub": "Every ingredient. Every milligram. Backed by the patented Velobiotics\u2122 MEP delivery mechanism.",
+    "sub": "Every ingredient. Every milligram. Backed by the patented Velobiotics™ MEP delivery mechanism.",
     "banner_title": "Supplement Facts",
-    "banner_meta": "Lab-tested \u00b7 Doctor-formulated",
+    "banner_meta": "Lab-tested · Doctor-formulated",
     "servings_per_container": "60 Capsules",
     "serving_size": "2 Capsules",
     "col_ing": "Amount per serving",
     "col_amt": "Per 2 capsules",
     "col_dv": "Daily Value %",
     "footnote_dv": "Daily Value (DV) not established.",
-    "footnote_cfu": "CFU \u2013 Colony Forming Units.",
-    "footnote_mep": "MEP \u2013 Microencapsulated Probiotics using Velobiotics\u2122 patented delivery system.",
+    "footnote_cfu": "CFU – Colony Forming Units.",
+    "footnote_mep": "MEP – Microencapsulated Probiotics using Velobiotics™ patented delivery system.",
     "other_ingredients": "Microcrystalline cellulose, magnesium stearate, silicone dioxide & coating.",
-    "allergens": "Gluten \u00b7 soy \u00b7 dairy \u00b7 artificial colours \u00b7 preservatives \u00b7 GMO.",
+    "allergens": "Gluten · soy · dairy · artificial colours · preservatives · GMO.",
     "suggested_use": "Adults: Take 2 capsules daily with a full glass of water, preferably with a meal. Or as directed by your healthcare practitioner.",
-    "storage": "Store below 25\u00b0C in a cool, dry place, away from direct sunlight. Keep out of reach of children.",
+    "storage": "Store below 25°C in a cool, dry place, away from direct sunlight. Keep out of reach of children.",
     "caution": "Do not exceed the recommended daily intake. Consult your healthcare practitioner before use during pregnancy, breastfeeding, or chronic medication.",
     "disclaimer": "These statements have not been evaluated by SAHPRA. This product is a food supplement and is not intended to diagnose, treat, cure, or prevent any disease."
    }
@@ -780,7 +780,7 @@
     "eyebrow": "Real results",
     "title_pre": "Trusted for",
     "title_highlight": "Daily Wellness",
-    "sub": "What women report after 4 weeks of daily Her-Biotics\u2122 use.",
+    "sub": "What women report after 4 weeks of daily Her-Biotics™ use.",
     "caveat": "Based on a survey of 950+ verified customers. Individual results may vary."
    }
   },
@@ -791,7 +791,7 @@
      "type": "product",
      "settings": {
       "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
-      "brand": "Femina\u2122",
+      "brand": "Femina™",
       "rating": "4.8",
       "reviews": "1300+"
      }
@@ -800,7 +800,7 @@
      "type": "product",
      "settings": {
       "product_handle": "gutslim-probiotics-glp-1-booster",
-      "brand": "GutSlim\u2122",
+      "brand": "GutSlim™",
       "rating": "4.8",
       "reviews": "410+"
      }
@@ -809,7 +809,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-magnesium-glycinate",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.6",
       "reviews": "190+"
      }
@@ -818,7 +818,7 @@
      "type": "product",
      "settings": {
       "product_handle": "pregbiotics-breastfeeding",
-      "brand": "PregBiotics\u2122",
+      "brand": "PregBiotics™",
       "rating": "4.9",
       "reviews": "150+"
      }
@@ -837,7 +837,7 @@
     "tint": true,
     "eyebrow": "Frequently Bought Together",
     "title": "Pair with the rest of your wellness stack",
-    "sub": "Her-Biotics\u2122 stacks beautifully with these Velobiotics favourites."
+    "sub": "Her-Biotics™ stacks beautifully with these Velobiotics favourites."
    }
   },
   "doctors": {
@@ -864,7 +864,7 @@
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
       "name": "Patented MEP Technology",
-      "desc": "Microencapsulation with Supercritical CO\u2082."
+      "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
     "d4": {
@@ -950,13 +950,13 @@
     "brand_dark": "#b85a58",
     "brand_tint": "#fff5f3",
     "title": "Why We Outperform Others",
-    "sub": "Experience total daily wellness with our unique blend of 16 probiotic strains, 25 essential vitamins, and Velobiotics\u2122 absorption technology \u2014 built for women.",
+    "sub": "Experience total daily wellness with our unique blend of 16 probiotic strains, 25 essential vitamins, and Velobiotics™ absorption technology — built for women.",
     "col_features": "Features",
-    "col_brand": "Her-Biotics\u2122",
+    "col_brand": "Her-Biotics™",
     "col_b": "General Probiotic",
     "col_c": "Others",
     "cta_text": "Add to Cart",
-    "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
+    "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
    }
   },
   "judgeme": {
@@ -977,20 +977,20 @@
      "type": "q",
      "settings": {
       "question": "How long until I feel a difference?",
-      "answer": "<p>Most women feel sharper energy within 7\u201314 days. Visible hair, skin, and nail improvements typically show at 4\u20136 weeks of daily use.</p>"
+      "answer": "<p>Most women feel sharper energy within 7–14 days. Visible hair, skin, and nail improvements typically show at 4–6 weeks of daily use.</p>"
      }
     },
     "q2": {
      "type": "q",
      "settings": {
-      "question": "Is Her-Biotics\u2122 safe during pregnancy?",
-      "answer": "<p>For pregnancy and breastfeeding, we recommend PregBiotics\u2122 instead \u2014 it's specifically formulated for that life stage.</p>"
+      "question": "Is Her-Biotics™ safe during pregnancy?",
+      "answer": "<p>For pregnancy and breastfeeding, we recommend PregBiotics™ instead — it's specifically formulated for that life stage.</p>"
      }
     },
     "q3": {
      "type": "q",
      "settings": {
-      "question": "Is Her-Biotics\u2122 safe daily?",
+      "question": "Is Her-Biotics™ safe daily?",
       "answer": "<p>Absolutely. Manufactured under GMP conditions in SAHPRA-aware facilities. Daily use is safe and recommended.</p>"
      }
     },
@@ -1005,14 +1005,14 @@
      "type": "q",
      "settings": {
       "question": "Do you ship internationally?",
-      "answer": "<p>Yes. We ship globally \u2014 5\u201314 working days. Free shipping over the free-shipping threshold.</p>"
+      "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
      }
     },
     "q6": {
      "type": "q",
      "settings": {
-      "question": "What if Her-Biotics\u2122 doesn't work for me?",
-      "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full \u2014 no questions asked.</p>"
+      "question": "What if Her-Biotics™ doesn't work for me?",
+      "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full — no questions asked.</p>"
      }
     }
    },
@@ -1036,28 +1036,28 @@
     "g1": {
      "type": "g",
      "settings": {
-      "icon": "\u2705",
+      "icon": "✅",
       "text": "30-day money-back"
      }
     },
     "g2": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\ude9a",
+      "icon": "🚚",
       "text": "Ships worldwide"
      }
     },
     "g3": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\udd2c",
+      "icon": "🔬",
       "text": "Lab-tested every batch"
      }
     },
     "g4": {
      "type": "g",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "text": "100% natural"
      }
     }
@@ -1075,9 +1075,23 @@
     "badge": "30-day money-back guarantee",
     "title_pre": "Feel the Difference",
     "title_highlight": "Risk-Free for 30 Days",
-    "sub": "Join the 70,000+ women who've made Her-Biotics\u2122 their daily anchor. If you don't feel the difference, we'll refund every cent.",
+    "sub": "Join the 70,000+ women who've made Her-Biotics™ their daily anchor. If you don't feel the difference, we'll refund every cent.",
     "cta_text": "Add to Cart",
     "cta_link": "#vbpForm"
+   }
+  },
+  "science_strip": {
+   "type": "vb-science-strip",
+   "settings": {
+    "kicker": "Backed by peer-reviewed science",
+    "title_pre": "Don't take our word for it.",
+    "title_highlight": "View the science.",
+    "sub": "The shielding technology in this product was studied in three peer-reviewed papers. Read what the research actually showed, in plain English.",
+    "all_text": "View the science",
+    "all_url": "/pages/what-is-microencapsulation",
+    "bg": "#f6faf5",
+    "pad_top": 40,
+    "pad_bottom": 40
    }
   }
  },
@@ -1095,6 +1109,7 @@
   "fbt",
   "doctors",
   "outperform",
+  "science_strip",
   "judgeme",
   "faq",
   "final"

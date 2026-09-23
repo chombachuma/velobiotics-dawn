@@ -8,178 +8,193 @@
  * ------------------------------------------------------------
  */
 {
-  "sections": {
-    "main": {
-      "type": "main-product",
-      "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "title": {
-          "type": "title",
-          "settings": {}
-        },
-        "caption": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
-        "paywhirl_subscriptions_paywhirl_plan_selector_j7JkKJ": {
-          "type": "shopify://apps/paywhirl-subscriptions/blocks/paywhirl-plan-selector/41e95d60-82cf-46e8-84de-618d7e4c37b7",
-          "settings": {
-            "theme": "default",
-            "font_scale": 100,
-            "show_prices": "default",
-            "show_per_delivery_prices": "default",
-            "show_save_badge": "default",
-            "selling_plans_first": false,
-            "one_time_purchase_description": "<p>Buy this product as a one-time purchase.</p>",
-            "selling_plans_description": "<p>Subscribe to this product and receive it on a regular basis.</p>",
-            "theme_color": "#334FB4",
-            "sleek_theme_color_preset": "default",
-            "sleek_color_background": "",
-            "sleek_color_primary_button": "",
-            "sleek_color_primary_button_label": "",
-            "sleek_color_primary_button_icon": "",
-            "sleek_color_secondary_button": "",
-            "sleek_color_secondary_button_label": "",
-            "sleek_color_secondary_button_icon": "",
-            "sleek_color_text": "",
-            "color_badge": "",
-            "color_badge_label": "",
-            "one_time_purchase_icon": "default",
-            "subscription_icon": "default",
-            "product": "{{product}}"
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Materials",
-            "icon": "leather",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Shipping & Returns",
-            "icon": "truck",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "",
-            "page": ""
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "vendor",
-        "title",
-        "caption",
-        "paywhirl_subscriptions_paywhirl_plan_selector_j7JkKJ",
-        "price",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
-        "description",
-        "collapsible-row-0",
-        "collapsible-row-1",
-        "collapsible-row-2",
-        "collapsible-row-3",
-        "share"
-      ],
-      "settings": {
-        "enable_sticky_info": true,
-        "color_scheme": "",
-        "media_size": "large",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "gallery_layout": "stacked",
-        "mobile_thumbnails": "hide",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": true,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 12
-      }
+ "sections": {
+  "main": {
+   "type": "main-product",
+   "blocks": {
+    "vendor": {
+     "type": "text",
+     "settings": {
+      "text": "{{ product.vendor }}",
+      "text_style": "uppercase"
+     }
     },
-    "related-products": {
-      "type": "related-products",
-      "settings": {
-        "heading": "You may also like",
-        "heading_size": "h2",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "columns_mobile": "2",
-        "color_scheme": "scheme-1",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "padding_top": 36,
-        "padding_bottom": 28
-      }
+    "title": {
+     "type": "title",
+     "settings": {}
+    },
+    "caption": {
+     "type": "text",
+     "settings": {
+      "text": "{{ product.metafields.descriptors.subtitle.value }}",
+      "text_style": "subtitle"
+     }
+    },
+    "paywhirl_subscriptions_paywhirl_plan_selector_j7JkKJ": {
+     "type": "shopify://apps/paywhirl-subscriptions/blocks/paywhirl-plan-selector/41e95d60-82cf-46e8-84de-618d7e4c37b7",
+     "settings": {
+      "theme": "default",
+      "font_scale": 100,
+      "show_prices": "default",
+      "show_per_delivery_prices": "default",
+      "show_save_badge": "default",
+      "selling_plans_first": false,
+      "one_time_purchase_description": "<p>Buy this product as a one-time purchase.</p>",
+      "selling_plans_description": "<p>Subscribe to this product and receive it on a regular basis.</p>",
+      "theme_color": "#334FB4",
+      "sleek_theme_color_preset": "default",
+      "sleek_color_background": "",
+      "sleek_color_primary_button": "",
+      "sleek_color_primary_button_label": "",
+      "sleek_color_primary_button_icon": "",
+      "sleek_color_secondary_button": "",
+      "sleek_color_secondary_button_label": "",
+      "sleek_color_secondary_button_icon": "",
+      "sleek_color_text": "",
+      "color_badge": "",
+      "color_badge_label": "",
+      "one_time_purchase_icon": "default",
+      "subscription_icon": "default",
+      "product": "{{product}}"
+     }
+    },
+    "price": {
+     "type": "price",
+     "settings": {}
+    },
+    "variant_picker": {
+     "type": "variant_picker",
+     "settings": {
+      "picker_type": "button",
+      "swatch_shape": "circle"
+     }
+    },
+    "quantity_selector": {
+     "type": "quantity_selector",
+     "settings": {}
+    },
+    "buy_buttons": {
+     "type": "buy_buttons",
+     "settings": {
+      "show_dynamic_checkout": true,
+      "show_gift_card_recipient": true
+     }
+    },
+    "description": {
+     "type": "description",
+     "settings": {}
+    },
+    "collapsible-row-0": {
+     "type": "collapsible_tab",
+     "settings": {
+      "heading": "Materials",
+      "icon": "leather",
+      "content": "",
+      "page": ""
+     }
+    },
+    "collapsible-row-1": {
+     "type": "collapsible_tab",
+     "settings": {
+      "heading": "Shipping & Returns",
+      "icon": "truck",
+      "content": "",
+      "page": ""
+     }
+    },
+    "collapsible-row-2": {
+     "type": "collapsible_tab",
+     "settings": {
+      "heading": "Dimensions",
+      "icon": "ruler",
+      "content": "",
+      "page": ""
+     }
+    },
+    "collapsible-row-3": {
+     "type": "collapsible_tab",
+     "settings": {
+      "heading": "Care Instructions",
+      "icon": "heart",
+      "content": "",
+      "page": ""
+     }
+    },
+    "share": {
+     "type": "share",
+     "settings": {
+      "share_label": "Share"
+     }
     }
+   },
+   "block_order": [
+    "vendor",
+    "title",
+    "caption",
+    "paywhirl_subscriptions_paywhirl_plan_selector_j7JkKJ",
+    "price",
+    "variant_picker",
+    "quantity_selector",
+    "buy_buttons",
+    "description",
+    "collapsible-row-0",
+    "collapsible-row-1",
+    "collapsible-row-2",
+    "collapsible-row-3",
+    "share"
+   ],
+   "settings": {
+    "enable_sticky_info": true,
+    "color_scheme": "",
+    "media_size": "large",
+    "constrain_to_viewport": true,
+    "media_fit": "contain",
+    "gallery_layout": "stacked",
+    "mobile_thumbnails": "hide",
+    "media_position": "left",
+    "image_zoom": "lightbox",
+    "hide_variants": true,
+    "enable_video_looping": false,
+    "padding_top": 36,
+    "padding_bottom": 12
+   }
   },
-  "order": [
-    "main",
-    "related-products"
-  ]
+  "related-products": {
+   "type": "related-products",
+   "settings": {
+    "heading": "You may also like",
+    "heading_size": "h2",
+    "products_to_show": 4,
+    "columns_desktop": 4,
+    "columns_mobile": "2",
+    "color_scheme": "scheme-1",
+    "image_ratio": "square",
+    "image_shape": "default",
+    "show_secondary_image": true,
+    "show_vendor": false,
+    "show_rating": false,
+    "padding_top": 36,
+    "padding_bottom": 28
+   }
+  },
+  "science_strip": {
+   "type": "vb-science-strip",
+   "settings": {
+    "kicker": "Backed by peer-reviewed science",
+    "title_pre": "Don't take our word for it.",
+    "title_highlight": "View the science.",
+    "sub": "Every Velobiotics™ product uses the same patented microencapsulation studied in three peer-reviewed papers. Here is what the research actually showed, in plain English.",
+    "all_text": "View the science",
+    "all_url": "/pages/what-is-microencapsulation",
+    "bg": "#f6faf5",
+    "pad_top": 48,
+    "pad_bottom": 48
+   }
+  }
+ },
+ "order": [
+  "main",
+  "related-products",
+  "science_strip"
+ ]
 }

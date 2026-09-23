@@ -8,86 +8,101 @@
  * ------------------------------------------------------------
  */
 {
-  "sections": {
-    "hero": {
-      "type": "femina-hero",
-      "settings": {
-        "bg_image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-family-hero-desktop.jpg?v=1790178296",
-        "eyebrow": "\u2726 The Complete Velobiotics\u2122 Range \u2726",
-        "headline_pre": "Probiotics that",
-        "headline_highlight": "actually reach",
-        "headline_post": "your gut.",
-        "sub": "Patented MEP Microencapsulation Technology \u2014 1000\u00d7 more live probiotics delivered to your gut. Doctor-formulated. 9 brands. One mission: 100 million healthy guts by 2035.",
-        "cta1_text": "\ud83c\udfaf Find Your Perfect Match",
-        "cta1_link": "/pages/quiz",
-        "cta2_text": "Explore the Science \u2192",
-        "cta2_link": "/pages/what-is-microencapsulation",
-        "proof": " 4.8\u2605 from 300,000+ customers \u00b7 16 strains \u00b7 Velobiotics\u2122 Technology",
-        "show_badges": true,
-        "bg_color_start": "#2e5d28",
-        "bg_color_mid": "#4d8c44",
-        "bg_color_end": "#7eb375",
-        "bg_image_mobile_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-family-hero-mobile.jpg?v=1790178296",
-        "photo_mode": true,
-        "bg_image_alt": "A happy family sharing a healthy breakfast \u2014 the Velobiotics range for every gut in the home"
-      },
-      "blocks": {
-        "b1": {
-          "type": "badge",
-          "settings": {
-            "text": "1000\u00d7 More Delivery"
-          }
-        },
-        "b2": {
-          "type": "badge",
-          "settings": {
-            "text": "16 Probiotic Strains"
-          }
-        },
-        "b3": {
-          "type": "badge",
-          "settings": {
-            "text": "Patented MEP"
-          }
-        },
-        "b4": {
-          "type": "badge",
-          "settings": {
-            "text": "\ud83c\udf3f 9 Velobiotics Brands"
-          }
-        }
-      },
-      "block_order": [
-        "b1",
-        "b2",
-        "b3",
-        "b4"
-      ]
+ "sections": {
+  "hero": {
+   "type": "femina-hero",
+   "settings": {
+    "bg_image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-family-hero-desktop.jpg?v=1790178296",
+    "eyebrow": "✦ The Complete Velobiotics™ Range ✦",
+    "headline_pre": "Probiotics that",
+    "headline_highlight": "actually reach",
+    "headline_post": "your gut.",
+    "sub": "Patented MEP Microencapsulation Technology — 1000× more live probiotics delivered to your gut. Doctor-formulated. 9 brands. One mission: 100 million healthy guts by 2035.",
+    "cta1_text": "🎯 Find Your Perfect Match",
+    "cta1_link": "/pages/quiz",
+    "cta2_text": "Explore the Science →",
+    "cta2_link": "/pages/what-is-microencapsulation",
+    "proof": " 4.8★ from 300,000+ customers · 16 strains · Velobiotics™ Technology",
+    "show_badges": true,
+    "bg_color_start": "#2e5d28",
+    "bg_color_mid": "#4d8c44",
+    "bg_color_end": "#7eb375",
+    "bg_image_mobile_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-family-hero-mobile.jpg?v=1790178296",
+    "photo_mode": true,
+    "bg_image_alt": "A happy family sharing a healthy breakfast — the Velobiotics range for every gut in the home"
+   },
+   "blocks": {
+    "b1": {
+     "type": "badge",
+     "settings": {
+      "text": "1000× More Delivery"
+     }
     },
-    "body": {
-      "type": "femina-collection-body",
-      "settings": {}
+    "b2": {
+     "type": "badge",
+     "settings": {
+      "text": "16 Probiotic Strains"
+     }
     },
-    "grid": {
-      "type": "femina-product-grid",
-      "settings": {
-        "show_heading": true,
-        "eyebrow": "Browse All Products",
-        "title": "The Velobiotics\u2122 Range",
-        "sub": "From women's intimate health to men's performance, kids' immunity to pregnancy support \u2014 explore every Velobiotics product, all in one place.",
-        "brand_primary": "#4d8c44",
-        "brand_secondary": "#2e5d28",
-        "card_bg": "#eef7ec",
-        "card_bg2": "#d4ebd0",
-        "brand_label": "Velobiotics\u2122",
-        "products_per_page": 24,
-        "card_min_width": 280
-      }
+    "b3": {
+     "type": "badge",
+     "settings": {
+      "text": "Patented MEP"
+     }
+    },
+    "b4": {
+     "type": "badge",
+     "settings": {
+      "text": "🌿 9 Velobiotics Brands"
+     }
     }
+   },
+   "block_order": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ]
   },
-  "order": [
-    "hero",
-    "body",
-    "grid"
-  ]
+  "body": {
+   "type": "femina-collection-body",
+   "settings": {}
+  },
+  "grid": {
+   "type": "femina-product-grid",
+   "settings": {
+    "show_heading": true,
+    "eyebrow": "Browse All Products",
+    "title": "The Velobiotics™ Range",
+    "sub": "From women's intimate health to men's performance, kids' immunity to pregnancy support — explore every Velobiotics product, all in one place.",
+    "brand_primary": "#4d8c44",
+    "brand_secondary": "#2e5d28",
+    "card_bg": "#eef7ec",
+    "card_bg2": "#d4ebd0",
+    "brand_label": "Velobiotics™",
+    "products_per_page": 24,
+    "card_min_width": 280
+   }
+  },
+  "science_strip": {
+   "type": "vb-science-strip",
+   "settings": {
+    "kicker": "Backed by peer-reviewed science",
+    "title_pre": "Don't take our word for it.",
+    "title_highlight": "View the science.",
+    "sub": "Every Velobiotics™ product uses the same patented microencapsulation studied in three peer-reviewed papers. Here is what the research actually showed, in plain English.",
+    "all_text": "View the science",
+    "all_url": "/pages/what-is-microencapsulation",
+    "bg": "#f6faf5",
+    "pad_top": 48,
+    "pad_bottom": 48
+   }
+  }
+ },
+ "order": [
+  "hero",
+  "body",
+  "grid",
+  "science_strip"
+ ]
 }

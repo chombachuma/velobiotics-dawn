@@ -11,8 +11,43 @@
   "sections": {
     "femina-hero": {
       "type": "femina-hero",
+      "blocks": {
+        "b1": {
+          "type": "badge",
+          "settings": {
+            "text": "10 Strains"
+          }
+        },
+        "b2": {
+          "type": "badge",
+          "settings": {
+            "text": "5B CFU"
+          }
+        },
+        "b3": {
+          "type": "badge",
+          "settings": {
+            "text": "Velobiotics™ 1000×"
+          }
+        },
+        "b4": {
+          "type": "badge",
+          "settings": {
+            "text": "🌿 Vegan"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
       "settings": {
         "bg_image_url": "https://media.base44.com/images/public/69e1abc073bbccc7f63edacc/653a0d852_generated_image.png",
+        "bg_color_start": "#3d0a45",
+        "bg_color_mid": "#6e2675",
+        "bg_color_end": "#9d3590",
         "eyebrow": "South Africa's #1 Intimate Health System",
         "headline_pre": "BV won't go away?",
         "headline_highlight": "You're not the problem",
@@ -23,18 +58,8 @@
         "cta2_text": "🔬 Take the 2-minute V-Check",
         "cta2_link": "https://femina.care/vcheck",
         "proof": " 4.8 from 2,100+ verified reviews · Lab-tested every batch",
-        "show_badges": true,
-        "bg_color_start": "#3d0a45",
-        "bg_color_mid": "#6e2675",
-        "bg_color_end": "#9d3590"
-      },
-      "blocks": {
-        "b1": { "type": "badge", "settings": { "text": "10 Strains" } },
-        "b2": { "type": "badge", "settings": { "text": "5B CFU" } },
-        "b3": { "type": "badge", "settings": { "text": "Velobiotics™ 1000×" } },
-        "b4": { "type": "badge", "settings": { "text": "🌿 Vegan" } }
-      },
-      "block_order": ["b1", "b2", "b3", "b4"]
+        "show_badges": true
+      }
     },
     "femina-body": {
       "type": "femina-collection-body",
@@ -47,14 +72,28 @@
         "eyebrow": "The Collection",
         "title": "Products That Perform",
         "sub": "Every Femina product is formulated to work in harmony with your body's natural ecosystem — and backed by 2,000+ verified five-star stories.",
-        "products_per_page": 12,
-        "cta_text": "Learn More"
+        "products_per_page": 12
+      }
+    },
+    "science_strip": {
+      "type": "vb-science-strip",
+      "settings": {
+        "kicker": "Backed by peer-reviewed science",
+        "title_pre": "Don't take our word for it.",
+        "title_highlight": "View the science.",
+        "sub": "Every Velobiotics™ product uses the same patented microencapsulation studied in three peer-reviewed papers. Here is what the research actually showed, in plain English.",
+        "all_text": "View the science",
+        "all_url": "/pages/what-is-microencapsulation",
+        "bg": "#f6faf5",
+        "pad_top": 48,
+        "pad_bottom": 48
       }
     }
   },
   "order": [
     "femina-hero",
     "femina-body",
-    "femina-product-grid"
+    "femina-product-grid",
+    "science_strip"
   ]
 }

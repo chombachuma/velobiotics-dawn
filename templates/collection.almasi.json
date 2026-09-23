@@ -8,51 +8,98 @@
  * ------------------------------------------------------------
  */
 {
-  "sections": {
-    "hero": {
-      "type": "femina-hero",
-      "settings": {
-        "bg_image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_180908_9d391f3b-1ab6-46d0-8e3f-f40c2be6925d.png",
-        "eyebrow": "— BEAUTY-FROM-WITHIN",
-        "headline_pre": "Beauty",
-        "headline_highlight": "starts within.",
-        "headline_post": "",
-        "sub": "Collagen peptides, biotin, silica, and probiotic strains — formulated with Velobiotics™ MEP technology. Visible glow, stronger hair, resilient nails — from the inside.",
-        "cta1_text": "✨ Shop Almasi",
-        "cta1_link": "/collections/almasi-probiotics-skin-care",
-        "cta2_text": "The Science →",
-        "cta2_link": "/pages/what-is-microencapsulation",
-        "proof": " 1000× more probiotics · Bioavailable collagen · 5★ customer rating",
-        "show_badges": true,
-        "bg_color_start": "#1a1a1a",
-        "bg_color_mid": "#3d2e2e",
-        "bg_color_end": "#7a5252"
-      },
-      "blocks": {
-        "b1": { "type": "badge", "settings": { "text": "Hair · Skin · Nails" } },
-        "b2": { "type": "badge", "settings": { "text": "Bioavailable Collagen" } },
-        "b3": { "type": "badge", "settings": { "text": "16 Probiotic Strains" } },
-        "b4": { "type": "badge", "settings": { "text": "💎 Beauty Daily" } }
-      },
-      "block_order": ["b1","b2","b3","b4"]
+ "sections": {
+  "hero": {
+   "type": "femina-hero",
+   "settings": {
+    "bg_image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_180908_9d391f3b-1ab6-46d0-8e3f-f40c2be6925d.png",
+    "eyebrow": "— BEAUTY-FROM-WITHIN",
+    "headline_pre": "Beauty",
+    "headline_highlight": "starts within.",
+    "headline_post": "",
+    "sub": "Collagen peptides, biotin, silica, and probiotic strains — formulated with Velobiotics™ MEP technology. Visible glow, stronger hair, resilient nails — from the inside.",
+    "cta1_text": "✨ Shop Almasi",
+    "cta1_link": "/collections/almasi-probiotics-skin-care",
+    "cta2_text": "The Science →",
+    "cta2_link": "/pages/what-is-microencapsulation",
+    "proof": " 1000× more probiotics · Bioavailable collagen · 5★ customer rating",
+    "show_badges": true,
+    "bg_color_start": "#1a1a1a",
+    "bg_color_mid": "#3d2e2e",
+    "bg_color_end": "#7a5252"
+   },
+   "blocks": {
+    "b1": {
+     "type": "badge",
+     "settings": {
+      "text": "Hair · Skin · Nails"
+     }
     },
-    "body": { "type": "femina-collection-body", "settings": {} },
-    "grid": {
-      "type": "femina-product-grid",
-      "settings": {
-        "show_heading": true,
-        "eyebrow": "The Range",
-        "title": "Beauty-from-within, Redefined",
-        "sub": "Collagen peptide powder, capsules, and skin/hair/nails complex — daily ingestibles for visible glow.",
-        "brand_primary": "#1a1a1a",
-        "brand_secondary": "#4d8c44",
-        "card_bg": "#fdf5f3",
-        "card_bg2": "#f3d6cf",
-        "brand_label": "ALMASI™",
-        "products_per_page": 24,
-        "card_min_width": 280
-      }
+    "b2": {
+     "type": "badge",
+     "settings": {
+      "text": "Bioavailable Collagen"
+     }
+    },
+    "b3": {
+     "type": "badge",
+     "settings": {
+      "text": "16 Probiotic Strains"
+     }
+    },
+    "b4": {
+     "type": "badge",
+     "settings": {
+      "text": "💎 Beauty Daily"
+     }
     }
+   },
+   "block_order": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ]
   },
-  "order": ["hero","body","grid"]
+  "body": {
+   "type": "femina-collection-body",
+   "settings": {}
+  },
+  "grid": {
+   "type": "femina-product-grid",
+   "settings": {
+    "show_heading": true,
+    "eyebrow": "The Range",
+    "title": "Beauty-from-within, Redefined",
+    "sub": "Collagen peptide powder, capsules, and skin/hair/nails complex — daily ingestibles for visible glow.",
+    "brand_primary": "#1a1a1a",
+    "brand_secondary": "#4d8c44",
+    "card_bg": "#fdf5f3",
+    "card_bg2": "#f3d6cf",
+    "brand_label": "ALMASI™",
+    "products_per_page": 24,
+    "card_min_width": 280
+   }
+  },
+  "science_strip": {
+   "type": "vb-science-strip",
+   "settings": {
+    "kicker": "Backed by peer-reviewed science",
+    "title_pre": "Don't take our word for it.",
+    "title_highlight": "View the science.",
+    "sub": "Every Velobiotics™ product uses the same patented microencapsulation studied in three peer-reviewed papers. Here is what the research actually showed, in plain English.",
+    "all_text": "View the science",
+    "all_url": "/pages/what-is-microencapsulation",
+    "bg": "#f6faf5",
+    "pad_top": 48,
+    "pad_bottom": 48
+   }
+  }
+ },
+ "order": [
+  "hero",
+  "body",
+  "grid",
+  "science_strip"
+ ]
 }

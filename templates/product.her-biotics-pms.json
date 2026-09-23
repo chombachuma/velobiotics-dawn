@@ -15,29 +15,29 @@
     "b1": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83c\udf38",
+      "icon": "🌸",
       "text": "PMS symptom relief"
      }
     },
     "b2": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83d\ude0c",
+      "icon": "😌",
       "text": "Cramp & bloat ease"
      }
     },
     "b3": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "text": "16 probiotic strains"
      }
     },
     "b4": {
      "type": "benefit",
      "settings": {
-      "icon": "\u26a1",
-      "text": "1000\u00d7 more delivery"
+      "icon": "⚡",
+      "text": "1000× more delivery"
      }
     },
     "t1": {
@@ -83,11 +83,11 @@
     "brand_primary": "#f5908d",
     "brand_dark": "#b85a58",
     "brand_tint": "#fff5f3",
-    "brand_label": "Her-Biotics\u2122 PMS",
+    "brand_label": "Her-Biotics™ PMS",
     "rating": "4.7",
     "review_count": "150+",
-    "hook": "Take back your cycle. Her-Biotics\u2122 PMS Support combines 16 probiotic strains with magnesium, B6, chasteberry, and saffron \u2014 natural relief for cramps, mood swings, and bloating.",
-    "ship_note": "Ships worldwide \u00b7 Free shipping over the free-shipping threshold \u00b7 30-day money-back guarantee",
+    "hook": "Take back your cycle. Her-Biotics™ PMS Support combines 16 probiotic strains with magnesium, B6, chasteberry, and saffron — natural relief for cramps, mood swings, and bloating.",
+    "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
     "show_buynow": true,
     "show_testi_marquee": true
    }
@@ -100,7 +100,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Mpho+V&background=f5908d&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Mpho V.",
-      "meta": "Verified buyer \u00b7 Johannesburg",
+      "meta": "Verified buyer · Johannesburg",
       "quote": "Cramps so much milder. My productive week back."
      }
     },
@@ -109,7 +109,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Sarah+B&background=ffc0bd&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Sarah B.",
-      "meta": "Verified buyer \u00b7 Cape Town",
+      "meta": "Verified buyer · Cape Town",
       "quote": "PMS used to ruin a week. Now I barely notice."
      }
     },
@@ -118,7 +118,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Refilwe+D&background=b85a58&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Refilwe D.",
-      "meta": "Verified buyer \u00b7 2 months ago",
+      "meta": "Verified buyer · 2 months ago",
       "quote": "Mood swings finally calm. My partner thanks me."
      }
     },
@@ -127,7 +127,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Kim+T&background=f5908d&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Kim T.",
-      "meta": "Verified buyer \u00b7 3 weeks ago",
+      "meta": "Verified buyer · 3 weeks ago",
       "quote": "Bloat reduced dramatically. Energy steady through cycle."
      }
     },
@@ -136,7 +136,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Aisha+K&background=ffc0bd&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Aisha K.",
-      "meta": "Verified buyer \u00b7 3 months ago",
+      "meta": "Verified buyer · 3 months ago",
       "quote": "Three cycles in. My PMS is barely there now."
      }
     }
@@ -152,7 +152,7 @@
     "brand_primary": "#f5908d",
     "brand_dark": "#b85a58",
     "brand_tint": "#fff5f3",
-    "eyebrow": "\u2605 Real Reviews",
+    "eyebrow": "★ Real Reviews",
     "title": "PMS relief that women trust"
    }
   },
@@ -162,28 +162,28 @@
     "p1": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Cramps</strong> that knock you out for days every cycle."
      }
     },
     "p2": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Mood swings</strong> that strain relationships and work."
      }
     },
     "p3": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Bloating</strong> that adds 2kg of misery on cue."
      }
     },
     "p4": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Painkillers</strong> that mask symptoms but never fix the root."
      }
     }
@@ -204,7 +204,7 @@
     "eyebrow": "The Problem",
     "title_pre": "PMS doesn't need to",
     "title_highlight": "steal your week.",
-    "desc": "Most PMS supplements miss the gut \u2014 where 90% of serotonin is made. The right blend addresses the hormonal swing, the magnesium and B6 depletion, and the gut imbalance that drives PMS at its root."
+    "desc": "Most PMS supplements miss the gut — where 90% of serotonin is made. The right blend addresses the hormonal swing, the magnesium and B6 depletion, and the gut imbalance that drives PMS at its root."
    }
   },
   "solution": {
@@ -213,29 +213,29 @@
     "s1": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Magnesium glycinate + B6</strong> \u2014 clinical cramp and mood relief."
+      "icon": "✓",
+      "text": "<strong>Magnesium glycinate + B6</strong> — clinical cramp and mood relief."
      }
     },
     "s2": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Chasteberry + saffron</strong> \u2014 herbal hormonal balance."
+      "icon": "✓",
+      "text": "<strong>Chasteberry + saffron</strong> — herbal hormonal balance."
      }
     },
     "s3": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>16-strain probiotic blend</strong> for gut and serotonin production."
      }
     },
     "s4": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Velobiotics\u2122 MEP technology</strong> \u2014 1000\u00d7 more reach you alive."
+      "icon": "✓",
+      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
      }
     }
    },
@@ -250,12 +250,12 @@
     "brand_primary": "#f5908d",
     "brand_tint": "#fff5f3",
     "image_url": "",
-    "tag_value": "1000\u00d7",
+    "tag_value": "1000×",
     "tag_label": "More Probiotics Delivered",
     "eyebrow": "The Solution",
     "title_pre": "Meet",
-    "title_highlight": "Her-Biotics\u2122 PMS.",
-    "desc": "Magnesium + B6 + chasteberry + saffron + 16 probiotic strains. Address the cramps, the mood swings, the bloating \u2014 naturally, at the root, every cycle."
+    "title_highlight": "Her-Biotics™ PMS.",
+    "desc": "Magnesium + B6 + chasteberry + saffron + 16 probiotic strains. Address the cramps, the mood swings, the bloating — naturally, at the root, every cycle."
    }
   },
   "related": {
@@ -265,7 +265,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-original-capsules-60s",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.7",
       "reviews": "950+",
       "fallback_title": "",
@@ -277,7 +277,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-probiotics-menopausal-support",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.8",
       "reviews": "180+",
       "fallback_title": "",
@@ -289,7 +289,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-probiotics-ageless-multivitamin-50",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.8",
       "reviews": "120+",
       "fallback_title": "",
@@ -301,7 +301,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-probiotics-sport-multivitamin-capsules-60",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.6",
       "reviews": "100+",
       "fallback_title": "",
@@ -322,7 +322,7 @@
     "brand_tint": "#fff5f3",
     "tint": false,
     "eyebrow": "Complete the Stack",
-    "title": "More from the Her-Biotics\u2122 range",
+    "title": "More from the Her-Biotics™ range",
     "sub": "Customised support for every season of a woman's life."
    }
   },
@@ -332,7 +332,7 @@
     "b1": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\ude0c",
+      "icon": "😌",
       "name": "Cramp Relief",
       "desc": "Magnesium glycinate eases uterine contractions."
      }
@@ -340,7 +340,7 @@
     "b2": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udc9a",
+      "icon": "💚",
       "name": "Mood Stability",
       "desc": "B6 + saffron reduce irritability and emotional swings."
      }
@@ -348,7 +348,7 @@
     "b3": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udca8",
+      "icon": "💨",
       "name": "Less Bloating",
       "desc": "16 probiotic strains balance gut for less premenstrual bloat."
      }
@@ -356,7 +356,7 @@
     "b4": {
      "type": "feat",
      "settings": {
-      "icon": "\u2696\ufe0f",
+      "icon": "⚖️",
       "name": "Hormonal Balance",
       "desc": "Chasteberry supports natural progesterone rhythm."
      }
@@ -364,7 +364,7 @@
     "b5": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\ude7a",
+      "icon": "🩺",
       "name": "Doctor-Formulated",
       "desc": "Built by women's-health specialists."
      }
@@ -372,7 +372,7 @@
     "b6": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "name": "100% Natural",
       "desc": "No hormones, no synthetics. Vegan, halaal-friendly."
      }
@@ -403,21 +403,21 @@
     "brand_tint": "#fff5f3",
     "form": "capsule",
     "dose": "2 capsules",
-    "when": "with water \u2014 start 5\u20137 days before your cycle",
+    "when": "with water — start 5–7 days before your cycle",
     "course": "Daily through the first days of your period",
     "timeofday": "morning",
     "mix_volume": "250 ml water or milk",
     "eyebrow": "How to use",
     "title_pre": "Your daily ritual,",
     "title_highlight": "made effortless.",
-    "w1_title": "Days 1\u20132",
-    "w1": "Start 5\u20137 days before your period is due.",
+    "w1_title": "Days 1–2",
+    "w1": "Start 5–7 days before your period is due.",
     "w2_title": "Pre-cycle",
     "w2": "Magnesium, B6 and botanicals build up ahead of symptoms.",
     "w3_title": "Your period",
     "w3": "Continue through the first few days for cramp and mood support.",
     "w4_title": "Next cycle",
-    "w4": "Repeat each month \u2014 most women notice a clear difference by the second cycle."
+    "w4": "Repeat each month — most women notice a clear difference by the second cycle."
    }
   },
   "ingredients": {
@@ -426,7 +426,7 @@
     "i1": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udc8e",
+      "icon": "💎",
       "name": "Magnesium Glycinate",
       "amount": "200mg",
       "desc": "Bioavailable magnesium for cramp and mood relief."
@@ -435,7 +435,7 @@
     "i2": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "name": "Chasteberry (Vitex)",
       "amount": "40mg",
       "desc": "Standardised extract for natural hormonal balance."
@@ -444,7 +444,7 @@
     "i3": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83c\udf3a",
+      "icon": "🌺",
       "name": "Saffron Extract",
       "amount": "30mg",
       "desc": "Clinical PMS mood relief in randomised trials."
@@ -453,7 +453,7 @@
     "i4": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udc8a",
+      "icon": "💊",
       "name": "Vitamin B6 + B-Complex",
       "amount": "Full daily",
       "desc": "Mood stability, energy, premenstrual support."
@@ -462,7 +462,7 @@
     "i5": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "name": "16-Strain Probiotic Blend",
       "amount": "1 Billion CFU",
       "desc": "Gut and serotonin support for the second-brain connection."
@@ -471,10 +471,10 @@
     "i6": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udeab",
+      "icon": "🚫",
       "name": "Free From",
       "amount": "Always",
-      "desc": "Gluten \u00b7 soy \u00b7 dairy \u00b7 artificial colours \u00b7 preservatives \u00b7 GMO."
+      "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO."
      }
     }
    },
@@ -499,7 +499,7 @@
     "facts_col_a": "Ingredient",
     "facts_col_b": "Per serving",
     "facts_caption": "% Daily Value not established. Other Ingredients: HPMC, Magnesium Stearate.",
-    "facts_foot": "Lab-tested \u00b7 Doctor-formulated \u00b7 Full transparency"
+    "facts_foot": "Lab-tested · Doctor-formulated · Full transparency"
    }
   },
   "confidence": {
@@ -566,7 +566,7 @@
      "type": "product",
      "settings": {
       "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
-      "brand": "Femina\u2122",
+      "brand": "Femina™",
       "rating": "4.8",
       "reviews": "1300+",
       "fallback_title": "",
@@ -578,7 +578,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-original-capsules-60s",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.7",
       "reviews": "950+",
       "fallback_title": "",
@@ -590,7 +590,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-magnesium-glycinate",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.6",
       "reviews": "190+",
       "fallback_title": "",
@@ -602,7 +602,7 @@
      "type": "product",
      "settings": {
       "product_handle": "gutslim-probiotics-glp-1-booster",
-      "brand": "GutSlim\u2122",
+      "brand": "GutSlim™",
       "rating": "4.8",
       "reviews": "410+",
       "fallback_title": "",
@@ -634,16 +634,16 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Clinically Validated",
-      "desc": "Chasteberry + saffron \u2014 peer-reviewed for PMS."
+      "desc": "Chasteberry + saffron — peer-reviewed for PMS."
      }
     },
     "d2": {
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Doctor Formulated",
       "desc": "Built by women's-health specialists."
      }
@@ -652,16 +652,16 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Patented MEP Technology",
-      "desc": "Microencapsulation with Supercritical CO\u2082."
+      "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
     "d4": {
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Clean Label",
       "desc": "Vegan, halaal-friendly, no fillers."
      }
@@ -742,14 +742,14 @@
     "brand_tint": "#fff5f3",
     "eyebrow": "",
     "title": "Why Her-Biotics PMS Outperforms",
-    "sub": "Magnesium, chasteberry, saffron, B6, 16 probiotic strains \u2014 root-cause PMS relief, not just painkiller masking.",
+    "sub": "Magnesium, chasteberry, saffron, B6, 16 probiotic strains — root-cause PMS relief, not just painkiller masking.",
     "col_features": "Features",
     "col_brand": "PMS",
     "brand_logo_url": "",
     "col_b": "Painkillers",
     "col_c": "Others",
     "cta_text": "Add to Cart",
-    "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
+    "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
    }
   },
   "judgeme": {
@@ -777,14 +777,14 @@
      "type": "q",
      "settings": {
       "question": "Do I take it all month or only premenstrually?",
-      "answer": "<p>Take daily, all month. Magnesium and probiotics build cumulative benefits \u2014 the herbs work best with steady support.</p>"
+      "answer": "<p>Take daily, all month. Magnesium and probiotics build cumulative benefits — the herbs work best with steady support.</p>"
      }
     },
     "q3": {
      "type": "q",
      "settings": {
       "question": "Is this safe with the pill?",
-      "answer": "<p>Most women take both, but always check with your healthcare practitioner \u2014 chasteberry can interact with hormonal contraceptives.</p>"
+      "answer": "<p>Most women take both, but always check with your healthcare practitioner — chasteberry can interact with hormonal contraceptives.</p>"
      }
     },
     "q4": {
@@ -798,14 +798,14 @@
      "type": "q",
      "settings": {
       "question": "Do you ship internationally?",
-      "answer": "<p>Yes. We ship globally \u2014 5\u201314 working days. Free shipping over the free-shipping threshold.</p>"
+      "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
      }
     },
     "q6": {
      "type": "q",
      "settings": {
       "question": "What if it doesn't work for me?",
-      "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full \u2014 no questions asked.</p>"
+      "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full — no questions asked.</p>"
      }
     }
    },
@@ -829,28 +829,28 @@
     "g1": {
      "type": "g",
      "settings": {
-      "icon": "\u2705",
+      "icon": "✅",
       "text": "30-day money-back"
      }
     },
     "g2": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\ude9a",
+      "icon": "🚚",
       "text": "Ships worldwide"
      }
     },
     "g3": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\udd2c",
+      "icon": "🔬",
       "text": "Lab-tested every batch"
      }
     },
     "g4": {
      "type": "g",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "text": "100% natural"
      }
     }
@@ -872,6 +872,20 @@
     "cta_text": "Add to Cart",
     "cta_link": "#vbpForm"
    }
+  },
+  "science_strip": {
+   "type": "vb-science-strip",
+   "settings": {
+    "kicker": "Backed by peer-reviewed science",
+    "title_pre": "Don't take our word for it.",
+    "title_highlight": "View the science.",
+    "sub": "The shielding technology in this product was studied in three peer-reviewed papers. Read what the research actually showed, in plain English.",
+    "all_text": "View the science",
+    "all_url": "/pages/what-is-microencapsulation",
+    "bg": "#f6faf5",
+    "pad_top": 40,
+    "pad_bottom": 40
+   }
   }
  },
  "order": [
@@ -887,6 +901,7 @@
   "fbt",
   "doctors",
   "outperform",
+  "science_strip",
   "judgeme",
   "faq",
   "final"

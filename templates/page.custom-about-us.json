@@ -8,179 +8,316 @@
  * ------------------------------------------------------------
  */
 {
-  "sections": {
-    "main": {
-      "type": "main-page",
-      "settings": {
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "hero": {
-      "type": "vb-hero",
-      "settings": {
-        "eyebrow": "About Velobiotics",
-        "sub": "We build probiotics that survive the journey — so your body actually benefits. Engineered in South Africa. Lab-tested every batch. 1000× more delivery."
-      }
-    },
-    "promise": {
-      "type": "vb-feature-row",
-      "settings": {
-        "eyebrow": "Our Promise"
-      }
-    },
-    "difference": {
-      "type": "vb-feature-row",
-      "settings": {
-        "eyebrow": "Our Technology"
-      }
-    },
-    "team": {
-      "type": "vb-team-grid",
-      "blocks": {
-        "m1": {
-          "type": "member",
-          "settings": {
-            "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-08.jpg",
-            "name": "Dr. Chomba Chuma",
-            "role": "Founder & Managing Director",
-            "bio": "Provides visionary leadership and strategic direction for Velobiotics, driving innovation at the intersection of science, technology, and consumer health. Shapes long-term strategy and global expansion."
-          }
-        },
-        "m2": {
-          "type": "member",
-          "settings": {
-            "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-15.jpg",
-            "name": "Cary Mabunda",
-            "role": "Operations Manager & Deputy GM",
-            "bio": "Leads the operational backbone of Velobiotics, ensuring seamless execution across manufacturing, finance, HR, and administration. Critical in scaling Velobiotics into a world-class biotech company."
-          }
-        },
-        "m3": {
-          "type": "member",
-          "settings": {
-            "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-12.jpg",
-            "name": "Vuyo Qabaka",
-            "role": "Head of Marketing",
-            "bio": "Drives brand strategy, storytelling, and market positioning across all Velobiotics brands. Shapes how science-backed probiotics are communicated to consumers, professionals, and partners."
-          }
-        },
-        "m4": {
-          "type": "member",
-          "settings": {
-            "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-04.jpg",
-            "name": "Palesa Ledwaba",
-            "role": "Sales Rep — Johannesburg South & East",
-            "bio": "Frontline ambassador of Velobiotics, connecting innovative probiotic solutions with pharmacies, healthcare professionals, and retailers. Fuels revenue growth and market penetration."
-          }
-        },
-        "m5": {
-          "type": "member",
-          "settings": {
-            "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-11.jpg",
-            "name": "Ntobeko Motloung",
-            "role": "Sales Rep — Johannesburg North & West",
-            "bio": "Drives market adoption by building trusted relationships with pharmacies, healthcare professionals, and retail partners. Focuses on field execution and consistent sales performance."
-          }
-        },
-        "m6": {
-          "type": "member",
-          "settings": {
-            "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-14.jpg",
-            "name": "Tsakane Sebone",
-            "role": "Bookkeeping and Accounts",
-            "bio": "Ensures financial accuracy, compliance, and reporting integrity. Underpins sustainable expansion, investor readiness, and disciplined financial management toward 2035."
-          }
-        },
-        "m7": {
-          "type": "member",
-          "settings": {
-            "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-02.jpg",
-            "name": "Precious Chiloane",
-            "role": "B2B Customer Support & Sales",
-            "bio": "Manages and grows wholesale and institutional relationships, ensuring efficient fulfilment. Supports Velobiotics' scale into larger commercial and international markets."
-          }
-        },
-        "m8": {
-          "type": "member",
-          "settings": {
-            "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-05.jpg",
-            "name": "Shupa Ziba",
-            "role": "Driver & Logistics Support",
-            "bio": "Ensures reliable movement of goods, documents, and materials that keep daily operations running smoothly. A vital enabler of operational continuity and service excellence."
-          }
-        },
-        "m9": {
-          "type": "member",
-          "settings": {
-            "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-01.jpg",
-            "name": "Bridget Mokoena",
-            "role": "B2C Customer Support & Sales",
-            "bio": "Delivers exceptional customer experiences via direct-to-consumer engagement, education, and sales. Ensures Velobiotics' science-driven products translate into trust, loyalty, and repeat usage."
-          }
-        },
-        "m10": {
-          "type": "member",
-          "settings": {
-            "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-03.jpg",
-            "name": "Gad Mthombeni",
-            "role": "Warehouse & Dispatch Manager",
-            "bio": "Oversees inventory integrity, order fulfilment, and logistics efficiency. Ensures Velobiotics' growing product portfolio moves reliably from production to customers."
-          }
-        }
-      },
-      "block_order": [
-        "m1",
-        "m2",
-        "m3",
-        "m4",
-        "m5",
-        "m6",
-        "m7",
-        "m8",
-        "m9",
-        "m10"
-      ],
-      "settings": {
-        "eyebrow": "Meet the Team",
-        "title_pre": "The People Behind",
-        "title_highlight": "Velobiotics.",
-        "sub": "A multidisciplinary team of medical professionals, scientists, and wellness experts who share one mission: to build probiotics that actually work — by ensuring they reach the gut alive."
-      }
-    },
-    "science_band": {
-      "type": "vb-feature-row",
-      "settings": {
-        "eyebrow": "Backed by Science"
-      }
-    },
-    "brand_family": {
-      "type": "vb-brand-family",
-      "settings": {
-        "eyebrow": "Our Brands",
-        "title_pre": "Every brand. One",
-        "title_highlight": "Velobiotics promise.",
-        "sub": "Nine brands. One patented delivery technology. Every formula engineered to reach you alive."
-      }
-    },
-    "final_cta": {
-      "type": "vb-final-cta",
-      "settings": {
-        "eyebrow": "Join the journey",
-        "title_pre": "Real probiotics.",
-        "title_highlight": "Real difference.",
-        "sub": "Start with the brand that fits your life. Free shipping over the threshold · 30-day money-back guarantee."
-      }
-    }
+ "sections": {
+  "hero": {
+   "type": "vb-hero",
+   "settings": {
+    "bg_image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-hero-about.jpg?v=1790193717",
+    "image_fit": "cover",
+    "image_position": "center 40%",
+    "image_opacity": 100,
+    "overlay_opacity": 55,
+    "min_height": 560,
+    "padding_top": 112,
+    "padding_bottom": 88,
+    "text_align": "center",
+    "text_color": "#1a1a1a",
+    "accent_color": "#4d8c44",
+    "eyebrow": "About Velobiotics",
+    "headline_pre": "Most probiotics die in your stomach.",
+    "headline_highlight": "Ours don't.",
+    "sub": "We are a South African biotech company built on one peer-reviewed idea: shield every single bacterium so it reaches your gut alive. Engineered in Pretoria. Made in Germiston. Trusted in over 300,000 homes.",
+    "show_rating": true,
+    "review_count": "3,500",
+    "customer_count": "300,000",
+    "cta1_text": "Shop the range",
+    "cta1_link": "/collections/all",
+    "cta2_text": "Read our story",
+    "cta2_link": "/pages/velobiotics-story"
+   }
   },
-  "order": [
-    "main",
-    "hero",
-    "promise",
-    "difference",
-    "team",
-    "science_band",
-    "brand_family",
-    "final_cta"
-  ]
+  "promise": {
+   "type": "vb-feature-row",
+   "settings": {
+    "eyebrow": "Our promise",
+    "headline": "Protect. Deliver. Thrive.",
+    "sub": "Three words, and everything we make has to earn all three.",
+    "layout": "cards",
+    "columns": "3",
+    "background": "white"
+   },
+   "blocks": {
+    "f1": {
+     "type": "feature",
+     "settings": {
+      "icon_alt": "Protect",
+      "title": "Protect",
+      "body": "<p>Every bacterium in every Velobiotics™ product is wrapped in its own micron-thin polymer shield, formed without water, solvent or heat. It keeps out acid on the way down and moisture on the shelf.</p>"
+     }
+    },
+    "f2": {
+     "type": "feature",
+     "settings": {
+      "icon_alt": "Deliver",
+      "title": "Deliver",
+      "body": "<p>The shield stays sealed in stomach acid and dissolves in the small intestine, releasing live bacteria exactly where they attach and multiply. Peer-reviewed studies measured 40 to 65 times more survivors.</p>"
+     }
+    },
+    "f3": {
+     "type": "feature",
+     "settings": {
+      "icon_alt": "Thrive",
+      "title": "Thrive",
+      "body": "<p>More live bacteria arriving means a probiotic that does what the label promises: for gut, immunity, intimate health, pregnancy, weight and skin, across nine specialist brands.</p>"
+     }
+    }
+   },
+   "block_order": [
+    "f1",
+    "f2",
+    "f3"
+   ]
+  },
+  "difference": {
+   "type": "vb-feature-row",
+   "settings": {
+    "eyebrow": "Our technology",
+    "headline": "Science first, marketing second.",
+    "sub": "Velobiotics™ microencapsulation was developed over a decade at the CSIR and the University of Pretoria and published in three peer-reviewed journals before we sold a single bottle.",
+    "layout": "cards",
+    "columns": "3",
+    "background": "tint",
+    "cta_label": "Read the research",
+    "cta_link": "/pages/microencapsulation-research"
+   },
+   "blocks": {
+    "f1": {
+     "type": "feature",
+     "settings": {
+      "icon_alt": "Born in a Pretoria lab",
+      "title": "Born in a Pretoria lab",
+      "body": "<p>Polymer scientists at the CSIR and microbiologists at the University of Pretoria invented and tested the shield between 2006 and 2014.</p>"
+     }
+    },
+    "f2": {
+     "type": "feature",
+     "settings": {
+      "icon_alt": "Tested against the stomach",
+      "title": "Tested against the stomach",
+      "body": "<p>In simulated stomach acid and intestinal fluid, shielded bacteria delivered 1.6 to 1.8 log more live cells than unprotected ones, roughly 40 to 65 times.</p>"
+     }
+    },
+    "f3": {
+     "type": "feature",
+     "settings": {
+      "icon_alt": "Proven in the heat",
+      "title": "Proven in the heat",
+      "body": "<p>At 30 °C for 12 weeks, shielded bifidobacteria stayed above the therapeutic minimum for 10 to 12 weeks versus 5 to 6 weeks unprotected. No fridge required.</p>"
+     }
+    }
+   },
+   "block_order": [
+    "f1",
+    "f2",
+    "f3"
+   ]
+  },
+  "team": {
+   "type": "vb-team-grid",
+   "blocks": {
+    "m1": {
+     "type": "member",
+     "settings": {
+      "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-08.jpg",
+      "name": "Dr. Chomba Chuma",
+      "role": "Founder & Managing Director",
+      "bio": "Provides visionary leadership and strategic direction for Velobiotics, driving innovation at the intersection of science, technology, and consumer health. Shapes long-term strategy and global expansion."
+     }
+    },
+    "m2": {
+     "type": "member",
+     "settings": {
+      "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-15.jpg",
+      "name": "Cary Mabunda",
+      "role": "Operations Manager & Deputy GM",
+      "bio": "Leads the operational backbone of Velobiotics, ensuring seamless execution across manufacturing, finance, HR, and administration. Critical in scaling Velobiotics into a world-class biotech company."
+     }
+    },
+    "m3": {
+     "type": "member",
+     "settings": {
+      "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-12.jpg",
+      "name": "Vuyo Qabaka",
+      "role": "Head of Marketing",
+      "bio": "Drives brand strategy, storytelling, and market positioning across all Velobiotics brands. Shapes how science-backed probiotics are communicated to consumers, professionals, and partners."
+     }
+    },
+    "m4": {
+     "type": "member",
+     "settings": {
+      "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-04.jpg",
+      "name": "Palesa Ledwaba",
+      "role": "Sales Rep — Johannesburg South & East",
+      "bio": "Frontline ambassador of Velobiotics, connecting innovative probiotic solutions with pharmacies, healthcare professionals, and retailers. Fuels revenue growth and market penetration."
+     }
+    },
+    "m5": {
+     "type": "member",
+     "settings": {
+      "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-11.jpg",
+      "name": "Ntobeko Motloung",
+      "role": "Sales Rep — Johannesburg North & West",
+      "bio": "Drives market adoption by building trusted relationships with pharmacies, healthcare professionals, and retail partners. Focuses on field execution and consistent sales performance."
+     }
+    },
+    "m6": {
+     "type": "member",
+     "settings": {
+      "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-14.jpg",
+      "name": "Tsakane Sebone",
+      "role": "Bookkeeping and Accounts",
+      "bio": "Ensures financial accuracy, compliance, and reporting integrity. Underpins sustainable expansion, investor readiness, and disciplined financial management toward 2035."
+     }
+    },
+    "m7": {
+     "type": "member",
+     "settings": {
+      "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-02.jpg",
+      "name": "Precious Chiloane",
+      "role": "B2B Customer Support & Sales",
+      "bio": "Manages and grows wholesale and institutional relationships, ensuring efficient fulfilment. Supports Velobiotics' scale into larger commercial and international markets."
+     }
+    },
+    "m8": {
+     "type": "member",
+     "settings": {
+      "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-05.jpg",
+      "name": "Shupa Ziba",
+      "role": "Driver & Logistics Support",
+      "bio": "Ensures reliable movement of goods, documents, and materials that keep daily operations running smoothly. A vital enabler of operational continuity and service excellence."
+     }
+    },
+    "m9": {
+     "type": "member",
+     "settings": {
+      "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-01.jpg",
+      "name": "Bridget Mokoena",
+      "role": "B2C Customer Support & Sales",
+      "bio": "Delivers exceptional customer experiences via direct-to-consumer engagement, education, and sales. Ensures Velobiotics' science-driven products translate into trust, loyalty, and repeat usage."
+     }
+    },
+    "m10": {
+     "type": "member",
+     "settings": {
+      "photo_url": "https://www.velobiotics.com/cdn/shop/files/custom-Team-Image-03.jpg",
+      "name": "Gad Mthombeni",
+      "role": "Warehouse & Dispatch Manager",
+      "bio": "Oversees inventory integrity, order fulfilment, and logistics efficiency. Ensures Velobiotics' growing product portfolio moves reliably from production to customers."
+     }
+    }
+   },
+   "block_order": [
+    "m1",
+    "m2",
+    "m3",
+    "m4",
+    "m5",
+    "m6",
+    "m7",
+    "m8",
+    "m9",
+    "m10"
+   ],
+   "settings": {
+    "eyebrow": "Meet the team",
+    "title_pre": "The people behind",
+    "title_highlight": "Velobiotics.",
+    "sub": "Doctors, scientists, sales specialists and operators, based in Germiston, Gauteng, with one job between us: getting live probiotics to the people who need them."
+   }
+  },
+  "values": {
+   "type": "vb-feature-row",
+   "settings": {
+    "eyebrow": "How we work",
+    "headline": "Made in South Africa, for the world.",
+    "sub": "A small team with a very large goal: 100 million lives touched by 2035.",
+    "layout": "cards",
+    "columns": "3",
+    "background": "white"
+   },
+   "blocks": {
+    "f1": {
+     "type": "feature",
+     "settings": {
+      "icon_alt": "Made in Germiston",
+      "title": "Made in Germiston",
+      "body": "<p>Formulated and packed at our facility in Klopperpark, Germiston, with every batch lab-tested for live count before it ships.</p>"
+     }
+    },
+    "f2": {
+     "type": "feature",
+     "settings": {
+      "icon_alt": "Sold where you shop",
+      "title": "Sold where you shop",
+      "body": "<p>In Clicks, Dis-Chem and independent pharmacies across Gauteng and online to South Africa and the world, with a growing field team.</p>"
+     }
+    },
+    "f3": {
+     "type": "feature",
+     "settings": {
+      "icon_alt": "Built for real conditions",
+      "title": "Built for real conditions",
+      "body": "<p>Shelf-stable products designed for hot delivery vans and bathroom cabinets, not just for fridges, so they work wherever people live.</p>"
+     }
+    }
+   },
+   "block_order": [
+    "f1",
+    "f2",
+    "f3"
+   ]
+  },
+  "science_strip": {
+   "type": "vb-science-strip",
+   "settings": {
+    "kicker": "Backed by peer-reviewed science",
+    "title_pre": "Don't take our word for it.",
+    "title_highlight": "View the science.",
+    "sub": "Three peer-reviewed papers, explained in plain English, with every claim linked to the published paper.",
+    "all_text": "View the science",
+    "all_url": "/pages/what-is-microencapsulation",
+    "bg": "#f6faf5",
+    "pad_top": 56,
+    "pad_bottom": 56
+   }
+  },
+  "brand_family": {
+   "type": "vb-brand-family",
+   "settings": {
+    "eyebrow": "Our Brands",
+    "title_pre": "Every brand. One",
+    "title_highlight": "Velobiotics promise.",
+    "sub": "Nine brands. One patented delivery technology. Every formula engineered to reach you alive."
+   }
+  },
+  "final_cta": {
+   "type": "vb-final-cta",
+   "settings": {
+    "eyebrow": "Join the journey",
+    "title_pre": "Real probiotics.",
+    "title_highlight": "Real difference.",
+    "sub": "Start with the brand that fits your life. 30-day money-back guarantee · Ships worldwide."
+   }
+  }
+ },
+ "order": [
+  "hero",
+  "promise",
+  "difference",
+  "team",
+  "values",
+  "science_strip",
+  "brand_family",
+  "final_cta"
+ ]
 }

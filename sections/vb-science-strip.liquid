@@ -1,98 +1,63 @@
-{{ 'vb-science-strip.css' | asset_url | stylesheet_tag }}
-
-{%- assign cdn = 'https://cdn.shopify.com/s/files/1/0668/5848/3883/files' -%}
-
-<section class="vb-science">
-  <div class="vb-science__inner page-width">
-
-    <div class="vb-science__copy">
-      <span class="vb-label-tag" style="color:var(--vb-green-400)">The Science Behind the Difference</span>
-      <h2 class="vb-h2" style="color:#fff">We Built Armour Around Every Probiotic So It Survives Where Others Don't.</h2>
-      <p class="vb-lead" style="color:rgba(255,255,255,0.75)">Microencapsulation with Supercritical Carbon Dioxide (scCO₂) is a breakthrough way of protecting probiotics so they actually work. Think of it as wrapping each probiotic in a microscopic coat of armour.</p>
-
-      <div class="vb-science__steps">
-        <div class="vb-science__step">
-          <div class="vb-science__step-num">1</div>
-          <div>
-            <strong>Micro-Shield Protection</strong>
-            <p>Each probiotic is wrapped in a protective polymer layer that blocks heat, oxygen, moisture and stomach acid.</p>
-          </div>
-        </div>
-        <div class="vb-science__step">
-          <div class="vb-science__step-num">2</div>
-          <div>
-            <strong>Survives Stomach Acid</strong>
-            <p>Our probiotics stay dormant through your stomach, resisting destruction where 99% of others die.</p>
-          </div>
-        </div>
-        <div class="vb-science__step">
-          <div class="vb-science__step-num">3</div>
-          <div>
-            <strong>Smart Release in the Gut</strong>
-            <p>Once in the alkaline intestines, the capsule dissolves — releasing billions of live probiotics where they're actually needed.</p>
-          </div>
-        </div>
+{%- comment -%}
+  VB · Science strip — compact "View the science" band for product, collection, home and blog pages.
+  Four cards, each linking to a science page, plus the story. Zero configuration needed; texts editable.
+{%- endcomment -%}
+<style>
+  .vbss{--g:#4d8c44;--dg:#2e5d28;--lg:#e8f1e6;--ink:#1a241a;--mut:#5c6664;--line:#dfe7dc;padding:{{ section.settings.pad_top }}px 20px {{ section.settings.pad_bottom }}px;background:{{ section.settings.bg }}}
+  .vbss *{box-sizing:border-box}
+  .vbss__in{max-width:1180px;margin:0 auto}
+  .vbss__head{display:flex;align-items:end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:18px}
+  .vbss__head .k{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--g);font-weight:800;margin-bottom:8px}
+  .vbss__head .k::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--g);box-shadow:0 0 0 4px rgba(77,140,68,.18)}
+  .vbss__head h2{margin:0;font-size:clamp(22px,2.8vw,30px);font-weight:800;color:var(--ink);letter-spacing:-.01em}
+  .vbss__head h2 em{color:var(--g);font-style:normal}
+  .vbss__head p{margin:6px 0 0;color:var(--mut);font-size:15px;max-width:560px;line-height:1.5}
+  .vbss__all{flex:none;display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;background:var(--dg);color:#fff!important;text-decoration:none;font-weight:700;font-size:14px}
+  .vbss__all:hover{background:var(--g)}
+  .vbss__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  .vbss__c{display:flex;flex-direction:column;gap:8px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 18px 14px;text-decoration:none;color:var(--ink)!important;transition:transform .15s,box-shadow .15s}
+  .vbss__c:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(46,93,40,.10);border-color:#cfe3ca}
+  .vbss__c .ic{width:40px;height:40px;border-radius:12px;background:var(--lg);display:grid;place-items:center;color:var(--dg)}
+  .vbss__c .ic svg{width:22px;height:22px}
+  .vbss__c b{font-size:15.5px;line-height:1.3}
+  .vbss__c p{margin:0;font-size:13.5px;line-height:1.5;color:var(--mut);flex:1}
+  .vbss__c span{font-size:13px;font-weight:700;color:var(--dg)}
+  @media (max-width:900px){.vbss__grid{grid-template-columns:1fr 1fr}}
+  @media (max-width:520px){.vbss__grid{grid-template-columns:1fr}.vbss__all{width:100%;justify-content:center}}
+</style>
+<section class="vbss">
+  <div class="vbss__in">
+    <div class="vbss__head">
+      <div>
+        <span class="k">{{ section.settings.kicker }}</span>
+        <h2>{{ section.settings.title_pre }} <em>{{ section.settings.title_highlight }}</em></h2>
+        {%- if section.settings.sub != blank -%}<p>{{ section.settings.sub }}</p>{%- endif -%}
       </div>
-
-      <div class="vb-science__ctas">
-        <a href="/pages/our-science" class="vb-btn vb-btn--primary vb-btn--lg">See the Science</a>
-        <a href="/collections/all" class="vb-btn vb-btn--outline-white vb-btn--lg">Shop Velobiotics</a>
-      </div>
+      <a class="vbss__all" href="{{ section.settings.all_url | default: '/pages/what-is-microencapsulation' }}">{{ section.settings.all_text | default: 'View the science' }} →</a>
     </div>
-
-    <div class="vb-science__visual">
-      <div class="vb-science__img-stack">
-        <img
-          src="{{ cdn }}/1000x-More-Probiotics-to-Your-Gut.jpg"
-          alt="1000x more probiotics to your gut"
-          loading="lazy"
-          class="vb-science__img-main"
-          width="2000" height="2000"
-        >
-        <div class="vb-science__img-badge">
-          <div class="vb-science__img-badge-icon">🔬</div>
-          <span class="vb-science__img-badge-num">1000×</span>
-          <span class="vb-science__img-badge-text">More Live Probiotics<br>Reach Your Gut</span>
-        </div>
-        <div class="vb-science__img-pill">
-          <span>scCO₂ Patented Technology</span>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  {%- comment -%} Bottom comparison badges {%- endcomment -%}
-  <div class="vb-science__compare">
-    <div class="vb-science__compare-inner page-width">
-      <div class="vb-science__compare-item vb-science__compare-item--win">
-        <span class="vb-science__compare-icon">✅</span>
-        <span>Velobiotics</span>
-        <span class="vb-science__compare-tag">Patented MEP Delivery</span>
-      </div>
-      <div class="vb-science__compare-vs">VS</div>
-      <div class="vb-science__compare-item">
-        <span class="vb-science__compare-icon">❌</span>
-        <span>Other Probiotics</span>
-        <span class="vb-science__compare-tag">No protection — most die in stomach</span>
-      </div>
-      <div class="vb-science__compare-vs">VS</div>
-      <div class="vb-science__compare-item">
-        <span class="vb-science__compare-icon">❌</span>
-        <span>Multivitamins</span>
-        <span class="vb-science__compare-tag">No probiotics — no gut benefit</span>
-      </div>
+    <div class="vbss__grid">
+      <a class="vbss__c" href="/pages/what-is-microencapsulation"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="3.5" ry="6" transform="rotate(-35 12 12)"/></svg></span><b>What is microencapsulation?</b><p>The patented armour that gets live probiotics past your stomach acid.</p><span>View →</span></a>
+      <a class="vbss__c" href="/pages/probiotics-tolerance-to-gastric-acid"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><b>Surviving stomach acid</b><p>Peer-reviewed: 40–65× more live bacteria reach the intestine.</p><span>View →</span></a>
+      <a class="vbss__c" href="/pages/heat-stability-and-shelf-life"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14.8V5a2 2 0 1 0-4 0v9.8a4 4 0 1 0 4 0z"/><path d="M12 9v6"/></svg></span><b>Heat stability &amp; shelf life</b><p>Stays potent at 30 °C for up to 12 weeks, no fridge required.</p><span>View →</span></a>
+      <a class="vbss__c" href="/pages/microencapsulation-research"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 13h6M9 17h6M9 9h2"/></svg></span><b>The published research</b><p>Three papers, 2006–2014, from CSIR and the University of Pretoria.</p><span>View →</span></a>
     </div>
   </div>
-
 </section>
-
 {% schema %}
 {
-  "name": "VB Science Strip",
-  "tag": "div",
-  "class": "vb-section-wrap",
-  "settings": [],
-  "presets": [{ "name": "VB Science Strip" }]
+  "name": "VB · Science strip",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "Backed by peer-reviewed science" },
+    { "type": "text", "id": "title_pre", "label": "Title (start)", "default": "Don't take our word for it." },
+    { "type": "text", "id": "title_highlight", "label": "Title (highlight)", "default": "View the science." },
+    { "type": "textarea", "id": "sub", "label": "Sub-line", "default": "Every Velobiotics™ product uses the same patented microencapsulation studied in three peer-reviewed papers. Here is what the research actually showed, in plain English." },
+    { "type": "text", "id": "all_text", "label": "Button text", "default": "View the science" },
+    { "type": "url", "id": "all_url", "label": "Button link" },
+    { "type": "color", "id": "bg", "label": "Background", "default": "#f6faf5" },
+    { "type": "range", "id": "pad_top", "label": "Padding top", "min": 0, "max": 100, "step": 4, "default": 48 },
+    { "type": "range", "id": "pad_bottom", "label": "Padding bottom", "min": 0, "max": 100, "step": 4, "default": 48 }
+  ],
+  "presets": [ { "name": "VB · Science strip" } ]
 }
 {% endschema %}

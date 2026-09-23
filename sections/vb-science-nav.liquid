@@ -1,0 +1,84 @@
+{%- comment -%}
+  VB · Science nav — pill bar linking the science & story pages; highlights the current page.
+  Mode "bar": slim sticky bar (place directly under header on science pages).
+  Mode "cards": "Continue exploring" grid (place near the bottom of a science page).
+{%- endcomment -%}
+{%- assign cur = request.path -%}
+{%- assign items = section.blocks -%}
+<style>
+  .vbsn{--g:#4d8c44;--dg:#2e5d28;--lg:#e8f1e6;--ink:#1a241a;--mut:#5c6664;--line:#dfe7dc}
+  .vbsn *{box-sizing:border-box}
+  .vbsn--bar{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.92);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .vbsn__in{max-width:1120px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:10px;overflow-x:auto;scrollbar-width:none}
+  .vbsn__in::-webkit-scrollbar{display:none}
+  .vbsn__lbl{flex:none;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;font-weight:800;color:var(--mut);margin-right:4px}
+  .vbsn__a{flex:none;display:inline-flex;align-items:center;gap:7px;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--ink)!important;text-decoration:none;font-size:14px;font-weight:600;white-space:nowrap}
+  .vbsn__a:hover{border-color:var(--g);color:var(--dg)!important}
+  .vbsn__a.is-on{background:var(--dg);border-color:var(--dg);color:#fff!important}
+  .vbsn__a i{width:8px;height:8px;border-radius:50%;background:var(--g);display:inline-block}
+  .vbsn__a.is-on i{background:#9fdc93}
+  /* cards */
+  .vbsn--cards{padding:44px 20px 20px;background:#fafcf9;border-top:1px solid var(--line)}
+  .vbsn__head{max-width:1120px;margin:0 auto 18px;display:flex;align-items:end;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .vbsn__head .k{display:block;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--g);font-weight:800;margin-bottom:6px}
+  .vbsn__head h2{margin:0;font-size:clamp(24px,3vw,32px);font-weight:800;color:var(--ink)}
+  .vbsn__head p{margin:0;color:var(--mut);font-size:15px;max-width:460px}
+  .vbsn__grid{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .vbsn__card{display:block;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 20px 16px;text-decoration:none;color:var(--ink)!important;transition:transform .15s,box-shadow .15s}
+  .vbsn__card:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(46,93,40,.10);border-color:#cfe3ca}
+  .vbsn__card.is-on{opacity:.55}
+  .vbsn__card .n{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:var(--lg);color:var(--dg);font-weight:800;font-size:13px;margin-bottom:12px}
+  .vbsn__card b{display:block;font-size:17px;line-height:1.3;margin-bottom:6px}
+  .vbsn__card p{margin:0 0 10px;font-size:14px;line-height:1.5;color:var(--mut)}
+  .vbsn__card span{font-size:13.5px;font-weight:700;color:var(--dg)}
+  @media (max-width:860px){.vbsn__grid{grid-template-columns:1fr 1fr}}
+  @media (max-width:560px){.vbsn__grid{grid-template-columns:1fr}.vbsn__lbl{display:none}}
+</style>
+
+{%- if section.settings.mode == 'bar' -%}
+<nav class="vbsn vbsn--bar" aria-label="Velobiotics science pages">
+  <div class="vbsn__in">
+    <span class="vbsn__lbl">{{ section.settings.label | default: 'The science' }}</span>
+    {%- for b in items -%}
+      {%- assign on = false -%}{%- if cur == b.settings.url -%}{%- assign on = true -%}{%- endif -%}
+      <a class="vbsn__a{% if on %} is-on{% endif %}" href="{{ b.settings.url }}"{% if on %} aria-current="page"{% endif %}><i></i>{{ b.settings.short | default: b.settings.title }}</a>
+    {%- endfor -%}
+  </div>
+</nav>
+{%- else -%}
+<section class="vbsn vbsn--cards">
+  <div class="vbsn__head">
+    <div><span class="k">{{ section.settings.label | default: 'Continue exploring' }}</span><h2>{{ section.settings.title | default: 'The rest of the science, in order' }}</h2></div>
+    {%- if section.settings.sub != blank -%}<p>{{ section.settings.sub }}</p>{%- endif -%}
+  </div>
+  <div class="vbsn__grid">
+    {%- assign n = 0 -%}
+    {%- for b in items -%}
+      {%- assign n = n | plus: 1 -%}
+      {%- assign on = false -%}{%- if cur == b.settings.url -%}{%- assign on = true -%}{%- endif -%}
+      {%- if on and section.settings.hide_current -%}{%- continue -%}{%- endif -%}
+      <a class="vbsn__card{% if on %} is-on{% endif %}" href="{{ b.settings.url }}"><span class="n">{{ n }}</span><b>{{ b.settings.title }}</b><p>{{ b.settings.blurb }}</p><span>{% if on %}You are here{% else %}View →{% endif %}</span></a>
+    {%- endfor -%}
+  </div>
+</section>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "VB · Science nav",
+  "tag": "div",
+  "settings": [
+    { "type": "select", "id": "mode", "label": "Mode", "options": [ { "value": "bar", "label": "Sticky pill bar" }, { "value": "cards", "label": "Cards grid" } ], "default": "bar" },
+    { "type": "text", "id": "label", "label": "Label" },
+    { "type": "text", "id": "title", "label": "Cards title" },
+    { "type": "text", "id": "sub", "label": "Cards sub-line" },
+    { "type": "checkbox", "id": "hide_current", "label": "Cards: hide the current page", "default": false }
+  ],
+  "blocks": [
+    { "type": "link", "name": "Page link", "settings": [
+      { "type": "text", "id": "title", "label": "Title" }, { "type": "text", "id": "short", "label": "Short label (bar)" },
+      { "type": "text", "id": "url", "label": "Path (e.g. /pages/what-is-microencapsulation)" }, { "type": "textarea", "id": "blurb", "label": "One-line blurb (cards)" } ] }
+  ],
+  "presets": [ { "name": "VB · Science nav" } ]
+}
+{% endschema %}

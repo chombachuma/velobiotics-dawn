@@ -15,29 +15,29 @@
     "b1": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83c\udf31",
+      "icon": "🌱",
       "text": "Moringa oleifera powder"
      }
     },
     "b2": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83d\udc9a",
+      "icon": "💚",
       "text": "Daily greens & antioxidants"
      }
     },
     "b3": {
      "type": "benefit",
      "settings": {
-      "icon": "\u26a1",
+      "icon": "⚡",
       "text": "Sustained energy"
      }
     },
     "b4": {
      "type": "benefit",
      "settings": {
-      "icon": "\u26a1",
-      "text": "1000\u00d7 more delivery"
+      "icon": "⚡",
+      "text": "1000× more delivery"
      }
     },
     "t1": {
@@ -83,11 +83,11 @@
     "brand_primary": "#c8163c",
     "brand_dark": "#6b0a1f",
     "brand_tint": "#ffe8ec",
-    "brand_label": "Velo16\u2122 \u00b7 Moringa",
+    "brand_label": "Velo16™ · Moringa",
     "rating": "4.6",
     "review_count": "150+",
-    "hook": "The miracle tree, perfected. Velo16\u2122 Probiotics Moringa delivers nutrient-dense moringa oleifera + 16 probiotic strains \u2014 for daily greens, antioxidants, energy, and full-body wellness.",
-    "ship_note": "Ships worldwide \u00b7 Free shipping over the threshold \u00b7 30-day money-back guarantee",
+    "hook": "The miracle tree, perfected. Velo16™ Probiotics Moringa delivers nutrient-dense moringa oleifera + 16 probiotic strains — for daily greens, antioxidants, energy, and full-body wellness.",
+    "ship_note": "Ships worldwide · Free shipping over the threshold · 30-day money-back guarantee",
     "show_subscription": true,
     "show_buynow": true,
     "show_testi_marquee": true
@@ -101,7 +101,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Themba+M&background=c8163c&color=ffffff&size=120&bold=true",
       "author": "Themba M.",
-      "meta": "Verified buyer \u00b7 1 month ago",
+      "meta": "Verified buyer · 1 month ago",
       "quote": "Like eating 5 vegetables every morning. Energy is steady."
      }
     },
@@ -110,7 +110,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Lerato+S&background=ff5c7c&color=ffffff&size=120&bold=true",
       "author": "Lerato S.",
-      "meta": "Verified buyer \u00b7 2 months ago",
+      "meta": "Verified buyer · 2 months ago",
       "quote": "No more 3pm energy crash. Real natural fuel."
      }
     },
@@ -119,7 +119,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Kim+F&background=6b0a1f&color=ffffff&size=120&bold=true",
       "author": "Kim F.",
-      "meta": "Verified buyer \u00b7 6 weeks ago",
+      "meta": "Verified buyer · 6 weeks ago",
       "quote": "Skin cleared up within 4 weeks. Inside-out glow."
      }
     },
@@ -128,7 +128,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Anna+V&background=c8163c&color=ffffff&size=120&bold=true",
       "author": "Anna V.",
-      "meta": "Verified buyer \u00b7 3 months ago",
+      "meta": "Verified buyer · 3 months ago",
       "quote": "Tried 3 greens powders. Velo16 actually feels different."
      }
     }
@@ -143,7 +143,7 @@
     "brand_primary": "#c8163c",
     "brand_dark": "#6b0a1f",
     "brand_tint": "#ffe8ec",
-    "eyebrow": "\u2605 Real Reviews",
+    "eyebrow": "★ Real Reviews",
     "title": "African greens, global wellness"
    }
   },
@@ -153,28 +153,28 @@
     "p1": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Not enough greens</strong> in modern fast-paced diets."
      }
     },
     "p2": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Daily fatigue</strong> from nutrient gaps."
      }
     },
     "p3": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Inflammation</strong> from processed food intake."
      }
     },
     "p4": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Generic green powders</strong> with low-grade ingredients."
      }
     }
@@ -190,12 +190,12 @@
     "brand_primary": "#c8163c",
     "brand_tint": "#ffe8ec",
     "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_191148_a05a8e7f-2a4f-47d3-8ed3-648943b3152a.png",
-    "tag_value": "7\u00d7",
+    "tag_value": "7×",
     "tag_label": "More Vit C Than Oranges",
     "eyebrow": "The Problem",
     "title_pre": "Modern diets",
     "title_highlight": "are missing the miracle tree.",
-    "desc": "Moringa is one of the most nutrient-dense plants on earth \u2014 7\u00d7 the Vit C of oranges, 4\u00d7 the calcium of milk, 25\u00d7 the iron of spinach. Yet most diets miss it entirely. There's a smarter daily."
+    "desc": "Moringa is one of the most nutrient-dense plants on earth — 7× the Vit C of oranges, 4× the calcium of milk, 25× the iron of spinach. Yet most diets miss it entirely. There's a smarter daily."
    }
   },
   "solution": {
@@ -204,29 +204,29 @@
     "s1": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Premium moringa oleifera</strong> \u2014 leaf powder, peak nutrient density."
+      "icon": "✓",
+      "text": "<strong>Premium moringa oleifera</strong> — leaf powder, peak nutrient density."
      }
     },
     "s2": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>Antioxidant powerhouse</strong> with vitamins, minerals, polyphenols."
      }
     },
     "s3": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>16-strain probiotic blend</strong> for gut + nutrient absorption."
      }
     },
     "s4": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Velobiotics\u2122 MEP technology</strong> \u2014 1000\u00d7 more reach you alive."
+      "icon": "✓",
+      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
      }
     }
    },
@@ -245,8 +245,8 @@
     "tag_label": "Peak Nutrient Density",
     "eyebrow": "The Solution",
     "title_pre": "Meet",
-    "title_highlight": "Velo16\u2122 Moringa.",
-    "desc": "A once-daily scoop of premium moringa oleifera leaf powder + 16 probiotic strains. Velobiotics\u2122 MEP delivery ensures peak nutrient absorption \u2014 for sustained energy, antioxidant defence, and full-body wellness."
+    "title_highlight": "Velo16™ Moringa.",
+    "desc": "A once-daily scoop of premium moringa oleifera leaf powder + 16 probiotic strains. Velobiotics™ MEP delivery ensures peak nutrient absorption — for sustained energy, antioxidant defence, and full-body wellness."
    }
   },
   "related": {
@@ -256,7 +256,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-sea-moss",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.7",
       "reviews": "190+"
      }
@@ -265,7 +265,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-vitamin-c",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.7",
       "reviews": "320+"
      }
@@ -274,7 +274,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-iron",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.7",
       "reviews": "240+"
      }
@@ -283,7 +283,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-magnesium-glycinate",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.7",
       "reviews": "190+"
      }
@@ -301,7 +301,7 @@
     "brand_tint": "#ffe8ec",
     "tint": false,
     "eyebrow": "Complete the Greens Stack",
-    "title": "More from the Velo16\u2122 range",
+    "title": "More from the Velo16™ range",
     "sub": "Stack Moringa with the rest of your daily greens and antioxidants."
    }
   },
@@ -311,23 +311,23 @@
     "b1": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83c\udf31",
+      "icon": "🌱",
       "name": "Daily Greens",
-      "desc": "More nutrient-dense than salad \u2014 without the prep."
+      "desc": "More nutrient-dense than salad — without the prep."
      }
     },
     "b2": {
      "type": "feat",
      "settings": {
-      "icon": "\u26a1",
+      "icon": "⚡",
       "name": "Steady Energy",
-      "desc": "Vitamins, minerals, plant protein \u2014 fuel without crashes."
+      "desc": "Vitamins, minerals, plant protein — fuel without crashes."
      }
     },
     "b3": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
+      "icon": "🛡️",
       "name": "Antioxidant Defence",
       "desc": "Polyphenols protect cells from oxidative damage."
      }
@@ -335,7 +335,7 @@
     "b4": {
      "type": "feat",
      "settings": {
-      "icon": "\u2728",
+      "icon": "✨",
       "name": "Skin Glow",
       "desc": "Inside-out cellular nourishment for visible glow."
      }
@@ -343,7 +343,7 @@
     "b5": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\ude7a",
+      "icon": "🩺",
       "name": "Doctor Formulated",
       "desc": "Built on traditional African herbal wisdom + modern science."
      }
@@ -351,7 +351,7 @@
     "b6": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "name": "Sustainably Sourced",
       "desc": "Sun-dried, no fillers, halaal-friendly, vegan."
      }
@@ -370,7 +370,7 @@
     "brand_tint": "#ffe8ec",
     "eyebrow": "Key Benefits",
     "title_pre": "Why",
-    "title_highlight": "Velo16\u2122 Moringa",
+    "title_highlight": "Velo16™ Moringa",
     "sub": "Six reasons it has become the daily nutrient powerhouse of choice."
    }
   },
@@ -397,16 +397,16 @@
     "i1": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83c\udf31",
+      "icon": "🌱",
       "name": "Moringa Oleifera Leaf Powder",
       "amount": "3,000 mg",
-      "desc": "Sun-dried peak nutrient density \u2014 leaves only, no stems."
+      "desc": "Sun-dried peak nutrient density — leaves only, no stems."
      }
     },
     "i2": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "name": "16-Strain Probiotic Blend",
       "amount": "10 Billion CFU",
       "desc": "Strains for gut + nutrient absorption synergy."
@@ -415,16 +415,16 @@
     "i3": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
-      "name": "Velobiotics\u2122 MEP Coating",
+      "icon": "🛡️",
+      "name": "Velobiotics™ MEP Coating",
       "amount": "Patented",
-      "desc": "Supercritical CO\u2082 \u2014 1000\u00d7 more reach you alive."
+      "desc": "Supercritical CO₂ — 1000× more reach you alive."
      }
     },
     "i4": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83c\udf3e",
+      "icon": "🌾",
       "name": "Prebiotic Fibre",
       "amount": "Inulin",
       "desc": "Feeds your good bacteria so they thrive long-term."
@@ -433,7 +433,7 @@
     "i5": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "name": "Clean Mix",
       "amount": "Vegan",
       "desc": "No fillers, no flavourings, halaal-friendly."
@@ -442,10 +442,10 @@
     "i6": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udeab",
+      "icon": "🚫",
       "name": "Free From",
       "amount": "Always",
-      "desc": "Gluten \u00b7 soy \u00b7 dairy \u00b7 artificial colours \u00b7 preservatives \u00b7 GMO."
+      "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO."
      }
     }
    },
@@ -467,7 +467,7 @@
     "sub": "Six clean actives. Full transparency.",
     "facts_image_url": "",
     "facts_label": "Supplement facts",
-    "facts_foot": "Lab-tested \u00b7 Doctor-formulated"
+    "facts_foot": "Lab-tested · Doctor-formulated"
    }
   },
   "confidence": {
@@ -523,7 +523,7 @@
     "eyebrow": "Real results",
     "title_pre": "Trusted for",
     "title_highlight": "Daily Greens Wellness",
-    "sub": "What customers report after 4\u20136 weeks of daily Velo16\u2122 Moringa.",
+    "sub": "What customers report after 4–6 weeks of daily Velo16™ Moringa.",
     "caveat": "Based on 150+ verified customers. Individual results may vary."
    }
   },
@@ -534,7 +534,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-original-capsules-60s",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.7",
       "reviews": "260+"
      }
@@ -543,7 +543,7 @@
      "type": "product",
      "settings": {
       "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
-      "brand": "His-Biotics\u2122",
+      "brand": "His-Biotics™",
       "rating": "4.7",
       "reviews": "210+"
      }
@@ -552,7 +552,7 @@
      "type": "product",
      "settings": {
       "product_handle": "gutslim-probiotics-supergreens",
-      "brand": "GutSlim\u2122",
+      "brand": "GutSlim™",
       "rating": "4.7",
       "reviews": "150+"
      }
@@ -561,7 +561,7 @@
      "type": "product",
      "settings": {
       "product_handle": "almasi-probiotics-skin-hair-nails-60s",
-      "brand": "Almasi\u2122",
+      "brand": "Almasi™",
       "rating": "4.9",
       "reviews": "180+"
      }
@@ -580,7 +580,7 @@
     "tint": true,
     "eyebrow": "Frequently Bought Together",
     "title": "Pair with the rest of your wellness stack",
-    "sub": "Velo16\u2122 Moringa stacks beautifully with these favourites."
+    "sub": "Velo16™ Moringa stacks beautifully with these favourites."
    }
   },
   "doctors": {
@@ -591,7 +591,7 @@
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
       "name": "Sun-Dried Leaves",
-      "desc": "Peak nutrient density \u2014 leaves only."
+      "desc": "Peak nutrient density — leaves only."
      }
     },
     "d2": {
@@ -607,7 +607,7 @@
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
       "name": "Patented MEP Technology",
-      "desc": "Microencapsulation with Supercritical CO\u2082."
+      "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
     "d4": {
@@ -695,11 +695,11 @@
     "title": "Why We Outperform Others",
     "sub": "Experience peak-nutrient moringa with advanced delivery and 16-strain probiotic synergy.",
     "col_features": "Features",
-    "col_brand": "Velo16\u2122 Moringa",
+    "col_brand": "Velo16™ Moringa",
     "col_b": "Generic Greens",
     "col_c": "Others",
     "cta_text": "Add to Cart",
-    "cta_note": "30-day money-back \u00b7 Free shipping over the threshold"
+    "cta_note": "30-day money-back · Free shipping over the threshold"
    }
   },
   "judgeme": {
@@ -720,20 +720,20 @@
      "type": "q",
      "settings": {
       "question": "Why moringa over spinach or kale powder?",
-      "answer": "<p>Moringa contains 7\u00d7 the Vit C of oranges, 4\u00d7 the calcium of milk, 25\u00d7 the iron of spinach \u2014 gram for gram more nutrient-dense.</p>"
+      "answer": "<p>Moringa contains 7× the Vit C of oranges, 4× the calcium of milk, 25× the iron of spinach — gram for gram more nutrient-dense.</p>"
      }
     },
     "q2": {
      "type": "q",
      "settings": {
       "question": "Will moringa make me jittery?",
-      "answer": "<p>No \u2014 moringa provides steady, natural energy via vitamins and minerals, not stimulants.</p>"
+      "answer": "<p>No — moringa provides steady, natural energy via vitamins and minerals, not stimulants.</p>"
      }
     },
     "q3": {
      "type": "q",
      "settings": {
-      "question": "Is Velo16\u2122 Moringa safe daily?",
+      "question": "Is Velo16™ Moringa safe daily?",
       "answer": "<p>Yes. Manufactured under GMP / SAHPRA-aware conditions.</p>"
      }
     },
@@ -741,14 +741,14 @@
      "type": "q",
      "settings": {
       "question": "Can I take this with my multivitamin?",
-      "answer": "<p>Yes \u2014 they complement each other. Moringa adds plant-based nutrients and antioxidants.</p>"
+      "answer": "<p>Yes — they complement each other. Moringa adds plant-based nutrients and antioxidants.</p>"
      }
     },
     "q5": {
      "type": "q",
      "settings": {
       "question": "Do you ship internationally?",
-      "answer": "<p>Yes. 5\u201314 working days. Free shipping over the threshold.</p>"
+      "answer": "<p>Yes. 5–14 working days. Free shipping over the threshold.</p>"
      }
     },
     "q6": {
@@ -779,28 +779,28 @@
     "g1": {
      "type": "g",
      "settings": {
-      "icon": "\u2705",
+      "icon": "✅",
       "text": "30-day money-back"
      }
     },
     "g2": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\ude9a",
+      "icon": "🚚",
       "text": "Ships worldwide"
      }
     },
     "g3": {
      "type": "g",
      "settings": {
-      "icon": "\ud83c\udf31",
+      "icon": "🌱",
       "text": "Sun-dried leaves"
      }
     },
     "g4": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\udd2c",
+      "icon": "🔬",
       "text": "Lab-tested every batch"
      }
     }
@@ -818,9 +818,23 @@
     "badge": "30-day money-back guarantee",
     "title_pre": "Daily Greens, Made Easy",
     "title_highlight": "Risk-Free for 30 Days",
-    "sub": "Join the 20,000+ people who count on Velo16\u2122 Moringa for daily nutrient density. If you don't feel the difference, we'll refund every cent.",
+    "sub": "Join the 20,000+ people who count on Velo16™ Moringa for daily nutrient density. If you don't feel the difference, we'll refund every cent.",
     "cta_text": "Add to Cart",
     "cta_link": "#vbpForm"
+   }
+  },
+  "science_strip": {
+   "type": "vb-science-strip",
+   "settings": {
+    "kicker": "Backed by peer-reviewed science",
+    "title_pre": "Don't take our word for it.",
+    "title_highlight": "View the science.",
+    "sub": "The shielding technology in this product was studied in three peer-reviewed papers. Read what the research actually showed, in plain English.",
+    "all_text": "View the science",
+    "all_url": "/pages/what-is-microencapsulation",
+    "bg": "#f6faf5",
+    "pad_top": 40,
+    "pad_bottom": 40
    }
   }
  },
@@ -837,6 +851,7 @@
   "fbt",
   "doctors",
   "outperform",
+  "science_strip",
   "judgeme",
   "faq",
   "final"

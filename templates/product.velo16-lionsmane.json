@@ -15,29 +15,29 @@
     "b1": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83e\udd81",
+      "icon": "🦁",
       "text": "Premium Lion's Mane extract"
      }
     },
     "b2": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83e\udde0",
+      "icon": "🧠",
       "text": "Memory & focus support"
      }
     },
     "b3": {
      "type": "benefit",
      "settings": {
-      "icon": "\u2728",
+      "icon": "✨",
       "text": "Neuroprotective"
      }
     },
     "b4": {
      "type": "benefit",
      "settings": {
-      "icon": "\u26a1",
-      "text": "1000\u00d7 more delivery"
+      "icon": "⚡",
+      "text": "1000× more delivery"
      }
     },
     "t1": {
@@ -83,11 +83,11 @@
     "brand_primary": "#c8163c",
     "brand_dark": "#6b0a1f",
     "brand_tint": "#ffe8ec",
-    "brand_label": "Velo16\u2122 \u00b7 Mind Focus",
+    "brand_label": "Velo16™ · Mind Focus",
     "rating": "4.7",
     "review_count": "310+",
-    "hook": "Mind Focus \u2014 your daily cognitive edge. Velo16\u2122 Probiotics Lion's Mane delivers premium standardised mushroom extract + 16 probiotic strains \u2014 for sharper memory, focus, and long-term brain health.",
-    "ship_note": "Ships worldwide \u00b7 Free shipping over the threshold \u00b7 30-day money-back guarantee",
+    "hook": "Mind Focus — your daily cognitive edge. Velo16™ Probiotics Lion's Mane delivers premium standardised mushroom extract + 16 probiotic strains — for sharper memory, focus, and long-term brain health.",
+    "ship_note": "Ships worldwide · Free shipping over the threshold · 30-day money-back guarantee",
     "show_buynow": true,
     "show_testi_marquee": true
    }
@@ -100,7 +100,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Lebo+M&background=c8163c&color=ffffff&size=120&bold=true",
       "author": "Lebo M.",
-      "meta": "Verified buyer \u00b7 Sandton",
+      "meta": "Verified buyer · Sandton",
       "quote": "I work in finance. Mind Focus is my unfair advantage."
      }
     },
@@ -109,7 +109,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Pieter+S&background=ff5c7c&color=ffffff&size=120&bold=true",
       "author": "Pieter S.",
-      "meta": "Verified buyer \u00b7 4 months ago",
+      "meta": "Verified buyer · 4 months ago",
       "quote": "I'm 58. My recall is sharper than colleagues 20 years younger."
      }
     },
@@ -118,7 +118,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Sarah+B&background=6b0a1f&color=ffffff&size=120&bold=true",
       "author": "Sarah B.",
-      "meta": "Verified buyer \u00b7 2 months ago",
+      "meta": "Verified buyer · 2 months ago",
       "quote": "Bye 3pm slump. Hello clear afternoons."
      }
     },
@@ -127,8 +127,8 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Bongi+M&background=c8163c&color=ffffff&size=120&bold=true",
       "author": "Bongi M.",
-      "meta": "Verified buyer \u00b7 6 weeks ago",
-      "quote": "Word recall, decision speed \u2014 both feel younger."
+      "meta": "Verified buyer · 6 weeks ago",
+      "quote": "Word recall, decision speed — both feel younger."
      }
     }
    },
@@ -142,7 +142,7 @@
     "brand_primary": "#c8163c",
     "brand_dark": "#6b0a1f",
     "brand_tint": "#ffe8ec",
-    "eyebrow": "\u2605 Real Reviews",
+    "eyebrow": "★ Real Reviews",
     "title": "Loved by sharp minds"
    }
   },
@@ -152,29 +152,29 @@
     "p1": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Brain fog</strong> creeping into your daily decisions."
      }
     },
     "p2": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
-      "text": "<strong>Slipping memory</strong> \u2014 names, dates, where you put your keys."
+      "icon": "✕",
+      "text": "<strong>Slipping memory</strong> — names, dates, where you put your keys."
      }
     },
     "p3": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>3pm energy crashes</strong> wiping out your afternoon."
      }
     },
     "p4": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
-      "text": "<strong>Generic Lion's Mane</strong> with no extract standardisation \u2014 placebo at best."
+      "icon": "✕",
+      "text": "<strong>Generic Lion's Mane</strong> with no extract standardisation — placebo at best."
      }
     }
    },
@@ -203,28 +203,28 @@
     "s1": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Premium standardised Lion's Mane</strong> \u2014 rich in hericenones & erinacines."
+      "icon": "✓",
+      "text": "<strong>Premium standardised Lion's Mane</strong> — rich in hericenones & erinacines."
      }
     },
     "s2": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>16-strain probiotic blend</strong> \u2014 fuels the gut-brain axis."
+      "icon": "✓",
+      "text": "<strong>16-strain probiotic blend</strong> — fuels the gut-brain axis."
      }
     },
     "s3": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Velobiotics\u2122 MEP technology</strong> \u2014 1000\u00d7 more compounds survive."
+      "icon": "✓",
+      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more compounds survive."
      }
     },
     "s4": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>Once-daily</strong>. Doctor-formulated. Lab-tested every batch."
      }
     }
@@ -244,8 +244,8 @@
     "tag_label": "Extract Ratio Concentration",
     "eyebrow": "The Solution",
     "title_pre": "Meet",
-    "title_highlight": "Velo16\u2122 Mind Focus.",
-    "desc": "A once-daily capsule combining premium 8:1 standardised Lion's Mane extract with 16 probiotic strains. Velobiotics\u2122 MEP delivery means the hericenones and erinacines that nourish your brain actually reach it \u2014 for sharper memory, focus, and long-term cognitive health."
+    "title_highlight": "Velo16™ Mind Focus.",
+    "desc": "A once-daily capsule combining premium 8:1 standardised Lion's Mane extract with 16 probiotic strains. Velobiotics™ MEP delivery means the hericenones and erinacines that nourish your brain actually reach it — for sharper memory, focus, and long-term cognitive health."
    }
   },
   "related": {
@@ -255,7 +255,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-ashwagadha",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.8",
       "reviews": "440+"
      }
@@ -264,7 +264,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-omega-3-vit-d3",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.8",
       "reviews": "260+"
      }
@@ -273,7 +273,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-magnesium-glycinate",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.7",
       "reviews": "190+"
      }
@@ -282,7 +282,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-vitamin-c",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.7",
       "reviews": "320+"
      }
@@ -300,7 +300,7 @@
     "brand_tint": "#ffe8ec",
     "tint": false,
     "eyebrow": "Complete the Mind Stack",
-    "title": "More from the Velo16\u2122 range",
+    "title": "More from the Velo16™ range",
     "sub": "Stack Mind Focus with the rest of your daily cognitive essentials."
    }
   },
@@ -310,23 +310,23 @@
     "b1": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\udde0",
+      "icon": "🧠",
       "name": "Sharper Memory",
-      "desc": "Lion's Mane stimulates NGF \u2014 the protein that grows new brain connections."
+      "desc": "Lion's Mane stimulates NGF — the protein that grows new brain connections."
      }
     },
     "b2": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83c\udfaf",
+      "icon": "🎯",
       "name": "Razor-Sharp Focus",
-      "desc": "Sustained cognitive clarity \u2014 no caffeine spikes, no crashes."
+      "desc": "Sustained cognitive clarity — no caffeine spikes, no crashes."
      }
     },
     "b3": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83c\udf31",
+      "icon": "🌱",
       "name": "Neuroprotective",
       "desc": "Supports long-term brain health and ageing resilience."
      }
@@ -334,7 +334,7 @@
     "b4": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udc9a",
+      "icon": "💚",
       "name": "Gut-Brain Axis",
       "desc": "16-strain probiotic blend amplifies the cognitive effect."
      }
@@ -342,7 +342,7 @@
     "b5": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\ude7a",
+      "icon": "🩺",
       "name": "Doctor Formulated",
       "desc": "Built on peer-reviewed extract standardisation."
      }
@@ -350,9 +350,9 @@
     "b6": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "name": "Non-Stimulant",
-      "desc": "Adaptogenic mushroom \u2014 calm, sustained clarity without jitters."
+      "desc": "Adaptogenic mushroom — calm, sustained clarity without jitters."
      }
     }
    },
@@ -396,16 +396,16 @@
     "i1": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83c\udf44",
+      "icon": "🍄",
       "name": "Lion's Mane Extract (8:1)",
       "amount": "1000 mg",
-      "desc": "Premium standardised extract rich in hericenones & erinacines \u2014 the compounds that boost NGF."
+      "desc": "Premium standardised extract rich in hericenones & erinacines — the compounds that boost NGF."
      }
     },
     "i2": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "name": "16-Strain Probiotic Blend",
       "amount": "10 Billion CFU",
       "desc": "Lactobacillus + Bifidobacterium for gut-brain axis support."
@@ -414,16 +414,16 @@
     "i3": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
-      "name": "Velobiotics\u2122 MEP Coating",
+      "icon": "🛡️",
+      "name": "Velobiotics™ MEP Coating",
       "amount": "Patented",
-      "desc": "Supercritical CO\u2082 \u2014 1000\u00d7 more cognitive compounds survive."
+      "desc": "Supercritical CO₂ — 1000× more cognitive compounds survive."
      }
     },
     "i4": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83c\udf3e",
+      "icon": "🌾",
       "name": "Prebiotic Fibre",
       "amount": "Inulin",
       "desc": "Feeds your good bacteria so they thrive long-term."
@@ -432,7 +432,7 @@
     "i5": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "name": "Clean Capsule Shell",
       "amount": "Vegan HPMC",
       "desc": "No gelatin, halaal-friendly."
@@ -441,10 +441,10 @@
     "i6": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udeab",
+      "icon": "🚫",
       "name": "Free From",
       "amount": "Always",
-      "desc": "Gluten \u00b7 soy \u00b7 dairy \u00b7 artificial colours \u00b7 preservatives \u00b7 GMO."
+      "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO."
      }
     }
    },
@@ -466,7 +466,7 @@
     "sub": "Six clean actives. Full transparency.",
     "facts_image_url": "",
     "facts_label": "Supplement facts",
-    "facts_foot": "Lab-tested \u00b7 Doctor-formulated"
+    "facts_foot": "Lab-tested · Doctor-formulated"
    }
   },
   "confidence": {
@@ -522,7 +522,7 @@
     "eyebrow": "Real results",
     "title_pre": "Trusted for",
     "title_highlight": "Cognitive Sharpness",
-    "sub": "What customers report after 4\u20136 weeks of daily Velo16\u2122 Mind Focus.",
+    "sub": "What customers report after 4–6 weeks of daily Velo16™ Mind Focus.",
     "caveat": "Based on 310+ verified customers. Individual results may vary."
    }
   },
@@ -533,7 +533,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-original-capsules-60s",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.7",
       "reviews": "260+"
      }
@@ -542,7 +542,7 @@
      "type": "product",
      "settings": {
       "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
-      "brand": "His-Biotics\u2122",
+      "brand": "His-Biotics™",
       "rating": "4.7",
       "reviews": "210+"
      }
@@ -551,7 +551,7 @@
      "type": "product",
      "settings": {
       "product_handle": "gutslim-probiotics-glp-1-booster",
-      "brand": "GutSlim\u2122",
+      "brand": "GutSlim™",
       "rating": "4.8",
       "reviews": "410+"
      }
@@ -560,7 +560,7 @@
      "type": "product",
      "settings": {
       "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
-      "brand": "Femina\u2122",
+      "brand": "Femina™",
       "rating": "4.8",
       "reviews": "1300+"
      }
@@ -606,7 +606,7 @@
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
       "name": "Patented MEP Technology",
-      "desc": "Microencapsulation with Supercritical CO\u2082."
+      "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
     "d4": {
@@ -698,7 +698,7 @@
     "col_b": "Generic Lion's Mane",
     "col_c": "Others",
     "cta_text": "Add to Cart",
-    "cta_note": "30-day money-back \u00b7 Free shipping over the threshold"
+    "cta_note": "30-day money-back · Free shipping over the threshold"
    }
   },
   "judgeme": {
@@ -726,7 +726,7 @@
      "type": "q",
      "settings": {
       "question": "Will this make me jittery?",
-      "answer": "<p>No. Lion's Mane is an adaptogenic mushroom \u2014 sustained clarity without the caffeine crash.</p>"
+      "answer": "<p>No. Lion's Mane is an adaptogenic mushroom — sustained clarity without the caffeine crash.</p>"
      }
     },
     "q3": {
@@ -740,14 +740,14 @@
      "type": "q",
      "settings": {
       "question": "How long until I notice the difference?",
-      "answer": "<p>Many feel sharper focus within 7\u201310 days. Memory and recall benefits typically build over 4\u20136 weeks.</p>"
+      "answer": "<p>Many feel sharper focus within 7–10 days. Memory and recall benefits typically build over 4–6 weeks.</p>"
      }
     },
     "q5": {
      "type": "q",
      "settings": {
       "question": "Do you ship internationally?",
-      "answer": "<p>Yes. 5\u201314 working days globally. Free shipping over the threshold.</p>"
+      "answer": "<p>Yes. 5–14 working days globally. Free shipping over the threshold.</p>"
      }
     },
     "q6": {
@@ -778,28 +778,28 @@
     "g1": {
      "type": "g",
      "settings": {
-      "icon": "\u2705",
+      "icon": "✅",
       "text": "30-day money-back"
      }
     },
     "g2": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\ude9a",
+      "icon": "🚚",
       "text": "Ships worldwide"
      }
     },
     "g3": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\udd2c",
+      "icon": "🔬",
       "text": "8:1 standardised"
      }
     },
     "g4": {
      "type": "g",
      "settings": {
-      "icon": "\ud83e\udd81",
+      "icon": "🦁",
       "text": "Non-stimulant"
      }
     }
@@ -817,9 +817,23 @@
     "badge": "30-day money-back guarantee",
     "title_pre": "Sharpen Your Mind",
     "title_highlight": "Risk-Free for 30 Days",
-    "sub": "Join the 35,000+ people who count on Velo16\u2122 Mind Focus for daily cognitive edge. If you don't feel the difference, we'll refund every cent.",
+    "sub": "Join the 35,000+ people who count on Velo16™ Mind Focus for daily cognitive edge. If you don't feel the difference, we'll refund every cent.",
     "cta_text": "Add to Cart",
     "cta_link": "#vbpForm"
+   }
+  },
+  "science_strip": {
+   "type": "vb-science-strip",
+   "settings": {
+    "kicker": "Backed by peer-reviewed science",
+    "title_pre": "Don't take our word for it.",
+    "title_highlight": "View the science.",
+    "sub": "The shielding technology in this product was studied in three peer-reviewed papers. Read what the research actually showed, in plain English.",
+    "all_text": "View the science",
+    "all_url": "/pages/what-is-microencapsulation",
+    "bg": "#f6faf5",
+    "pad_top": 40,
+    "pad_bottom": 40
    }
   }
  },
@@ -836,6 +850,7 @@
   "fbt",
   "doctors",
   "outperform",
+  "science_strip",
   "judgeme",
   "faq",
   "final"

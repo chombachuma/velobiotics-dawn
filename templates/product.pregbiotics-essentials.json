@@ -15,29 +15,29 @@
     "b1": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83e\udd30",
+      "icon": "🤰",
       "text": "Daily pregnancy essential"
      }
     },
     "b2": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83e\uddec",
+      "icon": "🧬",
       "text": "20 actives + 16-strain blend"
      }
     },
     "b3": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "text": "Pregnancy-safe probiotic strains"
      }
     },
     "b4": {
      "type": "benefit",
      "settings": {
-      "icon": "\u26a1",
-      "text": "1000\u00d7 more delivery"
+      "icon": "⚡",
+      "text": "1000× more delivery"
      }
     },
     "t1": {
@@ -83,11 +83,11 @@
     "brand_primary": "#1f6b3d",
     "brand_dark": "#0a3d22",
     "brand_tint": "#f2f9ec",
-    "brand_label": "PregBiotics\u2122 Essentials",
+    "brand_label": "PregBiotics™ Essentials",
     "rating": "4.9",
     "review_count": "210+",
-    "hook": "The complete daily prenatal. PregBiotics\u2122 Essentials delivers 20 actives \u2014 Folic Acid, full B-complex, iron, zinc, iodine, choline + magnesium \u2014 backed by our 16-strain pregnancy-safe MEP probiotic blend. One capsule, total prenatal coverage.",
-    "ship_note": "Ships worldwide \u00b7 Free shipping over the free-shipping threshold \u00b7 30-day money-back guarantee",
+    "hook": "The complete daily prenatal. PregBiotics™ Essentials delivers 20 actives — Folic Acid, full B-complex, iron, zinc, iodine, choline + magnesium — backed by our 16-strain pregnancy-safe MEP probiotic blend. One capsule, total prenatal coverage.",
+    "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
     "show_buynow": true,
     "show_testi_marquee": true
    }
@@ -100,7 +100,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Thandi+M&background=1f6b3d&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Thandi M.",
-      "meta": "Verified buyer \u00b7 7 months ago",
+      "meta": "Verified buyer · 7 months ago",
       "quote": "Smooth pregnancy, healthy baby. PregBiotics carried me through."
      }
     },
@@ -109,7 +109,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Carla+V&background=5fa37a&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Carla V.",
-      "meta": "Verified buyer \u00b7 5 months ago",
+      "meta": "Verified buyer · 5 months ago",
       "quote": "Energy throughout my trimesters. No second-trimester slump."
      }
     },
@@ -118,7 +118,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Renee+K&background=0a3d22&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Renee K.",
-      "meta": "Verified buyer \u00b7 4 months ago",
+      "meta": "Verified buyer · 4 months ago",
       "quote": "My OB recommended it. Easy decision."
      }
     },
@@ -127,7 +127,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Lerato+P&background=1f6b3d&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Lerato P.",
-      "meta": "Verified buyer \u00b7 6 months ago",
+      "meta": "Verified buyer · 6 months ago",
       "quote": "Best prenatal I've tried. The probiotics really helped my digestion."
      }
     },
@@ -136,7 +136,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Sarah+B&background=5fa37a&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Sarah B.",
-      "meta": "Verified buyer \u00b7 3 months ago",
+      "meta": "Verified buyer · 3 months ago",
       "quote": "Daily must-have. Worth every cent."
      }
     }
@@ -152,7 +152,7 @@
     "brand_primary": "#1f6b3d",
     "brand_dark": "#0a3d22",
     "brand_tint": "#f2f9ec",
-    "eyebrow": "\u2605 Real Reviews",
+    "eyebrow": "★ Real Reviews",
     "title": "Mothers thriving on Essentials"
    }
   },
@@ -162,28 +162,28 @@
     "p1": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Morning sickness and nausea</strong> that wreck early pregnancy."
      }
     },
     "p2": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Constipation</strong> and gut imbalance through trimesters."
      }
     },
     "p3": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Generic prenatals</strong> with poorly absorbed nutrients."
      }
     },
     "p4": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Missing key actives</strong> like choline and iodine for baby's brain."
      }
     }
@@ -204,7 +204,7 @@
     "eyebrow": "The Problem",
     "title_pre": "Most prenatals",
     "title_highlight": "miss the gut.",
-    "desc": "Standard prenatals are over-stuffed with poorly-absorbed nutrients and ignore the gut. Essentials is engineered with active folate, gentle iron, and pregnancy-safe probiotics \u2014 bioavailability that matters for you and your baby."
+    "desc": "Standard prenatals are over-stuffed with poorly-absorbed nutrients and ignore the gut. Essentials is engineered with active folate, gentle iron, and pregnancy-safe probiotics — bioavailability that matters for you and your baby."
    }
   },
   "solution": {
@@ -213,29 +213,29 @@
     "s1": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Folic Acid 400\u00b5g (200% DV)</strong> \u2014 for healthy neural-tube development."
+      "icon": "✓",
+      "text": "<strong>Folic Acid 400µg (200% DV)</strong> — for healthy neural-tube development."
      }
     },
     "s2": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Iron 17mg + Full B-Complex</strong> \u2014 energy, mood, blood-volume support."
+      "icon": "✓",
+      "text": "<strong>Iron 17mg + Full B-Complex</strong> — energy, mood, blood-volume support."
      }
     },
     "s3": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>16-strain MEP Blend (1 billion CFUs)</strong> \u2014 ease morning sickness, support digestion."
+      "icon": "✓",
+      "text": "<strong>16-strain MEP Blend (1 billion CFUs)</strong> — ease morning sickness, support digestion."
      }
     },
     "s4": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Velobiotics\u2122 MEP technology</strong> \u2014 1000\u00d7 more reach you alive."
+      "icon": "✓",
+      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
      }
     }
    },
@@ -250,12 +250,12 @@
     "brand_primary": "#1f6b3d",
     "brand_tint": "#f2f9ec",
     "image_url": "",
-    "tag_value": "1000\u00d7",
+    "tag_value": "1000×",
     "tag_label": "More Probiotics Delivered",
     "eyebrow": "The Solution",
     "title_pre": "Meet",
-    "title_highlight": "PregBiotics\u2122 Essentials.",
-    "desc": "Folic Acid + iron + complete B-complex, magnesium, choline, iodine + Myo-Inositol \u2014 paired with our 16-strain MEP probiotic blend. The complete daily prenatal \u2014 engineered for all three trimesters."
+    "title_highlight": "PregBiotics™ Essentials.",
+    "desc": "Folic Acid + iron + complete B-complex, magnesium, choline, iodine + Myo-Inositol — paired with our 16-strain MEP probiotic blend. The complete daily prenatal — engineered for all three trimesters."
    }
   },
   "related": {
@@ -265,7 +265,7 @@
      "type": "product",
      "settings": {
       "product_handle": "pregbiotics-breastfeeding",
-      "brand": "PregBiotics\u2122",
+      "brand": "PregBiotics™",
       "rating": "4.9",
       "reviews": "850+",
       "fallback_title": "",
@@ -277,7 +277,7 @@
      "type": "product",
      "settings": {
       "product_handle": "pregbiotics-conception",
-      "brand": "PregBiotics\u2122",
+      "brand": "PregBiotics™",
       "rating": "4.8",
       "reviews": "180+",
       "fallback_title": "",
@@ -289,7 +289,7 @@
      "type": "product",
      "settings": {
       "product_handle": "pregbiotics-essentials-with-omega",
-      "brand": "PregBiotics\u2122",
+      "brand": "PregBiotics™",
       "rating": "4.8",
       "reviews": "150+",
       "fallback_title": "",
@@ -301,7 +301,7 @@
      "type": "product",
      "settings": {
       "product_handle": "c-essentials-kit",
-      "brand": "PregBiotics\u2122",
+      "brand": "PregBiotics™",
       "rating": "4.9",
       "reviews": "120+",
       "fallback_title": "",
@@ -322,8 +322,8 @@
     "brand_tint": "#f2f9ec",
     "tint": false,
     "eyebrow": "Complete the Journey",
-    "title": "More from the PregBiotics\u2122 family",
-    "sub": "From conception through breastfeeding and beyond \u2014 we have you covered."
+    "title": "More from the PregBiotics™ family",
+    "sub": "From conception through breastfeeding and beyond — we have you covered."
    }
   },
   "benefits": {
@@ -332,7 +332,7 @@
     "b1": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\udd30",
+      "icon": "🤰",
       "name": "Pregnancy-Safe",
       "desc": "Formulated specifically for all trimesters."
      }
@@ -340,15 +340,15 @@
     "b2": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\uddec",
+      "icon": "🧬",
       "name": "Neural Tube Support",
-      "desc": "Folic Acid (400\u00b5g, 200% DV) supports healthy neural-tube formation."
+      "desc": "Folic Acid (400µg, 200% DV) supports healthy neural-tube formation."
      }
     },
     "b3": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udc9a",
+      "icon": "💚",
       "name": "Gentle on Tummy",
       "desc": "Pregnancy-safe probiotics ease morning sickness and constipation."
      }
@@ -356,7 +356,7 @@
     "b4": {
      "type": "feat",
      "settings": {
-      "icon": "\u26a1",
+      "icon": "⚡",
       "name": "Energy & Mood",
       "desc": "B-complex and iron support energy and emotional balance."
      }
@@ -364,7 +364,7 @@
     "b5": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\ude7a",
+      "icon": "🩺",
       "name": "OB-Approved Format",
       "desc": "Built to OB and midwife clinical guidance."
      }
@@ -372,7 +372,7 @@
     "b6": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "name": "Clean Format",
       "desc": "Pregnancy-friendly, halaal-friendly, no fillers."
      }
@@ -418,7 +418,7 @@
     "i1": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u2600\ufe0f",
+      "icon": "☀️",
       "name": "Vitamin D",
       "amount": "10 mcg (400 IU)",
       "dv": "200%",
@@ -430,7 +430,7 @@
     "i2": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
+      "icon": "🛡️",
       "name": "Vitamin E",
       "amount": "10 mg",
       "dv": "100%",
@@ -442,7 +442,7 @@
     "i3": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83c\udf4a",
+      "icon": "🍊",
       "name": "Vitamin C",
       "amount": "70 mg",
       "dv": "117%",
@@ -454,7 +454,7 @@
     "i4": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u26a1",
+      "icon": "⚡",
       "name": "Vitamin B1 (Thiamin)",
       "amount": "3 mg",
       "dv": "214%",
@@ -466,7 +466,7 @@
     "i5": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u26a1",
+      "icon": "⚡",
       "name": "Vitamin B2 (Riboflavin)",
       "amount": "2 mg",
       "dv": "125%",
@@ -478,7 +478,7 @@
     "i6": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u26a1",
+      "icon": "⚡",
       "name": "Vitamin B3 (Niacin)",
       "amount": "20 mg",
       "dv": "111%",
@@ -490,7 +490,7 @@
     "i7": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u26a1",
+      "icon": "⚡",
       "name": "Vitamin B6",
       "amount": "10 mg",
       "dv": "500%",
@@ -502,7 +502,7 @@
     "i8": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u26a1",
+      "icon": "⚡",
       "name": "Pantothenic Acid (B5)",
       "amount": "6 mg",
       "dv": "100%",
@@ -514,7 +514,7 @@
     "i9": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\uddec",
+      "icon": "🧬",
       "name": "Folic Acid (Vitamin B9)",
       "amount": "400 mcg",
       "dv": "200%",
@@ -526,7 +526,7 @@
     "i10": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u26a1",
+      "icon": "⚡",
       "name": "Vitamin B12",
       "amount": "6 mcg",
       "dv": "600%",
@@ -538,7 +538,7 @@
     "i11": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u2728",
+      "icon": "✨",
       "name": "Biotin (Vitamin B7)",
       "amount": "50 mcg",
       "dv": "100%",
@@ -550,11 +550,11 @@
     "i12": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\udd55",
+      "icon": "🥕",
       "name": "Beta-carotene",
       "amount": "3 mg",
-      "dv": "\u2020",
-      "role": "Natural-source Vitamin A precursor for foetal vision and immune development. Body converts only what is needed \u2014 safer than direct Vit A in pregnancy.",
+      "dv": "†",
+      "role": "Natural-source Vitamin A precursor for foetal vision and immune development. Body converts only what is needed — safer than direct Vit A in pregnancy.",
       "source": "Natural Source",
       "tags": "Antioxidant, Natural"
      }
@@ -562,7 +562,7 @@
     "i13": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udc8e",
+      "icon": "💎",
       "name": "Iron",
       "amount": "17 mg",
       "dv": "121%",
@@ -574,10 +574,10 @@
     "i14": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udc8e",
+      "icon": "💎",
       "name": "Selenium",
       "amount": "60 mcg",
-      "dv": "\u2020",
+      "dv": "†",
       "role": "Thyroid support and antioxidant protection for the developing baby.",
       "source": "Selenium glycinate",
       "tags": "Mineral, Thyroid"
@@ -586,7 +586,7 @@
     "i15": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udc8e",
+      "icon": "💎",
       "name": "Magnesium",
       "amount": "250 mg",
       "dv": "100%",
@@ -598,7 +598,7 @@
     "i16": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udc8e",
+      "icon": "💎",
       "name": "Zinc",
       "amount": "15 mg",
       "dv": "100%",
@@ -610,7 +610,7 @@
     "i17": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udc8e",
+      "icon": "💎",
       "name": "Iodine",
       "amount": "140 mcg",
       "dv": "93%",
@@ -622,11 +622,11 @@
     "i18": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\udde0",
+      "icon": "🧠",
       "name": "Choline",
       "amount": "300 mg",
-      "dv": "\u2020",
-      "role": "Essential for foetal brain and spinal-cord development \u2014 most prenatals miss this.",
+      "dv": "†",
+      "role": "Essential for foetal brain and spinal-cord development — most prenatals miss this.",
       "source": "Choline Bitartrate",
       "tags": "Brain, Often missed"
      }
@@ -634,10 +634,10 @@
     "i19": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udc8e",
+      "icon": "💎",
       "name": "Copper",
       "amount": "1 mg",
-      "dv": "\u2020",
+      "dv": "†",
       "role": "Works with iron for healthy blood and connective tissue formation.",
       "source": "Copper glycinate",
       "tags": "Mineral"
@@ -646,19 +646,19 @@
     "i20": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "name": "PregBiotics MEP Blend",
       "amount": "1 Billion CFUs",
-      "dv": "\u2020",
+      "dv": "†",
       "role": "16-strain pregnancy-safe probiotic blend for maternal gut + immune health. Eases morning sickness, supports digestion, and primes baby's microbiome.",
-      "source": "L. acidophilus \u00b7 plantarum \u00b7 casei \u00b7 reuteri \u00b7 rhamnosus \u00b7 fermentum \u00b7 salivarus \u00b7 paracasei \u00b7 bulgaricus \u00b7 helveticus + B. lactis \u00b7 infantis \u00b7 breve \u00b7 bifidum \u00b7 longum + S. thermophiles. Microencapsulated (MEP).",
+      "source": "L. acidophilus · plantarum · casei · reuteri · rhamnosus · fermentum · salivarus · paracasei · bulgaricus · helveticus + B. lactis · infantis · breve · bifidum · longum + S. thermophiles. Microencapsulated (MEP).",
       "tags": "16-strain, MEP delivery, Pregnancy-safe"
      }
     },
     "t1": {
      "type": "trust",
      "settings": {
-      "icon": "\ud83e\ude7a",
+      "icon": "🩺",
       "title": "OB-formulated",
       "text": "Built with obstetric and midwifery guidance for all three trimesters."
      }
@@ -666,7 +666,7 @@
     "t2": {
      "type": "trust",
      "settings": {
-      "icon": "\ud83e\uddea",
+      "icon": "🧪",
       "title": "Lab-tested",
       "text": "Every batch verified by independent labs for purity and potency."
      }
@@ -674,7 +674,7 @@
     "t3": {
      "type": "trust",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
+      "icon": "🛡️",
       "title": "Pregnancy-safe",
       "text": "Every strain selected for safety during all stages of pregnancy."
      }
@@ -682,7 +682,7 @@
     "t4": {
      "type": "trust",
      "settings": {
-      "icon": "\ud83c\udf31",
+      "icon": "🌱",
       "title": "Clean label",
       "text": "No proprietary blends. Every dose disclosed on the panel."
      }
@@ -731,7 +731,7 @@
     "servings_per_container": "60",
     "other_ingredients": "HPMC (vegetable capsule), Magnesium Stearate.",
     "allergens": "Manufactured in a SAHPRA-aware facility.",
-    "dv_note": "% Daily Value (DV) based on a 2,000-calorie diet. \u2020 = DV not established.",
+    "dv_note": "% Daily Value (DV) based on a 2,000-calorie diet. † = DV not established.",
     "facts_image_url": "",
     "facts_pdf_url": "",
     "side_image_url": "",
@@ -805,7 +805,7 @@
      "type": "product",
      "settings": {
       "product_handle": "pregbiotics-breastfeeding",
-      "brand": "PregBiotics\u2122",
+      "brand": "PregBiotics™",
       "rating": "4.9",
       "reviews": "850+",
       "fallback_title": "",
@@ -817,7 +817,7 @@
      "type": "product",
      "settings": {
       "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
-      "brand": "Femina\u2122",
+      "brand": "Femina™",
       "rating": "4.8",
       "reviews": "1300+",
       "fallback_title": "",
@@ -829,7 +829,7 @@
      "type": "product",
      "settings": {
       "product_handle": "biokid-chewable-probiotics-tablets-for-children",
-      "brand": "BioKid\u2122",
+      "brand": "BioKid™",
       "rating": "4.8",
       "reviews": "200+",
       "fallback_title": "",
@@ -841,7 +841,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-vitamin-d3-1000-iu",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.7",
       "reviews": "190+",
       "fallback_title": "",
@@ -873,7 +873,7 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Clinically Proven Strains",
       "desc": "Strains studied for pregnancy safety."
      }
@@ -882,7 +882,7 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "OB Formulated",
       "desc": "Developed with obstetric and midwifery guidance."
      }
@@ -891,16 +891,16 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Patented MEP Technology",
-      "desc": "Microencapsulation with Supercritical CO\u2082."
+      "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
     "d4": {
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Clean Label",
       "desc": "Pregnancy-friendly, no fillers, no artificial nasties."
      }
@@ -981,14 +981,14 @@
     "brand_tint": "#f2f9ec",
     "eyebrow": "",
     "title": "Why Essentials Outperforms",
-    "sub": "Active folate, gentle iron, pregnancy-safe probiotics, and Velobiotics\u2122 delivery \u2014 the complete daily prenatal designed for actual absorption.",
+    "sub": "Active folate, gentle iron, pregnancy-safe probiotics, and Velobiotics™ delivery — the complete daily prenatal designed for actual absorption.",
     "col_features": "Features",
     "col_brand": "Essentials",
     "brand_logo_url": "",
     "col_b": "Generic Prenatal",
     "col_c": "Others",
     "cta_text": "Add to Cart",
-    "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
+    "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
    }
   },
   "judgeme": {
@@ -1030,21 +1030,21 @@
      "type": "q",
      "settings": {
       "question": "Can I take this with my OB-prescribed prenatal?",
-      "answer": "<p>Essentials is designed to replace standard prenatals. Check with your OB before stacking \u2014 folate and iron levels should not be doubled.</p>"
+      "answer": "<p>Essentials is designed to replace standard prenatals. Check with your OB before stacking — folate and iron levels should not be doubled.</p>"
      }
     },
     "q5": {
      "type": "q",
      "settings": {
       "question": "Do you ship internationally?",
-      "answer": "<p>Yes. We ship globally \u2014 5\u201314 working days. Free shipping over the free-shipping threshold.</p>"
+      "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
      }
     },
     "q6": {
      "type": "q",
      "settings": {
       "question": "What if it doesn't work for me?",
-      "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full \u2014 no questions asked.</p>"
+      "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full — no questions asked.</p>"
      }
     }
    },
@@ -1068,28 +1068,28 @@
     "g1": {
      "type": "g",
      "settings": {
-      "icon": "\u2705",
+      "icon": "✅",
       "text": "30-day money-back"
      }
     },
     "g2": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\ude9a",
+      "icon": "🚚",
       "text": "Ships worldwide"
      }
     },
     "g3": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\udd2c",
+      "icon": "🔬",
       "text": "Lab-tested every batch"
      }
     },
     "g4": {
      "type": "g",
      "settings": {
-      "icon": "\ud83e\udd30",
+      "icon": "🤰",
       "text": "OB-formulated"
      }
     }
@@ -1111,6 +1111,20 @@
     "cta_text": "Add to Cart",
     "cta_link": "#vbpForm"
    }
+  },
+  "science_strip": {
+   "type": "vb-science-strip",
+   "settings": {
+    "kicker": "Backed by peer-reviewed science",
+    "title_pre": "Don't take our word for it.",
+    "title_highlight": "View the science.",
+    "sub": "The shielding technology in this product was studied in three peer-reviewed papers. Read what the research actually showed, in plain English.",
+    "all_text": "View the science",
+    "all_url": "/pages/what-is-microencapsulation",
+    "bg": "#f6faf5",
+    "pad_top": 40,
+    "pad_bottom": 40
+   }
   }
  },
  "order": [
@@ -1126,6 +1140,7 @@
   "fbt",
   "doctors",
   "outperform",
+  "science_strip",
   "judgeme",
   "faq",
   "final"

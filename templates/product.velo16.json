@@ -15,29 +15,29 @@
     "b1": {
      "type": "benefit",
      "settings": {
-      "icon": "\u2764\ufe0f",
+      "icon": "❤️",
       "text": "Cardiovascular support"
      }
     },
     "b2": {
      "type": "benefit",
      "settings": {
-      "icon": "\u26a1",
+      "icon": "⚡",
       "text": "Energy & stamina boost"
      }
     },
     "b3": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83d\udcaa",
+      "icon": "💪",
       "text": "Magnesium glycinate"
      }
     },
     "b4": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
-      "text": "1000\u00d7 more delivery"
+      "icon": "🛡️",
+      "text": "1000× more delivery"
      }
     },
     "t1": {
@@ -83,11 +83,11 @@
     "brand_primary": "#c8163c",
     "brand_dark": "#6b0a1f",
     "brand_tint": "#ffe8ec",
-    "brand_label": "Velo16\u2122",
+    "brand_label": "Velo16™",
     "rating": "4.7",
     "review_count": "800+",
-    "hook": "Power your heart, energy, and recovery \u2014 every single day. Velo16\u2122 blends magnesium glycinate with 16 probiotic strains for full-spectrum cardiovascular and metabolic support.",
-    "ship_note": "Ships worldwide \u00b7 Free shipping over the free-shipping threshold \u00b7 30-day money-back guarantee",
+    "hook": "Power your heart, energy, and recovery — every single day. Velo16™ blends magnesium glycinate with 16 probiotic strains for full-spectrum cardiovascular and metabolic support.",
+    "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
     "show_subscription": true,
     "show_buynow": true,
     "show_testi_marquee": true
@@ -101,7 +101,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Themba+M&background=c8163c&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Themba M.",
-      "meta": "Verified buyer \u00b7 Pretoria",
+      "meta": "Verified buyer · Pretoria",
       "quote": "Velo16 changed my mornings. I feel sharper, stronger, and my BP readings improved."
      }
     },
@@ -110,7 +110,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Sipho+K&background=ff5c7c&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Sipho K.",
-      "meta": "Verified buyer \u00b7 1 month ago",
+      "meta": "Verified buyer · 1 month ago",
       "quote": "Energy boost is real. Three weeks in, no crash, no caffeine spikes."
      }
     },
@@ -119,7 +119,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Anne+L&background=6b0a1f&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Anne L.",
-      "meta": "Verified buyer \u00b7 3 weeks ago",
+      "meta": "Verified buyer · 3 weeks ago",
       "quote": "Sleep deeper, wake easier. Daily ritual now."
      }
     },
@@ -128,7 +128,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Vusi+N&background=c8163c&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Vusi N.",
-      "meta": "Verified buyer \u00b7 2 months ago",
+      "meta": "Verified buyer · 2 months ago",
       "quote": "Heart palpitations gone. Worth every cent."
      }
     },
@@ -137,7 +137,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Liezel+B&background=ff5c7c&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Liezel B.",
-      "meta": "Verified buyer \u00b7 Cape Town",
+      "meta": "Verified buyer · Cape Town",
       "quote": "Magnesium glycinate finally done right. Best supplement I own."
      }
     }
@@ -153,7 +153,7 @@
     "brand_primary": "#c8163c",
     "brand_dark": "#6b0a1f",
     "brand_tint": "#ffe8ec",
-    "eyebrow": "\u2605 Real Reviews",
+    "eyebrow": "★ Real Reviews",
     "title": "Trusted by thousands"
    }
   },
@@ -163,28 +163,28 @@
     "p1": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Low energy and brain fog</strong> that no coffee can fix."
      }
     },
     "p2": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Rising blood pressure</strong> and restless heart."
      }
     },
     "p3": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Poor sleep quality</strong> leaving you drained."
      }
     },
     "p4": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Magnesium supplements</strong> that upset your gut."
      }
     }
@@ -214,28 +214,28 @@
     "s1": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Magnesium glycinate</strong> \u2014 the most absorbable form, gentle on the gut."
+      "icon": "✓",
+      "text": "<strong>Magnesium glycinate</strong> — the most absorbable form, gentle on the gut."
      }
     },
     "s2": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>16 probiotic strains</strong> for cardiovascular and metabolic support."
      }
     },
     "s3": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Velobiotics\u2122 MEP technology</strong> \u2014 1000\u00d7 more probiotics survive."
+      "icon": "✓",
+      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more probiotics survive."
      }
     },
     "s4": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>Once-daily</strong>. Doctor-formulated. Lab-tested every batch."
      }
     }
@@ -251,12 +251,12 @@
     "brand_primary": "#c8163c",
     "brand_tint": "#ffe8ec",
     "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/magnesiumglycinateRealistic3DFrontView.png?v=1775328666",
-    "tag_value": "1000\u00d7",
+    "tag_value": "1000×",
     "tag_label": "More Probiotics Delivered",
     "eyebrow": "The Solution",
     "title_pre": "Meet",
-    "title_highlight": "Velo16\u2122 Probiotics + Magnesium.",
-    "desc": "A once-daily oral supplement combining the most bioavailable magnesium glycinate with 16 clinically researched probiotic strains \u2014 Velobiotics\u2122 technology ensures 1000\u00d7 more reach your gut, where they support heart health, sleep, and energy."
+    "title_highlight": "Velo16™ Probiotics + Magnesium.",
+    "desc": "A once-daily oral supplement combining the most bioavailable magnesium glycinate with 16 clinically researched probiotic strains — Velobiotics™ technology ensures 1000× more reach your gut, where they support heart health, sleep, and energy."
    }
   },
   "related": {
@@ -266,7 +266,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-omega-3-vit-d3",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.8",
       "reviews": "120+"
      }
@@ -275,7 +275,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-vitamin-c",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.7",
       "reviews": "180+"
      }
@@ -284,7 +284,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-digestive-enzymes-complex",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.7",
       "reviews": "150+"
      }
@@ -293,7 +293,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-calcium-magnesium",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.6",
       "reviews": "110+"
      }
@@ -302,7 +302,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-ashwagadha",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.7",
       "reviews": "95+"
      }
@@ -321,8 +321,8 @@
     "brand_tint": "#ffe8ec",
     "tint": false,
     "eyebrow": "Complete the Stack",
-    "title": "More from the Velo16\u2122 range",
-    "sub": "Pair your daily capsules with the rest of the Velo16\u2122 heart-and-energy line."
+    "title": "More from the Velo16™ range",
+    "sub": "Pair your daily capsules with the rest of the Velo16™ heart-and-energy line."
    }
   },
   "benefits": {
@@ -331,7 +331,7 @@
     "b1": {
      "type": "feat",
      "settings": {
-      "icon": "\u2764\ufe0f",
+      "icon": "❤️",
       "name": "Heart Health",
       "desc": "Supports healthy blood pressure, circulation, and cardiac rhythm."
      }
@@ -339,15 +339,15 @@
     "b2": {
      "type": "feat",
      "settings": {
-      "icon": "\u26a1",
+      "icon": "⚡",
       "name": "Energy & Stamina",
-      "desc": "Sustained, crash-free energy \u2014 without caffeine spikes."
+      "desc": "Sustained, crash-free energy — without caffeine spikes."
      }
     },
     "b3": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\ude34",
+      "icon": "😴",
       "name": "Deeper Sleep",
       "desc": "Magnesium glycinate supports natural sleep cycles."
      }
@@ -355,15 +355,15 @@
     "b4": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\udde0",
+      "icon": "🧠",
       "name": "Mental Clarity",
-      "desc": "Banish brain fog \u2014 sharper thinking, better focus."
+      "desc": "Banish brain fog — sharper thinking, better focus."
      }
     },
     "b5": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\ude7a",
+      "icon": "🩺",
       "name": "Doctor-Formulated",
       "desc": "Built by medical doctors using clinically-studied strains."
      }
@@ -371,7 +371,7 @@
     "b6": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "name": "100% Natural",
       "desc": "Vegan, halaal-friendly, no fillers, no artificial nasties."
      }
@@ -390,8 +390,8 @@
     "brand_tint": "#ffe8ec",
     "eyebrow": "Key Benefits",
     "title_pre": "Why",
-    "title_highlight": "Velo16\u2122",
-    "sub": "Six reasons people across South Africa and the world choose Velo16\u2122 for daily heart-and-energy wellness."
+    "title_highlight": "Velo16™",
+    "sub": "Six reasons people across South Africa and the world choose Velo16™ for daily heart-and-energy wellness."
    }
   },
   "how": {
@@ -417,7 +417,7 @@
     "i1": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "name": "16-Strain Probiotic Blend",
       "amount": "10 Billion CFU",
       "desc": "Strains chosen for cardiovascular and metabolic balance."
@@ -426,7 +426,7 @@
     "i2": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udc8e",
+      "icon": "💎",
       "name": "Magnesium Glycinate",
       "amount": "400mg",
       "desc": "The most bioavailable, gut-gentle form of magnesium."
@@ -435,16 +435,16 @@
     "i3": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
-      "name": "Velobiotics\u2122 MEP Coating",
+      "icon": "🛡️",
+      "name": "Velobiotics™ MEP Coating",
       "amount": "Patented",
-      "desc": "Supercritical CO\u2082 microencapsulation \u2014 1000\u00d7 more survive."
+      "desc": "Supercritical CO₂ microencapsulation — 1000× more survive."
      }
     },
     "i4": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83c\udf3e",
+      "icon": "🌾",
       "name": "Prebiotic Fibre",
       "amount": "Inulin",
       "desc": "Feeds your good bacteria so they thrive long-term."
@@ -453,7 +453,7 @@
     "i5": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "name": "Clean Capsule Shell",
       "amount": "Vegan HPMC",
       "desc": "No gelatin, no fillers, no allergens. Halaal-friendly."
@@ -462,10 +462,10 @@
     "i6": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udeab",
+      "icon": "🚫",
       "name": "Free From",
       "amount": "Always",
-      "desc": "Gluten \u00b7 soy \u00b7 dairy \u00b7 artificial colours \u00b7 preservatives \u00b7 GMO."
+      "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO."
      }
     }
    },
@@ -487,7 +487,7 @@
     "sub": "Six clean actives. No proprietary blends. Full transparency.",
     "facts_image_url": "",
     "facts_label": "Supplement facts",
-    "facts_foot": "Lab-tested \u00b7 Doctor-formulated \u00b7 Full transparency"
+    "facts_foot": "Lab-tested · Doctor-formulated · Full transparency"
    }
   },
   "confidence": {
@@ -543,7 +543,7 @@
     "eyebrow": "Real results",
     "title_pre": "Trusted for",
     "title_highlight": "Daily Vitality",
-    "sub": "What customers report after 4 weeks of daily Velo16\u2122 use.",
+    "sub": "What customers report after 4 weeks of daily Velo16™ use.",
     "caveat": "Based on a survey of 800+ verified customers. Individual results may vary."
    }
   },
@@ -554,7 +554,7 @@
      "type": "product",
      "settings": {
       "product_handle": "gutslim-probiotics-glp-1-booster",
-      "brand": "GutSlim\u2122",
+      "brand": "GutSlim™",
       "rating": "4.8",
       "reviews": "410+"
      }
@@ -563,7 +563,7 @@
      "type": "product",
      "settings": {
       "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
-      "brand": "His-Biotics\u2122",
+      "brand": "His-Biotics™",
       "rating": "4.7",
       "reviews": "210+"
      }
@@ -572,7 +572,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-original-capsules-60s",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.7",
       "reviews": "260+"
      }
@@ -581,7 +581,7 @@
      "type": "product",
      "settings": {
       "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
-      "brand": "Femina\u2122",
+      "brand": "Femina™",
       "rating": "4.8",
       "reviews": "1300+"
      }
@@ -600,7 +600,7 @@
     "tint": true,
     "eyebrow": "Frequently Bought Together",
     "title": "Pair with the rest of your wellness stack",
-    "sub": "Velo16\u2122 pairs well with these Velobiotics favourites."
+    "sub": "Velo16™ pairs well with these Velobiotics favourites."
    }
   },
   "doctors": {
@@ -627,7 +627,7 @@
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
       "name": "Patented MEP Technology",
-      "desc": "Microencapsulation with Supercritical CO\u2082."
+      "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
     "d4": {
@@ -715,11 +715,11 @@
     "title": "Why We Outperform Others",
     "sub": "Experience unmatched vitality and clarity with our unique blend of powerful probiotics and absorbable magnesium glycinate.",
     "col_features": "Features",
-    "col_brand": "Velo16\u2122",
+    "col_brand": "Velo16™",
     "col_b": "General Probiotic",
     "col_c": "Others",
     "cta_text": "Add to Cart",
-    "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
+    "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
    }
   },
   "judgeme": {
@@ -740,20 +740,20 @@
      "type": "q",
      "settings": {
       "question": "How long until I feel the difference?",
-      "answer": "<p>Most people feel sharper energy and better sleep within 7\u201314 days. Full cardiovascular and metabolic benefits build over 4\u20136 weeks of consistent daily use.</p>"
+      "answer": "<p>Most people feel sharper energy and better sleep within 7–14 days. Full cardiovascular and metabolic benefits build over 4–6 weeks of consistent daily use.</p>"
      }
     },
     "q2": {
      "type": "q",
      "settings": {
-      "question": "Can I take Velo16\u2122 with blood pressure medication?",
-      "answer": "<p>Velo16\u2122 is generally safe alongside common cardiovascular medications, but always check with your healthcare practitioner first to be safe.</p>"
+      "question": "Can I take Velo16™ with blood pressure medication?",
+      "answer": "<p>Velo16™ is generally safe alongside common cardiovascular medications, but always check with your healthcare practitioner first to be safe.</p>"
      }
     },
     "q3": {
      "type": "q",
      "settings": {
-      "question": "Is Velo16\u2122 safe daily?",
+      "question": "Is Velo16™ safe daily?",
       "answer": "<p>Absolutely. Manufactured under GMP conditions in SAHPRA-aware facilities. Daily use is safe and recommended for sustained wellness.</p>"
      }
     },
@@ -761,21 +761,21 @@
      "type": "q",
      "settings": {
       "question": "Will magnesium glycinate upset my stomach?",
-      "answer": "<p>No. Glycinate is the most gut-gentle form of magnesium \u2014 far better tolerated than oxide or citrate. That's exactly why we chose it.</p>"
+      "answer": "<p>No. Glycinate is the most gut-gentle form of magnesium — far better tolerated than oxide or citrate. That's exactly why we chose it.</p>"
      }
     },
     "q5": {
      "type": "q",
      "settings": {
       "question": "Do you ship internationally?",
-      "answer": "<p>Yes. We ship globally \u2014 5\u201314 working days. Free shipping over the free-shipping threshold.</p>"
+      "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
      }
     },
     "q6": {
      "type": "q",
      "settings": {
-      "question": "What if Velo16\u2122 doesn't work for me?",
-      "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full \u2014 no questions asked.</p>"
+      "question": "What if Velo16™ doesn't work for me?",
+      "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full — no questions asked.</p>"
      }
     }
    },
@@ -799,28 +799,28 @@
     "g1": {
      "type": "g",
      "settings": {
-      "icon": "\u2705",
+      "icon": "✅",
       "text": "30-day money-back"
      }
     },
     "g2": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\ude9a",
+      "icon": "🚚",
       "text": "Ships worldwide"
      }
     },
     "g3": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\udd2c",
+      "icon": "🔬",
       "text": "Lab-tested every batch"
      }
     },
     "g4": {
      "type": "g",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "text": "100% natural"
      }
     }
@@ -838,9 +838,23 @@
     "badge": "30-day money-back guarantee",
     "title_pre": "Power Your Day",
     "title_highlight": "Risk-Free for 30 Days",
-    "sub": "Join the 60,000+ people who power through every day with Velo16\u2122. If you don't feel the difference, we'll refund every cent.",
+    "sub": "Join the 60,000+ people who power through every day with Velo16™. If you don't feel the difference, we'll refund every cent.",
     "cta_text": "Add to Cart",
     "cta_link": "#vbpForm"
+   }
+  },
+  "science_strip": {
+   "type": "vb-science-strip",
+   "settings": {
+    "kicker": "Backed by peer-reviewed science",
+    "title_pre": "Don't take our word for it.",
+    "title_highlight": "View the science.",
+    "sub": "The shielding technology in this product was studied in three peer-reviewed papers. Read what the research actually showed, in plain English.",
+    "all_text": "View the science",
+    "all_url": "/pages/what-is-microencapsulation",
+    "bg": "#f6faf5",
+    "pad_top": 40,
+    "pad_bottom": 40
    }
   }
  },
@@ -857,6 +871,7 @@
   "fbt",
   "doctors",
   "outperform",
+  "science_strip",
   "judgeme",
   "faq",
   "final"

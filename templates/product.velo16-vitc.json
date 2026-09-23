@@ -15,29 +15,29 @@
     "b1": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83c\udf4a",
+      "icon": "🍊",
       "text": "1000 mg high-potency Vit C"
      }
     },
     "b2": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
+      "icon": "🛡️",
       "text": "Immunity & collagen support"
      }
     },
     "b3": {
      "type": "benefit",
      "settings": {
-      "icon": "\u2728",
+      "icon": "✨",
       "text": "Antioxidant power"
      }
     },
     "b4": {
      "type": "benefit",
      "settings": {
-      "icon": "\u26a1",
-      "text": "1000\u00d7 more delivery"
+      "icon": "⚡",
+      "text": "1000× more delivery"
      }
     },
     "t1": {
@@ -83,11 +83,11 @@
     "brand_primary": "#c8163c",
     "brand_dark": "#6b0a1f",
     "brand_tint": "#ffe8ec",
-    "brand_label": "Velo16\u2122 \u00b7 Vit C",
+    "brand_label": "Velo16™ · Vit C",
     "rating": "4.7",
     "review_count": "320+",
-    "hook": "High-potency immune & collagen support. Velo16\u2122 Probiotics Vitamin C delivers 1000 mg ascorbic acid + 16 probiotic strains \u2014 for stronger immunity, brighter skin, and antioxidant defence every day.",
-    "ship_note": "Ships worldwide \u00b7 Free shipping over the free-shipping threshold \u00b7 30-day money-back guarantee",
+    "hook": "High-potency immune & collagen support. Velo16™ Probiotics Vitamin C delivers 1000 mg ascorbic acid + 16 probiotic strains — for stronger immunity, brighter skin, and antioxidant defence every day.",
+    "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
     "show_buynow": true,
     "show_testi_marquee": true
    }
@@ -100,7 +100,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Nthabi+M&background=c8163c&color=ffffff&size=120&bold=true",
       "author": "Nthabi M.",
-      "meta": "Verified buyer \u00b7 Pretoria",
+      "meta": "Verified buyer · Pretoria",
       "quote": "I take Velo16 Vit C every morning and haven't been sick all winter."
      }
     },
@@ -109,7 +109,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Rachel+K&background=ff5c7c&color=ffffff&size=120&bold=true",
       "author": "Rachel K.",
-      "meta": "Verified buyer \u00b7 Cape Town",
+      "meta": "Verified buyer · Cape Town",
       "quote": "My skin's brighter within 3 weeks. Collagen boost is real."
      }
     },
@@ -118,7 +118,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Sipho+L&background=6b0a1f&color=ffffff&size=120&bold=true",
       "author": "Sipho L.",
-      "meta": "Verified buyer \u00b7 1 month ago",
+      "meta": "Verified buyer · 1 month ago",
       "quote": "Daily energy stays steady. No spikes, no crashes."
      }
     },
@@ -127,8 +127,8 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Anna+V&background=c8163c&color=ffffff&size=120&bold=true",
       "author": "Anna V.",
-      "meta": "Verified buyer \u00b7 2 months ago",
-      "quote": "I've tried 5 Vit C brands. Velo16 absorbs differently \u2014 you feel it."
+      "meta": "Verified buyer · 2 months ago",
+      "quote": "I've tried 5 Vit C brands. Velo16 absorbs differently — you feel it."
      }
     }
    },
@@ -142,7 +142,7 @@
     "brand_primary": "#c8163c",
     "brand_dark": "#6b0a1f",
     "brand_tint": "#ffe8ec",
-    "eyebrow": "\u2605 Real Reviews",
+    "eyebrow": "★ Real Reviews",
     "title": "Loved by immune-boosters"
    }
   },
@@ -152,28 +152,28 @@
     "p1": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Catching every cold</strong> going around the office or school run."
      }
     },
     "p2": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Dull, tired-looking skin</strong> that creams can't seem to fix."
      }
     },
     "p3": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Generic Vit C tablets</strong> that pass through without absorbing."
      }
     },
     "p4": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Mid-afternoon slumps</strong> and depleted energy."
      }
     }
@@ -194,7 +194,7 @@
     "eyebrow": "The Problem",
     "title_pre": "Generic Vit C",
     "title_highlight": "rarely reaches your cells.",
-    "desc": "Standard ascorbic acid tablets break down quickly and absorb poorly \u2014 most of what you swallow ends up in the bin. Without proper delivery, your immune system, skin, and energy keep paying the price."
+    "desc": "Standard ascorbic acid tablets break down quickly and absorb poorly — most of what you swallow ends up in the bin. Without proper delivery, your immune system, skin, and energy keep paying the price."
    }
   },
   "solution": {
@@ -203,28 +203,28 @@
     "s1": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>1000 mg ascorbic acid</strong> \u2014 full daily clinical dose in one capsule."
+      "icon": "✓",
+      "text": "<strong>1000 mg ascorbic acid</strong> — full daily clinical dose in one capsule."
      }
     },
     "s2": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>16-strain probiotic blend</strong> for gut, immunity, and absorption."
      }
     },
     "s3": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Velobiotics\u2122 MEP technology</strong> \u2014 1000\u00d7 more absorbed, alive."
+      "icon": "✓",
+      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more absorbed, alive."
      }
     },
     "s4": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>Once-daily</strong>. Doctor-formulated. Lab-tested every batch."
      }
     }
@@ -244,8 +244,8 @@
     "tag_label": "High Potency",
     "eyebrow": "The Solution",
     "title_pre": "Meet",
-    "title_highlight": "Velo16\u2122 Probiotics Vit C 1000mg.",
-    "desc": "A once-daily capsule combining a clinical 1000 mg dose of ascorbic acid with 16 probiotic strains, delivered by Velobiotics\u2122 MEP technology \u2014 for stronger immunity, brighter skin, and antioxidant defence that actually reaches your cells."
+    "title_highlight": "Velo16™ Probiotics Vit C 1000mg.",
+    "desc": "A once-daily capsule combining a clinical 1000 mg dose of ascorbic acid with 16 probiotic strains, delivered by Velobiotics™ MEP technology — for stronger immunity, brighter skin, and antioxidant defence that actually reaches your cells."
    }
   },
   "related": {
@@ -255,7 +255,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-vitamin-d3",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.7",
       "reviews": "180+",
       "fallback_title": "",
@@ -267,7 +267,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-zinc-picolinate",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.6",
       "reviews": "120+",
       "fallback_title": "",
@@ -279,7 +279,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-omega-3-vit-d3",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.8",
       "reviews": "150+",
       "fallback_title": "",
@@ -291,7 +291,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-magnesium-glycinate",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.7",
       "reviews": "190+",
       "fallback_title": "",
@@ -312,7 +312,7 @@
     "brand_tint": "#ffe8ec",
     "tint": false,
     "eyebrow": "Complete the Immune Stack",
-    "title": "More from the Velo16\u2122 range",
+    "title": "More from the Velo16™ range",
     "sub": "Pair Vit C with the rest of your daily immune defence."
    }
   },
@@ -322,7 +322,7 @@
     "b1": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
+      "icon": "🛡️",
       "name": "Stronger Immunity",
       "desc": "Clinical-dose Vit C powers your immune defence year-round."
      }
@@ -330,15 +330,15 @@
     "b2": {
      "type": "feat",
      "settings": {
-      "icon": "\u2728",
+      "icon": "✨",
       "name": "Collagen & Skin Glow",
-      "desc": "Vit C is essential for collagen synthesis \u2014 visibly brighter skin."
+      "desc": "Vit C is essential for collagen synthesis — visibly brighter skin."
      }
     },
     "b3": {
      "type": "feat",
      "settings": {
-      "icon": "\u26a1",
+      "icon": "⚡",
       "name": "Steady Energy",
       "desc": "Antioxidant defence keeps energy levels stable without crashes."
      }
@@ -346,7 +346,7 @@
     "b4": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\ude7a",
+      "icon": "🩺",
       "name": "Iron Absorption",
       "desc": "Vit C dramatically boosts your body's iron uptake from food."
      }
@@ -354,7 +354,7 @@
     "b5": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "name": "Gut + Immunity Synergy",
       "desc": "16 probiotic strains amplify Vit C's immune benefits."
      }
@@ -362,7 +362,7 @@
     "b6": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "name": "100% Natural",
       "desc": "Vegan, halaal-friendly, no fillers, no artificial nasties."
      }
@@ -381,7 +381,7 @@
     "brand_tint": "#ffe8ec",
     "eyebrow": "Key Benefits",
     "title_pre": "Why",
-    "title_highlight": "Velo16\u2122 Vit C",
+    "title_highlight": "Velo16™ Vit C",
     "sub": "Six reasons it has become South Africa's high-potency Vit C of choice."
    }
   },
@@ -408,7 +408,7 @@
     "i1": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83c\udf4a",
+      "icon": "🍊",
       "name": "Vitamin C (Ascorbic Acid)",
       "amount": "1000 mg",
       "desc": "Clinical dose for immunity, collagen, antioxidant defence."
@@ -417,7 +417,7 @@
     "i2": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "name": "16-Strain Probiotic Blend",
       "amount": "10 Billion CFU",
       "desc": "Lactobacillus & Bifidobacterium strains for gut + immunity."
@@ -426,16 +426,16 @@
     "i3": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
-      "name": "Velobiotics\u2122 MEP Coating",
+      "icon": "🛡️",
+      "name": "Velobiotics™ MEP Coating",
       "amount": "Patented",
-      "desc": "Supercritical CO\u2082 microencapsulation \u2014 1000\u00d7 more survive."
+      "desc": "Supercritical CO₂ microencapsulation — 1000× more survive."
      }
     },
     "i4": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83c\udf3e",
+      "icon": "🌾",
       "name": "Citrus Bioflavonoids",
       "amount": "Trace",
       "desc": "Boosts Vit C absorption and antioxidant effect."
@@ -444,7 +444,7 @@
     "i5": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "name": "Clean Capsule Shell",
       "amount": "Vegan HPMC",
       "desc": "No gelatin, no fillers, no allergens. Halaal-friendly."
@@ -453,10 +453,10 @@
     "i6": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udeab",
+      "icon": "🚫",
       "name": "Free From",
       "amount": "Always",
-      "desc": "Gluten \u00b7 soy \u00b7 dairy \u00b7 artificial colours \u00b7 preservatives \u00b7 GMO."
+      "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO."
      }
     }
    },
@@ -481,7 +481,7 @@
     "facts_col_a": "Ingredient",
     "facts_col_b": "Per serving",
     "facts_caption": "% Daily Value not established. Other Ingredients: HPMC, Magnesium Stearate.",
-    "facts_foot": "Lab-tested \u00b7 Doctor-formulated"
+    "facts_foot": "Lab-tested · Doctor-formulated"
    }
   },
   "confidence": {
@@ -537,7 +537,7 @@
     "eyebrow": "Real results",
     "title_pre": "Trusted for",
     "title_highlight": "Daily Immune Defence",
-    "sub": "What customers report after 4 weeks of daily Velo16\u2122 Vit C.",
+    "sub": "What customers report after 4 weeks of daily Velo16™ Vit C.",
     "caveat": "Based on 320+ verified customers. Individual results may vary."
    }
   },
@@ -548,7 +548,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-original-capsules-60s",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.7",
       "reviews": "260+",
       "fallback_title": "",
@@ -560,7 +560,7 @@
      "type": "product",
      "settings": {
       "product_handle": "gutslim-probiotics-glp-1-booster",
-      "brand": "GutSlim\u2122",
+      "brand": "GutSlim™",
       "rating": "4.8",
       "reviews": "410+",
       "fallback_title": "",
@@ -572,7 +572,7 @@
      "type": "product",
      "settings": {
       "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
-      "brand": "His-Biotics\u2122",
+      "brand": "His-Biotics™",
       "rating": "4.7",
       "reviews": "210+",
       "fallback_title": "",
@@ -584,7 +584,7 @@
      "type": "product",
      "settings": {
       "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
-      "brand": "Femina\u2122",
+      "brand": "Femina™",
       "rating": "4.8",
       "reviews": "1300+",
       "fallback_title": "",
@@ -606,7 +606,7 @@
     "tint": true,
     "eyebrow": "Frequently Bought Together",
     "title": "Pair with the rest of your wellness stack",
-    "sub": "Velo16\u2122 Vit C stacks well with these Velobiotics favourites."
+    "sub": "Velo16™ Vit C stacks well with these Velobiotics favourites."
    }
   },
   "doctors": {
@@ -616,16 +616,16 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Clinical Dose",
-      "desc": "1000 mg ascorbic acid \u2014 full clinical-grade daily."
+      "desc": "1000 mg ascorbic acid — full clinical-grade daily."
      }
     },
     "d2": {
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Doctor Formulated",
       "desc": "Developed by medical doctors and microbiologists."
      }
@@ -634,16 +634,16 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Patented MEP Technology",
-      "desc": "Microencapsulation with Supercritical CO\u2082."
+      "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
     "d4": {
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Clean Label",
       "desc": "Vegan, halaal-friendly, no fillers."
      }
@@ -726,12 +726,12 @@
     "title": "Why We Outperform Others",
     "sub": "Experience high-potency Vit C with our unique blend of clinical dosing, advanced absorption technology, and 16-strain probiotic synergy.",
     "col_features": "Features",
-    "col_brand": "Velo16\u2122 Vit C",
+    "col_brand": "Velo16™ Vit C",
     "brand_logo_url": "",
     "col_b": "Generic Vit C",
     "col_c": "Others",
     "cta_text": "Add to Cart",
-    "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
+    "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
    }
   },
   "judgeme": {
@@ -752,20 +752,20 @@
      "type": "q",
      "settings": {
       "question": "Is 1000 mg too much Vitamin C?",
-      "answer": "<p>1000 mg is well within the safe daily upper limit (2000 mg). It's the clinical dose used in most peer-reviewed immunity research \u2014 higher absorption than the 60-90 mg in cheaper supplements.</p>"
+      "answer": "<p>1000 mg is well within the safe daily upper limit (2000 mg). It's the clinical dose used in most peer-reviewed immunity research — higher absorption than the 60-90 mg in cheaper supplements.</p>"
      }
     },
     "q2": {
      "type": "q",
      "settings": {
       "question": "Can I take this with iron supplements?",
-      "answer": "<p>Yes \u2014 Vitamin C dramatically improves iron absorption. Taking them together is actually a smart strategy.</p>"
+      "answer": "<p>Yes — Vitamin C dramatically improves iron absorption. Taking them together is actually a smart strategy.</p>"
      }
     },
     "q3": {
      "type": "q",
      "settings": {
-      "question": "Is Velo16\u2122 Vit C safe daily?",
+      "question": "Is Velo16™ Vit C safe daily?",
       "answer": "<p>Absolutely. Manufactured under GMP conditions in SAHPRA-aware facilities. Daily use is safe and recommended for sustained immune support.</p>"
      }
     },
@@ -773,21 +773,21 @@
      "type": "q",
      "settings": {
       "question": "Will high-dose Vit C upset my stomach?",
-      "answer": "<p>The MEP coating means it's released gradually \u2014 much gentler than uncoated ascorbic acid powders or chewables.</p>"
+      "answer": "<p>The MEP coating means it's released gradually — much gentler than uncoated ascorbic acid powders or chewables.</p>"
      }
     },
     "q5": {
      "type": "q",
      "settings": {
       "question": "Do you ship internationally?",
-      "answer": "<p>Yes. We ship globally \u2014 5\u201314 working days. Free shipping over the threshold.</p>"
+      "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the threshold.</p>"
      }
     },
     "q6": {
      "type": "q",
      "settings": {
-      "question": "What if Velo16\u2122 Vit C doesn't work for me?",
-      "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full \u2014 no questions asked.</p>"
+      "question": "What if Velo16™ Vit C doesn't work for me?",
+      "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full — no questions asked.</p>"
      }
     }
    },
@@ -811,28 +811,28 @@
     "g1": {
      "type": "g",
      "settings": {
-      "icon": "\u2705",
+      "icon": "✅",
       "text": "30-day money-back"
      }
     },
     "g2": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\ude9a",
+      "icon": "🚚",
       "text": "Ships worldwide"
      }
     },
     "g3": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\udd2c",
+      "icon": "🔬",
       "text": "Lab-tested every batch"
      }
     },
     "g4": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
+      "icon": "🛡️",
       "text": "Clinical dose"
      }
     }
@@ -850,9 +850,23 @@
     "badge": "30-day money-back guarantee",
     "title_pre": "Defend Your Day",
     "title_highlight": "Risk-Free for 30 Days",
-    "sub": "Join the 40,000+ people who power through every day with Velo16\u2122 Vit C. If you don't feel the difference, we'll refund every cent.",
+    "sub": "Join the 40,000+ people who power through every day with Velo16™ Vit C. If you don't feel the difference, we'll refund every cent.",
     "cta_text": "Add to Cart",
     "cta_link": "#vbpForm"
+   }
+  },
+  "science_strip": {
+   "type": "vb-science-strip",
+   "settings": {
+    "kicker": "Backed by peer-reviewed science",
+    "title_pre": "Don't take our word for it.",
+    "title_highlight": "View the science.",
+    "sub": "The shielding technology in this product was studied in three peer-reviewed papers. Read what the research actually showed, in plain English.",
+    "all_text": "View the science",
+    "all_url": "/pages/what-is-microencapsulation",
+    "bg": "#f6faf5",
+    "pad_top": 40,
+    "pad_bottom": 40
    }
   }
  },
@@ -869,6 +883,7 @@
   "fbt",
   "doctors",
   "outperform",
+  "science_strip",
   "judgeme",
   "faq",
   "final"

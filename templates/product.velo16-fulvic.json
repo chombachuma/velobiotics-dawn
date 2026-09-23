@@ -15,29 +15,29 @@
     "b1": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "text": "Fulvic + humic acid"
      }
     },
     "b2": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83e\uddf2",
+      "icon": "🧲",
       "text": "Mineral transport boost"
      }
     },
     "b3": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "text": "16 probiotic strains"
      }
     },
     "b4": {
      "type": "benefit",
      "settings": {
-      "icon": "\u26a1",
-      "text": "1000\u00d7 more delivery"
+      "icon": "⚡",
+      "text": "1000× more delivery"
      }
     },
     "t1": {
@@ -83,11 +83,11 @@
     "brand_primary": "#c8163c",
     "brand_dark": "#6b0a1f",
     "brand_tint": "#ffe8ec",
-    "brand_label": "Velo16\u2122 Fulvic Acid",
+    "brand_label": "Velo16™ Fulvic Acid",
     "rating": "4.7",
     "review_count": "120+",
-    "hook": "Ancient mineral, modern science. Velo16\u2122 Fulvic Acid delivers humic and fulvic acids alongside 16 probiotic strains \u2014 detox support, mineral transport, and gut harmony in one capsule.",
-    "ship_note": "Ships worldwide \u00b7 Free shipping over the free-shipping threshold \u00b7 30-day money-back guarantee",
+    "hook": "Ancient mineral, modern science. Velo16™ Fulvic Acid delivers humic and fulvic acids alongside 16 probiotic strains — detox support, mineral transport, and gut harmony in one capsule.",
+    "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
     "show_subscription": true,
     "show_buynow": true,
     "show_testi_marquee": true
@@ -101,7 +101,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Lerato+V&background=c8163c&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Lerato V.",
-      "meta": "Verified buyer \u00b7 Pretoria",
+      "meta": "Verified buyer · Pretoria",
       "quote": "Energy I haven't had in years. Brain fog lifted in 3 weeks."
      }
     },
@@ -110,7 +110,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Marco+D&background=ff5c7c&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Marco D.",
-      "meta": "Verified buyer \u00b7 Johannesburg",
+      "meta": "Verified buyer · Johannesburg",
       "quote": "Brain fog finally lifted. Steady mental clarity."
      }
     },
@@ -119,7 +119,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Carla+N&background=6b0a1f&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Carla N.",
-      "meta": "Verified buyer \u00b7 2 months ago",
+      "meta": "Verified buyer · 2 months ago",
       "quote": "Inflammation down, joints quieter, gut calmer."
      }
     },
@@ -128,7 +128,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Tshepo+K&background=c8163c&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Tshepo K.",
-      "meta": "Verified buyer \u00b7 1 month ago",
+      "meta": "Verified buyer · 1 month ago",
       "quote": "Real natural detox without harsh side effects."
      }
     },
@@ -137,7 +137,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Naseema+B&background=ff5c7c&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Naseema B.",
-      "meta": "Verified buyer \u00b7 Cape Town",
+      "meta": "Verified buyer · Cape Town",
       "quote": "My nutrition absorption transformed."
      }
     }
@@ -153,7 +153,7 @@
     "brand_primary": "#c8163c",
     "brand_dark": "#6b0a1f",
     "brand_tint": "#ffe8ec",
-    "eyebrow": "\u2605 Real Reviews",
+    "eyebrow": "★ Real Reviews",
     "title": "Fulvic + probiotic, real results"
    }
   },
@@ -163,28 +163,28 @@
     "p1": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Mineral deficiency</strong> from depleted modern soils."
      }
     },
     "p2": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Toxin overload</strong> from environment, food, and stress."
      }
     },
     "p3": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Poor nutrient absorption</strong> blocking real wellness gains."
      }
     },
     "p4": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Harsh detoxes</strong> with painful side effects."
      }
     }
@@ -214,28 +214,28 @@
     "s1": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Fulvic + humic acid blend</strong> \u2014 ancient minerals, modern delivery."
+      "icon": "✓",
+      "text": "<strong>Fulvic + humic acid blend</strong> — ancient minerals, modern delivery."
      }
     },
     "s2": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>16-strain probiotic blend</strong> for gut detox and microbiome harmony."
      }
     },
     "s3": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Velobiotics\u2122 MEP technology</strong> \u2014 1000\u00d7 more reach you alive."
+      "icon": "✓",
+      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
      }
     },
     "s4": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>Gentle daily detox</strong>. No flushing, no crashes. Doctor-formulated."
      }
     }
@@ -251,12 +251,12 @@
     "brand_primary": "#c8163c",
     "brand_tint": "#ffe8ec",
     "image_url": "",
-    "tag_value": "1000\u00d7",
+    "tag_value": "1000×",
     "tag_label": "More Probiotics Delivered",
     "eyebrow": "The Solution",
     "title_pre": "Meet",
-    "title_highlight": "Velo16\u2122 Fulvic Acid.",
-    "desc": "Fulvic + humic acid + 16 probiotic strains. Daily mineral transport, gentle detox, gut microbiome harmony \u2014 all in one capsule."
+    "title_highlight": "Velo16™ Fulvic Acid.",
+    "desc": "Fulvic + humic acid + 16 probiotic strains. Daily mineral transport, gentle detox, gut microbiome harmony — all in one capsule."
    }
   },
   "related": {
@@ -266,7 +266,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-magnesium-glycinate",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.6",
       "reviews": "190+"
      }
@@ -275,7 +275,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-vitamin-d3-1000-iu",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.7",
       "reviews": "190+"
      }
@@ -284,7 +284,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-ashwagandha-ksm-66-300mg",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.8",
       "reviews": "170+"
      }
@@ -293,7 +293,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-moringa-powder",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.6",
       "reviews": "130+"
      }
@@ -310,9 +310,9 @@
     "brand_dark": "#6b0a1f",
     "brand_tint": "#ffe8ec",
     "tint": false,
-    "eyebrow": "More from Velo16\u2122",
+    "eyebrow": "More from Velo16™",
     "title": "Complete your daily wellness stack",
-    "sub": "Pair Fulvic Acid with the rest of the Velo16\u2122 daily essentials."
+    "sub": "Pair Fulvic Acid with the rest of the Velo16™ daily essentials."
    }
   },
   "benefits": {
@@ -321,7 +321,7 @@
     "b1": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "name": "Trace Mineral Boost",
       "desc": "70+ trace minerals naturally bound to fulvic acid."
      }
@@ -329,7 +329,7 @@
     "b2": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\uddf2",
+      "icon": "🧲",
       "name": "Nutrient Transport",
       "desc": "Fulvic acid carries nutrients into cells more efficiently."
      }
@@ -337,7 +337,7 @@
     "b3": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
+      "icon": "🛡️",
       "name": "Gentle Detox",
       "desc": "Binds heavy metals and toxins, supports natural elimination."
      }
@@ -345,7 +345,7 @@
     "b4": {
      "type": "feat",
      "settings": {
-      "icon": "\u26a1",
+      "icon": "⚡",
       "name": "Energy & Clarity",
       "desc": "Steady cellular energy and clearer mental focus."
      }
@@ -353,7 +353,7 @@
     "b5": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\ude7a",
+      "icon": "🩺",
       "name": "Doctor-Formulated",
       "desc": "Built by medical doctors using clinically-studied strains."
      }
@@ -361,7 +361,7 @@
     "b6": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "name": "100% Natural",
       "desc": "Vegan, halaal-friendly, no fillers."
      }
@@ -407,7 +407,7 @@
     "i1": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "name": "Fulvic Acid",
       "amount": "300mg",
       "desc": "Ancient humic substance with 70+ trace minerals."
@@ -416,7 +416,7 @@
     "i2": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\uddf2",
+      "icon": "🧲",
       "name": "Humic Acid",
       "amount": "200mg",
       "desc": "Toxin-binding partner to fulvic acid."
@@ -425,7 +425,7 @@
     "i3": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "name": "16-Strain Probiotic Blend",
       "amount": "10 Billion CFU",
       "desc": "Strains chosen for detox and gut harmony."
@@ -434,16 +434,16 @@
     "i4": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
-      "name": "Velobiotics\u2122 MEP Coating",
+      "icon": "🛡️",
+      "name": "Velobiotics™ MEP Coating",
       "amount": "Patented",
-      "desc": "Supercritical CO\u2082 microencapsulation \u2014 1000\u00d7 more survive."
+      "desc": "Supercritical CO₂ microencapsulation — 1000× more survive."
      }
     },
     "i5": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "name": "Clean Capsule Shell",
       "amount": "Vegan HPMC",
       "desc": "No gelatin, no fillers. Halaal-friendly."
@@ -452,10 +452,10 @@
     "i6": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udeab",
+      "icon": "🚫",
       "name": "Free From",
       "amount": "Always",
-      "desc": "Gluten \u00b7 soy \u00b7 dairy \u00b7 artificial colours \u00b7 preservatives \u00b7 GMO."
+      "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO."
      }
     }
    },
@@ -477,7 +477,7 @@
     "sub": "Six clean actives. No proprietary blends. Full transparency.",
     "facts_image_url": "",
     "facts_label": "Supplement facts",
-    "facts_foot": "Lab-tested \u00b7 Doctor-formulated"
+    "facts_foot": "Lab-tested · Doctor-formulated"
    }
   },
   "confidence": {
@@ -544,7 +544,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-magnesium-glycinate",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.6",
       "reviews": "190+"
      }
@@ -553,7 +553,7 @@
      "type": "product",
      "settings": {
       "product_handle": "gutslim-probiotics-glp-1-booster",
-      "brand": "GutSlim\u2122",
+      "brand": "GutSlim™",
       "rating": "4.8",
       "reviews": "410+"
      }
@@ -562,7 +562,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-original-capsules-60s",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.7",
       "reviews": "260+"
      }
@@ -571,7 +571,7 @@
      "type": "product",
      "settings": {
       "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
-      "brand": "His-Biotics\u2122",
+      "brand": "His-Biotics™",
       "rating": "4.7",
       "reviews": "210+"
      }
@@ -617,7 +617,7 @@
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
       "name": "Patented MEP Technology",
-      "desc": "Microencapsulation with Supercritical CO\u2082."
+      "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
     "d4": {
@@ -703,13 +703,13 @@
     "brand_dark": "#6b0a1f",
     "brand_tint": "#ffe8ec",
     "title": "Why Fulvic Acid Outperforms",
-    "sub": "Fulvic + humic acids, 70+ trace minerals, 16 probiotic strains, and Velobiotics\u2122 delivery \u2014 modern wellness rooted in ancient science.",
+    "sub": "Fulvic + humic acids, 70+ trace minerals, 16 probiotic strains, and Velobiotics™ delivery — modern wellness rooted in ancient science.",
     "col_features": "Features",
     "col_brand": "Fulvic Acid",
     "col_b": "Generic Detox",
     "col_c": "Others",
     "cta_text": "Add to Cart",
-    "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
+    "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
    }
   },
   "judgeme": {
@@ -730,21 +730,21 @@
      "type": "q",
      "settings": {
       "question": "What is fulvic acid?",
-      "answer": "<p>Fulvic acid is an ancient humic substance formed from millions of years of plant decomposition. It's nature's mineral transporter \u2014 carrying 70+ trace minerals in highly absorbable form.</p>"
+      "answer": "<p>Fulvic acid is an ancient humic substance formed from millions of years of plant decomposition. It's nature's mineral transporter — carrying 70+ trace minerals in highly absorbable form.</p>"
      }
     },
     "q2": {
      "type": "q",
      "settings": {
       "question": "Is it really a detox?",
-      "answer": "<p>Fulvic acid binds heavy metals and supports natural elimination. It's gentle daily detox \u2014 not a harsh flush. Most users report sustained energy and clarity within 2-4 weeks.</p>"
+      "answer": "<p>Fulvic acid binds heavy metals and supports natural elimination. It's gentle daily detox — not a harsh flush. Most users report sustained energy and clarity within 2-4 weeks.</p>"
      }
     },
     "q3": {
      "type": "q",
      "settings": {
       "question": "Can I take it with other supplements?",
-      "answer": "<p>Yes \u2014 fulvic actually enhances absorption of other minerals and vitamins. Take it with your daily stack for amplified results.</p>"
+      "answer": "<p>Yes — fulvic actually enhances absorption of other minerals and vitamins. Take it with your daily stack for amplified results.</p>"
      }
     },
     "q4": {
@@ -758,14 +758,14 @@
      "type": "q",
      "settings": {
       "question": "Do you ship internationally?",
-      "answer": "<p>Yes. We ship globally \u2014 5\u201314 working days. Free shipping over the free-shipping threshold.</p>"
+      "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
      }
     },
     "q6": {
      "type": "q",
      "settings": {
       "question": "What if it doesn't work for me?",
-      "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full \u2014 no questions asked.</p>"
+      "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full — no questions asked.</p>"
      }
     }
    },
@@ -789,28 +789,28 @@
     "g1": {
      "type": "g",
      "settings": {
-      "icon": "\u2705",
+      "icon": "✅",
       "text": "30-day money-back"
      }
     },
     "g2": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\ude9a",
+      "icon": "🚚",
       "text": "Ships worldwide"
      }
     },
     "g3": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\udd2c",
+      "icon": "🔬",
       "text": "Lab-tested every batch"
      }
     },
     "g4": {
      "type": "g",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "text": "100% natural"
      }
     }
@@ -832,6 +832,20 @@
     "cta_text": "Add to Cart",
     "cta_link": "#vbpForm"
    }
+  },
+  "science_strip": {
+   "type": "vb-science-strip",
+   "settings": {
+    "kicker": "Backed by peer-reviewed science",
+    "title_pre": "Don't take our word for it.",
+    "title_highlight": "View the science.",
+    "sub": "The shielding technology in this product was studied in three peer-reviewed papers. Read what the research actually showed, in plain English.",
+    "all_text": "View the science",
+    "all_url": "/pages/what-is-microencapsulation",
+    "bg": "#f6faf5",
+    "pad_top": 40,
+    "pad_bottom": 40
+   }
   }
  },
  "order": [
@@ -847,6 +861,7 @@
   "fbt",
   "doctors",
   "outperform",
+  "science_strip",
   "judgeme",
   "faq",
   "final"

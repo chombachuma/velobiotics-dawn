@@ -15,29 +15,29 @@
     "b1": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83e\udd30",
+      "icon": "🤰",
       "text": "Pregnancy daily + omega-3"
      }
     },
     "b2": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83e\udde0",
+      "icon": "🧠",
       "text": "DHA + EPA for baby"
      }
     },
     "b3": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "text": "Pregnancy-safe probiotic strains"
      }
     },
     "b4": {
      "type": "benefit",
      "settings": {
-      "icon": "\u26a1",
-      "text": "1000\u00d7 more delivery"
+      "icon": "⚡",
+      "text": "1000× more delivery"
      }
     },
     "t1": {
@@ -83,11 +83,11 @@
     "brand_primary": "#1f6b3d",
     "brand_dark": "#0a3d22",
     "brand_tint": "#f2f9ec",
-    "brand_label": "PregBiotics\u2122 Essentials + Omega",
+    "brand_label": "PregBiotics™ Essentials + Omega",
     "rating": "4.8",
     "review_count": "150+",
-    "hook": "The complete pregnancy daily with omega. PregBiotics\u2122 Essentials + Omega delivers 21 actives in one capsule (Folic Acid + full B-complex + iron + zinc + iodine + choline + K1 + magnesium) plus a pharmaceutical-grade fish-oil soft gel (300mg DHA + 400mg EPA) \u2014 backed by our 16-strain MEP probiotic blend.",
-    "ship_note": "Ships worldwide \u00b7 Free shipping over the free-shipping threshold \u00b7 30-day money-back guarantee",
+    "hook": "The complete pregnancy daily with omega. PregBiotics™ Essentials + Omega delivers 21 actives in one capsule (Folic Acid + full B-complex + iron + zinc + iodine + choline + K1 + magnesium) plus a pharmaceutical-grade fish-oil soft gel (300mg DHA + 400mg EPA) — backed by our 16-strain MEP probiotic blend.",
+    "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
     "default_plan_slug": "monthly",
     "default_frequency_days": 30,
     "tier_unit": "Pack",
@@ -104,7 +104,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Cheryl+D&background=1f6b3d&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Cheryl D.",
-      "meta": "Verified buyer \u00b7 5 months ago",
+      "meta": "Verified buyer · 5 months ago",
       "quote": "Better than two products. Folate AND DHA in one daily."
      }
     },
@@ -113,7 +113,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Lerato+N&background=5fa37a&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Lerato N.",
-      "meta": "Verified buyer \u00b7 4 months ago",
+      "meta": "Verified buyer · 4 months ago",
       "quote": "My baby's eyes are bright and alert. DHA matters."
      }
     },
@@ -122,7 +122,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Mahlatse+K&background=0a3d22&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Mahlatse K.",
-      "meta": "Verified buyer \u00b7 2 months ago",
+      "meta": "Verified buyer · 2 months ago",
       "quote": "Easy soft gel daily. No burps, no chasing pills."
      }
     },
@@ -131,7 +131,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Sarah+V&background=1f6b3d&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Sarah V.",
-      "meta": "Verified buyer \u00b7 3 months ago",
+      "meta": "Verified buyer · 3 months ago",
       "quote": "One capsule, complete coverage. Smart product."
      }
     },
@@ -140,7 +140,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Naseema+R&background=5fa37a&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Naseema R.",
-      "meta": "Verified buyer \u00b7 Johannesburg",
+      "meta": "Verified buyer · Johannesburg",
       "quote": "Worth the upgrade. Less pills to juggle."
      }
     }
@@ -156,7 +156,7 @@
     "brand_primary": "#1f6b3d",
     "brand_dark": "#0a3d22",
     "brand_tint": "#f2f9ec",
-    "eyebrow": "\u2605 Real Reviews",
+    "eyebrow": "★ Real Reviews",
     "title": "Mothers thriving on Essentials + Omega"
    }
   },
@@ -166,28 +166,28 @@
     "p1": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
-      "text": "<strong>Juggling two products</strong> \u2014 prenatal + DHA omega separately."
+      "icon": "✕",
+      "text": "<strong>Juggling two products</strong> — prenatal + DHA omega separately."
      }
     },
     "p2": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Cheap fish oil</strong> with mercury/contaminant concerns."
      }
     },
     "p3": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Inadequate DHA</strong> in standard prenatals."
      }
     },
     "p4": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Missing key actives</strong> like choline and K1 in standard prenatals."
      }
     }
@@ -208,7 +208,7 @@
     "eyebrow": "The Problem",
     "title_pre": "Two products,",
     "title_highlight": "one simple solution.",
-    "desc": "Most mums take a prenatal AND a DHA omega separately \u2014 twice the cost, twice the pills, twice the chance of forgetting. Essentials + Omega combines both with purity-tested algae DHA for total daily coverage."
+    "desc": "Most mums take a prenatal AND a DHA omega separately — twice the cost, twice the pills, twice the chance of forgetting. Essentials + Omega combines both with purity-tested algae DHA for total daily coverage."
    }
   },
   "solution": {
@@ -217,29 +217,29 @@
     "s1": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Omega-3 Fish Oil 1000mg</strong> \u2014 providing 300mg DHA + 400mg EPA for baby brain & eye."
+      "icon": "✓",
+      "text": "<strong>Omega-3 Fish Oil 1000mg</strong> — providing 300mg DHA + 400mg EPA for baby brain & eye."
      }
     },
     "s2": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Folic Acid 400\u00b5g + Iron + B-complex</strong> \u2014 21 actives total prenatal coverage."
+      "icon": "✓",
+      "text": "<strong>Folic Acid 400µg + Iron + B-complex</strong> — 21 actives total prenatal coverage."
      }
     },
     "s3": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>16-strain MEP Blend (1 billion CFUs)</strong> \u2014 gut + immune support."
+      "icon": "✓",
+      "text": "<strong>16-strain MEP Blend (1 billion CFUs)</strong> — gut + immune support."
      }
     },
     "s4": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Velobiotics\u2122 MEP technology</strong> \u2014 1000\u00d7 more reach you alive."
+      "icon": "✓",
+      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
      }
     }
    },
@@ -254,12 +254,12 @@
     "brand_primary": "#1f6b3d",
     "brand_tint": "#f2f9ec",
     "image_url": "",
-    "tag_value": "1000\u00d7",
+    "tag_value": "1000×",
     "tag_label": "More Probiotics Delivered",
     "eyebrow": "The Solution",
     "title_pre": "Meet",
     "title_highlight": "Essentials + Omega.",
-    "desc": "20 capsule actives + 1 soft gel of pharmaceutical-grade fish oil (300mg DHA + 400mg EPA) + our 16-strain pregnancy-safe MEP probiotic blend. The complete pregnancy daily \u2014 engineered for baby's brain, eye, and total prenatal nutrition."
+    "desc": "20 capsule actives + 1 soft gel of pharmaceutical-grade fish oil (300mg DHA + 400mg EPA) + our 16-strain pregnancy-safe MEP probiotic blend. The complete pregnancy daily — engineered for baby's brain, eye, and total prenatal nutrition."
    }
   },
   "related": {
@@ -269,7 +269,7 @@
      "type": "product",
      "settings": {
       "product_handle": "pregbiotics-breastfeeding",
-      "brand": "PregBiotics\u2122",
+      "brand": "PregBiotics™",
       "rating": "4.9",
       "reviews": "850+",
       "fallback_title": "",
@@ -281,7 +281,7 @@
      "type": "product",
      "settings": {
       "product_handle": "pregbiotics-conception",
-      "brand": "PregBiotics\u2122",
+      "brand": "PregBiotics™",
       "rating": "4.8",
       "reviews": "180+",
       "fallback_title": "",
@@ -293,7 +293,7 @@
      "type": "product",
      "settings": {
       "product_handle": "pregbiotics-essentials",
-      "brand": "PregBiotics\u2122",
+      "brand": "PregBiotics™",
       "rating": "4.9",
       "reviews": "210+",
       "fallback_title": "",
@@ -305,7 +305,7 @@
      "type": "product",
      "settings": {
       "product_handle": "c-essentials-kit",
-      "brand": "PregBiotics\u2122",
+      "brand": "PregBiotics™",
       "rating": "4.9",
       "reviews": "120+",
       "fallback_title": "",
@@ -326,8 +326,8 @@
     "brand_tint": "#f2f9ec",
     "tint": false,
     "eyebrow": "Complete the Journey",
-    "title": "More from the PregBiotics\u2122 family",
-    "sub": "From conception through breastfeeding and beyond \u2014 we have you covered."
+    "title": "More from the PregBiotics™ family",
+    "sub": "From conception through breastfeeding and beyond — we have you covered."
    }
   },
   "benefits": {
@@ -336,7 +336,7 @@
     "b1": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\udde0",
+      "icon": "🧠",
       "name": "Baby Brain Development",
       "desc": "DHA omega-3 critical for healthy fetal brain."
      }
@@ -344,7 +344,7 @@
     "b2": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udc41\ufe0f",
+      "icon": "👁️",
       "name": "Eye & Vision Development",
       "desc": "DHA supports retina formation in utero."
      }
@@ -352,7 +352,7 @@
     "b3": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\udd30",
+      "icon": "🤰",
       "name": "Complete Prenatal",
       "desc": "Folate + iron + B12 + probiotics in one capsule."
      }
@@ -360,7 +360,7 @@
     "b4": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83c\udf31",
+      "icon": "🌱",
       "name": "Pharmaceutical-Grade Fish Oil",
       "desc": "Molecularly distilled, heavy-metal-tested. 300mg DHA + 400mg EPA per soft gel."
      }
@@ -368,7 +368,7 @@
     "b5": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\ude7a",
+      "icon": "🩺",
       "name": "OB-Formulated",
       "desc": "Built with obstetric and midwifery guidance."
      }
@@ -376,7 +376,7 @@
     "b6": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "name": "Clean Label",
       "desc": "No fish-oil burps, vegan-option, halaal-friendly."
      }
@@ -422,7 +422,7 @@
     "i1": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u2600\ufe0f",
+      "icon": "☀️",
       "name": "Vitamin D",
       "amount": "10 mcg (400 IU)",
       "dv": "200%",
@@ -434,7 +434,7 @@
     "i2": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
+      "icon": "🛡️",
       "name": "Vitamin E",
       "amount": "10 mg",
       "dv": "100%",
@@ -446,7 +446,7 @@
     "i3": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83c\udf4a",
+      "icon": "🍊",
       "name": "Vitamin C",
       "amount": "70 mg",
       "dv": "117%",
@@ -458,7 +458,7 @@
     "i4": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u26a1",
+      "icon": "⚡",
       "name": "Vitamin B1 (Thiamin)",
       "amount": "3 mg",
       "dv": "214%",
@@ -470,7 +470,7 @@
     "i5": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u26a1",
+      "icon": "⚡",
       "name": "Vitamin B2 (Riboflavin)",
       "amount": "2 mg",
       "dv": "125%",
@@ -482,7 +482,7 @@
     "i6": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u26a1",
+      "icon": "⚡",
       "name": "Vitamin B3 (Niacin)",
       "amount": "20 mg",
       "dv": "111%",
@@ -494,7 +494,7 @@
     "i7": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u26a1",
+      "icon": "⚡",
       "name": "Vitamin B6",
       "amount": "10 mg",
       "dv": "500%",
@@ -506,7 +506,7 @@
     "i8": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u26a1",
+      "icon": "⚡",
       "name": "Pantothenic Acid (B5)",
       "amount": "6 mg",
       "dv": "100%",
@@ -518,7 +518,7 @@
     "i9": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\uddec",
+      "icon": "🧬",
       "name": "Folic Acid (Vitamin B9)",
       "amount": "400 mcg",
       "dv": "200%",
@@ -530,7 +530,7 @@
     "i10": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u26a1",
+      "icon": "⚡",
       "name": "Vitamin B12",
       "amount": "6 mcg",
       "dv": "600%",
@@ -542,7 +542,7 @@
     "i11": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u2728",
+      "icon": "✨",
       "name": "Biotin (Vitamin B7)",
       "amount": "50 mcg",
       "dv": "100%",
@@ -554,10 +554,10 @@
     "i12": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\udd55",
+      "icon": "🥕",
       "name": "Beta-carotene",
       "amount": "3 mg",
-      "dv": "\u2020",
+      "dv": "†",
       "role": "Natural-source Vitamin A precursor for foetal vision and immune development.",
       "source": "Natural Source",
       "tags": "Antioxidant, Natural"
@@ -566,10 +566,10 @@
     "i13": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\ude7a",
+      "icon": "🩺",
       "name": "Vitamin K1",
       "amount": "70 mcg",
-      "dv": "\u2020",
+      "dv": "†",
       "role": "Supports healthy blood clotting and bone development. Crucial for newborn safety post-birth.",
       "source": "Phytomenadione",
       "tags": "Essential"
@@ -578,7 +578,7 @@
     "i14": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udc8e",
+      "icon": "💎",
       "name": "Iron",
       "amount": "17 mg",
       "dv": "121%",
@@ -590,10 +590,10 @@
     "i15": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udc8e",
+      "icon": "💎",
       "name": "Selenium",
       "amount": "60 mcg",
-      "dv": "\u2020",
+      "dv": "†",
       "role": "Thyroid support and antioxidant protection for the developing baby.",
       "source": "Selenium glycinate",
       "tags": "Mineral, Thyroid"
@@ -602,7 +602,7 @@
     "i16": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udc8e",
+      "icon": "💎",
       "name": "Magnesium",
       "amount": "300 mg",
       "dv": "100%",
@@ -614,7 +614,7 @@
     "i17": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udc8e",
+      "icon": "💎",
       "name": "Zinc",
       "amount": "15 mg",
       "dv": "100%",
@@ -626,7 +626,7 @@
     "i18": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udc8e",
+      "icon": "💎",
       "name": "Iodine",
       "amount": "140 mcg",
       "dv": "93%",
@@ -638,11 +638,11 @@
     "i19": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\udde0",
+      "icon": "🧠",
       "name": "Choline",
       "amount": "300 mg",
-      "dv": "\u2020",
-      "role": "Essential for foetal brain and spinal-cord development \u2014 most prenatals miss this.",
+      "dv": "†",
+      "role": "Essential for foetal brain and spinal-cord development — most prenatals miss this.",
       "source": "Choline Bitartrate",
       "tags": "Brain, Often missed"
      }
@@ -650,10 +650,10 @@
     "i20": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udc8e",
+      "icon": "💎",
       "name": "Copper",
       "amount": "1 mg",
-      "dv": "\u2020",
+      "dv": "†",
       "role": "Works with iron for healthy blood and connective tissue formation.",
       "source": "Copper glycinate",
       "tags": "Mineral"
@@ -662,23 +662,23 @@
     "i21": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "name": "PregBiotics MEP Blend",
       "amount": "1 Billion CFUs",
-      "dv": "\u2020",
+      "dv": "†",
       "role": "16-strain pregnancy-safe probiotic blend for maternal gut + immune health, eases morning sickness, and primes baby's microbiome.",
-      "source": "L. acidophilus \u00b7 plantarum \u00b7 casei \u00b7 reuteri \u00b7 rhamnosus \u00b7 fermentum \u00b7 salivarus \u00b7 paracasei \u00b7 bulgaricus \u00b7 helveticus + B. lactis \u00b7 infantis \u00b7 breve \u00b7 bifidum \u00b7 longum + S. thermophiles. Microencapsulated (MEP).",
+      "source": "L. acidophilus · plantarum · casei · reuteri · rhamnosus · fermentum · salivarus · paracasei · bulgaricus · helveticus + B. lactis · infantis · breve · bifidum · longum + S. thermophiles. Microencapsulated (MEP).",
       "tags": "16-strain, MEP delivery, Pregnancy-safe"
      }
     },
     "i22": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udc1f",
+      "icon": "🐟",
       "name": "Omega-3 Fish Oil (1 Soft Gel)",
       "amount": "1000 mg",
-      "dv": "\u2020",
-      "role": "Pharmaceutical-grade, molecularly distilled fish oil \u2014 heavy-metal-tested. Provides DHA + EPA for baby's brain, eye, and nervous-system development.",
+      "dv": "†",
+      "role": "Pharmaceutical-grade, molecularly distilled fish oil — heavy-metal-tested. Provides DHA + EPA for baby's brain, eye, and nervous-system development.",
       "source": "Pharmaceutical-grade fish oil",
       "tags": "Soft gel, Lab-tested"
      }
@@ -686,11 +686,11 @@
     "i23": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\udde0",
+      "icon": "🧠",
       "name": "DHA (Docosahexaenoic Acid)",
       "amount": "300 mg",
-      "dv": "\u2020",
-      "role": "Crucial for foetal brain and retinal development \u2014 deposited heavily during the third trimester.",
+      "dv": "†",
+      "role": "Crucial for foetal brain and retinal development — deposited heavily during the third trimester.",
       "source": "From Omega-3 fish oil",
       "tags": "Brain, Eye, Essential"
      }
@@ -698,10 +698,10 @@
     "i24": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udc97",
+      "icon": "💗",
       "name": "EPA (Eicosapentaenoic Acid)",
       "amount": "400 mg",
-      "dv": "\u2020",
+      "dv": "†",
       "role": "Anti-inflammatory support for healthy pregnancy and may reduce preterm-birth risk.",
       "source": "From Omega-3 fish oil",
       "tags": "Anti-inflammatory"
@@ -710,7 +710,7 @@
     "t1": {
      "type": "trust",
      "settings": {
-      "icon": "\ud83e\ude7a",
+      "icon": "🩺",
       "title": "OB-formulated",
       "text": "Built with obstetric and midwifery guidance for the complete pregnancy daily."
      }
@@ -718,7 +718,7 @@
     "t2": {
      "type": "trust",
      "settings": {
-      "icon": "\ud83e\uddea",
+      "icon": "🧪",
       "title": "Heavy-metal-tested",
       "text": "Fish oil is molecularly distilled and lab-tested for mercury, lead, and PCBs."
      }
@@ -726,7 +726,7 @@
     "t3": {
      "type": "trust",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
+      "icon": "🛡️",
       "title": "Pregnancy-safe",
       "text": "Every strain and active selected for safety during all stages of pregnancy."
      }
@@ -734,7 +734,7 @@
     "t4": {
      "type": "trust",
      "settings": {
-      "icon": "\ud83c\udf31",
+      "icon": "🌱",
       "title": "Clean label",
       "text": "No proprietary blends. Every dose disclosed on the panel."
      }
@@ -787,7 +787,7 @@
     "servings_per_container": "30",
     "other_ingredients": "Capsule: HPMC (vegetable), Magnesium Stearate. Soft gel: gelatin, glycerin, purified water.",
     "allergens": "Contains fish (omega-3 soft gel). Manufactured in a SAHPRA-aware facility.",
-    "dv_note": "% Daily Value (DV) based on a 2,000-calorie diet. \u2020 = DV not established.",
+    "dv_note": "% Daily Value (DV) based on a 2,000-calorie diet. † = DV not established.",
     "facts_image_url": "",
     "facts_pdf_url": "",
     "side_image_url": "",
@@ -861,7 +861,7 @@
      "type": "product",
      "settings": {
       "product_handle": "pregbiotics-breastfeeding",
-      "brand": "PregBiotics\u2122",
+      "brand": "PregBiotics™",
       "rating": "4.9",
       "reviews": "850+",
       "fallback_title": "",
@@ -873,7 +873,7 @@
      "type": "product",
      "settings": {
       "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
-      "brand": "Femina\u2122",
+      "brand": "Femina™",
       "rating": "4.8",
       "reviews": "1300+",
       "fallback_title": "",
@@ -885,7 +885,7 @@
      "type": "product",
      "settings": {
       "product_handle": "biokid-chewable-probiotics-tablets-for-children",
-      "brand": "BioKid\u2122",
+      "brand": "BioKid™",
       "rating": "4.8",
       "reviews": "200+",
       "fallback_title": "",
@@ -897,7 +897,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-vitamin-d3-1000-iu",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.7",
       "reviews": "190+",
       "fallback_title": "",
@@ -929,16 +929,16 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Clinically Proven",
-      "desc": "DHA + active folate \u2014 peer-reviewed for pregnancy."
+      "desc": "DHA + active folate — peer-reviewed for pregnancy."
      }
     },
     "d2": {
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "OB Formulated",
       "desc": "Developed with obstetric guidance."
      }
@@ -947,16 +947,16 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Patented MEP Technology",
-      "desc": "Microencapsulation with Supercritical CO\u2082."
+      "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
     "d4": {
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/takeout_dining_24dp_4D8C44.svg?v=1763353199",
-      "icon_fallback": "\u2713",
+      "icon_fallback": "✓",
       "name": "Heavy-Metal-Tested",
       "desc": "Fish oil molecularly distilled, lab-tested for mercury, lead, PCBs."
      }
@@ -1037,14 +1037,14 @@
     "brand_tint": "#f2f9ec",
     "eyebrow": "",
     "title": "Why Essentials + Omega Outperforms",
-    "sub": "Active folate, algae DHA, gentle iron, pregnancy-safe probiotics \u2014 complete pregnancy daily in one capsule.",
+    "sub": "Active folate, algae DHA, gentle iron, pregnancy-safe probiotics — complete pregnancy daily in one capsule.",
     "col_features": "Features",
     "col_brand": "Essentials + Omega",
     "brand_logo_url": "",
     "col_b": "Prenatal + Fish Oil",
     "col_c": "Others",
     "cta_text": "Add to Cart",
-    "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
+    "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
    }
   },
   "judgeme": {
@@ -1065,7 +1065,7 @@
      "type": "q",
      "settings": {
       "question": "Is the DHA from fish?",
-      "answer": "<p>Yes \u2014 pharmaceutical-grade fish oil, molecularly distilled and independently lab-tested for mercury, lead, and PCBs. Each soft gel delivers 300mg DHA + 400mg EPA in a small, easy-swallow format.</p>"
+      "answer": "<p>Yes — pharmaceutical-grade fish oil, molecularly distilled and independently lab-tested for mercury, lead, and PCBs. Each soft gel delivers 300mg DHA + 400mg EPA in a small, easy-swallow format.</p>"
      }
     },
     "q2": {
@@ -1093,14 +1093,14 @@
      "type": "q",
      "settings": {
       "question": "Do you ship internationally?",
-      "answer": "<p>Yes. We ship globally \u2014 5\u201314 working days. Free shipping over the free-shipping threshold.</p>"
+      "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
      }
     },
     "q6": {
      "type": "q",
      "settings": {
       "question": "What if it doesn't work for me?",
-      "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full \u2014 no questions asked.</p>"
+      "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full — no questions asked.</p>"
      }
     }
    },
@@ -1124,28 +1124,28 @@
     "g1": {
      "type": "g",
      "settings": {
-      "icon": "\u2705",
+      "icon": "✅",
       "text": "30-day money-back"
      }
     },
     "g2": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\ude9a",
+      "icon": "🚚",
       "text": "Ships worldwide"
      }
     },
     "g3": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\udd2c",
+      "icon": "🔬",
       "text": "Lab-tested every batch"
      }
     },
     "g4": {
      "type": "g",
      "settings": {
-      "icon": "\ud83c\udf31",
+      "icon": "🌱",
       "text": "Heavy-metal-tested fish oil"
      }
     }
@@ -1163,9 +1163,23 @@
     "badge": "30-day money-back guarantee",
     "title_pre": "Complete Pregnancy Daily",
     "title_highlight": "Risk-Free for 30 Days",
-    "sub": "Join thousands of mothers with Essentials + Omega \u2014 total prenatal coverage in one capsule.",
+    "sub": "Join thousands of mothers with Essentials + Omega — total prenatal coverage in one capsule.",
     "cta_text": "Add to Cart",
     "cta_link": "#vbpForm"
+   }
+  },
+  "science_strip": {
+   "type": "vb-science-strip",
+   "settings": {
+    "kicker": "Backed by peer-reviewed science",
+    "title_pre": "Don't take our word for it.",
+    "title_highlight": "View the science.",
+    "sub": "The shielding technology in this product was studied in three peer-reviewed papers. Read what the research actually showed, in plain English.",
+    "all_text": "View the science",
+    "all_url": "/pages/what-is-microencapsulation",
+    "bg": "#f6faf5",
+    "pad_top": 40,
+    "pad_bottom": 40
    }
   }
  },
@@ -1182,6 +1196,7 @@
   "fbt",
   "doctors",
   "outperform",
+  "science_strip",
   "judgeme",
   "faq",
   "final"

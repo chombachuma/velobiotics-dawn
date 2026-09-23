@@ -15,29 +15,29 @@
     "b1": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83e\udd30",
+      "icon": "🤰",
       "text": "Pregnancy + breastfeeding safe"
      }
     },
     "b2": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83e\uddec",
+      "icon": "🧬",
       "text": "DHA & folate boost"
      }
     },
     "b3": {
      "type": "benefit",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "text": "Pregnancy-safe probiotic strains"
      }
     },
     "b4": {
      "type": "benefit",
      "settings": {
-      "icon": "\u26a1",
-      "text": "1000\u00d7 more delivery"
+      "icon": "⚡",
+      "text": "1000× more delivery"
      }
     },
     "t1": {
@@ -83,11 +83,11 @@
     "brand_primary": "#1f6b3d",
     "brand_dark": "#0a3d22",
     "brand_tint": "#f2f9ec",
-    "brand_label": "PregBiotics\u2122",
+    "brand_label": "PregBiotics™",
     "rating": "4.9",
     "review_count": "850+",
-    "hook": "Nourish you and your baby. PregBiotics\u2122 blends pregnancy-safe probiotic strains with DHA, folate, and essential prenatal nutrients \u2014 for healthy mums and thriving babies.",
-    "ship_note": "Ships worldwide \u00b7 Free shipping over the free-shipping threshold \u00b7 30-day money-back guarantee",
+    "hook": "Nourish you and your baby. PregBiotics™ blends pregnancy-safe probiotic strains with DHA, folate, and essential prenatal nutrients — for healthy mums and thriving babies.",
+    "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
     "show_subscription": true,
     "show_buynow": true,
     "show_testi_marquee": true
@@ -101,7 +101,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Thandi+N&background=1f6b3d&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Thandi N.",
-      "meta": "Verified buyer \u00b7 6 months ago",
+      "meta": "Verified buyer · 6 months ago",
       "quote": "PregBiotics carried me through pregnancy. Energy stayed up, baby is thriving."
      }
     },
@@ -110,7 +110,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Emma+D&background=5fa37a&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Emma D.",
-      "meta": "Verified buyer \u00b7 4 months ago",
+      "meta": "Verified buyer · 4 months ago",
       "quote": "Morning sickness eased after week 2. Daily must-have."
      }
     },
@@ -119,7 +119,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Lerato+M&background=0a3d22&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Lerato M.",
-      "meta": "Verified buyer \u00b7 3 months ago",
+      "meta": "Verified buyer · 3 months ago",
       "quote": "Now breastfeeding and still on it. Milk supply strong, baby happy."
      }
     },
@@ -128,7 +128,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Suzanne+F&background=1f6b3d&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Suzanne F.",
-      "meta": "Verified buyer \u00b7 2 months ago",
+      "meta": "Verified buyer · 2 months ago",
       "quote": "My OB recommended it. Easy decision."
      }
     },
@@ -137,7 +137,7 @@
      "settings": {
       "avatar_url": "https://ui-avatars.com/api/?name=Naledi+K&background=5fa37a&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Naledi K.",
-      "meta": "Verified buyer \u00b7 5 months ago",
+      "meta": "Verified buyer · 5 months ago",
       "quote": "Cleanest prenatal I found. Plus the probiotic part is brilliant."
      }
     }
@@ -153,7 +153,7 @@
     "brand_primary": "#1f6b3d",
     "brand_dark": "#0a3d22",
     "brand_tint": "#f2f9ec",
-    "eyebrow": "\u2605 Real Reviews",
+    "eyebrow": "★ Real Reviews",
     "title": "Loved by thousands of mothers"
    }
   },
@@ -163,28 +163,28 @@
     "p1": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Morning sickness and nausea</strong> that wreck early pregnancy."
      }
     },
     "p2": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Constipation</strong> and gut imbalance through trimesters."
      }
     },
     "p3": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Generic prenatals</strong> with poorly absorbed nutrients."
      }
     },
     "p4": {
      "type": "point",
      "settings": {
-      "icon": "\u2715",
+      "icon": "✕",
       "text": "<strong>Worry</strong> about whether your baby is getting what they need."
      }
     }
@@ -205,7 +205,7 @@
     "eyebrow": "The Problem",
     "title_pre": "Pregnancy is hard.",
     "title_highlight": "Your prenatal shouldn't be.",
-    "desc": "Standard prenatals are bloated with poorly-absorbed nutrients and ignore the gut. PregBiotics\u2122 closes both gaps \u2014 pregnancy-safe probiotics plus the essential prenatal nutrients you and your baby actually need."
+    "desc": "Standard prenatals are bloated with poorly-absorbed nutrients and ignore the gut. PregBiotics™ closes both gaps — pregnancy-safe probiotics plus the essential prenatal nutrients you and your baby actually need."
    }
   },
   "solution": {
@@ -214,28 +214,28 @@
     "s1": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Pregnancy-safe probiotic strains</strong> \u2014 gut, immunity, baby support."
+      "icon": "✓",
+      "text": "<strong>Pregnancy-safe probiotic strains</strong> — gut, immunity, baby support."
      }
     },
     "s2": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>DHA, folate, iron, B-complex</strong> \u2014 the essential prenatal trio + more."
+      "icon": "✓",
+      "text": "<strong>DHA, folate, iron, B-complex</strong> — the essential prenatal trio + more."
      }
     },
     "s3": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
-      "text": "<strong>Velobiotics\u2122 MEP technology</strong> \u2014 1000\u00d7 more reach you alive."
+      "icon": "✓",
+      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
      }
     },
     "s4": {
      "type": "point",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "text": "<strong>One capsule daily</strong>. OB-recommended. Lab-tested every batch."
      }
     }
@@ -251,12 +251,12 @@
     "brand_primary": "#1f6b3d",
     "brand_tint": "#f2f9ec",
     "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/7_transparent_Realistic_3D_product_mockup_1.png?v=1775328668",
-    "tag_value": "1000\u00d7",
+    "tag_value": "1000×",
     "tag_label": "More Probiotics Delivered",
     "eyebrow": "The Solution",
     "title_pre": "Meet",
-    "title_highlight": "PregBiotics\u2122 Breastfeeding.",
-    "desc": "The complete pregnancy-and-breastfeeding daily. Pregnancy-safe probiotic strains + DHA, folate, iron, and B-complex \u2014 delivered by Velobiotics\u2122 technology \u2014 1000\u00d7 more reach you alive, where they nourish you and support your baby."
+    "title_highlight": "PregBiotics™ Breastfeeding.",
+    "desc": "The complete pregnancy-and-breastfeeding daily. Pregnancy-safe probiotic strains + DHA, folate, iron, and B-complex — delivered by Velobiotics™ technology — 1000× more reach you alive, where they nourish you and support your baby."
    }
   },
   "related": {
@@ -266,7 +266,7 @@
      "type": "product",
      "settings": {
       "product_handle": "pregbiotics-conception",
-      "brand": "PregBiotics\u2122",
+      "brand": "PregBiotics™",
       "rating": "4.8",
       "reviews": "180+"
      }
@@ -275,7 +275,7 @@
      "type": "product",
      "settings": {
       "product_handle": "pregbiotics-essentials",
-      "brand": "PregBiotics\u2122",
+      "brand": "PregBiotics™",
       "rating": "4.9",
       "reviews": "210+"
      }
@@ -284,7 +284,7 @@
      "type": "product",
      "settings": {
       "product_handle": "pregbiotics-essentials-with-omega",
-      "brand": "PregBiotics\u2122",
+      "brand": "PregBiotics™",
       "rating": "4.8",
       "reviews": "150+"
      }
@@ -293,7 +293,7 @@
      "type": "product",
      "settings": {
       "product_handle": "c-essentials-kit",
-      "brand": "PregBiotics\u2122",
+      "brand": "PregBiotics™",
       "rating": "4.9",
       "reviews": "120+"
      }
@@ -311,8 +311,8 @@
     "brand_tint": "#f2f9ec",
     "tint": false,
     "eyebrow": "Complete the Journey",
-    "title": "More from the PregBiotics\u2122 family",
-    "sub": "From conception through breastfeeding and beyond \u2014 we have you covered."
+    "title": "More from the PregBiotics™ family",
+    "sub": "From conception through breastfeeding and beyond — we have you covered."
    }
   },
   "benefits": {
@@ -321,7 +321,7 @@
     "b1": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\udd30",
+      "icon": "🤰",
       "name": "Pregnancy-Safe",
       "desc": "Formulated specifically for the trimesters and breastfeeding."
      }
@@ -329,7 +329,7 @@
     "b2": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\udde0",
+      "icon": "🧠",
       "name": "Baby Brain Development",
       "desc": "DHA and folate critical for healthy fetal development."
      }
@@ -337,7 +337,7 @@
     "b3": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83d\udc9a",
+      "icon": "💚",
       "name": "Gentle on Tummy",
       "desc": "Pregnancy-safe probiotics ease morning sickness and constipation."
      }
@@ -345,7 +345,7 @@
     "b4": {
      "type": "feat",
      "settings": {
-      "icon": "\u26a1",
+      "icon": "⚡",
       "name": "Energy & Mood",
       "desc": "B-complex and iron support energy and emotional balance."
      }
@@ -353,7 +353,7 @@
     "b5": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83e\ude7a",
+      "icon": "🩺",
       "name": "OB-Approved Format",
       "desc": "Built to OB and midwife clinical guidance."
      }
@@ -361,7 +361,7 @@
     "b6": {
      "type": "feat",
      "settings": {
-      "icon": "\ud83c\udf3f",
+      "icon": "🌿",
       "name": "100% Natural",
       "desc": "Vegan-option, halaal-friendly, no fillers."
      }
@@ -380,8 +380,8 @@
     "brand_tint": "#f2f9ec",
     "eyebrow": "Key Benefits",
     "title_pre": "Why",
-    "title_highlight": "PregBiotics\u2122",
-    "sub": "Six reasons mothers across South Africa and the world choose PregBiotics\u2122 as their pregnancy companion."
+    "title_highlight": "PregBiotics™",
+    "sub": "Six reasons mothers across South Africa and the world choose PregBiotics™ as their pregnancy companion."
    }
   },
   "how": {
@@ -407,7 +407,7 @@
     "i1": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\uddec",
+      "icon": "🧬",
       "name": "DHA Omega-3",
       "amount": "200mg",
       "desc": "Critical for baby brain and eye development."
@@ -416,16 +416,16 @@
     "i2": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\udd6c",
+      "icon": "🥬",
       "name": "Folate (5-MTHF)",
       "amount": "600mcg",
-      "desc": "Bioavailable form of folate \u2014 neural tube development."
+      "desc": "Bioavailable form of folate — neural tube development."
      }
     },
     "i3": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83e\udda0",
+      "icon": "🦠",
       "name": "Pregnancy-Safe Probiotics",
       "amount": "10 Billion CFU",
       "desc": "Strains chosen specifically for pregnancy and breastfeeding."
@@ -434,16 +434,16 @@
     "i4": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udee1\ufe0f",
-      "name": "Velobiotics\u2122 MEP Coating",
+      "icon": "🛡️",
+      "name": "Velobiotics™ MEP Coating",
       "amount": "Patented",
-      "desc": "Supercritical CO\u2082 microencapsulation \u2014 1000\u00d7 more survive."
+      "desc": "Supercritical CO₂ microencapsulation — 1000× more survive."
      }
     },
     "i5": {
      "type": "ingredient",
      "settings": {
-      "icon": "\u2713",
+      "icon": "✓",
       "name": "Iron + B-Complex",
       "amount": "Full daily",
       "desc": "Energy, mood, and red-blood-cell support."
@@ -452,10 +452,10 @@
     "i6": {
      "type": "ingredient",
      "settings": {
-      "icon": "\ud83d\udeab",
+      "icon": "🚫",
       "name": "Free From",
       "amount": "Always",
-      "desc": "Gluten \u00b7 soy \u00b7 dairy \u00b7 artificial colours \u00b7 preservatives \u00b7 GMO."
+      "desc": "Gluten · soy · dairy · artificial colours · preservatives · GMO."
      }
     }
    },
@@ -477,7 +477,7 @@
     "sub": "Six clean actives. No proprietary blends. Full transparency for you and your baby.",
     "facts_image_url": "",
     "facts_label": "Supplement facts",
-    "facts_foot": "Lab-tested \u00b7 OB-recommended \u00b7 Full transparency"
+    "facts_foot": "Lab-tested · OB-recommended · Full transparency"
    }
   },
   "confidence": {
@@ -533,7 +533,7 @@
     "eyebrow": "Real results",
     "title_pre": "Trusted by",
     "title_highlight": "Mothers Everywhere",
-    "sub": "What mums report after 4 weeks of daily PregBiotics\u2122 use.",
+    "sub": "What mums report after 4 weeks of daily PregBiotics™ use.",
     "caveat": "Based on a survey of 850+ verified customers. Individual results may vary. Always consult your healthcare provider during pregnancy."
    }
   },
@@ -544,7 +544,7 @@
      "type": "product",
      "settings": {
       "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
-      "brand": "Femina\u2122",
+      "brand": "Femina™",
       "rating": "4.8",
       "reviews": "1300+"
      }
@@ -553,7 +553,7 @@
      "type": "product",
      "settings": {
       "product_handle": "her-biotics-original-capsules-60s",
-      "brand": "Her-Biotics\u2122",
+      "brand": "Her-Biotics™",
       "rating": "4.7",
       "reviews": "260+"
      }
@@ -562,7 +562,7 @@
      "type": "product",
      "settings": {
       "product_handle": "biokid-chewable-probiotics-tablets-for-children",
-      "brand": "BioKid\u2122",
+      "brand": "BioKid™",
       "rating": "4.8",
       "reviews": "200+"
      }
@@ -571,7 +571,7 @@
      "type": "product",
      "settings": {
       "product_handle": "velo16-probiotics-magnesium-glycinate",
-      "brand": "Velo16\u2122",
+      "brand": "Velo16™",
       "rating": "4.6",
       "reviews": "190+"
      }
@@ -590,7 +590,7 @@
     "tint": true,
     "eyebrow": "Frequently Bought Together",
     "title": "Build your family wellness stack",
-    "sub": "Mums who love PregBiotics\u2122 also stack these for the whole family."
+    "sub": "Mums who love PregBiotics™ also stack these for the whole family."
    }
   },
   "doctors": {
@@ -617,7 +617,7 @@
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
       "name": "Patented MEP Technology",
-      "desc": "Microencapsulation with Supercritical CO\u2082."
+      "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
     "d4": {
@@ -703,13 +703,13 @@
     "brand_dark": "#0a3d22",
     "brand_tint": "#f2f9ec",
     "title": "Why We Outperform Others",
-    "sub": "Experience the complete pregnancy and breastfeeding daily \u2014 pregnancy-safe probiotics, essential prenatal nutrients, and Velobiotics\u2122 absorption technology.",
+    "sub": "Experience the complete pregnancy and breastfeeding daily — pregnancy-safe probiotics, essential prenatal nutrients, and Velobiotics™ absorption technology.",
     "col_features": "Features",
-    "col_brand": "PregBiotics\u2122",
+    "col_brand": "PregBiotics™",
     "col_b": "General Prenatal",
     "col_c": "Others",
     "cta_text": "Add to Cart",
-    "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
+    "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
    }
   },
   "judgeme": {
@@ -729,43 +729,43 @@
     "q1": {
      "type": "q",
      "settings": {
-      "question": "Is PregBiotics\u2122 safe in the first trimester?",
-      "answer": "<p>Yes. PregBiotics\u2122 is formulated for all three trimesters and breastfeeding. Always check with your OB before starting any new supplement during pregnancy.</p>"
+      "question": "Is PregBiotics™ safe in the first trimester?",
+      "answer": "<p>Yes. PregBiotics™ is formulated for all three trimesters and breastfeeding. Always check with your OB before starting any new supplement during pregnancy.</p>"
      }
     },
     "q2": {
      "type": "q",
      "settings": {
       "question": "Will this help with morning sickness?",
-      "answer": "<p>Many mums report easier mornings within 1\u20132 weeks. The pregnancy-safe probiotics calm the gut and the B-complex stabilises mood.</p>"
+      "answer": "<p>Many mums report easier mornings within 1–2 weeks. The pregnancy-safe probiotics calm the gut and the B-complex stabilises mood.</p>"
      }
     },
     "q3": {
      "type": "q",
      "settings": {
       "question": "Can I take this with my OB-prescribed prenatal?",
-      "answer": "<p>PregBiotics\u2122 is designed to replace standard prenatals. Check with your OB before stacking \u2014 folate and iron levels should not be doubled.</p>"
+      "answer": "<p>PregBiotics™ is designed to replace standard prenatals. Check with your OB before stacking — folate and iron levels should not be doubled.</p>"
      }
     },
     "q4": {
      "type": "q",
      "settings": {
       "question": "Is it safe while breastfeeding?",
-      "answer": "<p>Yes \u2014 designed for breastfeeding too. Supports milk supply and your post-pregnancy recovery.</p>"
+      "answer": "<p>Yes — designed for breastfeeding too. Supports milk supply and your post-pregnancy recovery.</p>"
      }
     },
     "q5": {
      "type": "q",
      "settings": {
       "question": "Do you ship internationally?",
-      "answer": "<p>Yes. We ship globally \u2014 5\u201314 working days. Free shipping over the free-shipping threshold.</p>"
+      "answer": "<p>Yes. We ship globally — 5–14 working days. Free shipping over the free-shipping threshold.</p>"
      }
     },
     "q6": {
      "type": "q",
      "settings": {
-      "question": "What if PregBiotics\u2122 doesn't work for me?",
-      "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full \u2014 no questions asked.</p>"
+      "question": "What if PregBiotics™ doesn't work for me?",
+      "answer": "<p>If you don't feel the difference in 30 days, we'll refund you in full — no questions asked.</p>"
      }
     }
    },
@@ -789,28 +789,28 @@
     "g1": {
      "type": "g",
      "settings": {
-      "icon": "\u2705",
+      "icon": "✅",
       "text": "30-day money-back"
      }
     },
     "g2": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\ude9a",
+      "icon": "🚚",
       "text": "Ships worldwide"
      }
     },
     "g3": {
      "type": "g",
      "settings": {
-      "icon": "\ud83d\udd2c",
+      "icon": "🔬",
       "text": "Lab-tested every batch"
      }
     },
     "g4": {
      "type": "g",
      "settings": {
-      "icon": "\ud83e\udd30",
+      "icon": "🤰",
       "text": "OB-recommended"
      }
     }
@@ -828,9 +828,23 @@
     "badge": "30-day money-back guarantee",
     "title_pre": "Nourish Your Pregnancy",
     "title_highlight": "Risk-Free for 30 Days",
-    "sub": "Join the 40,000+ mothers who've made PregBiotics\u2122 their pregnancy companion. If you don't feel the difference, we'll refund every cent.",
+    "sub": "Join the 40,000+ mothers who've made PregBiotics™ their pregnancy companion. If you don't feel the difference, we'll refund every cent.",
     "cta_text": "Add to Cart",
     "cta_link": "#vbpForm"
+   }
+  },
+  "science_strip": {
+   "type": "vb-science-strip",
+   "settings": {
+    "kicker": "Backed by peer-reviewed science",
+    "title_pre": "Don't take our word for it.",
+    "title_highlight": "View the science.",
+    "sub": "The shielding technology in this product was studied in three peer-reviewed papers. Read what the research actually showed, in plain English.",
+    "all_text": "View the science",
+    "all_url": "/pages/what-is-microencapsulation",
+    "bg": "#f6faf5",
+    "pad_top": 40,
+    "pad_bottom": 40
    }
   }
  },
@@ -847,6 +861,7 @@
   "fbt",
   "doctors",
   "outperform",
+  "science_strip",
   "judgeme",
   "faq",
   "final"

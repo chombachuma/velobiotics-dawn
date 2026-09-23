@@ -8,71 +8,362 @@
  * ------------------------------------------------------------
  */
 {
-  "sections": {
-    "main": {
-      "type": "main-page",
-      "settings": {
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
+ "sections": {
+  "sci_nav": {
+   "type": "vb-science-nav",
+   "settings": {
+    "mode": "bar",
+    "label": "The science"
+   },
+   "blocks": {
+    "nl_111": {
+     "type": "link",
+     "settings": {
+      "title": "Founder's story",
+      "short": "Our story",
+      "url": "/pages/velobiotics-story",
+      "blurb": "A father, a hospital bed, and the question that started everything."
+     }
     },
-    "article": {
-      "type": "vb-science-article",
-      "blocks": {
-        "t1": {
-          "type": "text",
-          "settings": {
-            "content": "<h2>The acid problem</h2><p>Your stomach is designed to kill things. Stomach acid sits at a pH of 1–2 — about the same as battery acid — for the simple reason that most bacteria, viruses, and parasites that arrive with your food shouldn't make it any further. Unfortunately for conventional probiotic supplements, your stomach doesn't distinguish between the bad bacteria and the friendly cultures you swallowed on purpose.</p><p>Without protection, 99% of probiotic cultures in a typical capsule are destroyed within 30 minutes of swallowing. The handful that survive are too few to colonise effectively. The label says \"10 billion CFU\" but your gut sees less than 100 million.</p>"
-          }
-        },
-        "i1": {
-          "type": "image",
-          "settings": {
-            "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_192929_dcb318af-4300-460b-a6c1-1927f0d319e9.png",
-            "caption": "A conventional probiotic's journey: stomach acid destroys 99% before they reach the small intestine."
-          }
-        },
-        "t2": {
-          "type": "text",
-          "settings": {
-            "content": "<h2>How acid-tolerant probiotics work</h2><p>True acid tolerance isn't a feature of the bacteria — it's engineered through delivery. The Velobiotics™ MEP coating maintains structural integrity through low-pH stomach environments, only dissolving when pH rises into the alkaline range of the small intestine (pH 6.5–7.5).</p><p>This means:</p><ul><li>Cultures stay sealed throughout the 1–4 hours they spend in your stomach.</li><li>The coating dissolves at the right pH, in the right place.</li><li>1000× more cultures arrive alive vs. uncoated probiotic capsules.</li><li>Colonisation is meaningful — your gut actually receives the dose the label promised.</li></ul>"
-          }
-        },
-        "kp1": {
-          "type": "keypoints",
-          "settings": {
-            "label": "Why it matters",
-            "points": "Without acid protection, most probiotics are wasted.\nVelobiotics™ MEP survives stomach acid at pH 1.0.\nReleases cultures targeted to the small intestine.\n1000× more probiotics arrive alive to colonise your gut."
-          }
-        }
-      },
-      "block_order": [
-        "t1",
-        "i1",
-        "t2",
-        "kp1"
-      ],
-      "settings": {
-        "eyebrow": "The Science",
-        "title_pre": "Surviving",
-        "title_highlight": "stomach acid.",
-        "intro": "Why most probiotics fail at pH 1 — and how Velobiotics™ MEP changes that.",
-        "hero_image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_192929_dcb318af-4300-460b-a6c1-1927f0d319e9.png"
-      }
+    "nl_112": {
+     "type": "link",
+     "settings": {
+      "title": "What is microencapsulation?",
+      "short": "What is it?",
+      "url": "/pages/what-is-microencapsulation",
+      "blurb": "Each bacterium gets its own micron-thin shield. Here is how, and why it matters."
+     }
     },
-    "final_cta": {
-      "type": "vb-final-cta",
-      "settings": {
-        "eyebrow": "Acid-proof probiotics",
-        "title_pre": "1000× more reach",
-        "title_highlight": "your gut alive.",
-        "sub": "30-day money-back guarantee · Ships worldwide · Lab-tested every batch."
-      }
+    "nl_113": {
+     "type": "link",
+     "settings": {
+      "title": "Surviving stomach acid",
+      "short": "Stomach acid",
+      "url": "/pages/probiotics-tolerance-to-gastric-acid",
+      "blurb": "Peer-reviewed: 40 to 65 times more live bacteria make it through."
+     }
+    },
+    "nl_114": {
+     "type": "link",
+     "settings": {
+      "title": "Heat stability & shelf life",
+      "short": "Heat & shelf life",
+      "url": "/pages/heat-stability-and-shelf-life",
+      "blurb": "Stays potent at 30 °C for up to 12 weeks. No fridge needed."
+     }
+    },
+    "nl_115": {
+     "type": "link",
+     "settings": {
+      "title": "The published research",
+      "short": "Research",
+      "url": "/pages/microencapsulation-research",
+      "blurb": "Three peer-reviewed papers from CSIR and the University of Pretoria, explained."
+     }
+    },
+    "nl_116": {
+     "type": "link",
+     "settings": {
+      "title": "About Velobiotics",
+      "short": "About us",
+      "url": "/pages/new-about-us",
+      "blurb": "The team turning South African science into probiotics that work."
+     }
     }
+   },
+   "block_order": [
+    "nl_111",
+    "nl_112",
+    "nl_113",
+    "nl_114",
+    "nl_115",
+    "nl_116"
+   ]
   },
-  "order": [
-    "main",
-    "article",
-    "final_cta"
-  ]
+  "science": {
+   "type": "vb-science-page",
+   "settings": {
+    "eyebrow": "The Science · Part 2",
+    "title_pre": "Your stomach is built to kill bacteria.",
+    "title_highlight": "Ours get through.",
+    "intro": "Stomach acid is the single biggest reason probiotics fail. Two peer-reviewed studies put micro-shielded Velobiotics™ bacteria through simulated stomach acid and intestinal fluid. Here is what came out the other side.",
+    "read_time": "5 min read",
+    "reviewed": "Written with Dr Chomba Chuma, MD",
+    "sources": "Thantsha et al. 2009 · Moolman et al. 2006",
+    "hero_image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-hero-acid.jpg?v=1790193717",
+    "hero_video_url": "https://cdn.shopify.com/videos/c/o/v/6d867e5b5c2b4d10a016aba38e8f1cc5.mp4",
+    "hero_alt": "Unprotected probiotics dissolving in stomach acid while micro-shielded bacteria pass through intact",
+    "hero_caption": "Artist's visualisation",
+    "hero_cta_text": "Shop shielded probiotics",
+    "hero_cta_url": "/collections/all",
+    "summary_label": "The short version",
+    "summary_points": "Researchers exposed bacteria to simulated stomach acid (pH 2) for two hours, then simulated intestinal fluid (pH 6.8) for up to 24 hours, the same sequence food follows in your body.\nUnprotected bacteria lost numbers steadily. Micro-shielded bacteria released nothing in the acid, then released high numbers of live cells in the intestinal fluid.\nAcross the trials, shielding delivered on average 1.6 to 1.8 log more live bacteria, which is 40 to 65 times more survivors.\nThe protection still worked after seven weeks of storage at 30 °C: unprotected bacteria were all killed by the acid; shielded bacteria came through and were released alive.",
+    "paper_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Velobiotics-Research-scCO2-Interpolymer-Survival-Simulated-GI-Fluids-IJFM-2009.pdf?v=1789280831",
+    "paper_label": "Read the paper (IJFM, 2009)",
+    "stat1_value": "pH 2",
+    "stat1_label": "Simulated stomach acid, two hours of exposure",
+    "stat2_value": "40–65×",
+    "stat2_label": "More live bacteria delivered than unprotected controls",
+    "stat3_value": "0",
+    "stat3_label": "Live cells released from the shield while in acid",
+    "show_toc": true,
+    "deep_title": "The science in detail",
+    "deep_sub": "Methods, formulations and the exact numbers, for readers who want them."
+   },
+   "blocks": {
+    "hea_25": {
+     "type": "heading",
+     "settings": {
+      "kicker": "The gauntlet",
+      "title": "What happens to a probiotic after you swallow it"
+     }
+    },
+    "tex_26": {
+     "type": "text",
+     "settings": {
+      "content": "<p>Your stomach holds hydrochloric acid at roughly pH 1.5 to 2. It exists to break down food and destroy the bacteria that arrive with it. It does this job very well. Studies on ordinary bifidobacteria report losses of 3 to 4 log, that is 99.9% to 99.99% of the cells, within two hours of stomach-strength acid.</p><p>Only the survivors move on into the small intestine, where the pH climbs to about 6.8 and bile adds a second challenge. Whatever is still alive after that can finally attach to the gut wall, multiply and do the work you bought the probiotic for.</p>"
+     }
+    },
+    "fig_27": {
+     "type": "figure",
+     "settings": {
+      "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-fig-journey.jpg?v=1790193717",
+      "alt": "The digestive journey from mouth to colon, showing where micro-shields dissolve",
+      "label": "Figure 1",
+      "caption": "The route a probiotic must survive. Coral: the stomach, where acid destroys unprotected cells. Pink: the small intestine, where the Velobiotics™ shield dissolves and releases. Green: the colon, where the bacteria settle. Artist's visualisation.",
+      "size": "wide"
+     }
+    },
+    "hea_28": {
+     "type": "heading",
+     "settings": {
+      "kicker": "The experiment",
+      "title": "A stomach and intestine in the lab"
+     }
+    },
+    "tex_29": {
+     "type": "text",
+     "settings": {
+      "content": "<p>Scientists at the University of Pretoria and the CSIR reproduced this journey in the laboratory. Micro-shielded <em>Bifidobacterium longum</em> Bb-46 and unprotected cells of the same strain were placed in simulated gastric fluid at pH 2 for two hours, then transferred to simulated intestinal fluid at pH 6.8 for six or 24 hours, all at body temperature. At each step they counted the live bacteria.</p><p>Two results stood out. While in the acid, the shielded sample released <strong>no live bacteria at all</strong>: the coat stayed sealed. Once in the intestinal fluid, the coat swelled and released about 9 log (a billion) live cells per gram after 24 hours. The unprotected bacteria, meanwhile, kept declining.</p>"
+     }
+    },
+    "ste_30": {
+     "type": "steps",
+     "settings": {
+      "numbered": true,
+      "cols": 3,
+      "items": "Two hours in acid | Simulated gastric fluid at pH 2 and 37 °C, mimicking a meal's time in the stomach.\nUp to 24 hours in intestinal fluid | Simulated intestinal fluid at pH 6.8 and 37 °C, where the shield is designed to dissolve.\nCount the survivors | Samples plated on agar and grown for 72 hours without oxygen; each colony is one bacterium that was alive."
+     }
+    },
+    "fig_31": {
+     "type": "figure",
+     "settings": {
+      "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-chart-gastric-survival.png?v=1790180516",
+      "alt": "Chart: microencapsulated probiotics deliver 40 to 65 times more live bacteria through simulated stomach and intestine than unprotected bacteria",
+      "label": "Figure 2",
+      "caption": "Live bacteria at the end of the simulated journey, relative to unprotected cells. The 2009 study found an average gain of 1.61 log; the 2006 study 1.81 log. Both statistically significant (p < 0.05).",
+      "size": "normal"
+     }
+    },
+    "quo_32": {
+     "type": "quote",
+     "settings": {
+      "text": "PVP:VA-CA completely protected the bacteria during exposure to SGF. An increase in the numbers of viable bacteria released from the interpolymer complex indicated efficient release properties of the complex at higher pH values.",
+      "cite": "Thantsha, Cloete, Moolman & Labuschagne, International Journal of Food Microbiology, 2009"
+     }
+    },
+    "hea_33": {
+     "type": "heading",
+     "settings": {
+      "kicker": "Making it stronger",
+      "title": "Two refinements that improved protection further"
+     }
+    },
+    "tex_34": {
+     "type": "text",
+     "settings": {
+      "content": "<p>The team then tested variations. Adding <strong>glyceryl monostearate</strong> (GMS), a digestible lipid that resists acid, moisture and oxygen, significantly increased the number of live bacteria released; raising the GMS content from 8% to 60% improved protection again. Enclosing the shielded powder in a standard gelatine capsule delayed any release in acid by a further hour, adding a second line of defence. Both refinements are part of how Velobiotics™ products are formulated today.</p>"
+     }
+    },
+    "hea_35": {
+     "type": "heading",
+     "settings": {
+      "kicker": "The clincher",
+      "title": "It still works after months on the shelf"
+     }
+    },
+    "tex_36": {
+     "type": "text",
+     "settings": {
+      "content": "<p>A probiotic that survives acid on the day it is made is not enough; it has to survive acid after months in a warehouse and a bathroom cabinet. So the researchers stored the shielded bacteria at 30 °C for seven weeks and repeated the test.</p><p>The unprotected bacteria that were still alive after storage were <strong>all killed</strong> by the acid. The shielded bacteria released nothing in the acid and then released high numbers of live cells in the intestinal fluid. The shield protected them twice: on the shelf and in the stomach.</p>"
+     }
+    },
+    "fig_37": {
+     "type": "figure",
+     "settings": {
+      "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-fig-lab.jpg?v=1790193717",
+      "alt": "Scientists examining micro-shielded probiotic powder beside a high-pressure reactor",
+      "label": "Figure 3",
+      "caption": "The work was done at the University of Pretoria's Department of Microbiology and Plant Pathology and the CSIR's polymer laboratories in Pretoria.",
+      "size": "wide"
+     }
+    },
+    "cal_38": {
+     "type": "callout",
+     "settings": {
+      "label": "What this means for you:",
+      "text": "When you take a Velobiotics™ product, the bacteria you paid for are released in your small intestine, not dissolved in your stomach. That is the difference between a number on a label and a probiotic that works.",
+      "tone": "green"
+     }
+    },
+    "det_39": {
+     "type": "details",
+     "settings": {
+      "title": "Study design and counting method",
+      "content": "<p>Simulated gastric fluid (SGF, pH 2) was prepared after Lian et al.; simulated intestinal fluid (SIF, pH 6.8) followed the US Pharmacopeia. One gram of product was exposed sequentially to SGF for 2 h and SIF for 6 or 24 h at 37 °C. Total encapsulated bacteria were determined by suspending 1 g in SIF for 6 h before plating. Counts were made in triplicate on MRS agar with 0.05% cysteine-HCl, incubated anaerobically at 37 °C for 72 h. In the 2009 paper the average improvement in survival for encapsulated versus free <em>B. longum</em> Bb-46 was 1.61 ± 0.49 log CFU/g (p < 0.05, n = 18); in the 2006 paper, across four SGJ/SIF trials, 1.81 ± 0.56 log CFU/g (p < 0.05).</p>"
+     }
+    },
+    "det_40": {
+     "type": "details",
+     "settings": {
+      "title": "Formulations tested, and which ones failed",
+      "content": "<p>The basic PVP:VA-CA matrix protected completely in acid and released well in SIF. Adding the copolymer PEO-PPO-PEO made the matrix swell in acid and <em>reduced</em> protection (p = 0.170, not significant). Replacing PVP with polycaprolactone (PCL) also performed worse than unprotected cells. GMS at 8% significantly improved survival (p = 0.045) and 60% GMS improved it further; gelatine capsules delayed release in SGF by 30 min (free cells) and 60 min (shielded cells). The authors noted batch-to-batch variation in the basic system (−0.28 vs −2.96 log in two batches), which the GMS formulation reduced. Velobiotics™ uses the GMS-strengthened matrix.</p>"
+     }
+    },
+    "det_41": {
+     "type": "details",
+     "settings": {
+      "title": "Storage-then-acid test",
+      "content": "<p>Shielded and unprotected <em>B. longum</em> Bb-46 were stored at 30 °C for seven weeks, then exposed to SGF and SIF. Viable counts in diluent were higher for shielded cells after storage. Unprotected cells that survived storage gave no counts after SGF and SIF. Shielded cells released no cells in 2 h of SGF and high numbers of viable bacteria in SIF, showing protection both in transit and during storage (Thantsha et al. 2009, Fig. 3).</p>"
+     }
+    },
+    "det_42": {
+     "type": "details",
+     "settings": {
+      "title": "References",
+      "content": "<ol><li>Thantsha MS, Cloete TE, Moolman FS, Labuschagne PW. Supercritical carbon dioxide interpolymer complexes improve survival of <em>B. longum</em> Bb-46 in simulated gastrointestinal fluids. <em>International Journal of Food Microbiology</em> 2009;129:88–92. <a href=\"https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Velobiotics-Research-scCO2-Interpolymer-Survival-Simulated-GI-Fluids-IJFM-2009.pdf?v=1789280831\" target=\"_blank\" rel=\"noopener\">PDF</a></li><li>Moolman FS et al. Encapsulating probiotics with an interpolymer complex in supercritical carbon dioxide. <em>South African Journal of Science</em> 2006;102:349–354. <a href=\"https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Velobiotics-Research-Encapsulating-Probiotics-Interpolymer-Complex-scCO2-SAJS-2006.pdf?v=1789280831\" target=\"_blank\" rel=\"noopener\">PDF</a></li><li>Hansen TL et al. Survival of Ca-alginate microencapsulated <em>Bifidobacterium</em> spp. in milk and simulated gastrointestinal conditions. <em>Food Microbiology</em> 2002;19:35–45 (reference for 3–4 log losses of unprotected <em>B. longum</em> Bb-46 in 2 h of SGF).</li></ol>"
+     }
+    }
+   },
+   "block_order": [
+    "hea_25",
+    "tex_26",
+    "fig_27",
+    "hea_28",
+    "tex_29",
+    "ste_30",
+    "fig_31",
+    "quo_32",
+    "hea_33",
+    "tex_34",
+    "hea_35",
+    "tex_36",
+    "fig_37",
+    "cal_38",
+    "det_39",
+    "det_40",
+    "det_41",
+    "det_42"
+   ]
+  },
+  "explore": {
+   "type": "vb-science-nav",
+   "settings": {
+    "mode": "cards",
+    "label": "Continue exploring",
+    "title": "The rest of the science, in order",
+    "sub": "Six short pages. Start anywhere; each one stands on its own.",
+    "hide_current": true
+   },
+   "blocks": {
+    "nl_117": {
+     "type": "link",
+     "settings": {
+      "title": "Founder's story",
+      "short": "Our story",
+      "url": "/pages/velobiotics-story",
+      "blurb": "A father, a hospital bed, and the question that started everything."
+     }
+    },
+    "nl_118": {
+     "type": "link",
+     "settings": {
+      "title": "What is microencapsulation?",
+      "short": "What is it?",
+      "url": "/pages/what-is-microencapsulation",
+      "blurb": "Each bacterium gets its own micron-thin shield. Here is how, and why it matters."
+     }
+    },
+    "nl_119": {
+     "type": "link",
+     "settings": {
+      "title": "Surviving stomach acid",
+      "short": "Stomach acid",
+      "url": "/pages/probiotics-tolerance-to-gastric-acid",
+      "blurb": "Peer-reviewed: 40 to 65 times more live bacteria make it through."
+     }
+    },
+    "nl_120": {
+     "type": "link",
+     "settings": {
+      "title": "Heat stability & shelf life",
+      "short": "Heat & shelf life",
+      "url": "/pages/heat-stability-and-shelf-life",
+      "blurb": "Stays potent at 30 °C for up to 12 weeks. No fridge needed."
+     }
+    },
+    "nl_121": {
+     "type": "link",
+     "settings": {
+      "title": "The published research",
+      "short": "Research",
+      "url": "/pages/microencapsulation-research",
+      "blurb": "Three peer-reviewed papers from CSIR and the University of Pretoria, explained."
+     }
+    },
+    "nl_122": {
+     "type": "link",
+     "settings": {
+      "title": "About Velobiotics",
+      "short": "About us",
+      "url": "/pages/new-about-us",
+      "blurb": "The team turning South African science into probiotics that work."
+     }
+    }
+   },
+   "block_order": [
+    "nl_117",
+    "nl_118",
+    "nl_119",
+    "nl_120",
+    "nl_121",
+    "nl_122"
+   ]
+  },
+  "brand_family": {
+   "type": "vb-brand-family",
+   "settings": {
+    "eyebrow": "Powered by MEP",
+    "title_pre": "Every brand",
+    "title_highlight": "uses the same delivery.",
+    "sub": "Nine brands. One patented MEP delivery. All engineered to reach you alive."
+   }
+  },
+  "final_cta": {
+   "type": "vb-final-cta",
+   "settings": {
+    "eyebrow": "Experience the difference",
+    "title_pre": "Probiotics that",
+    "title_highlight": "actually work.",
+    "sub": "30-day money-back guarantee · Ships worldwide · Lab-tested every batch."
+   }
+  }
+ },
+ "order": [
+  "sci_nav",
+  "science",
+  "explore",
+  "brand_family",
+  "final_cta"
+ ]
 }

@@ -8,103 +8,417 @@
  * ------------------------------------------------------------
  */
 {
-  "sections": {
-    "main": {
-      "type": "main-page",
-      "settings": {
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
+ "sections": {
+  "sci_nav": {
+   "type": "vb-science-nav",
+   "settings": {
+    "mode": "bar",
+    "label": "The science"
+   },
+   "blocks": {
+    "nl_99": {
+     "type": "link",
+     "settings": {
+      "title": "Founder's story",
+      "short": "Our story",
+      "url": "/pages/velobiotics-story",
+      "blurb": "A father, a hospital bed, and the question that started everything."
+     }
     },
-    "article": {
-      "type": "vb-science-article",
-      "blocks": {
-        "t1": {
-          "type": "text",
-          "settings": {
-            "content": "<h2>The problem with conventional probiotics</h2><p>Conventional probiotic capsules look impressive on the label. Marketing promises tens of billions of live bacterial cultures. But the reality between the shelf and your gut is brutal — and most cultures don't survive the journey.</p><p>Stomach acid is the first killer. Within minutes of swallowing a typical probiotic, the acidic environment of the stomach (pH 1–2) destroys the vast majority of live cultures. By the time the surviving handful reach the small intestine, where they're actually needed, you're left with a fraction of what was on the label.</p><p>Heat is the second killer. Probiotics are living organisms. They die slowly in warm rooms, in transit trucks, in pharmacy shelves. Without proper protection, a capsule that started with 10 billion CFU may have only 1–2 billion by the time you swallow it.</p>"
-          }
-        },
-        "i1": {
-          "type": "image",
-          "settings": {
-            "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_192929_dcb318af-4300-460b-a6c1-1927f0d319e9.png",
-            "caption": "Conventional probiotics face stomach acid, heat, and moisture — most die before reaching the gut."
-          }
-        },
-        "t2": {
-          "type": "text",
-          "settings": {
-            "content": "<h2>What is microencapsulation?</h2><p>Microencapsulation is a food-science technology that wraps each individual bacterial culture in a microscopic protective coating. Think of it as armour for your probiotics.</p><p>The protective shell does three things:</p><ul><li><strong>Shields against stomach acid</strong> — the coating stays intact through the acidic stomach environment.</li><li><strong>Protects against heat and moisture</strong> — extending shelf life from months to years.</li><li><strong>Targeted release in the small intestine</strong> — where the pH shifts, the coating dissolves and releases live cultures exactly where they're needed.</li></ul><p>The result: significantly more probiotics arrive alive at their target environment, where they can colonise, multiply, and deliver the benefits the label promised.</p>"
-          }
-        },
-        "i2": {
-          "type": "image",
-          "settings": {
-            "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_192925_1cf46f5d-4735-4703-bbe7-5b8c8fefe54d.png",
-            "caption": "Velobiotics™ MEP — each probiotic culture is wrapped in a protective microcapsule."
-          }
-        },
-        "t3": {
-          "type": "text",
-          "settings": {
-            "content": "<h2>What makes Velobiotics™ MEP different?</h2><p>Velobiotics™ MEP (Microencapsulated Probiotics) uses a patented supercritical CO₂ process to encapsulate each culture under precisely-controlled conditions. This is not the cheap spray-coating you'll find on supermarket probiotics. It's pharmaceutical-grade microencapsulation engineered specifically for live probiotic delivery.</p><p>The patented process produces a coating that:</p><ul><li>Withstands stomach acid pH as low as 1.0</li><li>Remains shelf-stable at room temperature for 24+ months</li><li>Releases cultures specifically when pH rises in the small intestine</li><li>Allows 1000× more cultures to survive vs. uncoated capsules</li></ul>"
-          }
-        },
-        "kp1": {
-          "type": "keypoints",
-          "settings": {
-            "label": "Why this matters for you",
-            "points": "1000× more probiotics reach your gut alive vs. conventional capsules.\nShelf-stable at room temperature — no refrigeration required.\nTargeted release exactly where probiotics work — the small intestine.\nLab-tested every batch for survivability and CFU count."
-          }
-        },
-        "t4": {
-          "type": "text",
-          "settings": {
-            "content": "<h2>The bottom line</h2><p>If a probiotic doesn't reach your gut alive, it doesn't matter how many billion CFU were on the bottle. Microencapsulation is the difference between marketing claims and real biological impact.</p><p>Velobiotics™ MEP is the patented technology that makes the entire Velobiotics range work — every single product, every single brand. It's not optional. It's the foundation.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "t1",
-        "i1",
-        "t2",
-        "i2",
-        "t3",
-        "kp1",
-        "t4"
-      ],
-      "settings": {
-        "eyebrow": "The Science",
-        "title_pre": "What is",
-        "title_highlight": "microencapsulation?",
-        "intro": "The patented technology that allows 1000× more live probiotics to reach your gut alive.",
-        "hero_image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_192925_1cf46f5d-4735-4703-bbe7-5b8c8fefe54d.png"
-      }
+    "nl_100": {
+     "type": "link",
+     "settings": {
+      "title": "What is microencapsulation?",
+      "short": "What is it?",
+      "url": "/pages/what-is-microencapsulation",
+      "blurb": "Each bacterium gets its own micron-thin shield. Here is how, and why it matters."
+     }
     },
-    "brand_family": {
-      "type": "vb-brand-family",
-      "settings": {
-        "eyebrow": "Powered by MEP",
-        "title_pre": "Every brand",
-        "title_highlight": "uses the same delivery.",
-        "sub": "Nine brands. One patented MEP delivery. All engineered to reach you alive."
-      }
+    "nl_101": {
+     "type": "link",
+     "settings": {
+      "title": "Surviving stomach acid",
+      "short": "Stomach acid",
+      "url": "/pages/probiotics-tolerance-to-gastric-acid",
+      "blurb": "Peer-reviewed: 40 to 65 times more live bacteria make it through."
+     }
     },
-    "final_cta": {
-      "type": "vb-final-cta",
-      "settings": {
-        "eyebrow": "Experience the difference",
-        "title_pre": "Probiotics that",
-        "title_highlight": "actually work.",
-        "sub": "30-day money-back guarantee · Ships worldwide · Lab-tested every batch."
-      }
+    "nl_102": {
+     "type": "link",
+     "settings": {
+      "title": "Heat stability & shelf life",
+      "short": "Heat & shelf life",
+      "url": "/pages/heat-stability-and-shelf-life",
+      "blurb": "Stays potent at 30 °C for up to 12 weeks. No fridge needed."
+     }
+    },
+    "nl_103": {
+     "type": "link",
+     "settings": {
+      "title": "The published research",
+      "short": "Research",
+      "url": "/pages/microencapsulation-research",
+      "blurb": "Three peer-reviewed papers from CSIR and the University of Pretoria, explained."
+     }
+    },
+    "nl_104": {
+     "type": "link",
+     "settings": {
+      "title": "About Velobiotics",
+      "short": "About us",
+      "url": "/pages/new-about-us",
+      "blurb": "The team turning South African science into probiotics that work."
+     }
     }
+   },
+   "block_order": [
+    "nl_99",
+    "nl_100",
+    "nl_101",
+    "nl_102",
+    "nl_103",
+    "nl_104"
+   ]
   },
-  "order": [
-    "main",
-    "article",
-    "brand_family",
-    "final_cta"
-  ]
+  "science": {
+   "type": "vb-science-page",
+   "settings": {
+    "eyebrow": "The Science · Part 1",
+    "title_pre": "Every probiotic gets its own",
+    "title_highlight": "micron-thin shield.",
+    "intro": "Microencapsulation is not about the pill you swallow. It happens at a scale a thousand times smaller: each individual bacterium is wrapped in its own protective coat, so it survives the stomach and is released only where it can do its job.",
+    "read_time": "6 min read",
+    "reviewed": "Written with Dr Chomba Chuma, MD",
+    "sources": "3 peer-reviewed papers",
+    "hero_image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-hero-shield.jpg?v=1790193717",
+    "hero_video_url": "https://cdn.shopify.com/videos/c/o/v/37679d5cd9be444eac1b195b46b3a32c.mp4",
+    "hero_alt": "Micron-scale view of individual probiotic bacteria, each wrapped in its own Velobiotics micro-shield",
+    "hero_caption": "Artist's visualisation at micron scale",
+    "hero_cta_text": "Shop shielded probiotics",
+    "hero_cta_url": "/collections/all",
+    "summary_label": "The short version",
+    "summary_points": "A single bacterium is about 2 microns long, roughly 35 times thinner than a human hair. Microencapsulation wraps each one, individually, in a food-grade polymer coat.\nThe coat stays sealed in stomach acid and dissolves in the gentler conditions of the small intestine, so the bacteria are released alive, exactly where they work.\nThe coat is formed in supercritical carbon dioxide at 40 °C, with no water, no solvents and no high heat, so the bacteria are never harmed during the process.\nThe same shield keeps moisture and oxygen out on the shelf, which is why Velobiotics™ stays potent at room temperature.",
+    "paper_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Velobiotics-Research-Encapsulating-Probiotics-Interpolymer-Complex-scCO2-SAJS-2006.pdf?v=1789280831",
+    "paper_label": "Read the founding paper (SAJS, 2006)",
+    "stat1_value": "2 µm",
+    "stat1_label": "Size of one bacterium. Each gets its own shield.",
+    "stat2_value": "< 5%",
+    "stat2_label": "Released in stomach acid (pH 1.2) over 24 hours",
+    "stat3_value": "85%",
+    "stat3_label": "Released in intestinal conditions (pH 6.8) in 24 hours",
+    "show_toc": true,
+    "deep_title": "The science in detail",
+    "deep_sub": "The materials, the process and the numbers behind the story above, for readers who want them."
+   },
+   "blocks": {
+    "hea_01": {
+     "type": "heading",
+     "settings": {
+      "kicker": "First, the problem",
+      "title": "Most probiotics never arrive"
+     }
+    },
+    "tex_02": {
+     "type": "text",
+     "settings": {
+      "content": "<p>A probiotic only helps you if it reaches your intestine <strong>alive</strong>. That is a long journey for a living cell. On the shelf it faces heat, oxygen and humidity. In your body it faces stomach acid at pH 1 to 2, strong enough to dissolve most bacteria within minutes.</p><p>Labels talk about billions of cultures. What matters is how many billions are still alive when they get to the place where they can actually work. For most ordinary probiotics, that number is a small fraction of what went into the bottle.</p>"
+     }
+    },
+    "com_03": {
+     "type": "compare",
+     "settings": {
+      "bad_title": "An unprotected probiotic",
+      "bad_points": "Slowly dies on the shelf, faster in heat and humidity\nDissolves in stomach acid before reaching the intestine\nOften needs refrigeration to slow the losses\nThe \"billions\" on the label are counted at manufacture, not at arrival",
+      "good_title": "A micro-shielded Velobiotics™ probiotic",
+      "good_points": "Each bacterium is sealed in its own moisture- and oxygen-resistant coat\nThe coat stays closed in acid and opens in the intestine\nStable at room temperature, proven at 30 °C for 12 weeks\nMore live bacteria delivered where they can colonise and work"
+     }
+    },
+    "hea_04": {
+     "type": "heading",
+     "settings": {
+      "kicker": "The idea",
+      "title": "Armour for a single cell, not for the pill"
+     }
+    },
+    "tex_05": {
+     "type": "text",
+     "settings": {
+      "content": "<p>When people hear \"capsule\" they picture the pill. Microencapsulation works at a completely different scale. A bacterium is about <strong>two microns</strong> long. A human hair is around seventy microns wide. Microencapsulation wraps <em>each individual bacterium</em> in a coat a fraction of a micron thick, made of two food-grade polymers that bond to each other.</p><p>Think of it as giving every soldier their own armour, rather than putting the whole army in one tent. If the tent tears, everyone is exposed. If each cell has its own shield, the protection travels with it all the way to the intestine.</p>"
+     }
+    },
+    "fig_06": {
+     "type": "figure",
+     "settings": {
+      "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-fig-scale.jpg?v=1790193718",
+      "alt": "A human hair beside micro-shielded probiotic bacteria, showing how small they are",
+      "label": "Figure 1",
+      "caption": "Scale matters. A human hair (about 70 µm) next to individually shielded bacteria (about 2 µm each). The shield is far thinner than the cell it protects. Artist's visualisation.",
+      "size": "wide"
+     }
+    },
+    "hea_07": {
+     "type": "heading",
+     "settings": {
+      "kicker": "The clever part",
+      "title": "A shield that knows where it is"
+     }
+    },
+    "tex_08": {
+     "type": "text",
+     "settings": {
+      "content": "<p>The two polymers in the Velobiotics™ shield were chosen because of how they behave in acid. In the stomach the coat barely swells, so almost nothing gets out and the acid stays out. When the shielded bacteria move into the small intestine, where the pH rises to around 6.8, the coat swells, dissolves and releases its passenger.</p><p>Researchers at the CSIR tested this using a marker compound sealed in the same polymer matrix. In stomach-strength acid, less than 5% escaped in 24 hours. In intestinal conditions, about half was released in three hours and 85% within a day. The small intestine is exactly where probiotics need to be released, and three hours is roughly how long food spends there.</p>"
+     }
+    },
+    "fig_09": {
+     "type": "figure",
+     "settings": {
+      "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-chart-ph-release-v2.png?v=1790193718",
+      "alt": "Chart: the micro-shield releases under 5% in stomach acid but 85% in intestinal conditions within 24 hours",
+      "label": "Figure 2",
+      "caption": "pH-triggered release measured by the CSIR team. Red: stomach-strength acid, the shield stays sealed. Green: intestinal conditions, the shield dissolves and releases. Source: Moolman et al., South African Journal of Science, 2006.",
+      "size": "normal"
+     }
+    },
+    "fig_10": {
+     "type": "figure",
+     "settings": {
+      "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-fig-release.jpg?v=1790193718",
+      "alt": "A micro-shield dissolving in the small intestine and freeing a live probiotic",
+      "label": "Figure 3",
+      "caption": "In the small intestine the coat thins and dissolves, and the bacterium is free to attach to the gut wall and multiply. Artist's visualisation.",
+      "size": "wide"
+     }
+    },
+    "hea_11": {
+     "type": "heading",
+     "settings": {
+      "kicker": "How it is made",
+      "title": "Bonded in carbon dioxide, never touched by water or heat"
+     }
+    },
+    "tex_12": {
+     "type": "text",
+     "settings": {
+      "content": "<p>Most ways of coating bacteria involve water, organic solvents or heat. All three damage living cells. Water is the worst: it wakes dormant bacteria, which then burn through their food and die. The Velobiotics™ process avoids all three.</p><p>Instead it uses <strong>supercritical carbon dioxide</strong>: ordinary CO₂ pressed to about 300 bar at just 40 °C, where it behaves like a liquid and a gas at the same time. In that state it softens the two polymers so they can bond around the bacteria. When the pressure is released, the CO₂ simply flashes back to gas and leaves behind a dry, free-flowing powder of shielded cells. No residue, no solvent, no water.</p>"
+     }
+    },
+    "ste_13": {
+     "type": "steps",
+     "settings": {
+      "numbered": true,
+      "cols": 4,
+      "items": "Mix | Two food-grade polymers and the freeze-dried probiotic are loaded into a sterile high-pressure vessel.\nSoften | Supercritical CO₂ at about 300 bar and 40 °C softens the polymers without heat or solvent.\nBond | The polymers form an interpolymer complex, a hydrogen-bonded mesh, around each bacterium.\nRelease | The mixture is sprayed into a chamber; the CO₂ evaporates instantly, leaving a dry shielded powder."
+     }
+    },
+    "fig_14": {
+     "type": "figure",
+     "settings": {
+      "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-fig-process.jpg?v=1790193717",
+      "alt": "The supercritical CO2 encapsulation process from pressure vessel to dry powder",
+      "label": "Figure 4",
+      "caption": "The supercritical CO₂ process in three stages: pressurise and soften, spray and expand, collect the dry powder. The CSIR confirmed that two hours at these conditions caused no immediate or delayed harm to the bacteria.",
+      "size": "wide"
+     }
+    },
+    "quo_15": {
+     "type": "quote",
+     "settings": {
+      "text": "The technology avoids exposure of the active to water, solvents, heat or oxygen during the encapsulation process.",
+      "cite": "Moolman, Labuschagne, Thantsha, van der Merwe, Rolfes & Cloete, South African Journal of Science, 2006"
+     }
+    },
+    "hea_16": {
+     "type": "heading",
+     "settings": {
+      "kicker": "The bonus",
+      "title": "The same shield keeps the shelf life"
+     }
+    },
+    "tex_17": {
+     "type": "text",
+     "settings": {
+      "content": "<p>Because the two polymers bond to each other, the finished coat holds far less water than the same polymers simply mixed together. In the CSIR tests it absorbed about 30% less moisture in humid conditions. Less moisture means the bacteria stay dormant and alive for longer, which is why Velobiotics™ does not need a fridge. We cover that evidence on the <a href=\"/pages/heat-stability-and-shelf-life\">heat stability and shelf-life page</a>.</p>"
+     }
+    },
+    "fig_18": {
+     "type": "figure",
+     "settings": {
+      "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-fig-moisture.jpg?v=1790193717",
+      "alt": "Clumped humid powder beside dry free-flowing micro-shielded powder",
+      "label": "Figure 5",
+      "caption": "Left: an ordinary powder blend after exposure to humidity. Right: the bonded Velobiotics™ matrix stays dry and free-flowing. Artist's visualisation of the CSIR moisture-absorption test.",
+      "size": "normal"
+     }
+    },
+    "cal_19": {
+     "type": "callout",
+     "settings": {
+      "label": "In one sentence:",
+      "text": "Microencapsulation gives every single bacterium its own micron-thin, acid-proof, moisture-proof coat that dissolves only in the intestine, and it does so without ever exposing the bacteria to water, solvent or heat.",
+      "tone": "green"
+     }
+    },
+    "det_20": {
+     "type": "details",
+     "settings": {
+      "title": "Which polymers are used, and why those two?",
+      "content": "<p>The shield is an <strong>interpolymer complex</strong> of poly(vinyl pyrrolidone) (PVP) and poly(vinyl acetate-co-crotonic acid) (PVAc-CA). Both are approved for pharmaceutical use, both can be softened by supercritical CO₂, and both are water-swellable. Together they hydrogen-bond into a network that is <em>less</em> soluble than either polymer alone.</p><p>The crotonic-acid groups on PVAc-CA are the pH switch: at low pH they stay un-ionised and the matrix barely swells; above roughly pH 5 they ionise, the network swells and releases. That is the mechanism behind the release curve in Figure 2. Glyceryl monostearate (GMS), an acid-stable, digestible lipid, can be added as an extra moisture and oxygen barrier; the 2009 study showed it further improved protection.</p>"
+     }
+    },
+    "det_21": {
+     "type": "details",
+     "settings": {
+      "title": "What exactly is supercritical CO₂?",
+      "content": "<p>Above 31.1 °C and 73.8 bar, carbon dioxide stops having a separate liquid and gas phase. This \"supercritical\" fluid is dense like a liquid but flows like a gas, and it dissolves into polymers, lowering their glass-transition temperature so they become workable at low temperature. The process used for Velobiotics™ is a form of PGSS (Particles from Gas-Saturated Solutions): the polymer/CO₂/probiotic slurry is expanded through a nozzle, the CO₂ evaporates and the polymers freeze into particles around the bacteria. Free bacteria exposed to 300 bar and 40 °C for two hours showed the same counts as unexposed controls, immediately and after six weeks of storage.</p>"
+     }
+    },
+    "det_22": {
+     "type": "details",
+     "settings": {
+      "title": "How was the release behaviour measured?",
+      "content": "<p>The CSIR team pressed 6 mm tablets of the polymer matrix containing indomethacin, a well-characterised marker drug, and ran a standard dissolution test: four tablets in pH 1.2 buffer and eight in pH 6.85 buffer at 37 °C, measuring concentration by UV spectroscopy. Results: under 5% release at pH 1.2 in 24 hours; about 50% at 3 hours and 85% at 24 hours at pH 6.85, with minimal burst release. Scanning electron microscopy then showed shielded <em>B. longum</em> being released from the matrix after suspension at pH 6.8.</p>"
+     }
+    },
+    "det_23": {
+     "type": "details",
+     "settings": {
+      "title": "Where does the \"1000× more\" promise come from?",
+      "content": "<p>Two separately published effects multiply. First, survival through simulated digestion: encapsulated bacteria showed an average improvement of 1.6 to 1.8 log units (about 40 to 65 times more survivors) than unprotected bacteria. Second, survival in storage: after 12 weeks at 30 °C, encapsulated <em>B. longum</em> retained 6 log (a million times) more live cells than unprotected cells, and <em>B. lactis</em> 3.3 log (about 2,000 times) more. In real life a probiotic must survive both the shelf and the stomach, so the effects compound. \"1000× more live probiotics to your gut\" is our conservative summary of that combined, published benefit.</p>"
+     }
+    },
+    "det_24": {
+     "type": "details",
+     "settings": {
+      "title": "References",
+      "content": "<ol><li>Moolman FS, Labuschagne PW, Thantsha MS, van der Merwe TL, Rolfes H, Cloete TE. Encapsulating probiotics with an interpolymer complex in supercritical carbon dioxide. <em>South African Journal of Science</em> 2006;102:349–354. <a href=\"https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Velobiotics-Research-Encapsulating-Probiotics-Interpolymer-Complex-scCO2-SAJS-2006.pdf?v=1789280831\" target=\"_blank\" rel=\"noopener\">PDF</a></li><li>Thantsha MS, Cloete TE, Moolman FS, Labuschagne PW. Supercritical carbon dioxide interpolymer complexes improve survival of <em>B. longum</em> Bb-46 in simulated gastrointestinal fluids. <em>International Journal of Food Microbiology</em> 2009;129:88–92. <a href=\"https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Velobiotics-Research-scCO2-Interpolymer-Survival-Simulated-GI-Fluids-IJFM-2009.pdf?v=1789280831\" target=\"_blank\" rel=\"noopener\">PDF</a></li><li>Thantsha MS, Labuschagne PW, Mamvura CI. Supercritical CO₂ interpolymer complex encapsulation improves heat stability of probiotic bifidobacteria. <em>World Journal of Microbiology and Biotechnology</em> 2014;30:479–486. <a href=\"https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Velobiotics-Research-scCO2-Encapsulation-Heat-Stability-Shelf-Life-WJMB-2014.pdf?v=1789280831\" target=\"_blank\" rel=\"noopener\">PDF</a></li></ol>"
+     }
+    }
+   },
+   "block_order": [
+    "hea_01",
+    "tex_02",
+    "com_03",
+    "hea_04",
+    "tex_05",
+    "fig_06",
+    "hea_07",
+    "tex_08",
+    "fig_09",
+    "fig_10",
+    "hea_11",
+    "tex_12",
+    "ste_13",
+    "fig_14",
+    "quo_15",
+    "hea_16",
+    "tex_17",
+    "fig_18",
+    "cal_19",
+    "det_20",
+    "det_21",
+    "det_22",
+    "det_23",
+    "det_24"
+   ]
+  },
+  "explore": {
+   "type": "vb-science-nav",
+   "settings": {
+    "mode": "cards",
+    "label": "Continue exploring",
+    "title": "The rest of the science, in order",
+    "sub": "Six short pages. Start anywhere; each one stands on its own.",
+    "hide_current": true
+   },
+   "blocks": {
+    "nl_105": {
+     "type": "link",
+     "settings": {
+      "title": "Founder's story",
+      "short": "Our story",
+      "url": "/pages/velobiotics-story",
+      "blurb": "A father, a hospital bed, and the question that started everything."
+     }
+    },
+    "nl_106": {
+     "type": "link",
+     "settings": {
+      "title": "What is microencapsulation?",
+      "short": "What is it?",
+      "url": "/pages/what-is-microencapsulation",
+      "blurb": "Each bacterium gets its own micron-thin shield. Here is how, and why it matters."
+     }
+    },
+    "nl_107": {
+     "type": "link",
+     "settings": {
+      "title": "Surviving stomach acid",
+      "short": "Stomach acid",
+      "url": "/pages/probiotics-tolerance-to-gastric-acid",
+      "blurb": "Peer-reviewed: 40 to 65 times more live bacteria make it through."
+     }
+    },
+    "nl_108": {
+     "type": "link",
+     "settings": {
+      "title": "Heat stability & shelf life",
+      "short": "Heat & shelf life",
+      "url": "/pages/heat-stability-and-shelf-life",
+      "blurb": "Stays potent at 30 °C for up to 12 weeks. No fridge needed."
+     }
+    },
+    "nl_109": {
+     "type": "link",
+     "settings": {
+      "title": "The published research",
+      "short": "Research",
+      "url": "/pages/microencapsulation-research",
+      "blurb": "Three peer-reviewed papers from CSIR and the University of Pretoria, explained."
+     }
+    },
+    "nl_110": {
+     "type": "link",
+     "settings": {
+      "title": "About Velobiotics",
+      "short": "About us",
+      "url": "/pages/new-about-us",
+      "blurb": "The team turning South African science into probiotics that work."
+     }
+    }
+   },
+   "block_order": [
+    "nl_105",
+    "nl_106",
+    "nl_107",
+    "nl_108",
+    "nl_109",
+    "nl_110"
+   ]
+  },
+  "brand_family": {
+   "type": "vb-brand-family",
+   "settings": {
+    "eyebrow": "Powered by MEP",
+    "title_pre": "Every brand",
+    "title_highlight": "uses the same delivery.",
+    "sub": "Nine brands. One patented MEP delivery. All engineered to reach you alive."
+   }
+  },
+  "final_cta": {
+   "type": "vb-final-cta",
+   "settings": {
+    "eyebrow": "Experience the difference",
+    "title_pre": "Probiotics that",
+    "title_highlight": "actually work.",
+    "sub": "30-day money-back guarantee · Ships worldwide · Lab-tested every batch."
+   }
+  }
+ },
+ "order": [
+  "sci_nav",
+  "science",
+  "explore",
+  "brand_family",
+  "final_cta"
+ ]
 }

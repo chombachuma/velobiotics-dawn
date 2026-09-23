@@ -8,71 +8,374 @@
  * ------------------------------------------------------------
  */
 {
-  "sections": {
-    "main": {
-      "type": "main-page",
-      "settings": {
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
+ "sections": {
+  "sci_nav": {
+   "type": "vb-science-nav",
+   "settings": {
+    "mode": "bar",
+    "label": "The science"
+   },
+   "blocks": {
+    "nl_123": {
+     "type": "link",
+     "settings": {
+      "title": "Founder's story",
+      "short": "Our story",
+      "url": "/pages/velobiotics-story",
+      "blurb": "A father, a hospital bed, and the question that started everything."
+     }
     },
-    "article": {
-      "type": "vb-science-article",
-      "blocks": {
-        "t1": {
-          "type": "text",
-          "settings": {
-            "content": "<h2>Why heat and moisture kill probiotics</h2><p>Probiotics are living organisms. Like all living things, they're vulnerable to their environment. Heat speeds up cellular metabolism, eventually causing cell death. Moisture wakes dormant cultures prematurely, exhausting their energy reserves before they reach your gut. Combine the two — typical of a delivery truck in South African summer — and a probiotic capsule can lose half its potency in weeks.</p><p>This is why most conventional probiotics require refrigeration. And why most conventional probiotics fail anyway — by the time they're shipped from manufacturer to pharmacy to your kitchen, the cold chain has been broken multiple times.</p>"
-          }
-        },
-        "i1": {
-          "type": "image",
-          "settings": {
-            "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_192931_17a2a10d-e9cf-4e5f-9674-e0181dd5d7ba.png",
-            "caption": "Velobiotics™ MEP shields probiotics from heat and moisture — no refrigeration required."
-          }
-        },
-        "t2": {
-          "type": "text",
-          "settings": {
-            "content": "<h2>How Velobiotics™ MEP solves it</h2><p>The Velobiotics™ Microencapsulated Probiotics technology wraps every individual culture in a precisely-engineered protective coating. The coating creates a stable micro-environment around each bacterium — protecting it from heat, moisture, and oxygen until the moment of release in your small intestine.</p><p>Lab-validated results:</p><ul><li><strong>Shelf-stable up to 25°C</strong> for 24+ months from manufacture.</li><li><strong>No refrigeration required</strong> — store on a shelf, in a bag, on a trip.</li><li><strong>Survives transit and exposure</strong> better than any uncoated probiotic on the market.</li><li><strong>Maintains label CFU</strong> from manufacture to consumption.</li></ul>"
-          }
-        },
-        "kp1": {
-          "type": "keypoints",
-          "settings": {
-            "label": "What it means for you",
-            "points": "Buy with confidence — the CFU on the label is what reaches you.\nTravel-friendly — no fridge needed.\nLong shelf life — stock up without losing potency.\nClimate-resilient — works in South African summers and beyond."
-          }
-        }
-      },
-      "block_order": [
-        "t1",
-        "i1",
-        "t2",
-        "kp1"
-      ],
-      "settings": {
-        "eyebrow": "The Science",
-        "title_pre": "Heat stability",
-        "title_highlight": "& shelf life.",
-        "intro": "Why Velobiotics probiotics stay alive at room temperature — and why that matters.",
-        "hero_image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CoTqdc3EEPYJ6jrH5LNdYUmSqc/hf_20260530_192931_17a2a10d-e9cf-4e5f-9674-e0181dd5d7ba.png"
-      }
+    "nl_124": {
+     "type": "link",
+     "settings": {
+      "title": "What is microencapsulation?",
+      "short": "What is it?",
+      "url": "/pages/what-is-microencapsulation",
+      "blurb": "Each bacterium gets its own micron-thin shield. Here is how, and why it matters."
+     }
     },
-    "final_cta": {
-      "type": "vb-final-cta",
-      "settings": {
-        "eyebrow": "Stable. Effective. Daily.",
-        "title_pre": "Shelf-stable",
-        "title_highlight": "probiotics that work.",
-        "sub": "30-day money-back guarantee · Ships worldwide · Lab-tested every batch."
-      }
+    "nl_125": {
+     "type": "link",
+     "settings": {
+      "title": "Surviving stomach acid",
+      "short": "Stomach acid",
+      "url": "/pages/probiotics-tolerance-to-gastric-acid",
+      "blurb": "Peer-reviewed: 40 to 65 times more live bacteria make it through."
+     }
+    },
+    "nl_126": {
+     "type": "link",
+     "settings": {
+      "title": "Heat stability & shelf life",
+      "short": "Heat & shelf life",
+      "url": "/pages/heat-stability-and-shelf-life",
+      "blurb": "Stays potent at 30 °C for up to 12 weeks. No fridge needed."
+     }
+    },
+    "nl_127": {
+     "type": "link",
+     "settings": {
+      "title": "The published research",
+      "short": "Research",
+      "url": "/pages/microencapsulation-research",
+      "blurb": "Three peer-reviewed papers from CSIR and the University of Pretoria, explained."
+     }
+    },
+    "nl_128": {
+     "type": "link",
+     "settings": {
+      "title": "About Velobiotics",
+      "short": "About us",
+      "url": "/pages/new-about-us",
+      "blurb": "The team turning South African science into probiotics that work."
+     }
     }
+   },
+   "block_order": [
+    "nl_123",
+    "nl_124",
+    "nl_125",
+    "nl_126",
+    "nl_127",
+    "nl_128"
+   ]
   },
-  "order": [
-    "main",
-    "article",
-    "final_cta"
-  ]
+  "science": {
+   "type": "vb-science-page",
+   "settings": {
+    "eyebrow": "The Science · Part 3",
+    "title_pre": "Potent on a hot shelf,",
+    "title_highlight": "no fridge required.",
+    "intro": "Most probiotics quietly die between the factory and your medicine cabinet, faster the warmer it gets. A 12-week study at 30 °C shows how the Velobiotics™ micro-shield keeps bifidobacteria alive, and why that matters in a country where the fridge is not always an option.",
+    "read_time": "5 min read",
+    "reviewed": "Written with Dr Chomba Chuma, MD",
+    "sources": "Thantsha, Labuschagne & Mamvura 2014",
+    "hero_image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-hero-heat.jpg?v=1790193717",
+    "hero_alt": "Probiotic bottles on a hot rural pharmacy shelf, far from refrigeration",
+    "hero_cta_text": "Shop shelf-stable probiotics",
+    "hero_cta_url": "/collections/all",
+    "summary_label": "The short version",
+    "summary_points": "Probiotics were stored as dry powders at 30 °C for 12 weeks, an accelerated test that mimics a hot warehouse, delivery van or bathroom cabinet.\nUnprotected B. longum fell below the therapeutic minimum after 6 weeks and had no live cells left by week 10. Micro-shielded B. longum stayed above the minimum for 10 to 12 weeks.\nOver the full 12 weeks, unprotected B. longum lost 11 log of live cells; shielded cells lost 5 log. That is a million-fold difference in survivors.\nThe hardier B. lactis Bb12 benefited too: shelf life at 30 °C went from 5 weeks unprotected to the full 12 weeks shielded.",
+    "paper_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Velobiotics-Research-scCO2-Encapsulation-Heat-Stability-Shelf-Life-WJMB-2014.pdf?v=1789280831",
+    "paper_label": "Read the paper (WJMB, 2014)",
+    "stat1_value": "30 °C",
+    "stat1_label": "12-week accelerated storage, no refrigeration",
+    "stat2_value": "12 wks",
+    "stat2_label": "Shielded bacteria stayed above the therapeutic minimum",
+    "stat3_value": "6 log",
+    "stat3_label": "Extra live B. longum retained, a million times more",
+    "show_toc": true,
+    "deep_title": "The science in detail",
+    "deep_sub": "Storage conditions, water activity, species differences and the full numbers."
+   },
+   "blocks": {
+    "hea_43": {
+     "type": "heading",
+     "settings": {
+      "kicker": "The problem nobody prints on the label",
+      "title": "Probiotics die on the shelf"
+     }
+    },
+    "tex_44": {
+     "type": "text",
+     "settings": {
+      "content": "<p>A live culture is exactly that: alive. From the day it is packed it slowly loses viability, and heat and humidity speed the loss up dramatically. Industry surveys have found that losses of 3 log, a thousand-fold, within 60 days of manufacture are common in dry probiotic products. That is why many brands print \"keep refrigerated\" and why the count on the label is usually the count on the day of manufacture, not the day you take it.</p><p>For most of South Africa, and much of the world, the cold chain is not guaranteed. Products sit in hot delivery vans, un-airconditioned stockrooms and bathroom cabinets. A probiotic that only works out of a fridge is not much use there.</p>"
+     }
+    },
+    "fig_45": {
+     "type": "figure",
+     "settings": {
+      "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-hero-heat.jpg?v=1790193717",
+      "alt": "Probiotic bottles on a hot rural pharmacy shelf, far from refrigeration",
+      "label": "Figure 1",
+      "caption": "Real-world storage: a warm shelf, a long delivery route, no refrigeration. This is the environment the 30 °C test was designed to mimic.",
+      "size": "wide"
+     }
+    },
+    "hea_46": {
+     "type": "heading",
+     "settings": {
+      "kicker": "The test",
+      "title": "Twelve weeks at 30 °C"
+     }
+    },
+    "tex_47": {
+     "type": "text",
+     "settings": {
+      "content": "<p>Researchers at the University of Pretoria and the CSIR stored micro-shielded and unprotected <em>Bifidobacterium longum</em> Bb46 and <em>Bifidobacterium lactis</em> Bb12 as dry powders in glass vials at 30 °C for 12 weeks, counting live cells every one to two weeks. Thirty degrees was chosen deliberately: it is an accelerated test, hotter than a normal room, so that a year of ordinary shelf life plays out in a few months.</p><p>The benchmark was the widely used therapeutic minimum of 10⁶ live cells per gram (6 log). Below that, a probiotic is generally considered to have too few live cells to be effective.</p>"
+     }
+    },
+    "fig_48": {
+     "type": "figure",
+     "settings": {
+      "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-chart-shelf-life-30c.png?v=1790180516",
+      "alt": "Chart: at 30 °C microencapsulated bifidobacteria stay above the therapeutic minimum for 10 to 12 weeks versus 5 to 6 weeks unprotected",
+      "label": "Figure 2",
+      "caption": "Left: weeks each sample stayed above the therapeutic minimum at 30 °C. Right: total loss of live cells over 12 weeks (lower is better). Source: Thantsha, Labuschagne & Mamvura, World Journal of Microbiology and Biotechnology, 2014.",
+      "size": "wide"
+     }
+    },
+    "hea_49": {
+     "type": "heading",
+     "settings": {
+      "kicker": "The result",
+      "title": "Weeks more life, a million times more cells"
+     }
+    },
+    "tex_50": {
+     "type": "text",
+     "settings": {
+      "content": "<p><strong><em>B. longum</em> Bb46</strong> is the more delicate of the two species, and it showed the biggest benefit. Unprotected cells dropped below the therapeutic minimum after six weeks and were completely gone by week ten. Shielded cells stayed above the minimum for ten weeks (production sample) to twelve weeks (reactor sample). Over the whole period, unprotected cells lost 11 log of viability; shielded cells lost 5 log. Put differently, after 12 weeks of heat there were about a <strong>million times more</strong> live shielded bacteria than unprotected ones.</p><p><strong><em>B. lactis</em> Bb12</strong> is naturally hardier, and it still benefited: unprotected cells fell below the minimum at week five, while shielded cells stayed above it for the full twelve weeks. The final difference was 3.3 log, about two thousand times more live cells.</p>"
+     }
+    },
+    "sta_51": {
+     "type": "stats",
+     "settings": {
+      "v1": "6 → 10–12 wks",
+      "l1": "B. longum: weeks above the therapeutic minimum, unprotected vs shielded",
+      "v2": "5 → 12 wks",
+      "l2": "B. lactis: weeks above the therapeutic minimum, unprotected vs shielded",
+      "v3": "−11 vs −5 log",
+      "l3": "B. longum: total loss over 12 weeks, unprotected vs shielded"
+     }
+    },
+    "fig_52": {
+     "type": "figure",
+     "settings": {
+      "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-chart-log-scale.png?v=1790180516",
+      "alt": "Infographic: what a log reduction means, each log is a tenfold change",
+      "label": "Figure 3",
+      "caption": "Reading the numbers: scientists count bacteria in logs. Each log is a factor of ten, so a 6-log difference is a million-fold.",
+      "size": "normal"
+     }
+    },
+    "hea_53": {
+     "type": "heading",
+     "settings": {
+      "kicker": "Why it works",
+      "title": "Keeping the water out"
+     }
+    },
+    "tex_54": {
+     "type": "text",
+     "settings": {
+      "content": "<p>Water is the enemy of a dormant bacterium. A little humidity wakes it up; awake, it consumes what little food it has and dies. The Velobiotics™ shield is a hydrogen-bonded mesh of two polymers that holds noticeably less water than the same polymers loosely mixed, about 30% less in the CSIR's humidity tests. Throughout the 12-week study the water activity of the powders stayed between 0.25 and 0.43, and the periods of highest water activity coincided with the biggest losses in every sample, shielded or not. The shield does not make the bacteria immortal; it slows the clock dramatically.</p>"
+     }
+    },
+    "fig_55": {
+     "type": "figure",
+     "settings": {
+      "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-chart-moisture.png?v=1790180515",
+      "alt": "Chart: polymers bonded in supercritical CO2 absorb 30% less moisture than simple powder blends",
+      "label": "Figure 4",
+      "caption": "Moisture absorbed after 72 hours at 60% humidity and 30 °C. Bonding the polymers in supercritical CO₂ cuts water uptake in every system tested. Source: Moolman et al., 2006, Table 2.",
+      "size": "normal"
+     }
+    },
+    "quo_56": {
+     "type": "quote",
+     "settings": {
+      "text": "This method of encapsulation reveals the possibility for manufacture of encapsulated probiotic powders with increased stability at ambient temperatures. This would potentially allow the supply of a stable probiotic formulation to impoverished communities without proper storage facilities.",
+      "cite": "Thantsha, Labuschagne & Mamvura, World Journal of Microbiology and Biotechnology, 2014"
+     }
+    },
+    "cal_57": {
+     "type": "callout",
+     "settings": {
+      "label": "What this means for you:",
+      "text": "Velobiotics™ products are formulated for real South African conditions. Keep them cool and dry like any supplement, but you do not need a fridge, and the count on the label means more because far more of it is still alive when you take it.",
+      "tone": "green"
+     }
+    },
+    "det_58": {
+     "type": "details",
+     "settings": {
+      "title": "Storage conditions and measurement",
+      "content": "<p>Samples were stored as free powders in glass vials at 30 ± 2 °C for 12 weeks. Sub-samples were taken every 7 or 14 days for water activity (a<sub>w</sub>) and viable counts, plated in triplicate on MRS agar with 0.05% cysteine hydrochloride and incubated anaerobically. Water activities across all samples ranged 0.25–0.43 (mean 0.34). Each reported value is the mean of triplicate counts from three independent experiments.</p>"
+     }
+    },
+    "det_59": {
+     "type": "details",
+     "settings": {
+      "title": "Full results by species",
+      "content": "<p><strong><em>B. longum</em> Bb46.</strong> Unprotected: −6 log after 8 weeks, no viable cells at 10 weeks, above 6 log CFU/g only until week 6, total reduction 11 log at 12 weeks. Shielded (product chamber): above 6 log for 10 weeks, −4 log at 8 weeks, total reduction 5 log. Shielded (reactor-harvested): above 6 log for 12 weeks, −3 log at 8 weeks. Reactor samples were significantly higher than unprotected (p < 0.05); product-chamber samples somewhat higher (p = 0.05).</p><p><strong><em>B. lactis</em> Bb12.</strong> Shielded cells lost 5 log over 12 weeks; unprotected cells dry-mixed with unprocessed and processed polymers lost 6 and 8 log respectively (−8.2 log at the end point vs −4.9 log shielded). Unprotected samples fell below 6 log CFU/g by week 5; shielded stayed above 6 log to week 12. The largest losses for every sample occurred in weeks 3–5, coinciding with the highest water activities.</p>"
+     }
+    },
+    "det_60": {
+     "type": "details",
+     "settings": {
+      "title": "How this compares with other encapsulation methods",
+      "content": "<p>The authors compared their results with published alginate, gelatin and protein-carbohydrate encapsulation studies, which typically report survival gains of 0.5 to 2 log over 2 to 12 weeks, mostly under refrigeration. The 6-log gain for <em>B. longum</em> at 30 °C is among the largest reported. The authors also noted that shear and heat during atomisation slightly reduced viability compared with reactor-harvested material, and that the product-chamber material was used for further work because it reflects practical large-scale production.</p>"
+     }
+    },
+    "det_61": {
+     "type": "details",
+     "settings": {
+      "title": "References",
+      "content": "<ol><li>Thantsha MS, Labuschagne PW, Mamvura CI. Supercritical CO₂ interpolymer complex encapsulation improves heat stability of probiotic bifidobacteria. <em>World Journal of Microbiology and Biotechnology</em> 2014;30:479–486. <a href=\"https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Velobiotics-Research-scCO2-Encapsulation-Heat-Stability-Shelf-Life-WJMB-2014.pdf?v=1789280831\" target=\"_blank\" rel=\"noopener\">PDF</a></li><li>Moolman FS et al. Encapsulating probiotics with an interpolymer complex in supercritical carbon dioxide. <em>South African Journal of Science</em> 2006;102:349–354 (moisture absorption data). <a href=\"https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Velobiotics-Research-Encapsulating-Probiotics-Interpolymer-Complex-scCO2-SAJS-2006.pdf?v=1789280831\" target=\"_blank\" rel=\"noopener\">PDF</a></li></ol>"
+     }
+    }
+   },
+   "block_order": [
+    "hea_43",
+    "tex_44",
+    "fig_45",
+    "hea_46",
+    "tex_47",
+    "fig_48",
+    "hea_49",
+    "tex_50",
+    "sta_51",
+    "fig_52",
+    "hea_53",
+    "tex_54",
+    "fig_55",
+    "quo_56",
+    "cal_57",
+    "det_58",
+    "det_59",
+    "det_60",
+    "det_61"
+   ]
+  },
+  "explore": {
+   "type": "vb-science-nav",
+   "settings": {
+    "mode": "cards",
+    "label": "Continue exploring",
+    "title": "The rest of the science, in order",
+    "sub": "Six short pages. Start anywhere; each one stands on its own.",
+    "hide_current": true
+   },
+   "blocks": {
+    "nl_129": {
+     "type": "link",
+     "settings": {
+      "title": "Founder's story",
+      "short": "Our story",
+      "url": "/pages/velobiotics-story",
+      "blurb": "A father, a hospital bed, and the question that started everything."
+     }
+    },
+    "nl_130": {
+     "type": "link",
+     "settings": {
+      "title": "What is microencapsulation?",
+      "short": "What is it?",
+      "url": "/pages/what-is-microencapsulation",
+      "blurb": "Each bacterium gets its own micron-thin shield. Here is how, and why it matters."
+     }
+    },
+    "nl_131": {
+     "type": "link",
+     "settings": {
+      "title": "Surviving stomach acid",
+      "short": "Stomach acid",
+      "url": "/pages/probiotics-tolerance-to-gastric-acid",
+      "blurb": "Peer-reviewed: 40 to 65 times more live bacteria make it through."
+     }
+    },
+    "nl_132": {
+     "type": "link",
+     "settings": {
+      "title": "Heat stability & shelf life",
+      "short": "Heat & shelf life",
+      "url": "/pages/heat-stability-and-shelf-life",
+      "blurb": "Stays potent at 30 °C for up to 12 weeks. No fridge needed."
+     }
+    },
+    "nl_133": {
+     "type": "link",
+     "settings": {
+      "title": "The published research",
+      "short": "Research",
+      "url": "/pages/microencapsulation-research",
+      "blurb": "Three peer-reviewed papers from CSIR and the University of Pretoria, explained."
+     }
+    },
+    "nl_134": {
+     "type": "link",
+     "settings": {
+      "title": "About Velobiotics",
+      "short": "About us",
+      "url": "/pages/new-about-us",
+      "blurb": "The team turning South African science into probiotics that work."
+     }
+    }
+   },
+   "block_order": [
+    "nl_129",
+    "nl_130",
+    "nl_131",
+    "nl_132",
+    "nl_133",
+    "nl_134"
+   ]
+  },
+  "brand_family": {
+   "type": "vb-brand-family",
+   "settings": {
+    "eyebrow": "Powered by MEP",
+    "title_pre": "Every brand",
+    "title_highlight": "uses the same delivery.",
+    "sub": "Nine brands. One patented MEP delivery. All engineered to reach you alive."
+   }
+  },
+  "final_cta": {
+   "type": "vb-final-cta",
+   "settings": {
+    "eyebrow": "Experience the difference",
+    "title_pre": "Probiotics that",
+    "title_highlight": "actually work.",
+    "sub": "30-day money-back guarantee · Ships worldwide · Lab-tested every batch."
+   }
+  }
+ },
+ "order": [
+  "sci_nav",
+  "science",
+  "explore",
+  "brand_family",
+  "final_cta"
+ ]
 }

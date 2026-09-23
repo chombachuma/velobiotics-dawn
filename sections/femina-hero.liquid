@@ -9,6 +9,8 @@
   elsif section.settings.bg_image != blank
     assign hero_image_src = section.settings.bg_image | image_url: width: 1800
   endif
+  assign hero_image_mobile = section.settings.bg_image_mobile_url
+  assign photo_mode = section.settings.photo_mode
 -%}
 
 <style>
@@ -52,12 +54,37 @@
     .femina-hero .femina-hero__badge:nth-child(2n), .femina-hero .femina-hero__badge:nth-child(3n), .femina-hero .femina-hero__badge:nth-child(4n) { transform: none; }
     .femina-hero__bg img { object-position: center top; opacity: 0.45; }
   }
+
+  /* Photo mode: image is the hero (full-bleed, corner to corner) */
+  .femina-hero--photo::before { background: none; }
+  .femina-hero--photo .femina-hero__bg img { opacity: 1; object-position: center; }
+  .femina-hero--photo .femina-hero__bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(20,45,18,0.82) 0%, rgba(20,45,18,0.62) 38%, rgba(20,45,18,0.18) 70%, rgba(20,45,18,0.05) 100%); }
+  .femina-hero--photo { min-height: min(720px, 88vh); padding: 96px 24px; }
+  .femina-hero--photo .femina-hero__headline em { color: #d6f5c9 !important; }
+  .femina-hero--photo .femina-hero__sub strong { color: #d6f5c9 !important; }
+  .femina-hero--photo a.femina-hero__cta--primary { color: #2e5d28 !important; }
+  .femina-hero--photo .femina-hero__badge { color: #2e5d28 !important; }
+  .femina-hero--photo .femina-hero__badge:nth-child(2n) { background: #d6f5c9; color: #2e5d28 !important; }
+  .femina-hero--photo .femina-hero__badge:nth-child(4n) { background: #fff; }
+  @media (max-width: 749px) {
+    .femina-hero--photo { min-height: 100svh; min-height: 100vh; padding: 0 18px 28px; align-items: flex-end; margin: 0; width: 100vw; margin-left: calc(50% - 50vw); }
+    .femina-hero--photo .femina-hero__bg img { opacity: 1; object-position: center 30%; }
+    .femina-hero--photo .femina-hero__bg::after { background: linear-gradient(180deg, rgba(20,45,18,0.28) 0%, rgba(20,45,18,0.0) 30%, rgba(20,45,18,0.15) 52%, rgba(20,45,18,0.78) 76%, rgba(20,45,18,0.92) 100%); }
+    .femina-hero--photo .femina-hero__inner { padding-bottom: env(safe-area-inset-bottom); }
+    .femina-hero--photo .femina-hero__eyebrow { margin-bottom: 14px; }
+    .femina-hero--photo .femina-hero__headline { font-size: clamp(30px, 8.6vw, 42px); text-shadow: 0 2px 14px rgba(0,0,0,0.35); }
+    .femina-hero--photo .femina-hero__sub { font-size: 15px; margin-bottom: 18px; text-shadow: 0 1px 8px rgba(0,0,0,0.35); }
+    .femina-hero--photo .femina-hero__badges { display: none; }
+  }
 </style>
 
-<section class="femina-hero" style="background: linear-gradient(150deg, {{ section.settings.bg_color_start }} 0%, {{ section.settings.bg_color_mid }} 45%, {{ section.settings.bg_color_end }} 100%);">
+<section class="femina-hero{% if photo_mode %} femina-hero--photo{% endif %}" style="background: linear-gradient(150deg, {{ section.settings.bg_color_start }} 0%, {{ section.settings.bg_color_mid }} 45%, {{ section.settings.bg_color_end }} 100%);">
   {%- if hero_image_src != blank -%}
     <div class="femina-hero__bg">
-      <img src="{{ hero_image_src }}" alt="" loading="eager" width="1800" height="900" />
+      <picture>
+        {%- if hero_image_mobile != blank -%}<source media="(max-width: 749px)" srcset="{{ hero_image_mobile }}">{%- endif -%}
+        <img src="{{ hero_image_src }}" alt="{{ section.settings.bg_image_alt | default: '' | escape }}" loading="eager" fetchpriority="high" width="1800" height="900" />
+      </picture>
     </div>
   {%- endif -%}
   <div class="femina-hero__inner">
@@ -110,6 +137,9 @@
     { "type": "header", "content": "Background image" },
     { "type": "text", "id": "bg_image_url", "label": "External image URL (overrides upload)", "info": "Paste a full https:// URL. Leave blank to use uploaded image below." },
     { "type": "image_picker", "id": "bg_image", "label": "Background image (uploaded)" },
+    { "type": "text", "id": "bg_image_mobile_url", "label": "Mobile image URL (portrait, optional)", "info": "Shown on screens under 750px instead of the main image. Use a 9:16 image." },
+    { "type": "text", "id": "bg_image_alt", "label": "Image alt text" },
+    { "type": "checkbox", "id": "photo_mode", "label": "Photo mode (image full-bleed, full-screen on mobile)", "default": false },
     { "type": "header", "content": "Gradient" },
     { "type": "color", "id": "bg_color_start", "label": "Gradient start", "default": "#3d0a45" },
     { "type": "color", "id": "bg_color_mid", "label": "Gradient mid", "default": "#6e2675" },

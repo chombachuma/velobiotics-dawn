@@ -1,5 +1,3 @@
 {%- comment -%} Master VB Structured Data Loader {%- endcomment -%}
 {%- render 'vb-schema-organization' -%}
-{%- if template.name == 'product' or template.name == 'collection' -%}{%- render 'vb-schema-breadcrumb' -%}{%- endif -%}
-{%- if template.name == 'product' -%}{%- render 'vb-schema-product' -%}{%- endif -%}
 {%- if template.name == 'page' -%}{%- render 'vb-schema-article' -%}{%- endif -%}

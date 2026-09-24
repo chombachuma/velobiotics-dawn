@@ -271,7 +271,8 @@
       },
       "block_order": [
         "r1",
-        "r2"
+        "r2",
+        "r3"
       ],
       "settings": {
         "brand_primary": "#4d8c44",
@@ -279,8 +280,8 @@
         "brand_tint": "#eef7ec",
         "tint": false,
         "eyebrow": "What's inside the pack",
-        "title": "The two products in this pack",
-        "sub": "Each box is the full retail product: same formula, same 30-capsule count, same batch testing as sold on its own."
+        "title": "The three products in this pack",
+        "sub": "Each bottle is the full retail product: same formula, same 60-capsule count, same batch testing as sold on its own."
       }
     },
     "benefits": {
@@ -465,7 +466,7 @@
         "c2": {
           "type": "stat",
           "settings": {
-            "label": "CFU per Daily Dose",
+            "label": "CFU per Daily Dose (Billions)",
             "percent": 10
           }
         },

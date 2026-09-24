@@ -32,7 +32,7 @@
     color: {{ text_color }};
   }
   #vbh-{{ section.id }} .vbh__bg { position: absolute; inset: 0; z-index: 0; }
-  #vbh-{{ section.id }} .vbh__bg-img {
+  #vbh-{{ section.id }} .vbh__bg-img, #vbh-{{ section.id }} .vbh__bg-video {
     width: 100%;
     height: 100%;
     object-fit: {{ section.settings.image_fit | default: 'cover' }};
@@ -81,7 +81,7 @@
 
 <section id="vbh-{{ section.id }}">
   {%- if hero_image_src != blank -%}
-    <div class="vbh__bg"><img class="vbh__bg-img" src="{{ hero_image_src }}" alt="" loading="eager" /></div>
+    <div class="vbh__bg"><img class="vbh__bg-img" src="{{ hero_image_src }}" alt="" loading="eager" />{%- if section.settings.bg_video_url != blank -%}<video class="vbh__bg-video" style="position:absolute;inset:0" autoplay muted loop playsinline preload="metadata" poster="{{ hero_image_src }}" aria-hidden="true"><source src="{{ section.settings.bg_video_url }}" type="video/mp4"></video>{%- endif -%}</div>
     <div class="vbh__overlay"></div>
   {%- endif -%}
 
@@ -115,6 +115,7 @@
   "settings": [
     { "type": "header", "content": "Background image" },
     { "type": "text", "id": "bg_image_url", "label": "External image URL" },
+    { "type": "text", "id": "bg_video_url", "label": "Background video URL (mp4, optional; loops muted over the image)" },
     { "type": "image_picker", "id": "bg_image", "label": "Hero image (uploaded)" },
     { "type": "select", "id": "image_fit", "label": "Image fit", "default": "cover", "options": [
       { "value": "cover", "label": "Cover (fill area, may crop)" },

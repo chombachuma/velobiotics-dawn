@@ -1,0 +1,790 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "check",
+            "text": "Dual Action: Hydrolysed Collagen Peptides + 10-Strain Probiotics"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "check",
+            "text": "Supports Glowing Skin, Strong Nails & Shiny Hair"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "check",
+            "text": "Micro-Shielded Live Cultures for Superior Gut Absorption"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "check",
+            "text": "Enriched with Cranberry PACs for Intimate Wellness"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_dark": "#831843",
+        "brand_tint": "#fce7f3",
+        "brand_label": "Velobiotics\u2122 Glow & Gut Combo",
+        "rating": "4.8",
+        "review_count": "50+ verified reviews",
+        "hook": "Skin, hair, nails & digestive wellness duo: Almasi Hydrolysed Collagen Peptides Powder 200g + Femina Probiotic Capsules 30s. Save R108.79.",
+        "ship_note": "Ships nationwide \u00b7 Free SA delivery over R400 \u00b7 30-day money-back guarantee",
+        "show_subscription": true,
+        "tier_unit": "Pack",
+        "tier_unit_plural": "Packs",
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
+    },
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "",
+            "author": "Thuli M.",
+            "meta": "Verified Buyer \u00b7 Almasi Collagen Powder",
+            "quote": "Absolutely loving this collagen and probiotic combination! My skin feels smoother, my nails are growing faster, and my tummy feels so much less bloated."
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "",
+            "author": "Diana C.",
+            "meta": "Verified Buyer \u00b7 Almasi Collagen Powder",
+            "quote": "I\u2019ve been taking this for a few weeks now. My skin has a natural glow and my digestion has improved significantly. Will definitely repurchase!"
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "",
+            "author": "Kgothatso M.",
+            "meta": "Verified Buyer \u00b7 Femina Probiotic Capsules",
+            "quote": "Combining daily probiotics with my collagen routine has been life changing. It keeps my gut balanced and my intimate microbiome protected."
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "",
+            "author": "Archie T.",
+            "meta": "Verified Buyer \u00b7 Femina Probiotic Capsules",
+            "quote": "Best daily wellness pair. Easy to mix the collagen powder in my morning coffee, and taking the capsule daily keeps me feeling light and fresh."
+          }
+        },
+        "r5": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "",
+            "author": "Nompumelelo K.",
+            "meta": "Verified Buyer \u00b7 Glow & Gut Combo",
+            "quote": "The ultimate beauty from within stack! Tastes great in smoothies and gives me total peace of mind for both digestion and skin radiance."
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_dark": "#831843",
+        "brand_tint": "#fce7f3",
+        "eyebrow": "Verified Buyer Feedback",
+        "title": "What women say about the Glow & Gut Combo"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "alert",
+            "text": "Declining collagen production impacts skin elasticity and nail strength"
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "alert",
+            "text": "Unbalanced gut microflora impairs bio-absorption of essential amino acids"
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "alert",
+            "text": "Topical creams only treat the surface, missing the internal root cause"
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#be185d",
+        "brand_tint": "#fce7f3",
+        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/GlowandGutCombo.png?v=1775328667",
+        "tag_value": "Gut-Skin Axis",
+        "tag_label": "Beauty From Within",
+        "eyebrow": "The Challenge",
+        "title_pre": "Why surface skincare alone",
+        "title_highlight": "isn't enough",
+        "desc": "True radiance begins deep within the gut. Natural collagen production declines by 1% every year after age 20, leading to fine lines, brittle nails, and dull skin. At the same time, poor gut flora composition impairs nutrient absorption, causing bloating and skin breakouts."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "check",
+            "text": "Hydrolysed collagen peptides rebuild skin matrix and strengthen hair & nails"
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "check",
+            "text": "Micro-shielded probiotics restore gut flora for enhanced nutrient bio-absorption"
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "check",
+            "text": "Added cranberry extract supports urinary tract & intimate microbiome balance"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#be185d",
+        "brand_tint": "#fce7f3",
+        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/GlowandGutCombo.png?v=1775328667",
+        "tag_value": "Synergistic Stack",
+        "tag_label": "Collagen + Probiotics",
+        "eyebrow": "The Glow & Gut Solution",
+        "title_pre": "Feed your skin matrix & gut lining",
+        "title_highlight": "simultaneously",
+        "desc": "The Glow & Gut Combo pairs bioactive hydrolysed collagen peptides with micro-shielded live probiotics. Collagen provides the amino acid building blocks for dermal collagen synthesis, while 10 probiotic strains optimise gut barrier health for maximum nutrient bio-availability."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "probiotics-collagen-peptides-powder",
+            "brand": "Almasi\u2122 Probiotics Collagen Powder 200g",
+            "rating": "4.8",
+            "reviews": "25+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
+            "brand": "Femina\u2122 10-Strain Probiotic Capsules with Cranberry (30s)",
+            "rating": "4.7",
+            "reviews": "399+"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_dark": "#831843",
+        "brand_tint": "#fce7f3",
+        "tint": false,
+        "eyebrow": "What's inside",
+        "title": "2 Full-Sized Products in One Combo",
+        "sub": "Save R108.79 compared to buying each item separately."
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "f1": {
+          "type": "feat",
+          "settings": {
+            "icon": "sparkles",
+            "name": "Bioactive Collagen Peptides",
+            "desc": "Hydrolysed Type I & III collagen peptides provide easily absorbable amino acids for dermal hydration and joint support."
+          }
+        },
+        "f2": {
+          "type": "feat",
+          "settings": {
+            "icon": "shield",
+            "name": "Micro-Shielded Live Strains",
+            "desc": "Velobiotics micro-shield technology protects 10 probiotic strains through stomach acid to colonise the gut effectively."
+          }
+        },
+        "f3": {
+          "type": "feat",
+          "settings": {
+            "icon": "zap",
+            "name": "Skin-Gut Axis Optimisation",
+            "desc": "Promotes a balanced gut microbiome, reducing gut-derived systemic inflammation linked to skin redness and breakouts."
+          }
+        },
+        "f4": {
+          "type": "feat",
+          "settings": {
+            "icon": "heart",
+            "name": "Cranberry Extract PACs",
+            "desc": "Standardised cranberry extract supports urinary tract wall integrity and intimate flora freshness."
+          }
+        },
+        "f5": {
+          "type": "feat",
+          "settings": {
+            "icon": "refresh",
+            "name": "Hair & Nail Strengthening",
+            "desc": "Supplies essential structural amino acids to support keratin synthesis and reduce nail brittleness."
+          }
+        },
+        "f6": {
+          "type": "feat",
+          "settings": {
+            "icon": "sun",
+            "name": "Zero Sugar & Low Calorie",
+            "desc": "Unflavoured or neutral collagen powder easily dissolves into your favourite morning coffee, tea, or smoothie."
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_tint": "#fce7f3",
+        "eyebrow": "Dual Synergy",
+        "title_pre": "Designed for complete",
+        "title_highlight": "glow & digestive wellness",
+        "sub": "Targeted support for youthful skin, strong nails, shiny hair, and digestive harmony."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "1",
+            "name": "Step 1: Mix Collagen Powder",
+            "desc": "Add 1 scoop (10g) of Almasi Hydrolysed Collagen Peptides Powder into your morning coffee, tea, smoothie, or water and stir well."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "2",
+            "name": "Step 2: Swallow Probiotic Capsule",
+            "desc": "Take 1 Femina Probiotic Capsule daily with a glass of water, ideally in the morning or with breakfast."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "3",
+            "name": "Step 3: Maintain Consistency",
+            "desc": "Use daily for at least 30 to 60 days to allow collagen amino acids to rebuild tissue structure and probiotics to establish gut colonies."
+          }
+        },
+        "h4": {
+          "type": "step",
+          "settings": {
+            "icon": "4",
+            "name": "Step 4: Feel Radiant & Light",
+            "desc": "Enjoy smoother skin texture, stronger nails, reduced bloating, and elevated daily energy."
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_tint": "#fce7f3",
+        "eyebrow": "Daily Ritual",
+        "title_pre": "How to take your",
+        "title_highlight": "Glow & Gut Combo",
+        "sub": "An effortless 2-step morning routine for radiant beauty and gut comfort."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "leaf",
+            "name": "Hydrolysed Bovine Collagen Peptides",
+            "amount": "10,000mg per serving",
+            "desc": "Type I & III bioactive collagen peptides engineered for high bio-solubility."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "shield",
+            "name": "10-Strain Probiotic Blend",
+            "amount": "10 Billion CFU",
+            "desc": "Lactobacillus & Bifidobacterium cultures tailored for gut & intimate balance."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "berry",
+            "name": "Cranberry Fruit Extract (PACs)",
+            "amount": "50mg per capsule",
+            "desc": "Rich in proanthocyanidins to support urinary tract wall resistance."
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "zap",
+            "name": "Velobiotics Micro-Shield",
+            "amount": "Patented Matrix",
+            "desc": "Polymer micro-shield encapsulating each individual probiotic culture."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_dark": "#831843",
+        "brand_tint": "#fce7f3",
+        "brand_light": "#fff1f2",
+        "eyebrow": "Active Formulation",
+        "title": "Clean, Bioavailable Nutrition",
+        "sub": "Formulated without artificial fillers, sugars, or hidden additives.",
+        "facts_image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/GlowandGutCombo.png?v=1775328667",
+        "facts_label": "Product Specifications",
+        "facts_foot": "Free from artificial colours, gluten, dairy, sugar, and synthetic preservatives."
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Probiotic Strain Count",
+            "percent": 10
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "Micro-Shield Strain Survival",
+            "percent": 90
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Collagen Bio-Solubility",
+            "percent": 100
+          }
+        },
+        "c4": {
+          "type": "stat",
+          "settings": {
+            "label": "Bundle Discount Savings",
+            "percent": 15
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_dark": "#831843",
+        "brand_tint": "#fce7f3",
+        "eyebrow": "Verifiable Quality",
+        "title_pre": "Science-first formulation",
+        "title_highlight": "you can trust",
+        "sub": "Rigorous batch testing and patented delivery technology for real results.",
+        "caveat": "*Based on independent laboratory analysis and clinical ingredient studies."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "almasi-probiotics-skin-hair-nails-60s",
+            "brand": "Almasi\u2122 Probiotics Skin Hair Nails 60s",
+            "rating": "4.8",
+            "reviews": "30+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "womens-daily-radiance-pack",
+            "brand": "Women's Daily Radiance Pack",
+            "rating": "4.8",
+            "reviews": "45+"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-intimate-starter-pack",
+            "brand": "Femina\u2122 Intimate Reset Kit",
+            "rating": "4.7",
+            "reviews": "399+"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_dark": "#831843",
+        "brand_tint": "#fce7f3",
+        "tint": true,
+        "eyebrow": "Complementary Care",
+        "title": "Explore Other Beauty & Wellness Packs",
+        "sub": "Targeted probiotic combos for women's radiance and vitality."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "",
+            "name": "Micro-Shield Protection",
+            "desc": "Patented polymer shielding protects live cultures through harsh gastric acidity."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "",
+            "name": "Bioactive Collagen Peptides",
+            "desc": "Hydrolysed for rapid enzyme cleavage and gut lining absorption."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "",
+            "name": "Clean & Hypoallergenic",
+            "desc": "Non-GMO, allergen-tested, and free from synthetic fillers or sugars."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3"
+      ],
+      "settings": {
+        "eyebrow": "Expert Endorsed",
+        "title_pre": "Formulated by medical doctors &",
+        "title_highlight": "microbiologists",
+        "sub": "Engineered to deliver real, science-backed health solutions."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "Dual Collagen + Probiotic Skin-Gut Protocol",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "Micro-shield around each bacterium",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "10,000mg Bioactive Hydrolysed Collagen",
+            "brand_state": "yes",
+            "b_state": "yes",
+            "c_state": "no"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "Cranberry Extract PACs for Intimate Support",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o5": {
+          "type": "row",
+          "settings": {
+            "feature": "100% Sugar-Free & Unflavoured Versatility",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_dark": "#831843",
+        "brand_tint": "#fce7f3",
+        "title": "How Glow & Gut Combo Outperforms",
+        "sub": "Comparison against generic beauty products.",
+        "col_features": "Wellness & Beauty Feature",
+        "col_brand": "Glow & Gut Combo",
+        "col_b": "Standard Collagen Powder",
+        "col_c": "Generic Probiotic Caps",
+        "cta_text": "Get Glow & Gut Combo",
+        "cta_note": "30-day money-back guarantee"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Reviews",
+        "title_pre": "Customer",
+        "title_highlight": "Feedback",
+        "sub": "Real reviews from verified buyers",
+        "scope": "product",
+        "show_stats": true
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "How much do I save with the Glow & Gut Combo?",
+            "answer": "<p>You save R108.79 (15% discount) compared to purchasing Almasi Probiotics Collagen Powder 200g (R419.95) and Femina Probiotic Capsules 30s (R299.95) individually.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "How do I take the Collagen Powder and Probiotic Capsules?",
+            "answer": "<p>Mix 1 scoop (10g) of Almasi Collagen Powder into coffee, tea, water, or a smoothie daily. Take 1 Femina Probiotic Capsule orally with water every morning.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "How soon will I see results for my skin, nails, and gut?",
+            "answer": "<p>Digestive comfort and reduced bloating are typically noticed within 7 to 14 days. Collagen benefits for skin hydration, smoothness, and nail strength are best seen after 30 to 60 days of consistent daily use.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Can I take this combo during pregnancy or while on medication?",
+            "answer": "<p>If you are pregnant, nursing, planning pregnancy, or taking prescription medication, please consult your healthcare professional before introducing new dietary supplements.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Do the probiotic capsules require refrigeration?",
+            "answer": "<p>No. Thanks to Velobiotics patented micro-shielding technology, individual bacteria are protected against heat, moisture, and light, making them 100% shelf-stable at room temperature.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "How does micro-shielding work?",
+            "answer": "<p>Our patented micro-encapsulation process creates a protective micro-shield around each bacterium (never the capsule shell alone). This ensures over 90% of live probiotic strains survive stomach acid and arrive safely in the gut to support nutrient bio-absorption. Learn more on <a href=\"/pages/what-is-microencapsulation\">how Velobiotics micro-shielding works</a>.</p>"
+          }
+        },
+        "q7": {
+          "type": "q",
+          "settings": {
+            "question": "What is your refund policy?",
+            "answer": "<p>We offer a 30-day money-back guarantee. If you are not satisfied with your purchase, contact our customer support team at support@velobiotics.com.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6",
+        "q7"
+      ],
+      "settings": {
+        "eyebrow": "Frequently Asked Questions",
+        "title_pre": "Everything you need to know about",
+        "title_highlight": "Glow & Gut Combo"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "shield",
+            "text": "30-Day Guarantee"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "truck",
+            "text": "Free SA Shipping > R400"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "lock",
+            "text": "Secure Checkout"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_dark": "#831843",
+        "brand_light": "#fff1f2",
+        "badge": "Dual Radiance & Gut Support",
+        "title_pre": "Transform your beauty & digestion",
+        "title_highlight": "from within",
+        "sub": "Combine bioactive hydrolysed collagen peptides with micro-shielded live probiotics in one discounted stack.",
+        "cta_text": "Add Glow & Gut Combo to Cart",
+        "cta_link": "#"
+      }
+    },
+    "science_strip": {
+      "type": "vb-science-strip",
+      "settings": {
+        "kicker": "The Science",
+        "title_pre": "Patented Micro-Shield",
+        "title_highlight": "Probiotic Delivery",
+        "sub": "Learn how micro-encapsulation delivers 100x more live cultures to support gut barrier and skin health.",
+        "all_text": "Read the Science",
+        "all_url": "/pages/what-is-microencapsulation",
+        "bg": "#fce7f3",
+        "pad_top": 40,
+        "pad_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "judgeme",
+    "faq",
+    "final",
+    "science_strip"
+  ]
+}

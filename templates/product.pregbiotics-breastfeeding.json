@@ -30,7 +30,7 @@
      "type": "benefit",
      "settings": {
       "icon": "🦠",
-      "text": "16-strain MEP probiotic blend"
+      "text": "16-strain <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP</a> probiotic blend"
      }
     },
     "b4": {
@@ -259,7 +259,7 @@
     "eyebrow": "The Solution",
     "title_pre": "Meet",
     "title_highlight": "PregBiotics™ Breastfeeding.",
-    "desc": "20 actives at clinical doses to replenish mum + nourish baby through breast milk. Higher calcium, higher zinc, fish-oil DHA + EPA, and our 16-strain MEP probiotic blend — engineered specifically for the breastfeeding season."
+    "desc": "20 actives at clinical doses to replenish mum + nourish baby through breast milk. Higher calcium, higher zinc, fish-oil DHA + EPA, and our 16-strain <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP</a> probiotic blend — engineered specifically for the breastfeeding season."
    }
   },
   "related": {
@@ -414,7 +414,7 @@
      "type": "step",
      "settings": {
       "icon": "🛡️",
-      "name": "MEP Armour Survives",
+      "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP</a> Armour Survives",
       "desc": "Velobiotics™ shield protects every culture and active."
      }
     },
@@ -799,7 +799,7 @@
     "eyebrow": "What's Inside",
     "title_pre": "The complete",
     "title_highlight": "breastfeeding daily.",
-    "sub": "23 actives at clinical doses + our 16-strain MEP probiotic blend + pharmaceutical-grade fish-oil soft gel. Engineered for the most demanding nutritional season of motherhood.",
+    "sub": "23 actives at clinical doses + our 16-strain <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP</a> probiotic blend + pharmaceutical-grade fish-oil soft gel. Engineered for the most demanding nutritional season of motherhood.",
     "show_badges": true,
     "badge_vegan": false,
     "badge_halaal": true,
@@ -969,7 +969,7 @@
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
       "icon_fallback": "✓",
-      "name": "Patented MEP Technology",
+      "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Patented MEP Technology</a>",
       "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
@@ -1029,7 +1029,7 @@
     "o4": {
      "type": "row",
      "settings": {
-      "feature": "16-Strain MEP Probiotic Blend",
+      "feature": "16-Strain <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP</a> Probiotic Blend",
       "brand_state": "yes",
       "b_state": "no",
       "c_state": "no"

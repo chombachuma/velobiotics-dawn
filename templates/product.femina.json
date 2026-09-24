@@ -237,11 +237,11 @@
     "brand_tint": "#fdf5fc",
     "image_url": "https://media.base44.com/images/public/69e1abc073bbccc7f63edacc/653a0d852_generated_image.png",
     "tag_value": "99%",
-    "tag_label": "Probiotics Don't Reach Your Gut",
+    "tag_label": "<a class=\"vb-sci-link\" href=\"/pages/probiotics-what-are-the-challenges\">Probiotics Don't Reach Your Gut</a>",
     "eyebrow": "The Problem",
     "title_pre": "Sound familiar?",
     "title_highlight": "You're not the problem — your probiotics are.",
-    "desc": "Most probiotics — and antibiotics — break down in stomach acid before they ever reach the places that matter. The result? A cycle of recurring intimate health issues that traditional treatment can't break."
+    "desc": "Most probiotics — and antibiotics — break down in <a class=\"vb-sci-link\" href=\"/pages/probiotics-tolerance-to-gastric-acid\">stomach acid</a> before they ever reach the places that matter. The result? A cycle of recurring intimate health issues that traditional treatment can't break."
    }
   },
   "solution": {
@@ -258,7 +258,7 @@
      "type": "point",
      "settings": {
       "icon": "✓",
-      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more probiotics reach your gut alive."
+      "text": "<strong><a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Velobiotics™ MEP technology</a></strong> — 1000× more probiotics reach your gut alive."
      }
     },
     "s3": {
@@ -474,7 +474,7 @@
       "icon": "🛡️",
       "name": "Velobiotics™ MEP Coating",
       "amount": "Patented",
-      "desc": "Supercritical CO₂ microencapsulation — 1000× more probiotics survive."
+      "desc": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Supercritical CO₂ microencapsulation</a> — 1000× more probiotics survive."
      }
     },
     "i4": {
@@ -662,7 +662,7 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "name": "Patented MEP Technology",
+      "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Patented MEP Technology</a>",
       "desc": "Microencapsulation with Supercritical CO₂."
      }
     },

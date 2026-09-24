@@ -228,7 +228,7 @@
      "type": "point",
      "settings": {
       "icon": "✓",
-      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach your gut alive."
+      "text": "<strong><a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Velobiotics™ MEP technology</a></strong> — 1000× more reach your gut alive."
      }
     },
     "s4": {
@@ -453,7 +453,7 @@
       "icon": "🛡️",
       "name": "Velobiotics™ MEP Coating",
       "amount": "Patented",
-      "desc": "Supercritical CO₂ microencapsulation — 1000× more survive."
+      "desc": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Supercritical CO₂ microencapsulation</a> — 1000× more survive."
      }
     },
     "i4": {
@@ -659,7 +659,7 @@
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
       "icon_fallback": "✓",
-      "name": "Patented MEP Technology",
+      "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Patented MEP Technology</a>",
       "desc": "Microencapsulation with Supercritical CO₂."
      }
     },

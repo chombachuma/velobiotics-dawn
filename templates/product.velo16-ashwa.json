@@ -218,7 +218,7 @@
      "type": "point",
      "settings": {
       "icon": "✓",
-      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
+      "text": "<strong>Velobiotics™ MEP technology</strong> — <a class=\"vb-sci-link\" href=\"/pages/probiotics-tolerance-to-gastric-acid\">1000× more reach you alive</a>."
      }
     },
     "s4": {
@@ -245,7 +245,7 @@
     "eyebrow": "The Solution",
     "title_pre": "Meet",
     "title_highlight": "Velo16™ Calm Biotics.",
-    "desc": "A once-daily capsule combining KSM-66 standardised ashwagandha (the most-studied form in clinical research) with 16 probiotic strains. Velobiotics™ MEP delivery means every withanolide reaches your system — for clinically-validated stress relief, deeper sleep, and balanced mood."
+    "desc": "A once-daily capsule combining KSM-66 standardised ashwagandha (the most-studied form in clinical research) with 16 probiotic strains. Velobiotics™ <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP delivery</a> means every withanolide reaches your system — for clinically-validated stress relief, deeper sleep, and balanced mood."
    }
   },
   "related": {
@@ -417,7 +417,7 @@
       "icon": "🛡️",
       "name": "Velobiotics™ MEP Coating",
       "amount": "Patented",
-      "desc": "Supercritical CO₂ — 1000× more withanolides reach you alive."
+      "desc": "Supercritical CO₂ — 1000× more withanolides <a class=\"vb-sci-link\" href=\"/pages/probiotics-tolerance-to-gastric-acid\">reach you alive</a>."
      }
     },
     "i4": {
@@ -605,7 +605,7 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "name": "Patented MEP Technology",
+      "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Patented MEP Technology</a>",
       "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
@@ -646,7 +646,7 @@
     "o2": {
      "type": "row",
      "settings": {
-      "feature": "Advanced Absorption (MEP)",
+      "feature": "Advanced Absorption (<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP</a>)",
       "brand_state": "yes",
       "b_state": "no",
       "c_state": "no"

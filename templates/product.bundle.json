@@ -37,7 +37,7 @@
      "type": "benefit",
      "settings": {
       "icon": "⚡",
-      "text": "1000× MEP delivery throughout"
+      "text": "1000× <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP delivery</a> throughout"
      }
     },
     "t1": {
@@ -231,7 +231,7 @@
      "type": "point",
      "settings": {
       "icon": "✓",
-      "text": "<strong>Velobiotics™ MEP delivery</strong> — 1000× more reach you alive."
+      "text": "<strong>Velobiotics™ <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP delivery</a></strong> — 1000× more reach you alive."
      }
     },
     "s4": {
@@ -409,7 +409,7 @@
      "type": "step",
      "settings": {
       "icon": "🛡️",
-      "name": "MEP Delivery",
+      "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP Delivery</a>",
       "desc": "Velobiotics™ tech protects every culture and active."
      }
     },
@@ -464,7 +464,7 @@
       "icon": "🛡️",
       "name": "Velobiotics™ MEP Coating",
       "amount": "Across all products",
-      "desc": "Supercritical CO₂ microencapsulation — 1000× more probiotics survive."
+      "desc": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Supercritical CO₂ microencapsulation</a> — 1000× more probiotics survive."
      }
     },
     "i4": {
@@ -652,7 +652,7 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "name": "Patented MEP Technology",
+      "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Patented MEP Technology</a>",
       "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
@@ -720,7 +720,7 @@
     "o5": {
      "type": "row",
      "settings": {
-      "feature": "Patented MEP Delivery",
+      "feature": "Patented <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP Delivery</a>",
       "brand_state": "yes",
       "b_state": "no",
       "c_state": "no"

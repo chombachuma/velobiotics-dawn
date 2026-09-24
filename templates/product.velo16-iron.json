@@ -225,7 +225,7 @@
      "type": "point",
      "settings": {
       "icon": "✓",
-      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
+      "text": "<strong>Velobiotics™ MEP technology</strong> — <a class=\"vb-sci-link\" href=\"/pages/probiotics-tolerance-to-gastric-acid\">1000× more reach you alive</a>."
      }
     }
    },
@@ -245,7 +245,7 @@
     "eyebrow": "The Solution",
     "title_pre": "Meet",
     "title_highlight": "Velo16™ Probiotics Iron.",
-    "desc": "A once-daily capsule combining iron bisglycinate (the gut-gentle form) with Vit C for 3× better absorption and 16 probiotic strains. Velobiotics™ MEP technology means no nausea, no constipation — just restored energy and clarity."
+    "desc": "A once-daily capsule combining iron bisglycinate (the gut-gentle form) with Vit C for 3× better absorption and 16 probiotic strains. <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Velobiotics™ MEP technology</a> means no nausea, no constipation — just restored energy and clarity."
    }
   },
   "related": {
@@ -605,7 +605,7 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "name": "Patented MEP Technology",
+      "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Patented MEP Technology</a>",
       "desc": "Microencapsulation with Supercritical CO₂."
      }
     },

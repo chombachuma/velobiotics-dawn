@@ -245,7 +245,7 @@
     "eyebrow": "The Solution",
     "title_pre": "Meet",
     "title_highlight": "Velo16™ Probiotics Vit C 1000mg.",
-    "desc": "A once-daily capsule combining a clinical 1000 mg dose of ascorbic acid with 16 probiotic strains, delivered by Velobiotics™ MEP technology — for stronger immunity, brighter skin, and antioxidant defence that actually reaches your cells."
+    "desc": "A once-daily capsule combining a clinical 1000 mg dose of ascorbic acid with 16 probiotic strains, delivered by <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Velobiotics™ MEP technology</a> — for stronger immunity, brighter skin, and antioxidant defence that actually reaches your cells."
    }
   },
   "related": {
@@ -429,7 +429,7 @@
       "icon": "🛡️",
       "name": "Velobiotics™ MEP Coating",
       "amount": "Patented",
-      "desc": "Supercritical CO₂ microencapsulation — 1000× more survive."
+      "desc": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Supercritical CO₂ microencapsulation</a> — 1000× more survive."
      }
     },
     "i4": {
@@ -635,7 +635,7 @@
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
       "icon_fallback": "✓",
-      "name": "Patented MEP Technology",
+      "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Patented MEP Technology</a>",
       "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
@@ -677,7 +677,7 @@
     "o2": {
      "type": "row",
      "settings": {
-      "feature": "Advanced Absorption (MEP)",
+      "feature": "Advanced Absorption (<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP</a>)",
       "brand_state": "yes",
       "b_state": "no",
       "c_state": "no"

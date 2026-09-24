@@ -225,7 +225,7 @@
      "type": "point",
      "settings": {
       "icon": "✓",
-      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
+      "text": "<strong>Velobiotics™ MEP technology</strong> — <a class=\"vb-sci-link\" href=\"/pages/probiotics-tolerance-to-gastric-acid\">1000× more reach you alive</a>."
      }
     }
    },
@@ -245,7 +245,7 @@
     "eyebrow": "The Solution",
     "title_pre": "Meet",
     "title_highlight": "Velo16™ Creatine Monohydrate.",
-    "desc": "A daily 5 g scoop of pharmaceutical-grade micronised creatine monohydrate, with 16 probiotic strains. Velobiotics™ MEP delivery means no bloat, no stomach issues — just unlocked strength, power, recovery, and cognitive sharpness."
+    "desc": "A daily 5 g scoop of pharmaceutical-grade micronised creatine monohydrate, with 16 probiotic strains. Velobiotics™ <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP delivery</a> means no bloat, no stomach issues — just unlocked strength, power, recovery, and cognitive sharpness."
    }
   },
   "related": {
@@ -388,7 +388,7 @@
      "type": "step",
      "settings": {
       "icon": "🛡️",
-      "name": "MEP Armour Survives",
+      "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP</a> Armour Survives",
       "desc": "Velobiotics™ shield protects creatine + probiotics."
      }
     },
@@ -397,7 +397,7 @@
      "settings": {
       "icon": "🎯",
       "name": "Delivered to Your Muscles",
-      "desc": "Creatine + 1000× more probiotics reach you alive."
+      "desc": "Creatine + 1000× more probiotics <a class=\"vb-sci-link\" href=\"/pages/probiotics-tolerance-to-gastric-acid\">reach you alive</a>."
      }
     },
     "h4": {
@@ -639,7 +639,7 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "name": "Patented MEP Technology",
+      "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Patented MEP Technology</a>",
       "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
@@ -698,7 +698,7 @@
     "o4": {
      "type": "row",
      "settings": {
-      "feature": "No Bloat (MEP)",
+      "feature": "No Bloat (<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP</a>)",
       "brand_state": "yes",
       "b_state": "no",
       "c_state": "no"

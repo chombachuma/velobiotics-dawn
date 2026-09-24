@@ -245,7 +245,7 @@
     "eyebrow": "The Solution",
     "title_pre": "Meet",
     "title_highlight": "Velo16™ Mind Focus.",
-    "desc": "A once-daily capsule combining premium 8:1 standardised Lion's Mane extract with 16 probiotic strains. Velobiotics™ MEP delivery means the hericenones and erinacines that nourish your brain actually reach it — for sharper memory, focus, and long-term cognitive health."
+    "desc": "A once-daily capsule combining premium 8:1 standardised Lion's Mane extract with 16 probiotic strains. Velobiotics™ <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP delivery</a> means the hericenones and erinacines that nourish your brain actually reach it — for sharper memory, focus, and long-term cognitive health."
    }
   },
   "related": {
@@ -605,7 +605,7 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "name": "Patented MEP Technology",
+      "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Patented MEP Technology</a>",
       "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
@@ -646,7 +646,7 @@
     "o2": {
      "type": "row",
      "settings": {
-      "feature": "Advanced Absorption (MEP)",
+      "feature": "Advanced Absorption (<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP</a>)",
       "brand_state": "yes",
       "b_state": "no",
       "c_state": "no"

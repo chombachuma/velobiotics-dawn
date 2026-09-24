@@ -235,7 +235,7 @@
      "type": "point",
      "settings": {
       "icon": "✓",
-      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
+      "text": "<strong><a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Velobiotics™ MEP technology</a></strong> — 1000× more reach you alive."
      }
     }
    },
@@ -632,7 +632,7 @@
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
       "icon_fallback": "✓",
-      "name": "Patented MEP Technology",
+      "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Patented MEP Technology</a>",
       "desc": "Microencapsulation with Supercritical CO₂."
      }
     },

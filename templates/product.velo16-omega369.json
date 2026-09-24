@@ -245,7 +245,7 @@
     "eyebrow": "The Solution",
     "title_pre": "Meet",
     "title_highlight": "Velo16™ Omega 3, 6 & 9.",
-    "desc": "A once-daily softgel combining all three essential fatty acids in clinical balance, with 16 probiotic strains and Velobiotics™ MEP delivery. The complete inflammatory-balance, skin-glow, brain-health, and cardiovascular blend in a single capsule."
+    "desc": "A once-daily softgel combining all three essential fatty acids in clinical balance, with 16 probiotic strains and Velobiotics™ <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP delivery</a>. The complete inflammatory-balance, skin-glow, brain-health, and cardiovascular blend in a single capsule."
    }
   },
   "related": {
@@ -388,7 +388,7 @@
      "type": "step",
      "settings": {
       "icon": "🛡️",
-      "name": "MEP Armour Survives",
+      "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP</a> Armour Survives",
       "desc": "Velobiotics™ shield — no fish burps, no rancid release."
      }
     },
@@ -397,7 +397,7 @@
      "settings": {
       "icon": "🎯",
       "name": "Delivered to Your Cells",
-      "desc": "All three omegas + 1000× more probiotics reach you alive."
+      "desc": "All three omegas + 1000× more probiotics <a class=\"vb-sci-link\" href=\"/pages/probiotics-tolerance-to-gastric-acid\">reach you alive</a>."
      }
     },
     "h4": {
@@ -639,7 +639,7 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "name": "Patented MEP Technology",
+      "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Patented MEP Technology</a>",
       "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
@@ -680,7 +680,7 @@
     "o2": {
      "type": "row",
      "settings": {
-      "feature": "No Fish Burps (MEP)",
+      "feature": "No Fish Burps (<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP</a>)",
       "brand_state": "yes",
       "b_state": "no",
       "c_state": "no"

@@ -471,7 +471,7 @@
       "icon": "🛡️",
       "name": "Velobiotics™ MEP Coating",
       "amount": "Across both",
-      "desc": "1000× more probiotics reach you alive."
+      "desc": "1000× more probiotics <a class=\"vb-sci-link\" href=\"/pages/probiotics-tolerance-to-gastric-acid\">reach you alive</a>."
      }
     },
     "i5": {
@@ -650,7 +650,7 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "name": "Patented MEP Technology",
+      "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Patented MEP Technology</a>",
       "desc": "Microencapsulation with Supercritical CO₂."
      }
     },

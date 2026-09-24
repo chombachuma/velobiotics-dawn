@@ -229,7 +229,7 @@
      "type": "point",
      "settings": {
       "icon": "✓",
-      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
+      "text": "<strong><a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Velobiotics™ MEP technology</a></strong> — 1000× more reach you alive."
      }
     },
     "s4": {
@@ -256,7 +256,7 @@
     "eyebrow": "The Solution",
     "title_pre": "Meet",
     "title_highlight": "Her-Biotics™ Original.",
-    "desc": "The all-in-one women's daily. 25 essential vitamins, minerals, and beauty actives + 16-strain MEPβ probiotic blend, delivered by Velobiotics™ technology — 1000× more reach your gut alive, where they go to work on energy, glow, hormones, and immunity."
+    "desc": "The all-in-one women's daily. 25 essential vitamins, minerals, and beauty actives + 16-strain MEPβ probiotic blend, delivered by Velobiotics™ technology — 1000× more <a class=\"vb-sci-link\" href=\"/pages/probiotics-tolerance-to-gastric-acid\">reach your gut alive</a>, where they go to work on energy, glow, hormones, and immunity."
    }
   },
   "related": {
@@ -428,7 +428,7 @@
       "icon": "🛡️",
       "name": "Velobiotics™ MEP Coating",
       "amount": "Patented",
-      "desc": "Supercritical CO₂ microencapsulation — 1000× more survive."
+      "desc": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Supercritical CO₂ microencapsulation</a> — 1000× more survive."
      }
     },
     "i4": {
@@ -708,7 +708,7 @@
     "brand_tint": "#fff5f3",
     "eyebrow": "Full transparency",
     "title": "25 Essential Ingredients for Women's Health & Vitality",
-    "sub": "Every ingredient. Every milligram. Backed by the patented Velobiotics™ MEP delivery mechanism.",
+    "sub": "Every ingredient. Every milligram. Backed by the patented Velobiotics™ <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP delivery mechanism</a>.",
     "banner_title": "Supplement Facts",
     "banner_meta": "Lab-tested · Doctor-formulated",
     "servings_per_container": "60 Capsules",
@@ -863,7 +863,7 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "name": "Patented MEP Technology",
+      "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Patented MEP Technology</a>",
       "desc": "Microencapsulation with Supercritical CO₂."
      }
     },

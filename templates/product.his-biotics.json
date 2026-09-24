@@ -229,7 +229,7 @@
      "type": "point",
      "settings": {
       "icon": "✓",
-      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
+      "text": "<strong><a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Velobiotics™ MEP technology</a></strong> — 1000× more reach you alive."
      }
     },
     "s4": {
@@ -256,7 +256,7 @@
     "eyebrow": "The Solution",
     "title_pre": "Meet",
     "title_highlight": "His-Biotics™ Original.",
-    "desc": "The all-in-one men's daily. Zinc, magnesium, B-complex + 16 clinically researched probiotic strains, delivered by Velobiotics™ technology — 1000× more reach your gut alive, where they fuel energy, focus, recovery, and performance."
+    "desc": "The all-in-one men's daily. Zinc, magnesium, B-complex + 16 clinically researched probiotic strains, delivered by Velobiotics™ technology — 1000× more <a class=\"vb-sci-link\" href=\"/pages/probiotics-tolerance-to-gastric-acid\">reach your gut alive</a>, where they fuel energy, focus, recovery, and performance."
    }
   },
   "related": {
@@ -418,7 +418,7 @@
       "icon": "🛡️",
       "name": "Velobiotics™ MEP Coating",
       "amount": "Patented",
-      "desc": "Supercritical CO₂ microencapsulation — 1000× more survive."
+      "desc": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Supercritical CO₂ microencapsulation</a> — 1000× more survive."
      }
     },
     "i4": {
@@ -606,7 +606,7 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "name": "Patented MEP Technology",
+      "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Patented MEP Technology</a>",
       "desc": "Microencapsulation with Supercritical CO₂."
      }
     },

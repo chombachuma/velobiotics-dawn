@@ -245,7 +245,7 @@
     "eyebrow": "The Solution",
     "title_pre": "Meet",
     "title_highlight": "Velo16™ Digestive Enzymes Complex.",
-    "desc": "A full-spectrum enzyme blend (Papain, Bromelain, Amylase, Lipase) with ginger root and 16 probiotic strains. Velobiotics™ MEP delivery means enzymes survive stomach acid to work where they're needed — for comfort after every meal."
+    "desc": "A full-spectrum enzyme blend (Papain, Bromelain, Amylase, Lipase) with ginger root and 16 probiotic strains. Velobiotics™ <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP delivery</a> means enzymes survive stomach acid to work where they're needed — for comfort after every meal."
    }
   },
   "related": {
@@ -605,7 +605,7 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "name": "Patented MEP Technology",
+      "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Patented MEP Technology</a>",
       "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
@@ -664,7 +664,7 @@
     "o4": {
      "type": "row",
      "settings": {
-      "feature": "Advanced Absorption (MEP)",
+      "feature": "Advanced Absorption (<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP</a>)",
       "brand_state": "yes",
       "b_state": "no",
       "c_state": "no"

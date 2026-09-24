@@ -246,7 +246,7 @@
     "eyebrow": "The Solution",
     "title_pre": "Meet",
     "title_highlight": "Velo16™ Apple Cider Capsules.",
-    "desc": "A once-daily capsule delivering 500 mg concentrated apple cider vinegar (equivalent to a tablespoon of liquid) + 16 probiotic strains. Velobiotics™ MEP technology means no throat burn, no enamel damage — just blood-sugar balance, metabolism, and digestive comfort."
+    "desc": "A once-daily capsule delivering 500 mg concentrated apple cider vinegar (equivalent to a tablespoon of liquid) + 16 probiotic strains. <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Velobiotics™ MEP technology</a> means no throat burn, no enamel damage — just blood-sugar balance, metabolism, and digestive comfort."
    }
   },
   "related": {
@@ -606,7 +606,7 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "name": "Patented MEP Technology",
+      "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Patented MEP Technology</a>",
       "desc": "Enamel-safe encapsulation with Supercritical CO₂."
      }
     },

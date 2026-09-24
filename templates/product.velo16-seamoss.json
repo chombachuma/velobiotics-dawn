@@ -226,7 +226,7 @@
      "type": "point",
      "settings": {
       "icon": "✓",
-      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
+      "text": "<strong>Velobiotics™ MEP technology</strong> — <a class=\"vb-sci-link\" href=\"/pages/probiotics-tolerance-to-gastric-acid\">1000× more reach you alive</a>."
      }
     }
    },
@@ -246,7 +246,7 @@
     "eyebrow": "The Solution",
     "title_pre": "Meet",
     "title_highlight": "Velo16™ Sea Moss.",
-    "desc": "A once-daily capsule of wildcrafted Irish sea moss naturally containing 92 minerals + 16 probiotic strains. Velobiotics™ MEP delivery means thyroid balance, glowing skin, immune resilience, and mineral synergy — all from one ocean source."
+    "desc": "A once-daily capsule of wildcrafted Irish sea moss naturally containing 92 minerals + 16 probiotic strains. Velobiotics™ <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP delivery</a> means thyroid balance, glowing skin, immune resilience, and mineral synergy — all from one ocean source."
    }
   },
   "related": {
@@ -389,7 +389,7 @@
      "type": "step",
      "settings": {
       "icon": "🛡️",
-      "name": "MEP Armour Survives",
+      "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP</a> Armour Survives",
       "desc": "Velobiotics™ shield protects sea moss + probiotics."
      }
     },
@@ -398,7 +398,7 @@
      "settings": {
       "icon": "🎯",
       "name": "Delivered to Your Cells",
-      "desc": "92 minerals + 1000× more probiotics reach you alive."
+      "desc": "92 minerals + 1000× more probiotics <a class=\"vb-sci-link\" href=\"/pages/probiotics-tolerance-to-gastric-acid\">reach you alive</a>."
      }
     },
     "h4": {
@@ -452,7 +452,7 @@
       "icon": "🛡️",
       "name": "Velobiotics™ MEP Coating",
       "amount": "Patented",
-      "desc": "Supercritical CO₂ — 1000× more reach you alive."
+      "desc": "Supercritical CO₂ — <a class=\"vb-sci-link\" href=\"/pages/probiotics-tolerance-to-gastric-acid\">1000× more reach you alive</a>."
      }
     },
     "i4": {
@@ -640,7 +640,7 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "name": "Patented MEP Technology",
+      "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Patented MEP Technology</a>",
       "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
@@ -699,7 +699,7 @@
     "o4": {
      "type": "row",
      "settings": {
-      "feature": "Advanced Absorption (MEP)",
+      "feature": "Advanced Absorption (<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP</a>)",
       "brand_state": "yes",
       "b_state": "no",
       "c_state": "no"

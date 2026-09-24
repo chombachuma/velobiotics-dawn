@@ -226,7 +226,7 @@
      "type": "point",
      "settings": {
       "icon": "✓",
-      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
+      "text": "<strong>Velobiotics™ MEP technology</strong> — <a class=\"vb-sci-link\" href=\"/pages/probiotics-tolerance-to-gastric-acid\">1000× more reach you alive</a>."
      }
     }
    },
@@ -246,7 +246,7 @@
     "eyebrow": "The Solution",
     "title_pre": "Meet",
     "title_highlight": "Velo16™ Moringa.",
-    "desc": "A once-daily scoop of premium moringa oleifera leaf powder + 16 probiotic strains. Velobiotics™ MEP delivery ensures peak nutrient absorption — for sustained energy, antioxidant defence, and full-body wellness."
+    "desc": "A once-daily scoop of premium moringa oleifera leaf powder + 16 probiotic strains. Velobiotics™ <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP delivery</a> ensures peak nutrient absorption — for sustained energy, antioxidant defence, and full-body wellness."
    }
   },
   "related": {
@@ -418,7 +418,7 @@
       "icon": "🛡️",
       "name": "Velobiotics™ MEP Coating",
       "amount": "Patented",
-      "desc": "Supercritical CO₂ — 1000× more reach you alive."
+      "desc": "Supercritical CO₂ — <a class=\"vb-sci-link\" href=\"/pages/probiotics-tolerance-to-gastric-acid\">1000× more reach you alive</a>."
      }
     },
     "i4": {
@@ -606,7 +606,7 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "name": "Patented MEP Technology",
+      "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Patented MEP Technology</a>",
       "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
@@ -647,7 +647,7 @@
     "o2": {
      "type": "row",
      "settings": {
-      "feature": "Advanced Absorption (MEP)",
+      "feature": "Advanced Absorption (<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP</a>)",
       "brand_state": "yes",
       "b_state": "no",
       "c_state": "no"

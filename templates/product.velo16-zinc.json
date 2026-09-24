@@ -218,7 +218,7 @@
      "type": "point",
      "settings": {
       "icon": "✓",
-      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more reach you alive."
+      "text": "<strong>Velobiotics™ MEP technology</strong> — <a class=\"vb-sci-link\" href=\"/pages/probiotics-tolerance-to-gastric-acid\">1000× more reach you alive</a>."
      }
     },
     "s4": {
@@ -245,7 +245,7 @@
     "eyebrow": "The Solution",
     "title_pre": "Meet",
     "title_highlight": "Velo16™ Probiotics Zinc.",
-    "desc": "A once-daily capsule combining picolinate zinc — the most bioavailable form clinically studied — with 16 probiotic strains. Velobiotics™ MEP delivery means stronger immunity, clearer skin, faster recovery, and better testosterone support."
+    "desc": "A once-daily capsule combining picolinate zinc — the most bioavailable form clinically studied — with 16 probiotic strains. Velobiotics™ <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP delivery</a> means stronger immunity, clearer skin, faster recovery, and better testosterone support."
    }
   },
   "related": {
@@ -417,7 +417,7 @@
       "icon": "🛡️",
       "name": "Velobiotics™ MEP Coating",
       "amount": "Patented",
-      "desc": "Supercritical CO₂ — 1000× more zinc reaches you alive."
+      "desc": "Supercritical CO₂ — 1000× more zinc <a class=\"vb-sci-link\" href=\"/pages/probiotics-tolerance-to-gastric-acid\">reaches you alive</a>."
      }
     },
     "i4": {
@@ -605,7 +605,7 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "name": "Patented MEP Technology",
+      "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Patented MEP Technology</a>",
       "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
@@ -646,7 +646,7 @@
     "o2": {
      "type": "row",
      "settings": {
-      "feature": "Advanced Absorption (MEP)",
+      "feature": "Advanced Absorption (<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP</a>)",
       "brand_state": "yes",
       "b_state": "no",
       "c_state": "no"

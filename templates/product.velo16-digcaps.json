@@ -195,7 +195,7 @@
     "eyebrow": "The Problem",
     "title_pre": "Your gut",
     "title_highlight": "is the foundation of everything.",
-    "desc": "Most probiotics use 1-3 strains and barely survive stomach acid. The result: ongoing bloating, weak immunity, mood dips. There's a smarter foundation."
+    "desc": "Most probiotics use 1-3 strains and barely <a class=\"vb-sci-link\" href=\"/pages/probiotics-tolerance-to-gastric-acid\">survive stomach acid</a>. The result: ongoing bloating, weak immunity, mood dips. There's a smarter foundation."
    }
   },
   "solution": {
@@ -219,7 +219,7 @@
      "type": "point",
      "settings": {
       "icon": "✓",
-      "text": "<strong>Velobiotics™ MEP technology</strong> — 1000× more survive."
+      "text": "<strong>Velobiotics™ MEP technology</strong> — <a class=\"vb-sci-link\" href=\"/pages/probiotics-tolerance-to-gastric-acid\">1000× more survive</a>."
      }
     },
     "s4": {
@@ -246,7 +246,7 @@
     "eyebrow": "The Solution",
     "title_pre": "Meet",
     "title_highlight": "Velo16™ Probiotics Digestive Capsules.",
-    "desc": "A once-daily capsule combining 16 clinically-researched probiotic strains at clinical-grade dosing, delivered by Velobiotics™ MEP technology. 1000× more reach your gut alive, where they restore harmony for digestion, immunity, mood."
+    "desc": "A once-daily capsule combining 16 clinically-researched probiotic strains at clinical-grade dosing, delivered by <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Velobiotics™ MEP technology</a>. 1000× more reach your gut alive, where they restore harmony for digestion, immunity, mood."
    }
   },
   "related": {
@@ -409,7 +409,7 @@
       "icon": "🛡️",
       "name": "Velobiotics™ MEP Coating",
       "amount": "Patented",
-      "desc": "Supercritical CO₂ microencapsulation — 1000× more survive."
+      "desc": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Supercritical CO₂ microencapsulation</a> — 1000× more survive."
      }
     },
     "i3": {
@@ -596,7 +596,7 @@
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg?v=1763353073",
-      "name": "Patented MEP Technology",
+      "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Patented MEP Technology</a>",
       "desc": "Microencapsulation with Supercritical CO₂."
      }
     },
@@ -646,7 +646,7 @@
     "o3": {
      "type": "row",
      "settings": {
-      "feature": "Advanced Absorption (MEP)",
+      "feature": "Advanced Absorption (<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP</a>)",
       "brand_state": "yes",
       "b_state": "no",
       "c_state": "no"

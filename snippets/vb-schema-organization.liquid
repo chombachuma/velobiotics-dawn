@@ -1,0 +1,38 @@
+{%- comment -%} VB Organization Schema {%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": {{ shop.url | append: "/#organization" | json }},
+  "name": "Velobiotics",
+  "legalName": "Velobiotics (Pty) Ltd",
+  "url": {{ shop.url | json }},
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://www.velobiotics.com/cdn/shop/files/Velobiotics_Logo_-_Horizontal_1200x400_5a948102-4f67-4bab-bf44-78b1106e5c05.png"
+  },
+  "email": "support@velobiotics.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "10 Kruin Street, Klopperpark",
+    "addressLocality": "Germiston",
+    "postalCode": "1401",
+    "addressCountry": "ZA",
+    "organizationName": "Velobiotics (Pty) Ltd"
+  },
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "email": "support@velobiotics.com",
+      "availableLanguage": ["English"]
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/velobiotics",
+    "https://www.instagram.com/velobiotics",
+    "https://www.youtube.com/@velobiotics",
+    "https://www.tiktok.com/@velobiotics"
+  ]
+}
+</script>

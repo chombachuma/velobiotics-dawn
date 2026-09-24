@@ -1,0 +1,34 @@
+{%- comment -%} VB Article / WebPage Schema for Science and About pages {%- endcomment -%}
+{%- if template.name == 'page' and page -%}
+{%- assign science_handles = "what-are-probiotics,what-is-microencapsulation,probiotics-what-are-the-challenges,probiotics-tolerance-to-gastric-acid,heat-stability-and-shelf-life,health-benefits-of-probiotics,microencapsulation-research,new-about-us,velobiotics-story,custom-about-us" | split: "," -%}
+{%- if science_handles contains page.handle -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{% if page.handle == 'new-about-us' or page.handle == 'velobiotics-story' %}AboutPage{% else %}Article{% endif %}",
+  "@id": {{ shop.url | append: page.url | append: "#article" | json }},
+  "headline": {{ page.title | json }},
+  "name": {{ page.title | json }},
+  "description": {{ page.content | strip_html | strip_newlines | truncate: 250 | default: page.title | json }},
+  "url": {{ shop.url | append: page.url | json }},
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ shop.url | append: page.url | json }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Velobiotics",
+    "url": {{ shop.url | json }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.velobiotics.com/cdn/shop/files/Velobiotics_Logo_-_Horizontal_1200x400_5a948102-4f67-4bab-bf44-78b1106e5c05.png"
+    }
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Velobiotics Medical & Scientific Team"
+  }
+}
+</script>
+{%- endif -%}
+{%- endif -%}

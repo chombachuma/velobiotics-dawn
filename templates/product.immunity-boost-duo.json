@@ -1,0 +1,732 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🍓",
+            "text": "BioGain™ Strawberry Probiotic Meal 400g"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🍊",
+            "text": "Velo16™ Probiotics Vitamin C 60 Capsules"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "💰",
+            "text": "Save R59.03 vs buying separately"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🛡️",
+            "text": "Micro-shielded delivery protecting probiotics"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "brand_label": "Velobiotics™ Immunity Boost Duo (Strawberry)",
+        "rating": "4.6",
+        "review_count": "24 reviews",
+        "hook": "Complete immune and gut defense in one duo. Combines BioGain™ Strawberry Probiotic Meal (400g) and Velo16™ Probiotics Vitamin C (60 capsules) for high-dose Vitamin C, protein, and micro-shielded probiotics. Save R59.03 vs buying separately.",
+        "ship_note": "Ships worldwide · Free shipping over threshold · 30-day money-back guarantee",
+        "show_subscription": true,
+        "tier_unit": "Pack",
+        "tier_unit_plural": "Packs",
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
+    },
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Suffiyaan+Campbell&background=4d8c44&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Suffiyaan Campbell",
+            "meta": "Verified Buyer · BioGain™ Strawberry",
+            "quote": "The best ever probiotic meal replacement. Great taste and excellent support for my digestion."
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Sipho+M&background=7eb375&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Sipho M.",
+            "meta": "Verified Buyer · Velo16™ Vitamin C",
+            "quote": "Velo16 Vitamin C keeps my immune system supported all season long. High quality capsule."
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Anonymous+Customer&background=2e5d28&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Anonymous",
+            "meta": "Verified Buyer · BioGain™ Strawberry",
+            "quote": "Smooth strawberry taste and love that it includes micro-shielded probiotics."
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "eyebrow": "★ Verified Judge.me Reviews",
+        "title": "What customers say about component products"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Vitamin C alone</strong> — lacks active probiotic strains to support gut nutrient absorption."
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Buying singles separately</strong> — costs R466.95 (BioGain Strawberry R167.00 + Velo16 Vit C R299.95)."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Unprotected probiotics</strong> — stomach acid destroys unprotected cultures before reaching the gut."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#4d8c44",
+        "brand_tint": "#eef7ec",
+        "image_url": "",
+        "tag_value": "Dual Action",
+        "tag_label": "Cellular + Gut Defense",
+        "eyebrow": "Why pair Vitamin C with Probiotics?",
+        "title_pre": "Single supplements,",
+        "title_highlight": "incomplete defense.",
+        "desc": "Taking Vitamin C alone supports immunity but misses gut barrier wellness, where over 70% of immune cells reside."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>BioGain™ Strawberry 400g</strong> — 10 probiotic strains + 15g whey protein per serving."
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Velo16™ Vitamin C 60s</strong> — High-potency Vitamin C with micro-shielded probiotic bacteria."
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Micro-shield technology</strong> — A protective shield around each bacterium ensures delivery to the gut."
+          }
+        },
+        "s4": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>True Bundle Value</strong> — Duo price R407.92 vs component sum R466.95 (save R59.03)."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#4d8c44",
+        "brand_tint": "#eef7ec",
+        "image_url": "",
+        "tag_value": "Save R59.03",
+        "tag_label": "Daily Immune & Gut Ritual",
+        "eyebrow": "The Immunity Boost Duo",
+        "title_pre": "High-dose Vitamin C,",
+        "title_highlight": "micro-shielded probiotics.",
+        "desc": "Combines BioGain™ Strawberry Probiotic Meal and Velo16™ Vitamin C for dual-action immune and digestive support."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "biogain-probiotic-meal",
+            "brand": "BioGain™ Strawberry 400g",
+            "rating": "4.6",
+            "reviews": "24 reviews"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-vitamin-c",
+            "brand": "Velo16™ Probiotics Vitamin C 60s",
+            "rating": "4.8",
+            "reviews": "15 reviews"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "tint": false,
+        "eyebrow": "What's inside",
+        "title": "The two products in this duo",
+        "sub": "Each item is a full retail product with tested, micro-shielded probiotic cultures."
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "f1": {
+          "type": "feat",
+          "settings": {
+            "icon": "🍓",
+            "name": "BioGain™ Meal Nutrition",
+            "desc": "Delicious strawberry probiotic meal shake supplying protein and active gut cultures."
+          }
+        },
+        "f2": {
+          "type": "feat",
+          "settings": {
+            "icon": "🍊",
+            "name": "High-Potency Vitamin C",
+            "desc": "Essential antioxidant support for cellular immune defense and overall vitality."
+          }
+        },
+        "f3": {
+          "type": "feat",
+          "settings": {
+            "icon": "🛡️",
+            "name": "Micro-Shield Technology",
+            "desc": "Micro-shield around each bacterium protects live cultures through harsh stomach acid."
+          }
+        },
+        "f4": {
+          "type": "feat",
+          "settings": {
+            "icon": "💰",
+            "name": "Save R59.03",
+            "desc": "Duo price R407.92 vs component sum R466.95 bought individually."
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_tint": "#eef7ec",
+        "eyebrow": "Why choose the duo",
+        "title_pre": "Targeted nutrition,",
+        "title_highlight": "synergistic protection.",
+        "sub": "Key advantages of combining BioGain™ Strawberry with Velo16™ Vitamin C."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "🥤",
+            "name": "1. BioGain™ Shake",
+            "desc": "Mix 1 serving of BioGain™ Strawberry with water or milk daily."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "💊",
+            "name": "2. Velo16™ Vitamin C",
+            "desc": "Take 1 Velo16™ Vitamin C capsule daily with water."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "🛡️",
+            "name": "3. Micro-Shield Delivery",
+            "desc": "Active bacteria arrive safely in the gut thanks to micro-shield protection."
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_tint": "#eef7ec",
+        "eyebrow": "Daily Ritual",
+        "title_pre": "Simple daily steps,",
+        "title_highlight": "maximum defense.",
+        "sub": "Incorporate into your morning or daily routine."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🍓",
+            "name": "BioGain™ Probiotics Meal Strawberry (400g)",
+            "amount": "1 Tub (400g)",
+            "desc": "10 probiotic strains, 15g whey protein per serving, strawberry flavor."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🍊",
+            "name": "Velo16™ Probiotics Vitamin C (60 Capsules)",
+            "amount": "1 Bottle (60s)",
+            "desc": "High-dose Vitamin C combined with micro-shielded probiotic cultures."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🛡️",
+            "name": "Velobiotics™ Micro-Shield Protection",
+            "amount": "Both Products",
+            "desc": "Protective micro-shield around each bacterium ensures gut survival."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "brand_light": "#7eb375",
+        "eyebrow": "Duo Contents",
+        "title": "Pack Contents & Active Formula",
+        "sub": "Full-size retail components with micro-shielded probiotics.",
+        "facts_image_url": "",
+        "facts_label": "Pack contents",
+        "facts_foot": "Lab-tested · Doctor-formulated · Full transparency"
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Micro-shielded bacterial survival",
+            "percent": 100
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "Bundle discount savings (R59.03)",
+            "percent": 13
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Authentic component reviews",
+            "percent": 100
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "eyebrow": "Verifiable Quality",
+        "title_pre": "Proven formula,",
+        "title_highlight": "guaranteed savings",
+        "sub": "Quality metrics for the Immunity Boost Duo.",
+        "caveat": "Judge.me verified reviews, 10 reviews, 5.0 average. Individual results may vary."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "immunity-boost-duo-vanilla",
+            "brand": "Immunity Boost Duo - Vanilla",
+            "rating": "4.6",
+            "reviews": "20+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gut-reset-bloat-control-pack",
+            "brand": "Gut Reset & Bloat Control Pack",
+            "rating": "5.0",
+            "reviews": "10+"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "womens-daily-radiance-pack",
+            "brand": "Women's Daily Radiance Pack",
+            "rating": "4.8",
+            "reviews": "15+"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "tint": true,
+        "eyebrow": "Explore More",
+        "title": "Other bundles you may like",
+        "sub": "Discover complementary packs for your health goals."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg",
+            "name": "Clinically studied strains",
+            "desc": "10 strains in Femina™, 16 in Velo16™, each with published human research."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg",
+            "name": "Doctor-designed",
+            "desc": "Formulated by Dr Chomba Chuma, MD, and made in SAHPRA-aware facilities."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg",
+            "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Patented MEP Technology</a>",
+            "desc": "Microencapsulation with Supercritical CO₂, studied in three peer-reviewed papers."
+          }
+        },
+        "d4": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg",
+            "name": "Batch tested",
+            "desc": "Every batch is lab-tested for live count and purity."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3",
+        "d4"
+      ],
+      "settings": {
+        "eyebrow": "Trusted by Doctors. Proven by Science.",
+        "title_pre": "Quality you can",
+        "title_highlight": "trust.",
+        "sub": "Built on peer-reviewed actives, medical formulations, and SAHPRA-aware manufacturing."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "Synergistic Vitamin C + Probiotics",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "Micro-shielded bacteria (1000x delivery)",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "True bundle savings (Save R59.03)",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "Full-size 400g meal shake + 60s capsules",
+            "brand_state": "yes",
+            "b_state": "yes",
+            "c_state": "no"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "title": "Why Immunity Boost Duo outperforms",
+        "sub": "Comparing our micro-shielded duo with standard single supplements.",
+        "col_features": "Features",
+        "col_brand": "Couple Pack",
+        "col_b": "Two singles",
+        "col_c": "One generic probiotic",
+        "cta_text": "Add Couple Pack to Cart",
+        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "scope": "product",
+        "show_stats": true,
+        "eyebrow": "Real Reviews",
+        "title_pre": "What couples",
+        "title_highlight": "are saying",
+        "sub": "Verified reviews collected independently by Judge.me from customers who bought this pack."
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "What is inside the Immunity Boost Duo?",
+            "answer": "<p>The Immunity Boost Duo includes 1x BioGain™ Probiotics Meal Strawberry 400g and 1x Velo16™ Probiotics Vitamin C (60 capsules).</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "How much do I save with this duo?",
+            "answer": "<p>You pay R407.92 for the duo versus R466.95 when purchasing components separately (BioGain Strawberry R167.00 + Velo16 Vitamin C R299.95), saving R59.03 to the cent.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "How do I take the duo?",
+            "answer": "<p>Enjoy 1 serving of BioGain™ Strawberry meal shake daily with water or milk, and take 1 Velo16™ Vitamin C capsule daily with water.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Can I take this if I am pregnant or on antibiotics?",
+            "answer": "<p>If pregnant, please consult your healthcare professional before use. If taking antibiotics, space your probiotics 2 to 3 hours apart from antibiotic medication so the beneficial cultures remain active.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Does the duo require refrigeration?",
+            "answer": "<p>No refrigeration required. Velobiotics patented micro-shielding technology protects live bacteria at room temperature.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "What is your refund policy?",
+            "answer": "<p>We offer a 30-day money-back guarantee. For questions or support, contact support@velobiotics.com.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "title_pre": "Questions about",
+        "title_highlight": "this duo"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "✅",
+            "text": "30-day money-back"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "🚚",
+            "text": "Ships worldwide"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "🔬",
+            "text": "Lab-tested every batch"
+          }
+        },
+        "g4": {
+          "type": "g",
+          "settings": {
+            "icon": "💰",
+            "text": "Save R84.95 vs singles"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_light": "#7eb375",
+        "badge": "30-day money-back guarantee",
+        "title_pre": "Two guts, one pack,",
+        "title_highlight": "risk-free for 30 days",
+        "sub": "Femina™ for her, Velo16™ for him, R84.95 saved. If you don't feel the difference, we refund every cent.",
+        "cta_text": "Add Couple Pack to Cart",
+        "cta_link": "#vbpForm"
+      }
+    },
+    "science_strip": {
+      "type": "vb-science-strip",
+      "settings": {
+        "kicker": "Backed by peer-reviewed science",
+        "title_pre": "Don't take our word for it.",
+        "title_highlight": "View the science.",
+        "sub": "Both products in this pack use the same shielding technology, studied in three peer-reviewed papers. Read what the research actually showed, in plain English.",
+        "all_text": "View the science",
+        "all_url": "/pages/what-is-microencapsulation",
+        "bg": "#f6faf5",
+        "pad_top": 40,
+        "pad_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "science_strip",
+    "judgeme",
+    "faq",
+    "final"
+  ]
+}

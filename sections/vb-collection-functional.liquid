@@ -38,31 +38,70 @@
     #vb-fc-{{ section.id }} .vb-fc-define { grid-template-columns: 1fr; padding: 24px; gap: 24px; }
     #vb-fc-{{ section.id }} .vb-fc-top { grid-template-columns: 1fr; }
   }
+  #vb-fc-{{ section.id }} .vb-fc-synergy { margin-top: 22px; padding: 16px 18px; background: {{ tint }}; border-left: 4px solid {{ primary }}; border-radius: 12px; }
+  #vb-fc-{{ section.id }} .vb-fc-synergy h4 { margin: 0 0 6px; font-size: 15px; font-weight: 800; color: {{ dark }}; }
+  #vb-fc-{{ section.id }} .vb-fc-synergy p { margin: 0; font-size: 14px; line-height: 1.55; color: #333; }
+  #vb-fc-{{ section.id }} .vb-fc-synergy a { color: {{ primary }}; font-weight: 700; text-decoration: none; }
 </style>
 
+{%- liquid
+  assign ing_intro = collection.metafields.custom.ingredient_intro | default: ''
+  assign ing_mode = false
+  if template.name == 'collection' and ing_intro != blank
+    assign ing_mode = true
+  endif
+  assign ing_name = collection.metafields.custom.ingredient_name | default: collection.title
+  assign ing_short = collection.metafields.custom.ingredient_short
+  assign ing_synergy = collection.metafields.custom.ingredient_synergy
+  assign ing_benefits = collection.metafields.custom.ingredient_benefits.value
+-%}
 <section id="vb-fc-{{ section.id }}">
   <div class="vb-fc-wrap">
     <div class="vb-fc-head">
-      {%- if section.settings.eyebrow != blank -%}<span class="vb-fc-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
-      <h1 class="vb-fc-title">{{ section.settings.title_pre }} <span>{{ section.settings.title_highlight }}</span></h1>
-      {%- if section.settings.sub != blank -%}<p class="vb-fc-sub">{{ section.settings.sub }}</p>{%- endif -%}
+      {%- if ing_mode -%}
+        <span class="vb-fc-eyebrow">Shop by Ingredient</span>
+        <h1 class="vb-fc-title">Powered by <span>{{ collection.title }}.</span></h1>
+        {%- if ing_short != blank -%}<p class="vb-fc-sub">{{ ing_short }}</p>{%- endif -%}
+      {%- else -%}
+        {%- if section.settings.eyebrow != blank -%}<span class="vb-fc-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+        <h1 class="vb-fc-title">{{ section.settings.title_pre }} <span>{{ section.settings.title_highlight }}</span></h1>
+        {%- if section.settings.sub != blank -%}<p class="vb-fc-sub">{{ section.settings.sub }}</p>{%- endif -%}
+      {%- endif -%}
     </div>
 
-    {%- if section.settings.define_title != blank or section.settings.define_desc != blank -%}
+    {%- if ing_mode or section.settings.define_title != blank or section.settings.define_desc != blank -%}
     <div class="vb-fc-define">
       <div class="vb-fc-define__copy">
-        {%- if section.settings.define_title != blank -%}<h3>{{ section.settings.define_title }}</h3>{%- endif -%}
-        {%- if section.settings.define_desc != blank -%}<p>{{ section.settings.define_desc }}</p>{%- endif -%}
-        {%- if section.blocks.size > 0 -%}
-          <ul class="vb-fc-benefits">
-            {%- for block in section.blocks -%}
-              {%- if block.type == 'benefit' -%}<li {{ block.shopify_attributes }}>{{ block.settings.text }}</li>{%- endif -%}
-            {%- endfor -%}
-          </ul>
+        {%- if ing_mode -%}
+          <h3>Why does {{ ing_name }} matter?</h3>
+          <p>{{ ing_intro | newline_to_br }}</p>
+          {%- if ing_benefits.size > 0 -%}
+            <ul class="vb-fc-benefits">
+              {%- for b in ing_benefits -%}<li>{{ b }}</li>{%- endfor -%}
+            </ul>
+          {%- endif -%}
+          {%- if ing_synergy != blank -%}
+            <div class="vb-fc-synergy">
+              <h4>{{ ing_name }} + Velobiotics probiotics</h4>
+              <p>{{ ing_synergy }} <a href="/pages/what-is-microencapsulation">See how our micro-shield keeps each bacterium alive →</a></p>
+            </div>
+          {%- endif -%}
+        {%- else -%}
+          {%- if section.settings.define_title != blank -%}<h3>{{ section.settings.define_title }}</h3>{%- endif -%}
+          {%- if section.settings.define_desc != blank -%}<p>{{ section.settings.define_desc }}</p>{%- endif -%}
+          {%- if section.blocks.size > 0 -%}
+            <ul class="vb-fc-benefits">
+              {%- for block in section.blocks -%}
+                {%- if block.type == 'benefit' -%}<li {{ block.shopify_attributes }}>{{ block.settings.text }}</li>{%- endif -%}
+              {%- endfor -%}
+            </ul>
+          {%- endif -%}
         {%- endif -%}
       </div>
       <div class="vb-fc-define__visual">
-        {%- if section.settings.visual_url != blank -%}
+        {%- if ing_mode and collection.image != blank -%}
+          <img src="{{ collection.image | image_url: width: 900 }}" alt="{{ collection.image.alt | default: ing_name | escape }}" loading="lazy" width="900" height="900">
+        {%- elsif section.settings.visual_url != blank -%}
           <img src="{{ section.settings.visual_url }}" alt="{{ section.settings.define_title | default: section.settings.title_highlight | escape }}" loading="lazy" width="800" height="800">
         {%- elsif collection.image != blank -%}
           <img src="{{ collection.image | image_url: width: 800 }}" alt="{{ collection.image.alt | default: collection.title | escape }}" loading="lazy" width="800" height="800">
@@ -73,22 +112,35 @@
     </div>
     {%- endif -%}
 
-    {%- if section.settings.top1_handle != blank or section.settings.top2_handle != blank -%}
+    {%- liquid
+      assign top1 = blank
+      assign top2 = blank
+      if ing_mode
+        assign top1 = collection.products[0]
+        assign top2 = collection.products[1]
+        assign badge1 = 'Most popular with ' | append: ing_name
+        assign badge2 = 'Also formulated with ' | append: ing_name
+      else
+        assign top1 = all_products[section.settings.top1_handle]
+        assign top2 = all_products[section.settings.top2_handle]
+        assign badge1 = section.settings.top1_badge | default: 'Top Pick'
+        assign badge2 = section.settings.top2_badge | default: 'Also Loved'
+      endif
+    -%}
+    {%- if top1 != blank or top2 != blank -%}
     <div class="vb-fc-top">
-      {%- assign top1 = all_products[section.settings.top1_handle] -%}
-      {%- if section.settings.top1_handle != blank and top1 != blank and top1.available -%}
+      {%- if top1 != blank and top1.available -%}
         <a class="vb-fc-top__card" href="{{ top1.url }}" style="text-decoration:none;color:inherit;">
-          <span class="vb-fc-top__badge">{{ section.settings.top1_badge | default: 'Top Pick' }}</span>
+          <span class="vb-fc-top__badge">{{ badge1 }}</span>
           {%- if top1.featured_image != blank -%}<img class="vb-fc-top__img" src="{{ top1.featured_image | image_url: width: 600 }}" alt="{{ top1.title | escape }}">{%- endif -%}
           <h4 class="vb-fc-top__title">{{ top1.title }}</h4>
           <p class="vb-fc-top__desc">{{ top1.description | strip_html | truncate: 120 }}</p>
           <span class="vb-fc-top__btn">Shop now →</span>
         </a>
       {%- endif -%}
-      {%- assign top2 = all_products[section.settings.top2_handle] -%}
-      {%- if section.settings.top2_handle != blank and top2 != blank and top2.available -%}
+      {%- if top2 != blank and top2.available -%}
         <a class="vb-fc-top__card" href="{{ top2.url }}" style="text-decoration:none;color:inherit;">
-          <span class="vb-fc-top__badge">{{ section.settings.top2_badge | default: 'Also Loved' }}</span>
+          <span class="vb-fc-top__badge">{{ badge2 }}</span>
           {%- if top2.featured_image != blank -%}<img class="vb-fc-top__img" src="{{ top2.featured_image | image_url: width: 600 }}" alt="{{ top2.title | escape }}">{%- endif -%}
           <h4 class="vb-fc-top__title">{{ top2.title }}</h4>
           <p class="vb-fc-top__desc">{{ top2.description | strip_html | truncate: 120 }}</p>

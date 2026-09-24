@@ -238,7 +238,8 @@
       },
       "block_order": [
         "r1",
-        "r2"
+        "r2",
+        "r3"
       ],
       "settings": {
         "brand_primary": "#4d8c44",
@@ -428,8 +429,8 @@
         "eyebrow": "Real results",
         "title_pre": "Trusted formulation,",
         "title_highlight": "proven results",
-        "sub": "Save R134.98 compared to separate retail prices (R899.85 vs R764.87). Every bacterium micro-shielded.",
-        "caveat": "Save R134.98 vs separate retail boxes."
+        "sub": "Save R134.98 compared to separate retail prices. Every product backed by micro-shield technology.",
+        "caveat": "Verified Judge.me reviews for Velobiotics. Save R134.98 vs separate retail boxes."
       }
     },
     "fbt": {

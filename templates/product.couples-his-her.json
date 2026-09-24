@@ -1,0 +1,885 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "\ud83d\udc69",
+            "text": "\ud83d\udc69 Her-Biotics\u2122 Original Caps 60s for her"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "\ud83d\udc68",
+            "text": "\ud83d\udc68 His-Biotics\u2122 Original Caps 60s for him"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "\ud83d\udcb0",
+            "text": "Save R84.95 vs buying separately"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "\u26a1",
+            "text": "1000\u00d7 <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP delivery</a> in both"
+          }
+        },
+        "t1": {
+          "type": "testi",
+          "settings": {
+            "quote": "Great combo, bowel movement much smoother",
+            "author": "Nicky J."
+          }
+        },
+        "t2": {
+          "type": "testi",
+          "settings": {
+            "quote": "Subscribed for my husband and myself",
+            "author": "Kgahliso"
+          }
+        },
+        "t3": {
+          "type": "testi",
+          "settings": {
+            "quote": "Velobiotics for life!",
+            "author": "Natasha de O."
+          }
+        },
+        "t4": {
+          "type": "testi",
+          "settings": {
+            "quote": "Has really made a difference",
+            "author": "Nicky"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "brand_label": "Velobiotics\u2122 His & Her Daily Pack",
+        "rating": "4.7",
+        "review_count": "10 reviews",
+        "hook": "Two daily multivitamin + probiotic formulas in one pack. Her-Biotics\u2122 Original for her, His-Biotics\u2122 Original for him. Save R139.98.",
+        "ship_note": "Ships worldwide \u00b7 Free shipping over the free-shipping threshold \u00b7 30-day money-back guarantee",
+        "show_subscription": true,
+        "tier_unit": "Pack",
+        "tier_unit_plural": "Packs",
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
+    },
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Nicky+Johnson&background=4d8c44&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Karabo Rampou",
+            "meta": "Verified Buyer (Her-Biotics\u2122 60s)",
+            "quote": "I love these Her-Biotics capsules! My stomach feels great and my energy is up daily."
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Kgahliso&background=7eb375&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Blake Martin",
+            "meta": "Verified Buyer (His-Biotics\u2122 60s)",
+            "quote": "Ever since I got His-Biotics I haven\u2019t been sick in months. Great value for money!"
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Lorian+Daniels&background=2e5d28&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Mercedes",
+            "meta": "Verified Buyer (Her-Biotics\u2122 60s)",
+            "quote": "Probiotics and multivitamins together were definitely the missing piece in my wellness journey."
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Natasha+de+Oliveira&background=4d8c44&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Nobuhle Shongwe",
+            "meta": "Verified Buyer (Her-Biotics\u2122 60s)",
+            "quote": "Love the capsules, my stomach feels less gassy since I started taking them."
+          }
+        },
+        "r5": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "https://ui-avatars.com/api/?name=Nicky&background=7eb375&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Nicky",
+            "meta": "Verified buyer",
+            "quote": "Has really made a difference. Couldn't be happier with the product."
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "eyebrow": "\u2605 Verified Judge.me reviews",
+        "title": "Couples who rely on His & Her Daily"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "\u2715",
+            "text": "<strong>Generic multivitamins</strong> \u2014 lack microencapsulated probiotic protection and gender-specific nutrient ratios."
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "\u2715",
+            "text": "<strong>Two separate purchases</strong> \u2014 R649.90 when bought individually as separate 60-capsule bottles."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "\u2715",
+            "text": "<strong>Ordinary capsules</strong> \u2014 most of the cultures die in <a class=\"vb-sci-link\" href=\"/pages/probiotics-tolerance-to-gastric-acid\">stomach acid</a> before they can work."
+          }
+        },
+        "p4": {
+          "type": "point",
+          "settings": {
+            "icon": "\u2715",
+            "text": "<strong>Two routines</strong> \u2014 different brands, different rules, nobody keeps it up."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#4d8c44",
+        "brand_tint": "#eef7ec",
+        "image_url": "",
+        "tag_value": "2 needs",
+        "tag_label": "His & Hers Daily Micronutrients",
+        "eyebrow": "Why His & Her Daily?",
+        "title_pre": "Same household,",
+        "title_highlight": "different wellness needs.",
+        "desc": "Her body needs targeted support for feminine energy, skin, and flora. His body requires targeted male micronutrients, stamina, and digestive balance. Buying separately costs R649.90."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "\u2713",
+            "text": "<strong>Her-Biotics\u2122 for her</strong> \u2014 10 probiotic strains + essential daily vitamins for feminine energy, skin, and immunity."
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "\u2713",
+            "text": "<strong>His-Biotics\u2122 for him</strong> \u2014 10 probiotic strains + male multivitamin nutrients for digestion, stamina, and vitality."
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "\u2713",
+            "text": "<strong><a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Velobiotics\u2122 MEP technology</a></strong> \u2014 1000\u00d7 more probiotics reach the gut alive, in both products."
+          }
+        },
+        "s4": {
+          "type": "point",
+          "settings": {
+            "icon": "\u2713",
+            "text": "<strong>One pack, one price</strong> \u2014 R334 instead of R418.95. Save 20%."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#4d8c44",
+        "brand_tint": "#eef7ec",
+        "image_url": "",
+        "tag_value": "1 a day",
+        "tag_label": "Each, with water, any time",
+        "eyebrow": "The His & Her Daily Pack",
+        "title_pre": "His and hers daily,",
+        "title_highlight": "multivitamin plus probiotic.",
+        "desc": "Her-Biotics\u2122 Original combines 10 probiotic strains with female multivitamin essentials. His-Biotics\u2122 Original combines 10 probiotic strains with male multivitamin nutrients. Each bacterium is protected by a micro-shield against stomach acid."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "her-biotics-original-capsules-60s",
+            "brand": "Her-Biotics\u2122 \u00b7 for her",
+            "rating": "4.8",
+            "reviews": "8 reviews"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "his-biotics-probiotics-original-multivitamins-capsules-60s",
+            "brand": "His-Biotics\u2122 \u00b7 for him",
+            "rating": "4.5",
+            "reviews": "2 reviews"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "tint": false,
+        "eyebrow": "What's inside",
+        "title": "The two products in this pack",
+        "sub": "Each bottle is the full retail 60-capsule product: same formula, same high-strain probiotic count, same complete multivitamin blend."
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "f1": {
+          "type": "feat",
+          "settings": {
+            "icon": "\ud83d\udc69",
+            "name": "Her intimate & daily vitality",
+            "desc": "Her-Biotics\u2122 supports energy, radiant skin, immunity, and healthy intimate flora."
+          }
+        },
+        "f2": {
+          "type": "feat",
+          "settings": {
+            "icon": "\ud83d\udc68",
+            "name": "His digestion & stamina",
+            "desc": "His-Biotics\u2122 eases bloating, supports bowel regularity, and provides essential male vitamins."
+          }
+        },
+        "f3": {
+          "type": "feat",
+          "settings": {
+            "icon": "\ud83d\udcb0",
+            "name": "Save R84.95",
+            "desc": "R334 for both boxes versus R418.95 bought separately."
+          }
+        },
+        "f4": {
+          "type": "feat",
+          "settings": {
+            "icon": "\ud83d\udee1\ufe0f",
+            "name": "Micro-shielded",
+            "desc": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Supercritical CO\u2082 microencapsulation</a> protects every culture through stomach acid."
+          }
+        },
+        "f5": {
+          "type": "feat",
+          "settings": {
+            "icon": "\ud83c\udf21\ufe0f",
+            "name": "No fridge",
+            "desc": "Both products are <a class=\"vb-sci-link\" href=\"/pages/heat-stability-and-shelf-life\">shelf-stable</a> at room temperature."
+          }
+        },
+        "f6": {
+          "type": "feat",
+          "settings": {
+            "icon": "\ud83d\udcc5",
+            "name": "One shared ritual",
+            "desc": "One capsule each, daily. Reorder together, run out together."
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_tint": "#eef7ec",
+        "eyebrow": "Why this pack",
+        "title_pre": "Complete daily care,",
+        "title_highlight": "for both of you.",
+        "sub": "Six reasons couples choose the His & Her Daily Pack."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "\ud83d\udce6",
+            "name": "Unpack two bottles",
+            "desc": "Her-Biotics\u2122 60s for her, His-Biotics\u2122 60s for him."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "\ud83d\udc8a",
+            "name": "Take daily with water",
+            "desc": "Take 2 capsules each daily with water, morning or evening."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "\ud83d\udee1\ufe0f",
+            "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP delivery</a>",
+            "desc": "The micro-shield holds through stomach acid and releases the cultures in the intestine."
+          }
+        },
+        "h4": {
+          "type": "step",
+          "settings": {
+            "icon": "\ud83d\udd01",
+            "name": "Reorder at day 25",
+            "desc": "Both boxes are 30-day supplies. Subscribe and save to keep them arriving together."
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_tint": "#eef7ec",
+        "eyebrow": "How it works",
+        "title_pre": "Two capsules daily,",
+        "title_highlight": "every morning.",
+        "sub": "A simple daily ritual for two. No complex schedules."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "\ud83d\udc69",
+            "name": "Her-Biotics\u2122 Probiotics ORIGINAL Multivitamin Capsules",
+            "amount": "60 capsules",
+            "desc": "10 probiotic strains plus female daily multivitamin complex for energy, immunity, and flora."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "\ud83d\udc68",
+            "name": "His-Biotics\u2122 Probiotics ORIGINAL Multivitamin Capsules",
+            "amount": "60 capsules",
+            "desc": "10 probiotic strains plus male daily multivitamin complex for digestion, energy, and health."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "\ud83d\udee1\ufe0f",
+            "name": "Velobiotics\u2122 MEP micro-shield",
+            "amount": "Both products",
+            "desc": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Supercritical CO\u2082 microencapsulation</a>: 1000\u00d7 more probiotics survive to the gut."
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "\ud83d\udcb0",
+            "name": "Pack saving",
+            "amount": "R84.95 (20%)",
+            "desc": "R334 versus R209.95 + R209.00 bought separately."
+          }
+        },
+        "i5": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "\ud83d\udcc5",
+            "name": "Supply",
+            "amount": "30 days each",
+            "desc": "One capsule per person per day."
+          }
+        },
+        "i6": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "\ud83d\udeab",
+            "name": "Free from",
+            "amount": "Always",
+            "desc": "Gluten \u00b7 soy \u00b7 dairy \u00b7 artificial colours \u00b7 preservatives \u00b7 GMO."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "brand_light": "#7eb375",
+        "eyebrow": "What's inside",
+        "title": "Pack contents",
+        "sub": "Two full-size 60-capsule bottles. Complete multivitamin + 10 live probiotic strains each.",
+        "facts_image_url": "",
+        "facts_label": "Pack contents",
+        "facts_foot": "Lab-tested \u00b7 Doctor-formulated \u00b7 Full transparency"
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Five-star reviews on this pack",
+            "percent": 100
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "Reviews from verified buyers",
+            "percent": 100
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Capsules micro-shielded (MEP)",
+            "percent": 100
+          }
+        },
+        "c4": {
+          "type": "stat",
+          "settings": {
+            "label": "Saving vs buying separately",
+            "percent": 20
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "eyebrow": "Real results",
+        "title_pre": "Rated 4.7 by",
+        "title_highlight": "couples taking it",
+        "sub": "Verified component reviews from customers taking Her-Biotics and His-Biotics daily.",
+        "caveat": "Judge.me verified reviews, 10 component reviews, 4.7 average. Individual results may vary."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "couples-his-biotics-her-biotics-daily-pack",
+            "brand": "His-Biotics\u2122 + Her-Biotics\u2122",
+            "rating": "4.7",
+            "reviews": "300+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-mini-combo",
+            "brand": "Femina\u2122",
+            "rating": "4.8",
+            "reviews": "260+"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "family-health-bundle",
+            "brand": "Velobiotics\u2122",
+            "rating": "4.9",
+            "reviews": "150+"
+          }
+        },
+        "r4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-digestive-enzymes-complex",
+            "brand": "Velo16\u2122",
+            "rating": "4.8",
+            "reviews": "400+"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "tint": true,
+        "eyebrow": "Also for two",
+        "title": "Other packs couples choose",
+        "sub": "Step up to the daily multivitamin-probiotic pair, or add her intimate-care essentials."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg",
+            "name": "Clinically studied strains",
+            "desc": "10 strains in Femina\u2122, 16 in Velo16\u2122, each with published human research."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg",
+            "name": "Doctor-designed",
+            "desc": "Formulated by Dr Chomba Chuma, MD, and made in SAHPRA-aware facilities."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg",
+            "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Patented MEP Technology</a>",
+            "desc": "Microencapsulation with Supercritical CO\u2082, studied in three peer-reviewed papers."
+          }
+        },
+        "d4": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg",
+            "name": "Batch tested",
+            "desc": "Every batch is lab-tested for live count and purity."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3",
+        "d4"
+      ],
+      "settings": {
+        "eyebrow": "Trusted by Doctors. Proven by Science.",
+        "title_pre": "Quality you can",
+        "title_highlight": "trust.",
+        "sub": "Built on peer-reviewed actives, medical formulations, and SAHPRA-aware manufacturing."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "Formula matched to her and to him",
+            "brand_state": "yes",
+            "b_state": "yes",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "Save R139.98 (21.5%)",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "Patented <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP delivery</a> in every capsule",
+            "brand_state": "yes",
+            "b_state": "yes",
+            "c_state": "no"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "Cranberry for her urinary comfort",
+            "brand_state": "yes",
+            "b_state": "yes",
+            "c_state": "no"
+          }
+        },
+        "o5": {
+          "type": "row",
+          "settings": {
+            "feature": "One order, one reorder date",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "yes"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "title": "Why the His & Her Daily Pack outperforms",
+        "sub": "Targeted multivitamin + probiotic for her and him at a lower price than buying separate bottles.",
+        "col_features": "Features",
+        "col_brand": "His & Her Pack",
+        "col_b": "Two singles",
+        "col_c": "One generic probiotic",
+        "cta_text": "Add His & Her Pack to Cart",
+        "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Real Reviews",
+        "title_pre": "What couples",
+        "title_highlight": "are saying",
+        "sub": "Verified reviews collected independently by Judge.me from customers who bought this pack.",
+        "scope": "product",
+        "show_stats": true
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "Exactly what is in the pack?",
+            "answer": "<p>One bottle of Her-Biotics\u2122 ORIGINAL Multivitamin Capsules (60 capsules) and one bottle of His-Biotics\u2122 ORIGINAL Multivitamin Capsules (60 capsules).</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "How much do we save?",
+            "answer": "<p>R139.98. The two bottles cost R299.95 and R349.95 separately (R649.90); the pack price is R509.92.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "How do we take it?",
+            "answer": "<p>Take 2 capsules daily each with water, with or after meals. Each bottle provides a 30-day supply at full daily dosage.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Do these probiotics need refrigeration?",
+            "answer": "<p>No. Velobiotics microencapsulation creates a protective micro-shield around each bacterium, keeping them shelf-stable at room temperature.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Can I take these with antibiotics or during pregnancy?",
+            "answer": "<p>If you are pregnant, nursing, or taking medication, please consult your healthcare professional. When taking antibiotics, space your probiotic dose at least 2 hours apart.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "What is your refund policy?",
+            "answer": "<p>We offer a 30-day money-back guarantee. If you are not completely satisfied, contact our support team at support@velobiotics.com.</p>"
+          }
+        },
+        "q7": {
+          "type": "q",
+          "settings": {
+            "question": "What if it doesn't work for us?",
+            "answer": "<p>30-day money-back guarantee. Email support@velobiotics.com and we refund every cent.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6",
+        "q7"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "title_pre": "Questions before",
+        "title_highlight": "you share it"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "\u2705",
+            "text": "30-day money-back"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "\ud83d\ude9a",
+            "text": "Ships worldwide"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "\ud83d\udd2c",
+            "text": "Lab-tested every batch"
+          }
+        },
+        "g4": {
+          "type": "g",
+          "settings": {
+            "icon": "\ud83d\udcb0",
+            "text": "Save R84.95 vs singles"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_light": "#7eb375",
+        "badge": "30-day money-back guarantee",
+        "title_pre": "His and her daily wellness,",
+        "title_highlight": "risk-free for 30 days",
+        "sub": "Her-Biotics\u2122 60s for her, His-Biotics\u2122 60s for him, R139.98 saved. Try it risk-free today.",
+        "cta_text": "Add His & Her Pack to Cart",
+        "cta_link": "#vbpForm"
+      }
+    },
+    "science_strip": {
+      "type": "vb-science-strip",
+      "settings": {
+        "kicker": "Backed by peer-reviewed science",
+        "title_pre": "Don't take our word for it.",
+        "title_highlight": "View the science.",
+        "sub": "Both products in this pack use the same shielding technology, studied in three peer-reviewed papers. Read what the research actually showed, in plain English.",
+        "all_text": "View the science",
+        "all_url": "/pages/what-is-microencapsulation",
+        "bg": "#f6faf5",
+        "pad_top": 40,
+        "pad_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "science_strip",
+    "judgeme",
+    "faq",
+    "final"
+  ]
+}

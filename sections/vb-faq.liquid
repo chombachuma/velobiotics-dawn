@@ -46,22 +46,29 @@
 </section>
 
 
-{%- if section.blocks.size > 0 -%}
-<script type=application/ld+json>
+{%- assign faq_q_count = 0 -%}
+{%- for block in section.blocks -%}
+  {%- if block.type == 'q' and block.settings.question != blank and block.settings.answer != blank -%}
+    {%- assign faq_q_count = faq_q_count | plus: 1 -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- if faq_q_count > 0 -%}
+<script type="application/ld+json">
 {
-  @context: https://schema.org,
-  @type: FAQPage,
-  mainEntity: [
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {%- assign first_block = true -%}
     {%- for block in section.blocks -%}
       {%- if block.type == 'q' and block.settings.question != blank and block.settings.answer != blank -%}
         {%- unless first_block -%},{%- endunless -%}
         {
-          @type: Question,
-          name: {{ block.settings.question | strip_html | json }},
-          acceptedAnswer: {
-            @type: Answer,
-            text: {{ block.settings.answer | strip_html | json }}
+          "@type": "Question",
+          "name": {{ block.settings.question | strip_html | escape | json }},
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": {{ block.settings.answer | strip_html | escape | json }}
           }
         }
         {%- assign first_block = false -%}

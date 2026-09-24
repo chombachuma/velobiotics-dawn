@@ -1,3 +1,4 @@
+{%- comment -%} VB Product JSON-LD Snippet {%- endcomment -%}
 {%- if template.name == 'product' and product -%}
 {%- assign current_variant = product.selected_or_first_available_variant -%}
 {%- assign rating_val = product.metafields.reviews.rating.value.rating | default: product.metafields.reviews.rating.value | default: product.metafields.reviews.rating -%}
@@ -28,6 +29,9 @@
     "@type": "Brand",
     "name": {{ product.vendor | default: "Velobiotics" | json }}
   },
+  {%- if product.type != blank -%}
+  "category": {{ product.type | json }},
+  {%- endif -%}
   "offers": [
     {%- for variant in product.variants -%}
     {
@@ -40,7 +44,7 @@
       "itemCondition": "https://schema.org/NewCondition",
       "seller": {
         "@type": "Organization",
-        "name": {{ shop.name | json }}
+        "name": "Velobiotics (Pty) Ltd"
       },
       "shippingDetails": {
         "@type": "OfferShippingDetails",

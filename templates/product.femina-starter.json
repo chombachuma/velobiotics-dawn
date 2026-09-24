@@ -1,0 +1,810 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "check",
+            "text": "3-Step System: Test, Restore & Maintain"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "check",
+            "text": "Dual Action: Internal Capsules + Targeted Suppositories"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "check",
+            "text": "Micro-Shielded Live Cultures & Boric Acid"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "check",
+            "text": "Precision pH Test Indicator Strips Included"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "settings": {
+        "brand_primary": "#7e22ce",
+        "brand_dark": "#581c87",
+        "brand_tint": "#f3e8ff",
+        "brand_label": "Femina\u2122 Intimate Health Reset Kit",
+        "rating": "4.7",
+        "review_count": "399 verified reviews",
+        "hook": "Complete pH reset system: pH Self-Test Kit, Boric Acid Suppositories (20s), and 10-Strain Probiotic Capsules (30s). Save R279.90.",
+        "ship_note": "Ships nationwide \u00b7 Free SA delivery over R400 \u00b7 Discrete packaging \u00b7 30-day money-back guarantee",
+        "show_subscription": true,
+        "tier_unit": "Pack",
+        "tier_unit_plural": "Packs",
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
+    },
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "",
+            "author": "Kgothatso M.",
+            "meta": "Verified Buyer \u00b7 South Africa",
+            "quote": "I struggled with recurring discomfort and pH imbalances. Following this 3-step system brought total balance and peace of mind within days. So grateful!"
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "",
+            "author": "Archie T.",
+            "meta": "Verified Buyer \u00b7 South Africa",
+            "quote": "Best intimate care kit! Testing first took away all the guesswork, and using the suppositories followed by daily capsules kept everything completely fresh."
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "",
+            "author": "Nandipha K.",
+            "meta": "Verified Buyer \u00b7 South Africa",
+            "quote": "The pH strips were a game changer. I knew exactly what was going on, and the combination of boric acid and probiotics brought fast relief and balance."
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "",
+            "author": "Zinhle S.",
+            "meta": "Verified Buyer \u00b7 South Africa",
+            "quote": "Discreet delivery, easy to follow instructions, and genuine results. Keeps my intimate microbiome supported and healthy."
+          }
+        },
+        "r5": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "",
+            "author": "Lerato D.",
+            "meta": "Verified Buyer \u00b7 South Africa",
+            "quote": "No more guessing games. This starter pack has everything you need to test, restore, and maintain long-term intimate freshness."
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "settings": {
+        "brand_primary": "#7e22ce",
+        "brand_dark": "#581c87",
+        "brand_tint": "#f3e8ff",
+        "eyebrow": "Verified Real Results",
+        "title": "What women say about the Femina Reset System"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "alert",
+            "text": "Elevated pH disrupts natural intimate flora balance"
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "alert",
+            "text": "Loss of protective Lactobacillus micro-shield"
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "alert",
+            "text": "Guesswork leads to using inappropriate products at the wrong time"
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#7e22ce",
+        "brand_tint": "#f3e8ff",
+        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/FeminaIntimateHealthStarterPack.png?v=1775328667",
+        "tag_value": "pH 3.8 - 4.5",
+        "tag_label": "Optimal Intimate Range",
+        "eyebrow": "The Challenge",
+        "title_pre": "Why recurring intimate discomfort",
+        "title_highlight": "keeps returning",
+        "desc": "When vaginal pH becomes elevated or alkaline (above 4.5), the protective acidic environment breaks down. Beneficial Lactobacillus bacteria decrease, allowing unwanted flora to flourish. This leads to recurring odor, discomfort, and persistent imbalance."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "check",
+            "text": "Step 1: Test pH for immediate diagnostic clarity"
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "check",
+            "text": "Step 2: Rebalance acidity with targeted Boric Acid suppositories"
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "check",
+            "text": "Step 3: Nourish internal flora with daily micro-shielded probiotics"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#7e22ce",
+        "brand_tint": "#f3e8ff",
+        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/FeminaIntimateHealthStarterPack.png?v=1775328667",
+        "tag_value": "3-In-1",
+        "tag_label": "Complete Protocol",
+        "eyebrow": "The Femina System",
+        "title_pre": "A structured, science-backed approach to",
+        "title_highlight": "lasting intimate balance",
+        "desc": "Instead of guessing, the Femina Starter Pack provides a 3-step solution: Test your pH levels for immediate clarity, Restore optimal acidity with Cookie Fresh Boric Acid Suppositories, and Maintain long-term microbial balance with daily micro-shielded Femina Probiotic Capsules."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-ph-self-test-kit-for-vaginal-infections",
+            "brand": "Femina\u2122 Self-Test Vaginal pH Kit (2 Tests)",
+            "rating": "4.5",
+            "reviews": "12+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-probiotics-cookie-fresh-with-boric-acid-suppositories",
+            "brand": "Femina\u2122 COOKIE FRESH Boric Acid Suppositories (20s)",
+            "rating": "4.7",
+            "reviews": "85+"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
+            "brand": "Femina\u2122 10-Strain Probiotic Capsules with Cranberry (30s)",
+            "rating": "4.7",
+            "reviews": "399+"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3"
+      ],
+      "settings": {
+        "brand_primary": "#7e22ce",
+        "brand_dark": "#581c87",
+        "brand_tint": "#f3e8ff",
+        "tint": false,
+        "eyebrow": "What's inside",
+        "title": "3 Full-Sized Products in One Pack",
+        "sub": "Save R279.90 compared to buying each item separately."
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "f1": {
+          "type": "feat",
+          "settings": {
+            "icon": "sparkles",
+            "name": "pH Self-Test Clarity",
+            "desc": "Provides instant visual indication of vaginal pH levels (3.8 - 4.5) to eliminate guesswork."
+          }
+        },
+        "f2": {
+          "type": "feat",
+          "settings": {
+            "icon": "shield",
+            "name": "Targeted Acidification",
+            "desc": "Boric acid suppositories help lower vaginal pH and soothe localized discomfort quickly."
+          }
+        },
+        "f3": {
+          "type": "feat",
+          "settings": {
+            "icon": "zap",
+            "name": "Micro-Shielded Probiotics",
+            "desc": "Velobiotics micro-shield technology protects 10 probiotic strains through stomach acid to colonise effectively."
+          }
+        },
+        "f4": {
+          "type": "feat",
+          "settings": {
+            "icon": "heart",
+            "name": "Cranberry PACs Extract",
+            "desc": "Standardised PACs support urinary tract wall integrity and prevent unwanted bacterial adherence."
+          }
+        },
+        "f5": {
+          "type": "feat",
+          "settings": {
+            "icon": "refresh",
+            "name": "Gut-Vagina Axis Support",
+            "desc": "Daily oral probiotics replenish healthy intestinal reservoir flora that support vaginal balance."
+          }
+        },
+        "f6": {
+          "type": "feat",
+          "settings": {
+            "icon": "sun",
+            "name": "Zero Refrigeration Required",
+            "desc": "Stable at room temperature thanks to advanced polymer micro-encapsulation shielding."
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ],
+      "settings": {
+        "brand_primary": "#7e22ce",
+        "brand_tint": "#f3e8ff",
+        "eyebrow": "Targeted Care",
+        "title_pre": "Designed for complete",
+        "title_highlight": "intimate microbiome support",
+        "sub": "Comprehensive support for pH balance, vaginal flora, and urinary tract wellness."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "1",
+            "name": "Step 1: Test Vaginal pH",
+            "desc": "Use one pH test strip according to package instructions to check if your intimate pH is within the acidic 3.8 - 4.5 range."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "2",
+            "name": "Step 2: Reset with Suppositories",
+            "desc": "Insert 1 Cookie Fresh Boric Acid Suppository vaginally at bedtime for 7 to 14 consecutive nights to restore acidity."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "3",
+            "name": "Step 3: Take 1 Capsule Daily",
+            "desc": "Swallow 1 Femina Probiotic Capsule daily with water to nourish beneficial internal microflora long-term."
+          }
+        },
+        "h4": {
+          "type": "step",
+          "settings": {
+            "icon": "4",
+            "name": "Step 4: Re-Test & Maintain",
+            "desc": "Use the second pH test strip after completing suppositories to verify your balanced pH level, and continue daily capsules."
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ],
+      "settings": {
+        "brand_primary": "#7e22ce",
+        "brand_tint": "#f3e8ff",
+        "eyebrow": "Daily Protocol",
+        "title_pre": "How to use your",
+        "title_highlight": "Femina Starter Pack",
+        "sub": "Simple, step-by-step routine for optimal intimate wellness."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "leaf",
+            "name": "Boric Acid (Medical Grade)",
+            "amount": "600mg per suppository",
+            "desc": "Mild antiseptic agent that quickly re-establishes healthy vaginal acidity."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "shield",
+            "name": "10-Strain Probiotic Blend",
+            "amount": "10 Billion CFU",
+            "desc": "Lactobacillus heavy formula tailored for vaginal and gut microbial balance."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "berry",
+            "name": "Cranberry Extract (PACs)",
+            "amount": "50mg per capsule",
+            "desc": "Rich in proanthocyanidins supporting urinary tract wall resistance."
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "check",
+            "name": "pH Indicator Test Strips",
+            "amount": "2 Precision Strips",
+            "desc": "Calibrated colorimetric strips for rapid vaginal pH measurement."
+          }
+        },
+        "i5": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "zap",
+            "name": "Velobiotics Micro-Shield",
+            "amount": "Patented Matrix",
+            "desc": "Polymer micro-shield encapsulating each individual probiotic culture."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5"
+      ],
+      "settings": {
+        "brand_primary": "#7e22ce",
+        "brand_dark": "#581c87",
+        "brand_tint": "#f3e8ff",
+        "brand_light": "#faf5ff",
+        "eyebrow": "Active Ingredients",
+        "title": "Science-Backed Intimate Support",
+        "sub": "Pure, active ingredients formulated specifically for female intimate health.",
+        "facts_image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/FeminaIntimateHealthStarterPack.png?v=1775328667",
+        "facts_label": "System Specifications",
+        "facts_foot": "Free from artificial colours, gluten, dairy, and synthetic preservatives."
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Micro-Shield Strain Survival",
+            "percent": 90
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "Verified 5-Star Reviews",
+            "percent": 86
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Bundle Discount Savings",
+            "percent": 31
+          }
+        },
+        "c4": {
+          "type": "stat",
+          "settings": {
+            "label": "Lactobacillus Focus",
+            "percent": 100
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "settings": {
+        "brand_primary": "#7e22ce",
+        "brand_dark": "#581c87",
+        "brand_tint": "#f3e8ff",
+        "eyebrow": "Tested Quality",
+        "title_pre": "Formulated with",
+        "title_highlight": "uncompromising standards",
+        "sub": "Verifiable testing and science-backed formulations for complete peace of mind.",
+        "caveat": "*Based on independent laboratory dissolution and stability testing."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-mini-combo",
+            "brand": "Femina\u2122 Mini Combo",
+            "rating": "4.6",
+            "reviews": "25+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-combo-care",
+            "brand": "Femina\u2122 COMBO Care",
+            "rating": "4.7",
+            "reviews": "40+"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "glow-and-gut-combo",
+            "brand": "Glow & Gut Combo",
+            "rating": "4.8",
+            "reviews": "50+"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3"
+      ],
+      "settings": {
+        "brand_primary": "#7e22ce",
+        "brand_dark": "#581c87",
+        "brand_tint": "#f3e8ff",
+        "tint": true,
+        "eyebrow": "Complete Care",
+        "title": "Explore Other Intimate Care Solutions",
+        "sub": "Tailored probiotics and intimate health products for women."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "",
+            "name": "Micro-Shield Protection",
+            "desc": "Patented polymer shielding protects live cultures through harsh gastric acidity."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "",
+            "name": "Targeted Vaginal Strains",
+            "desc": "Formulated with Lactobacillus rhamnosus and reuteri for intimate flora."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "",
+            "name": "Clean & Hypoallergenic",
+            "desc": "Non-GMO, allergen-tested, and free from harsh synthetic additives."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3"
+      ],
+      "settings": {
+        "eyebrow": "Expert Endorsed",
+        "title_pre": "Formulated by medical doctors &",
+        "title_highlight": "microbiologists",
+        "sub": "Engineered to deliver real, science-based health solutions."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "3-Step Test, Restore & Maintain Protocol",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "Micro-shield around each bacterium",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "Boric Acid + Probiotic Suppositories",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "yes"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "Vaginal pH Precision Self-Test Included",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o5": {
+          "type": "row",
+          "settings": {
+            "feature": "No Refrigeration Required",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ],
+      "settings": {
+        "brand_primary": "#7e22ce",
+        "brand_dark": "#581c87",
+        "brand_tint": "#f3e8ff",
+        "title": "How Femina Reset Kit Outperforms",
+        "sub": "Comparison against generic intimate products.",
+        "col_features": "Intimate Health Feature",
+        "col_brand": "Femina Reset Kit",
+        "col_b": "Standard Probiotics",
+        "col_c": "Generic Suppositories",
+        "cta_text": "Get Femina Starter Pack",
+        "cta_note": "30-day money-back guarantee"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Reviews",
+        "title_pre": "Customer",
+        "title_highlight": "Feedback",
+        "sub": "Real reviews from verified buyers",
+        "scope": "product",
+        "show_stats": true
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "How much do I save with the Femina Starter Pack?",
+            "answer": "<p>You save R279.90 (over 30% discount) compared to purchasing the pH Self-Test Kit (R199.95), Cookie Fresh Suppositories (R399.95), and Femina Probiotic Capsules (R299.95) individually.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "How do I use the 3 products together?",
+            "answer": "<p>First, use 1 pH test strip to check your vaginal pH level. Second, insert 1 Cookie Fresh Boric Acid Suppository vaginally each night at bedtime for 7 to 14 days to re-establish normal acidity. Third, take 1 Femina Probiotic Capsule orally every morning with water to maintain long-term internal microflora balance.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "Are the suppositories safe for oral intake?",
+            "answer": "<p>NO. Boric acid suppositories are strictly for vaginal use only. Never swallow suppositories. Keep out of reach of children.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Can I use this pack during pregnancy or while taking medication?",
+            "answer": "<p>If you are pregnant, nursing, planning pregnancy, or taking prescription medication, please consult your healthcare professional before using suppositories or new dietary supplements.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Do the probiotic capsules require refrigeration?",
+            "answer": "<p>No. Thanks to Velobiotics patented micro-shielding technology, individual bacteria are protected against heat, moisture, and light, making them 100% shelf-stable at room temperature.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "How does micro-shielding work?",
+            "answer": "<p>Our patented micro-encapsulation process creates a protective micro-shield around each bacterium (never the capsule shell alone). This ensures over 90% of live probiotic strains survive stomach acid and arrive safely in the gut to support intimate and digestive balance. Learn more on <a href=\"/pages/what-is-microencapsulation\">how Velobiotics micro-shielding works</a>.</p>"
+          }
+        },
+        "q7": {
+          "type": "q",
+          "settings": {
+            "question": "What is your refund policy?",
+            "answer": "<p>We offer a 30-day money-back guarantee. If you are not satisfied with your purchase, contact our customer support team at support@velobiotics.com.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6",
+        "q7"
+      ],
+      "settings": {
+        "eyebrow": "Frequently Asked Questions",
+        "title_pre": "Everything you need to know about",
+        "title_highlight": "Femina Starter Pack"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "shield",
+            "text": "30-Day Guarantee"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "truck",
+            "text": "Free SA Shipping > R400"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "lock",
+            "text": "Discreet Packaging"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3"
+      ],
+      "settings": {
+        "brand_primary": "#7e22ce",
+        "brand_dark": "#581c87",
+        "brand_light": "#faf5ff",
+        "badge": "Complete pH Reset System",
+        "title_pre": "Restore intimate freshness & balance",
+        "title_highlight": "starting today",
+        "sub": "Get full-system pH testing, rapid restoration, and daily maintenance in one value pack.",
+        "cta_text": "Add Femina Starter Pack to Cart",
+        "cta_link": "#"
+      }
+    },
+    "science_strip": {
+      "type": "vb-science-strip",
+      "settings": {
+        "kicker": "The Science",
+        "title_pre": "Patented Micro-Shield",
+        "title_highlight": "Probiotic Delivery",
+        "sub": "Learn how micro-encapsulation delivers 100x more live cultures to support intimate health.",
+        "all_text": "Read the Science",
+        "all_url": "/pages/what-is-microencapsulation",
+        "bg": "#f3e8ff",
+        "pad_top": 40,
+        "pad_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "judgeme",
+    "faq",
+    "final",
+    "science_strip"
+  ]
+}

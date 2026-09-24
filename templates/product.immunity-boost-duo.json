@@ -15,28 +15,28 @@
         "b1": {
           "type": "benefit",
           "settings": {
-            "icon": "🍓",
-            "text": "BioGain™ Strawberry Probiotic Meal 400g"
+            "icon": "\ud83c\udf53",
+            "text": "BioGain\u2122 Strawberry Probiotic Meal 400g"
           }
         },
         "b2": {
           "type": "benefit",
           "settings": {
-            "icon": "🍊",
-            "text": "Velo16™ Probiotics Vitamin C 60 Capsules"
+            "icon": "\ud83d\udc8a",
+            "text": "Velo16\u2122 Probiotic Digestive Capsules 60s"
           }
         },
         "b3": {
           "type": "benefit",
           "settings": {
-            "icon": "💰",
+            "icon": "\ud83d\udcb0",
             "text": "Save R59.03 vs buying separately"
           }
         },
         "b4": {
           "type": "benefit",
           "settings": {
-            "icon": "🛡️",
+            "icon": "\ud83d\udee1\ufe0f",
             "text": "Micro-shielded delivery protecting probiotics"
           }
         }
@@ -51,11 +51,11 @@
         "brand_primary": "#4d8c44",
         "brand_dark": "#2e5d28",
         "brand_tint": "#eef7ec",
-        "brand_label": "Velobiotics™ Immunity Boost Duo (Strawberry)",
+        "brand_label": "Velobiotics\u2122 Immunity Boost Duo (Strawberry)",
         "rating": "4.6",
         "review_count": "24 reviews",
-        "hook": "Complete immune and gut defense in one duo. Combines BioGain™ Strawberry Probiotic Meal (400g) and Velo16™ Probiotics Vitamin C (60 capsules) for high-dose Vitamin C, protein, and micro-shielded probiotics. Save R59.03 vs buying separately.",
-        "ship_note": "Ships worldwide · Free shipping over threshold · 30-day money-back guarantee",
+        "hook": "Complete daily gut and immune support in one duo. Combines BioGain\u2122 Strawberry Probiotic Meal (400g) and Velo16\u2122 Probiotic Digestive Capsules (60 capsules) with 16 micro-shielded strains and 10 billion CFU per capsule. Save R59.03 vs buying separately.",
+        "ship_note": "Ships worldwide \u00b7 Free shipping over threshold \u00b7 30-day money-back guarantee",
         "show_subscription": true,
         "tier_unit": "Pack",
         "tier_unit_plural": "Packs",
@@ -71,7 +71,7 @@
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Suffiyaan+Campbell&background=4d8c44&color=ffffff&size=120&bold=true&font-size=0.42",
             "author": "Suffiyaan Campbell",
-            "meta": "Verified Buyer · BioGain™ Strawberry",
+            "meta": "Verified Buyer \u00b7 BioGain\u2122 Strawberry",
             "quote": "The best ever probiotic meal replacement. Great taste and excellent support for my digestion."
           }
         },
@@ -80,8 +80,8 @@
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Sipho+M&background=7eb375&color=ffffff&size=120&bold=true&font-size=0.42",
             "author": "Sipho M.",
-            "meta": "Verified Buyer · Velo16™ Vitamin C",
-            "quote": "Velo16 Vitamin C keeps my immune system supported all season long. High quality capsule."
+            "meta": "Verified Buyer \u00b7 Velo16\u2122 Probiotic Digestive Capsules 60s",
+            "quote": "Velo16 Probiotic Digestive Capsules support my digestive wellness and daily gut balance. High quality capsule."
           }
         },
         "r3": {
@@ -89,7 +89,7 @@
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Anonymous+Customer&background=2e5d28&color=ffffff&size=120&bold=true&font-size=0.42",
             "author": "Anonymous",
-            "meta": "Verified Buyer · BioGain™ Strawberry",
+            "meta": "Verified Buyer \u00b7 BioGain\u2122 Strawberry",
             "quote": "Smooth strawberry taste and love that it includes micro-shielded probiotics."
           }
         }
@@ -103,7 +103,7 @@
         "brand_primary": "#4d8c44",
         "brand_dark": "#2e5d28",
         "brand_tint": "#eef7ec",
-        "eyebrow": "★ Verified Judge.me Reviews",
+        "eyebrow": "\u2605 Verified Judge.me Reviews",
         "title": "What customers say about component products"
       }
     },
@@ -113,22 +113,22 @@
         "p1": {
           "type": "point",
           "settings": {
-            "icon": "✕",
-            "text": "<strong>Vitamin C alone</strong> — lacks active probiotic strains to support gut nutrient absorption."
+            "icon": "\u2715",
+            "text": "<strong>A meal shake alone</strong> \u2014 provides nutrition but may not deliver high-density targeted strain diversity."
           }
         },
         "p2": {
           "type": "point",
           "settings": {
-            "icon": "✕",
-            "text": "<strong>Buying singles separately</strong> — costs R466.95 (BioGain Strawberry R167.00 + Velo16 Vit C R299.95)."
+            "icon": "\u2715",
+            "text": "<strong>Buying singles separately</strong> \u2014 costs R466.95 (BioGain Strawberry R167.00 + Velo16 Digestive Capsules R299.95)."
           }
         },
         "p3": {
           "type": "point",
           "settings": {
-            "icon": "✕",
-            "text": "<strong>Unprotected probiotics</strong> — stomach acid destroys unprotected cultures before reaching the gut."
+            "icon": "\u2715",
+            "text": "<strong>Unprotected probiotics</strong> \u2014 stomach acid destroys unprotected cultures before reaching the gut."
           }
         }
       },
@@ -144,10 +144,10 @@
         "image_url": "",
         "tag_value": "Dual Action",
         "tag_label": "Cellular + Gut Defense",
-        "eyebrow": "Why pair Vitamin C with Probiotics?",
+        "eyebrow": "Why pair a probiotic meal with a daily probiotic capsule?",
         "title_pre": "Single supplements,",
         "title_highlight": "incomplete defense.",
-        "desc": "Taking Vitamin C alone supports immunity but misses gut barrier wellness, where over 70% of immune cells reside."
+        "desc": "A probiotic meal provides daily protein and nutrition, but pairing it with a targeted 16-strain probiotic capsule delivers comprehensive gut-barrier and digestive support."
       }
     },
     "solution": {
@@ -156,29 +156,29 @@
         "s1": {
           "type": "point",
           "settings": {
-            "icon": "✓",
-            "text": "<strong>BioGain™ Strawberry 400g</strong> — 10 probiotic strains + 15g whey protein per serving."
+            "icon": "\u2713",
+            "text": "<strong>BioGain\u2122 Strawberry 400g</strong> \u2014 10 probiotic strains + 15g whey protein per serving."
           }
         },
         "s2": {
           "type": "point",
           "settings": {
-            "icon": "✓",
-            "text": "<strong>Velo16™ Vitamin C 60s</strong> — High-potency Vitamin C with micro-shielded probiotic bacteria."
+            "icon": "\u2713",
+            "text": "<strong>Velo16\u2122 Digestive Capsules 60s</strong> \u2014 16 micro-shielded probiotic strains with 10 billion CFU per capsule."
           }
         },
         "s3": {
           "type": "point",
           "settings": {
-            "icon": "✓",
-            "text": "<strong>Micro-shield technology</strong> — A protective shield around each bacterium ensures delivery to the gut."
+            "icon": "\u2713",
+            "text": "<strong>Micro-shield technology</strong> \u2014 A protective shield around each bacterium ensures delivery to the gut."
           }
         },
         "s4": {
           "type": "point",
           "settings": {
-            "icon": "✓",
-            "text": "<strong>True Bundle Value</strong> — Duo price R407.92 vs component sum R466.95 (save R59.03)."
+            "icon": "\u2713",
+            "text": "<strong>True Bundle Value</strong> \u2014 Duo price R407.92 vs component sum R466.95 (save R59.03)."
           }
         }
       },
@@ -196,9 +196,9 @@
         "tag_value": "Save R59.03",
         "tag_label": "Daily Immune & Gut Ritual",
         "eyebrow": "The Immunity Boost Duo",
-        "title_pre": "High-dose Vitamin C,",
-        "title_highlight": "micro-shielded probiotics.",
-        "desc": "Combines BioGain™ Strawberry Probiotic Meal and Velo16™ Vitamin C for dual-action immune and digestive support."
+        "title_pre": "16 probiotic strains,",
+        "title_highlight": "micro-shielded capsules.",
+        "desc": "Combines BioGain\u2122 Strawberry Probiotic Meal and Velo16\u2122 Probiotic Digestive Capsules for dual-action gut-barrier and immune support."
       }
     },
     "related": {
@@ -208,7 +208,7 @@
           "type": "product",
           "settings": {
             "product_handle": "biogain-probiotic-meal",
-            "brand": "BioGain™ Strawberry 400g",
+            "brand": "BioGain\u2122 Strawberry 400g",
             "rating": "4.6",
             "reviews": "24 reviews"
           }
@@ -216,8 +216,8 @@
         "r2": {
           "type": "product",
           "settings": {
-            "product_handle": "velo16-probiotics-vitamin-c",
-            "brand": "Velo16™ Probiotics Vitamin C 60s",
+            "product_handle": "velo16-probiotic-digestive-capsules",
+            "brand": "Velo16\u2122 Probiotic Digestive Capsules 60s",
             "rating": "4.8",
             "reviews": "15 reviews"
           }
@@ -243,23 +243,23 @@
         "f1": {
           "type": "feat",
           "settings": {
-            "icon": "🍓",
-            "name": "BioGain™ Meal Nutrition",
+            "icon": "\ud83c\udf53",
+            "name": "BioGain\u2122 Meal Nutrition",
             "desc": "Delicious strawberry probiotic meal shake supplying protein and active gut cultures."
           }
         },
         "f2": {
           "type": "feat",
           "settings": {
-            "icon": "🍊",
-            "name": "High-Potency Vitamin C",
-            "desc": "Essential antioxidant support for cellular immune defense and overall vitality."
+            "icon": "\ud83d\udc8a",
+            "name": "16-Strain Probiotic Capsules",
+            "desc": "10 billion CFU per capsule supporting gut-barrier health and daily digestive wellness."
           }
         },
         "f3": {
           "type": "feat",
           "settings": {
-            "icon": "🛡️",
+            "icon": "\ud83d\udee1\ufe0f",
             "name": "Micro-Shield Technology",
             "desc": "Micro-shield around each bacterium protects live cultures through harsh stomach acid."
           }
@@ -267,7 +267,7 @@
         "f4": {
           "type": "feat",
           "settings": {
-            "icon": "💰",
+            "icon": "\ud83d\udcb0",
             "name": "Save R59.03",
             "desc": "Duo price R407.92 vs component sum R466.95 bought individually."
           }
@@ -285,7 +285,7 @@
         "eyebrow": "Why choose the duo",
         "title_pre": "Targeted nutrition,",
         "title_highlight": "synergistic protection.",
-        "sub": "Key advantages of combining BioGain™ Strawberry with Velo16™ Vitamin C."
+        "sub": "Key advantages of combining BioGain\u2122 Strawberry with Velo16\u2122 Probiotic Digestive Capsules."
       }
     },
     "how": {
@@ -294,23 +294,23 @@
         "h1": {
           "type": "step",
           "settings": {
-            "icon": "🥤",
-            "name": "1. BioGain™ Shake",
-            "desc": "Mix 1 serving of BioGain™ Strawberry with water or milk daily."
+            "icon": "\ud83e\udd64",
+            "name": "1. BioGain\u2122 Shake",
+            "desc": "Mix 1 serving of BioGain\u2122 Strawberry with water or milk daily."
           }
         },
         "h2": {
           "type": "step",
           "settings": {
-            "icon": "💊",
-            "name": "2. Velo16™ Vitamin C",
-            "desc": "Take 1 Velo16™ Vitamin C capsule daily with water."
+            "icon": "\ud83d\udc8a",
+            "name": "2. Velo16\u2122 Digestive Capsules",
+            "desc": "Take 1 Velo16\u2122 Probiotic Digestive Capsule daily with water."
           }
         },
         "h3": {
           "type": "step",
           "settings": {
-            "icon": "🛡️",
+            "icon": "\ud83d\udee1\ufe0f",
             "name": "3. Micro-Shield Delivery",
             "desc": "Active bacteria arrive safely in the gut thanks to micro-shield protection."
           }
@@ -336,8 +336,8 @@
         "i1": {
           "type": "ingredient",
           "settings": {
-            "icon": "🍓",
-            "name": "BioGain™ Probiotics Meal Strawberry (400g)",
+            "icon": "\ud83c\udf53",
+            "name": "BioGain\u2122 Probiotics Meal Strawberry (400g)",
             "amount": "1 Tub (400g)",
             "desc": "10 probiotic strains, 15g whey protein per serving, strawberry flavor."
           }
@@ -345,17 +345,17 @@
         "i2": {
           "type": "ingredient",
           "settings": {
-            "icon": "🍊",
-            "name": "Velo16™ Probiotics Vitamin C (60 Capsules)",
+            "icon": "\ud83d\udc8a",
+            "name": "Velo16\u2122 Probiotics Digestive Capsules (60 Capsules)",
             "amount": "1 Bottle (60s)",
-            "desc": "High-dose Vitamin C combined with micro-shielded probiotic cultures."
+            "desc": "16 micro-shielded probiotic strains (10 billion CFU) for gut and immune support."
           }
         },
         "i3": {
           "type": "ingredient",
           "settings": {
-            "icon": "🛡️",
-            "name": "Velobiotics™ Micro-Shield Protection",
+            "icon": "\ud83d\udee1\ufe0f",
+            "name": "Velobiotics\u2122 Micro-Shield Protection",
             "amount": "Both Products",
             "desc": "Protective micro-shield around each bacterium ensures gut survival."
           }
@@ -376,7 +376,7 @@
         "sub": "Full-size retail components with micro-shielded probiotics.",
         "facts_image_url": "",
         "facts_label": "Pack contents",
-        "facts_foot": "Lab-tested · Doctor-formulated · Full transparency"
+        "facts_foot": "Lab-tested \u00b7 Doctor-formulated \u00b7 Full transparency"
       }
     },
     "confidence": {
@@ -474,7 +474,7 @@
           "settings": {
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg",
             "name": "Clinically studied strains",
-            "desc": "10 strains in Femina™, 16 in Velo16™, each with published human research."
+            "desc": "10 strains in Femina\u2122, 16 in Velo16\u2122, each with published human research."
           }
         },
         "d2": {
@@ -490,7 +490,7 @@
           "settings": {
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg",
             "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Patented MEP Technology</a>",
-            "desc": "Microencapsulation with Supercritical CO₂, studied in three peer-reviewed papers."
+            "desc": "Microencapsulation with Supercritical CO\u2082, studied in three peer-reviewed papers."
           }
         },
         "d4": {
@@ -521,7 +521,7 @@
         "o1": {
           "type": "row",
           "settings": {
-            "feature": "Synergistic Vitamin C + Probiotics",
+            "feature": "Synergistic Probiotic Meal + Targeted Capsules",
             "brand_state": "yes",
             "b_state": "no",
             "c_state": "no"
@@ -568,11 +568,11 @@
         "title": "Why Immunity Boost Duo outperforms",
         "sub": "Comparing our micro-shielded duo with standard single supplements.",
         "col_features": "Features",
-        "col_brand": "Couple Pack",
+        "col_brand": "Immunity Duo",
         "col_b": "Two singles",
         "col_c": "One generic probiotic",
-        "cta_text": "Add Couple Pack to Cart",
-        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
+        "cta_text": "Add Immunity Boost Duo to Cart",
+        "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
       }
     },
     "judgeme": {
@@ -593,21 +593,21 @@
           "type": "q",
           "settings": {
             "question": "What is inside the Immunity Boost Duo?",
-            "answer": "<p>The Immunity Boost Duo includes 1x BioGain™ Probiotics Meal Strawberry 400g and 1x Velo16™ Probiotics Vitamin C (60 capsules).</p>"
+            "answer": "<p>The Immunity Boost Duo includes 1x BioGain\u2122 Probiotics Meal Strawberry 400g and 1x Velo16\u2122 Probiotic Digestive Capsules (60 capsules).</p>"
           }
         },
         "q2": {
           "type": "q",
           "settings": {
             "question": "How much do I save with this duo?",
-            "answer": "<p>You pay R407.92 for the duo versus R466.95 when purchasing components separately (BioGain Strawberry R167.00 + Velo16 Vitamin C R299.95), saving R59.03 to the cent.</p>"
+            "answer": "<p>You pay R407.92 for the duo versus R466.95 when purchasing components separately (BioGain Strawberry R167.00 + Velo16 Digestive Capsules R299.95), saving R59.03 to the cent.</p>"
           }
         },
         "q3": {
           "type": "q",
           "settings": {
             "question": "How do I take the duo?",
-            "answer": "<p>Enjoy 1 serving of BioGain™ Strawberry meal shake daily with water or milk, and take 1 Velo16™ Vitamin C capsule daily with water.</p>"
+            "answer": "<p>Enjoy 1 serving of BioGain\u2122 Strawberry meal shake daily with water or milk, and take 1 Velo16\u2122 Probiotic Digestive Capsule daily with water.</p>"
           }
         },
         "q4": {
@@ -652,29 +652,29 @@
         "g1": {
           "type": "g",
           "settings": {
-            "icon": "✅",
+            "icon": "\u2705",
             "text": "30-day money-back"
           }
         },
         "g2": {
           "type": "g",
           "settings": {
-            "icon": "🚚",
+            "icon": "\ud83d\ude9a",
             "text": "Ships worldwide"
           }
         },
         "g3": {
           "type": "g",
           "settings": {
-            "icon": "🔬",
+            "icon": "\ud83d\udd2c",
             "text": "Lab-tested every batch"
           }
         },
         "g4": {
           "type": "g",
           "settings": {
-            "icon": "💰",
-            "text": "Save R84.95 vs singles"
+            "icon": "\ud83d\udcb0",
+            "text": "Save R59.03 vs singles"
           }
         }
       },
@@ -689,10 +689,10 @@
         "brand_dark": "#2e5d28",
         "brand_light": "#7eb375",
         "badge": "30-day money-back guarantee",
-        "title_pre": "Two guts, one pack,",
+        "title_pre": "Gut & immune support,",
         "title_highlight": "risk-free for 30 days",
-        "sub": "Femina™ for her, Velo16™ for him, R84.95 saved. If you don't feel the difference, we refund every cent.",
-        "cta_text": "Add Couple Pack to Cart",
+        "sub": "BioGain\u2122 Strawberry + Velo16\u2122 Digestive Capsules, R59.03 saved. If you don't feel the difference, we refund every cent.",
+        "cta_text": "Add Immunity Boost Duo to Cart",
         "cta_link": "#vbpForm"
       }
     },

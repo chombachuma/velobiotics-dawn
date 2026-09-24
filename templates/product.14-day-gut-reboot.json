@@ -1,0 +1,715 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🥬",
+            "text": "GutSlim™ SuperGreens (30 servings) for deep nourishment"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "💊",
+            "text": "GutSlim™ Tummy Toner (60 capsules) for digestive ease"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "💰",
+            "text": "Save R149.45 vs buying separately"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "brand_label": "Velobiotics™ Couple Pack",
+        "rating": "4.03",
+        "review_count": "29",
+        "hook": "14-Day Gut Reboot Starter Pack: GutSlim™ SuperGreens + GutSlim™ Tummy Toner. Save R149.45 vs buying separately.",
+        "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
+        "show_subscription": true,
+        "tier_unit": "Pack",
+        "tier_unit_plural": "Packs",
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
+    },
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "author": "Khanyo Mvubu",
+            "meta": "Verified buyer"
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "author": "Karabo Rampou",
+            "meta": "Verified buyer"
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "author": "Lebo",
+            "meta": "Verified buyer"
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "author": "Anonymous",
+            "meta": "Verified buyer"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "eyebrow": "★ Verified Judge.me reviews",
+        "title": "Couples who share the pack"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Expensive separate buys</strong> — R948.95 when purchasing SuperGreens and Tummy Toner individually."
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Unprotected probiotics</strong> — Stomach acid destroys standard unshielded cultures before reaching your gut."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Persistent sluggishness</strong> — Heavy meals cause uncomfortable fullness, gas, and irregular rhythm."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#4d8c44",
+        "brand_tint": "#eef7ec",
+        "image_url": "",
+        "tag_value": "2 needs",
+        "tag_label": "One household, two different guts",
+        "eyebrow": "THE DIGESTIVE SLUMP",
+        "title_pre": "Sluggish Digestion &",
+        "title_highlight": "Post-Meal Bloating",
+        "desc": "Daily stress, poor diet, and unshielded probiotic supplements leave your digestive system struggling."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Dual-action power</strong> — Nourishing greens plus botanical tummy support in one targeted system."
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Micro-shield protection</strong> — Velobiotics micro-shield technology ensures live cultures reach your gut intact."
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Instant bundle saving</strong> — Get the entire 14-day starter pack for R799.50, saving R149.45."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#4d8c44",
+        "brand_tint": "#eef7ec",
+        "image_url": "",
+        "tag_value": "1 a day",
+        "tag_label": "Each, with water, any time",
+        "eyebrow": "THE 14-DAY RESET",
+        "title_pre": "A Complete 14-Day",
+        "title_highlight": "Synergistic Gut Reboot",
+        "desc": "GutSlim SuperGreens and Tummy Toner combine alkalising greens and targeted probiotics for total digestive renewal."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-supergreens",
+            "brand": "GutSlim™ · 30 Servings",
+            "rating": "4.03",
+            "reviews": "29"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-tummy-toner",
+            "brand": "GutSlim™ · 60 Capsules",
+            "rating": "4.03",
+            "reviews": "29"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "tint": false,
+        "eyebrow": "PACK CONTENTS",
+        "title": "What’s inside the 14-Day Starter Pack",
+        "sub": "Two complementary formulas designed to work together for total digestive support."
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "f1": {
+          "type": "feat",
+          "settings": {
+            "icon": "🥬",
+            "name": "Alkalising SuperGreens",
+            "desc": "Organic greens, spirulina, and micro-shielded probiotics deliver essential daily nourishment."
+          }
+        },
+        "f2": {
+          "type": "feat",
+          "settings": {
+            "icon": "💊",
+            "name": "Targeted Tummy Comfort",
+            "desc": "Botanical extracts and live cultures in Tummy Toner help ease bloating and post-meal discomfort."
+          }
+        },
+        "f3": {
+          "type": "feat",
+          "settings": {
+            "icon": "🛡️",
+            "name": "Micro-Shield Technology",
+            "desc": "A protective micro-shield encases each bacterium so live probiotics survive stomach acid."
+          }
+        },
+        "f4": {
+          "type": "feat",
+          "settings": {
+            "icon": "💰",
+            "name": "Save R149.45 Instantly",
+            "desc": "Enjoy bundle pricing of R799.50 instead of R948.95 when bought separately."
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_tint": "#eef7ec",
+        "eyebrow": "KEY BENEFITS",
+        "title_pre": "Why Start Your Reset With",
+        "title_highlight": "This 14-Day Pack",
+        "sub": "Science-backed synergy for gut comfort, nutrient absorption, and lasting vitality."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "🥣",
+            "name": "Morning SuperGreens",
+            "desc": "Mix 1 scoop of GutSlim SuperGreens into water, juice, or a smoothie with breakfast."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "💊",
+            "name": "Daily Tummy Toner",
+            "desc": "Take 2 capsules of GutSlim Tummy Toner daily with water."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "🛡️",
+            "name": "Micro-Shield Release",
+            "desc": "The micro-shield around each bacterium releases live probiotic strains directly in your gut."
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_tint": "#eef7ec",
+        "eyebrow": "DAILY RITUAL",
+        "title_pre": "How To Use Your",
+        "title_highlight": "14-Day Starter Pack",
+        "sub": "Simple daily steps for maximum digestive comfort and absorption."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🥬",
+            "name": "GutSlim™ Probiotics SuperGreens",
+            "amount": "30 servings",
+            "desc": "Organic green superfood powder with alkalising greens and micro-shielded probiotics."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "💊",
+            "name": "GutSlim™ Probiotics Tummy Toner",
+            "amount": "60 capsules",
+            "desc": "Botanical extract blend combined with live probiotic cultures for digestive ease."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🛡️",
+            "name": "Velobiotics™ Micro-Shield Protection",
+            "amount": "Both products",
+            "desc": "Patented microencapsulation shielding each bacterium from stomach acid."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "brand_light": "#7eb375",
+        "eyebrow": "FORMULA & CONTENTS",
+        "title": "Active Formulations",
+        "sub": "Clean, potent ingredients micro-shielded for maximum viability.",
+        "facts_image_url": "",
+        "facts_label": "Pack contents",
+        "facts_foot": "Lab-tested · Doctor-formulated · Full transparency"
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Verified 5-star customer reviews"
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "True savings vs buying separately"
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Micro-shielded bacterial delivery"
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "eyebrow": "VERIFIED QUALITY",
+        "title_pre": "Proven Results &",
+        "title_highlight": "Real Customer Trust",
+        "sub": "Every Judge.me review on this pack is five stars, all from verified buyers.",
+        "caveat": "Judge.me verified reviews, 10 reviews, 5.0 average. Individual results may vary."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "6-week-total-transformation-pack",
+            "brand": "GutSlim™ · 6-Week Pack",
+            "rating": "4.03",
+            "reviews": "29"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "appetite-cravings-control-stack",
+            "brand": "GutSlim™ · 3-Product Stack",
+            "rating": "4.5",
+            "reviews": "2"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gut-reset-bloat-control-pack",
+            "brand": "GutSlim™ · Reset Pack",
+            "rating": "4.8",
+            "reviews": "45"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "tint": true,
+        "eyebrow": "EXPLORE MORE PACKS",
+        "title": "Other Targeted Bundles",
+        "sub": "Discover other tailored probiotic systems for your wellness goals."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg",
+            "name": "Clinically studied strains",
+            "desc": "10 strains in Femina™, 16 in Velo16™, each with published human research."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg",
+            "name": "Doctor-designed",
+            "desc": "Formulated by Dr Chomba Chuma, MD, and made in SAHPRA-aware facilities."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg",
+            "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Patented MEP Technology</a>",
+            "desc": "Microencapsulation with Supercritical CO₂, studied in three peer-reviewed papers."
+          }
+        },
+        "d4": {
+          "type": "card",
+          "settings": {
+            "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg",
+            "name": "Batch tested",
+            "desc": "Every batch is lab-tested for live count and purity."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3",
+        "d4"
+      ],
+      "settings": {
+        "eyebrow": "Trusted by Doctors. Proven by Science.",
+        "title_pre": "Quality you can",
+        "title_highlight": "trust.",
+        "sub": "Built on peer-reviewed actives, medical formulations, and SAHPRA-aware manufacturing."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "Synergistic SuperGreens + Tummy Toner",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "Micro-Shield around each bacterium",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "True bundle saving of R149.45",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "Shelf-stable without refrigeration",
+            "brand_state": "yes",
+            "b_state": "yes",
+            "c_state": "no"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "title": "Why Choose The 14-Day Starter Pack",
+        "sub": "See how Velobiotics compares to standard unshielded green cleanses.",
+        "col_features": "Features",
+        "col_brand": "Couple Pack",
+        "col_b": "Two singles",
+        "col_c": "One generic probiotic",
+        "cta_text": "Add Couple Pack to Cart",
+        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "scope": "product",
+        "show_stats": true,
+        "eyebrow": "Real Reviews",
+        "title_pre": "What couples",
+        "title_highlight": "are saying",
+        "sub": "Verified reviews collected independently by Judge.me from customers who bought this pack."
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "Exactly what is in the 14-Day Gut Reboot Starter Pack?",
+            "answer": "<p>The pack contains 1 container of GutSlim Probiotics SuperGreens (30 servings) and 1 bottle of GutSlim Probiotics Tummy Toner (60 capsules).</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "How much do I save with this pack?",
+            "answer": "<p>You pay R799.50 for the pack versus R948.95 when purchasing SuperGreens (R599.00) and Tummy Toner (R349.95) individually — a true saving of R149.45.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "How should I take these products during my 14-day reboot?",
+            "answer": "<p>Mix 1 scoop of SuperGreens in water or a smoothie with breakfast every morning, and take 2 capsules of Tummy Toner daily with water.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Can I take this pack with antibiotics or during pregnancy?",
+            "answer": "<p>If taking antibiotics, space probiotic consumption at least 2 to 3 hours apart. If you are pregnant or nursing, please check with your healthcare professional before use.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Do these products require refrigeration?",
+            "answer": "<p>No refrigeration required. Velobiotics microencapsulation creates a protective micro-shield around each bacterium, keeping them stable at room temperature.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "What if I am not satisfied with my purchase?",
+            "answer": "<p>We offer a 30-day money-back guarantee. Contact our customer care team at <a href=\"mailto:support@velobiotics.com\">support@velobiotics.com</a> for prompt assistance.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "title_pre": "Questions before",
+        "title_highlight": "you share it"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "✅",
+            "text": "30-day money-back"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "🚚",
+            "text": "Ships worldwide"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "🔬",
+            "text": "Lab-tested every batch"
+          }
+        },
+        "g4": {
+          "type": "g",
+          "settings": {
+            "icon": "💰",
+            "text": "Save R84.95 vs singles"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_light": "#7eb375",
+        "badge": "30-day money-back guarantee",
+        "title_pre": "Two guts, one pack,",
+        "title_highlight": "risk-free for 30 days",
+        "sub": "Femina™ for her, Velo16™ for him, R84.95 saved. If you don't feel the difference, we refund every cent.",
+        "cta_text": "Add Couple Pack to Cart",
+        "cta_link": "#vbpForm"
+      }
+    },
+    "science_strip": {
+      "type": "vb-science-strip",
+      "settings": {
+        "kicker": "Backed by peer-reviewed science",
+        "title_pre": "Don't take our word for it.",
+        "title_highlight": "View the science.",
+        "sub": "Both products in this pack use the same shielding technology, studied in three peer-reviewed papers. Read what the research actually showed, in plain English.",
+        "all_text": "View the science",
+        "all_url": "/pages/what-is-microencapsulation",
+        "bg": "#f6faf5",
+        "pad_top": 40,
+        "pad_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "science_strip",
+    "judgeme",
+    "faq",
+    "final"
+  ]
+}

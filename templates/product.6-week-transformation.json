@@ -15,79 +15,39 @@
         "b1": {
           "type": "benefit",
           "settings": {
-            "icon": "\ud83d\udc69",
-            "text": "Femina\u2122 Cranberry Caps 30s for her"
+            "icon": "⚡",
+            "text": "5 Full-Size Formulas: Shake, Greens, GLP-1 Booster, Fat Burner & Tummy Toner"
           }
         },
         "b2": {
           "type": "benefit",
           "settings": {
-            "icon": "\ud83d\udc68",
-            "text": "Velo16\u2122 Digestive Caps 30s for him"
+            "icon": "🎯",
+            "text": "Complete 6-week system for appetite, digestion, and metabolic support"
           }
         },
         "b3": {
           "type": "benefit",
           "settings": {
-            "icon": "\ud83d\udcb0",
-            "text": "Save R84.95 vs buying separately"
-          }
-        },
-        "b4": {
-          "type": "benefit",
-          "settings": {
-            "icon": "\u26a1",
-            "text": "1000\u00d7 <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP delivery</a> in both"
-          }
-        },
-        "t1": {
-          "type": "testi",
-          "settings": {
-            "quote": "Great combo, bowel movement much smoother",
-            "author": "Nicky J."
-          }
-        },
-        "t2": {
-          "type": "testi",
-          "settings": {
-            "quote": "Subscribed for my husband and myself",
-            "author": "Kgahliso"
-          }
-        },
-        "t3": {
-          "type": "testi",
-          "settings": {
-            "quote": "Velobiotics for life!",
-            "author": "Natasha de O."
-          }
-        },
-        "t4": {
-          "type": "testi",
-          "settings": {
-            "quote": "Has really made a difference",
-            "author": "Nicky"
+            "icon": "💰",
+            "text": "Save R556.45 vs buying separately (R1,990.50 vs R2,546.95)"
           }
         }
       },
       "block_order": [
         "b1",
         "b2",
-        "b3",
-        "b4",
-        "t1",
-        "t2",
-        "t3",
-        "t4"
+        "b3"
       ],
       "settings": {
         "brand_primary": "#4d8c44",
         "brand_dark": "#2e5d28",
         "brand_tint": "#eef7ec",
-        "brand_label": "Velobiotics\u2122 Couple Pack",
-        "rating": "5.0",
-        "review_count": "10 reviews",
-        "hook": "Two daily probiotics, one pack. Femina\u2122 with cranberry for her, Velo16\u2122 digestive probiotic for him: 30 capsules each, both micro-shielded so the cultures reach the gut alive. R84.95 less than buying the two separately.",
-        "ship_note": "Ships worldwide \u00b7 Free shipping over the free-shipping threshold \u00b7 30-day money-back guarantee",
+        "brand_label": "Velobiotics™ Couple Pack",
+        "rating": "4.03",
+        "review_count": "29",
+        "hook": "6-Week GutSlim™ Total Transformation Pack: All 5 GutSlim™ Products in 1 Complete Stack. Save R556.45 vs buying separately.",
+        "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
         "show_subscription": true,
         "tier_unit": "Pack",
         "tier_unit_plural": "Packs",
@@ -101,487 +61,29 @@
         "r1": {
           "type": "review",
           "settings": {
-            "avatar_url": "https://ui-avatars.com/api/?name=Nicky+Johnson&background=4d8c44&color=ffffff&size=120&bold=true&font-size=0.42",
-            "author": "Nicky Johnson",
-            "meta": "Verified buyer",
-            "quote": "Great combo. Been feeling much better since using it, bowel movement is definitely much smoother. Was on a course of antibiotics and had no side effects."
+            "author": "Khanyo Mvubu",
+            "meta": "Verified buyer"
           }
         },
         "r2": {
           "type": "review",
           "settings": {
-            "avatar_url": "https://ui-avatars.com/api/?name=Kgahliso&background=7eb375&color=ffffff&size=120&bold=true&font-size=0.42",
-            "author": "Kgahliso",
-            "meta": "Verified buyer",
-            "quote": "I've been taking the cranberry supplements for 3 months and they worked so well I went with the monthly subscription for my husband and myself. Very happy with my order."
+            "author": "Karabo Rampou",
+            "meta": "Verified buyer"
           }
         },
         "r3": {
           "type": "review",
           "settings": {
-            "avatar_url": "https://ui-avatars.com/api/?name=Lorian+Daniels&background=2e5d28&color=ffffff&size=120&bold=true&font-size=0.42",
-            "author": "Lorian Daniels",
-            "meta": "Verified buyer",
-            "quote": "I have used so many products before. Since a sample from Velobiotics I have decided to stay with this product for both myself and my husband."
+            "author": "Lebo",
+            "meta": "Verified buyer"
           }
         },
         "r4": {
           "type": "review",
           "settings": {
-            "avatar_url": "https://ui-avatars.com/api/?name=Natasha+de+Oliveira&background=4d8c44&color=ffffff&size=120&bold=true&font-size=0.42",
-            "author": "Natasha de Oliveira",
-            "meta": "Verified buyer",
-            "quote": "Truly won't use anything else, Velobiotics for life!"
-          }
-        },
-        "r5": {
-          "type": "review",
-          "settings": {
-            "avatar_url": "https://ui-avatars.com/api/?name=Nicky&background=7eb375&color=ffffff&size=120&bold=true&font-size=0.42",
-            "author": "Nicky",
-            "meta": "Verified buyer",
-            "quote": "Has really made a difference. Couldn't be happier with the product."
-          }
-        }
-      },
-      "block_order": [
-        "r1",
-        "r2",
-        "r3",
-        "r4",
-        "r5"
-      ],
-      "settings": {
-        "brand_primary": "#4d8c44",
-        "brand_dark": "#2e5d28",
-        "brand_tint": "#eef7ec",
-        "eyebrow": "\u2605 Verified Judge.me reviews",
-        "title": "Couples who share the pack"
-      }
-    },
-    "problem": {
-      "type": "vb-product-story",
-      "blocks": {
-        "p1": {
-          "type": "point",
-          "settings": {
-            "icon": "\u2715",
-            "text": "<strong>One-size probiotic</strong> \u2014 ignores the strains women rely on for urinary and vaginal balance."
-          }
-        },
-        "p2": {
-          "type": "point",
-          "settings": {
-            "icon": "\u2715",
-            "text": "<strong>Two separate purchases</strong> \u2014 R418.95 for the same two boxes bought one by one."
-          }
-        },
-        "p3": {
-          "type": "point",
-          "settings": {
-            "icon": "\u2715",
-            "text": "<strong>Ordinary capsules</strong> \u2014 most of the cultures die in <a class=\"vb-sci-link\" href=\"/pages/probiotics-tolerance-to-gastric-acid\">stomach acid</a> before they can work."
-          }
-        },
-        "p4": {
-          "type": "point",
-          "settings": {
-            "icon": "\u2715",
-            "text": "<strong>Two routines</strong> \u2014 different brands, different rules, nobody keeps it up."
-          }
-        }
-      },
-      "block_order": [
-        "p1",
-        "p2",
-        "p3",
-        "p4"
-      ],
-      "settings": {
-        "reverse": false,
-        "brand_primary": "#4d8c44",
-        "brand_tint": "#eef7ec",
-        "image_url": "",
-        "tag_value": "2 needs",
-        "tag_label": "One household, two different guts",
-        "eyebrow": "Why a couple pack?",
-        "title_pre": "Same home,",
-        "title_highlight": "different gut needs.",
-        "desc": "She wants a probiotic that also looks after urinary and intimate flora. He wants digestion that behaves after every meal. One product cannot be right for both, and buying two singles at full price costs more than it should."
-      }
-    },
-    "solution": {
-      "type": "vb-product-story",
-      "blocks": {
-        "s1": {
-          "type": "point",
-          "settings": {
-            "icon": "\u2713",
-            "text": "<strong>Femina\u2122 for her</strong> \u2014 10 strains + cranberry for gut, urinary and vaginal balance. 30 capsules."
-          }
-        },
-        "s2": {
-          "type": "point",
-          "settings": {
-            "icon": "\u2713",
-            "text": "<strong>Velo16\u2122 for him</strong> \u2014 16 strains + inulin prebiotic for digestion, bloating and immunity. 30 capsules."
-          }
-        },
-        "s3": {
-          "type": "point",
-          "settings": {
-            "icon": "\u2713",
-            "text": "<strong><a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Velobiotics\u2122 MEP technology</a></strong> \u2014 1000\u00d7 more probiotics reach the gut alive, in both products."
-          }
-        },
-        "s4": {
-          "type": "point",
-          "settings": {
-            "icon": "\u2713",
-            "text": "<strong>One pack, one price</strong> \u2014 R334 instead of R418.95. Save 20%."
-          }
-        }
-      },
-      "block_order": [
-        "s1",
-        "s2",
-        "s3",
-        "s4"
-      ],
-      "settings": {
-        "reverse": true,
-        "brand_primary": "#4d8c44",
-        "brand_tint": "#eef7ec",
-        "image_url": "",
-        "tag_value": "1 a day",
-        "tag_label": "Each, with water, any time",
-        "eyebrow": "The Couple Pack",
-        "title_pre": "Hers and his,",
-        "title_highlight": "matched not identical.",
-        "desc": "Femina\u2122 pairs 10 clinically studied strains with cranberry extract for her gut and intimate flora. Velo16\u2122 gives him 16 strains plus 200 mg inulin prebiotic for digestion and immunity. Both use the patented Velobiotics\u2122 micro-shield, so the same simple ritual works for two."
-      }
-    },
-    "related": {
-      "type": "vb-product-related",
-      "blocks": {
-        "r1": {
-          "type": "product",
-          "settings": {
-            "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
-            "brand": "Femina\u2122 \u00b7 for her",
-            "rating": "4.8",
-            "reviews": "1300+"
-          }
-        },
-        "r2": {
-          "type": "product",
-          "settings": {
-            "product_handle": "velo16-probiotic-digestive-capsules",
-            "brand": "Velo16\u2122 \u00b7 for him",
-            "rating": "4.8",
-            "reviews": "900+"
-          }
-        }
-      },
-      "block_order": [
-        "r1",
-        "r2"
-      ],
-      "settings": {
-        "brand_primary": "#4d8c44",
-        "brand_dark": "#2e5d28",
-        "brand_tint": "#eef7ec",
-        "tint": false,
-        "eyebrow": "What's inside",
-        "title": "The two products in this pack",
-        "sub": "Each box is the full retail product: same formula, same 30-capsule count, same batch testing as sold on its own."
-      }
-    },
-    "benefits": {
-      "type": "vb-product-benefits",
-      "blocks": {
-        "f1": {
-          "type": "feat",
-          "settings": {
-            "icon": "\ud83d\udc69",
-            "name": "Her intimate balance",
-            "desc": "Femina\u2122 strains support a healthy vaginal pH and urinary comfort, with cranberry."
-          }
-        },
-        "f2": {
-          "type": "feat",
-          "settings": {
-            "icon": "\ud83d\udc68",
-            "name": "His digestion",
-            "desc": "Velo16\u2122 eases bloating and irregularity and helps rebuild flora after antibiotics."
-          }
-        },
-        "f3": {
-          "type": "feat",
-          "settings": {
-            "icon": "\ud83d\udcb0",
-            "name": "Save R84.95",
-            "desc": "R334 for both boxes versus R418.95 bought separately."
-          }
-        },
-        "f4": {
-          "type": "feat",
-          "settings": {
-            "icon": "\ud83d\udee1\ufe0f",
-            "name": "Micro-shielded",
-            "desc": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Supercritical CO\u2082 microencapsulation</a> protects every culture through stomach acid."
-          }
-        },
-        "f5": {
-          "type": "feat",
-          "settings": {
-            "icon": "\ud83c\udf21\ufe0f",
-            "name": "No fridge",
-            "desc": "Both products are <a class=\"vb-sci-link\" href=\"/pages/heat-stability-and-shelf-life\">shelf-stable</a> at room temperature."
-          }
-        },
-        "f6": {
-          "type": "feat",
-          "settings": {
-            "icon": "\ud83d\udcc5",
-            "name": "One shared ritual",
-            "desc": "One capsule each, daily. Reorder together, run out together."
-          }
-        }
-      },
-      "block_order": [
-        "f1",
-        "f2",
-        "f3",
-        "f4",
-        "f5",
-        "f6"
-      ],
-      "settings": {
-        "brand_primary": "#4d8c44",
-        "brand_tint": "#eef7ec",
-        "eyebrow": "Why this pack",
-        "title_pre": "Better together,",
-        "title_highlight": "for both of you.",
-        "sub": "Six reasons couples buy the pack instead of two singles."
-      }
-    },
-    "how": {
-      "type": "vb-product-how",
-      "blocks": {
-        "h1": {
-          "type": "step",
-          "settings": {
-            "icon": "\ud83d\udce6",
-            "name": "Unpack two boxes",
-            "desc": "Femina\u2122 Cranberry Caps for her, Velo16\u2122 Digestive Caps for him."
-          }
-        },
-        "h2": {
-          "type": "step",
-          "settings": {
-            "icon": "\ud83d\udc8a",
-            "name": "One capsule each",
-            "desc": "Daily, with water, with or without food. Morning is easiest to remember."
-          }
-        },
-        "h3": {
-          "type": "step",
-          "settings": {
-            "icon": "\ud83d\udee1\ufe0f",
-            "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP delivery</a>",
-            "desc": "The micro-shield holds through stomach acid and releases the cultures in the intestine."
-          }
-        },
-        "h4": {
-          "type": "step",
-          "settings": {
-            "icon": "\ud83d\udd01",
-            "name": "Reorder at day 25",
-            "desc": "Both boxes are 30-day supplies. Subscribe and save to keep them arriving together."
-          }
-        }
-      },
-      "block_order": [
-        "h1",
-        "h2",
-        "h3",
-        "h4"
-      ],
-      "settings": {
-        "brand_primary": "#4d8c44",
-        "brand_tint": "#eef7ec",
-        "eyebrow": "How it works",
-        "title_pre": "One capsule each,",
-        "title_highlight": "every day.",
-        "sub": "A 30-day shared ritual. No protocol guide needed."
-      }
-    },
-    "ingredients": {
-      "type": "vb-product-ingredients",
-      "blocks": {
-        "i1": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "\ud83d\udc69",
-            "name": "Femina\u2122 Probiotic Capsules with Cranberry",
-            "amount": "30 capsules",
-            "desc": "10 clinically studied probiotic strains plus cranberry extract for gut, urinary and intimate balance."
-          }
-        },
-        "i2": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "\ud83d\udc68",
-            "name": "Velo16\u2122 Probiotic Digestive Capsules",
-            "amount": "30 capsules",
-            "desc": "16 probiotic strains plus 200 mg inulin prebiotic for digestion and immunity."
-          }
-        },
-        "i3": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "\ud83d\udee1\ufe0f",
-            "name": "Velobiotics\u2122 MEP micro-shield",
-            "amount": "Both products",
-            "desc": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Supercritical CO\u2082 microencapsulation</a>: 1000\u00d7 more probiotics survive to the gut."
-          }
-        },
-        "i4": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "\ud83d\udcb0",
-            "name": "Pack saving",
-            "amount": "R84.95 (20%)",
-            "desc": "R334 versus R209.95 + R209.00 bought separately."
-          }
-        },
-        "i5": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "\ud83d\udcc5",
-            "name": "Supply",
-            "amount": "30 days each",
-            "desc": "One capsule per person per day."
-          }
-        },
-        "i6": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "\ud83d\udeab",
-            "name": "Free from",
-            "amount": "Always",
-            "desc": "Gluten \u00b7 soy \u00b7 dairy \u00b7 artificial colours \u00b7 preservatives \u00b7 GMO."
-          }
-        }
-      },
-      "block_order": [
-        "i1",
-        "i2",
-        "i3",
-        "i4",
-        "i5",
-        "i6"
-      ],
-      "settings": {
-        "brand_primary": "#4d8c44",
-        "brand_dark": "#2e5d28",
-        "brand_tint": "#eef7ec",
-        "brand_light": "#7eb375",
-        "eyebrow": "What's inside",
-        "title": "Pack contents",
-        "sub": "Two full-size products. Supplement facts for each are on the individual product pages.",
-        "facts_image_url": "",
-        "facts_label": "Pack contents",
-        "facts_foot": "Lab-tested \u00b7 Doctor-formulated \u00b7 Full transparency"
-      }
-    },
-    "confidence": {
-      "type": "vb-product-confidence",
-      "blocks": {
-        "c1": {
-          "type": "stat",
-          "settings": {
-            "label": "Five-star reviews on this pack",
-            "percent": 100
-          }
-        },
-        "c2": {
-          "type": "stat",
-          "settings": {
-            "label": "Reviews from verified buyers",
-            "percent": 100
-          }
-        },
-        "c3": {
-          "type": "stat",
-          "settings": {
-            "label": "Capsules micro-shielded (MEP)",
-            "percent": 100
-          }
-        },
-        "c4": {
-          "type": "stat",
-          "settings": {
-            "label": "Saving vs buying separately",
-            "percent": 20
-          }
-        }
-      },
-      "block_order": [
-        "c1",
-        "c2",
-        "c3",
-        "c4"
-      ],
-      "settings": {
-        "brand_primary": "#4d8c44",
-        "brand_dark": "#2e5d28",
-        "brand_tint": "#eef7ec",
-        "eyebrow": "Real results",
-        "title_pre": "Rated 5.0 by",
-        "title_highlight": "couples who bought it",
-        "sub": "Every Judge.me review on this pack is five stars, all from verified buyers.",
-        "caveat": "Judge.me verified reviews, 10 reviews, 5.0 average. Individual results may vary."
-      }
-    },
-    "fbt": {
-      "type": "vb-product-related",
-      "blocks": {
-        "r1": {
-          "type": "product",
-          "settings": {
-            "product_handle": "couples-his-biotics-her-biotics-daily-pack",
-            "brand": "His-Biotics\u2122 + Her-Biotics\u2122",
-            "rating": "4.7",
-            "reviews": "300+"
-          }
-        },
-        "r2": {
-          "type": "product",
-          "settings": {
-            "product_handle": "femina-mini-combo",
-            "brand": "Femina\u2122",
-            "rating": "4.8",
-            "reviews": "260+"
-          }
-        },
-        "r3": {
-          "type": "product",
-          "settings": {
-            "product_handle": "family-health-bundle",
-            "brand": "Velobiotics\u2122",
-            "rating": "4.9",
-            "reviews": "150+"
-          }
-        },
-        "r4": {
-          "type": "product",
-          "settings": {
-            "product_handle": "velo16-probiotics-digestive-enzymes-complex",
-            "brand": "Velo16\u2122",
-            "rating": "4.8",
-            "reviews": "400+"
+            "author": "Anonymous",
+            "meta": "Verified buyer"
           }
         }
       },
@@ -595,10 +97,394 @@
         "brand_primary": "#4d8c44",
         "brand_dark": "#2e5d28",
         "brand_tint": "#eef7ec",
+        "eyebrow": "★ Verified Judge.me reviews",
+        "title": "Couples who share the pack"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>High separate cost</strong> — Purchasing all 5 GutSlim products individually costs R2,546.95."
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Acid destruction</strong> — Standard unshielded probiotics are ruined in stomach acid before reaching your intestines."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "✕",
+            "text": "<strong>Uncoordinated efforts</strong> — Trying separate unaligned products leads to poor compliance and missed results."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#4d8c44",
+        "brand_tint": "#eef7ec",
+        "image_url": "",
+        "tag_value": "2 needs",
+        "tag_label": "One household, two different guts",
+        "eyebrow": "THE WEIGHT & DIGESTION PLATEAU",
+        "title_pre": "Scattered Supplements &",
+        "title_highlight": "Frustrating Discomfort",
+        "desc": "Inconsistent routines, unshielded probiotics, and buying individual supplements leave your metabolic goals stalled."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Complete 5-product synergy</strong> — Meal shake + greens + 3 targeted probiotic capsule formulas."
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Micro-shield technology</strong> — Velobiotics micro-shield protects each bacterium through stomach acid."
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Massive bundle saving</strong> — Get all 5 full-size products for R1,990.50, saving R556.45."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#4d8c44",
+        "brand_tint": "#eef7ec",
+        "image_url": "",
+        "tag_value": "1 a day",
+        "tag_label": "Each, with water, any time",
+        "eyebrow": "THE TOTAL TRANSFORMATION",
+        "title_pre": "A Unified 5-Formula",
+        "title_highlight": "6-Week Gut System",
+        "desc": "The complete GutSlim line working synergistically to support appetite, digestion, metabolic balance, and green nutrition."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-diet-shake",
+            "brand": "GutSlim™ · Diet Shake",
+            "rating": "4.03",
+            "reviews": "29"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-supergreens",
+            "brand": "GutSlim™ · SuperGreens",
+            "rating": "4.03",
+            "reviews": "29"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-glp-1-booster",
+            "brand": "GutSlim™ · GLP-1 Booster",
+            "rating": "4.03",
+            "reviews": "29"
+          }
+        },
+        "r4": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-fat-burner",
+            "brand": "GutSlim™ · Fat Burner",
+            "rating": "4.03",
+            "reviews": "29"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "tint": false,
+        "eyebrow": "PACK CONTENTS",
+        "title": "What’s inside the 6-Week Transformation Pack",
+        "sub": "All 5 full-sized GutSlim formulas in one complete 6-week transformation stack."
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "f1": {
+          "type": "feat",
+          "settings": {
+            "icon": "🥤",
+            "name": "Nourishing Diet Shake",
+            "desc": "Probiotic-fortified meal replacement shake to support satiety and calorie control."
+          }
+        },
+        "f2": {
+          "type": "feat",
+          "settings": {
+            "icon": "🥬",
+            "name": "Daily SuperGreens",
+            "desc": "Alkalising greens and micro-shielded probiotics for gut flora balance and energy."
+          }
+        },
+        "f3": {
+          "type": "feat",
+          "settings": {
+            "icon": "💊",
+            "name": "Targeted Capsule Stack",
+            "desc": "GLP-1 Booster, Fat Burner, and Tummy Toner capsules working together for digestive ease."
+          }
+        },
+        "f4": {
+          "type": "feat",
+          "settings": {
+            "icon": "💰",
+            "name": "Save R556.45 Instantly",
+            "desc": "Complete 5-product stack priced at R1,990.50 instead of R2,546.95 bought individually."
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_tint": "#eef7ec",
+        "eyebrow": "KEY BENEFITS",
+        "title_pre": "Why Choose The",
+        "title_highlight": "6-Week Transformation",
+        "sub": "Comprehensive 360° support for appetite control, digestion, and metabolic vitality."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "🥤",
+            "name": "Morning Shake & Greens",
+            "desc": "Replace one meal with GutSlim Diet Shake and drink 1 scoop of SuperGreens in water."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "💊",
+            "name": "Daily Capsule Protocol",
+            "desc": "Take GLP-1 Booster, Fat Burner, and Tummy Toner capsules daily with water as directed."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "🛡️",
+            "name": "Micro-Shield Protection",
+            "desc": "The micro-shield around each bacterium protects live strains through acid for delivery in the gut."
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_tint": "#eef7ec",
+        "eyebrow": "DAILY SYSTEM",
+        "title_pre": "How To Follow Your",
+        "title_highlight": "6-Week Routine",
+        "sub": "Structured daily steps for maximum consistency and digestive comfort."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🥤",
+            "name": "GutSlim™ Probiotics Diet Shake",
+            "amount": "1x Container (500g)",
+            "desc": "Probiotic meal replacement shake packed with protein, fiber, and live cultures."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🥬",
+            "name": "GutSlim™ Probiotics SuperGreens",
+            "amount": "1x Container (30 servings)",
+            "desc": "Alkalising green superfoods and micro-shielded probiotics for daily vitality."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "⚡",
+            "name": "GutSlim™ GLP-1 Booster",
+            "amount": "60 capsules",
+            "desc": "Probiotic and metabolic complex designed to support natural fullness cues."
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "🔥",
+            "name": "GutSlim™ Fat Burner",
+            "amount": "60 capsules",
+            "desc": "Botanical extracts and live probiotic strains formulated to support energy and metabolism."
+          }
+        },
+        "i5": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "💊",
+            "name": "GutSlim™ Tummy Toner",
+            "amount": "60 capsules",
+            "desc": "Targeted probiotic and herbal blend to reduce bloating and support digestive comfort."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "brand_light": "#7eb375",
+        "eyebrow": "SELECTION & CONTENTS",
+        "title": "The 5 Active Formulations",
+        "sub": "Clean, potent ingredients backed by micro-shielded probiotic technology.",
+        "facts_image_url": "",
+        "facts_label": "Pack contents",
+        "facts_foot": "Lab-tested · Doctor-formulated · Full transparency"
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Verified 5-star customer reviews"
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "True savings on this 5-product pack"
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Full-size formulas included in 1 stack"
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
+        "eyebrow": "TRUSTED RESULTS",
+        "title_pre": "Proven Transformation &",
+        "title_highlight": "Unmatched Value",
+        "sub": "Every Judge.me review on this pack is five stars, all from verified buyers.",
+        "caveat": "Judge.me verified reviews, 10 reviews, 5.0 average. Individual results may vary."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "14-day-gut-reboot-starter-pack",
+            "brand": "GutSlim™ · Starter Pack",
+            "rating": "4.03",
+            "reviews": "29"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "appetite-cravings-control-stack",
+            "brand": "GutSlim™ · 3-Product Stack",
+            "rating": "4.5",
+            "reviews": "2"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gut-reset-bloat-control-pack",
+            "brand": "GutSlim™ · Reset Pack",
+            "rating": "4.8",
+            "reviews": "45"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3"
+      ],
+      "settings": {
+        "brand_primary": "#4d8c44",
+        "brand_dark": "#2e5d28",
+        "brand_tint": "#eef7ec",
         "tint": true,
-        "eyebrow": "Also for two",
-        "title": "Other packs couples choose",
-        "sub": "Step up to the daily multivitamin-probiotic pair, or add her intimate-care essentials."
+        "eyebrow": "EXPLORE MORE PACKS",
+        "title": "Other Targeted Bundles",
+        "sub": "Discover other tailored probiotic systems for your wellness goals."
       }
     },
     "doctors": {
@@ -609,7 +495,7 @@
           "settings": {
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg",
             "name": "Clinically studied strains",
-            "desc": "10 strains in Femina\u2122, 16 in Velo16\u2122, each with published human research."
+            "desc": "10 strains in Femina™, 16 in Velo16™, each with published human research."
           }
         },
         "d2": {
@@ -625,7 +511,7 @@
           "settings": {
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg",
             "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Patented MEP Technology</a>",
-            "desc": "Microencapsulation with Supercritical CO\u2082, studied in three peer-reviewed papers."
+            "desc": "Microencapsulation with Supercritical CO₂, studied in three peer-reviewed papers."
           }
         },
         "d4": {
@@ -656,16 +542,16 @@
         "o1": {
           "type": "row",
           "settings": {
-            "feature": "Formula matched to her and to him",
+            "feature": "Full 5-Product Synergistic Stack",
             "brand_state": "yes",
-            "b_state": "yes",
+            "b_state": "no",
             "c_state": "no"
           }
         },
         "o2": {
           "type": "row",
           "settings": {
-            "feature": "Save R84.95 (20%)",
+            "feature": "Micro-Shield around each bacterium",
             "brand_state": "yes",
             "b_state": "no",
             "c_state": "no"
@@ -674,28 +560,19 @@
         "o3": {
           "type": "row",
           "settings": {
-            "feature": "Patented <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP delivery</a> in every capsule",
+            "feature": "Save R556.45 vs Individual Purchases",
             "brand_state": "yes",
-            "b_state": "yes",
+            "b_state": "no",
             "c_state": "no"
           }
         },
         "o4": {
           "type": "row",
           "settings": {
-            "feature": "Cranberry for her urinary comfort",
-            "brand_state": "yes",
-            "b_state": "yes",
-            "c_state": "no"
-          }
-        },
-        "o5": {
-          "type": "row",
-          "settings": {
-            "feature": "One order, one reorder date",
+            "feature": "Meal Replacement + Greens + Probiotics",
             "brand_state": "yes",
             "b_state": "no",
-            "c_state": "yes"
+            "c_state": "no"
           }
         }
       },
@@ -703,32 +580,31 @@
         "o1",
         "o2",
         "o3",
-        "o4",
-        "o5"
+        "o4"
       ],
       "settings": {
         "brand_primary": "#4d8c44",
         "brand_dark": "#2e5d28",
         "brand_tint": "#eef7ec",
-        "title": "Why the Couple Pack outperforms",
-        "sub": "Two targeted probiotics, one price, one ritual: compared with buying two singles or one generic probiotic for both.",
+        "title": "Why Choose The 6-Week Total Transformation",
+        "sub": "See how Velobiotics compares to unshielded single weight supplements.",
         "col_features": "Features",
         "col_brand": "Couple Pack",
         "col_b": "Two singles",
         "col_c": "One generic probiotic",
         "cta_text": "Add Couple Pack to Cart",
-        "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
+        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
       }
     },
     "judgeme": {
       "type": "vb-judgeme",
       "settings": {
+        "scope": "product",
+        "show_stats": true,
         "eyebrow": "Real Reviews",
         "title_pre": "What couples",
         "title_highlight": "are saying",
-        "sub": "Verified reviews collected independently by Judge.me from customers who bought this pack.",
-        "scope": "product",
-        "show_stats": true
+        "sub": "Verified reviews collected independently by Judge.me from customers who bought this pack."
       }
     },
     "faq": {
@@ -737,50 +613,43 @@
         "q1": {
           "type": "q",
           "settings": {
-            "question": "Exactly what is in the pack?",
-            "answer": "<p>One box of Femina\u2122 Probiotic Capsules with Cranberry Extract (30 capsules) and one box of Velo16\u2122 Probiotic Digestive Capsules (30 capsules). Both are the full retail products.</p>"
+            "question": "Exactly what is in the 6-Week Total Transformation Pack?",
+            "answer": "<p>The pack contains 5 full-size products: 1 GutSlim Diet Shake (500g), 1 GutSlim SuperGreens (30 servings), 1 GutSlim GLP-1 Booster (60 capsules), 1 GutSlim Fat Burner (60 capsules), and 1 GutSlim Tummy Toner (60 capsules).</p>"
           }
         },
         "q2": {
           "type": "q",
           "settings": {
-            "question": "How much do we save?",
-            "answer": "<p>R84.95. The two boxes cost R209.95 and R209.00 separately (R418.95); the pack is R334, a 20% saving.</p>"
+            "question": "How much do I save with this total transformation stack?",
+            "answer": "<p>You pay R1,990.50 for the pack compared to R2,546.95 when purchasing the 5 items individually (Diet Shake R529.00, SuperGreens R599.00, GLP-1 Booster R520.00, Fat Burner R549.00, Tummy Toner R349.95). That is an exact saving of R556.45.</p>"
           }
         },
         "q3": {
           "type": "q",
           "settings": {
-            "question": "Can he take Femina\u2122, or she take Velo16\u2122?",
-            "answer": "<p>Yes, both are general probiotics and safe for adults of either sex. Femina\u2122 simply adds strains and cranberry chosen for urinary and vaginal balance, and Velo16\u2122 leans toward digestion with 16 strains and inulin. Swap if that suits you better.</p>"
+            "question": "How do I take all 5 products during the 6 weeks?",
+            "answer": "<p>Use Diet Shake as a daily meal replacement and drink 1 scoop of SuperGreens with water. Take GLP-1 Booster, Fat Burner, and Tummy Toner capsules daily with water according to package directions.</p>"
           }
         },
         "q4": {
           "type": "q",
           "settings": {
-            "question": "How do we take them?",
-            "answer": "<p>One capsule each, once a day, with water, with or without food. Give it four weeks of daily use; the reviews above are typical of what people notice by then.</p>"
+            "question": "Can I take these products with antibiotics or during pregnancy?",
+            "answer": "<p>If taking antibiotics, space probiotic capsules at least 2 to 3 hours apart. If you are pregnant or nursing, please consult your healthcare professional before use.</p>"
           }
         },
         "q5": {
           "type": "q",
           "settings": {
-            "question": "Do they need a fridge?",
-            "answer": "<p>No. The micro-shield keeps the cultures stable at room temperature. Store below 25 \u00b0C, out of direct sun. <a href=\"/pages/heat-stability-and-shelf-life\">See the shelf-life study.</a></p>"
+            "question": "Do any of these products require refrigeration?",
+            "answer": "<p>No. Velobiotics microencapsulation creates a protective micro-shield around each bacterium, ensuring shelf-stability at room temperature.</p>"
           }
         },
         "q6": {
           "type": "q",
           "settings": {
-            "question": "Is it safe with antibiotics or in pregnancy?",
-            "answer": "<p>Both products can be taken alongside antibiotics (leave a two-hour gap). If you are pregnant, breastfeeding or on chronic medication, check with your healthcare professional first; for pregnancy we also make PregBiotics\u2122.</p>"
-          }
-        },
-        "q7": {
-          "type": "q",
-          "settings": {
-            "question": "What if it doesn't work for us?",
-            "answer": "<p>30-day money-back guarantee. Email support@velobiotics.com and we refund every cent.</p>"
+            "question": "What if I am not satisfied with my results?",
+            "answer": "<p>We stand behind our products with a 30-day money-back guarantee. Contact our team at <a href=\"mailto:support@velobiotics.com\">support@velobiotics.com</a> for assistance.</p>"
           }
         }
       },
@@ -790,8 +659,7 @@
         "q3",
         "q4",
         "q5",
-        "q6",
-        "q7"
+        "q6"
       ],
       "settings": {
         "eyebrow": "FAQ",
@@ -805,28 +673,28 @@
         "g1": {
           "type": "g",
           "settings": {
-            "icon": "\u2705",
+            "icon": "✅",
             "text": "30-day money-back"
           }
         },
         "g2": {
           "type": "g",
           "settings": {
-            "icon": "\ud83d\ude9a",
+            "icon": "🚚",
             "text": "Ships worldwide"
           }
         },
         "g3": {
           "type": "g",
           "settings": {
-            "icon": "\ud83d\udd2c",
+            "icon": "🔬",
             "text": "Lab-tested every batch"
           }
         },
         "g4": {
           "type": "g",
           "settings": {
-            "icon": "\ud83d\udcb0",
+            "icon": "💰",
             "text": "Save R84.95 vs singles"
           }
         }
@@ -844,7 +712,7 @@
         "badge": "30-day money-back guarantee",
         "title_pre": "Two guts, one pack,",
         "title_highlight": "risk-free for 30 days",
-        "sub": "Femina\u2122 for her, Velo16\u2122 for him, R84.95 saved. If you don't feel the difference, we refund every cent.",
+        "sub": "Femina™ for her, Velo16™ for him, R84.95 saved. If you don't feel the difference, we refund every cent.",
         "cta_text": "Add Couple Pack to Cart",
         "cta_link": "#vbpForm"
       }

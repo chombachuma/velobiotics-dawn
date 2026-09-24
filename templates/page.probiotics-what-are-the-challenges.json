@@ -1,0 +1,340 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "science": {
+      "type": "vb-science-page",
+      "blocks": {
+        "hea_99": {
+          "type": "heading",
+          "settings": {
+            "kicker": "The rule of the game",
+            "title": "A probiotic has to arrive alive, and in numbers"
+          }
+        },
+        "tex_100": {
+          "type": "text",
+          "settings": {
+            "content": "<p>The FAO and WHO define probiotics as \"live microorganisms which, when administered in adequate amounts, confer a health benefit on the host\". Two words carry the weight: <strong>live</strong> and <strong>adequate</strong>. Dead bacteria are not probiotics, and a handful of survivors is not a dose.</p><p>That is why regulators set minimum counts. The widely used therapeutic minimum is 10⁶ live cells per gram at the time of consumption; Japan requires 10⁷ per millilitre in fresh dairy; South African guidance for functional foods calls for 10⁸ cells per day. A probiotic must hold those numbers from the day it is packed until it settles in your intestine. Five things stand in the way.</p>"
+          }
+        },
+        "fig_101": {
+          "type": "figure",
+          "settings": {
+            "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-fig-journey.jpg?v=1790193717",
+            "alt": "The digestive journey from mouth to colon, showing where micro-shields dissolve",
+            "label": "Figure 1",
+            "caption": "The obstacle course. Before a probiotic can settle in the colon (green) it must survive manufacturing, storage, the stomach (coral) and the bile of the upper intestine (pink). Artist's visualisation.",
+            "size": "wide"
+          }
+        },
+        "hea_102": {
+          "type": "heading",
+          "settings": {
+            "kicker": "Challenge 1",
+            "title": "Manufacturing: drying a living cell"
+          }
+        },
+        "tex_103": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Probiotic bacteria are grown in liquid and then dried, usually by freeze-drying, so they can be stored as a powder. Drying is itself a stress: cell membranes crack, and a portion of every batch dies before it is packed. Any coating step that follows must not add to the damage, which is why most conventional methods, which use water, organic solvents or heat, cost more live cells.</p><p><strong>How Velobiotics™ answers it:</strong> the shield is formed in supercritical carbon dioxide at 40 °C, with no water, solvent or heat. Bacteria exposed to the full process showed the same live counts as unexposed controls, immediately and after six weeks. <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Read how the shield is made.</a></p>"
+          }
+        },
+        "hea_104": {
+          "type": "heading",
+          "settings": {
+            "kicker": "Challenge 2",
+            "title": "The shelf: heat, moisture and oxygen"
+          }
+        },
+        "tex_105": {
+          "type": "text",
+          "settings": {
+            "content": "<p>A probiotic typically spends two to eighteen months between the factory and the customer: in a warehouse, a delivery van, a pharmacy shelf and a bathroom cabinet. Through all of it, live cells die. Water is the main enemy: a little humidity wakes dormant bacteria, which then burn through their food and die. Heat speeds everything up, and oxygen damages the cell membranes. Even refrigerated products lose cells, and repeated cold-chain breaks make it worse.</p><p>The industry knows this. Market surveys keep finding products with far fewer live cells than the label states, well before the expiry date. The common fix is to overfill by 50% to 200% and hope enough survive. In a 12-week test at 30 °C, unprotected bifidobacteria fell below the therapeutic minimum after five to six weeks.</p><p><strong>How Velobiotics™ answers it:</strong> the shield holds about 30% less moisture than an ordinary polymer blend. In the same 12-week test, shielded bacteria stayed above the minimum for ten to twelve weeks and retained up to a million times more live cells. <a class=\"vb-sci-link\" href=\"/pages/heat-stability-and-shelf-life\">See the heat and shelf-life evidence.</a></p>"
+          }
+        },
+        "fig_106": {
+          "type": "figure",
+          "settings": {
+            "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-chart-shelf-life-30c.png?v=1790180516",
+            "alt": "Chart: at 30 °C microencapsulated bifidobacteria stay above the therapeutic minimum for 10 to 12 weeks versus 5 to 6 weeks unprotected",
+            "label": "Figure 2",
+            "caption": "Weeks above the therapeutic minimum at 30 °C, and total losses over 12 weeks, unprotected versus shielded. Source: Thantsha, Labuschagne & Mamvura, 2014.",
+            "size": "normal"
+          }
+        },
+        "hea_107": {
+          "type": "heading",
+          "settings": {
+            "kicker": "Challenge 3",
+            "title": "The stomach: acid designed to kill bacteria"
+          }
+        },
+        "tex_108": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Glands in the stomach lining secrete hydrochloric acid, keeping the contents at roughly pH 1.5 to 2. A thick mucus layer protects the stomach itself; nothing protects the bacteria in your food, and that is the point. The acid exists to destroy microbes before they reach the intestine. It does not distinguish between harmful bacteria and the \"good\" bacteria in a probiotic.</p><p>Published tests on unprotected bifidobacteria show losses of 3 to 4 log, that is 99.9% to 99.99% of the cells, within two hours of stomach-strength acid. Lactobacilli exposed to pH 2 may survive only seconds to minutes. A few naturally hardy strains do better, but \"better\" still means most of the dose is lost.</p><p><strong>How Velobiotics™ answers it:</strong> the shield does not swell or dissolve in acid. In <a class=\"vb-sci-link\" href=\"/pages/probiotics-tolerance-to-gastric-acid\">simulated gastric fluid</a>, shielded bacteria released nothing for two hours, then released about a billion live cells per gram once they reached intestinal conditions. Average gain over unprotected cells: 40 to 65 times. <a class=\"vb-sci-link\" href=\"/pages/probiotics-tolerance-to-gastric-acid\">See the stomach-acid studies.</a></p>"
+          }
+        },
+        "fig_109": {
+          "type": "figure",
+          "settings": {
+            "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-hero-acid.jpg?v=1790193717",
+            "alt": "Unprotected probiotics dissolving in stomach acid while micro-shielded bacteria pass through intact",
+            "label": "Figure 3",
+            "caption": "Unprotected bacteria break apart in stomach acid; micro-shielded bacteria pass through sealed. Artist's visualisation.",
+            "size": "wide"
+          }
+        },
+        "hea_110": {
+          "type": "heading",
+          "settings": {
+            "kicker": "Challenge 4",
+            "title": "Bile and enzymes: the second gate"
+          }
+        },
+        "tex_111": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Survivors of the stomach are met in the upper small intestine by bile salts, which dissolve the fatty membranes of bacteria the way detergent dissolves grease, and by digestive enzymes. Many probiotic strains that tolerate acid are still killed by bile. A protective system therefore has to hold together long enough to get past the bile-rich upper intestine, but not so long that it never opens at all.</p><p><strong>How Velobiotics™ answers it:</strong> the shield dissolves gradually as the pH rises, releasing about half its bacteria over the first three hours in intestinal conditions and 85% within a day. That is roughly the transit time of the small intestine, so release is spread across the stretch of gut where the bacteria can attach. Glyceryl monostearate, an acid- and bile-stable lipid, is built into the matrix as an extra barrier.</p>"
+          }
+        },
+        "fig_112": {
+          "type": "figure",
+          "settings": {
+            "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-fig-release.jpg?v=1790193718",
+            "alt": "A micro-shield dissolving in the small intestine and freeing a live probiotic",
+            "label": "Figure 4",
+            "caption": "Release is gradual and pH-triggered: the shield thins as acidity falls, freeing bacteria along the small intestine rather than all at once. Artist's visualisation.",
+            "size": "normal"
+          }
+        },
+        "hea_113": {
+          "type": "heading",
+          "settings": {
+            "kicker": "Challenge 5",
+            "title": "Arrival: the right place, in the right numbers"
+          }
+        },
+        "tex_114": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Finally, the bacteria have to reach the ileum and colon and attach to the gut wall in numbers large enough to matter. A probiotic that loses 99.9% in the stomach needs a thousand-fold overfill just to break even; one that has also lost most of its cells <a class=\"vb-sci-link\" href=\"/pages/heat-stability-and-shelf-life\">on the shelf</a> cannot get there at all. This is the challenge that all the others add up to, and it is why so many products disappoint despite impressive labels.</p><p><strong>How Velobiotics™ answers it:</strong> by solving each earlier challenge, far more of the labelled dose arrives. Survival through digestion improves 40 to 65 times; survival in storage up to a million times. Those effects compound in real life, which is the basis of our promise of <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation#deep-science\">1000× more live probiotics to your gut</a>.</p>"
+          }
+        },
+        "com_115": {
+          "type": "compare",
+          "settings": {
+            "bad_title": "An unprotected probiotic",
+            "bad_points": "Loses cells during drying and coating\nDies steadily on the shelf; below the minimum in 5 to 6 weeks at 30 °C\nLoses 99.9% or more in two hours of stomach acid\nSurvivors face bile with no protection\nRelies on 50% to 200% overfill to hide the losses",
+            "good_title": "A micro-shielded Velobiotics™ probiotic",
+            "good_points": "Shield formed with no water, solvent or heat; no extra cell loss\nAbove the minimum for 10 to 12 weeks at 30 °C\nZero release in acid; 40 to 65 times more survivors\nGradual, pH-triggered release past the bile zone\nMore of the labelled dose arrives where it works"
+          }
+        },
+        "cal_116": {
+          "type": "callout",
+          "settings": {
+            "label": "The bottom line:",
+            "text": "The problem with most probiotics is not the strain or the number on the label. It is delivery. Velobiotics™ was built to fix delivery, one bacterium at a time.",
+            "tone": "green"
+          }
+        },
+        "det_117": {
+          "type": "details",
+          "settings": {
+            "title": "Regulatory minimums by country",
+            "content": "<p>FAO/WHO (2002) define probiotics as live microorganisms conferring a benefit when given in adequate amounts and note that products should carry the minimum viable count at end of shelf life. Commonly cited thresholds: 10⁶ CFU/g (widely used therapeutic minimum, also Australia); 10⁷ CFU/mL in fresh dairy (Japan, Fermented Milks and Lactic Acid Bacteria Beverages Association); South African guidance for functional foods: 10⁸ bacterial cells per day. Because counts are taken at manufacture, many products meet the threshold on day one and miss it by the time they are sold.</p>"
+          }
+        },
+        "det_118": {
+          "type": "details",
+          "settings": {
+            "title": "Shelf-life losses in numbers",
+            "content": "<p>Industry reviews report losses of about 3 log (a thousand-fold) within 60 days of manufacture as common in dry probiotic products, and market surveys have found many products below label claim before expiry. In Thantsha et al. (2014), unprotected <em>B. longum</em> Bb46 stored at 30 °C fell below 10⁶ CFU/g after week 6 and to zero by week 10, an 11-log total loss over 12 weeks; unprotected <em>B. lactis</em> Bb12 fell below 10⁶ at week 5. Water activity across all samples ranged 0.25 to 0.43, and the largest losses coincided with the highest water activities.</p>"
+          }
+        },
+        "det_119": {
+          "type": "details",
+          "settings": {
+            "title": "Acid and bile losses in numbers",
+            "content": "<p>Hansen et al. (2002) reported 3 to 4 log reductions of free <em>B. longum</em> Bb-46 after 2 h in simulated gastric fluid. Thantsha et al. (2009) exposed free and shielded Bb-46 to SGF (pH 2, 2 h) then SIF (pH 6.8, up to 24 h): free cells declined throughout; shielded cells released nothing in SGF and about 9 log CFU/g in SIF, an average gain of 1.61 log (p &lt; 0.05). After seven weeks at 30 °C, free survivors were all killed by SGF while shielded cells came through and were released. Bile tolerance varies widely by strain; the interpolymer matrix with glyceryl monostearate is designed to delay release until past the bile-rich duodenum.</p>"
+          }
+        },
+        "det_120": {
+          "type": "details",
+          "settings": {
+            "title": "References",
+            "content": "<ol><li>FAO/WHO. Guidelines for the Evaluation of Probiotics in Food. London, Ontario, 2002.</li><li>Hansen LT, Allan-Wojtas PM, Jin YL, Paulson AT. Survival of Ca-alginate microencapsulated <em>Bifidobacterium</em> spp. in milk and simulated gastrointestinal conditions. <em>Food Microbiology</em> 2002;19:35–45.</li><li>Thantsha MS, Cloete TE, Moolman FS, Labuschagne PW. Supercritical carbon dioxide interpolymer complexes improve survival of <em>B. longum</em> Bb-46 in simulated gastrointestinal fluids. <em>International Journal of Food Microbiology</em> 2009;129:88–92. <a href=\"https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Velobiotics-Research-scCO2-Interpolymer-Survival-Simulated-GI-Fluids-IJFM-2009.pdf?v=1789280831\" target=\"_blank\" rel=\"noopener\">PDF</a></li><li>Thantsha MS, Labuschagne PW, Mamvura CI. Supercritical CO₂ interpolymer complex encapsulation improves heat stability of probiotic bifidobacteria. <em>World Journal of Microbiology and Biotechnology</em> 2014;30:479–486. <a href=\"https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Velobiotics-Research-scCO2-Encapsulation-Heat-Stability-Shelf-Life-WJMB-2014.pdf?v=1789280831\" target=\"_blank\" rel=\"noopener\">PDF</a></li><li>Moolman FS et al. Encapsulating probiotics with an interpolymer complex in supercritical carbon dioxide. <em>South African Journal of Science</em> 2006;102:349–354. <a href=\"https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Velobiotics-Research-Encapsulating-Probiotics-Interpolymer-Complex-scCO2-SAJS-2006.pdf?v=1789280831\" target=\"_blank\" rel=\"noopener\">PDF</a></li></ol>"
+          }
+        }
+      },
+      "block_order": [
+        "hea_99",
+        "tex_100",
+        "fig_101",
+        "hea_102",
+        "tex_103",
+        "hea_104",
+        "tex_105",
+        "fig_106",
+        "hea_107",
+        "tex_108",
+        "fig_109",
+        "hea_110",
+        "tex_111",
+        "fig_112",
+        "hea_113",
+        "tex_114",
+        "com_115",
+        "cal_116",
+        "det_117",
+        "det_118",
+        "det_119",
+        "det_120"
+      ],
+      "settings": {
+        "eyebrow": "The Science · Part 1",
+        "title_pre": "Why most probiotics",
+        "title_highlight": "never reach you alive.",
+        "intro": "A probiotic is only useful if enough live bacteria arrive in your intestine. Between the day it is made and the moment it can work, it has to survive drying, months on a warm shelf, your stomach acid and your bile. Here are the five challenges, what the science says about each, and how Velobiotics™ answers them.",
+        "read_time": "5 min read",
+        "reviewed": "Written with Dr Chomba Chuma, MD",
+        "sources": "FAO/WHO 2002 · Hansen 2002 · Thantsha 2009, 2014",
+        "hero_image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-hero-challenges.jpg?v=1790216942",
+        "hero_alt": "Micro-shielded probiotic bacteria passing through heat, humidity and stomach acid intact",
+        "hero_caption": "Artist's visualisation",
+        "hero_video_url": "https://cdn.shopify.com/videos/c/o/v/0f7dc0c54c114f7db034c6de8b275891.mp4",
+        "hero_cta_text": "See how the shield works",
+        "hero_cta_url": "/pages/what-is-microencapsulation",
+        "summary_label": "The short version",
+        "summary_points": "Regulators agree a probiotic needs at least a million (10⁶) live cells per gram to be worth taking; South African guidance for functional foods is 10⁸ cells per day. Below that, the label is a promise the product cannot keep.\nOn the shelf, heat, moisture and oxygen kill bacteria steadily. Market surveys repeatedly find far fewer live cells than the label claims, well before the expiry date.\nIn the stomach, acid at pH 1.5 to 2 destroys 99.9% or more of unprotected bacteria within two hours. Bile finishes off many of the rest.\nManufacturers compensate by overfilling by 50% to 200%. Velobiotics™ solves the problem instead: each bacterium is individually shielded so it survives the shelf, the stomach and the bile, and is released in the intestine.",
+        "stat1_value": "10⁶",
+        "stat1_label": "Live cells per gram: the accepted therapeutic minimum",
+        "stat2_value": "99.9%",
+        "stat2_label": "Of unprotected bacteria lost in two hours of stomach acid",
+        "stat3_value": "5–6 wks",
+        "stat3_label": "Before unprotected bifidobacteria fall below the minimum at 30 °C",
+        "show_toc": true,
+        "show_series": true,
+        "deep_title": "The science in detail",
+        "deep_sub": "Regulatory thresholds, the numbers behind each challenge and the references."
+      }
+    },
+    "explore": {
+      "type": "vb-science-nav",
+      "blocks": {
+        "nl_156": {
+          "type": "link",
+          "settings": {
+            "title": "Founder's story",
+            "short": "Our story",
+            "url": "/pages/velobiotics-story",
+            "blurb": "A father, a hospital bed, and the question that started everything."
+          }
+        },
+        "nl_157": {
+          "type": "link",
+          "settings": {
+            "title": "Why most probiotics fail",
+            "short": "The challenges",
+            "url": "/pages/probiotics-what-are-the-challenges",
+            "blurb": "Heat, humidity, acid and bile: the five challenges a probiotic must survive."
+          }
+        },
+        "nl_158": {
+          "type": "link",
+          "settings": {
+            "title": "What is microencapsulation?",
+            "short": "What is it?",
+            "url": "/pages/what-is-microencapsulation",
+            "blurb": "Each bacterium gets its own micron-thin shield. Here is how, and why it matters."
+          }
+        },
+        "nl_159": {
+          "type": "link",
+          "settings": {
+            "title": "Surviving stomach acid",
+            "short": "Stomach acid",
+            "url": "/pages/probiotics-tolerance-to-gastric-acid",
+            "blurb": "Peer-reviewed: 40 to 65 times more live bacteria make it through."
+          }
+        },
+        "nl_160": {
+          "type": "link",
+          "settings": {
+            "title": "Heat stability & shelf life",
+            "short": "Heat & shelf life",
+            "url": "/pages/heat-stability-and-shelf-life",
+            "blurb": "Stays potent at 30 °C for up to 12 weeks. No fridge needed."
+          }
+        },
+        "nl_161": {
+          "type": "link",
+          "settings": {
+            "title": "The published research",
+            "short": "Research",
+            "url": "/pages/microencapsulation-research",
+            "blurb": "Three peer-reviewed papers from CSIR and the University of Pretoria, explained."
+          }
+        },
+        "nl_162": {
+          "type": "link",
+          "settings": {
+            "title": "About Velobiotics",
+            "short": "About us",
+            "url": "/pages/new-about-us",
+            "blurb": "The team turning South African science into probiotics that work."
+          }
+        }
+      },
+      "block_order": [
+        "nl_156",
+        "nl_157",
+        "nl_158",
+        "nl_159",
+        "nl_160",
+        "nl_161",
+        "nl_162"
+      ],
+      "settings": {
+        "mode": "cards",
+        "label": "Continue exploring",
+        "title": "The rest of the science, in order",
+        "sub": "Seven short pages. Start anywhere; each one stands on its own.",
+        "hide_current": true
+      }
+    },
+    "brand_family": {
+      "type": "vb-brand-family",
+      "settings": {
+        "eyebrow": "Powered by MEP",
+        "title_pre": "Every brand",
+        "title_highlight": "uses the same delivery.",
+        "sub": "Nine brands. One patented MEP delivery. All engineered to reach you alive."
+      }
+    },
+    "final_cta": {
+      "type": "vb-final-cta",
+      "settings": {
+        "eyebrow": "Experience the difference",
+        "title_pre": "Probiotics that",
+        "title_highlight": "actually work.",
+        "sub": "30-day money-back guarantee · Ships worldwide · Lab-tested every batch."
+      }
+    }
+  },
+  "order": [
+    "science",
+    "explore",
+    "brand_family",
+    "final_cta"
+  ]
+}

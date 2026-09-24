@@ -45,7 +45,7 @@
         "tex_29": {
           "type": "text",
           "settings": {
-            "content": "<p>Scientists at the University of Pretoria and the CSIR reproduced this journey in the laboratory. Micro-shielded <em>Bifidobacterium longum</em> Bb-46 and unprotected cells of the same strain were placed in simulated gastric fluid at pH 2 for two hours, then transferred to simulated intestinal fluid at pH 6.8 for six or 24 hours, all at body temperature. At each step they counted the live bacteria.</p><p>Two results stood out. While in the acid, the shielded sample released <strong>no live bacteria at all</strong>: the coat stayed sealed. Once in the intestinal fluid, the coat swelled and released about 9 log (a billion) live cells per gram after 24 hours. The unprotected bacteria, meanwhile, kept declining.</p>"
+            "content": "<p>Scientists at the University of Pretoria and the <a class=\"vb-sci-link\" href=\"/pages/velobiotics-story\">CSIR</a> reproduced this journey in the laboratory. <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Micro-shield</a>ed <em>Bifidobacterium longum</em> Bb-46 and unprotected cells of the same strain were placed in simulated gastric fluid at pH 2 for two hours, then transferred to simulated intestinal fluid at pH 6.8 for six or 24 hours, all at body temperature. At each step they counted the live bacteria.</p><p>Two results stood out. While in the acid, the shielded sample released <strong>no live bacteria at all</strong>: the coat stayed sealed. Once in the intestinal fluid, the coat swelled and released about 9 log (a billion) live cells per gram after 24 hours. The unprotected bacteria, meanwhile, kept declining.</p>"
           }
         },
         "ste_30": {
@@ -96,7 +96,7 @@
         "tex_36": {
           "type": "text",
           "settings": {
-            "content": "<p>A probiotic that survives acid on the day it is made is not enough; it has to survive acid after months in a warehouse and a bathroom cabinet. So the researchers stored the shielded bacteria at 30 °C for seven weeks and repeated the test.</p><p>The unprotected bacteria that were still alive after storage were <strong>all killed</strong> by the acid. The shielded bacteria released nothing in the acid and then released high numbers of live cells in the intestinal fluid. The shield protected them twice: on the shelf and in the stomach.</p>"
+            "content": "<p>A probiotic that survives acid on the day it is made is not enough; it has to survive acid after months in a warehouse and a bathroom cabinet. So the researchers stored the shielded bacteria at 30 °C for seven weeks and repeated the test.</p><p>The unprotected bacteria that were still alive after storage were <strong>all killed</strong> by the acid. The shielded bacteria released nothing in the acid and then released high numbers of live cells in the intestinal fluid. The shield protected them twice: <a class=\"vb-sci-link\" href=\"/pages/heat-stability-and-shelf-life\">on the shelf</a> and in the stomach.</p>"
           }
         },
         "fig_37": {
@@ -167,7 +167,7 @@
         "det_42"
       ],
       "settings": {
-        "eyebrow": "The Science · Part 2",
+        "eyebrow": "The Science · Part 3",
         "title_pre": "Your stomach is built to kill bacteria.",
         "title_highlight": "Ours get through.",
         "intro": "Stomach acid is the single biggest reason probiotics fail. Two peer-reviewed studies put micro-shielded Velobiotics™ bacteria through simulated stomach acid and intestinal fluid. Here is what came out the other side.",
@@ -191,6 +191,7 @@
         "stat3_value": "0",
         "stat3_label": "Live cells released from the shield while in acid",
         "show_toc": true,
+        "show_series": true,
         "deep_title": "The science in detail",
         "deep_sub": "Methods, formulations and the exact numbers, for readers who want them."
       }
@@ -198,7 +199,7 @@
     "explore": {
       "type": "vb-science-nav",
       "blocks": {
-        "nl_105": {
+        "nl_128": {
           "type": "link",
           "settings": {
             "title": "Founder's story",
@@ -207,7 +208,16 @@
             "blurb": "A father, a hospital bed, and the question that started everything."
           }
         },
-        "nl_106": {
+        "nl_129": {
+          "type": "link",
+          "settings": {
+            "title": "Why most probiotics fail",
+            "short": "The challenges",
+            "url": "/pages/probiotics-what-are-the-challenges",
+            "blurb": "Heat, humidity, acid and bile: the five challenges a probiotic must survive."
+          }
+        },
+        "nl_130": {
           "type": "link",
           "settings": {
             "title": "What is microencapsulation?",
@@ -216,7 +226,7 @@
             "blurb": "Each bacterium gets its own micron-thin shield. Here is how, and why it matters."
           }
         },
-        "nl_107": {
+        "nl_131": {
           "type": "link",
           "settings": {
             "title": "Surviving stomach acid",
@@ -225,7 +235,7 @@
             "blurb": "Peer-reviewed: 40 to 65 times more live bacteria make it through."
           }
         },
-        "nl_108": {
+        "nl_132": {
           "type": "link",
           "settings": {
             "title": "Heat stability & shelf life",
@@ -234,7 +244,7 @@
             "blurb": "Stays potent at 30 °C for up to 12 weeks. No fridge needed."
           }
         },
-        "nl_109": {
+        "nl_133": {
           "type": "link",
           "settings": {
             "title": "The published research",
@@ -243,7 +253,7 @@
             "blurb": "Three peer-reviewed papers from CSIR and the University of Pretoria, explained."
           }
         },
-        "nl_110": {
+        "nl_134": {
           "type": "link",
           "settings": {
             "title": "About Velobiotics",
@@ -254,18 +264,19 @@
         }
       },
       "block_order": [
-        "nl_105",
-        "nl_106",
-        "nl_107",
-        "nl_108",
-        "nl_109",
-        "nl_110"
+        "nl_128",
+        "nl_129",
+        "nl_130",
+        "nl_131",
+        "nl_132",
+        "nl_133",
+        "nl_134"
       ],
       "settings": {
         "mode": "cards",
         "label": "Continue exploring",
         "title": "The rest of the science, in order",
-        "sub": "Six short pages. Start anywhere; each one stands on its own.",
+        "sub": "Seven short pages. Start anywhere; each one stands on its own.",
         "hide_current": true
       }
     },

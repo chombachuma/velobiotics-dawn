@@ -22,7 +22,7 @@
         "tex_02": {
           "type": "text",
           "settings": {
-            "content": "<p>A probiotic only helps you if it reaches your intestine <strong>alive</strong>. That is a long journey for a living cell. On the shelf it faces heat, oxygen and humidity. In your body it faces stomach acid at pH 1 to 2, strong enough to dissolve most bacteria within minutes.</p><p>Labels talk about billions of cultures. What matters is how many billions are still alive when they get to the place where they can actually work. For most ordinary probiotics, that number is a small fraction of what went into the bottle.</p>"
+            "content": "<p>A probiotic only helps you if it reaches your intestine <strong>alive</strong>. That is a long journey for a living cell. <a class=\"vb-sci-link\" href=\"/pages/heat-stability-and-shelf-life\">On the shelf</a> it faces heat, oxygen and humidity. In your body it faces <a class=\"vb-sci-link\" href=\"/pages/probiotics-tolerance-to-gastric-acid\">stomach acid</a> at pH 1 to 2, strong enough to dissolve most bacteria within minutes.</p><p>Labels talk about billions of cultures. What matters is how many billions are still alive when they get to the place where they can actually work. For most ordinary probiotics, that number is a small fraction of what went into the bottle.</p>"
           }
         },
         "com_03": {
@@ -67,7 +67,7 @@
         "tex_08": {
           "type": "text",
           "settings": {
-            "content": "<p>The two polymers in the Velobiotics™ shield were chosen because of how they behave in acid. In the stomach the coat barely swells, so almost nothing gets out and the acid stays out. When the shielded bacteria move into the small intestine, where the pH rises to around 6.8, the coat swells, dissolves and releases its passenger.</p><p>Researchers at the CSIR tested this using a marker compound sealed in the same polymer matrix. In stomach-strength acid, less than 5% escaped in 24 hours. In intestinal conditions, about half was released in three hours and 85% within a day. The small intestine is exactly where probiotics need to be released, and three hours is roughly how long food spends there.</p>"
+            "content": "<p>The two polymers in the Velobiotics™ shield were chosen because of how they behave in acid. In the stomach the coat barely swells, so almost nothing gets out and the acid stays out. When the shielded bacteria move into the small intestine, where the pH rises to around 6.8, the coat swells, dissolves and releases its passenger.</p><p>Researchers at the <a class=\"vb-sci-link\" href=\"/pages/velobiotics-story\">CSIR</a> tested this using a marker compound sealed in the same polymer matrix. In stomach-strength acid, less than 5% escaped in 24 hours. In intestinal conditions, about half was released in three hours and 85% within a day. The small intestine is exactly where probiotics need to be released, and three hours is roughly how long food spends there.</p>"
           }
         },
         "fig_09": {
@@ -222,7 +222,7 @@
         "det_24"
       ],
       "settings": {
-        "eyebrow": "The Science · Part 1",
+        "eyebrow": "The Science · Part 2",
         "title_pre": "Every probiotic gets its own",
         "title_highlight": "micron-thin shield.",
         "intro": "Microencapsulation is not about the pill you swallow. It happens at a scale a thousand times smaller: each individual bacterium is wrapped in its own protective coat, so it survives the stomach and is released only where it can do its job.",
@@ -246,6 +246,7 @@
         "stat3_value": "85%",
         "stat3_label": "Released in intestinal conditions (pH 6.8) in 24 hours",
         "show_toc": true,
+        "show_series": true,
         "deep_title": "The science in detail",
         "deep_sub": "The materials, the process and the numbers behind the story above, for readers who want them."
       }
@@ -253,7 +254,7 @@
     "explore": {
       "type": "vb-science-nav",
       "blocks": {
-        "nl_99": {
+        "nl_121": {
           "type": "link",
           "settings": {
             "title": "Founder's story",
@@ -262,7 +263,16 @@
             "blurb": "A father, a hospital bed, and the question that started everything."
           }
         },
-        "nl_100": {
+        "nl_122": {
+          "type": "link",
+          "settings": {
+            "title": "Why most probiotics fail",
+            "short": "The challenges",
+            "url": "/pages/probiotics-what-are-the-challenges",
+            "blurb": "Heat, humidity, acid and bile: the five challenges a probiotic must survive."
+          }
+        },
+        "nl_123": {
           "type": "link",
           "settings": {
             "title": "What is microencapsulation?",
@@ -271,7 +281,7 @@
             "blurb": "Each bacterium gets its own micron-thin shield. Here is how, and why it matters."
           }
         },
-        "nl_101": {
+        "nl_124": {
           "type": "link",
           "settings": {
             "title": "Surviving stomach acid",
@@ -280,7 +290,7 @@
             "blurb": "Peer-reviewed: 40 to 65 times more live bacteria make it through."
           }
         },
-        "nl_102": {
+        "nl_125": {
           "type": "link",
           "settings": {
             "title": "Heat stability & shelf life",
@@ -289,7 +299,7 @@
             "blurb": "Stays potent at 30 °C for up to 12 weeks. No fridge needed."
           }
         },
-        "nl_103": {
+        "nl_126": {
           "type": "link",
           "settings": {
             "title": "The published research",
@@ -298,7 +308,7 @@
             "blurb": "Three peer-reviewed papers from CSIR and the University of Pretoria, explained."
           }
         },
-        "nl_104": {
+        "nl_127": {
           "type": "link",
           "settings": {
             "title": "About Velobiotics",
@@ -309,18 +319,19 @@
         }
       },
       "block_order": [
-        "nl_99",
-        "nl_100",
-        "nl_101",
-        "nl_102",
-        "nl_103",
-        "nl_104"
+        "nl_121",
+        "nl_122",
+        "nl_123",
+        "nl_124",
+        "nl_125",
+        "nl_126",
+        "nl_127"
       ],
       "settings": {
         "mode": "cards",
         "label": "Continue exploring",
         "title": "The rest of the science, in order",
-        "sub": "Six short pages. Start anywhere; each one stands on its own.",
+        "sub": "Seven short pages. Start anywhere; each one stands on its own.",
         "hide_current": true
       }
     },

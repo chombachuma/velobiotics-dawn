@@ -45,7 +45,7 @@
         "tex_47": {
           "type": "text",
           "settings": {
-            "content": "<p>Researchers at the University of Pretoria and the CSIR stored micro-shielded and unprotected <em>Bifidobacterium longum</em> Bb46 and <em>Bifidobacterium lactis</em> Bb12 as dry powders in glass vials at 30 °C for 12 weeks, counting live cells every one to two weeks. Thirty degrees was chosen deliberately: it is an accelerated test, hotter than a normal room, so that a year of ordinary shelf life plays out in a few months.</p><p>The benchmark was the widely used therapeutic minimum of 10⁶ live cells per gram (6 log). Below that, a probiotic is generally considered to have too few live cells to be effective.</p>"
+            "content": "<p>Researchers at the University of Pretoria and the <a class=\"vb-sci-link\" href=\"/pages/velobiotics-story\">CSIR</a> stored <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">micro-shield</a>ed and unprotected <em>Bifidobacterium longum</em> Bb46 and <em>Bifidobacterium lactis</em> Bb12 as dry powders in glass vials at 30 °C for 12 weeks, counting live cells every one to two weeks. Thirty degrees was chosen deliberately: it is an accelerated test, hotter than a normal room, so that a year of ordinary shelf life plays out in a few months.</p><p>The benchmark was the widely used therapeutic minimum of 10⁶ live cells per gram (6 log). Below that, a probiotic is generally considered to have too few live cells to be effective.</p>"
           }
         },
         "fig_48": {
@@ -181,7 +181,7 @@
         "det_61"
       ],
       "settings": {
-        "eyebrow": "The Science · Part 3",
+        "eyebrow": "The Science · Part 4",
         "title_pre": "Potent on a hot shelf,",
         "title_highlight": "no fridge required.",
         "intro": "Most probiotics quietly die between the factory and your medicine cabinet, faster the warmer it gets. A 12-week study at 30 °C shows how the Velobiotics™ micro-shield keeps bifidobacteria alive, and why that matters in a country where the fridge is not always an option.",
@@ -190,6 +190,7 @@
         "sources": "Thantsha, Labuschagne & Mamvura 2014",
         "hero_image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/velobiotics-science-hero-heat.jpg?v=1790193717",
         "hero_alt": "Probiotic bottles on a hot rural pharmacy shelf, far from refrigeration",
+        "hero_video_url": "https://cdn.shopify.com/videos/c/o/v/9801f4f6e2af4f6eb754361c442db66d.mp4",
         "hero_cta_text": "Shop shelf-stable probiotics",
         "hero_cta_url": "/collections/all",
         "summary_label": "The short version",
@@ -203,6 +204,7 @@
         "stat3_value": "6 log",
         "stat3_label": "Extra live B. longum retained, a million times more",
         "show_toc": true,
+        "show_series": true,
         "deep_title": "The science in detail",
         "deep_sub": "Storage conditions, water activity, species differences and the full numbers."
       }
@@ -210,7 +212,7 @@
     "explore": {
       "type": "vb-science-nav",
       "blocks": {
-        "nl_111": {
+        "nl_135": {
           "type": "link",
           "settings": {
             "title": "Founder's story",
@@ -219,7 +221,16 @@
             "blurb": "A father, a hospital bed, and the question that started everything."
           }
         },
-        "nl_112": {
+        "nl_136": {
+          "type": "link",
+          "settings": {
+            "title": "Why most probiotics fail",
+            "short": "The challenges",
+            "url": "/pages/probiotics-what-are-the-challenges",
+            "blurb": "Heat, humidity, acid and bile: the five challenges a probiotic must survive."
+          }
+        },
+        "nl_137": {
           "type": "link",
           "settings": {
             "title": "What is microencapsulation?",
@@ -228,7 +239,7 @@
             "blurb": "Each bacterium gets its own micron-thin shield. Here is how, and why it matters."
           }
         },
-        "nl_113": {
+        "nl_138": {
           "type": "link",
           "settings": {
             "title": "Surviving stomach acid",
@@ -237,7 +248,7 @@
             "blurb": "Peer-reviewed: 40 to 65 times more live bacteria make it through."
           }
         },
-        "nl_114": {
+        "nl_139": {
           "type": "link",
           "settings": {
             "title": "Heat stability & shelf life",
@@ -246,7 +257,7 @@
             "blurb": "Stays potent at 30 °C for up to 12 weeks. No fridge needed."
           }
         },
-        "nl_115": {
+        "nl_140": {
           "type": "link",
           "settings": {
             "title": "The published research",
@@ -255,7 +266,7 @@
             "blurb": "Three peer-reviewed papers from CSIR and the University of Pretoria, explained."
           }
         },
-        "nl_116": {
+        "nl_141": {
           "type": "link",
           "settings": {
             "title": "About Velobiotics",
@@ -266,18 +277,19 @@
         }
       },
       "block_order": [
-        "nl_111",
-        "nl_112",
-        "nl_113",
-        "nl_114",
-        "nl_115",
-        "nl_116"
+        "nl_135",
+        "nl_136",
+        "nl_137",
+        "nl_138",
+        "nl_139",
+        "nl_140",
+        "nl_141"
       ],
       "settings": {
         "mode": "cards",
         "label": "Continue exploring",
         "title": "The rest of the science, in order",
-        "sub": "Six short pages. Start anywhere; each one stands on its own.",
+        "sub": "Seven short pages. Start anywhere; each one stands on its own.",
         "hide_current": true
       }
     },

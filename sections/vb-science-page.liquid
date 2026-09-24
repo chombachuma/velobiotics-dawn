@@ -17,12 +17,13 @@
   .vbsp__hero-media{position:absolute;inset:0;z-index:0}
   .vbsp__hero-media img,.vbsp__hero-media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
   .vbsp__hero--video .vbsp__hero-media img{opacity:1}
-  .vbsp__hero-media::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,35,14,.25) 0%,rgba(15,35,14,.15) 35%,rgba(15,35,14,.72) 72%,rgba(15,35,14,.9) 100%)}
-  .vbsp__hero-in{position:relative;z-index:1;width:100%;max-width:1120px;margin:0 auto;padding:120px 20px 56px}
+  .vbsp__hero-media::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,35,14,0) 0%,rgba(15,35,14,0) 42%,rgba(15,35,14,.55) 75%,rgba(15,35,14,.82) 100%),linear-gradient(90deg,rgba(15,35,14,.35) 0%,rgba(15,35,14,0) 60%)}
+  .vbsp__hero-in{position:relative;z-index:1;width:100%;max-width:1120px;margin:0 auto;padding:150px 20px 52px}
   .vbsp__eyebrow--hero{background:rgba(255,255,255,.14);color:#d6f5c9;border:1px solid rgba(255,255,255,.22)}
-  .vbsp h1.vbsp__title{font-size:clamp(36px,5.6vw,64px);font-weight:800;line-height:1.04;letter-spacing:-.025em;margin:0 0 18px;color:#fff;max-width:900px;text-shadow:0 2px 24px rgba(0,0,0,.25)}
+  .vbsp h1.vbsp__title{font-size:clamp(34px,4.8vw,58px);font-weight:800;line-height:1.05;letter-spacing:-.025em;margin:0 0 14px;color:#fff;max-width:760px;text-shadow:0 2px 18px rgba(0,0,0,.35)}
   .vbsp h1.vbsp__title em{color:#bfeab3;font-style:normal}
-  .vbsp__intro{font-size:clamp(17px,1.6vw,21px);line-height:1.55;color:rgba(255,255,255,.9);margin:0 0 20px;max-width:720px}
+  .vbsp__intro{font-size:clamp(16px,1.4vw,19px);line-height:1.5;color:rgba(255,255,255,.92);margin:0 0 16px;max-width:560px;text-shadow:0 1px 12px rgba(0,0,0,.35)}
+  .vbsp__lead{max-width:760px;margin:28px auto 0;font-size:clamp(18px,1.6vw,21px);line-height:1.55;color:var(--ink);font-weight:500}
   .vbsp__meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13.5px;color:rgba(255,255,255,.78);margin:0}
   .vbsp__meta span::before{content:'•';color:#9fdc93;margin-right:8px}
   .vbsp__meta span:first-child::before{content:none}
@@ -64,6 +65,7 @@
   .vbsp__text li{margin:0 0 8px}
   .vbsp__text a{color:var(--dg);text-decoration:underline;text-decoration-color:rgba(77,140,68,.4)}
   .vbsp__text strong{color:var(--ink)}
+  .vb-sci-link{color:inherit;text-decoration:underline;text-decoration-color:rgba(77,140,68,.65);text-underline-offset:3px;text-decoration-thickness:1.5px}.vb-sci-link:hover{color:#2e5d28;text-decoration-color:#2e5d28}
   .vbsp__fig{max-width:1120px;margin:30px auto}
   .vbsp__fig--normal{max-width:860px}
   .vbsp__fig .img{border-radius:20px;overflow:hidden;background:var(--lg);border:1px solid var(--line)}
@@ -121,8 +123,9 @@
   @media (max-width:860px){
     .vbsp{font-size:16px}
     .vbsp__wrap{padding:22px 16px 16px}
-    .vbsp__hero{min-height:min(560px,72vh)}
-    .vbsp__hero-in{padding:90px 16px 36px}
+    .vbsp__hero{min-height:min(540px,70vh)}
+    .vbsp__hero-in{padding:110px 16px 32px}
+    .vbsp__lead{margin-top:20px}
     .vbsp__hero-cap{display:none}
     .vbsp__sum{grid-template-columns:1fr}
     .vbsp__stats{grid-template-columns:repeat(3,1fr)}
@@ -147,7 +150,7 @@
     <div class="vbsp__hero-in">
       {%- if section.settings.eyebrow != blank -%}<span class="vbsp__eyebrow vbsp__eyebrow--hero">{{ section.settings.eyebrow }}</span>{%- endif -%}
       <h1 class="vbsp__title">{{ section.settings.title_pre }} {%- if section.settings.title_highlight != blank %} <em>{{ section.settings.title_highlight }}</em>{% endif -%}</h1>
-      {%- if section.settings.intro != blank -%}<p class="vbsp__intro">{{ section.settings.intro }}</p>{%- endif -%}
+      {%- if section.settings.hero_sub != blank -%}<p class="vbsp__intro">{{ section.settings.hero_sub }}</p>{%- endif -%}
       <div class="vbsp__meta">
         {%- if section.settings.read_time != blank -%}<span>{{ section.settings.read_time }}</span>{%- endif -%}
         {%- if section.settings.reviewed != blank -%}<span>{{ section.settings.reviewed }}</span>{%- endif -%}
@@ -161,13 +164,14 @@
   {%- if section.settings.show_series -%}
   <nav class="vbsp__series" aria-label="The Velobiotics science series">
     <span class="vbsp__series-lbl">In this series</span>
-    {%- assign s_titles = "Our story|What is it?|Stomach acid|Heat & shelf life|Research|About us" | split: "|" -%}
-    {%- assign s_urls = "/pages/velobiotics-story|/pages/what-is-microencapsulation|/pages/probiotics-tolerance-to-gastric-acid|/pages/heat-stability-and-shelf-life|/pages/microencapsulation-research|/pages/new-about-us" | split: "|" -%}
+    {%- assign s_titles = "Our story|The challenges|What is it?|Stomach acid|Heat & shelf life|Research|About us" | split: "|" -%}
+    {%- assign s_urls = "/pages/velobiotics-story|/pages/probiotics-what-are-the-challenges|/pages/what-is-microencapsulation|/pages/probiotics-tolerance-to-gastric-acid|/pages/heat-stability-and-shelf-life|/pages/microencapsulation-research|/pages/new-about-us" | split: "|" -%}
     {%- for u in s_urls -%}
       <a class="vbsp__series-a{% if request.path == u %} is-on{% endif %}" href="{{ u }}"{% if request.path == u %} aria-current="page"{% endif %}>{{ s_titles[forloop.index0] }}</a>
     {%- endfor -%}
   </nav>
   {%- endif -%}
+    {%- if section.settings.intro != blank -%}<p class="vbsp__lead">{{ section.settings.intro }}</p>{%- endif -%}
     {%- assign pts = section.settings.summary_points | newline_to_br | split: '<br />' -%}
     {%- if section.settings.summary_points != blank or section.settings.stat1_value != blank -%}
     <div class="vbsp__sum">
@@ -198,7 +202,7 @@
       <nav class="vbsp__toc" aria-label="On this page"><b>On this page</b>
         {%- for b in section.blocks -%}{%- if b.type == 'heading' -%}<a href="#h-{{ b.id | slice: -8, 8 }}">{{ b.settings.title }}</a>{%- endif -%}{%- endfor -%}
         {%- assign has_d = false -%}{%- for b in section.blocks -%}{%- if b.type == 'details' -%}{%- assign has_d = true -%}{%- endif -%}{%- endfor -%}
-        {%- if has_d -%}<a href="#deep-{{ sid }}">{{ section.settings.deep_title | default: 'The science in detail' }}</a>{%- endif -%}
+        {%- if has_d -%}<a href="#deep-science">{{ section.settings.deep_title | default: 'The science in detail' }}</a>{%- endif -%}
       </nav>
     {%- endif -%}
   </div>
@@ -254,7 +258,7 @@
           <div class="vbsp__callout {% if block.settings.tone == 'green' %}vbsp__callout--green{% endif %}" {{ block.shopify_attributes }}>{%- if block.settings.label != blank -%}<b>{{ block.settings.label }}</b> {% endif -%}{{ block.settings.text }}</div>
         {%- when 'details' -%}
           {%- unless deep_open -%}{%- assign deep_open = true -%}
-            <div class="vbsp__deep" id="deep-{{ sid }}">
+            <div class="vbsp__deep" id="deep-science">
               <div class="vbsp__deep-head"><span class="k">For the scientifically minded</span><h2>{{ section.settings.deep_title | default: 'The science in detail' }}</h2>{%- if section.settings.deep_sub != blank -%}<p>{{ section.settings.deep_sub }}</p>{%- endif -%}</div>
           {%- endunless -%}
           <details {{ block.shopify_attributes }}{% if block.settings.open %} open{% endif %}><summary>{{ block.settings.title }}</summary><div class="in">{{ block.settings.content }}</div></details>
@@ -272,7 +276,8 @@
     { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "The Science" },
     { "type": "text", "id": "title_pre", "label": "Title (start)" },
     { "type": "text", "id": "title_highlight", "label": "Title (highlight)" },
-    { "type": "textarea", "id": "intro", "label": "Intro (one plain-English paragraph)" },
+    { "type": "text", "id": "hero_sub", "label": "Hero sub-line (one short sentence, sits on the image)" },
+    { "type": "textarea", "id": "intro", "label": "Lead paragraph (shown below the hero)" },
     { "type": "text", "id": "read_time", "label": "Meta: read time", "default": "6 min read" },
     { "type": "text", "id": "reviewed", "label": "Meta: reviewed by" },
     { "type": "text", "id": "sources", "label": "Meta: sources line" },

@@ -15,79 +15,39 @@
         "b1": {
           "type": "benefit",
           "settings": {
-            "icon": "\ud83d\udc69",
-            "text": "\ud83d\udc68 Velo16\u2122 Digestive Caps 60s for adults"
+            "icon": "👨",
+            "text": "Velo16 Probiotic Digestive Capsules 60s"
           }
         },
         "b2": {
           "type": "benefit",
           "settings": {
-            "icon": "\ud83d\udc68",
-            "text": "\ud83d\udc69 Femina\u2122 Cranberry Caps 60s for women"
+            "icon": "👩",
+            "text": "Femina Probiotic Cranberry Capsules 60s"
           }
         },
         "b3": {
           "type": "benefit",
           "settings": {
-            "icon": "\ud83e\uddd2",
-            "text": "\ud83e\uddd2 BioKid\u2122 Probiotic Chewables 60s for kids"
-          }
-        },
-        "b4": {
-          "type": "benefit",
-          "settings": {
-            "icon": "\u26a1",
-            "text": "1000\u00d7 <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP delivery</a> in both"
-          }
-        },
-        "t1": {
-          "type": "testi",
-          "settings": {
-            "quote": "Great combo, bowel movement much smoother",
-            "author": "Nicky J."
-          }
-        },
-        "t2": {
-          "type": "testi",
-          "settings": {
-            "quote": "Subscribed for my husband and myself",
-            "author": "Kgahliso"
-          }
-        },
-        "t3": {
-          "type": "testi",
-          "settings": {
-            "quote": "Velobiotics for life!",
-            "author": "Natasha de O."
-          }
-        },
-        "t4": {
-          "type": "testi",
-          "settings": {
-            "quote": "Has really made a difference",
-            "author": "Nicky"
+            "icon": "👶",
+            "text": "BioKid Probiotic Chewable Tablets 60s"
           }
         }
       },
       "block_order": [
         "b1",
         "b2",
-        "b3",
-        "b4",
-        "t1",
-        "t2",
-        "t3",
-        "t4"
+        "b3"
       ],
       "settings": {
         "brand_primary": "#4d8c44",
         "brand_dark": "#2e5d28",
         "brand_tint": "#eef7ec",
-        "brand_label": "Velobiotics\u2122 Family Gut Health Complete Bundle",
-        "rating": "4.7",
-        "review_count": "477 component reviews",
-        "hook": "Complete daily probiotic support for the whole family: Velo16\u2122 for him, Femina\u2122 with cranberry for her, BioKid\u2122 tasty chewables for kids. Save R134.98.",
-        "ship_note": "Ships worldwide \u00b7 Free shipping over the free-shipping threshold \u00b7 30-day money-back guarantee",
+        "brand_label": "Velobiotics™ Family Gut Health Complete Bundle",
+        "rating": "4.8",
+        "review_count": "9 verified reviews",
+        "hook": "Whole family gut health trio: Velo16 Digestive for adults, Femina Cranberry for her, and BioKid Chewables for children. Save R134.98.",
+        "ship_note": "Ships worldwide · Free shipping over R400 · 30-day money-back guarantee",
         "show_subscription": true,
         "tier_unit": "Pack",
         "tier_unit_plural": "Packs",
@@ -101,46 +61,46 @@
         "r1": {
           "type": "review",
           "settings": {
-            "avatar_url": "https://ui-avatars.com/api/?name=Nicky+Johnson&background=4d8c44&color=ffffff&size=120&bold=true&font-size=0.42",
-            "author": "Lesedi Lekota",
-            "meta": "Verified Buyer (BioKid\u2122 Chewables)",
-            "quote": "A Game Changer for Kids health! Impressed with BioKid chewable tablets, tasty and super easy for kids."
+            "avatar_url": "https://ui-avatars.com/api/?name=Anonymous&background=4d8c44&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Anonymous [Velo16 Probiotic Digestive Capsules]",
+            "meta": "Verified buyer",
+            "quote": "I have Pericarditis and started using this for my Immune System. I still don’t know what is happening inside of my body, but hope to see the results with the current change of Season."
           }
         },
         "r2": {
           "type": "review",
           "settings": {
-            "avatar_url": "https://ui-avatars.com/api/?name=Kgahliso&background=7eb375&color=ffffff&size=120&bold=true&font-size=0.42",
-            "author": "Kgothatso",
-            "meta": "Verified Buyer (Femina\u2122 60s)",
-            "quote": "Femina cranberry capsules worked so well for my intimate flora and digestive balance."
+            "avatar_url": "https://ui-avatars.com/api/?name=Anonymous&background=4d8c44&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Anonymous [Velo16 Probiotic Digestive Capsules]",
+            "meta": "Verified buyer",
+            "quote": "Very Happy will purchase agaon"
           }
         },
         "r3": {
           "type": "review",
           "settings": {
-            "avatar_url": "https://ui-avatars.com/api/?name=Lorian+Daniels&background=2e5d28&color=ffffff&size=120&bold=true&font-size=0.42",
-            "author": "Anonymous",
-            "meta": "Verified Buyer (BioKid\u2122 Chewables)",
-            "quote": "Velobiotics probiokid supplements are the best ever, huge difference since we started taking them."
+            "avatar_url": "https://ui-avatars.com/api/?name=Vuyokazi&background=4d8c44&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Vuyokazi [Velo16 Probiotic Digestive Capsules]",
+            "meta": "Verified buyer",
+            "quote": "Love this product. Works very well and I am not going back to other brands. I have found a probiotic that works for me. Thank you Velo16"
           }
         },
         "r4": {
           "type": "review",
           "settings": {
-            "avatar_url": "https://ui-avatars.com/api/?name=Natasha+de+Oliveira&background=4d8c44&color=ffffff&size=120&bold=true&font-size=0.42",
-            "author": "Archie Thandeka Ntuli",
-            "meta": "Verified Buyer (Femina\u2122 60s)",
-            "quote": "Best product, really changed my family wellness routine since I started using it!"
+            "avatar_url": "https://ui-avatars.com/api/?name=Archie+Thandeka+Ntuli&background=4d8c44&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Archie Thandeka Ntuli [Femina™ Probiotic Capsules with Cranberry Extract]",
+            "meta": "Verified buyer",
+            "quote": "Thanks for the product"
           }
         },
         "r5": {
           "type": "review",
           "settings": {
-            "avatar_url": "https://ui-avatars.com/api/?name=Nicky&background=7eb375&color=ffffff&size=120&bold=true&font-size=0.42",
-            "author": "Nicky",
+            "avatar_url": "https://ui-avatars.com/api/?name=Anonymous&background=4d8c44&color=ffffff&size=120&bold=true&font-size=0.42",
+            "author": "Anonymous [Femina™ Probiotic Capsules with Cranberry Extract]",
             "meta": "Verified buyer",
-            "quote": "Has really made a difference. Couldn't be happier with the product."
+            "quote": "I am very happy with the results so far."
           }
         }
       },
@@ -155,8 +115,8 @@
         "brand_primary": "#4d8c44",
         "brand_dark": "#2e5d28",
         "brand_tint": "#eef7ec",
-        "eyebrow": "\u2605 Verified Judge.me reviews",
-        "title": "Families thriving with Velobiotics"
+        "eyebrow": "★ Verified Judge.me reviews",
+        "title": "Real customer experiences"
       }
     },
     "problem": {
@@ -165,49 +125,41 @@
         "p1": {
           "type": "point",
           "settings": {
-            "icon": "\u2715",
-            "text": "<strong>Adult probiotics for kids</strong> \u2014 capsules are hard for children to swallow and dosages are unsuited for young tummies."
+            "icon": "✕",
+            "text": "<strong>Issue 1</strong> — Adult probiotic capsules are impossible or unsafe for young children to swallow."
           }
         },
         "p2": {
           "type": "point",
           "settings": {
-            "icon": "\u2715",
-            "text": "<strong>Buying individually</strong> \u2014 costs R899.85 for three separate 60-count full-size boxes."
+            "icon": "✕",
+            "text": "<strong>Issue 2</strong> — Buying 3 separate retail boxes costs R899.85 instead of R764.87."
           }
         },
         "p3": {
           "type": "point",
           "settings": {
-            "icon": "\u2715",
-            "text": "<strong>Ordinary capsules</strong> \u2014 most of the cultures die in <a class=\"vb-sci-link\" href=\"/pages/probiotics-tolerance-to-gastric-acid\">stomach acid</a> before they can work."
-          }
-        },
-        "p4": {
-          "type": "point",
-          "settings": {
-            "icon": "\u2715",
-            "text": "<strong>Two routines</strong> \u2014 different brands, different rules, nobody keeps it up."
+            "icon": "✕",
+            "text": "<strong>Issue 3</strong> — Unprotected probiotics die in acid before reaching adult or child intestines."
           }
         }
       },
       "block_order": [
         "p1",
         "p2",
-        "p3",
-        "p4"
+        "p3"
       ],
       "settings": {
         "reverse": false,
         "brand_primary": "#4d8c44",
         "brand_tint": "#eef7ec",
         "image_url": "",
-        "tag_value": "2 needs",
-        "tag_label": "3 Family Members, 3 Unique Needs",
-        "eyebrow": "Why a family bundle?",
-        "title_pre": "One family home,",
-        "title_highlight": "three distinct gut needs.",
-        "desc": "Parents need high-strain digestive and intimate flora care, while children need age-appropriate probiotic chewables. Buying all three boxes individually costs R899.85."
+        "tag_value": "3 Generations",
+        "tag_label": "Whole Family",
+        "eyebrow": "Why a Family Bundle?",
+        "title_pre": "Different ages,",
+        "title_highlight": "different gut needs.",
+        "desc": "Managing gut health for parents and kids usually means buying multiple mismatched bottles. Adults need high-potency strain support, while children require pleasant chewables."
       }
     },
     "solution": {
@@ -216,49 +168,41 @@
         "s1": {
           "type": "point",
           "settings": {
-            "icon": "\u2713",
-            "text": "<strong>Velo16\u2122 for adult digestion</strong> \u2014 16 probiotic strains + inulin prebiotic for gut comfort."
+            "icon": "✓",
+            "text": "<strong>Solution 1</strong> — Velo16 Digestive Capsules (60s) — 16 strains + inulin for adult digestive support."
           }
         },
         "s2": {
           "type": "point",
           "settings": {
-            "icon": "\u2713",
-            "text": "<strong>Femina\u2122 for women</strong> \u2014 10 probiotic strains + cranberry extract for gut and feminine flora balance."
+            "icon": "✓",
+            "text": "<strong>Solution 2</strong> — Femina Cranberry Capsules (60s) — 10 strains + cranberry for female gut & intimate flora."
           }
         },
         "s3": {
           "type": "point",
           "settings": {
-            "icon": "\u2713",
-            "text": "<strong>BioKid\u2122 for children</strong> \u2014 tasty chewable probiotic tablets formulated specifically for growing digestive systems."
-          }
-        },
-        "s4": {
-          "type": "point",
-          "settings": {
-            "icon": "\u2713",
-            "text": "<strong>One pack, one price</strong> \u2014 R334 instead of R418.95. Save 20%."
+            "icon": "✓",
+            "text": "<strong>Solution 3</strong> — BioKid Chewables (60s) — delicious chewable probiotic tablets for children ages 2+."
           }
         }
       },
       "block_order": [
         "s1",
         "s2",
-        "s3",
-        "s4"
+        "s3"
       ],
       "settings": {
         "reverse": true,
         "brand_primary": "#4d8c44",
         "brand_tint": "#eef7ec",
         "image_url": "",
-        "tag_value": "1 a day",
-        "tag_label": "Each, with water, any time",
-        "eyebrow": "The Family Health Bundle",
-        "title_pre": "Matched daily probiotics,",
-        "title_highlight": "for parents and children.",
-        "desc": "Velo16\u2122 delivers 16 strains + inulin for digestion. Femina\u2122 delivers 10 strains + cranberry for feminine flora. BioKid\u2122 delivers gentle, tasty probiotic chewables for children. All micro-shielded for gut survival."
+        "tag_value": "Family Trio",
+        "tag_label": "Kid & Adult Safe",
+        "eyebrow": "The Family Solution",
+        "title_pre": "One complete pack,",
+        "title_highlight": "for the whole house.",
+        "desc": "Combines Velo16 Digestive for overall digestive balance, Femina Cranberry for her intimate and gut health, and BioKid Chewables (kid-approved taste) for children's digestion and immunity."
       }
     },
     "related": {
@@ -268,27 +212,27 @@
           "type": "product",
           "settings": {
             "product_handle": "velo16-probiotic-digestive-capsules",
-            "brand": "Velo16\u2122 \u00b7 for adults",
+            "brand": "Velo16 Probiotic Digestive Capsules",
             "rating": "4.6",
-            "reviews": "48 reviews"
+            "reviews": "48+"
           }
         },
         "r2": {
           "type": "product",
           "settings": {
             "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
-            "brand": "Femina\u2122 \u00b7 for women",
+            "brand": "Femina™ Probiotic Capsules with Cranberry Extract",
             "rating": "4.7",
-            "reviews": "399 reviews"
+            "reviews": "399+"
           }
         },
         "r3": {
           "type": "product",
           "settings": {
             "product_handle": "biokid-chewable-probiotics-tablets-for-children",
-            "brand": "BioKid\u2122 \u00b7 for children",
+            "brand": "BioKid™ Probiotics Chewables",
             "rating": "4.6",
-            "reviews": "30 reviews"
+            "reviews": "30+"
           }
         }
       },
@@ -302,8 +246,8 @@
         "brand_tint": "#eef7ec",
         "tint": false,
         "eyebrow": "What's inside",
-        "title": "The three products in this bundle",
-        "sub": "Three full-size 60-count retail products. Formulated specifically for each family member."
+        "title": "The products in this pack",
+        "sub": "Each box is the full retail product with same active formulations and batch testing."
       }
     },
     "benefits": {
@@ -312,67 +256,40 @@
         "f1": {
           "type": "feat",
           "settings": {
-            "icon": "\ud83d\udc69",
-            "name": "Adult digestive balance",
-            "desc": "Velo16\u2122 eases bloating, gas, and irregular bowel movements for active adults."
+            "icon": "👨‍👩‍👧",
+            "name": "Complete Household Coverage",
+            "desc": "Tailored formulas for dad, mom, and children in one convenient pack."
           }
         },
         "f2": {
           "type": "feat",
           "settings": {
-            "icon": "\ud83d\udc68",
-            "name": "Feminine flora & urinary support",
-            "desc": "Femina\u2122 combines 10 probiotic strains with cranberry extract for complete female intimate and gut wellness."
+            "icon": "🍓",
+            "name": "Kid-Friendly Chewables",
+            "desc": "BioKid chewables make daily immunity and digestion easy and enjoyable for kids."
           }
         },
         "f3": {
           "type": "feat",
           "settings": {
-            "icon": "\ud83d\udcb0",
-            "name": "Save R84.95",
-            "desc": "R334 for both boxes versus R418.95 bought separately."
-          }
-        },
-        "f4": {
-          "type": "feat",
-          "settings": {
-            "icon": "\ud83d\udee1\ufe0f",
-            "name": "Micro-shielded",
-            "desc": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Supercritical CO\u2082 microencapsulation</a> protects every culture through stomach acid."
-          }
-        },
-        "f5": {
-          "type": "feat",
-          "settings": {
-            "icon": "\ud83c\udf21\ufe0f",
-            "name": "No fridge",
-            "desc": "Both products are <a class=\"vb-sci-link\" href=\"/pages/heat-stability-and-shelf-life\">shelf-stable</a> at room temperature."
-          }
-        },
-        "f6": {
-          "type": "feat",
-          "settings": {
-            "icon": "\ud83d\udcc5",
-            "name": "One shared ritual",
-            "desc": "One capsule each, daily. Reorder together, run out together."
+            "icon": "🛡️",
+            "name": "Patented Micro-shield",
+            "desc": "Every probiotic bacterium is micro-shielded to deliver live cultures where needed."
           }
         }
       },
       "block_order": [
         "f1",
         "f2",
-        "f3",
-        "f4",
-        "f5",
-        "f6"
+        "f3"
       ],
       "settings": {
         "brand_primary": "#4d8c44",
         "brand_tint": "#eef7ec",
-        "eyebrow": "Why this pack",
-        "title_pre": "Complete gut care,",
-        "title_highlight": "for the entire home.",
-        "sub": "Six reasons families choose the Family Gut Health Complete Bundle."
+        "eyebrow": "Bundle Benefits",
+        "title_pre": "Protected flora,",
+        "title_highlight": "for every family member.",
+        "sub": "Why families choose the complete bundle:"
       }
     },
     "how": {
@@ -381,49 +298,40 @@
         "h1": {
           "type": "step",
           "settings": {
-            "icon": "\ud83d\udce6",
-            "name": "Unpack 3 boxes",
-            "desc": "Velo16\u2122 60s, Femina\u2122 60s, and BioKid\u2122 Chewables 60s."
+            "icon": "🍳",
+            "name": "Morning Breakfast",
+            "desc": "Take daily probiotics together around the breakfast table."
           }
         },
         "h2": {
           "type": "step",
           "settings": {
-            "icon": "\ud83d\udc8a",
-            "name": "Daily family dose",
-            "desc": "1 capsule daily for adults with water; 1 chewable tablet daily for children."
+            "icon": "💊",
+            "name": "Parents' Capsules",
+            "desc": "Dad takes 1-2 Velo16 capsules; Mom takes 1-2 Femina Cranberry capsules."
           }
         },
         "h3": {
           "type": "step",
           "settings": {
-            "icon": "\ud83d\udee1\ufe0f",
-            "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP delivery</a>",
-            "desc": "The micro-shield holds through stomach acid and releases the cultures in the intestine."
-          }
-        },
-        "h4": {
-          "type": "step",
-          "settings": {
-            "icon": "\ud83d\udd01",
-            "name": "Reorder at day 25",
-            "desc": "Both boxes are 30-day supplies. Subscribe and save to keep them arriving together."
+            "icon": "🍓",
+            "name": "Kids' Chewable",
+            "desc": "Children chew 1-2 BioKid tablets daily after meals."
           }
         }
       },
       "block_order": [
         "h1",
         "h2",
-        "h3",
-        "h4"
+        "h3"
       ],
       "settings": {
         "brand_primary": "#4d8c44",
         "brand_tint": "#eef7ec",
-        "eyebrow": "How it works",
-        "title_pre": "Daily routine,",
-        "title_highlight": "made simple.",
-        "sub": "One daily dose per person. Easy morning wellness routine."
+        "eyebrow": "Daily Ritual",
+        "title_pre": "Family morning,",
+        "title_highlight": "wellness routine.",
+        "sub": "How the family takes their daily probiotics:"
       }
     },
     "ingredients": {
@@ -432,65 +340,35 @@
         "i1": {
           "type": "ingredient",
           "settings": {
-            "icon": "\ud83d\udc69",
-            "name": "Velo16\u2122 Probiotic Digestive Capsules",
-            "amount": "60 capsules",
-            "desc": "16 probiotic strains + 200 mg inulin prebiotic for adult digestive wellness."
+            "icon": "👨",
+            "name": "Velo16 Probiotic Digestive Capsules (60s)",
+            "amount": "1 box (60 capsules)",
+            "desc": "16 probiotic strains plus 200mg inulin prebiotic for adult digestive wellness."
           }
         },
         "i2": {
           "type": "ingredient",
           "settings": {
-            "icon": "\ud83d\udc68",
-            "name": "Femina\u2122 Probiotic Capsules with Cranberry Extract",
-            "amount": "60 capsules",
-            "desc": "10 probiotic strains + cranberry extract for female gut and urinary health."
+            "icon": "👩",
+            "name": "Femina Probiotic Cranberry Capsules (60s)",
+            "amount": "1 box (60 capsules)",
+            "desc": "10 probiotic strains with cranberry extract for female intimate and gut flora."
           }
         },
         "i3": {
           "type": "ingredient",
           "settings": {
-            "icon": "\ud83e\uddd2",
-            "name": "BioKid\u2122 Probiotics Chewables",
-            "amount": "60 chewable tablets",
-            "desc": "Child-friendly probiotic strains in a delicious chewable tablet for young gut immunity."
-          }
-        },
-        "i4": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "\ud83d\udcb0",
-            "name": "Pack saving",
-            "amount": "R84.95 (20%)",
-            "desc": "R334 versus R209.95 + R209.00 bought separately."
-          }
-        },
-        "i5": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "\ud83d\udcc5",
-            "name": "Supply",
-            "amount": "30 days each",
-            "desc": "One capsule per person per day."
-          }
-        },
-        "i6": {
-          "type": "ingredient",
-          "settings": {
-            "icon": "\ud83d\udeab",
-            "name": "Free from",
-            "amount": "Always",
-            "desc": "Gluten \u00b7 soy \u00b7 dairy \u00b7 artificial colours \u00b7 preservatives \u00b7 GMO."
+            "icon": "👶",
+            "name": "BioKid Probiotics Chewable Tablets (60s)",
+            "amount": "1 box (60 chewables)",
+            "desc": "Delicious chewable probiotic tablets formulated specifically for growing children."
           }
         }
       },
       "block_order": [
         "i1",
         "i2",
-        "i3",
-        "i4",
-        "i5",
-        "i6"
+        "i3"
       ],
       "settings": {
         "brand_primary": "#4d8c44",
@@ -498,11 +376,11 @@
         "brand_tint": "#eef7ec",
         "brand_light": "#7eb375",
         "eyebrow": "What's inside",
-        "title": "Bundle contents",
-        "sub": "Three full-size 60-count products providing a full 60-day supply.",
+        "title": "Pack contents",
+        "sub": "Full contents and capsule counts for each product in this pack.",
         "facts_image_url": "",
         "facts_label": "Pack contents",
-        "facts_foot": "Lab-tested \u00b7 Doctor-formulated \u00b7 Full transparency"
+        "facts_foot": "Lab-tested · Doctor-formulated · Full transparency"
       }
     },
     "confidence": {
@@ -511,8 +389,8 @@
         "c1": {
           "type": "stat",
           "settings": {
-            "label": "Five-star reviews on this pack",
-            "percent": 100
+            "label": "Positive component reviews",
+            "percent": 98
           }
         },
         "c2": {
@@ -525,15 +403,15 @@
         "c3": {
           "type": "stat",
           "settings": {
-            "label": "Capsules micro-shielded (MEP)",
+            "label": "Micro-shielded bacteria (MEP)",
             "percent": 100
           }
         },
         "c4": {
           "type": "stat",
           "settings": {
-            "label": "Saving vs buying separately",
-            "percent": 20
+            "label": "Saving vs separate retail boxes",
+            "percent": 15
           }
         }
       },
@@ -548,10 +426,10 @@
         "brand_dark": "#2e5d28",
         "brand_tint": "#eef7ec",
         "eyebrow": "Real results",
-        "title_pre": "Rated 4.7 across",
-        "title_highlight": "477+ family reviews",
-        "sub": "Verified Judge.me reviews across Velo16\u2122, Femina\u2122, and BioKid\u2122 products.",
-        "caveat": "Judge.me verified reviews, 477 component reviews, 4.7 average. Individual results may vary."
+        "title_pre": "Trusted formulation,",
+        "title_highlight": "proven results",
+        "sub": "Save R134.98 compared to separate retail prices (R899.85 vs R764.87). Every bacterium micro-shielded.",
+        "caveat": "Save R134.98 vs separate retail boxes."
       }
     },
     "fbt": {
@@ -561,52 +439,32 @@
           "type": "product",
           "settings": {
             "product_handle": "couples-his-biotics-her-biotics-daily-pack",
-            "brand": "His-Biotics\u2122 + Her-Biotics\u2122",
-            "rating": "4.7",
-            "reviews": "300+"
+            "brand": "Couples His-Biotics & Her-Biotics Daily Pack",
+            "rating": "4.8",
+            "reviews": "100+"
           }
         },
         "r2": {
           "type": "product",
           "settings": {
-            "product_handle": "femina-mini-combo",
-            "brand": "Femina\u2122",
+            "product_handle": "glow-and-gut-combo",
+            "brand": "Glow and Gut Combo",
             "rating": "4.8",
-            "reviews": "260+"
-          }
-        },
-        "r3": {
-          "type": "product",
-          "settings": {
-            "product_handle": "family-health-bundle",
-            "brand": "Velobiotics\u2122",
-            "rating": "4.9",
-            "reviews": "150+"
-          }
-        },
-        "r4": {
-          "type": "product",
-          "settings": {
-            "product_handle": "velo16-probiotics-digestive-enzymes-complex",
-            "brand": "Velo16\u2122",
-            "rating": "4.8",
-            "reviews": "400+"
+            "reviews": "100+"
           }
         }
       },
       "block_order": [
         "r1",
-        "r2",
-        "r3",
-        "r4"
+        "r2"
       ],
       "settings": {
         "brand_primary": "#4d8c44",
         "brand_dark": "#2e5d28",
         "brand_tint": "#eef7ec",
         "tint": true,
-        "eyebrow": "Also for two",
-        "title": "Other packs couples choose",
+        "eyebrow": "Explore other packs",
+        "title": "Other packs customers choose",
         "sub": "Step up to the daily multivitamin-probiotic pair, or add her intimate-care essentials."
       }
     },
@@ -618,7 +476,7 @@
           "settings": {
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg",
             "name": "Clinically studied strains",
-            "desc": "10 strains in Femina\u2122, 16 in Velo16\u2122, each with published human research."
+            "desc": "10 strains in Femina™, 16 in Velo16™, each with published human research."
           }
         },
         "d2": {
@@ -634,7 +492,7 @@
           "settings": {
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg",
             "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Patented MEP Technology</a>",
-            "desc": "Microencapsulation with Supercritical CO\u2082, studied in three peer-reviewed papers."
+            "desc": "Microencapsulation with Supercritical CO₂, studied in three peer-reviewed papers."
           }
         },
         "d4": {
@@ -654,8 +512,8 @@
       ],
       "settings": {
         "eyebrow": "Trusted by Doctors. Proven by Science.",
-        "title_pre": "Quality you can",
-        "title_highlight": "trust.",
+        "title_pre": "Doctor formulated,",
+        "title_highlight": "quality guaranteed.",
         "sub": "Built on peer-reviewed actives, medical formulations, and SAHPRA-aware manufacturing."
       }
     },
@@ -665,7 +523,7 @@
         "o1": {
           "type": "row",
           "settings": {
-            "feature": "Formula matched to her and to him",
+            "feature": "Tailored adult & kid probiotic formulas",
             "brand_state": "yes",
             "b_state": "yes",
             "c_state": "no"
@@ -674,7 +532,7 @@
         "o2": {
           "type": "row",
           "settings": {
-            "feature": "Save R134.98 (15%)",
+            "feature": "Save R134.98 vs individual retail purchases",
             "brand_state": "yes",
             "b_state": "no",
             "c_state": "no"
@@ -683,7 +541,7 @@
         "o3": {
           "type": "row",
           "settings": {
-            "feature": "Patented <a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">MEP delivery</a> in every capsule",
+            "feature": "Patented micro-shield around each bacterium",
             "brand_state": "yes",
             "b_state": "yes",
             "c_state": "no"
@@ -692,19 +550,10 @@
         "o4": {
           "type": "row",
           "settings": {
-            "feature": "Cranberry for her urinary comfort",
+            "feature": "Delicious kid chewable + easy adult capsules",
             "brand_state": "yes",
             "b_state": "yes",
             "c_state": "no"
-          }
-        },
-        "o5": {
-          "type": "row",
-          "settings": {
-            "feature": "One order, one reorder date",
-            "brand_state": "yes",
-            "b_state": "no",
-            "c_state": "yes"
           }
         }
       },
@@ -712,32 +561,31 @@
         "o1",
         "o2",
         "o3",
-        "o4",
-        "o5"
+        "o4"
       ],
       "settings": {
         "brand_primary": "#4d8c44",
         "brand_dark": "#2e5d28",
         "brand_tint": "#eef7ec",
-        "title": "Why the Family Health Bundle outperforms",
-        "sub": "Tailored probiotics for parents and children in one convenient bundle with true savings.",
+        "title": "Why the Family Bundle outperforms",
+        "sub": "Full family probiotic coverage vs separate store purchases:",
         "col_features": "Features",
-        "col_brand": "Family Bundle",
-        "col_b": "Two singles",
-        "col_c": "One generic probiotic",
-        "cta_text": "Add Family Bundle to Cart",
-        "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
+        "col_brand": "This Pack",
+        "col_b": "Separate Singles",
+        "col_c": "Generic Probiotic",
+        "cta_text": "Add Pack to Cart",
+        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
       }
     },
     "judgeme": {
       "type": "vb-judgeme",
       "settings": {
-        "eyebrow": "Real Reviews",
-        "title_pre": "What couples",
-        "title_highlight": "are saying",
-        "sub": "Verified reviews collected independently by Judge.me from customers who bought this pack.",
         "scope": "product",
-        "show_stats": true
+        "show_stats": true,
+        "eyebrow": "Real Reviews",
+        "title_pre": "Customer",
+        "title_highlight": "reviews",
+        "sub": "Verified reviews collected independently by Judge.me from customers who bought this pack."
       }
     },
     "faq": {
@@ -746,50 +594,43 @@
         "q1": {
           "type": "q",
           "settings": {
-            "question": "Exactly what is in the bundle?",
-            "answer": "<p>One box of Velo16\u2122 Digestive Capsules (60s), one box of Femina\u2122 Cranberry Capsules (60s), and one box of BioKid\u2122 Probiotic Chewables (60s).</p>"
+            "question": "Exactly what is in the Family Gut Health Complete Bundle?",
+            "answer": "<p>1 box Velo16 Digestive (60s), 1 box Femina Cranberry (60s), and 1 box BioKid Chewables (60s). All full retail sizes.</p>"
           }
         },
         "q2": {
           "type": "q",
           "settings": {
-            "question": "How much do we save?",
-            "answer": "<p>R134.98. The three boxes cost R299.95 each separately (R899.85); the bundle price is R764.87.</p>"
+            "question": "How much do I save with this bundle?",
+            "answer": "<p>You save R134.98. The 3 boxes cost R899.85 (R299.95 each); the family bundle price is R764.87.</p>"
           }
         },
         "q3": {
           "type": "q",
           "settings": {
-            "question": "How should children take BioKid chewables?",
-            "answer": "<p>Children chew 1 tablet daily, preferably with a meal or morning breakfast. Tablets are delicious and easy to chew.</p>"
+            "question": "From what age can children take BioKid Chewables?",
+            "answer": "<p>BioKid Chewables are safe for children ages 2 and older who can safely chew tablets.</p>"
           }
         },
         "q4": {
           "type": "q",
           "settings": {
-            "question": "Do these products require refrigeration?",
-            "answer": "<p>No. Velobiotics microencapsulation places a protective micro-shield around each bacterium, keeping them stable at room temperature.</p>"
+            "question": "Can adults take these with pregnancy or antibiotics?",
+            "answer": "<p>For pregnancy, consult your doctor. When taking antibiotics, space probiotic intake by at least 2 hours.</p>"
           }
         },
         "q5": {
           "type": "q",
           "settings": {
-            "question": "Can adults take BioKid or children take Velo16?",
-            "answer": "<p>BioKid chewables are formulated specifically for children's strain counts and chewable form. Adults should take Velo16 or Femina capsules. Always check with your healthcare professional if you have questions.</p>"
+            "question": "Do these products require refrigeration?",
+            "answer": "<p>No refrigeration required. Patented Velobiotics micro-shield technology keeps probiotic bacteria stable at room temperature below 25°C.</p>"
           }
         },
         "q6": {
           "type": "q",
           "settings": {
             "question": "What is your refund policy?",
-            "answer": "<p>We offer a 30-day money-back guarantee. If you are not completely satisfied, email support@velobiotics.com.</p>"
-          }
-        },
-        "q7": {
-          "type": "q",
-          "settings": {
-            "question": "What if it doesn't work for us?",
-            "answer": "<p>30-day money-back guarantee. Email support@velobiotics.com and we refund every cent.</p>"
+            "answer": "<p>30-day money-back guarantee. Contact <a href=\"mailto:support@velobiotics.com\">support@velobiotics.com</a> for assistance.</p>"
           }
         }
       },
@@ -799,8 +640,7 @@
         "q3",
         "q4",
         "q5",
-        "q6",
-        "q7"
+        "q6"
       ],
       "settings": {
         "eyebrow": "FAQ",
@@ -814,28 +654,28 @@
         "g1": {
           "type": "g",
           "settings": {
-            "icon": "\u2705",
+            "icon": "✅",
             "text": "30-day money-back"
           }
         },
         "g2": {
           "type": "g",
           "settings": {
-            "icon": "\ud83d\ude9a",
+            "icon": "🚚",
             "text": "Ships worldwide"
           }
         },
         "g3": {
           "type": "g",
           "settings": {
-            "icon": "\ud83d\udd2c",
+            "icon": "🔬",
             "text": "Lab-tested every batch"
           }
         },
         "g4": {
           "type": "g",
           "settings": {
-            "icon": "\ud83d\udcb0",
+            "icon": "💰",
             "text": "Save R84.95 vs singles"
           }
         }
@@ -851,10 +691,10 @@
         "brand_dark": "#2e5d28",
         "brand_light": "#7eb375",
         "badge": "30-day money-back guarantee",
-        "title_pre": "Complete family gut wellness,",
-        "title_highlight": "risk-free for 30 days",
-        "sub": "Velo16\u2122 60s, Femina\u2122 60s, and BioKid\u2122 60s with R134.98 saved. Try it risk-free today.",
-        "cta_text": "Add Family Bundle to Cart",
+        "title_pre": "Protect your family's gut health,",
+        "title_highlight": "risk-free for 30 days.",
+        "sub": "3 full retail boxes for dad, mom & kids. R134.98 saved. 30-day money-back guarantee.",
+        "cta_text": "Add Pack to Cart",
         "cta_link": "#vbpForm"
       }
     },
@@ -864,7 +704,7 @@
         "kicker": "Backed by peer-reviewed science",
         "title_pre": "Don't take our word for it.",
         "title_highlight": "View the science.",
-        "sub": "Both products in this pack use the same shielding technology, studied in three peer-reviewed papers. Read what the research actually showed, in plain English.",
+        "sub": "All microencapsulated products in this pack use patented micro-shield technology, studied in peer-reviewed research. Read what the research showed.",
         "all_text": "View the science",
         "all_url": "/pages/what-is-microencapsulation",
         "bg": "#f6faf5",

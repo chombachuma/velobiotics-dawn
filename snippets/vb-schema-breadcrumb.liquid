@@ -1,6 +1,6 @@
 {%- comment -%} VB BreadcrumbList JSON-LD Snippet {%- endcomment -%}
-{%- assign vb_bc_science = "what-is-microencapsulation,probiotics-what-are-the-challenges,probiotics-tolerance-to-gastric-acid,heat-stability-and-shelf-life,microencapsulation-research,velobiotics-story,new-about-us" | split: "," -%}
-{%- assign vb_bc_page = false -%}{%- if template.name == 'page' and page and vb_bc_science contains page.handle -%}{%- assign vb_bc_page = true -%}{%- endif -%}
+{%- assign vb_bc_about = "new-about-us,custom-about-us" | split: "," -%}
+{%- assign vb_bc_page = false -%}{%- if template.name == 'page' and page and vb_bc_about contains page.handle -%}{%- assign vb_bc_page = true -%}{%- endif -%}
 {%- if template.name == 'product' or template.name == 'collection' or vb_bc_page -%}
 <script type="application/ld+json">
 {
@@ -40,7 +40,7 @@
         "@type": "ListItem",
         "position": 2,
         "name": "The Science",
-        "item": {{ shop.url | append: "/pages/what-is-microencapsulation" | json }}
+        "item": {{ shop.url | append: "/pages/microencapsulation-research" | json }}
       }
       ,{
         "@type": "ListItem",

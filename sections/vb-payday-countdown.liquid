@@ -302,7 +302,8 @@ body.vb-payday-sticky-on { padding-bottom: 64px; }
   if (splash && !isCart && Date.now() >= startMs) {
     var KEY = 'vb_payday_splash_ts', EVERY = 4 * 3600000, last = 0;
     try { last = parseInt(localStorage.getItem(KEY) || '0', 10) || 0; } catch (e) {}
-    if (Date.now() - last > EVERY && !/preview_theme_id|no_splash/.test(location.search)) {
+    var force = /vb_splash=1/.test(location.search);
+    if (force || (Date.now() - last > EVERY && !/preview_theme_id|no_splash/.test(location.search))) {
       try { localStorage.setItem(KEY, String(Date.now())); } catch (e) {}
       var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       var closed = false, raf = null;

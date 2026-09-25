@@ -12,95 +12,346 @@
   if localization.country.iso_code != 'ZA'
     assign show_banner = false
   endif
+  assign is_cart = false
+  if template.name == 'cart'
+    assign is_cart = true
+  endif
+  assign sale_url = '/collections/all?utm_source=website&utm_medium=announcement_bar&utm_campaign=heritage_payday'
 -%}
 
 {%- if show_banner -%}
-<div class="vb-payday-countdown" data-start="{{ sale_start_ms }}" data-end="{{ sale_end_ms }}" role="region" aria-label="Heritage Pay Day countdown">
-  <a class="vb-payday-countdown__inner" href="/collections/all?utm_source=website&utm_medium=announcement_bar&utm_campaign=heritage_payday" style="color:inherit;text-decoration:none;">
-    <span class="vb-payday-countdown__label" id="vb-payday-label">HERITAGE PAY DAY · 25% OFF EVERYTHING · STARTS FRI 25 SEP 10:00 SAST</span>
+<div class="vb-payday-countdown" data-start="{{ sale_start_ms }}" data-end="{{ sale_end_ms }}" data-cart="{{ is_cart }}" role="region" aria-label="Heritage Pay Day countdown">
+  <div class="vb-payday-stripe" aria-hidden="true"></div>
+  <a class="vb-payday-countdown__inner" href="{{ sale_url }}">
+    <span class="vb-payday-countdown__flag" aria-hidden="true">🇿🇦</span>
+    <span class="vb-payday-countdown__title">HERITAGE PAY DAY</span>
+    <span class="vb-payday-countdown__pill">25% OFF EVERYTHING</span>
+    <span class="vb-payday-countdown__label" id="vb-payday-label">ENDS IN</span>
     <span class="vb-payday-countdown__timer" id="vb-payday-timer" aria-live="polite">--:--:--</span>
-    <span class="vb-payday-countdown__code">applied automatically at checkout · <strong>no code needed</strong></span>
+    <span class="vb-payday-countdown__code">Applied automatically at checkout · <strong>no code needed</strong></span>
+    <span class="vb-payday-countdown__cta">Shop the sale →</span>
+  </a>
+  <div class="vb-payday-stripe" aria-hidden="true"></div>
+</div>
+
+{%- unless is_cart -%}
+<div class="vb-payday-sticky" id="vb-payday-sticky" aria-hidden="true">
+  <div class="vb-payday-stripe" aria-hidden="true"></div>
+  <a class="vb-payday-sticky__inner" href="{{ sale_url }}">
+    <span class="vb-payday-sticky__title">🇿🇦 HERITAGE PAY DAY</span>
+    <span class="vb-payday-countdown__pill vb-payday-sticky__pill">25% OFF</span>
+    <span class="vb-payday-sticky__label" id="vb-payday-sticky-label">ENDS IN</span>
+    <span class="vb-payday-countdown__timer vb-payday-sticky__timer" id="vb-payday-sticky-timer">--:--:--</span>
+    <span class="vb-payday-sticky__cta">Shop now →</span>
   </a>
 </div>
+
+<div class="vb-payday-splash" id="vb-payday-splash" role="dialog" aria-modal="true" aria-label="Heritage Pay Day: 25% off everything" hidden>
+  <canvas class="vb-payday-splash__confetti" id="vb-payday-confetti" aria-hidden="true"></canvas>
+  <div class="vb-payday-splash__card">
+    <div class="vb-payday-stripe vb-payday-stripe--card" aria-hidden="true"></div>
+    <div class="vb-payday-splash__eyebrow">🇿🇦 Celebrating every heritage, together</div>
+    <div class="vb-payday-splash__title">HERITAGE<br>PAY DAY</div>
+    <div class="vb-payday-splash__offer">25% OFF<span>EVERYTHING</span></div>
+    <div class="vb-payday-splash__sub">Discount applied automatically at checkout · no code needed<br>Ends Saturday 26 Sep, 20:00</div>
+    <a class="vb-payday-splash__cta" href="{{ sale_url | replace: 'announcement_bar', 'splash' }}">Shop the sale</a>
+    <button type="button" class="vb-payday-splash__close" id="vb-payday-splash-close" aria-label="Close">×</button>
+  </div>
+</div>
+{%- endunless -%}
+
 <style>
+.vb-payday-stripe {
+  height: 5px;
+  background: linear-gradient(90deg, #007A4D 0 20%, #FFB612 20% 40%, #DE3831 40% 60%, #002395 60% 80%, #111111 80% 100%);
+}
+.vb-payday-stripe--card { position: absolute; top: 0; left: 0; right: 0; border-radius: 18px 18px 0 0; }
 .vb-payday-countdown {
   background: #4D8C44;
-  color: #FAF7F2;
-  padding: 10px 16px;
+  color: #FFFFFF;
   text-align: center;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  width: 100%;
-  box-sizing: border-box;
+  font-weight: 600;
+  font-size: 16px;
   position: relative;
-  z-index: 9;
+  z-index: 3;
 }
 .vb-payday-countdown__inner {
   display: inline-flex;
-  gap: 14px;
+  gap: 12px 16px;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
+  padding: 12px 16px;
+  color: inherit;
+  text-decoration: none;
 }
-.vb-payday-countdown__label { font-weight: 600; }
+.vb-payday-countdown__flag { font-size: 22px; line-height: 1; }
+.vb-payday-countdown__title { font-weight: 800; letter-spacing: 0.12em; font-size: 18px; }
+.vb-payday-countdown__pill {
+  background: #FFB612;
+  color: #1a1a1a;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 16px;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.15);
+  animation: vb-pulse 1.6s ease-in-out infinite;
+}
+@keyframes vb-pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.06); } }
+.vb-payday-countdown__label { font-weight: 700; letter-spacing: 0.06em; font-size: 13px; opacity: 0.95; }
 .vb-payday-countdown__timer {
-  background: #FAF7F2;
+  background: #FFFFFF;
   color: #4D8C44;
-  padding: 4px 10px;
-  border-radius: 4px;
+  padding: 5px 12px;
+  border-radius: 6px;
   font-variant-numeric: tabular-nums;
-  font-weight: 700;
-  min-width: 90px;
+  font-weight: 800;
+  min-width: 100px;
   display: inline-block;
+  font-size: 17px;
 }
-.vb-payday-countdown__code { font-weight: 500; letter-spacing: 0.06em; }
-.vb-payday-countdown__code strong { font-weight: 700; letter-spacing: 0.08em; }
-@media (max-width: 600px) {
-  .vb-payday-countdown { font-size: 12px; padding: 8px 10px; }
-  .vb-payday-countdown__inner { gap: 8px; }
+.vb-payday-countdown__code { font-weight: 500; font-size: 13px; letter-spacing: 0.02em; opacity: 0.95; }
+.vb-payday-countdown__code strong { font-weight: 800; letter-spacing: 0.06em; }
+.vb-payday-countdown__cta {
+  border: 2px solid #FFFFFF;
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  transition: background .15s, color .15s;
+}
+.vb-payday-countdown__inner:hover .vb-payday-countdown__cta { background: #FFFFFF; color: #4D8C44; }
+@media (max-width: 749px) {
+  .vb-payday-countdown { font-size: 13px; }
+  .vb-payday-countdown__inner { gap: 8px 10px; padding: 10px 12px; }
+  .vb-payday-countdown__flag { display: none; }
+  .vb-payday-countdown__title { font-size: 15px; letter-spacing: 0.1em; }
+  .vb-payday-countdown__pill { font-size: 13px; padding: 5px 11px; }
+  .vb-payday-countdown__timer { font-size: 14px; min-width: 84px; padding: 4px 9px; }
+  .vb-payday-countdown__code { display: none; }
+  .vb-payday-countdown__cta { display: none; }
+}
+
+/* Sticky bar (fixed to the bottom once the top bar scrolls away) */
+.vb-payday-sticky {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 9990;
+  background: #4D8C44;
+  color: #FFFFFF;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+  box-shadow: 0 -6px 24px rgba(0,0,0,0.25);
+  transform: translateY(110%);
+  transition: transform .35s ease;
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
+.vb-payday-sticky.is-visible { transform: translateY(0); }
+.vb-payday-sticky__inner {
+  display: flex;
+  gap: 10px 16px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10px 16px;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+}
+.vb-payday-sticky__title { font-weight: 800; letter-spacing: 0.1em; }
+.vb-payday-sticky__label { font-size: 12px; letter-spacing: 0.06em; }
+.vb-payday-sticky__cta {
+  background: #FFFFFF;
+  color: #4D8C44;
+  border-radius: 999px;
+  padding: 7px 18px;
+  font-weight: 800;
+  font-size: 14px;
+}
+body.vb-payday-sticky-on { padding-bottom: 64px; }
+@media (max-width: 749px) {
+  .vb-payday-sticky__inner { gap: 8px; padding: 8px 10px; font-size: 13px; }
+  .vb-payday-sticky__title { font-size: 13px; letter-spacing: 0.08em; }
+  .vb-payday-sticky__label { display: none; }
+  .vb-payday-sticky__pill { font-size: 12px; padding: 4px 9px; }
+  .vb-payday-sticky__timer { font-size: 13px; min-width: 78px; padding: 3px 8px; }
+  .vb-payday-sticky__cta { padding: 6px 12px; font-size: 12px; }
+  body.vb-payday-sticky-on { padding-bottom: 56px; }
+}
+
+/* Splash */
+.vb-payday-splash {
+  position: fixed; inset: 0; z-index: 99999;
+  display: flex; align-items: center; justify-content: center;
+  background: radial-gradient(ellipse at center, rgba(77,140,68,0.92) 0%, rgba(20,60,30,0.94) 100%);
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+  opacity: 0; transition: opacity .4s ease;
+  padding: 20px;
+}
+.vb-payday-splash[hidden] { display: none; }
+.vb-payday-splash.is-in { opacity: 1; }
+.vb-payday-splash__confetti { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.vb-payday-splash__card {
+  position: relative;
+  background: #FFFFFF;
+  color: #1a1a1a;
+  border-radius: 18px;
+  padding: 40px 36px 34px;
+  max-width: 460px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.45);
+  transform: translateY(24px) scale(.96);
+  transition: transform .45s cubic-bezier(.2,.9,.3,1.2);
+  overflow: hidden;
+}
+.vb-payday-splash.is-in .vb-payday-splash__card { transform: translateY(0) scale(1); }
+.vb-payday-splash__eyebrow { font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #4D8C44; margin-bottom: 10px; }
+.vb-payday-splash__title { font-size: 44px; line-height: .98; font-weight: 900; letter-spacing: 0.04em; color: #1a1a1a; }
+.vb-payday-splash__offer {
+  display: inline-block; margin: 18px 0 14px;
+  background: #FFB612; color: #1a1a1a;
+  font-weight: 900; font-size: 40px; line-height: 1;
+  padding: 12px 26px 10px; border-radius: 14px;
+  letter-spacing: 0.02em;
+  box-shadow: 0 6px 0 #d99a0a;
+}
+.vb-payday-splash__offer span { display: block; font-size: 15px; letter-spacing: 0.22em; margin-top: 4px; }
+.vb-payday-splash__sub { font-size: 14px; color: #444; line-height: 1.5; margin-bottom: 18px; }
+.vb-payday-splash__cta {
+  display: inline-block; background: #4D8C44; color: #FFFFFF; text-decoration: none;
+  font-weight: 800; font-size: 16px; letter-spacing: 0.04em;
+  padding: 14px 34px; border-radius: 999px;
+}
+.vb-payday-splash__close {
+  position: absolute; top: 12px; right: 14px;
+  background: transparent; border: 0; font-size: 28px; line-height: 1; color: #888; cursor: pointer;
+}
+@media (max-width: 749px) {
+  .vb-payday-splash__card { padding: 34px 22px 28px; }
+  .vb-payday-splash__title { font-size: 36px; }
+  .vb-payday-splash__offer { font-size: 34px; padding: 10px 22px 9px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .vb-payday-countdown__pill { animation: none; }
+  .vb-payday-splash, .vb-payday-splash__card, .vb-payday-sticky { transition: none; }
 }
 </style>
 
 <script>
 (function () {
-  var el = document.querySelector('.vb-payday-countdown');
-  if (!el) return;
-  var startMs = parseInt(el.getAttribute('data-start'), 10);
-  var endMs = parseInt(el.getAttribute('data-end'), 10);
-  var timerEl = document.getElementById('vb-payday-timer');
-  var labelEl = document.getElementById('vb-payday-label');
+  var bar = document.querySelector('.vb-payday-countdown');
+  if (!bar) return;
+  var startMs = parseInt(bar.getAttribute('data-start'), 10);
+  var endMs = parseInt(bar.getAttribute('data-end'), 10);
+  var isCart = bar.getAttribute('data-cart') === 'true';
+  var timerEls = [document.getElementById('vb-payday-timer'), document.getElementById('vb-payday-sticky-timer')];
+  var labelEls = [document.getElementById('vb-payday-label'), document.getElementById('vb-payday-sticky-label')];
+  var sticky = document.getElementById('vb-payday-sticky');
+  var splash = document.getElementById('vb-payday-splash');
 
   function pad(n) { return String(n).padStart(2, '0'); }
+  function setAll(els, txt) { els.forEach(function (e) { if (e) e.textContent = txt; }); }
 
   function tick() {
     var now = Date.now();
     if (now >= endMs) {
-      el.style.display = 'none';
-      return;
+      bar.style.display = 'none';
+      if (sticky) { sticky.classList.remove('is-visible'); document.body.classList.remove('vb-payday-sticky-on'); }
+      return false;
     }
     var target, label;
-    if (now < startMs) {
-      target = startMs;
-      label = '🇿🇦 HERITAGE PAY DAY · 25% OFF EVERYTHING · STARTS IN';
-    } else {
-      target = endMs;
-      label = (endMs - now < 3 * 3600000) ? '⏰ ENDS TONIGHT 20:00 · 25% OFF EVERYTHING · ENDS IN' : '🇿🇦 LIVE NOW · 25% OFF EVERYTHING · ENDS IN';
-    }
-    labelEl.textContent = label;
+    if (now < startMs) { target = startMs; label = 'STARTS IN'; }
+    else { target = endMs; label = (endMs - now < 3 * 3600000) ? 'ENDS TONIGHT 20:00 · ENDS IN' : 'ENDS IN'; }
+    setAll(labelEls, label);
     var diff = Math.max(0, target - now);
     var days = Math.floor(diff / 86400000);
     var hours = Math.floor((diff % 86400000) / 3600000);
     var mins = Math.floor((diff % 3600000) / 60000);
     var secs = Math.floor((diff % 60000) / 1000);
-    timerEl.textContent = (days > 0 ? days + 'd ' : '') + pad(hours) + ':' + pad(mins) + ':' + pad(secs);
+    setAll(timerEls, (days > 0 ? days + 'd ' : '') + pad(hours) + ':' + pad(mins) + ':' + pad(secs));
+    return true;
+  }
+  if (!tick()) return;
+  setInterval(tick, 1000);
+
+  /* Sticky bottom bar: show once the top bar has scrolled out of view (not on cart) */
+  if (sticky && !isCart) {
+    var showSticky = function (on) {
+      sticky.classList.toggle('is-visible', on);
+      sticky.setAttribute('aria-hidden', on ? 'false' : 'true');
+      document.body.classList.toggle('vb-payday-sticky-on', on);
+    };
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        showSticky(!entries[0].isIntersecting);
+      }, { threshold: 0 }).observe(bar);
+    } else {
+      window.addEventListener('scroll', function () { showSticky(window.scrollY > bar.offsetTop + bar.offsetHeight); }, { passive: true });
+    }
   }
 
-  tick();
-  setInterval(tick, 1000);
+  /* Splash + confetti: first landing, then again every 4 hours (not on cart, only while the sale is live) */
+  if (splash && !isCart && Date.now() >= startMs) {
+    var KEY = 'vb_payday_splash_ts', EVERY = 4 * 3600000, last = 0;
+    try { last = parseInt(localStorage.getItem(KEY) || '0', 10) || 0; } catch (e) {}
+    if (Date.now() - last > EVERY && !/preview_theme_id|no_splash/.test(location.search)) {
+      try { localStorage.setItem(KEY, String(Date.now())); } catch (e) {}
+      var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var closed = false, raf = null;
+      var close = function () {
+        if (closed) return; closed = true;
+        splash.classList.remove('is-in');
+        if (raf) cancelAnimationFrame(raf);
+        setTimeout(function () { splash.hidden = true; }, 450);
+      };
+      splash.hidden = false;
+      requestAnimationFrame(function () { splash.classList.add('is-in'); });
+      splash.addEventListener('click', function (ev) { if (ev.target === splash) close(); });
+      document.getElementById('vb-payday-splash-close').addEventListener('click', close);
+      document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') close(); });
+      setTimeout(close, 4500);
+
+      if (!reduced) {
+        var canvas = document.getElementById('vb-payday-confetti');
+        var ctx = canvas.getContext('2d');
+        var W = canvas.width = window.innerWidth, H = canvas.height = window.innerHeight;
+        var colors = ['#007A4D', '#FFB612', '#DE3831', '#002395', '#FFFFFF', '#4D8C44', '#FFD166'];
+        var pieces = [], N = W < 750 ? 140 : 260, t0 = performance.now();
+        for (var i = 0; i < N; i++) {
+          pieces.push({
+            x: Math.random() * W, y: -20 - Math.random() * H * 0.6,
+            w: 6 + Math.random() * 8, h: 10 + Math.random() * 10,
+            vx: (Math.random() - 0.5) * 2.2, vy: 2.5 + Math.random() * 4,
+            rot: Math.random() * Math.PI, vr: (Math.random() - 0.5) * 0.25,
+            c: colors[i % colors.length], tilt: Math.random() * Math.PI
+          });
+        }
+        var draw = function (now) {
+          var age = now - t0;
+          ctx.clearRect(0, 0, W, H);
+          var alpha = age > 3200 ? Math.max(0, 1 - (age - 3200) / 900) : 1;
+          ctx.globalAlpha = alpha;
+          pieces.forEach(function (p) {
+            p.x += p.vx + Math.sin(p.tilt) * 0.8; p.y += p.vy; p.rot += p.vr; p.tilt += 0.05;
+            if (p.y > H + 20) { p.y = -20; p.x = Math.random() * W; }
+            ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(p.rot);
+            ctx.fillStyle = p.c; ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h * Math.abs(Math.cos(p.tilt)) + 1);
+            ctx.restore();
+          });
+          if (age < 4200 && !closed) raf = requestAnimationFrame(draw);
+        };
+        raf = requestAnimationFrame(draw);
+      }
+    }
+  }
 })();
 </script>
 {%- endif -%}

@@ -73,7 +73,7 @@
     <div class="vb-fc-define">
       <div class="vb-fc-define__copy">
         {%- if ing_mode -%}
-          <h3>What {{ ing_name }} does for you</h3>
+          <h3>The benefits of {{ ing_name }}</h3>
           <p>{{ ing_intro | newline_to_br }}</p>
           {%- if ing_benefits.size > 0 -%}
             <ul class="vb-fc-benefits">
@@ -82,7 +82,7 @@
           {%- endif -%}
           {%- if ing_synergy != blank -%}
             <div class="vb-fc-synergy">
-              <h4>Why we pair {{ ing_name }} with probiotics</h4>
+              <h4>Why probiotics make {{ ing_name }} work better</h4>
               <p>{{ ing_synergy }} <a href="/pages/what-is-microencapsulation">See how we keep every good bacterium alive →</a></p>
             </div>
           {%- endif -%}

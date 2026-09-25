@@ -30,7 +30,7 @@
      "type": "benefit",
      "settings": {
       "icon": "🦠",
-      "text": "Pediatrician-approved strains"
+      "text": "Paediatrician-approved strains"
      }
     },
     "b4": {
@@ -86,7 +86,7 @@
     "brand_label": "BioKid™",
     "rating": "4.8",
     "review_count": "1,100+",
-    "hook": "Daily wellness your kids will actually love. BioKid™ blends pediatrician-approved probiotic strains with kid-essential vitamins in a yummy berry chewable — for stronger immunity, happy tummies, and fewer sick days.",
+    "hook": "Daily wellness your kids will actually love. BioKid™ blends paediatrician-approved probiotic strains with kid-essential vitamins in a yummy berry chewable — for stronger immunity, happy tummies, and fewer sick days.",
     "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
     "show_subscription": true,
     "show_buynow": true,
@@ -138,7 +138,7 @@
       "avatar_url": "https://ui-avatars.com/api/?name=Anna+P&background=FFA063&color=ffffff&size=120&bold=true&font-size=0.42",
       "author": "Anna P.",
       "meta": "Verified buyer · 3 weeks ago",
-      "quote": "Pediatrician recommended. We're sold."
+      "quote": "Paediatrician recommended. We're sold."
      }
     }
    },
@@ -215,7 +215,7 @@
      "type": "point",
      "settings": {
       "icon": "✓",
-      "text": "<strong>Pediatrician-approved probiotic strains</strong> — gut, immunity, mood."
+      "text": "<strong>Paediatrician-approved probiotic strains</strong> — gut, immunity, mood."
      }
     },
     "s2": {
@@ -256,7 +256,7 @@
     "eyebrow": "The Solution",
     "title_pre": "Meet",
     "title_highlight": "BioKid™ Chewables.",
-    "desc": "A once-daily berry chewable combining pediatrician-approved probiotic strains with kid-essential vitamins — delivered by Velobiotics™ technology. 1000× more reach their gut alive, where they support stronger immunity, calmer tummies, and brighter moods."
+    "desc": "A once-daily berry chewable combining paediatrician-approved probiotic strains with kid-essential vitamins — delivered by Velobiotics™ technology. 1000× more reach their gut alive, where they support stronger immunity, calmer tummies, and brighter moods."
    }
   },
   "related": {
@@ -354,7 +354,7 @@
      "type": "feat",
      "settings": {
       "icon": "🩺",
-      "name": "Pediatrician-Approved",
+      "name": "Paediatrician-Approved",
       "desc": "Built with paediatric guidance. Kid-safe, age-appropriate."
      }
     },
@@ -412,7 +412,7 @@
       "icon": "🦠",
       "name": "Kid-Safe Probiotic Blend",
       "amount": "5 Billion CFU",
-      "desc": "Pediatrician-approved strains for kids 3+."
+      "desc": "Paediatrician-approved strains for kids 3+."
      }
     },
     "i2": {
@@ -479,7 +479,7 @@
     "sub": "Six clean actives. No sugar bombs. Full transparency for parents.",
     "facts_image_url": "",
     "facts_label": "Supplement facts",
-    "facts_foot": "Lab-tested · Pediatrician-approved · Kid-safe"
+    "facts_foot": "Lab-tested · Paediatrician-approved · Kid-safe"
    }
   },
   "confidence": {
@@ -603,14 +603,14 @@
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg?v=1763281966",
       "name": "Clinically Proven Strains",
-      "desc": "Strains studied for pediatric safety and efficacy."
+      "desc": "Strains studied for paediatric safety and efficacy."
      }
     },
     "d2": {
      "type": "card",
      "settings": {
       "icon_url": "https://www.velobiotics.com/cdn/shop/files/medication_24dp_4D8C44.svg?v=1763281966",
-      "name": "Pediatrician Formulated",
+      "name": "Paediatrician Formulated",
       "desc": "Built with paediatric clinical guidance."
      }
     },
@@ -638,7 +638,7 @@
     "d4"
    ],
    "settings": {
-    "eyebrow": "Trusted by Pediatricians. Proven by Science.",
+    "eyebrow": "Trusted by Paediatricians. Proven by Science.",
     "title_pre": "Quality you can",
     "title_highlight": "trust.",
     "sub": "Built with paediatric guidance, peer-reviewed strains, and SAHPRA-aware manufacturing."
@@ -705,7 +705,7 @@
     "brand_dark": "#B33C00",
     "brand_tint": "#FFF1E5",
     "title": "Why We Outperform Others",
-    "sub": "Experience the family wellness daily — pediatrician-approved probiotic strains, kid-essential vitamins, and Velobiotics™ absorption technology in a yummy berry chewable.",
+    "sub": "Experience the family wellness daily — paediatrician-approved probiotic strains, kid-essential vitamins, and Velobiotics™ absorption technology in a yummy berry chewable.",
     "col_features": "Features",
     "col_brand": "BioKid™",
     "col_b": "Kid Probiotic",
@@ -753,7 +753,7 @@
      "type": "q",
      "settings": {
       "question": "Can I give this with other medications?",
-      "answer": "<p>Generally yes, but always check with your pediatrician if your child is on prescription medication.</p>"
+      "answer": "<p>Generally yes, but always check with your paediatrician if your child is on prescription medication.</p>"
      }
     },
     "q5": {
@@ -813,7 +813,7 @@
      "type": "g",
      "settings": {
       "icon": "🧒",
-      "text": "Pediatrician-approved"
+      "text": "Paediatrician-approved"
      }
     }
    },

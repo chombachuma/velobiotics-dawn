@@ -16,7 +16,7 @@
           "type": "benefit",
           "settings": {
             "icon": "check",
-            "text": "Dual Synergy: GLP-1 Metabolic Booster + Alkalizing Probiotic SuperGreens"
+            "text": "Dual Synergy: GLP-1 Metabolic Booster + Alkalising Probiotic SuperGreens"
           }
         },
         "b2": {
@@ -141,7 +141,7 @@
           "type": "point",
           "settings": {
             "icon": "alert",
-            "text": "Modern diets often lack essential alkalizing greens and digestive enzymes"
+            "text": "Modern diets often lack essential alkalising greens and digestive enzymes"
           }
         },
         "p3": {
@@ -177,14 +177,14 @@
           "type": "point",
           "settings": {
             "icon": "check",
-            "text": "GLP-1 Booster supports natural satiety signaling and appetite balance"
+            "text": "GLP-1 Booster supports natural satiety signalling and appetite balance"
           }
         },
         "s2": {
           "type": "point",
           "settings": {
             "icon": "check",
-            "text": "Alkalizing SuperGreens supply Spirulina, Chlorella & enzymes for daily vitality"
+            "text": "Alkalising SuperGreens supply Spirulina, Chlorella & enzymes for daily vitality"
           }
         },
         "s3": {
@@ -210,7 +210,7 @@
         "eyebrow": "The Love Your Body Solution",
         "title_pre": "Support gut satiety signals & nourish your body",
         "title_highlight": "from the inside out",
-        "desc": "The Love Your Body Combo pairs GutSlim GLP-1 Booster with GutSlim SuperGreens. Together they deliver micro-shielded probiotics, satiety-supporting botanicals, alkalizing greens, and digestive enzymes in one complete daily ritual."
+        "desc": "The Love Your Body Combo pairs GutSlim GLP-1 Booster with GutSlim SuperGreens. Together they deliver micro-shielded probiotics, satiety-supporting botanicals, alkalising greens, and digestive enzymes in one complete daily ritual."
       }
     },
     "related": {
@@ -264,7 +264,7 @@
           "type": "feat",
           "settings": {
             "icon": "shield",
-            "name": "Alkalizing SuperGreens",
+            "name": "Alkalising SuperGreens",
             "desc": "Organic Spirulina, Chlorella, Wheatgrass, and Barley Grass nourish cellular health."
           }
         },
@@ -378,14 +378,14 @@
             "icon": "leaf",
             "name": "Berberine & Botanicals (GLP-1 Booster)",
             "amount": "Targeted Extract Blend",
-            "desc": "Supports natural metabolic signaling and post-meal glucose stability."
+            "desc": "Supports natural metabolic signalling and post-meal glucose stability."
           }
         },
         "i2": {
           "type": "ingredient",
           "settings": {
             "icon": "shield",
-            "name": "Alkalizing Organic Greens (SuperGreens)",
+            "name": "Alkalising Organic Greens (SuperGreens)",
             "amount": "Organic Superfood Blend",
             "desc": "Spirulina, Chlorella, Wheatgrass, and Barley Grass for daily cellular vitality."
           }
@@ -448,7 +448,7 @@
         "c3": {
           "type": "stat",
           "settings": {
-            "label": "Alkalizing Greens & Enzymes",
+            "label": "Alkalising Greens & Enzymes",
             "percent": 100
           }
         },
@@ -539,7 +539,7 @@
           "settings": {
             "icon_url": "",
             "name": "Satiety & Greens Synergy",
-            "desc": "Combines appetite-supporting botanicals with alkalizing organic superfoods."
+            "desc": "Combines appetite-supporting botanicals with alkalising organic superfoods."
           }
         },
         "d3": {
@@ -569,7 +569,7 @@
         "o1": {
           "type": "row",
           "settings": {
-            "feature": "Dual Satiety Booster + Alkalizing Greens Protocol",
+            "feature": "Dual Satiety Booster + Alkalising Greens Protocol",
             "brand_state": "yes",
             "b_state": "no",
             "c_state": "no"
@@ -741,7 +741,7 @@
         "badge": "Dual Satiety & Greens Support",
         "title_pre": "Nourish your body & gut",
         "title_highlight": "from within",
-        "sub": "Combine satiety-supporting GLP-1 Booster with alkalizing SuperGreens in one complete combo.",
+        "sub": "Combine satiety-supporting GLP-1 Booster with alkalising SuperGreens in one complete combo.",
         "cta_text": "Add Love Your Body Combo to Cart",
         "cta_link": "#"
       }

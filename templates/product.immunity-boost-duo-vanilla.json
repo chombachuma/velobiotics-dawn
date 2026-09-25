@@ -143,10 +143,10 @@
         "brand_tint": "#eef7ec",
         "image_url": "",
         "tag_value": "Dual Action",
-        "tag_label": "Cellular + Gut Defense",
+        "tag_label": "Cellular + Gut Defence",
         "eyebrow": "Why pair a probiotic meal with a daily probiotic capsule?",
         "title_pre": "Single supplements,",
-        "title_highlight": "incomplete defense.",
+        "title_highlight": "incomplete defence.",
         "desc": "A probiotic meal provides daily protein and nutrition, but pairing it with a targeted 16-strain probiotic capsule delivers comprehensive gut-barrier and digestive support."
       }
     },
@@ -326,7 +326,7 @@
         "brand_tint": "#eef7ec",
         "eyebrow": "Daily Ritual",
         "title_pre": "Simple daily steps,",
-        "title_highlight": "maximum defense.",
+        "title_highlight": "maximum defence.",
         "sub": "Incorporate into your morning or daily routine."
       }
     },
@@ -339,7 +339,7 @@
             "icon": "\ud83c\udf66",
             "name": "BioGain\u2122 Probiotics Meal Vanilla (400g)",
             "amount": "1 Tub (400g)",
-            "desc": "10 probiotic strains, 15g whey protein per serving, vanilla flavor."
+            "desc": "10 probiotic strains, 15g whey protein per serving, vanilla flavour."
           }
         },
         "i2": {

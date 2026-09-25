@@ -18,12 +18,13 @@
   endif
   assign sale_url = '/collections/all?utm_source=website&utm_medium=announcement_bar&utm_campaign=heritage_payday'
 -%}
+{%- capture za_flag -%}<svg class="vb-flag" viewBox="0 0 900 600" width="28" height="19" aria-hidden="true" focusable="false"><rect width="900" height="300" fill="#DE3831"/><rect y="300" width="900" height="300" fill="#002395"/><path d="M0,0 L450,300 L900,300 M0,600 L450,300" stroke="#FFFFFF" stroke-width="280" fill="none"/><path d="M0,0 L450,300 L900,300 M0,600 L450,300" stroke="#007A4D" stroke-width="200" fill="none"/><path d="M-60,40 L340,300 L-60,560 Z" fill="#000000" stroke="#FFB612" stroke-width="70"/></svg>{%- endcapture -%}
 
 {%- if show_banner -%}
 <div class="vb-payday-countdown" data-start="{{ sale_start_ms }}" data-end="{{ sale_end_ms }}" data-cart="{{ is_cart }}" role="region" aria-label="Heritage Pay Day countdown">
   <div class="vb-payday-stripe" aria-hidden="true"></div>
   <a class="vb-payday-countdown__inner" href="{{ sale_url }}">
-    <span class="vb-payday-countdown__flag" aria-hidden="true">🇿🇦</span>
+    <span class="vb-payday-countdown__flag" aria-hidden="true">{{ za_flag }}</span>
     <span class="vb-payday-countdown__title">HERITAGE PAY DAY</span>
     <span class="vb-payday-countdown__pill">25% OFF EVERYTHING</span>
     <span class="vb-payday-countdown__label" id="vb-payday-label">ENDS IN</span>
@@ -38,7 +39,7 @@
 <div class="vb-payday-sticky" id="vb-payday-sticky" aria-hidden="true">
   <div class="vb-payday-stripe" aria-hidden="true"></div>
   <a class="vb-payday-sticky__inner" href="{{ sale_url }}">
-    <span class="vb-payday-sticky__title">🇿🇦 HERITAGE PAY DAY</span>
+    <span class="vb-payday-sticky__title">{{ za_flag }} HERITAGE PAY DAY</span>
     <span class="vb-payday-countdown__pill vb-payday-sticky__pill">25% OFF</span>
     <span class="vb-payday-sticky__label" id="vb-payday-sticky-label">ENDS IN</span>
     <span class="vb-payday-countdown__timer vb-payday-sticky__timer" id="vb-payday-sticky-timer">--:--:--</span>
@@ -50,7 +51,7 @@
   <canvas class="vb-payday-splash__confetti" id="vb-payday-confetti" aria-hidden="true"></canvas>
   <div class="vb-payday-splash__card">
     <div class="vb-payday-stripe vb-payday-stripe--card" aria-hidden="true"></div>
-    <div class="vb-payday-splash__eyebrow">🇿🇦 Celebrating every heritage, together</div>
+    <div class="vb-payday-splash__eyebrow">{{ za_flag }} Celebrating every heritage, together</div>
     <div class="vb-payday-splash__title">HERITAGE<br>PAY DAY</div>
     <div class="vb-payday-splash__offer">25% OFF<span>EVERYTHING</span></div>
     <div class="vb-payday-splash__sub">Discount applied automatically at checkout · no code needed<br>Ends Saturday 26 Sep, 20:00</div>
@@ -88,7 +89,9 @@
   color: inherit;
   text-decoration: none;
 }
-.vb-payday-countdown__flag { font-size: 22px; line-height: 1; }
+.vb-payday-countdown__flag { line-height: 0; display: inline-flex; }
+.vb-flag { vertical-align: middle; border-radius: 2px; box-shadow: 0 0 0 1px rgba(255,255,255,0.6); }
+.vb-payday-sticky__title .vb-flag, .vb-payday-splash__eyebrow .vb-flag { width: 22px; height: 15px; margin-right: 4px; }
 .vb-payday-countdown__title { font-weight: 800; letter-spacing: 0.12em; font-size: 18px; }
 .vb-payday-countdown__pill {
   background: #FFB612;
@@ -256,6 +259,8 @@ body.vb-payday-sticky-on { padding-bottom: 64px; }
   var labelEls = [document.getElementById('vb-payday-label'), document.getElementById('vb-payday-sticky-label')];
   var sticky = document.getElementById('vb-payday-sticky');
   var splash = document.getElementById('vb-payday-splash');
+  if (sticky) document.body.appendChild(sticky);
+  if (splash) document.body.appendChild(splash);
 
   function pad(n) { return String(n).padStart(2, '0'); }
   function setAll(els, txt) { els.forEach(function (e) { if (e) e.textContent = txt; }); }

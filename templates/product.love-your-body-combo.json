@@ -1,0 +1,782 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "check",
+            "text": "Dual Synergy: GLP-1 Metabolic Booster + Alkalizing Probiotic SuperGreens"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "check",
+            "text": "Supports Natural Satiety Signals & Appetite Balance"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "check",
+            "text": "Micro-Shielded Live Probiotic Cultures for Gut Microbiome Health"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "check",
+            "text": "Cellular Vitality, Digestive Comfort & Daily Nutrient Support"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_dark": "#831843",
+        "brand_tint": "#fce7f3",
+        "brand_label": "Velobiotics™ Love Your Body Combo",
+        "rating": "4.8",
+        "review_count": "50+ verified reviews",
+        "hook": "Complete Gut-Metabolic & Daily Greens Duo: GutSlim GLP-1 Booster (60 caps) + GutSlim SuperGreens (240g). Save R220.00.",
+        "ship_note": "Ships nationwide · Free SA delivery over R400 · 30-day money-back guarantee",
+        "show_subscription": true,
+        "tier_unit": "Pack",
+        "tier_unit_plural": "Packs",
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
+    },
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "",
+            "author": "Karabo Rampou",
+            "meta": "Verified Buyer · GutSlim SuperGreens",
+            "quote": "What an amazing product! I'm getting a lot of compliments about my skin and energy on top of that it tastes refreshing."
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "",
+            "author": "Elizabeth",
+            "meta": "Verified Buyer · GutSlim GLP-1 Booster",
+            "quote": "Been using this product for a little over a week and my food noise levels have dropped drastically! No longer craving constant snacks."
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "",
+            "author": "Jessamine",
+            "meta": "Verified Buyer · GutSlim GLP-1 Booster",
+            "quote": "This is a great product. Took about a week to reset my gut bacteria. I have no cravings for the wrong foods and have more daily energy."
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "",
+            "author": "Shannon Hennessy",
+            "meta": "Verified Buyer · GutSlim SuperGreens",
+            "quote": "I have so much more energy and feel less bloated after taking my daily greens."
+          }
+        },
+        "r5": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "",
+            "author": "Gugulethu Nkosi",
+            "meta": "Verified Buyer · GutSlim GLP-1 Booster",
+            "quote": "Best product. Cannot go without it at this point for my daily gut and appetite routine."
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_dark": "#831843",
+        "brand_tint": "#fce7f3",
+        "eyebrow": "Verified Buyer Feedback",
+        "title": "What customers say about Love Your Body Combo components"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "alert",
+            "text": "Fluctuating appetite and food noise undermine weight-management goals"
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "alert",
+            "text": "Modern diets often lack essential alkalizing greens and digestive enzymes"
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "alert",
+            "text": "Unbalanced gut microflora hinders natural short-chain fatty acid (SCFA) production"
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#be185d",
+        "brand_tint": "#fce7f3",
+        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/GlowandGutCombo.png?v=1775328667",
+        "tag_value": "Metabolic & Gut Balance",
+        "tag_label": "Daily Body Support",
+        "eyebrow": "The Challenge",
+        "title_pre": "Why restrictive diets alone",
+        "title_highlight": "often fail long-term",
+        "desc": "Weight management and daily vitality require more than counting calories. Unbalanced gut microflora, low nutrient intake, and fluctuating appetite signals can make healthy habits feel like an uphill struggle."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "check",
+            "text": "GLP-1 Booster supports natural satiety signaling and appetite balance"
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "check",
+            "text": "Alkalizing SuperGreens supply Spirulina, Chlorella & enzymes for daily vitality"
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "check",
+            "text": "Micro-shielded probiotics deliver live beneficial cultures directly to the lower gut"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#be185d",
+        "brand_tint": "#fce7f3",
+        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/GlowandGutCombo.png?v=1775328667",
+        "tag_value": "Synergistic Stack",
+        "tag_label": "Booster + SuperGreens",
+        "eyebrow": "The Love Your Body Solution",
+        "title_pre": "Support gut satiety signals & nourish your body",
+        "title_highlight": "from the inside out",
+        "desc": "The Love Your Body Combo pairs GutSlim GLP-1 Booster with GutSlim SuperGreens. Together they deliver micro-shielded probiotics, satiety-supporting botanicals, alkalizing greens, and digestive enzymes in one complete daily ritual."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-glp-1-booster",
+            "brand": "GutSlim™ Probiotics GLP-1 Booster (60 caps)",
+            "rating": "4.8",
+            "reviews": "25+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "gutslim-probiotics-supergreens",
+            "brand": "GutSlim™ Probiotics SuperGreens (240g)",
+            "rating": "4.8",
+            "reviews": "25+"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_dark": "#831843",
+        "brand_tint": "#fce7f3",
+        "tint": false,
+        "eyebrow": "What's inside",
+        "title": "2 Full-Sized Products in One Combo",
+        "sub": "Save R220.00 compared to buying each item separately."
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "f1": {
+          "type": "feat",
+          "settings": {
+            "icon": "sparkles",
+            "name": "Satiety & Appetite Support",
+            "desc": "Targeted botanicals and prebiotics support natural SCFA production and appetite balance."
+          }
+        },
+        "f2": {
+          "type": "feat",
+          "settings": {
+            "icon": "shield",
+            "name": "Alkalizing SuperGreens",
+            "desc": "Organic Spirulina, Chlorella, Wheatgrass, and Barley Grass nourish cellular health."
+          }
+        },
+        "f3": {
+          "type": "feat",
+          "settings": {
+            "icon": "zap",
+            "name": "Micro-Shielded Live Cultures",
+            "desc": "Velobiotics micro-shield technology protects live probiotic bacteria through stomach acid."
+          }
+        },
+        "f4": {
+          "type": "feat",
+          "settings": {
+            "icon": "heart",
+            "name": "Digestive Enzyme Complex",
+            "desc": "Amylase, Protease, Lipase, Cellulase, and Lactase assist in smooth nutrient breakdown."
+          }
+        },
+        "f5": {
+          "type": "feat",
+          "settings": {
+            "icon": "refresh",
+            "name": "Gut Microbiome Balance",
+            "desc": "Beneficial probiotic strains encourage healthy lower gut flora and digestive comfort."
+          }
+        },
+        "f6": {
+          "type": "feat",
+          "settings": {
+            "icon": "sun",
+            "name": "Convenient Daily Ritual",
+            "desc": "Effortless combination of daily capsules and refreshing greens drink."
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_tint": "#fce7f3",
+        "eyebrow": "Dual Synergy",
+        "title_pre": "Designed for complete",
+        "title_highlight": "body & gut wellness",
+        "sub": "Targeted support for appetite balance, digestive comfort, and daily cellular nourishment."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "1",
+            "name": "Step 1: GLP-1 Booster Capsules",
+            "desc": "Take 2 capsules daily with water, 15 to 30 minutes before your main meal of the day."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "2",
+            "name": "Step 2: SuperGreens Drink",
+            "desc": "Mix 1 scoop (approx. 10g) of SuperGreens into 250ml cold water, juice, or a smoothie."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "3",
+            "name": "Step 3: Stay Consistent",
+            "desc": "Use daily for at least 30 to 60 days to support gut microflora and metabolic rhythm."
+          }
+        },
+        "h4": {
+          "type": "step",
+          "settings": {
+            "icon": "4",
+            "name": "Step 4: Feel Nourished & Light",
+            "desc": "Enjoy steady energy, reduced bloating, balanced cravings, and daily digestive harmony."
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_tint": "#fce7f3",
+        "eyebrow": "Daily Ritual",
+        "title_pre": "How to take your",
+        "title_highlight": "Love Your Body Combo",
+        "sub": "A simple daily routine for appetite control and green nutrient nourishment."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "leaf",
+            "name": "Berberine & Botanicals (GLP-1 Booster)",
+            "amount": "Targeted Extract Blend",
+            "desc": "Supports natural metabolic signaling and post-meal glucose stability."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "shield",
+            "name": "Alkalizing Organic Greens (SuperGreens)",
+            "amount": "Organic Superfood Blend",
+            "desc": "Spirulina, Chlorella, Wheatgrass, and Barley Grass for daily cellular vitality."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "berry",
+            "name": "Digestive Enzyme Complex",
+            "amount": "5 Digestive Enzymes",
+            "desc": "Assists in breaking down complex carbohydrates, proteins, and fats."
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "zap",
+            "name": "Micro-Shielded Probiotics",
+            "amount": "10 Billion CFU",
+            "desc": "Patented polymer micro-shield encapsulating each individual probiotic culture."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_dark": "#831843",
+        "brand_tint": "#fce7f3",
+        "brand_light": "#fff1f2",
+        "eyebrow": "Active Formulation",
+        "title": "Clean, Targeted Nutrition",
+        "sub": "Formulated without artificial fillers, sugars, or hidden additives.",
+        "facts_image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/GlowandGutCombo.png?v=1775328667",
+        "facts_label": "Product Specifications",
+        "facts_foot": "Free from artificial colours, gluten, sugar, and synthetic preservatives."
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Probiotic Strain Blend",
+            "percent": 10
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "Micro-Shield Strain Survival",
+            "percent": 90
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Alkalizing Greens & Enzymes",
+            "percent": 100
+          }
+        },
+        "c4": {
+          "type": "stat",
+          "settings": {
+            "label": "Combo Discount Savings (R220.00)",
+            "percent": 15
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_dark": "#831843",
+        "brand_tint": "#fce7f3",
+        "eyebrow": "Verifiable Quality",
+        "title_pre": "Science-first formulation",
+        "title_highlight": "you can trust",
+        "sub": "Rigorous batch testing and patented delivery technology for real results.",
+        "caveat": "*Based on independent laboratory analysis and clinical ingredient studies."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "14-day-gut-reboot-starter-pack",
+            "brand": "14-Day GutSlim Gut-Reboot Starter Pack",
+            "rating": "4.8",
+            "reviews": "30+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "21-day-gutslim-complete-pack",
+            "brand": "21-Day GutSlim Complete Pack",
+            "rating": "4.8",
+            "reviews": "45+"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "glow-and-gut-combo",
+            "brand": "Glow & Gut Combo",
+            "rating": "4.8",
+            "reviews": "50+"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_dark": "#831843",
+        "brand_tint": "#fce7f3",
+        "tint": true,
+        "eyebrow": "Complementary Care",
+        "title": "Explore Other GutSlim & Probiotic Packs",
+        "sub": "Targeted probiotic combos for daily wellness."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "",
+            "name": "Micro-Shield Protection",
+            "desc": "Patented polymer shielding protects live probiotic bacteria through harsh stomach acid."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "",
+            "name": "Satiety & Greens Synergy",
+            "desc": "Combines appetite-supporting botanicals with alkalizing organic superfoods."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "",
+            "name": "Clean & Hypoallergenic",
+            "desc": "Non-GMO, allergen-tested, and free from synthetic fillers or sugars."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3"
+      ],
+      "settings": {
+        "eyebrow": "Expert Endorsed",
+        "title_pre": "Formulated by medical doctors &",
+        "title_highlight": "microbiologists",
+        "sub": "Engineered to deliver real, science-backed health solutions."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "Dual Satiety Booster + Alkalizing Greens Protocol",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "Micro-shield around each bacterium",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "Targeted GLP-1 & Satiety Botanical Blend",
+            "brand_state": "yes",
+            "b_state": "yes",
+            "c_state": "no"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "Digestive Enzyme Complex Included",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "yes"
+          }
+        },
+        "o5": {
+          "type": "row",
+          "settings": {
+            "feature": "100% Non-Prescription & Support-Not-Cure",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "yes"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_dark": "#831843",
+        "brand_tint": "#fce7f3",
+        "title": "How Love Your Body Combo Outperforms",
+        "sub": "Comparison against generic weight-management options.",
+        "col_features": "Wellness Feature",
+        "col_brand": "Love Your Body Combo",
+        "col_b": "Generic Weight Supplements",
+        "col_c": "Standard Greens Powder",
+        "cta_text": "Get Love Your Body Combo",
+        "cta_note": "30-day money-back guarantee"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "scope": "product",
+        "show_stats": true,
+        "eyebrow": "Reviews",
+        "title_pre": "Customer",
+        "title_highlight": "Feedback",
+        "sub": "Real reviews from verified buyers"
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "What is included in the Love Your Body Combo?",
+            "answer": "<p>The Love Your Body Combo includes 1x GutSlim Probiotics GLP-1 Booster (60 capsules) and 1x GutSlim Probiotics SuperGreens (240g tub).</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "How much do I save with this combo?",
+            "answer": "<p>You save R220.00 compared to purchasing GutSlim Probiotics GLP-1 Booster (R520.00) and GutSlim Probiotics SuperGreens (R599.00) separately (total component value R1,119.00 vs combo price R899.00).</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "How do I take the GLP-1 Booster and SuperGreens?",
+            "answer": "<p>Take 2 GLP-1 Booster capsules daily with water, 15 to 30 minutes before your main meal. Mix 1 scoop (approx. 10g) of SuperGreens into 250ml of cold water, juice, or a smoothie daily, preferably in the morning.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Can I take this combo during pregnancy or while on medication?",
+            "answer": "<p>If you are pregnant, nursing, taking prescription medication, or have a medical condition, check with your healthcare professional before use.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "How should I store these products?",
+            "answer": "<p>Store both products in a cool, dry place away from direct sunlight. Refrigeration is not required thanks to Velobiotics patented micro-shielding technology.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "What is your refund policy?",
+            "answer": "<p>We offer a 30-day money-back guarantee. If you are not satisfied with your purchase, contact us at <a href=\"mailto:support@velobiotics.com\">support@velobiotics.com</a> for assistance.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "Frequently Asked Questions",
+        "title_pre": "Everything you need to know about",
+        "title_highlight": "Love Your Body Combo"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "shield",
+            "text": "30-Day Guarantee"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "truck",
+            "text": "Free SA Shipping > R400"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "lock",
+            "text": "Secure Checkout"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_dark": "#831843",
+        "brand_light": "#fff1f2",
+        "badge": "Dual Satiety & Greens Support",
+        "title_pre": "Nourish your body & gut",
+        "title_highlight": "from within",
+        "sub": "Combine satiety-supporting GLP-1 Booster with alkalizing SuperGreens in one complete combo.",
+        "cta_text": "Add Love Your Body Combo to Cart",
+        "cta_link": "#"
+      }
+    },
+    "science_strip": {
+      "type": "vb-science-strip",
+      "settings": {
+        "kicker": "The Science",
+        "title_pre": "Patented Micro-Shield",
+        "title_highlight": "Probiotic Delivery",
+        "sub": "Learn how micro-encapsulation delivers 100x more live cultures to support gut barrier and skin health.",
+        "all_text": "Read the Science",
+        "all_url": "/pages/what-is-microencapsulation",
+        "bg": "#fce7f3",
+        "pad_top": 40,
+        "pad_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "judgeme",
+    "faq",
+    "final",
+    "science_strip"
+  ]
+}

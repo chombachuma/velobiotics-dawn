@@ -68,6 +68,7 @@
         <label for="vb-cf-message-{{ section.id }}">Message</label>
         <textarea id="vb-cf-message-{{ section.id }}" name="contact[body]" required></textarea>
       </div>
+      <p class="vb-cf-consent" style="grid-column:1/-1;font-size:.85rem;opacity:.8;margin:0 0 .5rem">By sending this message you consent to Velobiotics (Pty) Ltd using your details to respond to your enquiry under POPIA. We reply from support@velobiotics.com. <a href="/policies/privacy-policy">Privacy Policy</a>.</p>
       <div class="vb-cf-full">
         <button type="submit" class="vb-cf-btn">{{ section.settings.button_text | default: 'Send message' }}</button>
       </div>

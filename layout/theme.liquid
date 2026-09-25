@@ -403,5 +403,17 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    {%- comment -%} Velo Assistant (Velobiotics AI chat, replaces Zipchat). PREVIEW GATE: loads only after visiting any URL with ?velochat=1 once (per browser). To go live for everyone, delete the two lines marked GATE. {%- endcomment -%}
+    <script>
+    (function(){try{
+      if(location.search.indexOf('velochat=1')>-1){localStorage.setItem('vc_preview','1');} /* GATE */
+      if(localStorage.getItem('vc_preview')!=='1'){return;} /* GATE */
+      var s=document.createElement('script');s.src='https://solene-39c3a115.base44.app/functions/veloChatWidget';s.async=true;
+      s.setAttribute('data-brand','Velobiotics');s.setAttribute('data-color','#4d8c44');s.setAttribute('data-label','Ask Velo');
+      var c='{{ localization.country.iso_code }}';s.setAttribute('data-market',c==='ZA'?'ZA':(c==='US'?'US':'INTL'));
+      document.body.appendChild(s);
+    }catch(e){}})();
+    </script>
   </body>
 </html>

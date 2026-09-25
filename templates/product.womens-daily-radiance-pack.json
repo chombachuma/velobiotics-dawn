@@ -1,0 +1,794 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "check",
+            "text": "3-Step Daily Ritual: Multivitamin, Collagen & Vitamin C"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "check",
+            "text": "Synergistic Support for Skin, Hair, Nails & Gut Wellness"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "check",
+            "text": "Micro-Shielded Live Probiotic Cultures in Every Dose"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "check",
+            "text": "Hydrolysed Collagen Peptides with Active Antioxidant Support"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "settings": {
+        "brand_primary": "#db2777",
+        "brand_dark": "#9d174d",
+        "brand_tint": "#fce7f3",
+        "brand_label": "Women's Daily Radiance & Wellness Pack",
+        "rating": "4.7",
+        "review_count": "87 verified component reviews",
+        "hook": "3-in-1 daily radiance system: Her-Biotics Multivitamin (60s), Almasi Collagen Peptides Powder (200g), and Velo16 Vitamin C (60s). Save R152.98!",
+        "ship_note": "Ships nationwide · Free SA delivery over R400 · Discreet packaging · 30-day money-back guarantee",
+        "show_subscription": true,
+        "tier_unit": "Pack",
+        "tier_unit_plural": "Packs",
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
+    },
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "author": "Thuli Moyo",
+            "meta": "Verified Buyer · Almasi Collagen Peptides",
+            "quote": "Absolutely loving these probiotics and collagen. I cannot wait to see my ongoing progress! Already feeling radiant."
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "author": "Karabo Rampou",
+            "meta": "Verified Buyer · Her-Biotics Original",
+            "quote": "I love these capsules and I will be using them forever. My stomach feels great and my daily vitality is up."
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "author": "Nobuhle Shongwe",
+            "meta": "Verified Buyer · Her-Biotics Original",
+            "quote": "I love the capsules, my stomach feels so much less gassy since I started taking them daily."
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "author": "Diana Chikwata",
+            "meta": "Verified Buyer · Almasi Collagen Peptides",
+            "quote": "I have been using Almasi Probiotics Collagen for a little while now, and I am honestly impressed with how my skin and gut feel."
+          }
+        },
+        "r5": {
+          "type": "review",
+          "settings": {
+            "author": "Anonymous",
+            "meta": "Verified Buyer · Velo16 Vitamin C Probiotics",
+            "quote": "Very happy with this product! Excellent daily Vitamin C with probiotics for immune and wellness support."
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "settings": {
+        "brand_primary": "#db2777",
+        "brand_dark": "#9d174d",
+        "brand_tint": "#fce7f3",
+        "eyebrow": "Verified Component Reviews",
+        "title": "What women say about our radiance components"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "alert",
+            "text": "Nutrient malabsorption in the gut limits skin and hair nourishment"
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "alert",
+            "text": "Daily oxidative stress and collagen breakdown dull natural skin radiance"
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "alert",
+            "text": "Single-ingredient supplements miss the synergistic gut-skin axis connection"
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#db2777",
+        "brand_tint": "#fce7f3",
+        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/FeminaIntimateHealthStarterPack.png?v=1775328667",
+        "tag_value": "Gut-Skin Axis",
+        "tag_label": "Inner Radiance",
+        "eyebrow": "The Daily Challenge",
+        "title_pre": "Why skin, hair, and vitality",
+        "title_highlight": "require gut-first support",
+        "desc": "Topical creams only treat the surface. True radiance, hair strength, and nail resilience begin from within, where poor gut nutrient absorption and environmental stress can dull natural vitality."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "check",
+            "text": "Her-Biotics Original: 21 essential nutrients + female-focused probiotics"
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "check",
+            "text": "Almasi Collagen Peptides: Hydrolysed bovine collagen + gut-friendly micro-shielded probiotics"
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "check",
+            "text": "Velo16 Vitamin C: High-potency antioxidant support to assist natural collagen formation"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#db2777",
+        "brand_tint": "#fce7f3",
+        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/FeminaIntimateHealthStarterPack.png?v=1775328667",
+        "tag_value": "3-In-1 Pack",
+        "tag_label": "Complete Protocol",
+        "eyebrow": "The Radiance System",
+        "title_pre": "A complete 3-in-1 ritual for",
+        "title_highlight": "inner wellness and outer glow",
+        "desc": "The Women's Daily Radiance Pack combines essential female multivitamins, hydrolysed collagen peptides, and buffered Vitamin C—all enhanced with micro-shielded live probiotics for optimal absorption and gut support."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "her-biotics-original-capsules-60s",
+            "brand": "Her-Biotics Probiotics ORIGINAL Multivitamin Capsules 60s",
+            "rating": "4.75",
+            "reviews": "8+ verified reviews"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "probiotics-collagen-peptides-powder",
+            "brand": "Almasi Probiotics Collagen Peptides Powder 200g",
+            "rating": "4.58",
+            "reviews": "31+ verified reviews"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-vitamin-c",
+            "brand": "Velo16 Probiotics Vitamin C 60s",
+            "rating": "4.62",
+            "reviews": "48+ verified reviews"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3"
+      ],
+      "settings": {
+        "brand_primary": "#db2777",
+        "brand_dark": "#9d174d",
+        "brand_tint": "#fce7f3",
+        "tint": false,
+        "eyebrow": "What's inside",
+        "title": "3 Full-Sized Essential Products in One Pack",
+        "sub": "Total retail value R1,019.85. Pack price R866.87—save R152.98!"
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "f1": {
+          "type": "feat",
+          "settings": {
+            "icon": "sparkles",
+            "name": "Bioactive Collagen Peptides",
+            "desc": "Provides hydrolysed collagen building blocks to support skin elasticity and hair & nail strength."
+          }
+        },
+        "f2": {
+          "type": "feat",
+          "settings": {
+            "icon": "shield",
+            "name": "Micro-Shield Probiotic Delivery",
+            "desc": "Velobiotics micro-shield technology protects live cultures through stomach acid to colonise the gut."
+          }
+        },
+        "f3": {
+          "type": "feat",
+          "settings": {
+            "icon": "sun",
+            "name": "Antioxidant Co-Factor Support",
+            "desc": "Vitamin C acts as an essential co-factor assisting body synthesis of natural collagen."
+          }
+        },
+        "f4": {
+          "type": "feat",
+          "settings": {
+            "icon": "heart",
+            "name": "Comprehensive Multivitamin",
+            "desc": "Delivers 21 vitamins and minerals tailored for female metabolic and immune wellness."
+          }
+        },
+        "f5": {
+          "type": "feat",
+          "settings": {
+            "icon": "refresh",
+            "name": "Gut-Skin Axis Synergy",
+            "desc": "Healthy gut flora improves nutrient breakdown and absorption for radiant skin support."
+          }
+        },
+        "f6": {
+          "type": "feat",
+          "settings": {
+            "icon": "zap",
+            "name": "No Refrigeration Required",
+            "desc": "Shelf-stable at room temperature thanks to advanced polymer micro-encapsulation."
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ],
+      "settings": {
+        "brand_primary": "#db2777",
+        "brand_tint": "#fce7f3",
+        "eyebrow": "Synergistic Radiance",
+        "title_pre": "Formulated for targeted",
+        "title_highlight": "skin, hair, nail & gut support",
+        "sub": "Combining female multivitamins, bioactive collagen peptides, and buffered Vitamin C with live probiotic cultures."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "1",
+            "name": "Morning: Her-Biotics Capsule",
+            "desc": "Take 1 Her-Biotics Original Multivitamin capsule daily with water alongside breakfast."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "2",
+            "name": "Morning Ritual: Almasi Collagen Scoop",
+            "desc": "Mix 1 scoop (approx. 10g) of Almasi Collagen Powder into water, coffee, tea, or a smoothie daily."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "3",
+            "name": "Midday: Velo16 Vitamin C",
+            "desc": "Take 1 Velo16 Vitamin C capsule with water or a meal to support antioxidant protection and collagen synthesis."
+          }
+        },
+        "h4": {
+          "type": "step",
+          "settings": {
+            "icon": "4",
+            "name": "Consistency is Key",
+            "desc": "Follow this 3-step daily routine consistently for best long-term skin, hair, nail, and gut support."
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ],
+      "settings": {
+        "brand_primary": "#db2777",
+        "brand_tint": "#fce7f3",
+        "eyebrow": "Daily Protocol",
+        "title_pre": "How to take your",
+        "title_highlight": "Daily Radiance Pack",
+        "sub": "Simple, effortless daily routine for gut and radiance wellness."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "sparkles",
+            "name": "Hydrolysed Collagen Peptides",
+            "amount": "10,000mg per serving",
+            "desc": "Pure hydrolysed bovine collagen providing essential amino acids for tissue support."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "leaf",
+            "name": "Her-Biotics Female Multivitamin",
+            "amount": "21 Active Nutrients",
+            "desc": "Essential vitamins, minerals, and targeted probiotic strains for female health."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "sun",
+            "name": "Velo16 Probiotic Vitamin C",
+            "amount": "1,000mg Vitamin C + Probiotics",
+            "desc": "Buffered Vitamin C paired with live micro-shielded probiotics for antioxidant protection."
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "zap",
+            "name": "Velobiotics Micro-Shield Matrix",
+            "amount": "Patented Polymer Technology",
+            "desc": "Forms a micro-shield around each individual bacterium for 100x gastric survival."
+          }
+        },
+        "i5": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "check",
+            "name": "Live Probiotic Strains",
+            "amount": "Multi-Strain Blend",
+            "desc": "Micro-encapsulated beneficial cultures supporting optimal gut microbial balance."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5"
+      ],
+      "settings": {
+        "brand_primary": "#db2777",
+        "brand_dark": "#9d174d",
+        "brand_tint": "#fce7f3",
+        "brand_light": "#fff1f2",
+        "eyebrow": "Active Ingredients",
+        "title": "Clean, Bioavailable Radiance Nutrition",
+        "sub": "Premium ingredients selected for female vitality, gut support, and skin health.",
+        "facts_image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/FeminaIntimateHealthStarterPack.png?v=1775328667",
+        "facts_label": "Pack Specifications",
+        "facts_foot": "Free from artificial colours, gluten, dairy, and synthetic preservatives."
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Micro-Shield Culture Survival",
+            "percent": 90
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "Verified Component Reviews",
+            "percent": 86
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Direct Pack Bundle Savings",
+            "percent": 31
+          }
+        },
+        "c4": {
+          "type": "stat",
+          "settings": {
+            "label": "Hydrolysed Peptide Purity",
+            "percent": 100
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "settings": {
+        "brand_primary": "#db2777",
+        "brand_dark": "#9d174d",
+        "brand_tint": "#fce7f3",
+        "eyebrow": "Tested Quality",
+        "title_pre": "Formulated with",
+        "title_highlight": "uncompromising quality",
+        "sub": "Scientific formulation and verifiable component quality for complete peace of mind.",
+        "caveat": "*Based on component product testing and individual retail value."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-intimate-starter-pack",
+            "brand": "Femina™ Intimate Starter Pack",
+            "rating": "4.7",
+            "reviews": "399+ reviews"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "glow-and-gut-combo",
+            "brand": "Glow & Gut Combo",
+            "rating": "4.8",
+            "reviews": "50+ reviews"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "pregnancy-support-pack",
+            "brand": "Pregnancy Support Pack",
+            "rating": "4.8",
+            "reviews": "20+ reviews"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3"
+      ],
+      "settings": {
+        "brand_primary": "#db2777",
+        "brand_dark": "#9d174d",
+        "brand_tint": "#fce7f3",
+        "tint": true,
+        "eyebrow": "Complete Care",
+        "title": "Explore Other Tailored Women's Packs",
+        "sub": "Discover specialized probiotic solutions for every stage of female wellness."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {
+          "type": "card",
+          "settings": {
+            "name": "Micro-Shield Protection",
+            "desc": "Patented polymer shielding protects live probiotic cultures through stomach acidity to the gut."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "name": "Synergistic Formulation",
+            "desc": "Combines multivitamin, collagen, and Vitamin C with probiotics for gut-skin axis support."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "name": "Clean & Hypoallergenic",
+            "desc": "Non-GMO, free from artificial additives, and produced under strict SA quality standards."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3"
+      ],
+      "settings": {
+        "eyebrow": "Expert Endorsed",
+        "title_pre": "Formulated by medical doctors &",
+        "title_highlight": "microbiologists",
+        "sub": "Engineered to deliver real, science-based health solutions."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "3-in-1 Multivitamin, Collagen & Vitamin C System",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "Micro-shield around each bacterium",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "Hydrolysed Collagen + Vitamin C Co-Factor",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "yes"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "Save R152.98 compared to individual items",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o5": {
+          "type": "row",
+          "settings": {
+            "feature": "No Refrigeration Required",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "yes"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ],
+      "settings": {
+        "brand_primary": "#db2777",
+        "brand_dark": "#9d174d",
+        "brand_tint": "#fce7f3",
+        "title": "How Women's Daily Radiance Pack Outperforms",
+        "sub": "Comparison against generic multivitamin and collagen products.",
+        "col_features": "Wellness Feature",
+        "col_brand": "Women's Daily Radiance Pack",
+        "col_b": "Standard Multivitamins",
+        "col_c": "Plain Collagen Powders",
+        "cta_text": "Get Women's Daily Radiance Pack",
+        "cta_note": "30-day money-back guarantee"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "scope": "product",
+        "show_stats": true,
+        "eyebrow": "Reviews",
+        "title_pre": "Customer",
+        "title_highlight": "Feedback",
+        "sub": "Real reviews from verified buyers"
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "What is included in the Women's Daily Radiance Pack and what is the saving?",
+            "answer": "<p>The Women's Daily Radiance Pack contains 3 full-sized products: 1x Her-Biotics Probiotics ORIGINAL Multivitamin Capsules (60s, R299.95), 1x Almasi Probiotics Collagen Peptides Powder (200g, R419.95), and 1x Velo16 Probiotics Vitamin C (60s, R299.95). Total retail value is R1,019.85, but you pay R866.87, saving R152.98 when purchased as a pack.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "How do I take the three products in my daily routine?",
+            "answer": "<p>Take 1 Her-Biotics Original Multivitamin capsule and 1 Velo16 Vitamin C capsule daily with water during or after a meal. Mix 1 scoop (approx. 10g) of Almasi Collagen Peptides Powder daily into water, juice, tea, coffee, or a smoothie.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "Can I take this pack during pregnancy or while taking medication?",
+            "answer": "<p>If you are pregnant, nursing, taking prescription medication, or have a medical condition, please check with your healthcare professional before starting any new supplement regimen.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "How does micro-shielding technology work in these products?",
+            "answer": "<p>Velobiotics patented polymer encapsulation creates a micro-shield around each individual bacterium, protecting live probiotic cultures from harsh stomach acid so they arrive alive in your gut to support gut flora and nutrient utilization.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Do any of these products require refrigeration?",
+            "answer": "<p>No. Thanks to Velobiotics micro-shielding technology, all live probiotic cultures in this pack are shelf-stable at room temperature (below 25°C). Keep in a cool, dry place out of direct sunlight.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "What is your refund policy?",
+            "answer": "<p>We offer a 30-day money-back guarantee. If you are not completely satisfied with your purchase, please contact our team at <a href=\"mailto:support@velobiotics.com\">support@velobiotics.com</a> for assistance.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "Frequently Asked Questions",
+        "title_pre": "Everything you need to know about",
+        "title_highlight": "Women's Daily Radiance Pack"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "shield",
+            "text": "30-Day Guarantee"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "truck",
+            "text": "Free SA Shipping > R400"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "lock",
+            "text": "Discreet Packaging"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3"
+      ],
+      "settings": {
+        "brand_primary": "#db2777",
+        "brand_dark": "#9d174d",
+        "brand_light": "#fff1f2",
+        "badge": "3-in-1 Radiance System",
+        "title_pre": "Start your daily radiance ritual",
+        "title_highlight": "today",
+        "sub": "Multivitamin, collagen peptides, and Vitamin C with micro-shielded probiotics in one value pack.",
+        "cta_text": "Add Women's Daily Radiance Pack to Cart",
+        "cta_link": "#"
+      }
+    },
+    "science_strip": {
+      "type": "vb-science-strip",
+      "settings": {
+        "kicker": "The Science",
+        "title_pre": "Patented Micro-Shield",
+        "title_highlight": "Probiotic Delivery",
+        "sub": "Learn how micro-encapsulation protects live cultures through stomach acid for superior gut and nutrient support.",
+        "all_text": "Read the Science",
+        "all_url": "/pages/what-is-microencapsulation",
+        "bg": "#fce7f3",
+        "pad_top": 40,
+        "pad_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "judgeme",
+    "faq",
+    "final",
+    "science_strip"
+  ]
+}

@@ -1,0 +1,790 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "check",
+            "text": "Complete Maternal Protocol: 1x Prenatal Multivitamin + 2x Cal-Mag Probiotics"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "check",
+            "text": "Supports Fetal Brain, Vision & Maternal Bone Health"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "check",
+            "text": "Micro-Shielded Live Strains for Gentle Gut Bio-Absorption"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "check",
+            "text": "Pregnancy-Safe Formula (Discuss with your doctor or midwife before use)"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "settings": {
+        "brand_primary": "#0284c7",
+        "brand_dark": "#0369a1",
+        "brand_tint": "#e0f2fe",
+        "brand_label": "PregBiotics\u2122 Pregnancy Support Pack",
+        "rating": "4.9",
+        "review_count": "50+ verified reviews",
+        "hook": "Complete maternal & mineral support pack: 1x PregBiotics Essentials + Omega 60s + 2x Velo16 Probiotics Calcium & Magnesium 60s. Save R167.25.",
+        "ship_note": "Ships nationwide \u00b7 Free SA delivery over R400 \u00b7 30-day money-back guarantee",
+        "show_subscription": true,
+        "tier_unit": "Pack",
+        "tier_unit_plural": "Packs",
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
+    },
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "",
+            "author": "Gen\u00e9 Vorster",
+            "meta": "Verified Buyer \u00b7 PregBiotics Essentials + Omega",
+            "quote": "10/10 Recommend. Keeps me feeling great during this season of my life. Thank you Velobiotics."
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "",
+            "author": "Babalwa",
+            "meta": "Verified Buyer \u00b7 PregBiotics Essentials + Omega",
+            "quote": "Much better than other prenatals. They were making my stomach upset. Gentle on my digestive system."
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "",
+            "author": "Monique",
+            "meta": "Verified Buyer \u00b7 2x Velo16 Cal-Mag",
+            "quote": "No better product on the market in South Africa. Five stars all the way!"
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "",
+            "author": "Vuyokazi",
+            "meta": "Verified Buyer \u00b7 2x Velo16 Cal-Mag",
+            "quote": "Love this product. Works very well and I am not going back to other brands. I have found a probiotic that works for me."
+          }
+        },
+        "r5": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "",
+            "author": "Savera Singh",
+            "meta": "Verified Buyer \u00b7 2x Velo16 Cal-Mag",
+            "quote": "My family and I have been using Velobiotics... It has the right ingredients and priced perfectly. An amazing product for gut health."
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "settings": {
+        "brand_primary": "#0284c7",
+        "brand_dark": "#0369a1",
+        "brand_tint": "#e0f2fe",
+        "eyebrow": "Verified Expectant Mother Feedback",
+        "title": "What mothers say about our pregnancy support products"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "alert",
+            "text": "Increased nutritional demands for fetal brain development and maternal bone density"
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "alert",
+            "text": "Sluggish maternal digestion can lead to bloating, acidity, and poor nutrient uptake"
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "alert",
+            "text": "Unshielded supplements are often destroyed by stomach acid before reaching the intestine"
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#0284c7",
+        "brand_tint": "#e0f2fe",
+        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/8_transparent_Realistic_3D_product_mockup_1.png?v=1775328668",
+        "tag_value": "Maternal Demands",
+        "tag_label": "Prenatal & Mineral Care",
+        "eyebrow": "The Maternal Challenge",
+        "title_pre": "Why standard prenatals often",
+        "title_highlight": "fall short during pregnancy",
+        "desc": "Pregnancy increases maternal nutritional demands for active folate, gentle iron, DHA, and key minerals like calcium and magnesium. However, hormonal shifts during pregnancy can slow digestion and reduce nutrient bio-absorption from unshielded supplements."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "check",
+            "text": "PregBiotics Essentials provides DHA/EPA, Active Folate, and Gentle Iron for maternal wellness"
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "check",
+            "text": "2x Velo16 Cal-Mag supplies Calcium Citrate, Magnesium Glycinate, and D3 for bone & muscle comfort"
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "check",
+            "text": "Micro-shield around each bacterium protects cultures through stomach acid for gut absorption"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#0284c7",
+        "brand_tint": "#e0f2fe",
+        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/8_transparent_Realistic_3D_product_mockup_1.png?v=1775328668",
+        "tag_value": "Complete Prenatal System",
+        "tag_label": "Essentials + 2x Cal-Mag",
+        "eyebrow": "The Pregnancy Support Solution",
+        "title_pre": "Targeted maternal nutrition with",
+        "title_highlight": "micro-shielded probiotics",
+        "desc": "The Pregnancy Support Pack pairs 1x PregBiotics Essentials + Omega 60s with 2x Velo16 Probiotics Calcium & Magnesium 60s. Live probiotics lower intestinal pH to support optimal mineral solubility and absorption, while gentle iron and Quatrefolic folate nourish mother and developing baby."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "pregbiotics-essentials-with-omega",
+            "brand": "1x PregBiotics\u2122 Essentials + Omega 60s",
+            "rating": "5.0",
+            "reviews": "8+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "velo16-probiotics-calcium-magnesium",
+            "brand": "2x Velo16\u2122 Probiotics Calcium & Magnesium 60s",
+            "rating": "4.6",
+            "reviews": "48+"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2"
+      ],
+      "settings": {
+        "brand_primary": "#0284c7",
+        "brand_dark": "#0369a1",
+        "brand_tint": "#e0f2fe",
+        "tint": false,
+        "eyebrow": "What's inside",
+        "title": "3 Bottles Across 2 Core Products in One Pack",
+        "sub": "Includes 1x PregBiotics Essentials + Omega 60s and 2x Velo16 Cal-Mag 60s. Save R167.25."
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "f1": {
+          "type": "feat",
+          "settings": {
+            "icon": "sparkles",
+            "name": "Fetal Brain & Vision Support",
+            "desc": "DHA & EPA Omega-3 essential fatty acids support structural fetal brain tissue and eye development."
+          }
+        },
+        "f2": {
+          "type": "feat",
+          "settings": {
+            "icon": "shield",
+            "name": "Active Folate & Gentle Iron",
+            "desc": "Features Quatrefolic Active Folate and Iron Bisglycinate for gentle red blood cell and maternal tissue support."
+          }
+        },
+        "f3": {
+          "type": "feat",
+          "settings": {
+            "icon": "zap",
+            "name": "Bone Density & Muscle Comfort",
+            "desc": "2x Velo16 Cal-Mag delivers Calcium Citrate and Magnesium Glycinate for maternal bone health and leg muscle comfort."
+          }
+        },
+        "f4": {
+          "type": "feat",
+          "settings": {
+            "icon": "heart",
+            "name": "Micro-Shielded Live Strains",
+            "desc": "Velobiotics micro-shield around each bacterium ensures live cultures survive stomach acid for intestinal uptake."
+          }
+        },
+        "f5": {
+          "type": "feat",
+          "settings": {
+            "icon": "refresh",
+            "name": "Digestive Harmony & Regularity",
+            "desc": "Supports gut flora balance to ease occasional pregnancy bloating, acidity, and digestive sluggishness."
+          }
+        },
+        "f6": {
+          "type": "feat",
+          "settings": {
+            "icon": "sun",
+            "name": "Healthcare Partnering",
+            "desc": "Formulated to align with prenatal guidelines. Always discuss with your doctor or midwife before use."
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ],
+      "settings": {
+        "brand_primary": "#0284c7",
+        "brand_tint": "#e0f2fe",
+        "eyebrow": "Maternal Synergy",
+        "title_pre": "Comprehensive nourishment for",
+        "title_highlight": "mother & developing baby",
+        "sub": "Pregnancy-safe prenatal vitamins, essential fatty acids, and micro-shielded mineral bio-absorption."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "1",
+            "name": "Step 1: PregBiotics Essentials + Omega",
+            "desc": "Take 1 to 2 softgels daily with water after a main meal (breakfast or lunch)."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "2",
+            "name": "Step 2: 2x Velo16 Probiotics Cal-Mag",
+            "desc": "Take 2 capsules daily with water, preferably with dinner or in the evening to support nighttime muscle relaxation."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "3",
+            "name": "Step 3: Trimester Consistency",
+            "desc": "Maintain daily use across all trimesters to ensure continuous micronutrient and mineral bio-availability."
+          }
+        },
+        "h4": {
+          "type": "step",
+          "settings": {
+            "icon": "4",
+            "name": "Step 4: Healthcare Partnering",
+            "desc": "Always discuss with your doctor or midwife at routine prenatal visits to tailor dosing to your personal health plan."
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ],
+      "settings": {
+        "brand_primary": "#0284c7",
+        "brand_tint": "#e0f2fe",
+        "eyebrow": "Daily Ritual",
+        "title_pre": "How to take your",
+        "title_highlight": "Pregnancy Support Pack",
+        "sub": "An easy daily routine designed for comfort and consistent prenatal nutrition."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "leaf",
+            "name": "DHA & EPA Omega-3 Fish Oil",
+            "amount": "Molecularly Distilled",
+            "desc": "Pure essential fatty acids supporting fetal brain and retinal vision development."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "shield",
+            "name": "Quatrefolic Active Folate & Gentle Iron",
+            "amount": "Bioavailable Form",
+            "desc": "Gentle on the stomach to support maternal blood health and tissue growth."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "berry",
+            "name": "Calcium Citrate & Magnesium Glycinate (2x)",
+            "amount": "Chelated Minerals",
+            "desc": "Highly bioavailable minerals for bone density, nerve function, and muscle comfort."
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "zap",
+            "name": "16 Micro-Shielded Probiotic Strains",
+            "amount": "10 Billion CFU",
+            "desc": "Patented micro-shield around each bacterium ensures survival into the gut."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4"
+      ],
+      "settings": {
+        "brand_primary": "#0284c7",
+        "brand_dark": "#0369a1",
+        "brand_tint": "#e0f2fe",
+        "brand_light": "#f0f9ff",
+        "eyebrow": "Active Formulation",
+        "title": "Clean, Bioavailable Prenatal Nutrition",
+        "sub": "Formulated to the highest safety and purity standards.",
+        "facts_image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/8_transparent_Realistic_3D_product_mockup_1.png?v=1775328668",
+        "facts_label": "Pack Specifications",
+        "facts_foot": "Free from artificial colours, gluten, dairy, sugar, and heavy metal contaminants."
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Micro-Shield Strain Survival",
+            "percent": 90
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "Probiotic Strain Diversity",
+            "percent": 16
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Purity & Heavy Metal Testing",
+            "percent": 100
+          }
+        },
+        "c4": {
+          "type": "stat",
+          "settings": {
+            "label": "Pack Value Discount Savings",
+            "percent": 15
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "settings": {
+        "brand_primary": "#0284c7",
+        "brand_dark": "#0369a1",
+        "brand_tint": "#e0f2fe",
+        "eyebrow": "Verifiable Quality",
+        "title_pre": "Science-backed maternal care",
+        "title_highlight": "you can trust",
+        "sub": "Molecularly distilled oils, chelated minerals, and patented micro-shield probiotic delivery.",
+        "caveat": "*Always discuss with your doctor or midwife before using dietary supplements during pregnancy."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "pregbiotics-conception",
+            "brand": "PregBiotics\u2122 Conception",
+            "rating": "5.0",
+            "reviews": "12+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "pregbiotics-breastfeeding",
+            "brand": "PregBiotics\u2122 Breastfeeding Support",
+            "rating": "5.0",
+            "reviews": "15+"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
+            "brand": "Femina\u2122 Probiotic Capsules (30s)",
+            "rating": "4.7",
+            "reviews": "399+"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3"
+      ],
+      "settings": {
+        "brand_primary": "#0284c7",
+        "brand_dark": "#0369a1",
+        "brand_tint": "#e0f2fe",
+        "tint": true,
+        "eyebrow": "Complementary Care",
+        "title": "Explore Other Maternal & Women's Packs",
+        "sub": "Targeted probiotic support for every stage of womanhood."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "",
+            "name": "Micro-Shield Protection",
+            "desc": "Patented polymer micro-shield protects live cultures through stomach acid to the gut."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "",
+            "name": "Bioavailable Mineral Transport",
+            "desc": "Probiotic organic acids lower luminal pH to enhance intestinal calcium and magnesium uptake."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "",
+            "name": "Pregnancy Safety First",
+            "desc": "Gentle, non-constipating ingredients aligned with prenatal care. Discuss with your doctor or midwife."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3"
+      ],
+      "settings": {
+        "eyebrow": "Expert Endorsed",
+        "title_pre": "Formulated by medical doctors &",
+        "title_highlight": "microbiologists",
+        "sub": "Engineered for safe, effective maternal and fetal nutritional support."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "DHA/EPA + Quatrefolic Folate + 2x Cal-Mag Protocol",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "Micro-shield around each bacterium",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "Calcium Citrate & Magnesium Glycinate (Non-constipating)",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "yes"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "Gentle Iron Bisglycinate (Easy on digestion)",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o5": {
+          "type": "row",
+          "settings": {
+            "feature": "30 to 60 Day Complete Trimester Value",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ],
+      "settings": {
+        "brand_primary": "#0284c7",
+        "brand_dark": "#0369a1",
+        "brand_tint": "#e0f2fe",
+        "title": "How Pregnancy Support Pack Outperforms",
+        "sub": "Comparison against generic prenatal multivitamins.",
+        "col_features": "Maternal Health Feature",
+        "col_brand": "Pregnancy Support Pack",
+        "col_b": "Standard Prenatal Vitamins",
+        "col_c": "Generic Calcium Pills",
+        "cta_text": "Get Pregnancy Support Pack",
+        "cta_note": "30-day money-back guarantee"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Reviews",
+        "title_pre": "Customer",
+        "title_highlight": "Feedback",
+        "sub": "Real reviews from verified buyers",
+        "scope": "product",
+        "show_stats": true
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "What is included in the Pregnancy Support Pack and how much do I save?",
+            "answer": "<p>The pack contains 1x PregBiotics Essentials + Omega 60s (R509.95) and 2x Velo16 Probiotics Calcium & Magnesium 60s (R299.95 each), providing a total component value of R1,109.85. At the pack price of R942.60, you save R167.25.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "How do I take the components in this pack?",
+            "answer": "<p>Take 1 to 2 softgels of PregBiotics Essentials + Omega daily with water after breakfast or lunch. Take 2 capsules of Velo16 Probiotics Calcium & Magnesium daily with water, preferably in the evening or with meals. Always discuss with your doctor or midwife before use.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "Can I take this pack across all trimesters of pregnancy?",
+            "answer": "<p>Yes, the ingredients are formulated for general support throughout pregnancy and preconception. Because individual maternal health needs vary, always discuss with your doctor or midwife at your routine prenatal appointments before starting or changing any supplement regimen.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Does this pack prevent birth defects or treat pregnancy conditions?",
+            "answer": "<p>No. Dietary supplements provide nutritional support for general maternal health, fetal brain development, and bone wellness. They do not prevent, cure, or treat any medical condition or birth defect. Always consult your healthcare professional for medical advice.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "How does micro-shielding work in these probiotics?",
+            "answer": "<p>Our patented process applies a protective micro-shield around each bacterium (never the capsule shell alone). This shielding protects live cultures through gastric stomach acid so over 90% arrive safely in the gut to support nutrient absorption. Learn more about <a href=\"/pages/what-is-microencapsulation\">how Velobiotics micro-shielding works</a>.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "How should I store the products in this pack?",
+            "answer": "<p>Store all bottles in a cool, dry place away from direct sunlight below 25\u00b0C. Thanks to micro-shielding around each bacterium, the probiotic strains are shelf-stable and do not require refrigeration.</p>"
+          }
+        },
+        "q7": {
+          "type": "q",
+          "settings": {
+            "question": "What is your refund policy?",
+            "answer": "<p>We offer a 30-day money-back guarantee. If you are not completely satisfied, contact our customer care team at support@velobiotics.com.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6",
+        "q7"
+      ],
+      "settings": {
+        "eyebrow": "Frequently Asked Questions",
+        "title_pre": "Everything you need to know about",
+        "title_highlight": "Pregnancy Support Pack"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "shield",
+            "text": "30-Day Guarantee"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "truck",
+            "text": "Free SA Shipping > R400"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "lock",
+            "text": "Secure Checkout"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3"
+      ],
+      "settings": {
+        "brand_primary": "#0284c7",
+        "brand_dark": "#0369a1",
+        "brand_light": "#f0f9ff",
+        "badge": "Complete Maternal & Mineral Care",
+        "title_pre": "Nourish yourself & your baby",
+        "title_highlight": "with confidence",
+        "sub": "1x PregBiotics Essentials + Omega 60s plus 2x Velo16 Cal-Mag 60s in one complete pregnancy support system. Save R167.25.",
+        "cta_text": "Add Pregnancy Support Pack to Cart",
+        "cta_link": "#"
+      }
+    },
+    "science_strip": {
+      "type": "vb-science-strip",
+      "settings": {
+        "kicker": "The Science",
+        "title_pre": "Patented Micro-Shield",
+        "title_highlight": "Probiotic Delivery",
+        "sub": "Learn how micro-encapsulation delivers live cultures safely through stomach acid to support maternal nutrient absorption.",
+        "all_text": "Read the Science",
+        "all_url": "/pages/what-is-microencapsulation",
+        "bg": "#e0f2fe",
+        "pad_top": 40,
+        "pad_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "judgeme",
+    "faq",
+    "final",
+    "science_strip"
+  ]
+}

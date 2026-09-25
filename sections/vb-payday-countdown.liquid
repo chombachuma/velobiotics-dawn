@@ -16,7 +16,7 @@
   if template.name == 'cart'
     assign is_cart = true
   endif
-  assign sale_url = '/collections/all?utm_source=website&utm_medium=announcement_bar&utm_campaign=heritage_payday'
+  assign sale_url = '/collections/all?vbref=payday_bar'
 -%}
 {%- capture za_flag -%}<svg class="vb-flag" viewBox="0 0 900 600" width="28" height="19" aria-hidden="true" focusable="false"><rect width="900" height="300" fill="#DE3831"/><rect y="300" width="900" height="300" fill="#002395"/><path d="M0,0 L450,300 L900,300 M0,600 L450,300" stroke="#FFFFFF" stroke-width="280" fill="none"/><path d="M0,0 L450,300 L900,300 M0,600 L450,300" stroke="#007A4D" stroke-width="200" fill="none"/><path d="M-60,40 L340,300 L-60,560 Z" fill="#000000" stroke="#FFB612" stroke-width="70"/></svg>{%- endcapture -%}
 
@@ -55,7 +55,7 @@
     <div class="vb-payday-splash__title">HERITAGE<br>PAY DAY</div>
     <div class="vb-payday-splash__offer">25% OFF<span>EVERYTHING</span></div>
     <div class="vb-payday-splash__sub">Discount applied automatically at checkout · no code needed<br>Ends Saturday 26 Sep, 20:00</div>
-    <a class="vb-payday-splash__cta" href="{{ sale_url | replace: 'announcement_bar', 'splash' }}">Shop the sale</a>
+    <a class="vb-payday-splash__cta" href="{{ sale_url | replace: 'payday_bar', 'payday_splash' }}">Shop the sale</a>
     <button type="button" class="vb-payday-splash__close" id="vb-payday-splash-close" aria-label="Close">×</button>
   </div>
 </div>

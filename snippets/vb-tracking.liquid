@@ -1,202 +1,164 @@
 {%- comment -%}
-Velobiotics Marketing Tracking & UTM Persistence Snippet
-Handled: GA4, Meta Pixel (with event_id for CAPI dedup), TikTok Pixel, UTM / Referrer cart attribute persistence.
+Velobiotics Marketing Attribution Snippet (v2, 25 Sep 2026, Velo Marketing)
+
+WHAT THIS FILE DOES NOW: first-party attribution only (UTM / click-id / landing page /
+referrer / internal promo persistence -> Shopify cart attributes -> order note_attributes).
+
+WHAT IT NO LONGER DOES (removed 25 Sep 2026 to stop duplicate & dead events):
+  - Meta Pixel init / PageView / ViewContent / AddToCart  -> handled by the "Facebook & Instagram"
+    sales channel web pixel (pixel 1254989789237546, browser + Conversions API with dedup).
+  - TikTok Pixel D8KR83RC77U29JSH6S60                       -> handled by the TikTok sales channel
+    web pixel (D70KD2RC77U7L4DO1U00, full funnel incl. CompletePayment + Events API).
+  - GA4 / Google Ads gtag calls (gtag was never loaded here) -> handled by the "Google & YouTube"
+    sales channel web pixel (G-6773VKB51J, AW-10893546606, GT-K4ZN5LJ3: page_view, view_item,
+    add_to_cart, begin_checkout, add_payment_info, purchase...).
+Do NOT add pixel code back into the theme. One source per platform = clean attribution.
+
+ATTRIBUTION RULES
+  - Acquisition (first touch in the session) wins: utm_*, gclid, fbclid, ttclid, landing_page,
+    referrer are captured once per session and never overwritten by later internal clicks.
+  - Internal promo clicks use ?vbref=<name> (NOT utm_*), stored separately as internal_promo.
+    Never put utm_* on links that point back to this store; it resets GA4 sessions.
+  - Cart attributes are synced when the signature changes and again after add-to-cart.
 {%- endcomment -%}
 
 <script>
-(function() {
-  var GA4_ID = 'G-6773VKB51J';
-  var META_PIXEL_ID = '1254989789237546';
-  var TIKTOK_PIXEL_ID = 'D8KR83RC77U29JSH6S60';
-  var GOOGLE_ADS_ID = 'AW-10893546606';
+(function () {
+  'use strict';
 
-  function getConsent() {
-    if (window.Shopify && window.Shopify.customerPrivacy) {
-      try {
+  function marketingAllowed() {
+    try {
+      if (window.Shopify && window.Shopify.customerPrivacy) {
         var c = window.Shopify.customerPrivacy.getTrackingConsent();
-        if (c === 'declined' || c === 'no' || c === false) {
-          return { analytics: false, marketing: false };
-        }
-      } catch(e) {}
-    }
-    return { analytics: true, marketing: true };
+        if (c === 'declined' || c === 'no' || c === false) return false;
+      }
+    } catch (e) {}
+    return true;
   }
 
-  // --- 1. UTM & REFERRER PERSISTENCE ---
-  function captureUTMs() {
-    var params = new URLSearchParams(window.location.search);
-    var keys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid', 'fbclid', 'ttclid'];
-    var captured = {};
+  var ACQ_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid', 'fbclid', 'ttclid'];
+  var INTERNAL_SOURCES = ['website', 'velobiotics', 'internal', 'site', 'shopify'];
+  var INTERNAL_MEDIUMS = ['announcement_bar', 'splash', 'popup', 'banner', 'sticky', 'countdown', 'internal'];
+  var MAX_LEN = 480;
 
-    keys.forEach(function(k) {
-      var val = params.get(k);
-      if (val) {
-        captured[k] = val;
-        try {
-          sessionStorage.setItem('vb_' + k, val);
-          localStorage.setItem('vb_' + k, val);
-        } catch(e){}
-      } else {
-        try {
-          var stored = sessionStorage.getItem('vb_' + k) || localStorage.getItem('vb_' + k);
-          if (stored) captured[k] = stored;
-        } catch(e){}
-      }
+  function clip(v) { v = String(v || ''); return v.length > MAX_LEN ? v.slice(0, MAX_LEN) : v; }
+  function ss(k, v) { try { if (v === undefined) return sessionStorage.getItem(k); sessionStorage.setItem(k, v); } catch (e) { return null; } }
+  function ls(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } }
+
+  function cleanUrl(href) {
+    try {
+      var u = new URL(href, window.location.origin);
+      ['_gl', '_ga', '_gac', 'omnisendContactID'].forEach(function (p) { u.searchParams.delete(p); });
+      return clip(u.toString());
+    } catch (e) { return clip(href); }
+  }
+
+  function isInternal(params) {
+    var s = (params.get('utm_source') || '').toLowerCase();
+    var m = (params.get('utm_medium') || '').toLowerCase();
+    return INTERNAL_SOURCES.indexOf(s) > -1 || INTERNAL_MEDIUMS.indexOf(m) > -1;
+  }
+
+  function capture() {
+    var params = new URLSearchParams(window.location.search);
+    var out = {};
+
+    // 1) Acquisition touch: first touch in this session wins.
+    var hasAcq = ACQ_KEYS.some(function (k) { return !!params.get(k); });
+    var sessionHasAcq = !!ss('vb_acq_set');
+    if (hasAcq && !isInternal(params) && !sessionHasAcq) {
+      ACQ_KEYS.forEach(function (k) {
+        var v = params.get(k);
+        if (v) { ss('vb_' + k, clip(v)); ls('vb_' + k, clip(v)); }
+      });
+      ss('vb_acq_set', '1');
+    }
+    ACQ_KEYS.forEach(function (k) {
+      var v = ss('vb_' + k) || ls('vb_' + k);
+      if (v) out[k] = v;
     });
 
-    try {
-      if (!sessionStorage.getItem('vb_landing_page')) {
-        sessionStorage.setItem('vb_landing_page', window.location.href);
-        sessionStorage.setItem('vb_referrer', document.referrer || '');
-      }
-      captured['landing_page'] = sessionStorage.getItem('vb_landing_page');
-      captured['referrer'] = sessionStorage.getItem('vb_referrer');
-    } catch(e){}
+    // 2) Landing page + referrer: once per session.
+    if (!ss('vb_landing_page')) {
+      ss('vb_landing_page', cleanUrl(window.location.href));
+      ss('vb_referrer', clip(document.referrer || ''));
+    }
+    out.landing_page = ss('vb_landing_page') || '';
+    out.referrer = ss('vb_referrer') || '';
 
-    return captured;
+    // 3) Internal promo click (?vbref=payday_bar etc.) - last internal click wins, kept separate.
+    var ref = params.get('vbref');
+    if (!ref && isInternal(params)) ref = (params.get('utm_medium') || 'internal') + ':' + (params.get('utm_campaign') || '');
+    if (ref) ss('vb_internal_promo', clip(ref));
+    if (ss('vb_internal_promo')) out.internal_promo = ss('vb_internal_promo');
+
+    // 4) Market / storefront context.
+    out.market = (window.Shopify && Shopify.country) ? Shopify.country : '';
+    out.store_host = window.location.host;
+    return out;
   }
 
-  function syncCartAttributes(attr) {
-    if (!attr || Object.keys(attr).length === 0) return;
-    var cartData = {
+  function signature(a) { return JSON.stringify(a); }
+
+  function syncCart(attr, force) {
+    if (!attr) return;
+    var sig = signature(attr);
+    if (!force && ss('vb_cart_sig') === sig) return;
+    var payload = {
       attributes: {
-        'utm_source': attr.utm_source || '',
-        'utm_medium': attr.utm_medium || '',
-        'utm_campaign': attr.utm_campaign || '',
-        'utm_content': attr.utm_content || '',
-        'landing_page': attr.landing_page || '',
-        'gclid': attr.gclid || '',
-        'fbclid': attr.fbclid || '',
-        'ttclid': attr.ttclid || '',
-        'biomatchAttribution': JSON.stringify(attr)
+        utm_source: attr.utm_source || '',
+        utm_medium: attr.utm_medium || '',
+        utm_campaign: attr.utm_campaign || '',
+        utm_content: attr.utm_content || '',
+        utm_term: attr.utm_term || '',
+        gclid: attr.gclid || '',
+        fbclid: attr.fbclid || '',
+        ttclid: attr.ttclid || '',
+        landing_page: attr.landing_page || '',
+        referrer: attr.referrer || '',
+        internal_promo: attr.internal_promo || '',
+        market: attr.market || '',
+        biomatchAttribution: JSON.stringify(attr)
       }
     };
-
     fetch('/cart/update.js', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(cartData)
-    }).catch(function(e){ console.warn('Cart attr sync failed', e); });
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(payload),
+      credentials: 'same-origin',
+      keepalive: true
+    }).then(function () { ss('vb_cart_sig', sig); })
+      .catch(function () {});
   }
 
-  var utmAttrs = captureUTMs();
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function() { syncCartAttributes(utmAttrs); });
-  } else {
-    syncCartAttributes(utmAttrs);
-  }
+  if (!marketingAllowed()) return;
 
-  // Helper for generating event_id (for Meta CAPI dedup)
-  function generateEventId(eventName) {
-    return 'vb_' + eventName + '_' + Date.now() + '_' + Math.floor(Math.random() * 100000);
-  }
+  var attrs = capture();
+  window.vbAttribution = attrs;
 
-  // --- 2. TRACKING EVENTS ---
-  var consent = getConsent();
+  function run() { syncCart(attrs, false); }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run); else run();
 
-  // Meta Pixel Initialization
-  if (consent.marketing && META_PIXEL_ID) {
-    if (!window.fbq) {
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', META_PIXEL_ID);
-    }
-  }
-
-  // TikTok Pixel Initialization
-  if (consent.marketing && TIKTOK_PIXEL_ID) {
-    if (!window.ttq) {
-      !function (w, d, t) {
-        w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
-        ttq.load(TIKTOK_PIXEL_ID);
-      }(window, document, 'ttq');
-    }
-  }
-
-  // Track Page View
-  var pageEventId = generateEventId('page_view');
-  if (consent.marketing && window.fbq) {
-    fbq('track', 'PageView', {}, { eventID: pageEventId });
-  }
-  if (consent.marketing && window.ttq) {
-    window.ttq.page();
-  }
-
-  // Track Product View (view_item / ViewContent)
-  {% if template.name == 'product' %}
-    var prodData = {
-      id: {{ product.id | json }},
-      title: {{ product.title | json }},
-      price: {{ product.price | divided_by: 100.0 | json }},
-      vendor: {{ product.vendor | json }},
-      type: {{ product.type | json }},
-      variant_id: {{ product.selected_or_first_available_variant.id | json }},
-      sku: {{ product.selected_or_first_available_variant.sku | json }}
+  // Re-apply after add-to-cart (AJAX drawers create/replace carts without attributes).
+  document.addEventListener('submit', function (e) {
+    var f = e.target;
+    if (f && f.action && String(f.action).indexOf('/cart/add') > -1) setTimeout(function () { syncCart(attrs, true); }, 1500);
+  }, true);
+  document.addEventListener('click', function (e) {
+    var t = e.target && e.target.closest && e.target.closest('button[name="add"], .product-form__submit, [data-add-to-cart], [name="add"]');
+    if (t) setTimeout(function () { syncCart(attrs, true); }, 1500);
+  }, true);
+  (function () {
+    var of = window.fetch;
+    if (!of) return;
+    window.fetch = function (input, init) {
+      var p = of.apply(this, arguments);
+      try {
+        var url = typeof input === 'string' ? input : (input && input.url) || '';
+        if (url.indexOf('/cart/add') > -1) p.then(function () { setTimeout(function () { syncCart(attrs, true); }, 800); }).catch(function () {});
+      } catch (e) {}
+      return p;
     };
-
-    var prodEventId = generateEventId('view_item');
-
-    if (consent.analytics && window.gtag) {
-      gtag('event', 'view_item', {
-        send_to: GA4_ID,
-        currency: 'ZAR',
-        value: prodData.price,
-        items: [{
-          item_id: prodData.sku || prodData.variant_id,
-          item_name: prodData.title,
-          item_category: prodData.type,
-          price: prodData.price,
-          quantity: 1
-        }]
-      });
-    }
-
-    if (consent.marketing && window.fbq) {
-      fbq('track', 'ViewContent', {
-        content_name: prodData.title,
-        content_category: prodData.type,
-        content_ids: [prodData.variant_id],
-        content_type: 'product',
-        value: prodData.price,
-        currency: 'ZAR'
-      }, { eventID: prodEventId });
-    }
-
-    if (consent.marketing && window.ttq) {
-      ttq.track('ViewContent', {
-        content_id: prodData.variant_id,
-        content_type: 'product',
-        content_name: prodData.title,
-        quantity: 1,
-        price: prodData.price,
-        value: prodData.price,
-        currency: 'ZAR'
-      });
-    }
-  {% endif %}
-
-  // Listen for Add To Cart clicks and Cart Form submits
-  document.addEventListener('click', function(e) {
-    var target = e.target.closest('button[name="add"], button.product-form__submit, [data-add-to-cart], .product-form__submit');
-    if (target) {
-      var atcEventId = generateEventId('add_to_cart');
-      if (consent.analytics && window.gtag) {
-        gtag('event', 'add_to_cart', { send_to: GA4_ID, currency: 'ZAR' });
-      }
-      if (consent.marketing && window.fbq) {
-        fbq('track', 'AddToCart', { currency: 'ZAR' }, { eventID: atcEventId });
-      }
-      if (consent.marketing && window.ttq) {
-        ttq.track('AddToCart', { currency: 'ZAR' });
-      }
-    }
-  });
-
+  })();
 })();
 </script>

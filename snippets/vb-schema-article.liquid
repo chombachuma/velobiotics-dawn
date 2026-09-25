@@ -1,11 +1,11 @@
-{%- comment -%} VB Article / WebPage Schema for Science and About pages {%- endcomment -%}
+{%- comment -%} VB Article / WebPage Schema for About pages (Science pages emit via vb-science-page.liquid) {%- endcomment -%}
 {%- if template.name == 'page' and page -%}
-{%- assign science_handles = "what-are-probiotics,what-is-microencapsulation,probiotics-what-are-the-challenges,probiotics-tolerance-to-gastric-acid,heat-stability-and-shelf-life,health-benefits-of-probiotics,microencapsulation-research,new-about-us,velobiotics-story,custom-about-us" | split: "," -%}
-{%- if science_handles contains page.handle -%}
+{%- assign vb_about_handles = "new-about-us,custom-about-us" | split: "," -%}
+{%- if vb_about_handles contains page.handle -%}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "{% if page.handle == 'new-about-us' %}AboutPage{% else %}Article{% endif %}",
+  "@type": "AboutPage",
   "@id": {{ shop.url | append: page.url | append: "#article" | json }},
   "headline": {{ page.title | json }},
   "name": {{ page.title | json }},
@@ -21,7 +21,7 @@
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Velobiotics",
+    "name": "Velobiotics (Pty) Ltd",
     "url": {{ shop.url | json }},
     "logo": {
       "@type": "ImageObject",
@@ -30,7 +30,7 @@
   },
   "author": {
     "@type": "Organization",
-    "name": "Velobiotics Medical & Scientific Team"
+    "name": "Velobiotics (Pty) Ltd"
   }
 }
 </script>

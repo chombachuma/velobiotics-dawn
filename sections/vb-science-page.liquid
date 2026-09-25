@@ -268,6 +268,74 @@
   </div>
 </section>
 
+{%- comment -%} Structured Data for Science Article + BreadcrumbList {%- endcomment -%}
+{%- assign vb_science_hub = "/pages/microencapsulation-research" -%}
+{%- assign vb_canonical = canonical_url | default: shop.url | append: page.url -%}
+{%- assign vb_hero_img = section.settings.hero_image_url -%}
+{%- if vb_hero_img == blank or vb_hero_img == "" -%}
+  {%- assign vb_hero_img = "https://www.velobiotics.com/cdn/shop/files/Velobiotics_Logo_-_Horizontal_1200x400_5a948102-4f67-4bab-bf44-78b1106e5c05.png" -%}
+{%- endif -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": {{ vb_canonical | append: "#article" | json }},
+  "headline": {{ page.title | json }},
+  "name": {{ page.title | json }},
+  "description": {{ page.content | strip_html | strip_newlines | truncate: 250 | default: page.title | json }},
+  "url": {{ vb_canonical | json }},
+  "datePublished": {{ page.published_at | date: "%Y-%m-%dT%H:%M:%S%z" | json }},
+  "dateModified": {{ page.updated_at | default: page.published_at | date: "%Y-%m-%dT%H:%M:%S%z" | json }},
+  "image": {{ vb_hero_img | json }},
+  "inLanguage": "en",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ vb_canonical | json }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Velobiotics (Pty) Ltd",
+    "url": {{ shop.url | json }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.velobiotics.com/cdn/shop/files/Velobiotics_Logo_-_Horizontal_1200x400_5a948102-4f67-4bab-bf44-78b1106e5c05.png"
+    }
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Velobiotics (Pty) Ltd"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": {{ shop.url | json }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "The Science",
+      "item": {{ shop.url | append: vb_science_hub | json }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ page.title | json }},
+      "item": {{ vb_canonical | json }}
+    }
+  ]
+}
+</script>
+
 {% schema %}
 {
   "name": "VB · Science page",

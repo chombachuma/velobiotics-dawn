@@ -73,7 +73,7 @@
     <div class="vb-fc-define">
       <div class="vb-fc-define__copy">
         {%- if ing_mode -%}
-          <h3>Why does {{ ing_name }} matter?</h3>
+          <h3>What {{ ing_name }} does for you</h3>
           <p>{{ ing_intro | newline_to_br }}</p>
           {%- if ing_benefits.size > 0 -%}
             <ul class="vb-fc-benefits">
@@ -82,8 +82,8 @@
           {%- endif -%}
           {%- if ing_synergy != blank -%}
             <div class="vb-fc-synergy">
-              <h4>{{ ing_name }} + Velobiotics probiotics</h4>
-              <p>{{ ing_synergy }} <a href="/pages/what-is-microencapsulation">See how our micro-shield keeps each bacterium alive →</a></p>
+              <h4>Why we pair {{ ing_name }} with probiotics</h4>
+              <p>{{ ing_synergy }} <a href="/pages/what-is-microencapsulation">See how we keep every good bacterium alive →</a></p>
             </div>
           {%- endif -%}
         {%- else -%}
@@ -118,8 +118,8 @@
       if ing_mode
         assign top1 = collection.products[0]
         assign top2 = collection.products[1]
-        assign badge1 = 'Most popular with ' | append: ing_name
-        assign badge2 = 'Also formulated with ' | append: ing_name
+        assign badge1 = 'Our most popular ' | append: ing_name | append: ' product'
+        assign badge2 = 'Also made with ' | append: ing_name
       else
         assign top1 = all_products[section.settings.top1_handle]
         assign top2 = all_products[section.settings.top2_handle]

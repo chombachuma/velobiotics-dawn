@@ -411,7 +411,7 @@
       if(localStorage.getItem('vc_preview')!=='1'){return;} /* GATE */
       var s=document.createElement('script');s.src='https://solene-39c3a115.base44.app/functions/veloChatWidget';s.async=true;
       s.setAttribute('data-brand','Velobiotics');s.setAttribute('data-color','#4d8c44');s.setAttribute('data-label','Ask Velo');
-      var c='{{ localization.country.iso_code }}';s.setAttribute('data-market',c==='ZA'?'ZA':(c==='US'?'US':'INTL'));
+      var c='{{ localization.country.iso_code }}';s.setAttribute('data-market',/\.co\.za$/.test(location.hostname)?'ZA':(c==='US'?'US':'INTL'));
       document.body.appendChild(s);
     }catch(e){}})();
     </script>

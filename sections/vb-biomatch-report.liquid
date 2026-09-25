@@ -71,6 +71,7 @@
 @media print{.vbr__bar .vbr__btn{display:none}}
 </style>
 <div class="vbr" id="vbr" data-fn="{{ section.settings.report_fn | default: 'https://elara-cef2631f.base44.app/functions/biomatchReport' }}" data-sig="{{ section.settings.signature_url }}" data-logo="{{ section.settings.logo_url | default: 'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Velobiotics_Logo_-_Horizontal_1200x400_5a948102-4f67-4bab-bf44-78b1106e5c05.png' }}">
+  <h1 class="vbr__sr">{{ page.title }}</h1>
   <div class="vbr__bar"><a href="/"><img src="{{ section.settings.logo_url | default: 'https://cdn.shopify.com/s/files/1/0668/5848/3883/files/Velobiotics_Logo_-_Horizontal_1200x400_5a948102-4f67-4bab-bf44-78b1106e5c05.png' }}" alt="Velobiotics"></a><span class="sp"></span><button class="vbr__btn" id="vbr-pdf" type="button" disabled>⬇ <span>Download&nbsp;</span>PDF</button></div>
   <div id="vbr-body"><div class="vbr__skel"></div></div>
 </div>

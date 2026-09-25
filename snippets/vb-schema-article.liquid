@@ -5,12 +5,16 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "{% if page.handle == 'new-about-us' or page.handle == 'velobiotics-story' %}AboutPage{% else %}Article{% endif %}",
+  "@type": "{% if page.handle == 'new-about-us' %}AboutPage{% else %}Article{% endif %}",
   "@id": {{ shop.url | append: page.url | append: "#article" | json }},
   "headline": {{ page.title | json }},
   "name": {{ page.title | json }},
   "description": {{ page.content | strip_html | strip_newlines | truncate: 250 | default: page.title | json }},
   "url": {{ shop.url | append: page.url | json }},
+  "datePublished": {{ page.published_at | date: "%Y-%m-%dT%H:%M:%S%z" | json }},
+  "dateModified": {{ page.updated_at | default: page.published_at | date: "%Y-%m-%dT%H:%M:%S%z" | json }},
+  "image": "https://www.velobiotics.com/cdn/shop/files/Velobiotics_Logo_-_Horizontal_1200x400_5a948102-4f67-4bab-bf44-78b1106e5c05.png",
+  "inLanguage": "en",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": {{ shop.url | append: page.url | json }}

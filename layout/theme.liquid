@@ -326,6 +326,7 @@
     {%- comment -%} Velobiotics Marketing Tracking & UTM Persistence {%- endcomment -%}
     {% render 'vb-tracking' %}
     {% render 'vb-schema' %}
+    {%- if template.name == 'product' -%}{%- render 'vb-schema-product' -%}{%- endif -%}{%- if template.name == 'product' or template.name == 'collection' or template.name == 'page' -%}{%- render 'vb-schema-breadcrumb' -%}{%- endif -%}
 </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">

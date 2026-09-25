@@ -1,0 +1,790 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "check",
+            "text": "Women's Multivitamin + Probiotic + Collagen Peptides"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "check",
+            "text": "Supports Skin Radiance, Nail Strength & Vitality"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "check",
+            "text": "Patented Micro-Shield Delivery for Maximum Bio-Absorption"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "check",
+            "text": "Convenient Daily Wellness & Beauty Routine in 2 Capsules"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_dark": "#831843",
+        "brand_tint": "#fce7f3",
+        "brand_label": "Velobiotics\u2122 Her Glow Combo",
+        "rating": "4.8",
+        "review_count": "35+ verified reviews",
+        "hook": "Daily women's wellness & beauty stack: Her-Biotics ORIGINAL Multivitamin Probiotic Capsules (60s) + Almasi Probiotics Collagen Peptides Capsules (30s) in one convenient checkout.",
+        "ship_note": "Ships nationwide \u00b7 Free SA delivery over R400 \u00b7 30-day money-back guarantee",
+        "show_subscription": true,
+        "tier_unit": "Combo",
+        "tier_unit_plural": "Combos",
+        "show_buynow": true,
+        "show_testi_marquee": true
+      }
+    },
+    "reviews-carousel": {
+      "type": "vb-product-reviews-carousel",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "",
+            "author": "Karabo R.",
+            "meta": "Verified Buyer \u00b7 Her-Biotics Original Capsules",
+            "quote": "I love these capsules and I will be using them forever! My daily wellness routine feels complete."
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "",
+            "author": "Thuli M.",
+            "meta": "Verified Buyer \u00b7 Almasi Collagen Peptides 30s",
+            "quote": "Absolutely loving these probiotics and collagen peptides. I can already see my skin glowing after a few weeks!"
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "",
+            "author": "Nobuhle S.",
+            "meta": "Verified Buyer \u00b7 Her-Biotics Original Capsules",
+            "quote": "I love the capsules, my stomach feels less gassy since I started taking them daily with breakfast."
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "",
+            "author": "Mercedes",
+            "meta": "Verified Buyer \u00b7 Her-Biotics Original Capsules",
+            "quote": "What an amazing product, probiotics were definitely the missing piece in my wellness journey."
+          }
+        },
+        "r5": {
+          "type": "review",
+          "settings": {
+            "avatar_url": "",
+            "author": "Diana C.",
+            "meta": "Verified Buyer \u00b7 Almasi Collagen Peptides 30s",
+            "quote": "I'm honestly impressed with these collagen probiotic capsules! My skin feels brighter and hydrated, and my nails are stronger."
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_dark": "#831843",
+        "brand_tint": "#fce7f3",
+        "eyebrow": "Verified Buyer Feedback",
+        "title": "What women say about Her Glow Combo"
+      }
+    },
+    "problem": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "alert",
+            "text": "Multiple bottles clutter your counter and make routine consistency difficult"
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "alert",
+            "text": "Unprotected probiotic strains die in gastric acid before reaching the intestine"
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "alert",
+            "text": "Declining collagen synthesis affects skin elasticity and nail durability"
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "settings": {
+        "reverse": false,
+        "brand_primary": "#be185d",
+        "brand_tint": "#fce7f3",
+        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/GlowandGutCombo.png?v=1775328667",
+        "tag_value": "Multivitamin & Beauty Needs",
+        "tag_label": "Women's Wellness Gap",
+        "eyebrow": "The Challenge",
+        "title_pre": "Managing multiple single supplements",
+        "title_highlight": "creates hassle and gaps",
+        "desc": "Women often juggle separate multivitamin, probiotic, and beauty supplements. Taking unshielded probiotics means stomach acid destroys delicate strains before they reach the gut, while missing out on collagen peptides leaves skin matrix and nail structure without essential amino acid building blocks."
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "s1": {
+          "type": "point",
+          "settings": {
+            "icon": "check",
+            "text": "Her-Biotics Original delivers women's multivitamins plus micro-shielded probiotics"
+          }
+        },
+        "s2": {
+          "type": "point",
+          "settings": {
+            "icon": "check",
+            "text": "Almasi Collagen Peptides capsules provide hydrolysed collagen for skin and nail support"
+          }
+        },
+        "s3": {
+          "type": "point",
+          "settings": {
+            "icon": "check",
+            "text": "Patented micro-shield ensures live bacteria survive stomach acid to colonise the gut"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#be185d",
+        "brand_tint": "#fce7f3",
+        "image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/GlowandGutCombo.png?v=1775328667",
+        "tag_value": "All-in-One Convenience",
+        "tag_label": "Her-Biotics + Collagen",
+        "eyebrow": "The Her Glow Solution",
+        "title_pre": "Comprehensive daily multivitamin & collagen",
+        "title_highlight": "in one convenient combo",
+        "desc": "The Her Glow Combo brings together Her-Biotics ORIGINAL Multivitamin Probiotic Capsules (60s) and Almasi Probiotics Collagen Peptides Capsules (30s). Positioned as ultimate convenience, this stack delivers essential vitamins, minerals, micro-shielded probiotics, and bioactive collagen peptides in one daily checkout."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "her-biotics-original-capsules-60s",
+            "brand": "Her-Biotics\u2122 Probiotics ORIGINAL Multivitamin Capsules (60s)",
+            "rating": "4.8",
+            "reviews": "8+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "probiotics-protein-collagen-peptides-skin-hair-nails",
+            "brand": "Almasi\u2122 Probiotics Collagen Peptides Capsules (30s)",
+            "rating": "4.6",
+            "reviews": "31+"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_dark": "#831843",
+        "brand_tint": "#fce7f3",
+        "tint": false,
+        "eyebrow": "What's inside",
+        "title": "2 Essential Women's Products in One Combo",
+        "sub": "One daily women's multivitamin-probiotic plus a collagen-probiotic capsule in one convenient checkout."
+      }
+    },
+    "benefits": {
+      "type": "vb-product-benefits",
+      "blocks": {
+        "f1": {
+          "type": "feat",
+          "settings": {
+            "icon": "sparkles",
+            "name": "Hydrolysed Collagen Peptides",
+            "desc": "Bioavailable collagen peptides supply structural amino acids to support skin hydration, smoothness, and nail resilience."
+          }
+        },
+        "f2": {
+          "type": "feat",
+          "settings": {
+            "icon": "shield",
+            "name": "Micro-Shielded Probiotics",
+            "desc": "Patented polymer micro-shield protects delicate probiotic cultures through stomach acid for optimal intestinal delivery."
+          }
+        },
+        "f3": {
+          "type": "feat",
+          "settings": {
+            "icon": "zap",
+            "name": "Women's Multivitamin Matrix",
+            "desc": "Essential vitamins and minerals tailored for female metabolic energy, immune support, and daily vitality."
+          }
+        },
+        "f4": {
+          "type": "feat",
+          "settings": {
+            "icon": "heart",
+            "name": "Microbiome Balance",
+            "desc": "Multi-strain probiotics promote balanced intestinal microflora, reducing bloating and aiding nutrient bio-absorption."
+          }
+        },
+        "f5": {
+          "type": "feat",
+          "settings": {
+            "icon": "refresh",
+            "name": "Nail & Skin Support",
+            "desc": "Nutritional building blocks support tissue recovery, skin structure, and nail strength from the inside out."
+          }
+        },
+        "f6": {
+          "type": "feat",
+          "settings": {
+            "icon": "sun",
+            "name": "Convenient Daily Capsules",
+            "desc": "Easy-to-swallow capsule format fits seamlessly into your morning breakfast ritual with no messy powders."
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_tint": "#fce7f3",
+        "eyebrow": "Targeted Benefits",
+        "title_pre": "Formulated for complete",
+        "title_highlight": "vitality & skin radiance",
+        "sub": "Comprehensive support for female microbiome, immunity, energy, and skin health."
+      }
+    },
+    "how": {
+      "type": "vb-product-how",
+      "blocks": {
+        "h1": {
+          "type": "step",
+          "settings": {
+            "icon": "1",
+            "name": "Step 1: Her-Biotics Capsule",
+            "desc": "Take 1 Her-Biotics ORIGINAL capsule daily with water, preferably with breakfast or your morning meal."
+          }
+        },
+        "h2": {
+          "type": "step",
+          "settings": {
+            "icon": "2",
+            "name": "Step 2: Almasi Collagen Capsule",
+            "desc": "Take 1 Almasi Probiotics Collagen Peptides capsule daily with water."
+          }
+        },
+        "h3": {
+          "type": "step",
+          "settings": {
+            "icon": "3",
+            "name": "Step 3: Stay Consistent",
+            "desc": "Maintain your daily routine for at least 30 to 60 days to support gut microbiome balance and collagen synthesis."
+          }
+        },
+        "h4": {
+          "type": "step",
+          "settings": {
+            "icon": "4",
+            "name": "Step 4: Feel Radiant",
+            "desc": "Enjoy balanced digestive comfort, vibrant energy, and nourished skin radiance."
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_tint": "#fce7f3",
+        "eyebrow": "Daily Ritual",
+        "title_pre": "How to take your",
+        "title_highlight": "Her Glow Combo",
+        "sub": "A simple daily capsule routine for radiant skin and total female wellness."
+      }
+    },
+    "ingredients": {
+      "type": "vb-product-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "leaf",
+            "name": "Hydrolysed Collagen Peptides",
+            "amount": "30 Capsules",
+            "desc": "Bioactive bovine hydrolysed collagen peptides engineered for high bio-solubility."
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "shield",
+            "name": "Her-Biotics Multivitamin Formula",
+            "amount": "60 Capsules",
+            "desc": "Complete women's vitamins, minerals, and targeted probiotic strains."
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "berry",
+            "name": "Targeted Probiotic Cultures",
+            "amount": "Multi-Strain Blend",
+            "desc": "Lactobacillus and Bifidobacterium strains for female gut and intimate balance."
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "zap",
+            "name": "Velobiotics Micro-Shield",
+            "amount": "Patented Technology",
+            "desc": "Polymer micro-shield encapsulating each individual bacterium."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_dark": "#831843",
+        "brand_tint": "#fce7f3",
+        "brand_light": "#fff1f2",
+        "eyebrow": "Active Formulation",
+        "title": "Synergistic Multivitamin & Collagen Blend",
+        "sub": "Formulated to highest quality standards without artificial fillers or hidden additives.",
+        "facts_image_url": "https://cdn.shopify.com/s/files/1/0668/5848/3883/files/GlowandGutCombo.png?v=1775328667",
+        "facts_label": "Combo Specifications",
+        "facts_foot": "Free from gluten, dairy, sugar, and synthetic preservatives."
+      }
+    },
+    "confidence": {
+      "type": "vb-product-confidence",
+      "blocks": {
+        "c1": {
+          "type": "stat",
+          "settings": {
+            "label": "Targeted Probiotic Strains",
+            "percent": 10
+          }
+        },
+        "c2": {
+          "type": "stat",
+          "settings": {
+            "label": "Micro-Shield Strain Survival",
+            "percent": 90
+          }
+        },
+        "c3": {
+          "type": "stat",
+          "settings": {
+            "label": "Collagen Bio-Solubility",
+            "percent": 100
+          }
+        },
+        "c4": {
+          "type": "stat",
+          "settings": {
+            "label": "Quality Tested Formula",
+            "percent": 100
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_dark": "#831843",
+        "brand_tint": "#fce7f3",
+        "eyebrow": "Verifiable Quality",
+        "title_pre": "Science-backed nutrition",
+        "title_highlight": "you can trust",
+        "sub": "Patented delivery technology and quality-tested ingredients for female wellness.",
+        "caveat": "*Based on independent laboratory analysis and clinical ingredient studies."
+      }
+    },
+    "fbt": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "womens-daily-radiance-pack",
+            "brand": "Women's Daily Radiance Pack",
+            "rating": "4.8",
+            "reviews": "45+"
+          }
+        },
+        "r2": {
+          "type": "product",
+          "settings": {
+            "product_handle": "femina-intimate-starter-pack",
+            "brand": "Femina\u2122 Intimate Reset Kit",
+            "rating": "4.7",
+            "reviews": "399+"
+          }
+        },
+        "r3": {
+          "type": "product",
+          "settings": {
+            "product_handle": "pregnancy-support-pack",
+            "brand": "Pregnancy Support Pack",
+            "rating": "4.8",
+            "reviews": "20+"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_dark": "#831843",
+        "brand_tint": "#fce7f3",
+        "tint": true,
+        "eyebrow": "Complementary Care",
+        "title": "Explore Other Women's Wellness Packs",
+        "sub": "Targeted probiotic combinations for every stage of life."
+      }
+    },
+    "doctors": {
+      "type": "vb-doctors",
+      "blocks": {
+        "d1": {
+          "type": "card",
+          "settings": {
+            "icon_url": "",
+            "name": "Micro-Shield Protection",
+            "desc": "Patented polymer micro-shield protects live cultures through stomach acid."
+          }
+        },
+        "d2": {
+          "type": "card",
+          "settings": {
+            "icon_url": "",
+            "name": "Bioactive Collagen Peptides",
+            "desc": "Hydrolysed for efficient absorption and collagen tissue synthesis."
+          }
+        },
+        "d3": {
+          "type": "card",
+          "settings": {
+            "icon_url": "",
+            "name": "Clean Formulation",
+            "desc": "Non-GMO, allergen-tested, and free from synthetic fillers or sugar."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3"
+      ],
+      "settings": {
+        "eyebrow": "Expert Endorsed",
+        "title_pre": "Formulated by medical doctors &",
+        "title_highlight": "microbiologists",
+        "sub": "Engineered to deliver real, science-backed health solutions."
+      }
+    },
+    "outperform": {
+      "type": "vb-product-outperform",
+      "blocks": {
+        "o1": {
+          "type": "row",
+          "settings": {
+            "feature": "Multivitamin + Micro-Shielded Probiotics + Collagen Stack",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o2": {
+          "type": "row",
+          "settings": {
+            "feature": "Micro-shield around each bacterium",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o3": {
+          "type": "row",
+          "settings": {
+            "feature": "Hydrolysed Collagen Peptides for Skin & Nail Matrix",
+            "brand_state": "yes",
+            "b_state": "no",
+            "c_state": "no"
+          }
+        },
+        "o4": {
+          "type": "row",
+          "settings": {
+            "feature": "Complete Female Daily Micronutrient Blend",
+            "brand_state": "yes",
+            "b_state": "yes",
+            "c_state": "no"
+          }
+        },
+        "o5": {
+          "type": "row",
+          "settings": {
+            "feature": "100% Sugar-Free Daily Capsule Convenience",
+            "brand_state": "yes",
+            "b_state": "yes",
+            "c_state": "no"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_dark": "#831843",
+        "brand_tint": "#fce7f3",
+        "title": "How Her Glow Combo Outperforms",
+        "sub": "Comparison against single unshielded supplements.",
+        "col_features": "Wellness & Beauty Feature",
+        "col_brand": "Her Glow Combo",
+        "col_b": "Single Multivitamin",
+        "col_c": "Generic Unshielded Probiotics",
+        "cta_text": "Get Her Glow Combo",
+        "cta_note": "30-day money-back guarantee"
+      }
+    },
+    "judgeme": {
+      "type": "vb-judgeme",
+      "settings": {
+        "eyebrow": "Reviews",
+        "title_pre": "Customer",
+        "title_highlight": "Feedback",
+        "sub": "Real reviews from verified buyers",
+        "scope": "product",
+        "show_stats": true
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "What is inside the Her Glow Combo?",
+            "answer": "<p>The Her Glow Combo includes 1x Her-Biotics ORIGINAL Multivitamin Probiotic Capsules (60 capsules, 2-month supply) and 1x Almasi Probiotics Collagen Peptides (30 capsules, 1-month supply). Combined price is R569.90 for both products in one convenient checkout.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "How do I take the Her Glow Combo?",
+            "answer": "<p>Take 1 Her-Biotics ORIGINAL capsule daily with breakfast, and take 1 Almasi Probiotics Collagen Peptides capsule daily with water.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "How long will it take to notice results?",
+            "answer": "<p>Gut comfort and metabolic energy support are typically noticed within 7 to 14 days. Collagen benefits for skin hydration and nail resilience are best observed after 30 to 60 days of daily use.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Can I take this during pregnancy or with medication?",
+            "answer": "<p>If you are pregnant, nursing, or taking prescription medication, please check with your healthcare professional before starting any new dietary supplement.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "Do these capsules require refrigeration?",
+            "answer": "<p>No. Thanks to Velobiotics patented micro-shielding technology, live probiotic strains are protected against ambient heat and moisture, making them shelf-stable at room temperature.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "How does micro-shielding work?",
+            "answer": "<p>Our patented micro-encapsulation process creates a protective micro-shield around each bacterium (never the pill shell alone). This guarantees survival through stomach acid to colonise the gut effectively. Learn more on <a href=\"/pages/what-is-microencapsulation\">how Velobiotics micro-shielding works</a>.</p>"
+          }
+        },
+        "q7": {
+          "type": "q",
+          "settings": {
+            "question": "What is your refund policy?",
+            "answer": "<p>We offer a 30-day money-back guarantee. If you are not satisfied with your purchase, contact our team at support@velobiotics.com.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6",
+        "q7"
+      ],
+      "settings": {
+        "eyebrow": "Frequently Asked Questions",
+        "title_pre": "Everything you need to know about",
+        "title_highlight": "Her Glow Combo"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "shield",
+            "text": "30-Day Guarantee"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "truck",
+            "text": "Free SA Shipping > R400"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "lock",
+            "text": "Secure Checkout"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3"
+      ],
+      "settings": {
+        "brand_primary": "#be185d",
+        "brand_dark": "#831843",
+        "brand_light": "#fff1f2",
+        "badge": "Complete Daily Female Wellness",
+        "title_pre": "Elevate your beauty & vitality",
+        "title_highlight": "from within",
+        "sub": "Combine daily women's multivitamin probiotics with collagen peptides in one effortless daily routine.",
+        "cta_text": "Add Her Glow Combo to Cart",
+        "cta_link": "#"
+      }
+    },
+    "science_strip": {
+      "type": "vb-science-strip",
+      "settings": {
+        "kicker": "The Science",
+        "title_pre": "Patented Micro-Shield",
+        "title_highlight": "Probiotic Delivery",
+        "sub": "Learn how micro-encapsulation delivers 100x more live cultures to support gut barrier and skin health.",
+        "all_text": "Read the Science",
+        "all_url": "/pages/what-is-microencapsulation",
+        "bg": "#fce7f3",
+        "pad_top": 40,
+        "pad_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "reviews-carousel",
+    "problem",
+    "solution",
+    "related",
+    "benefits",
+    "how",
+    "ingredients",
+    "confidence",
+    "fbt",
+    "doctors",
+    "outperform",
+    "judgeme",
+    "faq",
+    "final",
+    "science_strip"
+  ]
+}

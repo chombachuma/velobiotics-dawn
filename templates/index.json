@@ -205,7 +205,8 @@
             "link": "/collections/femina",
             "image_url": "https://media.base44.com/images/public/69e1abc073bbccc7f63edacc/653a0d852_generated_image.png",
             "bg": "#fdf8fd",
-            "accent": "#8d2a89"
+            "accent": "#8d2a89",
+            "site_url": "https://femina.care"
           }
         },
         "velo16": {
@@ -217,7 +218,8 @@
             "link": "/collections/velo16",
             "image_url": "https://media.base44.com/images/public/69e738ecdc7682bdadfe7c82/3806ee1d7_generated_image.png",
             "bg": "#fff5f7",
-            "accent": "#c8163c"
+            "accent": "#c8163c",
+            "site_url": "https://velo16.com"
           }
         },
         "her": {
@@ -229,7 +231,8 @@
             "link": "/collections/her-biotics",
             "image_url": "https://media.base44.com/images/public/69e734d64c8c66c266bc562d/45b5dc51a_generated_image.png",
             "bg": "#fff5f3",
-            "accent": "#d2585a"
+            "accent": "#d2585a",
+            "site_url": "https://her-biotics.com"
           }
         },
         "his": {
@@ -241,7 +244,8 @@
             "link": "/collections/his-biotics",
             "image_url": "https://media.base44.com/images/public/69e736ff6d73a02b90e291d4/bc2878b14_generated_image.png",
             "bg": "#e8f3f1",
-            "accent": "#0a3d3d"
+            "accent": "#0a3d3d",
+            "site_url": "https://hisbiotics.com"
           }
         },
         "preg": {
@@ -253,7 +257,8 @@
             "link": "/collections/pregbiotics",
             "image_url": "https://media.base44.com/images/public/69e77ffe13bf3474223d0647/6791da2a0_generated_image.png",
             "bg": "#f2f9ec",
-            "accent": "#1f6b3d"
+            "accent": "#1f6b3d",
+            "site_url": "https://pregbiotics.co.za"
           }
         },
         "biokid": {
@@ -265,7 +270,8 @@
             "link": "/collections/biokid",
             "image_url": "https://media.base44.com/images/public/69e759b0da20f593135a4754/b63520eb0_generated_image.png",
             "bg": "#f0fbf2",
-            "accent": "#16a34a"
+            "accent": "#16a34a",
+            "site_url": "https://biokid.care"
           }
         },
         "biogain": {
@@ -277,7 +283,8 @@
             "link": "/collections/biogain",
             "image_url": "https://media.base44.com/images/public/69e75c2ca126e7f218f1b495/3a6563f65_generated_image.png",
             "bg": "#fff5ec",
-            "accent": "#ff6b35"
+            "accent": "#ff6b35",
+            "site_url": "https://biogain.care"
           }
         },
         "gutslim": {
@@ -289,7 +296,8 @@
             "link": "/collections/gutslim",
             "image_url": "https://media.base44.com/images/public/69e10e7db331c58e837bb75e/0da4d8630_generated_edbc0e3e.png",
             "bg": "#fff8eb",
-            "accent": "#ff9500"
+            "accent": "#ff9500",
+            "site_url": "https://gutslim.com"
           }
         },
         "almasi": {
@@ -301,7 +309,8 @@
             "link": "/collections/almasi-probiotics-skin-care",
             "image_url": "https://media.base44.com/images/public/69e737526bad1370b33f0de7/6bf436fa2_generated_image.png",
             "bg": "#fdf5f3",
-            "accent": "#1a1a1a"
+            "accent": "#1a1a1a",
+            "site_url": "https://almasi.beauty"
           }
         }
       },

@@ -19,6 +19,11 @@
   .vb-bf__card-body { padding: 18px 20px 20px; display: flex; flex-direction: column; flex: 1; background: #fff; }
   .vb-bf__card-logo { font-size: 22px; font-weight: 800; color: var(--card-accent, #4d8c44); letter-spacing: -0.02em; margin: 0 0 6px; line-height: 1.1; }
   .vb-bf__card-tag { font-size: 13px; color: #5c6664; margin: 0 0 14px; line-height: 1.4; flex: 1; }
+  .vb-bf__card-main { display: flex; flex-direction: column; flex: 1; color: inherit; text-decoration: none; }
+  .vb-bf__card-links { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 0 20px 18px; background: #fff; }
+  .vb-bf__card-site { font-size: 12px; font-weight: 600; color: #6b7280; display: inline-flex; align-items: center; gap: 3px; text-decoration: none; }
+  .vb-bf__card-site:hover { color: var(--card-accent, #4d8c44); }
+  @media (max-width: 749px) { .vb-bf__card-links { padding: 0 14px 14px; } .vb-bf__card-site { font-size: 11px; } }
   .vb-bf__card-cta { font-size: 12.5px; font-weight: 700; color: var(--card-accent, #4d8c44); letter-spacing: 0.02em; display: inline-flex; align-items: center; gap: 4px; transition: gap 0.18s ease; align-self: flex-start; }
   .vb-bf__card:hover .vb-bf__card-cta { gap: 8px; }
   @media (max-width: 749px) {
@@ -51,7 +56,8 @@
             assign card_img = block.settings.image | image_url: width: 600
           endif
         -%}
-        <a href="{{ block.settings.link }}" class="vb-bf__card" style="--card-bg: {{ block.settings.bg }}; --card-accent: {{ block.settings.accent }};" {{ block.shopify_attributes }}>
+        <div class="vb-bf__card" style="--card-bg: {{ block.settings.bg }}; --card-accent: {{ block.settings.accent }};" {{ block.shopify_attributes }}>
+          <a href="{{ block.settings.link }}" class="vb-bf__card-main" aria-label="Shop {{ block.settings.brand_name | escape }}">
           <div class="vb-bf__card-media">
             {%- if card_img != blank -%}
               <img src="{{ card_img }}" alt="{{ block.settings.brand_name | escape }}" loading="lazy" />
@@ -61,9 +67,15 @@
           <div class="vb-bf__card-body">
             <span class="vb-bf__card-logo">{{ block.settings.brand_name }}</span>
             {%- if block.settings.target != blank -%}<p class="vb-bf__card-tag">{{ block.settings.target }}</p>{%- endif -%}
-            <span class="vb-bf__card-cta">Explore <span>→</span></span>
           </div>
-        </a>
+          </a>
+          <div class="vb-bf__card-links">
+            <a href="{{ block.settings.link }}" class="vb-bf__card-cta">Shop <span>→</span></a>
+            {%- if block.settings.site_url != blank -%}
+              <a href="{{ block.settings.site_url }}" class="vb-bf__card-site" rel="noopener" aria-label="Visit the {{ block.settings.brand_name | escape }} website">Brand site <span>↗</span></a>
+            {%- endif -%}
+          </div>
+        </div>
       {%- endif -%}
     {%- endfor -%}
   </div>
@@ -84,7 +96,8 @@
       { "type": "text", "id": "brand_name", "label": "Brand name", "default": "Femina™" },
       { "type": "text", "id": "tagline", "label": "Pill text", "default": "Intimate Health" },
       { "type": "text", "id": "target", "label": "Target line", "default": "For women" },
-      { "type": "url", "id": "link", "label": "Link" },
+      { "type": "url", "id": "link", "label": "Link (collection on this store)" },
+      { "type": "text", "id": "site_url", "label": "Brand website URL (external)" },
       { "type": "image_picker", "id": "image", "label": "Card image (uploaded)" },
       { "type": "text", "id": "image_url", "label": "Card image URL (overrides upload)" },
       { "type": "color", "id": "bg", "label": "Card background", "default": "#fdf8fd" },
@@ -106,3 +119,4 @@
   ]
 }
 {% endschema %}
+

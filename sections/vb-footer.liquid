@@ -15,6 +15,9 @@
   .vb-footer__main { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr; gap: 40px; max-width: 1280px; margin: 0 auto; padding: 60px 24px 40px; }
   .vb-footer__brand-col p { color: rgba(255,255,255,0.75); line-height: 1.6; font-size: 14px; margin: 12px 0 20px; max-width: 320px; }
   .vb-footer__logo, .vb-footer__logo-text { color: #fff; font-size: 22px; font-weight: 900; letter-spacing: -0.01em; display: inline-block; }
+  .vb-footer__brand-li { display: flex; align-items: baseline; gap: 8px; }
+  .vb-footer__site { font-size: 11px; color: rgba(255,255,255,0.45); text-decoration: none; }
+  .vb-footer__site:hover { color: #fff; }
   .vb-footer__col-heading { font-size: 13px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #fff; margin: 0 0 16px; }
   .vb-footer__links { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
   .vb-footer__links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 14px; transition: color 0.15s; }
@@ -146,15 +149,15 @@
     <div>
       <p class="vb-footer__col-heading">Brands</p>
       <ul class="vb-footer__links" role="list">
-        <li><a href="/collections/velo16">Velo16™</a></li>
-        <li><a href="/collections/femina">Femina™</a></li>
-        <li><a href="/collections/gutslim">GutSlim™</a></li>
-        <li><a href="/collections/her-biotics">Her-Biotics™</a></li>
-        <li><a href="/collections/his-biotics">His-Biotics™</a></li>
-        <li><a href="/collections/pregbiotics">PregBiotics™</a></li>
-        <li><a href="/collections/biokid">BioKid™</a></li>
-        <li><a href="/collections/biogain">BioGain™</a></li>
-        <li><a href="/collections/almasi-probiotics-skin-care">Almasi™</a></li>
+        <li class="vb-footer__brand-li"><a href="/collections/velo16">Velo16™</a> <a class="vb-footer__site" href="https://velo16.com" rel="noopener" aria-label="Velo16™ website" title="Visit the Velo16™ website">site ↗</a></li>
+        <li class="vb-footer__brand-li"><a href="/collections/femina">Femina™</a> <a class="vb-footer__site" href="https://femina.care" rel="noopener" aria-label="Femina™ website" title="Visit the Femina™ website">site ↗</a></li>
+        <li class="vb-footer__brand-li"><a href="/collections/gutslim">GutSlim™</a> <a class="vb-footer__site" href="https://gutslim.com" rel="noopener" aria-label="GutSlim™ website" title="Visit the GutSlim™ website">site ↗</a></li>
+        <li class="vb-footer__brand-li"><a href="/collections/her-biotics">Her-Biotics™</a> <a class="vb-footer__site" href="https://her-biotics.com" rel="noopener" aria-label="Her-Biotics™ website" title="Visit the Her-Biotics™ website">site ↗</a></li>
+        <li class="vb-footer__brand-li"><a href="/collections/his-biotics">His-Biotics™</a> <a class="vb-footer__site" href="https://hisbiotics.com" rel="noopener" aria-label="His-Biotics™ website" title="Visit the His-Biotics™ website">site ↗</a></li>
+        <li class="vb-footer__brand-li"><a href="/collections/pregbiotics">PregBiotics™</a> <a class="vb-footer__site" href="https://pregbiotics.co.za" rel="noopener" aria-label="PregBiotics™ website" title="Visit the PregBiotics™ website">site ↗</a></li>
+        <li class="vb-footer__brand-li"><a href="/collections/biokid">BioKid™</a> <a class="vb-footer__site" href="https://biokid.care" rel="noopener" aria-label="BioKid™ website" title="Visit the BioKid™ website">site ↗</a></li>
+        <li class="vb-footer__brand-li"><a href="/collections/biogain">BioGain™</a> <a class="vb-footer__site" href="https://biogain.care" rel="noopener" aria-label="BioGain™ website" title="Visit the BioGain™ website">site ↗</a></li>
+        <li class="vb-footer__brand-li"><a href="/collections/almasi-probiotics-skin-care">Almasi™</a> <a class="vb-footer__site" href="https://almasi.beauty" rel="noopener" aria-label="Almasi™ website" title="Visit the Almasi™ website">site ↗</a></li>
       </ul>
     </div>
 
@@ -259,3 +262,4 @@
   "presets": [{ "name": "VB Footer" }]
 }
 {% endschema %}
+

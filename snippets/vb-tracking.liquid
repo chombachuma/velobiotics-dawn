@@ -1,8 +1,8 @@
 {%- comment -%}
-Velobiotics Marketing Attribution Snippet (v2, 25 Sep 2026, Velo Marketing)
+Velobiotics Marketing Attribution Snippet (v3 – tool-lead attribution (vb_lid/vb_tool/vb_brand), 27 Sep 2026, Velo Marketing)
 
 WHAT THIS FILE DOES NOW: first-party attribution only (UTM / click-id / landing page /
-referrer / internal promo persistence -> Shopify cart attributes -> order note_attributes).
+referrer / internal promo persistence / tool-lead attribution (vb_lid/vb_tool/vb_brand) -> Shopify cart attributes -> order note_attributes).
 
 WHAT IT NO LONGER DOES (removed 25 Sep 2026 to stop duplicate & dead events):
   - Meta Pixel init / PageView / ViewContent / AddToCart  -> handled by the "Facebook & Instagram"
@@ -19,6 +19,8 @@ ATTRIBUTION RULES
     referrer are captured once per session and never overwritten by later internal clicks.
   - Internal promo clicks use ?vbref=<name> (NOT utm_*), stored separately as internal_promo.
     Never put utm_* on links that point back to this store; it resets GA4 sessions.
+  - Tool-lead attribution (vb_lid, vb_tool, vb_brand): last touch wins (overwrites whenever
+    present in URL), stored in localStorage with 90-day expiry, written as cart attributes.
   - Cart attributes are synced when the signature changes and again after add-to-cart.
 {%- endcomment -%}
 
@@ -37,13 +39,40 @@ ATTRIBUTION RULES
   }
 
   var ACQ_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid', 'fbclid', 'ttclid'];
+  var TOOL_KEYS = ['vb_lid', 'vb_tool', 'vb_brand'];
   var INTERNAL_SOURCES = ['website', 'velobiotics', 'internal', 'site', 'shopify'];
   var INTERNAL_MEDIUMS = ['announcement_bar', 'splash', 'popup', 'banner', 'sticky', 'countdown', 'internal'];
   var MAX_LEN = 480;
+  var EXPIRY_MS = 90 * 24 * 60 * 60 * 1000;
 
   function clip(v) { v = String(v || ''); return v.length > MAX_LEN ? v.slice(0, MAX_LEN) : v; }
   function ss(k, v) { try { if (v === undefined) return sessionStorage.getItem(k); sessionStorage.setItem(k, v); } catch (e) { return null; } }
   function ls(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } }
+
+  function setToolStorage(k, v) {
+    try {
+      if (v) {
+        localStorage.setItem(k, v);
+        localStorage.setItem(k + '_exp', String(Date.now() + EXPIRY_MS));
+        sessionStorage.setItem(k, v);
+      }
+    } catch (e) {}
+  }
+
+  function getToolStorage(k) {
+    try {
+      var exp = localStorage.getItem(k + '_exp');
+      if (exp && Date.now() > parseInt(exp, 10)) {
+        localStorage.removeItem(k);
+        localStorage.removeItem(k + '_exp');
+        try { sessionStorage.removeItem(k); } catch (e) {}
+        return null;
+      }
+      return sessionStorage.getItem(k) || localStorage.getItem(k);
+    } catch (e) {
+      return null;
+    }
+  }
 
   function cleanUrl(href) {
     try {
@@ -92,7 +121,20 @@ ATTRIBUTION RULES
     if (ref) ss('vb_internal_promo', clip(ref));
     if (ss('vb_internal_promo')) out.internal_promo = ss('vb_internal_promo');
 
-    // 4) Market / storefront context.
+    // 4) Tool-lead attribution (vb_lid, vb_tool, vb_brand): last touch wins, 90-day expiry.
+    TOOL_KEYS.forEach(function (k) {
+      var v = params.get(k);
+      if (v) {
+        var clipped = clip(v);
+        setToolStorage(k, clipped);
+        out[k] = clipped;
+      } else {
+        var stored = getToolStorage(k);
+        if (stored) out[k] = stored;
+      }
+    });
+
+    // 5) Market / storefront context.
     out.market = (window.Shopify && Shopify.country) ? Shopify.country : '';
     out.store_host = window.location.host;
     return out;
@@ -118,6 +160,9 @@ ATTRIBUTION RULES
         referrer: attr.referrer || '',
         internal_promo: attr.internal_promo || '',
         market: attr.market || '',
+        vb_lid: attr.vb_lid || '',
+        vb_tool: attr.vb_tool || '',
+        vb_brand: attr.vb_brand || '',
         biomatchAttribution: JSON.stringify(attr)
       }
     };

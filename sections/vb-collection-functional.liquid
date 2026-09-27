@@ -54,11 +54,73 @@
   assign ing_short = collection.metafields.custom.ingredient_short
   assign ing_synergy = collection.metafields.custom.ingredient_synergy
   assign ing_benefits = collection.metafields.custom.ingredient_benefits.value
+  assign hero_img = collection.metafields.custom.hero_image.value
+  assign hero_head = collection.metafields.custom.hero_headline
+  assign star = collection.metafields.custom.star_product.value
 -%}
+{%- if ing_mode and hero_img != blank -%}
+<style>
+  .vb-ih { position: relative; width: 100vw; margin-left: calc(50% - 50vw); overflow: hidden; background: #dfeedd; color: #10250f; isolation: isolate; }
+  .vb-ih__media { position: absolute; inset: 0; z-index: 0; }
+  .vb-ih__media img { width: 100%; height: 100%; object-fit: cover; object-position: 70% 30%; display: block; }
+  .vb-ih__scrim { position: absolute; inset: 0; z-index: 1; display: block !important; pointer-events: none; background: linear-gradient(90deg, rgba(242,248,240,.96) 0%, rgba(242,248,240,.88) 32%, rgba(242,248,240,.55) 48%, rgba(242,248,240,0) 64%); }
+  .vb-ih__wrap { position: relative; z-index: 2; max-width: 1280px; margin: 0 auto; padding: 72px 40px; min-height: min(560px, 70vh); display: flex; align-items: center; }
+  .vb-ih__copy { max-width: 520px; }
+  .vb-ih__eyebrow { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: #4d8c44; font-size: 11.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #4d8c44; margin: 0 0 16px; }
+  .vb-ih h1 { font-size: clamp(32px, 4.2vw, 56px); line-height: 1.04; font-weight: 800; letter-spacing: -.02em; margin: 0 0 14px; text-wrap: balance; }
+  .vb-ih h1 em { font-style: normal; color: #4d8c44; }
+  .vb-ih__sub { font-size: 17px; line-height: 1.55; color: #243a22; margin: 0 0 22px; font-weight: 500; }
+  .vb-ih__ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+  .vb-ih__cta { display: inline-flex; align-items: center; padding: 14px 26px; border-radius: 999px; text-decoration: none; font-weight: 700; font-size: 15px; }
+  .vb-ih__cta--p { background: #4d8c44; color: #fff !important; box-shadow: 0 10px 24px rgba(20,60,20,.25); }
+  .vb-ih__cta--s { background: rgba(255,255,255,.92); color: #10250f !important; border: 2px solid #bcd1b8; }
+  .vb-star { max-width: 1280px; margin: -48px auto 0; padding: 0 40px; position: relative; z-index: 3; }
+  .vb-star__card { display: grid; grid-template-columns: 180px 1fr auto; gap: 24px; align-items: center; background: #fff; border: 1px solid #e3ece1; border-radius: 22px; padding: 20px 24px; box-shadow: 0 18px 40px rgba(20,60,20,.10); }
+  .vb-star__card img { width: 180px; height: 180px; object-fit: contain; border-radius: 14px; background: #f5f9f3; }
+  .vb-star__tag { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: #4d8c44; margin-bottom: 8px; }
+  .vb-star__card h2 { font-size: clamp(20px, 2.2vw, 28px); font-weight: 800; margin: 0 0 8px; line-height: 1.15; }
+  .vb-star__card p { font-size: 15px; line-height: 1.55; color: #3d5542; margin: 0; }
+  .vb-star__price { font-size: 22px; font-weight: 800; color: #10250f; margin-bottom: 10px; text-align: right; }
+  .vb-star__price s { color: #8aa08e; font-weight: 600; font-size: 15px; margin-right: 6px; }
+  .vb-star__buy { display: inline-flex; padding: 13px 24px; border-radius: 999px; background: #4d8c44; color: #fff !important; font-weight: 700; text-decoration: none; white-space: nowrap; }
+  @media (max-width: 749px) {
+    .vb-ih__media img { object-position: 60% 20%; }
+    .vb-ih__scrim { background: linear-gradient(0deg, rgba(242,248,240,.97) 0%, rgba(242,248,240,.9) 46%, rgba(242,248,240,.5) 60%, rgba(242,248,240,0) 74%); }
+    .vb-ih__wrap { padding: 24px 20px 32px; min-height: min(640px, 88svh); align-items: flex-end; }
+    .vb-ih h1 { font-size: clamp(28px, 8.4vw, 38px); }
+    .vb-ih__sub { font-size: 15px; }
+    .vb-ih__cta { padding: 12px 18px; font-size: 14px; flex: 1 1 auto; justify-content: center; }
+    .vb-star { margin-top: -20px; padding: 0 14px; }
+    .vb-star__card { grid-template-columns: 96px 1fr; gap: 14px; padding: 16px; }
+    .vb-star__card img { width: 96px; height: 96px; }
+    .vb-star__side { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: center; }
+    .vb-star__price { margin: 0; text-align: left; }
+  }
+</style>
+<section class="vb-ih" aria-label="{{ ing_name | escape }}">
+  <div class="vb-ih__media"><img src="{{ hero_img | image_url: width: 2400 }}" srcset="{{ hero_img | image_url: width: 1200 }} 1200w, {{ hero_img | image_url: width: 2400 }} 2400w" sizes="100vw" alt="{{ hero_img.alt | default: ing_name | escape }}" loading="eager" fetchpriority="high" width="2400" height="1350"></div>
+  <div class="vb-ih__scrim"></div>
+  <div class="vb-ih__wrap"><div class="vb-ih__copy">
+    <span class="vb-ih__eyebrow">Shop by Ingredient</span>
+    {%- if hero_head != blank -%}<h1>{{ hero_head }}</h1>{%- else -%}<h1>{{ ing_name }}, <em>delivered by live probiotics.</em></h1>{%- endif -%}
+    {%- if ing_short != blank -%}<p class="vb-ih__sub">{{ ing_short }}</p>{%- endif -%}
+    <div class="vb-ih__ctas">{%- if star != blank -%}<a class="vb-ih__cta vb-ih__cta--p" href="{{ star.url }}">Shop {{ star.title | split: 'Probiotics' | last | strip | default: star.title }}</a>{%- endif -%}<a class="vb-ih__cta vb-ih__cta--s" href="#vb-fc-{{ section.id }}">Learn about {{ ing_name }}</a></div>
+  </div></div>
+</section>
+{%- if star != blank -%}
+<div class="vb-star"><div class="vb-star__card">
+  <a href="{{ star.url }}"><img src="{{ star.featured_image | image_url: width: 400 }}" alt="{{ star.featured_image.alt | default: star.title | escape }}" width="180" height="180" loading="eager"></a>
+  <div><span class="vb-star__tag">Our star {{ ing_name }} product</span><h2><a href="{{ star.url }}" style="color:inherit;text-decoration:none">{{ star.title }}</a></h2><p>{{ star.description | strip_html | truncatewords: 32 }}</p></div>
+  <div class="vb-star__side"><div class="vb-star__price">{% if star.compare_at_price > star.price %}<s>{{ star.compare_at_price | money }}</s>{% endif %}{{ star.price | money }}</div><a class="vb-star__buy" href="{{ star.url }}">View product</a></div>
+</div></div>
+{%- endif -%}
+{%- endif -%}
 <section id="vb-fc-{{ section.id }}">
   <div class="vb-fc-wrap">
     <div class="vb-fc-head">
-      {%- if ing_mode -%}
+      {%- if ing_mode and hero_img != blank -%}
+        {%- comment -%} full-bleed photo hero (custom.hero_image); head text moves onto the photo {%- endcomment -%}
+      {%- elsif ing_mode -%}
         <span class="vb-fc-eyebrow">Shop by Ingredient</span>
         <h1 class="vb-fc-title">Powered by <span>{{ collection.title }}.</span></h1>
         {%- if ing_short != blank -%}<p class="vb-fc-sub">{{ ing_short }}</p>{%- endif -%}

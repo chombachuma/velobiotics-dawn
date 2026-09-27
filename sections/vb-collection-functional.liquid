@@ -107,14 +107,15 @@
     <div class="vb-ih__ctas">{%- if star != blank -%}<a class="vb-ih__cta vb-ih__cta--p" href="{{ star.url }}">Shop {{ star.title | split: 'Probiotics' | last | strip | default: star.title }}</a>{%- endif -%}<a class="vb-ih__cta vb-ih__cta--s" href="#vb-fc-{{ section.id }}">Learn about {{ ing_name }}</a></div>
   </div></div>
 </section>
-{%- if star != blank -%}
-<div class="vb-star"><div class="vb-star__card">
+{%- endif -%}
+{%- if ing_mode and star != blank -%}
+<div class="vb-star{% if hero_img == blank %} vb-star--nohero{% endif %}"><div class="vb-star__card">
   <a href="{{ star.url }}"><img src="{{ star.featured_image | image_url: width: 400 }}" alt="{{ star.featured_image.alt | default: star.title | escape }}" width="180" height="180" loading="eager"></a>
   <div><span class="vb-star__tag">Our star {{ ing_name }} product</span><h2><a href="{{ star.url }}" style="color:inherit;text-decoration:none">{{ star.title }}</a></h2><p>{{ star.description | strip_html | truncatewords: 32 }}</p></div>
   <div class="vb-star__side"><div class="vb-star__price">{% if star.compare_at_price > star.price %}<s>{{ star.compare_at_price | money }}</s>{% endif %}{{ star.price | money }}</div><a class="vb-star__buy" href="{{ star.url }}">View product</a></div>
 </div></div>
 {%- endif -%}
-{%- endif -%}
+<style>.vb-star--nohero{margin-top:32px}</style>
 <section id="vb-fc-{{ section.id }}">
   <div class="vb-fc-wrap">
     <div class="vb-fc-head">

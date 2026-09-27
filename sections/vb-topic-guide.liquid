@@ -1,0 +1,185 @@
+{%- comment -%} VB · Topic guide (27 Sep 2026): collection page that reads as a landing page (what it is, how it is grouped, benefits, sources, why supplement, links to each nutrient) followed by the collection's products. {%- endcomment -%}
+{%- liquid
+  assign s = section.settings
+  assign accent = '#4d8c44'
+  assign title = s.title | default: collection.title
+-%}
+<style>
+  .vbtg { color: #14261a; }
+  .vbtg__wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  .vbtg__hero { background: linear-gradient(180deg, #f2f8f0 0%, #ffffff 100%); padding: 56px 0 40px; }
+  .vbtg__hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 40px; align-items: center; }
+  .vbtg__eyebrow { display: inline-block; color: {{ accent }}; font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 12px; }
+  .vbtg__h1 { font-size: clamp(32px, 4.4vw, 52px); font-weight: 800; line-height: 1.05; letter-spacing: -.02em; margin: 0 0 16px; }
+  .vbtg__lead { font-size: 18px; line-height: 1.6; color: #2f4a33; margin: 0 0 22px; }
+  .vbtg__lead p { margin: 0 0 12px; }
+  .vbtg__jump { display: flex; flex-wrap: wrap; gap: 8px; }
+  .vbtg__jump a { font-size: 13px; font-weight: 700; color: {{ accent }}; background: #fff; border: 1.5px solid #cfe0cb; border-radius: 999px; padding: 8px 14px; text-decoration: none; }
+  .vbtg__jump a:hover { border-color: {{ accent }}; }
+  .vbtg__hero-img { border-radius: 24px; overflow: hidden; aspect-ratio: 4/3; background: #e6f0e3; }
+  .vbtg__hero-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .vbtg__sec { padding: 48px 0; }
+  .vbtg__sec--tint { background: #f7faf6; }
+  .vbtg__h2 { font-size: clamp(26px, 3vw, 36px); font-weight: 800; letter-spacing: -.015em; margin: 0 0 10px; }
+  .vbtg__h2 em { font-style: normal; color: {{ accent }}; }
+  .vbtg__intro { font-size: 16.5px; line-height: 1.6; color: #35503a; max-width: 760px; margin: 0 0 28px; }
+  .vbtg__intro p { margin: 0 0 10px; }
+  .vbtg__cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+  .vbtg__card { background: #fff; border: 1px solid #e3ece1; border-radius: 18px; padding: 22px; }
+  .vbtg__card h3 { font-size: 18px; font-weight: 800; margin: 0 0 8px; }
+  .vbtg__card p { font-size: 15px; line-height: 1.55; color: #3d5542; margin: 0; }
+  .vbtg__card .vbtg__tag { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: {{ accent }}; margin-bottom: 8px; }
+  .vbtg__nutrients { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; }
+  .vbtg__nut { display: flex; flex-direction: column; gap: 8px; background: #fff; border: 1px solid #e3ece1; border-radius: 16px; padding: 18px; text-decoration: none; color: inherit; transition: border-color .15s, transform .15s; }
+  .vbtg__nut:hover { border-color: {{ accent }}; transform: translateY(-2px); }
+  .vbtg__nut strong { font-size: 16px; font-weight: 800; }
+  .vbtg__nut span { font-size: 14px; line-height: 1.5; color: #3d5542; }
+  .vbtg__nut .vbtg__more { font-size: 13px; font-weight: 700; color: {{ accent }}; margin-top: auto; }
+  .vbtg__nut .vbtg__group { font-size: 11px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: #6b8a70; }
+  .vbtg__cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+  .vbtg__col h3 { font-size: 20px; font-weight: 800; margin: 0 0 10px; }
+  .vbtg__col .rte, .vbtg__col p, .vbtg__col li { font-size: 15.5px; line-height: 1.6; color: #35503a; }
+  .vbtg__col ul { padding-left: 18px; margin: 0; }
+  .vbtg__syn { background: linear-gradient(135deg, #1f4d1a, #4d8c44); color: #fff; border-radius: 24px; padding: 34px; display: grid; grid-template-columns: 1.3fr .7fr; gap: 28px; align-items: center; }
+  .vbtg__syn h2 { color: #fff; font-size: clamp(24px, 3vw, 32px); margin: 0 0 10px; font-weight: 800; }
+  .vbtg__syn p { color: rgba(255,255,255,.9); font-size: 16px; line-height: 1.6; margin: 0 0 16px; }
+  .vbtg__syn a { display: inline-flex; padding: 12px 22px; border-radius: 999px; background: #fff; color: #1f4d1a; font-weight: 800; text-decoration: none; }
+  .vbtg__faq details { border-bottom: 1px solid #e3ece1; padding: 14px 0; }
+  .vbtg__faq summary { cursor: pointer; font-weight: 800; font-size: 16.5px; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+  .vbtg__faq summary::after { content: '+'; color: {{ accent }}; font-size: 22px; line-height: 1; }
+  .vbtg__faq details[open] summary::after { content: '−'; }
+  .vbtg__faq .vbtg__a { font-size: 15.5px; line-height: 1.6; color: #35503a; padding-top: 8px; }
+  .vbtg__products { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 18px; }
+  .vbtg__prod { text-decoration: none; color: inherit; background: #fff; border: 1px solid #e3ece1; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column; }
+  .vbtg__prod img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; background: #f3f7f1; }
+  .vbtg__prod div { padding: 14px 16px 18px; }
+  .vbtg__prod strong { display: block; font-size: 15px; font-weight: 800; margin-bottom: 6px; line-height: 1.3; }
+  .vbtg__prod span { color: {{ accent }}; font-weight: 800; }
+  .vbtg__note { font-size: 13px; color: #6b8a70; margin-top: 20px; }
+  @media (max-width: 749px) {
+    .vbtg__wrap { padding: 0 16px; }
+    .vbtg__hero { padding: 28px 0 24px; }
+    .vbtg__hero-grid, .vbtg__syn { grid-template-columns: 1fr; gap: 20px; }
+    .vbtg__hero-img { order: -1; aspect-ratio: 16/10; border-radius: 16px; }
+    .vbtg__lead { font-size: 16px; }
+    .vbtg__sec { padding: 32px 0; }
+    .vbtg__syn { padding: 24px; }
+  }
+</style>
+
+<div class="vbtg">
+  <section class="vbtg__hero"><div class="vbtg__wrap"><div class="vbtg__hero-grid">
+    <div>
+      {%- if s.eyebrow != blank -%}<span class="vbtg__eyebrow">{{ s.eyebrow }}</span>{%- endif -%}
+      <h1 class="vbtg__h1">{{ title }}</h1>
+      <div class="vbtg__lead">{{ s.lead }}</div>
+      <nav class="vbtg__jump" aria-label="On this page">
+        {%- if s.groups_title != blank -%}<a href="#vbtg-groups">{{ s.groups_title }}</a>{%- endif -%}
+        {%- if s.nutrients_title != blank -%}<a href="#vbtg-nutrients">{{ s.nutrients_title }}</a>{%- endif -%}
+        <a href="#vbtg-why">{{ s.why_title | default: 'Why supplement?' }}</a>
+        <a href="#vbtg-products">Shop {{ collection.title }}</a>
+      </nav>
+    </div>
+    {%- assign hero_img = s.hero_image -%}
+    {%- if hero_img != blank -%}<div class="vbtg__hero-img"><img src="{{ hero_img | image_url: width: 1200 }}" srcset="{{ hero_img | image_url: width: 700 }} 700w, {{ hero_img | image_url: width: 1200 }} 1200w" sizes="(max-width: 749px) 100vw, 45vw" alt="{{ hero_img.alt | default: title | escape }}" loading="eager" width="1200" height="900"></div>
+    {%- elsif collection.image -%}<div class="vbtg__hero-img"><img src="{{ collection.image | image_url: width: 1200 }}" alt="{{ collection.image.alt | default: title | escape }}" loading="eager" width="1200" height="900"></div>{%- endif -%}
+  </div></div></section>
+
+  {%- assign group_blocks = section.blocks | where: 'type', 'group' -%}
+  {%- if group_blocks.size > 0 -%}
+  <section class="vbtg__sec" id="vbtg-groups"><div class="vbtg__wrap">
+    <h2 class="vbtg__h2">{{ s.groups_title | default: 'How they are grouped' }}</h2>
+    {%- if s.groups_intro != blank -%}<div class="vbtg__intro">{{ s.groups_intro }}</div>{%- endif -%}
+    <div class="vbtg__cards">
+      {%- for b in group_blocks -%}
+      <article class="vbtg__card" {{ b.shopify_attributes }}>{% if b.settings.tag != blank %}<span class="vbtg__tag">{{ b.settings.tag }}</span>{% endif %}<h3>{{ b.settings.title }}</h3><p>{{ b.settings.text }}</p></article>
+      {%- endfor -%}
+    </div>
+  </div></section>
+  {%- endif -%}
+
+  {%- assign nut_blocks = section.blocks | where: 'type', 'nutrient' -%}
+  {%- if nut_blocks.size > 0 -%}
+  <section class="vbtg__sec vbtg__sec--tint" id="vbtg-nutrients"><div class="vbtg__wrap">
+    <h2 class="vbtg__h2">{{ s.nutrients_title | default: 'Meet each one' }}</h2>
+    {%- if s.nutrients_intro != blank -%}<div class="vbtg__intro">{{ s.nutrients_intro }}</div>{%- endif -%}
+    <div class="vbtg__nutrients">
+      {%- for b in nut_blocks -%}
+      <a class="vbtg__nut" href="{{ b.settings.url | default: '#' }}" {{ b.shopify_attributes }}>{% if b.settings.group != blank %}<span class="vbtg__group">{{ b.settings.group }}</span>{% endif %}<strong>{{ b.settings.name }}</strong><span>{{ b.settings.text }}</span><span class="vbtg__more">{{ b.settings.link_text | default: 'Learn more' }} →</span></a>
+      {%- endfor -%}
+    </div>
+  </div></section>
+  {%- endif -%}
+
+  <section class="vbtg__sec" id="vbtg-why"><div class="vbtg__wrap">
+    <div class="vbtg__cols">
+      {%- if s.benefits != blank -%}<div class="vbtg__col"><h3>{{ s.benefits_title | default: 'What they do for you' }}</h3><div class="rte">{{ s.benefits }}</div></div>{%- endif -%}
+      {%- if s.sources != blank -%}<div class="vbtg__col"><h3>{{ s.sources_title | default: 'Natural sources' }}</h3><div class="rte">{{ s.sources }}</div></div>{%- endif -%}
+      {%- if s.why != blank -%}<div class="vbtg__col"><h3>{{ s.why_title | default: 'Why supplement?' }}</h3><div class="rte">{{ s.why }}</div></div>{%- endif -%}
+    </div>
+  </div></section>
+
+  {%- if s.syn_text != blank -%}
+  <section class="vbtg__sec" style="padding-top:0"><div class="vbtg__wrap"><div class="vbtg__syn">
+    <div><h2>{{ s.syn_title | default: 'Why probiotics make them work better' }}</h2><p>{{ s.syn_text }}</p><a href="{{ s.syn_url | default: '/pages/what-is-microencapsulation' }}">{{ s.syn_link | default: 'See how we keep every good bacterium alive' }}</a></div>
+    {%- if s.syn_image != blank -%}<img src="{{ s.syn_image | image_url: width: 600 }}" alt="{{ s.syn_image.alt | default: 'Velobiotics micro-shielded probiotics' | escape }}" loading="lazy" width="600" height="600" style="width:100%;border-radius:18px;">{%- endif -%}
+  </div></div></section>
+  {%- endif -%}
+
+  {%- assign faq_blocks = section.blocks | where: 'type', 'faq' -%}
+  {%- if faq_blocks.size > 0 -%}
+  <section class="vbtg__sec vbtg__sec--tint"><div class="vbtg__wrap" style="max-width:860px">
+    <h2 class="vbtg__h2">{{ s.faq_title | default: 'Common questions' }}</h2>
+    <div class="vbtg__faq">{%- for b in faq_blocks -%}<details {{ b.shopify_attributes }}><summary>{{ b.settings.q }}</summary><div class="vbtg__a">{{ b.settings.a }}</div></details>{%- endfor -%}</div>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{%- for b in faq_blocks -%}{"@type":"Question","name":{{ b.settings.q | strip_html | json }},"acceptedAnswer":{"@type":"Answer","text":{{ b.settings.a | strip_html | json }}}}{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]}</script>
+  </div></section>
+  {%- endif -%}
+
+  <section class="vbtg__sec" id="vbtg-products"><div class="vbtg__wrap">
+    <h2 class="vbtg__h2">{{ s.products_title | default: 'Shop' }} <em>{{ collection.title }}</em></h2>
+    {%- if s.products_intro != blank -%}<div class="vbtg__intro">{{ s.products_intro }}</div>{%- endif -%}
+    <div class="vbtg__products">
+      {%- for p in collection.products limit: 24 -%}
+      <a class="vbtg__prod" href="{{ p.url }}"><img src="{{ p.featured_image | image_url: width: 600 }}" alt="{{ p.featured_image.alt | default: p.title | escape }}" loading="lazy" width="600" height="600"><div><strong>{{ p.title }}</strong><span>{{ p.price | money }}</span></div></a>
+      {%- endfor -%}
+    </div>
+    {%- if s.disclaimer != blank -%}<p class="vbtg__note">{{ s.disclaimer }}</p>{%- endif -%}
+  </div></section>
+</div>
+
+{% schema %}
+{
+  "name": "VB · Topic guide",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "title", "label": "Title (defaults to collection title)" },
+    { "type": "richtext", "id": "lead", "label": "Lead paragraph(s)" },
+    { "type": "image_picker", "id": "hero_image", "label": "Hero image" },
+    { "type": "text", "id": "groups_title", "label": "Groups section title", "default": "How they are grouped" },
+    { "type": "richtext", "id": "groups_intro", "label": "Groups intro" },
+    { "type": "text", "id": "nutrients_title", "label": "Nutrient list title", "default": "Meet each one" },
+    { "type": "richtext", "id": "nutrients_intro", "label": "Nutrient list intro" },
+    { "type": "text", "id": "benefits_title", "label": "Benefits title", "default": "What they do for you" },
+    { "type": "richtext", "id": "benefits", "label": "Benefits" },
+    { "type": "text", "id": "sources_title", "label": "Sources title", "default": "Natural sources" },
+    { "type": "richtext", "id": "sources", "label": "Natural sources" },
+    { "type": "text", "id": "why_title", "label": "Why supplement title", "default": "Why supplement?" },
+    { "type": "richtext", "id": "why", "label": "Why supplement" },
+    { "type": "text", "id": "syn_title", "label": "Probiotic synergy title", "default": "Why probiotics make them work better" },
+    { "type": "textarea", "id": "syn_text", "label": "Probiotic synergy text" },
+    { "type": "text", "id": "syn_link", "label": "Synergy link text", "default": "See how we keep every good bacterium alive" },
+    { "type": "url", "id": "syn_url", "label": "Synergy link" },
+    { "type": "image_picker", "id": "syn_image", "label": "Synergy image" },
+    { "type": "text", "id": "faq_title", "label": "FAQ title", "default": "Common questions" },
+    { "type": "text", "id": "products_title", "label": "Products title", "default": "Shop" },
+    { "type": "richtext", "id": "products_intro", "label": "Products intro" },
+    { "type": "textarea", "id": "disclaimer", "label": "Disclaimer", "default": "Supplements support a healthy diet and lifestyle. They do not treat, cure or prevent any disease. Speak to your healthcare professional if you are pregnant, breastfeeding, on medication or have a medical condition." }
+  ],
+  "blocks": [
+    { "type": "group", "name": "Group card", "settings": [ { "type": "text", "id": "tag", "label": "Tag" }, { "type": "text", "id": "title", "label": "Title" }, { "type": "textarea", "id": "text", "label": "Text" } ] },
+    { "type": "nutrient", "name": "Nutrient link", "settings": [ { "type": "text", "id": "group", "label": "Group label" }, { "type": "text", "id": "name", "label": "Name" }, { "type": "textarea", "id": "text", "label": "One-line benefit" }, { "type": "url", "id": "url", "label": "Link" }, { "type": "text", "id": "link_text", "label": "Link text", "default": "Learn more" } ] },
+    { "type": "faq", "name": "FAQ", "settings": [ { "type": "text", "id": "q", "label": "Question" }, { "type": "richtext", "id": "a", "label": "Answer" } ] }
+  ],
+  "presets": [ { "name": "VB · Topic guide" } ]
+}
+{% endschema %}

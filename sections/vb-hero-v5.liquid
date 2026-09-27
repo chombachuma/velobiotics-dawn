@@ -1,0 +1,190 @@
+{%- comment -%}
+  VB · Home Hero v5 (27 Sep 2026) — edge-to-edge photo hero.
+  - Full-bleed left/right and pulled up under the (transparent-at-top) header, so the photo touches the top edge.
+  - Art-directed images: separate desktop (16:9) and mobile (4:5) crops; copy sits beside the face on desktop and below it on mobile.
+  - Copy always sits on a soft scrim (light or dark) for contrast; the photo itself is shown at full brightness.
+{%- endcomment -%}
+{%- liquid
+  assign s = section.settings
+  assign desk = ''
+  if s.desktop_image != blank
+    assign desk = s.desktop_image | image_url: width: 2400
+    assign desk_set = s.desktop_image | image_url: width: 1200 | append: ' 1200w, ' | append: desk | append: ' 2400w'
+  elsif s.desktop_url != blank
+    assign desk = s.desktop_url
+    assign desk_set = desk | append: ' 2400w'
+  endif
+  assign mob = ''
+  if s.mobile_image != blank
+    assign mob = s.mobile_image | image_url: width: 1080
+    assign mob_set = s.mobile_image | image_url: width: 720 | append: ' 720w, ' | append: mob | append: ' 1080w'
+  elsif s.mobile_url != blank
+    assign mob = s.mobile_url
+    assign mob_set = mob | append: ' 1080w'
+  endif
+  if mob == blank
+    assign mob = desk
+    assign mob_set = desk_set
+  endif
+  assign accent = s.accent_color | default: '#4d8c44'
+  assign strength = s.scrim_strength | default: 85 | times: 1.0 | divided_by: 100
+  if s.scrim_style == 'dark'
+    assign text = '#ffffff'
+    assign sub_text = 'rgba(255,255,255,0.88)'
+    assign scrim = '8,34,12'
+    assign chip_bg = 'rgba(255,255,255,0.14)'
+    assign chip_border = 'rgba(255,255,255,0.35)'
+    assign cta2_bg = 'rgba(255,255,255,0.14)'
+    assign cta2_border = 'rgba(255,255,255,0.55)'
+  else
+    assign text = s.text_color | default: '#10250f'
+    assign sub_text = '#243a22'
+    assign scrim = '242,248,240'
+    assign chip_bg = '#ffffff'
+    assign chip_border = accent
+    assign cta2_bg = 'rgba(255,255,255,0.92)'
+    assign cta2_border = '#bcd1b8'
+  endif
+  assign s2 = strength | times: 0.8
+  assign s3 = strength | times: 0.45
+  assign sid = section.id
+-%}
+<style>
+  #vbh5-{{ sid }} { --vbh5-hdr: 0px; position: relative; width: 100vw; margin-left: calc(50% - 50vw); overflow: hidden; background: #dfeedd; color: {{ text }}; isolation: isolate; }
+  #vbh5-{{ sid }}.vbh5--under { margin-top: calc(-1 * var(--vbh5-hdr)); }
+  #vbh5-{{ sid }} .vbh5__media { position: absolute; inset: 0; z-index: 0; }
+  #vbh5-{{ sid }} .vbh5__media img { width: 100%; height: 100%; object-fit: cover; object-position: {{ s.desktop_position | default: 'center 15%' }}; display: block; }
+  #vbh5-{{ sid }} .vbh5__scrim { position: absolute; inset: 0; z-index: 1; pointer-events: none;
+    background: linear-gradient(90deg, rgba({{ scrim }},{{ strength }}) 0%, rgba({{ scrim }},{{ s2 }}) 30%, rgba({{ scrim }},{{ s3 }}) 46%, rgba({{ scrim }},0) 62%); }
+  #vbh5-{{ sid }} .vbh5__topfade { position: absolute; left: 0; right: 0; top: 0; height: calc(var(--vbh5-hdr) + 70px); z-index: 1; pointer-events: none;
+    background: linear-gradient(180deg, rgba(255,255,255,{{ s.header_fade | default: 55 | times: 1.0 | divided_by: 100 }}) 0%, rgba(255,255,255,0) 100%); }
+  #vbh5-{{ sid }} .vbh5__wrap { position: relative; z-index: 2; max-width: 1280px; margin: 0 auto; padding: calc(var(--vbh5-hdr) + {{ s.pad_top | default: 56 }}px) 40px {{ s.pad_bottom | default: 72 }}px; min-height: min({{ s.min_height | default: 820 }}px, {{ s.vh | default: 92 }}vh); display: flex; align-items: {{ s.v_align | default: 'center' }}; }
+  #vbh5-{{ sid }} .vbh5__copy { max-width: {{ s.copy_width | default: 560 }}px; text-align: left; }
+  #vbh5-{{ sid }} .vbh5__eyebrow { display: inline-flex; align-items: center; gap: 8px; background: {{ chip_bg }}; color: {% if s.scrim_style == 'dark' %}#fff{% else %}{{ accent }}{% endif %}; font-size: 11.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; padding: 8px 14px; border-radius: 999px; border: 1.5px solid {{ chip_border }}; margin: 0 0 18px; backdrop-filter: blur(6px); }
+  #vbh5-{{ sid }} .vbh5__eyebrow::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: {{ accent }}; }
+  #vbh5-{{ sid }} .vbh5__rating { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 0 0 16px; font-size: 13.5px; color: {{ sub_text }}; }
+  #vbh5-{{ sid }} .vbh5__rating .stars { color: #ffb43a; letter-spacing: 1px; font-size: 15px; }
+  #vbh5-{{ sid }} .vbh5__rating .dot { width: 4px; height: 4px; border-radius: 50%; background: currentColor; opacity: .5; }
+  #vbh5-{{ sid }} .vbh5__rating strong { color: {{ text }}; font-weight: 800; }
+  #vbh5-{{ sid }} h1 { font-size: clamp(36px, 4.6vw, {{ s.headline_fs | default: 66 }}px); line-height: 1.02; font-weight: 800; letter-spacing: -.02em; margin: 0 0 18px; color: {{ text }}; text-wrap: balance; }
+  #vbh5-{{ sid }} h1 em { font-style: normal; color: {{ accent }}; {% if s.scrim_style == 'dark' %}color: #9fe08f;{% endif %} }
+  #vbh5-{{ sid }} .vbh5__sub { font-size: {{ s.sub_fs | default: 18 }}px; line-height: 1.55; color: {{ sub_text }}; margin: 0 0 26px; font-weight: 500; max-width: 520px; }
+  #vbh5-{{ sid }} .vbh5__ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+  #vbh5-{{ sid }} .vbh5__cta { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 15px 30px; border-radius: 999px; text-decoration: none; font-weight: 700; font-size: 15px; transition: transform .18s ease, filter .18s ease, border-color .18s ease; }
+  #vbh5-{{ sid }} .vbh5__cta--primary { background: {{ accent }}; color: #fff !important; box-shadow: 0 12px 28px rgba(20,60,20,.28); }
+  #vbh5-{{ sid }} .vbh5__cta--primary:hover { filter: brightness(.9); transform: translateY(-2px); }
+  #vbh5-{{ sid }} .vbh5__cta--secondary { background: {{ cta2_bg }}; color: {{ text }} !important; border: 2px solid {{ cta2_border }}; backdrop-filter: blur(8px); }
+  #vbh5-{{ sid }} .vbh5__cta--secondary:hover { border-color: {{ accent }}; transform: translateY(-2px); }
+  #vbh5-{{ sid }} .vbh5__trust { margin-top: 26px; display: flex; gap: 18px; flex-wrap: wrap; font-size: 12.5px; font-weight: 600; color: {{ sub_text }}; }
+  #vbh5-{{ sid }} .vbh5__trust span::before { content: '✓'; color: {{ accent }}; margin-right: 6px; font-weight: 800; }
+  @media (max-width: 749px) {
+    #vbh5-{{ sid }} .vbh5__media img { object-position: {{ s.mobile_position | default: 'center top' }}; }
+    #vbh5-{{ sid }} .vbh5__scrim { background: linear-gradient(0deg, rgba({{ scrim }},{{ strength | plus: 0.1 | at_most: 1 }}) 0%, rgba({{ scrim }},{{ strength }}) 34%, rgba({{ scrim }},{{ s3 }}) 52%, rgba({{ scrim }},0) 66%); }
+    #vbh5-{{ sid }} .vbh5__wrap { padding: calc(var(--vbh5-hdr) + 24px) 20px 28px; min-height: min({{ s.min_height_mobile | default: 760 }}px, {{ s.vh_mobile | default: 94 }}svh); align-items: flex-end; }
+    #vbh5-{{ sid }} .vbh5__copy { max-width: 100%; }
+    #vbh5-{{ sid }} .vbh5__eyebrow { font-size: 10px; padding: 6px 11px; margin-bottom: 12px; }
+    #vbh5-{{ sid }} .vbh5__rating { font-size: 12px; margin-bottom: 12px; }
+    #vbh5-{{ sid }} h1 { font-size: clamp(30px, 9.2vw, 42px); margin-bottom: 12px; }
+    #vbh5-{{ sid }} .vbh5__sub { font-size: 15px; margin-bottom: 18px; }
+    #vbh5-{{ sid }} .vbh5__ctas { gap: 10px; }
+    #vbh5-{{ sid }} .vbh5__cta { padding: 13px 20px; font-size: 14px; flex: 1 1 auto; }
+    #vbh5-{{ sid }} .vbh5__trust { margin-top: 16px; gap: 12px; font-size: 11.5px; }
+  }
+  /* header sits transparently over the hero while the page is at the top */
+  .vbh5-hdr-clear .header-wrapper, .vbh5-hdr-clear header.header { background: transparent !important; border-bottom: 0 !important; box-shadow: none !important; }
+  .vbh5-hdr-clear .header-wrapper { transition: background .25s ease; }
+</style>
+
+<section id="vbh5-{{ sid }}" class="vbh5{% if s.under_header %} vbh5--under{% endif %}">
+  <div class="vbh5__media">
+    <picture>
+      <source media="(max-width: 749px)" srcset="{{ mob_set }}" sizes="100vw">
+      <img src="{{ desk }}" srcset="{{ desk_set }}" sizes="100vw" alt="{{ s.image_alt | default: 'Velobiotics probiotics' | escape }}" loading="eager" fetchpriority="high" width="2400" height="1350">
+    </picture>
+  </div>
+  <div class="vbh5__scrim"></div>
+  {%- if s.under_header -%}<div class="vbh5__topfade"></div>{%- endif -%}
+  <div class="vbh5__wrap">
+    <div class="vbh5__copy">
+      {%- if s.eyebrow != blank -%}<span class="vbh5__eyebrow">{{ s.eyebrow }}</span>{%- endif -%}
+      {%- if s.show_rating -%}
+        <div class="vbh5__rating"><span class="stars">★★★★★</span><span>Over <strong>{{ s.review_count }}</strong> reviews</span><span class="dot"></span><span><strong>{{ s.customer_count }}</strong> happy customers</span></div>
+      {%- endif -%}
+      <h1>{{ s.headline_pre }}{% if s.headline_highlight != blank %} <em>{{ s.headline_highlight }}</em>{% endif %}</h1>
+      {%- if s.sub != blank -%}<p class="vbh5__sub">{{ s.sub }}</p>{%- endif -%}
+      <div class="vbh5__ctas">
+        {%- if s.cta1_text != blank -%}<a class="vbh5__cta vbh5__cta--primary" href="{{ s.cta1_link | default: '/collections/all' }}">{{ s.cta1_text }}</a>{%- endif -%}
+        {%- if s.cta2_text != blank -%}<a class="vbh5__cta vbh5__cta--secondary" href="{{ s.cta2_link | default: '/pages/quiz' }}">{{ s.cta2_text }}</a>{%- endif -%}
+      </div>
+      {%- if s.trust1 != blank or s.trust2 != blank or s.trust3 != blank -%}
+        <div class="vbh5__trust">{% if s.trust1 != blank %}<span>{{ s.trust1 }}</span>{% endif %}{% if s.trust2 != blank %}<span>{{ s.trust2 }}</span>{% endif %}{% if s.trust3 != blank %}<span>{{ s.trust3 }}</span>{% endif %}</div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+{%- if s.under_header -%}
+<script>
+(function(){
+  var hero=document.getElementById('vbh5-{{ sid }}'); if(!hero) return;
+  var hdr=document.querySelector('.shopify-section-group-header-group[id$="__header"], #shopify-section-header, .shopify-section-header');
+  if(!hdr) return;
+  function size(){ var h=hdr.getBoundingClientRect().height; hero.style.setProperty('--vbh5-hdr', h+'px'); }
+  function clear(){ if(window.scrollY<24){ hdr.classList.add('vbh5-hdr-clear'); } else { hdr.classList.remove('vbh5-hdr-clear'); } }
+  hdr.style.position = hdr.style.position || 'relative'; hdr.style.zIndex = Math.max(parseInt(getComputedStyle(hdr).zIndex)||0, 5);
+  size(); clear();
+  window.addEventListener('resize', size); window.addEventListener('scroll', clear, {passive:true});
+  if(window.ResizeObserver){ new ResizeObserver(size).observe(hdr); }
+})();
+</script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "VB · Home Hero v5 (photo)",
+  "tag": "section",
+  "class": "vbh5-section",
+  "settings": [
+    { "type": "header", "content": "Images" },
+    { "type": "image_picker", "id": "desktop_image", "label": "Desktop photo (16:9, 2400px wide)" },
+    { "type": "text", "id": "desktop_url", "label": "Desktop photo URL (fallback)" },
+    { "type": "text", "id": "desktop_position", "label": "Desktop focal point (object-position)", "default": "center 15%" },
+    { "type": "image_picker", "id": "mobile_image", "label": "Mobile photo (4:5, 1080px wide)" },
+    { "type": "text", "id": "mobile_url", "label": "Mobile photo URL (fallback)" },
+    { "type": "text", "id": "mobile_position", "label": "Mobile focal point (object-position)", "default": "center top" },
+    { "type": "text", "id": "image_alt", "label": "Image alt text", "default": "Velobiotics probiotics" },
+    { "type": "header", "content": "Layout" },
+    { "type": "checkbox", "id": "under_header", "label": "Pull the photo up under the header (edge to edge at the top)", "default": true },
+    { "type": "range", "id": "header_fade", "label": "White fade behind header (%)", "min": 0, "max": 100, "step": 5, "default": 55 },
+    { "type": "select", "id": "scrim_style", "label": "Copy panel", "options": [ { "value": "light", "label": "Light panel, dark text" }, { "value": "dark", "label": "Dark green panel, white text" } ], "default": "light" },
+    { "type": "range", "id": "scrim_strength", "label": "Copy panel strength (%)", "min": 40, "max": 100, "step": 5, "default": 85 },
+    { "type": "range", "id": "copy_width", "label": "Copy width (px)", "min": 420, "max": 720, "step": 20, "default": 560 },
+    { "type": "select", "id": "v_align", "label": "Desktop vertical alignment", "options": [ { "value": "center", "label": "Centre" }, { "value": "flex-end", "label": "Bottom" } ], "default": "center" },
+    { "type": "range", "id": "min_height", "label": "Desktop max height (px)", "min": 560, "max": 1000, "step": 20, "default": 820 },
+    { "type": "range", "id": "vh", "label": "Desktop height (% of viewport)", "min": 60, "max": 100, "step": 2, "default": 92 },
+    { "type": "range", "id": "min_height_mobile", "label": "Mobile max height (px)", "min": 520, "max": 900, "step": 20, "default": 760 },
+    { "type": "range", "id": "vh_mobile", "label": "Mobile height (% of viewport)", "min": 60, "max": 100, "step": 2, "default": 94 },
+    { "type": "range", "id": "pad_top", "label": "Desktop copy top padding (px)", "min": 0, "max": 160, "step": 8, "default": 56 },
+    { "type": "range", "id": "pad_bottom", "label": "Desktop copy bottom padding (px)", "min": 0, "max": 160, "step": 8, "default": 72 },
+    { "type": "header", "content": "Text" },
+    { "type": "color", "id": "text_color", "label": "Text colour (light panel)", "default": "#10250f" },
+    { "type": "color", "id": "accent_color", "label": "Accent", "default": "#4d8c44" },
+    { "type": "range", "id": "headline_fs", "label": "Headline max size (px)", "min": 44, "max": 88, "step": 2, "default": 66 },
+    { "type": "range", "id": "sub_fs", "label": "Sub-heading size (px)", "min": 14, "max": 22, "step": 1, "default": 18 },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Patented probiotics that actually reach your gut" },
+    { "type": "checkbox", "id": "show_rating", "label": "Show rating line", "default": true },
+    { "type": "text", "id": "review_count", "label": "Review count", "default": "3,500" },
+    { "type": "text", "id": "customer_count", "label": "Customer count", "default": "300,000" },
+    { "type": "text", "id": "headline_pre", "label": "Headline", "default": "Most probiotics die in your stomach." },
+    { "type": "text", "id": "headline_highlight", "label": "Headline highlight", "default": "Ours don't." },
+    { "type": "textarea", "id": "sub", "label": "Sub-heading" },
+    { "type": "text", "id": "cta1_text", "label": "Primary button", "default": "Shop Products" },
+    { "type": "url", "id": "cta1_link", "label": "Primary link" },
+    { "type": "text", "id": "cta2_text", "label": "Secondary button", "default": "Take the Quiz" },
+    { "type": "url", "id": "cta2_link", "label": "Secondary link" },
+    { "type": "text", "id": "trust1", "label": "Trust point 1", "default": "Micro-shielded live cultures" },
+    { "type": "text", "id": "trust2", "label": "Trust point 2", "default": "Formulated by doctors" },
+    { "type": "text", "id": "trust3", "label": "Trust point 3", "default": "Free shipping on orders over R950" }
+  ],
+  "presets": [ { "name": "VB · Home Hero v5 (photo)" } ]
+}
+{% endschema %}

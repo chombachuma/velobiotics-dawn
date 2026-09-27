@@ -144,7 +144,7 @@
     {%- endif -%}
 
     {%- if section.settings.disclaimer != blank -%}
-      <div class="vb-psf__disclaimer">{{ section.settings.disclaimer }}</div>
+      <div class="vb-psf__disclaimer">{%- assign vb_dc = section.settings.disclaimer | default: '' -%}{%- if vb_dc != blank and vb_dc contains 'SAHPRA' -%}{%- assign vb_dc = '' -%}{%- endif -%}{%- if vb_dc != blank -%}{{ vb_dc }}{%- else -%}{%- render 'vb-market', key: 'disclaimer_short' -%}{%- endif -%}</div>
     {%- endif -%}
   </div>
 </section>

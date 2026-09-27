@@ -1,0 +1,175 @@
+{%- comment -%}
+  vb-market: ONE place for market-aware copy. Usage: {% render 'vb-market', key: 'shipping_line' %}
+  Market is resolved from localization.market.handle first, then the visitor's country.
+  Handles: za (South Africa), united-states, namibia; future: kenya, united-kingdom, australia.
+  Keys: code | regulator | regulators_aware | manufacturing_label | disclaimer | disclaimer_short |
+        shipping_line | delivery_time | privacy_law | trusted_line | retailers | support_line | formulated_line | ships_to
+  Add a market: add a `when` branch to each key below. Nothing else in the theme needs to change.
+{%- endcomment -%}
+{%- liquid
+  assign mh = localization.market.handle | default: ''
+  assign cc = localization.country.iso_code | default: 'ZA'
+  case mh
+    when 'za' or 'south-africa'
+      assign mk = 'ZA'
+    when 'united-states' or 'us' or 'international'
+      assign mk = 'US'
+    when 'namibia' or 'na'
+      assign mk = 'NA'
+    when 'kenya' or 'ke'
+      assign mk = 'KE'
+    when 'united-kingdom' or 'uk' or 'gb'
+      assign mk = 'GB'
+    when 'australia' or 'au'
+      assign mk = 'AU'
+    else
+      if cc == 'ZA' or cc == 'US' or cc == 'NA' or cc == 'KE' or cc == 'GB' or cc == 'AU'
+        assign mk = cc
+      else
+        assign mk = 'US'
+      endif
+  endcase
+
+  case key
+    when 'code'
+      echo mk
+
+    when 'regulator'
+      case mk
+        when 'ZA'
+          echo 'SAHPRA'
+        when 'GB'
+          echo 'MHRA'
+        when 'KE'
+          echo 'Pharmacy and Poisons Board'
+        when 'AU'
+          echo 'TGA'
+        when 'NA'
+          echo 'NMRC'
+        else
+          echo 'FDA'
+      endcase
+
+    when 'regulators_aware'
+      case mk
+        when 'ZA'
+          echo 'SAHPRA &amp; FDA-aware'
+        when 'US'
+          echo 'FDA-aware, GMP-certified'
+        else
+          echo 'GMP-certified'
+      endcase
+
+    when 'manufacturing_label'
+      case mk
+        when 'ZA'
+          echo 'SAHPRA-Compliant Manufacturing'
+        else
+          echo 'GMP-Certified Manufacturing'
+      endcase
+
+    when 'disclaimer'
+      case mk
+        when 'ZA'
+          echo 'These statements have not been evaluated by SAHPRA. This product is a food supplement and is not intended to diagnose, treat, cure, or prevent any disease. Consult your healthcare provider before use if you are pregnant, nursing, taking medication, or have a medical condition. Individual results may vary. Velobiotics products are SAHPRA-aware Category D complementary medicines, manufactured in SAHPRA-compliant facilities.'
+        when 'US'
+          echo 'These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Consult your healthcare provider before use if you are pregnant, nursing, taking medication, or have a medical condition. Individual results may vary. Velobiotics products are dietary supplements manufactured in GMP-certified facilities.'
+        else
+          echo 'This product is a food supplement and is not intended to diagnose, treat, cure, or prevent any disease. Consult your healthcare provider before use if you are pregnant, nursing, taking medication, or have a medical condition. Individual results may vary. Velobiotics products are manufactured in GMP-certified facilities.'
+      endcase
+
+    when 'disclaimer_short'
+      case mk
+        when 'ZA'
+          echo 'These statements have not been evaluated by SAHPRA. Products are not intended to diagnose, treat, cure, or prevent any disease.'
+        when 'US'
+          echo 'These statements have not been evaluated by the FDA. Products are not intended to diagnose, treat, cure, or prevent any disease.'
+        else
+          echo 'Food supplements are not intended to diagnose, treat, cure, or prevent any disease.'
+      endcase
+
+    when 'shipping_line'
+      case mk
+        when 'ZA'
+          echo 'Free delivery on orders over R500'
+        when 'US'
+          echo 'Free US shipping on orders over $40'
+        when 'NA'
+          echo 'Flat-rate NamPost delivery to Namibia'
+        when 'KE'
+          echo 'Kenya delivery launching soon'
+        else
+          echo 'We currently ship to South Africa, Namibia and the United States'
+      endcase
+
+    when 'delivery_time'
+      case mk
+        when 'ZA'
+          echo '1–3 working days to major centres, 3–6 working days to outlying areas'
+        when 'US'
+          echo '2–5 business days from our US fulfilment centres'
+        when 'NA'
+          echo '5–10 working days via NamPost'
+        else
+          echo 'Delivery times are confirmed at checkout'
+      endcase
+
+    when 'ships_to'
+      echo 'South Africa, Namibia and the United States'
+
+    when 'privacy_law'
+      case mk
+        when 'ZA'
+          echo 'POPIA'
+        when 'GB'
+          echo 'UK GDPR'
+        when 'KE'
+          echo 'the Kenya Data Protection Act'
+        when 'AU'
+          echo 'the Privacy Act'
+        else
+          echo 'applicable privacy law'
+      endcase
+
+    when 'trusted_line'
+      case mk
+        when 'ZA'
+          echo 'Trusted by 300,000+ South Africans'
+        else
+          echo 'Trusted in 300,000+ homes worldwide'
+      endcase
+
+    when 'brand_blurb'
+      case mk
+        when 'ZA'
+          echo 'Probiotics engineered to survive. Formulated by doctors. Trusted by 300,000+ South Africans. Patented MEP delivery — 1000× more probiotics reach your gut alive.'
+        else
+          echo 'Probiotics engineered to survive. Formulated by doctors. Trusted in 300,000+ homes worldwide. Patented MEP delivery — 1000× more probiotics reach your gut alive.'
+      endcase
+
+    when 'retailers'
+      case mk
+        when 'ZA'
+          echo 'Also available at Clicks, Dis-Chem, Takealot and independent pharmacies'
+        else
+          echo ''
+      endcase
+
+    when 'support_line'
+      case mk
+        when 'ZA'
+          echo 'WhatsApp +27 11 392 2550 · support@velobiotics.com'
+        else
+          echo 'support@velobiotics.com'
+      endcase
+
+    when 'formulated_line'
+      case mk
+        when 'ZA'
+          echo '🇿🇦 Formulated in Johannesburg'
+        else
+          echo '🔬 Formulated by doctors and microbiologists'
+      endcase
+
+  endcase
+-%}

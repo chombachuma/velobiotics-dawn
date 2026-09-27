@@ -1,3 +1,4 @@
+{%- capture vbmk %}{% render 'vb-market', key: 'code' %}{% endcapture -%}{%- assign vbmk = vbmk | strip -%}
 {%- comment -%}
   VB · Trusted by Doctors — 4 credibility cards with SVG icons in Velobiotics green
 {%- endcomment -%}
@@ -34,7 +35,7 @@
     <div class="vb-docs__head">
       {%- if section.settings.eyebrow != blank -%}<p class="vb-docs__eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
       <h2 class="vb-docs__title">{{ section.settings.title_pre }}{%- if section.settings.title_highlight != blank %} <em>{{ section.settings.title_highlight }}</em>{%- endif -%}</h2>
-      {%- if section.settings.sub != blank -%}<p class="vb-docs__sub">{{ section.settings.sub }}</p>{%- endif -%}
+      {%- if section.settings.sub != blank -%}<p class="vb-docs__sub">{%- if vbmk == 'ZA' -%}{{ section.settings.sub }}{%- else -%}{{ section.settings.sub | replace: 'SAHPRA-aware manufacturing', 'GMP-certified manufacturing' }}{%- endif -%}</p>{%- endif -%}
     </div>
     <div class="vb-docs__grid">
       {%- for block in section.blocks -%}

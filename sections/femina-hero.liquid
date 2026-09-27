@@ -1,3 +1,4 @@
+{%- capture vbmk %}{% render 'vb-market', key: 'code' %}{% endcapture -%}{%- assign vbmk = vbmk | strip -%}
 {%- comment -%}
   Femina Collection Hero - Adapted from femina.care, harmonised with Velobiotics
 {%- endcomment -%}
@@ -91,7 +92,7 @@
     <div class="femina-hero__grid">
       <div>
         {%- if section.settings.eyebrow != blank -%}
-          <span class="femina-hero__eyebrow">{{ section.settings.eyebrow }}</span>
+          <span class="femina-hero__eyebrow">{%- if vbmk == 'ZA' -%}{{ section.settings.eyebrow }}{%- else -%}{{ section.settings.eyebrow | replace: "South Africa's #1 Intimate Health System", 'Doctor-formulated intimate health system' | replace: "South Africa's most-reviewed", 'our most-reviewed' }}{%- endif -%}</span>
         {%- endif -%}
         <h1 class="femina-hero__headline">
           {{ section.settings.headline_pre }}
@@ -101,7 +102,7 @@
           {{ section.settings.headline_post }}
         </h1>
         {%- if section.settings.sub != blank -%}
-          <p class="femina-hero__sub">{{ section.settings.sub }}</p>
+          <p class="femina-hero__sub">{%- if vbmk == 'ZA' -%}{{ section.settings.sub }}{%- else -%}{{ section.settings.sub | replace: "South Africa's #1 Intimate Health System", 'Doctor-formulated intimate health system' | replace: "South Africa's most-reviewed", 'our most-reviewed' }}{%- endif -%}</p>
         {%- endif -%}
         <div class="femina-hero__ctas">
           {%- if section.settings.cta1_text != blank -%}

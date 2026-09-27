@@ -20,7 +20,7 @@
       "type": "vb-shipping-bar",
       "settings": {
         "threshold_zar": 500,
-        "threshold_usd": 30,
+        "threshold_usd": 40,
         "threshold_eur": 30,
         "threshold_gbp": 25,
         "threshold_aud": 50,

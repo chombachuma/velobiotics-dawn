@@ -1,3 +1,4 @@
+{%- capture vbmk %}{% render 'vb-market', key: 'code' %}{% endcapture -%}{%- assign vbmk = vbmk | strip -%}
 {%- comment -%} VB Cart — Velobiotics-branded · Poppins · compact · subscription + discount meta {%- endcomment -%}
 <style>
 .vbc, .vbc *, .vbc *::before, .vbc *::after { font-family: 'Poppins', system-ui, -apple-system, sans-serif !important; }
@@ -138,7 +139,9 @@
         <span class="vbc__eb">{{ section.settings.eyebrow | default: 'Your wellness stack' }}</span>
         <h1 class="vbc__h">{{ section.settings.title_pre | default: 'Almost' }} <em>{{ section.settings.title_highlight | default: 'there.' }}</em></h1>
       </div>
-      <p class="vbc__sub">{{ section.settings.sub | default: 'Free shipping kicks in soon · 30-day money-back covers everything.' }}</p>
+      {%- if section.settings.sub != blank -%}
+        <p class="vbc__sub">{{ section.settings.sub }}</p>
+      {%- endif -%}
     </header>
 
     {%- if cart.item_count > 0 -%}
@@ -275,7 +278,7 @@
       </div>
       <div class="vbc__trust-strip-item">
         <div class="vbc__trust-strip-icon">🩺</div>
-        <div class="vbc__trust-strip-text"><strong>Doctor-formulated</strong><span>SAHPRA & FDA-aware</span></div>
+        <div class="vbc__trust-strip-text"><strong>Doctor-formulated</strong><span>{%- render 'vb-market', key: 'regulators_aware' -%}</span></div>
       </div>
       <div class="vbc__trust-strip-item">
         <div class="vbc__trust-strip-icon">🧪</div>
@@ -298,7 +301,7 @@
               <p class="vbc__review-quote">"{{ block.settings.quote }}"</p>
               <div class="vbc__review-author">
                 <div class="vbc__review-avatar">{{ block.settings.initials | default: 'V' }}</div>
-                <div><strong>{{ block.settings.author }}</strong><small>{{ block.settings.meta }}</small></div>
+                <div><strong>{{ block.settings.author }}</strong><small>{%- if vbmk == 'ZA' -%}{{ block.settings.meta }}{%- else -%}{{ block.settings.meta | split: ' · ' | first }}{%- endif -%}</small></div>
                 <span class="vbc__review-source">{{ block.settings.source | default: 'Verified' }}</span>
               </div>
             </div>

@@ -1,3 +1,4 @@
+{%- capture vbmk %}{% render 'vb-market', key: 'code' %}{% endcapture -%}{%- assign vbmk = vbmk | strip -%}
 {%- comment -%} VB · FAQ — accordion {%- endcomment -%}
 
 <style>
@@ -38,7 +39,7 @@
             <span>{{ block.settings.question }}</span>
             <span class="vb-faq__plus">+</span>
           </summary>
-          <div class="vb-faq__a">{{ block.settings.answer }}</div>
+          <div class="vb-faq__a">{%- if vbmk == 'ZA' -%}{{ block.settings.answer }}{%- else -%}{{ block.settings.answer | replace: 'SAHPRA-aware facilities', 'GMP-certified facilities' | replace: 'SAHPRA-compliant facilities', 'GMP-certified facilities' | replace: 'SAHPRA-aware Category D complementary medicines', 'food supplements' | replace: 'across South Africa', 'around the world' }}{%- endif -%}</div>
         </details>
       {%- endif -%}
     {%- endfor -%}

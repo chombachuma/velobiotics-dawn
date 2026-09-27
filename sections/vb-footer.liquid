@@ -79,7 +79,7 @@
           <input id="vb-footer-email" type="email" name="contact[email]" placeholder="Enter your email" required class="vb-footer__email-input" autocomplete="email">
           <button type="submit">Subscribe</button>
         </div>
-        <p class="vb-footer__email-note" data-vb-nl-note>By subscribing you consent to Velobiotics (Pty) Ltd emailing you gut-health tips and offers under POPIA. No spam, unsubscribe anytime. <a href="/policies/privacy-policy">Privacy Policy</a>.</p>
+        <p class="vb-footer__email-note" data-vb-nl-note>By subscribing you consent to Velobiotics (Pty) Ltd emailing you gut-health tips and offers under {%- render 'vb-market', key: 'privacy_law' -%}. No spam, unsubscribe anytime. <a href="/policies/privacy-policy">Privacy Policy</a>.</p>
       {%- endform -%}
       <script>
       (function(){
@@ -111,7 +111,7 @@
       {%- else -%}
         <span class="vb-footer__logo-text">VELOBIOTICS™</span>
       {%- endif -%}
-      <p>{{ section.settings.brand_blurb | default: 'Probiotics engineered to survive. Formulated by doctors. Trusted by 300,000+ South Africans. Patented MEP delivery — 1000× more probiotics reach your gut alive.' }}</p>
+      <p>{%- render 'vb-market', key: 'brand_blurb' -%}</p>
 
       {%- comment -%} Social icons {%- endcomment -%}
       <div class="vb-footer__socials">
@@ -218,7 +218,7 @@
   {%- comment -%} Disclaimer {%- endcomment -%}
   <div class="vb-footer__disclaimer">
     <div class="vb-footer__disclaimer-inner">
-      <p>{{ section.settings.disclaimer_text | default: 'These statements have not been evaluated by SAHPRA. This product is a food supplement and is not intended to diagnose, treat, cure, or prevent any disease. Always consult your healthcare practitioner before using any nutritional supplement, particularly if you are pregnant, breastfeeding, on chronic medication, or have a medical condition. Individual results may vary. Velobiotics products are SAHPRA-aware Category D complementary medicines, manufactured in SAHPRA-compliant facilities.' }}</p>
+      <p>{%- render 'vb-market', key: 'disclaimer' -%}</p>
     </div>
   </div>
 

@@ -12,10 +12,10 @@
         <span>🩺 Doctor-Recommended</span><span class="vb-dot">•</span>
         <span>🧪 Patented MEP Technology</span><span class="vb-dot">•</span>
         <span>🔄 100% Money-Back Guarantee</span><span class="vb-dot">•</span>
-        <span>🚚 Free Shipping Over R400</span><span class="vb-dot">•</span>
+        <span>🚚 {%- render 'vb-market', key: 'shipping_line' -%}</span><span class="vb-dot">•</span>
         <span>⭐ 3,500+ Verified Reviews</span><span class="vb-dot">•</span>
         <span>💊 1000× More Probiotics Delivered</span><span class="vb-dot">•</span>
-        <span>🏭 SAHPRA-Certified Manufacturing</span><span class="vb-dot">•</span>
+        <span>🏭 {%- render 'vb-market', key: 'manufacturing_label' -%}</span><span class="vb-dot">•</span>
       {%- endfor -%}
     </div>
   </div>

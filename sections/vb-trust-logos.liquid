@@ -1,3 +1,4 @@
+{%- capture vbmk %}{% render 'vb-market', key: 'code' %}{% endcapture -%}{%- assign vbmk = vbmk | strip -%}
 {%- comment -%} VB · Trust logos with copy under each (as-seen-on style) {%- endcomment -%}
 
 <style>
@@ -32,7 +33,7 @@
             {%- if block.settings.logo_url != blank -%}
               <div class="vb-tl__logo"><img src="{{ block.settings.logo_url }}" alt="{{ block.settings.title | escape }}" loading="lazy" /></div>
             {%- endif -%}
-            {%- if block.settings.title != blank -%}<p class="vb-tl__title">{{ block.settings.title }}</p>{%- endif -%}
+            {%- if block.settings.title != blank -%}<p class="vb-tl__title">{%- if block.settings.title == 'FDA|SAHPRA' or block.settings.title == 'SAHPRA-Aware' -%}{%- if vbmk == 'ZA' -%}SAHPRA &amp; FDA-aware{%- else -%}{%- render 'vb-market', key: 'regulator' -%}-aware{%- endif -%}{%- else -%}{{ block.settings.title }}{%- endif -%}</p>{%- endif -%}
             {%- if block.settings.sub != blank -%}<p class="vb-tl__sub">{{ block.settings.sub }}</p>{%- endif -%}
           </div>
         {%- endif -%}

@@ -309,7 +309,7 @@
         <a href="#vb-reviews">Be the first to review</a>
         {%- endif -%}
       </div>
-      {%- if section.settings.hook != blank -%}<p class="vb-pb__hook">{%- render 'vb-money-tokens', text: section.settings.hook, product: product -%}<!-- vbdbg2 [{% render 'vb-money-tokens', text: 'X {price} Y {save} Z {save_pct} W {shipping}', product: product %}] [{% render 'vb-money-tokens', text: 'plain', product: product %}] --></p>{%- endif -%}
+      {%- if section.settings.hook != blank -%}<p class="vb-pb__hook">{%- render 'vb-money-tokens', text: section.settings.hook, product: product -%}</p>{%- endif -%}
       {%- assign benefit_count = 0 -%}
       {%- for block in section.blocks -%}{%- if block.type == 'benefit' -%}{%- assign benefit_count = benefit_count | plus: 1 -%}{%- endif -%}{%- endfor -%}
       {%- if benefit_count > 0 -%}

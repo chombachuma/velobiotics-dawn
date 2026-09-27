@@ -69,7 +69,7 @@
           "name": {{ block.settings.question | strip_html | escape | json }},
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": {{ block.settings.answer | strip_html | escape | json }}
+            "text": {%- capture vb_ans_ld %}{% render 'vb-money-tokens', text: block.settings.answer %}{% endcapture -%}{{ vb_ans_ld | strip_html | escape | json }}
           }
         }
         {%- assign first_block = false -%}

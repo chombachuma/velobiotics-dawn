@@ -57,7 +57,7 @@
   #vbh5-{{ sid }} .vbh5__scrim { position: absolute; inset: 0; z-index: 1; pointer-events: none;
     background: linear-gradient(90deg, rgba({{ scrim }},{{ strength }}) 0%, rgba({{ scrim }},{{ s2 }}) 30%, rgba({{ scrim }},{{ s3 }}) 46%, rgba({{ scrim }},0) 62%); }
   #vbh5-{{ sid }} .vbh5__topfade { position: absolute; left: 0; right: 0; top: 0; height: calc(var(--vbh5-hdr) + 70px); z-index: 1; pointer-events: none;
-    background: linear-gradient(180deg, rgba(255,255,255,{{ s.header_fade | default: 55 | times: 1.0 | divided_by: 100 }}) 0%, rgba(255,255,255,0) 100%); }
+    background: linear-gradient(180deg, rgba(14,48,16,{{ s.header_fade | default: 55 | times: 1.0 | divided_by: 100 }}) 0%, rgba(14,48,16,{{ s.header_fade | default: 55 | times: 1.0 | divided_by: 250 }}) 55%, rgba(14,48,16,0) 100%); }
   #vbh5-{{ sid }} .vbh5__wrap { position: relative; z-index: 2; max-width: 1280px; margin: 0 auto; padding: calc(var(--vbh5-hdr) + {{ s.pad_top | default: 56 }}px) 40px {{ s.pad_bottom | default: 72 }}px; min-height: min({{ s.min_height | default: 820 }}px, {{ s.vh | default: 92 }}vh); display: flex; align-items: {{ s.v_align | default: 'center' }}; }
   #vbh5-{{ sid }} .vbh5__copy { max-width: {{ s.copy_width | default: 560 }}px; text-align: left; }
   #vbh5-{{ sid }} .vbh5__eyebrow { display: inline-flex; align-items: center; gap: 8px; background: {{ chip_bg }}; color: {% if s.scrim_style == 'dark' %}#fff{% else %}{{ accent }}{% endif %}; font-size: 11.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; padding: 8px 14px; border-radius: 999px; border: 1.5px solid {{ chip_border }}; margin: 0 0 18px; backdrop-filter: blur(6px); }
@@ -130,7 +130,6 @@
   if(!hdr) return;
   function size(){ var h=hdr.getBoundingClientRect().height; hero.style.setProperty('--vbh5-hdr', h+'px'); }
   function clear(){ if(window.scrollY<24){ hdr.classList.add('vbh5-hdr-clear'); } else { hdr.classList.remove('vbh5-hdr-clear'); } }
-  hdr.style.position = hdr.style.position || 'relative'; hdr.style.zIndex = Math.max(parseInt(getComputedStyle(hdr).zIndex)||0, 5);
   size(); clear();
   window.addEventListener('resize', size); window.addEventListener('scroll', clear, {passive:true});
   if(window.ResizeObserver){ new ResizeObserver(size).observe(hdr); }
@@ -154,7 +153,7 @@
     { "type": "text", "id": "image_alt", "label": "Image alt text", "default": "Velobiotics probiotics" },
     { "type": "header", "content": "Layout" },
     { "type": "checkbox", "id": "under_header", "label": "Pull the photo up under the header (edge to edge at the top)", "default": true },
-    { "type": "range", "id": "header_fade", "label": "White fade behind header (%)", "min": 0, "max": 100, "step": 5, "default": 55 },
+    { "type": "range", "id": "header_fade", "label": "Dark fade behind header (%) for white logo/menu", "min": 0, "max": 100, "step": 5, "default": 55 },
     { "type": "select", "id": "scrim_style", "label": "Copy panel", "options": [ { "value": "light", "label": "Light panel, dark text" }, { "value": "dark", "label": "Dark green panel, white text" } ], "default": "light" },
     { "type": "range", "id": "scrim_strength", "label": "Copy panel strength (%)", "min": 40, "max": 100, "step": 5, "default": 85 },
     { "type": "range", "id": "copy_width", "label": "Copy width (px)", "min": 420, "max": 720, "step": 20, "default": 560 },

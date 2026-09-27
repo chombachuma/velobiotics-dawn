@@ -21,7 +21,7 @@
         "header_fade": 55,
         "scrim_style": "light",
         "scrim_strength": 85,
-        "copy_width": 540,
+        "copy_width": 500,
         "v_align": "center",
         "min_height": 820,
         "vh": 92,

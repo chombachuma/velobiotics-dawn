@@ -55,7 +55,7 @@
   #vbh5-{{ sid }} .vbh5__media { position: absolute; inset: 0; z-index: 0; }
   #vbh5-{{ sid }} .vbh5__media img { width: 100%; height: 100%; object-fit: cover; object-position: {{ s.desktop_position | default: 'center 15%' }}; display: block; }
   #vbh5-{{ sid }} .vbh5__scrim { position: absolute; inset: 0; z-index: 1; pointer-events: none;
-    background: linear-gradient(90deg, rgba({{ scrim }},{{ strength }}) 0%, rgba({{ scrim }},{{ s2 }}) 30%, rgba({{ scrim }},{{ s3 }}) 46%, rgba({{ scrim }},0) 62%); }
+    background: linear-gradient(90deg, rgba({{ scrim }},{{ strength | plus: 0.1 | at_most: 1 }}) 0%, rgba({{ scrim }},{{ strength }}) 34%, rgba({{ scrim }},{{ s2 }}) 46%, rgba({{ scrim }},{{ s3 }}) 56%, rgba({{ scrim }},0) 68%); }
   #vbh5-{{ sid }} .vbh5__topfade { position: absolute; left: 0; right: 0; top: 0; height: calc(var(--vbh5-hdr) + 70px); z-index: 1; pointer-events: none;
     background: linear-gradient(180deg, rgba(14,48,16,{{ s.header_fade | default: 55 | times: 1.0 | divided_by: 100 }}) 0%, rgba(14,48,16,{{ s.header_fade | default: 55 | times: 1.0 | divided_by: 250 }}) 55%, rgba(14,48,16,0) 100%); }
   #vbh5-{{ sid }} .vbh5__wrap { position: relative; z-index: 2; max-width: 1280px; margin: 0 auto; padding: calc(var(--vbh5-hdr) + {{ s.pad_top | default: 56 }}px) 40px {{ s.pad_bottom | default: 72 }}px; min-height: min({{ s.min_height | default: 820 }}px, {{ s.vh | default: 92 }}vh); display: flex; align-items: {{ s.v_align | default: 'center' }}; }
@@ -79,7 +79,7 @@
   #vbh5-{{ sid }} .vbh5__trust span::before { content: '✓'; color: {{ accent }}; margin-right: 6px; font-weight: 800; }
   @media (max-width: 749px) {
     #vbh5-{{ sid }} .vbh5__media img { object-position: {{ s.mobile_position | default: 'center top' }}; }
-    #vbh5-{{ sid }} .vbh5__scrim { background: linear-gradient(0deg, rgba({{ scrim }},{{ strength | plus: 0.1 | at_most: 1 }}) 0%, rgba({{ scrim }},{{ strength }}) 34%, rgba({{ scrim }},{{ s3 }}) 52%, rgba({{ scrim }},0) 66%); }
+    #vbh5-{{ sid }} .vbh5__scrim { background: linear-gradient(0deg, rgba({{ scrim }},{{ strength | plus: 0.12 | at_most: 1 }}) 0%, rgba({{ scrim }},{{ strength | plus: 0.05 | at_most: 1 }}) 44%, rgba({{ scrim }},{{ s2 }}) 54%, rgba({{ scrim }},{{ s3 }}) 62%, rgba({{ scrim }},0) 72%); }
     #vbh5-{{ sid }} .vbh5__wrap { padding: calc(var(--vbh5-hdr) + 24px) 20px 28px; min-height: min({{ s.min_height_mobile | default: 760 }}px, {{ s.vh_mobile | default: 94 }}svh); align-items: flex-end; }
     #vbh5-{{ sid }} .vbh5__copy { max-width: 100%; }
     #vbh5-{{ sid }} .vbh5__eyebrow { font-size: 10px; padding: 6px 11px; margin-bottom: 10px; letter-spacing: .05em; }

@@ -1,3 +1,4 @@
+{%- capture vbmk %}{% render 'vb-market', key: 'code' %}{% endcapture -%}{%- assign vbmk = vbmk | strip -%}
 {%- comment -%}
   VB · Dynamic Free-Shipping Announcement Bar
   Multi-currency · live cart polling · velobiotics green
@@ -35,6 +36,9 @@
   assign remaining_cents = threshold_cents | minus: current_cents
 -%}
 
+{%- if vbmk == 'KE' or vbmk == 'GB' or vbmk == 'AU' -%}
+<div class="vb-shipbar" role="status" style="--vbsb-bg: {{ section.settings.bg_color | default: '#4d8c44' }}; --vbsb-fg: {{ section.settings.text_color | default: '#ffffff' }};"><div class="vb-shipbar__inner"><span class="vb-shipbar__text">🚚 {% render 'vb-market', key: 'shipping_line' %}</span></div></div>
+{%- else -%}
 <div
   class="vb-shipbar"
   data-vb-shipbar
@@ -214,6 +218,7 @@
 })();
 </script>
 
+{%- endif -%}
 {% schema %}
 {
   "name": "VB Shipping Bar",

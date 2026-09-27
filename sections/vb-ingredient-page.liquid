@@ -4,7 +4,28 @@
   page.content contains: .vb-ing[data-category][data-icon][data-evidence] > .vb-ing__oneliner + section[data-k] blocks
   + <script type="application/json" data-vb-ing> { found_in:[product handles], aliases:[...] }
 {%- endcomment -%}
+{%- liquid
+  assign pg_hero = page.metafields.custom.hero_image.value
+  assign pg_head = page.metafields.custom.hero_headline
+-%}
 <style>
+  .vbi__photo { position: relative; width: 100vw; margin-left: calc(50% - 50vw); overflow: hidden; background: #dfeedd; isolation: isolate; }
+  .vbi__photo-media { position: absolute; inset: 0; z-index: 0; }
+  .vbi__photo-media img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 30%; display: block; }
+  .vbi__photo-scrim { position: absolute; inset: 0; z-index: 1; display: block !important; pointer-events: none; background: linear-gradient(90deg, rgba(242,248,240,.96) 0%, rgba(242,248,240,.88) 32%, rgba(242,248,240,.55) 48%, rgba(242,248,240,0) 64%); }
+  .vbi__photo-in { position: relative; z-index: 2; max-width: 1120px; margin: 0 auto; padding: 64px 40px; min-height: min(560px, 70vh); display: flex; align-items: center; }
+  .vbi__photo-copy { max-width: 540px; text-align: left; }
+  .vbi__photo-copy .vbi__crumbs { text-align: left; }
+  .vbi__photo-copy .vbi__title { font-size: clamp(30px, 4vw, 50px); }
+  .vbi__photo-copy .vbi__one { margin: 0 0 18px; color: #243a22; }
+  .vbi__photo-copy .vbi__meta { justify-content: flex-start; }
+  @media (max-width: 749px) {
+    .vbi__photo-media img { object-position: 50% 22%; }
+    .vbi__photo-scrim { background: linear-gradient(0deg, rgba(242,248,240,.97) 0%, rgba(242,248,240,.9) 46%, rgba(242,248,240,.5) 60%, rgba(242,248,240,0) 74%); }
+    .vbi__photo-in { padding: 24px 22px 28px; min-height: min(640px, 88svh); align-items: flex-end; }
+    .vbi__photo-copy .vbi__title { font-size: clamp(28px, 8vw, 36px); }
+  }
+
   .vbi { --bp:#4d8c44; --bd:#2e5d28; --bt:#eef7ec; --ink:#1a2e1a; --mut:#5c6a5c; }
   .vbi__hero { background: radial-gradient(120% 100% at 50% 0%, #fff 0%, var(--bt) 70%); padding: 56px 20px 34px; }
   .vbi__hero-in { max-width: 980px; margin: 0 auto; text-align: center; }
@@ -52,7 +73,20 @@
 </style>
 
 <div class="vbi" data-vbi>
-  <div class="vbi__hero">
+  {%- if pg_hero != blank -%}
+<section class="vbi__photo">
+  <div class="vbi__photo-media"><img src="{{ pg_hero | image_url: width: 2400 }}" srcset="{{ pg_hero | image_url: width: 1200 }} 1200w, {{ pg_hero | image_url: width: 2400 }} 2400w" sizes="100vw" alt="{{ pg_hero.alt | default: page.title | escape }}" loading="eager" fetchpriority="high" width="2400" height="1350"></div>
+  <div class="vbi__photo-scrim"></div>
+  <div class="vbi__photo-in"><div class="vbi__photo-copy">
+    <p class="vbi__crumbs"><a href="/pages/ingredients">Ingredient Repository</a> · <span data-vbi-cat-crumb>Ingredient</span></p>
+    <span class="vbi__cat" data-vbi-cat>Ingredient</span>
+    <h1 class="vbi__title">{{ pg_head | default: page.title }}</h1>
+    <p class="vbi__one" data-vbi-one>{{ page.title }}</p>
+    <div class="vbi__meta" data-vbi-meta></div>
+  </div></div>
+</section>
+{%- else -%}
+<div class="vbi__hero">
     <div class="vbi__hero-in">
       <p class="vbi__crumbs"><a href="/pages/ingredients">Ingredient Repository</a> · <span data-vbi-cat-crumb>Ingredient</span></p>
       <div class="vbi__icon" data-vbi-icon>🌿</div>
@@ -62,7 +96,8 @@
       <div class="vbi__meta" data-vbi-meta></div>
     </div>
   </div>
-  <nav class="vbi__nav" aria-label="On this page"><div class="vbi__nav-in" data-vbi-nav></div></nav>
+  {%- endif -%}
+<nav class="vbi__nav" aria-label="On this page"><div class="vbi__nav-in" data-vbi-nav></div></nav>
   <div class="vbi__body">
     <article class="vbi__content" data-vbi-content>{{ page.content }}</article>
     <aside class="vbi__side">

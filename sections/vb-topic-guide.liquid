@@ -7,8 +7,14 @@
 <style>
   .vbtg { color: #14261a; }
   .vbtg__wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-  .vbtg__hero { background: linear-gradient(180deg, #f2f8f0 0%, #ffffff 100%); padding: 56px 0 40px; }
-  .vbtg__hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 40px; align-items: center; }
+  .vbtg__hero { position: relative; width: 100vw; margin-left: calc(50% - 50vw); overflow: hidden; background: #dfeedd; isolation: isolate; }
+  .vbtg__hero-media { position: absolute; inset: 0; z-index: 0; }
+  .vbtg__hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: 70% 30%; display: block; }
+  .vbtg__hero-scrim { position: absolute; inset: 0; z-index: 1; display: block !important; pointer-events: none; background: linear-gradient(90deg, rgba(242,248,240,.96) 0%, rgba(242,248,240,.88) 32%, rgba(242,248,240,.55) 48%, rgba(242,248,240,0) 64%); }
+  .vbtg__hero .vbtg__wrap { position: relative; z-index: 2; padding-top: 72px; padding-bottom: 72px; min-height: min(620px, 74vh); display: flex; align-items: center; }
+  .vbtg__hero-copy { max-width: 560px; }
+  .vbtg__hero--plain { background: linear-gradient(180deg, #f2f8f0 0%, #ffffff 100%); }
+  .vbtg__hero--plain .vbtg__wrap { min-height: 0; padding-top: 56px; padding-bottom: 40px; }
   .vbtg__eyebrow { display: inline-block; color: {{ accent }}; font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 12px; }
   .vbtg__h1 { font-size: clamp(32px, 4.4vw, 52px); font-weight: 800; line-height: 1.05; letter-spacing: -.02em; margin: 0 0 16px; }
   .vbtg__lead { font-size: 18px; line-height: 1.6; color: #2f4a33; margin: 0 0 22px; }
@@ -16,8 +22,6 @@
   .vbtg__jump { display: flex; flex-wrap: wrap; gap: 8px; }
   .vbtg__jump a { font-size: 13px; font-weight: 700; color: {{ accent }}; background: #fff; border: 1.5px solid #cfe0cb; border-radius: 999px; padding: 8px 14px; text-decoration: none; }
   .vbtg__jump a:hover { border-color: {{ accent }}; }
-  .vbtg__hero-img { border-radius: 24px; overflow: hidden; aspect-ratio: 4/3; background: #e6f0e3; }
-  .vbtg__hero-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
   .vbtg__sec { padding: 48px 0; }
   .vbtg__sec--tint { background: #f7faf6; }
   .vbtg__h2 { font-size: clamp(26px, 3vw, 36px); font-weight: 800; letter-spacing: -.015em; margin: 0 0 10px; }
@@ -58,9 +62,11 @@
   .vbtg__note { font-size: 13px; color: #6b8a70; margin-top: 20px; }
   @media (max-width: 749px) {
     .vbtg__wrap { padding: 0 16px; }
-    .vbtg__hero { padding: 28px 0 24px; }
-    .vbtg__hero-grid, .vbtg__syn { grid-template-columns: 1fr; gap: 20px; }
-    .vbtg__hero-img { order: -1; aspect-ratio: 16/10; border-radius: 16px; }
+    .vbtg__hero-media img { object-position: 60% 20%; }
+    .vbtg__hero-scrim { background: linear-gradient(0deg, rgba(242,248,240,.97) 0%, rgba(242,248,240,.9) 46%, rgba(242,248,240,.5) 60%, rgba(242,248,240,0) 74%); }
+    .vbtg__hero .vbtg__wrap { padding-top: 24px; padding-bottom: 28px; min-height: min(680px, 90svh); align-items: flex-end; }
+    .vbtg__h1 { font-size: clamp(28px, 8.4vw, 38px); }
+    .vbtg__syn { grid-template-columns: 1fr; gap: 20px; }
     .vbtg__lead { font-size: 16px; }
     .vbtg__sec { padding: 32px 0; }
     .vbtg__syn { padding: 24px; }
@@ -68,10 +74,15 @@
 </style>
 
 <div class="vbtg">
-  <section class="vbtg__hero"><div class="vbtg__wrap"><div class="vbtg__hero-grid">
-    <div>
+  {%- assign hero_img = s.hero_image | default: collection.image -%}
+  <section class="vbtg__hero{% if hero_img == blank %} vbtg__hero--plain{% endif %}">
+    {%- if hero_img != blank -%}
+    <div class="vbtg__hero-media"><img src="{{ hero_img | image_url: width: 2400 }}" srcset="{{ hero_img | image_url: width: 1200 }} 1200w, {{ hero_img | image_url: width: 2400 }} 2400w" sizes="100vw" alt="{{ hero_img.alt | default: title | escape }}" loading="eager" fetchpriority="high" width="2400" height="1350"></div>
+    <div class="vbtg__hero-scrim"></div>
+    {%- endif -%}
+    <div class="vbtg__wrap"><div class="vbtg__hero-copy">
       {%- if s.eyebrow != blank -%}<span class="vbtg__eyebrow">{{ s.eyebrow }}</span>{%- endif -%}
-      <h1 class="vbtg__h1">{{ title }}</h1>
+      <h1 class="vbtg__h1">{{ s.hero_headline | default: title }}</h1>
       <div class="vbtg__lead">{{ s.lead }}</div>
       <nav class="vbtg__jump" aria-label="On this page">
         {%- if s.groups_title != blank -%}<a href="#vbtg-groups">{{ s.groups_title }}</a>{%- endif -%}
@@ -79,11 +90,8 @@
         <a href="#vbtg-why">{{ s.why_title | default: 'Why supplement?' }}</a>
         <a href="#vbtg-products">Shop {{ collection.title }}</a>
       </nav>
-    </div>
-    {%- assign hero_img = s.hero_image -%}
-    {%- if hero_img != blank -%}<div class="vbtg__hero-img"><img src="{{ hero_img | image_url: width: 1200 }}" srcset="{{ hero_img | image_url: width: 700 }} 700w, {{ hero_img | image_url: width: 1200 }} 1200w" sizes="(max-width: 749px) 100vw, 45vw" alt="{{ hero_img.alt | default: title | escape }}" loading="eager" width="1200" height="900"></div>
-    {%- elsif collection.image -%}<div class="vbtg__hero-img"><img src="{{ collection.image | image_url: width: 1200 }}" alt="{{ collection.image.alt | default: title | escape }}" loading="eager" width="1200" height="900"></div>{%- endif -%}
-  </div></div></section>
+    </div></div>
+  </section>
 
   {%- assign group_blocks = section.blocks | where: 'type', 'group' -%}
   {%- if group_blocks.size > 0 -%}
@@ -154,7 +162,8 @@
     { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
     { "type": "text", "id": "title", "label": "Title (defaults to collection title)" },
     { "type": "richtext", "id": "lead", "label": "Lead paragraph(s)" },
-    { "type": "image_picker", "id": "hero_image", "label": "Hero image" },
+    { "type": "image_picker", "id": "hero_image", "label": "Hero image (16:9, full-bleed)" },
+    { "type": "text", "id": "hero_headline", "label": "Hero headline (defaults to the title)" },
     { "type": "text", "id": "groups_title", "label": "Groups section title", "default": "How they are grouped" },
     { "type": "richtext", "id": "groups_intro", "label": "Groups intro" },
     { "type": "text", "id": "nutrients_title", "label": "Nutrient list title", "default": "Meet each one" },

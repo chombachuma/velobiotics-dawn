@@ -1,0 +1,395 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "guide": {
+      "type": "vb-topic-guide",
+      "blocks": {
+        "group_adaptogens": {
+          "type": "group",
+          "settings": {
+            "tag": "Adaptogens",
+            "title": "Adaptogenic herbs",
+            "text": "Help the body adapt and cope with everyday stress, promoting balance and mental calm."
+          }
+        },
+        "group_mushrooms": {
+          "type": "group",
+          "settings": {
+            "tag": "Functional mushrooms",
+            "title": "Functional mushrooms",
+            "text": "Traditional mushrooms like lion's mane that support focus, clarity and general vitality."
+          }
+        },
+        "group_women": {
+          "type": "group",
+          "settings": {
+            "tag": "Women's botanicals",
+            "title": "Women's wellness",
+            "text": "Specialised botanicals such as black cohosh, red clover and evening primrose to support female hormonal harmony."
+          }
+        },
+        "group_men": {
+          "type": "group",
+          "settings": {
+            "tag": "Men's botanicals",
+            "title": "Men's vitality",
+            "text": "Botanicals like saw palmetto, tribulus and fenugreek designed to support male stamina and wellbeing."
+          }
+        },
+        "group_digestive": {
+          "type": "group",
+          "settings": {
+            "tag": "Digestive and metabolic botanicals",
+            "title": "Digestive & metabolic botanicals",
+            "text": "Plant extracts such as ginger, turmeric, dandelion, berberine and apple cider vinegar that support comfortable digestion and metabolic balance."
+          }
+        },
+        "nut_ashwagandha": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Adaptogens",
+            "name": "Ashwagandha",
+            "text": "Traditionally used to help you feel calmer and manage everyday stress.",
+            "url": "/collections/ashwagandha",
+            "link_text": "Shop & learn"
+          }
+        },
+        "nut_rhodiola": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Adaptogens",
+            "name": "Rhodiola",
+            "text": "Traditionally used to support mental stamina and reduce fatigue during stressful periods.",
+            "url": "/pages/ingredient-rhodiola-rosea",
+            "link_text": "Learn more"
+          }
+        },
+        "nut_ginseng": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Adaptogens",
+            "name": "Ginseng",
+            "text": "Traditionally used to maintain physical stamina, natural energy and mental alertness.",
+            "url": "/collections/ginseng-extract",
+            "link_text": "Shop & learn"
+          }
+        },
+        "nut_maca": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Adaptogens",
+            "name": "Maca",
+            "text": "Traditionally used to support endurance, vitality and balanced mood.",
+            "url": "/pages/ingredient-maca-root",
+            "link_text": "Learn more"
+          }
+        },
+        "nut_lions_mane": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Functional mushrooms",
+            "name": "Lion's Mane",
+            "text": "Traditionally used to support cognitive function, mental clarity and focus.",
+            "url": "/collections/lions-mane",
+            "link_text": "Shop & learn"
+          }
+        },
+        "nut_moringa": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Digestive and metabolic botanicals",
+            "name": "Moringa",
+            "text": "Nutrient-rich botanical traditionally used to support daily energy and vitality.",
+            "url": "/collections/moringa",
+            "link_text": "Shop & learn"
+          }
+        },
+        "nut_ginkgo": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Adaptogens",
+            "name": "Ginkgo Biloba",
+            "text": "Traditionally used to support healthy circulation and cognitive function.",
+            "url": "/collections/ginkgo-biloba",
+            "link_text": "Shop & learn"
+          }
+        },
+        "nut_turmeric": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Digestive and metabolic botanicals",
+            "name": "Turmeric",
+            "text": "Rich in curcuminoids, traditionally used to support joint comfort and digestive balance.",
+            "url": "/pages/ingredient-turmeric-root-extract",
+            "link_text": "Learn more"
+          }
+        },
+        "nut_ginger": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Digestive and metabolic botanicals",
+            "name": "Ginger",
+            "text": "Traditionally used to soothe the stomach and support healthy digestion.",
+            "url": "/pages/ingredient-ginger-root-extract",
+            "link_text": "Learn more"
+          }
+        },
+        "nut_green_tea": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Digestive and metabolic botanicals",
+            "name": "Green Tea Extract",
+            "text": "Rich in antioxidants, traditionally used to support metabolic health and general wellness.",
+            "url": "/pages/ingredient-green-tea-extract",
+            "link_text": "Learn more"
+          }
+        },
+        "nut_green_coffee": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Digestive and metabolic botanicals",
+            "name": "Green Coffee Bean",
+            "text": "Contains chlorogenic acids, traditionally used to support healthy weight management routines.",
+            "url": "/pages/ingredient-green-coffee-bean-extract",
+            "link_text": "Learn more"
+          }
+        },
+        "nut_berberine": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Digestive and metabolic botanicals",
+            "name": "Berberine",
+            "text": "Traditionally used to support healthy glucose metabolism and gut balance.",
+            "url": "/pages/ingredient-berberine",
+            "link_text": "Learn more"
+          }
+        },
+        "nut_dandelion": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Digestive and metabolic botanicals",
+            "name": "Dandelion Root",
+            "text": "Traditionally used to support fluid balance and natural digestive processes.",
+            "url": "/pages/ingredient-dandelion-root-extract",
+            "link_text": "Learn more"
+          }
+        },
+        "nut_acv": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Digestive and metabolic botanicals",
+            "name": "Apple Cider Vinegar",
+            "text": "Traditionally used to encourage stomach comfort and daily digestive harmony.",
+            "url": "/collections/apple-cider-vinegar",
+            "link_text": "Shop & learn"
+          }
+        },
+        "nut_cranberry": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Women's botanicals",
+            "name": "Cranberry",
+            "text": "Rich in proanthocyanidins, traditionally used to support urinary tract wellness.",
+            "url": "/pages/ingredient-cranberry-extract",
+            "link_text": "Learn more"
+          }
+        },
+        "nut_black_cohosh": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Women's botanicals",
+            "name": "Black Cohosh",
+            "text": "Traditionally used to support female comfort during hormonal shifts.",
+            "url": "/pages/ingredient-black-cohosh-extract",
+            "link_text": "Learn more"
+          }
+        },
+        "nut_red_clover": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Women's botanicals",
+            "name": "Red Clover",
+            "text": "Contains natural isoflavones, traditionally used to support female hormonal balance.",
+            "url": "/pages/ingredient-red-clover-extract",
+            "link_text": "Learn more"
+          }
+        },
+        "nut_dong_quai": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Women's botanicals",
+            "name": "Dong Quai",
+            "text": "Revered in traditional herbalism to support female cycle comfort and vitality.",
+            "url": "/pages/ingredient-dong-quai-extract",
+            "link_text": "Learn more"
+          }
+        },
+        "nut_chasteberry": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Women's botanicals",
+            "name": "Chasteberry",
+            "text": "Traditionally used to maintain menstrual balance and monthly wellbeing.",
+            "url": "/pages/ingredient-chasteberry-extract",
+            "link_text": "Learn more"
+          }
+        },
+        "nut_epo": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Women's botanicals",
+            "name": "Evening Primrose Oil",
+            "text": "Rich in gamma-linolenic acid (GLA), traditionally used to support skin and female balance.",
+            "url": "/pages/ingredient-evening-primrose-oil",
+            "link_text": "Learn more"
+          }
+        },
+        "nut_saw_palmetto": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Men's botanicals",
+            "name": "Saw Palmetto",
+            "text": "Traditionally used to support male urinary health and prostate wellness.",
+            "url": "/pages/ingredient-saw-palmetto-extract",
+            "link_text": "Learn more"
+          }
+        },
+        "nut_tribulus": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Men's botanicals",
+            "name": "Tribulus",
+            "text": "Traditionally used to support male vitality, strength and physical stamina.",
+            "url": "/pages/ingredient-tribulus-terrestris-extract",
+            "link_text": "Learn more"
+          }
+        },
+        "nut_fenugreek": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Men's botanicals",
+            "name": "Fenugreek",
+            "text": "Traditionally used to support male vitality and metabolic wellness.",
+            "url": "/pages/ingredient-fenugreek-extract",
+            "link_text": "Learn more"
+          }
+        },
+        "nut_sage": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Women's botanicals",
+            "name": "Sage Leaf",
+            "text": "Traditionally used to support temperature regulation and female comfort.",
+            "url": "/pages/ingredient-sage-leaf-extract",
+            "link_text": "Learn more"
+          }
+        },
+        "faq_meds": {
+          "type": "faq",
+          "settings": {
+            "q": "Are herbal supplements safe to take alongside prescription medication?",
+            "a": "<p>Botanical supplements contain active plant compounds that may interact with certain medications. You should always consult your doctor or healthcare professional before taking herbal supplements if you are taking prescription drugs.</p>"
+          }
+        },
+        "faq_timing": {
+          "type": "faq",
+          "settings": {
+            "q": "How long does it usually take to notice the benefits of botanical extracts?",
+            "a": "<p>Individual responses vary depending on the herb, dosage and your individual metabolism. Some botanicals provide noticeable support within a few days, while adaptogens and traditional herbs often build benefits gradually over 2 to 4 weeks of consistent use.</p>"
+          }
+        },
+        "faq_extract": {
+          "type": "faq",
+          "settings": {
+            "q": "What does 'standardised extract' mean and why is it important?",
+            "a": "<p>A standardised extract is processed to guarantee a precise percentage of the plant's key active phytonutrients in every dose. This ensures consistent quality, strength and effectiveness from capsule to capsule, unlike unstandardised raw powders.</p>"
+          }
+        },
+        "faq_combine": {
+          "type": "faq",
+          "settings": {
+            "q": "Can I combine different adaptogens and botanical supplements?",
+            "a": "<p>Many botanical supplements are designed to complement one another, such as pairing adaptogens for stress with digestive botanicals. However, it is best to introduce new supplements one at a time and consult a qualified practitioner to ensure compatibility.</p>"
+          }
+        },
+        "faq_pregnancy": {
+          "type": "faq",
+          "settings": {
+            "q": "Can I take botanical supplements while pregnant or breastfeeding?",
+            "a": "<p>Many herbs and botanical extracts are not recommended during pregnancy or breastfeeding due to potential effects on hormone balance or uterine tone. Always speak with your doctor or midwife before using any herbal supplement during pregnancy or lactation.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "group_adaptogens",
+        "group_mushrooms",
+        "group_women",
+        "group_men",
+        "group_digestive",
+        "nut_ashwagandha",
+        "nut_rhodiola",
+        "nut_ginseng",
+        "nut_maca",
+        "nut_lions_mane",
+        "nut_moringa",
+        "nut_ginkgo",
+        "nut_turmeric",
+        "nut_ginger",
+        "nut_green_tea",
+        "nut_green_coffee",
+        "nut_berberine",
+        "nut_dandelion",
+        "nut_acv",
+        "nut_cranberry",
+        "nut_black_cohosh",
+        "nut_red_clover",
+        "nut_dong_quai",
+        "nut_chasteberry",
+        "nut_epo",
+        "nut_saw_palmetto",
+        "nut_tribulus",
+        "nut_fenugreek",
+        "nut_sage",
+        "faq_meds",
+        "faq_timing",
+        "faq_extract",
+        "faq_combine",
+        "faq_pregnancy"
+      ],
+      "settings": {
+        "eyebrow": "Botanical guide",
+        "title": "Herbs & Botanicals",
+        "lead": "<p>Herbs and botanicals are plant-derived substances, including roots, leaves, berries, bark and mushrooms, that have been cherished for wellbeing across thousands of years. From traditional herbal infusions to modern nutrition, these natural compounds support everyday vital energy, resilience and balance.</p><p>Modern supplementation allows us to standardise active botanical extracts so you receive a consistent level of beneficial phytonutrients in every serving. When combined with care, herbs work harmoniously with your body's natural systems to maintain ongoing wellness.</p>",
+        "groups_title": "How they are grouped",
+        "groups_intro": "<p>Explore our main botanical categories tailored to support different aspects of your health and daily routine.</p>",
+        "nutrients_title": "Meet each botanical",
+        "nutrients_intro": "<p>Discover individual herbs and botanicals, their traditional uses and how they support your overall vitality.</p>",
+        "benefits_title": "What they do for you",
+        "benefits": "<ul><li><strong>Support natural stress resilience:</strong> Adaptogenic botanicals help maintain physical and mental balance during busy periods.</li><li><strong>Promote everyday digestive comfort:</strong> Traditional digestive herbs support smooth digestion and nutrient absorption.</li><li><strong>Maintain vitality and stamina:</strong> Functional mushrooms and energy-supporting plants promote natural vigour throughout the day.</li><li><strong>Encourage targeted balance:</strong> Specialized botanical extracts support female and male wellbeing through life's changing stages.</li><li><strong>Provide antioxidant nourishment:</strong> Polyphenol-rich plant extracts help shield cells against routine environmental oxidative stress.</li></ul>",
+        "sources_title": "Natural sources",
+        "sources": "<p>Botanicals have long been enjoyed in simple, traditional forms including brewed herbal teas, dried powders, liquid tinctures and whole culinary ingredients. Spices like ginger and turmeric remain household staples in cooking for both flavour and wellbeing.</p><p>While everyday foods and herbal infusions provide enjoyable dietary diversity, supplement extracts deliver concentrated, standardised amounts of active plant compounds with daily convenience.</p>",
+        "why_title": "Why supplement?",
+        "why": "<p>Standardised botanical extracts ensure that every batch delivers a consistent, measured level of active plant compounds. Supplements also offer everyday convenience and undergo quality testing to ensure purity and identity.</p><p>Because botanical extracts can be potent, always check with your healthcare professional before starting a new botanical routine, especially if you are taking medication, are pregnant or breastfeeding, or have an underlying medical condition.</p>",
+        "syn_title": "Why probiotics make them work better",
+        "syn_text": "Many active plant compounds rely on beneficial gut bacteria to convert them into easily absorbed forms, while a healthy gut lining supports efficient nutrient uptake. Velobiotics pairs quality botanical extracts with probiotics protected by a micro-shield that protects each individual bacterium against harsh stomach acid, delivering active cultures directly to your gut.",
+        "syn_link": "Learn about shop ingredients",
+        "syn_url": "/pages/shop-by-ingredient",
+        "faq_title": "Common questions",
+        "products_title": "Shop the botanical range",
+        "products_intro": "<p>Explore Velobiotics formulas featuring ashwagandha, lion's mane, moringa, sea moss and targeted men's wellness support.</p>",
+        "disclaimer": "Supplements support a healthy diet and lifestyle. They do not treat, cure or prevent any disease. Speak to your healthcare professional if you are pregnant, breastfeeding, on medication or have a medical condition."
+      }
+    }
+  },
+  "order": [
+    "guide"
+  ]
+}

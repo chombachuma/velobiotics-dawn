@@ -1,0 +1,265 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "guide": {
+      "type": "vb-topic-guide",
+      "blocks": {
+        "group_1": {
+          "type": "group",
+          "settings": {
+            "tag": "MACRO",
+            "title": "Macrominerals",
+            "text": "Minerals your body needs in larger daily amounts, including calcium, magnesium, potassium, sodium, and phosphorus."
+          }
+        },
+        "group_2": {
+          "type": "group",
+          "settings": {
+            "tag": "TRACE",
+            "title": "Trace minerals",
+            "text": "Minerals needed in tiny daily amounts that do big jobs, including iron, zinc, selenium, copper, iodine, chromium, manganese, molybdenum, and boron."
+          }
+        },
+        "group_3": {
+          "type": "group",
+          "settings": {
+            "tag": "BALANCE",
+            "title": "Electrolytes keep you balanced",
+            "text": "Sodium, potassium, and magnesium control fluid balance, prevent muscle cramps, and support hydration during daily activity."
+          }
+        },
+        "group_4": {
+          "type": "group",
+          "settings": {
+            "tag": "PAIRING",
+            "title": "Minerals compete for absorption",
+            "text": "Taking certain minerals together can block absorption, such as calcium and iron, so proper timing and smart pairing help your body absorb them best."
+          }
+        },
+        "nut_calcium": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Macromineral",
+            "name": "Calcium",
+            "text": "Builds and maintains strong bones and healthy teeth.",
+            "url": "/collections/calcium",
+            "link_text": "Shop & learn"
+          }
+        },
+        "nut_magnesium": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Macromineral",
+            "name": "Magnesium",
+            "text": "Relaxes muscles, supports nerve health, and promotes restful sleep.",
+            "url": "/collections/magnesium",
+            "link_text": "Shop & learn"
+          }
+        },
+        "nut_potassium": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Macromineral",
+            "name": "Potassium",
+            "text": "Maintains healthy fluid balance and supports normal blood pressure.",
+            "url": "/pages/ingredient-potassium",
+            "link_text": "Learn more"
+          }
+        },
+        "nut_sodium": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Macromineral",
+            "name": "Sodium",
+            "text": "Helps regulate cellular hydration and supports nerve signal transmission.",
+            "url": "/pages/ingredient-sodium",
+            "link_text": "Learn more"
+          }
+        },
+        "nut_iron": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Trace mineral",
+            "name": "Iron",
+            "text": "Carries oxygen throughout the body to help reduce tiredness and fatigue.",
+            "url": "/collections/iron",
+            "link_text": "Shop & learn"
+          }
+        },
+        "nut_zinc": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Trace mineral",
+            "name": "Zinc",
+            "text": "Supports immune system defence, wound healing, and skin health.",
+            "url": "/collections/zinc",
+            "link_text": "Shop & learn"
+          }
+        },
+        "nut_selenium": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Trace mineral",
+            "name": "Selenium",
+            "text": "Protects cells from oxidative stress and supports thyroid function.",
+            "url": "/collections/selenium",
+            "link_text": "Shop & learn"
+          }
+        },
+        "nut_copper": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Trace mineral",
+            "name": "Copper",
+            "text": "Helps your body absorb iron and supports connective tissue formation.",
+            "url": "/collections/copper",
+            "link_text": "Shop & learn"
+          }
+        },
+        "nut_iodine": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Trace mineral",
+            "name": "Iodine",
+            "text": "Supports normal thyroid hormone production and metabolic rate.",
+            "url": "/pages/ingredient-iodine",
+            "link_text": "Learn more"
+          }
+        },
+        "nut_chromium": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Trace mineral",
+            "name": "Chromium",
+            "text": "Helps maintain normal blood glucose levels and nutrient metabolism.",
+            "url": "/pages/ingredient-chromium",
+            "link_text": "Learn more"
+          }
+        },
+        "nut_manganese": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Trace mineral",
+            "name": "Manganese",
+            "text": "Contributes to bone formation and supports carbohydrate metabolism.",
+            "url": "/pages/ingredient-manganese",
+            "link_text": "Learn more"
+          }
+        },
+        "nut_molybdenum": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Trace mineral",
+            "name": "Molybdenum",
+            "text": "Helps break down sulfur amino acids and key cellular compounds.",
+            "url": "/pages/ingredient-molybdenum",
+            "link_text": "Learn more"
+          }
+        },
+        "nut_boron": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Trace mineral",
+            "name": "Boron",
+            "text": "Assists in bone maintenance and supports mineral metabolism.",
+            "url": "/pages/ingredient-boron",
+            "link_text": "Learn more"
+          }
+        },
+        "faq_1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you take calcium and iron together?",
+            "a": "<p>It is best to take calcium and iron at different times of the day. Calcium can interfere with iron absorption when taken together in high doses. Space them a few hours apart to get the most benefit from each mineral.</p>"
+          }
+        },
+        "faq_2": {
+          "type": "faq",
+          "settings": {
+            "q": "Which form of magnesium is best?",
+            "a": "<p>Different forms of magnesium serve different purposes. Magnesium citrate and glycinate are well absorbed and gentle on the stomach, supporting muscle relaxation and calm nerves, while oxide forms offer a higher concentrated mineral weight.</p>"
+          }
+        },
+        "faq_3": {
+          "type": "faq",
+          "settings": {
+            "q": "What are common signs you may be low in minerals?",
+            "a": "<p>Low mineral levels can show up as persistent muscle cramps, fatigue, slow recovery, brittle nails, or frequent headaches. Because symptoms vary, consult your healthcare professional to test your levels before supplementing.</p>"
+          }
+        },
+        "faq_4": {
+          "type": "faq",
+          "settings": {
+            "q": "How do minerals help with hydration?",
+            "a": "<p>Electrolyte minerals such as sodium, potassium, and magnesium carry electrical charges that draw water into your cells. Water alone is not always enough; balance with key minerals keeps cellular hydration steady during exercise and heat.</p>"
+          }
+        },
+        "faq_5": {
+          "type": "faq",
+          "settings": {
+            "q": "Who should consider mineral supplementation?",
+            "a": "<p>Active individuals, people on plant-based diets, pregnant women, and older adults often benefit from extra mineral support. Always check with your healthcare professional to identify your personal needs, especially before supplementing with iron.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "group_1",
+        "group_2",
+        "group_3",
+        "group_4",
+        "nut_calcium",
+        "nut_magnesium",
+        "nut_potassium",
+        "nut_sodium",
+        "nut_iron",
+        "nut_zinc",
+        "nut_selenium",
+        "nut_copper",
+        "nut_iodine",
+        "nut_chromium",
+        "nut_manganese",
+        "nut_molybdenum",
+        "nut_boron",
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4",
+        "faq_5"
+      ],
+      "settings": {
+        "eyebrow": "Nutrient guide",
+        "title": "Minerals",
+        "lead": "<p>Minerals are essential elements from soil and water that your body needs but cannot make on its own. You must get them through food or supplements every day to keep your body working smoothly.</p><p>They play vital roles in your everyday health. Minerals build strong bones and teeth, help carry oxygen in your blood, and keep your muscles and nerves firing properly. They also support hormone balance and a healthy immune system.</p><p>Getting the right balance of minerals gives your body the foundation it needs for steady daily energy, recovery, and overall well-being.</p>",
+        "groups_title": "How minerals are grouped",
+        "groups_intro": "<p>Minerals fall into two main categories based on daily amounts needed, plus key functional roles in electrolyte balance and nutrient competition.</p>",
+        "nutrients_title": "Meet each mineral",
+        "nutrients_intro": "<p>Explore the macro and trace minerals vital for your everyday health and wellness.</p>",
+        "benefits_title": "What minerals do for you",
+        "benefits": "<ul><li><strong>Bone &amp; teeth structure:</strong> Minerals like calcium and phosphorus build and maintain strong bones and teeth.</li><li><strong>Energy production:</strong> Iron, magnesium, and trace minerals help convert food into cellular energy.</li><li><strong>Nerve &amp; muscle function:</strong> Electrolytes such as sodium, potassium, and magnesium support nerve signals and muscle contractions.</li><li><strong>Immune defence &amp; cell repair:</strong> Zinc, copper, and selenium protect cells from oxidative stress and support immune function.</li><li><strong>Hormone &amp; enzyme balance:</strong> Iodine, chromium, and manganese assist thyroid hormone production and metabolic regulation.</li><li><strong>Fluid balance &amp; hydration:</strong> Key minerals keep cellular hydration and blood pressure levels steady.</li></ul>",
+        "sources_title": "Natural food sources",
+        "sources": "<p>You can find minerals across a variety of whole foods. Dairy, leafy greens, seeds, and nuts provide rich amounts of calcium and magnesium. Red meat, seafood, legumes, and dark poultry offer bioavailable iron and zinc. Whole grains, bananas, avocados, and root vegetables supply essential potassium and trace elements like manganese and selenium. Eating a balanced diet with diverse whole foods helps cover your daily mineral intake.</p>",
+        "why_title": "Why supplement?",
+        "why": "<p>Modern diets and environmental factors can make it challenging to obtain optimal mineral levels solely from food:</p><ul><li><strong>Depleted agricultural soils:</strong> Intensive farming methods often reduce the mineral content of crops and produce.</li><li><strong>Processed food consumption:</strong> Refining whole foods strips away key natural minerals and fiber.</li><li><strong>Increased losses:</strong> Intense exercise, sweating, heavy periods, or pregnancy increase your daily need for specific minerals like iron and electrolytes. Always check with your healthcare professional before taking iron supplements, and note iron only when a need is confirmed.</li><li><strong>Plant-based diets:</strong> Plant foods may contain phytates that reduce mineral bioavailability, requiring careful planning.</li><li><strong>Ageing &amp; bone density:</strong> As we age, mineral absorption decreases, making calcium and magnesium support more important.</li></ul><p>Always check with your healthcare professional before starting new supplements.</p>",
+        "syn_title": "Why probiotics make them work better",
+        "syn_text": "Velobiotics pairs essential minerals with micro-shielded probiotics to support optimal absorption. Healthy gut bacteria ferment dietary fibers to produce short-chain fatty acids, which lower intestinal pH and make minerals like calcium, magnesium, and iron easier to dissolve. By protecting the gut lining and maintaining a balanced microbiome, live probiotics help your digestive tract absorb minerals more efficiently. Our unique micro-shielding technology shields each individual bacterium so they arrive active where you need them most.",
+        "syn_link": "Learn about micro-shielded probiotics",
+        "syn_url": "/pages/science-technology",
+        "faq_title": "Common questions",
+        "products_title": "Shop minerals range",
+        "products_intro": "<p>Discover Velo16 Calcium &amp; Magnesium in this collection, featuring essential minerals combined with 16 live probiotic strains. Also explore our targeted <a href=\"/collections/magnesium\">magnesium</a>, <a href=\"/collections/iron\">iron</a>, and <a href=\"/collections/zinc\">zinc</a> products via nutrient cards above.</p>",
+        "disclaimer": "Supplements support a healthy diet and lifestyle. They do not treat, cure or prevent any disease. Speak to your healthcare professional if you are pregnant, breastfeeding, on medication or have a medical condition."
+      }
+    }
+  },
+  "order": [
+    "guide"
+  ]
+}

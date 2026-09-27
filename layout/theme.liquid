@@ -327,6 +327,7 @@
     {% render 'vb-tracking' %}
     {% render 'vb-schema' %}
     {%- if template.name == 'product' -%}{%- render 'vb-schema-product' -%}{%- endif -%}{%- if template.name == 'product' or template.name == 'collection' or template.name == 'page' -%}{%- render 'vb-schema-breadcrumb' -%}{%- endif -%}
+{% render 'vb-mobile-gutters' %}
 </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">

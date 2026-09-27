@@ -1,0 +1,262 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "guide": {
+      "type": "vb-topic-guide",
+      "blocks": {
+        "group_water_soluble": {
+          "type": "group",
+          "settings": {
+            "tag": "Classification",
+            "title": "Water-soluble",
+            "text": "B-complex vitamins and Vitamin C dissolve in water. Your body does not store them, so you need a steady daily top-up through food or supplements."
+          }
+        },
+        "group_fat_soluble": {
+          "type": "group",
+          "settings": {
+            "tag": "Classification",
+            "title": "Fat-soluble",
+            "text": "Vitamins A, D, E, and K dissolve in lipids. They are absorbed along with dietary fats and can be stored in your liver and fatty tissues for future use."
+          }
+        },
+        "group_vitamin_d_different": {
+          "type": "group",
+          "settings": {
+            "tag": "Key Insight",
+            "title": "Vitamin D is different",
+            "text": "Unlike other vitamins, Vitamin D is produced naturally in your skin when exposed to sunlight. Many people have low levels due to indoor routines and sun protection."
+          }
+        },
+        "group_b_complex_teamwork": {
+          "type": "group",
+          "settings": {
+            "tag": "Teamwork",
+            "title": "B-complex works as a team",
+            "text": "The eight B vitamins work closely together to support cellular energy production, brain function, and metabolic health. Taking them as a balanced group maintains harmony."
+          }
+        },
+        "nutrient_vitamin_a": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Fat-soluble",
+            "name": "Vitamin A",
+            "text": "Supports clear vision, skin health, and a strong immune system.",
+            "url": "/collections/vitamin-a",
+            "link_text": "Shop & learn"
+          }
+        },
+        "nutrient_b1_thiamine": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Water-soluble",
+            "name": "B1 Thiamine",
+            "text": "Helps turn food into usable energy, so you feel less drained.",
+            "url": "/pages/ingredient-thiamine",
+            "link_text": "Learn more"
+          }
+        },
+        "nutrient_b2_riboflavin": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Water-soluble",
+            "name": "B2 Riboflavin",
+            "text": "Supports cellular energy production and protects cells from oxidative stress.",
+            "url": "/collections/vitamin-b2-riboflavin",
+            "link_text": "Shop & learn"
+          }
+        },
+        "nutrient_b3_niacin": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Water-soluble",
+            "name": "B3 Niacin",
+            "text": "Aids metabolic balance, nervous system function, and skin vitality.",
+            "url": "/pages/ingredient-niacin",
+            "link_text": "Learn more"
+          }
+        },
+        "nutrient_b5_pantothenic_acid": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Water-soluble",
+            "name": "B5 Pantothenic acid",
+            "text": "Plays a key role in hormone synthesis and daily mental stamina.",
+            "url": "/collections/pantothenic-acid-vitamin-b5",
+            "link_text": "Shop & learn"
+          }
+        },
+        "nutrient_b6_pyridoxine": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Water-soluble",
+            "name": "B6 Pyridoxine",
+            "text": "Supports protein breakdown, mood balance, and red blood cell formation.",
+            "url": "/collections/vitamin-b6-pyridoxine",
+            "link_text": "Shop & learn"
+          }
+        },
+        "nutrient_b7_biotin": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Water-soluble",
+            "name": "B7 Biotin",
+            "text": "Nourishes hair, skin, and nails while assisting macronutrient metabolism.",
+            "url": "/collections/biotin-vitamin-b7",
+            "link_text": "Shop & learn"
+          }
+        },
+        "nutrient_b9_folate": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Water-soluble",
+            "name": "B9 Folate",
+            "text": "Essential for healthy cell division, tissue growth, and red blood cells.",
+            "url": "/collections/folic-acid-vitamin-b9",
+            "link_text": "Shop & learn"
+          }
+        },
+        "nutrient_b12": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Water-soluble",
+            "name": "B12",
+            "text": "Vital for nerve function, steady energy levels, and red blood cell production.",
+            "url": "/collections/vitamin-b12",
+            "link_text": "Shop & learn"
+          }
+        },
+        "nutrient_vitamin_c": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Water-soluble",
+            "name": "Vitamin C",
+            "text": "Provides antioxidant protection, supports collagen formation, and immune defence.",
+            "url": "/collections/vitamin-c",
+            "link_text": "Shop & learn"
+          }
+        },
+        "nutrient_vitamin_d3": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Fat-soluble",
+            "name": "Vitamin D3",
+            "text": "Helps your body absorb calcium for strong bones, teeth, and muscle strength.",
+            "url": "/collections/vitamin-d",
+            "link_text": "Shop & learn"
+          }
+        },
+        "nutrient_vitamin_e": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Fat-soluble",
+            "name": "Vitamin E",
+            "text": "Acts as a powerful antioxidant that protects cell membranes from damage.",
+            "url": "/collections/vitamin-e",
+            "link_text": "Shop & learn"
+          }
+        },
+        "nutrient_vitamin_k": {
+          "type": "nutrient",
+          "settings": {
+            "group": "Fat-soluble",
+            "name": "Vitamin K (K1/K2)",
+            "text": "Guides calcium into bones and teeth while supporting normal blood clotting.",
+            "url": "/pages/ingredient-vitamin-k1",
+            "link_text": "Learn more"
+          }
+        },
+        "faq_too_much": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you take too many vitamins?",
+            "a": "<p>Yes, taking excessive amounts of certain vitamins, particularly fat-soluble vitamins like A and D, can lead to unwanted build-up because your body stores them. Water-soluble vitamins are usually flushed out in urine when consumed in excess, but very high doses can still cause mild digestive discomfort. Always follow the recommended daily intake on the product label and check with your healthcare professional before starting high-dose supplements.</p>"
+          }
+        },
+        "faq_water_vs_fat": {
+          "type": "faq",
+          "settings": {
+            "q": "What is the difference between water-soluble and fat-soluble vitamins?",
+            "a": "<p>Water-soluble vitamins (Vitamin C and the eight B-complex vitamins) dissolve in water and are not stored in significant amounts by your body, meaning they require regular intake through diet or daily supplementation. Fat-soluble vitamins (Vitamins A, D, E, and K) are absorbed alongside dietary fats and stored in the liver and fatty tissues for future use.</p>"
+          }
+        },
+        "faq_best_time": {
+          "type": "faq",
+          "settings": {
+            "q": "When is the best time of day to take vitamin supplements?",
+            "a": "<p>Fat-soluble vitamins (A, D, E, K) are best absorbed when taken with a meal containing healthy dietary fats, such as breakfast or lunch. Water-soluble vitamins (B-complex and C) can be taken with water in the morning to support daytime energy release. Taking your supplements alongside a meal also helps prevent mild stomach discomfort.</p>"
+          }
+        },
+        "faq_natural_vs_synthetic": {
+          "type": "faq",
+          "settings": {
+            "q": "Are natural food sources better than synthetic vitamins?",
+            "a": "<p>Whole foods provide a rich mix of vitamins, minerals, fibre, and natural phytonutrients that work together. Supplementation helps fill dietary gaps when whole food intake falls short or when absorption is impaired. High-quality supplements use bioavailable forms that your body can easily process alongside a balanced diet.</p>"
+          }
+        },
+        "faq_who_should_supplement": {
+          "type": "faq",
+          "settings": {
+            "q": "Who benefits most from taking daily vitamin supplements?",
+            "a": "<p>Daily vitamin supplementation is particularly beneficial for individuals with busy lifestyles, adults over 50, pregnant or nursing women, people following vegan or vegetarian diets, and those with limited sun exposure. Speak to your healthcare professional to identify your specific nutritional needs.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "group_water_soluble",
+        "group_fat_soluble",
+        "group_vitamin_d_different",
+        "group_b_complex_teamwork",
+        "nutrient_vitamin_a",
+        "nutrient_b1_thiamine",
+        "nutrient_b2_riboflavin",
+        "nutrient_b3_niacin",
+        "nutrient_b5_pantothenic_acid",
+        "nutrient_b6_pyridoxine",
+        "nutrient_b7_biotin",
+        "nutrient_b9_folate",
+        "nutrient_b12",
+        "nutrient_vitamin_c",
+        "nutrient_vitamin_d3",
+        "nutrient_vitamin_e",
+        "nutrient_vitamin_k",
+        "faq_too_much",
+        "faq_water_vs_fat",
+        "faq_best_time",
+        "faq_natural_vs_synthetic",
+        "faq_who_should_supplement"
+      ],
+      "settings": {
+        "eyebrow": "Nutrient guide",
+        "title": "Vitamins",
+        "lead": "<p>Vitamins are essential organic compounds that your body requires in small amounts to function properly. Because your body cannot produce most vitamins on its own, you must obtain them regularly through food or supplementation.</p><p>There are 13 essential vitamins divided into two main categories: water-soluble and fat-soluble. Each plays a distinct role in keeping your energy steady, supporting your immune system, and protecting your cells.</p><p>Maintaining adequate vitamin intake supports overall vitality and long-term wellness, helping your body perform at its best every day.</p>",
+        "groups_title": "How they are grouped",
+        "nutrients_title": "Meet each one",
+        "benefits_title": "What they do for you",
+        "benefits": "<ul><li><strong>Energy metabolism:</strong> B-group vitamins assist in converting food into daily physical energy and stamina.</li><li><strong>Immune system strength:</strong> Vitamin C and Vitamin D support natural immune defences against everyday environmental challenges.</li><li><strong>Bone and muscle health:</strong> Vitamin D and Vitamin K work together to maintain strong bones and healthy muscle function.</li><li><strong>Antioxidant protection:</strong> Vitamin C and Vitamin E protect cell membranes from oxidative stress.</li><li><strong>Skin and tissue vitality:</strong> Vitamin A and Biotin nourish skin, hair, and mucous membranes.</li></ul>",
+        "sources_title": "Natural sources",
+        "sources": "<p>A balanced diet rich in whole foods is the primary source of essential vitamins. Citrus fruits, leafy green vegetables, berries, legumes, and whole grains provide abundant Vitamin C and B-complex vitamins. Oily fish, eggs, dairy, nuts, seeds, and avocado supply valuable fat-soluble vitamins A, D, E, and K.</p><p>Including a diverse range of local staples\u2014such as maize, sweet potatoes, spinach, pilchards, and fresh fruits\u2014alongside international diet staples ensures a broad intake of vital micro-nutrients.</p>",
+        "why_title": "Why supplement?",
+        "why": "<p>Modern lifestyle factors can make it difficult to get all the vitamins your body needs from food alone. Intensive farming methods, extended food storage, and high-heat cooking can reduce the nutrient content of everyday meals.</p><p>Specific life stages and circumstances\u2014such as pregnancy, ageing, restrictive diets, busy schedules, or reduced sun exposure\u2014increase daily nutrient demands. Daily supplementation provides a reliable safety net to bridge these dietary gaps. Always check with your healthcare professional to tailor supplementation to your personal health needs.</p>",
+        "syn_title": "Why probiotics make them work better",
+        "syn_text": "Velobiotics pairs essential vitamins with live probiotic bacteria protected by patented micro-encapsulation technology. Healthy gut flora create an optimal intestinal environment for absorbing vitamins and minerals. Furthermore, beneficial gut bacteria naturally synthesize several B-complex vitamins and Vitamin K2 directly in your digestive tract. Micro-encapsulation shields each individual bacterium with a protective layer, ensuring live probiotics reach your gut intact to support optimal nutrient absorption.",
+        "syn_link": "See how we keep every good bacterium alive",
+        "faq_title": "Common questions",
+        "products_title": "Shop",
+        "products_intro": "<p>Discover the Velobiotics range of targeted vitamin supplements, including Her-Biotics Original, His-Biotics Original, Velo16 Vitamin D3, and Velo16 Vitamin C, formulated to deliver active nutrients alongside micro-shielded probiotics for enhanced gut absorption.</p>",
+        "disclaimer": "Supplements support a healthy diet and lifestyle. They do not treat, cure or prevent any disease. Speak to your healthcare professional if you are pregnant, breastfeeding, on medication or have a medical condition."
+      }
+    }
+  },
+  "order": [
+    "guide"
+  ]
+}

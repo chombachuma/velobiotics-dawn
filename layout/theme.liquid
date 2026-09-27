@@ -415,5 +415,6 @@
       document.body.appendChild(s);
     }catch(e){}})();
     </script>
-  </body>
+  {% if template.name == 'index' or template.name == 'page' or template.name == 'product' %}{% render 'vb-jm-lightbox' %}{% endif %}
+</body>
 </html>

@@ -1,0 +1,21 @@
+{%- comment -%} VB · Judge.me media lightbox: frameless on mobile, autoplay video reviews (27 Sep 2026) {%- endcomment -%}
+<style>
+  @media (max-width: 749px) {
+    .jdgm-modal.jdgm-widget-revamp .jdgm-modal__content, .jdgm-modal.jdgm-widget-revamp .jdgm-modal__container { width: 100vw !important; max-width: 100vw !important; height: 100dvh !important; max-height: 100dvh !important; margin: 0 !important; padding: 0 !important; border-radius: 0 !important; --jm-lightbox-max-width: 100vw; --jm-lightbox-max-height: 100dvh; --jm-widget-border-radius: 0; inset: 0 !important; }
+    .jdgm-modal.jdgm-widget-revamp .jdgm-modal__container { background: #0b120b !important; display: flex; flex-direction: column; justify-content: center; }
+    .jdgm-modal.jdgm-widget-revamp video, .jdgm-modal.jdgm-widget-revamp img, .jdgm-modal.jdgm-widget-revamp iframe { width: 100vw !important; max-width: 100vw !important; max-height: 100dvh !important; object-fit: contain; border-radius: 0 !important; }
+    .jdgm-modal.jdgm-widget-revamp .jm-indicator { position: fixed; top: 0; left: 0; right: 0; z-index: 5; padding: 10px 12px; background: linear-gradient(180deg, rgba(0,0,0,.55), rgba(0,0,0,0)); }
+    .jdgm-modal.jdgm-widget-revamp .jm-indicator__close { background: rgba(255,255,255,.92) !important; border-radius: 999px; width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; }
+  }
+  .jdgm-modal.jdgm-widget-revamp video { background: #000; }
+</style>
+<script>
+(function(){
+  function boost(v){ if(!v||v.dataset.vbBoost) return; v.dataset.vbBoost='1'; v.setAttribute('playsinline',''); v.setAttribute('webkit-playsinline',''); v.controls=true;
+    var p=v.play(); if(p&&p.catch){ p.catch(function(){ v.muted=true; v.play().catch(function(){}); }); } }
+  function scan(root){ (root.querySelectorAll?root:document).querySelectorAll('.jdgm-modal video').forEach(boost); }
+  var mo=new MutationObserver(function(muts){ for(var i=0;i<muts.length;i++){ var m=muts[i]; for(var j=0;j<m.addedNodes.length;j++){ var n=m.addedNodes[j]; if(n.nodeType!==1) continue; if(n.matches&&n.matches('video')&&n.closest('.jdgm-modal')) boost(n); else if(n.querySelectorAll) n.querySelectorAll('.jdgm-modal video, video').forEach(function(v){ if(v.closest('.jdgm-modal')) boost(v); }); } } });
+  mo.observe(document.documentElement,{childList:true,subtree:true});
+  document.addEventListener('click',function(e){ if(e.target.closest&&e.target.closest('.jdgm-videos-carousel .jdgm-card')){ setTimeout(function(){ scan(document); },400); setTimeout(function(){ scan(document); },1200); } },true);
+})();
+</script>

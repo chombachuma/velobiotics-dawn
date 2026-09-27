@@ -23,7 +23,7 @@
     .vb-jm__divider { display: none; }
     .vb-jm__stat-value { font-size: 22px; }
   }
-  .vb-jm__embed { max-width: 1080px; margin: 0 auto; }
+  .vb-jm__embed { max-width: 1080px; margin: 0 auto; } .vb-jm__cta { text-align: center; } .vb-jm__cta-text { color: #5c6664; font-size: 15px; margin: 0 0 14px; } .vb-jm__cta-btn { display: inline-flex; align-items: center; padding: 13px 26px; border-radius: 999px; background: #fff; color: #1a1a1a; border: 2px solid #c9d6c7; font-weight: 700; text-decoration: none; } .vb-jm__cta-btn:hover { border-color: #4d8c44; color: #4d8c44; }
   .vb-jm__embed .jdgm-rev-widg, .vb-jm__embed .jdgm-all-reviews-widget { border: 0; padding: 0; }
   .vb-jm__embed .jdgm-rev-widg__title, .vb-jm__embed .jdgm-all-reviews__header-title { display: none; }
   .vb-jm__stat-meta small { display:block; font-size: 11px; color:#8a948a; }
@@ -83,14 +83,12 @@
       {%- if product.metafields.judgeme.review_widget_data -%}<script>jdgm.data ||= {}; jdgm.data.reviewWidget ||= {}; jdgm.data.reviewWidget[{{ product.id }}] = {{ product.metafields.judgeme.review_widget_data }}</script>{%- endif -%}
       <!-- End of Judge.me code -->
     {%- else -%}
-      <!-- Start of Judge.me code -->
-      {%- assign has_legacy = false -%}{%- if jm.all_reviews_header.size > 20 -%}{%- assign has_legacy = true -%}{%- endif -%}
-      <div class='jdgm-widget jdgm-all-reviews-widget-v2025' data-widget='all-reviews-v2025' data-auto-install='false' data-entry-point='all_reviews_widget_v2025.js' data-entry-key='all-reviews-widget-v2025/main.js'>
-        {%- if has_legacy -%}<div class='jdgm-legacy-widget-content' style='display: none;'><article class='jdgm-widget jdgm-all-reviews-widget'><style class='jdgm-temp-hiding-style'>.jdgm-all-reviews-widget{ display: none }</style>{{ jm.all_reviews_header }}<div class='jdgm-all-reviews__body'>{%- assign prefix = 'all_reviews_' -%}{%- for count in (0..65535) -%}{%- assign metafield_key = prefix | append: count -%}{%- assign current_metafield = jm[metafield_key] -%}{%- unless current_metafield -%}{%- break -%}{%- endunless -%}{{ current_metafield }}{%- endfor -%}</div></article></div>{%- endif -%}
+      <div class="vb-jm__cta">
+        <p class="vb-jm__cta-text">Browse photo and video reviews below, or read every review.</p>
+        <a class="vb-jm__cta-btn" href="{{ section.settings.all_reviews_url | default: '/pages/reviews' }}">Read all {{ jm.all_reviews_count | default: '3,656' }} reviews</a>
       </div>
-      {%- if jm.all_reviews_widget_v2025_data -%}<script>jdgm.data ||= {}; jdgm.data.allReviewsWidgetV2025 = {{ jm.all_reviews_widget_v2025_data }};</script>{%- endif -%}
-      <!-- End of Judge.me code -->
     {%- endif -%}
+
     </div>
   </div>
 </section>
@@ -100,6 +98,7 @@
   "name": "VB · Judge.me reviews",
   "tag": "section",
   "settings": [
+    { "type": "url", "id": "all_reviews_url", "label": "All reviews page" },
     { "type": "select", "id": "scope", "label": "Which reviews", "default": "auto", "options": [
       { "value": "auto", "label": "Auto (product page → product; else store)" },
       { "value": "product", "label": "This product only" },

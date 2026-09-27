@@ -1,11 +1,11 @@
-{% comment %} Velobiotics Lucky Discount Spinner (Wheel v2) - replaces the Omnisend wheel popup. Backend + assets on the Mautic hooks gateway.
+{% comment %} Velobiotics Lucky Discount Spinner (Wheel v2) - replaces the Omnisend wheel popup. Backend + assets on the Mautic hooks gateway. v2.1: one spin per person ever, known contacts (logged-in customer, Mautic cookie, existing email) never see it, 30-day snooze on close.
    STAGED: only loads with ?vbwheel=1 (remembered per browser). Go-live = delete the two /* GATE */ lines. Config mirrors mautic-migration/wheel/theme_snippet.liquid. {% endcomment %}
-{% unless request.page_type == 'captcha' or request.path contains '/checkout' or request.path contains '/cart' or request.path contains '/account' %}
+{% unless customer or request.page_type == 'captcha' or request.path contains '/checkout' or request.path contains '/cart' or request.path contains '/account' %}
 <script>(function(){try{
   if(/[?&]vbwheel=1/.test(location.search)){localStorage.setItem('vb_wheel_preview','1');} /* GATE */
   if(localStorage.getItem('vb_wheel_preview')!=='1'){return;} /* GATE */
   var za=/\.co\.za$/.test(location.hostname)||'{{ shop.domain }}'.indexOf('.co.za')>-1;
-  window.VelobioticsWheelConfig={apiUrl:'https://mautic.velobiotics.com/hooks/wheel/spin',delayMs:15000,capDays:30,dismissDays:7,market:za?'ZA':'US',shopDomain:'{{ shop.permanent_domain }}'};
+  window.VelobioticsWheelConfig={apiUrl:'https://mautic.velobiotics.com/hooks/wheel/spin',delayMs:15000,dismissDays:30,market:za?'ZA':'US',shopDomain:'{{ shop.permanent_domain }}'};
   var l=document.createElement('link');l.rel='stylesheet';l.href='https://mautic.velobiotics.com/hooks/wheel/wheel.css';document.head.appendChild(l);
   var s=document.createElement('script');s.src='https://mautic.velobiotics.com/hooks/wheel/wheel.js';s.defer=true;document.body.appendChild(s);
 }catch(e){}})();</script>

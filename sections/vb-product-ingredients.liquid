@@ -99,9 +99,9 @@
               <div class="vb-pin__body">
                 <div class="vb-pin__name-row">
                   <span class="vb-pin__name">{{ block.settings.name }}</span>
-                  {%- if block.settings.amount != blank -%}<span class="vb-pin__amount">{{ block.settings.amount }}</span>{%- endif -%}
+                  {%- if block.settings.amount != blank -%}<span class="vb-pin__amount">{%- render 'vb-money-tokens', text: block.settings.amount -%}</span>{%- endif -%}
                 </div>
-                <p class="vb-pin__desc">{{ block.settings.desc }}</p>
+                <p class="vb-pin__desc">{%- render 'vb-money-tokens', text: block.settings.desc -%}</p>
               </div>
             </div>
           {%- endif -%}
@@ -152,7 +152,7 @@
                   {%- if show_in_table -%}
                     <tr>
                       <td>{{ block.settings.name }}</td>
-                      <td>{{ block.settings.amount }}</td>
+                      <td>{%- render 'vb-money-tokens', text: block.settings.amount -%}</td>
                     </tr>
                   {%- endif -%}
                 {%- endif -%}

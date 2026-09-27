@@ -39,7 +39,7 @@
             <span>{{ block.settings.question }}</span>
             <span class="vb-faq__plus">+</span>
           </summary>
-          <div class="vb-faq__a">{%- if vbmk == 'ZA' -%}{{ block.settings.answer }}{%- else -%}{{ block.settings.answer | replace: 'SAHPRA-aware facilities', 'GMP-certified facilities' | replace: 'SAHPRA-compliant facilities', 'GMP-certified facilities' | replace: 'SAHPRA-aware Category D complementary medicines', 'food supplements' | replace: 'across South Africa', 'around the world' }}{%- endif -%}</div>
+          <div class="vb-faq__a">{%- if vbmk == 'ZA' -%}{%- render 'vb-money-tokens', text: block.settings.answer -%}{%- else -%}{%- assign vb_ans = block.settings.answer | replace: 'SAHPRA-aware facilities', 'GMP-certified facilities' | replace: 'SAHPRA-compliant facilities', 'GMP-certified facilities' | replace: 'SAHPRA-aware Category D complementary medicines', 'food supplements' | replace: 'across South Africa', 'around the world' -%}{%- render 'vb-money-tokens', text: vb_ans -%}{%- endif -%}</div>
         </details>
       {%- endif -%}
     {%- endfor -%}

@@ -76,7 +76,7 @@
       </div>
       {%- if section.settings.tag_value != blank -%}
         <span class="vb-ps__visual-tag">
-          <strong>{{ section.settings.tag_value }}</strong>
+          <strong>{%- render 'vb-money-tokens', text: section.settings.tag_value -%}</strong>
           <small>{{ section.settings.tag_label }}</small>
         </span>
       {%- endif -%}
@@ -84,14 +84,14 @@
     <div class="vb-ps__body">
       {%- if section.settings.eyebrow != blank -%}<p class="vb-ps__eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
       <h2 class="vb-ps__title">{{ section.settings.title_pre }}{%- if section.settings.title_highlight != blank %} <em>{{ section.settings.title_highlight }}</em>{%- endif -%}</h2>
-      {%- if section.settings.desc != blank -%}<p class="vb-ps__desc">{{ section.settings.desc }}</p>{%- endif -%}
+      {%- if section.settings.desc != blank -%}<p class="vb-ps__desc">{%- render 'vb-money-tokens', text: section.settings.desc -%}</p>{%- endif -%}
       {%- if section.blocks.size > 0 -%}
         <div class="vb-ps__points">
           {%- for block in section.blocks -%}
             {%- if block.type == 'point' -%}
               <div class="vb-ps__point" {{ block.shopify_attributes }}>
                 <span class="vb-ps__point-icon">{{ block.settings.icon | default: '✓' }}</span>
-                <span class="vb-ps__point-text">{{ block.settings.text }}</span>
+                <span class="vb-ps__point-text">{%- render 'vb-money-tokens', text: block.settings.text -%}</span>
               </div>
             {%- endif -%}
           {%- endfor -%}

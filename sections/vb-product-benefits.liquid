@@ -44,8 +44,8 @@
         {%- if block.type == 'feat' -%}
           <article class="vb-pbn__card" {{ block.shopify_attributes }}>
             <div class="vb-pbn__icon">{{ block.settings.icon }}</div>
-            <h3 class="vb-pbn__name">{{ block.settings.name }}</h3>
-            <p class="vb-pbn__desc">{{ block.settings.desc }}</p>
+            <h3 class="vb-pbn__name">{%- render 'vb-money-tokens', text: block.settings.name -%}</h3>
+            <p class="vb-pbn__desc">{%- render 'vb-money-tokens', text: block.settings.desc -%}</p>
           </article>
         {%- endif -%}
       {%- endfor -%}

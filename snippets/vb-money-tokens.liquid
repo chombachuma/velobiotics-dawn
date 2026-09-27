@@ -1,0 +1,28 @@
+{%- comment -%}
+  vb-money-tokens: replaces {price} {compare} {save} {save_pct} in a text setting with the
+  live, market-priced values of the current product (Shopify Markets / MLVeda price lists),
+  formatted in the visitor's currency. Usage: {% render 'vb-money-tokens', text: section.settings.hook %}
+  If no token is present the text is echoed unchanged.
+{%- endcomment -%}
+{%- liquid
+  assign t = text | default: ''
+  if t contains '{price}' or t contains '{compare}' or t contains '{save}' or t contains '{save_pct}'
+    assign v = product.selected_or_first_available_variant
+    assign p = v.price | default: product.price
+    assign c = v.compare_at_price | default: p
+    if c < p
+      assign c = p
+    endif
+    assign s = c | minus: p
+    if c > 0
+      assign pct = s | times: 100.0 | divided_by: c | round
+    else
+      assign pct = 0
+    endif
+    assign p_m = p | money
+    assign c_m = c | money
+    assign s_m = s | money
+    assign t = t | replace: '{price}', p_m | replace: '{compare}', c_m | replace: '{save}', s_m | replace: '{save_pct}', pct
+  endif
+  echo t
+-%}

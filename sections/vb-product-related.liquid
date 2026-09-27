@@ -50,7 +50,7 @@
   <div class="vb-pr__head">
     <span class="vb-pr__eyebrow">{{ section.settings.eyebrow | default: 'Complete your routine' }}</span>
     <h2 class="vb-pr__title">{{ section.settings.title | default: 'You may also love' }}</h2>
-    {%- if section.settings.sub != blank -%}<p class="vb-pr__sub">{{ section.settings.sub }}</p>{%- endif -%}
+    {%- if section.settings.sub != blank -%}<p class="vb-pr__sub">{%- render 'vb-money-tokens', text: section.settings.sub -%}</p>{%- endif -%}
   </div>
   <div class="vb-pr__grid">
     {%- for block in section.blocks -%}

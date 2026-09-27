@@ -166,7 +166,7 @@
       },
       "13245967176993778395": {
         "type": "shopify://apps/zipchat-ai-chatbot/blocks/widget/09531fba-7e12-4949-9b23-92e32b5e5456",
-        "disabled": false,
+        "disabled": true,
         "settings": {}
       },
       "12107416968155278870": {

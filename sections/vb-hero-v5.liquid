@@ -82,13 +82,13 @@
     #vbh5-{{ sid }} .vbh5__scrim { background: linear-gradient(0deg, rgba({{ scrim }},{{ strength | plus: 0.1 | at_most: 1 }}) 0%, rgba({{ scrim }},{{ strength }}) 34%, rgba({{ scrim }},{{ s3 }}) 52%, rgba({{ scrim }},0) 66%); }
     #vbh5-{{ sid }} .vbh5__wrap { padding: calc(var(--vbh5-hdr) + 24px) 20px 28px; min-height: min({{ s.min_height_mobile | default: 760 }}px, {{ s.vh_mobile | default: 94 }}svh); align-items: flex-end; }
     #vbh5-{{ sid }} .vbh5__copy { max-width: 100%; }
-    #vbh5-{{ sid }} .vbh5__eyebrow { font-size: 10px; padding: 6px 11px; margin-bottom: 12px; }
-    #vbh5-{{ sid }} .vbh5__rating { font-size: 12px; margin-bottom: 12px; }
-    #vbh5-{{ sid }} h1 { font-size: clamp(30px, 9.2vw, 42px); margin-bottom: 12px; }
-    #vbh5-{{ sid }} .vbh5__sub { font-size: 15px; margin-bottom: 18px; }
+    #vbh5-{{ sid }} .vbh5__eyebrow { font-size: 10px; padding: 6px 11px; margin-bottom: 10px; letter-spacing: .05em; }
+    #vbh5-{{ sid }} .vbh5__rating { font-size: 12px; margin-bottom: 10px; gap: 8px; }
+    #vbh5-{{ sid }} h1 { font-size: clamp(28px, 8.6vw, 38px); margin-bottom: 10px; }
+    #vbh5-{{ sid }} .vbh5__sub { font-size: 14.5px; line-height: 1.45; margin-bottom: 16px; }
     #vbh5-{{ sid }} .vbh5__ctas { gap: 10px; }
     #vbh5-{{ sid }} .vbh5__cta { padding: 13px 20px; font-size: 14px; flex: 1 1 auto; }
-    #vbh5-{{ sid }} .vbh5__trust { margin-top: 16px; gap: 12px; font-size: 11.5px; }
+    #vbh5-{{ sid }} .vbh5__trust { display: none; }
   }
   /* header sits transparently over the hero while the page is at the top */
   .vbh5-hdr-clear .header-wrapper, .vbh5-hdr-clear header.header { background: transparent !important; border-bottom: 0 !important; box-shadow: none !important; }

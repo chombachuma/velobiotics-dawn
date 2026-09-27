@@ -33,12 +33,12 @@
   <div class="vb-pfc__inner">
     {%- if section.settings.badge != blank -%}<span class="vb-pfc__badge">{{ section.settings.badge }}</span>{%- endif -%}
     <h2 class="vb-pfc__title">{{ section.settings.title_pre }}{%- if section.settings.title_highlight != blank %} <em>{{ section.settings.title_highlight }}</em>{%- endif -%}</h2>
-    {%- if section.settings.sub != blank -%}<p class="vb-pfc__sub">{%- render 'vb-money-tokens', text: section.settings.sub -%}</p>{%- endif -%}
+    {%- if section.settings.sub != blank -%}<p class="vb-pfc__sub">{%- render 'vb-money-tokens', text: section.settings.sub, product: product -%}</p>{%- endif -%}
     {%- if section.settings.cta_text != blank -%}<a href="{{ section.settings.cta_link | default: '#vb-buy' }}" class="vb-pfc__cta">{{ section.settings.cta_text }} →</a>{%- endif -%}
     {%- if section.blocks.size > 0 -%}
       <div class="vb-pfc__guarantees">
         {%- for block in section.blocks -%}
-          {%- if block.type == 'g' -%}<span class="vb-pfc__g" {{ block.shopify_attributes }}>{{ block.settings.icon }} {%- render 'vb-money-tokens', text: block.settings.text -%}</span>{%- endif -%}
+          {%- if block.type == 'g' -%}<span class="vb-pfc__g" {{ block.shopify_attributes }}>{{ block.settings.icon }} {%- render 'vb-money-tokens', text: block.settings.text, product: product -%}</span>{%- endif -%}
         {%- endfor -%}
       </div>
     {%- endif -%}

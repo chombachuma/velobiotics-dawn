@@ -87,7 +87,7 @@
         "rating": "4.7",
         "review_count": "10 reviews",
         "hook": "Two daily multivitamin + probiotic formulas in one pack. Her-Biotics™ Original for her, His-Biotics™ Original for him. Save {save}.",
-        "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
+        "ship_note": "{shipping} · 30-day money-back guarantee",
         "show_subscription": true,
         "tier_unit": "Pack",
         "tier_unit_plural": "Packs",
@@ -717,7 +717,7 @@
         "col_b": "Two singles",
         "col_c": "One generic probiotic",
         "cta_text": "Add His & Her Pack to Cart",
-        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
+        "cta_note": "30-day money-back · {shipping}"
       }
     },
     "judgeme": {

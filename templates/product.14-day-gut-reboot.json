@@ -47,7 +47,7 @@
         "rating": "4.03",
         "review_count": "29",
         "hook": "14-Day Gut Reboot Starter Pack: GutSlim™ SuperGreens + GutSlim™ Tummy Toner. Save {save} vs buying separately.",
-        "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
+        "ship_note": "{shipping} · 30-day money-back guarantee",
         "show_subscription": true,
         "tier_unit": "Pack",
         "tier_unit_plural": "Packs",
@@ -555,7 +555,7 @@
         "col_b": "Two singles",
         "col_c": "One generic probiotic",
         "cta_text": "Add Couple Pack to Cart",
-        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
+        "cta_note": "30-day money-back · {shipping}"
       }
     },
     "judgeme": {

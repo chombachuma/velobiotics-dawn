@@ -55,7 +55,7 @@
         "rating": "4.6",
         "review_count": "24 reviews",
         "hook": "Complete daily gut and immune support in one duo. Combines BioGain™ Strawberry Probiotic Meal (400g) and Velo16™ Probiotic Digestive Capsules (60 capsules) with 16 micro-shielded strains and 10 billion CFU per capsule. Save {save} vs buying separately.",
-        "ship_note": "Ships worldwide · Free shipping over threshold · 30-day money-back guarantee",
+        "ship_note": "Free shipping over threshold · 30-day money-back guarantee",
         "show_subscription": true,
         "tier_unit": "Pack",
         "tier_unit_plural": "Packs",
@@ -572,7 +572,7 @@
         "col_b": "Two singles",
         "col_c": "One generic probiotic",
         "cta_text": "Add Immunity Boost Duo to Cart",
-        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
+        "cta_note": "30-day money-back · {shipping}"
       }
     },
     "judgeme": {

@@ -309,7 +309,7 @@
         <a href="#vb-reviews">Be the first to review</a>
         {%- endif -%}
       </div>
-      {%- if section.settings.hook != blank -%}<p class="vb-pb__hook">{%- render 'vb-money-tokens', text: section.settings.hook -%}</p>{%- endif -%}
+      {%- if section.settings.hook != blank -%}<p class="vb-pb__hook">{%- render 'vb-money-tokens', text: section.settings.hook, product: product -%}</p>{%- endif -%}
       {%- assign benefit_count = 0 -%}
       {%- for block in section.blocks -%}{%- if block.type == 'benefit' -%}{%- assign benefit_count = benefit_count | plus: 1 -%}{%- endif -%}{%- endfor -%}
       {%- if benefit_count > 0 -%}
@@ -318,7 +318,7 @@
             {%- if block.type == 'benefit' -%}
               <div class="vb-pb__benefit" {{ block.shopify_attributes }}>
                 <span class="vb-pb__benefit-icon">{{ block.settings.icon }}</span>
-                <span class="vb-pb__benefit-text">{%- render 'vb-money-tokens', text: block.settings.text -%}</span>
+                <span class="vb-pb__benefit-text">{%- render 'vb-money-tokens', text: block.settings.text, product: product -%}</span>
               </div>
             {%- endif -%}
           {%- endfor -%}
@@ -459,7 +459,7 @@
 
         <div class="vb-pb__shipnote">
           <span class="vb-pb__shipnote-icon">🚚</span>
-          <span>{%- assign vb_sn = section.settings.ship_note | default: '' -%}{%- if vb_sn contains 'R' and vb_sn contains 'South Africa' -%}{%- assign vb_sn = '' -%}{%- endif -%}{%- if vb_sn == blank -%}{%- render 'vb-market', key: 'shipping_line' %} · 30-day money-back guarantee{%- else -%}{%- render 'vb-money-tokens', text: vb_sn -%}{%- endif -%}</span>
+          <span>{%- assign vb_sn = section.settings.ship_note | default: '' -%}{%- if vb_sn contains 'R' and vb_sn contains 'South Africa' -%}{%- assign vb_sn = '' -%}{%- endif -%}{%- if vb_sn == blank -%}{%- render 'vb-market', key: 'shipping_line' %} · 30-day money-back guarantee{%- else -%}{%- render 'vb-money-tokens', text: vb_sn, product: product -%}{%- endif -%}</span>
         </div>
 
         <div class="vb-pb__qty-row">

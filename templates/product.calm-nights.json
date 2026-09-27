@@ -87,7 +87,7 @@
         "rating": "4.6",
         "review_count": "96 reviews",
         "hook": "Velo16™ Magnesium Glycinate + Velo16™ Ashwagandha Complex: 60 capsules each, micro-shielded probiotics for evening calm, sleep quality support, and daily stress resilience. Save {save} vs buying separately.",
-        "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
+        "ship_note": "{shipping} · 30-day money-back guarantee",
         "show_subscription": true,
         "tier_unit": "Pack",
         "tier_unit_plural": "Packs",
@@ -701,7 +701,7 @@
         "col_b": "Two separate items",
         "col_c": "Generic sleep supplement",
         "cta_text": "Add Calm Nights Bundle to Cart",
-        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
+        "cta_note": "30-day money-back · {shipping}"
       }
     },
     "judgeme": {

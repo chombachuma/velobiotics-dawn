@@ -39,7 +39,7 @@
             <span>{{ block.settings.question }}</span>
             <span class="vb-faq__plus">+</span>
           </summary>
-          <div class="vb-faq__a">{%- if vbmk == 'ZA' -%}{%- render 'vb-money-tokens', text: block.settings.answer -%}{%- else -%}{%- assign vb_ans = block.settings.answer | replace: 'SAHPRA-aware facilities', 'GMP-certified facilities' | replace: 'SAHPRA-compliant facilities', 'GMP-certified facilities' | replace: 'SAHPRA-aware Category D complementary medicines', 'food supplements' | replace: 'across South Africa', 'around the world' -%}{%- render 'vb-money-tokens', text: vb_ans -%}{%- endif -%}</div>
+          <div class="vb-faq__a">{%- if vbmk == 'ZA' -%}{%- render 'vb-money-tokens', text: block.settings.answer, product: product -%}{%- else -%}{%- assign vb_ans = block.settings.answer | replace: 'SAHPRA-aware facilities', 'GMP-certified facilities' | replace: 'SAHPRA-compliant facilities', 'GMP-certified facilities' | replace: 'SAHPRA-aware Category D complementary medicines', 'food supplements' | replace: 'across South Africa', 'around the world' -%}{%- render 'vb-money-tokens', text: vb_ans, product: product -%}{%- endif -%}</div>
         </details>
       {%- endif -%}
     {%- endfor -%}
@@ -69,7 +69,7 @@
           "name": {{ block.settings.question | strip_html | escape | json }},
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": {%- capture vb_ans_ld %}{% render 'vb-money-tokens', text: block.settings.answer %}{% endcapture -%}{{ vb_ans_ld | strip_html | escape | json }}
+            "text": {%- capture vb_ans_ld %}{% render 'vb-money-tokens', text: block.settings.answer, product: product %}{% endcapture -%}{{ vb_ans_ld | strip_html | escape | json }}
           }
         }
         {%- assign first_block = false -%}

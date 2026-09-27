@@ -87,7 +87,7 @@
         "rating": "5.0",
         "review_count": "10 reviews",
         "hook": "Two daily probiotics, one pack. Femina™ with cranberry for her, Velo16™ digestive probiotic for him: 30 capsules each, both micro-shielded so the cultures reach the gut alive. {save} less than buying the two separately.",
-        "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
+        "ship_note": "{shipping} · 30-day money-back guarantee",
         "show_subscription": true,
         "tier_unit": "Pack",
         "tier_unit_plural": "Packs",
@@ -717,7 +717,7 @@
         "col_b": "Two singles",
         "col_c": "One generic probiotic",
         "cta_text": "Add Couple Pack to Cart",
-        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
+        "cta_note": "30-day money-back · {shipping}"
       }
     },
     "judgeme": {

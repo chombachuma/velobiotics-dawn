@@ -575,7 +575,7 @@
         "col_b": "Separate Singles",
         "col_c": "Generic Probiotic",
         "cta_text": "Add Pack to Cart",
-        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
+        "cta_note": "30-day money-back · {shipping}"
       }
     },
     "judgeme": {

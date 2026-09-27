@@ -39,20 +39,20 @@
     <div class="vb-pcf__head">
       {%- if section.settings.eyebrow != blank -%}<p class="vb-pcf__eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
       <h2 class="vb-pcf__title">{{ section.settings.title_pre }}{%- if section.settings.title_highlight != blank %} <em>{{ section.settings.title_highlight }}</em>{%- endif -%}</h2>
-      {%- if section.settings.sub != blank -%}<p class="vb-pcf__sub">{%- render 'vb-money-tokens', text: section.settings.sub -%}</p>{%- endif -%}
+      {%- if section.settings.sub != blank -%}<p class="vb-pcf__sub">{%- render 'vb-money-tokens', text: section.settings.sub, product: product -%}</p>{%- endif -%}
     </div>
     <div class="vb-pcf__list">
       {%- for block in section.blocks -%}
         {%- if block.type == 'stat' -%}
           <div class="vb-pcf__row" {{ block.shopify_attributes }}>
-            <div class="vb-pcf__label">{%- render 'vb-money-tokens', text: block.settings.label -%}</div>
+            <div class="vb-pcf__label">{%- render 'vb-money-tokens', text: block.settings.label, product: product -%}</div>
             <div class="vb-pcf__bar"><span class="vb-pcf__fill" data-target="{{ block.settings.percent | default: 80 }}">&nbsp;</span></div>
             <div class="vb-pcf__pct">{{ block.settings.percent | default: 80 }}%</div>
           </div>
         {%- endif -%}
       {%- endfor -%}
     </div>
-    {%- if section.settings.caveat != blank -%}<p class="vb-pcf__caveat">{%- render 'vb-money-tokens', text: section.settings.caveat -%}</p>{%- endif -%}
+    {%- if section.settings.caveat != blank -%}<p class="vb-pcf__caveat">{%- render 'vb-money-tokens', text: section.settings.caveat, product: product -%}</p>{%- endif -%}
   </div>
 </section>
 

@@ -30,7 +30,7 @@
           "type": "benefit",
           "settings": {
             "icon": "💰",
-            "text": "Save R84.95 vs buying separately"
+            "text": "Save {save} vs buying separately"
           }
         },
         "b4": {
@@ -86,7 +86,7 @@
         "brand_label": "Velobiotics™ Gut Reset & Bloat Control Pack",
         "rating": "5.0",
         "review_count": "10 reviews",
-        "hook": "Two daily probiotics, one pack. Femina™ with cranberry for her, Velo16™ digestive probiotic for him: 30 capsules each, both micro-shielded so the cultures reach the gut alive. R84.95 less than buying the two separately.",
+        "hook": "Two daily probiotics, one pack. Femina™ with cranberry for her, Velo16™ digestive probiotic for him: 30 capsules each, both micro-shielded so the cultures reach the gut alive. {save} less than buying the two separately.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
         "show_subscription": true,
         "tier_unit": "Pack",
@@ -307,8 +307,8 @@
           "type": "feat",
           "settings": {
             "icon": "💰",
-            "name": "Save R84.95",
-            "desc": "R334 for both boxes versus R418.95 bought separately."
+            "name": "Save {save}",
+            "desc": "{price} for both boxes versus {compare} bought separately."
           }
         },
         "f4": {
@@ -602,7 +602,7 @@
         "o2": {
           "type": "row",
           "settings": {
-            "feature": "Save R84.95 (20%)",
+            "feature": "Save {save} ({save_pct}%)",
             "brand_state": "yes",
             "b_state": "no",
             "c_state": "no"
@@ -682,7 +682,7 @@
           "type": "q",
           "settings": {
             "question": "How much do I save with this bundle?",
-            "answer": "<p>Buying these three products individually costs R858.90 (R209.00 + R299.95 + R349.95). In this bundle, you pay R805.80, saving exactly R53.10.</p>"
+            "answer": "<p>Buying these three products individually costs {compare}. In this bundle, you pay {price}, saving {save}.</p>"
           }
         },
         "q3": {
@@ -756,7 +756,7 @@
           "type": "g",
           "settings": {
             "icon": "💰",
-            "text": "Save R84.95 vs singles"
+            "text": "Save {save} vs singles"
           }
         }
       },
@@ -773,7 +773,7 @@
         "badge": "30-day money-back guarantee",
         "title_pre": "Reset your gut,",
         "title_highlight": "reclaim your comfort.",
-        "sub": "Femina™ for her, Velo16™ for him, R84.95 saved. If you don't feel the difference, we refund every cent.",
+        "sub": "{save} saved versus buying each product separately. If you don't feel the difference, we refund every cent.",
         "cta_text": "Add Couple Pack to Cart",
         "cta_link": "#vbpForm"
       }

@@ -54,8 +54,8 @@
         "brand_label": "Velobiotics™ Love Your Body Combo",
         "rating": "4.8",
         "review_count": "50+ verified reviews",
-        "hook": "Complete Gut-Metabolic & Daily Greens Duo: GutSlim GLP-1 Booster (60 caps) + GutSlim SuperGreens (240g). Save R220.00.",
-        "ship_note": "Ships nationwide · Free SA delivery over R400 · 30-day money-back guarantee",
+        "hook": "Complete Gut-Metabolic & Daily Greens Duo: GutSlim GLP-1 Booster (60 caps) + GutSlim SuperGreens (240g). Save {save}.",
+        "ship_note": "",
         "show_subscription": true,
         "tier_unit": "Pack",
         "tier_unit_plural": "Packs",
@@ -246,7 +246,7 @@
         "tint": false,
         "eyebrow": "What's inside",
         "title": "2 Full-Sized Products in One Combo",
-        "sub": "Save R220.00 compared to buying each item separately."
+        "sub": "Save {save} compared to buying each item separately."
       }
     },
     "benefits": {
@@ -455,7 +455,7 @@
         "c4": {
           "type": "stat",
           "settings": {
-            "label": "Combo Discount Savings (R220.00)",
+            "label": "Combo Discount Savings",
             "percent": 15
           }
         }
@@ -658,7 +658,7 @@
           "type": "q",
           "settings": {
             "question": "How much do I save with this combo?",
-            "answer": "<p>You save R220.00 compared to purchasing GutSlim Probiotics GLP-1 Booster (R520.00) and GutSlim Probiotics SuperGreens (R599.00) separately (total component value R1,119.00 vs combo price R899.00).</p>"
+            "answer": "<p>You save {save} compared to purchasing GutSlim Probiotics GLP-1 Booster and GutSlim Probiotics SuperGreens separately (total component value {compare} vs combo price {price}).</p>"
           }
         },
         "q3": {
@@ -718,7 +718,7 @@
           "type": "g",
           "settings": {
             "icon": "truck",
-            "text": "Free SA Shipping > R400"
+            "text": "{shipping}"
           }
         },
         "g3": {

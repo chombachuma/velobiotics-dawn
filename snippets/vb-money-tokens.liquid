@@ -4,8 +4,12 @@
   formatted in the visitor's currency. Usage: {% render 'vb-money-tokens', text: section.settings.hook %}
   If no token is present the text is echoed unchanged.
 {%- endcomment -%}
+{%- capture vb_ship %}{% render 'vb-market', key: 'shipping_line' %}{% endcapture -%}
 {%- liquid
   assign t = text | default: ''
+  if t contains '{shipping}'
+    assign t = t | replace: '{shipping}', vb_ship
+  endif
   if t contains '{price}' or t contains '{compare}' or t contains '{save}' or t contains '{save_pct}'
     assign v = product.selected_or_first_available_variant
     assign p = v.price | default: product.price

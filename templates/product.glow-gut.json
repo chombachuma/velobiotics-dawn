@@ -51,11 +51,11 @@
         "brand_primary": "#be185d",
         "brand_dark": "#831843",
         "brand_tint": "#fce7f3",
-        "brand_label": "Velobiotics\u2122 Glow & Gut Combo",
+        "brand_label": "Velobiotics™ Glow & Gut Combo",
         "rating": "4.8",
         "review_count": "50+ verified reviews",
-        "hook": "Skin, hair, nails & digestive wellness duo: Almasi Hydrolysed Collagen Peptides Powder 200g + Femina Probiotic Capsules 30s. Save R108.79.",
-        "ship_note": "Ships nationwide \u00b7 Free SA delivery over R400 \u00b7 30-day money-back guarantee",
+        "hook": "Skin, hair, nails & digestive wellness duo: Almasi Hydrolysed Collagen Peptides Powder 200g + Femina Probiotic Capsules 30s. Save {save}.",
+        "ship_note": "",
         "show_subscription": true,
         "tier_unit": "Pack",
         "tier_unit_plural": "Packs",
@@ -71,7 +71,7 @@
           "settings": {
             "avatar_url": "",
             "author": "Thuli M.",
-            "meta": "Verified Buyer \u00b7 Almasi Collagen Powder",
+            "meta": "Verified Buyer · Almasi Collagen Powder",
             "quote": "Absolutely loving this collagen and probiotic combination! My skin feels smoother, my nails are growing faster, and my tummy feels so much less bloated."
           }
         },
@@ -80,8 +80,8 @@
           "settings": {
             "avatar_url": "",
             "author": "Diana C.",
-            "meta": "Verified Buyer \u00b7 Almasi Collagen Powder",
-            "quote": "I\u2019ve been taking this for a few weeks now. My skin has a natural glow and my digestion has improved significantly. Will definitely repurchase!"
+            "meta": "Verified Buyer · Almasi Collagen Powder",
+            "quote": "I’ve been taking this for a few weeks now. My skin has a natural glow and my digestion has improved significantly. Will definitely repurchase!"
           }
         },
         "r3": {
@@ -89,7 +89,7 @@
           "settings": {
             "avatar_url": "",
             "author": "Kgothatso M.",
-            "meta": "Verified Buyer \u00b7 Femina Probiotic Capsules",
+            "meta": "Verified Buyer · Femina Probiotic Capsules",
             "quote": "Combining daily probiotics with my collagen routine has been life changing. It keeps my gut balanced and my intimate microbiome protected."
           }
         },
@@ -98,7 +98,7 @@
           "settings": {
             "avatar_url": "",
             "author": "Archie T.",
-            "meta": "Verified Buyer \u00b7 Femina Probiotic Capsules",
+            "meta": "Verified Buyer · Femina Probiotic Capsules",
             "quote": "Best daily wellness pair. Easy to mix the collagen powder in my morning coffee, and taking the capsule daily keeps me feeling light and fresh."
           }
         },
@@ -107,7 +107,7 @@
           "settings": {
             "avatar_url": "",
             "author": "Nompumelelo K.",
-            "meta": "Verified Buyer \u00b7 Glow & Gut Combo",
+            "meta": "Verified Buyer · Glow & Gut Combo",
             "quote": "The ultimate beauty from within stack! Tastes great in smoothies and gives me total peace of mind for both digestion and skin radiance."
           }
         }
@@ -220,7 +220,7 @@
           "type": "product",
           "settings": {
             "product_handle": "probiotics-collagen-peptides-powder",
-            "brand": "Almasi\u2122 Probiotics Collagen Powder 200g",
+            "brand": "Almasi™ Probiotics Collagen Powder 200g",
             "rating": "4.8",
             "reviews": "25+"
           }
@@ -229,7 +229,7 @@
           "type": "product",
           "settings": {
             "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
-            "brand": "Femina\u2122 10-Strain Probiotic Capsules with Cranberry (30s)",
+            "brand": "Femina™ 10-Strain Probiotic Capsules with Cranberry (30s)",
             "rating": "4.7",
             "reviews": "399+"
           }
@@ -246,7 +246,7 @@
         "tint": false,
         "eyebrow": "What's inside",
         "title": "2 Full-Sized Products in One Combo",
-        "sub": "Save R108.79 compared to buying each item separately."
+        "sub": "Save {save} compared to buying each item separately."
       }
     },
     "benefits": {
@@ -484,7 +484,7 @@
           "type": "product",
           "settings": {
             "product_handle": "almasi-probiotics-skin-hair-nails-60s",
-            "brand": "Almasi\u2122 Probiotics Skin Hair Nails 60s",
+            "brand": "Almasi™ Probiotics Skin Hair Nails 60s",
             "rating": "4.8",
             "reviews": "30+"
           }
@@ -502,7 +502,7 @@
           "type": "product",
           "settings": {
             "product_handle": "femina-intimate-starter-pack",
-            "brand": "Femina\u2122 Intimate Reset Kit",
+            "brand": "Femina™ Intimate Reset Kit",
             "rating": "4.7",
             "reviews": "399+"
           }
@@ -651,7 +651,7 @@
           "type": "q",
           "settings": {
             "question": "How much do I save with the Glow & Gut Combo?",
-            "answer": "<p>You save R108.79 (15% discount) compared to purchasing Almasi Probiotics Collagen Powder 200g (R419.95) and Femina Probiotic Capsules 30s (R299.95) individually.</p>"
+            "answer": "<p>You save {save} (15% discount) compared to purchasing Almasi Probiotics Collagen Powder 200g and Femina Probiotic Capsules 30s individually.</p>"
           }
         },
         "q2": {
@@ -726,7 +726,7 @@
           "type": "g",
           "settings": {
             "icon": "truck",
-            "text": "Free SA Shipping > R400"
+            "text": "{shipping}"
           }
         },
         "g3": {

@@ -46,8 +46,8 @@
         "brand_label": "Velobiotics™ Family Gut Health Complete Bundle",
         "rating": "4.8",
         "review_count": "9 verified reviews",
-        "hook": "Whole family gut health trio: Velo16 Digestive for adults, Femina Cranberry for her, and BioKid Chewables for children. Save R134.98.",
-        "ship_note": "Ships worldwide · Free shipping over R400 · 30-day money-back guarantee",
+        "hook": "Whole family gut health trio: Velo16 Digestive for adults, Femina Cranberry for her, and BioKid Chewables for children. Save {save}.",
+        "ship_note": "",
         "show_subscription": true,
         "tier_unit": "Pack",
         "tier_unit_plural": "Packs",
@@ -133,7 +133,7 @@
           "type": "point",
           "settings": {
             "icon": "✕",
-            "text": "<strong>Issue 2</strong> — Buying 3 separate retail boxes costs R899.85 instead of R764.87."
+            "text": "<strong>Issue 2</strong> — Buying 3 separate retail boxes costs {compare} instead of {price}."
           }
         },
         "p3": {
@@ -429,8 +429,8 @@
         "eyebrow": "Real results",
         "title_pre": "Trusted formulation,",
         "title_highlight": "proven results",
-        "sub": "Save R134.98 compared to separate retail prices. Every product backed by micro-shield technology.",
-        "caveat": "Verified Judge.me reviews for Velobiotics. Save R134.98 vs separate retail boxes."
+        "sub": "Save {save} compared to separate retail prices. Every product backed by micro-shield technology.",
+        "caveat": "Verified Judge.me reviews for Velobiotics. Save {save} vs separate retail boxes."
       }
     },
     "fbt": {
@@ -533,7 +533,7 @@
         "o2": {
           "type": "row",
           "settings": {
-            "feature": "Save R134.98 vs individual retail purchases",
+            "feature": "Save {save} vs individual retail purchases",
             "brand_state": "yes",
             "b_state": "no",
             "c_state": "no"
@@ -603,7 +603,7 @@
           "type": "q",
           "settings": {
             "question": "How much do I save with this bundle?",
-            "answer": "<p>You save R134.98. The 3 boxes cost R899.85 (R299.95 each); the family bundle price is R764.87.</p>"
+            "answer": "<p>You save {save}. The 3 boxes cost {compare} ; the family bundle price is {price}.</p>"
           }
         },
         "q3": {
@@ -677,7 +677,7 @@
           "type": "g",
           "settings": {
             "icon": "💰",
-            "text": "Save R84.95 vs singles"
+            "text": "Save {save} vs singles"
           }
         }
       },
@@ -694,7 +694,7 @@
         "badge": "30-day money-back guarantee",
         "title_pre": "Protect your family's gut health,",
         "title_highlight": "risk-free for 30 days.",
-        "sub": "3 full retail boxes for dad, mom & kids. R134.98 saved. 30-day money-back guarantee.",
+        "sub": "3 full retail boxes for dad, mom & kids. {save} saved. 30-day money-back guarantee.",
         "cta_text": "Add Pack to Cart",
         "cta_link": "#vbpForm"
       }

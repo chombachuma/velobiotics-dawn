@@ -54,8 +54,8 @@
         "brand_label": "Women's Daily Radiance & Wellness Pack",
         "rating": "4.7",
         "review_count": "87 verified component reviews",
-        "hook": "3-in-1 daily radiance system: Her-Biotics Multivitamin (60s), Almasi Collagen Peptides Powder (200g), and Velo16 Vitamin C (60s). Save R152.98!",
-        "ship_note": "Ships nationwide · Free SA delivery over R400 · Discreet packaging · 30-day money-back guarantee",
+        "hook": "3-in-1 daily radiance system: Her-Biotics Multivitamin (60s), Almasi Collagen Peptides Powder (200g), and Velo16 Vitamin C (60s). Save {save}!",
+        "ship_note": "",
         "show_subscription": true,
         "tier_unit": "Pack",
         "tier_unit_plural": "Packs",
@@ -251,7 +251,7 @@
         "tint": false,
         "eyebrow": "What's inside",
         "title": "3 Full-Sized Essential Products in One Pack",
-        "sub": "Total retail value R1,019.85. Pack price R866.87—save R152.98!"
+        "sub": "Total retail value {compare}. Pack price {price}—save {save}!"
       }
     },
     "benefits": {
@@ -608,7 +608,7 @@
         "o4": {
           "type": "row",
           "settings": {
-            "feature": "Save R152.98 compared to individual items",
+            "feature": "Save {save} compared to individual items",
             "brand_state": "yes",
             "b_state": "no",
             "c_state": "no"
@@ -663,7 +663,7 @@
           "type": "q",
           "settings": {
             "question": "What is included in the Women's Daily Radiance Pack and what is the saving?",
-            "answer": "<p>The Women's Daily Radiance Pack contains 3 full-sized products: 1x Her-Biotics Probiotics ORIGINAL Multivitamin Capsules (60s, R299.95), 1x Almasi Probiotics Collagen Peptides Powder (200g, R419.95), and 1x Velo16 Probiotics Vitamin C (60s, R299.95). Total retail value is R1,019.85, but you pay R866.87, saving R152.98 when purchased as a pack.</p>"
+            "answer": "<p>The Women's Daily Radiance Pack contains 3 full-sized products: 1x Her-Biotics Probiotics ORIGINAL Multivitamin Capsules (60s), 1x Almasi Probiotics Collagen Peptides Powder (200g), and 1x Velo16 Probiotics Vitamin C (60s). Total retail value is {compare}, but you pay {price}, saving {save} when purchased as a pack.</p>"
           }
         },
         "q2": {
@@ -730,7 +730,7 @@
           "type": "g",
           "settings": {
             "icon": "truck",
-            "text": "Free SA Shipping > R400"
+            "text": "{shipping}"
           }
         },
         "g3": {

@@ -30,7 +30,7 @@
           "type": "benefit",
           "settings": {
             "icon": "💰",
-            "text": "Save R149.45 vs buying separately"
+            "text": "Save {save} vs buying separately"
           }
         }
       },
@@ -46,7 +46,7 @@
         "brand_label": "Velobiotics™ Couple Pack",
         "rating": "4.03",
         "review_count": "29",
-        "hook": "14-Day Gut Reboot Starter Pack: GutSlim™ SuperGreens + GutSlim™ Tummy Toner. Save R149.45 vs buying separately.",
+        "hook": "14-Day Gut Reboot Starter Pack: GutSlim™ SuperGreens + GutSlim™ Tummy Toner. Save {save} vs buying separately.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
         "show_subscription": true,
         "tier_unit": "Pack",
@@ -108,7 +108,7 @@
           "type": "point",
           "settings": {
             "icon": "✕",
-            "text": "<strong>Expensive separate buys</strong> — R948.95 when purchasing SuperGreens and Tummy Toner individually."
+            "text": "<strong>Expensive separate buys</strong> — {compare} when purchasing SuperGreens and Tummy Toner individually."
           }
         },
         "p2": {
@@ -165,7 +165,7 @@
           "type": "point",
           "settings": {
             "icon": "✓",
-            "text": "<strong>Instant bundle saving</strong> — Get the entire 14-day starter pack for R799.50, saving R149.45."
+            "text": "<strong>Instant bundle saving</strong> — Get the entire 14-day starter pack for {price}, saving {save}."
           }
         }
       },
@@ -254,8 +254,8 @@
           "type": "feat",
           "settings": {
             "icon": "💰",
-            "name": "Save R149.45 Instantly",
-            "desc": "Enjoy bundle pricing of R799.50 instead of R948.95 when bought separately."
+            "name": "Save {save} Instantly",
+            "desc": "Enjoy bundle pricing of {price} instead of {compare} when bought separately."
           }
         }
       },
@@ -522,7 +522,7 @@
         "o3": {
           "type": "row",
           "settings": {
-            "feature": "True bundle saving of R149.45",
+            "feature": "True bundle saving of {save}",
             "brand_state": "yes",
             "b_state": "no",
             "c_state": "no"
@@ -583,7 +583,7 @@
           "type": "q",
           "settings": {
             "question": "How much do I save with this pack?",
-            "answer": "<p>You pay R799.50 for the pack versus R948.95 when purchasing SuperGreens (R599.00) and Tummy Toner (R349.95) individually — a true saving of R149.45.</p>"
+            "answer": "<p>You pay {price} for the pack versus {compare} when purchasing SuperGreens and Tummy Toner individually — a true saving of {save}.</p>"
           }
         },
         "q3": {
@@ -657,7 +657,7 @@
           "type": "g",
           "settings": {
             "icon": "💰",
-            "text": "Save R84.95 vs singles"
+            "text": "Save {save} vs singles"
           }
         }
       },
@@ -674,7 +674,7 @@
         "badge": "30-day money-back guarantee",
         "title_pre": "Two guts, one pack,",
         "title_highlight": "risk-free for 30 days",
-        "sub": "Femina™ for her, Velo16™ for him, R84.95 saved. If you don't feel the difference, we refund every cent.",
+        "sub": "{save} saved versus buying each product separately. If you don't feel the difference, we refund every cent.",
         "cta_text": "Add Couple Pack to Cart",
         "cta_link": "#vbpForm"
       }

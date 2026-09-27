@@ -51,11 +51,11 @@
         "brand_primary": "#0284c7",
         "brand_dark": "#0369a1",
         "brand_tint": "#e0f2fe",
-        "brand_label": "PregBiotics\u2122 Pregnancy Support Pack",
+        "brand_label": "PregBiotics™ Pregnancy Support Pack",
         "rating": "4.9",
         "review_count": "50+ verified reviews",
-        "hook": "Complete maternal & mineral support pack: 1x PregBiotics Essentials + Omega 60s + 2x Velo16 Probiotics Calcium & Magnesium 60s. Save R167.25.",
-        "ship_note": "Ships nationwide \u00b7 Free SA delivery over R400 \u00b7 30-day money-back guarantee",
+        "hook": "Complete maternal & mineral support pack: 1x PregBiotics Essentials + Omega 60s + 2x Velo16 Probiotics Calcium & Magnesium 60s. Save {save}.",
+        "ship_note": "",
         "show_subscription": true,
         "tier_unit": "Pack",
         "tier_unit_plural": "Packs",
@@ -70,8 +70,8 @@
           "type": "review",
           "settings": {
             "avatar_url": "",
-            "author": "Gen\u00e9 Vorster",
-            "meta": "Verified Buyer \u00b7 PregBiotics Essentials + Omega",
+            "author": "Gené Vorster",
+            "meta": "Verified Buyer · PregBiotics Essentials + Omega",
             "quote": "10/10 Recommend. Keeps me feeling great during this season of my life. Thank you Velobiotics."
           }
         },
@@ -80,7 +80,7 @@
           "settings": {
             "avatar_url": "",
             "author": "Babalwa",
-            "meta": "Verified Buyer \u00b7 PregBiotics Essentials + Omega",
+            "meta": "Verified Buyer · PregBiotics Essentials + Omega",
             "quote": "Much better than other prenatals. They were making my stomach upset. Gentle on my digestive system."
           }
         },
@@ -89,7 +89,7 @@
           "settings": {
             "avatar_url": "",
             "author": "Monique",
-            "meta": "Verified Buyer \u00b7 2x Velo16 Cal-Mag",
+            "meta": "Verified Buyer · 2x Velo16 Cal-Mag",
             "quote": "No better product on the market in South Africa. Five stars all the way!"
           }
         },
@@ -98,7 +98,7 @@
           "settings": {
             "avatar_url": "",
             "author": "Vuyokazi",
-            "meta": "Verified Buyer \u00b7 2x Velo16 Cal-Mag",
+            "meta": "Verified Buyer · 2x Velo16 Cal-Mag",
             "quote": "Love this product. Works very well and I am not going back to other brands. I have found a probiotic that works for me."
           }
         },
@@ -107,7 +107,7 @@
           "settings": {
             "avatar_url": "",
             "author": "Savera Singh",
-            "meta": "Verified Buyer \u00b7 2x Velo16 Cal-Mag",
+            "meta": "Verified Buyer · 2x Velo16 Cal-Mag",
             "quote": "My family and I have been using Velobiotics... It has the right ingredients and priced perfectly. An amazing product for gut health."
           }
         }
@@ -220,7 +220,7 @@
           "type": "product",
           "settings": {
             "product_handle": "pregbiotics-essentials-with-omega",
-            "brand": "1x PregBiotics\u2122 Essentials + Omega 60s",
+            "brand": "1x PregBiotics™ Essentials + Omega 60s",
             "rating": "5.0",
             "reviews": "8+"
           }
@@ -229,7 +229,7 @@
           "type": "product",
           "settings": {
             "product_handle": "velo16-probiotics-calcium-magnesium",
-            "brand": "2x Velo16\u2122 Probiotics Calcium & Magnesium 60s",
+            "brand": "2x Velo16™ Probiotics Calcium & Magnesium 60s",
             "rating": "4.6",
             "reviews": "48+"
           }
@@ -246,7 +246,7 @@
         "tint": false,
         "eyebrow": "What's inside",
         "title": "3 Bottles Across 2 Core Products in One Pack",
-        "sub": "Includes 1x PregBiotics Essentials + Omega 60s and 2x Velo16 Cal-Mag 60s. Save R167.25."
+        "sub": "Includes 1x PregBiotics Essentials + Omega 60s and 2x Velo16 Cal-Mag 60s. Save {save}."
       }
     },
     "benefits": {
@@ -484,7 +484,7 @@
           "type": "product",
           "settings": {
             "product_handle": "pregbiotics-conception",
-            "brand": "PregBiotics\u2122 Conception",
+            "brand": "PregBiotics™ Conception",
             "rating": "5.0",
             "reviews": "12+"
           }
@@ -493,7 +493,7 @@
           "type": "product",
           "settings": {
             "product_handle": "pregbiotics-breastfeeding",
-            "brand": "PregBiotics\u2122 Breastfeeding Support",
+            "brand": "PregBiotics™ Breastfeeding Support",
             "rating": "5.0",
             "reviews": "15+"
           }
@@ -502,7 +502,7 @@
           "type": "product",
           "settings": {
             "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
-            "brand": "Femina\u2122 Probiotic Capsules (30s)",
+            "brand": "Femina™ Probiotic Capsules (30s)",
             "rating": "4.7",
             "reviews": "399+"
           }
@@ -651,7 +651,7 @@
           "type": "q",
           "settings": {
             "question": "What is included in the Pregnancy Support Pack and how much do I save?",
-            "answer": "<p>The pack contains 1x PregBiotics Essentials + Omega 60s (R509.95) and 2x Velo16 Probiotics Calcium & Magnesium 60s (R299.95 each), providing a total component value of R1,109.85. At the pack price of R942.60, you save R167.25.</p>"
+            "answer": "<p>The pack contains 1x PregBiotics Essentials + Omega 60s and 2x Velo16 Probiotics Calcium & Magnesium 60s , providing a total component value of {compare}. At the pack price of {price}, you save {save}.</p>"
           }
         },
         "q2": {
@@ -686,7 +686,7 @@
           "type": "q",
           "settings": {
             "question": "How should I store the products in this pack?",
-            "answer": "<p>Store all bottles in a cool, dry place away from direct sunlight below 25\u00b0C. Thanks to micro-shielding around each bacterium, the probiotic strains are shelf-stable and do not require refrigeration.</p>"
+            "answer": "<p>Store all bottles in a cool, dry place away from direct sunlight below 25°C. Thanks to micro-shielding around each bacterium, the probiotic strains are shelf-stable and do not require refrigeration.</p>"
           }
         },
         "q7": {
@@ -726,7 +726,7 @@
           "type": "g",
           "settings": {
             "icon": "truck",
-            "text": "Free SA Shipping > R400"
+            "text": "{shipping}"
           }
         },
         "g3": {
@@ -749,7 +749,7 @@
         "badge": "Complete Maternal & Mineral Care",
         "title_pre": "Nourish yourself & your baby",
         "title_highlight": "with confidence",
-        "sub": "1x PregBiotics Essentials + Omega 60s plus 2x Velo16 Cal-Mag 60s in one complete pregnancy support system. Save R167.25.",
+        "sub": "1x PregBiotics Essentials + Omega 60s plus 2x Velo16 Cal-Mag 60s in one complete pregnancy support system. Save {save}.",
         "cta_text": "Add Pregnancy Support Pack to Cart",
         "cta_link": "#"
       }

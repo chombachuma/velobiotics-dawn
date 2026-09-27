@@ -30,7 +30,7 @@
           "type": "benefit",
           "settings": {
             "icon": "💰",
-            "text": "Save R177.82 vs buying separately (R992.08 vs R1,169.90)"
+            "text": "Save {save} vs buying separately ({price} vs {compare})"
           }
         }
       },
@@ -46,7 +46,7 @@
         "brand_label": "Velobiotics™ Couple Pack",
         "rating": "4.5",
         "review_count": "2",
-        "hook": "Appetite & Cravings Control Stack: GLP-1 Booster + Tummy Toner + Apple Cider Vinegar Probiotics. Save R177.82 vs buying separately.",
+        "hook": "Appetite & Cravings Control Stack: GLP-1 Booster + Tummy Toner + Apple Cider Vinegar Probiotics. Save {save} vs buying separately.",
         "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
         "show_subscription": true,
         "tier_unit": "Pack",
@@ -108,7 +108,7 @@
           "type": "point",
           "settings": {
             "icon": "✕",
-            "text": "<strong>High separate cost</strong> — Purchasing GLP-1 Booster, Tummy Toner, and Apple Cider separately costs R1,169.90."
+            "text": "<strong>High separate cost</strong> — Purchasing GLP-1 Booster, Tummy Toner, and Apple Cider separately costs {compare}."
           }
         },
         "p2": {
@@ -165,7 +165,7 @@
           "type": "point",
           "settings": {
             "icon": "✓",
-            "text": "<strong>Instant bundle saving</strong> — Get the entire stack for R992.08, saving R177.82."
+            "text": "<strong>Instant bundle saving</strong> — Get the entire stack for {price}, saving {save}."
           }
         }
       },
@@ -263,8 +263,8 @@
           "type": "feat",
           "settings": {
             "icon": "💰",
-            "name": "Save R177.82 Instantly",
-            "desc": "Triple-action stack priced at R992.08 instead of R1,169.90 when bought separately."
+            "name": "Save {save} Instantly",
+            "desc": "Triple-action stack priced at {price} instead of {compare} when bought separately."
           }
         }
       },
@@ -531,7 +531,7 @@
         "o3": {
           "type": "row",
           "settings": {
-            "feature": "True bundle saving of R177.82",
+            "feature": "True bundle saving of {save}",
             "brand_state": "yes",
             "b_state": "no",
             "c_state": "no"
@@ -592,7 +592,7 @@
           "type": "q",
           "settings": {
             "question": "How much do I save with this stack?",
-            "answer": "<p>You pay R992.08 for the stack compared to R1,169.90 when buying GLP-1 Booster (R520.00), Tummy Toner (R349.95), and Apple Cider (R299.95) individually — a true saving of R177.82.</p>"
+            "answer": "<p>You pay {price} for the stack compared to {compare} when buying GLP-1 Booster, Tummy Toner, and Apple Cider individually — a true saving of {save}.</p>"
           }
         },
         "q3": {
@@ -666,7 +666,7 @@
           "type": "g",
           "settings": {
             "icon": "💰",
-            "text": "Save R84.95 vs singles"
+            "text": "Save {save} vs singles"
           }
         }
       },
@@ -683,7 +683,7 @@
         "badge": "30-day money-back guarantee",
         "title_pre": "Two guts, one pack,",
         "title_highlight": "risk-free for 30 days",
-        "sub": "Femina™ for her, Velo16™ for him, R84.95 saved. If you don't feel the difference, we refund every cent.",
+        "sub": "{save} saved versus buying each product separately. If you don't feel the difference, we refund every cent.",
         "cta_text": "Add Couple Pack to Cart",
         "cta_link": "#vbpForm"
       }

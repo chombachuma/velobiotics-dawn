@@ -15,28 +15,28 @@
         "b1": {
           "type": "benefit",
           "settings": {
-            "icon": "\ud83c\udf19",
-            "text": "Velo16\u2122 Magnesium Glycinate (60 caps) for muscle & nerve ease"
+            "icon": "🌙",
+            "text": "Velo16™ Magnesium Glycinate (60 caps) for muscle & nerve ease"
           }
         },
         "b2": {
           "type": "benefit",
           "settings": {
-            "icon": "\ud83c\udf3f",
-            "text": "Velo16\u2122 Ashwagandha Complex (60 caps) for stress & cortisol balance"
+            "icon": "🌿",
+            "text": "Velo16™ Ashwagandha Complex (60 caps) for stress & cortisol balance"
           }
         },
         "b3": {
           "type": "benefit",
           "settings": {
-            "icon": "\ud83d\udcb0",
-            "text": "Save R89.98 vs buying separately (R509.92 vs R599.90)"
+            "icon": "💰",
+            "text": "Save {save} vs buying separately ({price} vs {compare})"
           }
         },
         "b4": {
           "type": "benefit",
           "settings": {
-            "icon": "\u26a1",
+            "icon": "⚡",
             "text": "Micro-shielded probiotics in both for gut-brain relaxation"
           }
         },
@@ -44,14 +44,14 @@
           "type": "testi",
           "settings": {
             "quote": "Sleep quality improved remarkably within days.",
-            "author": "Sipho M. [Velo16\u2122 Magnesium Glycinate]"
+            "author": "Sipho M. [Velo16™ Magnesium Glycinate]"
           }
         },
         "t2": {
           "type": "testi",
           "settings": {
             "quote": "Helps me unwind after hectic work days.",
-            "author": "Amanda K. [Velo16\u2122 Ashwagandha]"
+            "author": "Amanda K. [Velo16™ Ashwagandha]"
           }
         },
         "t3": {
@@ -83,11 +83,11 @@
         "brand_primary": "#4d8c44",
         "brand_dark": "#2e5d28",
         "brand_tint": "#eef7ec",
-        "brand_label": "Velobiotics\u2122 Calm Nights",
+        "brand_label": "Velobiotics™ Calm Nights",
         "rating": "4.6",
         "review_count": "96 reviews",
-        "hook": "Velo16\u2122 Magnesium Glycinate + Velo16\u2122 Ashwagandha Complex: 60 capsules each, micro-shielded probiotics for evening calm, sleep quality support, and daily stress resilience. Save R89.98 vs buying separately.",
-        "ship_note": "Ships worldwide \u00b7 Free shipping over the free-shipping threshold \u00b7 30-day money-back guarantee",
+        "hook": "Velo16™ Magnesium Glycinate + Velo16™ Ashwagandha Complex: 60 capsules each, micro-shielded probiotics for evening calm, sleep quality support, and daily stress resilience. Save {save} vs buying separately.",
+        "ship_note": "Ships worldwide · Free shipping over the free-shipping threshold · 30-day money-back guarantee",
         "show_subscription": true,
         "tier_unit": "Pack",
         "tier_unit_plural": "Packs",
@@ -101,7 +101,7 @@
         "r1": {
           "type": "review",
           "settings": {
-            "author": "Sipho M. [Velo16\u2122 Magnesium Glycinate]",
+            "author": "Sipho M. [Velo16™ Magnesium Glycinate]",
             "meta": "Verified buyer",
             "quote": "Magnesium glycinate is so gentle on the stomach. Sleeping much better without feeling groggy in the morning."
           }
@@ -109,7 +109,7 @@
         "r2": {
           "type": "review",
           "settings": {
-            "author": "Amanda K. [Velo16\u2122 Ashwagandha]",
+            "author": "Amanda K. [Velo16™ Ashwagandha]",
             "meta": "Verified buyer",
             "quote": "Ashwagandha has been a game changer for managing daily work stress. Unwinding in the evening feels natural now."
           }
@@ -117,7 +117,7 @@
         "r3": {
           "type": "review",
           "settings": {
-            "author": "David T. [Velo16\u2122 Magnesium Glycinate]",
+            "author": "David T. [Velo16™ Magnesium Glycinate]",
             "meta": "Verified buyer",
             "quote": "The chelated magnesium glycinate together with live probiotics makes a noticeable difference in muscle relaxation."
           }
@@ -125,7 +125,7 @@
         "r4": {
           "type": "review",
           "settings": {
-            "author": "Thandi N. [Velo16\u2122 Ashwagandha]",
+            "author": "Thandi N. [Velo16™ Ashwagandha]",
             "meta": "Verified buyer",
             "quote": "Excellent quality adaptogen. Paired with evening tea, it gives a calm, grounded feel before bedtime."
           }
@@ -141,7 +141,7 @@
         "brand_primary": "#4d8c44",
         "brand_dark": "#2e5d28",
         "brand_tint": "#eef7ec",
-        "eyebrow": "\u2605 Verified Judge.me reviews",
+        "eyebrow": "★ Verified Judge.me reviews",
         "title": "Customers rating our evening calm components"
       }
     },
@@ -151,29 +151,29 @@
         "p1": {
           "type": "point",
           "settings": {
-            "icon": "\u2715",
-            "text": "<strong>Separate purchases</strong> \u2014 Buying Magnesium Glycinate and Ashwagandha individually costs R599.90."
+            "icon": "✕",
+            "text": "<strong>Separate purchases</strong> — Buying Magnesium Glycinate and Ashwagandha individually costs {compare}."
           }
         },
         "p2": {
           "type": "point",
           "settings": {
-            "icon": "\u2715",
-            "text": "<strong>Harsh magnesium forms</strong> \u2014 Magnesium oxide can cause stomach upset rather than gentle relaxation."
+            "icon": "✕",
+            "text": "<strong>Harsh magnesium forms</strong> — Magnesium oxide can cause stomach upset rather than gentle relaxation."
           }
         },
         "p3": {
           "type": "point",
           "settings": {
-            "icon": "\u2715",
-            "text": "<strong>Unprotected probiotics</strong> \u2014 Ordinary probiotic capsules fail in stomach acid before reaching the gut."
+            "icon": "✕",
+            "text": "<strong>Unprotected probiotics</strong> — Ordinary probiotic capsules fail in stomach acid before reaching the gut."
           }
         },
         "p4": {
           "type": "point",
           "settings": {
-            "icon": "\u2715",
-            "text": "<strong>Daytime grogginess</strong> \u2014 Heavy sleep aids leave you feeling sluggish the next morning."
+            "icon": "✕",
+            "text": "<strong>Daytime grogginess</strong> — Heavy sleep aids leave you feeling sluggish the next morning."
           }
         }
       },
@@ -193,7 +193,7 @@
         "eyebrow": "The Nighttime Challenge",
         "title_pre": "Wired at night,",
         "title_highlight": "struggling to unwind.",
-        "desc": "Busy workdays, muscle tension, and stress disrupt evening relaxation and sleep quality. Buying single magnesium and ashwagandha supplements separately costs R599.90 and often lacks gut-brain support."
+        "desc": "Busy workdays, muscle tension, and stress disrupt evening relaxation and sleep quality. Buying single magnesium and ashwagandha supplements separately costs {compare} and often lacks gut-brain support."
       }
     },
     "solution": {
@@ -202,29 +202,29 @@
         "s1": {
           "type": "point",
           "settings": {
-            "icon": "\u2713",
-            "text": "<strong>Velo16\u2122 Magnesium Glycinate</strong> \u2014 Highly bioavailable chelated magnesium for muscle ease and gentle absorption. 60 capsules."
+            "icon": "✓",
+            "text": "<strong>Velo16™ Magnesium Glycinate</strong> — Highly bioavailable chelated magnesium for muscle ease and gentle absorption. 60 capsules."
           }
         },
         "s2": {
           "type": "point",
           "settings": {
-            "icon": "\u2713",
-            "text": "<strong>Velo16\u2122 Ashwagandha Complex</strong> \u2014 Premium adaptogenic ashwagandha extract to support daily stress resilience. 60 capsules."
+            "icon": "✓",
+            "text": "<strong>Velo16™ Ashwagandha Complex</strong> — Premium adaptogenic ashwagandha extract to support daily stress resilience. 60 capsules."
           }
         },
         "s3": {
           "type": "point",
           "settings": {
-            "icon": "\u2713",
-            "text": "<strong>Micro-shielded delivery</strong> \u2014 Velobiotics\u2122 technology protects live probiotic bacteria through stomach acid to the lower gut."
+            "icon": "✓",
+            "text": "<strong>Micro-shielded delivery</strong> — Velobiotics™ technology protects live probiotic bacteria through stomach acid to the lower gut."
           }
         },
         "s4": {
           "type": "point",
           "settings": {
-            "icon": "\u2713",
-            "text": "<strong>Bundle savings</strong> \u2014 R509.92 instead of R599.90. Save R89.98 (15%)."
+            "icon": "✓",
+            "text": "<strong>Bundle savings</strong> — {price} instead of {compare}. Save {save} ({save_pct}%)."
           }
         }
       },
@@ -244,7 +244,7 @@
         "eyebrow": "The Calm Nights Solution",
         "title_pre": "Synergistic relaxation,",
         "title_highlight": "gut-brain harmony.",
-        "desc": "Velo16\u2122 Magnesium Glycinate relaxes muscles and nerves while Velo16\u2122 Ashwagandha eases stress and balances cortisol response. Both deliver micro-shielded probiotics to nourish the gut-brain axis for restful evenings."
+        "desc": "Velo16™ Magnesium Glycinate relaxes muscles and nerves while Velo16™ Ashwagandha eases stress and balances cortisol response. Both deliver micro-shielded probiotics to nourish the gut-brain axis for restful evenings."
       }
     },
     "related": {
@@ -254,7 +254,7 @@
           "type": "product",
           "settings": {
             "product_handle": "velo16-probiotics-magnesium-glycinate",
-            "brand": "Velo16\u2122 \u00b7 Magnesium Glycinate",
+            "brand": "Velo16™ · Magnesium Glycinate",
             "rating": "4.6",
             "reviews": "48 reviews"
           }
@@ -263,7 +263,7 @@
           "type": "product",
           "settings": {
             "product_handle": "velo16-probiotics-ashwagandha",
-            "brand": "Velo16\u2122 \u00b7 Ashwagandha Complex",
+            "brand": "Velo16™ · Ashwagandha Complex",
             "rating": "4.6",
             "reviews": "48 reviews"
           }
@@ -289,7 +289,7 @@
         "f1": {
           "type": "feat",
           "settings": {
-            "icon": "\ud83c\udf19",
+            "icon": "🌙",
             "name": "Restful sleep quality",
             "desc": "Magnesium glycinate supports natural relaxation without causing morning grogginess."
           }
@@ -297,7 +297,7 @@
         "f2": {
           "type": "feat",
           "settings": {
-            "icon": "\ud83c\udf3f",
+            "icon": "🌿",
             "name": "Stress & cortisol balance",
             "desc": "Adaptogenic ashwagandha helps ease tension and supports healthy stress resilience."
           }
@@ -305,7 +305,7 @@
         "f3": {
           "type": "feat",
           "settings": {
-            "icon": "\ud83e\udde0",
+            "icon": "🧠",
             "name": "Gut-brain axis wellness",
             "desc": "Probiotic strains in both formulas support the gut-brain signalling network."
           }
@@ -313,23 +313,23 @@
         "f4": {
           "type": "feat",
           "settings": {
-            "icon": "\ud83d\udcb0",
-            "name": "Save R89.98",
-            "desc": "R509.92 for both 60-capsule products versus R599.90 purchased individually."
+            "icon": "💰",
+            "name": "Save {save}",
+            "desc": "{price} for both 60-capsule products versus {compare} purchased individually."
           }
         },
         "f5": {
           "type": "feat",
           "settings": {
-            "icon": "\ud83d\udee1\ufe0f",
+            "icon": "🛡️",
             "name": "Micro-shielded",
-            "desc": "Velobiotics\u2122 patented technology shields live bacteria through stomach acid."
+            "desc": "Velobiotics™ patented technology shields live bacteria through stomach acid."
           }
         },
         "f6": {
           "type": "feat",
           "settings": {
-            "icon": "\ud83d\udcc5",
+            "icon": "📅",
             "name": "Simple evening ritual",
             "desc": "Take 1 capsule of each 30 to 60 minutes before bedtime with water."
           }
@@ -358,15 +358,15 @@
         "h1": {
           "type": "step",
           "settings": {
-            "icon": "\ud83d\udce6",
+            "icon": "📦",
             "name": "Unpack two boxes",
-            "desc": "Velo16\u2122 Magnesium Glycinate (60s) and Velo16\u2122 Ashwagandha Complex (60s)."
+            "desc": "Velo16™ Magnesium Glycinate (60s) and Velo16™ Ashwagandha Complex (60s)."
           }
         },
         "h2": {
           "type": "step",
           "settings": {
-            "icon": "\ud83d\udc8a",
+            "icon": "💊",
             "name": "Take 1 capsule of each",
             "desc": "30 to 60 minutes before bed with a glass of water."
           }
@@ -374,7 +374,7 @@
         "h3": {
           "type": "step",
           "settings": {
-            "icon": "\ud83d\udee1\ufe0f",
+            "icon": "🛡️",
             "name": "Micro-shield protection",
             "desc": "Targeted micro-shielding delivers live probiotics through stomach acid intact."
           }
@@ -382,7 +382,7 @@
         "h4": {
           "type": "step",
           "settings": {
-            "icon": "\ud83d\udd04",
+            "icon": "🔄",
             "name": "30 to 60 day routine",
             "desc": "Consistent nightly use supports accumulated stress resilience and steady calm."
           }
@@ -409,8 +409,8 @@
         "i1": {
           "type": "ingredient",
           "settings": {
-            "icon": "\ud83d\udc8a",
-            "name": "Velo16\u2122 Magnesium Glycinate",
+            "icon": "💊",
+            "name": "Velo16™ Magnesium Glycinate",
             "amount": "60 capsules",
             "desc": "Chelated Magnesium Glycinate with 16 micro-shielded probiotic strains for muscle and nerve ease."
           }
@@ -418,8 +418,8 @@
         "i2": {
           "type": "ingredient",
           "settings": {
-            "icon": "\ud83c\udf3f",
-            "name": "Velo16\u2122 Ashwagandha Complex",
+            "icon": "🌿",
+            "name": "Velo16™ Ashwagandha Complex",
             "amount": "60 capsules",
             "desc": "Standardised Ashwagandha root extract with 16 micro-shielded probiotic strains for stress balance."
           }
@@ -427,8 +427,8 @@
         "i3": {
           "type": "ingredient",
           "settings": {
-            "icon": "\ud83d\udee1\ufe0f",
-            "name": "Velobiotics\u2122 micro-shield",
+            "icon": "🛡️",
+            "name": "Velobiotics™ micro-shield",
             "amount": "Both products",
             "desc": "<a href=\"/pages/what-is-microencapsulation\">Patented microencapsulation</a> protects live probiotic cultures through stomach acid."
           }
@@ -436,16 +436,16 @@
         "i4": {
           "type": "ingredient",
           "settings": {
-            "icon": "\ud83d\udcb0",
+            "icon": "💰",
             "name": "Pack saving",
-            "amount": "R89.98 (15%)",
-            "desc": "R509.92 versus R299.95 + R299.95 bought separately."
+            "amount": "{save} ({save_pct}%)",
+            "desc": "{price} versus {compare} bought separately."
           }
         },
         "i5": {
           "type": "ingredient",
           "settings": {
-            "icon": "\ud83d\udcc5",
+            "icon": "📅",
             "name": "Supply",
             "amount": "30 to 60 days",
             "desc": "Take 1 capsule of each in the evening."
@@ -454,10 +454,10 @@
         "i6": {
           "type": "ingredient",
           "settings": {
-            "icon": "\ud83d\udeab",
+            "icon": "🚫",
             "name": "Free from",
             "amount": "Always",
-            "desc": "Gluten \u00b7 soy \u00b7 dairy \u00b7 artificial preservatives \u00b7 GMO."
+            "desc": "Gluten · soy · dairy · artificial preservatives · GMO."
           }
         }
       },
@@ -536,7 +536,7 @@
           "type": "product",
           "settings": {
             "product_handle": "14-day-gut-reboot-starter-pack",
-            "brand": "GutSlim\u2122 \u00b7 Starter Pack",
+            "brand": "GutSlim™ · Starter Pack",
             "rating": "4.8",
             "reviews": "250+"
           }
@@ -545,7 +545,7 @@
           "type": "product",
           "settings": {
             "product_handle": "6-week-total-transformation-pack",
-            "brand": "GutSlim\u2122 \u00b7 Transformation",
+            "brand": "GutSlim™ · Transformation",
             "rating": "4.9",
             "reviews": "180+"
           }
@@ -554,7 +554,7 @@
           "type": "product",
           "settings": {
             "product_handle": "appetite-cravings-control-stack",
-            "brand": "GutSlim\u2122 \u00b7 Appetite Stack",
+            "brand": "GutSlim™ · Appetite Stack",
             "rating": "4.8",
             "reviews": "120+"
           }
@@ -563,7 +563,7 @@
           "type": "product",
           "settings": {
             "product_handle": "family-health-bundle",
-            "brand": "Velobiotics\u2122 \u00b7 Family Stack",
+            "brand": "Velobiotics™ · Family Stack",
             "rating": "4.9",
             "reviews": "150+"
           }
@@ -609,7 +609,7 @@
           "settings": {
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg",
             "name": "Patented Micro-Shield Technology",
-            "desc": "Microencapsulation with Supercritical CO\u2082, studied in peer-reviewed papers."
+            "desc": "Microencapsulation with Supercritical CO₂, studied in peer-reviewed papers."
           }
         },
         "d4": {
@@ -649,7 +649,7 @@
         "o2": {
           "type": "row",
           "settings": {
-            "feature": "Save R89.98 (15%)",
+            "feature": "Save {save} ({save_pct}%)",
             "brand_state": "yes",
             "b_state": "no",
             "c_state": "no"
@@ -701,7 +701,7 @@
         "col_b": "Two separate items",
         "col_c": "Generic sleep supplement",
         "cta_text": "Add Calm Nights Bundle to Cart",
-        "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
+        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
       }
     },
     "judgeme": {
@@ -722,14 +722,14 @@
           "type": "q",
           "settings": {
             "question": "Exactly what is inside the Calm Nights Bundle?",
-            "answer": "<p>The Calm Nights Bundle contains 1 box of Velo16\u2122 Magnesium Glycinate (60 capsules) and 1 box of Velo16\u2122 Ashwagandha Complex (60 capsules). Both are full-size, standalone retail products with micro-shielded probiotics.</p>"
+            "answer": "<p>The Calm Nights Bundle contains 1 box of Velo16™ Magnesium Glycinate (60 capsules) and 1 box of Velo16™ Ashwagandha Complex (60 capsules). Both are full-size, standalone retail products with micro-shielded probiotics.</p>"
           }
         },
         "q2": {
           "type": "q",
           "settings": {
             "question": "How much do I save with this bundle?",
-            "answer": "<p>You save R89.98. Purchased separately, Velo16\u2122 Magnesium Glycinate (R299.95) and Velo16\u2122 Ashwagandha (R299.95) total R599.90. The Calm Nights Bundle is priced at R509.92, offering a 15% saving.</p>"
+            "answer": "<p>You save {save}. Purchased separately, Velo16™ Magnesium Glycinate and Velo16™ Ashwagandha total {compare}. The Calm Nights Bundle is priced at {price}, offering a {save_pct}% saving.</p>"
           }
         },
         "q3": {
@@ -750,7 +750,7 @@
           "type": "q",
           "settings": {
             "question": "Do the capsules require refrigeration?",
-            "answer": "<p>No refrigeration is required. Velobiotics\u2122 micro-encapsulation protects live probiotic bacteria at room temperature (below 25 \u00b0C). <a href=\"/pages/heat-stability-and-shelf-life\">Learn more about our heat stability research.</a></p>"
+            "answer": "<p>No refrigeration is required. Velobiotics™ micro-encapsulation protects live probiotic bacteria at room temperature (below 25 °C). <a href=\"/pages/heat-stability-and-shelf-life\">Learn more about our heat stability research.</a></p>"
           }
         },
         "q6": {
@@ -789,29 +789,29 @@
         "g1": {
           "type": "g",
           "settings": {
-            "icon": "\u2705",
+            "icon": "✅",
             "text": "30-day money-back"
           }
         },
         "g2": {
           "type": "g",
           "settings": {
-            "icon": "\ud83d\ude9a",
+            "icon": "🚚",
             "text": "Ships worldwide"
           }
         },
         "g3": {
           "type": "g",
           "settings": {
-            "icon": "\ud83d\udd2c",
+            "icon": "🔬",
             "text": "Lab-tested every batch"
           }
         },
         "g4": {
           "type": "g",
           "settings": {
-            "icon": "\ud83d\udcb0",
-            "text": "Save R89.98 vs singles"
+            "icon": "💰",
+            "text": "Save {save} vs singles"
           }
         }
       },
@@ -828,7 +828,7 @@
         "badge": "30-day money-back guarantee",
         "title_pre": "Restful evenings,",
         "title_highlight": "risk-free for 30 days",
-        "sub": "Magnesium Glycinate + Ashwagandha + Micro-shielded Probiotics, R89.98 saved. If you do not love your results, email support@velobiotics.com.",
+        "sub": "Magnesium Glycinate + Ashwagandha + Micro-shielded Probiotics, {save} saved. If you do not love your results, email support@velobiotics.com.",
         "cta_text": "Add Calm Nights Bundle to Cart",
         "cta_link": "#vbpForm"
       }

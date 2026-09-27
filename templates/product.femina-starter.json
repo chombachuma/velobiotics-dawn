@@ -51,11 +51,11 @@
         "brand_primary": "#7e22ce",
         "brand_dark": "#581c87",
         "brand_tint": "#f3e8ff",
-        "brand_label": "Femina\u2122 Intimate Health Reset Kit",
+        "brand_label": "Femina™ Intimate Health Reset Kit",
         "rating": "4.7",
         "review_count": "399 verified reviews",
-        "hook": "Complete pH reset system: pH Self-Test Kit, Boric Acid Suppositories (20s), and 10-Strain Probiotic Capsules (30s). Save R279.90.",
-        "ship_note": "Ships nationwide \u00b7 Free SA delivery over R400 \u00b7 Discrete packaging \u00b7 30-day money-back guarantee",
+        "hook": "Complete pH reset system: pH Self-Test Kit, Boric Acid Suppositories (20s), and 10-Strain Probiotic Capsules (30s). Save {save}.",
+        "ship_note": "",
         "show_subscription": true,
         "tier_unit": "Pack",
         "tier_unit_plural": "Packs",
@@ -71,7 +71,7 @@
           "settings": {
             "avatar_url": "",
             "author": "Kgothatso M.",
-            "meta": "Verified Buyer \u00b7 South Africa",
+            "meta": "Verified Buyer · South Africa",
             "quote": "I struggled with recurring discomfort and pH imbalances. Following this 3-step system brought total balance and peace of mind within days. So grateful!"
           }
         },
@@ -80,7 +80,7 @@
           "settings": {
             "avatar_url": "",
             "author": "Archie T.",
-            "meta": "Verified Buyer \u00b7 South Africa",
+            "meta": "Verified Buyer · South Africa",
             "quote": "Best intimate care kit! Testing first took away all the guesswork, and using the suppositories followed by daily capsules kept everything completely fresh."
           }
         },
@@ -89,7 +89,7 @@
           "settings": {
             "avatar_url": "",
             "author": "Nandipha K.",
-            "meta": "Verified Buyer \u00b7 South Africa",
+            "meta": "Verified Buyer · South Africa",
             "quote": "The pH strips were a game changer. I knew exactly what was going on, and the combination of boric acid and probiotics brought fast relief and balance."
           }
         },
@@ -98,7 +98,7 @@
           "settings": {
             "avatar_url": "",
             "author": "Zinhle S.",
-            "meta": "Verified Buyer \u00b7 South Africa",
+            "meta": "Verified Buyer · South Africa",
             "quote": "Discreet delivery, easy to follow instructions, and genuine results. Keeps my intimate microbiome supported and healthy."
           }
         },
@@ -107,7 +107,7 @@
           "settings": {
             "avatar_url": "",
             "author": "Lerato D.",
-            "meta": "Verified Buyer \u00b7 South Africa",
+            "meta": "Verified Buyer · South Africa",
             "quote": "No more guessing games. This starter pack has everything you need to test, restore, and maintain long-term intimate freshness."
           }
         }
@@ -220,7 +220,7 @@
           "type": "product",
           "settings": {
             "product_handle": "femina-ph-self-test-kit-for-vaginal-infections",
-            "brand": "Femina\u2122 Self-Test Vaginal pH Kit (2 Tests)",
+            "brand": "Femina™ Self-Test Vaginal pH Kit (2 Tests)",
             "rating": "4.5",
             "reviews": "12+"
           }
@@ -229,7 +229,7 @@
           "type": "product",
           "settings": {
             "product_handle": "femina-probiotics-cookie-fresh-with-boric-acid-suppositories",
-            "brand": "Femina\u2122 COOKIE FRESH Boric Acid Suppositories (20s)",
+            "brand": "Femina™ COOKIE FRESH Boric Acid Suppositories (20s)",
             "rating": "4.7",
             "reviews": "85+"
           }
@@ -238,7 +238,7 @@
           "type": "product",
           "settings": {
             "product_handle": "femina-probiotic-capsules-with-cranberry-for-women",
-            "brand": "Femina\u2122 10-Strain Probiotic Capsules with Cranberry (30s)",
+            "brand": "Femina™ 10-Strain Probiotic Capsules with Cranberry (30s)",
             "rating": "4.7",
             "reviews": "399+"
           }
@@ -256,7 +256,7 @@
         "tint": false,
         "eyebrow": "What's inside",
         "title": "3 Full-Sized Products in One Pack",
-        "sub": "Save R279.90 compared to buying each item separately."
+        "sub": "Save {save} compared to buying each item separately."
       }
     },
     "benefits": {
@@ -504,7 +504,7 @@
           "type": "product",
           "settings": {
             "product_handle": "femina-mini-combo",
-            "brand": "Femina\u2122 Mini Combo",
+            "brand": "Femina™ Mini Combo",
             "rating": "4.6",
             "reviews": "25+"
           }
@@ -513,7 +513,7 @@
           "type": "product",
           "settings": {
             "product_handle": "femina-combo-care",
-            "brand": "Femina\u2122 COMBO Care",
+            "brand": "Femina™ COMBO Care",
             "rating": "4.7",
             "reviews": "40+"
           }
@@ -671,7 +671,7 @@
           "type": "q",
           "settings": {
             "question": "How much do I save with the Femina Starter Pack?",
-            "answer": "<p>You save R279.90 (over 30% discount) compared to purchasing the pH Self-Test Kit (R199.95), Cookie Fresh Suppositories (R399.95), and Femina Probiotic Capsules (R299.95) individually.</p>"
+            "answer": "<p>You save {save} ({save_pct}%) compared to purchasing the pH Self-Test Kit, Cookie Fresh Suppositories, and Femina Probiotic Capsules individually.</p>"
           }
         },
         "q2": {
@@ -746,7 +746,7 @@
           "type": "g",
           "settings": {
             "icon": "truck",
-            "text": "Free SA Shipping > R400"
+            "text": "{shipping}"
           }
         },
         "g3": {

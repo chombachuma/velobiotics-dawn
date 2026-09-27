@@ -15,28 +15,28 @@
         "b1": {
           "type": "benefit",
           "settings": {
-            "icon": "\ud83c\udf66",
-            "text": "BioGain\u2122 Vanilla Probiotic Meal 400g"
+            "icon": "🍦",
+            "text": "BioGain™ Vanilla Probiotic Meal 400g"
           }
         },
         "b2": {
           "type": "benefit",
           "settings": {
-            "icon": "\ud83d\udc8a",
-            "text": "Velo16\u2122 Probiotic Digestive Capsules 60s"
+            "icon": "💊",
+            "text": "Velo16™ Probiotic Digestive Capsules 60s"
           }
         },
         "b3": {
           "type": "benefit",
           "settings": {
-            "icon": "\ud83d\udcb0",
-            "text": "Save R101.98 vs buying separately"
+            "icon": "💰",
+            "text": "Save {save} vs buying separately"
           }
         },
         "b4": {
           "type": "benefit",
           "settings": {
-            "icon": "\ud83d\udee1\ufe0f",
+            "icon": "🛡️",
             "text": "Micro-shielded delivery protecting probiotics"
           }
         }
@@ -51,11 +51,11 @@
         "brand_primary": "#4d8c44",
         "brand_dark": "#2e5d28",
         "brand_tint": "#eef7ec",
-        "brand_label": "Velobiotics\u2122 Immunity Boost Duo (Vanilla)",
+        "brand_label": "Velobiotics™ Immunity Boost Duo (Vanilla)",
         "rating": "4.6",
         "review_count": "24 reviews",
-        "hook": "Complete daily gut and immune support in one duo. Combines BioGain\u2122 Vanilla Probiotic Meal (400g) and Velo16\u2122 Probiotic Digestive Capsules (60 capsules) with 16 micro-shielded strains and 10 billion CFU per capsule. Save R101.98 vs buying separately.",
-        "ship_note": "Ships worldwide \u00b7 Free shipping over threshold \u00b7 30-day money-back guarantee",
+        "hook": "Complete daily gut and immune support in one duo. Combines BioGain™ Vanilla Probiotic Meal (400g) and Velo16™ Probiotic Digestive Capsules (60 capsules) with 16 micro-shielded strains and 10 billion CFU per capsule. Save {save} vs buying separately.",
+        "ship_note": "Ships worldwide · Free shipping over threshold · 30-day money-back guarantee",
         "show_subscription": true,
         "tier_unit": "Pack",
         "tier_unit_plural": "Packs",
@@ -71,7 +71,7 @@
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Suffiyaan+Campbell&background=4d8c44&color=ffffff&size=120&bold=true&font-size=0.42",
             "author": "Suffiyaan Campbell",
-            "meta": "Verified Buyer \u00b7 BioGain\u2122 Vanilla",
+            "meta": "Verified Buyer · BioGain™ Vanilla",
             "quote": "The best ever probiotic meal replacement. Great vanilla taste and excellent support for my digestion."
           }
         },
@@ -80,7 +80,7 @@
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Sipho+M&background=7eb375&color=ffffff&size=120&bold=true&font-size=0.42",
             "author": "Sipho M.",
-            "meta": "Verified Buyer \u00b7 Velo16\u2122 Probiotic Digestive Capsules 60s",
+            "meta": "Verified Buyer · Velo16™ Probiotic Digestive Capsules 60s",
             "quote": "Velo16 Probiotic Digestive Capsules support my digestive wellness and daily gut balance. High quality capsule."
           }
         },
@@ -89,7 +89,7 @@
           "settings": {
             "avatar_url": "https://ui-avatars.com/api/?name=Anonymous+Customer&background=2e5d28&color=ffffff&size=120&bold=true&font-size=0.42",
             "author": "Anonymous",
-            "meta": "Verified Buyer \u00b7 BioGain\u2122 Vanilla",
+            "meta": "Verified Buyer · BioGain™ Vanilla",
             "quote": "Smooth vanilla taste and love that it includes micro-shielded probiotics."
           }
         }
@@ -103,7 +103,7 @@
         "brand_primary": "#4d8c44",
         "brand_dark": "#2e5d28",
         "brand_tint": "#eef7ec",
-        "eyebrow": "\u2605 Verified Judge.me Reviews",
+        "eyebrow": "★ Verified Judge.me Reviews",
         "title": "What customers say about component products"
       }
     },
@@ -113,22 +113,22 @@
         "p1": {
           "type": "point",
           "settings": {
-            "icon": "\u2715",
-            "text": "<strong>A meal shake alone</strong> \u2014 provides nutrition but may not deliver high-density targeted strain diversity."
+            "icon": "✕",
+            "text": "<strong>A meal shake alone</strong> — provides nutrition but may not deliver high-density targeted strain diversity."
           }
         },
         "p2": {
           "type": "point",
           "settings": {
-            "icon": "\u2715",
-            "text": "<strong>Buying singles separately</strong> \u2014 costs R509.90 (BioGain Vanilla R209.95 + Velo16 Digestive Capsules R299.95)."
+            "icon": "✕",
+            "text": "<strong>Buying singles separately</strong> — costs {compare} (BioGain Vanilla, Velo16 Digestive Capsules)."
           }
         },
         "p3": {
           "type": "point",
           "settings": {
-            "icon": "\u2715",
-            "text": "<strong>Unprotected probiotics</strong> \u2014 stomach acid destroys unprotected cultures before reaching the gut."
+            "icon": "✕",
+            "text": "<strong>Unprotected probiotics</strong> — stomach acid destroys unprotected cultures before reaching the gut."
           }
         }
       },
@@ -156,29 +156,29 @@
         "s1": {
           "type": "point",
           "settings": {
-            "icon": "\u2713",
-            "text": "<strong>BioGain\u2122 Vanilla 400g</strong> \u2014 10 probiotic strains + 15g whey protein per serving."
+            "icon": "✓",
+            "text": "<strong>BioGain™ Vanilla 400g</strong> — 10 probiotic strains + 15g whey protein per serving."
           }
         },
         "s2": {
           "type": "point",
           "settings": {
-            "icon": "\u2713",
-            "text": "<strong>Velo16\u2122 Digestive Capsules 60s</strong> \u2014 16 micro-shielded probiotic strains with 10 billion CFU per capsule."
+            "icon": "✓",
+            "text": "<strong>Velo16™ Digestive Capsules 60s</strong> — 16 micro-shielded probiotic strains with 10 billion CFU per capsule."
           }
         },
         "s3": {
           "type": "point",
           "settings": {
-            "icon": "\u2713",
-            "text": "<strong>Micro-shield technology</strong> \u2014 A protective shield around each bacterium ensures delivery to the gut."
+            "icon": "✓",
+            "text": "<strong>Micro-shield technology</strong> — A protective shield around each bacterium ensures delivery to the gut."
           }
         },
         "s4": {
           "type": "point",
           "settings": {
-            "icon": "\u2713",
-            "text": "<strong>True Bundle Value</strong> \u2014 Duo price R407.92 vs component sum R509.90 (save R101.98)."
+            "icon": "✓",
+            "text": "<strong>True Bundle Value</strong> — Duo price {price} vs component sum {compare} (save {save})."
           }
         }
       },
@@ -193,12 +193,12 @@
         "brand_primary": "#4d8c44",
         "brand_tint": "#eef7ec",
         "image_url": "",
-        "tag_value": "Save R101.98",
+        "tag_value": "Save {save}",
         "tag_label": "Daily Immune & Gut Ritual",
         "eyebrow": "The Immunity Boost Duo",
         "title_pre": "16 probiotic strains,",
         "title_highlight": "micro-shielded capsules.",
-        "desc": "Combines BioGain\u2122 Vanilla Probiotic Meal and Velo16\u2122 Probiotic Digestive Capsules for dual-action gut-barrier and immune support."
+        "desc": "Combines BioGain™ Vanilla Probiotic Meal and Velo16™ Probiotic Digestive Capsules for dual-action gut-barrier and immune support."
       }
     },
     "related": {
@@ -208,7 +208,7 @@
           "type": "product",
           "settings": {
             "product_handle": "biogain-probiotic-meal",
-            "brand": "BioGain\u2122 Vanilla 400g",
+            "brand": "BioGain™ Vanilla 400g",
             "rating": "4.6",
             "reviews": "24 reviews"
           }
@@ -217,7 +217,7 @@
           "type": "product",
           "settings": {
             "product_handle": "velo16-probiotic-digestive-capsules",
-            "brand": "Velo16\u2122 Probiotic Digestive Capsules 60s",
+            "brand": "Velo16™ Probiotic Digestive Capsules 60s",
             "rating": "4.8",
             "reviews": "15 reviews"
           }
@@ -243,15 +243,15 @@
         "f1": {
           "type": "feat",
           "settings": {
-            "icon": "\ud83c\udf66",
-            "name": "BioGain\u2122 Meal Nutrition",
+            "icon": "🍦",
+            "name": "BioGain™ Meal Nutrition",
             "desc": "Delicious vanilla probiotic meal shake supplying protein and active gut cultures."
           }
         },
         "f2": {
           "type": "feat",
           "settings": {
-            "icon": "\ud83d\udc8a",
+            "icon": "💊",
             "name": "16-Strain Probiotic Capsules",
             "desc": "10 billion CFU per capsule supporting gut-barrier health and daily digestive wellness."
           }
@@ -259,7 +259,7 @@
         "f3": {
           "type": "feat",
           "settings": {
-            "icon": "\ud83d\udee1\ufe0f",
+            "icon": "🛡️",
             "name": "Micro-Shield Technology",
             "desc": "Micro-shield around each bacterium protects live cultures through harsh stomach acid."
           }
@@ -267,9 +267,9 @@
         "f4": {
           "type": "feat",
           "settings": {
-            "icon": "\ud83d\udcb0",
-            "name": "Save R101.98",
-            "desc": "Duo price R407.92 vs component sum R509.90 bought individually."
+            "icon": "💰",
+            "name": "Save {save}",
+            "desc": "Duo price {price} vs component sum {compare} bought individually."
           }
         }
       },
@@ -285,7 +285,7 @@
         "eyebrow": "Why choose the duo",
         "title_pre": "Targeted nutrition,",
         "title_highlight": "synergistic protection.",
-        "sub": "Key advantages of combining BioGain\u2122 Vanilla with Velo16\u2122 Probiotic Digestive Capsules."
+        "sub": "Key advantages of combining BioGain™ Vanilla with Velo16™ Probiotic Digestive Capsules."
       }
     },
     "how": {
@@ -294,23 +294,23 @@
         "h1": {
           "type": "step",
           "settings": {
-            "icon": "\ud83e\udd64",
-            "name": "1. BioGain\u2122 Shake",
-            "desc": "Mix 1 serving of BioGain\u2122 Vanilla with water or milk daily."
+            "icon": "🥤",
+            "name": "1. BioGain™ Shake",
+            "desc": "Mix 1 serving of BioGain™ Vanilla with water or milk daily."
           }
         },
         "h2": {
           "type": "step",
           "settings": {
-            "icon": "\ud83d\udc8a",
-            "name": "2. Velo16\u2122 Digestive Capsules",
-            "desc": "Take 1 Velo16\u2122 Probiotic Digestive Capsule daily with water."
+            "icon": "💊",
+            "name": "2. Velo16™ Digestive Capsules",
+            "desc": "Take 1 Velo16™ Probiotic Digestive Capsule daily with water."
           }
         },
         "h3": {
           "type": "step",
           "settings": {
-            "icon": "\ud83d\udee1\ufe0f",
+            "icon": "🛡️",
             "name": "3. Micro-Shield Delivery",
             "desc": "Active bacteria arrive safely in the gut thanks to micro-shield protection."
           }
@@ -336,8 +336,8 @@
         "i1": {
           "type": "ingredient",
           "settings": {
-            "icon": "\ud83c\udf66",
-            "name": "BioGain\u2122 Probiotics Meal Vanilla (400g)",
+            "icon": "🍦",
+            "name": "BioGain™ Probiotics Meal Vanilla (400g)",
             "amount": "1 Tub (400g)",
             "desc": "10 probiotic strains, 15g whey protein per serving, vanilla flavour."
           }
@@ -345,8 +345,8 @@
         "i2": {
           "type": "ingredient",
           "settings": {
-            "icon": "\ud83d\udc8a",
-            "name": "Velo16\u2122 Probiotics Digestive Capsules (60 Capsules)",
+            "icon": "💊",
+            "name": "Velo16™ Probiotics Digestive Capsules (60 Capsules)",
             "amount": "1 Bottle (60s)",
             "desc": "16 micro-shielded probiotic strains (10 billion CFU) for gut and immune support."
           }
@@ -354,8 +354,8 @@
         "i3": {
           "type": "ingredient",
           "settings": {
-            "icon": "\ud83d\udee1\ufe0f",
-            "name": "Velobiotics\u2122 Micro-Shield Protection",
+            "icon": "🛡️",
+            "name": "Velobiotics™ Micro-Shield Protection",
             "amount": "Both Products",
             "desc": "Protective micro-shield around each bacterium ensures gut survival."
           }
@@ -376,7 +376,7 @@
         "sub": "Full-size retail components with micro-shielded probiotics.",
         "facts_image_url": "",
         "facts_label": "Pack contents",
-        "facts_foot": "Lab-tested \u00b7 Doctor-formulated \u00b7 Full transparency"
+        "facts_foot": "Lab-tested · Doctor-formulated · Full transparency"
       }
     },
     "confidence": {
@@ -392,7 +392,7 @@
         "c2": {
           "type": "stat",
           "settings": {
-            "label": "Bundle discount savings (R101.98)",
+            "label": "Bundle discount savings",
             "percent": 13
           }
         },
@@ -474,7 +474,7 @@
           "settings": {
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/verified_24dp_4D8C44.svg",
             "name": "Clinically studied strains",
-            "desc": "10 strains in Femina\u2122, 16 in Velo16\u2122, each with published human research."
+            "desc": "10 strains in Femina™, 16 in Velo16™, each with published human research."
           }
         },
         "d2": {
@@ -490,7 +490,7 @@
           "settings": {
             "icon_url": "https://www.velobiotics.com/cdn/shop/files/science_24dp_4D8C44.svg",
             "name": "<a class=\"vb-sci-link\" href=\"/pages/what-is-microencapsulation\">Patented MEP Technology</a>",
-            "desc": "Microencapsulation with Supercritical CO\u2082, studied in three peer-reviewed papers."
+            "desc": "Microencapsulation with Supercritical CO₂, studied in three peer-reviewed papers."
           }
         },
         "d4": {
@@ -539,7 +539,7 @@
         "o3": {
           "type": "row",
           "settings": {
-            "feature": "True bundle savings (Save R101.98)",
+            "feature": "True bundle savings (Save {save})",
             "brand_state": "yes",
             "b_state": "no",
             "c_state": "no"
@@ -572,7 +572,7 @@
         "col_b": "Two singles",
         "col_c": "One generic probiotic",
         "cta_text": "Add Immunity Boost Duo to Cart",
-        "cta_note": "30-day money-back \u00b7 Free shipping over the free-shipping threshold"
+        "cta_note": "30-day money-back · Free shipping over the free-shipping threshold"
       }
     },
     "judgeme": {
@@ -593,21 +593,21 @@
           "type": "q",
           "settings": {
             "question": "What is inside the Immunity Boost Duo?",
-            "answer": "<p>The Immunity Boost Duo (Vanilla) includes 1x BioGain\u2122 Probiotics Meal Vanilla 400g and 1x Velo16\u2122 Probiotic Digestive Capsules (60 capsules).</p>"
+            "answer": "<p>The Immunity Boost Duo (Vanilla) includes 1x BioGain™ Probiotics Meal Vanilla 400g and 1x Velo16™ Probiotic Digestive Capsules (60 capsules).</p>"
           }
         },
         "q2": {
           "type": "q",
           "settings": {
             "question": "How much do I save with this duo?",
-            "answer": "<p>You pay R407.92 for the duo versus R509.90 when purchasing components separately (BioGain Vanilla R209.95 + Velo16 Probiotic Digestive Capsules R299.95), saving R101.98 to the cent.</p>"
+            "answer": "<p>You pay {price} for the duo versus {compare} when purchasing components separately (BioGain Vanilla, Velo16 Probiotic Digestive Capsules), saving {save} to the cent.</p>"
           }
         },
         "q3": {
           "type": "q",
           "settings": {
             "question": "How do I take the duo?",
-            "answer": "<p>Enjoy 1 serving of BioGain\u2122 Vanilla meal shake daily with water or milk, and take 1 Velo16\u2122 Probiotic Digestive Capsule daily with water.</p>"
+            "answer": "<p>Enjoy 1 serving of BioGain™ Vanilla meal shake daily with water or milk, and take 1 Velo16™ Probiotic Digestive Capsule daily with water.</p>"
           }
         },
         "q4": {
@@ -652,29 +652,29 @@
         "g1": {
           "type": "g",
           "settings": {
-            "icon": "\u2705",
+            "icon": "✅",
             "text": "30-day money-back"
           }
         },
         "g2": {
           "type": "g",
           "settings": {
-            "icon": "\ud83d\ude9a",
+            "icon": "🚚",
             "text": "Ships worldwide"
           }
         },
         "g3": {
           "type": "g",
           "settings": {
-            "icon": "\ud83d\udd2c",
+            "icon": "🔬",
             "text": "Lab-tested every batch"
           }
         },
         "g4": {
           "type": "g",
           "settings": {
-            "icon": "\ud83d\udcb0",
-            "text": "Save R101.98 vs singles"
+            "icon": "💰",
+            "text": "Save {save} vs singles"
           }
         }
       },
@@ -691,7 +691,7 @@
         "badge": "30-day money-back guarantee",
         "title_pre": "Gut & immune support,",
         "title_highlight": "risk-free for 30 days",
-        "sub": "BioGain\u2122 Vanilla + Velo16\u2122 Digestive Capsules, R101.98 saved. If you don't feel the difference, we refund every cent.",
+        "sub": "BioGain™ Vanilla + Velo16™ Digestive Capsules, {save} saved. If you don't feel the difference, we refund every cent.",
         "cta_text": "Add Immunity Boost Duo to Cart",
         "cta_link": "#vbpForm"
       }

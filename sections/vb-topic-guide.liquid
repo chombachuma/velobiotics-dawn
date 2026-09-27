@@ -11,12 +11,12 @@
   .vbtg__hero-media { position: absolute; inset: 0; z-index: 0; }
   .vbtg__hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: 70% 30%; display: block; }
   .vbtg__hero-scrim { position: absolute; inset: 0; z-index: 1; display: block !important; pointer-events: none; background: linear-gradient(90deg, rgba(242,248,240,.96) 0%, rgba(242,248,240,.88) 32%, rgba(242,248,240,.55) 48%, rgba(242,248,240,0) 64%); }
-  .vbtg__hero .vbtg__wrap { position: relative; z-index: 2; padding-top: 72px; padding-bottom: 72px; min-height: min(620px, 74vh); display: flex; align-items: center; }
+  .vbtg__hero .vbtg__wrap { position: relative; z-index: 2; padding-top: 64px; padding-bottom: 64px; min-height: min(600px, 72vh); display: flex; align-items: center; }
   .vbtg__hero-copy { max-width: 560px; }
   .vbtg__hero--plain { background: linear-gradient(180deg, #f2f8f0 0%, #ffffff 100%); }
   .vbtg__hero--plain .vbtg__wrap { min-height: 0; padding-top: 56px; padding-bottom: 40px; }
   .vbtg__eyebrow { display: inline-block; color: {{ accent }}; font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 12px; }
-  .vbtg__h1 { font-size: clamp(32px, 4.4vw, 52px); font-weight: 800; line-height: 1.05; letter-spacing: -.02em; margin: 0 0 16px; }
+  .vbtg__h1 { font-size: clamp(32px, 4vw, 48px); font-weight: 800; line-height: 1.05; letter-spacing: -.02em; margin: 0 0 16px; }
   .vbtg__lead { font-size: 18px; line-height: 1.6; color: #2f4a33; margin: 0 0 22px; }
   .vbtg__lead p { margin: 0 0 12px; }
   .vbtg__jump { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -66,8 +66,7 @@
     .vbtg__hero-scrim { background: linear-gradient(0deg, rgba(242,248,240,.97) 0%, rgba(242,248,240,.9) 46%, rgba(242,248,240,.5) 60%, rgba(242,248,240,0) 74%); }
     .vbtg__hero .vbtg__wrap { padding-top: 24px; padding-bottom: 28px; min-height: min(680px, 90svh); align-items: flex-end; }
     .vbtg__h1 { font-size: clamp(28px, 8.4vw, 38px); }
-    .vbtg__hero .vbtg__lead p:not(:first-child) { display: none; }
-    .vbtg__hero .vbtg__lead { font-size: 15px; margin-bottom: 14px; }
+        .vbtg__hero .vbtg__lead { font-size: 15px; margin-bottom: 14px; }
     .vbtg__hero .vbtg__jump a { font-size: 12px; padding: 6px 11px; }
     .vbtg__syn { grid-template-columns: 1fr; gap: 20px; }
     .vbtg__lead { font-size: 16px; }
@@ -86,7 +85,8 @@
     <div class="vbtg__wrap"><div class="vbtg__hero-copy">
       {%- if s.eyebrow != blank -%}<span class="vbtg__eyebrow">{{ s.eyebrow }}</span>{%- endif -%}
       <h1 class="vbtg__h1">{{ s.hero_headline | default: title }}</h1>
-      <div class="vbtg__lead">{{ s.lead }}</div>
+      {%- assign lead_parts = s.lead | split: '</p>' -%}
+      <div class="vbtg__lead">{{ lead_parts[0] }}</p></div>
       <nav class="vbtg__jump" aria-label="On this page">
         {%- if s.groups_title != blank -%}<a href="#vbtg-groups">{{ s.groups_title }}</a>{%- endif -%}
         {%- if s.nutrients_title != blank -%}<a href="#vbtg-nutrients">{{ s.nutrients_title }}</a>{%- endif -%}
@@ -95,6 +95,9 @@
       </nav>
     </div></div>
   </section>
+  {%- if lead_parts.size > 1 -%}
+  <section class="vbtg__sec" style="padding-bottom:0"><div class="vbtg__wrap"><div class="vbtg__intro" style="max-width:820px;font-size:17.5px">{%- for part in lead_parts offset: 1 -%}{%- if part contains '<p' -%}{{ part }}</p>{%- endif -%}{%- endfor -%}</div></div></section>
+  {%- endif -%}
 
   {%- assign group_blocks = section.blocks | where: 'type', 'group' -%}
   {%- if group_blocks.size > 0 -%}

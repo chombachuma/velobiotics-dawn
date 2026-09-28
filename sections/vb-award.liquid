@@ -1,0 +1,78 @@
+{%- comment -%} VB · Award — reusable "as awarded" band: medal, award body logo, pack photo and plain-language story. Brand-coloured. {%- endcomment -%}
+{%- liquid
+  assign bp = section.settings.brand_primary | default: '#4d8c44'
+  assign bt = section.settings.brand_tint | default: '#f3f7f1'
+  assign gold = '#b08d3c'
+  assign sid = section.id
+-%}
+<style>
+  #vb-award-{{ sid }} { background: {{ bt }}; padding: clamp(40px, 6vw, 72px) 0; }
+  #vb-award-{{ sid }} .vb-aw__wrap { max-width: 1140px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: clamp(28px, 4vw, 56px); align-items: center; }
+  #vb-award-{{ sid }} .vb-aw__eyebrow { display: inline-flex; align-items: center; gap: 8px; font: 700 12px/1 'Poppins', sans-serif; letter-spacing: .14em; text-transform: uppercase; color: {{ gold }}; margin-bottom: 14px; }
+  #vb-award-{{ sid }} .vb-aw__eyebrow::before { content: ''; width: 28px; height: 2px; background: {{ gold }}; }
+  #vb-award-{{ sid }} h2 { font: 700 clamp(26px, 3.2vw, 38px)/1.15 'Poppins', sans-serif; color: {{ bp }}; margin: 0 0 14px; letter-spacing: -.01em; }
+  #vb-award-{{ sid }} .vb-aw__lead { font-size: 17px; line-height: 1.6; color: #2b2b2b; margin: 0 0 18px; }
+  #vb-award-{{ sid }} .vb-aw__body { font-size: 15.5px; line-height: 1.65; color: #4a4a4a; margin: 0 0 22px; }
+  #vb-award-{{ sid }} .vb-aw__facts { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 10px 18px; margin: 0 0 22px; padding: 0; list-style: none; }
+  #vb-award-{{ sid }} .vb-aw__facts li { font-size: 13.5px; line-height: 1.45; color: #4a4a4a; padding: 10px 12px; background: #fff; border-radius: 10px; border: 1px solid rgba(0,0,0,.06); }
+  #vb-award-{{ sid }} .vb-aw__facts b { display: block; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: {{ gold }}; margin-bottom: 3px; }
+  #vb-award-{{ sid }} .vb-aw__logo { height: 44px; width: auto; display: block; }
+  #vb-award-{{ sid }} .vb-aw__visual { position: relative; display: flex; justify-content: center; }
+  #vb-award-{{ sid }} .vb-aw__photo { width: 100%; max-width: 440px; border-radius: 20px; background: #fff; box-shadow: 0 18px 44px rgba(0,0,0,.10); display: block; }
+  #vb-award-{{ sid }} .vb-aw__medal { position: absolute; left: 4%; bottom: -6%; width: clamp(110px, 14vw, 150px); filter: drop-shadow(0 8px 18px rgba(0,0,0,.18)); transform: rotate(-8deg); }
+  @media (max-width: 820px) {
+    #vb-award-{{ sid }} .vb-aw__wrap { grid-template-columns: 1fr; }
+    #vb-award-{{ sid }} .vb-aw__visual { order: -1; margin-bottom: 26px; }
+    #vb-award-{{ sid }} .vb-aw__medal { width: 110px; bottom: -14px; }
+    #vb-award-{{ sid }} .vb-aw__facts { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+<section id="vb-award-{{ sid }}" class="vb-award" aria-label="{{ section.settings.heading | escape }}">
+  <div class="vb-aw__wrap">
+    <div class="vb-aw__copy">
+      {%- if section.settings.eyebrow != blank -%}<span class="vb-aw__eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+      <h2>{{ section.settings.heading }}</h2>
+      {%- if section.settings.lead != blank -%}<p class="vb-aw__lead">{{ section.settings.lead }}</p>{%- endif -%}
+      {%- if section.settings.body != blank -%}<div class="vb-aw__body">{{ section.settings.body }}</div>{%- endif -%}
+      {%- if section.blocks.size > 0 -%}
+      <ul class="vb-aw__facts">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'fact' -%}<li {{ block.shopify_attributes }}><b>{{ block.settings.label }}</b>{{ block.settings.value }}</li>{%- endif -%}
+        {%- endfor -%}
+      </ul>
+      {%- endif -%}
+      {%- if section.settings.logo_url != blank -%}<img class="vb-aw__logo" src="{{ section.settings.logo_url }}" alt="{{ section.settings.logo_alt | default: section.settings.heading | escape }}" loading="lazy">{%- endif -%}
+    </div>
+    <div class="vb-aw__visual">
+      {%- if section.settings.photo_url != blank -%}<img class="vb-aw__photo" src="{{ section.settings.photo_url }}" alt="{{ section.settings.photo_alt | escape }}" loading="lazy">{%- endif -%}
+      {%- if section.settings.medal_url != blank -%}<img class="vb-aw__medal" src="{{ section.settings.medal_url }}" alt="{{ section.settings.medal_alt | default: 'Award medal' | escape }}" loading="lazy">{%- endif -%}
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "VB · Award",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Award-winning packaging" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Silver medal, Gold Pack Awards 2021" },
+    { "type": "textarea", "id": "lead", "label": "Lead sentence" },
+    { "type": "richtext", "id": "body", "label": "Story" },
+    { "type": "text", "id": "photo_url", "label": "Photo URL" },
+    { "type": "text", "id": "photo_alt", "label": "Photo alt text" },
+    { "type": "text", "id": "medal_url", "label": "Medal image URL" },
+    { "type": "text", "id": "medal_alt", "label": "Medal alt text" },
+    { "type": "text", "id": "logo_url", "label": "Award body logo URL" },
+    { "type": "text", "id": "logo_alt", "label": "Logo alt text" },
+    { "type": "color", "id": "brand_primary", "label": "Brand primary", "default": "#4d8c44" },
+    { "type": "color", "id": "brand_tint", "label": "Background tint", "default": "#f3f7f1" }
+  ],
+  "blocks": [
+    { "type": "fact", "name": "Fact", "settings": [
+      { "type": "text", "id": "label", "label": "Label" },
+      { "type": "text", "id": "value", "label": "Value" }
+    ] }
+  ],
+  "presets": [ { "name": "VB · Award" } ]
+}
+{% endschema %}

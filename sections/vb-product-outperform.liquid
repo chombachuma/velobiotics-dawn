@@ -135,7 +135,7 @@
     <button type="button" class="vb-pof__cta" data-vbpof-atc data-variant-id="{{ current_variant.id }}" {% unless current_variant.available %}disabled{% endunless %}>
       🛒 {{ section.settings.cta_text | default: 'Add to Cart' }} →
     </button>
-    {%- if section.settings.cta_note != blank -%}<span class="vb-pof__cta-note">{{ section.settings.cta_note }}</span>{%- endif -%}
+    {%- if section.settings.cta_note != blank -%}<span class="vb-pof__cta-note">{%- render 'vb-money-tokens', text: section.settings.cta_note, product: product -%}</span>{%- endif -%}
   </div>
 </section>
 

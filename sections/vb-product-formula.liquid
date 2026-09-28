@@ -139,7 +139,7 @@
                 <div class="vbpf__card">
                   <div class="vbpf__card-head">
                     <div class="vbpf__card-name">
-                      <div class="vbpf__card-icon">{{ block.settings.icon | default: '🧬' }}</div>
+                      <div class="vbpf__card-icon">{%- render 'vb-icon', name: block.settings.icon, default: '🧬' -%}</div>
                       <span>{{ block.settings.name }}</span>
                     </div>
                     <div class="vbpf__card-amount">
@@ -202,7 +202,7 @@
           {%- for block in section.blocks -%}
             {%- if block.type == 'trust' -%}
               <div class="vbpf__trust-row">
-                <span class="vbpf__trust-icon">{{ block.settings.icon | default: '✓' }}</span>
+                <span class="vbpf__trust-icon">{%- render 'vb-icon', name: block.settings.icon, default: '✓' -%}</span>
                 <div class="vbpf__trust-text"><strong>{{ block.settings.title }}.</strong> {{ block.settings.text }}</div>
               </div>
             {%- endif -%}

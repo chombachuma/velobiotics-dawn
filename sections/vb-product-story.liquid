@@ -90,7 +90,7 @@
           {%- for block in section.blocks -%}
             {%- if block.type == 'point' -%}
               <div class="vb-ps__point" {{ block.shopify_attributes }}>
-                <span class="vb-ps__point-icon">{{ block.settings.icon | default: '✓' }}</span>
+                <span class="vb-ps__point-icon">{%- render 'vb-icon', name: block.settings.icon, default: '✓' -%}</span>
                 <span class="vb-ps__point-text">{%- render 'vb-money-tokens', text: block.settings.text, product: product -%}</span>
               </div>
             {%- endif -%}

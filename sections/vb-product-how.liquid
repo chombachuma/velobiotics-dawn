@@ -44,7 +44,7 @@
         {%- if block.type == 'step' -%}
           <article class="vb-pho__step" {{ block.shopify_attributes }}>
             <span class="vb-pho__num">{{ forloop.index }}</span>
-            <div class="vb-pho__icon">{{ block.settings.icon }}</div>
+            <div class="vb-pho__icon">{%- render 'vb-icon', name: block.settings.icon -%}</div>
             <h3 class="vb-pho__name">{{ block.settings.name }}</h3>
             <p class="vb-pho__desc">{{ block.settings.desc }}</p>
           </article>

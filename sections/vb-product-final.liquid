@@ -38,7 +38,7 @@
     {%- if section.blocks.size > 0 -%}
       <div class="vb-pfc__guarantees">
         {%- for block in section.blocks -%}
-          {%- if block.type == 'g' -%}<span class="vb-pfc__g" {{ block.shopify_attributes }}>{{ block.settings.icon }} {%- render 'vb-money-tokens', text: block.settings.text, product: product -%}</span>{%- endif -%}
+          {%- if block.type == 'g' -%}<span class="vb-pfc__g" {{ block.shopify_attributes }}>{%- render 'vb-icon', name: block.settings.icon, default: '✅' -%} {%- render 'vb-money-tokens', text: block.settings.text, product: product -%}</span>{%- endif -%}
         {%- endfor -%}
       </div>
     {%- endif -%}

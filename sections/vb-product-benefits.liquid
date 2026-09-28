@@ -43,7 +43,7 @@
       {%- for block in section.blocks -%}
         {%- if block.type == 'feat' -%}
           <article class="vb-pbn__card" {{ block.shopify_attributes }}>
-            <div class="vb-pbn__icon">{{ block.settings.icon }}</div>
+            <div class="vb-pbn__icon">{%- render 'vb-icon', name: block.settings.icon, default: '✓' -%}</div>
             <h3 class="vb-pbn__name">{%- render 'vb-money-tokens', text: block.settings.name, product: product -%}</h3>
             <p class="vb-pbn__desc">{%- render 'vb-money-tokens', text: block.settings.desc, product: product -%}</p>
           </article>

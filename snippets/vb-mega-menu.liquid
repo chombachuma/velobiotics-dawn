@@ -173,13 +173,13 @@
             <div class="vb-mm__col">
               <div class="vb-mm__col-head">💬 Get In Touch</div>
               <a href="/pages/new-contact-us" class="vb-mm__col-link">Contact Us</a>
-              <a href="/pages/find-our-stockists" class="vb-mm__col-link">Find Our Stockists</a>
+              {%- if localization.country.iso_code == 'ZA' -%}<a href="/pages/store-locator" class="vb-mm__col-link">Find Our Stockists</a>{%- endif -%}
               <a href="/pages/faq" class="vb-mm__col-link">FAQ</a>
               <a href="/a/track" class="vb-mm__col-link">Track My Order</a>
             </div>
             <div class="vb-mm__col">
               <div class="vb-mm__col-head">🤝 Work With Us</div>
-              <a href="https://affiliate.velobiotics.com" class="vb-mm__col-link" target="_blank" rel="noopener">Affiliate Program</a>
+              <a href="https://creators.velobiotics.com" class="vb-mm__col-link" target="_blank" rel="noopener">Creators &amp; Affiliates</a>
                             <a href="/pages/new-contact-us" class="vb-mm__col-link">Wholesale Enquiries</a>
               <a href="/pages/new-contact-us" class="vb-mm__col-link">Healthcare Practitioners</a>
             </div>
@@ -291,11 +291,11 @@
           <ul class="vb-mmd__sub" data-vb-mmd-sub>
             <li class="vb-mmd__sub-head">💬 Get In Touch</li>
             <li><a href="/pages/new-contact-us" class="vb-mmd__sub-link">Contact Us</a></li>
-            <li><a href="/pages/find-our-stockists" class="vb-mmd__sub-link">Find Stockists</a></li>
+            {%- if localization.country.iso_code == 'ZA' -%}<li><a href="/pages/store-locator" class="vb-mmd__sub-link">Find Stockists</a></li>{%- endif -%}
             <li><a href="/pages/faq" class="vb-mmd__sub-link">FAQ</a></li>
             <li><a href="/a/track" class="vb-mmd__sub-link">Track My Order</a></li>
             <li class="vb-mmd__sub-head">🤝 Work With Us</li>
-            <li><a href="https://affiliate.velobiotics.com" class="vb-mmd__sub-link" target="_blank" rel="noopener">Affiliate Program</a></li>
+            <li><a href="https://creators.velobiotics.com" class="vb-mmd__sub-link" target="_blank" rel="noopener">Creators &amp; Affiliates</a></li>
           </ul>
         </li>
       </ul>

@@ -1,0 +1,156 @@
+{%- comment -%} VB · Stockists — South Africa store finder. Data: assets/vb-stockists.json (built monthly from ERPNext Weekly Store Sales). Shown only on the South Africa market. {%- endcomment -%}
+{%- capture mk %}{% render 'vb-market', key: 'code' %}{% endcapture -%}
+{%- assign mk = mk | strip -%}
+{%- assign sid = section.id -%}
+<style>
+  #vb-stk-{{ sid }} { padding: clamp(28px,5vw,56px) 0; background: #fff; }
+  #vb-stk-{{ sid }} .vb-stk__wrap { max-width: 1180px; margin: 0 auto; padding: 0 18px; }
+  #vb-stk-{{ sid }} .vb-stk__head { display:flex; flex-wrap:wrap; gap:14px 24px; align-items:end; justify-content:space-between; margin-bottom:18px; }
+  #vb-stk-{{ sid }} h2 { font: 700 clamp(24px,3vw,34px)/1.15 'Poppins',sans-serif; color:#1a4015; margin:0 0 6px; }
+  #vb-stk-{{ sid }} .vb-stk__sub { color:#4a4a4a; font-size:15px; margin:0; }
+  #vb-stk-{{ sid }} .vb-stk__count { font: 600 13px/1 'Poppins',sans-serif; color:#4d8c44; background:#eef5ec; padding:8px 12px; border-radius:999px; white-space:nowrap; }
+  #vb-stk-{{ sid }} .vb-stk__tools { display:grid; grid-template-columns: 1fr auto auto; gap:10px; margin-bottom:12px; }
+  #vb-stk-{{ sid }} .vb-stk__search { position:relative; }
+  #vb-stk-{{ sid }} .vb-stk__search svg { position:absolute; left:14px; top:50%; transform:translateY(-50%); width:18px; height:18px; color:#7a7a7a; }
+  #vb-stk-{{ sid }} .vb-stk__search input { width:100%; height:48px; border:1.5px solid #dfe5dc; border-radius:12px; padding:0 14px 0 42px; font-size:15px; background:#fff; }
+  #vb-stk-{{ sid }} .vb-stk__search input:focus { outline:none; border-color:#4d8c44; box-shadow:0 0 0 3px rgba(77,140,68,.15); }
+  #vb-stk-{{ sid }} .vb-stk__btn { height:48px; padding:0 16px; border-radius:12px; border:1.5px solid #4d8c44; background:#4d8c44; color:#fff; font: 600 14px/1 'Poppins',sans-serif; cursor:pointer; display:inline-flex; align-items:center; gap:8px; white-space:nowrap; }
+  #vb-stk-{{ sid }} .vb-stk__btn--ghost { background:#fff; color:#1a4015; border-color:#dfe5dc; }
+  #vb-stk-{{ sid }} .vb-stk__btn svg { width:16px; height:16px; }
+  #vb-stk-{{ sid }} select.vb-stk__sel { height:48px; border:1.5px solid #dfe5dc; border-radius:12px; padding:0 12px; font-size:14px; background:#fff; color:#1a1a1a; }
+  #vb-stk-{{ sid }} .vb-stk__chips { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px; }
+  #vb-stk-{{ sid }} .vb-stk__chip { border:1.5px solid #dfe5dc; background:#fff; border-radius:999px; padding:8px 14px; font: 600 13px/1 'Poppins',sans-serif; color:#333; cursor:pointer; display:inline-flex; align-items:center; gap:8px; }
+  #vb-stk-{{ sid }} .vb-stk__chip .dot { width:9px; height:9px; border-radius:50%; background:var(--c,#4d8c44); }
+  #vb-stk-{{ sid }} .vb-stk__chip[aria-pressed="true"] { background:#1a4015; border-color:#1a4015; color:#fff; }
+  #vb-stk-{{ sid }} .vb-stk__grid { display:grid; grid-template-columns: minmax(0,1.25fr) minmax(300px,.85fr); gap:16px; }
+  #vb-stk-{{ sid }} .vb-stk__map { height: 560px; border-radius:18px; overflow:hidden; border:1px solid #e6ebe4; background:#eef2ec; position:relative; z-index:0; }
+  #vb-stk-{{ sid }} .vb-stk__list { max-height:560px; overflow:auto; display:flex; flex-direction:column; gap:10px; padding-right:4px; }
+  #vb-stk-{{ sid }} .vb-stk__card { border:1px solid #e6ebe4; border-radius:14px; padding:14px 16px; background:#fff; display:grid; grid-template-columns: 1fr auto; gap:6px 12px; cursor:pointer; transition: box-shadow .15s, border-color .15s; }
+  #vb-stk-{{ sid }} .vb-stk__card:hover, #vb-stk-{{ sid }} .vb-stk__card.is-active { border-color:#4d8c44; box-shadow:0 8px 24px rgba(26,64,21,.08); }
+  #vb-stk-{{ sid }} .vb-stk__card h3 { font: 700 15px/1.3 'Poppins',sans-serif; margin:0; color:#1a1a1a; }
+  #vb-stk-{{ sid }} .vb-stk__chain { font: 700 11px/1 'Poppins',sans-serif; letter-spacing:.08em; text-transform:uppercase; color:var(--c,#4d8c44); }
+  #vb-stk-{{ sid }} .vb-stk__addr { grid-column:1 / -1; font-size:13.5px; color:#555; line-height:1.45; }
+  #vb-stk-{{ sid }} .vb-stk__dist { font: 600 12px/1 'Poppins',sans-serif; color:#4d8c44; white-space:nowrap; align-self:start; }
+  #vb-stk-{{ sid }} .vb-stk__links { grid-column:1 / -1; display:flex; gap:14px; font-size:13px; }
+  #vb-stk-{{ sid }} .vb-stk__links a { color:#1a4015; font-weight:600; text-decoration:underline; text-underline-offset:3px; }
+  #vb-stk-{{ sid }} .vb-stk__empty { padding:26px; text-align:center; color:#666; border:1px dashed #dfe5dc; border-radius:14px; }
+  #vb-stk-{{ sid }} .vb-stk__note { margin-top:14px; font-size:13px; color:#777; }
+  #vb-stk-{{ sid }} .vb-stk__gate { max-width:760px; margin:0 auto; text-align:center; padding:36px 22px; border:1px solid #e6ebe4; border-radius:18px; background:#f7faf6; }
+  #vb-stk-{{ sid }} .vb-stk__gate h2 { margin-bottom:10px; }
+  #vb-stk-{{ sid }} .vb-stk__gate p { color:#4a4a4a; font-size:15.5px; line-height:1.6; margin:0 0 18px; }
+  #vb-stk-{{ sid }} .leaflet-popup-content { font: 14px/1.45 inherit; margin:12px 14px; }
+  #vb-stk-{{ sid }} .leaflet-popup-content b { display:block; font-family:'Poppins',sans-serif; margin-bottom:2px; }
+  #vb-stk-{{ sid }} .vb-stk__pin { width:26px; height:26px; border-radius:50% 50% 50% 0; transform:rotate(-45deg); border:2px solid #fff; box-shadow:0 2px 6px rgba(0,0,0,.25); background:var(--c,#4d8c44); }
+  #vb-stk-{{ sid }} .vb-stk__me { width:16px; height:16px; border-radius:50%; background:#2f6fed; border:3px solid #fff; box-shadow:0 0 0 3px rgba(47,111,237,.3); }
+  #vb-stk-{{ sid }} .marker-cluster { background: rgba(77,140,68,.25); border-radius:50%; }
+  #vb-stk-{{ sid }} .marker-cluster div { background:#4d8c44; color:#fff; font: 700 13px/30px 'Poppins',sans-serif; text-align:center; width:30px; height:30px; margin:5px; border-radius:50%; }
+  @media (max-width: 860px) {
+    #vb-stk-{{ sid }} .vb-stk__tools { grid-template-columns: 1fr 1fr; }
+    #vb-stk-{{ sid }} .vb-stk__search { grid-column: 1 / -1; }
+    #vb-stk-{{ sid }} .vb-stk__grid { grid-template-columns: 1fr; }
+    #vb-stk-{{ sid }} .vb-stk__map { height: 380px; }
+    #vb-stk-{{ sid }} .vb-stk__list { max-height:none; }
+  }
+</style>
+<section id="vb-stk-{{ sid }}" class="vb-stockists" data-market="{{ mk }}">
+  <div class="vb-stk__wrap">
+  {%- if mk == 'ZA' -%}
+    <div class="vb-stk__head">
+      <div>
+        <h2>{{ section.settings.heading | default: 'Find Velobiotics near you' }}</h2>
+        <p class="vb-stk__sub">{{ section.settings.sub | default: 'Pharmacies and health stores across South Africa that sold Velobiotics in the last three months. Stock varies by store, so call ahead for a specific product.' }}</p>
+      </div>
+      <span class="vb-stk__count" data-vb-count>Loading stores…</span>
+    </div>
+    <div class="vb-stk__tools">
+      <label class="vb-stk__search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" placeholder="Search a suburb, town, mall or store name" data-vb-q aria-label="Search stockists"></label>
+      <select class="vb-stk__sel" data-vb-prov aria-label="Province"><option value="">All provinces</option></select>
+      <button type="button" class="vb-stk__btn" data-vb-near><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="8"/></svg>Near me</button>
+    </div>
+    <div class="vb-stk__chips" data-vb-chips>
+      <button type="button" class="vb-stk__chip" data-chain="" aria-pressed="true">All stores</button>
+      <button type="button" class="vb-stk__chip" data-chain="Clicks" style="--c:#0a4a8a"><span class="dot"></span>Clicks</button>
+      <button type="button" class="vb-stk__chip" data-chain="Dis-Chem" style="--c:#0f8a3a"><span class="dot"></span>Dis-Chem</button>
+      <button type="button" class="vb-stk__chip" data-chain="Other" style="--c:#b08d3c"><span class="dot"></span>Pharmacies &amp; health shops</button>
+    </div>
+    <div class="vb-stk__grid">
+      <div class="vb-stk__map" data-vb-map role="region" aria-label="Map of stockists"></div>
+      <div class="vb-stk__list" data-vb-list></div>
+    </div>
+    <p class="vb-stk__note">Store list updated monthly from retailer sales data. Map © <a href="https://www.openstreetmap.org/copyright" rel="noopener" target="_blank">OpenStreetMap</a> contributors. Prefer to order online? <a href="/collections/all">Shop with free delivery over R500</a>.</p>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+    <script>
+    (function(){
+      var root=document.getElementById('vb-stk-{{ sid }}'); if(!root) return;
+      var DATA_URL={{ 'vb-stockists.json' | asset_url | json }};
+      var COL={'Clicks':'#0a4a8a','Dis-Chem':'#0f8a3a','Other':'#b08d3c'};
+      var q=root.querySelector('[data-vb-q]'), prov=root.querySelector('[data-vb-prov]'), list=root.querySelector('[data-vb-list]'), count=root.querySelector('[data-vb-count]'), chips=root.querySelectorAll('[data-vb-chips] .vb-stk__chip'), nearBtn=root.querySelector('[data-vb-near]');
+      var stores=[], chain='', me=null, map, cluster, markers={}, ready=false;
+      function load(src){return new Promise(function(res,rej){var s=document.createElement('script');s.src=src;s.onload=res;s.onerror=rej;document.head.appendChild(s);});}
+      function dist(a,b,c,d){var R=6371,dl=(c-a)*Math.PI/180,dg=(d-b)*Math.PI/180,x=Math.sin(dl/2)*Math.sin(dl/2)+Math.cos(a*Math.PI/180)*Math.cos(c*Math.PI/180)*Math.sin(dg/2)*Math.sin(dg/2);return R*2*Math.atan2(Math.sqrt(x),Math.sqrt(1-x));}
+      function esc(s){return String(s||'').replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+      function dirs(s){return 'https://www.google.com/maps/dir/?api=1&destination='+s.lat+','+s.lng;}
+      function filtered(){
+        var t=(q.value||'').trim().toLowerCase(), p=prov.value;
+        var out=stores.filter(function(s){
+          if(chain && s.c!==chain) return false;
+          if(p && s.p!==p) return false;
+          if(t && (s.n+' '+(s.a||'')+' '+(s.t||'')+' '+(s.p||'')).toLowerCase().indexOf(t)<0) return false;
+          return true;
+        });
+        if(me){ out.forEach(function(s){s.d=dist(me[0],me[1],s.lat,s.lng);}); out.sort(function(a,b){return a.d-b.d;}); }
+        else { out.forEach(function(s){delete s.d;}); out.sort(function(a,b){return a.n.localeCompare(b.n);}); }
+        return out;
+      }
+      function render(){
+        var rows=filtered(); count.textContent=rows.length+' of '+stores.length+' stores';
+        var show=rows.slice(0, me? 40 : 60);
+        list.innerHTML= show.length ? show.map(function(s){
+          return '<article class="vb-stk__card" data-id="'+esc(s.id)+'" style="--c:'+(COL[s.c]||COL.Other)+'"><h3>'+esc(s.n)+'</h3>'+(s.d!=null?'<span class="vb-stk__dist">'+(s.d<1?Math.round(s.d*1000)+' m':s.d.toFixed(1)+' km')+'</span>':'<span class="vb-stk__chain">'+esc(s.c==='Other'?'Pharmacy / health shop':s.c)+'</span>')+'<div class="vb-stk__addr">'+esc([s.a,s.t,s.p].filter(Boolean).join(', '))+'</div><div class="vb-stk__links"><a href="'+dirs(s)+'" target="_blank" rel="noopener">Directions</a></div></article>';
+        }).join('') : '<div class="vb-stk__empty">No stores match that search yet. Try a nearby town, or <a href="/collections/all">order online with free delivery over R500</a>.</div>';
+        if(rows.length<show.length+1 && rows.length>show.length){}
+        if(ready){ cluster.clearLayers(); rows.forEach(function(s){cluster.addLayer(markers[s.id]);});
+          if(rows.length){ if(me){ map.setView(me, rows[0].d>40?7:11); } else if(q.value||prov.value||chain){ try{ map.fitBounds(cluster.getBounds().pad(0.15)); }catch(e){} } }
+        }
+      }
+      list.addEventListener('click',function(e){ var c=e.target.closest('.vb-stk__card'); if(!c||e.target.tagName==='A') return; var m=markers[c.dataset.id]; if(m&&ready){ map.setView(m.getLatLng(),15); m.openPopup(); } list.querySelectorAll('.is-active').forEach(function(x){x.classList.remove('is-active');}); c.classList.add('is-active'); if(window.innerWidth<860) root.querySelector('[data-vb-map]').scrollIntoView({behavior:'smooth',block:'center'}); });
+      chips.forEach(function(b){ b.addEventListener('click',function(){ chips.forEach(function(x){x.setAttribute('aria-pressed','false');}); b.setAttribute('aria-pressed','true'); chain=b.dataset.chain; render(); }); });
+      var deb; q.addEventListener('input',function(){ clearTimeout(deb); deb=setTimeout(render,180); }); prov.addEventListener('change',render);
+      nearBtn.addEventListener('click',function(){ if(!navigator.geolocation){ alert('Location is not available in this browser.'); return; } nearBtn.disabled=true; nearBtn.textContent='Locating…';
+        navigator.geolocation.getCurrentPosition(function(pos){ me=[pos.coords.latitude,pos.coords.longitude]; nearBtn.disabled=false; nearBtn.textContent='Nearest first'; if(ready){ L.marker(me,{icon:L.divIcon({className:'',html:'<div class="vb-stk__me"></div>',iconSize:[16,16]})}).addTo(map); } render(); },
+          function(){ nearBtn.disabled=false; nearBtn.textContent='Near me'; alert('We could not read your location. Please allow location access or search by suburb.'); },{timeout:10000,maximumAge:300000}); });
+      fetch(DATA_URL,{cache:'force-cache'}).then(function(r){return r.json();}).then(function(d){
+        stores=(d.stores||[]).map(function(s,i){ s.id=String(i); s.c=COL[s.c]?s.c:'Other'; return s; });
+        var provs={}; stores.forEach(function(s){ if(s.p) provs[s.p]=1; }); Object.keys(provs).sort().forEach(function(p){ var o=document.createElement('option'); o.value=p; o.textContent=p; prov.appendChild(o); });
+        render();
+        return load('https://unpkg.com/leaflet@1.9.4/dist/leaflet.js').then(function(){ return load('https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js'); });
+      }).then(function(){
+        map=L.map(root.querySelector('[data-vb-map]'),{scrollWheelZoom:false}).setView([-28.6,24.7],5);
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{maxZoom:19,attribution:'© OpenStreetMap contributors © CARTO'}).addTo(map);
+        cluster=L.markerClusterGroup({showCoverageOnHover:false,maxClusterRadius:48,iconCreateFunction:function(c){return L.divIcon({html:'<div>'+c.getChildCount()+'</div>',className:'marker-cluster',iconSize:[40,40]});}});
+        stores.forEach(function(s){ var m=L.marker([s.lat,s.lng],{icon:L.divIcon({className:'',html:'<div class="vb-stk__pin" style="--c:'+(COL[s.c]||COL.Other)+'"></div>',iconSize:[26,26],iconAnchor:[13,26],popupAnchor:[0,-26]})}); m.bindPopup('<b>'+esc(s.n)+'</b>'+esc([s.a,s.t].filter(Boolean).join(', '))+'<br><a href="'+dirs(s)+'" target="_blank" rel="noopener">Directions</a>'); markers[s.id]=m; });
+        map.addLayer(cluster); ready=true; render();
+      }).catch(function(e){ count.textContent='Store list unavailable'; console.warn('stockists',e); });
+    })();
+    </script>
+  {%- else -%}
+    <div class="vb-stk__gate">
+      <h2>Our store finder covers South Africa</h2>
+      <p>You're browsing our international store, where we ship straight to your door. Velobiotics is on the shelf at Clicks, Dis-Chem and independent pharmacies across South Africa; if that's where you are, switch to our South African site to find the nearest one.</p>
+      <a class="vb-stk__btn" href="https://www.velobiotics.co.za/pages/store-locator">Open the South African store finder</a>
+    </div>
+  {%- endif -%}
+  </div>
+</section>
+{% schema %}
+{
+  "name": "VB · Stockists (SA)",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Find Velobiotics near you" },
+    { "type": "textarea", "id": "sub", "label": "Intro" }
+  ],
+  "presets": [ { "name": "VB · Stockists (SA)" } ]
+}
+{% endschema %}

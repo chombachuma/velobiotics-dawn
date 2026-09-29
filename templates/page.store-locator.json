@@ -55,11 +55,19 @@
         "title_highlight": "stockist.",
         "sub": "Pharmacies, health stores, and clinics — apply for a wholesale account. Email support@velobiotics.com."
       }
+    },
+    "finder": {
+      "type": "vb-stockists",
+      "settings": {
+        "heading": "Find Velobiotics near you",
+        "sub": "Pharmacies and health stores across South Africa that sold Velobiotics in the last three months. Stock varies by store, so call ahead for a specific product."
+      }
     }
   },
   "order": [
     "main",
     "hero",
+    "finder",
     "online",
     "sa",
     "clinics",

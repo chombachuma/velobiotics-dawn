@@ -91,7 +91,7 @@
           fetch('https://elara-cef2631f.base44.app/functions/newsletterSubscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: email, source: 'footer' }) })
             .then(function(r){ return r.json(); })
             .then(function(d){
-              if (d && d.ok) { note.textContent = '✓ You are in. Welcome to the Velobiotics community — first tips land in your inbox soon.'; note.style.color = '#fff'; input.value = ''; btn.textContent = 'Subscribed'; try { window.omnisend = window.omnisend || []; window.omnisend.push(['identifyContact', { email: email }]); } catch (x) {} }
+              if (d && d.ok) { note.textContent = '✓ You are in. Welcome to the Velobiotics community — first tips land in your inbox soon.'; note.style.color = '#fff'; input.value = ''; btn.textContent = 'Subscribed'; }
               else { throw new Error('bad'); }
             })
             .catch(function(){ btn.disabled = false; btn.textContent = label; f.removeEventListener('submit', arguments.callee); f.submit(); });

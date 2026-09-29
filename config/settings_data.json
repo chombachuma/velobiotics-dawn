@@ -148,11 +148,6 @@
         "disabled": false,
         "settings": {}
       },
-      "1513253815146976218": {
-        "type": "shopify://apps/omnisend-email-marketing-sms/blocks/app-embed/44704aa2-794f-4c5d-8c8e-039c841158e9",
-        "disabled": false,
-        "settings": {}
-      },
       "6159598353363395418": {
         "type": "shopify://apps/google-youtube/blocks/store_widget/14ec7bd0-ac77-49a9-9417-90752398bdff",
         "disabled": true,
@@ -163,11 +158,6 @@
           "mobile_side_margin": 16,
           "mobile_bottom_margin": 46
         }
-      },
-      "13245967176993778395": {
-        "type": "shopify://apps/zipchat-ai-chatbot/blocks/widget/09531fba-7e12-4949-9b23-92e32b5e5456",
-        "disabled": true,
-        "settings": {}
       },
       "12107416968155278870": {
         "type": "shopify://apps/paywhirl-subscriptions/blocks/paywhirl-customer-portal/41e95d60-82cf-46e8-84de-618d7e4c37b7",

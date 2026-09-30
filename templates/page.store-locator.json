@@ -9,42 +9,11 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "main-page",
+    "finder": {
+      "type": "vb-stockists",
       "settings": {
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "hero": {
-      "type": "vb-hero",
-      "settings": {
-        "eyebrow": "Where to buy",
-        "sub": "Velobiotics is stocked at trusted pharmacies, health stores, and clinics across South Africa. Use the search below or browse by region."
-      }
-    },
-    "online": {
-      "type": "vb-feature-row",
-      "settings": {
-        "eyebrow": "Online (fastest)"
-      }
-    },
-    "sa": {
-      "type": "vb-feature-row",
-      "settings": {
-        "eyebrow": "South Africa Retail"
-      }
-    },
-    "clinics": {
-      "type": "vb-feature-row",
-      "settings": {
-        "eyebrow": "Healthcare Practitioners"
-      }
-    },
-    "int": {
-      "type": "vb-feature-row",
-      "settings": {
-        "eyebrow": "International"
+        "heading": "Find Velobiotics near you",
+        "sub": "Pharmacies and health stores across South Africa that sold Velobiotics in the last three months. Stock varies by store, so call ahead for a specific product."
       }
     },
     "final_cta": {
@@ -55,23 +24,10 @@
         "title_highlight": "stockist.",
         "sub": "Pharmacies, health stores, and clinics — apply for a wholesale account. Email support@velobiotics.com."
       }
-    },
-    "finder": {
-      "type": "vb-stockists",
-      "settings": {
-        "heading": "Find Velobiotics near you",
-        "sub": "Pharmacies and health stores across South Africa that sold Velobiotics in the last three months. Stock varies by store, so call ahead for a specific product."
-      }
     }
   },
   "order": [
-    "main",
-    "hero",
     "finder",
-    "online",
-    "sa",
-    "clinics",
-    "int",
     "final_cta"
   ]
 }

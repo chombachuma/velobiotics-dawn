@@ -9,7 +9,7 @@
   #vb-stk-{{ sid }} h2 { font: 700 clamp(24px,3vw,34px)/1.15 'Poppins',sans-serif; color:#1a4015; margin:0 0 6px; }
   #vb-stk-{{ sid }} .vb-stk__sub { color:#4a4a4a; font-size:15px; margin:0; }
   #vb-stk-{{ sid }} .vb-stk__count { font: 600 13px/1 'Poppins',sans-serif; color:#4d8c44; background:#eef5ec; padding:8px 12px; border-radius:999px; white-space:nowrap; }
-  #vb-stk-{{ sid }} .vb-stk__tools { display:grid; grid-template-columns: 1fr auto auto; gap:10px; margin-bottom:12px; }
+  #vb-stk-{{ sid }} .vb-stk__tools { display:grid; grid-template-columns: 1fr auto auto auto; gap:10px; margin-bottom:12px; }
   #vb-stk-{{ sid }} .vb-stk__search { position:relative; }
   #vb-stk-{{ sid }} .vb-stk__search svg { position:absolute; left:14px; top:50%; transform:translateY(-50%); width:18px; height:18px; color:#7a7a7a; }
   #vb-stk-{{ sid }} .vb-stk__search input { width:100%; height:48px; border:1.5px solid #dfe5dc; border-radius:12px; padding:0 14px 0 42px; font-size:15px; background:#fff; }
@@ -45,7 +45,7 @@
   #vb-stk-{{ sid }} .marker-cluster { background: rgba(77,140,68,.25); border-radius:50%; }
   #vb-stk-{{ sid }} .marker-cluster div { background:#4d8c44; color:#fff; font: 700 13px/30px 'Poppins',sans-serif; text-align:center; width:30px; height:30px; margin:5px; border-radius:50%; }
   @media (max-width: 860px) {
-    #vb-stk-{{ sid }} .vb-stk__tools { grid-template-columns: 1fr 1fr; }
+    #vb-stk-{{ sid }} .vb-stk__tools { grid-template-columns: 1fr 1fr 1fr; }
     #vb-stk-{{ sid }} .vb-stk__search { grid-column: 1 / -1; }
     #vb-stk-{{ sid }} .vb-stk__grid { grid-template-columns: 1fr; }
     #vb-stk-{{ sid }} .vb-stk__map { height: 380px; }
@@ -63,7 +63,8 @@
       <span class="vb-stk__count" data-vb-count>Loading stores…</span>
     </div>
     <div class="vb-stk__tools">
-      <label class="vb-stk__search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" placeholder="Search a suburb, town, mall or store name" data-vb-q aria-label="Search stockists"></label>
+      <label class="vb-stk__search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" placeholder="Your address, suburb or town (press Enter)" data-vb-q aria-label="Search stockists"></label>
+      <button type="button" class="vb-stk__btn vb-stk__btn--ghost" data-vb-go>Search</button>
       <select class="vb-stk__sel" data-vb-prov aria-label="Province"><option value="">All provinces</option></select>
       <button type="button" class="vb-stk__btn" data-vb-near><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="8"/></svg>Near me</button>
     </div>
@@ -77,7 +78,7 @@
       <div class="vb-stk__map" data-vb-map role="region" aria-label="Map of stockists"></div>
       <div class="vb-stk__list" data-vb-list></div>
     </div>
-    <p class="vb-stk__note">Store list updated monthly from retailer sales data. Map © <a href="https://www.openstreetmap.org/copyright" rel="noopener" target="_blank">OpenStreetMap</a> contributors. Prefer to order online? <a href="/collections/all">Shop with free delivery over R500</a>.</p>
+    <p class="vb-stk__note">Store list updated monthly from retailer sales data. Map and address search © <a href="https://www.openstreetmap.org/copyright" rel="noopener" target="_blank">OpenStreetMap</a> contributors. Prefer to order online? <a href="/collections/all">Shop with free delivery over R500</a>.</p>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
     <script>
@@ -111,14 +112,23 @@
         }).join('') : '<div class="vb-stk__empty">No stores match that search yet. Try a nearby town, or <a href="/collections/all">order online with free delivery over R500</a>.</div>';
         if(rows.length<show.length+1 && rows.length>show.length){}
         if(ready){ cluster.clearLayers(); rows.forEach(function(s){cluster.addLayer(markers[s.id]);});
-          if(rows.length){ if(me){ map.setView(me, rows[0].d>40?7:11); } else if(q.value||prov.value||chain){ try{ map.fitBounds(cluster.getBounds().pad(0.15)); }catch(e){} } }
+          if(rows.length && !me && (q.value||prov.value||chain)){ try{ map.fitBounds(cluster.getBounds().pad(0.15)); }catch(e){} }
         }
       }
       list.addEventListener('click',function(e){ var c=e.target.closest('.vb-stk__card'); if(!c||e.target.tagName==='A') return; var m=markers[c.dataset.id]; if(m&&ready){ map.setView(m.getLatLng(),15); m.openPopup(); } list.querySelectorAll('.is-active').forEach(function(x){x.classList.remove('is-active');}); c.classList.add('is-active'); if(window.innerWidth<860) root.querySelector('[data-vb-map]').scrollIntoView({behavior:'smooth',block:'center'}); });
       chips.forEach(function(b){ b.addEventListener('click',function(){ chips.forEach(function(x){x.setAttribute('aria-pressed','false');}); b.setAttribute('aria-pressed','true'); chain=b.dataset.chain; render(); }); });
-      var deb; q.addEventListener('input',function(){ clearTimeout(deb); deb=setTimeout(render,180); }); prov.addEventListener('change',render);
+      var deb; q.addEventListener('input',function(){ clearTimeout(deb); deb=setTimeout(render,180); });
+      var meMarker=null; function setMe(ll,zoom){ me=ll; if(ready){ if(meMarker) meMarker.remove(); meMarker=L.marker(me,{icon:L.divIcon({className:'',html:'<div class="vb-stk__me"></div>',iconSize:[16,16]})}).addTo(map); map.setView(me, zoom||12); } render(); }
+      function geocode(text){ var t=(text||'').trim(); if(!t) return; var go=root.querySelector('[data-vb-go]'); go.disabled=true; go.textContent='Searching…';
+        fetch('https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=za&q='+encodeURIComponent(t),{headers:{'Accept':'application/json'}}).then(function(r){return r.json();}).then(function(res){
+          go.disabled=false; go.textContent='Search';
+          if(res&&res.length){ q.value=''; setMe([parseFloat(res[0].lat),parseFloat(res[0].lon)],12); nearBtn.textContent='Nearest first'; }
+          else { render(); if(!filtered().length){ count.textContent='Address not found. Try a suburb or town name.'; } }
+        }).catch(function(){ go.disabled=false; go.textContent='Search'; render(); }); }
+      root.querySelector('[data-vb-go]').addEventListener('click',function(){ geocode(q.value); });
+      q.addEventListener('keydown',function(e){ if(e.key==='Enter'){ e.preventDefault(); geocode(q.value); } }); prov.addEventListener('change',render);
       nearBtn.addEventListener('click',function(){ if(!navigator.geolocation){ alert('Location is not available in this browser.'); return; } nearBtn.disabled=true; nearBtn.textContent='Locating…';
-        navigator.geolocation.getCurrentPosition(function(pos){ me=[pos.coords.latitude,pos.coords.longitude]; nearBtn.disabled=false; nearBtn.textContent='Nearest first'; if(ready){ L.marker(me,{icon:L.divIcon({className:'',html:'<div class="vb-stk__me"></div>',iconSize:[16,16]})}).addTo(map); } render(); },
+        navigator.geolocation.getCurrentPosition(function(pos){ nearBtn.disabled=false; nearBtn.textContent='Nearest first'; setMe([pos.coords.latitude,pos.coords.longitude],12); },
           function(){ nearBtn.disabled=false; nearBtn.textContent='Near me'; alert('We could not read your location. Please allow location access or search by suburb.'); },{timeout:10000,maximumAge:300000}); });
       fetch(DATA_URL,{cache:'force-cache'}).then(function(r){return r.json();}).then(function(d){
         stores=(d.stores||[]).map(function(s,i){ s.id=String(i); s.c=COL[s.c]?s.c:'Other'; return s; });
@@ -127,10 +137,11 @@
         return load('https://unpkg.com/leaflet@1.9.4/dist/leaflet.js').then(function(){ return load('https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js'); });
       }).then(function(){
         map=L.map(root.querySelector('[data-vb-map]'),{scrollWheelZoom:false}).setView([-28.6,24.7],5);
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{maxZoom:19,attribution:'© OpenStreetMap contributors © CARTO'}).addTo(map);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap contributors'}).addTo(map);
         cluster=L.markerClusterGroup({showCoverageOnHover:false,maxClusterRadius:48,iconCreateFunction:function(c){return L.divIcon({html:'<div>'+c.getChildCount()+'</div>',className:'marker-cluster',iconSize:[40,40]});}});
         stores.forEach(function(s){ var m=L.marker([s.lat,s.lng],{icon:L.divIcon({className:'',html:'<div class="vb-stk__pin" style="--c:'+(COL[s.c]||COL.Other)+'"></div>',iconSize:[26,26],iconAnchor:[13,26],popupAnchor:[0,-26]})}); m.bindPopup('<b>'+esc(s.n)+'</b>'+esc([s.a,s.t].filter(Boolean).join(', '))+'<br><a href="'+dirs(s)+'" target="_blank" rel="noopener">Directions</a>'); markers[s.id]=m; });
         map.addLayer(cluster); ready=true; render();
+        if(me){ setMe(me,12); } else if(navigator.geolocation){ navigator.geolocation.getCurrentPosition(function(pos){ nearBtn.textContent='Nearest first'; setMe([pos.coords.latitude,pos.coords.longitude],12); },function(){},{timeout:8000,maximumAge:600000}); }
       }).catch(function(e){ count.textContent='Store list unavailable'; console.warn('stockists',e); });
     })();
     </script>

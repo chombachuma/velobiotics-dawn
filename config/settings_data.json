@@ -145,7 +145,7 @@
       },
       "13129208525377196889": {
         "type": "shopify://apps/mlv-multi-country-pricing/blocks/mlveda-mcp/a55f20a0-67fc-44fb-8f37-8dfe18bd61a2",
-        "disabled": false,
+        "disabled": true,
         "settings": {}
       },
       "6159598353363395418": {

@@ -146,28 +146,19 @@ ATTRIBUTION RULES
     if (!attr) return;
     var sig = signature(attr);
     if (!force && ss('vb_cart_sig') === sig) return;
-    var payload = {
-      attributes: {
-        utm_source: attr.utm_source || '',
-        utm_medium: attr.utm_medium || '',
-        utm_campaign: attr.utm_campaign || '',
-        utm_content: attr.utm_content || '',
-        utm_term: attr.utm_term || '',
-        gclid: attr.gclid || '',
-        fbclid: attr.fbclid || '',
-        ttclid: attr.ttclid || '',
-        landing_page: attr.landing_page || '',
-        referrer: attr.referrer || '',
-        internal_promo: attr.internal_promo || '',
-        market: attr.market || '',
-        vb_lid: attr.vb_lid || '',
-        vb_tool: attr.vb_tool || '',
-        vb_brand: attr.vb_brand || '',
-        vb_attribution: JSON.stringify(attr),
-        // BioMatch is stamped ONLY when this session actually came through the quiz (quiz UTM, quiz tool id, or a saved report token).
-        biomatch: (function(){ try { var q = /biomatch|quiz/i; return (q.test(attr.utm_campaign || '') || q.test(attr.utm_source || '') || (attr.vb_tool || '') === 'biomatch' || !!localStorage.getItem('vb_quiz_token') || /\/pages\/quiz/.test(attr.landing_page || '')) ? 'yes' : ''; } catch (e) { return ''; } })()
-      }
+    // 1 Oct 2026 (Chomba): only non-empty attributes are written, no JSON blob, and BioMatch keys exist ONLY for quiz sessions.
+    var raw = {
+      utm_source: attr.utm_source || '', utm_medium: attr.utm_medium || '', utm_campaign: attr.utm_campaign || '', utm_content: attr.utm_content || '', utm_term: attr.utm_term || '',
+      gclid: attr.gclid || '', fbclid: attr.fbclid || '', ttclid: attr.ttclid || '', landing_page: attr.landing_page || '', referrer: attr.referrer || '',
+      internal_promo: attr.internal_promo || '', market: attr.market || '', vb_lid: attr.vb_lid || '', vb_tool: attr.vb_tool || '', vb_brand: attr.vb_brand || ''
     };
+    try { var q = /biomatch|quiz/i; var tok = localStorage.getItem('vb_quiz_token') || '';
+      if (q.test(attr.utm_campaign || '') || q.test(attr.utm_source || '') || (attr.vb_tool || '') === 'biomatch' || tok || /\/pages\/quiz/.test(attr.landing_page || '')) { raw.biomatch = 'yes'; if (tok) raw.biomatch_token = tok; }
+    } catch (e) {}
+    var clean = {}; Object.keys(raw).forEach(function (k) { if (raw[k]) clean[k] = raw[k]; });
+    // clear legacy keys left on old carts
+    clean.biomatchAttribution = ''; clean.vb_attribution = '';
+    var payload = { attributes: clean };
     fetch('/cart/update.js', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },

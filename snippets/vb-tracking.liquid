@@ -163,7 +163,9 @@ ATTRIBUTION RULES
         vb_lid: attr.vb_lid || '',
         vb_tool: attr.vb_tool || '',
         vb_brand: attr.vb_brand || '',
-        biomatchAttribution: JSON.stringify(attr)
+        vb_attribution: JSON.stringify(attr),
+        // BioMatch is stamped ONLY when this session actually came through the quiz (quiz UTM, quiz tool id, or a saved report token).
+        biomatch: (function(){ try { var q = /biomatch|quiz/i; return (q.test(attr.utm_campaign || '') || q.test(attr.utm_source || '') || (attr.vb_tool || '') === 'biomatch' || !!localStorage.getItem('vb_quiz_token') || /\/pages\/quiz/.test(attr.landing_page || '')) ? 'yes' : ''; } catch (e) { return ''; } })()
       }
     };
     fetch('/cart/update.js', {

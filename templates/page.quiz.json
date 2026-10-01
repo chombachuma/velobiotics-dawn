@@ -19,7 +19,8 @@
         "sub": "",
         "hero_image_url": "",
         "logo_url": "",
-        "product_count": 60
+        "product_count": 60,
+        "compact_landing": true
       }
     },
     "hero": {

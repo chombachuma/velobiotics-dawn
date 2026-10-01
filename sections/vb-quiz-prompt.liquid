@@ -1,0 +1,38 @@
+{%- comment -%} VB · Quiz prompt (1 Oct 2026): brand-aware BioMatch call-to-action on collection pages. Renders only for the handles listed in the section setting. {%- endcomment -%}
+{%- assign allow = section.settings.handles | downcase | split: ',' -%}
+{%- assign h = collection.handle -%}
+{%- assign show = false -%}{%- for x in allow -%}{%- assign xs = x | strip -%}{%- if xs == h -%}{%- assign show = true -%}{%- endif -%}{%- endfor -%}
+{%- if show -%}
+{%- assign brand = 'Velobiotics' -%}{%- assign q = 'Not sure which formula is right for you?' -%}
+{%- if h contains 'femina' -%}{%- assign brand = 'Femina' -%}{%- assign q = 'Not sure which Femina is right for you?' -%}
+{%- elsif h contains 'his-biotics' or h contains 'men' -%}{%- assign brand = 'His-Biotics' -%}{%- assign q = 'Not sure which His-Biotics suits you?' -%}
+{%- elsif h contains 'her-biotics' or h contains 'women' -%}{%- assign brand = 'Her-Biotics' -%}{%- assign q = 'Not sure which Her-Biotics suits you?' -%}
+{%- elsif h contains 'gutslim' or h contains 'weight' -%}{%- assign brand = 'GutSlim' -%}{%- assign q = 'Not sure where to start with weight and cravings?' -%}
+{%- elsif h contains 'velo16' or h contains 'gut' or h contains 'digest' -%}{%- assign brand = 'Velo16' -%}{%- assign q = 'Bloating, irregular digestion or a reset? Not sure which one?' -%}
+{%- elsif h contains 'preg' -%}{%- assign brand = 'PregBiotics' -%}{%- assign q = 'Trying, pregnant or breastfeeding? Find the right PregBiotics.' -%}
+{%- elsif h contains 'kid' -%}{%- assign brand = 'BioKid' -%}{%- assign q = 'Not sure which BioKid is right for your child?' -%}
+{%- endif -%}
+<section class="vbqp" style="--g:#4d8c44;--g2:#2f6b2a">
+  <div class="vbqp__in">
+    <div class="vbqp__copy">
+      <span class="vbqp__eyebrow">The Velobiotics BioMatch · 60 seconds</span>
+      <h2 class="vbqp__h">{{ q }}</h2>
+      <p>Answer up to 8 quick questions and we match you to the 2–3 {{ brand }} formulas that fit your body and your goal, with a personalised report and 10% off your match.</p>
+    </div>
+    <a class="vbqp__cta" href="/pages/quiz?utm_source=collection&utm_medium=prompt&utm_campaign=biomatch&utm_content={{ h }}#start">Find my match →</a>
+  </div>
+</section>
+<style>
+.vbqp{padding:0 16px;margin:28px 0}
+.vbqp__in{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:22px;background:linear-gradient(135deg,#f2f7ef,#e7f0e2);border:1px solid #d9e6d2;border-radius:20px;padding:24px 28px}
+.vbqp__eyebrow{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--g2);font-weight:700;margin-bottom:6px}
+.vbqp__h{margin:0 0 6px;font-size:clamp(20px,2.4vw,28px);line-height:1.2;color:#10250f}
+.vbqp p{margin:0;font-size:15px;color:#3b4a39;max-width:640px;line-height:1.5}
+.vbqp__cta{flex:0 0 auto;background:var(--g);color:#fff;text-decoration:none;font-weight:700;padding:14px 24px;border-radius:999px;font-size:15px;white-space:nowrap}
+.vbqp__cta:hover{background:var(--g2)}
+@media (max-width:720px){.vbqp__in{flex-direction:column;align-items:flex-start;padding:20px}.vbqp__cta{width:100%;text-align:center}}
+</style>
+{%- endif -%}
+{% schema %}
+{ "name": "VB · Quiz prompt", "settings": [ { "type": "textarea", "id": "handles", "label": "Collection handles that show the prompt (comma-separated)", "default": "femina,gut-health,digestive-health,weight-management,immune-support,gutslim,velo16,gut-bundles,his-biotics,multivitamins-for-men,her-biotics,multivitamins-for-women,pregbiotics,pregnancy-conception,biokid,menopause-support,vitality-libido,all" } ], "presets": [ { "name": "VB · Quiz prompt" } ] }
+{% endschema %}

@@ -27,13 +27,13 @@
         "ben3": {
           "type": "benefit",
           "settings": {
-            "text": "Compound results — multiple actives, multiple angles"
+            "text": "Compound results \u2014 multiple actives, multiple angles"
           }
         },
         "ben4": {
           "type": "benefit",
           "settings": {
-            "text": "One transaction, one parcel — simpler ritual"
+            "text": "One transaction, one parcel \u2014 simpler ritual"
           }
         }
       },
@@ -47,10 +47,10 @@
         "eyebrow": "Curated Combos",
         "title_pre": "Compounded results,",
         "title_highlight": "smarter savings.",
-        "sub": "Doctor-designed Velobiotics bundles — pre-configured stacks for weight management, women's health, pregnancy journey, daily wellness, and more. Save up to 25%.",
+        "sub": "Doctor-designed Velobiotics bundles \u2014 pre-configured stacks for weight management, women's health, pregnancy journey, daily wellness, and more. Save up to 25%.",
         "define_title": "Why bundle?",
-        "define_desc": "<p>Single products solve single problems. Real transformation usually needs more than one active — and a clear protocol. Velobiotics bundles combine our flagship products at compound discounts, with doctor-designed protocols telling you exactly what to take, when, and how long for.</p>",
-        "visual_emoji": "📦",
+        "define_desc": "<p>Single products solve single problems. Real transformation usually needs more than one active \u2014 and a clear protocol. Velobiotics bundles combine our flagship products at compound discounts, with doctor-designed protocols telling you exactly what to take, when, and how long for.</p>",
+        "visual_emoji": "\ud83d\udce6",
         "top1_handle": "21-day-gutslim-complete-pack",
         "top1_badge": "Most Popular",
         "top2_handle": "14-day-gut-reboot-starter-pack",
@@ -67,12 +67,12 @@
         "show_heading": true,
         "eyebrow": "All Bundles",
         "title": "Browse every Velobiotics bundle",
-        "sub": "Pick the protocol that matches your goal — gut reset, women's health, men's performance, family wellness, and more.",
+        "sub": "Pick the protocol that matches your goal \u2014 gut reset, women's health, men's performance, family wellness, and more.",
         "brand_primary": "#4d8c44",
         "brand_secondary": "#2e5d28",
         "card_bg": "#fafdf9",
         "card_bg2": "#e3ece1",
-        "brand_label": "Velobiotics™ Bundles",
+        "brand_label": "Velobiotics\u2122 Bundles",
         "products_per_page": 24,
         "card_min_width": 320
       }
@@ -83,17 +83,22 @@
         "kicker": "Backed by peer-reviewed science",
         "title_pre": "Don't take our word for it.",
         "title_highlight": "View the science.",
-        "sub": "Every Velobiotics™ product uses the same patented microencapsulation studied in three peer-reviewed papers. Here is what the research actually showed, in plain English.",
+        "sub": "Every Velobiotics\u2122 product uses the same patented microencapsulation studied in three peer-reviewed papers. Here is what the research actually showed, in plain English.",
         "all_text": "View the science",
         "all_url": "/pages/what-is-microencapsulation",
         "bg": "#f6faf5",
         "pad_top": 48,
         "pad_bottom": 48
       }
+    },
+    "vb_quiz_prompt": {
+      "type": "vb-quiz-prompt",
+      "settings": {}
     }
   },
   "order": [
     "functional",
+    "vb_quiz_prompt",
     "grid",
     "science_strip"
   ]

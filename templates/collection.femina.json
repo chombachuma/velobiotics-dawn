@@ -27,13 +27,13 @@
         "b3": {
           "type": "badge",
           "settings": {
-            "text": "Velobiotics™ 1000×"
+            "text": "Velobiotics\u2122 1000\u00d7"
           }
         },
         "b4": {
           "type": "badge",
           "settings": {
-            "text": "🌿 Vegan"
+            "text": "\ud83c\udf3f Vegan"
           }
         }
       },
@@ -51,13 +51,13 @@
         "eyebrow": "South Africa's #1 Intimate Health System",
         "headline_pre": "BV won't go away?",
         "headline_highlight": "You're not the problem",
-        "headline_post": "— your antibiotics are.",
-        "sub": "Femina is South Africa's most-reviewed intimate health system. 2,000+ verified five-star stories. Probiotics + boric acid that work in 24–72 hours — and keep working.",
-        "cta1_text": "Shop the Reset Kit →",
+        "headline_post": "\u2014 your antibiotics are.",
+        "sub": "Femina is South Africa's most-reviewed intimate health system. 2,000+ verified five-star stories. Probiotics + boric acid that work in 24\u201372 hours \u2014 and keep working.",
+        "cta1_text": "Shop the Reset Kit \u2192",
         "cta1_link": "/products/femina-intimate-starter-pack",
-        "cta2_text": "🔬 Take the 2-minute V-Check",
+        "cta2_text": "\ud83d\udd2c Take the 2-minute V-Check",
         "cta2_link": "https://femina.care/vcheck",
-        "proof": " 4.8 from 2,100+ verified reviews · Lab-tested every batch",
+        "proof": " 4.8 from 2,100+ verified reviews \u00b7 Lab-tested every batch",
         "show_badges": true
       }
     },
@@ -71,7 +71,7 @@
         "show_heading": true,
         "eyebrow": "The Collection",
         "title": "Products That Perform",
-        "sub": "Every Femina product is formulated to work in harmony with your body's natural ecosystem — and backed by 2,000+ verified five-star stories.",
+        "sub": "Every Femina product is formulated to work in harmony with your body's natural ecosystem \u2014 and backed by 2,000+ verified five-star stories.",
         "products_per_page": 12
       }
     },
@@ -81,19 +81,24 @@
         "kicker": "Backed by peer-reviewed science",
         "title_pre": "Don't take our word for it.",
         "title_highlight": "View the science.",
-        "sub": "Every Velobiotics™ product uses the same patented microencapsulation studied in three peer-reviewed papers. Here is what the research actually showed, in plain English.",
+        "sub": "Every Velobiotics\u2122 product uses the same patented microencapsulation studied in three peer-reviewed papers. Here is what the research actually showed, in plain English.",
         "all_text": "View the science",
         "all_url": "/pages/what-is-microencapsulation",
         "bg": "#f6faf5",
         "pad_top": 48,
         "pad_bottom": 48
       }
+    },
+    "vb_quiz_prompt": {
+      "type": "vb-quiz-prompt",
+      "settings": {}
     }
   },
   "order": [
     "femina-hero",
     "femina-body",
     "femina-product-grid",
-    "science_strip"
+    "science_strip",
+    "vb_quiz_prompt"
   ]
 }

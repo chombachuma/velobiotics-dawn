@@ -153,7 +153,7 @@ ATTRIBUTION RULES
       internal_promo: attr.internal_promo || '', market: attr.market || '', vb_lid: attr.vb_lid || '', vb_tool: attr.vb_tool || '', vb_brand: attr.vb_brand || ''
     };
     try { var q = /biomatch|quiz/i; var tok = localStorage.getItem('vb_quiz_token') || '';
-      if (q.test(attr.utm_campaign || '') || q.test(attr.utm_source || '') || (attr.vb_tool || '') === 'biomatch' || tok || /\/pages\/quiz/.test(attr.landing_page || '')) { raw.biomatch = 'yes'; if (tok) raw.biomatch_token = tok; }
+      if (q.test(attr.utm_campaign || '') || q.test(attr.utm_source || '') || (attr.vb_tool || '') === 'biomatch' || tok || /\/pages\/quiz/.test(attr.landing_page || '') || /\/pages\/quiz/.test(attr.referrer || '')) { raw.biomatch = 'yes'; if (tok) raw.biomatch_token = tok; }
     } catch (e) {}
     var clean = {}; Object.keys(raw).forEach(function (k) { if (raw[k]) clean[k] = raw[k]; });
     // clear legacy keys left on old carts

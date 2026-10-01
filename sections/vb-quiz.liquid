@@ -225,7 +225,9 @@
   var S={answers:{}, idx:0, recs:[], lead:null, session:'vbq_'+Date.now().toString(36)+Math.random().toString(36).slice(2,7)};
   var $=function(s,c){return (c||document).querySelector(s);}, $$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s));};
   function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
-  function track(n,p){try{var d=Object.assign({event:'vb_quiz_'+n,quiz:'biomatch',version:VERSION,session:S.session},p||{});if(window.dataLayer)window.dataLayer.push(d);}catch(e){}}
+  function track(n,p){try{var d=Object.assign({event:'vb_quiz_'+n,quiz:'biomatch',version:VERSION,session:S.session},p||{});if(window.dataLayer)window.dataLayer.push(d);}catch(e){}
+    try{ if(n==='started'||n==='lead'||n==='results'||n==='rec_click'||n==='abandon'){ var u=new URLSearchParams(location.search); var b=JSON.stringify(Object.assign({event:n,session:S.session,version:VERSION,site:location.host.replace(/^www\./,''),path:location.pathname,utm_source:u.get('utm_source')||'',utm_campaign:u.get('utm_campaign')||'',focus:(S.answers&&S.answers.focus)||'',step:(p&&p.step)||'',step_index:(p&&p.index!=null)?p.index:S.idx},(n==='results'||n==='rec_click')?{top:(p&&(p.top||p.handle))||''}:{})); var EV='https://elara-cef2631f.base44.app/functions/biomatchEvent'; if(navigator.sendBeacon){ navigator.sendBeacon(EV,new Blob([b],{type:'text/plain'})); } else { fetch(EV,{method:'POST',headers:{'Content-Type':'text/plain'},body:b,keepalive:true}); } } }catch(e){}
+    try{ if(n==='started'){ sessionStorage.setItem('vb_quiz_started','1'); } if(n==='results'){ sessionStorage.removeItem('vb_quiz_started'); localStorage.setItem('vb_quiz_token',(S.lead&&S.lead.token)||S.session); } }catch(e){}}
 
   /* ---------- dynamic flow ---------- */
   function adult(){return S.answers.who!=='child';}
@@ -360,6 +362,7 @@
   function advance(){ clearTimeout(S._auto); if(!S.answers[cur()] && cur()!=='focus') return; if(cur()==='focus'&&!S.answers.focus) return; S.idx=Math.min(S.idx+1, steps().length-1); render(); track('step',{step:cur()}); }
   function prev(){ clearTimeout(S._auto); if(S.idx>0){ S.idx--; render(); } else { exit(); } }
   function start(){ S.idx=0; S.answers={}; root.classList.add('is-quiz'); track('started',{}); render(); }
+  window.addEventListener('pagehide',function(){ try{ if(sessionStorage.getItem('vb_quiz_started')==='1'){ sessionStorage.removeItem('vb_quiz_started'); track('abandon',{step:(steps()[S.idx]||''),index:S.idx}); } }catch(e){} });
   function exit(){ if(S.idx>0 && !window.confirm('Leave the BioMatch? Your answers will be lost.')) return; location.href='/'; }
 
   /* ---------- scoring ---------- */

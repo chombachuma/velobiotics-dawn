@@ -84,6 +84,10 @@
   .vbq__hint{font-size:12.5px;color:var(--mute);margin-top:10px;text-align:center}
   .vbq__react{margin-top:16px;background:#fff;border-left:4px solid var(--g);border-radius:12px;padding:10px 14px;font-size:14px;color:var(--ink);animation:vbqIn .3s ease both}
   /* ---------- lead ---------- */
+  .vbh5-section.vbq-hero-min [id^=vbh5-]{min-height:0!important;height:150px!important;max-height:150px!important;padding:0!important;transition:height .35s ease,max-height .35s ease}
+  .vbh5-section.vbq-hero-min [id^=vbh5-] > *:not(.vbh5__media):not(.vbh5__scrim){display:none!important}
+  .vbh5-section.vbq-hero-min .vbh5__scrim{background:linear-gradient(180deg,rgba(242,248,240,.2),rgba(242,248,240,.85))!important}
+  @media (max-width:749px){.vbh5-section.vbq-hero-min [id^=vbh5-]{height:96px!important;max-height:96px!important}}
   .vbq--compact .vbq__hero{grid-template-columns:1fr;padding-top:8px}
   .vbq--compact .vbq__hero-art,.vbq--compact .vbq__title,.vbq--compact .vbq__eyebrow{display:none}
   .vbq--compact .vbq__sub{max-width:720px;margin:0 auto 14px;text-align:center}
@@ -335,7 +339,10 @@
       html=resultsHtml();
     }
     if(step!=='start'){ view.innerHTML=html; }
-    window.scrollTo({top:0,behavior:'smooth'});
+    /* 2 Oct 2026: keep the question in view. Collapse the hero above while the quiz runs and scroll to the quiz, not the page top. */
+    try{ var sec=root.closest('.shopify-section'); var hero=sec&&sec.previousElementSibling; if(hero&&hero.classList.contains('vbh5-section')){ hero.classList.toggle('vbq-hero-min', step!=='start'); } }catch(e){}
+    var hdrEl=document.querySelector('.section-header, .header-wrapper, header'); var hdrH=(hdrEl&&getComputedStyle(hdrEl).position!=='static'&&hdrEl.getBoundingClientRect().height)||0;
+    var y=root.getBoundingClientRect().top+window.pageYOffset-hdrH-8; window.scrollTo({top:Math.max(0,y),behavior:'smooth'});
     bind(step);
     if(step==='loading') runLoader();
   }

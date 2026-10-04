@@ -1,0 +1,268 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "vb-product-hero",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🏷️",
+            "text": "Numbered Founding Pass, #1 to #1000"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "💛",
+            "text": "Lifetime 15% off Fizzoy"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🥤",
+            "text": "First access to limited flavour drops"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🔁",
+            "text": "100% refundable before launch"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "settings": {
+        "brand_primary": "#1E3D59",
+        "brand_dark": "#12283b",
+        "brand_tint": "#fff6cf",
+        "brand_label": "Fizzoy™ Happy Gut Club · Founders",
+        "rating": "",
+        "review_count": "",
+        "hook": "Back Fizzoy before launch. Founding members get a numbered digital credential, a lifetime 15% Fizzoy discount and first access to limited flavour drops. The refundable deposit simply holds your place and comes off your launch crate.",
+        "ship_note": "Pre-order · 100% refundable before launch · Digital, nothing to ship",
+        "show_buynow": true,
+        "show_testi_marquee": false
+      }
+    },
+    "solution": {
+      "type": "vb-product-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Numbered digital credential</strong>, yours for life."
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Lifetime 15% discount</strong> on every Fizzoy order."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Priority access</strong> to limited edition flavour drops."
+          }
+        },
+        "p4": {
+          "type": "point",
+          "settings": {
+            "icon": "✓",
+            "text": "<strong>Refundable deposit</strong> comes off your launch crate."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "settings": {
+        "reverse": true,
+        "brand_primary": "#1E3D59",
+        "brand_tint": "#fff6cf",
+        "image_url": "https://mautic.velobiotics.com/media/social/fizzoy/gutjoy/v4/gutjoy_v4_A_fresh_transparent.png",
+        "tag_value": "1,000",
+        "tag_label": "Founding passes, ever",
+        "eyebrow": "Happy Gut Club",
+        "title_pre": "Say hello",
+        "title_highlight": "to Fizzoy.",
+        "desc": "Fizzoy is our cheerful yellow mascot and your gut's daily cheerleader. The first 1,000 members who back the launch get a numbered Founding Pass with lifetime perks; the deposit is for anyone who wants to hold a place with a small, refundable amount."
+      }
+    },
+    "related": {
+      "type": "vb-product-related",
+      "blocks": {
+        "r1": {
+          "type": "product",
+          "settings": {
+            "product_handle": "fizzoy-founders-case",
+            "brand": "Fizzoy™",
+            "rating": "",
+            "reviews": "",
+            "fallback_title": "",
+            "fallback_url": "",
+            "fallback_price": ""
+          }
+        }
+      },
+      "block_order": [
+        "r1"
+      ],
+      "settings": {
+        "brand_primary": "#1E3D59",
+        "brand_dark": "#12283b",
+        "brand_tint": "#fff6cf",
+        "tint": true,
+        "eyebrow": "The main event",
+        "title": "Pre-order the Founders Case",
+        "sub": "12, 24 or 48 cans. Variety pack or your favourite flavour."
+      }
+    },
+    "faq": {
+      "type": "vb-faq",
+      "blocks": {
+        "q1": {
+          "type": "q",
+          "settings": {
+            "question": "When will my Founders Case ship?",
+            "answer": "<p>Production is planned for Q2 2027, subject to final production validation. You will get an email the moment your case is on its way, and we will keep you posted on progress in between.</p>"
+          }
+        },
+        "q2": {
+          "type": "q",
+          "settings": {
+            "question": "Can I get a refund if I change my mind?",
+            "answer": "<p>Yes. Pre-orders are 100% refundable any time before dispatch. Email <a href=\"mailto:support@velobiotics.com\">support@velobiotics.com</a> with your order number.</p>"
+          }
+        },
+        "q3": {
+          "type": "q",
+          "settings": {
+            "question": "Am I charged now or when it ships?",
+            "answer": "<p>You are charged in full at checkout, which is what reserves your case at the Founders price. South African orders are charged in rand; US and international orders in US dollars.</p>"
+          }
+        },
+        "q4": {
+          "type": "q",
+          "settings": {
+            "question": "Can I mix flavours?",
+            "answer": "<p>Choose the Variety Pack to get all five flavours in one case, or pick a single flavour. Flavours may still be fine-tuned before launch; if anything changes we will tell you first.</p>"
+          }
+        },
+        "q5": {
+          "type": "q",
+          "settings": {
+            "question": "What is a synbiotic?",
+            "answer": "<p>A synbiotic combines probiotics (live beneficial bacteria) with prebiotics (the fibre those bacteria feed on). Fizzoy has 1 billion live probiotics from 16 strains plus 3 g of prebiotic fibre in every can.</p>"
+          }
+        },
+        "q6": {
+          "type": "q",
+          "settings": {
+            "question": "Is Fizzoy a medicine?",
+            "answer": "<p>No. Fizzoy supports digestive health as part of a balanced diet. It is not intended to diagnose, treat, cure or prevent any disease. Speak to your doctor if you have a medical condition.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "title_pre": "Pre-order",
+        "title_highlight": "questions"
+      }
+    },
+    "final": {
+      "type": "vb-product-final",
+      "blocks": {
+        "g1": {
+          "type": "g",
+          "settings": {
+            "icon": "🔁",
+            "text": "100% refundable before dispatch"
+          }
+        },
+        "g2": {
+          "type": "g",
+          "settings": {
+            "icon": "📅",
+            "text": "Ships Q2 2027"
+          }
+        },
+        "g3": {
+          "type": "g",
+          "settings": {
+            "icon": "🌍",
+            "text": "SA and US pre-orders"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3"
+      ],
+      "settings": {
+        "brand_primary": "#1E3D59",
+        "brand_dark": "#12283b",
+        "brand_light": "#2d5a85",
+        "badge": "Founders pre-order",
+        "title_pre": "Join the Happy Gut Club.",
+        "title_highlight": "Founders only.",
+        "sub": "Founders Cases are limited and priced for the people who back Fizzoy before launch. Reserve yours today; every cent is refundable until it ships.",
+        "cta_text": "Reserve my place",
+        "cta_link": "#vbpForm"
+      }
+    },
+    "science_strip": {
+      "type": "vb-science-strip",
+      "settings": {
+        "kicker": "Backed by peer-reviewed science",
+        "title_pre": "Don't take our word for it.",
+        "title_highlight": "View the science.",
+        "sub": "The shielding technology inside Fizzoy was studied in three peer-reviewed papers. Read them before you pre-order.",
+        "all_text": "View the science",
+        "all_url": "/pages/what-is-microencapsulation",
+        "bg": "#f6faf5",
+        "pad_top": 40,
+        "pad_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "solution",
+    "related",
+    "faq",
+    "final",
+    "science_strip"
+  ]
+}

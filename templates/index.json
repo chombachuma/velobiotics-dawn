@@ -320,6 +320,19 @@
             "accent": "#1a1a1a",
             "site_url": "https://almasi.beauty"
           }
+        },
+        "fizzoy": {
+          "type": "brand",
+          "settings": {
+            "brand_name": "Fizzoy™",
+            "tagline": "Synbiotic Soda",
+            "target": "The world's 1st 16-strain probiotic soda",
+            "link": "/collections/fizzoy",
+            "image_url": "https://mautic.velobiotics.com/media/social/fizzoy/cans/v2/fizzoy-can-tummy-tropics.png",
+            "bg": "#fff6cf",
+            "accent": "#1E3D59",
+            "site_url": "https://fizzoy.com"
+          }
         }
       },
       "block_order": [
@@ -331,7 +344,8 @@
         "biokid",
         "biogain",
         "gutslim",
-        "almasi"
+        "almasi",
+        "fizzoy"
       ],
       "settings": {
         "eyebrow": "The Velobiotics Family",

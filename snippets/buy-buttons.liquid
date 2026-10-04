@@ -45,7 +45,8 @@
       -%}
         {%- comment -%} vb-preorder: products carrying a pre-order selling plan are always added with that plan {%- endcomment -%}
         {%- if product.selling_plan_groups.size > 0 and product.tags contains 'preorder' -%}
-          {%- assign vb_plan = product.selling_plan_groups.first.selling_plans.first -%}
+          {%- assign vb_alloc = product.selected_or_first_available_variant.selling_plan_allocations | first -%}
+          {%- assign vb_plan = vb_alloc.selling_plan -%}
           <input type="hidden" name="selling_plan" value="{{ vb_plan.id }}">
         {%- endif -%}
         <input

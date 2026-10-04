@@ -390,6 +390,11 @@
         {%- else -%}
           <input type="hidden" name="id" value="{{ current_variant.id }}" />
         {%- endif -%}
+        {%- comment -%} vb-preorder: products tagged "preorder" with a PRE_ORDER selling plan are always added with that plan {%- endcomment -%}
+        {%- if product.tags contains 'preorder' and product.selling_plan_groups.size > 0 -%}
+          {%- assign vb_pre_alloc = current_variant.selling_plan_allocations | first -%}
+          <input type="hidden" name="selling_plan" value="{{ vb_pre_alloc.selling_plan.id }}" data-vb-preorder-plan>
+        {%- endif -%}
 
         {%- comment -%} ============ SUBSCRIPTION SELECTOR (replaces PayWhirl widget visually) ============ {%- endcomment -%}
         {%- if section.settings.show_subscription -%}
@@ -632,7 +637,7 @@
         const o1 = val(1);
         picker.querySelectorAll('[data-vb-size]').forEach(sp => {
           const r = find(o1, sp.dataset.vbSize);
-          sp.textContent = r ? r.dataset.moneyPrice : '';
+          sp.innerHTML = r ? r.dataset.moneyPrice : '';
           sp.closest('label').classList.toggle('is-off', !r || r.dataset.available !== 'true');
         });
       };
@@ -641,7 +646,6 @@
         if (r && !r.checked && !r.disabled) { r.checked = true; r.dispatchEvent(new Event('change', { bubbles: true })); }
         paint();
       };
-      picker.querchange = null;
       picker.querySelectorAll('input[type="radio"]').forEach(i => i.addEventListener('change', sync));
       paint();
     })();

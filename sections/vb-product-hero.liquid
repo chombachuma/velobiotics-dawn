@@ -12,6 +12,10 @@
 
   assign default_match_raw = section.settings.default_plan_slug | default: 'every-2-months'
   assign default_match = default_match_raw | replace: '-', ' '
+  assign vb_is_preorder = false
+  if product.tags contains 'preorder' and product.selling_plan_groups.size > 0
+    assign vb_is_preorder = true
+  endif
   assign has_subscription = false
   assign sub_plan_id = ''
   assign sub_plan_label = ''
@@ -397,7 +401,7 @@
         {%- endif -%}
 
         {%- comment -%} ============ SUBSCRIPTION SELECTOR (replaces PayWhirl widget visually) ============ {%- endcomment -%}
-        {%- if section.settings.show_subscription -%}
+        {%- if section.settings.show_subscription and vb_is_preorder == false -%}
         <div class="vb-pb__sub-group" data-vbp-sub-group>
           <p class="vb-pb__group-label">🔁 Choose how you buy</p>
           <div class="vb-pb__sub-options">
@@ -914,6 +918,7 @@
           const fd = new FormData(form);
           /* Strip empty selling_plan so Shopify treats as one-time */
           if (fd.get('selling_plan') === '') fd.delete('selling_plan');
+          const vbPre = form.querySelector('[data-vb-preorder-plan]'); if (vbPre && vbPre.value) { fd.delete('selling_plan'); fd.set('selling_plan', vbPre.value); }
           const res = await fetch('/cart/add.js', { method: 'POST', headers: { 'Accept': 'application/json' }, body: fd });
           if (!res.ok) throw new Error('Add failed');
           atcBtn.classList.remove('is-loading');

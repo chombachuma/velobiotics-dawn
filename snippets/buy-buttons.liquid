@@ -47,7 +47,7 @@
         {%- if product.selling_plan_groups.size > 0 and product.tags contains 'preorder' -%}
           {%- assign vb_alloc = product.selected_or_first_available_variant.selling_plan_allocations | first -%}
           {%- assign vb_plan = vb_alloc.selling_plan -%}
-          <input type="hidden" name="selling_plan" value="{{ vb_plan.id }}" data-vbdbg="{{ vb_alloc | json | escape }}">
+          <input type="hidden" name="selling_plan" value="{{ vb_plan.id }}" data-a="{{ vb_alloc.selling_plan.id }}" data-b="{{ product.selling_plan_groups.first.selling_plans.first.id }}" data-c="{{ vb_alloc.selling_plan_group_id }}" data-d="{{ vb_plan.name }}" data-e="{% for g in product.selling_plan_groups %}{% for sp in g.selling_plans %}{{ sp.id }},{% endfor %}{% endfor %}" data-f="{{ product.selected_or_first_available_variant.selling_plan_allocations.size }}">
         {%- endif -%}
         <input
           type="hidden"

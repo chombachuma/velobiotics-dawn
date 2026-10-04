@@ -94,6 +94,22 @@
 
   .vb-pb__variants-label, .vb-pb__group-label { font-size: 12.5px; font-weight: 800; color: #1a1a1a; letter-spacing: 0.04em; text-transform: uppercase; margin: 0 0 10px; }
   .vb-pb__variants { display: grid; gap: 10px; margin: 0 0 20px; }
+  .vb-pb__variants--hidden { display: none !important; }
+  .vb-pb__picker { margin: 0 0 20px; }
+  .vb-pb__opts { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 18px; }
+  .vb-pb__opts--2 { display: grid; grid-template-columns: repeat(3, 1fr); }
+  .vb-pb__opt { position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 2px; padding: 10px 14px; border: 2px solid #e3ece1; border-radius: 12px; background: #fff; cursor: pointer; transition: all .18s ease; font-size: 13.5px; font-weight: 700; color: #1a1a1a; }
+  .vb-pb__opts--2 .vb-pb__opt { align-items: center; text-align: center; padding: 12px 8px; }
+  .vb-pb__opt input { position: absolute; opacity: 0; pointer-events: none; }
+  .vb-pb__opt:hover { border-color: var(--bp); }
+  .vb-pb__opt:has(input:checked) { border-color: var(--bp); background: color-mix(in srgb, var(--bp) 7%, #fff); box-shadow: 0 6px 16px color-mix(in srgb, var(--bp) 16%, transparent); }
+  .vb-pb__opt--variety { flex-basis: 100%; flex-direction: row; justify-content: space-between; border-style: dashed; }
+  .vb-pb__opt--variety:has(input:checked) { border-style: solid; }
+  .vb-pb__opt-name small { display: inline-block; margin-left: 6px; font-size: 11px; font-weight: 600; color: #6c7a6b; }
+  .vb-pb__opt-price { font-size: 13px; font-weight: 800; color: var(--bp); }
+  .vb-pb__opt.is-off { opacity: .45; }
+  .vb-pb__opt.is-off .vb-pb__opt-price::after { content: " · sold out"; font-weight: 600; color: #6c7a6b; }
+
   .vb-pb__variant { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 16px; border: 2px solid #e3ece1; border-radius: 14px; cursor: pointer; transition: all 0.18s ease; background: #fff; }
   .vb-pb__variant:hover { border-color: var(--bp); }
   .vb-pb__variant input { position: absolute; opacity: 0; pointer-events: none; }
@@ -327,11 +343,38 @@
 
       <form id="vbpForm" action="{{ routes.cart_add_url }}" method="post" enctype="multipart/form-data" data-vbp-form>
         {%- if product.variants.size > 1 -%}
+          {%- liquid
+            assign vb_grouped = false
+            if product.options_with_values.size == 2 and product.variants.size > 6
+              assign vb_grouped = true
+            endif
+          -%}
+          {%- if vb_grouped -%}
+            {%- comment -%} vb-grouped-picker: two option groups drive the hidden variant radios below {%- endcomment -%}
+            <div class="vb-pb__picker" data-vb-picker>
+            {%- for opt in product.options_with_values -%}
+              {%- assign oi = forloop.index0 -%}
+              {%- assign cur = current_variant.options[oi] -%}
+              <p class="vb-pb__variants-label">{{ forloop.index }}. Choose your {{ opt.name | downcase }}</p>
+              <div class="vb-pb__opts vb-pb__opts--{{ forloop.index }}" data-vb-opt="{{ forloop.index }}">
+                {%- for val in opt.values -%}
+                  {%- assign is_var = false -%}{%- if val contains 'Variety' or val contains 'Mixed' -%}{%- assign is_var = true -%}{%- endif -%}
+                  <label class="vb-pb__opt{% if is_var %} vb-pb__opt--variety{% endif %}">
+                    <input type="radio" name="vb_opt{{ forloop.parentloop.index }}" value="{{ val | escape }}" {% if val == cur %}checked{% endif %}>
+                    <span class="vb-pb__opt-name">{{ val }}{% if is_var %} <small>all five flavours</small>{% endif %}</span>
+                    {%- if forloop.parentloop.index == 2 -%}<span class="vb-pb__opt-price" data-vb-size="{{ val | escape }}"></span>{%- endif -%}
+                  </label>
+                {%- endfor -%}
+              </div>
+            {%- endfor -%}
+            </div>
+          {%- else -%}
           <p class="vb-pb__variants-label">Choose your pack</p>
-          <div class="vb-pb__variants">
+          {%- endif -%}
+          <div class="vb-pb__variants{% if vb_grouped %} vb-pb__variants--hidden{% endif %}">
             {%- for variant in product.variants -%}
               <label class="vb-pb__variant">
-                <input type="radio" name="id" value="{{ variant.id }}" {% if variant == current_variant %}checked{% endif %} {% unless variant.available %}disabled{% endunless %} data-price="{{ variant.price }}" data-compare="{{ variant.compare_at_price }}" data-available="{{ variant.available }}" data-money-price="{{ variant.price | money }}" data-money-compare="{% if variant.compare_at_price > variant.price %}{{ variant.compare_at_price | money }}{% endif %}" />
+                <input type="radio" name="id" value="{{ variant.id }}" {% if variant == current_variant %}checked{% endif %} {% unless variant.available %}disabled{% endunless %} data-opt1="{{ variant.option1 | escape }}" data-opt2="{{ variant.option2 | escape }}" data-price="{{ variant.price }}" data-compare="{{ variant.compare_at_price }}" data-available="{{ variant.available }}" data-money-price="{{ variant.price | money }}" data-money-compare="{% if variant.compare_at_price > variant.price %}{{ variant.compare_at_price | money }}{% endif %}" />
                 {%- if forloop.first -%}<span class="vb-pb__variant-best">Best value</span>{%- endif -%}
                 <div class="vb-pb__variant-info">
                   <span class="vb-pb__variant-name">{{ variant.title }}</span>
@@ -579,6 +622,29 @@
 
     /* Variant change — only update variant ID + ATC availability. Prices NOT touched (regional pricing plugin owns them) */
     const atcBtn = root.querySelector('[data-vbp-atc]');
+    // vb-grouped-picker: option chips -> matching hidden variant radio
+    (function(){
+      const picker = root.querySelector('[data-vb-picker]'); if (!picker) return;
+      const radios = [...root.querySelectorAll('.vb-pb__variants input[name="id"]')];
+      const val = n => (picker.querySelector('input[name="vb_opt'+n+'"]:checked')||{}).value;
+      const find = (a,b) => radios.find(r => r.dataset.opt1 === a && r.dataset.opt2 === b);
+      const paint = () => {
+        const o1 = val(1);
+        picker.querySelectorAll('[data-vb-size]').forEach(sp => {
+          const r = find(o1, sp.dataset.vbSize);
+          sp.textContent = r ? r.dataset.moneyPrice : '';
+          sp.closest('label').classList.toggle('is-off', !r || r.dataset.available !== 'true');
+        });
+      };
+      const sync = () => {
+        const r = find(val(1), val(2));
+        if (r && !r.checked && !r.disabled) { r.checked = true; r.dispatchEvent(new Event('change', { bubbles: true })); }
+        paint();
+      };
+      picker.querchange = null;
+      picker.querySelectorAll('input[type="radio"]').forEach(i => i.addEventListener('change', sync));
+      paint();
+    })();
     root.querySelectorAll('input[name="id"]').forEach(r => {
       r.addEventListener('change', () => {
         const isAvailable = r.dataset.available === 'true';

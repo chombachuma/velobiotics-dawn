@@ -328,6 +328,8 @@
     {% render 'vb-schema' %}
     {%- if template.name == 'product' -%}{%- render 'vb-schema-product' -%}{%- endif -%}{%- if template.name == 'product' or template.name == 'collection' or template.name == 'page' -%}{%- render 'vb-schema-breadcrumb' -%}{%- endif -%}
 {% render 'vb-mobile-gutters' %}
+<!-- OpenAI Ads (ChatGPT) measurement pixel — base SDK, set 22 Oct 2026. Events fire from the custom pixel. -->
+<script>!function(w,d,s,u){if(w.oaiq)return;var q=function(){q.q.push(arguments)};q.q=[];w.oaiq=q;var j=d.createElement(s);j.async=1;j.src=u;var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f)}(window,document,"script","https://bzrcdn.openai.com/sdk/oaiq.min.js");oaiq("init",{pixelId:"NBVvh8SQQJvNJi8BQVdPUp",debug:true});</script>
 </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">

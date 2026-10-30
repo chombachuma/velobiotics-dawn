@@ -16,10 +16,17 @@
     {%- endunless -%}
 
     <title>
-      {{ page_title }}
-      {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
-      {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
-      {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+      {%- comment -%} CO-007 brand ladder: master line in every title (Velo-Marketing, 30 Oct 2026) {%- endcomment -%}
+      {%- assign vb_master = 'Put Your Gut First' -%}
+      {%- if template.name == 'index' -%}
+        {{ shop.name }} | Put Your Gut First | Probiotics That Survive Your Stomach
+      {%- else -%}
+        {{ page_title | remove: ' | Velobiotics' | remove: ' – Velobiotics' | remove: ' - Velobiotics' | strip }}
+        {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
+        {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
+        {%- unless page_title contains vb_master %} | {{ vb_master }}{% endunless -%}
+        {%- unless page_title contains shop.name %} | {{ shop.name }}{% endunless -%}
+      {%- endif -%}
     </title>
 
     {% if page_description %}

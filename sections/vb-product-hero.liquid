@@ -330,6 +330,7 @@
         {%- endif -%}
       </div>
       {%- if section.settings.hook != blank -%}<p class="vb-pb__hook">{%- render 'vb-money-tokens', text: section.settings.hook, product: product -%}</p>{%- endif -%}
+      {%- unless section.settings.show_gut_first == false -%}{%- render 'vb-gut-first', colour: section.settings.brand_primary -%}{%- endunless -%}
       {%- assign benefit_count = 0 -%}
       {%- for block in section.blocks -%}{%- if block.type == 'benefit' -%}{%- assign benefit_count = benefit_count | plus: 1 -%}{%- endif -%}{%- endfor -%}
       {%- if benefit_count > 0 -%}
@@ -947,6 +948,7 @@
     { "type": "text", "id": "brand_label", "label": "Brand label", "default": "Velobiotics™" },
     { "type": "text", "id": "rating", "label": "Rating", "default": "4.8" },
     { "type": "text", "id": "review_count", "label": "Review count", "default": "3,500+" },
+    { "type": "checkbox", "id": "show_gut_first", "label": "Show 'Put Your Gut First' brand ladder", "default": true },
     { "type": "textarea", "id": "hook", "label": "Hook line" },
     { "type": "text", "id": "ship_note", "label": "Shipping note", "default": "Free shipping over the free-shipping threshold · 30-day money-back guarantee" },
     { "type": "header", "content": "Subscription · Native UI + PayWhirl backend" },

@@ -1,0 +1,18 @@
+{%- comment -%}
+  Velobiotics brand ladder (standard CO-007, GM 3 Oct 2026): WHY / WHAT / HOW.
+  Rendered on every product page under the title/hook. Toggle per product via
+  section setting show_gut_first (vb-product-hero) or remove this render line.
+{%- endcomment -%}
+{%- assign gf_colour = colour | default: '#4d8c44' -%}
+<div class="vb-gutfirst" style="--gf:{{ gf_colour }};">
+  <p class="vb-gutfirst__why">Put Your Gut First.</p>
+  <p class="vb-gutfirst__ladder"><strong>Most Probiotics Die in Your Stomach. Ours Don't.</strong> <span>1000x More Probiotics to Your Gut, with patented Velobiotics™ microencapsulation.</span></p>
+</div>
+<style>
+  .vb-gutfirst{margin:0 0 18px;padding:12px 16px;border:1px solid color-mix(in srgb,var(--gf) 28%,#fff);border-radius:12px;background:color-mix(in srgb,var(--gf) 6%,#fff)}
+  .vb-gutfirst__why{margin:0 0 4px;font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gf)}
+  .vb-gutfirst__ladder{margin:0;font-size:14.5px;line-height:1.5;color:#2f3d2d}
+  .vb-gutfirst__ladder strong{display:block;font-size:15.5px;color:#1f2a1e}
+  .vb-gutfirst__ladder span{color:#4a5a48}
+  @media (max-width:749px){.vb-gutfirst{padding:10px 13px}.vb-gutfirst__ladder{font-size:13.5px}.vb-gutfirst__ladder strong{font-size:14.5px}}
+</style>

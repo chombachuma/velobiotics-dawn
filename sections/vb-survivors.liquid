@@ -9,7 +9,7 @@
   if vb_now >= 1796076000
     assign vb_state = 'over'
   endif
-  if request.design_mode
+  if request.design_mode or section.settings.force_open
     assign vb_state = 'open'
   endif
 -%}
@@ -143,5 +143,5 @@
 })();
 </script>
 {% schema %}
-{ "name": "VB Survivor Offer builder", "settings": [], "presets": [{ "name": "VB Survivor Offer builder" }] }
+{ "name": "VB Survivor Offer builder", "settings": [ { "type": "checkbox", "id": "force_open", "label": "Preview: force the builder open", "default": false } ], "presets": [{ "name": "VB Survivor Offer builder" }] }
 {% endschema %}

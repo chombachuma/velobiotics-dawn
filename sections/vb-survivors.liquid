@@ -36,6 +36,11 @@
   .vbs__how li{counter-increment:s;position:relative;border:1px solid #232a20;border-radius:10px;background:#0b0f0b;padding:20px 18px 18px 64px;font:400 15px/1.55 Arial,Helvetica,sans-serif;color:#cfd2c8}
   .vbs__how li:before{content:counter(s);position:absolute;left:16px;top:18px;width:34px;height:34px;border-radius:50%;background:#8cff5a;color:#050705;font:800 17px/34px Arial,Helvetica,sans-serif;text-align:center}
   .vbs__how b{display:block;color:#fff;font-size:16px;margin-bottom:3px}
+  .vbs__gift{border:2px solid #8cff5a;border-radius:12px;background:linear-gradient(180deg,#10160f,#0a0d0a);padding:28px 22px;text-align:center;margin:0 0 40px}
+  .vbs__gift h2{margin:0 0 10px;font-style:italic}
+  .vbs__gift p{margin:0 auto;max-width:620px;font:400 16px/1.6 Arial,Helvetica,sans-serif;color:#d8d6cc}
+  .vbs__gift p.vbs__kick{font:800 13px/1.4 Arial,Helvetica,sans-serif;color:#8cff5a;margin:0 0 12px}
+  .vbs__save{display:block;font:800 13px/1.3 Arial,Helvetica,sans-serif;letter-spacing:.06em;color:#8cff5a}
   .vbs__chips{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:0 0 24px}
   .vbs__chip{padding:10px 16px;border:1px solid #4a5343;border-radius:999px;background:transparent;color:#e6e4da;font:700 13px Arial,Helvetica,sans-serif;cursor:pointer}
   .vbs__chip.is-on{background:#8cff5a;border-color:#8cff5a;color:#050705}
@@ -91,8 +96,8 @@
       <p class="vbs__lede">Build your own Survivor Pack. Mix any products, any brands. The more survivors you take, the more you keep.</p>
       <div class="vbs__tiers">
         <div class="is-none"><b>0%</b><span>1 product<br>full price</span></div>
-        <div><b>25%</b><span>Any 2<br>products</span></div>
-        <div><b>40%</b><span>Any 3<br>or more</span></div>
+        <div><b>25%</b><span>Any 2 products<br>+ free gift</span></div>
+        <div><b>40%</b><span>Any 3 to 5<br>+ free gift</span></div>
       </div>
     {%- endif -%}
   </section>
@@ -102,9 +107,14 @@
     <h2>How to build your Survivor Pack</h2>
     <ol class="vbs__how">
       <li><b>Pick your survivors</b>Tap "Add" on any product below. Mix brands freely, or take more than one of the same.</li>
-      <li><b>Watch the bar fill</b>2 products unlock 25% off everything in your pack. 3 or more unlock 40% off.</li>
-      <li><b>Go to cart</b>Your discount is applied automatically. No code needed.</li>
+      <li><b>Watch your saving grow</b>2 products unlock 25% off your pack and the free gift. 3 or more unlock 40% off. Up to 5 products per order.</li>
+      <li><b>Go to cart</b>Your saving shows in the bar below, in your cart and at checkout. It applies automatically. No code needed.</li>
     </ol>
+    <div class="vbs__gift">
+      <p class="vbs__kick">Your gift, with every pack of 2 or more</p>
+      <h2>For the After-Tears.</h2>
+      <p>A free box of tissues, wrapped for the occasion, goes into every order of 2 or more survivors. No code, no catch. One gift per order.</p>
+    </div>
     <div class="vbs__chips" data-vbs-chips><button class="vbs__chip is-on" data-brand="all" type="button">All</button></div>
     {%- paginate collections['all'].products by 50 -%}
     <div class="vbs__grid" data-vbs-grid data-section="{{ section.id }}" data-pages="{{ paginate.pages }}">
@@ -130,13 +140,13 @@
           <p class="vbs__brand">{{ brand }}</p>
           <h3><a href="{{ product.url }}" target="_blank" rel="noopener">{{ product.title }}</a></h3>
           <p class="vbs__price">{{ v.price | money }}</p>
-          <div class="vbs__add"><button class="vbs__minus" type="button" data-vbs-minus aria-label="Remove one">−</button><span class="vbs__qty" data-vbs-qty></span><button class="vbs__btn" type="button" data-vbs-add>Add</button></div>
+          <div class="vbs__add"><button class="vbs__minus" type="button" data-vbs-minus aria-label="Remove one">−</button><span class="vbs__qty" data-vbs-qty></span><button class="vbs__btn" type="button" data-vbs-add>Add survivor</button></div>
         </article>
         {%- endunless -%}
       {%- endfor -%}
     </div>
     {%- endpaginate -%}
-    <p class="vbs__note">The Survivor Offer applies automatically in your cart to single products: 25% off when your pack holds any 2, 40% off when it holds 3 or more. One product is full price. Ready-made packs and combos are already discounted and are not part of this offer. Cannot be combined with other discount codes. Each qualifying order includes one free "For the After-Tears" gift while stocks last. Offer runs Wednesday 25 November 06:00 to Monday 30 November 2026 23:59 SAST.</p>
+    <p class="vbs__note">The Survivor Offer applies automatically in your cart to single products: 25% off when your pack holds any 2, 40% off when it holds 3 or more. One product is full price. Ready-made packs and combos are already discounted and are not part of this offer. Maximum 5 products per order. Cannot be combined with other discount codes. Each order of 2 or more products includes one free "For the After-Tears" box of tissues, while stocks last. Offer runs Wednesday 25 November 06:00 to Monday 30 November 2026 23:59 SAST.</p>
   </div>
   <div class="vbs__bar">
     <p data-vbs-msg>Your Survivor Pack is empty. <span>Add 2 for 25% off.</span></p>
@@ -161,17 +171,23 @@
   function index(){cards=[].slice.call(grid.querySelectorAll('.vbs__card')); cards.forEach(function(c){var b=c.getAttribute('data-brand'); if(b&&!seen[b]){seen[b]=1;var x=document.createElement('button');x.className='vbs__chip';x.type='button';x.setAttribute('data-brand',b);x.textContent=b;chips.appendChild(x)}})}
   chips.addEventListener('click',function(e){var b=e.target.closest('.vbs__chip'); if(!b) return; [].forEach.call(chips.children,function(c){c.classList.toggle('is-on',c===b)}); var br=b.getAttribute('data-brand'); cards.forEach(function(c){c.style.display=(br==='all'||c.getAttribute('data-brand')===br)?'':'none'})});
   var msg=root.querySelector('[data-vbs-msg]'), meter=root.querySelector('[data-vbs-meter]');
-  function render(cart){var n=0, by={}; lines={}; (cart.items||[]).forEach(function(i){by[i.variant_id]=(by[i.variant_id]||0)+i.quantity; lines[i.variant_id]=i.key});
-    cards.forEach(function(c){var q=by[c.getAttribute('data-variant')]||0; n+=q; c.classList.toggle('is-in',q>0); c.querySelector('[data-vbs-qty]').textContent=q?q:''; c.querySelector('[data-vbs-add]').textContent=q?'Add another':'Add'});
+  var cur='ZAR', full=false, MAX=5;
+  function money(c){try{return new Intl.NumberFormat(undefined,{style:'currency',currency:cur}).format(c/100)}catch(e){return cur+' '+(c/100).toFixed(2)}}
+  function render(cart){var n=0, sub=0, by={}, set={}; lines={}; cur=cart.currency||cur;
+    cards.forEach(function(c){set[c.getAttribute('data-variant')]=1});
+    (cart.items||[]).forEach(function(i){by[i.variant_id]=(by[i.variant_id]||0)+i.quantity; lines[i.variant_id]=i.key; if(set[i.variant_id]) sub+=i.original_line_price});
+    cards.forEach(function(c){var q=by[c.getAttribute('data-variant')]||0; n+=q; c.classList.toggle('is-in',q>0); c.querySelector('[data-vbs-qty]').textContent=q?q:''; c.querySelector('[data-vbs-add]').textContent=q?'Add another':'Add survivor'});
+    full=n>=MAX; cards.forEach(function(c){c.querySelector('[data-vbs-add]').disabled=full});
+    var pct=n>=3?40:(n===2?25:0), save=Math.round(sub*pct/100), line=pct?'<span class="vbs__save">'+pct+'% OFF · YOU SAVE '+money(save)+' · PAY '+money(sub-save)+' · FREE GIFT INCLUDED</span>':'';
     meter.style.width=Math.min(100,n/3*100)+'%';
-    msg.innerHTML = n===0 ? 'Your Survivor Pack is empty. <span>Add 2 for 25% off.</span>' : n===1 ? '1 survivor in your pack. <span>Add 1 more for 25% off.</span>' : n===2 ? '2 survivors: <span>25% off unlocked.</span> Add 1 more for 40% off.' : n+' survivors: <span>40% off unlocked.</span>';}
+    msg.innerHTML = n===0 ? 'Your Survivor Pack is empty. <span>Add 2 for 25% off and a free gift.</span>' : n===1 ? '1 survivor in your pack. <span>Add 1 more for 25% off and a free gift.</span>' : n===2 ? '2 survivors. Add 1 more for 40% off.'+line : n+' survivors.'+(full?' Your pack is full (5 per order).':'')+line;}
   function refresh(){return fetch('/cart.js',{headers:{'Accept':'application/json'}}).then(function(r){return r.json()}).then(render)}
   function post(url,body){return fetch(url,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(body)})}
   grid.addEventListener('click',function(e){
     var add=e.target.closest('[data-vbs-add]'), minus=e.target.closest('[data-vbs-minus]'); if(!add&&!minus) return;
-    var b=add||minus, c=b.closest('.vbs__card'), vid=c.getAttribute('data-variant'); b.disabled=true;
+    if(add&&full) return; var b=add||minus, c=b.closest('.vbs__card'), vid=c.getAttribute('data-variant'); b.disabled=true;
     var req = add ? post('/cart/add.js',{items:[{id:Number(vid),quantity:1}]}) : post('/cart/change.js',{id:lines[vid],quantity:Math.max(0,(parseInt(c.querySelector('[data-vbs-qty]').textContent,10)||1)-1)});
-    req.then(function(r){if(!r.ok) throw 0; return refresh()}).catch(function(){if(add) add.textContent='Sold out'}).then(function(){b.disabled=false})});
+    req.then(function(r){if(!r.ok) throw 0; return refresh()}).catch(function(){if(add) add.textContent='Sold out'}).then(function(){b.disabled=add?full:false})});
   index();
   var pages=parseInt(grid.getAttribute('data-pages'),10)||1, sid=grid.getAttribute('data-section'), more=[];
   for(var pg=2;pg<=pages;pg++){more.push(fetch(location.pathname+'?page='+pg+'&section_id='+encodeURIComponent(sid)).then(function(r){return r.text()}).then(function(html){var d=document.createElement('div');d.innerHTML=html;[].forEach.call(d.querySelectorAll('.vbs__card'),function(c){grid.appendChild(c)})}).catch(function(){}))}

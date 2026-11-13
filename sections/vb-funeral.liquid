@@ -131,7 +131,7 @@
   </div>
 
   <div class="vbf__wrap" id="film">
-    <div class="vbf__film">
+    <div class="vbf__film" data-vbf-film="https://base44.app/api/apps/6a8295ba8c3e162339c3a115/files/mp/public/6a8295ba8c3e162339c3a115/da93a0347_funeral_master_cut_v2.mp4" data-vbf-at="2026-11-20T19:00:00+02:00">
       {%- if section.settings.video_embed != blank -%}{{ section.settings.video_embed }}
       {%- else -%}<div><p class="vbf__kick">The funeral film</p><h2 style="margin:0 0 8px">Premieres here.</h2><p style="margin:0">Friday 20 November, 19:00 SAST. Not a minute before.</p></div>{%- endif -%}
     </div>
@@ -170,6 +170,7 @@
 function p(n){return (n<10?'0':'')+n}
 function tick(){var s=Math.max(0,Math.floor((t-Date.now())/1000));el.querySelector('[data-d]').textContent=p(Math.floor(s/86400));el.querySelector('[data-h]').textContent=p(Math.floor(s%86400/3600));el.querySelector('[data-m]').textContent=p(Math.floor(s%3600/60));el.querySelector('[data-s]').textContent=p(s%60)}
 tick();setInterval(tick,1000);
+var fm=document.querySelector('[data-vbf-film]');function film(){if(!fm||fm.getAttribute('data-on'))return;if(Date.now()>=new Date(fm.getAttribute('data-vbf-at')).getTime()){fm.setAttribute('data-on','1');fm.style.aspectRatio='9/16';fm.style.maxWidth='420px';fm.style.padding='0';fm.innerHTML='<video controls playsinline preload="metadata" poster="{{ 'vb-funeral-og.jpg' | asset_url }}" src="'+fm.getAttribute('data-vbf-film')+'"></video>';var k=document.querySelector('.vbf__hero .vbf__kick');if(k)k.textContent='The funeral has begun · Watch below'}}film();setInterval(film,5000);
 if(location.search.indexOf('customer_posted=true')>-1){var r=document.getElementById('rsvp');if(r)r.scrollIntoView({block:'center'})}})();
 </script>
 {% schema %}

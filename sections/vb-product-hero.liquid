@@ -40,6 +40,16 @@
 
   assign tier2_pct = section.settings.tier2_pct | default: 10
   assign tier3_pct = section.settings.tier3_pct | default: 15
+  comment
+    Funeral for Dead Probiotics (Black Friday 2026): Survivor Offer 25% / 40% from Wed 25 Nov 06:00 SAST to Mon 30 Nov 23:59 SAST, then back to the normal tiers automatically. Matches the two scheduled Shopify automatic discounts.
+  endcomment
+  assign vb_now = 'now' | date: '%s' | plus: 0
+  assign vb_survivor = false
+  if vb_now >= 1795579200 and vb_now < 1796076000
+    assign tier2_pct = 25
+    assign tier3_pct = 40
+    assign vb_survivor = true
+  endif
   assign tier2_each_pct = 100 | minus: tier2_pct
   assign tier3_each_pct = 100 | minus: tier3_pct
   assign tier1_total = current_variant.price
@@ -464,7 +474,7 @@
         {%- comment -%} ============ QUANTITY DISCOUNT TIERS (replaces Vital/HulkApps widget visually) ============ {%- endcomment -%}
         {%- if section.settings.show_qty_discount -%}
         <div class="vb-pb__tier-group" data-vbp-tier-group>
-          <p class="vb-pb__group-label">💰 Stack & save more</p>
+          <p class="vb-pb__group-label">{%- if vb_survivor -%}🖤 The Survivor Offer · mix any products · ends Mon 30 Nov{%- else -%}💰 Stack & save more{%- endif -%}</p>
           <div class="vb-pb__tiers">
             <label class="vb-pb__tier">
               <input type="radio" name="qty_tier" value="1" checked>

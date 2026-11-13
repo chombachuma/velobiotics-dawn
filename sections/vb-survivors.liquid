@@ -85,7 +85,7 @@
   <div class="vbs__wrap">
     <div class="vbs__chips" data-vbs-chips><button class="vbs__chip is-on" data-brand="all" type="button">All survivors</button></div>
     <div class="vbs__grid" data-vbs-grid>
-      {%- paginate collections['all'].products by 100 -%}
+      {%- paginate collections['all'].products by 250 -%}
       {%- for product in collections['all'].products -%}
         {%- liquid
           assign v = product.selected_or_first_available_variant

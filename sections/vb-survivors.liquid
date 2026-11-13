@@ -1,5 +1,5 @@
-{%- comment -%} The Survivor Offer bundle builder (Funeral for Dead Probiotics, Black Friday 2026). Mix any products: 2 = 25% off, 3+ = 40% off.
-  Open Wed 25 Nov 06:00 SAST to Mon 30 Nov 23:59 SAST (same window as the two scheduled automatic discounts). Velo-Marketing, 13 Nov 2026. {%- endcomment -%}
+{%- comment -%} The Survivor Offer bundle builder (Funeral for Dead Probiotics, Black Friday 2026). Standalone landing page (no header/footer, see layout/theme.liquid).
+  Single products only: any 2 = 25% off, any 3+ = 40% off. Open Wed 25 Nov 06:00 SAST to Mon 30 Nov 23:59 SAST. v2, 13 Nov 2026. {%- endcomment -%}
 {%- liquid
   assign vb_now = 'now' | date: '%s' | plus: 0
   assign vb_state = 'before'
@@ -14,49 +14,65 @@
   endif
 -%}
 <style>
-  .vbs{background:#050705;color:#f3f1ea;font-family:Arial,Helvetica,sans-serif;padding:0 0 120px}
+  .vbs{background:#050705;color:#f3f1ea;font-family:Arial,Helvetica,sans-serif;padding:0 0 130px;overflow-x:hidden}
   .vbs *{box-sizing:border-box}
-  .vbs__hero{position:relative;width:100vw;margin-left:calc(50% - 50vw);padding:120px 22px 70px;text-align:center;background:#050705 url('{{ "vb-survivors-hero.jpg" | asset_url }}') center 55%/cover no-repeat}
-  .vbs__hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,7,5,.9) 0%,rgba(5,7,5,.45) 45%,#050705 100%)}
+  .vbs__top{position:absolute;top:0;left:0;right:0;z-index:3;display:flex;justify-content:center;padding:18px 20px}
+  .vbs__logo{height:38px;width:auto;display:block}
+  .vbs__hero{position:relative;width:100vw;margin-left:calc(50% - 50vw);padding:118px 20px 56px;text-align:center;background:#050705 url('{{ "vb-survivors-hero.jpg" | asset_url }}') center 55%/cover no-repeat}
+  .vbs__hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,7,5,.92) 0%,rgba(5,7,5,.5) 45%,#050705 100%)}
   .vbs__hero>*{position:relative}
-  .vbs__kick{font:800 13px/1.3 Arial,Helvetica,sans-serif;letter-spacing:.32em;text-transform:uppercase;color:#8cff5a;margin:0 0 16px}
-  .vbs h1{font:400 clamp(38px,6.6vw,80px)/1.02 Georgia,serif;color:#fff;margin:0 0 16px;text-shadow:0 2px 30px rgba(0,0,0,.85)}
+  .vbs__kick{font:800 13px/1.4 Arial,Helvetica,sans-serif;letter-spacing:.3em;text-transform:uppercase;color:#8cff5a;margin:0 0 16px}
+  .vbs h1{font:400 clamp(34px,6.6vw,80px)/1.03 Georgia,serif;color:#fff;margin:0 0 16px;text-shadow:0 2px 30px rgba(0,0,0,.85)}
   .vbs h1 em{color:#8cff5a}
+  .vbs h2{font:400 clamp(26px,3.6vw,38px)/1.1 Georgia,serif;color:#fff;margin:0 0 20px;text-align:center}
   .vbs__lede{font:italic 400 clamp(17px,2.2vw,22px)/1.5 Georgia,serif;color:#e6e4da;max-width:680px;margin:0 auto 26px}
-  .vbs__tiers{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:0 auto}
-  .vbs__tiers div{min-width:190px;padding:18px 20px;border:1px solid rgba(140,255,90,.5);border-radius:8px;background:rgba(0,0,0,.66)}
-  .vbs__tiers b{display:block;font:400 44px/1 Georgia,serif;color:#8cff5a}
-  .vbs__tiers span{font:700 12px/1.4 Arial,Helvetica,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#e6e4da}
-  .vbs__tiers .is-none b{color:#8d9087}
-  .vbs__wrap{max-width:1180px;margin:0 auto;padding:36px 18px 0}
-  .vbs__chips{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:0 0 26px}
-  .vbs__chip{padding:9px 16px;border:1px solid #3a4234;border-radius:999px;background:transparent;color:#d8d6cc;font:700 13px Arial,Helvetica,sans-serif;cursor:pointer}
+  .vbs__tiers{display:grid;grid-template-columns:repeat(3,minmax(0,200px));gap:12px;justify-content:center;margin:0 auto}
+  .vbs__tiers div{padding:16px 10px;border:1px solid rgba(140,255,90,.5);border-radius:8px;background:rgba(0,0,0,.66)}
+  .vbs__tiers b{display:block;font:400 clamp(30px,5vw,46px)/1 Georgia,serif;color:#8cff5a;margin-bottom:6px}
+  .vbs__tiers span{font:700 11px/1.45 Arial,Helvetica,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#e6e4da}
+  .vbs__tiers .is-none{border-color:#3a4234}.vbs__tiers .is-none b{color:#8d9087}
+  .vbs__wrap{max-width:1180px;margin:0 auto;padding:44px 16px 0}
+  .vbs__how{list-style:none;margin:0 0 40px;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;counter-reset:s}
+  .vbs__how li{counter-increment:s;position:relative;border:1px solid #232a20;border-radius:10px;background:#0b0f0b;padding:20px 18px 18px 64px;font:400 15px/1.55 Arial,Helvetica,sans-serif;color:#cfd2c8}
+  .vbs__how li:before{content:counter(s);position:absolute;left:16px;top:18px;width:34px;height:34px;border-radius:50%;background:#8cff5a;color:#050705;font:800 17px/34px Arial,Helvetica,sans-serif;text-align:center}
+  .vbs__how b{display:block;color:#fff;font-size:16px;margin-bottom:3px}
+  .vbs__chips{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:0 0 24px}
+  .vbs__chip{padding:10px 16px;border:1px solid #4a5343;border-radius:999px;background:transparent;color:#e6e4da;font:700 13px Arial,Helvetica,sans-serif;cursor:pointer}
   .vbs__chip.is-on{background:#8cff5a;border-color:#8cff5a;color:#050705}
-  .vbs__grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
-  .vbs__card{background:#0c100c;border:1px solid #1f261c;border-radius:10px;padding:12px;display:flex;flex-direction:column}
+  .vbs__grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+  .vbs__card{background:#0c100c;border:1px solid #232a20;border-radius:12px;padding:12px;display:flex;flex-direction:column}
   .vbs__card.is-in{border-color:#8cff5a;box-shadow:0 0 0 1px #8cff5a inset}
-  .vbs__card img{width:100%;aspect-ratio:1/1;object-fit:contain;background:#fff;border-radius:6px;display:block}
-  .vbs__card h3{font:700 14px/1.35 Arial,Helvetica,sans-serif;color:#fff;margin:12px 0 6px;min-height:38px}
+  .vbs__img{display:block;aspect-ratio:1/1;background:#ecece8;border-radius:8px;overflow:hidden;padding:9%}
+  .vbs__img img{width:100%;height:100%;object-fit:contain;display:block;mix-blend-mode:multiply}
+  .vbs__brand{font:800 10px/1 Arial,Helvetica,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#8cff5a;margin:12px 0 0}
+  .vbs__card h3{font:700 14px/1.35 Arial,Helvetica,sans-serif;color:#fff;margin:6px 0 6px;min-height:38px}
   .vbs__card h3 a{color:inherit;text-decoration:none}
   .vbs__price{font:700 15px Arial,Helvetica,sans-serif;color:#cfd2c8;margin:0 0 12px}
-  .vbs__add{margin-top:auto;display:flex;gap:8px;align-items:center}
-  .vbs__btn{flex:1;padding:12px 10px;border:0;border-radius:6px;background:#8cff5a;color:#050705;font:800 13px Arial,Helvetica,sans-serif;letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
+  .vbs__add{margin-top:auto;display:flex;gap:6px;align-items:center}
+  .vbs__btn{flex:1;min-height:46px;padding:12px 8px;border:0;border-radius:6px;background:#8cff5a;color:#050705;font:800 13px Arial,Helvetica,sans-serif;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
   .vbs__btn:hover{background:#fff}.vbs__btn[disabled]{opacity:.6;cursor:wait}
-  .vbs__qty{min-width:34px;text-align:center;font:800 14px Arial,Helvetica,sans-serif;color:#8cff5a}
-  .vbs__bar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:#0a0d0a;border-top:2px solid #8cff5a;padding:12px 18px;display:flex;gap:16px;align-items:center;justify-content:center;flex-wrap:wrap}
+  .vbs__minus{width:46px;min-height:46px;border:1px solid #8cff5a;border-radius:6px;background:transparent;color:#8cff5a;font:800 20px/1 Arial,Helvetica,sans-serif;cursor:pointer;display:none}
+  .vbs__card.is-in .vbs__minus{display:block}
+  .vbs__qty{min-width:30px;text-align:center;font:800 15px Arial,Helvetica,sans-serif;color:#8cff5a}
+  .vbs__bar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:#0a0d0a;border-top:2px solid #8cff5a;padding:12px 16px calc(12px + env(safe-area-inset-bottom));display:flex;gap:14px;align-items:center;justify-content:center;flex-wrap:wrap}
   .vbs__bar p{margin:0;font:700 15px/1.4 Arial,Helvetica,sans-serif;color:#fff}
   .vbs__bar p span{color:#8cff5a}
-  .vbs__meter{width:220px;height:8px;border-radius:99px;background:#232a20;overflow:hidden}
+  .vbs__meter{width:200px;height:8px;border-radius:99px;background:#232a20;overflow:hidden}
   .vbs__meter i{display:block;height:100%;width:0;background:#8cff5a;transition:width .3s}
-  .vbs a.vbs__go,.vbs__go{display:inline-block;padding:13px 26px;border-radius:6px;background:#8cff5a;color:#050705 !important;font:800 14px Arial,Helvetica,sans-serif;letter-spacing:.12em;text-transform:uppercase;text-decoration:none}
-  .vbs__note{max-width:760px;margin:34px auto 0;text-align:center;font:400 13px/1.7 Arial,Helvetica,sans-serif;color:#9a9d93}
-  .vbs__count{display:flex;gap:10px;justify-content:center;margin:8px 0 28px;flex-wrap:wrap}
-  .vbs__count div{min-width:80px;padding:12px 8px;border:1px solid rgba(140,255,90,.45);border-radius:6px;background:rgba(0,0,0,.6)}
-  .vbs__count b{display:block;font:700 30px/1 Arial,Helvetica,sans-serif;color:#fff}
+  .vbs a.vbs__go,.vbs__go{display:inline-block;padding:14px 26px;border-radius:6px;background:#8cff5a;color:#050705 !important;font:800 14px Arial,Helvetica,sans-serif;letter-spacing:.12em;text-transform:uppercase;text-decoration:none}
+  .vbs a.vbs__go:hover{background:#fff}
+  .vbs__note{max-width:760px;margin:36px auto 0;text-align:center;font:400 13px/1.7 Arial,Helvetica,sans-serif;color:#9a9d93}
+  .vbs__foot{margin-top:60px;border-top:1px solid #1b2018;padding:30px 20px 0;text-align:center;font:400 12.5px/1.8 Arial,Helvetica,sans-serif;color:#8d9087}
+  .vbs__foot a{color:#8cff5a}
+  .vbs__foot img{height:42px;width:auto;display:block;margin:0 auto 12px}
+  .vbs__count{display:flex;gap:8px;justify-content:center;margin:8px 0 28px;flex-wrap:wrap}
+  .vbs__count div{min-width:72px;padding:12px 8px;border:1px solid rgba(140,255,90,.45);border-radius:6px;background:rgba(0,0,0,.6)}
+  .vbs__count b{display:block;font:700 28px/1 Arial,Helvetica,sans-serif;color:#fff}
   .vbs__count span{font:700 10px/1 Arial,Helvetica,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#8cff5a}
-  @media (max-width:600px){.vbs__grid{grid-template-columns:1fr 1fr;gap:10px}.vbs__tiers div{min-width:150px}.vbs__meter{width:120px}.vbs__hero{padding-top:90px}}
+  @media (max-width:700px){.vbs__logo{height:32px}.vbs__hero{padding:96px 16px 40px}.vbs__how{grid-template-columns:1fr;gap:10px}.vbs__grid{grid-template-columns:1fr 1fr;gap:10px}.vbs__card{padding:9px}.vbs__card h3{font-size:13px;min-height:52px}.vbs__btn{font-size:12px;letter-spacing:.04em}.vbs__minus{width:40px}.vbs__tiers{gap:8px}.vbs__tiers div{padding:12px 6px}.vbs__tiers span{font-size:10px;letter-spacing:.06em}.vbs__bar{gap:8px;padding-top:10px}.vbs__bar p{font-size:14px;width:100%;text-align:center}.vbs__meter{flex:1;width:auto}.vbs a.vbs__go{padding:12px 18px}}
 </style>
 <div class="vbs" data-vbs-state="{{ vb_state }}">
+  <div class="vbs__top"><img class="vbs__logo" src="{{ 'vb-logo-mono-dark.png' | asset_url }}" alt="Velobiotics" width="918" height="232"></div>
   <section class="vbs__hero">
     {%- if vb_state == 'before' -%}
       <p class="vbs__kick">The Will · To be read Wednesday 25 November, 06:00 SAST</p>
@@ -75,42 +91,52 @@
       <p class="vbs__lede">Build your own Survivor Pack. Mix any products, any brands. The more survivors you take, the more you keep.</p>
       <div class="vbs__tiers">
         <div class="is-none"><b>0%</b><span>1 product<br>full price</span></div>
-        <div><b>25%</b><span>Any 2 products<br>off everything</span></div>
-        <div><b>40%</b><span>Any 3 or more<br>off everything</span></div>
+        <div><b>25%</b><span>Any 2<br>products</span></div>
+        <div><b>40%</b><span>Any 3<br>or more</span></div>
       </div>
     {%- endif -%}
   </section>
 
   {%- if vb_state == 'open' -%}
   <div class="vbs__wrap">
-    <div class="vbs__chips" data-vbs-chips><button class="vbs__chip is-on" data-brand="all" type="button">All survivors</button></div>
-    <div class="vbs__grid" data-vbs-grid>
-      {%- paginate collections['all'].products by 250 -%}
+    <h2>How to build your Survivor Pack</h2>
+    <ol class="vbs__how">
+      <li><b>Pick your survivors</b>Tap "Add" on any product below. Mix brands freely, or take more than one of the same.</li>
+      <li><b>Watch the bar fill</b>2 products unlock 25% off everything in your pack. 3 or more unlock 40% off.</li>
+      <li><b>Go to cart</b>Your discount is applied automatically. No code needed.</li>
+    </ol>
+    <div class="vbs__chips" data-vbs-chips><button class="vbs__chip is-on" data-brand="all" type="button">All</button></div>
+    {%- paginate collections['all'].products by 50 -%}
+    <div class="vbs__grid" data-vbs-grid data-section="{{ section.id }}" data-pages="{{ paginate.pages }}">
       {%- for product in collections['all'].products -%}
         {%- liquid
           assign v = product.selected_or_first_available_variant
-          assign t = product.title | downcase
           assign skip = false
           unless product.available
             assign skip = true
           endunless
-          if v.price == 0 or t contains 'fizzoy' or t contains 'pre-order' or t contains 'gift card' or product.tags contains 'creator-sample'
+          if v.price == 0 or product.type == 'Probiotic Bundle' or product.type == 'Synbiotic soda' or product.tags contains 'creator-sample'
             assign skip = true
           endif
-          assign brand = product.title | replace: '™', ' ' | replace: '-', '' | split: ' ' | first
+          assign brand = product.title | replace: '™', ' ' | split: ' ' | first
+          assign known = 'Femina,BioKid,BioGain,GutSlim,Almasi,PregBiotics,His-Biotics,Her-Biotics,Velo16' | split: ','
+          unless known contains brand
+            assign brand = 'Other'
+          endunless
         -%}
         {%- unless skip -%}
         <article class="vbs__card" data-brand="{{ brand | escape }}" data-variant="{{ v.id }}">
-          <a href="{{ product.url }}" target="_blank" rel="noopener">{%- if product.featured_image -%}<img src="{{ product.featured_image | image_url: width: 420 }}" alt="{{ product.title | escape }}" width="420" height="420" loading="lazy">{%- endif -%}</a>
+          <a class="vbs__img" href="{{ product.url }}" target="_blank" rel="noopener">{%- if product.featured_image -%}<img src="{{ product.featured_image | image_url: width: 480 }}" alt="{{ product.title | escape }}" width="480" height="480" loading="lazy">{%- endif -%}</a>
+          <p class="vbs__brand">{{ brand }}</p>
           <h3><a href="{{ product.url }}" target="_blank" rel="noopener">{{ product.title }}</a></h3>
           <p class="vbs__price">{{ v.price | money }}</p>
-          <div class="vbs__add"><button class="vbs__btn" type="button" data-vbs-add>Add survivor</button><span class="vbs__qty" data-vbs-qty></span></div>
+          <div class="vbs__add"><button class="vbs__minus" type="button" data-vbs-minus aria-label="Remove one">−</button><span class="vbs__qty" data-vbs-qty></span><button class="vbs__btn" type="button" data-vbs-add>Add</button></div>
         </article>
         {%- endunless -%}
       {%- endfor -%}
-      {%- endpaginate -%}
     </div>
-    <p class="vbs__note">The Survivor Offer applies automatically in your cart: 25% off when your cart holds any 2 products, 40% off when it holds 3 or more. One product is full price. Cannot be combined with other discount codes. Each qualifying order includes a free "For the After-Tears" gift while stocks last. Offer ends Monday 30 November 2026 at 23:59 SAST.</p>
+    {%- endpaginate -%}
+    <p class="vbs__note">The Survivor Offer applies automatically in your cart to single products: 25% off when your pack holds any 2, 40% off when it holds 3 or more. One product is full price. Ready-made packs and combos are already discounted and are not part of this offer. Cannot be combined with other discount codes. Each qualifying order includes one free "For the After-Tears" gift while stocks last. Offer runs Wednesday 25 November 06:00 to Monday 30 November 2026 23:59 SAST.</p>
   </div>
   <div class="vbs__bar">
     <p data-vbs-msg>Your Survivor Pack is empty. <span>Add 2 for 25% off.</span></p>
@@ -118,6 +144,10 @@
     <a class="vbs__go" href="/cart">Go to cart</a>
   </div>
   {%- endif -%}
+  <footer class="vbs__foot">
+    <img src="{{ 'vb-logo-mono-dark.png' | asset_url }}" alt="Velobiotics" width="918" height="232" loading="lazy">
+    Put Your Gut First. &nbsp;·&nbsp; <a href="mailto:support@velobiotics.com">support@velobiotics.com</a> &nbsp;·&nbsp; <a href="/policies/privacy-policy">Privacy</a>
+  </footer>
 </div>
 <script>
 (function(){
@@ -127,19 +157,25 @@
     var tick=function(){var s=Math.floor((t-Date.now())/1000); if(s<=0){location.reload();return} cd.querySelector('[data-d]').textContent=p(Math.floor(s/86400));cd.querySelector('[data-h]').textContent=p(Math.floor(s%86400/3600));cd.querySelector('[data-m]').textContent=p(Math.floor(s%3600/60));cd.querySelector('[data-s]').textContent=p(s%60)};
     tick(); setInterval(tick,1000); return;}
   var grid=root.querySelector('[data-vbs-grid]'); if(!grid) return;
-  var chips=root.querySelector('[data-vbs-chips]'), seen={}, cards=[].slice.call(grid.querySelectorAll('.vbs__card'));
-  cards.forEach(function(c){var b=c.getAttribute('data-brand'); if(b&&!seen[b]){seen[b]=1;var x=document.createElement('button');x.className='vbs__chip';x.type='button';x.setAttribute('data-brand',b);x.textContent=b;chips.appendChild(x)}});
+  var chips=root.querySelector('[data-vbs-chips]'), seen={}, cards=[], lines={};
+  function index(){cards=[].slice.call(grid.querySelectorAll('.vbs__card')); cards.forEach(function(c){var b=c.getAttribute('data-brand'); if(b&&!seen[b]){seen[b]=1;var x=document.createElement('button');x.className='vbs__chip';x.type='button';x.setAttribute('data-brand',b);x.textContent=b;chips.appendChild(x)}})}
   chips.addEventListener('click',function(e){var b=e.target.closest('.vbs__chip'); if(!b) return; [].forEach.call(chips.children,function(c){c.classList.toggle('is-on',c===b)}); var br=b.getAttribute('data-brand'); cards.forEach(function(c){c.style.display=(br==='all'||c.getAttribute('data-brand')===br)?'':'none'})});
   var msg=root.querySelector('[data-vbs-msg]'), meter=root.querySelector('[data-vbs-meter]');
-  function render(cart){var n=cart.item_count||0, by={}; (cart.items||[]).forEach(function(i){by[i.variant_id]=(by[i.variant_id]||0)+i.quantity});
-    cards.forEach(function(c){var q=by[c.getAttribute('data-variant')]||0; c.classList.toggle('is-in',q>0); c.querySelector('[data-vbs-qty]').textContent=q?('× '+q):''});
+  function render(cart){var n=0, by={}; lines={}; (cart.items||[]).forEach(function(i){by[i.variant_id]=(by[i.variant_id]||0)+i.quantity; lines[i.variant_id]=i.key});
+    cards.forEach(function(c){var q=by[c.getAttribute('data-variant')]||0; n+=q; c.classList.toggle('is-in',q>0); c.querySelector('[data-vbs-qty]').textContent=q?q:''; c.querySelector('[data-vbs-add]').textContent=q?'Add another':'Add'});
     meter.style.width=Math.min(100,n/3*100)+'%';
     msg.innerHTML = n===0 ? 'Your Survivor Pack is empty. <span>Add 2 for 25% off.</span>' : n===1 ? '1 survivor in your pack. <span>Add 1 more for 25% off.</span>' : n===2 ? '2 survivors: <span>25% off unlocked.</span> Add 1 more for 40% off.' : n+' survivors: <span>40% off unlocked.</span>';}
   function refresh(){return fetch('/cart.js',{headers:{'Accept':'application/json'}}).then(function(r){return r.json()}).then(render)}
-  grid.addEventListener('click',function(e){var b=e.target.closest('[data-vbs-add]'); if(!b) return; var c=b.closest('.vbs__card'); b.disabled=true;
-    fetch('/cart/add.js',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({items:[{id:Number(c.getAttribute('data-variant')),quantity:1}]})})
-      .then(function(r){if(!r.ok) throw 0; return refresh()}).catch(function(){b.textContent='Sold out'}).then(function(){b.disabled=false; document.dispatchEvent(new CustomEvent('cart:refresh'))})});
-  refresh();
+  function post(url,body){return fetch(url,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(body)})}
+  grid.addEventListener('click',function(e){
+    var add=e.target.closest('[data-vbs-add]'), minus=e.target.closest('[data-vbs-minus]'); if(!add&&!minus) return;
+    var b=add||minus, c=b.closest('.vbs__card'), vid=c.getAttribute('data-variant'); b.disabled=true;
+    var req = add ? post('/cart/add.js',{items:[{id:Number(vid),quantity:1}]}) : post('/cart/change.js',{id:lines[vid],quantity:Math.max(0,(parseInt(c.querySelector('[data-vbs-qty]').textContent,10)||1)-1)});
+    req.then(function(r){if(!r.ok) throw 0; return refresh()}).catch(function(){if(add) add.textContent='Sold out'}).then(function(){b.disabled=false})});
+  index();
+  var pages=parseInt(grid.getAttribute('data-pages'),10)||1, sid=grid.getAttribute('data-section'), more=[];
+  for(var pg=2;pg<=pages;pg++){more.push(fetch(location.pathname+'?page='+pg+'&section_id='+encodeURIComponent(sid)).then(function(r){return r.text()}).then(function(html){var d=document.createElement('div');d.innerHTML=html;[].forEach.call(d.querySelectorAll('.vbs__card'),function(c){grid.appendChild(c)})}).catch(function(){}))}
+  Promise.all(more).then(function(){index(); refresh()});
 })();
 </script>
 {% schema %}

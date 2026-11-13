@@ -2,7 +2,6 @@
 {%- assign vb_now = 'now' | date: '%s' | plus: 0 -%}
 {%- assign vb_bar_show = false -%}
 {%- if vb_now >= 1794798000 and vb_now < 1796075999  -%}{%- assign vb_bar_show = true -%}{%- endif -%}
-{%- if request.path contains 'vb-bar-test' -%}{%- assign vb_bar_show = true -%}{%- endif -%}
 {%- if vb_bar_show -%}
 <div class="vb-fbar" data-vb-fbar hidden>
   <a data-s="a" href="/pages/funeral?utm_source=store&utm_medium=banner&utm_campaign=funeral-p1"><span><b>You are invited to a funeral.</b> For the probiotics that die in your stomach. Friday 20 November, 19:00.</span><i>RSVP</i></a>
@@ -19,7 +18,7 @@
 </style>
 <script>
 (function(){var el=document.querySelector('[data-vb-fbar]');if(!el)return;var T0=1794801600000,T1=1795194000000,T2=1795579200000,T3=1796075999000;
-function set(){var n=Date.now(),s=n<T0?'':n<T1?'a':n<T2?'b':n<T3?'c':'';var m=location.pathname.indexOf('vb-bar-test')>-1&&location.hash.match(/^#([abc])$/);if(m)s=m[1];el.hidden=!s;el.querySelectorAll('a').forEach(function(a){a.classList.toggle('is-on',a.getAttribute('data-s')===s)})}
+function set(){var n=Date.now(),s=n<T0?'':n<T1?'a':n<T2?'b':n<T3?'c':'';el.hidden=!s;el.querySelectorAll('a').forEach(function(a){a.classList.toggle('is-on',a.getAttribute('data-s')===s)})}
 set();setInterval(set,30000)})();
 </script>
 {%- endif -%}

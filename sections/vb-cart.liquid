@@ -213,7 +213,10 @@
           <h2>Order summary</h2>
           <div class="vbc__row"><span>Subtotal</span><strong id="vbc-subtotal">{{ cart.items_subtotal_price | money }}</strong></div>
           {%- if cart.total_discount > 0 -%}
-            <div class="vbc__row" style="color:var(--g)"><span>Discount</span><strong>−{{ cart.total_discount | money }}</strong></div>
+            {%- assign vb_save_pct = cart.total_discount | times: 100.0 | divided_by: cart.original_total_price | round -%}
+{%- assign vb_now = 'now' | date: '%s' | plus: 0 -%}
+<div class="vbc__row" style="color:var(--g)"><span>You save {{ vb_save_pct }}%</span><strong>−{{ cart.total_discount | money }}</strong></div>
+{%- if vb_now >= 1795579200 and vb_now < 1796076000 and cart.item_count >= 2 -%}<div class="vbc__row" style="color:var(--g)"><span>Free gift: "For the After-Tears" tissues</span><strong>Included</strong></div>{%- endif -%}
           {%- endif -%}
           <div class="vbc__row"><span>Shipping</span><strong>Calculated at checkout</strong></div>
           <div class="vbc__divider"></div>

@@ -45,7 +45,7 @@
   endcomment
   assign vb_now = 'now' | date: '%s' | plus: 0
   assign vb_survivor = false
-  if vb_now >= 1795579200 and vb_now < 1796076000
+  if vb_now >= 1795579200 and vb_now < 1796076000 and product.type != 'Probiotic Bundle' and product.type != 'Synbiotic soda'
     assign tier2_pct = 25
     assign tier3_pct = 40
     assign vb_survivor = true

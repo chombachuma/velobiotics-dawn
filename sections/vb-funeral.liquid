@@ -4,6 +4,8 @@
   .vbf *{box-sizing:border-box}
   .vbf__bar{position:absolute;top:0;left:0;right:0;z-index:3;display:flex;justify-content:space-between;align-items:center;padding:18px 26px;font:700 11px/1 Arial,Helvetica,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#cfd2c8}
   .vbf__bar b{font:700 20px/1 Georgia,serif;letter-spacing:.01em;text-transform:none;color:#fff}
+  .vbf__logo{height:38px;width:auto;display:block}
+  .vbf__logo--foot{height:44px;margin:0 auto 14px;opacity:.95}
   .vbf__hero{position:relative;width:100vw;margin-left:calc(50% - 50vw);min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;justify-content:center;text-align:center;background:#050705 url('{{ "vb-funeral-hero.jpg" | asset_url }}') center 58%/cover no-repeat}
   .vbf__hero:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 55%,rgba(5,7,5,0) 0%,rgba(5,7,5,.55) 70%),linear-gradient(180deg,rgba(5,7,5,.94) 0%,rgba(5,7,5,.30) 34%,rgba(5,7,5,.18) 52%,rgba(5,7,5,.97) 92%)}
   .vbf__in{position:relative;z-index:2;width:100%;max-width:900px;margin:0 auto;padding:110px 22px 46px}
@@ -17,8 +19,8 @@
   .vbf__count b{display:block;font:700 32px/1 Arial,Helvetica,sans-serif;color:#fff;font-variant-numeric:tabular-nums}
   .vbf__count span{font:700 10px/1 Arial,Helvetica,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#8cff5a}
   .vbf__form{display:grid;grid-template-columns:1fr 1.4fr auto;gap:10px;max-width:740px;margin:0 auto}
-  .vbf__form input{width:100%;padding:17px 14px;border:1px solid #7b8076;border-radius:6px;background:rgba(10,13,10,.92);color:#fff;font:400 16px Arial,Helvetica,sans-serif}
-  .vbf__form input::placeholder{color:#a9ada3}
+  .vbf__form input{width:100%;padding:17px 14px;border:2px solid rgba(255,255,255,.9);border-radius:6px;background:rgba(255,255,255,.10);color:#fff;font:400 16px Arial,Helvetica,sans-serif;-webkit-appearance:none;box-shadow:0 0 0 4px rgba(0,0,0,.35)}
+  .vbf__form input::placeholder{color:#e2e4dc;opacity:1}
   .vbf__form input:focus{outline:2px solid #8cff5a;border-color:#8cff5a}
   .vbf .vbf__btn,.vbf a.vbf__btn{display:inline-block;padding:17px 30px;border:0;border-radius:6px;background:#8cff5a;color:#050705 !important;font:800 15px/1.2 Arial,Helvetica,sans-serif;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;cursor:pointer}
   .vbf .vbf__btn:hover,.vbf a.vbf__btn:hover{background:#fff;color:#050705 !important}
@@ -55,11 +57,11 @@
   .vbf__share div{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:22px}
   .vbf__foot{margin-top:96px;border-top:1px solid #1b2018;padding:30px 22px 46px;text-align:center;font:400 12.5px/1.8 Arial,Helvetica,sans-serif;color:#8d9087}
   .vbf__foot b{color:#cfd2c8;letter-spacing:.2em;text-transform:uppercase;font-size:11px}
-  @media (max-width:760px){.vbf__bar span{display:none}.vbf__bar{justify-content:center}.vbf__form{grid-template-columns:1fr}.vbf__sec{grid-template-columns:1fr;gap:26px}.vbf__order ol{grid-template-columns:1fr 1fr}.vbf__nums{grid-template-columns:1fr}.vbf__count div{min-width:68px}.vbf__wrap{padding-top:60px}.vbf__band{padding:84px 22px;margin-top:60px}.vbf__in{padding-top:90px}}
+  @media (max-width:760px){.vbf__logo{height:32px}.vbf .vbf__btn,.vbf a.vbf__btn{width:100%;text-align:center}.vbf__share div{flex-direction:column}.vbf h1{font-size:clamp(34px,10vw,48px)}.vbf__count{gap:6px}.vbf__count b{font-size:26px}.vbf p{font-size:17px}.vbf__bar span{display:none}.vbf__bar{justify-content:center}.vbf__form{grid-template-columns:1fr}.vbf__sec{grid-template-columns:1fr;gap:26px}.vbf__order ol{grid-template-columns:1fr 1fr}.vbf__nums{grid-template-columns:1fr}.vbf__count div{min-width:68px}.vbf__wrap{padding-top:60px}.vbf__band{padding:84px 22px;margin-top:60px}.vbf__in{padding-top:90px}}
 </style>
 <div class="vbf">
   <section class="vbf__hero">
-    <div class="vbf__bar"><span>The Daily Gut &nbsp;·&nbsp; Deaths &amp; Funeral Notices</span><b>velobiotics</b><span>Friday 20 November 2026</span></div>
+    <div class="vbf__bar"><span>The Daily Gut &nbsp;·&nbsp; Deaths &amp; Funeral Notices</span><img class="vbf__logo" src="{{ 'vb-logo-mono-dark.png' | asset_url }}" alt="Velobiotics" width="918" height="232"><span>Friday 20 November 2026</span></div>
     <div class="vbf__in">
       <p class="vbf__kick">In loving memory &nbsp;·&nbsp; You are invited</p>
       <h1>A funeral for the probiotics that <em>died in your stomach.</em></h1>
@@ -154,7 +156,7 @@
   </div>
 
   <footer class="vbf__foot">
-    <b>Put Your Gut First.</b><br>
+    <img class="vbf__logo vbf__logo--foot" src="{{ 'vb-logo-mono-dark.png' | asset_url }}" alt="Velobiotics" width="918" height="232"><br><b>Put Your Gut First.</b><br>
     A notice from Velobiotics (Pty) Ltd. No probiotics were harmed in the making of this funeral that were not already doomed.<br>
     <a href="mailto:support@velobiotics.com">support@velobiotics.com</a> &nbsp;·&nbsp; <a href="/policies/privacy-policy">Privacy</a>
   </footer>

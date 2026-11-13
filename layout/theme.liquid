@@ -353,7 +353,7 @@
         assign vb_landing = true
       endif
     -%}
-    {%- unless vb_landing -%}{% sections 'header-group' %}{%- endunless -%}
+    {%- unless vb_landing -%}{% render 'vb-funeral-bar' %}{% sections 'header-group' %}{%- endunless -%}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
@@ -434,5 +434,6 @@
   {% render 'vb-wheel' %}
   {% if template.name == 'index' or template.name == 'page' or template.name == 'product' %}{% render 'vb-jm-lightbox' %}{% endif %}
   {%- endunless -%}
+{% render 'vb-funeral-cap', mode: 'script' %}
 </body>
 </html>

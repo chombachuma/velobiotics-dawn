@@ -1,53 +1,77 @@
-{%- comment -%} The Funeral for Dead Probiotics, Black Friday 2026 (Velo-Marketing, 13 Nov 2026). Landing + RSVP. {%- endcomment -%}
+{%- comment -%} The Funeral for Dead Probiotics, Black Friday 2026 (Velo-Marketing). Standalone landing page: no site header/footer (see layout/theme.liquid). v2, 13 Nov 2026. {%- endcomment -%}
 <style>
-  .vbf{background:#060806;color:#f3f1ea;font-family:Georgia,'Times New Roman',serif;margin:0;padding:0 0 72px}
+  .vbf{background:#050705;color:#f3f1ea;font-family:Georgia,'Times New Roman',serif;margin:0;padding:0;overflow-x:hidden}
   .vbf *{box-sizing:border-box}
-  .vbf__hero{position:relative;min-height:78vh;display:flex;align-items:flex-end;justify-content:center;text-align:center;background:#060806 url('{{ "vb-funeral-hero.jpg" | asset_url }}') center 62%/cover no-repeat}
-  .vbf__hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,8,6,.92) 0%,rgba(6,8,6,.35) 38%,rgba(6,8,6,.2) 60%,rgba(6,8,6,.96) 100%)}
-  .vbf__in{position:relative;max-width:820px;margin:0 auto;padding:48px 22px}
-  .vbf__kick{font:800 13px/1 Arial,Helvetica,sans-serif;letter-spacing:.32em;text-transform:uppercase;color:#8cff5a;margin:0 0 18px}
-  .vbf h1{font:400 clamp(38px,7vw,76px)/1.02 Georgia,serif;margin:0 0 18px;color:#fff;letter-spacing:-.01em}
+  .vbf__bar{position:absolute;top:0;left:0;right:0;z-index:3;display:flex;justify-content:space-between;align-items:center;padding:18px 26px;font:700 11px/1 Arial,Helvetica,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#cfd2c8}
+  .vbf__bar b{font:700 20px/1 Georgia,serif;letter-spacing:.01em;text-transform:none;color:#fff}
+  .vbf__hero{position:relative;width:100vw;margin-left:calc(50% - 50vw);min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;justify-content:center;text-align:center;background:#050705 url('{{ "vb-funeral-hero.jpg" | asset_url }}') center 58%/cover no-repeat}
+  .vbf__hero:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 55%,rgba(5,7,5,0) 0%,rgba(5,7,5,.55) 70%),linear-gradient(180deg,rgba(5,7,5,.94) 0%,rgba(5,7,5,.30) 34%,rgba(5,7,5,.18) 52%,rgba(5,7,5,.97) 92%)}
+  .vbf__in{position:relative;z-index:2;width:100%;max-width:900px;margin:0 auto;padding:110px 22px 46px}
+  .vbf__kick{font:800 13px/1.3 Arial,Helvetica,sans-serif;letter-spacing:.34em;text-transform:uppercase;color:#8cff5a;margin:0 0 18px}
+  .vbf h1{font:400 clamp(40px,7.4vw,92px)/1 Georgia,serif;margin:0 0 18px;color:#fff;letter-spacing:-.015em;text-shadow:0 2px 30px rgba(0,0,0,.8)}
   .vbf h1 em{font-style:italic;color:#8cff5a}
-  .vbf__when{font:700 15px/1.5 Arial,Helvetica,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#d8d6cc;margin:0 0 26px}
-  .vbf__count{display:flex;gap:10px;justify-content:center;margin:0 0 30px;flex-wrap:wrap}
-  .vbf__count div{min-width:78px;padding:12px 8px;border:1px solid rgba(140,255,90,.45);border-radius:6px;background:rgba(0,0,0,.55)}
-  .vbf__count b{display:block;font:700 30px/1 Arial,Helvetica,sans-serif;color:#fff}
+  .vbf__lede{font:italic 400 clamp(18px,2.4vw,24px)/1.45 Georgia,serif;color:#e6e4da;margin:0 auto 20px;max-width:640px}
+  .vbf__when{font:700 14px/1.6 Arial,Helvetica,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#d8d6cc;margin:0 0 22px}
+  .vbf__count{display:flex;gap:10px;justify-content:center;margin:0 0 26px;flex-wrap:wrap}
+  .vbf__count div{min-width:82px;padding:12px 8px;border:1px solid rgba(140,255,90,.45);border-radius:6px;background:rgba(0,0,0,.6)}
+  .vbf__count b{display:block;font:700 32px/1 Arial,Helvetica,sans-serif;color:#fff;font-variant-numeric:tabular-nums}
   .vbf__count span{font:700 10px/1 Arial,Helvetica,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#8cff5a}
-  .vbf__form{display:grid;grid-template-columns:1fr 1.4fr auto;gap:10px;max-width:720px;margin:0 auto}
-  .vbf__form input{width:100%;padding:16px 14px;border:1px solid #6b6f66;border-radius:6px;background:#0d100d;color:#fff;font:400 16px Arial,Helvetica,sans-serif}
+  .vbf__form{display:grid;grid-template-columns:1fr 1.4fr auto;gap:10px;max-width:740px;margin:0 auto}
+  .vbf__form input{width:100%;padding:17px 14px;border:1px solid #7b8076;border-radius:6px;background:rgba(10,13,10,.92);color:#fff;font:400 16px Arial,Helvetica,sans-serif}
+  .vbf__form input::placeholder{color:#a9ada3}
   .vbf__form input:focus{outline:2px solid #8cff5a;border-color:#8cff5a}
-  .vbf__btn{padding:16px 26px;border:0;border-radius:6px;background:#8cff5a;color:#060806;font:800 15px Arial,Helvetica,sans-serif;letter-spacing:.14em;text-transform:uppercase;cursor:pointer}
-  .vbf__btn:hover{background:#fff}
-  .vbf__fine{font:400 12.5px/1.5 Arial,Helvetica,sans-serif;color:#9a9d93;margin:14px auto 0;max-width:620px}
-  .vbf__ok{border:1px solid #8cff5a;border-radius:8px;padding:22px;max-width:620px;margin:0 auto;background:rgba(0,0,0,.6)}
-  .vbf__ok strong{display:block;font:400 28px/1.2 Georgia,serif;color:#fff;margin-bottom:8px}
+  .vbf .vbf__btn,.vbf a.vbf__btn{display:inline-block;padding:17px 30px;border:0;border-radius:6px;background:#8cff5a;color:#050705 !important;font:800 15px/1.2 Arial,Helvetica,sans-serif;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;cursor:pointer}
+  .vbf .vbf__btn:hover,.vbf a.vbf__btn:hover{background:#fff;color:#050705 !important}
+  .vbf a.vbf__btn--ghost{background:transparent;color:#8cff5a !important;border:1px solid #8cff5a}
+  .vbf a.vbf__btn--ghost:hover{background:#8cff5a;color:#050705 !important}
+  .vbf__fine{font:400 12.5px/1.55 Arial,Helvetica,sans-serif;color:#a3a69c;margin:14px auto 0;max-width:640px}
+  .vbf__ok{border:1px solid #8cff5a;border-radius:8px;padding:24px;max-width:640px;margin:0 auto;background:rgba(0,0,0,.72);font:400 16px/1.55 Arial,Helvetica,sans-serif;color:#e6e4da}
+  .vbf__ok strong{display:block;font:400 30px/1.2 Georgia,serif;color:#fff;margin-bottom:8px}
   .vbf__err{color:#ffb4a8;font:700 14px Arial,Helvetica,sans-serif;margin:0 0 12px}
-  .vbf__sec{max-width:980px;margin:0 auto;padding:64px 22px 0;display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
-  .vbf__sec img{width:100%;height:auto;display:block;border-radius:4px;box-shadow:0 18px 60px rgba(0,0,0,.6)}
-  .vbf h2{font:400 clamp(28px,4vw,42px)/1.1 Georgia,serif;margin:0 0 16px;color:#fff}
-  .vbf p{font-size:18px;line-height:1.65;color:#d8d6cc;margin:0 0 14px}
+  .vbf__wrap{max-width:1020px;margin:0 auto;padding:84px 22px 0}
+  .vbf__sec{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .vbf__sec img{width:100%;height:auto;display:block;border-radius:4px;box-shadow:0 18px 60px rgba(0,0,0,.7)}
+  .vbf h2{font:400 clamp(30px,4.4vw,48px)/1.08 Georgia,serif;margin:0 0 18px;color:#fff}
+  .vbf p{font-size:18px;line-height:1.7;color:#d8d6cc;margin:0 0 14px}
   .vbf a{color:#8cff5a}
-  .vbf__order{max-width:820px;margin:0 auto;padding:64px 22px 0;text-align:center}
-  .vbf__order ol{list-style:none;padding:0;margin:26px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;text-align:left}
-  .vbf__order li{border-top:2px solid #8cff5a;padding:14px 4px 0}
+  .vbf__nums{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;text-align:center}
+  .vbf__nums div{border:1px solid #23291f;border-radius:8px;padding:30px 18px;background:#0a0d0a}
+  .vbf__nums b{display:block;font:400 clamp(44px,6vw,72px)/1 Georgia,serif;color:#8cff5a;margin-bottom:10px}
+  .vbf__nums span{display:block;font:400 15px/1.5 Arial,Helvetica,sans-serif;color:#c9ccc2}
+  .vbf__band{position:relative;width:100vw;margin:84px 0 0 calc(50% - 50vw);padding:120px 22px;text-align:center;background:#050705 url('{{ "vb-funeral-cemetery.jpg" | asset_url }}') center 60%/cover no-repeat}
+  .vbf__band:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#050705 0%,rgba(5,7,5,.55) 30%,rgba(5,7,5,.6) 70%,#050705 100%)}
+  .vbf__band>*{position:relative}
+  .vbf__band blockquote{font:italic 400 clamp(26px,4.2vw,50px)/1.15 Georgia,serif;color:#fff;max-width:880px;margin:0 auto 14px;text-shadow:0 2px 26px rgba(0,0,0,.9)}
+  .vbf__band cite{font:800 12px/1 Arial,Helvetica,sans-serif;letter-spacing:.3em;text-transform:uppercase;color:#8cff5a;font-style:normal}
+  .vbf__order{text-align:center}
+  .vbf__order ol{list-style:none;padding:0;margin:30px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;text-align:left}
+  .vbf__order li{border-top:2px solid #8cff5a;padding:16px 4px 0}
   .vbf__order li b{display:block;font:800 11px/1.3 Arial,Helvetica,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#8cff5a;margin-bottom:6px}
-  .vbf__order li span{display:block;font:400 21px/1.2 Georgia,serif;color:#fff;margin-bottom:6px}
-  .vbf__order li small{font:400 14px/1.5 Arial,Helvetica,sans-serif;color:#b9bbb1}
-  @media (max-width:760px){.vbf__form{grid-template-columns:1fr}.vbf__sec{grid-template-columns:1fr;gap:26px;padding-top:44px}.vbf__order ol{grid-template-columns:1fr 1fr}.vbf__hero{min-height:88vh}.vbf__count div{min-width:66px}}
+  .vbf__order li span{display:block;font:400 22px/1.2 Georgia,serif;color:#fff;margin-bottom:6px}
+  .vbf__order li small{font:400 14px/1.55 Arial,Helvetica,sans-serif;color:#b9bbb1}
+  .vbf__film{max-width:860px;margin:0 auto;aspect-ratio:16/9;border:1px solid #23291f;border-radius:8px;background:#0a0d0a;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;overflow:hidden}
+  .vbf__film iframe,.vbf__film video{width:100%;height:100%;border:0}
+  .vbf__share{text-align:center}
+  .vbf__share div{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+  .vbf__foot{margin-top:96px;border-top:1px solid #1b2018;padding:30px 22px 46px;text-align:center;font:400 12.5px/1.8 Arial,Helvetica,sans-serif;color:#8d9087}
+  .vbf__foot b{color:#cfd2c8;letter-spacing:.2em;text-transform:uppercase;font-size:11px}
+  @media (max-width:760px){.vbf__bar span{display:none}.vbf__bar{justify-content:center}.vbf__form{grid-template-columns:1fr}.vbf__sec{grid-template-columns:1fr;gap:26px}.vbf__order ol{grid-template-columns:1fr 1fr}.vbf__nums{grid-template-columns:1fr}.vbf__count div{min-width:68px}.vbf__wrap{padding-top:60px}.vbf__band{padding:84px 22px;margin-top:60px}.vbf__in{padding-top:90px}}
 </style>
 <div class="vbf">
   <section class="vbf__hero">
+    <div class="vbf__bar"><span>The Daily Gut &nbsp;·&nbsp; Deaths &amp; Funeral Notices</span><b>velobiotics</b><span>Friday 20 November 2026</span></div>
     <div class="vbf__in">
-      <p class="vbf__kick">You are invited to</p>
+      <p class="vbf__kick">In loving memory &nbsp;·&nbsp; You are invited</p>
       <h1>A funeral for the probiotics that <em>died in your stomach.</em></h1>
-      <p class="vbf__when">Friday 20 November 2026 &nbsp;·&nbsp; 19:00 SAST &nbsp;·&nbsp; Right here</p>
+      <p class="vbf__lede">Billions were swallowed with hope. Most never arrived. On Friday we say goodbye properly.</p>
+      <p class="vbf__when">Friday 20 November 2026 &nbsp;·&nbsp; 19:00 SAST &nbsp;·&nbsp; On this page &nbsp;·&nbsp; Wear black</p>
       <div class="vbf__count" data-vbf-count="2026-11-20T19:00:00+02:00" aria-label="Time until the funeral">
         <div><b data-d>--</b><span>Days</span></div><div><b data-h>--</b><span>Hours</span></div><div><b data-m>--</b><span>Minutes</span></div><div><b data-s>--</b><span>Seconds</span></div>
       </div>
       <div id="rsvp">
       {%- form 'customer', id: 'vbf-rsvp' -%}
         {%- if form.posted_successfully? -%}
-          <div class="vbf__ok"><strong>Your seat is saved.</strong>The order of service is on its way to your inbox. Wear black. Bring a friend who still thinks 50 billion means 50 billion.</div>
+          <div class="vbf__ok"><strong>Your seat is saved.</strong>The order of service is on its way to your inbox. Wear black. Bring a friend who still believes the number on the label.</div>
         {%- else -%}
           {%- if form.errors -%}<p class="vbf__err">{{ form.errors | default_errors }}</p>{%- endif -%}
           <input type="hidden" name="contact[tags]" value="newsletter,funeral-rsvp">
@@ -56,41 +80,92 @@
             <input type="email" name="contact[email]" placeholder="Email address" autocomplete="email" aria-label="Email address" required>
             <button class="vbf__btn" type="submit">RSVP</button>
           </div>
-          <p class="vbf__fine">Mourners who RSVP get the order of service, a front-row seat on the night, and the first reading of the will on Wednesday 25 November, 48 hours before anyone else. By RSVPing you agree to receive these emails from Velobiotics. Unsubscribe any time.</p>
+          <p class="vbf__fine">Mourners who RSVP receive the order of service, a front-row seat on the night, and the first reading of the will on Wednesday 25 November, 48 hours before anyone else. By RSVPing you agree to receive emails about the funeral from Velobiotics until 30 November. Unsubscribe any time.</p>
         {%- endif -%}
       {%- endform -%}
       </div>
     </div>
   </section>
 
-  <section class="vbf__sec">
-    <img src="{{ 'vb-funeral-notice.jpg' | asset_url }}" alt="Death notice from The Daily Gut: Probiotics, billions of. Passed away suddenly in stomach acid." width="900" height="900" loading="lazy">
-    <div>
-      <h2>They were swallowed with such hope.</h2>
-      <p>Your stomach holds acid at around pH 2. Its job is to destroy the bacteria that arrive with your food, and it is very good at its job.</p>
-      <p>Published laboratory studies on unprotected bifidobacteria report losses of 99.9% or more of live cells within two to three hours in stomach-strength acid. The billions on a label mean little if they are no longer alive where they are needed.</p>
-      <p>So this Friday we are giving them the send-off they deserve. <a href="/pages/probiotics-tolerance-to-gastric-acid">Read the science</a>.</p>
+  <div class="vbf__wrap">
+    <section class="vbf__sec">
+      <img src="{{ 'vb-funeral-notice.jpg' | asset_url }}" alt="Death notice from The Daily Gut: Probiotics, billions of. Passed away suddenly in stomach acid." width="900" height="900" loading="lazy">
+      <div>
+        <p class="vbf__kick">The obituary</p>
+        <h2>They were swallowed with such hope.</h2>
+        <p>They left the factory in their billions. They were counted, labelled and sealed. Then they met your stomach: acid at around pH 2, built to destroy the bacteria that arrive with your food, and very good at its job.</p>
+        <p>The number on a label tells you how many set out. It does not tell you how many were still alive where they were needed.</p>
+        <p>So this Friday we are giving them the send-off they deserve. No flowers.</p>
+      </div>
+    </section>
+  </div>
+
+  <div class="vbf__wrap">
+    <div class="vbf__nums">
+      <div><b>pH 2</b><span>Stomach acid. Strong enough to do exactly what it evolved to do.</span></div>
+      <div><b>99.9%</b><span>Loss of unprotected bifidobacteria within two to three hours of stomach-strength acid, as reported in published laboratory studies.</span></div>
+      <div><b>1000x</b><span>More live probiotics to your gut with patented Velobiotics™ microencapsulation. <a href="/pages/what-is-microencapsulation">See how we get that number</a>.</span></div>
     </div>
+  </div>
+
+  <section class="vbf__band">
+    <blockquote>"The biggest cemetery in the country is your stomach."</blockquote>
+    <cite>From the eulogy</cite>
   </section>
 
-  <section class="vbf__order">
+  <div class="vbf__wrap vbf__order">
     <p class="vbf__kick">Order of service</p>
-    <h2>Four acts. One week. Wear black.</h2>
+    <h2>Four acts. Two weeks. Wear black.</h2>
     <ol>
       <li><b>Mon 16 to Thu 19 Nov</b><span>The Death Notice</span><small>The news breaks. Condolences are welcome.</small></li>
       <li><b>Fri 20 Nov, 19:00</b><span>The Funeral</span><small>The film premieres on this page.</small></li>
       <li><b>Wed 25 Nov, 06:00</b><span>The Will</span><small>The departed left something. Mourners who RSVP'd hear it first.</small></li>
-      <li><b>Fri 27 Nov</b><span>The After-Tears</span><small>Not everyone died. The survivors are going out.</small></li>
+      <li><b>Fri 27 to Mon 30 Nov</b><span>The After-Tears</span><small>Not everyone died. The survivors are going out.</small></li>
     </ol>
-    <p style="margin-top:40px"><a class="vbf__btn" style="display:inline-block;text-decoration:none" href="#rsvp">RSVP to the funeral</a></p>
-  </section>
+  </div>
+
+  <div class="vbf__wrap" id="film">
+    <div class="vbf__film">
+      {%- if section.settings.video_embed != blank -%}{{ section.settings.video_embed }}
+      {%- else -%}<div><p class="vbf__kick">The funeral film</p><h2 style="margin:0 0 8px">Premieres here.</h2><p style="margin:0">Friday 20 November, 19:00 SAST. Not a minute before.</p></div>{%- endif -%}
+    </div>
+  </div>
+
+  <div class="vbf__wrap">
+    <section class="vbf__sec">
+      <div>
+        <p class="vbf__kick">A rumour</p>
+        <h2>They say not everyone died.</h2>
+        <p>Mourners at the acid lake report a small green figure walking across the surface in a shield of its own. We are not able to confirm this until after the funeral.</p>
+        <p>What we can say: each Velobiotics probiotic is wrapped in its own micron-thin coat, formed in supercritical carbon dioxide, tested in peer-reviewed laboratory studies. <a href="/pages/what-is-microencapsulation">Read the science</a>.</p>
+      </div>
+      <img src="{{ 'vb-funeral-survivor.jpg' | asset_url }}" alt="A green clay microbe in a protective bubble crosses a lake of stomach acid while grey microbes watch from the shore." width="1024" height="1024" loading="lazy">
+    </section>
+  </div>
+
+  <div class="vbf__wrap vbf__share">
+    <p class="vbf__kick">Condolences</p>
+    <h2>Nobody should mourn alone.</h2>
+    <p>Send the invitation to someone who still believes the number on the label.</p>
+    <div>
+      <a class="vbf__btn" href="#rsvp">RSVP to the funeral</a>
+      <a class="vbf__btn vbf__btn--ghost" href="https://wa.me/?text={{ 'You are invited to a funeral for the probiotics that died in your stomach. Friday 20 November, 19:00. RSVP: https://www.velobiotics.com/pages/funeral?utm_source=whatsapp&utm_medium=share&utm_campaign=funeral' | url_encode }}" target="_blank" rel="noopener">Invite a mourner on WhatsApp</a>
+    </div>
+  </div>
+
+  <footer class="vbf__foot">
+    <b>Put Your Gut First.</b><br>
+    A notice from Velobiotics (Pty) Ltd. No probiotics were harmed in the making of this funeral that were not already doomed.<br>
+    <a href="mailto:support@velobiotics.com">support@velobiotics.com</a> &nbsp;·&nbsp; <a href="/policies/privacy-policy">Privacy</a>
+  </footer>
 </div>
 <script>
 (function(){var el=document.querySelector('[data-vbf-count]');if(!el)return;var t=new Date(el.getAttribute('data-vbf-count')).getTime();
 function p(n){return (n<10?'0':'')+n}
 function tick(){var s=Math.max(0,Math.floor((t-Date.now())/1000));el.querySelector('[data-d]').textContent=p(Math.floor(s/86400));el.querySelector('[data-h]').textContent=p(Math.floor(s%86400/3600));el.querySelector('[data-m]').textContent=p(Math.floor(s%3600/60));el.querySelector('[data-s]').textContent=p(s%60)}
-tick();setInterval(tick,1000)})();
+tick();setInterval(tick,1000);
+if(location.search.indexOf('customer_posted=true')>-1){var r=document.getElementById('rsvp');if(r)r.scrollIntoView({block:'center'})}})();
 </script>
 {% schema %}
-{ "name": "VB Funeral landing", "settings": [], "presets": [{ "name": "VB Funeral landing" }] }
+{ "name": "VB Funeral landing", "settings": [ { "type": "html", "id": "video_embed", "label": "Funeral film embed code", "info": "Leave blank until the premiere." } ], "presets": [{ "name": "VB Funeral landing" }] }
 {% endschema %}

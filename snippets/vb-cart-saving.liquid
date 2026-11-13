@@ -1,8 +1,9 @@
-{%- comment -%} Funeral BF 2026: explicit savings line (percentage + amount). Shows whenever any discount applies. {%- endcomment -%}
+{%- comment -%} Explicit savings line (percentage + amount) in cart and cart drawer. Gift line only during the Funeral BF 2026 Survivor Offer window (25 Nov 06:00 to 30 Nov 23:59 SAST). {%- endcomment -%}
 {%- if cart.total_discount > 0 and cart.original_total_price > 0 -%}
   {%- assign vb_save_pct = cart.total_discount | times: 100.0 | divided_by: cart.original_total_price | round -%}
+  {%- assign vb_now = 'now' | date: '%s' | plus: 0 -%}
   <div class="vb-cart-saving" style="margin:0 0 12px;padding:12px 14px;border:2px solid #4d8c44;border-radius:8px;background:#f3f7f1;color:#1d3a18;font-weight:700;font-size:1.5rem;line-height:1.4;text-align:left">
     You are saving {{ vb_save_pct }}% ({{ cart.total_discount | money }})
-    <span style="display:block;font-weight:400;font-size:1.3rem">Was {{ cart.original_total_price | money }}, now {{ cart.total_price | money }}.{% if cart.item_count >= 2 %} Free "For the After-Tears" gift included.{% endif %}</span>
+    <span style="display:block;font-weight:400;font-size:1.3rem">Was {{ cart.original_total_price | money }}, now {{ cart.total_price | money }}.{% if vb_now >= 1795579200 and vb_now < 1796076000 and cart.item_count >= 2 %} Free "For the After-Tears" gift included.{% endif %}</span>
   </div>
 {%- endif -%}

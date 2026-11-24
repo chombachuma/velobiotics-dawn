@@ -217,7 +217,7 @@
 {%- assign vb_now = 'now' | date: '%s' | plus: 0 -%}
 <div class="vbc__row" style="color:var(--g)"><span>You save {{ vb_save_pct }}%</span><strong>−{{ cart.total_discount | money }}</strong></div>
           {%- endif -%}
-          {%- assign vbt_now = 'now' | date: '%s' | plus: 0 -%}{%- if vbt_now >= 1795471200 and vbt_now < 1796076000 and cart.item_count >= 1 -%}<div class="vbc__row" style="color:var(--g);align-items:center"><span><img src="{{ 'vb-tissues-thumb.png' | asset_url }}" alt="" width="18" style="width:18px;height:auto;vertical-align:middle;margin-right:6px">Free gift: "For the After-Tears" tissues</span><strong>Included</strong></div>{%- endif -%}
+          {%- assign vbt_now = 'now' | date: '%s' | plus: 0 -%}{%- if vbt_now >= 1795471200 and vbt_now < 1796076000 and cart.item_count >= 1 -%}<div class="vbc__row" style="color:var(--g);align-items:center"><span><img src="{{ 'vb-tissues-thumb.png' | asset_url }}" alt="" width="18" style="width:18px;height:auto;vertical-align:middle;margin-right:6px">Free gift: 1 "For the After-Tears" tissue box</span><strong>Included</strong></div>{%- endif -%}
           <div class="vbc__row"><span>Shipping</span><strong>Calculated at checkout</strong></div>
           <div class="vbc__divider"></div>
           <div class="vbc__total"><strong>Total</strong><span class="vbc__total-amt" id="vbc-total">{{ cart.total_price | money }}</span></div>

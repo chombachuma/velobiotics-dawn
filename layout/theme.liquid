@@ -435,6 +435,7 @@
   {% if template.name == 'index' or template.name == 'page' or template.name == 'product' %}{% render 'vb-jm-lightbox' %}{% endif %}
   {%- endunless -%}
 {% render 'vb-funeral-cap', mode: 'script' %}
+{% render 'vb-tissue-gift' %}
 {%- if request.path contains '/pages/quiz' -%}{% render 'vb-quiz-funeral' %}{%- endif -%}
 </body>
 </html>

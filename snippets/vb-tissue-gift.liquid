@@ -2,9 +2,9 @@
 {%- assign vbt_now = 'now' | date: '%s' | plus: 0 -%}
 {%- if vbt_now >= 1795471200 and vbt_now < 1796076000 -%}
 <style>.vbtg{display:flex;gap:12px;align-items:center;margin:14px 0;padding:10px 14px;border:1px solid #cfe6c4;border-radius:10px;background:#f4faf1;font:14px/1.4 Arial,Helvetica,sans-serif;color:#1d2a1a}.vbtg img{width:38px;height:auto;flex:0 0 auto}.vbtg b{display:block;font-size:14.5px}.vbtg span{color:#4b5a46;font-size:13px}</style>
-<template id="vbtg-tpl"><div class="vbtg" data-vbtg><img src="{{ 'vb-tissues-thumb.png' | asset_url }}" alt="PregBiotics tissue box" width="38" loading="lazy"><div><b>Free gift: one "For the After-Tears" tissue box</b><span>One wrapped PregBiotics tissue box per order, on every order until Mon 30 Nov, while stocks last.</span></div></div></template>
+<template id="vbtg-tpl"><div class="vbtg" data-vbtg><img src="{{ 'vb-tissues-thumb.png' | asset_url }}" alt="PregBiotics tube of tissues" width="38" loading="lazy"><div><b>Free gift: one "For the After-Tears" tube of tissues</b><span>One wrapped PregBiotics tube of tissues per order, on every order until Mon 30 Nov, while stocks last.</span></div></div></template>
 <script>(function(){var T0=1795471200000,T1=1796076000000,n=Date.now();if(n<T0||n>=T1)return;
-var K='Funeral gift',V='PregBiotics "For the After-Tears" tissue box (free, Black Friday 2026)';
+var K='Funeral gift',V='PregBiotics "For the After-Tears" tube of tissues (free, Black Friday 2026)';
 function stamp(){fetch('/cart.js').then(function(r){return r.json()}).then(function(c){if(c.item_count>0&&(!c.attributes||c.attributes[K]!==V)){var a={};a[K]=V;fetch('/cart/update.js',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({attributes:a})})}}).catch(function(){})}
 function badge(){ {%- if request.page_type == 'product' -%}var f=document.querySelector('form[action*="/cart/add"]');if(f&&!document.querySelector('[data-vbtg]')){var t=document.getElementById('vbtg-tpl');f.parentNode.insertBefore(t.content.cloneNode(true),f)}{%- endif -%} }
 document.addEventListener('DOMContentLoaded',function(){badge();stamp()});
